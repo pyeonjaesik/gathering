@@ -530,25 +530,23 @@ def summarize(conn: sqlite3.Connection) -> None:
     print(f"- 평균 분석 이미지 수: {avg_images if avg_images is not None else '—'}")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="원재료명 수집 파이프라인 (모의 analyze 사용)")
-    parser.add_argument("--limit", type=int, default=20, help="이번 실행에서 처리할 최대 상품 수")
-    parser.add_argument("--seed", type=int, default=7, help="모의 analyze 랜덤 시드")
-    parser.add_argument("--db", type=str, default=DB_FILE, help="SQLite DB 파일 경로")
-    parser.add_argument("--quiet", action="store_true", help="이미지별 상세 로그 출력 생략")
-    args = parser.parse_args()
-
-    random.seed(args.seed)
+def run_enricher(
+    limit: int = 20,
+    seed: int = 7,
+    db_path: str = DB_FILE,
+    quiet: bool = False,
+) -> None:
+    random.seed(seed)
 
     api_key = os.getenv("SERPAPI_KEY")
     if not api_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
 
-    conn = sqlite3.connect(args.db)
+    conn = sqlite3.connect(db_path)
     init_ingredient_tables(conn)
     report_pool = load_report_number_pool(conn)
 
-    targets = fetch_target_products(conn, limit=args.limit)
+    targets = fetch_target_products(conn, limit=limit)
     if not targets:
         print("처리할 대상이 없습니다. (이미 ingredient_info/ingredient_attempts에 존재)")
         summarize(conn)
@@ -570,7 +568,7 @@ def main() -> None:
             product,
             api_key=api_key,
             report_pool=report_pool,
-            verbose=not args.quiet,
+            verbose=not quiet,
         )
         stats[result["status"]] += 1
 
@@ -599,6 +597,16 @@ def main() -> None:
     )
     summarize(conn)
     conn.close()
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="원재료명 수집 파이프라인 (모의 analyze 사용)")
+    parser.add_argument("--limit", type=int, default=20, help="이번 실행에서 처리할 최대 상품 수")
+    parser.add_argument("--seed", type=int, default=7, help="모의 analyze 랜덤 시드")
+    parser.add_argument("--db", type=str, default=DB_FILE, help="SQLite DB 파일 경로")
+    parser.add_argument("--quiet", action="store_true", help="이미지별 상세 로그 출력 생략")
+    args = parser.parse_args()
+    run_enricher(limit=args.limit, seed=args.seed, db_path=args.db, quiet=args.quiet)
 
 
 if __name__ == "__main__":

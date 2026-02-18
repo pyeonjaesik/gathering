@@ -1,25 +1,26 @@
 """
-공공데이터 식품가공정보 API → 로컬 SQLite DB 저장
+통합 실행 허브
+- 데이터 조회 뷰어
+- 원재료명 추출 파이프라인
+- 공공 API 수집
 """
 
-import math
-import sqlite3
+import os
 import sys
-import time
 
-from api import fetch_pages_parallel, fetch_total_count
-from config import COLUMNS, DB_FILE, MAX_WORKERS, ROWS_PER_PAGE
-from database import (
-    get_completed_pages,
-    init_db,
-    init_progress_table,
-    insert_rows,
-    mark_page_done,
+import collector
+import sqlite3
+import viewer
+from config import DB_FILE
+from dedupe_tools import (
+    duplicate_conditions,
+    get_duplicate_samples,
+    get_duplicate_stats,
+    run_dedupe,
 )
+from ingredient_enricher import run_enricher
 
-# 출력 너비
-W = 60
-CHUNK_RETRY_ROUNDS = 2
+W = 68
 
 
 def _bar(char: str = "─") -> str:
@@ -27,7 +28,7 @@ def _bar(char: str = "─") -> str:
 
 
 def print_header() -> None:
-    title = "공공데이터 식품가공정보 수집기"
+    title = "🍽️ 식품 데이터 통합 실행기"
     inner = W - 2
     pad_left = (inner - len(title)) // 2
     pad_right = inner - pad_left - len(title)
@@ -38,235 +39,149 @@ def print_header() -> None:
     print()
 
 
-def print_section(title: str) -> None:
-    print()
-    print(_bar("─"))
-    print(f"  {title}")
-    print(_bar("─"))
+def run_data_viewer() -> None:
+    print("\n  👀 [실행] 데이터 조회 뷰어를 시작합니다.\n")
+    viewer.main()
 
 
-def print_progress_bar(current: int, total: int, bar_width: int = 36) -> None:
-    ratio = current / total if total > 0 else 1.0
-    filled = int(bar_width * ratio)
-    bar = "█" * filled + "░" * (bar_width - filled)
-    percent = ratio * 100
-    print(
-        f"\n  진행률  [{bar}] {current:,}/{total:,}건 ({percent:.1f}%)",
-        flush=True,
-    )
+def run_ingredient_menu() -> None:
+    print("\n  🧪 [원재료명 추출 설정]")
+    raw_limit = input("  🔹 처리할 최대 상품 수 [기본 20]: ").strip()
+    raw_seed = input("  🔹 랜덤 시드(모의 분석용) [기본 7]: ").strip()
+    raw_quiet = input("  🔹 이미지별 상세 로그 생략? [y/N]: ").strip().lower()
 
+    limit = 20
+    seed = 7
+    if raw_limit:
+        try:
+            limit = int(raw_limit)
+        except ValueError:
+            print("  ⚠️ 잘못된 limit 입력입니다. 기본값 20으로 진행합니다.")
+    if raw_seed:
+        try:
+            seed = int(raw_seed)
+        except ValueError:
+            print("  ⚠️ 잘못된 seed 입력입니다. 기본값 7로 진행합니다.")
 
-def print_data_preview(rows: list[dict], preview_count: int = 3) -> None:
-    """최근 저장된 데이터 샘플을 사람이 읽기 좋게 출력"""
-    if not rows:
+    quiet = raw_quiet == "y"
+
+    if not os.getenv("SERPAPI_KEY"):
+        print("\n  ❌ 오류: SERPAPI_KEY 환경변수가 필요합니다.")
+        print('  💡 예) export SERPAPI_KEY="YOUR_KEY"')
         return
-    samples = rows[-preview_count:]
-    count = len(samples)
-    print(f"\n  ┌─ 저장 샘플 (최근 {count}건) {'─' * (W - 22)}┐")
-    for i, row in enumerate(samples, 1):
-        food_nm  = (row.get("foodNm")  or "—")[:22]
-        food_cd  = (row.get("foodCd")  or "—")[:14]
-        category = (row.get("foodLv4Nm") or row.get("foodLv3Nm") or "—")[:16]
-        enerc    = row.get("enerc") or "—"
-        print(f"  │  [{i}] 식품명 : {food_nm}")
-        print(f"  │       코드   : {food_cd}")
-        print(f"  │       분류   : {category}")
-        print(f"  │       에너지 : {enerc} kcal")
-        if i < count:
-            print("  │")
-    print("  └" + "─" * (W - 4) + "┘")
+
+    print("\n  🚀 [실행] 원재료명 추출 파이프라인을 시작합니다.\n")
+    run_enricher(limit=limit, seed=seed, quiet=quiet)
 
 
-def format_elapsed(seconds: float) -> str:
-    if seconds < 60:
-        return f"{seconds:.1f}초"
-    m, s = divmod(int(seconds), 60)
-    return f"{m}분 {s}초"
+def run_public_api_collection() -> None:
+    print("\n  🌐 [공공 API 수집 설정]")
+    raw = input("  🔹 저장할 데이터 개수 입력 (0 또는 '전체' = 전체 수집): ").strip()
+    if not raw:
+        print("  ⚠️ 입력이 비어 있어 수집을 취소합니다.")
+        return
+
+    # collector.main()은 sys.argv를 읽으므로 일시적으로 주입
+    argv_backup = sys.argv[:]
+    try:
+        sys.argv = ["collector.py", raw]
+        collector.main()
+    finally:
+        sys.argv = argv_backup
 
 
-def expected_rows_for_page(page_no: int, target_count: int, rows_per_page: int) -> int:
-    """목표 건수 기준으로 페이지에 속하는 최대 행 수 계산."""
-    start = (page_no - 1) * rows_per_page
-    if start >= target_count:
-        return 0
-    return min(rows_per_page, target_count - start)
+def _print_duplicate_stats(stats: dict[str, int]) -> None:
+    print("  📊 [중복 현황]")
+    print(f"    총 레코드                : {stats['total_rows']:,}")
+    print(f"    A(foodCd) 그룹/초과행    : {stats['foodCd_groups']:,} / {stats['foodCd_extra']:,}")
+    print(f"    B(이름+용량+카테고리)    : {stats['h1_groups']:,} / {stats['h1_extra']:,}")
+    print(f"    C(이름+영양+카테고리)    : {stats['h2_groups']:,} / {stats['h2_extra']:,}")
+
+
+def run_duplicate_menu() -> None:
+    while True:
+        print("\n  🧹 [중복 관리]")
+        print("    [1] 🔍 중복 조건/현황 보기")
+        print("    [2] 🗑️ 중복 삭제 실행")
+        print("    [b] ↩️ 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+
+        if sub == "1":
+            print("\n  📐 [중복 판정 조건]")
+            for condition in duplicate_conditions():
+                print(f"    • {condition}")
+            with sqlite3.connect(DB_FILE) as conn:
+                stats = get_duplicate_stats(conn)
+                _print_duplicate_stats(stats)
+                print("\n  🧾 [중복 의심 샘플 10개]")
+                samples = get_duplicate_samples(conn, limit=10)
+                if not samples:
+                    print("    ✅ 없음")
+                else:
+                    for row in samples:
+                        food_nm, food_size, serv_size, lv3, lv4, cnt, foodcd_cnt = row
+                        print(
+                            f"    - {food_nm} | cnt={cnt} foodCd={foodcd_cnt} | "
+                            f"size={food_size}, serv={serv_size}, cat={lv3}>{lv4}"
+                        )
+        elif sub == "2":
+            print("\n  ⚠️ [삭제 실행 전 안내]")
+            for condition in duplicate_conditions():
+                print(f"    • {condition}")
+            with sqlite3.connect(DB_FILE) as conn:
+                before = get_duplicate_stats(conn)
+            print("\n  📌 [실행 전 통계]")
+            _print_duplicate_stats(before)
+            confirm = input("\n  ❓ 위 조건으로 중복 삭제를 실행할까요? [y/N]: ").strip().lower()
+            if confirm != "y":
+                print("  🛑 삭제를 취소했습니다.")
+                continue
+
+            with sqlite3.connect(DB_FILE) as conn:
+                result = run_dedupe(conn)
+                after = get_duplicate_stats(conn)
+
+            print("\n  ✅ [삭제 결과]")
+            print(f"    - 규칙 A 삭제: {result['removed_a']:,}건")
+            print(f"    - 규칙 B 삭제: {result['removed_b']:,}건")
+            print(f"    - 규칙 C 삭제: {result['removed_c']:,}건")
+            print(f"    - 총 삭제   : {result['removed_total']:,}건")
+            print(f"    - 삭제 목록 CSV : {result['csv_path']}")
+
+            print("\n  📌 [실행 후 통계]")
+            _print_duplicate_stats(after)
+        elif sub == "b":
+            break
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
 
 
 def main() -> None:
-    # ── 사용자 입력 ─────────────────────────────────────────────
-    raw = ""
-    if len(sys.argv) >= 2:
-        raw = sys.argv[1].strip()
-    else:
-        raw = input("저장할 데이터 개수를 입력하세요 (0 또는 '전체' = 전체 수집): ").strip()
-
-    fetch_all = raw in ("0", "전체", "all")
-
-    if fetch_all:
-        # 전체 수집 모드: API에서 totalCount를 먼저 조회
+    while True:
         print_header()
-        print("  전체 수집 모드 — API에서 전체 건수를 조회합니다...")
-        target_count = fetch_total_count()
-        if target_count <= 0:
-            print("  오류: 전체 건수를 가져오지 못했습니다. API 키와 네트워크를 확인해주세요.")
-            sys.exit(1)
-        print(f"  API 전체 데이터 : {target_count:,}건")
-        answer = input("  전체를 수집하시겠습니까? [y/N] : ").strip().lower()
-        if answer != "y":
-            print("  수집을 취소했습니다.")
-            sys.exit(0)
-    else:
-        try:
-            target_count = int(raw)
-        except ValueError:
-            print("오류: 숫자를 입력해주세요. 예) python main.py 500  /  python main.py 0")
-            sys.exit(1)
+        print(_bar())
+        print("  🎛️ [ 메인 메뉴 ]")
+        print("    [1] 👀 데이터 조회/탐색 (viewer)")
+        print("    [2] 🧪 원재료명 추출 실행")
+        print("    [3] 🌐 공공 API 데이터 수집")
+        print("    [4] 🧹 중복 데이터 점검/삭제")
+        print("    [q] 🚪 종료")
+        print(_bar())
+        choice = input("  👉 선택 : ").strip().lower()
 
-        if target_count <= 0:
-            print("오류: 1 이상의 숫자를 입력하거나, 전체 수집은 0을 입력하세요.")
-            sys.exit(1)
-
-    # ── 헤더 출력 ───────────────────────────────────────────────
-    if not fetch_all:
-        print_header()
-    print(f"  목표   : {target_count:,}건")
-    print(f"  저장소 : {DB_FILE}  (테이블: food_info)")
-
-    # ── DB 초기화 ───────────────────────────────────────────────
-    print_section("[ 1단계 ] DB 초기화")
-    conn = sqlite3.connect(DB_FILE)
-    print(f"  ✔ {DB_FILE} 연결 완료")
-    init_db(conn)
-    init_progress_table(conn)
-    print("  ✔ food_info 테이블 준비 완료")
-
-    # ── 데이터 수집 및 저장 ─────────────────────────────────────
-    print_section("[ 2단계 ] 데이터 수집 및 저장")
-
-    total_pages = math.ceil(target_count / ROWS_PER_PAGE)
-    # 한 번에 처리할 페이지 묶음 크기 (MAX_WORKERS 배수로 설정)
-    chunk_size = MAX_WORKERS
-
-    completed_pages = get_completed_pages(conn, ROWS_PER_PAGE)
-    completed_pages = {p for p in completed_pages if 1 <= p <= total_pages}
-    remaining_pages = [p for p in range(1, total_pages + 1) if p not in completed_pages]
-
-    progressed = sum(
-        expected_rows_for_page(p, target_count, ROWS_PER_PAGE) for p in completed_pages
-    )
-    saved = 0
-    failed_pages_run = 0
-    last_rows: list[dict] = []
-    start_time = time.time()
-
-    print(
-        f"  총 {total_pages:,}페이지 × 최대 {ROWS_PER_PAGE:,}건/페이지"
-        f"  (병렬 {MAX_WORKERS}개 동시 요청)",
-        flush=True,
-    )
-    if completed_pages:
-        print(
-            f"  ↺ 재개 모드: 완료 {len(completed_pages):,}페이지 건너뜀, "
-            f"남은 {len(remaining_pages):,}페이지 처리",
-            flush=True,
-        )
-
-    if not remaining_pages:
-        print("  ✔ 이미 모든 페이지가 완료 상태입니다.")
-        print_progress_bar(target_count, target_count)
-
-    for chunk_start in range(0, len(remaining_pages), chunk_size):
-        chunk_page_nos = remaining_pages[chunk_start : chunk_start + chunk_size]
-        chunk_begin = chunk_page_nos[0]
-        chunk_end = chunk_page_nos[-1]
-
-        print(
-            f"\n  📡 [{chunk_begin}~{chunk_end}페이지]"
-            f" {len(chunk_page_nos)}개 동시 요청 중...",
-            flush=True,
-        )
-
-        chunk_results = fetch_pages_parallel(chunk_page_nos, ROWS_PER_PAGE, MAX_WORKERS)
-        retry_workers = max(1, MAX_WORKERS // 2)
-        for retry_round in range(1, CHUNK_RETRY_ROUNDS + 1):
-            failed_in_round = [
-                p for p in chunk_page_nos
-                if p not in chunk_results or not chunk_results[p][1]
-            ]
-            if not failed_in_round:
-                break
-            print(
-                f"  ↺ 실패 페이지 재시도 {retry_round}/{CHUNK_RETRY_ROUNDS}: "
-                f"{len(failed_in_round)}페이지",
-                flush=True,
-            )
-            retry_results = fetch_pages_parallel(
-                failed_in_round,
-                ROWS_PER_PAGE,
-                retry_workers,
-            )
-            chunk_results.update(retry_results)
-
-        # 페이지 순서대로 DB에 삽입
-        chunk_received = 0
-        chunk_completed = 0
-        chunk_failed_pages: list[int] = []
-        for page_no in chunk_page_nos:
-            page_result = chunk_results.get(page_no)
-            if page_result is None:
-                chunk_failed_pages.append(page_no)
-                continue
-            rows, ok = page_result
-            if not ok:
-                chunk_failed_pages.append(page_no)
-                continue
-
-            max_rows = expected_rows_for_page(page_no, target_count, ROWS_PER_PAGE)
-            rows = rows[:max_rows]
-            if rows:
-                insert_rows(conn, rows)
-                saved += len(rows)
-                chunk_received += len(rows)
-                last_rows = rows
-
-            mark_page_done(conn, page_no, ROWS_PER_PAGE, len(rows))
-            progressed += max_rows
-            chunk_completed += 1
-
-        failed_pages_run += len(chunk_failed_pages)
-        if chunk_failed_pages:
-            failed_preview = ", ".join(str(p) for p in chunk_failed_pages[:8])
-            suffix = " ..." if len(chunk_failed_pages) > 8 else ""
-            print(
-                f"  ⚠ 이번 청크 실패 페이지 {len(chunk_failed_pages)}개: "
-                f"{failed_preview}{suffix}",
-                flush=True,
-            )
-
-        elapsed = time.time() - start_time
-        print(
-            f"  ✔ {chunk_received:,}건 저장 완료, {chunk_completed:,}페이지 완료 처리"
-            f"  (이번 실행 누적 저장: {saved:,}건 / 경과: {format_elapsed(elapsed)})",
-            flush=True,
-        )
-        print_progress_bar(min(progressed, target_count), target_count)
-
-    final_completed = get_completed_pages(conn, ROWS_PER_PAGE)
-    final_completed = {p for p in final_completed if 1 <= p <= total_pages}
-    print_data_preview(last_rows)
-    elapsed_total = time.time() - start_time
-
-    # ── 완료 요약 ───────────────────────────────────────────────
-    print_section("[ 완료 ] 저장 요약")
-    print(f"  ✔ 이번 실행 저장: {saved:,}건")
-    print(f"  ✔ 완료 페이지   : {len(final_completed):,}/{total_pages:,}페이지")
-    print(f"  ⚠ 미완료 페이지 : {failed_pages_run:,}개 (다음 실행 시 자동 재시도)")
-    print(f"  📁 파일    : {DB_FILE}")
-    print(f"  📋 테이블  : food_info")
-    print(f"  📊 컬럼 수 : {len(COLUMNS)}개 필드")
-    print(f"  ⏱  소요    : {format_elapsed(elapsed_total)}")
-    print()
-    conn.close()
+        if choice == "1":
+            run_data_viewer()
+        elif choice == "2":
+            run_ingredient_menu()
+        elif choice == "3":
+            run_public_api_collection()
+        elif choice == "4":
+            run_duplicate_menu()
+        elif choice == "q":
+            print("\n  👋 실행기를 종료합니다.\n")
+            break
+        else:
+            print("\n  ⚠️ 올바른 메뉴 번호를 입력해주세요.\n")
 
 
 if __name__ == "__main__":

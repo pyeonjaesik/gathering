@@ -18,6 +18,7 @@ def init_db(conn: sqlite3.Connection) -> None:
     """)
     conn.commit()
     _ensure_unique_index(conn)
+    _ensure_food_code_unique_index(conn)
 
 
 def _ensure_unique_index(conn: sqlite3.Connection) -> None:
@@ -50,6 +51,59 @@ def _ensure_unique_index(conn: sqlite3.Connection) -> None:
         CREATE UNIQUE INDEX uq_itemMnftrRptNo
         ON food_info("itemMnftrRptNo")
         WHERE "itemMnftrRptNo" IS NOT NULL AND "itemMnftrRptNo" != ''
+    """)
+    conn.commit()
+
+
+def _ensure_food_code_unique_index(conn: sqlite3.Connection) -> None:
+    """foodCd 기준 중복 제거 후 유니크 인덱스 생성.
+    동일 foodCd가 여러 건이면 신뢰도 높은 행 1건만 남긴다.
+    우선순위:
+    1) itemMnftrRptNo 존재
+    2) mfrNm 유효값(빈값/해당없음 제외)
+    3) crtrYmd 최신
+    4) id 최신
+    """
+    cursor = conn.execute(
+        "SELECT name FROM sqlite_master "
+        "WHERE type='index' AND tbl_name='food_info' AND name='uq_foodCd'"
+    )
+    if cursor.fetchone():
+        return
+
+    conn.execute("""
+        WITH ranked AS (
+            SELECT
+                id,
+                ROW_NUMBER() OVER (
+                    PARTITION BY foodCd
+                    ORDER BY
+                        CASE
+                            WHEN itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != '' THEN 0
+                            ELSE 1
+                        END,
+                        CASE
+                            WHEN mfrNm IS NOT NULL AND mfrNm != '' AND mfrNm != '해당없음' THEN 0
+                            ELSE 1
+                        END,
+                        CASE
+                            WHEN crtrYmd IS NOT NULL AND crtrYmd != '' THEN 0
+                            ELSE 1
+                        END,
+                        crtrYmd DESC,
+                        id DESC
+                ) AS rn
+            FROM food_info
+            WHERE foodCd IS NOT NULL AND foodCd != ''
+        )
+        DELETE FROM food_info
+        WHERE id IN (SELECT id FROM ranked WHERE rn > 1)
+    """)
+
+    conn.execute("""
+        CREATE UNIQUE INDEX uq_foodCd
+        ON food_info("foodCd")
+        WHERE "foodCd" IS NOT NULL AND "foodCd" != ''
     """)
     conn.commit()
 
