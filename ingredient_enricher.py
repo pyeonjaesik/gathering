@@ -7,6 +7,7 @@
 """
 
 import argparse
+import hashlib
 import json
 import os
 import random
@@ -162,6 +163,18 @@ def init_ingredient_tables(conn: sqlite3.Connection) -> None:
             matched_target INTEGER NOT NULL DEFAULT 0,
             raw_payload TEXT,
             created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+        """
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS image_analysis_cache (
+            image_url_hash TEXT PRIMARY KEY,
+            image_url TEXT NOT NULL,
+            extracted_itemMnftrRptNo TEXT,
+            ingredients_text TEXT,
+            raw_payload TEXT,
+            analyzed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
         )
         """
     )
@@ -345,6 +358,75 @@ def insert_extraction_log(
             ingredients_text,
             1 if matched_target else 0,
             json.dumps(raw_payload, ensure_ascii=False),
+        ),
+    )
+
+
+def _normalize_image_url(image_url: str) -> str:
+    """동일 URL 판정을 위한 최소 정규화."""
+    return (image_url or "").strip()
+
+
+def _image_url_hash(image_url: str) -> str:
+    normalized = _normalize_image_url(image_url)
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def get_cached_image_analysis(conn: sqlite3.Connection, image_url: str) -> dict | None:
+    key = _image_url_hash(image_url)
+    row = conn.execute(
+        """
+        SELECT extracted_itemMnftrRptNo, ingredients_text, raw_payload
+        FROM image_analysis_cache
+        WHERE image_url_hash = ?
+        """,
+        (key,),
+    ).fetchone()
+    if not row:
+        return None
+    extracted, ingredients, raw_payload = row
+    payload_dict: dict = {}
+    if raw_payload:
+        try:
+            payload_dict = json.loads(raw_payload)
+        except json.JSONDecodeError:
+            payload_dict = {}
+    return {
+        "itemMnftrRptNo": extracted,
+        "ingredients_text": ingredients,
+        "note": payload_dict.get("note", "cache-hit"),
+    }
+
+
+def upsert_image_analysis_cache(
+    conn: sqlite3.Connection,
+    image_url: str,
+    analysis: dict,
+) -> None:
+    key = _image_url_hash(image_url)
+    conn.execute(
+        """
+        INSERT INTO image_analysis_cache (
+            image_url_hash,
+            image_url,
+            extracted_itemMnftrRptNo,
+            ingredients_text,
+            raw_payload,
+            analyzed_at
+        )
+        VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(image_url_hash) DO UPDATE SET
+            extracted_itemMnftrRptNo = excluded.extracted_itemMnftrRptNo,
+            ingredients_text = excluded.ingredients_text,
+            raw_payload = excluded.raw_payload,
+            analyzed_at = CURRENT_TIMESTAMP
+        """,
+        (
+            key,
+            _normalize_image_url(image_url),
+            analysis.get("itemMnftrRptNo"),
+            analysis.get("ingredients_text"),
+            json.dumps(analysis, ensure_ascii=False),
         ),
     )
 
@@ -560,11 +642,17 @@ def process_product(
 
     for rank, image_url in enumerate(image_urls, start=1):
         analyzed_count += 1
-        analysis = mock_analyze(
-            image_url=image_url,
-            target_item_rpt_no=product.item_rpt_no,
-            report_pool=report_pool,
-        )
+        cache_hit = False
+        analysis = get_cached_image_analysis(conn, image_url)
+        if analysis is None:
+            analysis = mock_analyze(
+                image_url=image_url,
+                target_item_rpt_no=product.item_rpt_no,
+                report_pool=report_pool,
+            )
+            upsert_image_analysis_cache(conn, image_url, analysis)
+        else:
+            cache_hit = True
         extracted = analysis.get("itemMnftrRptNo")
         ingredients = analysis.get("ingredients_text")
         is_match = bool(extracted and extracted == product.item_rpt_no)
@@ -596,8 +684,9 @@ def process_product(
         if verbose:
             extracted_text = extracted or "미검출"
             result_tag = "MATCH" if is_match else "NO-MATCH"
+            cache_tag = "CACHE" if cache_hit else "ANALYZE"
             print(
-                f"    [{rank:02d}/{len(image_urls):02d}] {result_tag} "
+                f"    [{rank:02d}/{len(image_urls):02d}] {cache_tag} {result_tag} "
                 f"번호={extracted_text} | url={_short(image_url, 84)}"
             )
             if extracted and ingredients:
