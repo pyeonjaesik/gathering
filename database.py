@@ -63,3 +63,48 @@ def insert_rows(conn: sqlite3.Connection, rows: list[dict]) -> None:
     values = [tuple(row.get(col) for col in COLUMNS) for row in rows]
     conn.executemany(sql, values)
     conn.commit()
+
+
+def init_progress_table(conn: sqlite3.Connection) -> None:
+    """페이지 수집 진행 상태 저장 테이블 준비."""
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS ingest_progress (
+            page_no INTEGER NOT NULL,
+            num_of_rows INTEGER NOT NULL,
+            status TEXT NOT NULL,
+            saved_rows INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            PRIMARY KEY (page_no, num_of_rows)
+        )
+    """)
+    conn.commit()
+
+
+def get_completed_pages(conn: sqlite3.Connection, num_of_rows: int) -> set[int]:
+    """완료(status='done')된 페이지 번호 집합 반환."""
+    rows = conn.execute(
+        "SELECT page_no FROM ingest_progress WHERE num_of_rows = ? AND status = 'done'",
+        (num_of_rows,),
+    ).fetchall()
+    return {row[0] for row in rows}
+
+
+def mark_page_done(
+    conn: sqlite3.Connection,
+    page_no: int,
+    num_of_rows: int,
+    saved_rows: int,
+) -> None:
+    """해당 페이지 수집 완료 상태를 upsert."""
+    conn.execute(
+        """
+        INSERT INTO ingest_progress (page_no, num_of_rows, status, saved_rows, updated_at)
+        VALUES (?, ?, 'done', ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(page_no, num_of_rows) DO UPDATE SET
+            status = 'done',
+            saved_rows = excluded.saved_rows,
+            updated_at = CURRENT_TIMESTAMP
+        """,
+        (page_no, num_of_rows, saved_rows),
+    )
+    conn.commit()

@@ -9,10 +9,17 @@ import time
 
 from api import fetch_pages_parallel, fetch_total_count
 from config import COLUMNS, DB_FILE, MAX_WORKERS, ROWS_PER_PAGE
-from database import init_db, insert_rows
+from database import (
+    get_completed_pages,
+    init_db,
+    init_progress_table,
+    insert_rows,
+    mark_page_done,
+)
 
 # 출력 너비
 W = 60
+CHUNK_RETRY_ROUNDS = 2
 
 
 def _bar(char: str = "─") -> str:
@@ -77,6 +84,14 @@ def format_elapsed(seconds: float) -> str:
     return f"{m}분 {s}초"
 
 
+def expected_rows_for_page(page_no: int, target_count: int, rows_per_page: int) -> int:
+    """목표 건수 기준으로 페이지에 속하는 최대 행 수 계산."""
+    start = (page_no - 1) * rows_per_page
+    if start >= target_count:
+        return 0
+    return min(rows_per_page, target_count - start)
+
+
 def main() -> None:
     # ── 사용자 입력 ─────────────────────────────────────────────
     raw = ""
@@ -122,6 +137,7 @@ def main() -> None:
     conn = sqlite3.connect(DB_FILE)
     print(f"  ✔ {DB_FILE} 연결 완료")
     init_db(conn)
+    init_progress_table(conn)
     print("  ✔ food_info 테이블 준비 완료")
 
     # ── 데이터 수집 및 저장 ─────────────────────────────────────
@@ -131,7 +147,15 @@ def main() -> None:
     # 한 번에 처리할 페이지 묶음 크기 (MAX_WORKERS 배수로 설정)
     chunk_size = MAX_WORKERS
 
+    completed_pages = get_completed_pages(conn, ROWS_PER_PAGE)
+    completed_pages = {p for p in completed_pages if 1 <= p <= total_pages}
+    remaining_pages = [p for p in range(1, total_pages + 1) if p not in completed_pages]
+
+    progressed = sum(
+        expected_rows_for_page(p, target_count, ROWS_PER_PAGE) for p in completed_pages
+    )
     saved = 0
+    failed_pages_run = 0
     last_rows: list[dict] = []
     start_time = time.time()
 
@@ -140,59 +164,109 @@ def main() -> None:
         f"  (병렬 {MAX_WORKERS}개 동시 요청)",
         flush=True,
     )
+    if completed_pages:
+        print(
+            f"  ↺ 재개 모드: 완료 {len(completed_pages):,}페이지 건너뜀, "
+            f"남은 {len(remaining_pages):,}페이지 처리",
+            flush=True,
+        )
 
-    for chunk_start in range(0, total_pages, chunk_size):
-        chunk_end = min(chunk_start + chunk_size, total_pages)
-        # 1-indexed 페이지 번호 목록
-        chunk_page_nos = list(range(chunk_start + 1, chunk_end + 1))
+    if not remaining_pages:
+        print("  ✔ 이미 모든 페이지가 완료 상태입니다.")
+        print_progress_bar(target_count, target_count)
+
+    for chunk_start in range(0, len(remaining_pages), chunk_size):
+        chunk_page_nos = remaining_pages[chunk_start : chunk_start + chunk_size]
+        chunk_begin = chunk_page_nos[0]
+        chunk_end = chunk_page_nos[-1]
 
         print(
-            f"\n  📡 [{chunk_start + 1}~{chunk_end}페이지]"
+            f"\n  📡 [{chunk_begin}~{chunk_end}페이지]"
             f" {len(chunk_page_nos)}개 동시 요청 중...",
             flush=True,
         )
 
         chunk_results = fetch_pages_parallel(chunk_page_nos, ROWS_PER_PAGE, MAX_WORKERS)
+        retry_workers = max(1, MAX_WORKERS // 2)
+        for retry_round in range(1, CHUNK_RETRY_ROUNDS + 1):
+            failed_in_round = [
+                p for p in chunk_page_nos
+                if p not in chunk_results or not chunk_results[p][1]
+            ]
+            if not failed_in_round:
+                break
+            print(
+                f"  ↺ 실패 페이지 재시도 {retry_round}/{CHUNK_RETRY_ROUNDS}: "
+                f"{len(failed_in_round)}페이지",
+                flush=True,
+            )
+            retry_results = fetch_pages_parallel(
+                failed_in_round,
+                ROWS_PER_PAGE,
+                retry_workers,
+            )
+            chunk_results.update(retry_results)
 
         # 페이지 순서대로 DB에 삽입
         chunk_received = 0
+        chunk_completed = 0
+        chunk_failed_pages: list[int] = []
         for page_no in chunk_page_nos:
-            rows = chunk_results.get(page_no, [])
-            if not rows:
+            page_result = chunk_results.get(page_no)
+            if page_result is None:
+                chunk_failed_pages.append(page_no)
                 continue
-            # 목표 초과 방지
-            rows = rows[: target_count - saved]
-            if not rows:
-                break
-            insert_rows(conn, rows)
-            saved += len(rows)
-            chunk_received += len(rows)
-            last_rows = rows
+            rows, ok = page_result
+            if not ok:
+                chunk_failed_pages.append(page_no)
+                continue
+
+            max_rows = expected_rows_for_page(page_no, target_count, ROWS_PER_PAGE)
+            rows = rows[:max_rows]
+            if rows:
+                insert_rows(conn, rows)
+                saved += len(rows)
+                chunk_received += len(rows)
+                last_rows = rows
+
+            mark_page_done(conn, page_no, ROWS_PER_PAGE, len(rows))
+            progressed += max_rows
+            chunk_completed += 1
+
+        failed_pages_run += len(chunk_failed_pages)
+        if chunk_failed_pages:
+            failed_preview = ", ".join(str(p) for p in chunk_failed_pages[:8])
+            suffix = " ..." if len(chunk_failed_pages) > 8 else ""
+            print(
+                f"  ⚠ 이번 청크 실패 페이지 {len(chunk_failed_pages)}개: "
+                f"{failed_preview}{suffix}",
+                flush=True,
+            )
 
         elapsed = time.time() - start_time
         print(
-            f"  ✔ {chunk_received:,}건 저장 완료"
-            f"  (누적: {saved:,}건 / 경과: {format_elapsed(elapsed)})",
+            f"  ✔ {chunk_received:,}건 저장 완료, {chunk_completed:,}페이지 완료 처리"
+            f"  (이번 실행 누적 저장: {saved:,}건 / 경과: {format_elapsed(elapsed)})",
             flush=True,
         )
-        print_progress_bar(saved, target_count)
+        print_progress_bar(min(progressed, target_count), target_count)
 
-        if saved >= target_count:
-            break
-
+    final_completed = get_completed_pages(conn, ROWS_PER_PAGE)
+    final_completed = {p for p in final_completed if 1 <= p <= total_pages}
     print_data_preview(last_rows)
-
-    conn.close()
     elapsed_total = time.time() - start_time
 
     # ── 완료 요약 ───────────────────────────────────────────────
     print_section("[ 완료 ] 저장 요약")
-    print(f"  ✔ 총 {saved:,}건 저장 완료")
+    print(f"  ✔ 이번 실행 저장: {saved:,}건")
+    print(f"  ✔ 완료 페이지   : {len(final_completed):,}/{total_pages:,}페이지")
+    print(f"  ⚠ 미완료 페이지 : {failed_pages_run:,}개 (다음 실행 시 자동 재시도)")
     print(f"  📁 파일    : {DB_FILE}")
     print(f"  📋 테이블  : food_info")
-    print(f"  📊 컬럼 수 : {saved:,}건 × {len(COLUMNS)}개 필드")
+    print(f"  📊 컬럼 수 : {len(COLUMNS)}개 필드")
     print(f"  ⏱  소요    : {format_elapsed(elapsed_total)}")
     print()
+    conn.close()
 
 
 if __name__ == "__main__":
