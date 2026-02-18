@@ -9,6 +9,25 @@ import requests
 from config import BASE_URL, SERVICE_KEY
 
 
+def fetch_total_count() -> int:
+    """API에서 전체 데이터 건수를 조회 (1건만 호출해 totalCount 파싱)"""
+    params = {
+        "serviceKey": SERVICE_KEY,
+        "pageNo": 1,
+        "numOfRows": 1,
+        "type": "xml",
+    }
+    try:
+        response = requests.get(BASE_URL, params=params, timeout=30)
+        root = ET.fromstring(response.content)
+        total_el = root.find(".//totalCount")
+        if total_el is not None and total_el.text:
+            return int(total_el.text)
+    except Exception as e:
+        print(f"  [오류] 전체 건수 조회 실패: {e}", flush=True)
+    return 0
+
+
 def fetch_page(page_no: int, num_of_rows: int) -> list[dict]:
     """API 한 페이지 호출 후 item 목록 반환"""
     params = {
