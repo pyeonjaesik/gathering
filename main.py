@@ -2,108 +2,12 @@
 공공데이터 식품가공정보 API → 로컬 SQLite DB 저장
 """
 
-import requests
-import xml.etree.ElementTree as ET
 import sqlite3
 import sys
 
-# ===== 설정 =====
-SERVICE_KEY = "67ff6f3fae63eb631f0f9b320fc98bb7f53d28d9fcad137f98d351a7db3e9e4d"
-BASE_URL = "http://api.data.go.kr/openapi/tn_pubr_public_nutri_process_info_api"
-DB_FILE = "food_data.db"
-ROWS_PER_PAGE = 1000  # 페이지당 요청 수 (최대 10000)
-
-# 출력 컬럼 목록 (API 응답 필드)
-COLUMNS = [
-    "foodCd", "foodNm", "dataCd", "typeNm",
-    "foodOriginCd", "foodOriginNm",
-    "foodLv3Cd", "foodLv3Nm",
-    "foodLv4Cd", "foodLv4Nm",
-    "foodLv5Cd", "foodLv5Nm",
-    "foodLv6Cd", "foodLv6Nm",
-    "foodLv7Cd", "foodLv7Nm",
-    "nutConSrtrQua",
-    "enerc", "water", "prot", "fatce", "ash",
-    "chocdf", "sugar", "fibtg",
-    "ca", "fe", "p", "k", "nat",
-    "vitaRae", "retol", "cartb",
-    "thia", "ribf", "nia", "vitc", "vitd",
-    "chole", "fasat", "fatrn",
-    "srcCd", "srcNm",
-    "servSize", "foodSize",
-    "itemMnftrRptNo", "mfrNm", "imptNm", "distNm",
-    "imptYn", "cooCd", "cooNm",
-    "dataProdCd", "dataProdNm",
-    "crtYmd", "crtrYmd",
-    "instt_code", "instt_nm",
-]
-# =================
-
-
-def init_db(conn: sqlite3.Connection) -> None:
-    """테이블이 없으면 생성"""
-    cols_def = ", ".join(f'"{col}" TEXT' for col in COLUMNS)
-    conn.execute(f"""
-        CREATE TABLE IF NOT EXISTS food_info (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            {cols_def}
-        )
-    """)
-    conn.commit()
-
-
-def fetch_page(page_no: int, num_of_rows: int) -> list[dict]:
-    """API 한 페이지 호출 후 item 목록 반환"""
-    params = {
-        "serviceKey": SERVICE_KEY,
-        "pageNo": page_no,
-        "numOfRows": num_of_rows,
-        "type": "xml",
-    }
-
-    print(f"  [Page {page_no}] 요청 중 (numOfRows={num_of_rows})...", flush=True)
-    try:
-        response = requests.get(BASE_URL, params=params, timeout=30)
-    except requests.RequestException as e:
-        print(f"  HTTP 요청 실패: {e}", flush=True)
-        return []
-
-    if response.status_code != 200:
-        print(f"  HTTP 오류: {response.status_code}", flush=True)
-        return []
-
-    try:
-        root = ET.fromstring(response.content)
-    except ET.ParseError as e:
-        print(f"  XML 파싱 오류: {e}", flush=True)
-        return []
-
-    result_code = root.find(".//resultCode")
-    if result_code is not None and result_code.text != "00":
-        result_msg = root.find(".//resultMsg")
-        msg = result_msg.text if result_msg is not None else "알 수 없음"
-        print(f"  API 오류 [{result_code.text}]: {msg}", flush=True)
-        return []
-
-    items = root.findall(".//item")
-    print(f"  → {len(items)}건 수신", flush=True)
-
-    rows = []
-    for item in items:
-        row = {child.tag: child.text for child in item}
-        rows.append(row)
-    return rows
-
-
-def insert_rows(conn: sqlite3.Connection, rows: list[dict]) -> None:
-    """rows를 DB에 삽입"""
-    placeholders = ", ".join("?" for _ in COLUMNS)
-    col_names = ", ".join(f'"{col}"' for col in COLUMNS)
-    sql = f'INSERT INTO food_info ({col_names}) VALUES ({placeholders})'
-
-    values = [tuple(row.get(col) for col in COLUMNS) for row in rows]
-    conn.executemany(sql, values)
-    conn.commit()
+from api import fetch_page
+from config import DB_FILE, ROWS_PER_PAGE
+from database import init_db, insert_rows
 
 
 def main() -> None:
