@@ -28,6 +28,27 @@ def _bar(char: str = "─") -> str:
     return "  " + char * (W - 4)
 
 
+def _display_width(text: str) -> int:
+    return sum(2 if ord(c) > 127 else 1 for c in text or "")
+
+
+def _trunc_display(text: str, max_w: int) -> str:
+    result = []
+    width = 0
+    for c in text or "":
+        cw = 2 if ord(c) > 127 else 1
+        if width + cw > max_w:
+            break
+        result.append(c)
+        width += cw
+    return "".join(result)
+
+
+def _fixed_display(text: str, max_w: int) -> str:
+    t = _trunc_display(text, max_w)
+    return t + " " * (max_w - _display_width(t))
+
+
 def print_header() -> None:
     title = "🍽️ 식품 데이터 통합 실행기"
     inner = W - 2
@@ -59,17 +80,43 @@ def run_ingredient_menu() -> None:
         print("  ⚠️ 대상 카테고리를 찾지 못했습니다.")
         return
 
+    col_no = 4
+    col_pr = 4
+    col_cat = 38
+    col_total = 8
+    col_attempt = 8
+    col_success = 8
+    col_rate = 7
+
+    header = (
+        f"  {_fixed_display('No', col_no)}  "
+        f"{_fixed_display('우선', col_pr)}  "
+        f"{_fixed_display('대분류 > 중분류', col_cat)}  "
+        f"{_fixed_display('총상품', col_total)}  "
+        f"{_fixed_display('시도완료', col_attempt)}  "
+        f"{_fixed_display('성공수집', col_success)}  "
+        f"{_fixed_display('수집률', col_rate)}"
+    )
     print(_bar())
-    print("  No  우선  대분류 > 중분류                              총상품  시도완료  성공수집  수집률")
+    print(header)
     print(_bar())
     for idx, row in enumerate(categories, 1):
         label = f"{row['lv3']} > {row['lv4']}"
-        label = (label[:34] + "...") if len(label) > 37 else label
-        print(
-            f"  {idx:>3}  {row['priority']:<3}  {label:<37} "
-            f"{row['total_count']:>6,}  {row['attempted_count']:>8,}  "
-            f"{row['success_count']:>8,}  {row['success_rate']:>6.1f}%"
+        label = _trunc_display(label, col_cat)
+        total_txt = f"{row['total_count']:,}"
+        attempted_txt = f"{row['attempted_count']:,}"
+        success_txt = f"{row['success_count']:,}"
+        rate_txt = f"{row['success_rate']:.1f}%"
+        line = (
+            f"  {_fixed_display(str(idx), col_no)}  "
+            f"{_fixed_display(str(row['priority']), col_pr)}  "
+            f"{_fixed_display(label, col_cat)}  "
+            f"{_fixed_display(total_txt, col_total)}  "
+            f"{_fixed_display(attempted_txt, col_attempt)}  "
+            f"{_fixed_display(success_txt, col_success)}  "
+            f"{_fixed_display(rate_txt, col_rate)}"
         )
+        print(line)
     print(_bar())
 
     raw_pick = input("  👉 실행할 번호 선택 (b: 취소): ").strip().lower()
