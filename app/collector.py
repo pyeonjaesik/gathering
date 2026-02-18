@@ -7,9 +7,9 @@ import sqlite3
 import sys
 import time
 
-from api import fetch_pages_parallel, fetch_total_count
-from config import COLUMNS, DB_FILE, MAX_WORKERS, ROWS_PER_PAGE
-from database import (
+from app.api import fetch_pages_parallel, fetch_total_count
+from app.config import COLUMNS, DB_FILE, MAX_WORKERS, ROWS_PER_PAGE
+from app.database import (
     get_completed_pages,
     init_db,
     init_progress_table,

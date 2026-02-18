@@ -17,7 +17,7 @@ from dataclasses import dataclass
 
 import requests
 
-from config import DB_FILE
+from app.config import DB_FILE
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25

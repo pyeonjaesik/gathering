@@ -4,7 +4,7 @@ SQLite DB 초기화 및 데이터 삽입 기능
 
 import sqlite3
 
-from config import COLUMNS
+from app.config import COLUMNS
 
 
 def init_db(conn: sqlite3.Connection) -> None:

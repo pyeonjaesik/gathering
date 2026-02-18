@@ -7,7 +7,7 @@ DB 데이터 조회 뷰어
 import sqlite3
 import sys
 
-from config import DB_FILE
+from app.config import DB_FILE
 
 W = 64  # 출력 너비
 

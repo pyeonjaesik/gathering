@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-from config import BASE_URL, SERVICE_KEY
+from app.config import BASE_URL, SERVICE_KEY
 
 REQUEST_TIMEOUT = 120
 MAX_RETRIES = 6

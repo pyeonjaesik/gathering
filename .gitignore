@@ -27,3 +27,8 @@ build/
 
 # Database
 *.db
+
+# Backup artifacts
+backups/
+*.db.bak*
+dedupe_removed_run_*.csv
