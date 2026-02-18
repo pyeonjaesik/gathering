@@ -3,6 +3,7 @@
 """
 
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -38,19 +39,19 @@ def fetch_page(page_no: int, num_of_rows: int) -> list[dict]:
     }
 
     try:
-        response = requests.get(BASE_URL, params=params, timeout=30)
+        response = requests.get(BASE_URL, params=params, timeout=60)
     except requests.RequestException as e:
-        print(f"  [오류] HTTP 요청 실패: {e}", flush=True)
+        print(f"  [오류] HTTP 요청 실패 (페이지 {page_no}): {e}", flush=True)
         return []
 
     if response.status_code != 200:
-        print(f"  [오류] HTTP {response.status_code} 응답", flush=True)
+        print(f"  [오류] HTTP {response.status_code} 응답 (페이지 {page_no})", flush=True)
         return []
 
     try:
         root = ET.fromstring(response.content)
     except ET.ParseError as e:
-        print(f"  [오류] XML 파싱 실패: {e}", flush=True)
+        print(f"  [오류] XML 파싱 실패 (페이지 {page_no}): {e}", flush=True)
         return []
 
     result_code = root.find(".//resultCode")
@@ -66,3 +67,21 @@ def fetch_page(page_no: int, num_of_rows: int) -> list[dict]:
         row = {child.tag: child.text for child in item}
         rows.append(row)
     return rows
+
+
+def fetch_pages_parallel(
+    page_numbers: list[int],
+    num_of_rows: int,
+    max_workers: int,
+) -> dict[int, list[dict]]:
+    """여러 페이지를 병렬로 가져온다. {page_no: rows} 딕셔너리 반환."""
+    results: dict[int, list[dict]] = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_page = {
+            executor.submit(fetch_page, page_no, num_of_rows): page_no
+            for page_no in page_numbers
+        }
+        for future in as_completed(future_to_page):
+            page_no = future_to_page[future]
+            results[page_no] = future.result()
+    return results

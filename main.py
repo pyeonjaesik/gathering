@@ -2,12 +2,13 @@
 공공데이터 식품가공정보 API → 로컬 SQLite DB 저장
 """
 
+import math
 import sqlite3
 import sys
 import time
 
-from api import fetch_page, fetch_total_count
-from config import COLUMNS, DB_FILE, ROWS_PER_PAGE
+from api import fetch_pages_parallel, fetch_total_count
+from config import COLUMNS, DB_FILE, MAX_WORKERS, ROWS_PER_PAGE
 from database import init_db, insert_rows
 
 # 출력 너비
@@ -126,48 +127,60 @@ def main() -> None:
     # ── 데이터 수집 및 저장 ─────────────────────────────────────
     print_section("[ 2단계 ] 데이터 수집 및 저장")
 
+    total_pages = math.ceil(target_count / ROWS_PER_PAGE)
+    # 한 번에 처리할 페이지 묶음 크기 (MAX_WORKERS 배수로 설정)
+    chunk_size = MAX_WORKERS
+
     saved = 0
-    page_no = 1
+    last_rows: list[dict] = []
     start_time = time.time()
 
-    while saved < target_count:
-        remaining = target_count - saved
-        num_of_rows = min(remaining, ROWS_PER_PAGE)
-        range_start = saved + 1
-        range_end   = saved + num_of_rows
+    print(
+        f"  총 {total_pages:,}페이지 × 최대 {ROWS_PER_PAGE:,}건/페이지"
+        f"  (병렬 {MAX_WORKERS}개 동시 요청)",
+        flush=True,
+    )
+
+    for chunk_start in range(0, total_pages, chunk_size):
+        chunk_end = min(chunk_start + chunk_size, total_pages)
+        # 1-indexed 페이지 번호 목록
+        chunk_page_nos = list(range(chunk_start + 1, chunk_end + 1))
 
         print(
-            f"\n  📡 [Page {page_no}] API 요청 중"
-            f"  ({range_start:,} ~ {range_end:,}번째 데이터)...",
+            f"\n  📡 [{chunk_start + 1}~{chunk_end}페이지]"
+            f" {len(chunk_page_nos)}개 동시 요청 중...",
             flush=True,
         )
 
-        rows = fetch_page(page_no, num_of_rows)
+        chunk_results = fetch_pages_parallel(chunk_page_nos, ROWS_PER_PAGE, MAX_WORKERS)
 
-        if not rows:
-            print("\n  ⚠  데이터가 없거나 오류가 발생했습니다. 수집을 종료합니다.")
-            break
+        # 페이지 순서대로 DB에 삽입
+        chunk_received = 0
+        for page_no in chunk_page_nos:
+            rows = chunk_results.get(page_no, [])
+            if not rows:
+                continue
+            # 목표 초과 방지
+            rows = rows[: target_count - saved]
+            if not rows:
+                break
+            insert_rows(conn, rows)
+            saved += len(rows)
+            chunk_received += len(rows)
+            last_rows = rows
 
-        # 목표 초과 방지
-        rows = rows[: target_count - saved]
-
-        received = len(rows)
-        print(f"  ✔ {received:,}건 수신 완료", flush=True)
-
-        print(f"  💾 DB에 {received:,}건 저장 중...", flush=True)
-        insert_rows(conn, rows)
-        saved += received
-        elapsed_now = time.time() - start_time
-        print(f"  ✔ {received:,}건 저장 완료  (누적: {saved:,}건 / 경과: {format_elapsed(elapsed_now)})")
-
-        print_data_preview(rows)
+        elapsed = time.time() - start_time
+        print(
+            f"  ✔ {chunk_received:,}건 저장 완료"
+            f"  (누적: {saved:,}건 / 경과: {format_elapsed(elapsed)})",
+            flush=True,
+        )
         print_progress_bar(saved, target_count)
 
-        if received < num_of_rows:
-            # 마지막 페이지
+        if saved >= target_count:
             break
 
-        page_no += 1
+    print_data_preview(last_rows)
 
     conn.close()
     elapsed_total = time.time() - start_time
