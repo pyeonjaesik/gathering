@@ -42,6 +42,30 @@ def _bar(char: str = "─") -> str:
     return "  " + char * (W - 4)
 
 
+def _category_parts(row: dict) -> list[str]:
+    """카테고리 레벨을 순서대로 수집하고 중복을 제거한다."""
+    keys = ("foodLv3Nm", "foodLv4Nm", "foodLv5Nm", "foodLv6Nm", "foodLv7Nm")
+    parts: list[str] = []
+    seen: set[str] = set()
+    for key in keys:
+        value = (row.get(key) or "").strip()
+        if not value or value in seen:
+            continue
+        parts.append(value)
+        seen.add(value)
+    return parts
+
+
+def _category_text(row: dict, full: bool = False) -> str:
+    """카테고리를 사용자 친화적인 텍스트로 변환한다."""
+    parts = _category_parts(row)
+    if not parts:
+        return "분류 정보 없음"
+    if full or len(parts) == 1:
+        return " > ".join(parts)
+    return f"{parts[-1]} ({parts[0]})"
+
+
 # ── 화면 출력 ────────────────────────────────────────────────────
 
 
@@ -74,6 +98,10 @@ def print_db_summary(conn: sqlite3.Connection) -> None:
         "SELECT COUNT(DISTINCT itemMnftrRptNo) FROM food_info "
         "WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''"
     ).fetchone()[0]
+    missing_rpt = conn.execute(
+        "SELECT COUNT(*) FROM food_info "
+        "WHERE itemMnftrRptNo IS NULL OR itemMnftrRptNo = ''"
+    ).fetchone()[0]
     unique_cat = conn.execute(
         "SELECT COUNT(DISTINCT foodLv3Nm) FROM food_info "
         "WHERE foodLv3Nm IS NOT NULL AND foodLv3Nm != ''"
@@ -87,7 +115,8 @@ def print_db_summary(conn: sqlite3.Connection) -> None:
 
     print_section("[ DB 현황 ]")
     print(f"  전체 레코드    : {total:,}건")
-    print(f"  품목 보고 번호 : {unique_rpt:,}개 (고유값)")
+    print(f"  품목 보고 번호 : {unique_rpt:,}개 (고유값, 값 있는 데이터 기준)")
+    print(f"  번호 없음      : {missing_rpt:,}건")
     print(f"  식품 분류      : {unique_cat:,}개")
     if min_date and max_date:
         print(f"  등록일 범위    : {min_date} ~ {max_date}")
@@ -109,14 +138,15 @@ def print_food_card(row: dict, index: int | None = None, detail: bool = False) -
     rpt_no  = _trunc(row.get("itemMnftrRptNo") or "—", 40)
     food_nm = _trunc(row.get("foodNm")  or "—", 36)
     food_cd = _trunc(row.get("foodCd")  or "—", 36)
-    cat     = _trunc(row.get("foodLv4Nm") or row.get("foodLv3Nm") or "—", 36)
+    cat     = _trunc(_category_text(row), 36)
+    cat_all = _trunc(_category_text(row, full=True), 50)
     mfr     = _trunc(row.get("mfrNm")   or "—", 36)
     impt    = "수입" if row.get("imptYn") == "Y" else "국산"
 
     print(f"  │  품목 보고 번호 : {rpt_no}")
     print(f"  │  식품명          : {food_nm}")
     print(f"  │  식품 코드       : {food_cd}")
-    print(f"  │  분류            : {cat}")
+    print(f"  │  카테고리        : {cat}")
     print(f"  │  제조사          : {mfr}")
     print(f"  │  구분            : {impt}")
 
@@ -142,6 +172,7 @@ def print_food_card(row: dict, index: int | None = None, detail: bool = False) -
         print(f"  │    나트륨        : {nat} mg")
         print("  │")
         print("  │  ── 추가 정보 ──")
+        print(f"  │    카테고리(전체): {cat_all}")
         print(f"  │    원산지        : {coo}")
         if impt == "수입":
             print(f"  │    수입사        : {impt_nm}")
@@ -243,14 +274,14 @@ def list_all(conn: sqlite3.Connection) -> None:
         h_no   = _fixed("번호", 4)
         h_rpt  = _fixed("품목 보고 번호", 22)
         h_nm   = _fixed("식품명", 20)
-        h_cat  = _fixed("분류", 14)
+        h_cat  = _fixed("카테고리", 20)
         print(f"  {h_no}  {h_rpt}  {h_nm}  {h_cat}")
-        print(f"  {'─'*4}  {'─'*22}  {'─'*20}  {'─'*14}")
+        print(f"  {'─'*4}  {'─'*22}  {'─'*20}  {'─'*20}")
 
         for i, row in enumerate(rows, start):
             rpt = _fixed(row.get("itemMnftrRptNo") or "—", 22)
             nm  = _fixed(row.get("foodNm") or "—", 20)
-            cat = _fixed(row.get("foodLv4Nm") or row.get("foodLv3Nm") or "—", 14)
+            cat = _fixed(_category_text(row), 20)
             print(f"  {i:>4}  {rpt}  {nm}  {cat}")
 
         # 내비게이션
@@ -338,6 +369,60 @@ def show_stats(conn: sqlite3.Connection) -> None:
             print(f"    {date}  {nm}  {rpt}")
 
 
+def show_all_categories(conn: sqlite3.Connection) -> None:
+    """카테고리 계층 중 대분류/중분류만 상품 수와 함께 출력."""
+    print_section("[ 전체 카테고리 보기 ]")
+
+    rows = conn.execute("""
+        SELECT
+            COALESCE(NULLIF(foodLv3Nm, ''), '미분류') AS lv3,
+            NULLIF(foodLv4Nm, '') AS lv4,
+            COUNT(*) AS cnt
+        FROM food_info
+        GROUP BY lv3, lv4
+        ORDER BY lv3, lv4
+    """).fetchall()
+
+    if not rows:
+        print("  저장된 데이터가 없습니다.")
+        return
+
+    grouped: dict[str, dict[str, object]] = {}
+    for lv3, lv4, cnt in rows:
+        if lv3 not in grouped:
+            grouped[lv3] = {"total": 0, "children": {}}
+        grouped[lv3]["total"] = int(grouped[lv3]["total"]) + cnt
+        mid = lv4 or "중분류 미지정"
+        children = grouped[lv3]["children"]
+        if not isinstance(children, dict):
+            children = {}
+            grouped[lv3]["children"] = children
+        children[mid] = int(children.get(mid, 0)) + cnt
+
+    top_category_count = len(grouped)
+    total_products = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
+    print(f"  대분류 수 : {top_category_count:,}개")
+    print(f"  전체 상품 : {total_products:,}건")
+    print()
+
+    print("  ■ 대분류 / 중분류")
+    major_items = sorted(
+        grouped.items(),
+        key=lambda x: (-int(x[1]["total"]), x[0]),
+    )
+    for major, data in major_items:
+        mid_map = data["children"]
+        if not isinstance(mid_map, dict):
+            mid_map = {}
+        print(
+            f"  - 대분류: {major}  "
+            f"(중분류 {len(mid_map):,}개 / 상품 {int(data['total']):,}건)"
+        )
+        mid_items = sorted(mid_map.items(), key=lambda x: (-x[1], x[0]))
+        for mid, cnt in mid_items:
+            print(f"      · 중분류: {mid}  (상품 {cnt:,}건)")
+
+
 # ── 진입점 ───────────────────────────────────────────────────────
 
 
@@ -359,6 +444,7 @@ def main() -> None:
         ("2", "식품명으로 검색",                search_by_name),
         ("3", "전체 목록 보기",                 list_all),
         ("4", "통계 보기",                       show_stats),
+        ("5", "전체 카테고리 보기",              show_all_categories),
         ("q", "종료",                            None),
     ]
     menu_map = {k: fn for k, _, fn in MENU}
