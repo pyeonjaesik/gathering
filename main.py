@@ -6,7 +6,7 @@ import sqlite3
 import sys
 import time
 
-from api import fetch_page
+from api import fetch_page, fetch_total_count
 from config import COLUMNS, DB_FILE, ROWS_PER_PAGE
 from database import init_db, insert_rows
 
@@ -78,25 +78,41 @@ def format_elapsed(seconds: float) -> str:
 
 def main() -> None:
     # ── 사용자 입력 ─────────────────────────────────────────────
+    raw = ""
     if len(sys.argv) >= 2:
-        try:
-            target_count = int(sys.argv[1])
-        except ValueError:
-            print("오류: 숫자를 입력해주세요. 예) python main.py 500")
+        raw = sys.argv[1].strip()
+    else:
+        raw = input("저장할 데이터 개수를 입력하세요 (0 또는 '전체' = 전체 수집): ").strip()
+
+    fetch_all = raw in ("0", "전체", "all")
+
+    if fetch_all:
+        # 전체 수집 모드: API에서 totalCount를 먼저 조회
+        print_header()
+        print("  전체 수집 모드 — API에서 전체 건수를 조회합니다...")
+        target_count = fetch_total_count()
+        if target_count <= 0:
+            print("  오류: 전체 건수를 가져오지 못했습니다. API 키와 네트워크를 확인해주세요.")
             sys.exit(1)
+        print(f"  API 전체 데이터 : {target_count:,}건")
+        answer = input("  전체를 수집하시겠습니까? [y/N] : ").strip().lower()
+        if answer != "y":
+            print("  수집을 취소했습니다.")
+            sys.exit(0)
     else:
         try:
-            target_count = int(input("저장할 데이터 개수를 입력하세요: ").strip())
+            target_count = int(raw)
         except ValueError:
-            print("오류: 올바른 숫자를 입력해주세요.")
+            print("오류: 숫자를 입력해주세요. 예) python main.py 500  /  python main.py 0")
             sys.exit(1)
 
-    if target_count <= 0:
-        print("오류: 1 이상의 숫자를 입력해주세요.")
-        sys.exit(1)
+        if target_count <= 0:
+            print("오류: 1 이상의 숫자를 입력하거나, 전체 수집은 0을 입력하세요.")
+            sys.exit(1)
 
     # ── 헤더 출력 ───────────────────────────────────────────────
-    print_header()
+    if not fetch_all:
+        print_header()
     print(f"  목표   : {target_count:,}건")
     print(f"  저장소 : {DB_FILE}  (테이블: food_info)")
 
