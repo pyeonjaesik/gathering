@@ -66,6 +66,19 @@ def _category_text(row: dict, full: bool = False) -> str:
     return f"{parts[-1]} ({parts[0]})"
 
 
+def _category_level_text(row: dict, level: int) -> str:
+    """대/중/소 분류를 '이름 (코드)' 형식으로 반환."""
+    name_key = f"foodLv{level}Nm"
+    code_key = f"foodLv{level}Cd"
+    name = (row.get(name_key) or "").strip()
+    code = (row.get(code_key) or "").strip()
+    if not name and not code:
+        return "—"
+    if name and code:
+        return f"{name} ({code})"
+    return name or code
+
+
 def _table_exists(conn: sqlite3.Connection, table_name: str) -> bool:
     row = conn.execute(
         "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
@@ -148,6 +161,9 @@ def print_food_card(row: dict, index: int | None = None, detail: bool = False) -
     food_cd = _trunc(row.get("foodCd")  or "—", 36)
     cat     = _trunc(_category_text(row), 36)
     cat_all = _trunc(_category_text(row, full=True), 50)
+    cat_lv3 = _trunc(_category_level_text(row, 3), 42)
+    cat_lv4 = _trunc(_category_level_text(row, 4), 42)
+    cat_lv5 = _trunc(_category_level_text(row, 5), 42)
     mfr     = _trunc(row.get("mfrNm")   or "—", 36)
     impt    = "수입" if row.get("imptYn") == "Y" else "국산"
 
@@ -155,6 +171,9 @@ def print_food_card(row: dict, index: int | None = None, detail: bool = False) -
     print(f"  │  식품명          : {food_nm}")
     print(f"  │  식품 코드       : {food_cd}")
     print(f"  │  카테고리        : {cat}")
+    print(f"  │  대분류(코드)    : {cat_lv3}")
+    print(f"  │  중분류(코드)    : {cat_lv4}")
+    print(f"  │  소분류(코드)    : {cat_lv5}")
     print(f"  │  제조사          : {mfr}")
     print(f"  │  구분            : {impt}")
 

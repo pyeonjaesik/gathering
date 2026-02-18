@@ -32,6 +32,71 @@ class Product:
     mfr_name: str
 
 
+def _priority_score(lv3: str, lv4: str) -> int:
+    """대사/저당/단백질 관심군 기준 중분류 우선순위 점수."""
+    s = 0
+    # 대분류 기본 점수
+    if lv3 == "특수영양식품":
+        s += 10
+    elif lv3 == "음료류":
+        s += 9
+    elif lv3 == "즉석식품류":
+        s += 8
+    elif lv3 == "유가공품류":
+        s += 8
+    elif lv3 == "식육가공품 및 포장육":
+        s += 7
+    elif lv3 == "조미식품":
+        s += 8
+    elif lv3 == "농산가공식품류":
+        s += 6
+    elif lv3 == "면류":
+        s += 5
+    elif lv3 == "두부류 또는 묵류":
+        s += 6
+    elif lv3 in ("과자류·빵류 또는 떡류", "코코아가공품류 또는 초콜릿류", "빙과류", "당류"):
+        s += 3
+    elif lv3 in ("절임류 또는 조림류", "수산가공식품류", "장류", "식용유지류", "기타식품류"):
+        s += 4
+    elif lv3 in ("특수의료용도식품", "알가공품류", "동물성가공식품류"):
+        s += 4
+    elif lv3 in ("주류", "벌꿀 및 화분가공 식품류"):
+        s += 1
+
+    # 중분류 가산
+    if "체중조절" in lv4:
+        s += 8
+    if lv4 in ("두유", "식육간편조리", "샐러드", "도시락", "죽", "시리얼바/에너지바/영양바"):
+        s += 6
+    if lv4 in ("발효유", "농후발효유", "가공우유", "우유", "유당분해우유", "치즈"):
+        s += 4
+    if lv4 in ("액상음료", "농축음료/베이스", "과·채음료", "과·채주스", "액상차", "액상커피"):
+        s += 5
+    if lv4 in ("기타 소스류", "드레싱", "마요네즈", "토마토케첩", "복합조미식품", "분말스프"):
+        s += 8
+    if lv4 == "간장":
+        s += 10
+    if "콤부차" in lv4:
+        s += 10
+
+    # 후순위 감점
+    if lv4 in ("사탕", "젤리", "비스킷/쿠키/크래커", "초콜릿", "탄산음료", "아이스크림", "빙과", "주류"):
+        s -= 3
+    return s
+
+
+def _priority_label(score: int) -> str:
+    if score >= 19:
+        return "P1"
+    if score >= 16:
+        return "P2"
+    if score >= 12:
+        return "P3"
+    if score >= 8:
+        return "P4"
+    return "P5"
+
+
 def _bar(char: str = "─", width: int = 72) -> str:
     return "  " + char * (width - 4)
 
@@ -361,6 +426,91 @@ def fetch_target_products(conn: sqlite3.Connection, limit: int | None) -> list[P
     return [Product(item_rpt_no=r[0], food_name=r[1] or "", mfr_name=r[2] or "") for r in rows]
 
 
+def fetch_target_products_by_category(
+    conn: sqlite3.Connection,
+    lv3: str,
+    lv4: str,
+    limit: int | None,
+) -> list[Product]:
+    """선택한 대/중분류에서 아직 시도/성공되지 않은 대상만 조회."""
+    sql = """
+        SELECT fi.itemMnftrRptNo, fi.foodNm, COALESCE(fi.mfrNm, '')
+        FROM food_info fi
+        WHERE fi.itemMnftrRptNo IS NOT NULL
+          AND fi.itemMnftrRptNo != ''
+          AND fi.foodLv3Nm = ?
+          AND fi.foodLv4Nm = ?
+          AND NOT EXISTS (
+              SELECT 1 FROM ingredient_info ii
+              WHERE ii.itemMnftrRptNo = fi.itemMnftrRptNo
+          )
+          AND NOT EXISTS (
+              SELECT 1 FROM ingredient_attempts ia
+              WHERE ia.query_itemMnftrRptNo = fi.itemMnftrRptNo
+          )
+        ORDER BY fi.id
+    """
+    params: list = [lv3, lv4]
+    if limit is not None and limit > 0:
+        sql += " LIMIT ?"
+        params.append(limit)
+    rows = conn.execute(sql, tuple(params)).fetchall()
+    return [Product(item_rpt_no=r[0], food_name=r[1] or "", mfr_name=r[2] or "") for r in rows]
+
+
+def get_priority_subcategories(conn: sqlite3.Connection) -> list[dict]:
+    """중분류별 우선순위/진행현황 목록."""
+    rows = conn.execute(
+        """
+        WITH base AS (
+            SELECT DISTINCT
+                fi.itemMnftrRptNo AS rpt_no,
+                COALESCE(NULLIF(TRIM(fi.foodLv3Nm), ''), '미분류') AS lv3,
+                COALESCE(NULLIF(TRIM(fi.foodLv4Nm), ''), '중분류 미지정') AS lv4
+            FROM food_info fi
+            WHERE fi.itemMnftrRptNo IS NOT NULL
+              AND fi.itemMnftrRptNo != ''
+        )
+        SELECT
+            b.lv3,
+            b.lv4,
+            COUNT(*) AS total_count,
+            SUM(CASE WHEN ia.query_itemMnftrRptNo IS NOT NULL THEN 1 ELSE 0 END) AS attempted_count,
+            SUM(CASE WHEN ii.itemMnftrRptNo IS NOT NULL THEN 1 ELSE 0 END) AS success_count
+        FROM base b
+        LEFT JOIN ingredient_attempts ia ON ia.query_itemMnftrRptNo = b.rpt_no
+        LEFT JOIN ingredient_info ii ON ii.itemMnftrRptNo = b.rpt_no
+        GROUP BY b.lv3, b.lv4
+        """
+    ).fetchall()
+
+    result: list[dict] = []
+    for lv3, lv4, total_count, attempted_count, success_count in rows:
+        score = _priority_score(lv3, lv4)
+        success_rate = (success_count / total_count * 100) if total_count else 0.0
+        result.append(
+            {
+                "lv3": lv3,
+                "lv4": lv4,
+                "score": score,
+                "priority": _priority_label(score),
+                "total_count": total_count,
+                "attempted_count": attempted_count,
+                "success_count": success_count,
+                "success_rate": success_rate,
+            }
+        )
+    result.sort(
+        key=lambda x: (
+            -x["score"],
+            -x["total_count"],
+            x["lv3"],
+            x["lv4"],
+        )
+    )
+    return result
+
+
 def process_product(
     conn: sqlite3.Connection,
     product: Product,
@@ -535,6 +685,8 @@ def run_enricher(
     seed: int = 7,
     db_path: str = DB_FILE,
     quiet: bool = False,
+    lv3: str | None = None,
+    lv4: str | None = None,
 ) -> None:
     random.seed(seed)
 
@@ -546,7 +698,10 @@ def run_enricher(
     init_ingredient_tables(conn)
     report_pool = load_report_number_pool(conn)
 
-    targets = fetch_target_products(conn, limit=limit)
+    if lv3 is not None and lv4 is not None:
+        targets = fetch_target_products_by_category(conn, lv3=lv3, lv4=lv4, limit=limit)
+    else:
+        targets = fetch_target_products(conn, limit=limit)
     if not targets:
         print("처리할 대상이 없습니다. (이미 ingredient_info/ingredient_attempts에 존재)")
         summarize(conn)
@@ -556,6 +711,8 @@ def run_enricher(
     print("\n╔══════════════════════════════════════════════════════════════════╗")
     print("║                원재료 수집 실행 (URL 분석 모드)                ║")
     print("╚══════════════════════════════════════════════════════════════════╝")
+    if lv3 is not None and lv4 is not None:
+        print(f"  선택 카테고리: {lv3} > {lv4}")
     print(f"  처리 대상: {len(targets):,}건")
     print(f"  이미지 상한: 상품당 {TOP_IMAGES}개")
 

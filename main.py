@@ -19,6 +19,7 @@ from dedupe_tools import (
     run_dedupe,
 )
 from ingredient_enricher import run_enricher
+from ingredient_enricher import get_priority_subcategories
 
 W = 68
 
@@ -45,7 +46,47 @@ def run_data_viewer() -> None:
 
 
 def run_ingredient_menu() -> None:
-    print("\n  🧪 [원재료명 추출 설정]")
+    if not os.getenv("SERPAPI_KEY"):
+        print("\n  ❌ 오류: SERPAPI_KEY 환경변수가 필요합니다.")
+        print('  💡 예) export SERPAPI_KEY="YOUR_KEY"')
+        return
+
+    print("\n  🧪 [원재료명 추출 대상 선택]")
+    with sqlite3.connect(DB_FILE) as conn:
+        categories = get_priority_subcategories(conn)
+
+    if not categories:
+        print("  ⚠️ 대상 카테고리를 찾지 못했습니다.")
+        return
+
+    print(_bar())
+    print("  No  우선  대분류 > 중분류                              총상품  시도완료  성공수집  수집률")
+    print(_bar())
+    for idx, row in enumerate(categories, 1):
+        label = f"{row['lv3']} > {row['lv4']}"
+        label = (label[:34] + "...") if len(label) > 37 else label
+        print(
+            f"  {idx:>3}  {row['priority']:<3}  {label:<37} "
+            f"{row['total_count']:>6,}  {row['attempted_count']:>8,}  "
+            f"{row['success_count']:>8,}  {row['success_rate']:>6.1f}%"
+        )
+    print(_bar())
+
+    raw_pick = input("  👉 실행할 번호 선택 (b: 취소): ").strip().lower()
+    if raw_pick == "b":
+        print("  ↩️ 원재료 추출을 취소했습니다.")
+        return
+    if not raw_pick.isdigit():
+        print("  ⚠️ 숫자로 입력해주세요.")
+        return
+
+    pick = int(raw_pick)
+    if pick < 1 or pick > len(categories):
+        print("  ⚠️ 범위를 벗어난 번호입니다.")
+        return
+
+    selected = categories[pick - 1]
+    print("\n  ⚙️ [실행 옵션]")
     raw_limit = input("  🔹 처리할 최대 상품 수 [기본 20]: ").strip()
     raw_seed = input("  🔹 랜덤 시드(모의 분석용) [기본 7]: ").strip()
     raw_quiet = input("  🔹 이미지별 상세 로그 생략? [y/N]: ").strip().lower()
@@ -65,13 +106,21 @@ def run_ingredient_menu() -> None:
 
     quiet = raw_quiet == "y"
 
-    if not os.getenv("SERPAPI_KEY"):
-        print("\n  ❌ 오류: SERPAPI_KEY 환경변수가 필요합니다.")
-        print('  💡 예) export SERPAPI_KEY="YOUR_KEY"')
-        return
-
-    print("\n  🚀 [실행] 원재료명 추출 파이프라인을 시작합니다.\n")
-    run_enricher(limit=limit, seed=seed, quiet=quiet)
+    print("\n  🚀 [실행] 선택한 중분류의 원재료 수집을 시작합니다.")
+    print(f"  🎯 대상: {selected['lv3']} > {selected['lv4']}")
+    print(
+        f"  📦 현황: 총 {selected['total_count']:,} / "
+        f"시도 {selected['attempted_count']:,} / 성공 {selected['success_count']:,} "
+        f"({selected['success_rate']:.1f}%)"
+    )
+    print()
+    run_enricher(
+        limit=limit,
+        seed=seed,
+        quiet=quiet,
+        lv3=selected["lv3"],
+        lv4=selected["lv4"],
+    )
 
 
 def run_public_api_collection() -> None:
