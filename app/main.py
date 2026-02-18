@@ -133,22 +133,22 @@ def run_ingredient_menu() -> None:
 
     selected = categories[pick - 1]
     print("\n  ⚙️ [실행 옵션]")
-    raw_limit = input("  🔹 처리할 최대 상품 수 [기본 20]: ").strip()
-    raw_seed = input("  🔹 랜덤 시드(모의 분석용) [기본 7]: ").strip()
+    raw_limit = input("  🔹 처리 수 입력 (0 또는 '전체' = 전체, 숫자 = 일부) [기본 20]: ").strip()
     raw_quiet = input("  🔹 이미지별 상세 로그 생략? [y/N]: ").strip().lower()
 
     limit = 20
-    seed = 7
     if raw_limit:
-        try:
-            limit = int(raw_limit)
-        except ValueError:
-            print("  ⚠️ 잘못된 limit 입력입니다. 기본값 20으로 진행합니다.")
-    if raw_seed:
-        try:
-            seed = int(raw_seed)
-        except ValueError:
-            print("  ⚠️ 잘못된 seed 입력입니다. 기본값 7로 진행합니다.")
+        normalized = raw_limit.strip().lower()
+        if normalized in ("전체", "all"):
+            limit = 0
+        else:
+            try:
+                limit = int(raw_limit)
+                if limit < 0:
+                    print("  ⚠️ 음수는 사용할 수 없습니다. 기본값 20으로 진행합니다.")
+                    limit = 20
+            except ValueError:
+                print("  ⚠️ 잘못된 limit 입력입니다. 기본값 20으로 진행합니다.")
 
     quiet = raw_quiet == "y"
 
@@ -159,10 +159,13 @@ def run_ingredient_menu() -> None:
         f"시도 {selected['attempted_count']:,} / 성공 {selected['success_count']:,} "
         f"({selected['success_rate']:.1f}%)"
     )
+    if limit == 0:
+        print("  🧭 실행 범위: 전체 대상 처리")
+    else:
+        print(f"  🧭 실행 범위: 최대 {limit:,}건 처리")
     print()
     run_enricher(
         limit=limit,
-        seed=seed,
         quiet=quiet,
         lv3=selected["lv3"],
         lv4=selected["lv4"],

@@ -1,8 +1,7 @@
 """
-원재료명 수집 파이프라인 (SerpAPI 이미지 검색 + analyze(url) 결과 저장)
+원재료명 수집 파이프라인 (SerpAPI 이미지 검색 + Gemini analyze(url) 결과 저장)
 
 - 이미지는 파일로 저장하지 않고 URL만 사용한다.
-- analyze(url)은 현재 모의 함수(mock_analyze)로 동작한다.
 - 결과는 모두 DB에 영구 저장한다. (캐시 아님)
 """
 
@@ -10,7 +9,6 @@ import argparse
 import hashlib
 import json
 import os
-import random
 import sqlite3
 import time
 from dataclasses import dataclass
@@ -18,6 +16,7 @@ from dataclasses import dataclass
 import requests
 
 from app.config import DB_FILE
+from app.ingredient_analyzer import URLIngredientAnalyzer
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25
@@ -233,55 +232,6 @@ def search_image_urls(query: str, api_key: str, top_k: int = TOP_IMAGES) -> list
             break
 
     raise RuntimeError(f"SerpAPI 검색 실패: {last_error}")
-
-
-def load_report_number_pool(conn: sqlite3.Connection) -> list[str]:
-    rows = conn.execute(
-        """
-        SELECT DISTINCT itemMnftrRptNo
-        FROM food_info
-        WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''
-        """
-    ).fetchall()
-    return [row[0] for row in rows]
-
-
-def mock_analyze(image_url: str, target_item_rpt_no: str, report_pool: list[str]) -> dict:
-    """
-    친구가 만든 analyze(url) 대신 사용하는 모의 함수.
-    경우의 수:
-    - 품목보고번호 미검출
-    - 타깃 품목보고번호 검출
-    - 다른 품목보고번호 검출
-    """
-    _ = image_url
-    roll = random.random()
-
-    if roll < 0.35:
-        return {
-            "itemMnftrRptNo": None,
-            "ingredients_text": None,
-            "note": "번호 미검출",
-        }
-    if roll < 0.65:
-        return {
-            "itemMnftrRptNo": target_item_rpt_no,
-            "ingredients_text": "정제수, 설탕, 식물성유지, 혼합제제(모의데이터)",
-            "note": "타깃 번호 검출",
-        }
-
-    other = target_item_rpt_no
-    if report_pool:
-        for _ in range(10):
-            candidate = random.choice(report_pool)
-            if candidate != target_item_rpt_no:
-                other = candidate
-                break
-    return {
-        "itemMnftrRptNo": other,
-        "ingredients_text": "밀가루, 팜유, 포도당, 합성향료(모의데이터)",
-        "note": "다른 번호 검출",
-    }
 
 
 def upsert_ingredient_info(
@@ -597,7 +547,7 @@ def process_product(
     conn: sqlite3.Connection,
     product: Product,
     api_key: str,
-    report_pool: list[str],
+    analyzer: URLIngredientAnalyzer,
     verbose: bool = True,
 ) -> dict:
     query = build_search_query(product)
@@ -645,11 +595,18 @@ def process_product(
         cache_hit = False
         analysis = get_cached_image_analysis(conn, image_url)
         if analysis is None:
-            analysis = mock_analyze(
-                image_url=image_url,
-                target_item_rpt_no=product.item_rpt_no,
-                report_pool=report_pool,
-            )
+            try:
+                analysis = analyzer.analyze(
+                    image_url=image_url,
+                    target_item_rpt_no=product.item_rpt_no,
+                )
+            except Exception as exc:  # pylint: disable=broad-except
+                analysis = {
+                    "itemMnftrRptNo": None,
+                    "ingredients_text": None,
+                    "note": f"analysis_error:{type(exc).__name__}",
+                    "error": str(exc),
+                }
             upsert_image_analysis_cache(conn, image_url, analysis)
         else:
             cache_hit = True
@@ -687,7 +644,7 @@ def process_product(
             cache_tag = "CACHE" if cache_hit else "ANALYZE"
             print(
                 f"    [{rank:02d}/{len(image_urls):02d}] {cache_tag} {result_tag} "
-                f"번호={extracted_text} | url={_short(image_url, 84)}"
+                f"번호={extracted_text} | url={image_url}"
             )
             if extracted and ingredients:
                 print(
@@ -711,7 +668,7 @@ def process_product(
         )
         conn.commit()
         if verbose:
-            print(f"  [완료] 매칭 성공 | source_url={_short(matched_image_url, 96)}")
+            print(f"  [완료] 매칭 성공 | source_url={matched_image_url}")
         return {
             "status": "matched",
             "images_requested": len(image_urls),
@@ -771,21 +728,21 @@ def summarize(conn: sqlite3.Connection) -> None:
 
 def run_enricher(
     limit: int = 20,
-    seed: int = 7,
     db_path: str = DB_FILE,
     quiet: bool = False,
     lv3: str | None = None,
     lv4: str | None = None,
 ) -> None:
-    random.seed(seed)
-
     api_key = os.getenv("SERPAPI_KEY")
     if not api_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
+    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    if not gemini_api_key:
+        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
 
     conn = sqlite3.connect(db_path)
     init_ingredient_tables(conn)
-    report_pool = load_report_number_pool(conn)
+    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
 
     if lv3 is not None and lv4 is not None:
         targets = fetch_target_products_by_category(conn, lv3=lv3, lv4=lv4, limit=limit)
@@ -813,7 +770,7 @@ def run_enricher(
             conn,
             product,
             api_key=api_key,
-            report_pool=report_pool,
+            analyzer=analyzer,
             verbose=not quiet,
         )
         stats[result["status"]] += 1
@@ -834,7 +791,7 @@ def run_enricher(
             f"| 저장={result['saved_records']}"
         )
         if result["matched_image_url"]:
-            print(f"  매칭 출처 URL: {_short(result['matched_image_url'], 100)}")
+            print(f"  매칭 출처 URL: {result['matched_image_url']}")
 
     elapsed = time.time() - started
     print(f"\n실행 완료: {elapsed:.1f}초")
@@ -846,13 +803,12 @@ def run_enricher(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="원재료명 수집 파이프라인 (모의 analyze 사용)")
+    parser = argparse.ArgumentParser(description="원재료명 수집 파이프라인 (Gemini URL 분석)")
     parser.add_argument("--limit", type=int, default=20, help="이번 실행에서 처리할 최대 상품 수")
-    parser.add_argument("--seed", type=int, default=7, help="모의 analyze 랜덤 시드")
     parser.add_argument("--db", type=str, default=DB_FILE, help="SQLite DB 파일 경로")
     parser.add_argument("--quiet", action="store_true", help="이미지별 상세 로그 출력 생략")
     args = parser.parse_args()
-    run_enricher(limit=args.limit, seed=args.seed, db_path=args.db, quiet=args.quiet)
+    run_enricher(limit=args.limit, db_path=args.db, quiet=args.quiet)
 
 
 if __name__ == "__main__":

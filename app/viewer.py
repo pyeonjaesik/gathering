@@ -6,6 +6,7 @@ DB 데이터 조회 뷰어
 
 import sqlite3
 import sys
+import webbrowser
 
 from app.config import DB_FILE
 
@@ -644,12 +645,40 @@ def show_ingredient_detail(conn: sqlite3.Connection) -> None:
     if not logs:
         print("    로그 없음")
     else:
+        openable_urls: list[str] = []
         for rank, url, extracted, matched_target, ingredients, created_at in logs:
             mark = "MATCH" if matched_target == 1 else "NO-MATCH"
             print(f"    - [{rank}] {mark} | {created_at} | 추출번호: {extracted or '미검출'}")
+            if url:
+                openable_urls.append(url)
+                print(f"      열기번호: {len(openable_urls)}")
+            else:
+                print("      열기번호: -")
             print(f"      url: {url or '—'}")
             if ingredients:
                 print(f"      원재료: {_trunc(ingredients, 76)}")
+
+        if openable_urls:
+            print("\n  ■ URL 바로 열기")
+            raw_open = input(
+                "    열 번호 입력 (예: 1 또는 1,3 / Enter=건너뛰기): "
+            ).strip()
+            if raw_open:
+                picks: list[int] = []
+                for token in raw_open.split(","):
+                    token = token.strip()
+                    if token.isdigit():
+                        idx = int(token)
+                        if 1 <= idx <= len(openable_urls):
+                            picks.append(idx)
+                if not picks:
+                    print("    ⚠️ 유효한 번호가 없습니다.")
+                else:
+                    for idx in picks:
+                        url = openable_urls[idx - 1]
+                        ok = webbrowser.open_new_tab(url)
+                        state = "OK" if ok else "요청됨(브라우저 확인)"
+                        print(f"    - [{idx}] {state}: {url}")
 
 
 # ── 진입점 ───────────────────────────────────────────────────────
