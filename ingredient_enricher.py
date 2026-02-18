@@ -32,6 +32,25 @@ class Product:
     mfr_name: str
 
 
+def _bar(char: str = "─", width: int = 72) -> str:
+    return "  " + char * (width - 4)
+
+
+def _progress_bar(done: int, total: int, width: int = 28) -> str:
+    if total <= 0:
+        total = 1
+    ratio = min(1.0, max(0.0, done / total))
+    filled = int(width * ratio)
+    return "█" * filled + "░" * (width - filled)
+
+
+def _short(text: str | None, max_len: int = 72) -> str:
+    value = (text or "").strip()
+    if len(value) <= max_len:
+        return value
+    return value[: max_len - 3] + "..."
+
+
 def init_ingredient_tables(conn: sqlite3.Connection) -> None:
     conn.execute(
         """
@@ -347,10 +366,17 @@ def process_product(
     product: Product,
     api_key: str,
     report_pool: list[str],
-) -> str:
+    verbose: bool = True,
+) -> dict:
     query = build_search_query(product)
     upsert_attempt(conn, product, status="in_progress", query=query)
     conn.commit()
+
+    if verbose:
+        print(_bar())
+        print(f"  상품: {product.food_name}")
+        print(f"  품목보고번호: {product.item_rpt_no}")
+        print(f"  검색어: {query}")
 
     try:
         image_urls = search_image_urls(query, api_key=api_key, top_k=TOP_IMAGES)
@@ -363,14 +389,32 @@ def process_product(
             error_message=str(exc)[:400],
         )
         conn.commit()
-        return "failed"
+        if verbose:
+            print(f"  [실패] SerpAPI 호출 실패: {exc}")
+        return {
+            "status": "failed",
+            "images_requested": 0,
+            "images_analyzed": 0,
+            "matched_image_url": None,
+            "saved_records": 0,
+            "query": query,
+        }
 
     matched = False
     analyzed_count = 0
+    saved_records = 0
+    matched_image_url = None
+
+    if verbose:
+        print(f"  이미지 후보: {len(image_urls)}개")
 
     for rank, image_url in enumerate(image_urls, start=1):
         analyzed_count += 1
-        analysis = mock_analyze(image_url=image_url, target_item_rpt_no=product.item_rpt_no, report_pool=report_pool)
+        analysis = mock_analyze(
+            image_url=image_url,
+            target_item_rpt_no=product.item_rpt_no,
+            report_pool=report_pool,
+        )
         extracted = analysis.get("itemMnftrRptNo")
         ingredients = analysis.get("ingredients_text")
         is_match = bool(extracted and extracted == product.item_rpt_no)
@@ -395,11 +439,25 @@ def process_product(
                 query=query,
                 product=product,
             )
+            saved_records += 1
 
         conn.commit()
 
+        if verbose:
+            extracted_text = extracted or "미검출"
+            result_tag = "MATCH" if is_match else "NO-MATCH"
+            print(
+                f"    [{rank:02d}/{len(image_urls):02d}] {result_tag} "
+                f"번호={extracted_text} | url={_short(image_url, 84)}"
+            )
+            if extracted and ingredients:
+                print(
+                    f"      └ 저장됨: itemMnftrRptNo={extracted} | 원재료 길이={len(ingredients)}"
+                )
+
         if is_match:
             matched = True
+            matched_image_url = image_url
             break
 
     if matched:
@@ -413,7 +471,16 @@ def process_product(
             matched_item_rpt_no=product.item_rpt_no,
         )
         conn.commit()
-        return "matched"
+        if verbose:
+            print(f"  [완료] 매칭 성공 | source_url={_short(matched_image_url, 96)}")
+        return {
+            "status": "matched",
+            "images_requested": len(image_urls),
+            "images_analyzed": analyzed_count,
+            "matched_image_url": matched_image_url,
+            "saved_records": saved_records,
+            "query": query,
+        }
 
     upsert_attempt(
         conn,
@@ -424,7 +491,16 @@ def process_product(
         images_analyzed=analyzed_count,
     )
     conn.commit()
-    return "unmatched"
+    if verbose:
+        print("  [완료] 미매칭 (다음 상품 진행)")
+    return {
+        "status": "unmatched",
+        "images_requested": len(image_urls),
+        "images_analyzed": analyzed_count,
+        "matched_image_url": None,
+        "saved_records": saved_records,
+        "query": query,
+    }
 
 
 def summarize(conn: sqlite3.Connection) -> None:
@@ -440,11 +516,18 @@ def summarize(conn: sqlite3.Connection) -> None:
     ).fetchone()[0]
     ingredient_rows = conn.execute("SELECT COUNT(*) FROM ingredient_info").fetchone()[0]
     extraction_rows = conn.execute("SELECT COUNT(*) FROM ingredient_extractions").fetchone()[0]
+    avg_images = conn.execute(
+        "SELECT ROUND(AVG(images_analyzed), 2) FROM ingredient_attempts WHERE status IN ('matched', 'unmatched')"
+    ).fetchone()[0]
 
     print("\n[요약]")
-    print(f"- 시도 이력: {total_attempts:,}건 (matched={matched:,}, unmatched={unmatched:,}, failed={failed:,})")
+    print(
+        f"- 시도 이력: {total_attempts:,}건 "
+        f"(matched={matched:,}, unmatched={unmatched:,}, failed={failed:,})"
+    )
     print(f"- 원재료 마스터(ingredient_info): {ingredient_rows:,}건")
     print(f"- 분석 로그(ingredient_extractions): {extraction_rows:,}건")
+    print(f"- 평균 분석 이미지 수: {avg_images if avg_images is not None else '—'}")
 
 
 def main() -> None:
@@ -452,6 +535,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=20, help="이번 실행에서 처리할 최대 상품 수")
     parser.add_argument("--seed", type=int, default=7, help="모의 analyze 랜덤 시드")
     parser.add_argument("--db", type=str, default=DB_FILE, help="SQLite DB 파일 경로")
+    parser.add_argument("--quiet", action="store_true", help="이미지별 상세 로그 출력 생략")
     args = parser.parse_args()
 
     random.seed(args.seed)
@@ -471,17 +555,42 @@ def main() -> None:
         conn.close()
         return
 
-    print(f"처리 대상: {len(targets):,}건")
-    started = time.time()
+    print("\n╔══════════════════════════════════════════════════════════════════╗")
+    print("║                원재료 수집 실행 (URL 분석 모드)                ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
+    print(f"  처리 대상: {len(targets):,}건")
+    print(f"  이미지 상한: 상품당 {TOP_IMAGES}개")
 
+    started = time.time()
     stats = {"matched": 0, "unmatched": 0, "failed": 0}
+
     for idx, product in enumerate(targets, start=1):
-        result = process_product(conn, product, api_key=api_key, report_pool=report_pool)
-        stats[result] += 1
-        print(
-            f"[{idx}/{len(targets)}] {product.food_name} | {product.item_rpt_no} -> {result}",
-            flush=True,
+        result = process_product(
+            conn,
+            product,
+            api_key=api_key,
+            report_pool=report_pool,
+            verbose=not args.quiet,
         )
+        stats[result["status"]] += 1
+
+        elapsed = time.time() - started
+        speed = idx / elapsed if elapsed > 0 else 0
+        remain = len(targets) - idx
+        eta_sec = remain / speed if speed > 0 else 0
+
+        print(
+            f"\n  진행률 [{_progress_bar(idx, len(targets))}] "
+            f"{idx:,}/{len(targets):,} | "
+            f"matched={stats['matched']:,} unmatched={stats['unmatched']:,} failed={stats['failed']:,} | "
+            f"ETA {eta_sec:.1f}s"
+        )
+        print(
+            f"  결과 요약: status={result['status']} | images={result['images_analyzed']}/{result['images_requested']} "
+            f"| 저장={result['saved_records']}"
+        )
+        if result["matched_image_url"]:
+            print(f"  매칭 출처 URL: {_short(result['matched_image_url'], 100)}")
 
     elapsed = time.time() - started
     print(f"\n실행 완료: {elapsed:.1f}초")

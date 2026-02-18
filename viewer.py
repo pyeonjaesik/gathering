@@ -66,6 +66,14 @@ def _category_text(row: dict, full: bool = False) -> str:
     return f"{parts[-1]} ({parts[0]})"
 
 
+def _table_exists(conn: sqlite3.Connection, table_name: str) -> bool:
+    row = conn.execute(
+        "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
+        (table_name,),
+    ).fetchone()
+    return bool(row and row[0] > 0)
+
+
 # ── 화면 출력 ────────────────────────────────────────────────────
 
 
@@ -423,6 +431,208 @@ def show_all_categories(conn: sqlite3.Connection) -> None:
             print(f"      · 중분류: {mid}  (상품 {cnt:,}건)")
 
 
+def show_ingredient_dashboard(conn: sqlite3.Connection) -> None:
+    """원재료 수집/매칭 파이프라인 운영 현황."""
+    print_section("[ 원재료 수집 대시보드 ]")
+
+    required_tables = ("ingredient_info", "ingredient_attempts", "ingredient_extractions")
+    if not all(_table_exists(conn, t) for t in required_tables):
+        print("  원재료 수집 테이블이 아직 없습니다.")
+        print("  먼저 ingredient_enricher.py를 1회 실행해주세요.")
+        return
+
+    total_target = conn.execute(
+        "SELECT COUNT(*) FROM food_info WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''"
+    ).fetchone()[0]
+    ingredient_done = conn.execute("SELECT COUNT(*) FROM ingredient_info").fetchone()[0]
+    attempts_total = conn.execute("SELECT COUNT(*) FROM ingredient_attempts").fetchone()[0]
+    matched = conn.execute(
+        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='matched'"
+    ).fetchone()[0]
+    unmatched = conn.execute(
+        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='unmatched'"
+    ).fetchone()[0]
+    failed = conn.execute(
+        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='failed'"
+    ).fetchone()[0]
+    in_progress = conn.execute(
+        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='in_progress'"
+    ).fetchone()[0]
+    pending = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM food_info fi
+        WHERE fi.itemMnftrRptNo IS NOT NULL
+          AND fi.itemMnftrRptNo != ''
+          AND NOT EXISTS (
+              SELECT 1 FROM ingredient_info ii
+              WHERE ii.itemMnftrRptNo = fi.itemMnftrRptNo
+          )
+          AND NOT EXISTS (
+              SELECT 1 FROM ingredient_attempts ia
+              WHERE ia.query_itemMnftrRptNo = fi.itemMnftrRptNo
+          )
+        """
+    ).fetchone()[0]
+    extraction_rows = conn.execute("SELECT COUNT(*) FROM ingredient_extractions").fetchone()[0]
+    avg_images = conn.execute(
+        "SELECT ROUND(AVG(images_analyzed), 2) FROM ingredient_attempts "
+        "WHERE status IN ('matched', 'unmatched')"
+    ).fetchone()[0]
+
+    coverage = (ingredient_done / total_target * 100) if total_target else 0.0
+    attempt_ratio = (attempts_total / total_target * 100) if total_target else 0.0
+
+    print("  ■ 파이프라인 핵심 지표")
+    print(f"    대상 상품 수         : {total_target:,}건")
+    print(f"    원재료 확보 완료      : {ingredient_done:,}건 ({coverage:.1f}%)")
+    print(f"    시도 이력(누적)       : {attempts_total:,}건 ({attempt_ratio:.1f}%)")
+    print(f"    대기 상품(미시도)     : {pending:,}건")
+    print(f"    분석 로그 누적        : {extraction_rows:,}건")
+    print(f"    평균 분석 이미지 수   : {avg_images if avg_images is not None else '—'}")
+    print()
+
+    print("  ■ 시도 상태 분포")
+    print(f"    matched      : {matched:,}건")
+    print(f"    unmatched    : {unmatched:,}건")
+    print(f"    failed       : {failed:,}건")
+    print(f"    in_progress  : {in_progress:,}건")
+    print()
+
+    print("  ■ 최근 매칭 성공 5건 (출처 URL 포함)")
+    rows = conn.execute(
+        """
+        SELECT ia.query_itemMnftrRptNo, ia.query_food_name, ii.source_image_url, ii.updated_at
+        FROM ingredient_attempts ia
+        JOIN ingredient_info ii
+          ON ii.itemMnftrRptNo = ia.query_itemMnftrRptNo
+        WHERE ia.status = 'matched'
+        ORDER BY ii.updated_at DESC
+        LIMIT 5
+        """
+    ).fetchall()
+    if not rows:
+        print("    (데이터 없음)")
+    else:
+        for rpt_no, food_nm, url, updated_at in rows:
+            print(f"    - {food_nm} | {rpt_no} | {updated_at}")
+            print(f"      url: {url or '—'}")
+    print()
+
+    print("  ■ 최근 실패 5건")
+    fail_rows = conn.execute(
+        """
+        SELECT query_itemMnftrRptNo, query_food_name, error_message, started_at
+        FROM ingredient_attempts
+        WHERE status = 'failed'
+        ORDER BY started_at DESC
+        LIMIT 5
+        """
+    ).fetchall()
+    if not fail_rows:
+        print("    (데이터 없음)")
+    else:
+        for rpt_no, food_nm, err, started_at in fail_rows:
+            print(f"    - {food_nm} | {rpt_no} | {started_at}")
+            print(f"      err: {_trunc(err or '—', 86)}")
+
+
+def show_ingredient_detail(conn: sqlite3.Connection) -> None:
+    """품목보고번호 기준 원재료/시도이력/분석근거 상세 조회."""
+    print_section("[ 원재료 상세 조회 ]")
+
+    required_tables = ("ingredient_info", "ingredient_attempts", "ingredient_extractions")
+    if not all(_table_exists(conn, t) for t in required_tables):
+        print("  원재료 수집 테이블이 아직 없습니다.")
+        print("  먼저 ingredient_enricher.py를 실행해주세요.")
+        return
+
+    query = input("  품목 보고 번호 입력 : ").strip()
+    if not query:
+        print("  품목 보고 번호를 입력해주세요.")
+        return
+
+    food = conn.execute(
+        """
+        SELECT foodNm, COALESCE(mfrNm, ''), foodLv3Nm, foodLv4Nm
+        FROM food_info
+        WHERE itemMnftrRptNo = ?
+        LIMIT 1
+        """,
+        (query,),
+    ).fetchone()
+    if food:
+        food_nm, mfr_nm, lv3, lv4 = food
+        cat = lv4 or lv3 or "분류 정보 없음"
+        print(f"\n  상품명      : {food_nm or '—'}")
+        print(f"  제조사      : {mfr_nm or '—'}")
+        print(f"  카테고리    : {cat}")
+    else:
+        print("\n  food_info에서 해당 품목 보고 번호를 찾지 못했습니다.")
+
+    ing = conn.execute(
+        """
+        SELECT ingredients_text, source_image_url, source_query, updated_at
+        FROM ingredient_info
+        WHERE itemMnftrRptNo = ?
+        """,
+        (query,),
+    ).fetchone()
+    print("\n  ■ 원재료 저장 정보")
+    if not ing:
+        print("    원재료 저장 데이터 없음")
+    else:
+        ingredients, source_url, source_query, updated_at = ing
+        print(f"    업데이트 시각 : {updated_at}")
+        print(f"    출처 검색어   : {_trunc(source_query or '—', 76)}")
+        print(f"    출처 URL      : {source_url or '—'}")
+        print(f"    원재료명      : {_trunc(ingredients or '—', 76)}")
+
+    attempt = conn.execute(
+        """
+        SELECT status, searched_query, images_requested, images_analyzed,
+               matched_itemMnftrRptNo, error_message, started_at, finished_at
+        FROM ingredient_attempts
+        WHERE query_itemMnftrRptNo = ?
+        """,
+        (query,),
+    ).fetchone()
+    print("\n  ■ 검색 시도 이력")
+    if not attempt:
+        print("    시도 이력 없음")
+    else:
+        status, searched_query, img_req, img_ana, matched_no, err, st, fn = attempt
+        print(f"    상태         : {status}")
+        print(f"    검색어       : {_trunc(searched_query or '—', 76)}")
+        print(f"    이미지 분석  : {img_ana}/{img_req}")
+        print(f"    매칭 번호    : {matched_no or '—'}")
+        print(f"    시작/종료    : {st or '—'} / {fn or '—'}")
+        if err:
+            print(f"    에러         : {_trunc(err, 76)}")
+
+    logs = conn.execute(
+        """
+        SELECT image_rank, image_url, extracted_itemMnftrRptNo,
+               matched_target, ingredients_text, created_at
+        FROM ingredient_extractions
+        WHERE query_itemMnftrRptNo = ?
+        ORDER BY id DESC
+        LIMIT 10
+        """,
+        (query,),
+    ).fetchall()
+    print("\n  ■ 최근 분석 로그 10건")
+    if not logs:
+        print("    로그 없음")
+    else:
+        for rank, url, extracted, matched_target, ingredients, created_at in logs:
+            mark = "MATCH" if matched_target == 1 else "NO-MATCH"
+            print(f"    - [{rank}] {mark} | {created_at} | 추출번호: {extracted or '미검출'}")
+            print(f"      url: {url or '—'}")
+            if ingredients:
+                print(f"      원재료: {_trunc(ingredients, 76)}")
+
+
 # ── 진입점 ───────────────────────────────────────────────────────
 
 
@@ -445,6 +655,8 @@ def main() -> None:
         ("3", "전체 목록 보기",                 list_all),
         ("4", "통계 보기",                       show_stats),
         ("5", "전체 카테고리 보기",              show_all_categories),
+        ("6", "원재료 수집 대시보드",            show_ingredient_dashboard),
+        ("7", "원재료 상세 조회(품목번호)",      show_ingredient_detail),
         ("q", "종료",                            None),
     ]
     menu_map = {k: fn for k, _, fn in MENU}
