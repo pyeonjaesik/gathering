@@ -33,6 +33,7 @@ from app.ingredient_enricher import (
     run_enricher_for_report_no,
 )
 from app.ingredient_analyzer import URLIngredientAnalyzer
+from app.query_image_benchmark import run_query_image_benchmark_interactive
 
 W = 68
 WEB_UI_PORT = 8501
@@ -238,10 +239,10 @@ def run_benchmark_menu() -> None:
     samples_path = validation_dir / "samples.jsonl"
 
     while True:
-        print("\n  📊 [analyze 벤치마크 도우미]")
-        print("    [1] 템플릿 생성/갱신")
-        print("    [2] 샘플 파일 준비 (template -> samples)")
-        print("    [3] 벤치마크 실행")
+        print("\n  📊 [벤치마크]")
+        print("    [1] 시작용 샘플 파일 만들기")
+        print("    [2] 벤치마크 실행 (진행상황 실시간 표시)")
+        print("    [3] 검색어 기반 이미지 벤치마크 (SerpAPI)")
         print("    [b] 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
@@ -264,22 +265,17 @@ def run_benchmark_menu() -> None:
                 print(f"  ✅ 템플릿 생성 완료: {template_path}")
                 if result.stdout.strip():
                     print(f"  ℹ️ {result.stdout.strip()}")
+                if not samples_path.exists():
+                    shutil.copyfile(template_path, samples_path)
+                    print(f"  ✅ 실사용 파일도 생성: {samples_path}")
+                print("  ✍️ 이제 samples.jsonl에 이미지/정답만 채워주세요.")
             except subprocess.CalledProcessError as exc:
                 print("  ❌ 템플릿 생성 실패")
                 print(f"  {exc.stderr.strip() or exc.stdout.strip()}")
 
         elif sub == "2":
-            if not template_path.exists():
-                print("  ⚠️ 템플릿이 없습니다. 먼저 [1]을 실행해주세요.")
-                continue
-            validation_dir.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(template_path, samples_path)
-            print(f"  ✅ 샘플 파일 준비 완료: {samples_path}")
-            print("  ✍️ 이제 samples.jsonl의 image / expected 값만 채우면 됩니다.")
-
-        elif sub == "3":
             if not samples_path.exists():
-                print("  ⚠️ samples.jsonl이 없습니다. 먼저 [2]를 실행해주세요.")
+                print("  ⚠️ samples.jsonl이 없습니다. 먼저 [1]을 실행해주세요.")
                 continue
             raw_th = input("  🔹 원재료 유사도 임계값 [기본 0.9]: ").strip()
             threshold = "0.9"
@@ -293,9 +289,9 @@ def run_benchmark_menu() -> None:
                 except ValueError:
                     print("  ⚠️ 숫자 형식이 아닙니다. 기본 0.9 사용.")
 
-            print("  🚀 벤치마크 실행 중...")
+            print("  🚀 벤치마크 실행 시작 (아래에 실시간 출력됩니다)")
             try:
-                result = subprocess.run(
+                subprocess.run(
                     [
                         sys.executable,
                         "-m",
@@ -306,19 +302,18 @@ def run_benchmark_menu() -> None:
                         threshold,
                     ],
                     cwd=str(project_root),
-                    capture_output=True,
-                    text=True,
                     check=True,
                 )
                 print("  ✅ 벤치마크 완료")
-                stdout = result.stdout.strip()
-                if stdout:
-                    print()
-                    print(stdout)
-                    print()
             except subprocess.CalledProcessError as exc:
                 print("  ❌ 벤치마크 실행 실패")
-                print(f"  {exc.stderr.strip() or exc.stdout.strip()}")
+                print(f"  종료코드: {exc.returncode}")
+
+        elif sub == "3":
+            try:
+                run_query_image_benchmark_interactive()
+            except Exception as exc:  # pylint: disable=broad-except
+                print(f"  ❌ 실행 실패: {exc}")
 
         elif sub == "b":
             return

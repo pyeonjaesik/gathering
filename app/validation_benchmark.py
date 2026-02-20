@@ -10,23 +10,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import time
-from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any
-
-def _to_bool(value: Any) -> bool | None:
-    if value is None:
-        return None
-    if isinstance(value, bool):
-        return value
-    text = str(value).strip().lower()
-    if text in ("1", "true", "t", "yes", "y"):
-        return True
-    if text in ("0", "false", "f", "no", "n"):
-        return False
-    return None
 
 
 def _has_text(value: Any) -> bool:
@@ -57,7 +45,14 @@ def _normalize_ingredients_text(text: Any) -> str:
     value = value.replace(":", " ").replace(";", " ")
     value = value.replace("·", ",").replace("，", ",").replace("/", ",")
     value = " ".join(value.split())
+    # 비교 시 공백/개행 영향 제거(사용자 요청)
+    value = re.sub(r"\s+", "", value)
     return value
+
+
+def _compact_text(text: Any) -> str:
+    """표시용: 공백/줄바꿈 제거."""
+    return re.sub(r"\s+", "", str(text or "")).strip()
 
 
 def _ingredients_similarity(a: Any, b: Any) -> float:
@@ -78,68 +73,32 @@ def _ingredients_similarity(a: Any, b: Any) -> float:
 
 def _build_reason(
     err: str | None,
-    exp_strict: bool,
-    pred_strict: bool,
-    exp_report: Any,
-    pred_report: Any,
-    exp_ing_text: Any,
-    pred_ing_text: Any,
+    report_expected: bool,
+    report_ok: bool,
+    report_pred_has_value: bool,
+    ing_expected: bool,
+    ing_ok: bool,
+    ing_pred_has_value: bool,
     ing_similarity: float | None,
     ingredients_threshold: float,
-) -> tuple[str, str]:
+) -> str:
     if err:
-        return ("판독실패", f"분석 예외: {str(err)[:40]}")
-    if exp_strict and pred_strict:
-        return ("정답", "번호 일치 + 원재료 유사도 기준 통과")
-    if exp_strict and not pred_strict:
-        report_missing = bool(exp_report and not pred_report)
-        report_mismatch = bool(exp_report and pred_report and str(exp_report) != str(pred_report))
-        ing_missing = bool(exp_ing_text and not _has_text(pred_ing_text))
-        ing_low_sim = bool(ing_similarity is not None and ing_similarity < ingredients_threshold)
-        if report_missing:
-            return ("놓침", "정답 번호가 있는데 AI 번호 미검출")
-        if report_mismatch:
-            return ("놓침", "품목보고번호 불일치")
-        if ing_missing:
-            return ("놓침", "정답 원재료가 있는데 AI 원재료 미검출")
-        if ing_low_sim:
-            return ("놓침", f"원재료 유사도 부족({ing_similarity:.3f} < {ingredients_threshold:.3f})")
-        return ("놓침", "strict 조건 불충족")
-    if (not exp_strict) and pred_strict:
-        return ("오탐", "정답은 비통과인데 AI가 통과 판정")
-    return ("정답", "정답/예측 모두 비통과")
-
-
-@dataclass
-class FieldScore:
-    name: str
-    total: int = 0
-    correct: int = 0
-
-    def add(self, expected: Any, predicted: Any) -> None:
-        if expected is None:
-            return
-        self.total += 1
-        if expected == predicted:
-            self.correct += 1
-
-    @property
-    def accuracy(self) -> float:
-        return _safe_div(self.correct, self.total)
-
-
-def _derive_strict_accept(record: dict[str, Any]) -> bool:
-    report_no = record.get("itemMnftrRptNo")
-    ingredients = record.get("ingredients_text")
-    return bool(
-        _has_text(report_no)
-        and _has_text(ingredients)
-        and record.get("is_flat") is True
-        and record.get("has_rect_ingredient_box") is True
-        and record.get("has_report_label") is True
-        and record.get("is_designed_graphic") is True
-        and record.get("has_real_world_objects") is False
-    )
+        return f"분석 오류: {str(err)[:40]}"
+    if (not report_expected) and report_pred_has_value and (not ing_expected) and ing_pred_has_value:
+        return "정답은 번호/원재료 모두 없음(null)인데 AI가 값을 예측함"
+    if (not report_expected) and report_pred_has_value:
+        return "정답 번호는 없음(null)인데 AI가 번호를 예측함"
+    if (not ing_expected) and ing_pred_has_value:
+        return "정답 원재료는 없음(null)인데 AI가 원재료를 예측함"
+    if report_expected and not report_ok and ing_expected and not ing_ok:
+        sim_txt = f"{ing_similarity:.3f}" if ing_similarity is not None else "-"
+        return f"번호 불일치 + 원재료 유사도 미달({sim_txt} < {ingredients_threshold:.3f})"
+    if report_expected and not report_ok:
+        return "품목보고번호 불일치"
+    if ing_expected and not ing_ok:
+        sim_txt = f"{ing_similarity:.3f}" if ing_similarity is not None else "-"
+        return f"원재료 유사도 미달({sim_txt} < {ingredients_threshold:.3f})"
+    return "번호/원재료 기준 충족"
 
 
 def _load_dataset(path: Path) -> list[dict[str, Any]]:
@@ -201,34 +160,24 @@ def run_benchmark(
         raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
 
     dataset = _load_dataset(dataset_path)
-    analyzer = URLIngredientAnalyzer(api_key=api_key, strict_mode=True)
+    analyzer = URLIngredientAnalyzer(api_key=api_key, strict_mode=False)
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     run_dir = output_dir / f"benchmark_{ts}"
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    field_scores = {
-        "itemMnftrRptNo": FieldScore("itemMnftrRptNo"),
-        "ingredients_present": FieldScore("ingredients_present"),
-        "is_flat": FieldScore("is_flat"),
-        "has_rect_ingredient_box": FieldScore("has_rect_ingredient_box"),
-        "has_report_label": FieldScore("has_report_label"),
-        "is_designed_graphic": FieldScore("is_designed_graphic"),
-        "has_real_world_objects": FieldScore("has_real_world_objects"),
-        "strict_accept": FieldScore("strict_accept"),
-    }
-
-    tp = fp = tn = fn = 0
-    miss_count = 0
-    false_accept_count = 0
-    unreadable_count = 0
-    pair_evaluable = 0
-    pair_success = 0
-    accepted_count = 0
-    accepted_evaluable = 0
-    accepted_success = 0
+    total = len(dataset)
+    correct_count = 0
+    wrong_count = 0
+    error_count = 0
+    report_wrong_count = 0
+    ingredients_wrong_count = 0
     details: list[dict[str, Any]] = []
     t0 = time.time()
+    print("\n=== 벤치마크 시작 ===")
+    print(f"검증셋: {dataset_path}")
+    print(f"총 샘플: {total}건")
+    print(f"원재료 유사도 기준: {ingredients_threshold:.3f}")
 
     for idx, sample in enumerate(dataset, start=1):
         sample_id = sample.get("id") or f"row-{idx}"
@@ -243,31 +192,11 @@ def run_benchmark(
             pred = {
                 "itemMnftrRptNo": None,
                 "ingredients_text": None,
-                "is_flat": None,
-                "has_rect_ingredient_box": None,
-                "has_report_label": None,
-                "is_designed_graphic": None,
-                "has_real_world_objects": None,
                 "note": f"error:{type(exc).__name__}",
             }
             err = str(exc)
 
-        pred_ingredients_present = _has_text(pred.get("ingredients_text"))
-        pred_strict_accept = _derive_strict_accept(pred)
-
         exp_ingredients_text = expected.get("ingredients_text")
-        exp_ingredients_present = _to_bool(expected.get("ingredients_present"))
-        exp_is_flat = _to_bool(expected.get("is_flat"))
-        exp_rect = _to_bool(expected.get("has_rect_ingredient_box"))
-        exp_label = _to_bool(expected.get("has_report_label"))
-        exp_graphic = _to_bool(expected.get("is_designed_graphic"))
-        exp_real_obj = _to_bool(expected.get("has_real_world_objects"))
-        exp_strict = _to_bool(expected.get("strict_accept"))
-
-        if exp_strict is None:
-            # 최소 라벨셋(번호+원재료)만 있어도 strict 정답을 유도한다.
-            exp_strict = bool(_has_text(exp_report) and _has_text(exp_ingredients_text))
-
         pred_report = pred.get("itemMnftrRptNo")
         exp_report_norm = _normalize_report_no(exp_report)
         pred_report_norm = _normalize_report_no(pred_report)
@@ -277,64 +206,48 @@ def run_benchmark(
             if exp_ingredients_text is not None
             else None
         )
-        pair_ok = False
-        if exp_report is not None and exp_ingredients_text is not None:
-            pair_evaluable += 1
+        report_expected = exp_report is not None
+        ing_expected = exp_ingredients_text is not None
+        report_pred_has_value = pred_report_norm is not None
+        ing_pred_has_value = _has_text(pred_ing_text)
+
+        if report_expected:
             report_ok = (exp_report_norm is not None and pred_report_norm == exp_report_norm)
-            ing_ok = (ing_similarity is not None and ing_similarity >= ingredients_threshold)
-            pair_ok = bool(report_ok and ing_ok)
-            if pair_ok:
-                pair_success += 1
-
-        field_scores["itemMnftrRptNo"].add(exp_report, pred_report)
-        field_scores["ingredients_present"].add(exp_ingredients_present, pred_ingredients_present)
-        field_scores["is_flat"].add(exp_is_flat, pred.get("is_flat"))
-        field_scores["has_rect_ingredient_box"].add(exp_rect, pred.get("has_rect_ingredient_box"))
-        field_scores["has_report_label"].add(exp_label, pred.get("has_report_label"))
-        field_scores["is_designed_graphic"].add(exp_graphic, pred.get("is_designed_graphic"))
-        field_scores["has_real_world_objects"].add(exp_real_obj, pred.get("has_real_world_objects"))
-        field_scores["strict_accept"].add(exp_strict, pred_strict_accept)
-
-        if exp_strict:
-            if pred_strict_accept:
-                tp += 1
-            else:
-                fn += 1
-                miss_count += 1
         else:
-            if pred_strict_accept:
-                fp += 1
-                false_accept_count += 1
-            else:
-                tn += 1
+            report_ok = not report_pred_has_value
 
-        if err or (not _has_text(pred_report) and not _has_text(pred_ing_text)):
-            unreadable_count += 1
-
-        if pred_strict_accept:
-            accepted_count += 1
-            if exp_report is not None and exp_ingredients_text is not None:
-                accepted_evaluable += 1
-                if pair_ok:
-                    accepted_success += 1
-
-        verdict, reason = _build_reason(
+        if ing_expected:
+            ing_ok = (ing_similarity is not None and ing_similarity >= ingredients_threshold)
+        else:
+            ing_ok = not ing_pred_has_value
+        is_correct = bool(report_ok and ing_ok and err is None)
+        reason = _build_reason(
             err=err,
-            exp_strict=bool(exp_strict),
-            pred_strict=bool(pred_strict_accept),
-            exp_report=exp_report,
-            pred_report=pred_report,
-            exp_ing_text=exp_ingredients_text,
-            pred_ing_text=pred_ing_text,
+            report_expected=report_expected,
+            report_ok=report_ok,
+            report_pred_has_value=report_pred_has_value,
+            ing_expected=ing_expected,
+            ing_ok=ing_ok,
+            ing_pred_has_value=ing_pred_has_value,
             ing_similarity=ing_similarity,
             ingredients_threshold=ingredients_threshold,
         )
+        if is_correct:
+            correct_count += 1
+        else:
+            wrong_count += 1
+            if err is not None:
+                error_count += 1
+            if report_expected and not report_ok:
+                report_wrong_count += 1
+            if ing_expected and not ing_ok:
+                ingredients_wrong_count += 1
 
         details.append(
             {
                 "id": sample_id,
                 "image": image,
-                "verdict": verdict,
+                "verdict": "정답" if is_correct else "오답",
                 "reason": reason,
                 "error": err,
                 "expected_itemMnftrRptNo": exp_report,
@@ -342,76 +255,64 @@ def run_benchmark(
                 "expected_ingredients_text": exp_ingredients_text,
                 "pred_ingredients_text": pred_ing_text,
                 "ingredients_similarity": ing_similarity,
-                "pair_match": pair_ok,
-                "expected_ingredients_present": exp_ingredients_present,
-                "pred_ingredients_present": pred_ingredients_present,
-                "expected_is_flat": exp_is_flat,
-                "pred_is_flat": pred.get("is_flat"),
-                "expected_has_rect_ingredient_box": exp_rect,
-                "pred_has_rect_ingredient_box": pred.get("has_rect_ingredient_box"),
-                "expected_has_report_label": exp_label,
-                "pred_has_report_label": pred.get("has_report_label"),
-                "expected_is_designed_graphic": exp_graphic,
-                "pred_is_designed_graphic": pred.get("is_designed_graphic"),
-                "expected_has_real_world_objects": exp_real_obj,
-                "pred_has_real_world_objects": pred.get("has_real_world_objects"),
-                "expected_strict_accept": exp_strict,
-                "pred_strict_accept": pred_strict_accept,
-                "pred_note": pred.get("note"),
-                "pred_ingredients_preview": (pred_ing_text or "")[:200],
+                "report_ok": report_ok,
+                "ingredients_ok": ing_ok,
             }
         )
 
         elapsed = time.time() - t0
-        simple_ok = bool(pair_ok) if (exp_report is not None and exp_ingredients_text is not None) else (verdict == "정답")
-        print(f"\n[{idx:03d}/{len(dataset):03d}] id={sample_id} 결과={'정답' if simple_ok else '오답'} elapsed={elapsed:.1f}s")
-        print(f"  정답 | 품목보고번호: {exp_report or '-'}")
-        print(f"  정답 | 원재료명   : {exp_ingredients_text or '-'}")
-        print(f"  예측 | 품목보고번호: {pred_report or '-'}")
-        print(f"  예측 | 원재료명   : {pred_ing_text or '-'}")
-        print(f"  비교 | 번호(정규화): {exp_report_norm or '-'} vs {pred_report_norm or '-'}")
-        print(f"  근거 | {reason}")
+        report_label = "✅ 정답" if report_ok else "❌ 오답"
+        report_acc = 100.0 if report_ok else 0.0
+        ing_label = "✅ 정답" if ing_ok else "❌ 오답"
+        if ing_expected:
+            ing_acc = (ing_similarity * 100.0) if ing_similarity is not None else 0.0
+        else:
+            ing_acc = 100.0 if ing_ok else 0.0
+        exp_report_compact = _compact_text(exp_report) or "-"
+        pred_report_compact = _compact_text(pred_report) or "-"
+        exp_ing_compact = _compact_text(exp_ingredients_text) or "-"
+        pred_ing_compact = _compact_text(pred_ing_text) or "-"
+
+        print(f"\n[{idx:03d}/{len(dataset):03d}] id={sample_id} | {'✅ 정답' if is_correct else '❌ 오답'} | {elapsed:.1f}s")
+        print("  [품목보고번호 비교]")
+        print("    │")
+        print(f"    ├─ * 판정")
+        print(f"    │   {report_label} | 정확도율: {report_acc:.1f}%")
+        print("    │")
+        print("    ├─ - 정답")
+        print(f"    │   {exp_report_compact}")
+        print("    │")
+        print("    └─ - AI 예측")
+        print(f"        {pred_report_compact}")
+        print()
+        print("  [원재료명 비교]")
+        print("    │")
+        print(f"    ├─ * 판정")
+        print(f"    │   {ing_label} | 정확도율: {ing_acc:.1f}%")
+        print("    │")
+        print("    ├─ - 정답")
+        print(f"    │   {exp_ing_compact}")
+        print("    │")
+        print("    └─ - AI 예측")
+        print(f"        {pred_ing_compact}")
+        print()
+        print("  [최종 근거]")
+        print(f"    {reason}")
+        print("\n" + "-" * 78)
         if delay_sec > 0:
             time.sleep(delay_sec)
 
-    precision = _safe_div(tp, tp + fp)
-    recall = _safe_div(tp, tp + fn)
-    f1 = _safe_div(2 * precision * recall, precision + recall) if (precision + recall) else 0.0
-
     summary = {
         "dataset_path": str(dataset_path),
-        "samples": len(dataset),
-        "핵심지표": {
-            "정답_성공률": _safe_div(pair_success, pair_evaluable),
-            "정답_성공건수": pair_success,
-            "정답_평가가능건수": pair_evaluable,
-            "안전_정확도": _safe_div(accepted_success, accepted_evaluable),
-            "안전_정확도_성공건수": accepted_success,
-            "안전_정확도_평가가능통과건수": accepted_evaluable,
-            "통과율": _safe_div(accepted_count, len(dataset)),
-            "통과건수": accepted_count,
-            "전체건수": len(dataset),
-            "원재료_유사도_임계값": ingredients_threshold,
-        },
-        "실패분류": {
-            "놓침": miss_count,
-            "오탐": false_accept_count,
-            "판독실패": unreadable_count,
-        },
-        "strict_confusion(참고)": {"tp": tp, "fp": fp, "tn": tn, "fn": fn},
-        "strict_metrics(참고)": {
-            "precision": precision,
-            "recall": recall,
-            "f1": f1,
-            "accuracy": _safe_div(tp + tn, tp + tn + fp + fn),
-        },
-        "field_accuracy": {
-            k: {
-                "total": v.total,
-                "correct": v.correct,
-                "accuracy": v.accuracy,
-            }
-            for k, v in field_scores.items()
+        "samples": total,
+        "threshold": ingredients_threshold,
+        "correct_count": correct_count,
+        "wrong_count": wrong_count,
+        "accuracy": _safe_div(correct_count, total),
+        "wrong_reasons": {
+            "analysis_error": error_count,
+            "report_mismatch": report_wrong_count,
+            "ingredients_mismatch": ingredients_wrong_count,
         },
         "finished_at": datetime.now().isoformat(),
     }
@@ -420,15 +321,15 @@ def run_benchmark(
     with summary_path.open("w", encoding="utf-8") as fp:
         json.dump(summary, fp, ensure_ascii=False, indent=2)
 
-    print("\n=== benchmark done ===")
-    print(f"전체: {len(dataset)}건")
-    if pair_evaluable > 0:
-        print(f"정답 판정: {pair_success}/{pair_evaluable}건")
-    else:
-        print("정답 판정: 평가 가능한 라벨(번호+원재료) 없음")
-    print(f"오답 사유 집계: 놓침={miss_count}, 오탐={false_accept_count}, 판독실패={unreadable_count}")
+    print("\n=== 최종 결과 ===")
+    print(f"정답: {correct_count}건")
+    print(f"오답: {wrong_count}건")
+    print(f"정확도: {_safe_div(correct_count, total):.3f}")
+    print("오답 원인:")
+    print(f"  - 분석 오류         : {error_count}")
+    print(f"  - 품목보고번호 불일치: {report_wrong_count}")
+    print(f"  - 원재료 불일치      : {ingredients_wrong_count}")
     print(f"summary: {summary_path}")
-    print("details: 파일 생성 안 함 (터미널 표로만 출력)")
     return run_dir
 
 

@@ -1,0 +1,33 @@
+이 이미지를 OCR 기반으로 상세 추출해주세요.
+
+타깃 품목제조보고번호: __TARGET_ITEM_RPT_NO__
+
+목표:
+- 품목보고번호(product_report_number)
+- 원재료명(ingredients_text)
+- 제품명(product_name_in_image)
+- 영양성분표 텍스트(nutrition_text)
+
+추출 규칙:
+- 이미지 텍스트를 최대한 읽고 full_text에 담으세요.
+- 품목보고번호 라벨이 보이고 번호를 읽으면 product_report_number에 넣으세요. 없으면 null.
+- 원재료명/원재료/INGREDIENTS 영역을 ingredients_text에 넣으세요.
+- 제품명을 읽으면 product_name_in_image에 넣으세요.
+- 영양성분표를 읽으면 nutrition_text에 넣으세요.
+- 일부만 읽었거나 잘린 경우 *_complete=false.
+- JSON 외 텍스트를 출력하지 마세요.
+
+응답 JSON 스키마:
+{
+  "product_report_number": "문자열 또는 null",
+  "ingredients_text": "문자열 또는 null",
+  "product_name_in_image": "문자열 또는 null",
+  "nutrition_text": "문자열 또는 null",
+  "ingredients_complete": true/false,
+  "report_number_complete": true/false,
+  "product_name_complete": true/false,
+  "nutrition_complete": true/false,
+  "has_report_label": true/false,
+  "full_text": "문자열 또는 null",
+  "reason": "간단한 추출 근거"
+}
