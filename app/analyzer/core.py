@@ -22,17 +22,18 @@ from urllib.parse import urlparse
 
 import requests
 
-from app.analyzer.pass1 import run_pass1
 from app.analyzer.pass1_precheck import run_pass1_precheck
-from app.analyzer.pass2 import run_pass2
-from app.analyzer.pass3_normalize import run_pass3_normalize
+from app.analyzer.pass2_gate import run_pass2_gate
+from app.analyzer.pass3_extract import run_pass3_extract
+from app.analyzer.pass4_normalize import run_pass4_normalize
 
 RETRYABLE_HTTP_STATUS = {408, 425, 429, 500, 502, 503, 504}
 DEFAULT_MODEL = "gpt-4.1-mini"
 _PROMPT_PRINTED_ONCE = False
 _PROMPT_PRINT_LOCK = threading.Lock()
-DEFAULT_PROMPT_PASS1_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass1_prompt.txt"
 DEFAULT_PROMPT_PASS2_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2_prompt.txt"
+DEFAULT_PROMPT_PASS3_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_prompt.txt"
+DEFAULT_PROMPT_PASS4_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass4_prompt.txt"
 
 
 def _strip_code_fence(text: str) -> str:
@@ -81,6 +82,22 @@ def _extract_openai_text(payload: dict[str, Any]) -> str:
     return ""
 
 
+def _extract_gemini_text(payload: dict[str, Any]) -> str:
+    """Gemini generateContent 응답에서 텍스트를 추출한다."""
+    candidates = payload.get("candidates") or []
+    if not candidates:
+        return ""
+    content = (candidates[0] or {}).get("content") or {}
+    parts = content.get("parts") or []
+    chunks: list[str] = []
+    for part in parts:
+        if isinstance(part, dict):
+            text = part.get("text")
+            if text:
+                chunks.append(str(text))
+    return "\n".join(chunks).strip()
+
+
 def _normalize_report_no(value: Any, min_digits: int = 8, max_digits: int = 20) -> str | None:
     if value is None:
         return None
@@ -119,8 +136,15 @@ class URLIngredientAnalyzer:
     min_report_digits: int = 10
     max_report_digits: int = 16
     show_prompt_once: bool = True
-    prompt_file_pass1: str | None = None
     prompt_file_pass2: str | None = None
+    prompt_file_pass3: str | None = None
+    prompt_file_pass4: str | None = None
+    pass3_provider: str = "gemini"
+    pass3_gemini_model: str = "gemini-2.0-flash"
+    pass3_gemini_api_key: str | None = None
+    pass3_retry_on_429_max_attempts: int = 6
+    pass3_retry_on_429_base_sec: float = 2.0
+    pass3_retry_on_429_max_sec: float = 30.0
 
     def __post_init__(self) -> None:
         self.session = requests.Session()
@@ -133,13 +157,23 @@ class URLIngredientAnalyzer:
                 )
             }
         )
-        self.prompt_template_pass1, self.prompt_template_pass1_path = self._load_prompt_template(
-            candidate=self.prompt_file_pass1 or os.getenv("ANALYZE_PROMPT_FILE_PASS1"),
-            default_path=DEFAULT_PROMPT_PASS1_FILE,
-        )
         self.prompt_template_pass2, self.prompt_template_pass2_path = self._load_prompt_template(
-            candidate=self.prompt_file_pass2 or os.getenv("ANALYZE_PROMPT_FILE_PASS2"),
+            candidate=self.prompt_file_pass2 or os.getenv("ANALYZE_PROMPT_FILE_PASS2") or os.getenv("ANALYZE_PROMPT_FILE_PASS1"),
             default_path=DEFAULT_PROMPT_PASS2_FILE,
+        )
+        self.prompt_template_pass3, self.prompt_template_pass3_path = self._load_prompt_template(
+            candidate=self.prompt_file_pass3 or os.getenv("ANALYZE_PROMPT_FILE_PASS3") or os.getenv("ANALYZE_PROMPT_FILE_PASS2"),
+            default_path=DEFAULT_PROMPT_PASS3_FILE,
+        )
+        self.prompt_template_pass4, self.prompt_template_pass4_path = self._load_prompt_template(
+            candidate=self.prompt_file_pass4 or os.getenv("ANALYZE_PROMPT_FILE_PASS4"),
+            default_path=DEFAULT_PROMPT_PASS4_FILE,
+        )
+        self.pass3_provider = str(self.pass3_provider or "gemini").strip().lower()
+        self.pass3_gemini_api_key = (
+            self.pass3_gemini_api_key
+            or os.getenv("GEMINI_API_KEY")
+            or os.getenv("GOOGLE_API_KEY")
         )
 
     def _load_prompt_template(
@@ -174,11 +208,17 @@ class URLIngredientAnalyzer:
         keywords = ("영양성분", "영양정보", "나트륨", "탄수화물", "단백질", "지방", "calories", "nutrition")
         return any(kw in value for kw in keywords)
 
-    def _remove_allergen_notice(self, text: str | None) -> str | None:
-        """원재료명 뒤에 붙는 알레르기 안내를 제거하되, 실제 원재료는 최대한 보존한다."""
+    def _split_allergen_notice(self, text: str | None) -> tuple[str | None, str | None]:
+        """원재료 문자열에서 알레르기 안내 문구를 분리한다.
+
+        Returns:
+            (clean_ingredients_text, allergen_text)
+        """
         value = (text or "").strip()
         if not value:
-            return None
+            return (None, None)
+
+        original = value
 
         # 문장형 알레르기 안내 키워드가 있을 때만 이후를 잘라낸다.
         cut_markers = [
@@ -199,7 +239,9 @@ class URLIngredientAnalyzer:
             idx = lower.find(marker.lower())
             if idx >= 0:
                 cut_idx = idx if cut_idx < 0 else min(cut_idx, idx)
+        marker_removed: str | None = None
         if cut_idx >= 0:
+            marker_removed = value[cut_idx:].strip(" ,.;:/")
             value = value[:cut_idx].rstrip(" ,.;:/")
 
         # 끝에 붙는 "..., 대두, 우유 함유/포함" 형태만 제거한다.
@@ -210,12 +252,15 @@ class URLIngredientAnalyzer:
         )
         tail_pattern = rf"(?:^|[,/]\s*)(?:{allergen_words})(?:\s*[,/]\s*(?:{allergen_words}))*\s*(?:함유|포함)\s*$"
         m = re.search(tail_pattern, value)
+        tail_removed: str | None = None
         if m:
+            tail_removed = value[m.start():].strip(" ,.;:/")
             value = value[: m.start()].rstrip(" ,.;:/")
 
         # 보수적 추가 정리: "함유/포함" 토큰은 '알레르기 재료명만'으로 구성된 경우에만 제거.
         parts = re.split(r"[,/]", value)
         kept: list[str] = []
+        removed_tokens: list[str] = []
         allergen_set = {
             "메밀", "밀", "대두", "호두", "땅콩", "잣", "계란", "난류", "우유", "토마토", "새우",
             "게", "오징어", "고등어", "조개류", "굴", "전복", "홍합", "복숭아", "돼지고기", "쇠고기",
@@ -235,11 +280,22 @@ class URLIngredientAnalyzer:
                 # 알레르기 재료명만으로 구성된 경우에만 제거
                 core_parts = [x for x in re.split(r"[·,\s]+", core) if x]
                 if core_parts and all(x in allergen_set for x in core_parts):
+                    removed_tokens.append(token)
                     continue
             kept.append(token)
 
         cleaned = ", ".join(kept).strip(" ,")
-        return cleaned or None
+        allergen_bits = [x for x in (marker_removed, tail_removed, ", ".join(removed_tokens).strip(" ,")) if x]
+        allergen_text = " | ".join(allergen_bits).strip(" |")
+        if not allergen_text and cleaned != original:
+            diff = original.replace(cleaned, "").strip(" ,.;:/")
+            allergen_text = diff or None
+        return (cleaned or None, allergen_text or None)
+
+    def _remove_allergen_notice(self, text: str | None) -> str | None:
+        """원재료명 뒤에 붙는 알레르기 안내를 제거하되, 실제 원재료는 최대한 보존한다."""
+        cleaned, _ = self._split_allergen_notice(text)
+        return cleaned
 
     def _guess_mime_type(
         self,
@@ -340,13 +396,22 @@ class URLIngredientAnalyzer:
             )
         return image_bytes, mime_type
 
-    def _build_prompt_pass1(self, target_item_rpt_no: str | None) -> str:
-        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
-        return self.prompt_template_pass1.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
-
     def _build_prompt_pass2(self, target_item_rpt_no: str | None) -> str:
         target_value = target_item_rpt_no if target_item_rpt_no else "없음"
         return self.prompt_template_pass2.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+
+    def _build_prompt_pass3(self, target_item_rpt_no: str | None) -> str:
+        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
+        return self.prompt_template_pass3.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+
+    def _build_prompt_pass4(
+        self,
+        ingredients_text: str,
+        nutrition_text: str | None = None,
+    ) -> str:
+        prompt = self.prompt_template_pass4.replace("__INGREDIENTS_TEXT__", str(ingredients_text or ""))
+        prompt = prompt.replace("__NUTRITION_TEXT__", str(nutrition_text or "null"))
+        return prompt
 
     def _call_model(
         self,
@@ -370,6 +435,105 @@ class URLIngredientAnalyzer:
             "response_format": {"type": "json_object"},
         }
 
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        resp = self.session.post(
+            "https://api.openai.com/v1/chat/completions",
+            headers=headers,
+            data=json.dumps(body, ensure_ascii=False),
+            timeout=self.request_timeout_sec,
+        )
+        raw_api_response = resp.text
+        if resp.status_code >= 400:
+            raise RuntimeError(f"openai_http_{resp.status_code}: {raw_api_response[:1200]}")
+        payload = resp.json()
+        raw_text = _extract_openai_text(payload)
+        if not raw_text:
+            raise RuntimeError(f"empty_model_response: id={payload.get('id')} finish={((payload.get('choices') or [{}])[0] or {}).get('finish_reason')}")
+        parsed = _extract_first_json_object(raw_text)
+        return raw_text, parsed, raw_api_response
+
+    def _call_model_gemini(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+    ) -> tuple[str, dict[str, Any], str]:
+        api_key = (self.pass3_gemini_api_key or "").strip()
+        if not api_key:
+            raise RuntimeError("gemini_api_key_missing (set GEMINI_API_KEY or GOOGLE_API_KEY)")
+
+        url = (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{self.pass3_gemini_model}:generateContent?key={api_key}"
+        )
+        body = {
+            "contents": [
+                {
+                    "parts": [
+                        {"text": prompt},
+                        {
+                            "inline_data": {
+                                "mime_type": mime_type,
+                                "data": base64.b64encode(image_bytes).decode("ascii"),
+                            }
+                        },
+                    ]
+                }
+            ],
+            "generationConfig": {
+                "temperature": 0,
+                "responseMimeType": "application/json",
+            },
+        }
+        resp = self.session.post(
+            url,
+            headers={"Content-Type": "application/json"},
+            data=json.dumps(body, ensure_ascii=False),
+            timeout=self.request_timeout_sec,
+        )
+        raw_api_response = resp.text
+        if resp.status_code >= 400:
+            raise RuntimeError(f"gemini_http_{resp.status_code}: {raw_api_response[:1200]}")
+        payload = resp.json()
+        raw_text = _extract_gemini_text(payload)
+        if not raw_text:
+            raise RuntimeError("empty_gemini_response")
+        parsed = _extract_first_json_object(raw_text)
+        return raw_text, parsed, raw_api_response
+
+    def _call_model_pass3(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+    ) -> tuple[str, dict[str, Any], str]:
+        if self.pass3_provider == "gemini":
+            return self._call_model_gemini(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
+        return self._call_model(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
+
+    def _pass3_source_model(self) -> str:
+        if self.pass3_provider == "gemini":
+            return self.pass3_gemini_model
+        return self.model
+
+    def _call_text_model_openai(
+        self,
+        prompt: str,
+    ) -> tuple[str, dict[str, Any], str]:
+        body = {
+            "model": self.model,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            "temperature": 0,
+            "response_format": {"type": "json_object"},
+        }
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -432,7 +596,7 @@ class URLIngredientAnalyzer:
             max_digits=self.max_report_digits,
         )
 
-    def _print_prompts_once(self, prompt_pass1: str, prompt_pass2: str | None = None) -> None:
+    def _print_prompts_once(self, prompt_pass2: str, prompt_pass3: str | None = None) -> None:
         global _PROMPT_PRINTED_ONCE  # pylint: disable=global-statement
         if not self.show_prompt_once:
             return
@@ -441,12 +605,12 @@ class URLIngredientAnalyzer:
                 return
             print("\n" + "=" * 88)
             print("[analyze 프롬프트 1회 출력]")
-            print(f"[pass-2 prompt file] {self.prompt_template_pass1_path}")
-            print(prompt_pass1)
-            if prompt_pass2 is not None:
+            print(f"[pass-2 prompt file] {self.prompt_template_pass2_path}")
+            print(prompt_pass2)
+            if prompt_pass3 is not None:
                 print("-" * 88)
-                print(f"[pass-3 prompt file] {self.prompt_template_pass2_path}")
-                print(prompt_pass2)
+                print(f"[pass-3 prompt file] {self.prompt_template_pass3_path}")
+                print(prompt_pass3)
             print("=" * 88 + "\n")
             _PROMPT_PRINTED_ONCE = True
 
@@ -459,6 +623,7 @@ class URLIngredientAnalyzer:
         return {
             "itemMnftrRptNo": None,
             "ingredients_text": None,
+            "allergen_text": None,
             "nutrition_text": None,
             "note": err_text,
             "is_flat": None,
@@ -531,7 +696,7 @@ class URLIngredientAnalyzer:
         mime_type: str,
         target_item_rpt_no: str | None = None,
     ) -> dict[str, Any]:
-        return run_pass1(self, image_bytes, mime_type, target_item_rpt_no)
+        return run_pass2_gate(self, image_bytes, mime_type, target_item_rpt_no)
 
     def analyze_pass3(
         self,
@@ -544,7 +709,7 @@ class URLIngredientAnalyzer:
             return {
                 "error": f"image_download_failed: {exc}",
                 "raw_model_text": None,
-                "raw_model_text_pass2": None,
+                "raw_model_text_pass3": None,
                 "source_model": self.model,
             }
         pre = self.analyze_pass1_precheck_from_bytes(image_bytes, mime_type, image_url=image_url)
@@ -561,7 +726,7 @@ class URLIngredientAnalyzer:
         mime_type: str,
         target_item_rpt_no: str | None = None,
     ) -> dict[str, Any]:
-        return run_pass2(self, image_bytes, mime_type, target_item_rpt_no)
+        return run_pass3_extract(self, image_bytes, mime_type, target_item_rpt_no)
 
     def analyze_pass4_normalize(
         self,
@@ -569,7 +734,7 @@ class URLIngredientAnalyzer:
         pass3_result: dict[str, Any] | None,
         target_item_rpt_no: str | None = None,
     ) -> dict[str, Any]:
-        return run_pass3_normalize(self, pass2_result, pass3_result, target_item_rpt_no)
+        return run_pass4_normalize(self, pass2_result, pass3_result, target_item_rpt_no)
 
     # backward-compatible alias
     def normalize_analysis_result(

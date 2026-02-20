@@ -70,6 +70,7 @@ def run_pass1_precheck(analyzer: Any, image_bytes: bytes, mime_type: str, image_
         "precheck_mime_type": normalized,
         "itemMnftrRptNo": None,
         "ingredients_text": None,
+        "allergen_text": None,
         "nutrition_text": None,
         "note": f"precheck_skip: {reason}",
         "is_flat": None,

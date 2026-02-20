@@ -1,33 +1,55 @@
-이 이미지를 OCR 기반으로 상세 추출해주세요.
+이 이미지를 체크리스트 기준으로만 평가하세요. (PASS2)
+
+분석 목표:
+- 이 이미지에서 아래 4가지 정보를 신뢰 가능하게 추출할 수 있는지 판단하기 위함
+- 대상 정보: 원재료명, 품목보고번호(또는 품목제조보고번호), 영양성분, 제품명
 
 타깃 품목제조보고번호: __TARGET_ITEM_RPT_NO__
 
-목표:
-- 품목보고번호(product_report_number)
-- 원재료명(ingredients_text)
-- 제품명(product_name_in_image)
-- 영양성분표 텍스트(nutrition_text)
+중요 규칙:
+- 아래 항목만 true/false로 반환하세요.
+- 값을 모르면 보수적으로 false를 사용하세요.
+- JSON 객체만 출력하고, 설명 문장/코드블록은 출력하지 마세요.
+- 매우 엄격하게 판단하세요. 텍스트가 조금이라도 흐리거나, 작거나, 가려지거나, 애매하면 해당 항목은 false로 처리하세요.
+- "대충 보인다", "추정 가능" 수준은 모두 false입니다.
 
-추출 규칙:
-- 이미지 텍스트를 최대한 읽고 full_text에 담으세요.
-- 품목보고번호 라벨이 보이고 번호를 읽으면 product_report_number에 넣으세요. 없으면 null.
-- 원재료명/원재료/INGREDIENTS 영역을 ingredients_text에 넣으세요.
-- 제품명을 읽으면 product_name_in_image에 넣으세요.
-- 영양성분표를 읽으면 nutrition_text에 넣으세요.
-- 일부만 읽었거나 잘린 경우 *_complete=false.
-- JSON 외 텍스트를 출력하지 마세요.
+항목 정의 (모든 항목은 true가 "적합/좋은 상태" 의미):
+- is_clear_text:
+  - true: 핵심 텍스트를 오인 없이 읽을 수 있을 정도로 선명함
+  - false: 흐림/저해상도로 판독 어려움
+- is_full_frame:
+  - true: 번호/원재료/제품명/영양정보 핵심 영역이 잘리지 않음
+  - false: 일부가 잘림
+- is_flat_undistorted:
+  - true: 구김/곡면/원근 왜곡이 크지 않아 읽기 가능
+  - false: 왜곡이 심함
+- has_ingredients_section:
+  - true: "원재료명", "원재료", "INGREDIENTS" 라벨 또는 목록이 명확히 읽힘
+  - false: 해당 라벨/목록을 확인하지 못함
+- has_report_number_label:
+  - true: "품목보고번호" 또는 "품목제조보고번호" 라벨이 명확히 읽힘
+  - false: 라벨 확인 불가
+- has_product_name:
+  - true: 제품명이 완전하게 식별 가능(일부 글자 누락/추정 없음)
+  - false: 제품명 식별 불가
+- has_single_product:
+  - true: 이미지가 단일 제품 정보만 다룸(다른 제품/여러 상품 비교/목록 없음)
+  - false: 복수 제품이 함께 있어 어떤 제품 기준인지 모호함
+- has_nutrition_section:
+  - true: "영양정보", "영양성분", "Nutrition Facts" 표/영역이 명확히 읽힘
+  - false: 해당 영역 확인 불가
+- reason:
+  - 위 판단의 핵심 근거를 1문장으로 짧게 작성
 
 응답 JSON 스키마:
 {
-  "product_report_number": "문자열 또는 null",
-  "ingredients_text": "문자열 또는 null",
-  "product_name_in_image": "문자열 또는 null",
-  "nutrition_text": "문자열 또는 null",
-  "ingredients_complete": true/false,
-  "report_number_complete": true/false,
-  "product_name_complete": true/false,
-  "nutrition_complete": true/false,
-  "has_report_label": true/false,
-  "full_text": "문자열 또는 null",
-  "reason": "간단한 추출 근거"
+  "is_clear_text": true,
+  "is_full_frame": true,
+  "is_flat_undistorted": true,
+  "has_ingredients_section": true,
+  "has_report_number_label": true,
+  "has_product_name": true,
+  "has_single_product": true,
+  "has_nutrition_section": true,
+  "reason": "번호/원재료/제품명이 선명하게 확인됨"
 }

@@ -60,6 +60,19 @@ def _extract_assistant_content(raw_api_response: Any, raw_model_text: Any) -> st
                 content = msg.get("content")
                 if isinstance(content, str) and content.strip():
                     return content.strip()
+            # Gemini 응답 호환
+            candidates = payload.get("candidates") or []
+            if candidates:
+                content = (candidates[0] or {}).get("content") or {}
+                parts = content.get("parts") or []
+                chunks: list[str] = []
+                for part in parts:
+                    if isinstance(part, dict):
+                        t = part.get("text")
+                        if t:
+                            chunks.append(str(t))
+                if chunks:
+                    return "\n".join(chunks).strip()
         except Exception:  # pylint: disable=broad-except
             pass
     fallback = str(raw_model_text or "").strip()
@@ -280,7 +293,7 @@ def run_query_image_benchmark(
     if not images:
         return
 
-    max_concurrency = max(1, min(10, int(max_concurrency)))
+    max_concurrency = max(1, min(200, int(max_concurrency)))
     print(f"- analyze 병렬 처리: 최대 {max_concurrency}개 동시 실행")
     print(f"- adaptive 모드: {'ON' if adaptive else 'OFF'}")
     thread_local = threading.local()
@@ -300,11 +313,44 @@ def run_query_image_benchmark(
             thread_local.analyzer = analyzer
         return analyzer
 
-    def _analyze_one(idx: int, img: ImageCandidate) -> tuple[int, ImageCandidate, dict[str, Any], str | None]:
+    def _analyze_one(
+        idx: int,
+        img: ImageCandidate,
+    ) -> tuple[int, ImageCandidate, dict[str, Any], str | None, dict[str, Any] | None, str | None, dict[str, Any] | None]:
         try:
             analyzer = _get_analyzer()
             result = analyzer.analyze_pass2(image_url=img.url, target_item_rpt_no=None)
-            return (idx, img, result, None)
+            qf = result.get("quality_flags") or {}
+            pass3_trigger_keys = [
+                "is_clear_text",
+                "is_full_frame",
+                "is_flat_undistorted",
+                "has_report_number_label",
+                "has_product_name",
+                "has_single_product",
+                "has_ingredients_section",
+            ]
+            should_run_pass3 = all(qf.get(k) is True for k in pass3_trigger_keys)
+            pass3_result: dict[str, Any] | None = None
+            pass3_err: str | None = None
+            if should_run_pass3:
+                pass3_result = analyzer.analyze_pass3(image_url=img.url, target_item_rpt_no=None)
+                if pass3_result.get("error"):
+                    pass3_err = str(pass3_result.get("error"))
+            pass4_result: dict[str, Any] | None = None
+            if pass3_result and not pass3_err:
+                has_required = bool(
+                    (pass3_result.get("product_report_number"))
+                    and (pass3_result.get("ingredients_text"))
+                    and (pass3_result.get("product_name_in_image"))
+                )
+                if has_required:
+                    pass4_result = analyzer.analyze_pass4_normalize(
+                        pass2_result=result,
+                        pass3_result=pass3_result,
+                        target_item_rpt_no=None,
+                    )
+            return (idx, img, result, None, pass3_result, pass3_err, pass4_result)
         except Exception as exc:  # pylint: disable=broad-except
             result = {
                 "itemMnftrRptNo": None,
@@ -312,7 +358,7 @@ def run_query_image_benchmark(
                 "full_text": None,
                 "note": f"analysis_error:{type(exc).__name__}",
             }
-            return (idx, img, result, str(exc))
+            return (idx, img, result, str(exc), None, None, None)
 
     extractable_cnt = 0
     precheck_skip_cnt = 0
@@ -321,6 +367,17 @@ def run_query_image_benchmark(
     api_success_read_cnt = 0
     all_true_except_ing_cnt = 0
     all_true_with_ing_cnt = 0
+    all_true_except_nutrition_rows: list[tuple[int, str, bool | None]] = []
+    pass3_triggered_cnt = 0
+    pass3_success_cnt = 0
+    pass3_failed_cnt = 0
+    pass3_success_rows: list[dict[str, Any]] = []
+    pass3_failed_rows: list[dict[str, Any]] = []
+    pass4_run_cnt = 0
+    pass4_ok_cnt = 0
+    pass4_fail_cnt = 0
+    pass4_rows: list[dict[str, Any]] = []
+    pass2_pass_rows: list[dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=max_concurrency) as ex:
         pending: dict[Any, tuple[int, ImageCandidate]] = {}
         next_i = 0
@@ -352,7 +409,7 @@ def run_query_image_benchmark(
             for fut in done_set:
                 idx, img = pending.pop(fut)
                 done_count += 1
-                idx, img, result, err = fut.result()
+                idx, img, result, err, pass3_result, pass3_err, pass4_result = fut.result()
                 gate_pass = bool(result.get("quality_gate_pass"))
                 gate_result = "READ" if (str(result.get("ai_decision") or "").upper() == "READ") else "SKIP"
                 is_extractable = gate_pass and (gate_result == "READ")
@@ -373,6 +430,7 @@ def run_query_image_benchmark(
                         api_success_skip_cnt += 1
 
                 # 품질 플래그 통계
+                # READ 판정 기준과 동일한 핵심 키(영양성분은 선택 항목)
                 relaxed_keys = [
                     "is_clear_text",
                     "is_full_frame",
@@ -380,13 +438,113 @@ def run_query_image_benchmark(
                     "has_report_number_label",
                     "has_product_name",
                     "has_single_product",
-                    "has_nutrition_section",
                 ]
                 strict_keys = relaxed_keys + ["has_ingredients_section"]
                 if _all_true_flags(result, relaxed_keys):
                     all_true_except_ing_cnt += 1
                 if _all_true_flags(result, strict_keys):
                     all_true_with_ing_cnt += 1
+
+                # nutrition 제외, 나머지 핵심 지표 모두 true인 목록 수집
+                # 기준: strict_keys (nutrition만 제외)
+                if _all_true_flags(result, strict_keys):
+                    qf = result.get("quality_flags") or {}
+                    nutri_flag = qf.get("has_nutrition_section")
+                    all_true_except_nutrition_rows.append((idx, img.url, nutri_flag if isinstance(nutri_flag, bool) else None))
+                    pass3_triggered_cnt += 1
+                    p3_has_required = False
+                    p3_raw = None
+                    p4_raw = None
+                    if pass3_result and not pass3_err:
+                        pass3_success_cnt += 1
+                        p3_raw = _extract_assistant_content(
+                            raw_api_response=pass3_result.get("raw_api_response"),
+                            raw_model_text=pass3_result.get("raw_model_text"),
+                        )
+                        p3_has_required = bool(
+                            (pass3_result.get("product_report_number"))
+                            and (pass3_result.get("ingredients_text"))
+                            and (pass3_result.get("product_name_in_image"))
+                        )
+                        p4_items = []
+                        p4_err = None
+                        p4_report_valid = None
+                        p4_report_reason = None
+                        p4_nut_items = []
+                        if pass4_result:
+                            pass4_run_cnt += 1
+                            p4_items = list(pass4_result.get("ingredient_items") or [])
+                            p4_err = pass4_result.get("pass4_ai_error")
+                            rv = pass4_result.get("report_number_validation") or {}
+                            p4_report_valid = rv.get("is_valid")
+                            p4_report_reason = rv.get("reason")
+                            p4_nut_items = list(pass4_result.get("nutrition_items") or [])
+                            if p4_err:
+                                pass4_fail_cnt += 1
+                            else:
+                                pass4_ok_cnt += 1
+                            p4_raw = _extract_assistant_content(
+                                raw_api_response=pass4_result.get("raw_api_response_pass4"),
+                                raw_model_text=pass4_result.get("raw_model_text_pass4"),
+                            )
+                            pass4_rows.append(
+                                {
+                                    "no": idx,
+                                    "url": img.url,
+                                    "product_name": pass3_result.get("product_name_in_image"),
+                                    "report_no": pass3_result.get("product_report_number"),
+                                    "report_valid": p4_report_valid,
+                                    "report_reason": p4_report_reason,
+                                    "ingredient_items": p4_items,
+                                    "nutrition_items": p4_nut_items,
+                                    "pass4_error": p4_err,
+                                }
+                            )
+                        pass3_success_rows.append(
+                            {
+                                "no": idx,
+                                "url": img.url,
+                                "product_name": pass3_result.get("product_name_in_image"),
+                                "report_no": pass3_result.get("product_report_number"),
+                                "ingredients": pass3_result.get("ingredients_text"),
+                                "nutrition": pass3_result.get("nutrition_text"),
+                                "ingredient_items_count": len(p4_items),
+                                "nutrition_items_count": len(p4_nut_items),
+                                "report_valid": p4_report_valid,
+                                "report_reason": p4_report_reason,
+                                "pass4_error": p4_err,
+                            }
+                        )
+                    else:
+                        pass3_failed_cnt += 1
+                        raw_pass3 = _extract_assistant_content(
+                            raw_api_response=(pass3_result or {}).get("raw_api_response"),
+                            raw_model_text=(pass3_result or {}).get("raw_model_text"),
+                        )
+                        p3_raw = raw_pass3 or pass3_err or "null"
+                        pass3_failed_rows.append(
+                            {
+                                "no": idx,
+                                "url": img.url,
+                                "error": pass3_err or (pass3_result or {}).get("error") or "unknown",
+                                "raw": raw_pass3 or "null",
+                            }
+                        )
+                    pass2_pass_rows.append(
+                        {
+                            "no": idx,
+                            "url": img.url,
+                            "pass3_ok": p3_has_required,
+                            "pass3_error": pass3_err,
+                            "pass3_product_name": (pass3_result or {}).get("product_name_in_image") if pass3_result else None,
+                            "pass3_report_no": (pass3_result or {}).get("product_report_number") if pass3_result else None,
+                            "pass3_ingredients": (pass3_result or {}).get("ingredients_text") if pass3_result else None,
+                            "pass3_raw": p3_raw,
+                            "pass4_exists": bool(pass4_result),
+                            "pass4_error": (pass4_result or {}).get("pass4_ai_error") if pass4_result else None,
+                            "pass4_raw": p4_raw,
+                        }
+                    )
 
                 print(f"\n[{idx:03d}/{len(images):03d}] URL: {img.url}")
                 print("  [AI 원문 응답]")
@@ -400,6 +558,39 @@ def run_query_image_benchmark(
                     if not content:
                         content = result.get("ai_decision_reason") or result.get("note") or "(원문 없음)"
                     print(f"  {content}")
+                if pass3_result is not None:
+                    print("  [Pass-3 추출 결과]")
+                    if pass3_err:
+                        print(f"  - 상태: 실패 ({pass3_err})")
+                        raw_pass3 = _extract_assistant_content(
+                            raw_api_response=pass3_result.get("raw_api_response"),
+                            raw_model_text=pass3_result.get("raw_model_text"),
+                        )
+                        print("  - [AI 원문 raw]")
+                        print(f"  {raw_pass3 or pass3_err or '(원문 없음)'}")
+                    else:
+                        rpt = pass3_result.get("product_report_number")
+                        ing = (pass3_result.get("ingredients_text") or "").strip()
+                        prod = pass3_result.get("product_name_in_image")
+                        nut = (pass3_result.get("nutrition_text") or "").strip()
+                        ing_preview = ing if len(ing) <= 120 else ing[:120] + "..."
+                        print("  - 상태: 성공")
+                        print(f"  - 제품명: {prod or 'null'}")
+                        print(f"  - 품목보고번호: {rpt or 'null'}")
+                        print(f"  - 원재료명: {ing_preview or 'null'}")
+                        print(f"  - 영양성분 존재: {'true' if nut else 'false'}")
+                        if pass4_result is not None:
+                            items_cnt = len(list(pass4_result.get("ingredient_items") or []))
+                            nut_cnt = len(list(pass4_result.get("nutrition_items") or []))
+                            rv = pass4_result.get("report_number_validation") or {}
+                            rv_txt = "true" if rv.get("is_valid") is True else ("false" if rv.get("is_valid") is False else "null")
+                            p4_err = pass4_result.get("pass4_ai_error")
+                            if p4_err:
+                                print(f"  - Pass-4 구조화: 실패 ({p4_err})")
+                            else:
+                                print(f"  - Pass-4 구조화 항목수: {items_cnt}")
+                                print(f"  - Pass-4 영양성분 항목수: {nut_cnt}")
+                                print(f"  - Pass-4 품목번호 적합성: {rv_txt}")
 
                 if adaptive:
                     if _is_transient_error(err):
@@ -420,18 +611,38 @@ def run_query_image_benchmark(
                     time.sleep(delay_sec)
 
     print("\n" + "=" * 90)
-    print("요약")
-    print(f"- 총 이미지: {len(images)}")
-    print(f"- 추출 가능: {extractable_cnt}")
-    print(f"- 추출 불가: {len(images) - extractable_cnt}")
-    print("\n품질 조건 통계")
-    print(f"- has_ingredients_section 제외하고 나머지 핵심값 모두 true: {all_true_except_ing_cnt}")
-    print(f"- has_ingredients_section 포함해서 핵심값 모두 true: {all_true_with_ing_cnt}")
-    print("\n실행 상태 통계")
-    print(f"- Pass-1(사전검증)에서 제외: {precheck_skip_cnt}")
-    print(f"- API 호출 실패: {api_fail_cnt}")
-    print(f"- API 호출 성공 + 부적합(SKIP): {api_success_skip_cnt}")
-    print(f"- API 호출 성공 + 적합(READ): {api_success_read_cnt}")
+    print("Pass-2 통과 결과 (nutrition 무관, 핵심값 모두 true)")
+    print("=" * 90)
+    if not pass2_pass_rows:
+        print("- 없음")
+    else:
+        for row in sorted(pass2_pass_rows, key=lambda x: x["no"]):
+            print(f"[{row['no']:03d}] URL: {row['url']}")
+            print("  [Pass-3]")
+            if row.get("pass3_ok"):
+                print("  - 상태: 통과")
+            else:
+                print("  - 상태: 미통과")
+            if row.get("pass3_error"):
+                print(f"  - 실패사유: {row.get('pass3_error')}")
+            print(f"  - 제품명: {row.get('pass3_product_name') or 'null'}")
+            print(f"  - 품목보고번호: {row.get('pass3_report_no') or 'null'}")
+            print(f"  - 원재료명: {row.get('pass3_ingredients') or 'null'}")
+            print("  - raw:")
+            print(f"  {row.get('pass3_raw') or 'null'}")
+
+            if row.get("pass3_ok"):
+                print("  [Pass-4]")
+                if row.get("pass4_exists"):
+                    if row.get("pass4_error"):
+                        print(f"  - 상태: 실패 ({row.get('pass4_error')})")
+                    else:
+                        print("  - 상태: 완료")
+                    print("  - raw:")
+                    print(f"  {row.get('pass4_raw') or 'null'}")
+                else:
+                    print("  - 상태: 미실행")
+            print("-" * 90)
 
 
 def run_query_image_benchmark_interactive() -> None:
@@ -451,10 +662,17 @@ def run_query_image_benchmark_interactive() -> None:
         except ValueError:
             pass
 
-    # 요청사항: 이미지 간 대기 기본값 0 고정
+    raw_delay = input("  🔹 이미지 간 대기(초) [기본 0]: ").strip()
     delay_sec = 0.0
+    if raw_delay:
+        try:
+            d = float(raw_delay)
+            if d >= 0:
+                delay_sec = d
+        except ValueError:
+            pass
 
-    raw_conc = input("  🔹 최대 동시 요청 수 [기본 5]: ").strip()
+    raw_conc = input("  🔹 최대 동시 요청 수 [기본 5, 최대 200]: ").strip()
     max_concurrency = 5
     if raw_conc:
         try:

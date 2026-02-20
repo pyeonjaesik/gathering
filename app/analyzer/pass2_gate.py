@@ -4,44 +4,44 @@ import time
 from typing import Any
 
 
-def run_pass1(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt_no: str | None = None) -> dict[str, Any]:
-    prompt_pass1 = analyzer._build_prompt_pass1(target_item_rpt_no=target_item_rpt_no)
-    analyzer._print_prompts_once(prompt_pass1, None)
+def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt_no: str | None = None) -> dict[str, Any]:
+    prompt_pass2 = analyzer._build_prompt_pass2(target_item_rpt_no=target_item_rpt_no)
+    analyzer._print_prompts_once(prompt_pass2, None)
 
     last_error: Exception | None = None
     last_raw_text: str | None = None
     for attempt in range(analyzer.model_retries + 1):
         try:
-            raw_text_pass1, parsed_pass1, raw_api_response = analyzer._call_model(
+            raw_text_pass2, parsed_pass2, raw_api_response = analyzer._call_model(
                 image_bytes=image_bytes,
                 mime_type=mime_type,
-                prompt=prompt_pass1,
+                prompt=prompt_pass2,
             )
-            last_raw_text = raw_text_pass1
+            last_raw_text = raw_text_pass2
 
             # v2 prompt: true == good 상태. (구버전 키도 역변환으로 호환)
-            is_clear_text = parsed_pass1.get("is_clear_text")
+            is_clear_text = parsed_pass2.get("is_clear_text")
             if is_clear_text is None:
-                is_clear_text = not bool(parsed_pass1.get("is_blurry_or_lowres"))
+                is_clear_text = not bool(parsed_pass2.get("is_blurry_or_lowres"))
             else:
                 is_clear_text = bool(is_clear_text)
 
-            is_full_frame = parsed_pass1.get("is_full_frame")
+            is_full_frame = parsed_pass2.get("is_full_frame")
             if is_full_frame is None:
-                is_full_frame = not bool(parsed_pass1.get("is_cropped_or_partial"))
+                is_full_frame = not bool(parsed_pass2.get("is_cropped_or_partial"))
             else:
                 is_full_frame = bool(is_full_frame)
 
-            is_flat_undistorted = parsed_pass1.get("is_flat_undistorted")
+            is_flat_undistorted = parsed_pass2.get("is_flat_undistorted")
             if is_flat_undistorted is None:
-                is_flat_undistorted = not bool(parsed_pass1.get("is_wrinkled_or_distorted"))
+                is_flat_undistorted = not bool(parsed_pass2.get("is_wrinkled_or_distorted"))
             else:
                 is_flat_undistorted = bool(is_flat_undistorted)
-            has_ingredients = bool(parsed_pass1.get("has_ingredients_section"))
-            has_report_label = bool(parsed_pass1.get("has_report_number_label"))
-            has_product_name = bool(parsed_pass1.get("has_product_name"))
-            has_single_product = bool(parsed_pass1.get("has_single_product"))
-            has_nutrition = bool(parsed_pass1.get("has_nutrition_section"))
+            has_ingredients = bool(parsed_pass2.get("has_ingredients_section"))
+            has_report_label = bool(parsed_pass2.get("has_report_number_label"))
+            has_product_name = bool(parsed_pass2.get("has_product_name"))
+            has_single_product = bool(parsed_pass2.get("has_single_product"))
+            has_nutrition = bool(parsed_pass2.get("has_nutrition_section"))
 
             fail_checks: list[str] = []
             if not is_clear_text:
@@ -65,7 +65,7 @@ def run_pass1(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt
             passed_checks = total_checks - len(fail_checks)
             quality_score = max(0, min(100, int((passed_checks / total_checks) * 100)))
             decision_conf = 100
-            decision_reason = str(parsed_pass1.get("reason") or "").strip()
+            decision_reason = str(parsed_pass2.get("reason") or "").strip()
             if fail_checks:
                 rule_reason = ",".join(fail_checks)
                 decision_reason = f"{rule_reason} | {decision_reason}" if decision_reason else rule_reason
@@ -74,15 +74,15 @@ def run_pass1(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt
 
             quality_fail_reasons = fail_checks.copy()
             if decision_raw != "READ":
-                quality_fail_reasons.append(f"ai_skip:{decision_reason or 'pass1_skip'}")
+                quality_fail_reasons.append(f"ai_skip:{decision_reason or 'pass2_skip'}")
 
             return {
-                "note": parsed_pass1.get("reason") or "chatgpt(pass1)",
+                "note": parsed_pass2.get("reason") or "chatgpt(pass2)",
                 "quality_gate_pass": decision_raw == "READ",
                 "quality_score": quality_score,
                 "quality_fail_reasons": quality_fail_reasons,
                 "quality_flags": {
-                    "is_real_world_photo": bool(parsed_pass1.get("is_real_world_photo")),
+                    "is_real_world_photo": bool(parsed_pass2.get("is_real_world_photo")),
                     # 하위호환: 기존 음수 키도 함께 제공
                     "is_blurry_or_lowres": (not is_clear_text),
                     "is_wrinkled_or_distorted": (not is_flat_undistorted),
@@ -100,9 +100,9 @@ def run_pass1(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt
                 "ai_decision": decision_raw,
                 "ai_suitability": suitability_raw,
                 "ai_decision_confidence": decision_conf,
-                "ai_decision_reason": decision_reason or ("pass1_read" if decision_raw == "READ" else "pass1_skip"),
-                "raw_model_text": raw_text_pass1,
-                "raw_model_text_pass1": raw_text_pass1,
+                "ai_decision_reason": decision_reason or ("pass2_read" if decision_raw == "READ" else "pass2_skip"),
+                "raw_model_text": raw_text_pass2,
+                "raw_model_text_pass2": raw_text_pass2,
                 "raw_api_response": raw_api_response,
                 "source_model": analyzer.model,
             }
