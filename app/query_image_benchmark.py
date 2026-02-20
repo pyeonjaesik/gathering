@@ -12,13 +12,14 @@ import os
 import re
 import time
 import threading
+import json
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from typing import Any
 
 import requests
 
-from app.ingredient_analyzer import URLIngredientAnalyzer
+from app.analyzer import URLIngredientAnalyzer
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25
@@ -46,6 +47,55 @@ def _short(text: Any, max_len: int = 42) -> str:
     if len(value) <= max_len:
         return value
     return value[: max_len - 1] + "…"
+
+
+def _extract_assistant_content(raw_api_response: Any, raw_model_text: Any) -> str:
+    text = str(raw_api_response or "").strip()
+    if text:
+        try:
+            payload = json.loads(text)
+            choices = payload.get("choices") or []
+            if choices:
+                msg = (choices[0] or {}).get("message") or {}
+                content = msg.get("content")
+                if isinstance(content, str) and content.strip():
+                    return content.strip()
+        except Exception:  # pylint: disable=broad-except
+            pass
+    fallback = str(raw_model_text or "").strip()
+    return fallback
+
+
+def _is_precheck_skip(result: dict[str, Any]) -> bool:
+    reason = str(result.get("ai_decision_reason") or "").lower()
+    if "precheck" in reason:
+        return True
+    for code in (result.get("quality_fail_reasons") or []):
+        if str(code).lower().startswith("precheck:"):
+            return True
+    return False
+
+
+def _is_api_failure(result: dict[str, Any], err: str | None) -> bool:
+    if err:
+        return True
+    reason = str(result.get("ai_decision_reason") or "").lower()
+    note = str(result.get("note") or "").lower()
+    text = " ".join([reason, note])
+    failure_keys = (
+        "openai_http_",
+        "empty_model_response",
+        "chatgpt analyze error",
+        "resource_exhausted",
+        "timeout",
+        "insufficient_quota",
+    )
+    return any(k in text for k in failure_keys)
+
+
+def _all_true_flags(result: dict[str, Any], keys: list[str]) -> bool:
+    qf = result.get("quality_flags") or {}
+    return all(qf.get(k) is True for k in keys)
 
 
 def _is_transient_error(err: str | None) -> bool:
@@ -216,9 +266,9 @@ def run_query_image_benchmark(
     serp_key = os.getenv("SERPAPI_KEY")
     if not serp_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
-    gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    if not gemini_key:
-        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if not openai_key:
+        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
 
     print("\n=== 검색어 기반 이미지 벤치마크 ===")
     print(f"- 검색어: {query}")
@@ -226,7 +276,7 @@ def run_query_image_benchmark(
     print("- SerpAPI에서 이미지 수집 중...")
     images = _search_images_all(query=query, api_key=serp_key, max_pages=max_pages, per_page=100)
     print(f"- 수집된 이미지: {len(images)}개")
-    print("- 상태 기준: ✅ 온전 검출 | 🔺 부분/불확실 | ❌ 미검출")
+    print("- 상태 기준: ✅ 추출 가능 | ❌ 추출 불가")
     if not images:
         return
 
@@ -240,7 +290,7 @@ def run_query_image_benchmark(
         if analyzer is None:
             # 벤치마크는 체감 속도를 위해 timeout/retry를 보수적으로 낮춘다.
             analyzer = URLIngredientAnalyzer(
-                api_key=gemini_key,
+                api_key=openai_key,
                 strict_mode=False,
                 request_timeout_sec=35,
                 download_timeout_sec=12,
@@ -253,7 +303,7 @@ def run_query_image_benchmark(
     def _analyze_one(idx: int, img: ImageCandidate) -> tuple[int, ImageCandidate, dict[str, Any], str | None]:
         try:
             analyzer = _get_analyzer()
-            result = analyzer.analyze(image_url=img.url, target_item_rpt_no=None)
+            result = analyzer.analyze_pass2(image_url=img.url, target_item_rpt_no=None)
             return (idx, img, result, None)
         except Exception as exc:  # pylint: disable=broad-except
             result = {
@@ -264,7 +314,13 @@ def run_query_image_benchmark(
             }
             return (idx, img, result, str(exc))
 
-    ok_cnt = 0
+    extractable_cnt = 0
+    precheck_skip_cnt = 0
+    api_fail_cnt = 0
+    api_success_skip_cnt = 0
+    api_success_read_cnt = 0
+    all_true_except_ing_cnt = 0
+    all_true_with_ing_cnt = 0
     with ThreadPoolExecutor(max_workers=max_concurrency) as ex:
         pending: dict[Any, tuple[int, ImageCandidate]] = {}
         next_i = 0
@@ -297,31 +353,53 @@ def run_query_image_benchmark(
                 idx, img = pending.pop(fut)
                 done_count += 1
                 idx, img, result, err = fut.result()
-                rpt = result.get("itemMnftrRptNo")
-                ing = result.get("ingredients_text")
-                full_text = result.get("full_text")
-                mark_report = _mark_report(result)
-                mark_ing = _mark_ingredients(result)
-                mark_prod, product_name = _mark_product(result, img.title)
-                mark_nutri, nutri_how = _mark_nutrition_from_result(result)
                 gate_pass = bool(result.get("quality_gate_pass"))
-                gate_score = result.get("quality_score")
-                gate_fail = result.get("quality_fail_reasons") or []
                 gate_result = "READ" if (str(result.get("ai_decision") or "").upper() == "READ") else "SKIP"
-                suitability = str(result.get("ai_suitability") or "").strip()
-                if suitability not in ("적합", "부적합"):
-                    suitability = "적합" if gate_result == "READ" else "부적합"
-                decision_conf = result.get("ai_decision_confidence")
-                decision_reason = result.get("ai_decision_reason")
-                raw_model_text = result.get("raw_model_text")
+                is_extractable = gate_pass and (gate_result == "READ")
+                if is_extractable and err is None:
+                    extractable_cnt += 1
 
-                got_any = any(m != "❌" for m in (mark_report, mark_ing, mark_prod, mark_nutri))
-                if got_any and err is None:
-                    ok_cnt += 1
+                # 통계 분류
+                is_precheck = _is_precheck_skip(result)
+                is_api_fail = _is_api_failure(result, err)
+                if is_precheck:
+                    precheck_skip_cnt += 1
+                elif is_api_fail:
+                    api_fail_cnt += 1
+                else:
+                    if gate_result == "READ":
+                        api_success_read_cnt += 1
+                    else:
+                        api_success_skip_cnt += 1
+
+                # 품질 플래그 통계
+                relaxed_keys = [
+                    "is_clear_text",
+                    "is_full_frame",
+                    "is_flat_undistorted",
+                    "has_report_number_label",
+                    "has_product_name",
+                    "has_single_product",
+                    "has_nutrition_section",
+                ]
+                strict_keys = relaxed_keys + ["has_ingredients_section"]
+                if _all_true_flags(result, relaxed_keys):
+                    all_true_except_ing_cnt += 1
+                if _all_true_flags(result, strict_keys):
+                    all_true_with_ing_cnt += 1
 
                 print(f"\n[{idx:03d}/{len(images):03d}] URL: {img.url}")
                 print("  [AI 원문 응답]")
-                print(f"  {raw_model_text or '(원문 없음)'}")
+                if err:
+                    print(f"  (호출 실패) {err}")
+                else:
+                    content = _extract_assistant_content(
+                        raw_api_response=result.get("raw_api_response"),
+                        raw_model_text=result.get("raw_model_text"),
+                    )
+                    if not content:
+                        content = result.get("ai_decision_reason") or result.get("note") or "(원문 없음)"
+                    print(f"  {content}")
 
                 if adaptive:
                     if _is_transient_error(err):
@@ -344,8 +422,16 @@ def run_query_image_benchmark(
     print("\n" + "=" * 90)
     print("요약")
     print(f"- 총 이미지: {len(images)}")
-    print(f"- 의미 있는 추출(번호/원재료/성분표/제품명 중 하나 이상): {ok_cnt}")
-    print(f"- 미검출/오류 중심 이미지: {len(images) - ok_cnt}")
+    print(f"- 추출 가능: {extractable_cnt}")
+    print(f"- 추출 불가: {len(images) - extractable_cnt}")
+    print("\n품질 조건 통계")
+    print(f"- has_ingredients_section 제외하고 나머지 핵심값 모두 true: {all_true_except_ing_cnt}")
+    print(f"- has_ingredients_section 포함해서 핵심값 모두 true: {all_true_with_ing_cnt}")
+    print("\n실행 상태 통계")
+    print(f"- Pass-1(사전검증)에서 제외: {precheck_skip_cnt}")
+    print(f"- API 호출 실패: {api_fail_cnt}")
+    print(f"- API 호출 성공 + 부적합(SKIP): {api_success_skip_cnt}")
+    print(f"- API 호출 성공 + 적합(READ): {api_success_read_cnt}")
 
 
 def run_query_image_benchmark_interactive() -> None:
@@ -365,15 +451,8 @@ def run_query_image_benchmark_interactive() -> None:
         except ValueError:
             pass
 
-    raw_delay = input("  🔹 이미지 간 대기(초) [기본 0]: ").strip()
+    # 요청사항: 이미지 간 대기 기본값 0 고정
     delay_sec = 0.0
-    if raw_delay:
-        try:
-            d = float(raw_delay)
-            if d >= 0:
-                delay_sec = d
-        except ValueError:
-            pass
 
     raw_conc = input("  🔹 최대 동시 요청 수 [기본 5]: ").strip()
     max_concurrency = 5
@@ -385,8 +464,8 @@ def run_query_image_benchmark_interactive() -> None:
         except ValueError:
             pass
 
-    raw_adapt = input("  🔹 adaptive 자동 감속 사용? [Y/n]: ").strip().lower()
-    adaptive = (raw_adapt != "n")
+    # 요청사항: adaptive 자동 감속 기능 OFF 고정
+    adaptive = False
 
     print("\n  🚀 실행합니다. 결과는 이미지별로 순차 출력됩니다.")
     run_query_image_benchmark(

@@ -32,7 +32,7 @@ from app.ingredient_enricher import (
     run_enricher,
     run_enricher_for_report_no,
 )
-from app.ingredient_analyzer import URLIngredientAnalyzer
+from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
 
 W = 68
@@ -146,9 +146,9 @@ def run_web_monitor() -> None:
 
 def run_image_analyzer_test() -> None:
     print("\n  🧪 [이미지 URL analyze 테스트]")
-    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    if not gemini_api_key:
-        print("  ❌ GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수가 필요합니다.")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        print("  ❌ OPENAI_API_KEY 환경변수가 필요합니다.")
         return
 
     print("  🔹 입력 방법:")
@@ -184,7 +184,7 @@ def run_image_analyzer_test() -> None:
     target_no = input("  🔹 타깃 품목보고번호(선택, Enter 생략): ").strip()
     target_no = target_no or None
 
-    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
+    analyzer = URLIngredientAnalyzer(api_key=openai_api_key)
     print("\n  🔍 분석 중...")
     try:
         result = analyzer.analyze(image_url=image_url, target_item_rpt_no=target_no)

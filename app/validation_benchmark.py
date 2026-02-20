@@ -153,11 +153,11 @@ def run_benchmark(
     delay_sec: float = 0.0,
     ingredients_threshold: float = 0.9,
 ) -> Path:
-    from app.ingredient_analyzer import URLIngredientAnalyzer
+    from app.analyzer import URLIngredientAnalyzer
 
-    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
+        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
 
     dataset = _load_dataset(dataset_path)
     analyzer = URLIngredientAnalyzer(api_key=api_key, strict_mode=False)

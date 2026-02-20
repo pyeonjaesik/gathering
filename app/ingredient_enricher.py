@@ -17,7 +17,7 @@ from collections import Counter
 import requests
 
 from app.config import DB_FILE
-from app.ingredient_analyzer import URLIngredientAnalyzer
+from app.analyzer import URLIngredientAnalyzer
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25
@@ -865,13 +865,13 @@ def run_enricher(
     api_key = os.getenv("SERPAPI_KEY")
     if not api_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
-    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    if not gemini_api_key:
-        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
 
     conn = sqlite3.connect(db_path)
     init_ingredient_tables(conn)
-    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
+    analyzer = URLIngredientAnalyzer(api_key=openai_api_key)
 
     if lv3 is not None and lv4 is not None:
         targets = fetch_target_products_by_category(conn, lv3=lv3, lv4=lv4, limit=limit)
@@ -949,9 +949,9 @@ def run_enricher_for_report_no(
     api_key = os.getenv("SERPAPI_KEY")
     if not api_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
-    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    if not gemini_api_key:
-        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
 
     report_no = (report_no or "").strip()
     if not report_no:
@@ -959,7 +959,7 @@ def run_enricher_for_report_no(
 
     conn = sqlite3.connect(db_path)
     init_ingredient_tables(conn)
-    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
+    analyzer = URLIngredientAnalyzer(api_key=openai_api_key)
 
     product = fetch_product_by_report_no(conn, report_no)
     if not product:
