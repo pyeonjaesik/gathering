@@ -6,7 +6,15 @@
 """
 
 import os
+import json
+import socket
+import subprocess
 import sys
+import time
+import re
+import shutil
+import webbrowser
+from pathlib import Path
 
 import sqlite3
 from app import collector, viewer
@@ -18,9 +26,17 @@ from app.dedupe_tools import (
     get_duplicate_stats,
     run_dedupe,
 )
-from app.ingredient_enricher import get_priority_subcategories, run_enricher
+from app.ingredient_enricher import (
+    diagnose_analysis,
+    get_priority_subcategories,
+    run_enricher,
+    run_enricher_for_report_no,
+)
+from app.ingredient_analyzer import URLIngredientAnalyzer
 
 W = 68
+WEB_UI_PORT = 8501
+WEB_UI_URL = f"http://localhost:{WEB_UI_PORT}"
 
 
 def _bar(char: str = "─") -> str:
@@ -65,13 +81,283 @@ def run_data_viewer() -> None:
     viewer.main()
 
 
+def _is_port_open(port: int) -> bool:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.settimeout(0.3)
+        return sock.connect_ex(("127.0.0.1", port)) == 0
+
+
+def run_web_monitor() -> None:
+    if _is_port_open(WEB_UI_PORT):
+        print(f"\n  🌐 웹 모니터가 이미 실행 중입니다. 브라우저를 엽니다: {WEB_UI_URL}")
+        webbrowser.open_new_tab(WEB_UI_URL)
+        return
+
+    project_root = Path(__file__).resolve().parent.parent
+    log_path = project_root / "streamlit_web_ui.log"
+    env = os.environ.copy()
+    env.setdefault("UV_CACHE_DIR", "/tmp/uv-cache")
+
+    cmd = [
+        "uv",
+        "run",
+        "streamlit",
+        "run",
+        "app/web_ui.py",
+        "--server.port",
+        str(WEB_UI_PORT),
+        "--server.headless",
+        "true",
+    ]
+
+    print("\n  🚀 웹 모니터 서버를 시작합니다...")
+    print(f"  - URL: {WEB_UI_URL}")
+    print(f"  - 로그: {log_path}")
+
+    try:
+        with open(log_path, "a", encoding="utf-8") as logf:
+            subprocess.Popen(  # noqa: S603
+                cmd,
+                cwd=str(project_root),
+                env=env,
+                stdout=logf,
+                stderr=logf,
+                start_new_session=True,
+            )
+    except FileNotFoundError:
+        print("  ❌ uv 명령을 찾지 못했습니다. `uv` 설치 상태를 확인해주세요.")
+        return
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ❌ 웹 모니터 실행 실패: {exc}")
+        return
+
+    for _ in range(20):
+        if _is_port_open(WEB_UI_PORT):
+            print("  ✅ 웹 모니터 준비 완료. 브라우저를 엽니다.")
+            webbrowser.open_new_tab(WEB_UI_URL)
+            return
+        time.sleep(0.5)
+
+    print("  ⚠️ 서버 시작이 지연되고 있습니다. 수동으로 URL을 열어주세요.")
+    print(f"  👉 {WEB_UI_URL}")
+    print(f"  💡 문제 확인: {log_path}")
+
+
+def run_image_analyzer_test() -> None:
+    print("\n  🧪 [이미지 URL analyze 테스트]")
+    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    if not gemini_api_key:
+        print("  ❌ GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수가 필요합니다.")
+        return
+
+    print("  🔹 입력 방법:")
+    print("    - 일반 URL 직접 입력")
+    print("    - data URL은 길어서 `paste` 모드 권장")
+    print("    - 파일에서 읽기: @/path/to/data_url.txt")
+    raw_input = input("  🔹 이미지 입력(URL / paste / @파일): ").strip()
+    image_url = raw_input
+    if raw_input.lower() == "paste":
+        print("  📋 data URL을 붙여넣고 마지막 줄에 END 입력:")
+        lines: list[str] = []
+        while True:
+            line = input()
+            if line.strip() == "END":
+                break
+            lines.append(line.strip())
+        image_url = "".join(lines).strip()
+    elif raw_input.startswith("@"):
+        p = Path(raw_input[1:]).expanduser()
+        if not p.exists():
+            print(f"  ❌ 파일을 찾지 못했습니다: {p}")
+            return
+        image_url = p.read_text(encoding="utf-8").strip()
+
+    # data URL은 복붙 시 공백/줄바꿈이 섞일 수 있어 제거
+    if image_url.startswith("data:image/"):
+        image_url = re.sub(r"\s+", "", image_url)
+
+    if not image_url:
+        print("  ⚠️ URL을 입력해주세요.")
+        return
+
+    target_no = input("  🔹 타깃 품목보고번호(선택, Enter 생략): ").strip()
+    target_no = target_no or None
+
+    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
+    print("\n  🔍 분석 중...")
+    try:
+        result = analyzer.analyze(image_url=image_url, target_item_rpt_no=target_no)
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ❌ 분석 실패: {exc}")
+        return
+
+    print("\n  ✅ [analyze 결과]")
+    print(f"  - itemMnftrRptNo : {result.get('itemMnftrRptNo') or '없음'}")
+    print(f"  - is_flat        : {result.get('is_flat')}")
+    print(f"  - is_table_format: {result.get('is_table_format')}")
+    print(f"  - has_ingredients: {result.get('has_ingredients')}")
+    print(f"  - has_rect_box   : {result.get('has_rect_ingredient_box')}")
+    print(f"  - has_report_lbl : {result.get('has_report_label')}")
+    print(f"  - product_name   : {result.get('product_name_in_image') or '없음'}")
+    print(f"  - brand          : {result.get('brand') or '없음'}")
+    print(f"  - manufacturer   : {result.get('manufacturer') or '없음'}")
+    print(f"  - note           : {result.get('note') or '없음'}")
+
+    ingredients = (result.get("ingredients_text") or "").strip()
+    if ingredients:
+        preview = ingredients if len(ingredients) <= 240 else ingredients[:240] + "..."
+        print(f"  - ingredients    : {preview}")
+    else:
+        print("  - ingredients    : 없음")
+
+    if target_no:
+        status, reason = diagnose_analysis(result, target_no)
+        print("\n  📌 [타깃 기준 진단]")
+        print(f"  - target         : {target_no}")
+        print(f"  - status         : {status}")
+        print(f"  - reason         : {reason}")
+
+    print("\n  🧾 [원본 JSON]")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+def _latest_benchmark_summary_path() -> Path | None:
+    root = Path(__file__).resolve().parent.parent / "validation_reports"
+    if not root.exists():
+        return None
+    candidates = [p / "summary.json" for p in root.glob("benchmark_*") if (p / "summary.json").exists()]
+    if not candidates:
+        return None
+    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+
+def run_benchmark_menu() -> None:
+    project_root = Path(__file__).resolve().parent.parent
+    validation_dir = project_root / "validation"
+    template_path = validation_dir / "samples.template.jsonl"
+    samples_path = validation_dir / "samples.jsonl"
+
+    while True:
+        print("\n  📊 [analyze 벤치마크 도우미]")
+        print("    [1] 템플릿 생성/갱신")
+        print("    [2] 샘플 파일 준비 (template -> samples)")
+        print("    [3] 벤치마크 실행")
+        print("    [b] 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+
+        if sub == "1":
+            try:
+                validation_dir.mkdir(parents=True, exist_ok=True)
+                result = subprocess.run(
+                    [
+                        sys.executable,
+                        "-m",
+                        "app.validation_benchmark",
+                        "--init-template",
+                        str(template_path),
+                    ],
+                    cwd=str(project_root),
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+                print(f"  ✅ 템플릿 생성 완료: {template_path}")
+                if result.stdout.strip():
+                    print(f"  ℹ️ {result.stdout.strip()}")
+            except subprocess.CalledProcessError as exc:
+                print("  ❌ 템플릿 생성 실패")
+                print(f"  {exc.stderr.strip() or exc.stdout.strip()}")
+
+        elif sub == "2":
+            if not template_path.exists():
+                print("  ⚠️ 템플릿이 없습니다. 먼저 [1]을 실행해주세요.")
+                continue
+            validation_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(template_path, samples_path)
+            print(f"  ✅ 샘플 파일 준비 완료: {samples_path}")
+            print("  ✍️ 이제 samples.jsonl의 image / expected 값만 채우면 됩니다.")
+
+        elif sub == "3":
+            if not samples_path.exists():
+                print("  ⚠️ samples.jsonl이 없습니다. 먼저 [2]를 실행해주세요.")
+                continue
+            raw_th = input("  🔹 원재료 유사도 임계값 [기본 0.9]: ").strip()
+            threshold = "0.9"
+            if raw_th:
+                try:
+                    val = float(raw_th)
+                    if val < 0.0 or val > 1.0:
+                        print("  ⚠️ 0~1 범위여야 합니다. 기본 0.9 사용.")
+                    else:
+                        threshold = str(val)
+                except ValueError:
+                    print("  ⚠️ 숫자 형식이 아닙니다. 기본 0.9 사용.")
+
+            print("  🚀 벤치마크 실행 중...")
+            try:
+                result = subprocess.run(
+                    [
+                        sys.executable,
+                        "-m",
+                        "app.validation_benchmark",
+                        "--dataset",
+                        str(samples_path),
+                        "--ingredients-threshold",
+                        threshold,
+                    ],
+                    cwd=str(project_root),
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+                print("  ✅ 벤치마크 완료")
+                stdout = result.stdout.strip()
+                if stdout:
+                    print()
+                    print(stdout)
+                    print()
+            except subprocess.CalledProcessError as exc:
+                print("  ❌ 벤치마크 실행 실패")
+                print(f"  {exc.stderr.strip() or exc.stdout.strip()}")
+
+        elif sub == "b":
+            return
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
 def run_ingredient_menu() -> None:
     if not os.getenv("SERPAPI_KEY"):
         print("\n  ❌ 오류: SERPAPI_KEY 환경변수가 필요합니다.")
         print('  💡 예) export SERPAPI_KEY="YOUR_KEY"')
         return
 
-    print("\n  🧪 [원재료명 추출 대상 선택]")
+    print("\n  🧪 [원재료명 추출 방식 선택]")
+    print("    [1] 우선순위 중분류에서 선택")
+    print("    [2] 품목보고번호 직접 입력 (1건)")
+    print("    [b] 취소")
+    mode = input("  👉 선택 : ").strip().lower()
+
+    if mode == "b":
+        print("  ↩️ 원재료 추출을 취소했습니다.")
+        return
+
+    if mode == "2":
+        report_no = input("  🔹 품목보고번호 입력: ").strip()
+        if not report_no:
+            print("  ⚠️ 품목보고번호를 입력해주세요.")
+            return
+        raw_quiet = input("  🔹 이미지별 상세 로그 생략? [y/N]: ").strip().lower()
+        quiet = raw_quiet == "y"
+        print("\n  🚀 [실행] 지정한 품목보고번호 1건 분석을 시작합니다.\n")
+        run_enricher_for_report_no(report_no=report_no, quiet=quiet)
+        return
+
+    if mode != "1":
+        print("  ⚠️ 올바른 번호를 입력해주세요.")
+        return
+
+    print("\n  🧪 [원재료명 추출 대상 선택: 중분류]")
     with sqlite3.connect(DB_FILE) as conn:
         categories = get_priority_subcategories(conn)
 
@@ -194,6 +480,7 @@ def _print_duplicate_stats(stats: dict[str, int]) -> None:
     print(f"    A(foodCd) 그룹/초과행    : {stats['foodCd_groups']:,} / {stats['foodCd_extra']:,}")
     print(f"    B(이름+용량+카테고리)    : {stats['h1_groups']:,} / {stats['h1_extra']:,}")
     print(f"    C(이름+영양+카테고리)    : {stats['h2_groups']:,} / {stats['h2_extra']:,}")
+    print(f"    D(이름+카테고리)         : {stats['h3_groups']:,} / {stats['h3_extra']:,}")
 
 
 def run_duplicate_menu() -> None:
@@ -250,6 +537,7 @@ def run_duplicate_menu() -> None:
             print(f"    - 규칙 A 삭제: {result['removed_a']:,}건")
             print(f"    - 규칙 B 삭제: {result['removed_b']:,}건")
             print(f"    - 규칙 C 삭제: {result['removed_c']:,}건")
+            print(f"    - 규칙 D 삭제: {result['removed_d']:,}건")
             print(f"    - 총 삭제   : {result['removed_total']:,}건")
             print(f"    - 삭제 목록 CSV : {result['csv_path']}")
 
@@ -340,6 +628,9 @@ def main() -> None:
         print("    [3] 🌐 공공 API 데이터 수집")
         print("    [4] 🧹 중복 데이터 점검/삭제")
         print("    [5] 💾 백업/복원 관리")
+        print("    [6] 📡 브라우저 모니터 열기")
+        print("    [7] 🧪 이미지 URL analyze 테스트")
+        print("    [8] 📊 analyze 벤치마크 도우미")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -354,6 +645,12 @@ def main() -> None:
             run_duplicate_menu()
         elif choice == "5":
             run_backup_menu()
+        elif choice == "6":
+            run_web_monitor()
+        elif choice == "7":
+            run_image_analyzer_test()
+        elif choice == "8":
+            run_benchmark_menu()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break

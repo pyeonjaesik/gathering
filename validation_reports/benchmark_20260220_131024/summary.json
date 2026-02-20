@@ -1,0 +1,76 @@
+{
+  "dataset_path": "/Users/dmyeon/gathering/validation/samples.jsonl",
+  "samples": 2,
+  "핵심지표": {
+    "정답_성공률": 0.0,
+    "정답_성공건수": 0,
+    "정답_평가가능건수": 1,
+    "안전_정확도": 0.0,
+    "안전_정확도_성공건수": 0,
+    "안전_정확도_평가가능통과건수": 1,
+    "통과율": 0.5,
+    "통과건수": 1,
+    "전체건수": 2,
+    "원재료_유사도_임계값": 0.9
+  },
+  "실패분류": {
+    "놓침": 0,
+    "오탐": 0,
+    "판독실패": 1
+  },
+  "strict_confusion(참고)": {
+    "tp": 1,
+    "fp": 0,
+    "tn": 1,
+    "fn": 0
+  },
+  "strict_metrics(참고)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0
+  },
+  "field_accuracy": {
+    "itemMnftrRptNo": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "ingredients_present": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "is_flat": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "has_rect_ingredient_box": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "has_report_label": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "is_designed_graphic": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "has_real_world_objects": {
+      "total": 0,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "strict_accept": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    }
+  },
+  "finished_at": "2026-02-20T13:10:53.755971"
+}

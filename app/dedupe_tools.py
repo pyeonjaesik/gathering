@@ -24,6 +24,7 @@ def duplicate_conditions() -> list[str]:
         "규칙 A: foodCd가 같은 행은 같은 제품으로 보고 1건만 유지",
         "규칙 B: foodNm 정규화 + foodSize + servSize + foodLv3Nm + foodLv4Nm이 같고, foodCd가 서로 다르면 중복 후보",
         "규칙 C: foodNm 정규화 + enerc/prot/fatce/chocdf + foodLv3Nm + foodLv4Nm이 같고, foodCd가 서로 다르면 중복 후보",
+        "규칙 D: foodNm 정규화 + foodLv3Nm + foodLv4Nm이 같고, foodCd가 서로 다르면 중복 후보",
         "유지 우선순위: itemMnftrRptNo 존재 > 유효 mfrNm > 최신 crtrYmd > 최신 id",
     ]
 
@@ -92,6 +93,24 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
         """,
     )
 
+    h3_groups, h3_extra = _group_stats(
+        conn,
+        f"""
+        WITH base AS (
+          SELECT foodCd,
+                 {NAME_NORM_EXPR} AS nm_norm,
+                 coalesce(nullif(trim(foodLv3Nm),''),'∅') AS lv3_n,
+                 coalesce(nullif(trim(foodLv4Nm),''),'∅') AS lv4_n
+          FROM food_info
+        )
+        SELECT nm_norm, lv3_n, lv4_n,
+               COUNT(*) AS cnt, COUNT(DISTINCT foodCd) AS ccd
+        FROM base
+        GROUP BY nm_norm, lv3_n, lv4_n
+        HAVING cnt > 1 AND ccd > 1
+        """,
+    )
+
     total = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
     return {
         "total_rows": total,
@@ -101,6 +120,8 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
         "h1_extra": h1_extra,
         "h2_groups": h2_groups,
         "h2_extra": h2_extra,
+        "h3_groups": h3_groups,
+        "h3_extra": h3_extra,
     }
 
 
@@ -165,6 +186,7 @@ def run_dedupe(conn: sqlite3.Connection) -> dict[str, object]:
     removed_a = _run_rule_a_foodcd(conn)
     removed_b = _run_rule_b_h1(conn)
     removed_c = _run_rule_c_h2(conn)
+    removed_d = _run_rule_d_name_category(conn)
 
     conn.commit()
     csv_path = _export_run_removed_csv(conn)
@@ -172,7 +194,8 @@ def run_dedupe(conn: sqlite3.Connection) -> dict[str, object]:
         "removed_a": removed_a,
         "removed_b": removed_b,
         "removed_c": removed_c,
-        "removed_total": removed_a + removed_b + removed_c,
+        "removed_d": removed_d,
+        "removed_total": removed_a + removed_b + removed_c + removed_d,
         "csv_path": csv_path,
     }
 
@@ -385,6 +408,79 @@ def _run_rule_c_h2(conn: sqlite3.Connection) -> int:
     )
     conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_c")
     removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_c)").rowcount
+    return removed
+
+
+def _run_rule_d_name_category(conn: sqlite3.Connection) -> int:
+    conn.execute("DROP TABLE IF EXISTS _dup_d")
+    conn.execute(
+        f"""
+        CREATE TEMP TABLE _dup_d AS
+        WITH base AS (
+          SELECT id, foodCd, foodNm, itemMnftrRptNo, mfrNm, foodSize, servSize,
+                 enerc, prot, fatce, chocdf, foodLv3Nm, foodLv4Nm,
+                 {NAME_NORM_EXPR} AS nm_norm,
+                 coalesce(nullif(trim(foodLv3Nm),''),'∅') AS lv3_n,
+                 coalesce(nullif(trim(foodLv4Nm),''),'∅') AS lv4_n,
+                 coalesce(nullif(trim(itemMnftrRptNo),''),'∅') AS rpt_n,
+                 coalesce(nullif(trim(mfrNm),''),'∅') AS mfr_n,
+                 coalesce(nullif(trim(crtrYmd),''),'∅') AS crtr_n
+          FROM food_info
+        ), ranked AS (
+          SELECT *,
+                 nm_norm || '|' || lv3_n || '|' || lv4_n AS grp_key,
+                 ROW_NUMBER() OVER (
+                   PARTITION BY nm_norm, lv3_n, lv4_n
+                   ORDER BY
+                     CASE WHEN rpt_n != '∅' THEN 0 ELSE 1 END,
+                     CASE WHEN mfr_n != '∅' AND mfr_n != '해당없음' THEN 0 ELSE 1 END,
+                     CASE WHEN crtr_n != '∅' THEN 0 ELSE 1 END,
+                     crtr_n DESC,
+                     id DESC
+                 ) AS rn,
+                 FIRST_VALUE(id) OVER (
+                   PARTITION BY nm_norm, lv3_n, lv4_n
+                   ORDER BY
+                     CASE WHEN rpt_n != '∅' THEN 0 ELSE 1 END,
+                     CASE WHEN mfr_n != '∅' AND mfr_n != '해당없음' THEN 0 ELSE 1 END,
+                     CASE WHEN crtr_n != '∅' THEN 0 ELSE 1 END,
+                     crtr_n DESC,
+                     id DESC
+                 ) AS kept_id
+          FROM base
+        )
+        SELECT *
+        FROM ranked r
+        WHERE rn > 1
+          AND EXISTS (
+              SELECT 1 FROM ranked x
+              WHERE x.grp_key = r.grp_key
+              GROUP BY x.grp_key
+              HAVING COUNT(DISTINCT x.foodCd) > 1
+          )
+        """
+    )
+    conn.execute(
+        """
+        INSERT OR IGNORE INTO dedupe_removed_log (
+            removed_id, kept_id, reason, grp_key,
+            removed_foodCd, removed_foodNm, removed_itemMnftrRptNo, removed_mfrNm,
+            removed_foodSize, removed_servSize, removed_enerc, removed_prot, removed_fatce, removed_chocdf,
+            removed_foodLv3Nm, removed_foodLv4Nm,
+            kept_foodCd, kept_foodNm, kept_itemMnftrRptNo, kept_mfrNm
+        )
+        SELECT
+            d.id, d.kept_id, 'd:name+category', d.grp_key,
+            d.foodCd, d.foodNm, d.itemMnftrRptNo, d.mfrNm,
+            d.foodSize, d.servSize, d.enerc, d.prot, d.fatce, d.chocdf,
+            d.foodLv3Nm, d.foodLv4Nm,
+            k.foodCd, k.foodNm, k.itemMnftrRptNo, k.mfrNm
+        FROM _dup_d d
+        JOIN food_info k ON k.id = d.kept_id
+        """
+    )
+    conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_d")
+    removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_d)").rowcount
     return removed
 
 

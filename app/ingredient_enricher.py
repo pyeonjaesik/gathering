@@ -12,6 +12,7 @@ import os
 import sqlite3
 import time
 from dataclasses import dataclass
+from collections import Counter
 
 import requests
 
@@ -116,6 +117,90 @@ def _short(text: str | None, max_len: int = 72) -> str:
     return value[: max_len - 3] + "..."
 
 
+def _has_text(value: str | None) -> bool:
+    return bool(value and value.strip())
+
+
+def _diagnose_analysis(analysis: dict, target_item_rpt_no: str) -> tuple[str, str]:
+    """분석 결과를 사용자 친화적인 상태/사유로 변환."""
+    extracted = (analysis.get("itemMnftrRptNo") or "").strip()
+    ingredients = (analysis.get("ingredients_text") or "").strip()
+    error = (analysis.get("error") or "").strip()
+    note = (analysis.get("note") or "").strip()
+    has_ingredients = analysis.get("has_ingredients")
+    is_flat = analysis.get("is_flat")
+    is_designed_graphic = analysis.get("is_designed_graphic")
+    has_real_world_objects = analysis.get("has_real_world_objects")
+
+    if error:
+        lower = error.lower()
+        if "api key not found" in lower:
+            return ("분석실패", "Gemini API 키가 유효하지 않거나 인식되지 않음")
+        if "permission" in lower or "forbidden" in lower:
+            return ("분석실패", "Gemini 권한/접근 오류")
+        if "timeout" in lower:
+            return ("분석실패", "Gemini 응답 시간 초과")
+        if "image download failed" in lower:
+            return ("분석실패", "이미지 URL 접근 실패(403/404 등)")
+        if "image too large" in lower:
+            return ("분석실패", "이미지 용량이 너무 큼")
+        return ("분석실패", _short(error, 96))
+
+    if is_designed_graphic is False:
+        return ("실사이미지", "디자인된 정보형 이미지가 아님")
+    if has_real_world_objects is True:
+        return ("실사이미지", "사람/제품 실물/배경 사물이 포함됨")
+
+    if extracted and extracted == target_item_rpt_no and _has_text(ingredients) and is_flat is True:
+        return ("매칭성공", "타깃 품목보고번호 + 원재료명 둘 다 확인")
+    if extracted and extracted == target_item_rpt_no and _has_text(ingredients) and is_flat is False:
+        return ("비평면", "번호/원재료는 있으나 비평면 이미지라 신뢰 불가")
+    if extracted and extracted == target_item_rpt_no and _has_text(ingredients) and is_flat is None:
+        return ("평면불명", "번호/원재료는 있으나 평면 여부 판정 실패")
+    if extracted and extracted == target_item_rpt_no and not _has_text(ingredients):
+        return ("부분성공", "번호는 일치하지만 원재료명 텍스트를 읽지 못함")
+    if extracted and extracted != target_item_rpt_no and _has_text(ingredients):
+        return ("타상품검출", f"다른 품목보고번호 검출({extracted})")
+    if extracted and extracted != target_item_rpt_no and not _has_text(ingredients):
+        return ("타상품검출", f"다른 품목보고번호만 검출({extracted})")
+    if not extracted and _has_text(ingredients):
+        return ("번호미검출", "원재료는 읽혔지만 품목보고번호를 찾지 못함")
+    if extracted and _has_text(ingredients) and is_flat is False:
+        return ("비평면", "원재료는 있으나 비평면 이미지라 신뢰 불가")
+    if has_ingredients is False:
+        return ("원재료없음", "이미지에서 원재료 영역 자체를 찾지 못함")
+    if note:
+        return ("미판독", _short(note, 96))
+    return ("미판독", "번호/원재료 모두 판독되지 않음(화질, 각도, 가림 가능)")
+
+
+def _analysis_outcome_code(analysis: dict, target_item_rpt_no: str) -> str:
+    """이미지 분석 결과를 배치 통계용 코드로 변환."""
+    if analysis.get("error"):
+        return "analysis_error"
+
+    extracted = (analysis.get("itemMnftrRptNo") or "").strip()
+    ingredients = (analysis.get("ingredients_text") or "").strip()
+    is_flat = analysis.get("is_flat")
+
+    if not extracted:
+        return "missing_report_no"
+    if not ingredients:
+        return "missing_ingredients"
+    if is_flat is not True:
+        return "non_flat_or_unknown"
+    if target_item_rpt_no and extracted == target_item_rpt_no:
+        return "matched_target"
+    if target_item_rpt_no:
+        return "other_report_no"
+    return "has_report_and_ingredients"
+
+
+def diagnose_analysis(analysis: dict, target_item_rpt_no: str) -> tuple[str, str]:
+    """외부 UI/리포트에서 사용할 진단 함수."""
+    return _diagnose_analysis(analysis, target_item_rpt_no)
+
+
 def init_ingredient_tables(conn: sqlite3.Connection) -> None:
     conn.execute(
         """
@@ -181,8 +266,6 @@ def init_ingredient_tables(conn: sqlite3.Connection) -> None:
 
 
 def build_search_query(product: Product) -> str:
-    if product.mfr_name:
-        return f"{product.food_name} {product.mfr_name} 성분표"
     return f"{product.food_name} 성분표"
 
 
@@ -345,6 +428,16 @@ def get_cached_image_analysis(conn: sqlite3.Connection, image_url: str) -> dict 
         "itemMnftrRptNo": extracted,
         "ingredients_text": ingredients,
         "note": payload_dict.get("note", "cache-hit"),
+        "is_flat": payload_dict.get("is_flat"),
+        "is_table_format": payload_dict.get("is_table_format"),
+        "is_designed_graphic": payload_dict.get("is_designed_graphic"),
+        "has_real_world_objects": payload_dict.get("has_real_world_objects"),
+        "brand": payload_dict.get("brand"),
+        "error": payload_dict.get("error"),
+        "has_ingredients": payload_dict.get("has_ingredients"),
+        "product_name_in_image": payload_dict.get("product_name_in_image"),
+        "manufacturer": payload_dict.get("manufacturer"),
+        "full_text": payload_dict.get("full_text"),
     }
 
 
@@ -490,6 +583,23 @@ def fetch_target_products_by_category(
     return [Product(item_rpt_no=r[0], food_name=r[1] or "", mfr_name=r[2] or "") for r in rows]
 
 
+def fetch_product_by_report_no(conn: sqlite3.Connection, report_no: str) -> Product | None:
+    """품목보고번호로 단일 상품 조회 (재시도용)."""
+    row = conn.execute(
+        """
+        SELECT fi.itemMnftrRptNo, fi.foodNm, COALESCE(fi.mfrNm, '')
+        FROM food_info fi
+        WHERE fi.itemMnftrRptNo = ?
+        ORDER BY fi.id
+        LIMIT 1
+        """,
+        (report_no,),
+    ).fetchone()
+    if not row:
+        return None
+    return Product(item_rpt_no=row[0], food_name=row[1] or "", mfr_name=row[2] or "")
+
+
 def get_priority_subcategories(conn: sqlite3.Connection) -> list[dict]:
     """중분류별 우선순위/진행현황 목록."""
     rows = conn.execute(
@@ -586,6 +696,7 @@ def process_product(
     analyzed_count = 0
     saved_records = 0
     matched_image_url = None
+    reason_counter: Counter[str] = Counter()
 
     if verbose:
         print(f"  이미지 후보: {len(image_urls)}개")
@@ -612,7 +723,15 @@ def process_product(
             cache_hit = True
         extracted = analysis.get("itemMnftrRptNo")
         ingredients = analysis.get("ingredients_text")
-        is_match = bool(extracted and extracted == product.item_rpt_no)
+        is_flat = analysis.get("is_flat")
+        is_match = bool(
+            extracted
+            and _has_text(ingredients)
+            and is_flat is True
+            and extracted == product.item_rpt_no
+        )
+        outcome_code = _analysis_outcome_code(analysis, product.item_rpt_no)
+        reason_counter[outcome_code] += 1
 
         insert_extraction_log(
             conn,
@@ -625,7 +744,7 @@ def process_product(
             raw_payload=analysis,
         )
 
-        if extracted and ingredients:
+        if extracted and _has_text(ingredients) and is_flat is True:
             upsert_ingredient_info(
                 conn,
                 extracted_item_rpt_no=extracted,
@@ -639,17 +758,21 @@ def process_product(
         conn.commit()
 
         if verbose:
-            extracted_text = extracted or "미검출"
+            extracted_text = extracted or "없음"
             result_tag = "MATCH" if is_match else "NO-MATCH"
             cache_tag = "CACHE" if cache_hit else "ANALYZE"
+            flat_text = "flat" if is_flat is True else ("non-flat" if is_flat is False else "unknown")
+            status_label, reason_text = _diagnose_analysis(analysis, product.item_rpt_no)
+            ingredients_preview = _short(ingredients, 76) if _has_text(ingredients) else "없음"
             print(
                 f"    [{rank:02d}/{len(image_urls):02d}] {cache_tag} {result_tag} "
-                f"번호={extracted_text} | url={image_url}"
+                f"번호={extracted_text} | 평면={flat_text} | url={image_url}"
             )
-            if extracted and ingredients:
-                print(
-                    f"      └ 저장됨: itemMnftrRptNo={extracted} | 원재료 길이={len(ingredients)}"
-                )
+            print(f"      상태: {status_label} | 사유: {reason_text}")
+            print(f"      원재료: {ingredients_preview}")
+            print(f"      분류코드: {outcome_code}")
+            if extracted and _has_text(ingredients) and is_flat is True:
+                print(f"      저장: itemMnftrRptNo={extracted} (원재료 DB 반영)")
 
         if is_match:
             matched = True
@@ -676,8 +799,11 @@ def process_product(
             "matched_image_url": matched_image_url,
             "saved_records": saved_records,
             "query": query,
+            "reason_counts": dict(reason_counter),
+            "dominant_reason": reason_counter.most_common(1)[0][0] if reason_counter else None,
         }
 
+    dominant_reason = reason_counter.most_common(1)[0][0] if reason_counter else None
     upsert_attempt(
         conn,
         product,
@@ -685,10 +811,11 @@ def process_product(
         query=query,
         images_requested=len(image_urls),
         images_analyzed=analyzed_count,
+        error_message=dominant_reason,
     )
     conn.commit()
     if verbose:
-        print("  [완료] 미매칭 (다음 상품 진행)")
+        print(f"  [완료] 미매칭 (주요 사유: {dominant_reason or 'unknown'})")
     return {
         "status": "unmatched",
         "images_requested": len(image_urls),
@@ -696,6 +823,8 @@ def process_product(
         "matched_image_url": None,
         "saved_records": saved_records,
         "query": query,
+        "reason_counts": dict(reason_counter),
+        "dominant_reason": dominant_reason,
     }
 
 
@@ -764,6 +893,7 @@ def run_enricher(
 
     started = time.time()
     stats = {"matched": 0, "unmatched": 0, "failed": 0}
+    reason_totals: Counter[str] = Counter()
 
     for idx, product in enumerate(targets, start=1):
         result = process_product(
@@ -774,6 +904,8 @@ def run_enricher(
             verbose=not quiet,
         )
         stats[result["status"]] += 1
+        for k, v in (result.get("reason_counts") or {}).items():
+            reason_totals[k] += int(v)
 
         elapsed = time.time() - started
         speed = idx / elapsed if elapsed > 0 else 0
@@ -790,6 +922,8 @@ def run_enricher(
             f"  결과 요약: status={result['status']} | images={result['images_analyzed']}/{result['images_requested']} "
             f"| 저장={result['saved_records']}"
         )
+        if result.get("dominant_reason"):
+            print(f"  주요 사유: {result['dominant_reason']}")
         if result["matched_image_url"]:
             print(f"  매칭 출처 URL: {result['matched_image_url']}")
 
@@ -798,6 +932,58 @@ def run_enricher(
     print(
         f"- matched={stats['matched']:,}, unmatched={stats['unmatched']:,}, failed={stats['failed']:,}"
     )
+    if reason_totals:
+        print("- 이미지 결과 사유 집계(top 8):")
+        for code, cnt in reason_totals.most_common(8):
+            print(f"  • {code}: {cnt:,}")
+    summarize(conn)
+    conn.close()
+
+
+def run_enricher_for_report_no(
+    report_no: str,
+    db_path: str = DB_FILE,
+    quiet: bool = False,
+) -> None:
+    """특정 품목보고번호 1건만 원재료 분석 실행."""
+    api_key = os.getenv("SERPAPI_KEY")
+    if not api_key:
+        raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
+    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    if not gemini_api_key:
+        raise SystemExit("GEMINI_API_KEY(또는 GOOGLE_API_KEY) 환경변수를 설정해주세요.")
+
+    report_no = (report_no or "").strip()
+    if not report_no:
+        raise SystemExit("품목보고번호를 입력해주세요.")
+
+    conn = sqlite3.connect(db_path)
+    init_ingredient_tables(conn)
+    analyzer = URLIngredientAnalyzer(api_key=gemini_api_key)
+
+    product = fetch_product_by_report_no(conn, report_no)
+    if not product:
+        print(f"대상 품목보고번호를 food_info에서 찾지 못했습니다: {report_no}")
+        conn.close()
+        return
+
+    print("\n╔══════════════════════════════════════════════════════════════════╗")
+    print("║              원재료 수집 실행 (품목보고번호 1건)              ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
+    result = process_product(
+        conn,
+        product=product,
+        api_key=api_key,
+        analyzer=analyzer,
+        verbose=not quiet,
+    )
+    print("\n[1건 실행 결과]")
+    print(
+        f"- status={result['status']} | images={result['images_analyzed']}/{result['images_requested']} "
+        f"| 저장={result['saved_records']}"
+    )
+    if result.get("matched_image_url"):
+        print(f"- 매칭 출처 URL: {result['matched_image_url']}")
     summarize(conn)
     conn.close()
 

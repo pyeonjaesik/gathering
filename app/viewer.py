@@ -4,6 +4,7 @@ DB 데이터 조회 뷰어
   - 식품명 검색, 전체 목록 페이지 탐색, 통계 요약 제공
 """
 
+import json
 import sqlite3
 import sys
 import webbrowser
@@ -37,6 +38,40 @@ def _fixed(text: str, max_w: int) -> str:
     """표시 너비 기준으로 고정 폭 문자열 반환 (자르기 + 공백 패딩)"""
     t = _trunc(text or "—", max_w)
     return t + " " * (max_w - _display_width(t))
+
+
+def _diagnose_payload(payload: dict, target_no: str) -> tuple[str, str]:
+    extracted = (payload.get("itemMnftrRptNo") or "").strip()
+    ingredients = (payload.get("ingredients_text") or "").strip()
+    error = (payload.get("error") or "").strip()
+    note = (payload.get("note") or "").strip()
+    has_ingredients = payload.get("has_ingredients")
+    is_flat = payload.get("is_flat")
+
+    if error:
+        low = error.lower()
+        if "api key not found" in low:
+            return ("분석실패", "Gemini API 키 오류")
+        if "timeout" in low:
+            return ("분석실패", "모델 응답 시간 초과")
+        if "image download failed" in low:
+            return ("분석실패", "이미지 URL 접근 실패")
+        return ("분석실패", _trunc(error, 48))
+    if extracted and extracted == target_no and ingredients and is_flat is True:
+        return ("매칭성공", "번호+원재료+평면 확인")
+    if extracted and extracted == target_no and ingredients and is_flat is False:
+        return ("비평면", "번호/원재료는 있으나 비평면")
+    if extracted and extracted == target_no and ingredients and is_flat is None:
+        return ("평면불명", "번호/원재료는 있으나 평면 판정 실패")
+    if extracted and extracted == target_no and not ingredients:
+        return ("부분성공", "번호 일치, 원재료 없음")
+    if extracted and extracted != target_no:
+        return ("타상품검출", f"다른 번호 {extracted}")
+    if not extracted and ingredients:
+        return ("번호미검출", "원재료는 있음")
+    if has_ingredients is False:
+        return ("원재료없음", "원재료 영역 미검출")
+    return ("미판독", _trunc(note or "번호/원재료 모두 미확인", 48))
 
 
 def _bar(char: str = "─") -> str:
@@ -633,7 +668,7 @@ def show_ingredient_detail(conn: sqlite3.Connection) -> None:
     logs = conn.execute(
         """
         SELECT image_rank, image_url, extracted_itemMnftrRptNo,
-               matched_target, ingredients_text, created_at
+               matched_target, ingredients_text, created_at, raw_payload
         FROM ingredient_extractions
         WHERE query_itemMnftrRptNo = ?
         ORDER BY id DESC
@@ -646,9 +681,17 @@ def show_ingredient_detail(conn: sqlite3.Connection) -> None:
         print("    로그 없음")
     else:
         openable_urls: list[str] = []
-        for rank, url, extracted, matched_target, ingredients, created_at in logs:
+        for rank, url, extracted, matched_target, ingredients, created_at, raw_payload in logs:
             mark = "MATCH" if matched_target == 1 else "NO-MATCH"
+            payload: dict = {}
+            if raw_payload:
+                try:
+                    payload = json.loads(raw_payload)
+                except json.JSONDecodeError:
+                    payload = {}
+            status_label, reason = _diagnose_payload(payload, query)
             print(f"    - [{rank}] {mark} | {created_at} | 추출번호: {extracted or '미검출'}")
+            print(f"      상태: {status_label} | 사유: {reason}")
             if url:
                 openable_urls.append(url)
                 print(f"      열기번호: {len(openable_urls)}")
