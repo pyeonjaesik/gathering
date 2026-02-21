@@ -1,0 +1,83 @@
+이 이미지를 체크리스트 기준으로만 평가하세요. (PASS2-A: 품질/적합성 게이트)
+
+파이프라인 맥락:
+- 이 단계(PASS2-A)는 "이 이미지를 추출 파이프라인에 투입할 수 있는지"를 먼저 거르는 게이트입니다.
+- 여기서 통과해야만 다음 단계(PASS2-B: 정보 존재 판정)로 넘어갑니다.
+- 즉, PASS2-A는 "정보가 있는지"가 아니라 "읽을 품질이 되는지"를 판단합니다.
+
+최종 서비스 목표:
+- 제품 이미지에서 원재료명, 품목보고번호, 제품명, 영양성분을 신뢰도 높게 수집하는 것.
+- 따라서 애매한 이미지는 모두 탈락시켜야 합니다.
+
+중요 규칙:
+- 아래 항목만 true/false로 반환하세요.
+- 값을 모르면 보수적으로 false를 사용하세요.
+- JSON 객체만 출력하고, 설명 문장/코드블록은 출력하지 마세요.
+- 매우 엄격하게 판단하세요. 텍스트가 조금이라도 흐리거나, 작거나, 가려지거나, 애매하면 false입니다.
+- "대충 보인다", "추정 가능"은 false입니다.
+- 핵심 규칙: 핵심 텍스트(제품명/품목보고번호/원재료명) 글자 1개라도 가려지면 false입니다.
+- 아래 중 하나라도 해당하면 부적합입니다:
+  - 콜라주/분할 편집 이미지
+  - 곡면 용기 측면 촬영으로 텍스트 왜곡
+  - 주석(빨간 박스/동그라미/텍스트) 오버레이
+  - 반사광 핫스팟이 핵심 텍스트와 겹침
+  - 흰 원형 마크/스티커/아이콘이 핵심 텍스트를 가림
+  - 포장지 구김/접힘/주름으로 핵심 텍스트 일부가 사라지거나 왜곡됨
+  - 핵심 텍스트가 일부라도 가림/크롭/저해상도
+
+항목 정의 (모든 항목은 true가 "적합/좋은 상태" 의미):
+- is_clear_text:
+  - true: 핵심 텍스트를 오인 없이 읽을 수 있을 정도로 선명
+  - false: 흐림/저해상도로 판독 어려움
+- is_full_frame:
+  - true: 핵심 영역이 잘리지 않음
+  - false: 일부 잘림
+- is_flat_undistorted:
+  - true: 구김/곡면/원근 왜곡이 아예 없음
+  - false: 왜곡이 조금이라도 있음
+- has_single_product:
+  - true: 단일 제품 정보만 포함
+  - false: 복수 제품/콜라주/혼합
+- key_fields_fully_visible:
+  - true: 제품명/품목보고번호/원재료명 핵심 텍스트가 모두 보임
+  - false: 일부라도 가림
+- no_glare_on_key_fields:
+  - true: 핵심 텍스트 영역에 반사광/번짐 없음
+  - false: 있음
+- no_object_occlusion_on_key_fields:
+  - true: 핵심 텍스트 위 물체 가림 없음
+  - false: 있음
+- no_any_text_occlusion_on_key_fields:
+  - true: 형태/색상/원인과 무관하게 핵심 텍스트 글자가 전혀 가려지지 않음
+  - false: 스티커/아이콘/손/주름/그림자/하이라이트/마스킹/오버레이 등 어떤 형태로든 글자 일부 가림
+- no_glare_overlap_on_key_text:
+  - true: 핵심 글자와 반사광 겹침 없음
+  - false: 겹침 있음
+- no_occlusion_overlap_on_key_text:
+  - true: 핵심 글자와 물체 가림 겹침 없음
+  - false: 겹침 있음
+- no_white_circle_overlay_on_key_fields:
+  - true: 흰 원형/밝은 원형 마크가 핵심 텍스트를 가리지 않음
+  - false: 흰 원형/밝은 원형 마크가 핵심 텍스트를 가림
+- no_wrinkle_fold_occlusion_on_key_fields:
+  - true: 구김/접힘/주름이 핵심 텍스트를 가리지 않음
+  - false: 구김/접힘/주름으로 핵심 텍스트 일부가 가려지거나 읽기 불가능
+- reason:
+  - 탈락/통과 핵심 근거 1문장
+
+응답 JSON 스키마:
+{
+  "is_clear_text": true,
+  "is_full_frame": true,
+  "is_flat_undistorted": true,
+  "has_single_product": true,
+  "key_fields_fully_visible": true,
+  "no_glare_on_key_fields": true,
+  "no_object_occlusion_on_key_fields": true,
+  "no_any_text_occlusion_on_key_fields": true,
+  "no_glare_overlap_on_key_text": true,
+  "no_occlusion_overlap_on_key_text": true,
+  "no_white_circle_overlay_on_key_fields": true,
+  "no_wrinkle_fold_occlusion_on_key_fields": true,
+  "reason": "핵심 텍스트가 선명하고 가려짐/반사광/왜곡이 없음"
+}

@@ -32,6 +32,8 @@ DEFAULT_MODEL = "gpt-4.1-mini"
 _PROMPT_PRINTED_ONCE = False
 _PROMPT_PRINT_LOCK = threading.Lock()
 DEFAULT_PROMPT_PASS2_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2_prompt.txt"
+DEFAULT_PROMPT_PASS2A_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2a_prompt.txt"
+DEFAULT_PROMPT_PASS2B_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2b_prompt.txt"
 DEFAULT_PROMPT_PASS3_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_prompt.txt"
 DEFAULT_PROMPT_PASS3_INGREDIENTS_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_ingredients_prompt.txt"
 DEFAULT_PROMPT_PASS3_NUTRITION_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_nutrition_prompt.txt"
@@ -56,14 +58,24 @@ def _extract_first_json_object(text: str) -> dict[str, Any]:
             return parsed
     except json.JSONDecodeError:
         pass
-
-    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
-    if not match:
-        raise ValueError("JSON object not found in model response")
-    parsed = json.loads(match.group(0))
-    if not isinstance(parsed, dict):
-        raise ValueError("JSON response is not an object")
-    return parsed
+    # 모델이 JSON 앞/뒤에 설명문을 붙이거나 JSON 여러 개를 연달아 내는 경우가 있어
+    # 첫 번째 JSON 객체만 raw_decode로 안전하게 추출한다.
+    decoder = json.JSONDecoder()
+    idx = 0
+    length = len(cleaned)
+    while idx < length:
+        start = cleaned.find("{", idx)
+        if start < 0:
+            break
+        try:
+            parsed, _end = decoder.raw_decode(cleaned, start)
+            if isinstance(parsed, dict):
+                return parsed
+        except json.JSONDecodeError:
+            idx = start + 1
+            continue
+        idx = start + 1
+    raise ValueError("JSON object not found in model response")
 
 
 def _extract_openai_text(payload: dict[str, Any]) -> str:
@@ -141,12 +153,18 @@ class URLIngredientAnalyzer:
     max_report_digits: int = 16
     show_prompt_once: bool = True
     prompt_file_pass2: str | None = None
+    prompt_file_pass2a: str | None = None
+    prompt_file_pass2b: str | None = None
     prompt_file_pass3: str | None = None
     prompt_file_pass3_ingredients: str | None = None
     prompt_file_pass3_nutrition: str | None = None
     prompt_file_pass4: str | None = None
     prompt_file_pass4_ingredients: str | None = None
     prompt_file_pass4_nutrition: str | None = None
+    pass2a_provider: str = "openai"
+    pass2a_openai_model: str = "gpt-4o-mini"
+    pass2a_gemini_model: str = "gemini-2.0-flash"
+    pass2a_gemini_api_key: str | None = None
     pass3_provider: str = "gemini"
     pass3_gemini_model: str = "gemini-2.0-flash"
     pass3_gemini_api_key: str | None = None
@@ -168,6 +186,26 @@ class URLIngredientAnalyzer:
         self.prompt_template_pass2, self.prompt_template_pass2_path = self._load_prompt_template(
             candidate=self.prompt_file_pass2 or os.getenv("ANALYZE_PROMPT_FILE_PASS2") or os.getenv("ANALYZE_PROMPT_FILE_PASS1"),
             default_path=DEFAULT_PROMPT_PASS2_FILE,
+        )
+        self.prompt_template_pass2a, self.prompt_template_pass2a_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass2a
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2A")
+                or self.prompt_file_pass2
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2")
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS1")
+            ),
+            default_path=DEFAULT_PROMPT_PASS2A_FILE if DEFAULT_PROMPT_PASS2A_FILE.exists() else DEFAULT_PROMPT_PASS2_FILE,
+        )
+        self.prompt_template_pass2b, self.prompt_template_pass2b_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass2b
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2B")
+                or self.prompt_file_pass2
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2")
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS1")
+            ),
+            default_path=DEFAULT_PROMPT_PASS2B_FILE if DEFAULT_PROMPT_PASS2B_FILE.exists() else DEFAULT_PROMPT_PASS2_FILE,
         )
         self.prompt_template_pass3_ingredients, self.prompt_template_pass3_ingredients_path = self._load_prompt_template(
             candidate=(
@@ -209,6 +247,21 @@ class URLIngredientAnalyzer:
             default_path=DEFAULT_PROMPT_PASS4_NUTRITION_FILE if DEFAULT_PROMPT_PASS4_NUTRITION_FILE.exists() else DEFAULT_PROMPT_PASS4_FILE,
         )
         self.pass3_provider = str(self.pass3_provider or "gemini").strip().lower()
+        self.pass2a_provider = str(self.pass2a_provider or "openai").strip().lower()
+        self.pass2a_openai_model = (
+            str(
+                self.pass2a_openai_model
+                or os.getenv("PASS2A_OPENAI_MODEL")
+                or "gpt-4o-mini"
+            )
+            .strip()
+        )
+        self.pass2a_gemini_api_key = (
+            self.pass2a_gemini_api_key
+            or os.getenv("PASS2A_GEMINI_API_KEY")
+            or os.getenv("GEMINI_API_KEY")
+            or os.getenv("GOOGLE_API_KEY")
+        )
         self.pass3_gemini_api_key = (
             self.pass3_gemini_api_key
             or os.getenv("GEMINI_API_KEY")
@@ -436,8 +489,16 @@ class URLIngredientAnalyzer:
         return image_bytes, mime_type
 
     def _build_prompt_pass2(self, target_item_rpt_no: str | None) -> str:
+        # backward-compatible alias: pass2a 사용
+        return self._build_prompt_pass2a(target_item_rpt_no=target_item_rpt_no)
+
+    def _build_prompt_pass2a(self, target_item_rpt_no: str | None) -> str:
         target_value = target_item_rpt_no if target_item_rpt_no else "없음"
-        return self.prompt_template_pass2.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+        return self.prompt_template_pass2a.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+
+    def _build_prompt_pass2b(self, target_item_rpt_no: str | None) -> str:
+        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
+        return self.prompt_template_pass2b.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
 
     def _build_prompt_pass3(self, target_item_rpt_no: str | None) -> str:
         # backward-compatible alias (ingredients track)
@@ -471,9 +532,25 @@ class URLIngredientAnalyzer:
         mime_type: str,
         prompt: str,
     ) -> tuple[str, dict[str, Any], str]:
+        return self._call_model_openai(
+            image_bytes=image_bytes,
+            mime_type=mime_type,
+            prompt=prompt,
+            model_name=self.model,
+        )
+
+    def _call_model_openai(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+        *,
+        model_name: str | None = None,
+    ) -> tuple[str, dict[str, Any], str]:
         data_url = f"data:{mime_type};base64,{base64.b64encode(image_bytes).decode('ascii')}"
+        model = str(model_name or self.model).strip()
         body = {
-            "model": self.model,
+            "model": model,
             "messages": [
                 {
                     "role": "user",
@@ -512,14 +589,18 @@ class URLIngredientAnalyzer:
         image_bytes: bytes,
         mime_type: str,
         prompt: str,
+        *,
+        model_name: str | None = None,
+        api_key_value: str | None = None,
     ) -> tuple[str, dict[str, Any], str]:
-        api_key = (self.pass3_gemini_api_key or "").strip()
+        api_key = (api_key_value or self.pass3_gemini_api_key or "").strip()
         if not api_key:
             raise RuntimeError("gemini_api_key_missing (set GEMINI_API_KEY or GOOGLE_API_KEY)")
 
+        model = str(model_name or self.pass3_gemini_model).strip()
         url = (
             f"https://generativelanguage.googleapis.com/v1beta/models/"
-            f"{self.pass3_gemini_model}:generateContent?key={api_key}"
+            f"{model}:generateContent?key={api_key}"
         )
         body = {
             "contents": [
@@ -564,6 +645,36 @@ class URLIngredientAnalyzer:
     ) -> tuple[str, dict[str, Any], str]:
         if self.pass3_provider == "gemini":
             return self._call_model_gemini(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
+        return self._call_model(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
+
+    def _call_model_pass2a(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+    ) -> tuple[str, dict[str, Any], str]:
+        if self.pass2a_provider == "gemini":
+            return self._call_model_gemini(
+                image_bytes=image_bytes,
+                mime_type=mime_type,
+                prompt=prompt,
+                model_name=self.pass2a_gemini_model,
+                api_key_value=self.pass2a_gemini_api_key,
+            )
+        return self._call_model_openai(
+            image_bytes=image_bytes,
+            mime_type=mime_type,
+            prompt=prompt,
+            model_name=self.pass2a_openai_model,
+        )
+
+    def _call_model_pass2b(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+    ) -> tuple[str, dict[str, Any], str]:
+        # Pass2B는 기존 OpenAI 경로 유지
         return self._call_model(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
 
     def _pass3_source_model(self) -> str:
@@ -651,6 +762,7 @@ class URLIngredientAnalyzer:
     def _print_prompts_once(
         self,
         prompt_pass2: str,
+        prompt_pass2b: str | None = None,
         prompt_pass3: str | None = None,
         prompt_pass3_nutrition: str | None = None,
     ) -> None:
@@ -662,8 +774,12 @@ class URLIngredientAnalyzer:
                 return
             print("\n" + "=" * 88)
             print("[analyze 프롬프트 1회 출력]")
-            print(f"[pass-2 prompt file] {self.prompt_template_pass2_path}")
+            print(f"[pass-2a prompt file] {self.prompt_template_pass2a_path}")
             print(prompt_pass2)
+            if prompt_pass2b is not None:
+                print("-" * 88)
+                print(f"[pass-2b prompt file] {self.prompt_template_pass2b_path}")
+                print(prompt_pass2b)
             if prompt_pass3 is not None:
                 print("-" * 88)
                 print(f"[pass-3 ingredients prompt file] {self.prompt_template_pass3_ingredients_path}")

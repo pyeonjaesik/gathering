@@ -77,6 +77,38 @@ def _normalize_sub_ingredient_node(node: Any) -> dict[str, Any] | None:
     }
 
 
+def _sanitize_origin_detail(detail: str | None, source_text: str | None) -> str | None:
+    """origin_detail에서 원문에 없는 토큰을 제거한다."""
+    if not detail:
+        return None
+    src = re.sub(r"\s+", "", str(source_text or ""))
+    if not src:
+        return None
+    raw_tokens = re.split(r"[,;/·]", str(detail))
+    kept: list[str] = []
+    for t in raw_tokens:
+        tok = str(t).strip()
+        if not tok:
+            continue
+        compact = re.sub(r"\s+", "", tok)
+        if compact and compact in src:
+            kept.append(tok)
+    if not kept:
+        return None
+    return ", ".join(kept)
+
+
+def _sanitize_origin_detail_tree(node: dict[str, Any], source_text: str | None) -> dict[str, Any]:
+    node["origin_detail"] = _sanitize_origin_detail(node.get("origin_detail"), source_text)
+    children = node.get("sub_ingredients") or []
+    if isinstance(children, list):
+        node["sub_ingredients"] = [
+            _sanitize_origin_detail_tree(c, source_text) if isinstance(c, dict) else c
+            for c in children
+        ]
+    return node
+
+
 def run_pass4_normalize(
     analyzer: Any,
     pass2_result: dict[str, Any],
@@ -307,6 +339,16 @@ def run_pass4_normalize(
                             "sub_ingredients": sub_items,
                         }
                     )
+            # 원문에 없는 국가/원산지 상세 토큰 제거(환각 방지)
+            sanitized_items: list[dict[str, Any]] = []
+            for it in ingredient_items:
+                if not isinstance(it, dict):
+                    continue
+                cloned = dict(it)
+                cloned["origin_detail"] = _sanitize_origin_detail(cloned.get("origin_detail"), ingredients_text)
+                cloned = _sanitize_origin_detail_tree(cloned, ingredients_text)
+                sanitized_items.append(cloned)
+            ingredient_items = sanitized_items
             ingredient_items_reason = str(parsed_ing.get("reason") or "pass4_ingredients_structured")
 
             if nutrition_text:

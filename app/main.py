@@ -34,6 +34,14 @@ from app.ingredient_enricher import (
 )
 from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
+from app.query_pipeline import (
+    get_pipeline_overview,
+    init_query_pipeline_tables,
+    list_next_queries,
+    list_recent_runs,
+    seed_queries_from_categories,
+    upsert_query,
+)
 
 W = 68
 WEB_UI_PORT = 8501
@@ -613,6 +621,128 @@ def run_backup_menu() -> None:
             print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
 
 
+def run_query_pipeline_menu() -> None:
+    while True:
+        print("\n  🧩 [검색어 파이프라인 관리]")
+        print("    [1] DB 테이블 초기화")
+        print("    [2] 카테고리 기반 검색어 자동 시드")
+        print("    [3] 검색어 직접 추가")
+        print("    [4] 우선순위 대기 검색어 보기")
+        print("    [5] 최근 실행 기록 보기")
+        print("    [6] 파이프라인 테이블 요약")
+        print("    [b] ↩️ 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+
+        if sub == "1":
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+            print("  ✅ query_pipeline 테이블 초기화 완료")
+
+        elif sub == "2":
+            raw = input("  🔹 시드 최대 개수 [기본 200]: ").strip()
+            limit = 200
+            if raw:
+                try:
+                    limit = max(1, int(raw))
+                except ValueError:
+                    print("  ⚠️ 숫자 입력이 아니어서 기본 200을 사용합니다.")
+                    limit = 200
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+                saved = seed_queries_from_categories(conn, limit=limit)
+            print(f"  ✅ 자동 시드 완료: {saved:,}건")
+
+        elif sub == "3":
+            query_text = input("  🔹 검색어 입력: ").strip()
+            if not query_text:
+                print("  ⚠️ 검색어가 비어 있습니다.")
+                continue
+            raw_pri = input("  🔹 priority_score [기본 0]: ").strip()
+            raw_seg = input("  🔹 target_segment_score [기본 0]: ").strip()
+            notes = input("  🔹 메모(선택): ").strip() or None
+            try:
+                pri = float(raw_pri) if raw_pri else 0.0
+                seg = float(raw_seg) if raw_seg else 0.0
+            except ValueError:
+                print("  ⚠️ 점수는 숫자여야 합니다.")
+                continue
+
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+                query_id = upsert_query(
+                    conn,
+                    query_text,
+                    source="manual",
+                    priority_score=pri,
+                    target_segment_score=seg,
+                    status="pending",
+                    notes=notes,
+                )
+            print(f"  ✅ 저장 완료: query_id={query_id}")
+
+        elif sub == "4":
+            raw = input("  🔹 조회 개수 [기본 20]: ").strip()
+            limit = 20
+            if raw:
+                try:
+                    limit = max(1, int(raw))
+                except ValueError:
+                    print("  ⚠️ 숫자 입력이 아니어서 기본 20을 사용합니다.")
+                    limit = 20
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+                rows = list_next_queries(conn, limit=limit)
+            print("\n  📌 [대기 검색어]")
+            if not rows:
+                print("    (없음)")
+            else:
+                for row in rows:
+                    print(
+                        f"    - id={row['id']} | score={row['priority_score']:.1f}/{row['target_segment_score']:.1f} "
+                        f"| status={row['status']} | run={row['run_count']} | q={row['query_text']}"
+                    )
+
+        elif sub == "5":
+            raw = input("  🔹 조회 개수 [기본 20]: ").strip()
+            limit = 20
+            if raw:
+                try:
+                    limit = max(1, int(raw))
+                except ValueError:
+                    print("  ⚠️ 숫자 입력이 아니어서 기본 20을 사용합니다.")
+                    limit = 20
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+                rows = list_recent_runs(conn, limit=limit)
+            print("\n  🕘 [최근 실행]")
+            if not rows:
+                print("    (없음)")
+            else:
+                for row in rows:
+                    print(
+                        f"    - run={row['id']} | query_id={row['query_id']} | status={row['status']} "
+                        f"| images={row['analyzed_images']}/{row['total_images']} "
+                        f"| saved={row['final_saved_count']} | score={row['overall_score']:.1f}"
+                    )
+                    print(f"      q={row['query_text']}")
+
+        elif sub == "6":
+            with sqlite3.connect(DB_FILE) as conn:
+                init_query_pipeline_tables(conn)
+                stat = get_pipeline_overview(conn)
+            print("\n  📊 [파이프라인 테이블 요약]")
+            print(f"    - query_pool               : {stat['query_pool']:,}")
+            print(f"    - query_runs               : {stat['query_runs']:,}")
+            print(f"    - serp_cache               : {stat['serp_cache']:,}")
+            print(f"    - query_image_analysis_cache: {stat['query_image_analysis_cache']:,}")
+            print(f"    - food_final               : {stat['food_final']:,}")
+
+        elif sub == "b":
+            break
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
 def main() -> None:
     while True:
         print_header()
@@ -626,6 +756,7 @@ def main() -> None:
         print("    [6] 📡 브라우저 모니터 열기")
         print("    [7] 🧪 이미지 URL analyze 테스트")
         print("    [8] 📊 analyze 벤치마크 도우미")
+        print("    [9] 🧩 검색어 파이프라인 관리")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -646,6 +777,8 @@ def main() -> None:
             run_image_analyzer_test()
         elif choice == "8":
             run_benchmark_menu()
+        elif choice == "9":
+            run_query_pipeline_menu()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break

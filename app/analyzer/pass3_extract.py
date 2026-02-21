@@ -56,9 +56,10 @@ def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_
     include_nutrition = bool(getattr(analyzer, "_pass3_include_nutrition", True))
     prompt_pass3_nut = analyzer._build_prompt_pass3_nutrition(target_item_rpt_no=target_item_rpt_no) if include_nutrition else None
     analyzer._print_prompts_once(
-        analyzer._build_prompt_pass2(target_item_rpt_no),
-        prompt_pass3_ing,
-        prompt_pass3_nut if include_nutrition else None,
+        analyzer._build_prompt_pass2a(target_item_rpt_no),
+        prompt_pass2b=analyzer._build_prompt_pass2b(target_item_rpt_no),
+        prompt_pass3=prompt_pass3_ing,
+        prompt_pass3_nutrition=(prompt_pass3_nut if include_nutrition else None),
     )
 
     last_raw_text: str | None = None
