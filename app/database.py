@@ -6,12 +6,35 @@ import sqlite3
 
 from app.config import COLUMNS
 
+FOOD_TABLE = "processed_food_info"
+LEGACY_FOOD_TABLE = "food_info"
+
+
+def _table_exists(conn: sqlite3.Connection, name: str) -> bool:
+    row = conn.execute(
+        "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
+        (name,),
+    ).fetchone()
+    return bool(row and row[0] > 0)
+
+
+def ensure_processed_food_table(conn: sqlite3.Connection) -> None:
+    """레거시 food_info를 processed_food_info로 자동 마이그레이션."""
+    has_new = _table_exists(conn, FOOD_TABLE)
+    has_legacy = _table_exists(conn, LEGACY_FOOD_TABLE)
+    if has_new:
+        return
+    if has_legacy:
+        conn.execute(f"ALTER TABLE {LEGACY_FOOD_TABLE} RENAME TO {FOOD_TABLE}")
+        conn.commit()
+
 
 def init_db(conn: sqlite3.Connection) -> None:
     """테이블이 없으면 생성 후 유니크 인덱스 보장"""
+    ensure_processed_food_table(conn)
     cols_def = ", ".join(f'"{col}" TEXT' for col in COLUMNS)
     conn.execute(f"""
-        CREATE TABLE IF NOT EXISTS food_info (
+        CREATE TABLE IF NOT EXISTS {FOOD_TABLE} (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             {cols_def}
         )
@@ -28,19 +51,19 @@ def _ensure_unique_index(conn: sqlite3.Connection) -> None:
     """
     cursor = conn.execute(
         "SELECT name FROM sqlite_master "
-        "WHERE type='index' AND tbl_name='food_info' AND name='uq_itemMnftrRptNo'"
+        f"WHERE type='index' AND tbl_name='{FOOD_TABLE}' AND name='uq_itemMnftrRptNo'"
     )
     if cursor.fetchone():
         return  # 이미 존재함
 
     # 중복 데이터 제거: 같은 itemMnftrRptNo 중 id가 가장 작은 행만 유지
     conn.execute("""
-        DELETE FROM food_info
+        DELETE FROM processed_food_info
         WHERE itemMnftrRptNo IS NOT NULL
           AND itemMnftrRptNo != ''
           AND id NOT IN (
               SELECT MIN(id)
-              FROM food_info
+              FROM processed_food_info
               WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''
               GROUP BY itemMnftrRptNo
           )
@@ -49,7 +72,7 @@ def _ensure_unique_index(conn: sqlite3.Connection) -> None:
     # NULL·빈 문자열을 제외한 부분 유니크 인덱스 생성
     conn.execute("""
         CREATE UNIQUE INDEX uq_itemMnftrRptNo
-        ON food_info("itemMnftrRptNo")
+        ON processed_food_info("itemMnftrRptNo")
         WHERE "itemMnftrRptNo" IS NOT NULL AND "itemMnftrRptNo" != ''
     """)
     conn.commit()
@@ -66,7 +89,7 @@ def _ensure_food_code_unique_index(conn: sqlite3.Connection) -> None:
     """
     cursor = conn.execute(
         "SELECT name FROM sqlite_master "
-        "WHERE type='index' AND tbl_name='food_info' AND name='uq_foodCd'"
+        f"WHERE type='index' AND tbl_name='{FOOD_TABLE}' AND name='uq_foodCd'"
     )
     if cursor.fetchone():
         return
@@ -93,16 +116,16 @@ def _ensure_food_code_unique_index(conn: sqlite3.Connection) -> None:
                         crtrYmd DESC,
                         id DESC
                 ) AS rn
-            FROM food_info
+            FROM processed_food_info
             WHERE foodCd IS NOT NULL AND foodCd != ''
         )
-        DELETE FROM food_info
+        DELETE FROM processed_food_info
         WHERE id IN (SELECT id FROM ranked WHERE rn > 1)
     """)
 
     conn.execute("""
         CREATE UNIQUE INDEX uq_foodCd
-        ON food_info("foodCd")
+        ON processed_food_info("foodCd")
         WHERE "foodCd" IS NOT NULL AND "foodCd" != ''
     """)
     conn.commit()
@@ -112,7 +135,7 @@ def insert_rows(conn: sqlite3.Connection, rows: list[dict]) -> None:
     """rows를 DB에 삽입. itemMnftrRptNo가 이미 존재하는 행은 무시(중복 방지)."""
     placeholders = ", ".join("?" for _ in COLUMNS)
     col_names = ", ".join(f'"{col}"' for col in COLUMNS)
-    sql = f'INSERT OR IGNORE INTO food_info ({col_names}) VALUES ({placeholders})'
+    sql = f'INSERT OR IGNORE INTO processed_food_info ({col_names}) VALUES ({placeholders})'
 
     values = [tuple(row.get(col) for col in COLUMNS) for row in rows]
     conn.executemany(sql, values)

@@ -130,7 +130,7 @@ def main() -> None:
     if not fetch_all:
         print_header()
     print(f"  목표   : {target_count:,}건")
-    print(f"  저장소 : {DB_FILE}  (테이블: food_info)")
+    print(f"  저장소 : {DB_FILE}  (테이블: processed_food_info)")
 
     # ── DB 초기화 ───────────────────────────────────────────────
     print_section("[ 1단계 ] DB 초기화")
@@ -138,7 +138,7 @@ def main() -> None:
     print(f"  ✔ {DB_FILE} 연결 완료")
     init_db(conn)
     init_progress_table(conn)
-    print("  ✔ food_info 테이블 준비 완료")
+    print("  ✔ processed_food_info 테이블 준비 완료")
 
     # ── 데이터 수집 및 저장 ─────────────────────────────────────
     print_section("[ 2단계 ] 데이터 수집 및 저장")
@@ -262,7 +262,7 @@ def main() -> None:
     print(f"  ✔ 완료 페이지   : {len(final_completed):,}/{total_pages:,}페이지")
     print(f"  ⚠ 미완료 페이지 : {failed_pages_run:,}개 (다음 실행 시 자동 재시도)")
     print(f"  📁 파일    : {DB_FILE}")
-    print(f"  📋 테이블  : food_info")
+    print(f"  📋 테이블  : processed_food_info")
     print(f"  📊 컬럼 수 : {len(COLUMNS)}개 필드")
     print(f"  ⏱  소요    : {format_elapsed(elapsed_total)}")
     print()

@@ -529,7 +529,7 @@ def upsert_attempt(
 def fetch_target_products(conn: sqlite3.Connection, limit: int | None) -> list[Product]:
     sql = """
         SELECT fi.itemMnftrRptNo, fi.foodNm, COALESCE(fi.mfrNm, '')
-        FROM food_info fi
+        FROM processed_food_info fi
         WHERE fi.itemMnftrRptNo IS NOT NULL
           AND fi.itemMnftrRptNo != ''
           AND NOT EXISTS (
@@ -560,7 +560,7 @@ def fetch_target_products_by_category(
     """선택한 대/중분류에서 아직 시도/성공되지 않은 대상만 조회."""
     sql = """
         SELECT fi.itemMnftrRptNo, fi.foodNm, COALESCE(fi.mfrNm, '')
-        FROM food_info fi
+        FROM processed_food_info fi
         WHERE fi.itemMnftrRptNo IS NOT NULL
           AND fi.itemMnftrRptNo != ''
           AND fi.foodLv3Nm = ?
@@ -588,7 +588,7 @@ def fetch_product_by_report_no(conn: sqlite3.Connection, report_no: str) -> Prod
     row = conn.execute(
         """
         SELECT fi.itemMnftrRptNo, fi.foodNm, COALESCE(fi.mfrNm, '')
-        FROM food_info fi
+        FROM processed_food_info fi
         WHERE fi.itemMnftrRptNo = ?
         ORDER BY fi.id
         LIMIT 1
@@ -609,7 +609,7 @@ def get_priority_subcategories(conn: sqlite3.Connection) -> list[dict]:
                 fi.itemMnftrRptNo AS rpt_no,
                 COALESCE(NULLIF(TRIM(fi.foodLv3Nm), ''), '미분류') AS lv3,
                 COALESCE(NULLIF(TRIM(fi.foodLv4Nm), ''), '중분류 미지정') AS lv4
-            FROM food_info fi
+            FROM processed_food_info fi
             WHERE fi.itemMnftrRptNo IS NOT NULL
               AND fi.itemMnftrRptNo != ''
         )
@@ -963,7 +963,7 @@ def run_enricher_for_report_no(
 
     product = fetch_product_by_report_no(conn, report_no)
     if not product:
-        print(f"대상 품목보고번호를 food_info에서 찾지 못했습니다: {report_no}")
+        print(f"대상 품목보고번호를 processed_food_info에서 찾지 못했습니다: {report_no}")
         conn.close()
         return
 

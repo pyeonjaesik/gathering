@@ -7,6 +7,7 @@
 
 import os
 import json
+import html
 import socket
 import subprocess
 import sys
@@ -15,10 +16,11 @@ import re
 import shutil
 import webbrowser
 from pathlib import Path
+from datetime import datetime
 
 import sqlite3
 from app import collector, viewer
-from app.backup_tools import create_backup, list_backups, restore_backup
+from app.backup_tools import create_backup, list_backups, read_backup_metadata, restore_backup, verify_backup
 from app.config import DB_FILE
 from app.dedupe_tools import (
     duplicate_conditions,
@@ -26,6 +28,7 @@ from app.dedupe_tools import (
     get_duplicate_stats,
     run_dedupe,
 )
+from app.database import ensure_processed_food_table
 from app.ingredient_enricher import (
     diagnose_analysis,
     get_priority_subcategories,
@@ -35,11 +38,9 @@ from app.ingredient_enricher import (
 from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
 from app.query_pipeline import (
-    get_pipeline_overview,
     init_query_pipeline_tables,
     list_next_queries,
     list_recent_runs,
-    seed_queries_from_categories,
     upsert_query,
 )
 
@@ -241,83 +242,13 @@ def _latest_benchmark_summary_path() -> Path | None:
 
 
 def run_benchmark_menu() -> None:
-    project_root = Path(__file__).resolve().parent.parent
-    validation_dir = project_root / "validation"
-    template_path = validation_dir / "samples.template.jsonl"
-    samples_path = validation_dir / "samples.jsonl"
-
     while True:
         print("\n  📊 [벤치마크]")
-        print("    [1] 시작용 샘플 파일 만들기")
-        print("    [2] 벤치마크 실행 (진행상황 실시간 표시)")
-        print("    [3] 검색어 기반 이미지 벤치마크 (SerpAPI)")
+        print("    [1] 검색어 기반 이미지 벤치마크 (SerpAPI)")
         print("    [b] 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
         if sub == "1":
-            try:
-                validation_dir.mkdir(parents=True, exist_ok=True)
-                result = subprocess.run(
-                    [
-                        sys.executable,
-                        "-m",
-                        "app.validation_benchmark",
-                        "--init-template",
-                        str(template_path),
-                    ],
-                    cwd=str(project_root),
-                    capture_output=True,
-                    text=True,
-                    check=True,
-                )
-                print(f"  ✅ 템플릿 생성 완료: {template_path}")
-                if result.stdout.strip():
-                    print(f"  ℹ️ {result.stdout.strip()}")
-                if not samples_path.exists():
-                    shutil.copyfile(template_path, samples_path)
-                    print(f"  ✅ 실사용 파일도 생성: {samples_path}")
-                print("  ✍️ 이제 samples.jsonl에 이미지/정답만 채워주세요.")
-            except subprocess.CalledProcessError as exc:
-                print("  ❌ 템플릿 생성 실패")
-                print(f"  {exc.stderr.strip() or exc.stdout.strip()}")
-
-        elif sub == "2":
-            if not samples_path.exists():
-                print("  ⚠️ samples.jsonl이 없습니다. 먼저 [1]을 실행해주세요.")
-                continue
-            raw_th = input("  🔹 원재료 유사도 임계값 [기본 0.9]: ").strip()
-            threshold = "0.9"
-            if raw_th:
-                try:
-                    val = float(raw_th)
-                    if val < 0.0 or val > 1.0:
-                        print("  ⚠️ 0~1 범위여야 합니다. 기본 0.9 사용.")
-                    else:
-                        threshold = str(val)
-                except ValueError:
-                    print("  ⚠️ 숫자 형식이 아닙니다. 기본 0.9 사용.")
-
-            print("  🚀 벤치마크 실행 시작 (아래에 실시간 출력됩니다)")
-            try:
-                subprocess.run(
-                    [
-                        sys.executable,
-                        "-m",
-                        "app.validation_benchmark",
-                        "--dataset",
-                        str(samples_path),
-                        "--ingredients-threshold",
-                        threshold,
-                    ],
-                    cwd=str(project_root),
-                    check=True,
-                )
-                print("  ✅ 벤치마크 완료")
-            except subprocess.CalledProcessError as exc:
-                print("  ❌ 벤치마크 실행 실패")
-                print(f"  종료코드: {exc.returncode}")
-
-        elif sub == "3":
             try:
                 run_query_image_benchmark_interactive()
             except Exception as exc:  # pylint: disable=broad-except
@@ -477,6 +408,24 @@ def run_public_api_collection() -> None:
         sys.argv = argv_backup
 
 
+def run_public_api_menu() -> None:
+    while True:
+        print("\n  🌐 [공공 API 하위 메뉴]")
+        print("    [1] 가공식품 데이터 수집")
+        print("    [2] 가공식품 중복 데이터 점검/삭제")
+        print("    [b] ↩️ 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+
+        if sub == "1":
+            run_public_api_collection()
+        elif sub == "2":
+            run_duplicate_menu()
+        elif sub == "b":
+            break
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
 def _print_duplicate_stats(stats: dict[str, int]) -> None:
     print("  📊 [중복 현황]")
     print(f"    총 레코드                : {stats['total_rows']:,}")
@@ -579,7 +528,14 @@ def run_backup_menu() -> None:
                 print("    (백업 파일 없음)")
             else:
                 for idx, path in enumerate(backups, 1):
-                    print(f"    [{idx}] {path}")
+                    meta = read_backup_metadata(path)
+                    if meta:
+                        size_mb = (meta.get("backup_size_bytes") or 0) / (1024 * 1024)
+                        mtime = meta.get("backup_mtime") or "-"
+                        print(f"    [{idx}] {path}")
+                        print(f"         size={size_mb:.1f}MB | mtime={mtime} | meta=있음")
+                    else:
+                        print(f"    [{idx}] {path}  (meta 없음)")
 
         elif sub == "3":
             backups = list_backups(DB_FILE)
@@ -609,7 +565,14 @@ def run_backup_menu() -> None:
                 continue
 
             try:
-                restored = restore_backup(target, DB_FILE, keep_current_snapshot=True)
+                check = verify_backup(target)
+                print(f"  🔎 백업 검증: integrity={check['sqlite_integrity_ok']} checksum={check['checksum_match']}")
+                restored = restore_backup(
+                    target,
+                    DB_FILE,
+                    keep_current_snapshot=True,
+                    verify_before_restore=True,
+                )
                 print(f"  ✅ 복원 완료: {restored}")
                 print("  💾 기존 DB는 pre_restore 라벨로 자동 백업되었습니다.")
             except Exception as exc:  # pylint: disable=broad-except
@@ -624,35 +587,13 @@ def run_backup_menu() -> None:
 def run_query_pipeline_menu() -> None:
     while True:
         print("\n  🧩 [검색어 파이프라인 관리]")
-        print("    [1] DB 테이블 초기화")
-        print("    [2] 카테고리 기반 검색어 자동 시드")
-        print("    [3] 검색어 직접 추가")
-        print("    [4] 우선순위 대기 검색어 보기")
-        print("    [5] 최근 실행 기록 보기")
-        print("    [6] 파이프라인 테이블 요약")
+        print("    [1] 검색어 직접 추가")
+        print("    [2] 우선순위 대기 검색어 보기")
+        print("    [3] 최근 실행 기록 보기")
         print("    [b] ↩️ 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
         if sub == "1":
-            with sqlite3.connect(DB_FILE) as conn:
-                init_query_pipeline_tables(conn)
-            print("  ✅ query_pipeline 테이블 초기화 완료")
-
-        elif sub == "2":
-            raw = input("  🔹 시드 최대 개수 [기본 200]: ").strip()
-            limit = 200
-            if raw:
-                try:
-                    limit = max(1, int(raw))
-                except ValueError:
-                    print("  ⚠️ 숫자 입력이 아니어서 기본 200을 사용합니다.")
-                    limit = 200
-            with sqlite3.connect(DB_FILE) as conn:
-                init_query_pipeline_tables(conn)
-                saved = seed_queries_from_categories(conn, limit=limit)
-            print(f"  ✅ 자동 시드 완료: {saved:,}건")
-
-        elif sub == "3":
             query_text = input("  🔹 검색어 입력: ").strip()
             if not query_text:
                 print("  ⚠️ 검색어가 비어 있습니다.")
@@ -680,29 +621,10 @@ def run_query_pipeline_menu() -> None:
                 )
             print(f"  ✅ 저장 완료: query_id={query_id}")
 
-        elif sub == "4":
-            raw = input("  🔹 조회 개수 [기본 20]: ").strip()
-            limit = 20
-            if raw:
-                try:
-                    limit = max(1, int(raw))
-                except ValueError:
-                    print("  ⚠️ 숫자 입력이 아니어서 기본 20을 사용합니다.")
-                    limit = 20
-            with sqlite3.connect(DB_FILE) as conn:
-                init_query_pipeline_tables(conn)
-                rows = list_next_queries(conn, limit=limit)
-            print("\n  📌 [대기 검색어]")
-            if not rows:
-                print("    (없음)")
-            else:
-                for row in rows:
-                    print(
-                        f"    - id={row['id']} | score={row['priority_score']:.1f}/{row['target_segment_score']:.1f} "
-                        f"| status={row['status']} | run={row['run_count']} | q={row['query_text']}"
-                    )
+        elif sub == "2":
+            run_query_pool_browser_view()
 
-        elif sub == "5":
+        elif sub == "3":
             raw = input("  🔹 조회 개수 [기본 20]: ").strip()
             limit = 20
             if raw:
@@ -726,37 +648,231 @@ def run_query_pipeline_menu() -> None:
                     )
                     print(f"      q={row['query_text']}")
 
-        elif sub == "6":
-            with sqlite3.connect(DB_FILE) as conn:
-                init_query_pipeline_tables(conn)
-                stat = get_pipeline_overview(conn)
-            print("\n  📊 [파이프라인 테이블 요약]")
-            print(f"    - query_pool               : {stat['query_pool']:,}")
-            print(f"    - query_runs               : {stat['query_runs']:,}")
-            print(f"    - serp_cache               : {stat['serp_cache']:,}")
-            print(f"    - query_image_analysis_cache: {stat['query_image_analysis_cache']:,}")
-            print(f"    - food_final               : {stat['food_final']:,}")
-
         elif sub == "b":
             break
         else:
             print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
 
 
+def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
+    status_counts: dict[str, int] = {}
+    source_counts: dict[str, int] = {}
+    for r in rows:
+        status = str(r["status"] or "unknown")
+        source = str(r["source"] or "unknown")
+        status_counts[status] = status_counts.get(status, 0) + 1
+        source_counts[source] = source_counts.get(source, 0) + 1
+
+    status_badges = " ".join(
+        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
+        for k, v in sorted(status_counts.items(), key=lambda x: (-x[1], x[0]))
+    )
+    source_badges = " ".join(
+        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
+        for k, v in sorted(source_counts.items(), key=lambda x: (-x[1], x[0]))
+    )
+
+    table_rows: list[str] = []
+    for r in rows:
+        table_rows.append(
+            "<tr>"
+            f"<td>{int(r['id'])}</td>"
+            f"<td>{html.escape(str(r['status'] or ''))}</td>"
+            f"<td>{html.escape(str(r['source'] or ''))}</td>"
+            f"<td class='num'>{float(r['priority_score'] or 0.0):.1f}</td>"
+            f"<td class='num'>{float(r['target_segment_score'] or 0.0):.1f}</td>"
+            f"<td class='num'>{int(r['run_count'] or 0)}</td>"
+            f"<td>{html.escape(str(r['last_run_at'] or '-'))}</td>"
+            f"<td class='query'>{html.escape(str(r['query_text'] or ''))}</td>"
+            "</tr>"
+        )
+    tbody = "\n".join(table_rows)
+
+    return f"""<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>검색어 풀 조회</title>
+  <style>
+    :root {{
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --line: #d9e0ea;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1f6feb;
+      --badge: #eef4ff;
+    }}
+    body {{
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+    }}
+    .wrap {{ max-width: 1400px; margin: 0 auto; padding: 24px; }}
+    .card {{
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(31,41,55,0.04);
+    }}
+    h1 {{ margin: 0 0 6px; font-size: 24px; }}
+    .sub {{ color: var(--muted); font-size: 14px; margin-bottom: 10px; }}
+    .badge {{
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--badge);
+      border: 1px solid #dbe7ff;
+      font-size: 12px;
+      color: #1e3a8a;
+    }}
+    .controls {{
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 10px;
+      align-items: center;
+    }}
+    input, select {{
+      width: 100%;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #fff;
+      box-sizing: border-box;
+    }}
+    table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
+    thead th {{
+      position: sticky; top: 0; z-index: 1;
+      background: #eef3fb;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      white-space: nowrap;
+    }}
+    tbody td {{
+      border-bottom: 1px solid #edf1f7;
+      padding: 8px;
+      vertical-align: top;
+    }}
+    tbody tr:hover {{ background: #f8fbff; }}
+    .num {{ text-align: right; white-space: nowrap; }}
+    .query {{ min-width: 420px; }}
+    .small {{ color: var(--muted); font-size: 12px; margin-top: 8px; }}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>검색어 풀 조회</h1>
+      <div class="sub">query_pool 전체를 브라우저에서 가독성 높게 조회합니다.</div>
+      <div><strong>총 검색어:</strong> {len(rows):,}</div>
+      <div style="margin-top:8px;"><strong>상태 분포</strong><br>{status_badges or "-"}</div>
+      <div style="margin-top:8px;"><strong>소스 분포</strong><br>{source_badges or "-"}</div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <input id="q" type="text" placeholder="검색어/소스/상태/카테고리 텍스트 검색" />
+        <select id="statusFilter">
+          <option value="">전체 상태</option>
+          <option value="pending">pending</option>
+          <option value="paused">paused</option>
+          <option value="running">running</option>
+          <option value="done">done</option>
+          <option value="failed">failed</option>
+        </select>
+      </div>
+      <div class="small">필터는 실시간 적용됩니다.</div>
+    </div>
+
+    <div class="card" style="padding:0; overflow:auto; max-height:70vh;">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>상태</th>
+            <th>소스</th>
+            <th>우선점수</th>
+            <th>세그점수</th>
+            <th>run</th>
+            <th>마지막 실행</th>
+            <th>검색어</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tbody}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const sf = document.getElementById('statusFilter');
+    const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
+    function applyFilter() {{
+      const text = (q.value || '').toLowerCase();
+      const st = (sf.value || '').toLowerCase();
+      rows.forEach((tr) => {{
+        const t = tr.textContent.toLowerCase();
+        const statusCell = (tr.children[1]?.textContent || '').toLowerCase().trim();
+        const matchText = !text || t.includes(text);
+        const matchStatus = !st || statusCell === st;
+        tr.style.display = (matchText && matchStatus) ? '' : 'none';
+      }});
+    }}
+    q.addEventListener('input', applyFilter);
+    sf.addEventListener('change', applyFilter);
+  </script>
+</body>
+</html>
+"""
+
+
+def run_query_pool_browser_view() -> None:
+    with sqlite3.connect(DB_FILE) as conn:
+        init_query_pipeline_tables(conn)
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            """
+            SELECT id, query_text, source, status, priority_score, target_segment_score, run_count, last_run_at
+            FROM query_pool
+            ORDER BY priority_score DESC, target_segment_score DESC, id ASC
+            """
+        ).fetchall()
+
+    reports_dir = Path(__file__).resolve().parent.parent / "reports" / "query_pool"
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_path = reports_dir / f"query_pool_{ts}.html"
+    out_path.write_text(_build_query_pool_html(rows), encoding="utf-8")
+
+    print(f"\n  ✅ 검색어 풀 브라우저 리포트 생성: {out_path}")
+    webbrowser.open_new_tab(out_path.resolve().as_uri())
+
+
 def main() -> None:
+    try:
+        with sqlite3.connect(DB_FILE) as _conn:
+            ensure_processed_food_table(_conn)
+    except sqlite3.Error:
+        pass
+
     while True:
         print_header()
         print(_bar())
         print("  🎛️ [ 메인 메뉴 ]")
-        print("    [1] 👀 데이터 조회/탐색 (viewer)")
-        print("    [2] 🧪 원재료명 추출 실행")
-        print("    [3] 🌐 공공 API 데이터 수집")
-        print("    [4] 🧹 중복 데이터 점검/삭제")
-        print("    [5] 💾 백업/복원 관리")
-        print("    [6] 📡 브라우저 모니터 열기")
-        print("    [7] 🧪 이미지 URL analyze 테스트")
-        print("    [8] 📊 analyze 벤치마크 도우미")
-        print("    [9] 🧩 검색어 파이프라인 관리")
+        print("    [1] 👀 데이터 조회/탐색 (신규 viewer)")
+        print("    [2] 🌐 공공 API 관리 (가공식품)")
+        print("    [3] 💾 백업/복원 관리")
+        print("    [4] 📊 analyze 벤치마크 도우미")
+        print("    [5] 🧩 검색어 파이프라인 관리")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -764,20 +880,12 @@ def main() -> None:
         if choice == "1":
             run_data_viewer()
         elif choice == "2":
-            run_ingredient_menu()
+            run_public_api_menu()
         elif choice == "3":
-            run_public_api_collection()
-        elif choice == "4":
-            run_duplicate_menu()
-        elif choice == "5":
             run_backup_menu()
-        elif choice == "6":
-            run_web_monitor()
-        elif choice == "7":
-            run_image_analyzer_test()
-        elif choice == "8":
+        elif choice == "4":
             run_benchmark_menu()
-        elif choice == "9":
+        elif choice == "5":
             run_query_pipeline_menu()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")

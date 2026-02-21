@@ -44,7 +44,7 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
         conn,
         """
         SELECT foodCd, COUNT(*) AS cnt
-        FROM food_info
+        FROM processed_food_info
         WHERE foodCd IS NOT NULL AND foodCd != ''
         GROUP BY foodCd
         HAVING cnt > 1
@@ -61,7 +61,7 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
                  coalesce(nullif(trim(servSize),''),'∅') AS servSize_n,
                  coalesce(nullif(trim(foodLv3Nm),''),'∅') AS lv3_n,
                  coalesce(nullif(trim(foodLv4Nm),''),'∅') AS lv4_n
-          FROM food_info
+          FROM processed_food_info
         )
         SELECT nm_norm, foodSize_n, servSize_n, lv3_n, lv4_n,
                COUNT(*) AS cnt, COUNT(DISTINCT foodCd) AS ccd
@@ -83,7 +83,7 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
                  coalesce(nullif(trim(chocdf),''),'∅') AS chocdf_n,
                  coalesce(nullif(trim(foodLv3Nm),''),'∅') AS lv3_n,
                  coalesce(nullif(trim(foodLv4Nm),''),'∅') AS lv4_n
-          FROM food_info
+          FROM processed_food_info
         )
         SELECT nm_norm, enerc_n, prot_n, fatce_n, chocdf_n, lv3_n, lv4_n,
                COUNT(*) AS cnt, COUNT(DISTINCT foodCd) AS ccd
@@ -101,7 +101,7 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
                  {NAME_NORM_EXPR} AS nm_norm,
                  coalesce(nullif(trim(foodLv3Nm),''),'∅') AS lv3_n,
                  coalesce(nullif(trim(foodLv4Nm),''),'∅') AS lv4_n
-          FROM food_info
+          FROM processed_food_info
         )
         SELECT nm_norm, lv3_n, lv4_n,
                COUNT(*) AS cnt, COUNT(DISTINCT foodCd) AS ccd
@@ -111,7 +111,7 @@ def get_duplicate_stats(conn: sqlite3.Connection) -> dict[str, int]:
         """,
     )
 
-    total = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
+    total = conn.execute("SELECT COUNT(*) FROM processed_food_info").fetchone()[0]
     return {
         "total_rows": total,
         "foodCd_groups": foodcd_groups,
@@ -135,7 +135,7 @@ def get_duplicate_samples(conn: sqlite3.Connection, limit: int = 10) -> list[tup
                COALESCE(NULLIF(TRIM(foodLv4Nm), ''), '∅') AS lv4_n,
                COUNT(*) AS cnt,
                COUNT(DISTINCT foodCd) AS foodCd_cnt
-        FROM food_info
+        FROM processed_food_info
         GROUP BY foodNm, foodSize_n, servSize_n, lv3_n, lv4_n
         HAVING cnt > 1 AND foodCd_cnt > 1
         ORDER BY cnt DESC, foodCd_cnt DESC, foodNm
@@ -227,7 +227,7 @@ def _run_rule_a_foodcd(conn: sqlite3.Connection) -> int:
                         crtrYmd DESC,
                         id DESC
                 ) AS kept_id
-            FROM food_info
+            FROM processed_food_info
             WHERE foodCd IS NOT NULL AND foodCd != ''
         )
         SELECT *
@@ -251,11 +251,11 @@ def _run_rule_a_foodcd(conn: sqlite3.Connection) -> int:
             d.foodLv3Nm, d.foodLv4Nm,
             k.foodCd, k.foodNm, k.itemMnftrRptNo, k.mfrNm
         FROM _dup_a d
-        JOIN food_info k ON k.id = d.kept_id
+        JOIN processed_food_info k ON k.id = d.kept_id
         """
     )
     conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_a")
-    removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_a)").rowcount
+    removed = conn.execute("DELETE FROM processed_food_info WHERE id IN (SELECT id FROM _dup_a)").rowcount
     return removed
 
 
@@ -275,7 +275,7 @@ def _run_rule_b_h1(conn: sqlite3.Connection) -> int:
                  coalesce(nullif(trim(itemMnftrRptNo),''),'∅') AS rpt_n,
                  coalesce(nullif(trim(mfrNm),''),'∅') AS mfr_n,
                  coalesce(nullif(trim(crtrYmd),''),'∅') AS crtr_n
-          FROM food_info
+          FROM processed_food_info
         ), ranked AS (
           SELECT *,
                  nm_norm || '|' || foodSize_n || '|' || servSize_n || '|' || lv3_n || '|' || lv4_n AS grp_key,
@@ -326,11 +326,11 @@ def _run_rule_b_h1(conn: sqlite3.Connection) -> int:
             d.foodLv3Nm, d.foodLv4Nm,
             k.foodCd, k.foodNm, k.itemMnftrRptNo, k.mfrNm
         FROM _dup_b d
-        JOIN food_info k ON k.id = d.kept_id
+        JOIN processed_food_info k ON k.id = d.kept_id
         """
     )
     conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_b")
-    removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_b)").rowcount
+    removed = conn.execute("DELETE FROM processed_food_info WHERE id IN (SELECT id FROM _dup_b)").rowcount
     return removed
 
 
@@ -352,7 +352,7 @@ def _run_rule_c_h2(conn: sqlite3.Connection) -> int:
                  coalesce(nullif(trim(itemMnftrRptNo),''),'∅') AS rpt_n,
                  coalesce(nullif(trim(mfrNm),''),'∅') AS mfr_n,
                  coalesce(nullif(trim(crtrYmd),''),'∅') AS crtr_n
-          FROM food_info
+          FROM processed_food_info
         ), ranked AS (
           SELECT *,
                  nm_norm || '|' || enerc_n || '|' || prot_n || '|' || fatce_n || '|' || chocdf_n || '|' || lv3_n || '|' || lv4_n AS grp_key,
@@ -403,11 +403,11 @@ def _run_rule_c_h2(conn: sqlite3.Connection) -> int:
             d.foodLv3Nm, d.foodLv4Nm,
             k.foodCd, k.foodNm, k.itemMnftrRptNo, k.mfrNm
         FROM _dup_c d
-        JOIN food_info k ON k.id = d.kept_id
+        JOIN processed_food_info k ON k.id = d.kept_id
         """
     )
     conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_c")
-    removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_c)").rowcount
+    removed = conn.execute("DELETE FROM processed_food_info WHERE id IN (SELECT id FROM _dup_c)").rowcount
     return removed
 
 
@@ -425,7 +425,7 @@ def _run_rule_d_name_category(conn: sqlite3.Connection) -> int:
                  coalesce(nullif(trim(itemMnftrRptNo),''),'∅') AS rpt_n,
                  coalesce(nullif(trim(mfrNm),''),'∅') AS mfr_n,
                  coalesce(nullif(trim(crtrYmd),''),'∅') AS crtr_n
-          FROM food_info
+          FROM processed_food_info
         ), ranked AS (
           SELECT *,
                  nm_norm || '|' || lv3_n || '|' || lv4_n AS grp_key,
@@ -476,11 +476,11 @@ def _run_rule_d_name_category(conn: sqlite3.Connection) -> int:
             d.foodLv3Nm, d.foodLv4Nm,
             k.foodCd, k.foodNm, k.itemMnftrRptNo, k.mfrNm
         FROM _dup_d d
-        JOIN food_info k ON k.id = d.kept_id
+        JOIN processed_food_info k ON k.id = d.kept_id
         """
     )
     conn.execute("INSERT OR IGNORE INTO _run_removed_ids SELECT id FROM _dup_d")
-    removed = conn.execute("DELETE FROM food_info WHERE id IN (SELECT id FROM _dup_d)").rowcount
+    removed = conn.execute("DELETE FROM processed_food_info WHERE id IN (SELECT id FROM _dup_d)").rowcount
     return removed
 
 

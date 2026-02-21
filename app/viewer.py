@@ -1,775 +1,319 @@
 """
-DB 데이터 조회 뷰어
-  - 품목 보고 번호(itemMnftrRptNo) 기준 검색/탐색
-  - 식품명 검색, 전체 목록 페이지 탐색, 통계 요약 제공
+신규 DB 뷰어
+- 공공 API 원본(processed_food_info)
+- 검색어 파이프라인(query_pool/query_runs/serp_cache/query_image_analysis_cache)
+- 최종 산출물(food_final)
+중심으로 운영 현황을 조회한다.
 """
 
-import json
+from __future__ import annotations
+
 import sqlite3
 import sys
-import webbrowser
+from typing import Any
 
 from app.config import DB_FILE
+from app.database import ensure_processed_food_table
+from app.query_pipeline import init_query_pipeline_tables
 
-W = 64  # 출력 너비
-
-
-# ── 공통 유틸 ────────────────────────────────────────────────────
-
-
-def _display_width(text: str) -> int:
-    """터미널 표시 너비 계산 (한글 등 CJK 문자는 2칸)"""
-    return sum(2 if ord(c) > 127 else 1 for c in (text or ""))
+W = 88
 
 
-def _trunc(text: str, max_w: int) -> str:
-    """표시 너비 기준으로 문자열 자르기"""
-    result, width = [], 0
-    for c in text or "":
-        cw = 2 if ord(c) > 127 else 1
-        if width + cw > max_w:
-            break
-        result.append(c)
-        width += cw
-    return "".join(result)
+def _bar(ch: str = "─") -> str:
+    return "  " + ch * (W - 4)
 
 
-def _fixed(text: str, max_w: int) -> str:
-    """표시 너비 기준으로 고정 폭 문자열 반환 (자르기 + 공백 패딩)"""
-    t = _trunc(text or "—", max_w)
-    return t + " " * (max_w - _display_width(t))
-
-
-def _diagnose_payload(payload: dict, target_no: str) -> tuple[str, str]:
-    extracted = (payload.get("itemMnftrRptNo") or "").strip()
-    ingredients = (payload.get("ingredients_text") or "").strip()
-    error = (payload.get("error") or "").strip()
-    note = (payload.get("note") or "").strip()
-    has_ingredients = payload.get("has_ingredients")
-    is_flat = payload.get("is_flat")
-
-    if error:
-        low = error.lower()
-        if "api key not found" in low:
-            return ("분석실패", "Gemini API 키 오류")
-        if "timeout" in low:
-            return ("분석실패", "모델 응답 시간 초과")
-        if "image download failed" in low:
-            return ("분석실패", "이미지 URL 접근 실패")
-        return ("분석실패", _trunc(error, 48))
-    if extracted and extracted == target_no and ingredients and is_flat is True:
-        return ("매칭성공", "번호+원재료+평면 확인")
-    if extracted and extracted == target_no and ingredients and is_flat is False:
-        return ("비평면", "번호/원재료는 있으나 비평면")
-    if extracted and extracted == target_no and ingredients and is_flat is None:
-        return ("평면불명", "번호/원재료는 있으나 평면 판정 실패")
-    if extracted and extracted == target_no and not ingredients:
-        return ("부분성공", "번호 일치, 원재료 없음")
-    if extracted and extracted != target_no:
-        return ("타상품검출", f"다른 번호 {extracted}")
-    if not extracted and ingredients:
-        return ("번호미검출", "원재료는 있음")
-    if has_ingredients is False:
-        return ("원재료없음", "원재료 영역 미검출")
-    return ("미판독", _trunc(note or "번호/원재료 모두 미확인", 48))
-
-
-def _bar(char: str = "─") -> str:
-    return "  " + char * (W - 4)
-
-
-def _category_parts(row: dict) -> list[str]:
-    """카테고리 레벨을 순서대로 수집하고 중복을 제거한다."""
-    keys = ("foodLv3Nm", "foodLv4Nm", "foodLv5Nm", "foodLv6Nm", "foodLv7Nm")
-    parts: list[str] = []
-    seen: set[str] = set()
-    for key in keys:
-        value = (row.get(key) or "").strip()
-        if not value or value in seen:
-            continue
-        parts.append(value)
-        seen.add(value)
-    return parts
-
-
-def _category_text(row: dict, full: bool = False) -> str:
-    """카테고리를 사용자 친화적인 텍스트로 변환한다."""
-    parts = _category_parts(row)
-    if not parts:
-        return "분류 정보 없음"
-    if full or len(parts) == 1:
-        return " > ".join(parts)
-    return f"{parts[-1]} ({parts[0]})"
-
-
-def _category_level_text(row: dict, level: int) -> str:
-    """대/중/소 분류를 '이름 (코드)' 형식으로 반환."""
-    name_key = f"foodLv{level}Nm"
-    code_key = f"foodLv{level}Cd"
-    name = (row.get(name_key) or "").strip()
-    code = (row.get(code_key) or "").strip()
-    if not name and not code:
-        return "—"
-    if name and code:
-        return f"{name} ({code})"
-    return name or code
-
-
-def _table_exists(conn: sqlite3.Connection, table_name: str) -> bool:
+def _table_exists(conn: sqlite3.Connection, name: str) -> bool:
     row = conn.execute(
         "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
-        (table_name,),
+        (name,),
     ).fetchone()
     return bool(row and row[0] > 0)
 
 
-# ── 화면 출력 ────────────────────────────────────────────────────
+def _count(conn: sqlite3.Connection, table: str, where: str = "", params: tuple[Any, ...] = ()) -> int:
+    sql = f"SELECT COUNT(*) FROM {table}"
+    if where:
+        sql += f" WHERE {where}"
+    row = conn.execute(sql, params).fetchone()
+    return int(row[0]) if row else 0
 
 
 def print_header() -> None:
-    title = "식품 DB 데이터 뷰어"
+    title = "📚 통합 DB Viewer (Pipeline Edition)"
     inner = W - 2
-    dw = _display_width(title)
-    pad_l = (inner - dw) // 2
-    pad_r = inner - pad_l - dw
+    pad_l = max(0, (inner - len(title)) // 2)
+    pad_r = max(0, inner - len(title) - pad_l)
     print()
     print("╔" + "═" * inner + "╗")
     print("║" + " " * pad_l + title + " " * pad_r + "║")
     print("╚" + "═" * inner + "╝")
-    print()
 
 
-def print_section(title: str) -> None:
-    print()
-    print(_bar())
-    print(f"  {title}")
-    print(_bar())
+def print_summary(conn: sqlite3.Connection) -> None:
+    print("\n  🧾 [전체 요약]")
+    total_food = _count(conn, "processed_food_info")
+    unique_no = _count(conn, "processed_food_info", "itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''")
+    query_pool = _count(conn, "query_pool")
+    query_runs = _count(conn, "query_runs")
+    serp_cache = _count(conn, "serp_cache")
+    image_cache = _count(conn, "query_image_analysis_cache")
+    final_rows = _count(conn, "food_final")
+    print(f"    - processed_food_info(공공API 원본)      : {total_food:,}")
+    print(f"    - 품목보고번호 보유 원본 건수   : {unique_no:,}")
+    print(f"    - query_pool(검색어 풀)         : {query_pool:,}")
+    print(f"    - query_runs(실행 로그)         : {query_runs:,}")
+    print(f"    - serp_cache(URL 캐시)          : {serp_cache:,}")
+    print(f"    - image_analysis_cache(패스결과): {image_cache:,}")
+    print(f"    - food_final(최종 산출물)       : {final_rows:,}")
 
 
-# ── DB 현황 요약 ────────────────────────────────────────────────
-
-
-def print_db_summary(conn: sqlite3.Connection) -> None:
-    total = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
-    unique_rpt = conn.execute(
-        "SELECT COUNT(DISTINCT itemMnftrRptNo) FROM food_info "
-        "WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''"
-    ).fetchone()[0]
-    missing_rpt = conn.execute(
-        "SELECT COUNT(*) FROM food_info "
-        "WHERE itemMnftrRptNo IS NULL OR itemMnftrRptNo = ''"
-    ).fetchone()[0]
-    unique_cat = conn.execute(
-        "SELECT COUNT(DISTINCT foodLv3Nm) FROM food_info "
-        "WHERE foodLv3Nm IS NOT NULL AND foodLv3Nm != ''"
-    ).fetchone()[0]
-    date_row = conn.execute(
-        "SELECT MIN(crtYmd), MAX(crtYmd) FROM food_info "
-        "WHERE crtYmd IS NOT NULL AND crtYmd != ''"
-    ).fetchone()
-    min_date = date_row[0] if date_row else "—"
-    max_date = date_row[1] if date_row else "—"
-
-    print_section("[ DB 현황 ]")
-    print(f"  전체 레코드    : {total:,}건")
-    print(f"  품목 보고 번호 : {unique_rpt:,}개 (고유값, 값 있는 데이터 기준)")
-    print(f"  번호 없음      : {missing_rpt:,}건")
-    print(f"  식품 분류      : {unique_cat:,}개")
-    if min_date and max_date:
-        print(f"  등록일 범위    : {min_date} ~ {max_date}")
-    print()
-
-
-# ── 단건 카드 출력 ───────────────────────────────────────────────
-
-
-def print_food_card(row: dict, index: int | None = None, detail: bool = False) -> None:
-    """품목 1건을 카드 형식으로 출력"""
-    sep = "─" * (W - 4)
-    print(f"  ┌{sep}┐")
-
-    if index is not None:
-        print(f"  │  [{index}]")
-
-    # 핵심 정보 (품목 보고 번호 강조)
-    rpt_no  = _trunc(row.get("itemMnftrRptNo") or "—", 40)
-    food_nm = _trunc(row.get("foodNm")  or "—", 36)
-    food_cd = _trunc(row.get("foodCd")  or "—", 36)
-    cat     = _trunc(_category_text(row), 36)
-    cat_all = _trunc(_category_text(row, full=True), 50)
-    cat_lv3 = _trunc(_category_level_text(row, 3), 42)
-    cat_lv4 = _trunc(_category_level_text(row, 4), 42)
-    cat_lv5 = _trunc(_category_level_text(row, 5), 42)
-    mfr     = _trunc(row.get("mfrNm")   or "—", 36)
-    impt    = "수입" if row.get("imptYn") == "Y" else "국산"
-
-    print(f"  │  품목 보고 번호 : {rpt_no}")
-    print(f"  │  식품명          : {food_nm}")
-    print(f"  │  식품 코드       : {food_cd}")
-    print(f"  │  카테고리        : {cat}")
-    print(f"  │  대분류(코드)    : {cat_lv3}")
-    print(f"  │  중분류(코드)    : {cat_lv4}")
-    print(f"  │  소분류(코드)    : {cat_lv5}")
-    print(f"  │  제조사          : {mfr}")
-    print(f"  │  구분            : {impt}")
-
-    if detail:
-        enerc  = row.get("enerc")  or "—"
-        prot   = row.get("prot")   or "—"
-        fatce  = row.get("fatce")  or "—"
-        chocdf = row.get("chocdf") or "—"
-        nat    = row.get("nat")    or "—"
-        srv    = row.get("servSize") or "—"
-        coo    = _trunc(row.get("cooNm") or "—", 30)
-        crtYmd = row.get("crtYmd") or "—"
-        impt_nm = _trunc(row.get("imptNm") or "—", 30)
-        dist_nm = _trunc(row.get("distNm") or "—", 30)
-
-        print("  │")
-        print("  │  ── 영양 정보 (100g 또는 1회 제공량 기준) ──")
-        print(f"  │    서빙 크기     : {srv}")
-        print(f"  │    에너지        : {enerc} kcal")
-        print(f"  │    단백질        : {prot} g")
-        print(f"  │    지방          : {fatce} g")
-        print(f"  │    탄수화물      : {chocdf} g")
-        print(f"  │    나트륨        : {nat} mg")
-        print("  │")
-        print("  │  ── 추가 정보 ──")
-        print(f"  │    카테고리(전체): {cat_all}")
-        print(f"  │    원산지        : {coo}")
-        if impt == "수입":
-            print(f"  │    수입사        : {impt_nm}")
-        print(f"  │    유통사        : {dist_nm}")
-        print(f"  │    등록일        : {crtYmd}")
-
-    print(f"  └{sep}┘")
-
-
-# ── 메뉴 기능 ────────────────────────────────────────────────────
-
-
-def _fetch_rows(conn: sqlite3.Connection, sql: str, params: tuple = ()) -> list[dict]:
-    cur = conn.execute(sql, params)
-    cols = [d[0] for d in cur.description]
-    return [dict(zip(cols, r)) for r in cur.fetchall()]
-
-
-def search_by_report_no(conn: sqlite3.Connection) -> None:
-    """★ 품목 보고 번호(키값)로 검색"""
-    print_section("[ 품목 보고 번호 검색 ]  ★ 키값 기준")
-    print("  일부만 입력해도 됩니다.  예) 2022,  20220000123456")
-    query = input("  검색어 입력 : ").strip()
-    if not query:
-        print("  검색어를 입력해주세요.")
+def show_food_search(conn: sqlite3.Connection) -> None:
+    print("\n  🔎 [가공식품 공공API 원본 검색]")
+    mode = input("  검색 기준 [1:품목보고번호, 2:식품명] : ").strip()
+    if mode not in {"1", "2"}:
+        print("  ⚠️ 올바른 번호를 입력해주세요.")
         return
-
-    rows = _fetch_rows(
-        conn,
-        "SELECT * FROM food_info WHERE itemMnftrRptNo LIKE ? LIMIT 20",
-        (f"%{query}%",),
-    )
-
+    q = input("  검색어 : ").strip()
+    if not q:
+        print("  ⚠️ 검색어가 비어 있습니다.")
+        return
+    if mode == "1":
+        sql = """
+            SELECT foodNm, itemMnftrRptNo, mfrNm, enerc, prot, fatce, chocdf
+            FROM processed_food_info
+            WHERE itemMnftrRptNo LIKE ?
+            LIMIT 30
+        """
+    else:
+        sql = """
+            SELECT foodNm, itemMnftrRptNo, mfrNm, enerc, prot, fatce, chocdf
+            FROM processed_food_info
+            WHERE foodNm LIKE ?
+            LIMIT 30
+        """
+    rows = conn.execute(sql, (f"%{q}%",)).fetchall()
     if not rows:
-        print(f"\n  결과 없음 : '{query}'와 일치하는 품목 보고 번호가 없습니다.")
+        print("  (결과 없음)")
         return
-
-    print(f"\n  검색 결과 : {len(rows)}건 (최대 20건 표시)\n")
+    print(f"\n  결과 {len(rows):,}건 (최대 30건)")
     for i, row in enumerate(rows, 1):
-        print_food_card(row, index=i, detail=True)
-        print()
-
-
-def search_by_name(conn: sqlite3.Connection) -> None:
-    """식품명으로 검색"""
-    print_section("[ 식품명 검색 ]")
-    query = input("  식품명 입력 : ").strip()
-    if not query:
-        print("  검색어를 입력해주세요.")
-        return
-
-    rows = _fetch_rows(
-        conn,
-        "SELECT * FROM food_info WHERE foodNm LIKE ? LIMIT 20",
-        (f"%{query}%",),
-    )
-
-    if not rows:
-        print(f"\n  결과 없음 : '{query}'에 해당하는 식품이 없습니다.")
-        return
-
-    print(f"\n  검색 결과 : {len(rows)}건 (최대 20건 표시)\n")
-    for i, row in enumerate(rows, 1):
-        print_food_card(row, index=i, detail=False)
-        print()
-
-    print("  번호를 입력하면 상세 정보를 볼 수 있습니다.")
-    sel = input("  번호 입력 (엔터: 건너뜀) : ").strip()
-    if sel.isdigit() and 1 <= int(sel) <= len(rows):
-        print()
-        print_food_card(rows[int(sel) - 1], detail=True)
-
-
-def list_all(conn: sqlite3.Connection) -> None:
-    """전체 목록 페이지 탐색"""
-    PAGE = 10
-    total = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
-    if total == 0:
-        print("  저장된 데이터가 없습니다.")
-        return
-
-    page = 0
-    while True:
-        offset = page * PAGE
-        rows = _fetch_rows(
-            conn,
-            "SELECT * FROM food_info LIMIT ? OFFSET ?",
-            (PAGE, offset),
-        )
-        if not rows:
-            print("\n  마지막 페이지입니다.")
-            break
-
-        start = offset + 1
-        end = offset + len(rows)
-        print_section(f"[ 전체 목록 ]  {start}~{end}건 / 총 {total:,}건")
-
-        # 헤더 행
-        h_no   = _fixed("번호", 4)
-        h_rpt  = _fixed("품목 보고 번호", 22)
-        h_nm   = _fixed("식품명", 20)
-        h_cat  = _fixed("카테고리", 20)
-        print(f"  {h_no}  {h_rpt}  {h_nm}  {h_cat}")
-        print(f"  {'─'*4}  {'─'*22}  {'─'*20}  {'─'*20}")
-
-        for i, row in enumerate(rows, start):
-            rpt = _fixed(row.get("itemMnftrRptNo") or "—", 22)
-            nm  = _fixed(row.get("foodNm") or "—", 20)
-            cat = _fixed(_category_text(row), 20)
-            print(f"  {i:>4}  {rpt}  {nm}  {cat}")
-
-        # 내비게이션
-        nav = []
-        if page > 0:
-            nav.append("[p] 이전")
-        if len(rows) == PAGE and end < total:
-            nav.append("[n] 다음")
-        nav.append("[상세] 번호 입력")
-        nav.append("[q] 메뉴")
-        print(f"\n  {' / '.join(nav)}")
-
-        choice = input("  선택 : ").strip().lower()
-        if choice == "n" and end < total:
-            page += 1
-        elif choice == "p" and page > 0:
-            page -= 1
-        elif choice == "q":
-            break
-        elif choice.isdigit():
-            idx = int(choice) - start
-            if 0 <= idx < len(rows):
-                print()
-                print_food_card(rows[idx], detail=True)
-            else:
-                print("  해당 번호가 현재 페이지에 없습니다.")
-        else:
-            print("  올바른 키를 입력해주세요.")
-
-
-def show_stats(conn: sqlite3.Connection) -> None:
-    """통계/요약"""
-    print_section("[ 통계 ]")
-
-    # 분류별 현황
-    rows = conn.execute("""
-        SELECT foodLv3Nm, COUNT(*) AS cnt
-        FROM food_info
-        WHERE foodLv3Nm IS NOT NULL AND foodLv3Nm != ''
-        GROUP BY foodLv3Nm
-        ORDER BY cnt DESC
-        LIMIT 10
-    """).fetchall()
-
-    if rows:
-        print("  ■ 분류별 상위 10개")
-        max_cnt = rows[0][1] if rows else 1
-        bar_w = 20
-        for name, cnt in rows:
-            label = _fixed(name or "—", 18)
-            filled = int(bar_w * cnt / max_cnt) if max_cnt > 0 else 0
-            bar = "█" * filled + "░" * (bar_w - filled)
-            print(f"  {label}  [{bar}]  {cnt:,}건")
-
-    print()
-
-    # 국산/수입
-    import_data: dict = {}
-    for yn, cnt in conn.execute(
-        "SELECT imptYn, COUNT(*) FROM food_info GROUP BY imptYn"
-    ):
-        import_data[yn] = cnt
-
-    domestic = sum(v for k, v in import_data.items() if k != "Y")
-    imported = import_data.get("Y", 0)
-    print("  ■ 국산 / 수입 현황")
-    print(f"    국산 : {domestic:,}건")
-    print(f"    수입 : {imported:,}건")
-    print()
-
-    # 최근 등록 TOP 5
-    recent = conn.execute("""
-        SELECT foodNm, itemMnftrRptNo, crtYmd
-        FROM food_info
-        WHERE crtYmd IS NOT NULL AND crtYmd != ''
-        ORDER BY crtYmd DESC
-        LIMIT 5
-    """).fetchall()
-
-    if recent:
-        print("  ■ 최근 등록 5건")
-        for food_nm, rpt_no, date in recent:
-            nm  = _fixed(food_nm or "—", 20)
-            rpt = _trunc(rpt_no or "—", 22)
-            print(f"    {date}  {nm}  {rpt}")
-
-
-def show_all_categories(conn: sqlite3.Connection) -> None:
-    """카테고리 계층 중 대분류/중분류만 상품 수와 함께 출력."""
-    print_section("[ 전체 카테고리 보기 ]")
-
-    rows = conn.execute("""
-        SELECT
-            COALESCE(NULLIF(foodLv3Nm, ''), '미분류') AS lv3,
-            NULLIF(foodLv4Nm, '') AS lv4,
-            COUNT(*) AS cnt
-        FROM food_info
-        GROUP BY lv3, lv4
-        ORDER BY lv3, lv4
-    """).fetchall()
-
-    if not rows:
-        print("  저장된 데이터가 없습니다.")
-        return
-
-    grouped: dict[str, dict[str, object]] = {}
-    for lv3, lv4, cnt in rows:
-        if lv3 not in grouped:
-            grouped[lv3] = {"total": 0, "children": {}}
-        grouped[lv3]["total"] = int(grouped[lv3]["total"]) + cnt
-        mid = lv4 or "중분류 미지정"
-        children = grouped[lv3]["children"]
-        if not isinstance(children, dict):
-            children = {}
-            grouped[lv3]["children"] = children
-        children[mid] = int(children.get(mid, 0)) + cnt
-
-    top_category_count = len(grouped)
-    total_products = conn.execute("SELECT COUNT(*) FROM food_info").fetchone()[0]
-    print(f"  대분류 수 : {top_category_count:,}개")
-    print(f"  전체 상품 : {total_products:,}건")
-    print()
-
-    print("  ■ 대분류 / 중분류")
-    major_items = sorted(
-        grouped.items(),
-        key=lambda x: (-int(x[1]["total"]), x[0]),
-    )
-    for major, data in major_items:
-        mid_map = data["children"]
-        if not isinstance(mid_map, dict):
-            mid_map = {}
+        nm, no, mfr, en, pr, fa, ch = row
         print(
-            f"  - 대분류: {major}  "
-            f"(중분류 {len(mid_map):,}개 / 상품 {int(data['total']):,}건)"
+            f"  [{i:02}] {nm} | 번호={no or '-'} | 제조사={mfr or '-'} | "
+            f"E/P/F/C={en or '-'} / {pr or '-'} / {fa or '-'} / {ch or '-'}"
         )
-        mid_items = sorted(mid_map.items(), key=lambda x: (-x[1], x[0]))
-        for mid, cnt in mid_items:
-            print(f"      · 중분류: {mid}  (상품 {cnt:,}건)")
 
 
-def show_ingredient_dashboard(conn: sqlite3.Connection) -> None:
-    """원재료 수집/매칭 파이프라인 운영 현황."""
-    print_section("[ 원재료 수집 대시보드 ]")
-
-    required_tables = ("ingredient_info", "ingredient_attempts", "ingredient_extractions")
-    if not all(_table_exists(conn, t) for t in required_tables):
-        print("  원재료 수집 테이블이 아직 없습니다.")
-        print("  먼저 ingredient_enricher.py를 1회 실행해주세요.")
-        return
-
-    total_target = conn.execute(
-        "SELECT COUNT(*) FROM food_info WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''"
-    ).fetchone()[0]
-    ingredient_done = conn.execute("SELECT COUNT(*) FROM ingredient_info").fetchone()[0]
-    attempts_total = conn.execute("SELECT COUNT(*) FROM ingredient_attempts").fetchone()[0]
-    matched = conn.execute(
-        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='matched'"
-    ).fetchone()[0]
-    unmatched = conn.execute(
-        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='unmatched'"
-    ).fetchone()[0]
-    failed = conn.execute(
-        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='failed'"
-    ).fetchone()[0]
-    in_progress = conn.execute(
-        "SELECT COUNT(*) FROM ingredient_attempts WHERE status='in_progress'"
-    ).fetchone()[0]
-    pending = conn.execute(
-        """
-        SELECT COUNT(*)
-        FROM food_info fi
-        WHERE fi.itemMnftrRptNo IS NOT NULL
-          AND fi.itemMnftrRptNo != ''
-          AND NOT EXISTS (
-              SELECT 1 FROM ingredient_info ii
-              WHERE ii.itemMnftrRptNo = fi.itemMnftrRptNo
-          )
-          AND NOT EXISTS (
-              SELECT 1 FROM ingredient_attempts ia
-              WHERE ia.query_itemMnftrRptNo = fi.itemMnftrRptNo
-          )
-        """
-    ).fetchone()[0]
-    extraction_rows = conn.execute("SELECT COUNT(*) FROM ingredient_extractions").fetchone()[0]
-    avg_images = conn.execute(
-        "SELECT ROUND(AVG(images_analyzed), 2) FROM ingredient_attempts "
-        "WHERE status IN ('matched', 'unmatched')"
-    ).fetchone()[0]
-
-    coverage = (ingredient_done / total_target * 100) if total_target else 0.0
-    attempt_ratio = (attempts_total / total_target * 100) if total_target else 0.0
-
-    print("  ■ 파이프라인 핵심 지표")
-    print(f"    대상 상품 수         : {total_target:,}건")
-    print(f"    원재료 확보 완료      : {ingredient_done:,}건 ({coverage:.1f}%)")
-    print(f"    시도 이력(누적)       : {attempts_total:,}건 ({attempt_ratio:.1f}%)")
-    print(f"    대기 상품(미시도)     : {pending:,}건")
-    print(f"    분석 로그 누적        : {extraction_rows:,}건")
-    print(f"    평균 분석 이미지 수   : {avg_images if avg_images is not None else '—'}")
-    print()
-
-    print("  ■ 시도 상태 분포")
-    print(f"    matched      : {matched:,}건")
-    print(f"    unmatched    : {unmatched:,}건")
-    print(f"    failed       : {failed:,}건")
-    print(f"    in_progress  : {in_progress:,}건")
-    print()
-
-    print("  ■ 최근 매칭 성공 5건 (출처 URL 포함)")
+def show_query_pool(conn: sqlite3.Connection) -> None:
+    print("\n  🧩 [검색어 풀 상위]")
+    raw = input("  조회 개수 [기본 50] : ").strip()
+    limit = 50
+    if raw:
+        try:
+            limit = max(1, int(raw))
+        except ValueError:
+            pass
     rows = conn.execute(
         """
-        SELECT ia.query_itemMnftrRptNo, ia.query_food_name, ii.source_image_url, ii.updated_at
-        FROM ingredient_attempts ia
-        JOIN ingredient_info ii
-          ON ii.itemMnftrRptNo = ia.query_itemMnftrRptNo
-        WHERE ia.status = 'matched'
-        ORDER BY ii.updated_at DESC
-        LIMIT 5
+        SELECT id, query_text, source, status, priority_score, target_segment_score, run_count, last_run_at
+        FROM query_pool
+        ORDER BY priority_score DESC, target_segment_score DESC, id ASC
+        LIMIT ?
+        """,
+        (limit,),
+    ).fetchall()
+    if not rows:
+        print("  (검색어 없음)")
+        return
+    for row in rows:
+        qid, text, src, st, ps, ts, rc, lra = row
+        print(
+            f"  - id={qid} | pri={ps:.1f} seg={ts:.1f} | {st} | run={rc} | {src}"
+        )
+        print(f"    q={text}")
+        print(f"    last={lra or '-'}")
+
+
+def show_query_runs(conn: sqlite3.Connection) -> None:
+    print("\n  🏃 [실행 이력]")
+    raw = input("  조회 개수 [기본 30] : ").strip()
+    limit = 30
+    if raw:
+        try:
+            limit = max(1, int(raw))
+        except ValueError:
+            pass
+    rows = conn.execute(
+        """
+        SELECT r.id, r.status, r.query_id, q.query_text, r.total_images, r.analyzed_images,
+               r.pass2b_pass_count, r.pass4_pass_count, r.final_saved_count, r.overall_score,
+               r.started_at, r.ended_at
+        FROM query_runs r
+        JOIN query_pool q ON q.id = r.query_id
+        ORDER BY r.id DESC
+        LIMIT ?
+        """,
+        (limit,),
+    ).fetchall()
+    if not rows:
+        print("  (실행 로그 없음)")
+        return
+    for row in rows:
+        rid, st, qid, qt, total, analyzed, p2b, p4, saved, score, st_at, ed_at = row
+        print(
+            f"  - run={rid} | {st} | query_id={qid} | img={analyzed}/{total} | "
+            f"p2b={p2b} p4={p4} saved={saved} | score={score:.1f}"
+        )
+        print(f"    q={qt}")
+        print(f"    {st_at} -> {ed_at or '-'}")
+
+
+def show_final_outputs(conn: sqlite3.Connection) -> None:
+    print("\n  ✅ [최종 산출물 조회]")
+    mode = input("  조회 기준 [1:품목보고번호, 2:제품명, 3:최근순] : ").strip()
+    params: tuple[Any, ...]
+    if mode == "1":
+        q = input("  품목보고번호 검색어 : ").strip()
+        sql = """
+            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
+            FROM food_final
+            WHERE item_mnftr_rpt_no LIKE ?
+            ORDER BY id DESC
+            LIMIT 50
+        """
+        params = (f"%{q}%",)
+    elif mode == "2":
+        q = input("  제품명 검색어 : ").strip()
+        sql = """
+            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
+            FROM food_final
+            WHERE product_name LIKE ?
+            ORDER BY id DESC
+            LIMIT 50
+        """
+        params = (f"%{q}%",)
+    elif mode == "3":
+        sql = """
+            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
+            FROM food_final
+            ORDER BY id DESC
+            LIMIT 50
+        """
+        params = ()
+    else:
+        print("  ⚠️ 올바른 번호를 입력해주세요.")
+        return
+    rows = conn.execute(sql, params).fetchall()
+    if not rows:
+        print("  (결과 없음)")
+        return
+    for row in rows:
+        rid, name, no, ns, url, ct = row
+        print(f"  - id={rid} | {name or '-'} | 번호={no or '-'} | nutrition={ns} | {ct}")
+        print(f"    url={url or '-'}")
+
+
+def show_mapping_coverage(conn: sqlite3.Connection) -> None:
+    print("\n  🔗 [영양성분 매핑 커버리지]")
+    total = _count(conn, "food_final")
+    with_no = _count(conn, "food_final", "item_mnftr_rpt_no IS NOT NULL AND item_mnftr_rpt_no != ''")
+    mapped = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM food_final ff
+        JOIN processed_food_info fi ON fi.itemMnftrRptNo = ff.item_mnftr_rpt_no
+        WHERE ff.item_mnftr_rpt_no IS NOT NULL
+          AND ff.item_mnftr_rpt_no != ''
+          AND COALESCE(fi.enerc, '') != ''
+        """
+    ).fetchone()[0]
+    missing = with_no - mapped
+    ratio = (mapped / with_no * 100.0) if with_no else 0.0
+    print(f"    - food_final 총 건수                  : {total:,}")
+    print(f"    - 품목보고번호 보유 최종건수          : {with_no:,}")
+    print(f"    - 공공API 영양정보 매핑 성공(번호기준): {mapped:,}")
+    print(f"    - 매핑 미성공                         : {missing:,}")
+    print(f"    - 매핑률                              : {ratio:.1f}%")
+
+
+def show_pass_fail_summary(conn: sqlite3.Connection) -> None:
+    print("\n  🧪 [패스 실패 요약]")
+    rows = conn.execute(
+        """
+        SELECT COALESCE(fail_stage, 'none') AS stage, COUNT(*) AS cnt
+        FROM query_image_analysis_cache
+        GROUP BY stage
+        ORDER BY cnt DESC
         """
     ).fetchall()
     if not rows:
-        print("    (데이터 없음)")
-    else:
-        for rpt_no, food_nm, url, updated_at in rows:
-            print(f"    - {food_nm} | {rpt_no} | {updated_at}")
-            print(f"      url: {url or '—'}")
-    print()
-
-    print("  ■ 최근 실패 5건")
-    fail_rows = conn.execute(
+        print("  (분석 캐시 없음)")
+        return
+    print("  단계별:")
+    for stage, cnt in rows:
+        print(f"    - {stage}: {cnt:,}")
+    print("\n  실패 사유 상위 20:")
+    reasons = conn.execute(
         """
-        SELECT query_itemMnftrRptNo, query_food_name, error_message, started_at
-        FROM ingredient_attempts
-        WHERE status = 'failed'
-        ORDER BY started_at DESC
-        LIMIT 5
+        SELECT COALESCE(fail_reason, 'none') AS reason, COUNT(*) AS cnt
+        FROM query_image_analysis_cache
+        GROUP BY reason
+        ORDER BY cnt DESC
+        LIMIT 20
         """
     ).fetchall()
-    if not fail_rows:
-        print("    (데이터 없음)")
-    else:
-        for rpt_no, food_nm, err, started_at in fail_rows:
-            print(f"    - {food_nm} | {rpt_no} | {started_at}")
-            print(f"      err: {_trunc(err or '—', 86)}")
-
-
-def show_ingredient_detail(conn: sqlite3.Connection) -> None:
-    """품목보고번호 기준 원재료/시도이력/분석근거 상세 조회."""
-    print_section("[ 원재료 상세 조회 ]")
-
-    required_tables = ("ingredient_info", "ingredient_attempts", "ingredient_extractions")
-    if not all(_table_exists(conn, t) for t in required_tables):
-        print("  원재료 수집 테이블이 아직 없습니다.")
-        print("  먼저 ingredient_enricher.py를 실행해주세요.")
-        return
-
-    query = input("  품목 보고 번호 입력 : ").strip()
-    if not query:
-        print("  품목 보고 번호를 입력해주세요.")
-        return
-
-    food = conn.execute(
-        """
-        SELECT foodNm, COALESCE(mfrNm, ''), foodLv3Nm, foodLv4Nm
-        FROM food_info
-        WHERE itemMnftrRptNo = ?
-        LIMIT 1
-        """,
-        (query,),
-    ).fetchone()
-    if food:
-        food_nm, mfr_nm, lv3, lv4 = food
-        cat = lv4 or lv3 or "분류 정보 없음"
-        print(f"\n  상품명      : {food_nm or '—'}")
-        print(f"  제조사      : {mfr_nm or '—'}")
-        print(f"  카테고리    : {cat}")
-    else:
-        print("\n  food_info에서 해당 품목 보고 번호를 찾지 못했습니다.")
-
-    ing = conn.execute(
-        """
-        SELECT ingredients_text, source_image_url, source_query, updated_at
-        FROM ingredient_info
-        WHERE itemMnftrRptNo = ?
-        """,
-        (query,),
-    ).fetchone()
-    print("\n  ■ 원재료 저장 정보")
-    if not ing:
-        print("    원재료 저장 데이터 없음")
-    else:
-        ingredients, source_url, source_query, updated_at = ing
-        print(f"    업데이트 시각 : {updated_at}")
-        print(f"    출처 검색어   : {_trunc(source_query or '—', 76)}")
-        print(f"    출처 URL      : {source_url or '—'}")
-        print(f"    원재료명      : {_trunc(ingredients or '—', 76)}")
-
-    attempt = conn.execute(
-        """
-        SELECT status, searched_query, images_requested, images_analyzed,
-               matched_itemMnftrRptNo, error_message, started_at, finished_at
-        FROM ingredient_attempts
-        WHERE query_itemMnftrRptNo = ?
-        """,
-        (query,),
-    ).fetchone()
-    print("\n  ■ 검색 시도 이력")
-    if not attempt:
-        print("    시도 이력 없음")
-    else:
-        status, searched_query, img_req, img_ana, matched_no, err, st, fn = attempt
-        print(f"    상태         : {status}")
-        print(f"    검색어       : {_trunc(searched_query or '—', 76)}")
-        print(f"    이미지 분석  : {img_ana}/{img_req}")
-        print(f"    매칭 번호    : {matched_no or '—'}")
-        print(f"    시작/종료    : {st or '—'} / {fn or '—'}")
-        if err:
-            print(f"    에러         : {_trunc(err, 76)}")
-
-    logs = conn.execute(
-        """
-        SELECT image_rank, image_url, extracted_itemMnftrRptNo,
-               matched_target, ingredients_text, created_at, raw_payload
-        FROM ingredient_extractions
-        WHERE query_itemMnftrRptNo = ?
-        ORDER BY id DESC
-        LIMIT 10
-        """,
-        (query,),
-    ).fetchall()
-    print("\n  ■ 최근 분석 로그 10건")
-    if not logs:
-        print("    로그 없음")
-    else:
-        openable_urls: list[str] = []
-        for rank, url, extracted, matched_target, ingredients, created_at, raw_payload in logs:
-            mark = "MATCH" if matched_target == 1 else "NO-MATCH"
-            payload: dict = {}
-            if raw_payload:
-                try:
-                    payload = json.loads(raw_payload)
-                except json.JSONDecodeError:
-                    payload = {}
-            status_label, reason = _diagnose_payload(payload, query)
-            print(f"    - [{rank}] {mark} | {created_at} | 추출번호: {extracted or '미검출'}")
-            print(f"      상태: {status_label} | 사유: {reason}")
-            if url:
-                openable_urls.append(url)
-                print(f"      열기번호: {len(openable_urls)}")
-            else:
-                print("      열기번호: -")
-            print(f"      url: {url or '—'}")
-            if ingredients:
-                print(f"      원재료: {_trunc(ingredients, 76)}")
-
-        if openable_urls:
-            print("\n  ■ URL 바로 열기")
-            raw_open = input(
-                "    열 번호 입력 (예: 1 또는 1,3 / Enter=건너뛰기): "
-            ).strip()
-            if raw_open:
-                picks: list[int] = []
-                for token in raw_open.split(","):
-                    token = token.strip()
-                    if token.isdigit():
-                        idx = int(token)
-                        if 1 <= idx <= len(openable_urls):
-                            picks.append(idx)
-                if not picks:
-                    print("    ⚠️ 유효한 번호가 없습니다.")
-                else:
-                    for idx in picks:
-                        url = openable_urls[idx - 1]
-                        ok = webbrowser.open_new_tab(url)
-                        state = "OK" if ok else "요청됨(브라우저 확인)"
-                        print(f"    - [{idx}] {state}: {url}")
-
-
-# ── 진입점 ───────────────────────────────────────────────────────
+    for reason, cnt in reasons:
+        print(f"    - {reason}: {cnt:,}")
 
 
 def main() -> None:
     print_header()
-
     try:
         conn = sqlite3.connect(DB_FILE)
-        conn.execute("SELECT 1 FROM food_info LIMIT 1")
-    except sqlite3.OperationalError:
-        print(f"  오류: {DB_FILE} 파일이 없거나 food_info 테이블이 없습니다.")
-        print("  먼저 main.py를 실행해 데이터를 수집해주세요.")
+    except sqlite3.Error as exc:
+        print(f"\n  ❌ DB 연결 실패: {exc}")
         sys.exit(1)
 
-    print_db_summary(conn)
+    ensure_processed_food_table(conn)
 
-    MENU: list[tuple[str, str, object]] = [
-        ("1", "품목 보고 번호로 검색  ★ 키값", search_by_report_no),
-        ("2", "식품명으로 검색",                search_by_name),
-        ("3", "전체 목록 보기",                 list_all),
-        ("4", "통계 보기",                       show_stats),
-        ("5", "전체 카테고리 보기",              show_all_categories),
-        ("6", "원재료 수집 대시보드",            show_ingredient_dashboard),
-        ("7", "원재료 상세 조회(품목번호)",      show_ingredient_detail),
-        ("q", "종료",                            None),
-    ]
-    menu_map = {k: fn for k, _, fn in MENU}
+    if not _table_exists(conn, "processed_food_info"):
+        print(f"\n  ❌ {DB_FILE}에 processed_food_info 테이블이 없습니다.")
+        sys.exit(1)
+
+    # 파이프라인 테이블이 아직 없으면 생성
+    init_query_pipeline_tables(conn)
 
     while True:
-        print(_bar())
+        print_summary(conn)
+        print("\n" + _bar())
         print("  [ 메뉴 ]")
-        for key, label, _ in MENU:
-            print(f"    [{key}]  {label}")
-        print()
-        choice = input("  선택 : ").strip().lower()
+        print("    [1] 가공식품 공공API 원본 검색 (processed_food_info)")
+        print("    [2] 검색어 풀 조회 (query_pool)")
+        print("    [3] 실행 이력 조회 (query_runs)")
+        print("    [4] 최종 산출물 조회 (food_final)")
+        print("    [5] 영양성분 매핑 커버리지")
+        print("    [6] Pass 실패 사유 요약")
+        print("    [q] 종료")
+        print(_bar())
+        choice = input("  👉 선택 : ").strip().lower()
 
-        if choice == "q":
-            print("\n  뷰어를 종료합니다.\n")
+        if choice == "1":
+            show_food_search(conn)
+        elif choice == "2":
+            show_query_pool(conn)
+        elif choice == "3":
+            show_query_runs(conn)
+        elif choice == "4":
+            show_final_outputs(conn)
+        elif choice == "5":
+            show_mapping_coverage(conn)
+        elif choice == "6":
+            show_pass_fail_summary(conn)
+        elif choice == "q":
+            print("\n  👋 viewer 종료\n")
             break
-        elif choice in menu_map and menu_map[choice] is not None:
-            menu_map[choice](conn)  # type: ignore[operator]
         else:
-            print("  올바른 메뉴 번호를 입력해주세요.")
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
 
     conn.close()
-
-
-if __name__ == "__main__":
-    main()

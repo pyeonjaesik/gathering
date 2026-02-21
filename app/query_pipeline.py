@@ -576,13 +576,13 @@ def upsert_food_final(
 
 def seed_queries_from_categories(conn: sqlite3.Connection, limit: int = 200) -> int:
     """
-    food_info 카테고리 기반 검색어 초기 시드.
+    processed_food_info 카테고리 기반 검색어 초기 시드.
     타깃(20~40 여성, 다이어트/대사 관심)을 반영한 최소 규칙 점수 적용.
     """
     cur = conn.execute(
         """
         SELECT foodLv3Nm, foodLv4Nm, COUNT(*) AS cnt
-        FROM food_info
+        FROM processed_food_info
         WHERE COALESCE(foodLv3Nm, '') != '' AND COALESCE(foodLv4Nm, '') != ''
         GROUP BY foodLv3Nm, foodLv4Nm
         ORDER BY cnt DESC

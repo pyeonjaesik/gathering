@@ -107,7 +107,7 @@ def _load_overview(conn: sqlite3.Connection) -> dict[str, int]:
     total_target = conn.execute(
         """
         SELECT COUNT(DISTINCT itemMnftrRptNo)
-        FROM food_info
+        FROM processed_food_info
         WHERE itemMnftrRptNo IS NOT NULL AND itemMnftrRptNo != ''
         """
     ).fetchone()[0]

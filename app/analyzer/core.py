@@ -31,7 +31,8 @@ RETRYABLE_HTTP_STATUS = {408, 425, 429, 500, 502, 503, 504}
 DEFAULT_MODEL = "gpt-4.1-mini"
 _PROMPT_PRINTED_ONCE = False
 _PROMPT_PRINT_LOCK = threading.Lock()
-DEFAULT_PROMPT_PASS2_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2_prompt.txt"
+# pass2 단일 프롬프트는 폐기했고, pass2a를 기본 alias로 사용한다.
+DEFAULT_PROMPT_PASS2_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2a_prompt.txt"
 DEFAULT_PROMPT_PASS2A_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2a_prompt.txt"
 DEFAULT_PROMPT_PASS2B_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2b_prompt.txt"
 DEFAULT_PROMPT_PASS3_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_prompt.txt"
