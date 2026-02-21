@@ -1,0 +1,46 @@
+아래 원재료 텍스트를 구조화하세요. (PASS4-INGREDIENTS)
+
+입력:
+- 원재료 텍스트: __INGREDIENTS_TEXT__
+
+목표:
+1) 원재료 배열 구조화
+
+규칙:
+- JSON 외 텍스트 출력 금지
+- 확실하지 않으면 추정하지 말고 null 사용
+- 원재료 항목 순서는 원문 순서를 최대한 유지
+- "우유, 대두 함유" 등 알레르기 안내는 원재료 항목으로 넣지 말고 ignored_fragments에 넣기
+- 원재료명이 부자연스럽거나 잘렸다고 판단되면 ingredient_name=null
+- 괄호/대괄호/중괄호 안 텍스트는 기본적으로 하위정보로 취급
+- 애매하면 승격 금지:
+  - 내부 텍스트를 ingredient_name으로 올리지 말고 sub_ingredients로 유지
+  - 상위 항목명이 불명확하면 ingredient_name=null 처리
+- 원산지는 origin(상위 분류) / origin_detail(상세)로 분리
+
+용어 정의(중요):
+- "승격" = 괄호/대괄호/중괄호 내부의 하위 설명 텍스트를 메인 ingredient_name으로 올리는 것
+- 이 작업에서는 승격을 금지합니다.
+
+응답 JSON 스키마:
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "문자열 또는 null",
+      "origin": "문자열 또는 null",
+      "origin_detail": "문자열 또는 null",
+      "amount": "문자열 또는 null",
+      "sub_ingredients": [
+        {
+          "name": "문자열 또는 null",
+          "origin": "문자열 또는 null",
+          "origin_detail": "문자열 또는 null",
+          "amount": "문자열 또는 null",
+          "sub_ingredients": [ "동일 스키마를 재귀적으로 반복" ]
+        }
+      ]
+    }
+  ],
+  "ignored_fragments": ["문자열", "..."],
+  "reason": "간단한 근거"
+}

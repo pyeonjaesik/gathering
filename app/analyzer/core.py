@@ -33,7 +33,11 @@ _PROMPT_PRINTED_ONCE = False
 _PROMPT_PRINT_LOCK = threading.Lock()
 DEFAULT_PROMPT_PASS2_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass2_prompt.txt"
 DEFAULT_PROMPT_PASS3_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_prompt.txt"
+DEFAULT_PROMPT_PASS3_INGREDIENTS_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_ingredients_prompt.txt"
+DEFAULT_PROMPT_PASS3_NUTRITION_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass3_nutrition_prompt.txt"
 DEFAULT_PROMPT_PASS4_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass4_prompt.txt"
+DEFAULT_PROMPT_PASS4_INGREDIENTS_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass4_ingredients_prompt.txt"
+DEFAULT_PROMPT_PASS4_NUTRITION_FILE = Path(__file__).resolve().parent / "prompts" / "analyze_pass4_nutrition_prompt.txt"
 
 
 def _strip_code_fence(text: str) -> str:
@@ -138,7 +142,11 @@ class URLIngredientAnalyzer:
     show_prompt_once: bool = True
     prompt_file_pass2: str | None = None
     prompt_file_pass3: str | None = None
+    prompt_file_pass3_ingredients: str | None = None
+    prompt_file_pass3_nutrition: str | None = None
     prompt_file_pass4: str | None = None
+    prompt_file_pass4_ingredients: str | None = None
+    prompt_file_pass4_nutrition: str | None = None
     pass3_provider: str = "gemini"
     pass3_gemini_model: str = "gemini-2.0-flash"
     pass3_gemini_api_key: str | None = None
@@ -161,13 +169,44 @@ class URLIngredientAnalyzer:
             candidate=self.prompt_file_pass2 or os.getenv("ANALYZE_PROMPT_FILE_PASS2") or os.getenv("ANALYZE_PROMPT_FILE_PASS1"),
             default_path=DEFAULT_PROMPT_PASS2_FILE,
         )
-        self.prompt_template_pass3, self.prompt_template_pass3_path = self._load_prompt_template(
-            candidate=self.prompt_file_pass3 or os.getenv("ANALYZE_PROMPT_FILE_PASS3") or os.getenv("ANALYZE_PROMPT_FILE_PASS2"),
-            default_path=DEFAULT_PROMPT_PASS3_FILE,
+        self.prompt_template_pass3_ingredients, self.prompt_template_pass3_ingredients_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass3_ingredients
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS3_INGREDIENTS")
+                or self.prompt_file_pass3
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS3")
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2")
+            ),
+            default_path=DEFAULT_PROMPT_PASS3_INGREDIENTS_FILE if DEFAULT_PROMPT_PASS3_INGREDIENTS_FILE.exists() else DEFAULT_PROMPT_PASS3_FILE,
         )
-        self.prompt_template_pass4, self.prompt_template_pass4_path = self._load_prompt_template(
-            candidate=self.prompt_file_pass4 or os.getenv("ANALYZE_PROMPT_FILE_PASS4"),
-            default_path=DEFAULT_PROMPT_PASS4_FILE,
+        self.prompt_template_pass3_nutrition, self.prompt_template_pass3_nutrition_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass3_nutrition
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS3_NUTRITION")
+                or self.prompt_file_pass3
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS3")
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS2")
+            ),
+            default_path=DEFAULT_PROMPT_PASS3_NUTRITION_FILE if DEFAULT_PROMPT_PASS3_NUTRITION_FILE.exists() else DEFAULT_PROMPT_PASS3_FILE,
+        )
+        # Backward compatibility: if split prompt is not set, fallback to legacy pass4 file.
+        self.prompt_template_pass4_ingredients, self.prompt_template_pass4_ingredients_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass4_ingredients
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS4_INGREDIENTS")
+                or self.prompt_file_pass4
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS4")
+            ),
+            default_path=DEFAULT_PROMPT_PASS4_INGREDIENTS_FILE if DEFAULT_PROMPT_PASS4_INGREDIENTS_FILE.exists() else DEFAULT_PROMPT_PASS4_FILE,
+        )
+        self.prompt_template_pass4_nutrition, self.prompt_template_pass4_nutrition_path = self._load_prompt_template(
+            candidate=(
+                self.prompt_file_pass4_nutrition
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS4_NUTRITION")
+                or self.prompt_file_pass4
+                or os.getenv("ANALYZE_PROMPT_FILE_PASS4")
+            ),
+            default_path=DEFAULT_PROMPT_PASS4_NUTRITION_FILE if DEFAULT_PROMPT_PASS4_NUTRITION_FILE.exists() else DEFAULT_PROMPT_PASS4_FILE,
         )
         self.pass3_provider = str(self.pass3_provider or "gemini").strip().lower()
         self.pass3_gemini_api_key = (
@@ -401,16 +440,29 @@ class URLIngredientAnalyzer:
         return self.prompt_template_pass2.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
 
     def _build_prompt_pass3(self, target_item_rpt_no: str | None) -> str:
-        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
-        return self.prompt_template_pass3.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+        # backward-compatible alias (ingredients track)
+        return self._build_prompt_pass3_ingredients(target_item_rpt_no=target_item_rpt_no)
 
-    def _build_prompt_pass4(
+    def _build_prompt_pass3_ingredients(self, target_item_rpt_no: str | None) -> str:
+        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
+        return self.prompt_template_pass3_ingredients.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+
+    def _build_prompt_pass3_nutrition(self, target_item_rpt_no: str | None) -> str:
+        target_value = target_item_rpt_no if target_item_rpt_no else "없음"
+        return self.prompt_template_pass3_nutrition.replace("__TARGET_ITEM_RPT_NO__", str(target_value))
+
+    def _build_prompt_pass4_ingredients(
         self,
         ingredients_text: str,
+    ) -> str:
+        prompt = self.prompt_template_pass4_ingredients.replace("__INGREDIENTS_TEXT__", str(ingredients_text or ""))
+        return prompt
+
+    def _build_prompt_pass4_nutrition(
+        self,
         nutrition_text: str | None = None,
     ) -> str:
-        prompt = self.prompt_template_pass4.replace("__INGREDIENTS_TEXT__", str(ingredients_text or ""))
-        prompt = prompt.replace("__NUTRITION_TEXT__", str(nutrition_text or "null"))
+        prompt = self.prompt_template_pass4_nutrition.replace("__NUTRITION_TEXT__", str(nutrition_text or "null"))
         return prompt
 
     def _call_model(
@@ -596,7 +648,12 @@ class URLIngredientAnalyzer:
             max_digits=self.max_report_digits,
         )
 
-    def _print_prompts_once(self, prompt_pass2: str, prompt_pass3: str | None = None) -> None:
+    def _print_prompts_once(
+        self,
+        prompt_pass2: str,
+        prompt_pass3: str | None = None,
+        prompt_pass3_nutrition: str | None = None,
+    ) -> None:
         global _PROMPT_PRINTED_ONCE  # pylint: disable=global-statement
         if not self.show_prompt_once:
             return
@@ -609,8 +666,12 @@ class URLIngredientAnalyzer:
             print(prompt_pass2)
             if prompt_pass3 is not None:
                 print("-" * 88)
-                print(f"[pass-3 prompt file] {self.prompt_template_pass3_path}")
+                print(f"[pass-3 ingredients prompt file] {self.prompt_template_pass3_ingredients_path}")
                 print(prompt_pass3)
+            if prompt_pass3_nutrition is not None:
+                print("-" * 88)
+                print(f"[pass-3 nutrition prompt file] {self.prompt_template_pass3_nutrition_path}")
+                print(prompt_pass3_nutrition)
             print("=" * 88 + "\n")
             _PROMPT_PRINTED_ONCE = True
 
@@ -702,6 +763,7 @@ class URLIngredientAnalyzer:
         self,
         image_url: str,
         target_item_rpt_no: str | None = None,
+        include_nutrition: bool | None = None,
     ) -> dict[str, Any]:
         try:
             image_bytes, mime_type = self._download_image(image_url)
@@ -718,14 +780,24 @@ class URLIngredientAnalyzer:
         pass2 = self.analyze_pass2_from_bytes(image_bytes, mime_type, target_item_rpt_no)
         if str(pass2.get("ai_decision") or "").upper() != "READ":
             return {"error": pass2.get("ai_decision_reason") or "pass2_skip"}
-        return self.analyze_pass3_from_bytes(image_bytes, mime_type, target_item_rpt_no)
+        qf = pass2.get("quality_flags") or {}
+        include_nut = bool(qf.get("has_nutrition_section")) if include_nutrition is None else bool(include_nutrition)
+        return self.analyze_pass3_from_bytes(
+            image_bytes,
+            mime_type,
+            target_item_rpt_no,
+            include_nutrition=include_nut,
+        )
 
     def analyze_pass3_from_bytes(
         self,
         image_bytes: bytes,
         mime_type: str,
         target_item_rpt_no: str | None = None,
+        include_nutrition: bool = True,
     ) -> dict[str, Any]:
+        # run_pass3_extract 시그니처를 단순하게 유지하기 위해 인스턴스 임시 플래그 사용
+        setattr(self, "_pass3_include_nutrition", bool(include_nutrition))
         return run_pass3_extract(self, image_bytes, mime_type, target_item_rpt_no)
 
     def analyze_pass4_normalize(
@@ -759,6 +831,13 @@ class URLIngredientAnalyzer:
         # Stage-3: 상세 추출
         pass3_result = None
         if str(pass2_result.get("ai_decision") or "").upper() == "READ":
-            pass3_result = self.analyze_pass3_from_bytes(image_bytes, mime_type, target_item_rpt_no)
+            qf = pass2_result.get("quality_flags") or {}
+            include_nut = bool(qf.get("has_nutrition_section"))
+            pass3_result = self.analyze_pass3_from_bytes(
+                image_bytes,
+                mime_type,
+                target_item_rpt_no,
+                include_nutrition=include_nut,
+            )
         # Stage-4: 정규화
         return self.analyze_pass4_normalize(pass2_result, pass3_result, target_item_rpt_no)

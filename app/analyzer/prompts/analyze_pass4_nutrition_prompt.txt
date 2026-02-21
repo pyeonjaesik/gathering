@@ -1,0 +1,28 @@
+아래 영양성분 텍스트를 구조화하세요. (PASS4-NUTRITION)
+
+입력:
+- 영양성분 텍스트: __NUTRITION_TEXT__
+
+목표:
+1) 영양성분 JSON 파싱
+
+규칙:
+- JSON 외 텍스트 출력 금지
+- 확실하지 않으면 추정하지 말고 null 사용
+- 항목은 최대한 원문 순서 유지
+- 영양성분명이 불명확/깨진 경우 name=null
+- 값/단위가 불명확하면 value/unit=null
+- 일일기준치(%)가 보이면 daily_value에, 없으면 null
+
+응답 JSON 스키마:
+{
+  "nutrition_items": [
+    {
+      "name": "영양성분명 또는 null",
+      "value": "수치/문자열 또는 null",
+      "unit": "단위 또는 null",
+      "daily_value": "일일기준치 % 또는 null"
+    }
+  ],
+  "reason": "간단한 근거"
+}

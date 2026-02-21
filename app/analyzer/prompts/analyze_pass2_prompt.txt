@@ -12,6 +12,14 @@
 - JSON 객체만 출력하고, 설명 문장/코드블록은 출력하지 마세요.
 - 매우 엄격하게 판단하세요. 텍스트가 조금이라도 흐리거나, 작거나, 가려지거나, 애매하면 해당 항목은 false로 처리하세요.
 - "대충 보인다", "추정 가능" 수준은 모두 false입니다.
+- 복수 후보가 보이면 무조건 false:
+  - 제품명/브랜드가 2개 이상 보이면 `has_single_product=false`, `has_product_name=false`
+  - 원재료명 표/목록이 2개 이상 보이면 `has_single_product=false`, `has_ingredients_section=false`
+  - 영양성분표가 2개 이상 보이면 `has_single_product=false`, `has_nutrition_section=false`
+  - 서로 다른 제품의 정보가 한 이미지에 섞여 보이면 `has_single_product=false`
+- 예시/더미/마스킹 텍스트는 무조건 false:
+  - `○○○`, `AAAA`, `^^^^`, `***`, `XXXX`, `sample`, `dummy`, `test` 같은 placeholder가 핵심 정보에 보이면 false
+  - 제품명/원재료/품목번호가 실제값이 아니라 예시값처럼 보이면 false
 
 항목 정의 (모든 항목은 true가 "적합/좋은 상태" 의미):
 - is_clear_text:

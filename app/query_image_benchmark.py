@@ -13,6 +13,10 @@ import re
 import time
 import threading
 import json
+import html
+import webbrowser
+from datetime import datetime
+from pathlib import Path
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from typing import Any
@@ -25,6 +29,7 @@ SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25
 SERPAPI_RETRIES = 2
 SERPAPI_RETRY_BACKOFF = 0.7
+SERP_REPORT_DIR = Path("reports/serp_batch")
 
 
 @dataclass
@@ -269,12 +274,22 @@ def _search_images_all(query: str, api_key: str, max_pages: int = 20, per_page: 
     return out
 
 
+def _safe_filename(text: str, max_len: int = 80) -> str:
+    value = re.sub(r"\s+", "_", str(text or "").strip())
+    value = re.sub(r"[^0-9A-Za-z가-힣._-]", "_", value)
+    value = re.sub(r"_+", "_", value).strip("._-")
+    if not value:
+        value = "query"
+    return value[:max_len]
+
+
 def run_query_image_benchmark(
     query: str,
     max_pages: int = 20,
     delay_sec: float = 0.0,
     max_concurrency: int = 5,
     adaptive: bool = True,
+    auto_open_report: bool = True,
 ) -> None:
     serp_key = os.getenv("SERPAPI_KEY")
     if not serp_key:
@@ -334,7 +349,12 @@ def run_query_image_benchmark(
             pass3_result: dict[str, Any] | None = None
             pass3_err: str | None = None
             if should_run_pass3:
-                pass3_result = analyzer.analyze_pass3(image_url=img.url, target_item_rpt_no=None)
+                include_nutrition = bool(qf.get("has_nutrition_section"))
+                pass3_result = analyzer.analyze_pass3(
+                    image_url=img.url,
+                    target_item_rpt_no=None,
+                    include_nutrition=include_nutrition,
+                )
                 if pass3_result.get("error"):
                     pass3_err = str(pass3_result.get("error"))
             pass4_result: dict[str, Any] | None = None
@@ -461,13 +481,22 @@ def run_query_image_benchmark(
                             raw_api_response=pass3_result.get("raw_api_response"),
                             raw_model_text=pass3_result.get("raw_model_text"),
                         )
+                        p3_ing_executed = bool(pass3_result.get("raw_model_text_pass3_ingredients"))
+                        p3_nut_executed = bool(pass3_result.get("raw_model_text_pass3_nutrition"))
+                        p3_nut_expected = bool(nutri_flag)
                         p3_has_required = bool(
                             (pass3_result.get("product_report_number"))
                             and (pass3_result.get("ingredients_text"))
                             and (pass3_result.get("product_name_in_image"))
                         )
+                        p3_nut_pass = bool(pass3_result.get("nutrition_text"))
                         p4_items = []
                         p4_err = None
+                        p4_reason = None
+                        p4_executed = False
+                        p4_ing_executed = False
+                        p4_nut_executed = False
+                        p4_nut_pass = False
                         p4_report_valid = None
                         p4_report_reason = None
                         p4_nut_items = []
@@ -475,10 +504,24 @@ def run_query_image_benchmark(
                             pass4_run_cnt += 1
                             p4_items = list(pass4_result.get("ingredient_items") or [])
                             p4_err = pass4_result.get("pass4_ai_error")
+                            p4_reason = pass4_result.get("ingredient_items_reason")
+                            p4_executed = bool(
+                                pass4_result.get("raw_model_text_pass4")
+                                or pass4_result.get("raw_api_response_pass4")
+                            )
+                            p4_ing_executed = bool(
+                                pass4_result.get("raw_model_text_pass4_ingredients")
+                                or pass4_result.get("raw_api_response_pass4_ingredients")
+                            )
+                            p4_nut_executed = bool(
+                                pass4_result.get("raw_model_text_pass4_nutrition")
+                                or pass4_result.get("raw_api_response_pass4_nutrition")
+                            )
                             rv = pass4_result.get("report_number_validation") or {}
                             p4_report_valid = rv.get("is_valid")
                             p4_report_reason = rv.get("reason")
                             p4_nut_items = list(pass4_result.get("nutrition_items") or [])
+                            p4_nut_pass = len(p4_nut_items) > 0
                             if p4_err:
                                 pass4_fail_cnt += 1
                             else:
@@ -512,6 +555,15 @@ def run_query_image_benchmark(
                                 "nutrition_items_count": len(p4_nut_items),
                                 "report_valid": p4_report_valid,
                                 "report_reason": p4_report_reason,
+                                "pass4_reason": p4_reason,
+                                "pass4_executed": p4_executed,
+                                "pass3_ing_executed": p3_ing_executed,
+                                "pass3_nut_expected": p3_nut_expected,
+                                "pass3_nut_executed": p3_nut_executed,
+                                "pass3_nut_pass": p3_nut_pass,
+                                "pass4_ing_executed": p4_ing_executed,
+                                "pass4_nut_executed": p4_nut_executed,
+                                "pass4_nut_pass": p4_nut_pass,
                                 "pass4_error": p4_err,
                             }
                         )
@@ -540,7 +592,25 @@ def run_query_image_benchmark(
                             "pass3_report_no": (pass3_result or {}).get("product_report_number") if pass3_result else None,
                             "pass3_ingredients": (pass3_result or {}).get("ingredients_text") if pass3_result else None,
                             "pass3_raw": p3_raw,
+                            "pass3_ing_executed": bool((pass3_result or {}).get("raw_model_text_pass3_ingredients")) if pass3_result else False,
+                            "pass3_nut_expected": bool(nutri_flag),
+                            "pass3_nut_executed": bool((pass3_result or {}).get("raw_model_text_pass3_nutrition")) if pass3_result else False,
+                            "pass3_nut_pass": bool((pass3_result or {}).get("nutrition_text")) if pass3_result else False,
                             "pass4_exists": bool(pass4_result),
+                            "pass4_executed": bool(
+                                (pass4_result or {}).get("raw_model_text_pass4")
+                                or (pass4_result or {}).get("raw_api_response_pass4")
+                            ) if pass4_result else False,
+                            "pass4_ing_executed": bool(
+                                (pass4_result or {}).get("raw_model_text_pass4_ingredients")
+                                or (pass4_result or {}).get("raw_api_response_pass4_ingredients")
+                            ) if pass4_result else False,
+                            "pass4_nut_executed": bool(
+                                (pass4_result or {}).get("raw_model_text_pass4_nutrition")
+                                or (pass4_result or {}).get("raw_api_response_pass4_nutrition")
+                            ) if pass4_result else False,
+                            "pass4_nut_pass": bool((pass4_result or {}).get("nutrition_items")) if pass4_result else False,
+                            "pass4_reason": (pass4_result or {}).get("ingredient_items_reason") if pass4_result else None,
                             "pass4_error": (pass4_result or {}).get("pass4_ai_error") if pass4_result else None,
                             "pass4_raw": p4_raw,
                         }
@@ -585,8 +655,11 @@ def run_query_image_benchmark(
                             rv = pass4_result.get("report_number_validation") or {}
                             rv_txt = "true" if rv.get("is_valid") is True else ("false" if rv.get("is_valid") is False else "null")
                             p4_err = pass4_result.get("pass4_ai_error")
+                            p4_executed = bool(pass4_result.get("raw_model_text_pass4") or pass4_result.get("raw_api_response_pass4"))
                             if p4_err:
                                 print(f"  - Pass-4 구조화: 실패 ({p4_err})")
+                            elif not p4_executed:
+                                print("  - Pass-4 구조화: 미실행")
                             else:
                                 print(f"  - Pass-4 구조화 항목수: {items_cnt}")
                                 print(f"  - Pass-4 영양성분 항목수: {nut_cnt}")
@@ -610,39 +683,277 @@ def run_query_image_benchmark(
                 if delay_sec > 0:
                     time.sleep(delay_sec)
 
-    print("\n" + "=" * 90)
-    print("Pass-2 통과 결과 (nutrition 무관, 핵심값 모두 true)")
-    print("=" * 90)
+    final_lines: list[str] = []
+
+    def _emit_final(line: str = "") -> None:
+        final_lines.append(line)
+
+    _emit_final("=" * 90)
+    _emit_final("Pass-2 통과 결과 (nutrition 무관, 핵심값 모두 true)")
+    _emit_final("=" * 90)
     if not pass2_pass_rows:
-        print("- 없음")
+        _emit_final("- 없음")
     else:
         for row in sorted(pass2_pass_rows, key=lambda x: x["no"]):
-            print(f"[{row['no']:03d}] URL: {row['url']}")
-            print("  [Pass-3]")
+            _emit_final(f"[{row['no']:03d}] URL: {row['url']}")
+            _emit_final("  [Pass-3]")
             if row.get("pass3_ok"):
-                print("  - 상태: 통과")
+                _emit_final("  - 상태: 통과")
             else:
-                print("  - 상태: 미통과")
+                _emit_final("  - 상태: 미통과")
             if row.get("pass3_error"):
-                print(f"  - 실패사유: {row.get('pass3_error')}")
-            print(f"  - 제품명: {row.get('pass3_product_name') or 'null'}")
-            print(f"  - 품목보고번호: {row.get('pass3_report_no') or 'null'}")
-            print(f"  - 원재료명: {row.get('pass3_ingredients') or 'null'}")
-            print("  - raw:")
-            print(f"  {row.get('pass3_raw') or 'null'}")
+                _emit_final(f"  - 실패사유: {row.get('pass3_error')}")
+            _emit_final(f"  - 제품명: {row.get('pass3_product_name') or 'null'}")
+            _emit_final(f"  - 품목보고번호: {row.get('pass3_report_no') or 'null'}")
+            _emit_final(f"  - 원재료명: {row.get('pass3_ingredients') or 'null'}")
+            _emit_final("  - raw:")
+            _emit_final(f"  {row.get('pass3_raw') or 'null'}")
 
             if row.get("pass3_ok"):
-                print("  [Pass-4]")
+                _emit_final("  [Pass-4]")
                 if row.get("pass4_exists"):
                     if row.get("pass4_error"):
-                        print(f"  - 상태: 실패 ({row.get('pass4_error')})")
+                        _emit_final(f"  - 상태: 실패 ({row.get('pass4_error')})")
+                    elif not row.get("pass4_executed"):
+                        _emit_final(f"  - 상태: 미실행 ({row.get('pass4_reason') or 'pass4_skipped'})")
                     else:
-                        print("  - 상태: 완료")
-                    print("  - raw:")
-                    print(f"  {row.get('pass4_raw') or 'null'}")
+                        _emit_final("  - 상태: 완료")
+                    _emit_final("  - raw:")
+                    _emit_final(f"  {row.get('pass4_raw') or 'null'}")
                 else:
-                    print("  - 상태: 미실행")
-            print("-" * 90)
+                    _emit_final("  - 상태: 미실행")
+            _emit_final("-" * 90)
+
+    total_cnt = len(images)
+    pass1_pass_cnt = max(0, total_cnt - precheck_skip_cnt)
+    pass2_pass_cnt = len(pass2_pass_rows)
+    pass3_pass_cnt = sum(1 for r in pass2_pass_rows if bool(r.get("pass3_ok")))
+    pass4_pass_cnt = sum(
+        1
+        for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_exists")) and (not r.get("pass4_error"))
+    )
+    pass3_ing_pass_cnt = sum(1 for r in pass2_pass_rows if bool(r.get("pass3_ok")))
+    # 비교 가능하도록 영양 트랙 대상/통과는 "pass3 원재료 통과 집합" 기준으로 집계
+    pass3_nut_target_cnt = sum(
+        1 for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass3_nut_expected"))
+    )
+    pass3_nut_pass_cnt = sum(
+        1 for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass3_nut_expected")) and bool(r.get("pass3_nut_pass"))
+    )
+    pass4_ing_pass_cnt = sum(
+        1
+        for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_ing_executed")) and (not r.get("pass4_error"))
+    )
+    # Pass4 영양도 동일하게 pass4 원재료 트랙 실행 건 기준으로 집계
+    pass4_nut_target_cnt = sum(
+        1 for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_ing_executed")) and bool(r.get("pass4_nut_executed"))
+    )
+    pass4_nut_pass_cnt = sum(
+        1 for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_ing_executed")) and bool(r.get("pass4_nut_executed")) and bool(r.get("pass4_nut_pass"))
+    )
+
+    # Pass2 이후 브랜치 집계
+    branch_ing_only = [r for r in pass2_pass_rows if not bool(r.get("pass3_nut_expected"))]
+    branch_ing_nut = [r for r in pass2_pass_rows if bool(r.get("pass3_nut_expected"))]
+
+    b1_total = len(branch_ing_only)
+    b1_p3_ing = sum(1 for r in branch_ing_only if bool(r.get("pass3_ok")))
+    b1_p4_ing = sum(
+        1 for r in branch_ing_only
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_ing_executed")) and (not r.get("pass4_error"))
+    )
+
+    b2_total = len(branch_ing_nut)
+    b2_p3_ing = sum(1 for r in branch_ing_nut if bool(r.get("pass3_ok")))
+    b2_p3_nut = sum(1 for r in branch_ing_nut if bool(r.get("pass3_ok")) and bool(r.get("pass3_nut_pass")))
+    b2_p4_ing = sum(
+        1 for r in branch_ing_nut
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_ing_executed")) and (not r.get("pass4_error"))
+    )
+    b2_p4_nut = sum(
+        1 for r in branch_ing_nut
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_nut_executed")) and bool(r.get("pass4_nut_pass")) and (not r.get("pass4_error"))
+    )
+
+    _emit_final("")
+    _emit_final("[Funnel]")
+    _emit_final(f"- 전체: {total_cnt}")
+    _emit_final(f"- Pass1 통과: {pass1_pass_cnt}")
+    _emit_final(f"- Pass2 통과: {pass2_pass_cnt}")
+    _emit_final(f"- Pass3 통과: {pass3_pass_cnt}")
+    _emit_final(f"- Pass4 통과: {pass4_pass_cnt}")
+    _emit_final(f"- Pass3-원재료 통과: {pass3_ing_pass_cnt}")
+    _emit_final(f"- Pass3-영양 대상/통과: {pass3_nut_target_cnt}/{pass3_nut_pass_cnt}")
+    _emit_final(f"- Pass4-원재료 통과: {pass4_ing_pass_cnt}")
+    _emit_final(f"- Pass4-영양 대상/통과: {pass4_nut_target_cnt}/{pass4_nut_pass_cnt}")
+
+    try:
+        SERP_REPORT_DIR.mkdir(parents=True, exist_ok=True)
+        date_str = datetime.now().strftime("%Y%m%d")
+        safe_query = _safe_filename(query)
+        report_path = SERP_REPORT_DIR / f"{safe_query}_{date_str}.txt"
+        report_path.write_text("\n".join(final_lines) + "\n", encoding="utf-8")
+        html_report_path = SERP_REPORT_DIR / f"{safe_query}_{date_str}.html"
+
+        html_parts: list[str] = []
+        html_parts.append("<!doctype html>")
+        html_parts.append("<html lang='ko'><head><meta charset='utf-8'>")
+        html_parts.append("<meta name='viewport' content='width=device-width, initial-scale=1'>")
+        html_parts.append(f"<title>SERP 배치 결과 - {html.escape(query)}</title>")
+        html_parts.append(
+            "<style>"
+            "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:24px;background:#f7f7f8;color:#111;}"
+            ".wrap{max-width:1100px;margin:0 auto;}"
+            ".card{background:#fff;border:1px solid #e3e3e6;border-radius:12px;padding:16px;margin-bottom:16px;}"
+            ".meta{font-size:13px;color:#555;margin-bottom:8px;}"
+            ".funnel{display:grid;grid-template-columns:repeat(5,minmax(140px,1fr));gap:10px;margin:12px 0 18px 0;}"
+            ".fcard{background:#fff;border:1px solid #e3e3e6;border-radius:10px;padding:12px;}"
+            ".fstep{font-size:12px;color:#666;}.fnum{font-size:22px;font-weight:800;line-height:1.1;margin-top:4px;}"
+            ".frate{font-size:12px;color:#444;margin-top:2px;}"
+            ".branch-wrap{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0 18px 0;}"
+            ".branch{background:#fff;border:1px solid #e3e3e6;border-radius:10px;padding:12px;}"
+            ".branch-title{font-weight:800;margin-bottom:8px;}"
+            ".branch-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;}"
+            ".chip{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:999px;padding:4px 10px;}"
+            ".arrow{color:#888;font-weight:700;}"
+            ".grid{display:grid;grid-template-columns:360px 1fr;gap:16px;}"
+            ".imgbox{background:#fafafa;border:1px solid #eee;border-radius:10px;padding:8px;}"
+            ".imgbox img{width:100%;height:auto;border-radius:8px;display:block;}"
+            ".lbl{font-weight:700;margin-top:8px;}"
+            "pre{white-space:pre-wrap;word-break:break-word;background:#f4f5f7;border:1px solid #e5e7eb;border-radius:8px;padding:10px;}"
+            "a{color:#0b57d0;text-decoration:none;}a:hover{text-decoration:underline;}"
+            ".ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}"
+            "@media (max-width: 900px){.grid{grid-template-columns:1fr;}}"
+            "</style>"
+        )
+        html_parts.append("</head><body><div class='wrap'>")
+        html_parts.append(f"<h1>SERP 배치 결과</h1><div class='meta'>검색어: <b>{html.escape(query)}</b> | 날짜: {date_str}</div>")
+        html_parts.append("<div class='funnel'>")
+        steps = [
+            ("전체", total_cnt),
+            ("Pass1 통과", pass1_pass_cnt),
+            ("Pass2 통과", pass2_pass_cnt),
+            ("Pass3 통과", pass3_pass_cnt),
+            ("Pass4 통과", pass4_pass_cnt),
+        ]
+        prev = total_cnt if total_cnt > 0 else 1
+        for name, count in steps:
+            rate = (count / prev * 100.0) if prev > 0 else 0.0
+            html_parts.append("<div class='fcard'>")
+            html_parts.append(f"<div class='fstep'>{html.escape(name)}</div>")
+            html_parts.append(f"<div class='fnum'>{count:,}</div>")
+            html_parts.append(f"<div class='frate'>이전단계 대비 {rate:.1f}%</div>")
+            html_parts.append("</div>")
+            prev = count if count > 0 else 1
+        html_parts.append("</div>")
+        html_parts.append("<div class='branch-wrap'>")
+        html_parts.append("<div class='branch'>")
+        html_parts.append("<div class='branch-title'>가지 A: Pass2 통과 후 원재료만(영양성분 대상 아님)</div>")
+        html_parts.append("<div class='branch-flow'>")
+        html_parts.append(f"<span class='chip'>시작 {b1_total}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass3-원재료 통과 {b1_p3_ing}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass4-원재료 통과 {b1_p4_ing}</span>")
+        html_parts.append("</div></div>")
+        html_parts.append("<div class='branch'>")
+        html_parts.append("<div class='branch-title'>가지 B: Pass2 통과 후 원재료+영양성분(영양성분 대상)</div>")
+        html_parts.append("<div class='branch-flow'>")
+        html_parts.append(f"<span class='chip'>시작 {b2_total}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass3-원재료 통과 {b2_p3_ing}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass3-영양 통과 {b2_p3_nut}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass4-원재료 통과 {b2_p4_ing}</span><span class='arrow'>→</span>")
+        html_parts.append(f"<span class='chip'>Pass4-영양 통과 {b2_p4_nut}</span>")
+        html_parts.append("</div></div>")
+        html_parts.append("<div class='branch'>")
+        html_parts.append("<div class='branch-title'>총합(가지 A + 가지 B)</div>")
+        html_parts.append("<div class='branch-flow'>")
+        html_parts.append(f"<span class='chip'>Pass2 통과 총합 {b1_total + b2_total}</span><span class='arrow'>|</span>")
+        html_parts.append(f"<span class='chip'>Pass3-원재료 통과 총합 {b1_p3_ing + b2_p3_ing}</span><span class='arrow'>|</span>")
+        html_parts.append(f"<span class='chip'>Pass3-영양 통과 총합 {b2_p3_nut}</span><span class='arrow'>|</span>")
+        html_parts.append(f"<span class='chip'>Pass4-원재료 통과 총합 {b1_p4_ing + b2_p4_ing}</span><span class='arrow'>|</span>")
+        html_parts.append(f"<span class='chip'>Pass4-영양 통과 총합 {b2_p4_nut}</span>")
+        html_parts.append("</div></div>")
+        html_parts.append("</div>")
+
+        if not pass2_pass_rows:
+            html_parts.append("<div class='card'><div class='meta'>Pass-2 통과 결과 없음</div></div>")
+        else:
+            for row in sorted(pass2_pass_rows, key=lambda x: x["no"]):
+                no = int(row.get("no") or 0)
+                url = str(row.get("url") or "")
+                pass3_ok = bool(row.get("pass3_ok"))
+                pass3_status = "<span class='ok'>통과</span>" if pass3_ok else "<span class='bad'>미통과</span>"
+                pass3_err = row.get("pass3_error")
+                pass4_exists = bool(row.get("pass4_exists"))
+                pass4_executed = bool(row.get("pass4_executed"))
+                pass4_error = row.get("pass4_error")
+                pass4_status = "미실행"
+                if pass3_ok and pass4_exists:
+                    if pass4_error:
+                        pass4_status = "<span class='bad'>실패</span>"
+                    elif pass4_executed:
+                        pass4_status = "<span class='ok'>완료</span>"
+                    else:
+                        pass4_status = "미실행"
+
+                html_parts.append("<div class='card'>")
+                html_parts.append(f"<div class='meta'>[{no:03d}] <a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></div>")
+                html_parts.append("<div class='grid'>")
+                html_parts.append("<div class='imgbox'>")
+                html_parts.append(f"<img src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer' onerror=\"this.style.display='none'; this.nextElementSibling.style.display='block';\">")
+                html_parts.append("<div style='display:none;color:#888;font-size:13px;'>이미지 로드 실패</div>")
+                html_parts.append("</div>")
+                html_parts.append("<div>")
+                html_parts.append(f"<div><span class='lbl'>Pass-3 상태:</span> {pass3_status}</div>")
+                if pass3_err:
+                    html_parts.append(f"<div><span class='lbl'>Pass-3 실패사유:</span> {html.escape(str(pass3_err))}</div>")
+                html_parts.append(f"<div><span class='lbl'>제품명:</span> {html.escape(str(row.get('pass3_product_name') or 'null'))}</div>")
+                html_parts.append(f"<div><span class='lbl'>품목보고번호:</span> {html.escape(str(row.get('pass3_report_no') or 'null'))}</div>")
+                html_parts.append(f"<div><span class='lbl'>원재료명:</span> {html.escape(str(row.get('pass3_ingredients') or 'null'))}</div>")
+                p3_ing_txt = "실행" if row.get("pass3_ing_executed") else "미실행"
+                if row.get("pass3_nut_expected"):
+                    if row.get("pass3_nut_executed"):
+                        p3_nut_txt = "통과" if row.get("pass3_nut_pass") else "실패/미검출"
+                    else:
+                        p3_nut_txt = "미실행"
+                else:
+                    p3_nut_txt = "대상아님(Pass2)"
+                html_parts.append(f"<div><span class='lbl'>Pass-3 트랙:</span> 원재료={p3_ing_txt} | 영양={p3_nut_txt}</div>")
+                if pass3_ok:
+                    html_parts.append(f"<div><span class='lbl'>Pass-4 상태:</span> {pass4_status}</div>")
+                    if pass4_exists:
+                        p4_ing_txt = "실행" if row.get("pass4_ing_executed") else "미실행"
+                        if row.get("pass4_nut_executed"):
+                            p4_nut_txt = "통과" if row.get("pass4_nut_pass") else "실패/미검출"
+                        else:
+                            p4_nut_txt = "대상아님/미실행"
+                        html_parts.append(f"<div><span class='lbl'>Pass-4 트랙:</span> 원재료={p4_ing_txt} | 영양={p4_nut_txt}</div>")
+                        if (not pass4_executed) and row.get("pass4_reason"):
+                            html_parts.append(f"<div><span class='lbl'>Pass-4 사유:</span> {html.escape(str(row.get('pass4_reason')))}</div>")
+                        html_parts.append("<div class='lbl'>Pass-4 raw</div>")
+                        html_parts.append(f"<pre>{html.escape(str(row.get('pass4_raw') or 'null'))}</pre>")
+                html_parts.append("</div>")
+                html_parts.append("</div>")
+                html_parts.append("</div>")
+
+        html_parts.append("</div></body></html>")
+        html_report_path.write_text("\n".join(html_parts), encoding="utf-8")
+
+        print(f"\n📁 마지막 결과 저장(txt): {report_path}")
+        print(f"🌐 마지막 결과 저장(html): {html_report_path}")
+        if auto_open_report:
+            try:
+                webbrowser.open(html_report_path.resolve().as_uri())
+                print("🖥️ 브라우저 자동 열기 완료")
+            except Exception as open_exc:  # pylint: disable=broad-except
+                print(f"⚠️ 브라우저 자동 열기 실패: {open_exc}")
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"\n⚠️ 마지막 결과 파일 저장 실패: {exc}")
 
 
 def run_query_image_benchmark_interactive() -> None:
@@ -684,6 +995,8 @@ def run_query_image_benchmark_interactive() -> None:
 
     # 요청사항: adaptive 자동 감속 기능 OFF 고정
     adaptive = False
+    raw_open = input("  🔹 실행 후 HTML 자동 열기? [Y/n]: ").strip().lower()
+    auto_open_report = not (raw_open in ("n", "no"))
 
     print("\n  🚀 실행합니다. 결과는 이미지별로 순차 출력됩니다.")
     run_query_image_benchmark(
@@ -692,4 +1005,5 @@ def run_query_image_benchmark_interactive() -> None:
         delay_sec=delay_sec,
         max_concurrency=max_concurrency,
         adaptive=adaptive,
+        auto_open_report=auto_open_report,
     )
