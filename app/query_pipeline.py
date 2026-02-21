@@ -205,7 +205,7 @@ def list_next_queries(conn: sqlite3.Connection, limit: int = 20) -> list[sqlite3
         SELECT *
         FROM query_pool
         WHERE status IN ('pending', 'failed', 'done')
-        ORDER BY priority_score DESC, target_segment_score DESC, COALESCE(last_run_at, '') ASC, id ASC
+        ORDER BY priority_score DESC, COALESCE(last_run_at, '') ASC, id ASC
         LIMIT ?
         """,
         (limit,),

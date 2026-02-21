@@ -15,6 +15,7 @@ import threading
 import json
 import html
 import webbrowser
+import sqlite3
 from datetime import datetime
 from pathlib import Path
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
@@ -25,6 +26,7 @@ from collections import Counter, defaultdict
 import requests
 
 from app.analyzer import URLIngredientAnalyzer
+from app.config import DB_FILE
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 SERPAPI_TIMEOUT = 25
@@ -956,9 +958,8 @@ def run_query_image_benchmark(
 
 def run_query_image_benchmark_interactive() -> None:
     print("\n  🔎 [검색어 기반 이미지 벤치마크]")
-    query = input("  🔹 검색어 입력: ").strip()
+    query = _choose_benchmark_query_interactive()
     if not query:
-        print("  ⚠️ 검색어를 입력해주세요.")
         return
 
     raw_pages = input("  🔹 최대 페이지 수 [기본 20]: ").strip()
@@ -1005,3 +1006,88 @@ def run_query_image_benchmark_interactive() -> None:
         adaptive=adaptive,
         auto_open_report=auto_open_report,
     )
+
+
+def _choose_benchmark_query_interactive() -> str | None:
+    print("  🔹 검색어 선택 방식")
+    print("    [1] 직접 입력")
+    print("    [2] 검색어풀에서 선택(우선순위 높은 순)")
+    mode = input("  선택 > ").strip() or "1"
+
+    if mode == "1":
+        query = input("  🔹 검색어 입력: ").strip()
+        if not query:
+            print("  ⚠️ 검색어를 입력해주세요.")
+            return None
+        return query
+
+    if mode != "2":
+        print("  ⚠️ 올바른 번호를 선택해주세요.")
+        return None
+
+    raw_limit = input("  🔹 검색어풀 표시 개수 [기본 30]: ").strip()
+    limit = 30
+    if raw_limit:
+        try:
+            v = int(raw_limit)
+            if v > 0:
+                limit = v
+        except ValueError:
+            pass
+
+    rows = _load_query_pool_rows(limit=limit)
+    if not rows:
+        print("  ⚠️ 검색어풀이 비어있거나(query_pool), 아직 초기화되지 않았습니다.")
+        return None
+
+    print("\n  📚 [검색어풀 - 우선순위 높은 순]")
+    print("  No   점수   상태      실행수  query_id  검색어")
+    print("  ─────────────────────────────────────────────────────────────────────────")
+    for idx, row in enumerate(rows, start=1):
+        score = float(row["priority_score"] or 0.0)
+        status = str(row["status"] or "-")
+        run_count = int(row["run_count"] or 0)
+        qid = int(row["id"])
+        text = str(row["query_text"] or "")
+        print(f"  {idx:>2}  {score:>6.1f}  {status:<8}  {run_count:>6}  {qid:>8}  {text}")
+
+    raw_no = input("\n  🔹 실행할 번호 선택: ").strip()
+    try:
+        picked = int(raw_no)
+    except ValueError:
+        print("  ⚠️ 숫자로 입력해주세요.")
+        return None
+    if picked < 1 or picked > len(rows):
+        print("  ⚠️ 범위를 벗어난 번호입니다.")
+        return None
+
+    chosen = str(rows[picked - 1]["query_text"] or "").strip()
+    if not chosen:
+        print("  ⚠️ 선택한 검색어가 비어있습니다.")
+        return None
+    print(f"  ✅ 선택된 검색어: {chosen}")
+    return chosen
+
+
+def _load_query_pool_rows(limit: int = 30) -> list[sqlite3.Row]:
+    db_path = Path(DB_FILE)
+    if not db_path.exists():
+        return []
+
+    conn = sqlite3.connect(str(db_path))
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            """
+            SELECT id, query_text, priority_score, status, run_count
+            FROM query_pool
+            ORDER BY priority_score DESC, id ASC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+        return list(rows)
+    except sqlite3.Error:
+        return []
+    finally:
+        conn.close()

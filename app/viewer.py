@@ -8,8 +8,12 @@
 
 from __future__ import annotations
 
+import html
 import sqlite3
 import sys
+import webbrowser
+from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 from app.config import DB_FILE
@@ -106,33 +110,223 @@ def show_food_search(conn: sqlite3.Connection) -> None:
 
 
 def show_query_pool(conn: sqlite3.Connection) -> None:
-    print("\n  🧩 [검색어 풀 상위]")
-    raw = input("  조회 개수 [기본 50] : ").strip()
-    limit = 50
-    if raw:
-        try:
-            limit = max(1, int(raw))
-        except ValueError:
-            pass
-    rows = conn.execute(
-        """
-        SELECT id, query_text, source, status, priority_score, target_segment_score, run_count, last_run_at
-        FROM query_pool
-        ORDER BY priority_score DESC, target_segment_score DESC, id ASC
-        LIMIT ?
-        """,
-        (limit,),
-    ).fetchall()
-    if not rows:
-        print("  (검색어 없음)")
-        return
-    for row in rows:
-        qid, text, src, st, ps, ts, rc, lra = row
-        print(
-            f"  - id={qid} | pri={ps:.1f} seg={ts:.1f} | {st} | run={rc} | {src}"
+    print("\n  🧩 [검색어 풀 조회: 브라우저 리포트]")
+    open_query_pool_browser_report(conn)
+
+
+def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
+    status_counts: dict[str, int] = {}
+    source_counts: dict[str, int] = {}
+    for r in rows:
+        status = str(r["status"] or "unknown")
+        source = str(r["source"] or "unknown")
+        status_counts[status] = status_counts.get(status, 0) + 1
+        source_counts[source] = source_counts.get(source, 0) + 1
+
+    status_badges = " ".join(
+        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
+        for k, v in sorted(status_counts.items(), key=lambda x: (-x[1], x[0]))
+    )
+    source_badges = " ".join(
+        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
+        for k, v in sorted(source_counts.items(), key=lambda x: (-x[1], x[0]))
+    )
+
+    table_rows: list[str] = []
+    for r in rows:
+        table_rows.append(
+            "<tr>"
+            f"<td>{int(r['id'])}</td>"
+            f"<td>{html.escape(str(r['status'] or ''))}</td>"
+            f"<td>{html.escape(str(r['source'] or ''))}</td>"
+            f"<td class='num'>{float(r['priority_score'] or 0.0):.1f}</td>"
+            f"<td class='num'>{int(r['run_count'] or 0)}</td>"
+            f"<td>{html.escape(str(r['last_run_at'] or '-'))}</td>"
+            f"<td class='query'>{html.escape(str(r['query_text'] or ''))}</td>"
+            "</tr>"
         )
-        print(f"    q={text}")
-        print(f"    last={lra or '-'}")
+    tbody = "\n".join(table_rows)
+
+    return f"""<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>검색어 풀 조회</title>
+  <style>
+    :root {{
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --line: #d9e0ea;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --badge: #eef4ff;
+    }}
+    body {{
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+    }}
+    .wrap {{ max-width: 1400px; margin: 0 auto; padding: 24px; }}
+    .card {{
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(31,41,55,0.04);
+    }}
+    h1 {{ margin: 0 0 6px; font-size: 24px; }}
+    .sub {{ color: var(--muted); font-size: 14px; margin-bottom: 10px; }}
+    .badge {{
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--badge);
+      border: 1px solid #dbe7ff;
+      font-size: 12px;
+      color: #1e3a8a;
+    }}
+    .controls {{
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 10px;
+      align-items: center;
+    }}
+    input, select {{
+      width: 100%;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #fff;
+      box-sizing: border-box;
+    }}
+    table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
+    thead th {{
+      position: sticky; top: 0; z-index: 1;
+      background: #eef3fb;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      white-space: nowrap;
+    }}
+    tbody td {{
+      border-bottom: 1px solid #edf1f7;
+      padding: 8px;
+      vertical-align: top;
+    }}
+    tbody tr:hover {{ background: #f8fbff; }}
+    .num {{ text-align: right; white-space: nowrap; }}
+    .query {{ min-width: 420px; }}
+    .glossary {{ margin-top: 10px; font-size: 13px; line-height: 1.6; }}
+    .glossary b {{ display: inline-block; min-width: 180px; }}
+    .muted {{ color: var(--muted); }}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>검색어 풀 조회</h1>
+      <div class="sub">query_pool 전체를 브라우저에서 조회합니다.</div>
+      <div><strong>총 검색어:</strong> {len(rows):,}</div>
+      <div style="margin-top:8px;"><strong>상태 분포</strong><br>{status_badges or "-"}</div>
+      <div style="margin-top:8px;"><strong>소스 분포</strong><br>{source_badges or "-"}</div>
+      <div class="glossary">
+        <div><strong>용어 설명</strong></div>
+        <div><b>pending</b>다음 실행 대상(대기열 포함)</div>
+        <div><b>paused</b>저장만 해둔 상태(실행 제외)</div>
+        <div><b>running</b>현재 실행 중</div>
+        <div><b>done</b>최근 실행 완료</div>
+        <div><b>failed</b>최근 실행 실패</div>
+        <div><b>consumer_taxonomy_seed</b>공공 API 카테고리를 소비자 검색어로 변환해 자동 적재한 소스</div>
+        <div class="muted">※ run, 마지막 실행 시각과 함께 보면 “실행 이력” 해석이 더 정확합니다.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <input id="q" type="text" placeholder="검색어/소스/상태 텍스트 검색" />
+        <select id="statusFilter">
+          <option value="">전체 상태</option>
+          <option value="pending">pending</option>
+          <option value="paused">paused</option>
+          <option value="running">running</option>
+          <option value="done">done</option>
+          <option value="failed">failed</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card" style="padding:0; overflow:auto; max-height:70vh;">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>상태</th>
+            <th>소스</th>
+            <th>점수</th>
+            <th>run</th>
+            <th>마지막 실행</th>
+            <th>검색어</th>
+          </tr>
+        </thead>
+        <tbody>{tbody}</tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const sf = document.getElementById('statusFilter');
+    const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
+    function applyFilter() {{
+      const text = (q.value || '').toLowerCase();
+      const st = (sf.value || '').toLowerCase();
+      rows.forEach((tr) => {{
+        const t = tr.textContent.toLowerCase();
+        const statusCell = (tr.children[1]?.textContent || '').toLowerCase().trim();
+        const matchText = !text || t.includes(text);
+        const matchStatus = !st || statusCell === st;
+        tr.style.display = (matchText && matchStatus) ? '' : 'none';
+      }});
+    }}
+    q.addEventListener('input', applyFilter);
+    sf.addEventListener('change', applyFilter);
+  </script>
+</body>
+</html>
+"""
+
+
+def open_query_pool_browser_report(conn: sqlite3.Connection | None = None) -> Path:
+    owns_conn = False
+    if conn is None:
+        conn = sqlite3.connect(DB_FILE)
+        owns_conn = True
+    try:
+        init_query_pipeline_tables(conn)
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            """
+            SELECT id, query_text, source, status, priority_score, run_count, last_run_at
+            FROM query_pool
+            ORDER BY priority_score DESC, id ASC
+            """
+        ).fetchall()
+
+        reports_dir = Path(__file__).resolve().parent.parent / "reports" / "query_pool"
+        reports_dir.mkdir(parents=True, exist_ok=True)
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_path = reports_dir / f"query_pool_{ts}.html"
+        out_path.write_text(_build_query_pool_html(rows), encoding="utf-8")
+        webbrowser.open_new_tab(out_path.resolve().as_uri())
+        return out_path
+    finally:
+        if owns_conn:
+            conn.close()
 
 
 def show_query_runs(conn: sqlite3.Connection) -> None:

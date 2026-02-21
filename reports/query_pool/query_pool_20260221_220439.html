@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>검색어 풀 조회</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --line: #d9e0ea;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1f6feb;
+      --badge: #eef4ff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+    }
+    .wrap { max-width: 1400px; margin: 0 auto; padding: 24px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(31,41,55,0.04);
+    }
+    h1 { margin: 0 0 6px; font-size: 24px; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+    .badge {
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--badge);
+      border: 1px solid #dbe7ff;
+      font-size: 12px;
+      color: #1e3a8a;
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 10px;
+      align-items: center;
+    }
+    input, select {
+      width: 100%;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead th {
+      position: sticky; top: 0; z-index: 1;
+      background: #eef3fb;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      white-space: nowrap;
+    }
+    tbody td {
+      border-bottom: 1px solid #edf1f7;
+      padding: 8px;
+      vertical-align: top;
+    }
+    tbody tr:hover { background: #f8fbff; }
+    .num { text-align: right; white-space: nowrap; }
+    .query { min-width: 420px; }
+    .small { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>검색어 풀 조회</h1>
+      <div class="sub">query_pool 전체를 브라우저에서 가독성 높게 조회합니다.</div>
+      <div><strong>총 검색어:</strong> 736</div>
+      <div style="margin-top:8px;"><strong>상태 분포</strong><br><span class='badge'>paused: 718</span> <span class='badge'>pending: 18</span></div>
+      <div style="margin-top:8px;"><strong>소스 분포</strong><br><span class='badge'>consumer_taxonomy_seed: 736</span></div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <input id="q" type="text" placeholder="검색어/소스/상태/카테고리 텍스트 검색" />
+        <select id="statusFilter">
+          <option value="">전체 상태</option>
+          <option value="pending">pending</option>
+          <option value="paused">paused</option>
+          <option value="running">running</option>
+          <option value="done">done</option>
+          <option value="failed">failed</option>
+        </select>
+      </div>
+      <div class="small">필터는 실시간 적용됩니다.</div>
+    </div>
+
+    <div class="card" style="padding:0; overflow:auto; max-height:70vh;">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>상태</th>
+            <th>소스</th>
+            <th>우선점수</th>
+            <th>세그점수</th>
+            <th>run</th>
+            <th>마지막 실행</th>
+            <th>검색어</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1006</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>410.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질쉐이크 체중조절용 조제식품 원재료명 성분표</td></tr>
+<tr><td>1007</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>407.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>식사대용 쉐이크 체중조절용 조제식품 원재료명 성분표</td></tr>
+<tr><td>1008</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>404.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 다이어트 식품 체중조절용 조제식품 원재료명 성분표</td></tr>
+<tr><td>1009</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>335.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 드레싱 소스/드레싱 원재료명 성분표</td></tr>
+<tr><td>1010</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>332.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>샐러드 드레싱 저당 소스/드레싱 원재료명 성분표</td></tr>
+<tr><td>1011</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>329.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 드레싱 소스/드레싱 원재료명 성분표</td></tr>
+<tr><td>1012</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>278.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 소스 기타 소스류 원재료명 성분표</td></tr>
+<tr><td>1013</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>275.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 소스 기타 소스류 원재료명 성분표</td></tr>
+<tr><td>1014</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>272.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 소스 기타 소스류 원재료명 성분표</td></tr>
+<tr><td>1015</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>265.1</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 성장기용 조제식 원재료명 성분표</td></tr>
+<tr><td>1016</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>262.1</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 성장기용 조제식 원재료명 성분표</td></tr>
+<tr><td>1017</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>259.1</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 성장기용 조제식 원재료명 성분표</td></tr>
+<tr><td>1018</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>253.6</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 영아용 조제식 원재료명 성분표</td></tr>
+<tr><td>1021</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>253.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 고령자용 영양조제식품 원재료명 성분표</td></tr>
+<tr><td>1019</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>250.6</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 영아용 조제식 원재료명 성분표</td></tr>
+<tr><td>1022</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>250.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 고령자용 영양조제식품 원재료명 성분표</td></tr>
+<tr><td>1020</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>247.6</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 영아용 조제식 원재료명 성분표</td></tr>
+<tr><td>1023</td><td>pending</td><td>consumer_taxonomy_seed</td><td class='num'>247.0</td><td class='num'>100.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 고령자용 영양조제식품 원재료명 성분표</td></tr>
+<tr><td>1024</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>218.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 드레싱 드레싱 원재료명 성분표</td></tr>
+<tr><td>1027</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>216.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 두유 콩기름(대두유) 원재료명 성분표</td></tr>
+<tr><td>1025</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>215.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>샐러드 드레싱 저당 드레싱 원재료명 성분표</td></tr>
+<tr><td>1028</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>213.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두유 콩기름(대두유) 원재료명 성분표</td></tr>
+<tr><td>1026</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>212.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 드레싱 드레싱 원재료명 성분표</td></tr>
+<tr><td>1029</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>210.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 두유 콩기름(대두유) 원재료명 성분표</td></tr>
+<tr><td>1030</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>200.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 영·유아용 이유식 원재료명 성분표</td></tr>
+<tr><td>1031</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>197.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 영·유아용 이유식 원재료명 성분표</td></tr>
+<tr><td>1032</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>194.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 영·유아용 이유식 원재료명 성분표</td></tr>
+<tr><td>1033</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>186.4</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질쉐이크 체중조절용 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1034</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>183.4</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>식사대용 쉐이크 체중조절용 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1036</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>181.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 도시락 도시락 원재료명 성분표</td></tr>
+<tr><td>1035</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>180.4</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 다이어트 식품 체중조절용 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1037</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>178.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 도시락 도시락 원재료명 성분표</td></tr>
+<tr><td>1039</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>177.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 샐러드 샐러드 원재료명 성분표</td></tr>
+<tr><td>1038</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>175.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 도시락 도시락 원재료명 성분표</td></tr>
+<tr><td>1040</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>174.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 샐러드 샐러드 원재료명 성분표</td></tr>
+<tr><td>1042</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>173.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 즉석 면요리 원재료명 성분표</td></tr>
+<tr><td>1041</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>171.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 샐러드 샐러드 원재료명 성분표</td></tr>
+<tr><td>1043</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>170.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 즉석 면요리 원재료명 성분표</td></tr>
+<tr><td>1044</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>167.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 즉석 면요리 원재료명 성분표</td></tr>
+<tr><td>1045</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>167.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 두유 두유 원재료명 성분표</td></tr>
+<tr><td>1046</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>164.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두유 두유 원재료명 성분표</td></tr>
+<tr><td>1047</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>161.0</td><td class='num'>70.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 두유 두유 원재료명 성분표</td></tr>
+<tr><td>1048</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>158.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 조미건어포 원재료명 성분표</td></tr>
+<tr><td>1051</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>157.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 어육가공품 원재료명 성분표</td></tr>
+<tr><td>1049</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>155.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 조미건어포 원재료명 성분표</td></tr>
+<tr><td>1052</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>154.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 어육가공품 원재료명 성분표</td></tr>
+<tr><td>1054</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>154.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 볶음밥 밥류 원재료명 성분표</td></tr>
+<tr><td>1050</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>152.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 조미건어포 원재료명 성분표</td></tr>
+<tr><td>1057</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>152.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 양념육 원재료명 성분표</td></tr>
+<tr><td>1053</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>151.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 어육가공품 원재료명 성분표</td></tr>
+<tr><td>1055</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>151.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 간편식 밥 밥류 원재료명 성분표</td></tr>
+<tr><td>1058</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>149.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 양념육 원재료명 성분표</td></tr>
+<tr><td>1056</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>148.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 즉석밥 밥류 원재료명 성분표</td></tr>
+<tr><td>1059</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>146.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 양념육 원재료명 성분표</td></tr>
+<tr><td>1060</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>141.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 조제유류 원재료명 성분표</td></tr>
+<tr><td>1061</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>138.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 조제유류 원재료명 성분표</td></tr>
+<tr><td>1062</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>135.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 조제유류 원재료명 성분표</td></tr>
+<tr><td>1066</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>135.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 국/탕류 원재료명 성분표</td></tr>
+<tr><td>1069</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>133.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 기타 식육가공품 원재료명 성분표</td></tr>
+<tr><td>1067</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>132.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 국/탕류 원재료명 성분표</td></tr>
+<tr><td>1063</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>131.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>영양식 임산·수유부용 식품 원재료명 성분표</td></tr>
+<tr><td>1072</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>131.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 볶음밥 주먹밥/김밥/초밥 원재료명 성분표</td></tr>
+<tr><td>1075</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>131.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 만두 만두 원재료명 성분표</td></tr>
+<tr><td>1070</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>130.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 기타 식육가공품 원재료명 성분표</td></tr>
+<tr><td>1068</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>129.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 국/탕류 원재료명 성분표</td></tr>
+<tr><td>1064</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>128.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>단백질 영양식 임산·수유부용 식품 원재료명 성분표</td></tr>
+<tr><td>1073</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>128.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 간편식 밥 주먹밥/김밥/초밥 원재료명 성분표</td></tr>
+<tr><td>1076</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>128.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 만두 만두 원재료명 성분표</td></tr>
+<tr><td>1078</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>128.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>반찬 반찬 원재료명 성분표</td></tr>
+<tr><td>1071</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>127.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 기타 식육가공품 원재료명 성분표</td></tr>
+<tr><td>1080</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>127.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 치즈 원재료명 성분표</td></tr>
+<tr><td>1083</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>126.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 햄 원재료명 성분표</td></tr>
+<tr><td>1065</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>125.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>균형영양식 임산·수유부용 식품 원재료명 성분표</td></tr>
+<tr><td>1074</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>125.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 즉석밥 주먹밥/김밥/초밥 원재료명 성분표</td></tr>
+<tr><td>1077</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>125.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 만두 만두 원재료명 성분표</td></tr>
+<tr><td>1086</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>125.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>샌드위치 샌드위치 원재료명 성분표</td></tr>
+<tr><td>1081</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>124.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 치즈 원재료명 성분표</td></tr>
+<tr><td>1088</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>124.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 기타 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1091</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>124.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>죽 죽 원재료명 성분표</td></tr>
+<tr><td>1084</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>123.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 햄 원재료명 성분표</td></tr>
+<tr><td>1079</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>122.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>반찬 저당 반찬 원재료명 성분표</td></tr>
+<tr><td>1093</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>122.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 어묵 원재료명 성분표</td></tr>
+<tr><td>1096</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>122.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 소시지 원재료명 성분표</td></tr>
+<tr><td>1082</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>121.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 치즈 원재료명 성분표</td></tr>
+<tr><td>1089</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>121.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 기타 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1085</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>120.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 햄 원재료명 성분표</td></tr>
+<tr><td>1087</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>119.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>샌드위치 저당 샌드위치 원재료명 성분표</td></tr>
+<tr><td>1094</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>119.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 어묵 원재료명 성분표</td></tr>
+<tr><td>1097</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>119.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 소시지 원재료명 성분표</td></tr>
+<tr><td>1090</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>118.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 기타 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1092</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>118.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>죽 저당 죽 원재료명 성분표</td></tr>
+<tr><td>1095</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>116.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 어묵 원재료명 성분표</td></tr>
+<tr><td>1098</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>116.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 소시지 원재료명 성분표</td></tr>
+<tr><td>1099</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>115.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 김 원재료명 성분표</td></tr>
+<tr><td>1102</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>115.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 농후발효유 원재료명 성분표</td></tr>
+<tr><td>1105</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>114.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 식육간편조리 원재료명 성분표</td></tr>
+<tr><td>1100</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>112.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 김 원재료명 성분표</td></tr>
+<tr><td>1103</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>112.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 농후발효유 원재료명 성분표</td></tr>
+<tr><td>1108</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>112.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 국수 원재료명 성분표</td></tr>
+<tr><td>1106</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>111.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 식육간편조리 원재료명 성분표</td></tr>
+<tr><td>1111</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>111.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>찌개/전골류 찌개/전골류 원재료명 성분표</td></tr>
+<tr><td>1113</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>111.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 즉석식품 기타 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1115</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>110.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 라면 원재료명 성분표</td></tr>
+<tr><td>1101</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>109.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 김 원재료명 성분표</td></tr>
+<tr><td>1104</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>109.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 농후발효유 원재료명 성분표</td></tr>
+<tr><td>1109</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>109.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 국수 원재료명 성분표</td></tr>
+<tr><td>1118</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>109.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 파스타 원재료명 성분표</td></tr>
+<tr><td>1107</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>108.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 식육간편조리 원재료명 성분표</td></tr>
+<tr><td>1116</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>107.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 라면 원재료명 성분표</td></tr>
+<tr><td>1121</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>107.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>떡볶이 떡볶이 원재료명 성분표</td></tr>
+<tr><td>1110</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>106.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 국수 원재료명 성분표</td></tr>
+<tr><td>1119</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>106.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 파스타 원재료명 성분표</td></tr>
+<tr><td>1123</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>106.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 메밀국수/냉면국수 원재료명 성분표</td></tr>
+<tr><td>1112</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>105.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>찌개/전골류 저당 찌개/전골류 원재료명 성분표</td></tr>
+<tr><td>1114</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>105.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 즉석식품 저당 기타 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1126</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>105.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 복합조미식품 원재료명 성분표</td></tr>
+<tr><td>1129</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>105.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>버거 버거 원재료명 성분표</td></tr>
+<tr><td>1131</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>105.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 가공우유 원재료명 성분표</td></tr>
+<tr><td>1117</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>104.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 라면 원재료명 성분표</td></tr>
+<tr><td>1134</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>104.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>순대 순대 원재료명 성분표</td></tr>
+<tr><td>1120</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>103.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 파스타 원재료명 성분표</td></tr>
+<tr><td>1124</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>103.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 메밀국수/냉면국수 원재료명 성분표</td></tr>
+<tr><td>1136</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>103.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>조림/찜 조림/찜 원재료명 성분표</td></tr>
+<tr><td>1127</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>102.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 복합조미식품 원재료명 성분표</td></tr>
+<tr><td>1132</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>102.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 가공우유 원재료명 성분표</td></tr>
+<tr><td>1138</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>102.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 젓갈/액젓 원재료명 성분표</td></tr>
+<tr><td>1141</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>102.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>스프 스프 원재료명 성분표</td></tr>
+<tr><td>1122</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>101.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>떡볶이 저당 떡볶이 원재료명 성분표</td></tr>
+<tr><td>1125</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>100.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 메밀국수/냉면국수 원재료명 성분표</td></tr>
+<tr><td>1143</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>100.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 발효유 원재료명 성분표</td></tr>
+<tr><td>1146</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>100.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 기타면 원재료명 성분표</td></tr>
+<tr><td>1149</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>100.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 성 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1152</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>100.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 식초 원재료명 성분표</td></tr>
+<tr><td>1128</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 복합조미식품 원재료명 성분표</td></tr>
+<tr><td>1130</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>버거 저당 버거 원재료명 성분표</td></tr>
+<tr><td>1133</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 가공우유 원재료명 성분표</td></tr>
+<tr><td>1139</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 젓갈/액젓 원재료명 성분표</td></tr>
+<tr><td>1155</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 우동면 원재료명 성분표</td></tr>
+<tr><td>1158</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 당면 원재료명 성분표</td></tr>
+<tr><td>1161</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>99.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 김자반 원재료명 성분표</td></tr>
+<tr><td>1135</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>98.0</td><td class='num'>40.0</td><td class='num'>0</td><td>-</td><td class='query'>순대 저당 순대 원재료명 성분표</td></tr>
+<tr><td>1164</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>98.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 쌀국수 원재료명 성분표</td></tr>
+<tr><td>1167</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>98.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 칼국수 원재료명 성분표</td></tr>
+<tr><td>1137</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>조림/찜 저당 조림/찜 원재료명 성분표</td></tr>
+<tr><td>1144</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 발효유 원재료명 성분표</td></tr>
+<tr><td>1147</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 기타면 원재료명 성분표</td></tr>
+<tr><td>1150</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 성 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1153</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 식초 원재료명 성분표</td></tr>
+<tr><td>1170</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 우유 원재료명 성분표</td></tr>
+<tr><td>1173</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>미숫가루/선식 미숫가루/선식 원재료명 성분표</td></tr>
+<tr><td>1175</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>튀김 튀김 원재료명 성분표</td></tr>
+<tr><td>1177</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>97.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 육포 원재료명 성분표</td></tr>
+<tr><td>1140</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>96.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 젓갈/액젓 원재료명 성분표</td></tr>
+<tr><td>1142</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>96.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>스프 저당 스프 원재료명 성분표</td></tr>
+<tr><td>1156</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>96.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 우동면 원재료명 성분표</td></tr>
+<tr><td>1159</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>96.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 당면 원재료명 성분표</td></tr>
+<tr><td>1162</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>96.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 김자반 원재료명 성분표</td></tr>
+<tr><td>1165</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>95.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 쌀국수 원재료명 성분표</td></tr>
+<tr><td>1168</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>95.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 칼국수 원재료명 성분표</td></tr>
+<tr><td>1145</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 발효유 원재료명 성분표</td></tr>
+<tr><td>1148</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 기타면 원재료명 성분표</td></tr>
+<tr><td>1151</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 성 수산가공품 원재료명 성분표</td></tr>
+<tr><td>1154</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 식초 원재료명 성분표</td></tr>
+<tr><td>1171</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 우유 원재료명 성분표</td></tr>
+<tr><td>1178</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 육포 원재료명 성분표</td></tr>
+<tr><td>1180</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 액상음료 원재료명 성분표</td></tr>
+<tr><td>1183</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>땅콩버터 땅콩버터 원재료명 성분표</td></tr>
+<tr><td>1185</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 향신료 원재료명 성분표</td></tr>
+<tr><td>1188</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 카레 원재료명 성분표</td></tr>
+<tr><td>1191</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>94.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>치킨 치킨 원재료명 성분표</td></tr>
+<tr><td>1157</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>93.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 우동면 원재료명 성분표</td></tr>
+<tr><td>1160</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>93.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 당면 원재료명 성분표</td></tr>
+<tr><td>1163</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>93.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 김자반 원재료명 성분표</td></tr>
+<tr><td>1193</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>92.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 볶음/비빔라면 원재료명 성분표</td></tr>
+<tr><td>1196</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>92.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>전 전 원재료명 성분표</td></tr>
+<tr><td>1166</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>92.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 쌀국수 원재료명 성분표</td></tr>
+<tr><td>1169</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>92.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 칼국수 원재료명 성분표</td></tr>
+<tr><td>1198</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>92.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 과·채주스 원재료명 성분표</td></tr>
+<tr><td>1172</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 우유 원재료명 성분표</td></tr>
+<tr><td>1174</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>미숫가루/선식 저당 미숫가루/선식 원재료명 성분표</td></tr>
+<tr><td>1176</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>튀김 저당 튀김 원재료명 성분표</td></tr>
+<tr><td>1179</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 육포 원재료명 성분표</td></tr>
+<tr><td>1181</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 액상음료 원재료명 성분표</td></tr>
+<tr><td>1186</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 향신료 원재료명 성분표</td></tr>
+<tr><td>1189</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>91.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 카레 원재료명 성분표</td></tr>
+<tr><td>1194</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>89.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 볶음/비빔라면 원재료명 성분표</td></tr>
+<tr><td>1199</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>89.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 과·채주스 원재료명 성분표</td></tr>
+<tr><td>1201</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 참치 원재료명 성분표</td></tr>
+<tr><td>1204</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>함박스테이크/미트볼 함박스테이크/미트볼 원재료명 성분표</td></tr>
+<tr><td>1206</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>닭가슴살 식품 베이컨 원재료명 성분표</td></tr>
+<tr><td>1182</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 액상음료 원재료명 성분표</td></tr>
+<tr><td>1184</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>땅콩버터 저당 땅콩버터 원재료명 성분표</td></tr>
+<tr><td>1187</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 향신료 원재료명 성분표</td></tr>
+<tr><td>1190</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 카레 원재료명 성분표</td></tr>
+<tr><td>1192</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>88.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>치킨 저당 치킨 원재료명 성분표</td></tr>
+<tr><td>1209</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 분말스프 원재료명 성분표</td></tr>
+<tr><td>1212</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 연어 원재료명 성분표</td></tr>
+<tr><td>1195</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 볶음/비빔라면 원재료명 성분표</td></tr>
+<tr><td>1197</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>전 저당 전 원재료명 성분표</td></tr>
+<tr><td>1200</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 과·채주스 원재료명 성분표</td></tr>
+<tr><td>1215</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 고등어 원재료명 성분표</td></tr>
+<tr><td>1238</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>86.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 액상차 원재료명 성분표</td></tr>
+<tr><td>1202</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>85.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 참치 원재료명 성분표</td></tr>
+<tr><td>1207</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>85.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 육가공 베이컨 원재료명 성분표</td></tr>
+<tr><td>1218</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>84.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 쫄면 원재료명 성분표</td></tr>
+<tr><td>1221</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>84.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 마요네즈 원재료명 성분표</td></tr>
+<tr><td>1210</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>83.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 분말스프 원재료명 성분표</td></tr>
+<tr><td>1213</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>83.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 연어 원재료명 성분표</td></tr>
+<tr><td>1216</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>83.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 고등어 원재료명 성분표</td></tr>
+<tr><td>1239</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>83.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 액상차 원재료명 성분표</td></tr>
+<tr><td>1224</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 자장라면 원재료명 성분표</td></tr>
+<tr><td>1227</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 유함유가공품 원재료명 성분표</td></tr>
+<tr><td>1203</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 참치 원재료명 성분표</td></tr>
+<tr><td>1230</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>육수 육수 원재료명 성분표</td></tr>
+<tr><td>1205</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>함박스테이크/미트볼 저당 함박스테이크/미트볼 원재료명 성분표</td></tr>
+<tr><td>1208</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>82.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 단백질 반찬 베이컨 원재료명 성분표</td></tr>
+<tr><td>1219</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>81.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 쫄면 원재료명 성분표</td></tr>
+<tr><td>1222</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>81.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 마요네즈 원재료명 성분표</td></tr>
+<tr><td>1308</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>81.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 농산가공품 기타 농산가공품 원재료명 성분표</td></tr>
+<tr><td>1211</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 분말스프 원재료명 성분표</td></tr>
+<tr><td>1214</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 연어 원재료명 성분표</td></tr>
+<tr><td>1232</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 알함유가공품 원재료명 성분표</td></tr>
+<tr><td>1235</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 토마토케첩 원재료명 성분표</td></tr>
+<tr><td>1217</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 고등어 원재료명 성분표</td></tr>
+<tr><td>1240</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>80.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 액상차 원재료명 성분표</td></tr>
+<tr><td>1225</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>79.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 자장라면 원재료명 성분표</td></tr>
+<tr><td>1228</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>79.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 유함유가공품 원재료명 성분표</td></tr>
+<tr><td>1241</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 유당분해우유 원재료명 성분표</td></tr>
+<tr><td>1244</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>누룽지 누룽지 원재료명 성분표</td></tr>
+<tr><td>1246</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 강화우유 원재료명 성분표</td></tr>
+<tr><td>1249</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 라이스페이퍼 원재료명 성분표</td></tr>
+<tr><td>1220</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 쫄면 원재료명 성분표</td></tr>
+<tr><td>1223</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 마요네즈 원재료명 성분표</td></tr>
+<tr><td>1252</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>78.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>즉석 피자 즉석 피자 원재료명 성분표</td></tr>
+<tr><td>1233</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>77.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 알함유가공품 원재료명 성분표</td></tr>
+<tr><td>1236</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>77.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 토마토케첩 원재료명 성분표</td></tr>
+<tr><td>1317</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>77.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 농축음료/베이스 원재료명 성분표</td></tr>
+<tr><td>1226</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>76.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 자장라면 원재료명 성분표</td></tr>
+<tr><td>1229</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>76.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 유함유가공품 원재료명 성분표</td></tr>
+<tr><td>1231</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>76.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>육수 저당 육수 원재료명 성분표</td></tr>
+<tr><td>1254</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>76.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 만두 만두피 원재료명 성분표</td></tr>
+<tr><td>1320</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>76.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 즉석 빵 원재료명 성분표</td></tr>
+<tr><td>1242</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>75.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 유당분해우유 원재료명 성분표</td></tr>
+<tr><td>1247</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>75.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 강화우유 원재료명 성분표</td></tr>
+<tr><td>1250</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>75.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 라이스페이퍼 원재료명 성분표</td></tr>
+<tr><td>1309</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>75.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 농산가공품 저당 기타 농산가공품 원재료명 성분표</td></tr>
+<tr><td>1234</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 알함유가공품 원재료명 성분표</td></tr>
+<tr><td>1237</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 토마토케첩 원재료명 성분표</td></tr>
+<tr><td>1257</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1260</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 기타 라면 원재료명 성분표</td></tr>
+<tr><td>1263</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 가공우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1266</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 고춧가루 원재료명 성분표</td></tr>
+<tr><td>1269</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 골뱅이 원재료명 성분표</td></tr>
+<tr><td>1318</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>74.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 농축음료/베이스 원재료명 성분표</td></tr>
+<tr><td>1255</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>73.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 만두 만두피 원재료명 성분표</td></tr>
+<tr><td>1321</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>73.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 즉석 빵 원재료명 성분표</td></tr>
+<tr><td>1323</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>73.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 과·채음료 원재료명 성분표</td></tr>
+<tr><td>1243</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 유당분해우유 원재료명 성분표</td></tr>
+<tr><td>1272</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 꽁치 원재료명 성분표</td></tr>
+<tr><td>1275</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 유크림 원재료명 성분표</td></tr>
+<tr><td>1245</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>누룽지 저당 누룽지 원재료명 성분표</td></tr>
+<tr><td>1278</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 기타 음료 원재료명 성분표</td></tr>
+<tr><td>1248</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 강화우유 원재료명 성분표</td></tr>
+<tr><td>1251</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 라이스페이퍼 원재료명 성분표</td></tr>
+<tr><td>1281</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 땅콩기름(낙화생유) 원재료명 성분표</td></tr>
+<tr><td>1253</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>72.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>즉석 피자 저당 즉석 피자 원재료명 성분표</td></tr>
+<tr><td>1258</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1261</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 기타 라면 원재료명 성분표</td></tr>
+<tr><td>1264</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 가공우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1267</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 고춧가루 원재료명 성분표</td></tr>
+<tr><td>1270</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 골뱅이 원재료명 성분표</td></tr>
+<tr><td>1319</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 농축음료/베이스 원재료명 성분표</td></tr>
+<tr><td>1326</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 초콜릿 원재료명 성분표</td></tr>
+<tr><td>1329</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>71.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 액상커피 원재료명 성분표</td></tr>
+<tr><td>1284</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 분유 원재료명 성분표</td></tr>
+<tr><td>1287</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 전지/탈지분유 원재료명 성분표</td></tr>
+<tr><td>1290</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 버터 원재료명 성분표</td></tr>
+<tr><td>1293</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 수산가공 정어리 원재료명 성분표</td></tr>
+<tr><td>1296</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 그래놀라 기타 시리얼 원재료명 성분표</td></tr>
+<tr><td>1299</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 그래놀라 시리얼바/에너지바/영양바 원재료명 성분표</td></tr>
+<tr><td>1256</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 만두 만두피 원재료명 성분표</td></tr>
+<tr><td>1302</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 연유 원재료명 성분표</td></tr>
+<tr><td>1305</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 조미료 소금 원재료명 성분표</td></tr>
+<tr><td>1322</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 즉석 빵 원재료명 성분표</td></tr>
+<tr><td>1324</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>70.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 과·채음료 원재료명 성분표</td></tr>
+<tr><td>1273</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>69.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 꽁치 원재료명 성분표</td></tr>
+<tr><td>1276</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>69.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 유크림 원재료명 성분표</td></tr>
+<tr><td>1279</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>69.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 기타 음료 원재료명 성분표</td></tr>
+<tr><td>1282</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>69.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 땅콩기름(낙화생유) 원재료명 성분표</td></tr>
+<tr><td>1332</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>69.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 기타 빵 원재료명 성분표</td></tr>
+<tr><td>1310</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 크림발효유 원재료명 성분표</td></tr>
+<tr><td>1259</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1313</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>감자튀김 감자튀김 원재료명 성분표</td></tr>
+<tr><td>1262</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 기타 라면 원재료명 성분표</td></tr>
+<tr><td>1265</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 가공우유(멸균) 원재료명 성분표</td></tr>
+<tr><td>1268</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 고춧가루 원재료명 성분표</td></tr>
+<tr><td>1271</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 골뱅이 원재료명 성분표</td></tr>
+<tr><td>1327</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 초콜릿 원재료명 성분표</td></tr>
+<tr><td>1330</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 액상커피 원재료명 성분표</td></tr>
+<tr><td>1335</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>68.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>잼 잼 원재료명 성분표</td></tr>
+<tr><td>1285</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 분유 원재료명 성분표</td></tr>
+<tr><td>1288</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 전지/탈지분유 원재료명 성분표</td></tr>
+<tr><td>1291</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 버터 원재료명 성분표</td></tr>
+<tr><td>1294</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 어묵 정어리 원재료명 성분표</td></tr>
+<tr><td>1297</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 시리얼 기타 시리얼 원재료명 성분표</td></tr>
+<tr><td>1300</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 시리얼 시리얼바/에너지바/영양바 원재료명 성분표</td></tr>
+<tr><td>1303</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 연유 원재료명 성분표</td></tr>
+<tr><td>1306</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저염 조미료 소금 원재료명 성분표</td></tr>
+<tr><td>1325</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>67.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 과·채음료 원재료명 성분표</td></tr>
+<tr><td>1274</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 꽁치 원재료명 성분표</td></tr>
+<tr><td>1277</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 유크림 원재료명 성분표</td></tr>
+<tr><td>1280</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 기타 음료 원재료명 성분표</td></tr>
+<tr><td>1283</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 땅콩기름(낙화생유) 원재료명 성분표</td></tr>
+<tr><td>1315</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>성장기 즉석식품 성장기 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1333</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>66.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 기타 빵 원재료명 성분표</td></tr>
+<tr><td>1311</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>65.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 크림발효유 원재료명 성분표</td></tr>
+<tr><td>1328</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>65.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 초콜릿 원재료명 성분표</td></tr>
+<tr><td>1331</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>65.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 액상커피 원재료명 성분표</td></tr>
+<tr><td>1337</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>65.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 탄산음료 원재료명 성분표</td></tr>
+<tr><td>1340</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>65.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타가공품 기타가공품 원재료명 성분표</td></tr>
+<tr><td>1286</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 분유 원재료명 성분표</td></tr>
+<tr><td>1289</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 전지/탈지분유 원재료명 성분표</td></tr>
+<tr><td>1292</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 버터 원재료명 성분표</td></tr>
+<tr><td>1295</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 해산물 간편식 정어리 원재료명 성분표</td></tr>
+<tr><td>1298</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 곡물식 기타 시리얼 원재료명 성분표</td></tr>
+<tr><td>1301</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 곡물식 시리얼바/에너지바/영양바 원재료명 성분표</td></tr>
+<tr><td>1304</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 연유 원재료명 성분표</td></tr>
+<tr><td>1307</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 양념 소금 원재료명 성분표</td></tr>
+<tr><td>1342</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>64.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>채소가공품 채소가공품 원재료명 성분표</td></tr>
+<tr><td>1334</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>63.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 기타 빵 원재료명 성분표</td></tr>
+<tr><td>1347</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>63.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>당류가공품 당류가공품 원재료명 성분표</td></tr>
+<tr><td>1349</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>63.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>절임식품 절임식품 원재료명 성분표</td></tr>
+<tr><td>1312</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 크림발효유 원재료명 성분표</td></tr>
+<tr><td>1314</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>감자튀김 저당 감자튀김 원재료명 성분표</td></tr>
+<tr><td>1336</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>잼 저당 잼 원재료명 성분표</td></tr>
+<tr><td>1338</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 탄산음료 원재료명 성분표</td></tr>
+<tr><td>1351</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 일반과자 원재료명 성분표</td></tr>
+<tr><td>1354</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>62.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 비스킷/쿠키/크래커 원재료명 성분표</td></tr>
+<tr><td>1357</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>61.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과일가공품 과일가공품 원재료명 성분표</td></tr>
+<tr><td>1316</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>60.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>성장기 즉석식품 저당 성장기 즉석식품 원재료명 성분표</td></tr>
+<tr><td>1339</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 탄산음료 원재료명 성분표</td></tr>
+<tr><td>1341</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타가공품 저당 기타가공품 원재료명 성분표</td></tr>
+<tr><td>1352</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 일반과자 원재료명 성분표</td></tr>
+<tr><td>1355</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 비스킷/쿠키/크래커 원재료명 성분표</td></tr>
+<tr><td>1359</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 올리브유 원재료명 성분표</td></tr>
+<tr><td>1362</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 견과류 원재료명 성분표</td></tr>
+<tr><td>1365</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>59.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 원두/원두분말 원재료명 성분표</td></tr>
+<tr><td>1343</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>58.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>채소가공품 저당 채소가공품 원재료명 성분표</td></tr>
+<tr><td>1348</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>57.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>당류가공품 저당 당류가공품 원재료명 성분표</td></tr>
+<tr><td>1350</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>57.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>절임식품 저당 절임식품 원재료명 성분표</td></tr>
+<tr><td>1368</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>57.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>배추김치 배추김치 원재료명 성분표</td></tr>
+<tr><td>1353</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 일반과자 원재료명 성분표</td></tr>
+<tr><td>1356</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 비스킷/쿠키/크래커 원재료명 성분표</td></tr>
+<tr><td>1360</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 올리브유 원재료명 성분표</td></tr>
+<tr><td>1363</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 견과류 원재료명 성분표</td></tr>
+<tr><td>1366</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 원두/원두분말 원재료명 성분표</td></tr>
+<tr><td>1370</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 케이크 원재료명 성분표</td></tr>
+<tr><td>1373</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>56.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 조림 기타 조림 원재료명 성분표</td></tr>
+<tr><td>1358</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>55.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과일가공품 저당 과일가공품 원재료명 성분표</td></tr>
+<tr><td>1344</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>54.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤약면 라면과자 원재료명 성분표</td></tr>
+<tr><td>1375</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>54.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>환자용 식품 환자용 식품 원재료명 성분표</td></tr>
+<tr><td>1361</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>53.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 올리브유 원재료명 성분표</td></tr>
+<tr><td>1364</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>53.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 견과류 원재료명 성분표</td></tr>
+<tr><td>1367</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>53.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 원두/원두분말 원재료명 성분표</td></tr>
+<tr><td>1371</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>53.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 케이크 원재료명 성분표</td></tr>
+<tr><td>1377</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>52.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 향미유 원재료명 성분표</td></tr>
+<tr><td>1380</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>52.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 인삼/홍삼음료 원재료명 성분표</td></tr>
+<tr><td>1345</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>51.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 면요리 라면과자 원재료명 성분표</td></tr>
+<tr><td>1369</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>51.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>배추김치 저당 배추김치 원재료명 성분표</td></tr>
+<tr><td>1383</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>51.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 두부 원재료명 성분표</td></tr>
+<tr><td>1386</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>51.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>서류가공품 서류가공품 원재료명 성분표</td></tr>
+<tr><td>1388</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>51.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>두류가공품 두류가공품 원재료명 성분표</td></tr>
+<tr><td>1372</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>50.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 케이크 원재료명 성분표</td></tr>
+<tr><td>1374</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>50.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타 조림 저당 기타 조림 원재료명 성분표</td></tr>
+<tr><td>1378</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>49.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 향미유 원재료명 성분표</td></tr>
+<tr><td>1381</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>49.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 인삼/홍삼음료 원재료명 성분표</td></tr>
+<tr><td>1390</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>49.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 발효음료 원재료명 성분표</td></tr>
+<tr><td>1346</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>48.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저탄수 면식품 라면과자 원재료명 성분표</td></tr>
+<tr><td>1376</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>48.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>환자용 식품 저당 환자용 식품 원재료명 성분표</td></tr>
+<tr><td>1384</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>48.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 두부 원재료명 성분표</td></tr>
+<tr><td>1393</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>47.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>간장 간장 원재료명 성분표</td></tr>
+<tr><td>1379</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 향미유 원재료명 성분표</td></tr>
+<tr><td>1382</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 인삼/홍삼음료 원재료명 성분표</td></tr>
+<tr><td>1391</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 발효음료 원재료명 성분표</td></tr>
+<tr><td>1395</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 그래놀라 시리얼 원재료명 성분표</td></tr>
+<tr><td>1398</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 참기름 원재료명 성분표</td></tr>
+<tr><td>1401</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 고형차 원재료명 성분표</td></tr>
+<tr><td>1404</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 견과류 가공품 원재료명 성분표</td></tr>
+<tr><td>1407</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>46.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>혼합장 혼합장 원재료명 성분표</td></tr>
+<tr><td>1385</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 두부 원재료명 성분표</td></tr>
+<tr><td>1387</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>서류가공품 저당 서류가공품 원재료명 성분표</td></tr>
+<tr><td>1389</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>두류가공품 저당 두류가공품 원재료명 성분표</td></tr>
+<tr><td>1409</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타김치 기타김치 원재료명 성분표</td></tr>
+<tr><td>1411</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 들기름 원재료명 성분표</td></tr>
+<tr><td>1414</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>45.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고추장 고추장 원재료명 성분표</td></tr>
+<tr><td>1416</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>44.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 젤리 원재료명 성분표</td></tr>
+<tr><td>1419</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>44.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 아이스크림 원재료명 성분표</td></tr>
+<tr><td>1422</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>44.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 인스턴트커피 원재료명 성분표</td></tr>
+<tr><td>1425</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>44.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>단무지/피클 단무지/피클 원재료명 성분표</td></tr>
+<tr><td>1392</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 발효음료 원재료명 성분표</td></tr>
+<tr><td>1396</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 시리얼 시리얼 원재료명 성분표</td></tr>
+<tr><td>1399</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 참기름 원재료명 성분표</td></tr>
+<tr><td>1402</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 고형차 원재료명 성분표</td></tr>
+<tr><td>1405</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 견과류 가공품 원재료명 성분표</td></tr>
+<tr><td>1427</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 떡 원재료명 성분표</td></tr>
+<tr><td>1430</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>43.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 식물성유지 원재료명 성분표</td></tr>
+<tr><td>1412</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>42.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 들기름 원재료명 성분표</td></tr>
+<tr><td>1433</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>42.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과·채당절임 과·채당절임 원재료명 성분표</td></tr>
+<tr><td>1435</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>42.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>된장 된장 원재료명 성분표</td></tr>
+<tr><td>1394</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>간장 저당 간장 원재료명 성분표</td></tr>
+<tr><td>1417</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 젤리 원재료명 성분표</td></tr>
+<tr><td>1420</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 아이스크림 원재료명 성분표</td></tr>
+<tr><td>1423</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 인스턴트커피 원재료명 성분표</td></tr>
+<tr><td>1437</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 초콜릿과자 원재료명 성분표</td></tr>
+<tr><td>1440</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>시럽 시럽 원재료명 성분표</td></tr>
+<tr><td>1442</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>41.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>달걀/메추리알 달걀/메추리알 원재료명 성분표</td></tr>
+<tr><td>1397</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 곡물식 시리얼 원재료명 성분표</td></tr>
+<tr><td>1400</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 참기름 원재료명 성분표</td></tr>
+<tr><td>1403</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 고형차 원재료명 성분표</td></tr>
+<tr><td>1406</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 견과류 가공품 원재료명 성분표</td></tr>
+<tr><td>1408</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>혼합장 저당 혼합장 원재료명 성분표</td></tr>
+<tr><td>1428</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 떡 원재료명 성분표</td></tr>
+<tr><td>1431</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 식물성유지 원재료명 성분표</td></tr>
+<tr><td>1444</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 유산균음료 원재료명 성분표</td></tr>
+<tr><td>1447</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>40.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>부침가루/튀김가루/믹스 부침가루/튀김가루/믹스 원재료명 성분표</td></tr>
+<tr><td>1410</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>39.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>기타김치 저당 기타김치 원재료명 성분표</td></tr>
+<tr><td>1413</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>39.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 들기름 원재료명 성분표</td></tr>
+<tr><td>1415</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>39.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고추장 저당 고추장 원재료명 성분표</td></tr>
+<tr><td>1449</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>39.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>장아찌 장아찌 원재료명 성분표</td></tr>
+<tr><td>1418</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 젤리 원재료명 성분표</td></tr>
+<tr><td>1421</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 아이스크림 원재료명 성분표</td></tr>
+<tr><td>1424</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 인스턴트커피 원재료명 성분표</td></tr>
+<tr><td>1426</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>단무지/피클 저당 단무지/피클 원재료명 성분표</td></tr>
+<tr><td>1438</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 초콜릿과자 원재료명 성분표</td></tr>
+<tr><td>1451</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>38.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 사탕 원재료명 성분표</td></tr>
+<tr><td>1454</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>37.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 혼합식용유 원재료명 성분표</td></tr>
+<tr><td>1429</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>37.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 떡 원재료명 성분표</td></tr>
+<tr><td>1432</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>37.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 식물성유지 원재료명 성분표</td></tr>
+<tr><td>1445</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>37.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 유산균음료 원재료명 성분표</td></tr>
+<tr><td>1434</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>36.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과·채당절임 저당 과·채당절임 원재료명 성분표</td></tr>
+<tr><td>1436</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>36.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>된장 저당 된장 원재료명 성분표</td></tr>
+<tr><td>1460</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>36.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 아이스밀크 원재료명 성분표</td></tr>
+<tr><td>1457</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>35.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 묵 원재료명 성분표</td></tr>
+<tr><td>1439</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>35.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 초콜릿과자 원재료명 성분표</td></tr>
+<tr><td>1441</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>35.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>시럽 저당 시럽 원재료명 성분표</td></tr>
+<tr><td>1443</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>35.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>달걀/메추리알 저당 달걀/메추리알 원재료명 성분표</td></tr>
+<tr><td>1452</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>35.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 사탕 원재료명 성분표</td></tr>
+<tr><td>1455</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>34.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 혼합식용유 원재료명 성분표</td></tr>
+<tr><td>1446</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>34.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 유산균음료 원재료명 성분표</td></tr>
+<tr><td>1448</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>34.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>부침가루/튀김가루/믹스 저당 부침가루/튀김가루/믹스 원재료명 성분표</td></tr>
+<tr><td>1463</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>34.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>밀가루 밀가루 원재료명 성분표</td></tr>
+<tr><td>1465</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>33.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 탄산수 원재료명 성분표</td></tr>
+<tr><td>1468</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>33.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 유부 원재료명 성분표</td></tr>
+<tr><td>1450</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>33.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>장아찌 저당 장아찌 원재료명 성분표</td></tr>
+<tr><td>1461</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>33.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 아이스밀크 원재료명 성분표</td></tr>
+<tr><td>1458</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>32.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 묵 원재료명 성분표</td></tr>
+<tr><td>1453</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>32.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 사탕 원재료명 성분표</td></tr>
+<tr><td>1485</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>32.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 빙과 원재료명 성분표</td></tr>
+<tr><td>1471</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>31.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 식물성크림 원재료명 성분표</td></tr>
+<tr><td>1456</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>31.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 혼합식용유 원재료명 성분표</td></tr>
+<tr><td>1474</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>31.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 해바라기씨유 원재료명 성분표</td></tr>
+<tr><td>1466</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>30.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 탄산수 원재료명 성분표</td></tr>
+<tr><td>1469</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>30.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 유부 원재료명 성분표</td></tr>
+<tr><td>1462</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>30.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 아이스밀크 원재료명 성분표</td></tr>
+<tr><td>1459</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>29.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 묵 원재료명 성분표</td></tr>
+<tr><td>1477</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>29.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 기타 두부 가공품 원재료명 성분표</td></tr>
+<tr><td>1486</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>29.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 빙과 원재료명 성분표</td></tr>
+<tr><td>1472</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>28.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 식물성크림 원재료명 성분표</td></tr>
+<tr><td>1475</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>28.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 해바라기씨유 원재료명 성분표</td></tr>
+<tr><td>1464</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>28.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>밀가루 저당 밀가루 원재료명 성분표</td></tr>
+<tr><td>1467</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>27.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 탄산수 원재료명 성분표</td></tr>
+<tr><td>1480</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>27.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 유채씨유/카놀라유 원재료명 성분표</td></tr>
+<tr><td>1483</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>27.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>물김치 물김치 원재료명 성분표</td></tr>
+<tr><td>1470</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>27.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 유부 원재료명 성분표</td></tr>
+<tr><td>1542</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>27.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 스낵과자 원재료명 성분표</td></tr>
+<tr><td>1478</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>26.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 기타 두부 가공품 원재료명 성분표</td></tr>
+<tr><td>1487</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>26.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 빙과 원재료명 성분표</td></tr>
+<tr><td>1488</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>옥수수 옥수수 원재료명 성분표</td></tr>
+<tr><td>1490</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 콩식품 기타 묵 가공품 원재료명 성분표</td></tr>
+<tr><td>1473</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 식물성크림 원재료명 성분표</td></tr>
+<tr><td>1476</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 해바라기씨유 원재료명 성분표</td></tr>
+<tr><td>1493</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 기타 식용유지 원재료명 성분표</td></tr>
+<tr><td>1496</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>추출가공식품 추출가공식품 원재료명 성분표</td></tr>
+<tr><td>1498</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>김칫속 김칫속 원재료명 성분표</td></tr>
+<tr><td>1573</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 기타 코코아가공품 원재료명 성분표</td></tr>
+<tr><td>1576</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>25.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 샤베트 원재료명 성분표</td></tr>
+<tr><td>1481</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>24.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 유채씨유/카놀라유 원재료명 성분표</td></tr>
+<tr><td>1543</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>24.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 스낵과자 원재료명 성분표</td></tr>
+<tr><td>1500</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>23.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>건조과일(건과류) 건조과일(건과류) 원재료명 성분표</td></tr>
+<tr><td>1502</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>23.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 마가린 원재료명 성분표</td></tr>
+<tr><td>1505</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>23.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 아보카도오일 원재료명 성분표</td></tr>
+<tr><td>1479</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>23.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 기타 두부 가공품 원재료명 성분표</td></tr>
+<tr><td>1491</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>22.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 두부식품 기타 묵 가공품 원재료명 성분표</td></tr>
+<tr><td>1494</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>22.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 기타 식용유지 원재료명 성분표</td></tr>
+<tr><td>1574</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>22.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 기타 코코아가공품 원재료명 성분표</td></tr>
+<tr><td>1577</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>22.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 샤베트 원재료명 성분표</td></tr>
+<tr><td>1601</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>22.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 기타 사탕 원재료명 성분표</td></tr>
+<tr><td>1482</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 유채씨유/카놀라유 원재료명 성분표</td></tr>
+<tr><td>1508</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 포도씨유 원재료명 성분표</td></tr>
+<tr><td>1511</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 침출차 원재료명 성분표</td></tr>
+<tr><td>1514</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 미강유(현미유) 원재료명 성분표</td></tr>
+<tr><td>1517</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>물엿 물엿 원재료명 성분표</td></tr>
+<tr><td>1519</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 청국장 원재료명 성분표</td></tr>
+<tr><td>1484</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>물김치 저당 물김치 원재료명 성분표</td></tr>
+<tr><td>1522</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>춘장 춘장 원재료명 성분표</td></tr>
+<tr><td>1544</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>21.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 스낵과자 원재료명 성분표</td></tr>
+<tr><td>1503</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>20.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 마가린 원재료명 성분표</td></tr>
+<tr><td>1506</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>20.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 아보카도오일 원재료명 성분표</td></tr>
+<tr><td>1604</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>20.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 전통과자 원재료명 성분표</td></tr>
+<tr><td>1607</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>20.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 반제품/생지 원재료명 성분표</td></tr>
+<tr><td>1489</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>옥수수 저당 옥수수 원재료명 성분표</td></tr>
+<tr><td>1492</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>견과 단백질 간식 기타 묵 가공품 원재료명 성분표</td></tr>
+<tr><td>1524</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>제로 음료 효모음료 원재료명 성분표</td></tr>
+<tr><td>1495</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 기타 식용유지 원재료명 성분표</td></tr>
+<tr><td>1527</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>냉동과일 냉동과일 원재료명 성분표</td></tr>
+<tr><td>1529</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>메주 메주 원재료명 성분표</td></tr>
+<tr><td>1531</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 옥수수기름(옥배유) 원재료명 성분표</td></tr>
+<tr><td>1497</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>추출가공식품 저당 추출가공식품 원재료명 성분표</td></tr>
+<tr><td>1499</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>김칫속 저당 김칫속 원재료명 성분표</td></tr>
+<tr><td>1534</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 쇼트닝 원재료명 성분표</td></tr>
+<tr><td>1575</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 기타 코코아가공품 원재료명 성분표</td></tr>
+<tr><td>1578</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 샤베트 원재료명 성분표</td></tr>
+<tr><td>1602</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>19.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 기타 사탕 원재료명 성분표</td></tr>
+<tr><td>1509</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>18.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 포도씨유 원재료명 성분표</td></tr>
+<tr><td>1512</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>18.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 침출차 원재료명 성분표</td></tr>
+<tr><td>1515</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>18.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 미강유(현미유) 원재료명 성분표</td></tr>
+<tr><td>1520</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>18.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 청국장 원재료명 성분표</td></tr>
+<tr><td>1501</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>건조과일(건과류) 저당 건조과일(건과류) 원재료명 성분표</td></tr>
+<tr><td>1537</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 국탕 간편식 설탕 원재료명 성분표</td></tr>
+<tr><td>1504</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 마가린 원재료명 성분표</td></tr>
+<tr><td>1507</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 아보카도오일 원재료명 성분표</td></tr>
+<tr><td>1540</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>나토 나토 원재료명 성분표</td></tr>
+<tr><td>1605</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 전통과자 원재료명 성분표</td></tr>
+<tr><td>1608</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 반제품/생지 원재료명 성분표</td></tr>
+<tr><td>1610</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>17.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 마카롱/다쿠아즈 원재료명 성분표</td></tr>
+<tr><td>1525</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>16.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 음료 효모음료 원재료명 성분표</td></tr>
+<tr><td>1532</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>16.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 옥수수기름(옥배유) 원재료명 성분표</td></tr>
+<tr><td>1535</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>16.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 쇼트닝 원재료명 성분표</td></tr>
+<tr><td>1603</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>16.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 기타 사탕 원재료명 성분표</td></tr>
+<tr><td>1613</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>16.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 피자 원재료명 성분표</td></tr>
+<tr><td>1510</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 포도씨유 원재료명 성분표</td></tr>
+<tr><td>1513</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 침출차 원재료명 성분표</td></tr>
+<tr><td>1545</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 팜유 원재료명 성분표</td></tr>
+<tr><td>1516</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 미강유(현미유) 원재료명 성분표</td></tr>
+<tr><td>1518</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>물엿 저당 물엿 원재료명 성분표</td></tr>
+<tr><td>1521</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 청국장 원재료명 성분표</td></tr>
+<tr><td>1523</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>춘장 저당 춘장 원재료명 성분표</td></tr>
+<tr><td>1548</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 고추씨기름 원재료명 성분표</td></tr>
+<tr><td>1616</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 파이/타르트 원재료명 성분표</td></tr>
+<tr><td>1619</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 도넛 원재료명 성분표</td></tr>
+<tr><td>1622</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>15.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 페이스트리 원재료명 성분표</td></tr>
+<tr><td>1538</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>14.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 국탕 설탕 원재료명 성분표</td></tr>
+<tr><td>1606</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>14.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 전통과자 원재료명 성분표</td></tr>
+<tr><td>1609</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>14.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 반제품/생지 원재료명 성분표</td></tr>
+<tr><td>1611</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>14.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 마카롱/다쿠아즈 원재료명 성분표</td></tr>
+<tr><td>1625</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>14.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 강냉이/팝콘 원재료명 성분표</td></tr>
+<tr><td>1551</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 유제품 모조치즈 원재료명 성분표</td></tr>
+<tr><td>1554</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 홍화유 원재료명 성분표</td></tr>
+<tr><td>1526</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 음료 효모음료 원재료명 성분표</td></tr>
+<tr><td>1557</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>식용곤충 식용곤충 원재료명 성분표</td></tr>
+<tr><td>1559</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 어유 원재료명 성분표</td></tr>
+<tr><td>1528</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>냉동과일 저당 냉동과일 원재료명 성분표</td></tr>
+<tr><td>1530</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>메주 저당 메주 원재료명 성분표</td></tr>
+<tr><td>1562</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>덩어리엿 덩어리엿 원재료명 성분표</td></tr>
+<tr><td>1564</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤충가공식품 곤충가공식품 원재료명 성분표</td></tr>
+<tr><td>1566</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>맥주 맥주 원재료명 성분표</td></tr>
+<tr><td>1533</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 옥수수기름(옥배유) 원재료명 성분표</td></tr>
+<tr><td>1536</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 쇼트닝 원재료명 성분표</td></tr>
+<tr><td>1568</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 식용돈지 원재료명 성분표</td></tr>
+<tr><td>1571</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과실주 과실주 원재료명 성분표</td></tr>
+<tr><td>1614</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 피자 원재료명 성분표</td></tr>
+<tr><td>1634</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 식빵 원재료명 성분표</td></tr>
+<tr><td>1637</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 베이글 원재료명 성분표</td></tr>
+<tr><td>1546</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>12.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 팜유 원재료명 성분표</td></tr>
+<tr><td>1549</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>12.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 고추씨기름 원재료명 성분표</td></tr>
+<tr><td>1617</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>12.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 파이/타르트 원재료명 성분표</td></tr>
+<tr><td>1620</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>12.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 도넛 원재료명 성분표</td></tr>
+<tr><td>1623</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>12.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 페이스트리 원재료명 성분표</td></tr>
+<tr><td>1539</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 국물식 설탕 원재료명 성분표</td></tr>
+<tr><td>1579</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 로열젤리제품 원재료명 성분표</td></tr>
+<tr><td>1582</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>소주 소주 원재료명 성분표</td></tr>
+<tr><td>1584</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>증류주 증류주 원재료명 성분표</td></tr>
+<tr><td>1541</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>나토 저당 나토 원재료명 성분표</td></tr>
+<tr><td>1586</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>호박씨분말 호박씨분말 원재료명 성분표</td></tr>
+<tr><td>1588</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>좋은 지방 오일 홍화씨유 원재료명 성분표</td></tr>
+<tr><td>1591</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고량주 고량주 원재료명 성분표</td></tr>
+<tr><td>1593</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>리큐르 리큐르 원재료명 성분표</td></tr>
+<tr><td>1595</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>막걸리 막걸리 원재료명 성분표</td></tr>
+<tr><td>1597</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>위스키 위스키 원재료명 성분표</td></tr>
+<tr><td>1599</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>청주 청주 원재료명 성분표</td></tr>
+<tr><td>1612</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 마카롱/다쿠아즈 원재료명 성분표</td></tr>
+<tr><td>1626</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>11.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 강냉이/팝콘 원재료명 성분표</td></tr>
+<tr><td>1552</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 유제품 모조치즈 원재료명 성분표</td></tr>
+<tr><td>1555</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 홍화유 원재료명 성분표</td></tr>
+<tr><td>1560</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 어유 원재료명 성분표</td></tr>
+<tr><td>1569</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 식용돈지 원재료명 성분표</td></tr>
+<tr><td>1615</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 피자 원재료명 성분표</td></tr>
+<tr><td>1635</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 식빵 원재료명 성분표</td></tr>
+<tr><td>1638</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>10.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 베이글 원재료명 성분표</td></tr>
+<tr><td>1547</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.5</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 팜유 원재료명 성분표</td></tr>
+<tr><td>1628</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 초코파이 원재료명 성분표</td></tr>
+<tr><td>1550</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 고추씨기름 원재료명 성분표</td></tr>
+<tr><td>1618</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 파이/타르트 원재료명 성분표</td></tr>
+<tr><td>1621</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 도넛 원재료명 성분표</td></tr>
+<tr><td>1624</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 페이스트리 원재료명 성분표</td></tr>
+<tr><td>1631</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 코코아 원재료명 성분표</td></tr>
+<tr><td>1643</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 카스텔라 원재료명 성분표</td></tr>
+<tr><td>1646</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 크림빵 원재료명 성분표</td></tr>
+<tr><td>1580</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>8.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 로열젤리제품 원재료명 성분표</td></tr>
+<tr><td>1589</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>8.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>요리용 건강 오일 홍화씨유 원재료명 성분표</td></tr>
+<tr><td>1627</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>8.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 강냉이/팝콘 원재료명 성분표</td></tr>
+<tr><td>1649</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>8.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 바게트/치아바타 원재료명 성분표</td></tr>
+<tr><td>1652</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>8.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 핫도그 원재료명 성분표</td></tr>
+<tr><td>1553</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무가당 유제품 모조치즈 원재료명 성분표</td></tr>
+<tr><td>1556</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 홍화유 원재료명 성분표</td></tr>
+<tr><td>1558</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>식용곤충 저당 식용곤충 원재료명 성분표</td></tr>
+<tr><td>1561</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 어유 원재료명 성분표</td></tr>
+<tr><td>1563</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>덩어리엿 저당 덩어리엿 원재료명 성분표</td></tr>
+<tr><td>1565</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>곤충가공식품 저당 곤충가공식품 원재료명 성분표</td></tr>
+<tr><td>1567</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>맥주 저당 맥주 원재료명 성분표</td></tr>
+<tr><td>1570</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 식용돈지 원재료명 성분표</td></tr>
+<tr><td>1572</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>과실주 저당 과실주 원재료명 성분표</td></tr>
+<tr><td>1636</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 식빵 원재료명 성분표</td></tr>
+<tr><td>1639</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 베이글 원재료명 성분표</td></tr>
+<tr><td>1629</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 초코파이 원재료명 성분표</td></tr>
+<tr><td>1632</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 코코아 원재료명 성분표</td></tr>
+<tr><td>1644</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 카스텔라 원재료명 성분표</td></tr>
+<tr><td>1647</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 크림빵 원재료명 성분표</td></tr>
+<tr><td>1655</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 휘낭시에 원재료명 성분표</td></tr>
+<tr><td>1581</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 로열젤리제품 원재료명 성분표</td></tr>
+<tr><td>1583</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>소주 저당 소주 원재료명 성분표</td></tr>
+<tr><td>1585</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>증류주 저당 증류주 원재료명 성분표</td></tr>
+<tr><td>1587</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>호박씨분말 저당 호박씨분말 원재료명 성분표</td></tr>
+<tr><td>1590</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 오일 홍화씨유 원재료명 성분표</td></tr>
+<tr><td>1592</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고량주 저당 고량주 원재료명 성분표</td></tr>
+<tr><td>1594</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>리큐르 저당 리큐르 원재료명 성분표</td></tr>
+<tr><td>1596</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>막걸리 저당 막걸리 원재료명 성분표</td></tr>
+<tr><td>1598</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>위스키 저당 위스키 원재료명 성분표</td></tr>
+<tr><td>1600</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>청주 저당 청주 원재료명 성분표</td></tr>
+<tr><td>1650</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 바게트/치아바타 원재료명 성분표</td></tr>
+<tr><td>1653</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 핫도그 원재료명 성분표</td></tr>
+<tr><td>1661</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 웨이퍼 원재료명 성분표</td></tr>
+<tr><td>1664</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>4.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 스콘 원재료명 성분표</td></tr>
+<tr><td>1630</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 초코파이 원재료명 성분표</td></tr>
+<tr><td>1633</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 코코아 원재료명 성분표</td></tr>
+<tr><td>1645</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 카스텔라 원재료명 성분표</td></tr>
+<tr><td>1648</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 크림빵 원재료명 성분표</td></tr>
+<tr><td>1656</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 휘낭시에 원재료명 성분표</td></tr>
+<tr><td>1667</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 마들렌 원재료명 성분표</td></tr>
+<tr><td>1670</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 양갱 원재료명 성분표</td></tr>
+<tr><td>1673</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 곡물빵 원재료명 성분표</td></tr>
+<tr><td>1651</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 바게트/치아바타 원재료명 성분표</td></tr>
+<tr><td>1654</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 핫도그 원재료명 성분표</td></tr>
+<tr><td>1662</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 웨이퍼 원재료명 성분표</td></tr>
+<tr><td>1676</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 캐러멜 원재료명 성분표</td></tr>
+<tr><td>1640</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>1.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 빵가루 원재료명 성분표</td></tr>
+<tr><td>1665</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 스콘 원재료명 성분표</td></tr>
+<tr><td>1679</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 팬케이크/크레이프 원재료명 성분표</td></tr>
+<tr><td>1682</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 머핀 원재료명 성분표</td></tr>
+<tr><td>1685</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 호빵/찐빵 원재료명 성분표</td></tr>
+<tr><td>1657</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 휘낭시에 원재료명 성분표</td></tr>
+<tr><td>1668</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 마들렌 원재료명 성분표</td></tr>
+<tr><td>1671</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 양갱 원재료명 성분표</td></tr>
+<tr><td>1674</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 곡물빵 원재료명 성분표</td></tr>
+<tr><td>1688</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 소금빵 원재료명 성분표</td></tr>
+<tr><td>1691</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>0.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 마시멜로 원재료명 성분표</td></tr>
+<tr><td>1663</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 웨이퍼 원재료명 성분표</td></tr>
+<tr><td>1677</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 캐러멜 원재료명 성분표</td></tr>
+<tr><td>1694</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-1.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 풀빵 원재료명 성분표</td></tr>
+<tr><td>1641</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-1.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 빵가루 원재료명 성분표</td></tr>
+<tr><td>1666</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 스콘 원재료명 성분표</td></tr>
+<tr><td>1680</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 팬케이크/크레이프 원재료명 성분표</td></tr>
+<tr><td>1683</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 머핀 원재료명 성분표</td></tr>
+<tr><td>1686</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 호빵/찐빵 원재료명 성분표</td></tr>
+<tr><td>1697</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 호떡 원재료명 성분표</td></tr>
+<tr><td>1700</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-2.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 단팥빵 원재료명 성분표</td></tr>
+<tr><td>1669</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 마들렌 원재료명 성분표</td></tr>
+<tr><td>1672</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 양갱 원재료명 성분표</td></tr>
+<tr><td>1675</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 곡물빵 원재료명 성분표</td></tr>
+<tr><td>1689</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 소금빵 원재료명 성분표</td></tr>
+<tr><td>1692</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-3.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 마시멜로 원재료명 성분표</td></tr>
+<tr><td>1678</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-4.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 캐러멜 원재료명 성분표</td></tr>
+<tr><td>1695</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-4.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 풀빵 원재료명 성분표</td></tr>
+<tr><td>1703</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-4.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 만쥬 원재료명 성분표</td></tr>
+<tr><td>1642</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-4.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 빵가루 원재료명 성분표</td></tr>
+<tr><td>1706</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-4.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 소보로빵 원재료명 성분표</td></tr>
+<tr><td>1681</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 팬케이크/크레이프 원재료명 성분표</td></tr>
+<tr><td>1684</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 머핀 원재료명 성분표</td></tr>
+<tr><td>1687</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-5.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 호빵/찐빵 원재료명 성분표</td></tr>
+<tr><td>1698</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-5.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 호떡 원재료명 성분표</td></tr>
+<tr><td>1701</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-5.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 단팥빵 원재료명 성분표</td></tr>
+<tr><td>1690</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 소금빵 원재료명 성분표</td></tr>
+<tr><td>1693</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 마시멜로 원재료명 성분표</td></tr>
+<tr><td>1709</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-6.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 모닝빵 원재료명 성분표</td></tr>
+<tr><td>1712</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-6.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 토스트/샌드위치 원재료명 성분표</td></tr>
+<tr><td>1658</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-6.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>무설탕 간식 코코아매스 원재료명 성분표</td></tr>
+<tr><td>1715</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 브라우니 원재료명 성분표</td></tr>
+<tr><td>1696</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-7.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 풀빵 원재료명 성분표</td></tr>
+<tr><td>1704</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-7.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 만쥬 원재료명 성분표</td></tr>
+<tr><td>1707</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-7.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 소보로빵 원재료명 성분표</td></tr>
+<tr><td>1699</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-8.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 호떡 원재료명 성분표</td></tr>
+<tr><td>1718</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-8.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 푸딩 원재료명 성분표</td></tr>
+<tr><td>1721</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-8.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 호두과자 원재료명 성분표</td></tr>
+<tr><td>1702</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-8.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 단팥빵 원재료명 성분표</td></tr>
+<tr><td>1710</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-9.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 모닝빵 원재료명 성분표</td></tr>
+<tr><td>1713</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-9.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 토스트/샌드위치 원재료명 성분표</td></tr>
+<tr><td>1659</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-9.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 젤리 코코아매스 원재료명 성분표</td></tr>
+<tr><td>1716</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-10.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 브라우니 원재료명 성분표</td></tr>
+<tr><td>1724</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-10.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 또띠아/난 원재료명 성분표</td></tr>
+<tr><td>1705</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-10.4</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 만쥬 원재료명 성분표</td></tr>
+<tr><td>1727</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-10.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 크로켓 원재료명 성분표</td></tr>
+<tr><td>1708</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-10.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 소보로빵 원재료명 성분표</td></tr>
+<tr><td>1719</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-11.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 푸딩 원재료명 성분표</td></tr>
+<tr><td>1722</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-11.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 호두과자 원재료명 성분표</td></tr>
+<tr><td>1711</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-12.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 모닝빵 원재료명 성분표</td></tr>
+<tr><td>1714</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-12.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 토스트/샌드위치 원재료명 성분표</td></tr>
+<tr><td>1660</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-12.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 디저트 코코아매스 원재료명 성분표</td></tr>
+<tr><td>1717</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-13.0</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 브라우니 원재료명 성분표</td></tr>
+<tr><td>1725</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-13.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 또띠아/난 원재료명 성분표</td></tr>
+<tr><td>1728</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-13.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 크로켓 원재료명 성분표</td></tr>
+<tr><td>1720</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-14.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 푸딩 원재료명 성분표</td></tr>
+<tr><td>1723</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-14.6</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 호두과자 원재료명 성분표</td></tr>
+<tr><td>1730</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-14.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 앙금빵 원재료명 성분표</td></tr>
+<tr><td>1726</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-16.1</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 또띠아/난 원재료명 성분표</td></tr>
+<tr><td>1733</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-16.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 와플 원재료명 성분표</td></tr>
+<tr><td>1736</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-16.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 프레즐 원재료명 성분표</td></tr>
+<tr><td>1729</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-16.9</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 크로켓 원재료명 성분표</td></tr>
+<tr><td>1731</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-17.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 앙금빵 원재료명 성분표</td></tr>
+<tr><td>1734</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-19.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 와플 원재료명 성분표</td></tr>
+<tr><td>1737</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-19.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 프레즐 원재료명 성분표</td></tr>
+<tr><td>1732</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-20.7</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 앙금빵 원재료명 성분표</td></tr>
+<tr><td>1735</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-22.2</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 와플 원재료명 성분표</td></tr>
+<tr><td>1738</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-22.3</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 프레즐 원재료명 성분표</td></tr>
+<tr><td>1739</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-24.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>저당 빵 껌 원재료명 성분표</td></tr>
+<tr><td>1740</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-27.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>고단백 빵 껌 원재료명 성분표</td></tr>
+<tr><td>1741</td><td>paused</td><td>consumer_taxonomy_seed</td><td class='num'>-30.8</td><td class='num'>20.0</td><td class='num'>0</td><td>-</td><td class='query'>다이어트 베이커리 껌 원재료명 성분표</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const sf = document.getElementById('statusFilter');
+    const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
+    function applyFilter() {
+      const text = (q.value || '').toLowerCase();
+      const st = (sf.value || '').toLowerCase();
+      rows.forEach((tr) => {
+        const t = tr.textContent.toLowerCase();
+        const statusCell = (tr.children[1]?.textContent || '').toLowerCase().trim();
+        const matchText = !text || t.includes(text);
+        const matchStatus = !st || statusCell === st;
+        tr.style.display = (matchText && matchStatus) ? '' : 'none';
+      });
+    }
+    q.addEventListener('input', applyFilter);
+    sf.addEventListener('change', applyFilter);
+  </script>
+</body>
+</html>

@@ -7,7 +7,6 @@
 
 import os
 import json
-import html
 import socket
 import subprocess
 import sys
@@ -15,8 +14,9 @@ import time
 import re
 import shutil
 import webbrowser
+import threading
 from pathlib import Path
-from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import sqlite3
 from app import collector, viewer
@@ -38,9 +38,15 @@ from app.ingredient_enricher import (
 from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
 from app.query_pipeline import (
+    cache_serp_images,
+    finish_query_run,
+    get_image_analysis_cache,
     init_query_pipeline_tables,
     list_next_queries,
     list_recent_runs,
+    start_query_run,
+    upsert_food_final,
+    upsert_image_analysis_cache,
     upsert_query,
 )
 
@@ -590,6 +596,7 @@ def run_query_pipeline_menu() -> None:
         print("    [1] 검색어 직접 추가")
         print("    [2] 우선순위 대기 검색어 보기")
         print("    [3] 최근 실행 기록 보기")
+        print("    [4] 검색어 실행 (SERP -> 분석 -> 최종저장)")
         print("    [b] ↩️ 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
@@ -598,12 +605,10 @@ def run_query_pipeline_menu() -> None:
             if not query_text:
                 print("  ⚠️ 검색어가 비어 있습니다.")
                 continue
-            raw_pri = input("  🔹 priority_score [기본 0]: ").strip()
-            raw_seg = input("  🔹 target_segment_score [기본 0]: ").strip()
+            raw_pri = input("  🔹 score(점수) [기본 0]: ").strip()
             notes = input("  🔹 메모(선택): ").strip() or None
             try:
                 pri = float(raw_pri) if raw_pri else 0.0
-                seg = float(raw_seg) if raw_seg else 0.0
             except ValueError:
                 print("  ⚠️ 점수는 숫자여야 합니다.")
                 continue
@@ -615,7 +620,7 @@ def run_query_pipeline_menu() -> None:
                     query_text,
                     source="manual",
                     priority_score=pri,
-                    target_segment_score=seg,
+                    target_segment_score=0.0,
                     status="pending",
                     notes=notes,
                 )
@@ -648,213 +653,348 @@ def run_query_pipeline_menu() -> None:
                     )
                     print(f"      q={row['query_text']}")
 
+        elif sub == "4":
+            run_query_pipeline_execute()
+
         elif sub == "b":
             break
         else:
             print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
 
 
-def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
-    status_counts: dict[str, int] = {}
-    source_counts: dict[str, int] = {}
-    for r in rows:
-        status = str(r["status"] or "unknown")
-        source = str(r["source"] or "unknown")
-        status_counts[status] = status_counts.get(status, 0) + 1
-        source_counts[source] = source_counts.get(source, 0) + 1
-
-    status_badges = " ".join(
-        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
-        for k, v in sorted(status_counts.items(), key=lambda x: (-x[1], x[0]))
-    )
-    source_badges = " ".join(
-        f"<span class='badge'>{html.escape(k)}: {v:,}</span>"
-        for k, v in sorted(source_counts.items(), key=lambda x: (-x[1], x[0]))
-    )
-
-    table_rows: list[str] = []
-    for r in rows:
-        table_rows.append(
-            "<tr>"
-            f"<td>{int(r['id'])}</td>"
-            f"<td>{html.escape(str(r['status'] or ''))}</td>"
-            f"<td>{html.escape(str(r['source'] or ''))}</td>"
-            f"<td class='num'>{float(r['priority_score'] or 0.0):.1f}</td>"
-            f"<td class='num'>{float(r['target_segment_score'] or 0.0):.1f}</td>"
-            f"<td class='num'>{int(r['run_count'] or 0)}</td>"
-            f"<td>{html.escape(str(r['last_run_at'] or '-'))}</td>"
-            f"<td class='query'>{html.escape(str(r['query_text'] or ''))}</td>"
-            "</tr>"
-        )
-    tbody = "\n".join(table_rows)
-
-    return f"""<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>검색어 풀 조회</title>
-  <style>
-    :root {{
-      --bg: #f6f8fb;
-      --panel: #ffffff;
-      --line: #d9e0ea;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #1f6feb;
-      --badge: #eef4ff;
-    }}
-    body {{
-      margin: 0;
-      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
-    }}
-    .wrap {{ max-width: 1400px; margin: 0 auto; padding: 24px; }}
-    .card {{
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin-bottom: 14px;
-      box-shadow: 0 2px 10px rgba(31,41,55,0.04);
-    }}
-    h1 {{ margin: 0 0 6px; font-size: 24px; }}
-    .sub {{ color: var(--muted); font-size: 14px; margin-bottom: 10px; }}
-    .badge {{
-      display: inline-block;
-      margin: 4px 6px 0 0;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--badge);
-      border: 1px solid #dbe7ff;
-      font-size: 12px;
-      color: #1e3a8a;
-    }}
-    .controls {{
-      display: grid;
-      grid-template-columns: 1fr 220px;
-      gap: 10px;
-      align-items: center;
-    }}
-    input, select {{
-      width: 100%;
-      font-size: 14px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 10px 12px;
-      background: #fff;
-      box-sizing: border-box;
-    }}
-    table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
-    thead th {{
-      position: sticky; top: 0; z-index: 1;
-      background: #eef3fb;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      padding: 10px 8px;
-      white-space: nowrap;
-    }}
-    tbody td {{
-      border-bottom: 1px solid #edf1f7;
-      padding: 8px;
-      vertical-align: top;
-    }}
-    tbody tr:hover {{ background: #f8fbff; }}
-    .num {{ text-align: right; white-space: nowrap; }}
-    .query {{ min-width: 420px; }}
-    .small {{ color: var(--muted); font-size: 12px; margin-top: 8px; }}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="card">
-      <h1>검색어 풀 조회</h1>
-      <div class="sub">query_pool 전체를 브라우저에서 가독성 높게 조회합니다.</div>
-      <div><strong>총 검색어:</strong> {len(rows):,}</div>
-      <div style="margin-top:8px;"><strong>상태 분포</strong><br>{status_badges or "-"}</div>
-      <div style="margin-top:8px;"><strong>소스 분포</strong><br>{source_badges or "-"}</div>
-    </div>
-
-    <div class="card">
-      <div class="controls">
-        <input id="q" type="text" placeholder="검색어/소스/상태/카테고리 텍스트 검색" />
-        <select id="statusFilter">
-          <option value="">전체 상태</option>
-          <option value="pending">pending</option>
-          <option value="paused">paused</option>
-          <option value="running">running</option>
-          <option value="done">done</option>
-          <option value="failed">failed</option>
-        </select>
-      </div>
-      <div class="small">필터는 실시간 적용됩니다.</div>
-    </div>
-
-    <div class="card" style="padding:0; overflow:auto; max-height:70vh;">
-      <table id="tbl">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>상태</th>
-            <th>소스</th>
-            <th>우선점수</th>
-            <th>세그점수</th>
-            <th>run</th>
-            <th>마지막 실행</th>
-            <th>검색어</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tbody}
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <script>
-    const q = document.getElementById('q');
-    const sf = document.getElementById('statusFilter');
-    const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
-    function applyFilter() {{
-      const text = (q.value || '').toLowerCase();
-      const st = (sf.value || '').toLowerCase();
-      rows.forEach((tr) => {{
-        const t = tr.textContent.toLowerCase();
-        const statusCell = (tr.children[1]?.textContent || '').toLowerCase().trim();
-        const matchText = !text || t.includes(text);
-        const matchStatus = !st || statusCell === st;
-        tr.style.display = (matchText && matchStatus) ? '' : 'none';
-      }});
-    }}
-    q.addEventListener('input', applyFilter);
-    sf.addEventListener('change', applyFilter);
-  </script>
-</body>
-</html>
-"""
-
-
 def run_query_pool_browser_view() -> None:
+    with sqlite3.connect(DB_FILE) as conn:
+        out_path = viewer.open_query_pool_browser_report(conn)
+    print(f"\n  ✅ 검색어 풀 브라우저 리포트 생성: {out_path}")
+
+
+def run_query_pipeline_execute() -> None:
+    serp_key = os.getenv("SERPAPI_KEY", "").strip()
+    openai_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not serp_key:
+        print("  ❌ SERPAPI_KEY가 필요합니다.")
+        return
+    if not openai_key:
+        print("  ❌ OPENAI_API_KEY가 필요합니다.")
+        return
+
+    raw_q = input("  🔹 실행할 pending 검색어 개수 [기본 3]: ").strip()
+    raw_pages = input("  🔹 검색 페이지 수 [기본 1]: ").strip()
+    raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
+    raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
+    query_limit = int(raw_q) if raw_q.isdigit() else 3
+    max_pages = int(raw_pages) if raw_pages.isdigit() else 1
+    max_images = int(raw_max_images) if raw_max_images.isdigit() else 0
+    pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
+    query_limit = max(1, query_limit)
+    max_pages = max(1, min(20, max_pages))
+    max_images = max(0, max_images)
+    pass_workers = max(1, min(50, pass_workers))
+
+    from app.query_image_benchmark import _search_images_all
+
     with sqlite3.connect(DB_FILE) as conn:
         init_query_pipeline_tables(conn)
         conn.row_factory = sqlite3.Row
-        rows = conn.execute(
+        queries = conn.execute(
             """
-            SELECT id, query_text, source, status, priority_score, target_segment_score, run_count, last_run_at
+            SELECT id, query_text, priority_score, status
             FROM query_pool
-            ORDER BY priority_score DESC, target_segment_score DESC, id ASC
-            """
+            WHERE status='pending'
+            ORDER BY priority_score DESC, id ASC
+            LIMIT ?
+            """,
+            (query_limit,),
         ).fetchall()
 
-    reports_dir = Path(__file__).resolve().parent.parent / "reports" / "query_pool"
-    reports_dir.mkdir(parents=True, exist_ok=True)
-    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_path = reports_dir / f"query_pool_{ts}.html"
-    out_path.write_text(_build_query_pool_html(rows), encoding="utf-8")
+        if not queries:
+            print("  ⚠️ 실행할 pending 검색어가 없습니다.")
+            return
 
-    print(f"\n  ✅ 검색어 풀 브라우저 리포트 생성: {out_path}")
-    webbrowser.open_new_tab(out_path.resolve().as_uri())
+        print(f"\n  🚀 실행 시작: pending {len(queries)}개")
+
+        for q in queries:
+            query_id = int(q["id"])
+            query_text = str(q["query_text"] or "").strip()
+            run_id = start_query_run(conn, query_id=query_id)
+            print(f"\n  ▶ query_id={query_id} run_id={run_id}")
+            print(f"    q={query_text}")
+
+            analyzed_images = 0
+            pass2b_pass_count = 0
+            pass4_pass_count = 0
+            final_saved_count = 0
+            api_calls = 0
+            total_images = 0
+
+            try:
+                images = _search_images_all(
+                    query=query_text,
+                    api_key=serp_key,
+                    max_pages=max_pages,
+                    per_page=100,
+                )
+                if max_images > 0 and len(images) > max_images:
+                    images = images[:max_images]
+                total_images = len(images)
+
+                # SERP 캐시 저장
+                page_map: dict[int, list[dict]] = {}
+                for img in images:
+                    page_map.setdefault(int(img.page_no), []).append(
+                        {
+                            "image_url": img.url,
+                            "title": img.title,
+                            "source": img.source,
+                            "rank_in_page": img.rank_in_page,
+                        }
+                    )
+                for page_no, items in page_map.items():
+                    cache_serp_images(
+                        conn,
+                        query_id=query_id,
+                        page=page_no,
+                        page_size=100,
+                        images=items,
+                        run_id=run_id,
+                    )
+
+                print(f"    수집 이미지: {total_images}개 | pass 동시호출: {pass_workers}")
+
+                to_process: list[tuple[int, object]] = []
+                for idx, img in enumerate(images, 1):
+                    cached = get_image_analysis_cache(conn, img.url)
+                    if cached and int(cached["pass4_ok"] or 0) == 1:
+                        print(f"    [{idx}/{total_images}] 캐시통과 스킵")
+                        continue
+                    to_process.append((idx, img))
+
+                thread_local = threading.local()
+
+                def _get_analyzer() -> URLIngredientAnalyzer:
+                    az = getattr(thread_local, "analyzer", None)
+                    if az is None:
+                        az = URLIngredientAnalyzer(api_key=openai_key)
+                        thread_local.analyzer = az
+                    return az
+
+                def _analyze_one(idx: int, img_obj: object) -> dict:
+                    img_url = str(getattr(img_obj, "url"))
+                    az = _get_analyzer()
+                    result: dict = {
+                        "idx": idx,
+                        "url": img_url,
+                        "api_calls": 0,
+                        "pass2_ok": False,
+                        "pass3_ok": False,
+                        "pass4_ok": False,
+                        "fail_stage": None,
+                        "fail_reason": None,
+                        "p2a_ok": False,
+                        "p2b_ok": False,
+                        "raw_pass2a": None,
+                        "raw_pass2b": None,
+                        "raw_pass3": None,
+                        "raw_pass4": None,
+                        "product_name": None,
+                        "report_no": None,
+                        "ingredients_text": None,
+                        "nutrition_text": None,
+                    }
+
+                    pass2 = az.analyze_pass2(image_url=img_url, target_item_rpt_no=None)
+                    result["api_calls"] += 1
+                    qf = pass2.get("quality_flags") or {}
+                    p2a_ok = bool(qf.get("pass2a_ok"))
+                    p2b_ok = bool(qf.get("pass2b_pass"))
+                    gate_ok = bool(pass2.get("quality_gate_pass"))
+                    decision = str(pass2.get("ai_decision") or "").upper()
+                    pass2_ok = gate_ok and p2a_ok and p2b_ok and decision == "READ"
+                    result["p2a_ok"] = p2a_ok
+                    result["p2b_ok"] = p2b_ok
+                    result["raw_pass2a"] = pass2.get("raw_model_text_pass2a")
+                    result["raw_pass2b"] = pass2.get("raw_model_text_pass2b")
+
+                    if not pass2_ok:
+                        result["fail_stage"] = "pass2"
+                        result["fail_reason"] = (
+                            "|".join(str(x) for x in (pass2.get("quality_fail_reasons") or []))
+                            or str(pass2.get("ai_decision_reason") or "pass2_fail")
+                        )
+                        return result
+
+                    result["pass2_ok"] = True
+                    pass3 = az.analyze_pass3(
+                        image_url=img_url,
+                        target_item_rpt_no=None,
+                        include_nutrition=bool(qf.get("has_nutrition_section")),
+                    )
+                    result["api_calls"] += 1
+                    result["raw_pass3"] = pass3.get("raw_model_text_pass3_ingredients")
+                    pass3_err = str(pass3.get("error") or "").strip()
+                    if pass3_err:
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = pass3_err
+                        return result
+
+                    product_name = (pass3.get("product_name_in_image") or "").strip()
+                    report_no = (pass3.get("product_report_number") or "").strip()
+                    ingredients_text = (pass3.get("ingredients_text") or "").strip()
+                    nutrition_text = (pass3.get("nutrition_text") or "").strip() or None
+                    if not (product_name and report_no and ingredients_text):
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = "required_fields_missing"
+                        return result
+
+                    result["pass3_ok"] = True
+                    result["product_name"] = product_name
+                    result["report_no"] = report_no
+                    result["ingredients_text"] = ingredients_text
+                    result["nutrition_text"] = nutrition_text
+
+                    pass4 = az.analyze_pass4_normalize(
+                        pass2_result=pass2,
+                        pass3_result=pass3,
+                        target_item_rpt_no=None,
+                    )
+                    result["api_calls"] += 1
+                    result["raw_pass4"] = pass4.get("raw_model_text_pass4_ingredients")
+                    pass4_err = str(pass4.get("pass4_ai_error") or "").strip()
+                    if pass4_err:
+                        result["fail_stage"] = "pass4"
+                        result["fail_reason"] = pass4_err or "pass4_fail"
+                        return result
+
+                    result["pass4_ok"] = True
+                    return result
+
+                done_count = 0
+                with ThreadPoolExecutor(max_workers=pass_workers) as ex:
+                    fut_map = {ex.submit(_analyze_one, idx, img): idx for idx, img in to_process}
+                    for fut in as_completed(fut_map):
+                        res = fut.result()
+                        idx = int(res["idx"])
+                        done_count += 1
+                        analyzed_images += 1
+                        api_calls += int(res.get("api_calls", 0))
+                        print(f"    [{idx}/{total_images}] 완료 ({done_count}/{len(to_process)})")
+
+                        if not bool(res.get("pass2_ok")):
+                            upsert_image_analysis_cache(
+                                conn,
+                                image_url=str(res["url"]),
+                                run_id=run_id,
+                                pass1_ok=None,
+                                pass2a_ok=bool(res.get("p2a_ok")),
+                                pass2b_ok=bool(res.get("p2b_ok")),
+                                pass3_ok=False,
+                                pass4_ok=False,
+                                fail_stage=str(res.get("fail_stage") or "pass2"),
+                                fail_reason=str(res.get("fail_reason") or "pass2_fail"),
+                                raw_pass2a=res.get("raw_pass2a"),
+                                raw_pass2b=res.get("raw_pass2b"),
+                            )
+                            continue
+
+                        pass2b_pass_count += 1
+
+                        if not bool(res.get("pass3_ok")):
+                            upsert_image_analysis_cache(
+                                conn,
+                                image_url=str(res["url"]),
+                                run_id=run_id,
+                                pass1_ok=None,
+                                pass2a_ok=bool(res.get("p2a_ok")),
+                                pass2b_ok=bool(res.get("p2b_ok")),
+                                pass3_ok=False,
+                                pass4_ok=False,
+                                fail_stage=str(res.get("fail_stage") or "pass3"),
+                                fail_reason=str(res.get("fail_reason") or "pass3_fail"),
+                                raw_pass2a=res.get("raw_pass2a"),
+                                raw_pass2b=res.get("raw_pass2b"),
+                                raw_pass3=res.get("raw_pass3"),
+                            )
+                            continue
+
+                        if not bool(res.get("pass4_ok")):
+                            upsert_image_analysis_cache(
+                                conn,
+                                image_url=str(res["url"]),
+                                run_id=run_id,
+                                pass1_ok=None,
+                                pass2a_ok=bool(res.get("p2a_ok")),
+                                pass2b_ok=bool(res.get("p2b_ok")),
+                                pass3_ok=True,
+                                pass4_ok=False,
+                                fail_stage=str(res.get("fail_stage") or "pass4"),
+                                fail_reason=str(res.get("fail_reason") or "pass4_fail"),
+                                raw_pass2a=res.get("raw_pass2a"),
+                                raw_pass2b=res.get("raw_pass2b"),
+                                raw_pass3=res.get("raw_pass3"),
+                                raw_pass4=res.get("raw_pass4"),
+                            )
+                            continue
+
+                        pass4_pass_count += 1
+                        upsert_food_final(
+                            conn,
+                            product_name=str(res.get("product_name") or ""),
+                            item_mnftr_rpt_no=str(res.get("report_no") or ""),
+                            ingredients_text=str(res.get("ingredients_text") or ""),
+                            nutrition_text=res.get("nutrition_text"),
+                            nutrition_source="pass3",
+                            source_image_url=str(res["url"]),
+                            source_query_id=query_id,
+                            source_run_id=run_id,
+                        )
+                        final_saved_count += 1
+
+                        upsert_image_analysis_cache(
+                            conn,
+                            image_url=str(res["url"]),
+                            run_id=run_id,
+                            pass1_ok=None,
+                            pass2a_ok=bool(res.get("p2a_ok")),
+                            pass2b_ok=bool(res.get("p2b_ok")),
+                            pass3_ok=True,
+                            pass4_ok=True,
+                            fail_stage=None,
+                            fail_reason=None,
+                            raw_pass2a=res.get("raw_pass2a"),
+                            raw_pass2b=res.get("raw_pass2b"),
+                            raw_pass3=res.get("raw_pass3"),
+                            raw_pass4=res.get("raw_pass4"),
+                        )
+
+                finish_query_run(
+                    conn,
+                    run_id=run_id,
+                    status="done",
+                    total_images=total_images,
+                    analyzed_images=analyzed_images,
+                    pass2b_pass_count=pass2b_pass_count,
+                    pass4_pass_count=pass4_pass_count,
+                    final_saved_count=final_saved_count,
+                    api_calls=api_calls,
+                )
+                print(
+                    f"    ✅ 완료: analyzed={analyzed_images}, pass2b={pass2b_pass_count}, "
+                    f"pass4={pass4_pass_count}, saved={final_saved_count}"
+                )
+            except Exception as exc:  # pylint: disable=broad-except
+                finish_query_run(
+                    conn,
+                    run_id=run_id,
+                    status="failed",
+                    total_images=total_images,
+                    analyzed_images=analyzed_images,
+                    pass2b_pass_count=pass2b_pass_count,
+                    pass4_pass_count=pass4_pass_count,
+                    final_saved_count=final_saved_count,
+                    api_calls=api_calls,
+                    error_message=str(exc),
+                )
+                print(f"    ❌ 실패: {exc}")
 
 
 def main() -> None:
