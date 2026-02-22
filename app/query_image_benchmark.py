@@ -29,9 +29,9 @@ from app.analyzer import URLIngredientAnalyzer
 from app.config import DB_FILE
 
 SERPAPI_URL = "https://serpapi.com/search.json"
-SERPAPI_TIMEOUT = 25
-SERPAPI_RETRIES = 2
-SERPAPI_RETRY_BACKOFF = 0.7
+SERPAPI_TIMEOUT = 40
+SERPAPI_RETRIES = 4
+SERPAPI_RETRY_BACKOFF = 1.0
 SERP_REPORT_DIR = Path("reports/serp_batch")
 
 
@@ -240,45 +240,111 @@ def _mark_nutrition_from_result(result: dict[str, Any]) -> tuple[str, str]:
     return ("❌", "nutrition_text null")
 
 
-def _search_images_all(query: str, api_key: str, max_pages: int = 20, per_page: int = 100) -> list[ImageCandidate]:
+def _search_images_all(
+    query: str,
+    api_key: str,
+    max_pages: int = 20,
+    per_page: int = 100,
+    provider: str = "google",
+    debug_serp: bool = False,
+) -> list[ImageCandidate]:
     seen: set[str] = set()
     out: list[ImageCandidate] = []
+    provider_norm = str(provider or "google").strip().lower()
+    if provider_norm not in ("google", "naver"):
+        provider_norm = "google"
+    consecutive_failures = 0
 
     for page_no in range(max_pages):
-        params = {
-            "engine": "google_images",
-            "q": query,
-            "hl": "ko",
-            "gl": "kr",
-            "num": per_page,
-            "ijn": page_no,
-            "api_key": api_key,
-            "no_cache": "true",
-        }
+        if provider_norm == "naver":
+            # SerpAPI Naver Images
+            params = {
+                "engine": "naver",
+                "where": "image",
+                "query": query,
+                "api_key": api_key,
+                "no_cache": "true",
+                "display": per_page,
+                "start": page_no * per_page + 1,
+            }
+        else:
+            # SerpAPI Google Images
+            params = {
+                "engine": "google_images",
+                "q": query,
+                "hl": "ko",
+                "gl": "kr",
+                "num": per_page,
+                "ijn": page_no,
+                "api_key": api_key,
+                "no_cache": "true",
+            }
 
         data: dict[str, Any] | None = None
         last_error = None
         for attempt in range(SERPAPI_RETRIES + 1):
             try:
+                if debug_serp:
+                    safe_params = {k: v for k, v in params.items() if k != "api_key"}
+                    print(f"  [SERP][page={page_no} attempt={attempt+1}/{SERPAPI_RETRIES+1}] 요청 시작")
+                    print(f"    params={safe_params}")
+                t0 = time.time()
                 resp = requests.get(SERPAPI_URL, params=params, timeout=SERPAPI_TIMEOUT)
-                data = resp.json()
+                elapsed = time.time() - t0
+                raw_text = resp.text or ""
+                try:
+                    data = resp.json()
+                except Exception as json_exc:  # pylint: disable=broad-except
+                    data = None
+                    last_error = f"json_parse_error:{type(json_exc).__name__}:{json_exc}"
+                    if debug_serp:
+                        print(f"  [SERP][page={page_no}] JSON 파싱 실패")
+                        print(f"    status={resp.status_code} elapsed={elapsed:.2f}s")
+                        print(f"    raw(앞 1200자)={raw_text[:1200]}")
+                    if attempt < SERPAPI_RETRIES:
+                        time.sleep(SERPAPI_RETRY_BACKOFF * (2 ** attempt))
+                        continue
+                    break
+
                 api_err = data.get("error")
+                if debug_serp:
+                    print(f"  [SERP][page={page_no}] 응답 수신 status={resp.status_code} elapsed={elapsed:.2f}s")
+                    print(f"    api_error={api_err}")
+                    imgs = data.get("images_results") or []
+                    print(f"    images_results={len(imgs)}")
+                    print(f"    raw(앞 1200자)={raw_text[:1200]}")
+                # SerpAPI가 "결과 없음"을 error 문자열로 주는 경우가 있어,
+                # 실패가 아니라 페이징 종료 신호로 처리한다.
+                if resp.status_code == 200 and isinstance(api_err, str):
+                    api_err_low = api_err.lower()
+                    if ("hasn't returned any results" in api_err_low) or ("no results" in api_err_low):
+                        data = {"images_results": []}
+                        break
                 if resp.status_code == 200 and api_err is None:
                     break
                 last_error = f"http={resp.status_code} api_error={api_err}"
                 if resp.status_code in (429, 500, 502, 503, 504) and attempt < SERPAPI_RETRIES:
-                    time.sleep(SERPAPI_RETRY_BACKOFF * (attempt + 1))
+                    time.sleep(SERPAPI_RETRY_BACKOFF * (2 ** attempt))
                     continue
                 raise RuntimeError(last_error)
             except Exception as exc:  # pylint: disable=broad-except
                 last_error = str(exc)
+                if debug_serp:
+                    print(f"  [SERP][page={page_no}] 예외: {type(exc).__name__}: {exc}")
                 if attempt < SERPAPI_RETRIES:
-                    time.sleep(SERPAPI_RETRY_BACKOFF * (attempt + 1))
+                    time.sleep(SERPAPI_RETRY_BACKOFF * (2 ** attempt))
                     continue
-                raise RuntimeError(f"SerpAPI 검색 실패(page={page_no}): {last_error}") from exc
+                break
 
         if data is None:
-            break
+            consecutive_failures += 1
+            print(f"  ⚠️ SerpAPI 페이지 스킵(page={page_no}): {last_error}")
+            if consecutive_failures >= 3:
+                print("  ⚠️ SerpAPI 연속 실패 3회로 수집을 중단합니다.")
+                break
+            continue
+
+        consecutive_failures = 0
         images = data.get("images_results") or []
         if not images:
             break
@@ -322,6 +388,8 @@ def run_query_image_benchmark(
     max_concurrency: int = 5,
     adaptive: bool = True,
     auto_open_report: bool = True,
+    provider: str = "google",
+    debug_serp: bool = False,
 ) -> None:
     serp_key = os.getenv("SERPAPI_KEY")
     if not serp_key:
@@ -332,9 +400,17 @@ def run_query_image_benchmark(
 
     print("\n=== 검색어 기반 이미지 벤치마크 ===")
     print(f"- 검색어: {query}")
+    print(f"- 검색엔진: {provider}")
     print(f"- 최대 페이지: {max_pages}")
     print("- SerpAPI에서 이미지 수집 중...")
-    images = _search_images_all(query=query, api_key=serp_key, max_pages=max_pages, per_page=100)
+    images = _search_images_all(
+        query=query,
+        api_key=serp_key,
+        max_pages=max_pages,
+        per_page=100,
+        provider=provider,
+        debug_serp=debug_serp,
+    )
     print(f"- 수집된 이미지: {len(images)}개")
     print("- 상태 기준: ✅ 추출 가능 | ❌ 추출 불가")
     if not images:
@@ -832,9 +908,10 @@ def run_query_image_benchmark(
         SERP_REPORT_DIR.mkdir(parents=True, exist_ok=True)
         date_str = datetime.now().strftime("%Y%m%d")
         safe_query = _safe_filename(query)
-        report_path = SERP_REPORT_DIR / f"{safe_query}_{date_str}.txt"
+        safe_provider = _safe_filename(provider)
+        report_path = SERP_REPORT_DIR / f"{safe_provider}_{safe_query}_{date_str}.txt"
         report_path.write_text("\n".join(final_lines) + "\n", encoding="utf-8")
-        html_report_path = SERP_REPORT_DIR / f"{safe_query}_{date_str}.html"
+        html_report_path = SERP_REPORT_DIR / f"{safe_provider}_{safe_query}_{date_str}.html"
 
         html_parts: list[str] = []
         html_parts.append("<!doctype html>")
@@ -958,6 +1035,11 @@ def run_query_image_benchmark(
 
 def run_query_image_benchmark_interactive() -> None:
     print("\n  🔎 [검색어 기반 이미지 벤치마크]")
+    print("  🔹 이미지 검색 엔진 선택")
+    print("    [1] Google Images")
+    print("    [2] Naver Images")
+    raw_provider = input("  선택 > ").strip()
+    provider = "naver" if raw_provider == "2" else "google"
     query = _choose_benchmark_query_interactive()
     if not query:
         return
@@ -972,15 +1054,7 @@ def run_query_image_benchmark_interactive() -> None:
         except ValueError:
             pass
 
-    raw_delay = input("  🔹 이미지 간 대기(초) [기본 0]: ").strip()
     delay_sec = 0.0
-    if raw_delay:
-        try:
-            d = float(raw_delay)
-            if d >= 0:
-                delay_sec = d
-        except ValueError:
-            pass
 
     raw_conc = input("  🔹 최대 동시 요청 수 [기본 5, 최대 200]: ").strip()
     max_concurrency = 5
@@ -996,6 +1070,8 @@ def run_query_image_benchmark_interactive() -> None:
     adaptive = False
     raw_open = input("  🔹 실행 후 HTML 자동 열기? [Y/n]: ").strip().lower()
     auto_open_report = not (raw_open in ("n", "no"))
+    raw_debug_serp = input("  🔹 SERP 요청/응답 raw 디버그 출력? [y/N]: ").strip().lower()
+    debug_serp = raw_debug_serp in ("y", "yes")
 
     print("\n  🚀 실행합니다. 결과는 이미지별로 순차 출력됩니다.")
     run_query_image_benchmark(
@@ -1005,6 +1081,8 @@ def run_query_image_benchmark_interactive() -> None:
         max_concurrency=max_concurrency,
         adaptive=adaptive,
         auto_open_report=auto_open_report,
+        provider=provider,
+        debug_serp=debug_serp,
     )
 
 

@@ -682,6 +682,11 @@ def run_query_pipeline_execute() -> None:
     raw_pages = input("  🔹 검색 페이지 수 [기본 1]: ").strip()
     raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
+    print("  🔹 이미지 검색 엔진")
+    print("    [1] Google Images")
+    print("    [2] Naver Images")
+    raw_provider = input("  선택 > ").strip()
+    provider = "naver" if raw_provider == "2" else "google"
     query_limit = int(raw_q) if raw_q.isdigit() else 3
     max_pages = int(raw_pages) if raw_pages.isdigit() else 1
     max_images = int(raw_max_images) if raw_max_images.isdigit() else 0
@@ -712,6 +717,7 @@ def run_query_pipeline_execute() -> None:
             return
 
         print(f"\n  🚀 실행 시작: pending {len(queries)}개")
+        print(f"    검색엔진: {provider}")
 
         for q in queries:
             query_id = int(q["id"])
@@ -733,6 +739,7 @@ def run_query_pipeline_execute() -> None:
                     api_key=serp_key,
                     max_pages=max_pages,
                     per_page=100,
+                    provider=provider,
                 )
                 if max_images > 0 and len(images) > max_images:
                     images = images[:max_images]
