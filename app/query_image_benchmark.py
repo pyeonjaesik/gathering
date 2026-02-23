@@ -18,7 +18,7 @@ import webbrowser
 import sqlite3
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from typing import Any
@@ -32,6 +32,7 @@ from app import config as app_config
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 NAVER_OPENAPI_IMAGE_URL = "https://openapi.naver.com/v1/search/image.json"
+NAVER_OPENAPI_SHOP_URL = "https://openapi.naver.com/v1/search/shop.json"
 SERPAPI_TIMEOUT = 40
 SERPAPI_CONNECT_TIMEOUT = 8
 SERPAPI_RETRIES = 4
@@ -136,7 +137,6 @@ def _is_pass2_extractable(result: dict[str, Any]) -> bool:
         "is_flat_undistorted",
         "has_ingredients_section",
         "has_report_number_label",
-        "has_product_name",
         "has_single_product",
         "key_fields_fully_visible",
         "no_glare_on_key_fields",
@@ -255,26 +255,14 @@ def _search_images_all(
     seen: set[str] = set()
     out: list[ImageCandidate] = []
     provider_norm = str(provider or "google").strip().lower()
-    if provider_norm not in ("google", "naver", "naver_official"):
+    if provider_norm not in ("google", "naver_official", "naver_blog", "naver_shop"):
         provider_norm = "google"
     consecutive_failures = 0
 
     for page_no in range(max_pages):
         request_url = SERPAPI_URL
         request_headers: dict[str, str] | None = None
-        if provider_norm == "naver":
-            # SerpAPI Naver Images
-            page_size = min(per_page, 30)
-            params = {
-                "engine": "naver",
-                "where": "image",
-                "query": query,
-                "api_key": api_key,
-                "no_cache": "true",
-                "display": page_size,
-                "start": page_no * page_size + 1,
-            }
-        elif provider_norm == "naver_official":
+        if provider_norm == "naver_official":
             page_size = min(per_page, 100)
             naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
             naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
@@ -287,6 +275,41 @@ def _search_images_all(
                 "sort": "sim",
             }
             request_url = NAVER_OPENAPI_IMAGE_URL
+            request_headers = {
+                "X-Naver-Client-Id": naver_client_id,
+                "X-Naver-Client-Secret": naver_client_secret,
+            }
+        elif provider_norm == "naver_blog":
+            page_size = min(per_page, 100)
+            naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+            naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+            if not (naver_client_id and naver_client_secret):
+                raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수가 필요합니다.")
+            params = {
+                "query": query,
+                "display": page_size,
+                "start": page_no * page_size + 1,
+                "sort": "sim",
+            }
+            # 요청사항: 블로그 글 URL이 아니라 "이미지 결과 중 블로그 출처"만 수집
+            request_url = NAVER_OPENAPI_IMAGE_URL
+            request_headers = {
+                "X-Naver-Client-Id": naver_client_id,
+                "X-Naver-Client-Secret": naver_client_secret,
+            }
+        elif provider_norm == "naver_shop":
+            page_size = min(per_page, 100)
+            naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+            naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+            if not (naver_client_id and naver_client_secret):
+                raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수가 필요합니다.")
+            params = {
+                "query": query,
+                "display": page_size,
+                "start": page_no * page_size + 1,
+                "sort": "sim",
+            }
+            request_url = NAVER_OPENAPI_SHOP_URL
             request_headers = {
                 "X-Naver-Client-Id": naver_client_id,
                 "X-Naver-Client-Secret": naver_client_secret,
@@ -338,12 +361,12 @@ def _search_images_all(
                     break
 
                 api_err = data.get("error")
-                if provider_norm == "naver_official" and resp.status_code >= 400:
+                if provider_norm in ("naver_official", "naver_blog", "naver_shop") and resp.status_code >= 400:
                     api_err = data.get("errorMessage") or data.get("message") or data.get("errorCode") or api_err
                 if debug_serp:
                     print(f"  [SERP][page={page_no}] 응답 수신 status={resp.status_code} elapsed={elapsed:.2f}s")
                     print(f"    api_error={api_err}")
-                    if provider_norm == "naver_official":
+                    if provider_norm in ("naver_official", "naver_blog", "naver_shop"):
                         imgs = data.get("items") or []
                     else:
                         imgs = data.get("images_results") or []
@@ -369,21 +392,6 @@ def _search_images_all(
                     print(f"  [SERP][page={page_no}] 예외: {type(exc).__name__}: {exc}")
                 # Naver 이미지에서 응답 페이로드가 커 타임아웃이 잦은 경우,
                 # display를 줄여 같은 페이지를 더 가볍게 재시도한다.
-                if (
-                    provider_norm == "naver"
-                    and isinstance(exc, requests.exceptions.ReadTimeout)
-                    and isinstance(params.get("display"), int)
-                    and int(params.get("display", 0)) > 10
-                ):
-                    prev_display = int(params["display"])
-                    new_display = max(10, prev_display // 2)
-                    if new_display < prev_display:
-                        params["display"] = new_display
-                        params["start"] = page_no * new_display + 1
-                        if debug_serp:
-                            print(
-                                f"  [SERP][page={page_no}] 타임아웃 완화: display {prev_display} -> {new_display}, 재시도"
-                            )
                 if attempt < SERPAPI_RETRIES:
                     time.sleep(SERPAPI_RETRY_BACKOFF * (2 ** attempt))
                     continue
@@ -398,7 +406,7 @@ def _search_images_all(
             continue
 
         consecutive_failures = 0
-        if provider_norm == "naver_official":
+        if provider_norm in ("naver_official", "naver_blog", "naver_shop"):
             images = data.get("items") or []
         else:
             images = data.get("images_results") or []
@@ -410,6 +418,53 @@ def _search_images_all(
             if provider_norm == "naver_official":
                 url = item.get("link") or item.get("thumbnail")
                 source = urlparse(str(url)).netloc if url else "naver_openapi"
+            elif provider_norm == "naver_blog":
+                url = item.get("link") or item.get("thumbnail")
+                thumb = str(item.get("thumbnail") or "").lower()
+                link = str(item.get("link") or "").lower()
+                # "출처가 블로그"에 해당하는 케이스만 수집
+                is_blog = any(
+                    key in link or key in thumb
+                    for key in (
+                        "blog.naver.com",
+                        "blogfiles.pstatic.net",
+                        "postfiles.pstatic.net",
+                        "mblogthumb-phinf.pstatic.net",
+                        "phinf.pstatic.net",
+                        "blog",  # 네이버 이미지 URL 내 blog 타입 힌트 대응
+                    )
+                )
+                if not is_blog:
+                    continue
+                source = urlparse(str(url)).netloc if url else "naver_blog_image"
+            elif provider_norm == "naver_shop":
+                product_url = str(item.get("link") or "").strip()
+                product_title = str(item.get("title") or "").strip()
+                mall_name = str(item.get("mallName") or "").strip()
+                if not product_url:
+                    continue
+                shop_imgs = _extract_images_from_shop_detail(
+                    product_url,
+                    timeout=(SERPAPI_CONNECT_TIMEOUT, SERPAPI_TIMEOUT),
+                    debug=debug_serp,
+                )
+                if not shop_imgs:
+                    continue
+                for img_url in shop_imgs:
+                    if not img_url or img_url in seen:
+                        continue
+                    seen.add(img_url)
+                    out.append(
+                        ImageCandidate(
+                            url=img_url,
+                            title=product_title or item.get("title"),
+                            source=mall_name or urlparse(product_url).netloc or "naver_shop",
+                            page_no=page_no,
+                            rank_in_page=rank,
+                        )
+                    )
+                    added += 1
+                continue
             else:
                 url = item.get("original") or item.get("thumbnail")
                 source = item.get("source")
@@ -431,6 +486,226 @@ def _search_images_all(
             break
 
     return out
+
+
+def _extract_images_from_shop_detail(product_url: str, timeout: tuple[int, int], debug: bool = False) -> list[str]:
+    # 1) Playwright 렌더링 기반 추출 우선
+    pw_images = _extract_images_from_shop_detail_playwright(product_url, timeout=timeout, debug=debug)
+    if pw_images:
+        return pw_images
+
+    # 2) requests 정적 HTML 추출 fallback
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
+    }
+    try:
+        resp = requests.get(product_url, headers=headers, timeout=timeout, allow_redirects=True)
+        html_text = resp.text or ""
+        final_url = resp.url or product_url
+    except Exception as exc:  # pylint: disable=broad-except
+        if debug:
+            print(f"    [SHOP] detail fetch 실패: {product_url} | {type(exc).__name__}: {exc}")
+        return []
+
+    found: list[tuple[str, int]] = []
+    seen: set[str] = set()
+
+    # 메타 이미지
+    for m in re.finditer(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+        html_text,
+        re.IGNORECASE,
+    ):
+        u = html.unescape(m.group(1).strip())
+        if u.startswith("//"):
+            u = "https:" + u
+        u = urljoin(final_url, u)
+        sc = _score_shop_image_candidate(u, meta_text="og_image", width=None, height=None)
+        if _looks_like_image_for_shop(u) and u not in seen and sc >= 1:
+            seen.add(u)
+            found.append((u, sc))
+
+    # 본문 이미지 (src / data-src)
+    for pat in (
+        r'<img[^>]+src=["\']([^"\']+)["\']',
+        r'<img[^>]+data-src=["\']([^"\']+)["\']',
+        r'"image"\s*:\s*"([^"]+)"',
+    ):
+        for m in re.finditer(pat, html_text, re.IGNORECASE):
+            u = html.unescape(m.group(1).strip().replace("\\/", "/"))
+            if u.startswith("//"):
+                u = "https:" + u
+            u = urljoin(final_url, u)
+            sc = _score_shop_image_candidate(u, meta_text="", width=None, height=None)
+            if _looks_like_image_for_shop(u) and u not in seen and sc >= 1:
+                seen.add(u)
+                found.append((u, sc))
+
+    # 너무 많으면 상위만 사용
+    found.sort(key=lambda x: x[1], reverse=True)
+    return [u for u, _ in found[:20]]
+
+
+def _extract_images_from_shop_detail_playwright(
+    product_url: str,
+    timeout: tuple[int, int],
+    debug: bool = False,
+) -> list[str]:
+    try:
+        from playwright.sync_api import sync_playwright  # type: ignore
+    except Exception as exc:  # pylint: disable=broad-except
+        if debug:
+            print(f"    [SHOP][PW] playwright import 실패: {type(exc).__name__}: {exc}")
+        return []
+
+    nav_timeout_ms = max(5000, int(timeout[1] * 1000))
+    found: list[tuple[str, int]] = []
+    seen: set[str] = set()
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=(
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+                ),
+                viewport={"width": 1366, "height": 1900},
+            )
+            page = context.new_page()
+            page.goto(product_url, wait_until="domcontentloaded", timeout=nav_timeout_ms)
+            page.wait_for_timeout(1800)
+            # 지연 로딩 대응: 스크롤하며 이미지 로드 유도
+            for _ in range(6):
+                page.mouse.wheel(0, 2400)
+                page.wait_for_timeout(450)
+
+            img_objs: list[dict[str, Any]] = page.eval_on_selector_all(
+                "img",
+                (
+                    "els => els.map(e => ({"
+                    "src: (e.currentSrc || e.src || e.getAttribute('data-src') || e.getAttribute('data-original') || ''),"
+                    "srcset: (e.getAttribute('srcset') || ''),"
+                    "alt: (e.getAttribute('alt') || ''),"
+                    "cls: (e.getAttribute('class') || ''),"
+                    "id: (e.getAttribute('id') || ''),"
+                    "w: (e.naturalWidth || 0),"
+                    "h: (e.naturalHeight || 0)"
+                    "}));"
+                ),
+            )
+            bg_urls: list[str] = page.eval_on_selector_all(
+                "[style*='background-image']",
+                (
+                    "els => els.map(e => getComputedStyle(e).backgroundImage || '')"
+                ),
+            )
+            html_text = page.content()
+            for obj in img_objs:
+                raw_s = str((obj or {}).get("src") or "").strip()
+                # srcset 케이스 분리
+                srcset = str((obj or {}).get("srcset") or "").strip()
+                if srcset:
+                    srcset_cand = [x.strip().split(" ")[0] for x in srcset.split(",")]
+                else:
+                    srcset_cand = []
+                cand = ([x.strip().split(" ")[0] for x in raw_s.split(",")] if "," in raw_s else [raw_s]) + srcset_cand
+                meta_text = " ".join(
+                    [
+                        str((obj or {}).get("alt") or ""),
+                        str((obj or {}).get("cls") or ""),
+                        str((obj or {}).get("id") or ""),
+                    ]
+                )
+                w = int((obj or {}).get("w") or 0)
+                h = int((obj or {}).get("h") or 0)
+                for c in cand:
+                    u = c
+                    if u.startswith("//"):
+                        u = "https:" + u
+                    sc = _score_shop_image_candidate(u, meta_text=meta_text, width=w, height=h)
+                    if _looks_like_image_for_shop(u) and u not in seen and sc >= 2:
+                        seen.add(u)
+                        found.append((u, sc))
+            for b in bg_urls:
+                bs = str(b or "")
+                for m in re.finditer(r'url\(["\']?([^"\')]+)', bs, re.IGNORECASE):
+                    u = m.group(1).strip()
+                    if u.startswith("//"):
+                        u = "https:" + u
+                    sc = _score_shop_image_candidate(u, meta_text="background-image", width=None, height=None)
+                    if _looks_like_image_for_shop(u) and u not in seen and sc >= 2:
+                        seen.add(u)
+                        found.append((u, sc))
+            # DOM 외 포함 텍스트에서 이미지 URL 패턴 추가 탐지
+            for m in re.finditer(r'https?://[^\s"\\\']+\.(?:jpg|jpeg|png|webp|gif|bmp)(?:\?[^\s"\\\']*)?', html_text, re.IGNORECASE):
+                u = m.group(0).strip()
+                if u.startswith("//"):
+                    u = "https:" + u
+                sc = _score_shop_image_candidate(u, meta_text="html_text", width=None, height=None)
+                if _looks_like_image_for_shop(u) and u not in seen and sc >= 2:
+                    seen.add(u)
+                    found.append((u, sc))
+
+            browser.close()
+    except Exception as exc:  # pylint: disable=broad-except
+        if debug:
+            print(f"    [SHOP][PW] 추출 실패: {type(exc).__name__}: {exc}")
+        return []
+
+    found.sort(key=lambda x: x[1], reverse=True)
+    if debug:
+        print(f"    [SHOP][PW] 추출 성공(필터후): {len(found)}")
+        print(f"    [SHOP][PW] 상위 점수: {[s for _, s in found[:5]]}")
+    return [u for u, _ in found[:20]]
+
+
+def _looks_like_image_for_shop(url: str) -> bool:
+    low = str(url or "").lower()
+    if not (low.startswith("http://") or low.startswith("https://")):
+        return False
+    if any(x in low for x in ("sprite", "icon", "logo", "badge", "blank", "loading")):
+        return False
+    return any(ext in low for ext in (".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp")) or ("type=w" in low)
+
+
+def _score_shop_image_candidate(
+    url: str,
+    *,
+    meta_text: str,
+    width: int | None,
+    height: int | None,
+) -> int:
+    low = str(url or "").lower()
+    meta = str(meta_text or "").lower()
+    score = 0
+
+    positive = (
+        "detail", "product", "goods", "desc", "content", "editor",
+        "ingredient", "nutrition", "원재료", "성분", "영양", "상세",
+    )
+    negative = (
+        "banner", "event", "promo", "review", "qna", "logo", "icon",
+        "sprite", "sns", "youtube", "profile", "thumb", "main", "brandstory",
+        "recommend", "coupon",
+    )
+
+    if any(k in low for k in positive) or any(k in meta for k in positive):
+        score += 3
+    if any(k in low for k in negative) or any(k in meta for k in negative):
+        score -= 4
+
+    w = int(width or 0)
+    h = int(height or 0)
+    if w > 0 and h > 0:
+        if w >= 600 or h >= 600:
+            score += 1
+        if w < 220 and h < 220:
+            score -= 2
+    return score
 
 
 def _safe_filename(text: str, max_len: int = 80) -> str:
@@ -458,9 +733,9 @@ def run_query_image_benchmark(
     app_config.reload_dotenv()
     provider_norm = str(provider or "google").strip().lower()
     serp_key = os.getenv("SERPAPI_KEY")
-    if provider_norm != "naver_official" and not serp_key:
+    if provider_norm not in ("naver_official", "naver_blog", "naver_shop") and not serp_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
-    if provider_norm == "naver_official":
+    if provider_norm in ("naver_official", "naver_blog", "naver_shop"):
         naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
         naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
         if not (naver_client_id and naver_client_secret):
@@ -541,7 +816,6 @@ def run_query_image_benchmark(
                 has_required = bool(
                     (pass3_result.get("product_report_number"))
                     and (pass3_result.get("ingredients_text"))
-                    and (pass3_result.get("product_name_in_image"))
                 )
                 if has_required:
                     pass4_result = analyzer.analyze_pass4_normalize(
@@ -701,7 +975,6 @@ def run_query_image_benchmark(
                         p3_has_required = bool(
                             (pass3_result.get("product_report_number"))
                             and (pass3_result.get("ingredients_text"))
-                            and (pass3_result.get("product_name_in_image"))
                         )
                         p3_nut_pass = bool(pass3_result.get("nutrition_text"))
                         p4_items = []
@@ -804,9 +1077,10 @@ def run_query_image_benchmark(
                             "pass3_ok": p3_has_required,
                             "pass3_error": pass3_err,
                             "pass3_product_name": (pass3_result or {}).get("product_name_in_image") if pass3_result else None,
-                            "pass3_report_no": (pass3_result or {}).get("product_report_number") if pass3_result else None,
-                            "pass3_ingredients": (pass3_result or {}).get("ingredients_text") if pass3_result else None,
-                            "pass3_raw": p3_raw,
+                                "pass3_report_no": (pass3_result or {}).get("product_report_number") if pass3_result else None,
+                                "pass3_ingredients": (pass3_result or {}).get("ingredients_text") if pass3_result else None,
+                                "pass3_nutrition": (pass3_result or {}).get("nutrition_text") if pass3_result else None,
+                                "pass3_raw": p3_raw,
                             "pass3_ing_executed": bool((pass3_result or {}).get("raw_model_text_pass3_ingredients")) if pass3_result else False,
                             "pass3_nut_expected": bool(nutri_flag),
                             "pass3_nut_executed": bool((pass3_result or {}).get("raw_model_text_pass3_nutrition")) if pass3_result else False,
@@ -825,11 +1099,13 @@ def run_query_image_benchmark(
                                 or (pass4_result or {}).get("raw_api_response_pass4_nutrition")
                             ) if pass4_result else False,
                             "pass4_nut_pass": bool((pass4_result or {}).get("nutrition_items")) if pass4_result else False,
-                            "pass4_reason": (pass4_result or {}).get("ingredient_items_reason") if pass4_result else None,
-                            "pass4_error": (pass4_result or {}).get("pass4_ai_error") if pass4_result else None,
-                            "pass4_raw": p4_raw,
-                        }
-                    )
+                                "pass4_reason": (pass4_result or {}).get("ingredient_items_reason") if pass4_result else None,
+                                "pass4_error": (pass4_result or {}).get("pass4_ai_error") if pass4_result else None,
+                                "pass4_raw": p4_raw,
+                                "pass4_ingredient_items": (pass4_result or {}).get("ingredient_items") if pass4_result else None,
+                                "pass4_nutrition_items": (pass4_result or {}).get("nutrition_items") if pass4_result else None,
+                            }
+                        )
 
                 pass2_raw = None
                 qf = result.get("quality_flags") or {}
@@ -839,7 +1115,6 @@ def run_query_image_benchmark(
                     p2b_executed
                     and qf.get("has_ingredients_section") is True
                     and qf.get("has_report_number_label") is True
-                    and qf.get("has_product_name") is True
                 )
                 if p2a_ok:
                     pass2a_pass_cnt += 1
@@ -1039,15 +1314,18 @@ def run_query_image_benchmark(
             ("Pass3 통과", pass3_pass_cnt),
             ("Pass4 통과", pass4_pass_cnt),
         ]
-        prev = total_cnt if total_cnt > 0 else 1
+        total_base = total_cnt
+        prev_count = total_cnt
         for name, count in steps:
-            rate = (count / prev * 100.0) if prev > 0 else 0.0
+            prev_rate = (count / prev_count * 100.0) if prev_count > 0 else 0.0
+            total_rate = (count / total_base * 100.0) if total_base > 0 else 0.0
             html_parts.append("<div class='fcard'>")
             html_parts.append(f"<div class='fstep'>{html.escape(name)}</div>")
             html_parts.append(f"<div class='fnum'>{count:,}</div>")
-            html_parts.append(f"<div class='frate'>이전단계 대비 {rate:.1f}%</div>")
+            html_parts.append(f"<div class='frate'>이전단계 대비 {prev_rate:.1f}%</div>")
+            html_parts.append(f"<div class='frate'>전체 대비 {total_rate:.1f}%</div>")
             html_parts.append("</div>")
-            prev = count if count > 0 else 1
+            prev_count = count
         html_parts.append("</div>")
         html_parts.append("<div class='branch-wrap'>")
         html_parts.append("<div class='branch'>")
@@ -1082,6 +1360,45 @@ def run_query_image_benchmark(
             for row in sorted(pass4_success_rows, key=lambda x: x["no"]):
                 no = int(row.get("no") or 0)
                 url = str(row.get("url") or "")
+                report_no = str(row.get("pass3_report_no") or "null")
+                product_name = str(row.get("pass3_product_name") or "").strip() or None
+                ingredients_text = str(row.get("pass3_ingredients") or "null")
+                nutrition_text = str(row.get("pass3_nutrition") or "").strip() or None
+                ing_items = row.get("pass4_ingredient_items") or []
+                nut_items = row.get("pass4_nutrition_items") or []
+
+                ing_lines: list[str] = []
+                if isinstance(ing_items, list) and ing_items:
+                    for i, it in enumerate(ing_items, start=1):
+                        if not isinstance(it, dict):
+                            continue
+                        nm = str(it.get("ingredient_name") or "null")
+                        origin = str(it.get("origin") or "").strip()
+                        amount = str(it.get("amount") or "").strip()
+                        sub_cnt = len(it.get("sub_ingredients") or []) if isinstance(it.get("sub_ingredients"), list) else 0
+                        parts = [nm]
+                        if origin:
+                            parts.append(f"origin={origin}")
+                        if amount:
+                            parts.append(f"amount={amount}")
+                        if sub_cnt > 0:
+                            parts.append(f"sub={sub_cnt}")
+                        ing_lines.append(f"{i}. " + " | ".join(parts))
+                nut_lines: list[str] = []
+                if isinstance(nut_items, list) and nut_items:
+                    for i, it in enumerate(nut_items, start=1):
+                        if not isinstance(it, dict):
+                            continue
+                        name = str(it.get("name") or "null")
+                        value = str(it.get("value") or "").strip()
+                        unit = str(it.get("unit") or "").strip()
+                        dv = str(it.get("daily_value") or "").strip()
+                        parts = [name]
+                        if value or unit:
+                            parts.append(f"value={(value + unit).strip() or 'null'}")
+                        if dv:
+                            parts.append(f"daily={dv}")
+                        nut_lines.append(f"{i}. " + " | ".join(parts))
 
                 html_parts.append("<div class='card'>")
                 html_parts.append(f"<div class='meta'>[{no:03d}] <a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></div>")
@@ -1092,11 +1409,16 @@ def run_query_image_benchmark(
                 html_parts.append("</div>")
                 html_parts.append("<div>")
                 html_parts.append("<div><span class='lbl'>Pass4 최종 통과:</span> <span class='ok'>YES</span></div>")
-                html_parts.append(f"<div><span class='lbl'>제품명:</span> {html.escape(str(row.get('pass3_product_name') or 'null'))}</div>")
-                html_parts.append(f"<div><span class='lbl'>품목보고번호:</span> {html.escape(str(row.get('pass3_report_no') or 'null'))}</div>")
-                html_parts.append(f"<div><span class='lbl'>원재료명:</span> {html.escape(str(row.get('pass3_ingredients') or 'null'))}</div>")
-                html_parts.append("<div class='lbl'>Pass4 raw</div>")
-                html_parts.append(f"<pre>{html.escape(str(row.get('pass4_raw') or '(원문 없음)'))}</pre>")
+                html_parts.append(f"<div><span class='lbl'>품목보고번호:</span> {html.escape(report_no)}</div>")
+                html_parts.append(f"<div><span class='lbl'>원재료명:</span> {html.escape(ingredients_text)}</div>")
+                if nutrition_text:
+                    html_parts.append(f"<div><span class='lbl'>영양성분 텍스트:</span> {html.escape(nutrition_text)}</div>")
+                if product_name:
+                    html_parts.append(f"<div><span class='lbl'>제품명:</span> {html.escape(product_name)}</div>")
+                html_parts.append(f"<div><span class='lbl'>Pass4 원재료 파싱:</span> {len(ing_lines):,}개</div>")
+                html_parts.append(f"<pre>{html.escape(chr(10).join(ing_lines) if ing_lines else '없음')}</pre>")
+                html_parts.append(f"<div><span class='lbl'>Pass4 영양성분 파싱:</span> {len(nut_lines):,}개</div>")
+                html_parts.append(f"<pre>{html.escape(chr(10).join(nut_lines) if nut_lines else '없음')}</pre>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
@@ -1193,13 +1515,16 @@ def run_query_image_benchmark_interactive() -> None:
     print("\n  🔎 [검색어 기반 이미지 벤치마크]")
     print("  🔹 이미지 검색 엔진 선택")
     print("    [1] Google Images")
-    print("    [2] Naver Images (SerpAPI)")
-    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [2] Naver Images (Official OpenAPI)")
+    print("    [3] Naver Images (Blog source only)")
+    print("    [4] Naver Shop Detail Images")
     raw_provider = input("  선택 > ").strip()
     if raw_provider == "2":
-        provider = "naver"
-    elif raw_provider == "3":
         provider = "naver_official"
+    elif raw_provider == "3":
+        provider = "naver_blog"
+    elif raw_provider == "4":
+        provider = "naver_shop"
     else:
         provider = "google"
     query = _choose_benchmark_query_interactive()
@@ -1245,9 +1570,6 @@ def run_query_image_benchmark_interactive() -> None:
     auto_open_report = not (raw_open in ("n", "no"))
     raw_debug_serp = input("  🔹 SERP 요청/응답 raw 디버그 출력? [y/N]: ").strip().lower()
     debug_serp = raw_debug_serp in ("y", "yes")
-    raw_images_only = input("  🔹 이미지 수집만 실행? (Pass 분석 생략) [Y/n]: ").strip().lower()
-    images_only = not (raw_images_only in ("n", "no"))
-
     print("\n  🚀 실행합니다. 결과는 이미지별로 순차 출력됩니다.")
     run_query_image_benchmark(
         query=query,
@@ -1259,7 +1581,7 @@ def run_query_image_benchmark_interactive() -> None:
         auto_open_report=auto_open_report,
         provider=provider,
         debug_serp=debug_serp,
-        images_only=images_only,
+        images_only=False,
     )
 
 

@@ -305,8 +305,8 @@ def run_pass4_normalize(
     raw_model_text_pass4: str | None = None
     raw_api_response_pass4: str | None = None
     pass4_ai_error: str | None = None
-    # 요청사항: 품목번호/원재료명/제품명이 모두 추출된 경우(영양성분 무관) Pass-4 AI 구조화 실행
-    if report_no and ingredients_text and product_name:
+    # 요청사항 반영: 제품명 없어도 Pass4 실행 (품목번호/원재료명만 필수, 영양성분은 선택)
+    if report_no and ingredients_text:
         try:
             prompt_ing = analyzer._build_prompt_pass4_ingredients(
                 ingredients_text=ingredients_text,

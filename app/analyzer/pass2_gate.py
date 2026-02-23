@@ -197,12 +197,9 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
             fail_checks.append("missing_ingredients_section")
         if pass2a_ok and not has_report_label:
             fail_checks.append("missing_report_label")
-        if pass2a_ok and not has_product_name:
-            fail_checks.append("missing_product_name")
-
         decision_raw = "READ" if not fail_checks else "SKIP"
         suitability_raw = "적합" if decision_raw == "READ" else "부적합"
-        total_checks = 15
+        total_checks = 14
         passed_checks = total_checks - len([c for c in fail_checks if c != "pass2b_skipped_by_pass2a_fail"])
         quality_score = max(0, min(100, int((passed_checks / total_checks) * 100)))
         decision_conf = 100

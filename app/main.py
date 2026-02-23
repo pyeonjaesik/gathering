@@ -37,7 +37,6 @@ from app.ingredient_enricher import (
 )
 from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
-from app.serp_only_test import run_serp_test_interactive
 from app.serp_simple_debug import run_serp_simple_debug_interactive
 from app.query_pipeline import (
     cache_serp_images,
@@ -253,8 +252,7 @@ def run_benchmark_menu() -> None:
     while True:
         print("\n  📊 [벤치마크]")
         print("    [1] 검색어 기반 이미지 벤치마크 (SERP + Pass 분석)")
-        print("    [2] SERP 단독 테스트 (이미지 수집만)")
-        print("    [3] 초간단 SERP 디버그 (raw 확인)")
+        print("    [2] SERP 테스트/디버그 통합 (브라우저 리포트)")
         print("    [b] 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
@@ -264,11 +262,6 @@ def run_benchmark_menu() -> None:
             except Exception as exc:  # pylint: disable=broad-except
                 print(f"  ❌ 실행 실패: {exc}")
         elif sub == "2":
-            try:
-                run_serp_test_interactive()
-            except Exception as exc:  # pylint: disable=broad-except
-                print(f"  ❌ 실행 실패: {exc}")
-        elif sub == "3":
             try:
                 run_serp_simple_debug_interactive()
             except Exception as exc:  # pylint: disable=broad-except
@@ -698,20 +691,23 @@ def run_query_pipeline_execute() -> None:
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
-    print("    [2] Naver Images (SerpAPI)")
-    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [2] Naver Images (Official OpenAPI)")
+    print("    [3] Naver Images (Blog source only)")
+    print("    [4] Naver Shop Detail Images")
     raw_provider = input("  선택 > ").strip()
     if raw_provider == "2":
-        provider = "naver"
-    elif raw_provider == "3":
         provider = "naver_official"
+    elif raw_provider == "3":
+        provider = "naver_blog"
+    elif raw_provider == "4":
+        provider = "naver_shop"
     else:
         provider = "google"
 
-    if provider != "naver_official" and not serp_key:
+    if provider not in ("naver_official", "naver_blog", "naver_shop") and not serp_key:
         print("  ❌ SERPAPI_KEY가 필요합니다.")
         return
-    if provider == "naver_official":
+    if provider in ("naver_official", "naver_blog", "naver_shop"):
         naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
         naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
         if not (naver_client_id and naver_client_secret):
@@ -878,7 +874,7 @@ def run_query_pipeline_execute() -> None:
                     report_no = (pass3.get("product_report_number") or "").strip()
                     ingredients_text = (pass3.get("ingredients_text") or "").strip()
                     nutrition_text = (pass3.get("nutrition_text") or "").strip() or None
-                    if not (product_name and report_no and ingredients_text):
+                    if not (report_no and ingredients_text):
                         result["fail_stage"] = "pass3"
                         result["fail_reason"] = "required_fields_missing"
                         return result

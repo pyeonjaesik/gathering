@@ -2,8 +2,8 @@
 SerpAPI 이미지 수집만 단독으로 점검하는 테스트 도구.
 
 용도:
-- analyzer/pass 로직 없이 SerpAPI 호출 자체가 정상인지 확인
-- provider(google/naver)별 응답 구조/오류를 빠르게 확인
+- analyzer/pass 로직 없이 이미지 수집 API 호출 자체가 정상인지 확인
+- provider(google/naver_official/naver_blog/naver_shop)별 응답 구조/오류를 빠르게 확인
 """
 
 from __future__ import annotations
@@ -22,14 +22,39 @@ from app import config as _app_config
 
 SERPAPI_URL = "https://serpapi.com/search.json"
 NAVER_OPENAPI_IMAGE_URL = "https://openapi.naver.com/v1/search/image.json"
+NAVER_OPENAPI_SHOP_URL = "https://openapi.naver.com/v1/search/shop.json"
 
 
 def build_request(provider: str, query: str, page: int, per_page: int, api_key: str) -> tuple[str, dict[str, Any], dict[str, str] | None]:
-    if provider == "naver_official":
+    if provider in ("naver_official", "naver_blog", "naver_shop"):
         client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
         client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
         if not (client_id and client_secret):
             raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수가 필요합니다.")
+        if provider == "naver_blog":
+            params = {
+                "query": query,
+                "display": per_page,
+                "start": page * per_page + 1,
+                "sort": "sim",
+            }
+            headers = {
+                "X-Naver-Client-Id": client_id,
+                "X-Naver-Client-Secret": client_secret,
+            }
+            return (NAVER_OPENAPI_IMAGE_URL, params, headers)
+        if provider == "naver_shop":
+            params = {
+                "query": query,
+                "display": per_page,
+                "start": page * per_page + 1,
+                "sort": "sim",
+            }
+            headers = {
+                "X-Naver-Client-Id": client_id,
+                "X-Naver-Client-Secret": client_secret,
+            }
+            return (NAVER_OPENAPI_SHOP_URL, params, headers)
         params = {
             "query": query,
             "display": per_page,
@@ -42,16 +67,6 @@ def build_request(provider: str, query: str, page: int, per_page: int, api_key: 
         }
         return (NAVER_OPENAPI_IMAGE_URL, params, headers)
 
-    if provider == "naver":
-        return (SERPAPI_URL, {
-            "engine": "naver",
-            "where": "image",
-            "query": query,
-            "display": per_page,
-            "start": page * per_page + 1,
-            "api_key": api_key,
-            "no_cache": "true",
-        }, None)
     return (SERPAPI_URL, {
         "engine": "google_images",
         "q": query,
@@ -76,7 +91,7 @@ def run_serp_test(
 ) -> int:
     _app_config.reload_dotenv()
     api_key = os.getenv("SERPAPI_KEY", "").strip()
-    if provider != "naver_official" and not api_key:
+    if provider not in ("naver_official", "naver_blog", "naver_shop") and not api_key:
         print("❌ SERPAPI_KEY 환경변수가 필요합니다.")
         return 1
 
@@ -105,7 +120,7 @@ def run_serp_test(
                 resp = requests.get(req_url, params=params, headers=headers, timeout=timeout)
                 status_code = resp.status_code
                 payload = resp.json()
-                if provider == "naver_official":
+                if provider in ("naver_official", "naver_blog", "naver_shop"):
                     api_error = payload.get("errorMessage") or payload.get("message") or payload.get("errorCode")
                 else:
                     api_error = payload.get("error")
@@ -145,6 +160,26 @@ def run_serp_test(
 
         if provider == "naver_official":
             images = payload.get("items") or []
+        elif provider == "naver_blog":
+            all_items = payload.get("items") or []
+            images = []
+            for it in all_items:
+                link = str(it.get("link") or "").lower()
+                thumb = str(it.get("thumbnail") or "").lower()
+                if any(
+                    key in link or key in thumb
+                    for key in (
+                        "blog.naver.com",
+                        "blogfiles.pstatic.net",
+                        "postfiles.pstatic.net",
+                        "mblogthumb-phinf.pstatic.net",
+                        "phinf.pstatic.net",
+                        "blog",
+                    )
+                ):
+                    images.append(it)
+        elif provider == "naver_shop":
+            images = payload.get("items") or []
         else:
             images = payload.get("images_results") or []
         if not images:
@@ -155,6 +190,10 @@ def run_serp_test(
         for i, item in enumerate(images, start=1):
             if provider == "naver_official":
                 url = item.get("link") or item.get("thumbnail")
+            elif provider == "naver_blog":
+                url = item.get("link")
+            elif provider == "naver_shop":
+                url = item.get("link")
             else:
                 url = item.get("original") or item.get("thumbnail")
             if not url or url in seen:
@@ -165,6 +204,10 @@ def run_serp_test(
                 title = str(item.get("title") or "").strip()
                 if provider == "naver_official":
                     source = urlparse(str(url)).netloc if url else ""
+                elif provider == "naver_blog":
+                    source = urlparse(str(url)).netloc if url else ""
+                elif provider == "naver_shop":
+                    source = str(item.get("mallName") or "") or (urlparse(str(url)).netloc if url else "")
                 else:
                     source = str(item.get("source") or "").strip()
                 print(f"  - #{i:02d} {url}")
@@ -186,13 +229,16 @@ def run_serp_test(
 def run_serp_test_interactive() -> None:
     print("\n  🌐 [SERP 단독 테스트]")
     print("    [1] Google Images")
-    print("    [2] Naver Images (SerpAPI)")
-    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [2] Naver Images (Official OpenAPI)")
+    print("    [3] Naver Images (Blog source only)")
+    print("    [4] Naver Shop Detail Images")
     raw_provider = input("  🔹 검색엔진 선택: ").strip()
     if raw_provider == "2":
-        provider = "naver"
-    elif raw_provider == "3":
         provider = "naver_official"
+    elif raw_provider == "3":
+        provider = "naver_blog"
+    elif raw_provider == "4":
+        provider = "naver_shop"
     else:
         provider = "google"
 
@@ -226,7 +272,7 @@ def run_serp_test_interactive() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="SerpAPI 이미지 수집 단독 테스트")
-    parser.add_argument("--provider", choices=["google", "naver", "naver_official"], default="google")
+    parser.add_argument("--provider", choices=["google", "naver_official", "naver_blog", "naver_shop"], default="google")
     parser.add_argument("--query", required=True)
     parser.add_argument("--max-pages", type=int, default=3)
     parser.add_argument("--per-page", type=int, default=20)
