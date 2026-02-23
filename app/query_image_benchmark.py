@@ -18,6 +18,7 @@ import webbrowser
 import sqlite3
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from typing import Any
@@ -27,9 +28,12 @@ import requests
 
 from app.analyzer import URLIngredientAnalyzer
 from app.config import DB_FILE
+from app import config as app_config
 
 SERPAPI_URL = "https://serpapi.com/search.json"
+NAVER_OPENAPI_IMAGE_URL = "https://openapi.naver.com/v1/search/image.json"
 SERPAPI_TIMEOUT = 40
+SERPAPI_CONNECT_TIMEOUT = 8
 SERPAPI_RETRIES = 4
 SERPAPI_RETRY_BACKOFF = 1.0
 SERP_REPORT_DIR = Path("reports/serp_batch")
@@ -251,30 +255,51 @@ def _search_images_all(
     seen: set[str] = set()
     out: list[ImageCandidate] = []
     provider_norm = str(provider or "google").strip().lower()
-    if provider_norm not in ("google", "naver"):
+    if provider_norm not in ("google", "naver", "naver_official"):
         provider_norm = "google"
     consecutive_failures = 0
 
     for page_no in range(max_pages):
+        request_url = SERPAPI_URL
+        request_headers: dict[str, str] | None = None
         if provider_norm == "naver":
             # SerpAPI Naver Images
+            page_size = min(per_page, 30)
             params = {
                 "engine": "naver",
                 "where": "image",
                 "query": query,
                 "api_key": api_key,
                 "no_cache": "true",
-                "display": per_page,
-                "start": page_no * per_page + 1,
+                "display": page_size,
+                "start": page_no * page_size + 1,
+            }
+        elif provider_norm == "naver_official":
+            page_size = min(per_page, 100)
+            naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+            naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+            if not (naver_client_id and naver_client_secret):
+                raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수가 필요합니다.")
+            params = {
+                "query": query,
+                "display": page_size,
+                "start": page_no * page_size + 1,
+                "sort": "sim",
+            }
+            request_url = NAVER_OPENAPI_IMAGE_URL
+            request_headers = {
+                "X-Naver-Client-Id": naver_client_id,
+                "X-Naver-Client-Secret": naver_client_secret,
             }
         else:
             # SerpAPI Google Images
+            page_size = per_page
             params = {
                 "engine": "google_images",
                 "q": query,
                 "hl": "ko",
                 "gl": "kr",
-                "num": per_page,
+                "num": page_size,
                 "ijn": page_no,
                 "api_key": api_key,
                 "no_cache": "true",
@@ -287,9 +312,15 @@ def _search_images_all(
                 if debug_serp:
                     safe_params = {k: v for k, v in params.items() if k != "api_key"}
                     print(f"  [SERP][page={page_no} attempt={attempt+1}/{SERPAPI_RETRIES+1}] 요청 시작")
+                    print(f"    endpoint={request_url}")
                     print(f"    params={safe_params}")
                 t0 = time.time()
-                resp = requests.get(SERPAPI_URL, params=params, timeout=SERPAPI_TIMEOUT)
+                resp = requests.get(
+                    request_url,
+                    params=params,
+                    headers=request_headers,
+                    timeout=(SERPAPI_CONNECT_TIMEOUT, SERPAPI_TIMEOUT),
+                )
                 elapsed = time.time() - t0
                 raw_text = resp.text or ""
                 try:
@@ -307,10 +338,15 @@ def _search_images_all(
                     break
 
                 api_err = data.get("error")
+                if provider_norm == "naver_official" and resp.status_code >= 400:
+                    api_err = data.get("errorMessage") or data.get("message") or data.get("errorCode") or api_err
                 if debug_serp:
                     print(f"  [SERP][page={page_no}] 응답 수신 status={resp.status_code} elapsed={elapsed:.2f}s")
                     print(f"    api_error={api_err}")
-                    imgs = data.get("images_results") or []
+                    if provider_norm == "naver_official":
+                        imgs = data.get("items") or []
+                    else:
+                        imgs = data.get("images_results") or []
                     print(f"    images_results={len(imgs)}")
                     print(f"    raw(앞 1200자)={raw_text[:1200]}")
                 # SerpAPI가 "결과 없음"을 error 문자열로 주는 경우가 있어,
@@ -331,6 +367,23 @@ def _search_images_all(
                 last_error = str(exc)
                 if debug_serp:
                     print(f"  [SERP][page={page_no}] 예외: {type(exc).__name__}: {exc}")
+                # Naver 이미지에서 응답 페이로드가 커 타임아웃이 잦은 경우,
+                # display를 줄여 같은 페이지를 더 가볍게 재시도한다.
+                if (
+                    provider_norm == "naver"
+                    and isinstance(exc, requests.exceptions.ReadTimeout)
+                    and isinstance(params.get("display"), int)
+                    and int(params.get("display", 0)) > 10
+                ):
+                    prev_display = int(params["display"])
+                    new_display = max(10, prev_display // 2)
+                    if new_display < prev_display:
+                        params["display"] = new_display
+                        params["start"] = page_no * new_display + 1
+                        if debug_serp:
+                            print(
+                                f"  [SERP][page={page_no}] 타임아웃 완화: display {prev_display} -> {new_display}, 재시도"
+                            )
                 if attempt < SERPAPI_RETRIES:
                     time.sleep(SERPAPI_RETRY_BACKOFF * (2 ** attempt))
                     continue
@@ -345,13 +398,21 @@ def _search_images_all(
             continue
 
         consecutive_failures = 0
-        images = data.get("images_results") or []
+        if provider_norm == "naver_official":
+            images = data.get("items") or []
+        else:
+            images = data.get("images_results") or []
         if not images:
             break
 
         added = 0
         for rank, item in enumerate(images, start=1):
-            url = item.get("original") or item.get("thumbnail")
+            if provider_norm == "naver_official":
+                url = item.get("link") or item.get("thumbnail")
+                source = urlparse(str(url)).netloc if url else "naver_openapi"
+            else:
+                url = item.get("original") or item.get("thumbnail")
+                source = item.get("source")
             if not url or url in seen:
                 continue
             seen.add(url)
@@ -359,7 +420,7 @@ def _search_images_all(
                 ImageCandidate(
                     url=url,
                     title=item.get("title"),
-                    source=item.get("source"),
+                    source=source,
                     page_no=page_no,
                     rank_in_page=rank,
                 )
@@ -384,30 +445,37 @@ def _safe_filename(text: str, max_len: int = 80) -> str:
 def run_query_image_benchmark(
     query: str,
     max_pages: int = 20,
+    per_page: int = 20,
     delay_sec: float = 0.0,
     max_concurrency: int = 5,
     adaptive: bool = True,
     auto_open_report: bool = True,
     provider: str = "google",
     debug_serp: bool = False,
+    images_only: bool = False,
 ) -> None:
+    # 인터페이스를 오래 켜둔 경우를 대비해 매 실행 시 .env를 다시 로드
+    app_config.reload_dotenv()
+    provider_norm = str(provider or "google").strip().lower()
     serp_key = os.getenv("SERPAPI_KEY")
-    if not serp_key:
+    if provider_norm != "naver_official" and not serp_key:
         raise SystemExit("SERPAPI_KEY 환경변수를 설정해주세요.")
-    openai_key = os.getenv("OPENAI_API_KEY")
-    if not openai_key:
-        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
-
+    if provider_norm == "naver_official":
+        naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+        naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+        if not (naver_client_id and naver_client_secret):
+            raise SystemExit("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수를 설정해주세요.")
     print("\n=== 검색어 기반 이미지 벤치마크 ===")
     print(f"- 검색어: {query}")
     print(f"- 검색엔진: {provider}")
     print(f"- 최대 페이지: {max_pages}")
+    print(f"- 페이지당 수집 개수: {per_page}")
     print("- SerpAPI에서 이미지 수집 중...")
     images = _search_images_all(
         query=query,
-        api_key=serp_key,
+        api_key=serp_key or "",
         max_pages=max_pages,
-        per_page=100,
+        per_page=max(1, min(100, int(per_page))),
         provider=provider,
         debug_serp=debug_serp,
     )
@@ -415,6 +483,18 @@ def run_query_image_benchmark(
     print("- 상태 기준: ✅ 추출 가능 | ❌ 추출 불가")
     if not images:
         return
+    if images_only:
+        _save_images_only_report(
+            query=query,
+            provider=provider,
+            images=images,
+            auto_open_report=auto_open_report,
+        )
+        return
+
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if not openai_key:
+        raise SystemExit("OPENAI_API_KEY 환경변수를 설정해주세요.")
 
     max_concurrency = max(1, min(200, int(max_concurrency)))
     print(f"- analyze 병렬 처리: 최대 {max_concurrency}개 동시 실행")
@@ -675,6 +755,7 @@ def run_query_image_benchmark(
                                     "ingredient_items": p4_items,
                                     "nutrition_items": p4_nut_items,
                                     "pass4_error": p4_err,
+                                    "pass4_raw": p4_raw,
                                 }
                             )
                         pass3_success_rows.append(
@@ -818,21 +899,24 @@ def run_query_image_benchmark(
     def _emit_final(line: str = "") -> None:
         final_lines.append(line)
 
+    pass4_success_rows = [
+        r for r in pass2_pass_rows
+        if bool(r.get("pass3_ok")) and bool(r.get("pass4_exists")) and (not r.get("pass4_error"))
+    ]
+
     _emit_final("=" * 90)
-    _emit_final("전체 이미지 Pass-2 raw")
+    _emit_final("PASS4 최종 통과 결과 (Pass4 raw 포함)")
     _emit_final("=" * 90)
-    if not pass2_all_rows:
+    if not pass4_success_rows:
         _emit_final("- 없음")
     else:
-        for row in sorted(pass2_all_rows, key=lambda x: x["no"]):
+        for row in sorted(pass4_success_rows, key=lambda x: x["no"]):
             _emit_final(f"[{row['no']:03d}] URL: {row['url']}")
-            _emit_final(f"  [PASS2-A] {'통과' if row.get('pass2a_ok') else '실패'}")
-            _emit_final(f"  {row.get('raw_pass2a') or '(원문 없음)'}")
-            _emit_final(
-                f"  [PASS2-B] "
-                f"{'통과' if row.get('pass2b_pass') else ('실행' if row.get('pass2b_executed') else '미실행')}"
-            )
-            _emit_final(f"  {row.get('raw_pass2b') or '(미실행)'}")
+            _emit_final(f"  제품명: {row.get('pass3_product_name') or 'null'}")
+            _emit_final(f"  품목보고번호: {row.get('pass3_report_no') or 'null'}")
+            _emit_final(f"  원재료명: {row.get('pass3_ingredients') or 'null'}")
+            _emit_final("  [PASS4 RAW]")
+            _emit_final(f"  {row.get('pass4_raw') or '(원문 없음)'}")
             _emit_final("-" * 90)
 
     total_cnt = len(images)
@@ -992,10 +1076,10 @@ def run_query_image_benchmark(
         html_parts.append(f"<span class='chip'>Pass4-영양 통과 총합 {b2_p4_nut}</span>")
         html_parts.append("</div></div>")
         html_parts.append("</div>")
-        if not pass2_all_rows:
-            html_parts.append("<div class='card'><div class='meta'>Pass-2 raw 결과 없음</div></div>")
+        if not pass4_success_rows:
+            html_parts.append("<div class='card'><div class='meta'>Pass4 최종 통과 결과 없음</div></div>")
         else:
-            for row in sorted(pass2_all_rows, key=lambda x: x["no"]):
+            for row in sorted(pass4_success_rows, key=lambda x: x["no"]):
                 no = int(row.get("no") or 0)
                 url = str(row.get("url") or "")
 
@@ -1007,13 +1091,12 @@ def run_query_image_benchmark(
                 html_parts.append("<div style='display:none;color:#888;font-size:13px;'>이미지 로드 실패</div>")
                 html_parts.append("</div>")
                 html_parts.append("<div>")
-                p2a_txt = "통과" if row.get("pass2a_ok") else "실패"
-                p2b_txt = "통과" if row.get("pass2b_pass") else ("실행" if row.get("pass2b_executed") else "미실행")
-                html_parts.append(f"<div><span class='lbl'>Pass-2 상태:</span> A={p2a_txt} | B={p2b_txt} | 최종={html.escape(str(row.get('pass2_decision') or 'SKIP'))}</div>")
-                html_parts.append("<div class='lbl'>Pass-2A raw</div>")
-                html_parts.append(f"<pre>{html.escape(str(row.get('raw_pass2a') or '(원문 없음)'))}</pre>")
-                html_parts.append("<div class='lbl'>Pass-2B raw</div>")
-                html_parts.append(f"<pre>{html.escape(str(row.get('raw_pass2b') or '(미실행)'))}</pre>")
+                html_parts.append("<div><span class='lbl'>Pass4 최종 통과:</span> <span class='ok'>YES</span></div>")
+                html_parts.append(f"<div><span class='lbl'>제품명:</span> {html.escape(str(row.get('pass3_product_name') or 'null'))}</div>")
+                html_parts.append(f"<div><span class='lbl'>품목보고번호:</span> {html.escape(str(row.get('pass3_report_no') or 'null'))}</div>")
+                html_parts.append(f"<div><span class='lbl'>원재료명:</span> {html.escape(str(row.get('pass3_ingredients') or 'null'))}</div>")
+                html_parts.append("<div class='lbl'>Pass4 raw</div>")
+                html_parts.append(f"<pre>{html.escape(str(row.get('pass4_raw') or '(원문 없음)'))}</pre>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
@@ -1033,13 +1116,92 @@ def run_query_image_benchmark(
         print(f"\n⚠️ 마지막 결과 파일 저장 실패: {exc}")
 
 
+def _save_images_only_report(
+    *,
+    query: str,
+    provider: str,
+    images: list[ImageCandidate],
+    auto_open_report: bool,
+) -> None:
+    try:
+        SERP_REPORT_DIR.mkdir(parents=True, exist_ok=True)
+        date_str = datetime.now().strftime("%Y%m%d")
+        safe_query = _safe_filename(query)
+        safe_provider = _safe_filename(provider)
+        txt_path = SERP_REPORT_DIR / f"{safe_provider}_{safe_query}_{date_str}_images_only.txt"
+        html_path = SERP_REPORT_DIR / f"{safe_provider}_{safe_query}_{date_str}_images_only.html"
+
+        lines: list[str] = []
+        lines.append("=== IMAGE ONLY RESULT ===")
+        lines.append(f"query={query}")
+        lines.append(f"provider={provider}")
+        lines.append(f"count={len(images)}")
+        lines.append("")
+        for i, img in enumerate(images, start=1):
+            lines.append(f"[{i:04d}] {img.url}")
+            if img.title:
+                lines.append(f"  title={img.title}")
+            if img.source:
+                lines.append(f"  source={img.source}")
+        txt_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+        html_parts: list[str] = []
+        html_parts.append("<!doctype html><html lang='ko'><head><meta charset='utf-8'>")
+        html_parts.append("<meta name='viewport' content='width=device-width, initial-scale=1'>")
+        html_parts.append(f"<title>Image Only - {html.escape(query)}</title>")
+        html_parts.append(
+            "<style>"
+            "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:24px;background:#f7f7f8;color:#111;}"
+            ".wrap{max-width:1200px;margin:0 auto;}.card{background:#fff;border:1px solid #e3e3e6;border-radius:12px;padding:14px;margin-bottom:12px;}"
+            ".meta{font-size:13px;color:#555;margin-bottom:8px;} .grid{display:grid;grid-template-columns:280px 1fr;gap:12px;}"
+            ".imgbox{background:#fafafa;border:1px solid #eee;border-radius:10px;padding:8px;}"
+            ".imgbox img{width:100%;height:auto;border-radius:8px;display:block;}"
+            "pre{white-space:pre-wrap;word-break:break-word;background:#f4f5f7;border:1px solid #e5e7eb;border-radius:8px;padding:10px;}"
+            "a{color:#0b57d0;text-decoration:none;}a:hover{text-decoration:underline;}"
+            "@media (max-width: 900px){.grid{grid-template-columns:1fr;}}"
+            "</style></head><body><div class='wrap'>"
+        )
+        html_parts.append(f"<h1>이미지 수집 전용 결과</h1><div class='meta'>검색어: <b>{html.escape(query)}</b> | provider={html.escape(provider)} | count={len(images):,}</div>")
+        for i, img in enumerate(images, start=1):
+            url = str(img.url or "")
+            html_parts.append("<div class='card'>")
+            html_parts.append(f"<div class='meta'>[{i:04d}] <a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></div>")
+            html_parts.append("<div class='grid'>")
+            html_parts.append("<div class='imgbox'>")
+            html_parts.append(f"<img src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer' onerror=\"this.style.display='none'; this.nextElementSibling.style.display='block';\">")
+            html_parts.append("<div style='display:none;color:#888;font-size:13px;'>이미지 로드 실패</div>")
+            html_parts.append("</div>")
+            html_parts.append("<div>")
+            html_parts.append(f"<pre>title={html.escape(str(img.title or ''))}\nsource={html.escape(str(img.source or ''))}</pre>")
+            html_parts.append("</div></div></div>")
+        html_parts.append("</div></body></html>")
+        html_path.write_text("\n".join(html_parts), encoding="utf-8")
+
+        print(f"\n📁 이미지 전용 결과(txt): {txt_path}")
+        print(f"🌐 이미지 전용 결과(html): {html_path}")
+        if auto_open_report:
+            try:
+                webbrowser.open(html_path.resolve().as_uri())
+                print("🖥️ 브라우저 자동 열기 완료")
+            except Exception as open_exc:  # pylint: disable=broad-except
+                print(f"⚠️ 브라우저 자동 열기 실패: {open_exc}")
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"⚠️ 이미지 전용 결과 저장 실패: {exc}")
+
+
 def run_query_image_benchmark_interactive() -> None:
     print("\n  🔎 [검색어 기반 이미지 벤치마크]")
     print("  🔹 이미지 검색 엔진 선택")
     print("    [1] Google Images")
-    print("    [2] Naver Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
     raw_provider = input("  선택 > ").strip()
-    provider = "naver" if raw_provider == "2" else "google"
+    if raw_provider == "2":
+        provider = "naver"
+    elif raw_provider == "3":
+        provider = "naver_official"
+    else:
+        provider = "google"
     query = _choose_benchmark_query_interactive()
     if not query:
         return
@@ -1053,6 +1215,17 @@ def run_query_image_benchmark_interactive() -> None:
                 max_pages = v
         except ValueError:
             pass
+
+    raw_per_page = input("  🔹 페이지당 수집 개수 [기본 20, 최대 100]: ").strip()
+    per_page = 20
+    if raw_per_page:
+        try:
+            v = int(raw_per_page)
+            if v > 0:
+                per_page = v
+        except ValueError:
+            pass
+    per_page = max(1, min(100, per_page))
 
     delay_sec = 0.0
 
@@ -1072,17 +1245,21 @@ def run_query_image_benchmark_interactive() -> None:
     auto_open_report = not (raw_open in ("n", "no"))
     raw_debug_serp = input("  🔹 SERP 요청/응답 raw 디버그 출력? [y/N]: ").strip().lower()
     debug_serp = raw_debug_serp in ("y", "yes")
+    raw_images_only = input("  🔹 이미지 수집만 실행? (Pass 분석 생략) [Y/n]: ").strip().lower()
+    images_only = not (raw_images_only in ("n", "no"))
 
     print("\n  🚀 실행합니다. 결과는 이미지별로 순차 출력됩니다.")
     run_query_image_benchmark(
         query=query,
         max_pages=max_pages,
+        per_page=per_page,
         delay_sec=delay_sec,
         max_concurrency=max_concurrency,
         adaptive=adaptive,
         auto_open_report=auto_open_report,
         provider=provider,
         debug_serp=debug_serp,
+        images_only=images_only,
     )
 
 

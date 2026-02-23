@@ -37,6 +37,8 @@ from app.ingredient_enricher import (
 )
 from app.analyzer import URLIngredientAnalyzer
 from app.query_image_benchmark import run_query_image_benchmark_interactive
+from app.serp_only_test import run_serp_test_interactive
+from app.serp_simple_debug import run_serp_simple_debug_interactive
 from app.query_pipeline import (
     cache_serp_images,
     finish_query_run,
@@ -250,13 +252,25 @@ def _latest_benchmark_summary_path() -> Path | None:
 def run_benchmark_menu() -> None:
     while True:
         print("\n  📊 [벤치마크]")
-        print("    [1] 검색어 기반 이미지 벤치마크 (SerpAPI)")
+        print("    [1] 검색어 기반 이미지 벤치마크 (SERP + Pass 분석)")
+        print("    [2] SERP 단독 테스트 (이미지 수집만)")
+        print("    [3] 초간단 SERP 디버그 (raw 확인)")
         print("    [b] 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
         if sub == "1":
             try:
                 run_query_image_benchmark_interactive()
+            except Exception as exc:  # pylint: disable=broad-except
+                print(f"  ❌ 실행 실패: {exc}")
+        elif sub == "2":
+            try:
+                run_serp_test_interactive()
+            except Exception as exc:  # pylint: disable=broad-except
+                print(f"  ❌ 실행 실패: {exc}")
+        elif sub == "3":
+            try:
+                run_serp_simple_debug_interactive()
             except Exception as exc:  # pylint: disable=broad-except
                 print(f"  ❌ 실행 실패: {exc}")
 
@@ -669,11 +683,11 @@ def run_query_pool_browser_view() -> None:
 
 
 def run_query_pipeline_execute() -> None:
+    from app import config as app_config
+    app_config.reload_dotenv()
+
     serp_key = os.getenv("SERPAPI_KEY", "").strip()
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not serp_key:
-        print("  ❌ SERPAPI_KEY가 필요합니다.")
-        return
     if not openai_key:
         print("  ❌ OPENAI_API_KEY가 필요합니다.")
         return
@@ -684,9 +698,25 @@ def run_query_pipeline_execute() -> None:
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
-    print("    [2] Naver Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
     raw_provider = input("  선택 > ").strip()
-    provider = "naver" if raw_provider == "2" else "google"
+    if raw_provider == "2":
+        provider = "naver"
+    elif raw_provider == "3":
+        provider = "naver_official"
+    else:
+        provider = "google"
+
+    if provider != "naver_official" and not serp_key:
+        print("  ❌ SERPAPI_KEY가 필요합니다.")
+        return
+    if provider == "naver_official":
+        naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+        naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+        if not (naver_client_id and naver_client_secret):
+            print("  ❌ NAVER_CLIENT_ID / NAVER_CLIENT_SECRET이 필요합니다.")
+            return
     query_limit = int(raw_q) if raw_q.isdigit() else 3
     max_pages = int(raw_pages) if raw_pages.isdigit() else 1
     max_images = int(raw_max_images) if raw_max_images.isdigit() else 0

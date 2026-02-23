@@ -13,18 +13,37 @@ import json
 import os
 import time
 from typing import Any
+from urllib.parse import urlparse
 
 import requests
 
 # app.config import 시 프로젝트 .env가 자동 로드됨
-from app import config as _app_config  # noqa: F401
+from app import config as _app_config
 
 SERPAPI_URL = "https://serpapi.com/search.json"
+NAVER_OPENAPI_IMAGE_URL = "https://openapi.naver.com/v1/search/image.json"
 
 
-def build_params(provider: str, query: str, page: int, per_page: int, api_key: str) -> dict[str, Any]:
+def build_request(provider: str, query: str, page: int, per_page: int, api_key: str) -> tuple[str, dict[str, Any], dict[str, str] | None]:
+    if provider == "naver_official":
+        client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
+        client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
+        if not (client_id and client_secret):
+            raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 환경변수가 필요합니다.")
+        params = {
+            "query": query,
+            "display": per_page,
+            "start": page * per_page + 1,
+            "sort": "sim",
+        }
+        headers = {
+            "X-Naver-Client-Id": client_id,
+            "X-Naver-Client-Secret": client_secret,
+        }
+        return (NAVER_OPENAPI_IMAGE_URL, params, headers)
+
     if provider == "naver":
-        return {
+        return (SERPAPI_URL, {
             "engine": "naver",
             "where": "image",
             "query": query,
@@ -32,8 +51,8 @@ def build_params(provider: str, query: str, page: int, per_page: int, api_key: s
             "start": page * per_page + 1,
             "api_key": api_key,
             "no_cache": "true",
-        }
-    return {
+        }, None)
+    return (SERPAPI_URL, {
         "engine": "google_images",
         "q": query,
         "hl": "ko",
@@ -42,7 +61,7 @@ def build_params(provider: str, query: str, page: int, per_page: int, api_key: s
         "ijn": page,
         "api_key": api_key,
         "no_cache": "true",
-    }
+    }, None)
 
 
 def run_serp_test(
@@ -55,8 +74,9 @@ def run_serp_test(
     retries: int,
     print_raw: bool,
 ) -> int:
+    _app_config.reload_dotenv()
     api_key = os.getenv("SERPAPI_KEY", "").strip()
-    if not api_key:
+    if provider != "naver_official" and not api_key:
         print("❌ SERPAPI_KEY 환경변수가 필요합니다.")
         return 1
 
@@ -71,17 +91,24 @@ def run_serp_test(
     total = 0
     seen: set[str] = set()
     for page in range(max_pages):
-        params = build_params(provider, query, page, per_page, api_key)
+        try:
+            req_url, params, headers = build_request(provider, query, page, per_page, api_key)
+        except Exception as exc:  # pylint: disable=broad-except
+            print(f"\n[page={page}] request_prepare_error={type(exc).__name__}: {exc}")
+            return 1
         last_err: str | None = None
         payload: dict[str, Any] | None = None
         status_code: int | None = None
 
         for attempt in range(retries + 1):
             try:
-                resp = requests.get(SERPAPI_URL, params=params, timeout=timeout)
+                resp = requests.get(req_url, params=params, headers=headers, timeout=timeout)
                 status_code = resp.status_code
                 payload = resp.json()
-                api_error = payload.get("error")
+                if provider == "naver_official":
+                    api_error = payload.get("errorMessage") or payload.get("message") or payload.get("errorCode")
+                else:
+                    api_error = payload.get("error")
                 if status_code == 200 and api_error is None:
                     break
                 last_err = f"http={status_code} api_error={api_error}"
@@ -116,21 +143,30 @@ def run_serp_test(
             print("  - 실패 페이지, 다음 페이지로 진행")
             continue
 
-        images = payload.get("images_results") or []
+        if provider == "naver_official":
+            images = payload.get("items") or []
+        else:
+            images = payload.get("images_results") or []
         if not images:
             print("  - images_results 비어있음(종료)")
             break
 
         page_new = 0
         for i, item in enumerate(images, start=1):
-            url = item.get("original") or item.get("thumbnail")
+            if provider == "naver_official":
+                url = item.get("link") or item.get("thumbnail")
+            else:
+                url = item.get("original") or item.get("thumbnail")
             if not url or url in seen:
                 continue
             seen.add(url)
             page_new += 1
             if i <= 5:
                 title = str(item.get("title") or "").strip()
-                source = str(item.get("source") or "").strip()
+                if provider == "naver_official":
+                    source = urlparse(str(url)).netloc if url else ""
+                else:
+                    source = str(item.get("source") or "").strip()
                 print(f"  - #{i:02d} {url}")
                 if title:
                     print(f"      title : {title}")
@@ -147,9 +183,50 @@ def run_serp_test(
     return 0
 
 
+def run_serp_test_interactive() -> None:
+    print("\n  🌐 [SERP 단독 테스트]")
+    print("    [1] Google Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
+    raw_provider = input("  🔹 검색엔진 선택: ").strip()
+    if raw_provider == "2":
+        provider = "naver"
+    elif raw_provider == "3":
+        provider = "naver_official"
+    else:
+        provider = "google"
+
+    query = input("  🔹 검색어 입력: ").strip()
+    if not query:
+        print("  ⚠️ 검색어를 입력해주세요.")
+        return
+
+    raw_pages = input("  🔹 최대 페이지 수 [기본 3]: ").strip()
+    raw_per_page = input("  🔹 페이지당 개수 [기본 20, 최대 100]: ").strip()
+    raw_timeout = input("  🔹 read timeout(초) [기본 40]: ").strip()
+    raw_retries = input("  🔹 재시도 횟수 [기본 3]: ").strip()
+    raw_raw = input("  🔹 raw JSON 일부 출력? [y/N]: ").strip().lower()
+
+    max_pages = int(raw_pages) if raw_pages.isdigit() else 3
+    per_page = int(raw_per_page) if raw_per_page.isdigit() else 20
+    timeout = int(raw_timeout) if raw_timeout.isdigit() else 40
+    retries = int(raw_retries) if raw_retries.isdigit() else 3
+    print_raw = raw_raw in ("y", "yes")
+
+    run_serp_test(
+        provider=provider,
+        query=query,
+        max_pages=max(1, max_pages),
+        per_page=max(1, min(100, per_page)),
+        timeout=max(5, timeout),
+        retries=max(0, retries),
+        print_raw=print_raw,
+    )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="SerpAPI 이미지 수집 단독 테스트")
-    parser.add_argument("--provider", choices=["google", "naver"], default="google")
+    parser.add_argument("--provider", choices=["google", "naver", "naver_official"], default="google")
     parser.add_argument("--query", required=True)
     parser.add_argument("--max-pages", type=int, default=3)
     parser.add_argument("--per-page", type=int, default=20)
