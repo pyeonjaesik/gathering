@@ -37,14 +37,11 @@
 - has_nutrition_section:
   - true: "영양정보", "영양성분", "Nutrition Facts" 표/영역 확인 가능
   - false: 확인 불가
-- reason:
-  - 핵심 근거 1문장 (왜 true/false인지)
 
 응답 JSON 스키마:
 {
   "has_ingredients_section": true,
   "has_report_number_label": true,
   "has_product_name": true,
-  "has_nutrition_section": true,
-  "reason": "원재료와 품목보고번호 라벨+번호가 명확히 확인됨"
+  "has_nutrition_section": true
 }

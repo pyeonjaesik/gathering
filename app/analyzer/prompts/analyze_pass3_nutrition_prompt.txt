@@ -11,13 +11,10 @@
 추출 규칙:
 - 영양성분표를 명확히 읽으면 nutrition_text에 넣으세요. 불명확하면 null.
 - 일부만 읽혔거나 잘렸으면 nutrition_complete=false로 보수적으로 처리하세요.
-- full_text에는 이미지 전체 OCR 텍스트를 담으세요(가능하면).
 - JSON 외 텍스트를 출력하지 마세요.
 
 응답 JSON 스키마:
 {
   "nutrition_text": "문자열 또는 null",
-  "nutrition_complete": true/false,
-  "full_text": "문자열 또는 null",
-  "reason": "간단한 추출 근거"
+  "nutrition_complete": true/false
 }

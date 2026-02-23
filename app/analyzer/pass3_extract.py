@@ -100,7 +100,6 @@ def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_
             "allergen_text": parsed_ing.get("allergen_text"),
             "nutrition_text": (parsed_nut.get("nutrition_text") if include_nutrition else None),
             "product_name_in_image": parsed_ing.get("product_name_in_image"),
-            "full_text": parsed_ing.get("full_text") or parsed_nut.get("full_text"),
             "has_report_label": bool(parsed_ing.get("has_report_label")),
             "ingredients_complete": bool(parsed_ing.get("ingredients_complete")),
             "report_number_complete": bool(parsed_ing.get("report_number_complete")),
