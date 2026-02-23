@@ -173,6 +173,10 @@ class URLIngredientAnalyzer:
     pass3_retry_on_429_max_attempts: int = 6
     pass3_retry_on_429_base_sec: float = 2.0
     pass3_retry_on_429_max_sec: float = 30.0
+    pass4_openai_model: str = "gpt-4o-mini"
+    pass4_request_timeout_sec: int = 90
+    pass4_model_retries: int = 2
+    pass4_retry_backoff_sec: float = 1.0
 
     def __post_init__(self) -> None:
         self.session = requests.Session()
@@ -266,6 +270,32 @@ class URLIngredientAnalyzer:
             )
             .strip()
         )
+        self.pass4_openai_model = (
+            str(
+                self.pass4_openai_model
+                or os.getenv("PASS4_OPENAI_MODEL")
+                or "gpt-4o-mini"
+            )
+            .strip()
+        )
+        try:
+            self.pass4_request_timeout_sec = int(
+                os.getenv("PASS4_REQUEST_TIMEOUT_SEC", str(self.pass4_request_timeout_sec))
+            )
+        except Exception:
+            self.pass4_request_timeout_sec = 90
+        try:
+            self.pass4_model_retries = int(
+                os.getenv("PASS4_MODEL_RETRIES", str(self.pass4_model_retries))
+            )
+        except Exception:
+            self.pass4_model_retries = 2
+        try:
+            self.pass4_retry_backoff_sec = float(
+                os.getenv("PASS4_RETRY_BACKOFF_SEC", str(self.pass4_retry_backoff_sec))
+            )
+        except Exception:
+            self.pass4_retry_backoff_sec = 1.0
         self.pass2a_gemini_api_key = (
             self.pass2a_gemini_api_key
             or os.getenv("PASS2A_GEMINI_API_KEY")
@@ -699,37 +729,80 @@ class URLIngredientAnalyzer:
     def _call_text_model_openai(
         self,
         prompt: str,
+        *,
+        model_name: str | None = None,
+        timeout_sec: int | None = None,
+        max_retries: int | None = None,
+        retry_backoff_sec: float | None = None,
     ) -> tuple[str, dict[str, Any], str]:
-        body = {
-            "model": self.model,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": prompt,
+        model = str(model_name or self.model).strip()
+        timeout_value = int(timeout_sec or self.request_timeout_sec)
+        retry_n = int(self.model_retries if max_retries is None else max_retries)
+        backoff = float(self.retry_backoff_sec if retry_backoff_sec is None else retry_backoff_sec)
+
+        last_err: Exception | None = None
+        for attempt in range(retry_n + 1):
+            try:
+                body = {
+                    "model": model,
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        }
+                    ],
+                    "temperature": 0,
+                    "response_format": {"type": "json_object"},
                 }
-            ],
-            "temperature": 0,
-            "response_format": {"type": "json_object"},
-        }
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
-        resp = self.session.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers=headers,
-            data=json.dumps(body, ensure_ascii=False),
-            timeout=self.request_timeout_sec,
-        )
-        raw_api_response = resp.text
-        if resp.status_code >= 400:
-            raise RuntimeError(f"openai_http_{resp.status_code}: {raw_api_response[:1200]}")
-        payload = resp.json()
-        raw_text = _extract_openai_text(payload)
-        if not raw_text:
-            raise RuntimeError(f"empty_model_response: id={payload.get('id')} finish={((payload.get('choices') or [{}])[0] or {}).get('finish_reason')}")
-        parsed = _extract_first_json_object(raw_text)
-        return raw_text, parsed, raw_api_response
+                headers = {
+                    "Authorization": f"Bearer {self.api_key}",
+                    "Content-Type": "application/json",
+                }
+                resp = self.session.post(
+                    "https://api.openai.com/v1/chat/completions",
+                    headers=headers,
+                    data=json.dumps(body, ensure_ascii=False),
+                    timeout=timeout_value,
+                )
+                raw_api_response = resp.text
+                if resp.status_code >= 400:
+                    err = RuntimeError(f"openai_http_{resp.status_code}: {raw_api_response[:1200]}")
+                    code = resp.status_code
+                    retryable = code in (429, 500, 502, 503, 504)
+                    if retryable and attempt < retry_n:
+                        time.sleep(backoff * (attempt + 1))
+                        continue
+                    raise err
+                payload = resp.json()
+                raw_text = _extract_openai_text(payload)
+                if not raw_text:
+                    raise RuntimeError(
+                        f"empty_model_response: id={payload.get('id')} finish={((payload.get('choices') or [{}])[0] or {}).get('finish_reason')}"
+                    )
+                parsed = _extract_first_json_object(raw_text)
+                return raw_text, parsed, raw_api_response
+            except Exception as exc:  # pylint: disable=broad-except
+                last_err = exc
+                msg = str(exc).lower()
+                retryable = any(
+                    k in msg
+                    for k in (
+                        "429",
+                        "timeout",
+                        "timed out",
+                        "503",
+                        "502",
+                        "504",
+                        "temporarily unavailable",
+                        "resource_exhausted",
+                        "connection reset",
+                    )
+                )
+                if retryable and attempt < retry_n:
+                    time.sleep(backoff * (attempt + 1))
+                    continue
+                raise
+        raise RuntimeError(str(last_err or "openai_text_call_failed"))
 
     def _resolve_report_no(
         self,

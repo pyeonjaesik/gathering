@@ -78,7 +78,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트의 괄호 및 대괄호 구조를 기준으로 하위 재료를 분리하고, 원산지 표기는 원문에 근거하여 정확히 반영함"
+  "reason": "원재료 텍스트에 명시된 원산지 및 구조를 그대로 반영함"
 }
 
 [PASS4-NUTRITION]
@@ -91,7 +91,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": null
     },
     {
-      "name": "100 mL당",
+      "name": "열량",
       "value": "73",
       "unit": "kcal",
       "daily_value": null
@@ -145,7 +145,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "13%"
     }
   ],
-  "reason": "원문 순서대로 영양성분명과 수치, 단위, 일일기준치(%)를 추출하였으며, 불명확한 단위는 null 처리함"
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출하였으며, 불명확한 단위는 null 처리함"
 }
 ------------------------------------------------------------------------------------------
 [002] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/70f36383-2dc6-4b55-9fa1-b2064a54614b/960x720.jpg
@@ -196,7 +196,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 괄호 및 대괄호 구조에 따라 분해하고, 원산지 표기를 규칙에 맞게 origin과 origin_detail에 배분함"
+  "reason": "원재료 텍스트를 원문 순서대로 분해하고 괄호 내 원산지 정보를 origin_detail로 처리함"
 }
 
 [PASS4-NUTRITION]
@@ -209,7 +209,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": null
     },
     {
-      "name": "100 mL당",
+      "name": "열량",
       "value": "80",
       "unit": "kcal",
       "daily_value": null
@@ -261,136 +261,6 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "value": "8",
       "unit": "g",
       "daily_value": "15%"
-    }
-  ],
-  "reason": "원문 순서대로 각 영양성분명, 수치, 단위, 일일기준치(%)를 추출함"
-}
-------------------------------------------------------------------------------------------
-[003] URL: http://static.megamart.com/product/editor/8801/8801005//yangjo03.jpg
-  제품명: null
-  품목보고번호: 198603580598
-  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 소맥(미국산),
-천일염(호주산), 기타과당, 주정, 효모물
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도산, 미국산, 중국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "기타과당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트에 명시된 원산지와 구조를 그대로 반영하였으며, 원문에 없는 정보는 추가하지 않음"
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": "총 내용량",
-      "value": "1700",
-      "unit": "mL",
-      "daily_value": null
-    },
-    {
-      "name": "열량",
-      "value": "105",
-      "unit": "kcal",
-      "daily_value": null
-    },
-    {
-      "name": "나트륨",
-      "value": "6300",
-      "unit": "mg",
-      "daily_value": "315%"
-    },
-    {
-      "name": "탄수화물",
-      "value": "9",
-      "unit": "g",
-      "daily_value": "3%"
-    },
-    {
-      "name": "당류",
-      "value": "2",
-      "unit": "g",
-      "daily_value": "2%"
-    },
-    {
-      "name": "지방",
-      "value": "0.1",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "트랜스지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "콜레스테롤",
-      "value": "0",
-      "unit": "mg",
-      "daily_value": "0%"
-    },
-    {
-      "name": "단백질",
-      "value": "10",
-      "unit": "g",
-      "daily_value": "18%"
     }
   ],
   "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
@@ -456,384 +326,10 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 내 원산지 정보를 origin과 origin_detail에 정확히 귀속함. 원문에 없는 정보는 추가하지 않음."
+  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 원산지 정보를 origin과 origin_detail에 분리하여 반영함. 원문에 없는 정보는 추가하지 않음."
 }
 ------------------------------------------------------------------------------------------
-[005] URL: https://content.foodspring.co.kr/vendor/2376/images/54_3169491897.jpg
-  제품명: 삼화 맑은 국간장
-  품목보고번호: 2016018256620
-  원재료명: 정제수, 산분해간장[글루텐(밀:중국산), 천일염(호주산)], 천일염(호주산), 양조간장(탈지
-대두(인도산),밀(미국산),천일염(호주산), 정제
-소금(국산)], 물엿, 혼합제제(D-소비톨액, 말티톨
-시럽),혼합제제(주정, 정제수, 유화제, 비타민B1
-라우릴황산염), 파라옥시안식향산에틸(보존료),
-효소처리스테비아, 영양강화제
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "산분해간장",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "글루텐",
-          "origin": null,
-          "origin_detail": "밀:중국산",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "천일염",
-          "origin": null,
-          "origin_detail": "호주산",
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "양조간장",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "탈지대두",
-          "origin": null,
-          "origin_detail": "인도산",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "밀",
-          "origin": null,
-          "origin_detail": "미국산",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "천일염",
-          "origin": null,
-          "origin_detail": "호주산",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "정제소금",
-          "origin": null,
-          "origin_detail": "국산",
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "물엿",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "혼합제제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "D-소비톨액",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "말티톨시럽",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "혼합제제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "주정",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "정제수",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "유화제",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "비타민B1라우릴황산염",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "파라옥시안식향산에틸",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효소처리스테비아",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "영양강화제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트를 순서대로 분해하고 괄호 내 하위 원재료를 sub_ingredients로 처리하였으며, 원산지는 원문 근거에 따라 부여함. 승격 금지 및 원산지 임의추가 금지 규칙 준수."
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": "총 내용량",
-      "value": "1800",
-      "unit": "ml",
-      "daily_value": null
-    },
-    {
-      "name": "열량",
-      "value": "40",
-      "unit": "kcal",
-      "daily_value": null
-    },
-    {
-      "name": "나트륨",
-      "value": "4300",
-      "unit": "mg",
-      "daily_value": "215%"
-    },
-    {
-      "name": "탄수화물",
-      "value": "3",
-      "unit": "g",
-      "daily_value": "1%"
-    },
-    {
-      "name": "당류",
-      "value": "2",
-      "unit": "g",
-      "daily_value": "2%"
-    },
-    {
-      "name": "지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "트랜스지방",
-      "value": null,
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "콜레스테롤",
-      "value": null,
-      "unit": "mg",
-      "daily_value": null
-    },
-    {
-      "name": "단백질",
-      "value": "7",
-      "unit": "g",
-      "daily_value": "13%"
-    }
-  ],
-  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출하였으며, 불명확한 값은 null 처리함"
-}
-------------------------------------------------------------------------------------------
-[007] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/d587f9c0-09db-422a-b870-94a6aff81f6e/600x600.jpg
-  제품명: null
-  품목보고번호: 1986035805927
-  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 천일염(호
-원재료명 주산), 기타과당, 소맥(미국산), 효모추출분말, 파라옥시안식향
-산에틸(보존료)
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도산, 미국산, 중국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": "호원재료명 주산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "기타과당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모추출분말",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "파라옥시안식향산에틸",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 원산지 정보를 origin과 origin_detail에 분리하여 반영함. 원문에 없는 정보는 null 처리함."
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": "총 내용량",
-      "value": "860",
-      "unit": "mL",
-      "daily_value": null
-    },
-    {
-      "name": "100 mL당",
-      "value": "60",
-      "unit": "kcal",
-      "daily_value": null
-    },
-    {
-      "name": "나트륨",
-      "value": "7,480",
-      "unit": "mg",
-      "daily_value": "374%"
-    },
-    {
-      "name": "탄수화물",
-      "value": "7",
-      "unit": "g",
-      "daily_value": "2%"
-    },
-    {
-      "name": "당류",
-      "value": "2",
-      "unit": "g",
-      "daily_value": "2%"
-    },
-    {
-      "name": "지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "트랜스지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "콜레스테롤",
-      "value": "0",
-      "unit": "mg",
-      "daily_value": "0%"
-    },
-    {
-      "name": "단백질",
-      "value": "8",
-      "unit": "g",
-      "daily_value": "15%"
-    }
-  ],
-  "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
-}
-------------------------------------------------------------------------------------------
-[011] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/48dc7533-ba88-44c1-bc24-b75934c22246/700x1000.jpg
+[007] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/48dc7533-ba88-44c1-bc24-b75934c22246/700x1000.jpg
   제품명: null
   품목보고번호: 19860358059166
   원재료명: 정제수, 천일염(호주산), 탈지대두[외국산(인도, 미국, 중국 등)], 기타과당, 소맥
@@ -853,8 +349,8 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
+      "origin": "호주산",
+      "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
@@ -887,29 +383,29 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": [
         {
           "name": "양파",
-          "origin": null,
-          "origin_detail": "국산",
+          "origin": "국산",
+          "origin_detail": null,
           "amount": null,
           "sub_ingredients": []
         },
         {
           "name": "마늘",
-          "origin": null,
-          "origin_detail": "국산",
+          "origin": "국산",
+          "origin_detail": null,
           "amount": null,
           "sub_ingredients": []
         },
         {
           "name": "생강",
-          "origin": null,
-          "origin_detail": "국산",
+          "origin": "국산",
+          "origin_detail": null,
           "amount": null,
           "sub_ingredients": []
         },
         {
           "name": "대파",
-          "origin": null,
-          "origin_detail": "국산",
+          "origin": "국산",
+          "origin_detail": null,
           "amount": null,
           "sub_ingredients": []
         }
@@ -924,15 +420,15 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "ingredient_name": "배농축과즙",
-      "origin": null,
-      "origin_detail": "국산",
+      "origin": "국산",
+      "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
     {
       "ingredient_name": "사과농축과즙",
-      "origin": null,
-      "origin_detail": "국산",
+      "origin": "국산",
+      "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
@@ -1033,10 +529,488 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "9%"
     }
   ],
+  "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
+}
+------------------------------------------------------------------------------------------
+[008] URL: https://www.sempio.com/image/AF/AN/202312191224007017d2e5d8d-eec8-4c0f-88c2-e1083849ff05.png
+  제품명: null
+  품목보고번호: 19860358059222
+  원재료명: 정제수, 대두[외국산(미국, 캐나다, 호주 등)], 천일염(호주
+산), 주정, 국산채소해물농축액[표고버섯(국산), 새우(국산), 다시
+마(국산), 양파(국산), 마늘(국산), 멸치(국산), 무(국산), 대파(국산),
+생강(국산)], 국산해물육수[홍합(국산), 게(국산), 미더덕(국산)],
+효모추출분말
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "대두",
+      "origin": "외국산",
+      "origin_detail": "미국, 캐나다, 호주 등",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": "호주산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "국산채소해물농축액",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "표고버섯",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "새우",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "다시마",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "양파",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "마늘",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "멸치",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "무",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "대파",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "생강",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "국산해물육수",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "홍합",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "게",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "미더덕",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "효모추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트에 기반하여 원산지 및 하위 원재료를 괄호와 대괄호 구조에 따라 분리하고, 원문에 없는 정보는 추가하지 않음"
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "860",
+      "unit": "mL",
+      "daily_value": null
+    },
+    {
+      "name": "100 mL당",
+      "value": "70",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "8660",
+      "unit": "mg",
+      "daily_value": "433%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "7",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "당류",
+      "value": "1",
+      "unit": "g",
+      "daily_value": "1%"
+    },
+    {
+      "name": "지방",
+      "value": "0.1",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "5",
+      "unit": "g",
+      "daily_value": "9%"
+    }
+  ],
   "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[012] URL: http://gfoodninea.speedgabia.com/foodnine/list/s361845_2.jpg
+[010] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/d587f9c0-09db-422a-b870-94a6aff81f6e/600x600.jpg
+  제품명: null
+  품목보고번호: 1986035805927
+  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 천일염(호
+원재료명 주산), 기타과당, 소맥(미국산), 효모추출분말, 파라옥시안식향
+산에틸(보존료)
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "탈지대두",
+      "origin": "외국산",
+      "origin_detail": "인도산, 미국산, 중국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": "호원재료명 주산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "기타과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "파라옥시안식향산에틸",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 null 처리함."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "860",
+      "unit": "mL",
+      "daily_value": null
+    },
+    {
+      "name": "100 mL당",
+      "value": "60",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "7480",
+      "unit": "mg",
+      "daily_value": "374%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "7",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "당류",
+      "value": "2",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "8",
+      "unit": "g",
+      "daily_value": "15%"
+    }
+  ],
+  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
+}
+------------------------------------------------------------------------------------------
+[011] URL: http://static.megamart.com/product/editor/8801/8801052//_DSC9262-copy.jpg
+  제품명: null
+  품목보고번호: 19850499011327
+  원재료명: 정제수, 탈지대두(인도산), 천일염(호주산), 소맥
+(미국산), 기타과당, 효모농축액, 주정, 향미증진제, 햇살
+담은간장베이스, 감초추출물, 효소처리스테비아, 영양강
+화제, 대두(국산), 정제소금, 천일염(국산), 소맥(국산)
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "탈지대두",
+      "origin": null,
+      "origin_detail": "인도산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": null,
+      "origin_detail": "호주산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "기타과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모농축액",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향미증진제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "햇살담은간장베이스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "감초추출물",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "영양강화제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "대두",
+      "origin": null,
+      "origin_detail": "국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "정제소금",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": null,
+      "origin_detail": "국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": null,
+      "origin_detail": "국산",
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 순서대로 분리하고 괄호 내 원산지 정보를 origin_detail로 처리하였으며, 원문에 없는 정보는 추가하지 않음."
+}
+------------------------------------------------------------------------------------------
+[013] URL: http://gfoodninea.speedgabia.com/foodnine/list/s361845_2.jpg
   제품명: 참진한 국간장
   품목보고번호: 20030493175149
   원재료명: 산분해간장{탈지대두(외국산: 인도, 미국, 중국)}, 정제수,
@@ -1173,15 +1147,16 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 추가하지 않음."
+  "reason": "원재료 텍스트를 원문 순서대로 괄호 내 하위 원재료를 sub_ingredients로 분리하고, 원산지는 원문 근거에 따라 origin과 origin_detail에 배분함. 불명확하거나 원문에 없는 정보는 null 처리함."
 }
 ------------------------------------------------------------------------------------------
-[013] URL: http://static.megamart.com/product/editor/8801/8801005//220715_259.jpg
-  제품명: null
-  품목보고번호: 1986035805910
-  원재료명: 정제수, 메주(대두 100%) [외]
-국산(미국신, 캐나다신, 호주산 등)], 천
-일임(호주산), 구정 대두 힘유
+[014] URL: https://www.sempio.com/image/KF/CR/202212150935259222439b8a7-59d4-4c17-980f-f9fd5cc2d36f.jpg
+  제품명: 샘표 조림간장은
+  품목보고번호: 1986035805924
+  원재료명: 정제수, 탈지대두[외국산(인도,미국,중국 등)], 천일염(호주
+산), 물엿, 주정, 소맥(미국산), 기타과당, 설탕, 국산양파엑기
+스(국산), 효모추출분말, 효모추출물, 다시마농축액, 효소처리
+스테비아, 향미증진제
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -1194,44 +1169,91 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "메주",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "대두",
-          "origin": null,
-          "origin_detail": "100%",
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "외",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "국산",
-          "origin": null,
-          "origin_detail": "미국신, 캐나다신, 호주산 등",
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "천일임",
-      "origin": null,
-      "origin_detail": "호주산",
+      "ingredient_name": "탈지대두",
+      "origin": "외국산",
+      "origin_detail": "인도, 미국, 중국 등",
       "amount": null,
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "구정 대두 힘유",
+      "ingredient_name": "천일염",
+      "origin": "호주산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "물엿",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "기타과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "설탕",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "국산양파엑기스",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모추출물",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "다시마농축액",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향미증진제",
       "origin": null,
       "origin_detail": null,
       "amount": null,
@@ -1239,7 +1261,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고 괄호 및 대괄호 내부는 하위 정보로 처리, 원산지는 원문 근거에 따라 분리함"
+  "reason": "원재료 텍스트에 기반하여 원산지 및 하위정보를 분리하고, 규칙에 따라 승격 및 추정을 하지 않음"
 }
 
 [PASS4-NUTRITION]
@@ -1247,33 +1269,33 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "nutrition_items": [
     {
       "name": "총 내용량",
-      "value": "330",
+      "value": "860",
       "unit": "mL",
       "daily_value": null
     },
     {
-      "name": "에너지",
-      "value": "80",
+      "name": "열량",
+      "value": "115",
       "unit": "kcal",
       "daily_value": null
     },
     {
       "name": "나트륨",
-      "value": "9440",
+      "value": "6100",
       "unit": "mg",
-      "daily_value": "472%"
+      "daily_value": "305%"
     },
     {
       "name": "탄수화물",
-      "value": "6",
+      "value": "14",
       "unit": "g",
-      "daily_value": "2%"
+      "daily_value": "4%"
     },
     {
       "name": "당류",
-      "value": "19",
-      "unit": null,
-      "daily_value": "13%"
+      "value": "4",
+      "unit": "g",
+      "daily_value": "4%"
     },
     {
       "name": "지방",
@@ -1306,15 +1328,15 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "15%"
     }
   ],
-  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
+  "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[017] URL: https://content.foodspring.co.kr/vendor/2376/images/83_9570263794.jpg
-  제품명: null
-  품목보고번호: 1986035805920
-  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 천
-일염(호주산), 소맥(미국산), 기타과당, 효모추출분말, 효소처리
-테비아, 감초추출물, 주정, 파라옥시안식향산에틸(보존료)
+[017] URL: http://static.megamart.com/product/editor/8801/8801005//220715_259.jpg
+  제품명: 샘표 많은 조선간장은
+  품목보고번호: 1986035805910
+  원재료명: 정제수, 메주(대두 100%) [외]
+국산(미국신, 캐나다신, 호주산 등)], 천
+일임(호주산), 구정 대두 힘유
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -1327,63 +1349,44 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도산, 미국산, 중국산",
+      "ingredient_name": "메주",
+      "origin": null,
+      "origin_detail": null,
       "amount": null,
-      "sub_ingredients": []
+      "sub_ingredients": [
+        {
+          "name": "대두",
+          "origin": null,
+          "origin_detail": "100%",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
     },
     {
-      "ingredient_name": "천일염",
+      "ingredient_name": null,
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "국산",
+          "origin": null,
+          "origin_detail": "미국신, 캐나다신, 호주산 등",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "천일임",
       "origin": null,
       "origin_detail": "호주산",
       "amount": null,
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "기타과당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모추출분말",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효소처리테비아",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "감초추출물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "파라옥시안식향산에틸",
+      "ingredient_name": "구정 대두 힘유",
       "origin": null,
       "origin_detail": null,
       "amount": null,
@@ -1391,7 +1394,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고, 괄호 및 대괄호 내 원산지 정보를 origin 및 origin_detail에 분리하여 구조화함. 원문에 없는 정보는 추가하지 않았으며, 승격 금지 규칙을 준수함."
+  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고 괄호 내 내용을 하위 정보로 처리하였으며, 원산지 정보는 원문에 명확히 표기된 부분만 반영함"
 }
 
 [PASS4-NUTRITION]
@@ -1399,42 +1402,42 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "nutrition_items": [
     {
       "name": "총 내용량",
-      "value": "5,000",
+      "value": "330",
       "unit": "mL",
       "daily_value": null
     },
     {
       "name": "열량",
-      "value": "65",
+      "value": "80",
       "unit": "kcal",
       "daily_value": null
     },
     {
       "name": "나트륨",
-      "value": "6,300",
+      "value": "9440",
       "unit": "mg",
-      "daily_value": "315%"
+      "daily_value": "472%"
     },
     {
       "name": "탄수화물",
-      "value": "79",
-      "unit": null,
-      "daily_value": "2%"
-    },
-    {
-      "name": "당류",
-      "value": "2",
+      "value": "6",
       "unit": "g",
       "daily_value": "2%"
     },
     {
-      "name": "지방",
-      "value": "0.19",
+      "name": "당류",
+      "value": "19",
       "unit": null,
+      "daily_value": "13%"
+    },
+    {
+      "name": "지방",
+      "value": "0.1",
+      "unit": "g",
       "daily_value": "0%"
     },
     {
-      "name": "트랜스지방",
+      "name": "드랜스지방",
       "value": "0",
       "unit": "g",
       "daily_value": null
@@ -1458,10 +1461,125 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "15%"
     }
   ],
-  "reason": "원문 순서대로 항목을 추출하고, 단위 및 일일기준치(%)를 명확히 표기함"
+  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[018] URL: https://cdn-acemall.bizhost.kr/files/goodsm/4429/1721974157_1.jpg
+[020] URL: https://www.sempio.com/image/NO/VP/2023112112113749756c0c96c-95e3-4f3d-857a-bc7ec4703166.jpg
+  제품명: null
+  품목보고번호: 19860358059190
+  원재료명: 정제수, 대두(국산), 소맥(국산), 천일염(호주산), 주정
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "대두",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": "호주산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트에 명확히 표기된 원재료명과 원산지 정보를 기준으로 구조화함"
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "860",
+      "unit": "mL",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "110",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "5900",
+      "unit": "mg",
+      "daily_value": "295%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "11",
+      "unit": "g",
+      "daily_value": "3%"
+    },
+    {
+      "name": "당류",
+      "value": "5",
+      "unit": "g",
+      "daily_value": "5%"
+    },
+    {
+      "name": "지방",
+      "value": "0.2",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "10",
+      "unit": "g",
+      "daily_value": "18%"
+    }
+  ],
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
+}
+------------------------------------------------------------------------------------------
+[025] URL: https://cdn-acemall.bizhost.kr/files/goodsm/4429/1721974157_1.jpg
   제품명: 참진한 국간장
   품목보고번호: 20030493175149
   원재료명: 산분해간장{탈지대두(외국산: 인도, 미국, 중국)}, 정
@@ -1598,7 +1716,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 추가하지 않음."
+  "reason": "원재료 텍스트에 기반하여 원재료명과 원산지를 분리하고, 괄호 내 하위 원재료는 sub_ingredients로 처리하였으며, 원산지 정보는 원문에 명확한 경우에만 부여함."
 }
 
 [PASS4-NUTRITION]
@@ -1611,7 +1729,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": null
     },
     {
-      "name": "에너지",
+      "name": "열량",
       "value": "45",
       "unit": "kcal",
       "daily_value": null
@@ -1668,13 +1786,12 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
-[019] URL: https://www.sempio.com/image/KF/CR/202212150935259222439b8a7-59d4-4c17-980f-f9fd5cc2d36f.jpg
+[026] URL: http://static.megamart.com/product/editor/8801/8801005//220715_228-.jpg
   제품명: null
-  품목보고번호: 1986035805924
-  원재료명: 정제수, 탈지대두[외국산(인도,미국,중국 등)], 천일염(호주
-산), 물엿, 주정, 소맥(미국산), 기타과당, 설탕, 국산양파엑기
-스(국산), 효모추출분말, 효모추출물, 다시마농축액, 효소처리
-스테비아, 향미증진제
+  품목보고번호: 1986035805920
+  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 천일염
+(호주산), 소맥(미국산), 기타과당, 효모추출분말, 효소처리스테비아, 감
+초추출물, 주정, 파라옥시안식향산에틸(보존료)
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -1689,28 +1806,14 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     {
       "ingredient_name": "탈지대두",
       "origin": "외국산",
-      "origin_detail": "인도, 미국, 중국 등",
+      "origin_detail": "인도산, 미국산, 중국산",
       "amount": null,
       "sub_ingredients": []
     },
     {
       "ingredient_name": "천일염",
-      "origin": "호주산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "물엿",
       "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
+      "origin_detail": "호주산",
       "amount": null,
       "sub_ingredients": []
     },
@@ -1729,35 +1832,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "설탕",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "국산양파엑기스",
-      "origin": "국산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
       "ingredient_name": "효모추출분말",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모추출물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "다시마농축액",
       "origin": null,
       "origin_detail": null,
       "amount": null,
@@ -1771,15 +1846,29 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "향미증진제",
+      "ingredient_name": "감초추출물",
       "origin": null,
       "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "파라옥시안식향산에틸",
+      "origin": null,
+      "origin_detail": "보존료",
       "amount": null,
       "sub_ingredients": []
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고 괄호 및 대괄호 내 원산지 정보를 origin/origin_detail에 귀속, 원문에 없는 정보는 추가하지 않음"
+  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 원산지 정보를 origin/origin_detail에 귀속하였으며, 원문에 없는 정보는 추가하지 않음."
 }
 
 [PASS4-NUTRITION]
@@ -1793,27 +1882,27 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "name": "열량",
-      "value": "115",
+      "value": "65",
       "unit": "kcal",
       "daily_value": null
     },
     {
       "name": "나트륨",
-      "value": "6100",
+      "value": "6300",
       "unit": "mg",
-      "daily_value": "305%"
+      "daily_value": "315%"
     },
     {
       "name": "탄수화물",
-      "value": "14",
+      "value": "7",
       "unit": "g",
-      "daily_value": "4%"
+      "daily_value": "2%"
     },
     {
       "name": "당류",
-      "value": "4",
+      "value": "2",
       "unit": "g",
-      "daily_value": "4%"
+      "daily_value": "2%"
     },
     {
       "name": "지방",
@@ -1849,101 +1938,12 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
-[024] URL: https://mblogthumb-phinf.pstatic.net/MjAyMDA4MjdfMzAg/MDAxNTk4NTEzNDIwNjkz.MYZjMEpFtVSGPTgMij7sJ_0zH8cK8EbCnTSBB_ZvNSUg.hHMZ68e6AaxS86at8x8EPcvSErU-3czeijfr4ZaEzBog.JPEG.sky04754/1598513420248.jpg?type=w800
-  제품명: 해표 국간장
-  품목보고번호: 19880555008130
-  원재료명: 정제수 탈지대두(인도산), 천일염(국산), 천일염(호주산) 소맥(밀 미국산),기타
-주정, 효모식품, 파라옥시안식향산에틸(보존료), 종국, 영양강화제
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "탈지대두",
-      "origin": null,
-      "origin_detail": "인도산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "밀 미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "기타",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모식품",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "파라옥시안식향산에틸",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "종국",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "영양강화제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료를 원문 순서대로 분리하고, 괄호 내 원산지는 origin_detail로 처리하였으며, 원문에 없는 정보는 추가하지 않음"
-}
-------------------------------------------------------------------------------------------
-[026] URL: https://www.sempio.com/image/NO/VP/2023112112113749756c0c96c-95e3-4f3d-857a-bc7ec4703166.jpg
+[030] URL: https://www.sempio.com/image/VD/ZI/202312191217065697294b0fc-8928-4ea2-a0b5-34b8169188c3.png
   제품명: null
-  품목보고번호: 19860358059190
-  원재료명: 정제수, 대두(국산), 소맥(국산), 천일염(호주산), 주정
+  품목보고번호: 19860358059259
+  원재료명: 정제수, 대두[외국산(미국, 캐나다, 호주 등)],
+천일염(호주산), 주정, 다시마무육수(국산),
+양파대파육수(국산), 효모추출분말
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -1957,15 +1957,8 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "ingredient_name": "대두",
-      "origin": "국산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": "국산",
-      "origin_detail": null,
+      "origin": "외국산",
+      "origin_detail": "미국, 캐나다, 호주 등",
       "amount": null,
       "sub_ingredients": []
     },
@@ -1982,10 +1975,31 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "다시마무육수",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "양파대파육수",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 명확히 표기된 원재료명과 원산지 정보를 그대로 반영함"
+  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 내 원산지 정보를 origin/origin_detail에 배분함. 별도 알레르기 안내 없음."
 }
 
 [PASS4-NUTRITION]
@@ -1993,37 +2007,37 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "nutrition_items": [
     {
       "name": "총 내용량",
-      "value": "860",
+      "value": "830",
       "unit": "mL",
       "daily_value": null
     },
     {
       "name": "열량",
-      "value": "110",
+      "value": "70",
       "unit": "kcal",
       "daily_value": null
     },
     {
       "name": "나트륨",
-      "value": "5900",
+      "value": "8460",
       "unit": "mg",
-      "daily_value": "295%"
+      "daily_value": "423%"
     },
     {
       "name": "탄수화물",
-      "value": "11",
+      "value": "6",
       "unit": "g",
-      "daily_value": "3%"
+      "daily_value": "2%"
     },
     {
       "name": "당류",
-      "value": "5",
+      "value": "1",
       "unit": "g",
-      "daily_value": "5%"
+      "daily_value": "1%"
     },
     {
       "name": "지방",
-      "value": "0.2",
+      "value": "0.1",
       "unit": "g",
       "daily_value": "0%"
     },
@@ -2047,20 +2061,20 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "name": "단백질",
-      "value": "10",
+      "value": "6",
       "unit": "g",
-      "daily_value": "18%"
+      "daily_value": "11%"
     }
   ],
-  "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
-[032] URL: http://image4.exponet.co.kr/images3/114/L566/8826/L5668826_1061.jpg
-  제품명: null
-  품목보고번호: 1986035805927
-  원재료명: 원재료명 정제수, 탈지대두[외국산(인도, 미국, 중국 등)], 천일염(호주산),
-기타과당, 소맥(미국산), 효모추출분말, 파라옥시안식향산에틸(보존료)
-혼합비율 양조간장(총질소1.2% 이상)20%, 산분해간장(총질소 1.2% 이상) 80%
+[033] URL: http://www.jiyoon.co.kr/product_image/daesang/daesang_jinganjanggold_15L_2.jpg
+  제품명: 청정원 햇살담은 진간장골드
+  품목보고번호: 1985049901193
+  원재료명: 정제수, 천일염(호주산), 탈지대두(인도산), 소맥(미국산), 주정,
+원재료명 기타과당, 향미증진제, 종국, 효소처리스테비아, 영양강화제,
+카라멜색소, L-글루탐산나트륨(향미증진제)
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -2073,13 +2087,6 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도, 미국, 중국 등",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
       "ingredient_name": "천일염",
       "origin": null,
       "origin_detail": "호주산",
@@ -2087,9 +2094,9 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "기타과당",
+      "ingredient_name": "탈지대두",
       "origin": null,
-      "origin_detail": null,
+      "origin_detail": "인도산",
       "amount": null,
       "sub_ingredients": []
     },
@@ -2101,14 +2108,266 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "효모추출분말",
+      "ingredient_name": "주정",
       "origin": null,
       "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "파라옥시안식향산에틸",
+      "ingredient_name": "기타과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향미증진제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "종국",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "영양강화제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "카라멜색소",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "L-글루탐산나트륨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "향미증진제",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 순서대로 분리하고, 괄호 안 원산지는 origin_detail로 처리하였으며, 원문에 없는 정보는 추가하지 않음. L-글루탐산나트륨의 괄호 안은 하위정보로 유지."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "15000",
+      "unit": "ml",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "60",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "6400",
+      "unit": "mg",
+      "daily_value": "320%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "9",
+      "unit": "g",
+      "daily_value": "3%"
+    },
+    {
+      "name": "당류",
+      "value": "2",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "6",
+      "unit": "g",
+      "daily_value": "11%"
+    }
+  ],
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출함"
+}
+------------------------------------------------------------------------------------------
+[034] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/d62e6a1b-89a7-4741-b577-f0e3e4540189/500x500.jpg
+  제품명: null
+  품목보고번호: 19860358059357
+  원재료명: 홍게발효장[홍게발효액(홍게엑기스(홍
+게:국산), 굴엑기스(굴:국산), 건다시마분(다시
+마:국산)}, 탈지대두(외국산), 소맥, 천일염, 정
+제소금], 자연콩발효액[대두(외국산), 천일염(호
+주산)], 주정
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "홍게발효장",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "홍게발효액",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "홍게엑기스",
+              "origin": null,
+              "origin_detail": "국산",
+              "amount": null,
+              "sub_ingredients": [
+                {
+                  "name": "홍게",
+                  "origin": null,
+                  "origin_detail": "국산",
+                  "amount": null,
+                  "sub_ingredients": []
+                }
+              ]
+            },
+            {
+              "name": "굴엑기스",
+              "origin": null,
+              "origin_detail": "국산",
+              "amount": null,
+              "sub_ingredients": [
+                {
+                  "name": "굴",
+                  "origin": null,
+                  "origin_detail": "국산",
+                  "amount": null,
+                  "sub_ingredients": []
+                }
+              ]
+            },
+            {
+              "name": "건다시마분",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": [
+                {
+                  "name": "다시마",
+                  "origin": null,
+                  "origin_detail": "국산",
+                  "amount": null,
+                  "sub_ingredients": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "탈지대두",
+          "origin": null,
+          "origin_detail": "외국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "소맥",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "천일염",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "정제소금",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "자연콩발효액",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "대두",
+          "origin": null,
+          "origin_detail": "외국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "천일염",
+          "origin": null,
+          "origin_detail": "호주산",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "주정",
       "origin": null,
       "origin_detail": null,
       "amount": null,
@@ -2116,65 +2375,77 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료명과 원산지 정보를 원문 기준으로 분리하고, 괄호 내 원산지 정보를 하위 원재료로 승격하지 않음. 혼합비율은 원재료 항목이 아니므로 제외."
+  "reason": "원재료 텍스트의 괄호 및 대괄호 구조를 그대로 반영하여 하위 원재료로 분류하고, 원산지 표기는 원문에 근거하여 정확히 분리함"
 }
 
 [PASS4-NUTRITION]
 {
   "nutrition_items": [
     {
-      "name": "나트륨",
-      "value": "74",
-      "unit": null,
+      "name": "총 내용량",
+      "value": "830",
+      "unit": "mL",
       "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "68",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "6400",
+      "unit": "mg",
+      "daily_value": "320%"
     },
     {
       "name": "탄수화물",
-      "value": "71",
-      "unit": null,
-      "daily_value": null
+      "value": "9",
+      "unit": "g",
+      "daily_value": "3%"
     },
     {
       "name": "당류",
-      "value": "29",
-      "unit": null,
-      "daily_value": null
+      "value": "3",
+      "unit": "g",
+      "daily_value": "3%"
     },
     {
       "name": "지방",
       "value": "0",
       "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
       "daily_value": null
     },
     {
-      "name": null,
-      "value": null,
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "포화지정",
-      "value": null,
-      "unit": null,
-      "daily_value": null
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
     },
     {
       "name": "콜레스테롤",
-      "value": null,
-      "unit": null,
-      "daily_value": null
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
     },
     {
       "name": "단백질",
-      "value": "80",
-      "unit": null,
-      "daily_value": null
+      "value": "8",
+      "unit": "g",
+      "daily_value": "15%"
     }
   ],
-  "reason": "원문 순서대로 항목을 추출하였으며, 불명확하거나 값이 없는 부분은 null 처리함"
+  "reason": "원문 순서대로 각 영양성분명, 수치, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
-[038] URL: http://gfoodninea.speedgabia.com/foodnine/list/s361712_2.jpg
+[035] URL: http://gfoodninea.speedgabia.com/foodnine/list/s361712_2.jpg
   제품명: 샘표 맑은 조선간장 국 무침
   품목보고번호: 1986035805910
   원재료명: 정제수, 메주[대두(외국산: 미국, 캐나다, 호주 등)],
@@ -2221,7 +2492,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 원산지와 하위재료를 괄호 및 대괄호 규칙에 따라 분리함"
+  "reason": "원재료 텍스트에 기반하여 괄호 내 원산지 정보를 origin_detail로 분리하고, 원문에 없는 정보는 추가하지 않음"
 }
 
 [PASS4-NUTRITION]
@@ -2288,11 +2559,11 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "15%"
     }
   ],
-  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
+  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[044] URL: http://gfoodninea.speedgabia.com/foodnine/list/s361831_2.jpg
-  제품명: null
+[040] URL: https://shop-phinf.pstatic.net/20230405_96/1680662653329CiKS9_PNG/%EC%96%91%EC%A1%B0-%EA%B0%84%EC%9E%A5-501-15L-%EC%83%98%ED%91%9C-001_(1).png
+  제품명: 샘표 양조간장 501
   품목보고번호: 198603580598
   원재료명: 정제수, 탈지대두[외국산(인도, 미국, 중국 등)], 천일염(호주산), 소맥(미국산), 기타과당, 주정, 효모물
   [PASS4 RAW]
@@ -2350,118 +2621,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 및 대괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 추가하지 않음"
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": "나트륨",
-      "value": "6.30",
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "탄수화물",
-      "value": "3",
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "당류",
-      "value": "29",
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "지방",
-      "value": "0.19",
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": null,
-      "value": null,
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": null,
-      "unit": null,
-      "daily_value": null
-    },
-    {
-      "name": null,
-      "value": null,
-      "unit": null,
-      "daily_value": null
-    }
-  ],
-  "reason": "원문 순서대로 항목을 파싱하였으며, 불명확하거나 깨진 영양성분명은 null 처리함. 단위 및 일일기준치는 제공되지 않음."
-}
-------------------------------------------------------------------------------------------
-[046] URL: https://shop-phinf.pstatic.net/20230405_96/1680662653329CiKS9_PNG/%EC%96%91%EC%A1%B0-%EA%B0%84%EC%9E%A5-501-15L-%EC%83%98%ED%91%9C-001_(1).png
-  제품명: 샘표 양조간장 501
-  품목보고번호: 198603580598
-  원재료명: 정제수, 탈지대두[외국산(인도, 미국, 중국 등)], 천일염(호주산), 소맥(미국산), 기타과당, 주정, 효모물
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도, 미국, 중국 등",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "기타과당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 내 원산지 정보를 origin과 origin_detail에 분리하여 반영함. 원문에 없는 정보는 추가하지 않음."
+  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 및 대괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 추가하지 않음."
 }
 
 [PASS4-NUTRITION]
@@ -2528,11 +2688,11 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "18%"
     }
   ],
-  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 명확히 추출함"
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[051] URL: https://s3.ap-northeast-2.amazonaws.com/gred/vendor/1517/images/61_4225245509_r.jpg
-  제품명: 양조간장
+[043] URL: https://s3.ap-northeast-2.amazonaws.com/gred/vendor/1517/images/61_4225245509_r.jpg
+  제품명: null
   품목보고번호: 19860358059123
   원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 소맥(미국산), 천일염(호주산), 올리고당, 주정, 신안바다염, 효모추출분말, 영양강화제
   [PASS4 RAW]
@@ -2562,8 +2722,8 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "ingredient_name": "천일염",
-      "origin": "호주산",
-      "origin_detail": null,
+      "origin": null,
+      "origin_detail": "호주산",
       "amount": null,
       "sub_ingredients": []
     },
@@ -2604,7 +2764,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분리하고, 괄호 내 원산지 정보를 상위 원재료에 귀속하였으며, 원문에 없는 정보는 추가하지 않음"
+  "reason": "원재료 텍스트를 순서대로 분리하고 괄호 내 원산지 정보를 origin과 origin_detail에 분리하여 구조화함"
 }
 
 [PASS4-NUTRITION]
@@ -2671,10 +2831,10 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "18%"
     }
   ],
-  "reason": "원문 순서대로 각 영양성분명, 수치, 단위, 일일기준치(%)를 명확히 추출함"
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
 }
 ------------------------------------------------------------------------------------------
-[052] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/09eca84e-f38e-4ff3-a2f6-1d78384c6696/500x500.jpg
+[049] URL: https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/09eca84e-f38e-4ff3-a2f6-1d78384c6696/500x500.jpg
   제품명: 10분쿡 간장소스
   품목보고번호: 20020464088-561
   원재료명: 물엿, 양조간장[탈지대두(외국산), 소맥(미국산), 천일염, 설탕, 정제소금], 흑설탕, 갈은마늘(마
@@ -2701,8 +2861,8 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": [
         {
           "name": "탈지대두",
-          "origin": "외국산",
-          "origin_detail": null,
+          "origin": null,
+          "origin_detail": "외국산",
           "amount": null,
           "sub_ingredients": []
         },
@@ -2766,8 +2926,8 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": [
         {
           "name": "양파",
-          "origin": "국산",
-          "origin_detail": null,
+          "origin": null,
+          "origin_detail": "국산",
           "amount": null,
           "sub_ingredients": []
         }
@@ -2974,7 +3134,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 원산지 및 하위 원재료를 괄호 및 대괄호 기준으로 분리하고, 원산지 정보는 원문에 명시된 대로만 부여함."
+  "reason": "원재료 텍스트를 원문 순서대로 괄호 및 대괄호 내 하위 원재료를 sub_ingredients로 분리하고, 원산지는 원문 근거에 따라 origin_detail에만 기재함"
 }
 
 [PASS4-NUTRITION]
@@ -3033,18 +3193,305 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "value": "6",
       "unit": "g",
       "daily_value": "11%"
+    }
+  ],
+  "reason": "원문 순서대로 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
+}
+------------------------------------------------------------------------------------------
+[055] URL: https://images.emarteveryday.co.kr/images/app/webapps/evd_web2/share/SKU/mall/00/21/8801039002100_3.jpg
+  제품명: 해표 양조간장
+  품목보고번호: 19880555
+  원재료명: 정제수, 탈지대두(인도산), 천일염(호주산), 소맥(미국산), 기타과당, 천일염
+(국산), 주정, 효모식품, 종국, 효소처리스테비아, 감초추출물
+  [PASS4 RAW]
+  (원문 없음)
+------------------------------------------------------------------------------------------
+[064] URL: https://tfs.ourhome.co.kr/tfsfile/GoodImages/41046432_3.jpg
+  제품명: 행복한맛남 계란조림
+  품목보고번호: 20080532013-38
+  원재료명: 계란(국산) 60.0%, 정제수, 간장 10.30%[탈지대두(외국산)
+정제소금(국산), 액상과당, 양조간장원액, 주정, 정백당, 미림
+야채엑기스[야채추출액(배추청잎:국산), 정제소금국 산
+가쓰오부시조미액, 보일드비프, 생강엑기스, 향미증진제, 카라멜색소
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "계란",
+      "origin": "국산",
+      "origin_detail": null,
+      "amount": "60.0%",
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "간장",
+      "origin": null,
+      "origin_detail": null,
+      "amount": "10.30%",
+      "sub_ingredients": [
+        {
+          "name": "탈지대두",
+          "origin": "외국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "정제소금",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "액상과당",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "양조간장원액",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "주정",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "정백당",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "미림",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "야채엑기스",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "야채추출액",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": [
+                {
+                  "name": "배추청잎",
+                  "origin": "국산",
+                  "origin_detail": null,
+                  "amount": null,
+                  "sub_ingredients": []
+                }
+              ]
+            },
+            {
+              "name": "정제소금국 산",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "가쓰오부시조미액",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "보일드비프",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "생강엑기스",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "향미증진제",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "카라멜색소",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 원문 순서와 괄호/대괄호 구조에 따라 분해하고, 원산지 및 함량 정보를 원문에 근거하여 정확히 반영함"
+}
+------------------------------------------------------------------------------------------
+[065] URL: https://mblogthumb-phinf.pstatic.net/MjAyMzAxMjRfNyAg/MDAxNjc0NTY4NTY5OTcw.PPFMF5HGr3dQm3sSnaLZ9Kuher0OiDUtKC8u5r6rjz8g.02Bkwdg4dHjGdK3GTziY5vnLt4UtpkYFk95u5lk-2uMg.JPEG.2665876/1674568568208.jpg?type=w800
+  제품명: 샘표
+양조간장
+701
+  품목보고번호: 198603580599
+  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 소맥(미국산), 천일염(호주)
+돌리고당, 주정, 효모추출분말, 감초추출물
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "정제수",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "탈지대두",
+      "origin": "외국산",
+      "origin_detail": "인도산, 미국산, 중국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "소맥",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "천일염",
+      "origin": null,
+      "origin_detail": "호주",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "돌리고당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "주정",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효모추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "감초추출물",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 및 대괄호 내 원산지 정보를 origin과 origin_detail에 분리하여 반영함. 원문에 없는 정보는 추가하지 않음."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": null,
+      "value": "125",
+      "unit": "kcal/100 mL",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "6300",
+      "unit": "mg",
+      "daily_value": "315%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "13",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "당류",
+      "value": "4",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "지방",
+      "value": "0.1",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
     },
     {
       "name": "포화지방",
       "value": "0",
       "unit": "g",
       "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "11",
+      "unit": "g",
+      "daily_value": "20%"
     }
   ],
-  "reason": "원문 순서대로 영양성분명과 수치, 단위, 일일기준치(%)를 추출함"
+  "reason": "원문 순서 유지, 단위와 일일기준치 명확히 표기"
 }
 ------------------------------------------------------------------------------------------
-[056] URL: https://oasisprodproduct.edge.naverncp.com/98814/notice/23138
+[066] URL: https://oasisprodproduct.edge.naverncp.com/98814/notice/23138
   제품명: 믿음게장 실속형 간장게장
   품목보고번호: 20100115478105
   원재료명: 간장소스 65% [양조간장30.8%{천일염(호주산),탈지대두(인도산),소맥(미국산)}, 정제수
@@ -3134,170 +3581,10 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 명시된 원재료와 원산지 정보를 그대로 반영함"
+  "reason": "원재료 텍스트에 기반하여 원재료와 원산지를 분리하고, 괄호 내 원산지 나열은 origin_detail로 처리함"
 }
 ------------------------------------------------------------------------------------------
-[062] URL: https://tfs.ourhome.co.kr/tfsfile/GoodImages/41046432_3.jpg
-  제품명: 행복한맛남 계란조림
-  품목보고번호: 20080532013-38
-  원재료명: 계란(국산) 60.0%, 정제수, 간장 10.30%[탈지대두뒤외국산)
-정제소금(국산), 액상과당, 양조간장원액, 주정, 정백당, 미림
-야채엑기스[야채추출액(배추청잎:국산), 정제소금국 산
-가쓰오부시조미액, 보일드비프, 생강엑기스, 향미증진제, 카라멜색소
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "계란",
-      "origin": "국산",
-      "origin_detail": null,
-      "amount": "60.0%",
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "간장",
-      "origin": null,
-      "origin_detail": null,
-      "amount": "10.30%",
-      "sub_ingredients": [
-        {
-          "name": "탈지대두",
-          "origin": "외국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "정제소금",
-      "origin": "국산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "액상과당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "양조간장원액",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "정백당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "미림",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "야채엑기스",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "야채추출액",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": [
-            {
-              "name": "배추청잎",
-              "origin": "국산",
-              "origin_detail": null,
-              "amount": null,
-              "sub_ingredients": []
-            }
-          ]
-        },
-        {
-          "name": "정제소금국 산",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "가쓰오부시조미액",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "보일드비프",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "생강엑기스",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "향미증진제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "카라멜색소",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분해하고 괄호 및 대괄호 내부는 하위재료로 처리, 원산지는 원문 근거에 따라 부여함"
-}
-------------------------------------------------------------------------------------------
-[067] URL: https://images.emarteveryday.co.kr/images/app/webapps/evd_web2/share/SKU/mall/00/21/8801039002100_3.jpg
-  제품명: 해표 양조간장
-  품목보고번호: 19880555
-  원재료명: 정제수, 탈지대두(인도산), 천일염(호주산), 소맥(미국산), 기타과당, 천일염
-(국산), 주정, 효모식품, 종국, 효소처리스테비아, 감초추출물
-  [PASS4 RAW]
-  (원문 없음)
-------------------------------------------------------------------------------------------
-[068] URL: https://gi.esmplus.com/fmsi1101/food/FOSJ_361766_2.jpg
+[078] URL: https://gi.esmplus.com/fmsi1101/food/FOSJ_361766_2.jpg
   제품명: 국간장
   품목보고번호: 19850499~11135
   원재료명: 정제수, 메주(대두, 정제소금, 중국/중국
@@ -3339,15 +3626,15 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
+      "origin": "호주산",
+      "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
     {
       "ingredient_name": "정제소금",
-      "origin": "중국",
-      "origin_detail": "중국산",
+      "origin": "중국산",
+      "origin_detail": null,
       "amount": null,
       "sub_ingredients": []
     },
@@ -3395,7 +3682,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트를 원문 순서대로 분해하고, 괄호 내 하위 원재료를 sub_ingredients로 처리했으며, 원산지는 원문 근거에 따라 분리함. 원문에 없는 정보는 추가하지 않음."
+  "reason": "원재료 텍스트에 기반하여 원산지 및 하위 재료를 괄호 내 정보에 따라 분리하고, 원문에 없는 정보는 null 처리함."
 }
 
 [PASS4-NUTRITION]
@@ -3462,10 +3749,10 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "13%"
     }
   ],
-  "reason": "원문 순서대로 각 영양성분명과 수치, 단위, 일일기준치를 명확히 추출함"
+  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
-[078] URL: http://ai.esmplus.com/rosemart1/rosemart/food/Cook-Food-Spice/Yeongduk%20Crab%20Seasoned%20Soy%20Sauce%201L/Yeongduk%20Crab%20Seasoned%20Soy%20Sauce%201L-12.jpg
+[090] URL: http://ai.esmplus.com/rosemart1/rosemart/food/Cook-Food-Spice/Yeongduk%20Crab%20Seasoned%20Soy%20Sauce%201L/Yeongduk%20Crab%20Seasoned%20Soy%20Sauce%201L-12.jpg
   제품명: 영덕 게간장 소스
   품목보고번호: 200705660092
   원재료명: 게육수농축액52%(게: 국산/고형분8.6% 이상),
@@ -3522,7 +3809,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
         {
           "name": "소맥",
           "origin": null,
-          "origin_detail": "밀:미국산",
+          "origin_detail": "미국산",
           "amount": null,
           "sub_ingredients": []
         },
@@ -3655,10 +3942,10 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "daily_value": "7%"
     }
   ],
-  "reason": "원문에 명확히 표기된 영양성분명, 값, 단위, 일일기준치(%)를 그대로 반영함"
+  "reason": "원문에 명확히 표기된 영양성분명, 값, 단위, 일일기준치(%)를 그대로 추출함"
 }
 ------------------------------------------------------------------------------------------
-[079] URL: https://gcdnorder.jasongroup.co.kr/data/editor/eda0f7a229c5a832152a15ab1939c43f.jpg
+[095] URL: https://gcdnorder.jasongroup.co.kr/data/editor/eda0f7a229c5a832152a15ab1939c43f.jpg
   제품명: 약목 참 홍게간장
   품목보고번호: 20150543019151
   원재료명: 붉은대게자숙액[붉은대게자숙액(국산), 천일염(호주산)], 양조간장[탈지
@@ -3859,13 +4146,14 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 괄호 내 하위 원재료를 sub_ingredients로 분리하고, 원산지는 괄호 내 해당 원재료에만 귀속. 원문에 없는 정보는 null 처리함."
+  "reason": "원재료 텍스트의 괄호 내 하위 원재료를 sub_ingredients로 분리하고, 원산지는 괄호 내 해당 원재료에만 귀속. 원문에 없는 정보는 null 처리. 알레르기 안내 문구 없음."
 }
 ------------------------------------------------------------------------------------------
-[083] URL: http://ai.esmplus.com/empire1074/traders/66119_3.jpg
-  제품명: null
-  품목보고번호: 198603580599
-  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 소맥(미국산), 천일염(호주산), 올리고당, 주정, 효모추출분말, 감초추출물
+[098] URL: https://images.emarteveryday.co.kr/images/product/8801301033566/7KvJfu3ootBRtEZr.png
+  제품명: 몽고간장 송표프라임
+  품목보고번호: 1987058908023
+  원재료명: 정제수,천일염(호주산), 기타과당, 탈지대두(외국산: 인도, 미국, 중국),
+소맥(밀:미국산),주정, 벌꿀(국산),효소처리스테비아
   [PASS4 RAW]
   [PASS4-INGREDIENTS]
 {
@@ -3878,9 +4166,23 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
+      "ingredient_name": "천일염",
+      "origin": null,
+      "origin_detail": "호주산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "기타과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
       "ingredient_name": "탈지대두",
       "origin": "외국산",
-      "origin_detail": "인도산, 미국산, 중국산",
+      "origin_detail": "인도, 미국, 중국",
       "amount": null,
       "sub_ingredients": []
     },
@@ -3892,20 +4194,6 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "올리고당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
       "ingredient_name": "주정",
       "origin": null,
       "origin_detail": null,
@@ -3913,14 +4201,14 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "효모추출분말",
+      "ingredient_name": "벌꿀",
       "origin": null,
-      "origin_detail": null,
+      "origin_detail": "국산",
       "amount": null,
       "sub_ingredients": []
     },
     {
-      "ingredient_name": "감초추출물",
+      "ingredient_name": "효소처리스테비아",
       "origin": null,
       "origin_detail": null,
       "amount": null,
@@ -3928,7 +4216,7 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     }
   ],
   "ignored_fragments": [],
-  "reason": "원재료 텍스트에 명시된 원산지와 구조를 그대로 반영함"
+  "reason": "원재료 텍스트에 기반하여 원산지와 원재료명을 분리하고, 괄호 내 원산지 정보를 하위 원재료가 아닌 origin_detail로 처리함"
 }
 
 [PASS4-NUTRITION]
@@ -3936,566 +4224,21 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
   "nutrition_items": [
     {
       "name": "총 내용량",
-      "value": "2800",
-      "unit": "mL",
-      "daily_value": null
-    },
-    {
-      "name": "열량",
-      "value": "125",
-      "unit": "kcal",
-      "daily_value": null
-    },
-    {
-      "name": "나트륨",
-      "value": "6300",
-      "unit": "mg",
-      "daily_value": "315%"
-    },
-    {
-      "name": "탄수화물",
-      "value": "13",
-      "unit": "g",
-      "daily_value": "4%"
-    },
-    {
-      "name": "당류",
-      "value": "4",
-      "unit": "g",
-      "daily_value": "4%"
-    },
-    {
-      "name": "지방",
-      "value": "0.1",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "트랜스지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "콜레스테롤",
-      "value": "0",
-      "unit": "mg",
-      "daily_value": "0%"
-    },
-    {
-      "name": "단백질",
-      "value": "11",
-      "unit": "g",
-      "daily_value": "20%"
-    }
-  ],
-  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
-}
-------------------------------------------------------------------------------------------
-[084] URL: https://img.etnews.com/photonews/1801/1037929_20180126150305_098_0002.jpg
-  제품명: 진라면 Cup 순한맛
-  품목보고번호: 19860309018183
-  원재료명: *연: 소맥분(밀:미국산, 호주산), 변성전분, 팜유(말레이시아산), 고올레산해바라기위외국산)
-아르헨티나 스페인, 프랑스 등), 정제소금, 식용유지가공품, 글루텐, 마늘 시즈닝, 유화우기, 난각분을
-연루청가알칼리제(산도조절제), 비타민B2, 녹차풍이유 '스프류 : 참맛을수분말 진한육수분할 하는
-로, 안한, 비양념분말, 간장양념베이스, 간장분말, 진한감칠맛분, 조미야채분말
-감칠맛조미분, 참맛볶음장분말, 백설탕, 옥수수전분, 식용유지가공품, 유지혼합분말, 고춧가루
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "연",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "소맥분",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": [
-            {
-              "name": "밀",
-              "origin": null,
-              "origin_detail": "미국산, 호주산",
-              "amount": null,
-              "sub_ingredients": []
-            }
-          ]
-        },
-        {
-          "name": "변성전분",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "팜유",
-          "origin": null,
-          "origin_detail": "말레이시아산",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "고올레산해바라기위외국산",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "아르헨티나 스페인, 프랑스 등",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "정제소금",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "식용유지가공품",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "글루텐",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "마늘 시즈닝",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "유화우기",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "난각분을",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "연루청가알칼리제",
-          "origin": null,
-          "origin_detail": "(산도조절제)",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "비타민B2",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "녹차풍이유",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "스프류",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "참맛을수분말 진한육수분할 하는로",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "안한",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "비양념분말",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "간장양념베이스",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "간장분말",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "진한감칠맛분",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "조미야채분말",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "감칠맛조미분",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "참맛볶음장분말",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "백설탕",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "옥수수전분",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "식용유지가공품",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "유지혼합분말",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "고춧가루",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원문 텍스트를 최대한 원문 순서와 구조에 맞게 분리하고, 원산지 표기는 콜론 뒤 원산지 상세만 origin_detail로 처리했으며, 불명확하거나 잘린 단어는 ingredient_name으로 유지하되 null 처리하지 않음. 알레르기 안내 문구는 없으므로 ignored_fragments는 빈 배열임."
-}
-------------------------------------------------------------------------------------------
-[091] URL: https://www.ewangmart.com/data/base/goods/etc/8801052732343_2.jpg
-  제품명: null
-  품목보고번호: 19850499011135
-  원재료명: 정제수, 메주
-(대두, 정제소금, 종국/중국산), 천일염(호주산), 주정, 효모추출물, 다시마농축액
-다시마: 국산), 마늘농축액, 향미증진제, 영양강화제
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "메주",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "대두",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "정제소금",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "종국",
-          "origin": "중국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모추출물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "다시마농축액",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "다시마",
-          "origin": "국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "마늘농축액",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "향미증진제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "영양강화제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 원재료 순서와 괄호 내 하위 원재료를 구조화하였으며, 원산지는 원문에 명시된 경우에만 부여함."
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": "총 내용량",
-      "value": "500",
+      "value": "1800",
       "unit": "ml",
       "daily_value": null
     },
     {
       "name": "열량",
-      "value": "60",
+      "value": "80",
       "unit": "kcal",
       "daily_value": null
     },
     {
       "name": "나트륨",
-      "value": "9.600",
+      "value": "6180",
       "unit": "mg",
-      "daily_value": "480%"
-    },
-    {
-      "name": "탄수화물",
-      "value": "8",
-      "unit": "g",
-      "daily_value": "2%"
-    },
-    {
-      "name": "당류",
-      "value": "1",
-      "unit": "g",
-      "daily_value": "1%"
-    },
-    {
-      "name": "지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "트랜스지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": null
-    },
-    {
-      "name": "포화지방",
-      "value": "0",
-      "unit": "g",
-      "daily_value": "0%"
-    },
-    {
-      "name": "콜레스테롤",
-      "value": "0",
-      "unit": "mg",
-      "daily_value": "0%"
-    },
-    {
-      "name": "단백질",
-      "value": "7",
-      "unit": "g",
-      "daily_value": "13%"
-    }
-  ],
-  "reason": "원문 순서대로 각 영양성분명, 값, 단위, 일일기준치(%)를 추출함"
-}
-------------------------------------------------------------------------------------------
-[092] URL: https://mblogthumb-phinf.pstatic.net/MjAyMzAxMjRfNyAg/MDAxNjc0NTY4NTY5OTcw.PPFMF5HGr3dQm3sSnaLZ9Kuher0OiDUtKC8u5r6rjz8g.02Bkwdg4dHjGdK3GTziY5vnLt4UtpkYFk95u5lk-2uMg.JPEG.2665876/1674568568208.jpg?type=w800
-  제품명: 샘표
-양조간장
-701
-  품목보고번호: 198603580599
-  원재료명: 정제수, 탈지대두[외국산(인도산, 미국산, 중국산)], 소맥(미국산), 천일염(호주) 
-돌리고당, 주정, 효모추출분말, 감초추출물
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "탈지대두",
-      "origin": "외국산",
-      "origin_detail": "인도산, 미국산, 중국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "소맥",
-      "origin": null,
-      "origin_detail": "미국산",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "천일염",
-      "origin": null,
-      "origin_detail": "호주",
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "돌리고당",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "주정",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "효모추출분말",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "감초추출물",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고, 괄호 및 대괄호 내 원산지 정보를 상위 원재료에 귀속함. 원문에 없는 정보는 추가하지 않음."
-}
-
-[PASS4-NUTRITION]
-{
-  "nutrition_items": [
-    {
-      "name": null,
-      "value": "125",
-      "unit": "kcal/100 mL",
-      "daily_value": null
-    },
-    {
-      "name": "나트륨",
-      "value": "6300",
-      "unit": "mg",
-      "daily_value": "315%"
+      "daily_value": "309%"
     },
     {
       "name": "탄수화물",
@@ -4505,13 +4248,13 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "name": "당류",
-      "value": "4",
+      "value": "12",
       "unit": "g",
-      "daily_value": "4%"
+      "daily_value": "12%"
     },
     {
       "name": "지방",
-      "value": "0.1",
+      "value": "0",
       "unit": "g",
       "daily_value": "0%"
     },
@@ -4535,287 +4278,22 @@ PASS4 최종 통과 결과 (Pass4 raw 포함)
     },
     {
       "name": "단백질",
-      "value": "11",
+      "value": "6",
       "unit": "g",
-      "daily_value": "20%"
+      "daily_value": "11%"
     }
   ],
-  "reason": "원문 순서 유지, 단위 및 일일기준치 명확히 표기"
-}
-------------------------------------------------------------------------------------------
-[093] URL: https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1iFR/image/r4kpZsVI_Z39DKFpRDvouPHndTY.jpg
-  제품명: 완도 전복 간장
-  품목보고번호: 2022049385319
-  원재료명: 정제수, 양조간장(중국산) (탈지대두, 소맥, 식염), 전복
-베이스{정제소금(국산),전복(국산)}, 정제소금(중국산), 글리
--글루탐산나트륨(향미증진제), 호박산이나트륨, 5'-이노신
-이나트륨, 파라옥시안식향산에틸(보존료), 혼합제제
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "양조간장",
-      "origin": "중국산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "탈지대두",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "소맥",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "식염",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "전복",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "베이스",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "정제소금",
-          "origin": "국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "전복",
-          "origin": "국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "정제소금",
-      "origin": "중국산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "글리-글루탐산나트륨",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "호박산이나트륨",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "5'-이노신이나트륨",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "파라옥시안식향산에틸",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "혼합제제",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 괄호 내 하위 원재료를 sub_ingredients로 분리하고, 원산지는 괄호 앞 재료에만 귀속. 원문에 없는 정보는 null 처리."
-}
-------------------------------------------------------------------------------------------
-[094] URL: https://m.jiwonfoodmall.com/web/upload/NNEditor/20240131/92d18ead28cc38d2dd6de26bfa3d2b19.jpg
-  제품명: 맛미 미니간장
-  품목보고번호: 2005033212810
-  원재료명: 혼합간장 34% [아미노산액{탈지대두:
-외국산(인도산, 미국산, 중국산)}], 양조간장
-원액(대만산)[탈지대두, 소맥(밀), 천일염,
-주정, 종국], 소금 5.5%(정제염 : 중국산),
-빙초산 1.85%(국내산), 카라멜, 정제수, 설탕,
-L-글루타민산나트륨(향미증진제), 파라
-옥시안식향에틸
-  [PASS4 RAW]
-  [PASS4-INGREDIENTS]
-{
-  "ingredients_items": [
-    {
-      "ingredient_name": "혼합간장",
-      "origin": null,
-      "origin_detail": null,
-      "amount": "34%",
-      "sub_ingredients": [
-        {
-          "name": "아미노산액",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": [
-            {
-              "name": "탈지대두",
-              "origin": "외국산",
-              "origin_detail": "인도산, 미국산, 중국산",
-              "amount": null,
-              "sub_ingredients": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ingredient_name": "양조간장 원액",
-      "origin": "대만산",
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": [
-        {
-          "name": "탈지대두",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "소맥",
-          "origin": null,
-          "origin_detail": "밀",
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "천일염",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "주정",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        },
-        {
-          "name": "종국",
-          "origin": null,
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "소금",
-      "origin": null,
-      "origin_detail": null,
-      "amount": "5.5%",
-      "sub_ingredients": [
-        {
-          "name": "정제염",
-          "origin": "중국산",
-          "origin_detail": null,
-          "amount": null,
-          "sub_ingredients": []
-        }
-      ]
-    },
-    {
-      "ingredient_name": "빙초산",
-      "origin": "국내산",
-      "origin_detail": null,
-      "amount": "1.85%",
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "카라멜",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "정제수",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "설탕",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "L-글루타민산나트륨",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    },
-    {
-      "ingredient_name": "파라옥시안식향에틸",
-      "origin": null,
-      "origin_detail": null,
-      "amount": null,
-      "sub_ingredients": []
-    }
-  ],
-  "ignored_fragments": [],
-  "reason": "원재료 텍스트에 기반하여 원재료명, 원산지, 함량 및 하위 원재료를 괄호 및 대괄호 구조에 따라 분리하였으며, 원문에 없는 정보는 null 처리함."
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 추출함"
 }
 ------------------------------------------------------------------------------------------
 
 [Funnel]
-- 전체: 98
-- Pass1 통과: 92
-- Pass2 통과: 46
-- Pass3 통과: 32
-- Pass4 통과: 32
-- Pass3-원재료 통과: 32
-- Pass3-영양 대상/통과: 23/23
-- Pass4-원재료 통과: 31
-- Pass4-영양 대상/통과: 22/22
+- 전체: 99
+- Pass1 통과: 91
+- Pass2 통과: 35
+- Pass3 통과: 28
+- Pass4 통과: 28
+- Pass3-원재료 통과: 28
+- Pass3-영양 대상/통과: 23/22
+- Pass4-원재료 통과: 27
+- Pass4-영양 대상/통과: 21/21

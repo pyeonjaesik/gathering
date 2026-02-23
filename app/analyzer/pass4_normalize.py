@@ -311,7 +311,13 @@ def run_pass4_normalize(
             prompt_ing = analyzer._build_prompt_pass4_ingredients(
                 ingredients_text=ingredients_text,
             )
-            raw_text_ing, parsed_ing, raw_api_ing = analyzer._call_text_model_openai(prompt_ing)
+            raw_text_ing, parsed_ing, raw_api_ing = analyzer._call_text_model_openai(
+                prompt_ing,
+                model_name=getattr(analyzer, "pass4_openai_model", None),
+                timeout_sec=getattr(analyzer, "pass4_request_timeout_sec", None),
+                max_retries=getattr(analyzer, "pass4_model_retries", None),
+                retry_backoff_sec=getattr(analyzer, "pass4_retry_backoff_sec", None),
+            )
             raw_model_text_pass4_ingredients = raw_text_ing
             raw_api_response_pass4_ingredients = raw_api_ing
             items = parsed_ing.get("ingredients_items") or []
@@ -355,7 +361,13 @@ def run_pass4_normalize(
                 prompt_nut = analyzer._build_prompt_pass4_nutrition(
                     nutrition_text=nutrition_text,
                 )
-                raw_text_nut, parsed_nut, raw_api_nut = analyzer._call_text_model_openai(prompt_nut)
+                raw_text_nut, parsed_nut, raw_api_nut = analyzer._call_text_model_openai(
+                    prompt_nut,
+                    model_name=getattr(analyzer, "pass4_openai_model", None),
+                    timeout_sec=getattr(analyzer, "pass4_request_timeout_sec", None),
+                    max_retries=getattr(analyzer, "pass4_model_retries", None),
+                    retry_backoff_sec=getattr(analyzer, "pass4_retry_backoff_sec", None),
+                )
                 raw_model_text_pass4_nutrition = raw_text_nut
                 raw_api_response_pass4_nutrition = raw_api_nut
                 n_items = parsed_nut.get("nutrition_items") or []
@@ -428,7 +440,7 @@ def run_pass4_normalize(
         "raw_model_text": pass3_result.get("raw_model_text"),
         "raw_model_text_pass2": pass2_result.get("raw_model_text_pass2"),
         "raw_model_text_pass3": pass3_result.get("raw_model_text_pass3"),
-        "source_model": analyzer.model,
+        "source_model": getattr(analyzer, "pass4_openai_model", analyzer.model),
         "ingredient_items": ingredient_items,
         "ingredient_items_reason": ingredient_items_reason,
         "nutrition_items": nutrition_items,
