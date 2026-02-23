@@ -135,6 +135,7 @@ def _is_pass2_extractable(result: dict[str, Any]) -> bool:
         "is_clear_text",
         "is_full_frame",
         "is_flat_undistorted",
+        "no_curved_surface_text_distortion",
         "has_ingredients_section",
         "has_report_number_label",
         "has_single_product",
@@ -142,9 +143,7 @@ def _is_pass2_extractable(result: dict[str, Any]) -> bool:
         "no_glare_on_key_fields",
         "no_object_occlusion_on_key_fields",
         "no_any_text_occlusion_on_key_fields",
-        "no_glare_overlap_on_key_text",
         "no_occlusion_overlap_on_key_text",
-        "no_white_circle_overlay_on_key_fields",
         "no_wrinkle_fold_occlusion_on_key_fields",
     ]
     if not all(qf.get(k) is True for k in required_true):
@@ -934,21 +933,18 @@ def run_query_image_benchmark(
                     "is_clear_text",
                     "is_full_frame",
                     "is_flat_undistorted",
+                    "no_curved_surface_text_distortion",
                     "has_report_number_label",
                     "has_product_name",
                     "has_single_product",
                     "key_fields_fully_visible",
                     "no_glare_on_key_fields",
                     "no_object_occlusion_on_key_fields",
-                    "no_glare_overlap_on_key_text",
                     "no_occlusion_overlap_on_key_text",
                 ]
                 strict_keys = relaxed_keys + ["has_ingredients_section"]
                 qf = result.get("quality_flags") or {}
-                overlap_safe = (
-                    qf.get("no_glare_overlap_on_key_text") is True
-                    and qf.get("no_occlusion_overlap_on_key_text") is True
-                )
+                overlap_safe = (qf.get("no_occlusion_overlap_on_key_text") is True)
                 if _all_true_flags(result, relaxed_keys) and overlap_safe:
                     all_true_except_ing_cnt += 1
                 if _all_true_flags(result, strict_keys) and overlap_safe:

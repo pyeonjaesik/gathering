@@ -78,6 +78,13 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
         else:
             is_flat_undistorted = bool(is_flat_undistorted)
 
+        no_curved_surface_text_distortion = parsed_pass2a.get("no_curved_surface_text_distortion")
+        if no_curved_surface_text_distortion is None:
+            # 누락 시 기존 평면/왜곡 판정 기준으로 보수 추론
+            no_curved_surface_text_distortion = bool(is_flat_undistorted)
+        else:
+            no_curved_surface_text_distortion = bool(no_curved_surface_text_distortion)
+
         has_single_product = bool(parsed_pass2a.get("has_single_product"))
 
         key_fields_fully_visible = parsed_pass2a.get("key_fields_fully_visible")
@@ -113,15 +120,6 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
         else:
             no_any_text_occlusion_on_key_fields = bool(no_any_text_occlusion_on_key_fields)
 
-        no_glare_overlap_on_key_text = parsed_pass2a.get("no_glare_overlap_on_key_text")
-        if no_glare_overlap_on_key_text is None:
-            if parsed_pass2a.get("glare_overlap_on_key_text") is not None:
-                no_glare_overlap_on_key_text = not bool(parsed_pass2a.get("glare_overlap_on_key_text"))
-            else:
-                no_glare_overlap_on_key_text = bool(no_glare_on_key_fields)
-        else:
-            no_glare_overlap_on_key_text = bool(no_glare_overlap_on_key_text)
-
         no_occlusion_overlap_on_key_text = parsed_pass2a.get("no_occlusion_overlap_on_key_text")
         if no_occlusion_overlap_on_key_text is None:
             if parsed_pass2a.get("occlusion_overlap_on_key_text") is not None:
@@ -130,13 +128,6 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
                 no_occlusion_overlap_on_key_text = bool(no_object_occlusion_on_key_fields)
         else:
             no_occlusion_overlap_on_key_text = bool(no_occlusion_overlap_on_key_text)
-
-        no_white_circle_overlay_on_key_fields = parsed_pass2a.get("no_white_circle_overlay_on_key_fields")
-        if no_white_circle_overlay_on_key_fields is None:
-            # 명시 응답이 없으면 기존 가림 판정과 동일하게 보수 추론
-            no_white_circle_overlay_on_key_fields = bool(no_object_occlusion_on_key_fields)
-        else:
-            no_white_circle_overlay_on_key_fields = bool(no_white_circle_overlay_on_key_fields)
 
         no_wrinkle_fold_occlusion_on_key_fields = parsed_pass2a.get("no_wrinkle_fold_occlusion_on_key_fields")
         if no_wrinkle_fold_occlusion_on_key_fields is None:
@@ -152,6 +143,8 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
             fail_checks.append("not_full_frame")
         if not is_flat_undistorted:
             fail_checks.append("not_flat_undistorted")
+        if not no_curved_surface_text_distortion:
+            fail_checks.append("curved_surface_text_distortion")
         if not has_single_product:
             fail_checks.append("not_single_product")
         if not key_fields_fully_visible:
@@ -162,12 +155,8 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
             fail_checks.append("object_occlusion_on_key_fields")
         if not no_any_text_occlusion_on_key_fields:
             fail_checks.append("any_text_occlusion_on_key_fields")
-        if not no_glare_overlap_on_key_text:
-            fail_checks.append("glare_overlap_on_key_text")
         if not no_occlusion_overlap_on_key_text:
             fail_checks.append("occlusion_overlap_on_key_text")
-        if not no_white_circle_overlay_on_key_fields:
-            fail_checks.append("white_circle_overlay_on_key_fields")
         if not no_wrinkle_fold_occlusion_on_key_fields:
             fail_checks.append("wrinkle_fold_occlusion_on_key_fields")
 
@@ -197,9 +186,10 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
             fail_checks.append("missing_ingredients_section")
         if pass2a_ok and not has_report_label:
             fail_checks.append("missing_report_label")
+        pass2b_pass = bool(pass2a_ok and has_ingredients and has_report_label)
         decision_raw = "READ" if not fail_checks else "SKIP"
         suitability_raw = "적합" if decision_raw == "READ" else "부적합"
-        total_checks = 14
+        total_checks = 13
         passed_checks = total_checks - len([c for c in fail_checks if c != "pass2b_skipped_by_pass2a_fail"])
         quality_score = max(0, min(100, int((passed_checks / total_checks) * 100)))
         decision_conf = 100
@@ -243,6 +233,7 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
                 "is_clear_text": is_clear_text,
                 "is_full_frame": is_full_frame,
                 "is_flat_undistorted": is_flat_undistorted,
+                "no_curved_surface_text_distortion": no_curved_surface_text_distortion,
                 "has_ingredients_section": has_ingredients,
                 "has_report_number_label": has_report_label,
                 "has_product_name": has_product_name,
@@ -252,17 +243,15 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
                 "no_glare_on_key_fields": no_glare_on_key_fields,
                 "no_object_occlusion_on_key_fields": no_object_occlusion_on_key_fields,
                 "no_any_text_occlusion_on_key_fields": no_any_text_occlusion_on_key_fields,
-                "no_glare_overlap_on_key_text": no_glare_overlap_on_key_text,
                 "no_occlusion_overlap_on_key_text": no_occlusion_overlap_on_key_text,
-                "no_white_circle_overlay_on_key_fields": no_white_circle_overlay_on_key_fields,
                 "no_wrinkle_fold_occlusion_on_key_fields": no_wrinkle_fold_occlusion_on_key_fields,
-                "glare_overlap_on_key_text": (not no_glare_overlap_on_key_text),
                 "occlusion_overlap_on_key_text": (not no_occlusion_overlap_on_key_text),
                 "any_text_occlusion_on_key_fields": (not no_any_text_occlusion_on_key_fields),
-                "white_circle_overlay_on_key_fields": (not no_white_circle_overlay_on_key_fields),
+                "curved_surface_text_distortion": (not no_curved_surface_text_distortion),
                 "wrinkle_fold_occlusion_on_key_fields": (not no_wrinkle_fold_occlusion_on_key_fields),
                 "pass2a_ok": pass2a_ok,
                 "pass2b_executed": pass2a_ok,
+                "pass2b_pass": pass2b_pass,
             },
             "ai_decision": decision_raw,
             "ai_suitability": suitability_raw,
@@ -280,7 +269,7 @@ def run_pass2_gate(analyzer: Any, image_bytes: bytes, mime_type: str, target_ite
                 if str(getattr(analyzer, "pass2a_provider", "")).lower() == "gemini"
                 else getattr(analyzer, "pass2a_openai_model", analyzer.model)
             ),
-            "source_model_pass2b": analyzer.model,
+            "source_model_pass2b": getattr(analyzer, "pass2b_openai_model", analyzer.model),
             "source_model": analyzer.model,
         }
     except Exception as exc:

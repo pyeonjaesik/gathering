@@ -14,6 +14,7 @@
 - 제품명(product_name_in_image)
 
 추출 규칙:
+- 이미지 전체 텍스트를 최대한 읽어 full_text에 넣으세요.
 - 품목보고번호는 "품목보고번호/품목제조보고번호" 라벨 근처(동일 줄 또는 바로 인접 줄)의 숫자열만 인정하세요.
 - 라벨과 떨어진 위치의 숫자열은 product_report_number로 사용하지 마세요.
 - 라벨이 없거나, 라벨 근처 번호가 불명확하면 product_report_number=null.
@@ -34,5 +35,6 @@
   "report_number_complete": true/false,
   "product_name_complete": true/false,
   "has_report_label": true/false,
+  "full_text": "문자열 또는 null",
   "reason": "간단한 추출 근거"
 }

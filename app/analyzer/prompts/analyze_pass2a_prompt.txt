@@ -25,6 +25,9 @@
 - is_flat_undistorted:
   - true: 구김/곡면/원근 왜곡이 아예 없음
   - false: 왜곡이 조금이라도 있음
+- no_curved_surface_text_distortion:
+  - true: 곡면(컵/병/용기 측면) 때문에 텍스트 줄이 휘거나 찌그러진 판독 저하가 없음
+  - false: 곡면으로 텍스트가 휘어 핵심 텍스트 판독 신뢰가 떨어짐 (예: 컵라면 측면 라벨)
 - has_single_product:
   - true: 단일 제품 정보만 포함
   - false: 복수 제품/콜라주/혼합
@@ -40,33 +43,24 @@
 - no_any_text_occlusion_on_key_fields:
   - true: 형태/색상/원인과 무관하게 핵심 텍스트 글자가 전혀 가려지지 않음
   - false: 스티커/아이콘/손/주름/그림자/하이라이트/마스킹/오버레이 등 어떤 형태로든 글자 일부 가림
-- no_glare_overlap_on_key_text:
-  - true: 핵심 글자와 반사광 겹침 없음
-  - false: 겹침 있음
 - no_occlusion_overlap_on_key_text:
   - true: 핵심 글자와 물체 가림 겹침 없음
   - false: 겹침 있음
-- no_white_circle_overlay_on_key_fields:
-  - true: 흰 원형/밝은 원형 마크가 핵심 텍스트를 가리지 않음
-  - false: 흰 원형/밝은 원형 마크가 핵심 텍스트를 가림
 - no_wrinkle_fold_occlusion_on_key_fields:
   - true: 구김/접힘/주름이 핵심 텍스트를 가리지 않음
   - false: 구김/접힘/주름으로 핵심 텍스트 일부가 가려지거나 읽기 불가능
-- reason:
-  - 탈락/통과 핵심 근거 1문장
 
 응답 JSON 스키마:
 {
   "is_clear_text": true,
   "is_full_frame": true,
   "is_flat_undistorted": true,
+  "no_curved_surface_text_distortion": true,
   "has_single_product": true,
   "key_fields_fully_visible": true,
   "no_glare_on_key_fields": true,
   "no_object_occlusion_on_key_fields": true,
   "no_any_text_occlusion_on_key_fields": true,
-  "no_glare_overlap_on_key_text": true,
   "no_occlusion_overlap_on_key_text": true,
-  "no_white_circle_overlay_on_key_fields": true,
   "no_wrinkle_fold_occlusion_on_key_fields": true,
 }
