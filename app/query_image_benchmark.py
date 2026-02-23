@@ -1354,51 +1354,17 @@ def run_query_image_benchmark(
         html_parts.append(f"<span class='chip'>Pass4-영양 통과 총합 {b2_p4_nut}</span>")
         html_parts.append("</div></div>")
         html_parts.append("</div>")
-        if not pass4_success_rows:
-            html_parts.append("<div class='card'><div class='meta'>Pass4 최종 통과 결과 없음</div></div>")
+        if not pass2_all_rows:
+            html_parts.append("<div class='card'><div class='meta'>표시할 결과가 없습니다.</div></div>")
         else:
-            for row in sorted(pass4_success_rows, key=lambda x: x["no"]):
+            html_parts.append("<div class='card'><div class='meta'>전체 상품 PASS2 원문 (A/B)</div></div>")
+            for row in sorted(pass2_all_rows, key=lambda x: x["no"]):
                 no = int(row.get("no") or 0)
                 url = str(row.get("url") or "")
-                report_no = str(row.get("pass3_report_no") or "null")
-                product_name = str(row.get("pass3_product_name") or "").strip() or None
-                ingredients_text = str(row.get("pass3_ingredients") or "null")
-                nutrition_text = str(row.get("pass3_nutrition") or "").strip() or None
-                ing_items = row.get("pass4_ingredient_items") or []
-                nut_items = row.get("pass4_nutrition_items") or []
-
-                ing_lines: list[str] = []
-                if isinstance(ing_items, list) and ing_items:
-                    for i, it in enumerate(ing_items, start=1):
-                        if not isinstance(it, dict):
-                            continue
-                        nm = str(it.get("ingredient_name") or "null")
-                        origin = str(it.get("origin") or "").strip()
-                        amount = str(it.get("amount") or "").strip()
-                        sub_cnt = len(it.get("sub_ingredients") or []) if isinstance(it.get("sub_ingredients"), list) else 0
-                        parts = [nm]
-                        if origin:
-                            parts.append(f"origin={origin}")
-                        if amount:
-                            parts.append(f"amount={amount}")
-                        if sub_cnt > 0:
-                            parts.append(f"sub={sub_cnt}")
-                        ing_lines.append(f"{i}. " + " | ".join(parts))
-                nut_lines: list[str] = []
-                if isinstance(nut_items, list) and nut_items:
-                    for i, it in enumerate(nut_items, start=1):
-                        if not isinstance(it, dict):
-                            continue
-                        name = str(it.get("name") or "null")
-                        value = str(it.get("value") or "").strip()
-                        unit = str(it.get("unit") or "").strip()
-                        dv = str(it.get("daily_value") or "").strip()
-                        parts = [name]
-                        if value or unit:
-                            parts.append(f"value={(value + unit).strip() or 'null'}")
-                        if dv:
-                            parts.append(f"daily={dv}")
-                        nut_lines.append(f"{i}. " + " | ".join(parts))
+                p2a_ok = bool(row.get("pass2a_ok"))
+                p2b_exec = bool(row.get("pass2b_executed"))
+                p2b_pass = bool(row.get("pass2b_pass"))
+                decision = str(row.get("pass2_decision") or "SKIP")
 
                 html_parts.append("<div class='card'>")
                 html_parts.append(f"<div class='meta'>[{no:03d}] <a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></div>")
@@ -1408,17 +1374,14 @@ def run_query_image_benchmark(
                 html_parts.append("<div style='display:none;color:#888;font-size:13px;'>이미지 로드 실패</div>")
                 html_parts.append("</div>")
                 html_parts.append("<div>")
-                html_parts.append("<div><span class='lbl'>Pass4 최종 통과:</span> <span class='ok'>YES</span></div>")
-                html_parts.append(f"<div><span class='lbl'>품목보고번호:</span> {html.escape(report_no)}</div>")
-                html_parts.append(f"<div><span class='lbl'>원재료명:</span> {html.escape(ingredients_text)}</div>")
-                if nutrition_text:
-                    html_parts.append(f"<div><span class='lbl'>영양성분 텍스트:</span> {html.escape(nutrition_text)}</div>")
-                if product_name:
-                    html_parts.append(f"<div><span class='lbl'>제품명:</span> {html.escape(product_name)}</div>")
-                html_parts.append(f"<div><span class='lbl'>Pass4 원재료 파싱:</span> {len(ing_lines):,}개</div>")
-                html_parts.append(f"<pre>{html.escape(chr(10).join(ing_lines) if ing_lines else '없음')}</pre>")
-                html_parts.append(f"<div><span class='lbl'>Pass4 영양성분 파싱:</span> {len(nut_lines):,}개</div>")
-                html_parts.append(f"<pre>{html.escape(chr(10).join(nut_lines) if nut_lines else '없음')}</pre>")
+                html_parts.append(
+                    f"<div><span class='lbl'>PASS2 상태:</span> decision={html.escape(decision)} | "
+                    f"2A={'OK' if p2a_ok else 'FAIL'} | 2B={'OK' if p2b_pass else ('RUN' if p2b_exec else 'SKIP')}</div>"
+                )
+                html_parts.append("<div class='lbl'>PASS2-A raw</div>")
+                html_parts.append(f"<pre>{html.escape(str(row.get('raw_pass2a') or '(원문 없음)'))}</pre>")
+                html_parts.append("<div class='lbl'>PASS2-B raw</div>")
+                html_parts.append(f"<pre>{html.escape(str(row.get('raw_pass2b') or '(미실행)'))}</pre>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
                 html_parts.append("</div>")
@@ -1541,16 +1504,8 @@ def run_query_image_benchmark_interactive() -> None:
         except ValueError:
             pass
 
-    raw_per_page = input("  🔹 페이지당 수집 개수 [기본 20, 최대 100]: ").strip()
-    per_page = 20
-    if raw_per_page:
-        try:
-            v = int(raw_per_page)
-            if v > 0:
-                per_page = v
-        except ValueError:
-            pass
-    per_page = max(1, min(100, per_page))
+    # 요청사항: API 종류와 무관하게 페이지당 최대치 고정(100)
+    per_page = 100
 
     delay_sec = 0.0
 

@@ -1,0 +1,2070 @@
+==========================================================================================
+PASS4 최종 통과 결과 (Pass4 raw 포함)
+==========================================================================================
+[008] URL: https://benope.com/web/upload/NNEditor/20251112/mobile/45c2f0aa7974d3a98dbec5caffc46ac6_1762939087.jpg
+  제품명: 베노프 단백질쉐이크 초코칩말차라떼
+  품목보고번호: F1:2020019538577, F2:20090360445439
+  원재료명: 분리유단백분말(미국산), 분리대두단백분말(중국
+산), 기타가공품[혼합분유(네덜란드산), 알룰로오스, 효소처리스테
+비아(감미료), 수크랄로스(감미료)], 알룰로오스, 초콜릿가공품[준
+초콜릿, 곡류가공품, 설탕, 혼합제제(주정, 정제백쉘락), 아라비아검
+)], 제주가루녹차(국산), 두류가공품[분리대두단백, 타피오카전분,
+대두레시틴, 제이인산칼슘], 보성말차(국산), 분리유청단백분말(미
+국산)
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "분리유단백분말",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "분리대두단백분말",
+      "origin": null,
+      "origin_detail": "중국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "기타가공품",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "혼합분유",
+          "origin": null,
+          "origin_detail": "네덜란드산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "알룰로오스",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "효소처리스테비아",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [],
+          "amount": null
+        },
+        {
+          "name": "수크랄로스",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "알룰로오스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "초콜릿가공품",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "준초콜릿",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "곡류가공품",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "설탕",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "혼합제제",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "주정",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "정제백쉘락",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "아라비아검",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "제주가루녹차",
+      "origin": null,
+      "origin_detail": "국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "두류가공품",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "분리대두단백",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "타피오카전분",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "대두레시틴",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "제이인산칼슘",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "보성말차",
+      "origin": null,
+      "origin_detail": "국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "분리유청단백분말",
+      "origin": null,
+      "origin_detail": "미국산",
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트의 괄호 및 대괄호 내부를 하위 원재료로 분리하고, 원산지는 괄호 내 국가명만 origin_detail로 귀속. 원문에 없는 정보는 추가하지 않고, 승격 금지 규칙에 따라 내부 텍스트는 sub_ingredients로 유지."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "600",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "120",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "140",
+      "unit": "mg",
+      "daily_value": "7%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "16",
+      "unit": "g",
+      "daily_value": "5%"
+    },
+    {
+      "name": "당류",
+      "value": "3.5",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "알룰로오스",
+      "value": "7.8",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "지방",
+      "value": "1.1",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0.6",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "5",
+      "unit": "mg",
+      "daily_value": "2%"
+    },
+    {
+      "name": "단백질",
+      "value": "20",
+      "unit": "g",
+      "daily_value": "36%"
+    }
+  ],
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
+}
+------------------------------------------------------------------------------------------
+[011] URL: https://m.mealit.kr/web/upload/NNEditor/20251117/mobile/d629f50e360669bf1d430cc6a1d93ed3_1763359932.jpg
+  제품명: 밀잇 딸기맛
+  품목보고번호: 20200470347193
+  원재료명: 분리대두단백(중국산), 식물성크림[물엿, 식물성경화유지(코코넛오일:외국산),무지방우유(국산), 농축
+우유단백분말, 제이인산칼륨], 난소화성말토덱스트린[옥수수:외국산(러시아, 헝가리, 세르비아 등)], 딸기
+쿠키크런치(밀가루, 설탕, 쇼트닝, 당류가공품, 정제소금), 치커리추출물, 딸기과즙분말, 오트크런치볼, 농축
+유청단백분말, 요거트맛분말, 레드비트농축분말, 향료, 크랜베리농축분말, 혼합제제[덱스트린, 혼합제제
+(프로필렌글리콜, 합성향료, 트리아세틴), 아라비아검], 차전자피식이섬유, 동결건조딸기다이스(중국산),
+효소처리스테비아(감미료), 정제소금, 혼합제제2[덱스트린, 혼합제제(글리세린, 향료, 주정, 프로필렌글리
+콜), 아라비아검], 수크랄로스(감미료)
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "분리대두단백",
+      "origin": "중국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "식물성크림",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "물엿",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "식물성경화유지",
+          "origin": null,
+          "origin_detail": "코코넛오일:외국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "무지방우유",
+          "origin": "국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "농축우유단백분말",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "제이인산칼륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "난소화성말토덱스트린",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "옥수수",
+          "origin": "외국산",
+          "origin_detail": "러시아, 헝가리, 세르비아 등",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "딸기쿠키크런치",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "밀가루",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "설탕",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "쇼트닝",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "당류가공품",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "정제소금",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "치커리추출물",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "딸기과즙분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "오트크런치볼",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "농축유청단백분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "요거트맛분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "레드비트농축분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향료",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "크랜베리농축분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "혼합제제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "덱스트린",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "혼합제제",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "프로필렌글리콜",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "합성향료",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "트리아세틴",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "아라비아검",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "차전자피식이섬유",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "동결건조딸기다이스",
+      "origin": "중국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "정제소금",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "혼합제제2",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "덱스트린",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "혼합제제",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "글리세린",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "향료",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "주정",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            },
+            {
+              "name": "프로필렌글리콜",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "아라비아검",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "수크랄로스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 괄호 및 대괄호 기준으로 분해하고, 원산지 표기를 원문 기준으로 정확히 반영함"
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "450",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "1회 제공량",
+      "value": "30",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "총 제공 횟수",
+      "value": "15",
+      "unit": "회",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "117",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "160",
+      "unit": "mg",
+      "daily_value": "8%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "14",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "당류",
+      "value": "2",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "식이섬유",
+      "value": "5",
+      "unit": "g",
+      "daily_value": "20%"
+    },
+    {
+      "name": "지방",
+      "value": "3",
+      "unit": "g",
+      "daily_value": "6%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "2.5",
+      "unit": "g",
+      "daily_value": "17%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "11",
+      "unit": "g",
+      "daily_value": "20%"
+    }
+  ],
+  "reason": "원문 순서대로 영양성분명과 값, 단위, 일일기준치(%)를 명확히 추출함"
+}
+------------------------------------------------------------------------------------------
+[012] URL: https://image.next-engine.co.kr/data/uploads/editor/img/9679403577/tmp/202311091200267495.jpg
+  제품명: 말차 프로틴 쉐이크
+  품목보고번호: 20020445161491
+  원재료명: 분리대두단백(중국산),혼합탈지분유(탈지분유, 유청분말, 네덜란
+드산), 보성말차(국내산), 식물성크림혼합분말(물엿, 식물성경화
+유지(코코넛오일), 제이인산칼륨, 카제인나트륨, 이산화규소] 볶음
+보리분말 결정과당 열풍현미, 전지분유, 유청분말 코코넛크림파우더
+오트크런치볼, 멀티비타민미네랄믹스, 밀크단백질크리스프, 혼합
+제제(변성전분, 트리아세틴, 합성향료, 천연향료) 17곡미숫가루, 꿀분말
+효소처리스테비아, 분리유청단백, 볶은소금, L-로이신, 녹차추출물
+분말, 그린커피빈추출물분말, 수크랄로스(감미료), 혼합유산균알파,
+차전자피분말
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "분리대두단백",
+      "origin": null,
+      "origin_detail": "중국산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "혼합탈지분유",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "탈지분유",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "유청분말",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "네덜란드산",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "보성말차",
+      "origin": "국내산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "식물성크림혼합분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "물엿",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "식물성경화유지",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "코코넛오일",
+              "origin": null,
+              "origin_detail": null,
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "제이인산칼륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "카제인나트륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "이산화규소",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "볶음보리분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "결정과당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "열풍현미",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "전지분유",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "유청분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "코코넛크림파우더",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "오트크런치볼",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "멀티비타민미네랄믹스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "밀크단백질크리스프",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "혼합제제",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "변성전분",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "트리아세틴",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "합성향료",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "천연향료",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "17곡미숫가루",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "꿀분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "분리유청단백",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "볶은소금",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "L-로이신",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "녹차추출물분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "그린커피빈추출물분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "수크랄로스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [],
+      "note": "감미료"
+    },
+    {
+      "ingredient_name": "혼합유산균알파",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "차전자피분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고 괄호 내 하위 원재료를 sub_ingredients로 처리하였으며, 원산지는 원문에 명시된 경우에만 부여함. 불명확하거나 잘린 원재료명은 없었음."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "510",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "1회 제공량",
+      "value": "34",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "총 제공량",
+      "value": "15",
+      "unit": "회",
+      "daily_value": null
+    },
+    {
+      "name": "1회당 열량",
+      "value": "131",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "241",
+      "unit": "mg",
+      "daily_value": "12%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "12",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "당류",
+      "value": "4",
+      "unit": "g",
+      "daily_value": "4%"
+    },
+    {
+      "name": "지방",
+      "value": "1.4",
+      "unit": "g",
+      "daily_value": "3%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "1",
+      "unit": "g",
+      "daily_value": "7%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "7",
+      "unit": "mg",
+      "daily_value": "2%"
+    },
+    {
+      "name": "단백질",
+      "value": "17",
+      "unit": "g",
+      "daily_value": "31%"
+    }
+  ],
+  "reason": "원문에 명확히 표기된 영양성분명, 수치, 단위, 일일기준치(%)를 그대로 추출함"
+}
+------------------------------------------------------------------------------------------
+[025] URL: https://m.mealit.kr/web/upload/NNEditor/20250220/mobile/76d095004618b353022774d901a64561_1740011493.jpg
+  제품명: 밀잇 미숫가루맛
+  품목보고번호: 2020047034760
+  원재료명: 혼합7곡분말(국내산/보리, 현미, 보리쌀, 멥쌀, 백태, 찹쌀현미, 흑미), 분리대두단백(중국산), 에리스리
+톨, 유청단백분말[미국산/농축유청단백분말, 레시틴], 현미볶음, 흑미볶음, 효소처리스테비아(감미료)
+차전자피분말
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "혼합7곡분말",
+      "origin": "국내산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "보리",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "현미",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "보리쌀",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "멥쌀",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "백태",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "찹쌀현미",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "흑미",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "분리대두단백",
+      "origin": "중국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "에리스리톨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "유청단백분말",
+      "origin": "미국산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "농축유청단백분말",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "레시틴",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "현미볶음",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "흑미볶음",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "감미료",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "차전자피분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트에 명시된 원재료 및 원산지 정보를 기준으로 괄호 및 대괄호 내 하위 원재료를 분리하였으며, 원산지 정보는 원문에 명확히 표기된 경우에만 부여함."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "450",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "1회 제공량",
+      "value": "30",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "총 제공량",
+      "value": "15",
+      "unit": "회",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "118",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "162",
+      "unit": "mg",
+      "daily_value": "8%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "17.4",
+      "unit": "g",
+      "daily_value": "5%"
+    },
+    {
+      "name": "당류",
+      "value": "0.3",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "지방",
+      "value": "0.9",
+      "unit": "g",
+      "daily_value": "2%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "0",
+      "unit": "mg",
+      "daily_value": "0%"
+    },
+    {
+      "name": "단백질",
+      "value": "10",
+      "unit": "g",
+      "daily_value": "18%"
+    }
+  ],
+  "reason": "원문 텍스트의 영양성분명과 수치, 단위, 일일기준치(%)를 그대로 추출하여 JSON 구조화함"
+}
+------------------------------------------------------------------------------------------
+[060] URL: https://gi.esmplus.com/yang84011/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-17%20141606.png
+  제품명: PERFECT POWER SHAKE MIX
+  품목보고번호: 2022061903418
+  원재료명: 칼로바이프로틴믹스(농축유청단백(미국산), 분리유청단백(미국산), 분리유단백(미국산), 농축유
+단백(미국산)), 코코아분말(인도네시아산), 식물성크림[물엿, 식물성경화유지(코코넛오일(외국
+산: 인도네시아, 필리핀, 말레이시아 등)), 제이인산칼륨, 이산화티타늄(착색료), 스테아릴젖산
+나트륨], 치커리뿌리추출분말, 효소처리스테비아, 합성향료1(초코향), 합성향료(밀크항), 구마
+검 , 수크랄로스(감미료
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "칼로바이프로틴믹스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "농축유청단백",
+          "origin": "미국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "분리유청단백",
+          "origin": "미국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "분리유단백",
+          "origin": "미국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "농축유단백",
+          "origin": "미국산",
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "코코아분말",
+      "origin": "인도네시아산",
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "식물성크림",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "물엿",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "식물성경화유지",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": [
+            {
+              "name": "코코넛오일",
+              "origin": "외국산",
+              "origin_detail": "인도네시아, 필리핀, 말레이시아 등",
+              "amount": null,
+              "sub_ingredients": []
+            }
+          ]
+        },
+        {
+          "name": "제이인산칼륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "이산화티타늄",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "스테아릴젖산나트륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "치커리뿌리추출분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "합성향료1",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "합성향료",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "구마검",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "수크랄로스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트에 명확히 표기된 원재료명과 원산지 정보를 기준으로 구조화하였으며, 원문에 없는 정보는 추가하지 않고, 괄호 및 대괄호 내부는 하위 재료로 처리하였음."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "총 내용량",
+      "value": "2000",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "1회 제공량",
+      "value": "40",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "열량",
+      "value": "160",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "96",
+      "unit": "mg",
+      "daily_value": "5%"
+    },
+    {
+      "name": "나트륨",
+      "value": "4750",
+      "unit": "mg",
+      "daily_value": "238%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "11",
+      "unit": "g",
+      "daily_value": "3%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "550",
+      "unit": "g",
+      "daily_value": "170%"
+    },
+    {
+      "name": "당류",
+      "value": "1",
+      "unit": "g",
+      "daily_value": "1%"
+    },
+    {
+      "name": "당류",
+      "value": "50",
+      "unit": "g",
+      "daily_value": "50%"
+    },
+    {
+      "name": "지방",
+      "value": "2.8",
+      "unit": "g",
+      "daily_value": "5%"
+    },
+    {
+      "name": "지방",
+      "value": "140",
+      "unit": "g",
+      "daily_value": "259%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "2",
+      "unit": "g",
+      "daily_value": "13%"
+    },
+    {
+      "name": "포화지방",
+      "value": "100",
+      "unit": "g",
+      "daily_value": "667%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "35",
+      "unit": "mg",
+      "daily_value": "12%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "1750",
+      "unit": "mg",
+      "daily_value": "583%"
+    },
+    {
+      "name": "단백질",
+      "value": "23",
+      "unit": "g",
+      "daily_value": "42%"
+    },
+    {
+      "name": "단백질",
+      "value": "1150",
+      "unit": "g",
+      "daily_value": "2091%"
+    }
+  ],
+  "reason": "원문에 1회 제공량당과 총 내용량당 수치 및 일일기준치(%)가 명확히 표기되어 있어 그대로 분리하여 JSON 구조화함"
+}
+------------------------------------------------------------------------------------------
+[076] URL: https://k-diet.co.nz/cdn/shop/files/03_b42c407e-0848-4f8c-9187-a123c4907545.jpg?v=1758615968&width=900
+  제품명: 플라이밀 쿠키앤크림
+  품목보고번호: 20030368010-808
+  원재료명: 플라이밀단백혼합분말(분리대두단백(미국산), 콜라겐펩타이드,
+농축유청단백분말(미국산), 당류제로크리머, 난소화성말토덱스트린}, 블
+랙쿠키크럼블위드크림(설탕, 밀가루, 식물성유지, 코코아분말, 과당시럽)(
+인도네시아산), 식물성크림(물엿, 야자경화유(정제가공유지 : 외국산), 카
+제인나트륨, 제이인산칼륨, 레시틴, 정제소금(국산)}, 에리스리톨(감미료),
+밀크단백크리스프, 쿠키앤크림맛분말, 볶은귀리분말, 향료1, 코코아분말,
+정제소금, 효소처리스테비아(감미료), 볶은현미분말, 아몬드분말, 향료2,
+나한과추출물분말, 효소식품1, 효소식품2, 수크랄로스(감미료)
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "플라이밀단백혼합분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "분리대두단백",
+          "origin": null,
+          "origin_detail": "미국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "콜라겐펩타이드",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "농축유청단백분말",
+          "origin": null,
+          "origin_detail": "미국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "당류제로크리머",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "난소화성말토덱스트린",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "블랙쿠키크럼블위드크림",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "설탕",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "밀가루",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "식물성유지",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "코코아분말",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "과당시럽",
+          "origin": null,
+          "origin_detail": "인도네시아산",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "식물성크림",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": [
+        {
+          "name": "물엿",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "야자경화유",
+          "origin": null,
+          "origin_detail": "정제가공유지 : 외국산",
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "카제인나트륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "제이인산칼륨",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "레시틴",
+          "origin": null,
+          "origin_detail": null,
+          "amount": null,
+          "sub_ingredients": []
+        },
+        {
+          "name": "정제소금",
+          "origin": null,
+          "origin_detail": "국산",
+          "amount": null,
+          "sub_ingredients": []
+        }
+      ]
+    },
+    {
+      "ingredient_name": "에리스리톨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "밀크단백크리스프",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "쿠키앤크림맛분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "볶은귀리분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향료1",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "코코아분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "정제소금",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "볶은현미분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "아몬드분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "향료2",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "나한과추출물분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소식품1",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소식품2",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "수크랄로스",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원문에 명확히 표기된 원재료 및 원산지 기준으로 구조화, 규칙에 따라 승격 및 추정 없이 처리"
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "에너지",
+      "value": "173",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "나트륨",
+      "value": "228.6",
+      "unit": "mg",
+      "daily_value": "11%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "16.9",
+      "unit": "g",
+      "daily_value": "5%"
+    },
+    {
+      "name": "당류",
+      "value": "2.8",
+      "unit": "g",
+      "daily_value": "3%"
+    },
+    {
+      "name": "에리스리톨",
+      "value": "2.2",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "식이섬유",
+      "value": "3",
+      "unit": "g",
+      "daily_value": "12%"
+    },
+    {
+      "name": "지방",
+      "value": "4.3",
+      "unit": "g",
+      "daily_value": "8%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": null
+    },
+    {
+      "name": "포화지방",
+      "value": "3.3",
+      "unit": "g",
+      "daily_value": "22%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "14.9",
+      "unit": "mg",
+      "daily_value": "5%"
+    },
+    {
+      "name": "단백질",
+      "value": "20.3",
+      "unit": "g",
+      "daily_value": "37%"
+    }
+  ],
+  "reason": "원문에 명확히 표기된 영양성분명, 수치, 단위 및 일일기준치(%)를 그대로 추출함"
+}
+------------------------------------------------------------------------------------------
+[081] URL: https://m.mommake.com/file_data/mommake1/2021/04/11/7c53fa174a656e64f2495244b02b2f3e.jpeg
+  제품명: 단백질 미숫가루
+  품목보고번호: 20120355295311
+  원재료명: 두부분말, 쌀단백분말, 완두단백, 검정콩(국내산),
+현미(국내산), 보리(국내산), 분리대두단백, 검정깨
+해바라기씨, 포도당, 밀식이섬유, 덱스트린, 백태
+(수입산), 식물성크림, 자일리톨, 효소처리스테비아
+  [PASS4 RAW]
+  [PASS4-INGREDIENTS]
+{
+  "ingredients_items": [
+    {
+      "ingredient_name": "두부분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "쌀단백분말",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "완두단백",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "검정콩",
+      "origin": null,
+      "origin_detail": "국내산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "현미",
+      "origin": null,
+      "origin_detail": "국내산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "보리",
+      "origin": null,
+      "origin_detail": "국내산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "분리대두단백",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "검정깨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "해바라기씨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "포도당",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "밀식이섬유",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "덱스트린",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "백태",
+      "origin": null,
+      "origin_detail": "수입산",
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "식물성크림",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "자일리톨",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    },
+    {
+      "ingredient_name": "효소처리스테비아",
+      "origin": null,
+      "origin_detail": null,
+      "amount": null,
+      "sub_ingredients": []
+    }
+  ],
+  "ignored_fragments": [],
+  "reason": "원재료 텍스트를 쉼표 기준으로 분리하고 괄호 내 원산지 정보를 origin_detail로 분리하였으며, 원문에 없는 정보는 추가하지 않음."
+}
+
+[PASS4-NUTRITION]
+{
+  "nutrition_items": [
+    {
+      "name": "칼로리",
+      "value": "162",
+      "unit": "kcal",
+      "daily_value": null
+    },
+    {
+      "name": "단백질",
+      "value": "18",
+      "unit": "g",
+      "daily_value": "33%"
+    },
+    {
+      "name": "탄수화물",
+      "value": "179",
+      "unit": null,
+      "daily_value": "5%"
+    },
+    {
+      "name": "당류",
+      "value": "6",
+      "unit": "g",
+      "daily_value": "6%"
+    },
+    {
+      "name": "지방",
+      "value": "3",
+      "unit": "g",
+      "daily_value": "6%"
+    },
+    {
+      "name": "트랜스지방",
+      "value": "0",
+      "unit": "g",
+      "daily_value": "0%"
+    },
+    {
+      "name": "포화지방",
+      "value": "19",
+      "unit": null,
+      "daily_value": "7%"
+    },
+    {
+      "name": "콜레스테롤",
+      "value": "불검출",
+      "unit": null,
+      "daily_value": null
+    }
+  ],
+  "reason": "원문 순서 유지, 단위와 수치가 명확한 경우만 기입, 불명확한 단위는 null 처리, 일일기준치(%)는 해당 수치가 있는 경우만 기록"
+}
+------------------------------------------------------------------------------------------
+
+[Funnel]
+- 전체: 200
+- Pass1 통과: 185
+- Pass2 통과: 23
+- Pass3 통과: 9
+- Pass4 통과: 7
+- Pass3-원재료 통과: 9
+- Pass3-영양 대상/통과: 9/9
+- Pass4-원재료 통과: 7
+- Pass4-영양 대상/통과: 7/7

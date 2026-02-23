@@ -164,6 +164,7 @@ class URLIngredientAnalyzer:
     prompt_file_pass4_nutrition: str | None = None
     pass2a_provider: str = "openai"
     pass2a_openai_model: str = "gpt-4o-mini"
+    pass2b_openai_model: str = "gpt-4o-mini"
     pass2a_gemini_model: str = "gemini-2.0-flash"
     pass2a_gemini_api_key: str | None = None
     pass3_provider: str = "gemini"
@@ -253,6 +254,14 @@ class URLIngredientAnalyzer:
             str(
                 self.pass2a_openai_model
                 or os.getenv("PASS2A_OPENAI_MODEL")
+                or "gpt-4o-mini"
+            )
+            .strip()
+        )
+        self.pass2b_openai_model = (
+            str(
+                self.pass2b_openai_model
+                or os.getenv("PASS2B_OPENAI_MODEL")
                 or "gpt-4o-mini"
             )
             .strip()
@@ -675,8 +684,12 @@ class URLIngredientAnalyzer:
         mime_type: str,
         prompt: str,
     ) -> tuple[str, dict[str, Any], str]:
-        # Pass2B는 기존 OpenAI 경로 유지
-        return self._call_model(image_bytes=image_bytes, mime_type=mime_type, prompt=prompt)
+        return self._call_model_openai(
+            image_bytes=image_bytes,
+            mime_type=mime_type,
+            prompt=prompt,
+            model_name=self.pass2b_openai_model,
+        )
 
     def _pass3_source_model(self) -> str:
         if self.pass3_provider == "gemini":
