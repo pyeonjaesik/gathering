@@ -1,5 +1,5 @@
 """
-검색어 실행 브라우저 UI
+파이프라인 실행 브라우저 UI
 실행:
     uv run streamlit run app/web_query_pipeline_ui.py --server.port 8502
 """
@@ -161,10 +161,10 @@ def _load_dashboard() -> dict:
 
 
 def main() -> None:
-    st.set_page_config(page_title="검색어 실행 실시간 대시보드", page_icon="🚀", layout="wide")
+    st.set_page_config(page_title="파이프라인 실행 실시간 대시보드", page_icon="🚀", layout="wide")
     _ensure_state()
 
-    st.title("🚀 검색어 실행 실시간 대시보드")
+    st.title("🚀 파이프라인 실행 실시간 대시보드")
     st.caption("검색어 선택/직접입력으로 실행하고, Pass 진행과 DB 누적 상황을 실시간으로 확인합니다.")
 
     with st.expander("⚙️ 실행 설정", expanded=True):

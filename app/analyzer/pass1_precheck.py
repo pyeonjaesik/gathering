@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 
-SUPPORTED_IMAGE_MIMES = {"image/png", "image/jpeg", "image/gif", "image/webp"}
+SUPPORTED_IMAGE_MIMES = {"image/png", "image/jpeg", "image/webp"}
 
 
 def _normalize_mime(mime_type: str | None) -> str:
@@ -27,10 +27,21 @@ def _mime_matches_signature(mime_type: str, image_bytes: bytes) -> bool:
     return False
 
 
+def _is_gif_bytes(image_bytes: bytes) -> bool:
+    if not image_bytes:
+        return False
+    return image_bytes.startswith(b"GIF87a") or image_bytes.startswith(b"GIF89a")
+
+
 def run_pass1_precheck(analyzer: Any, image_bytes: bytes, mime_type: str, image_url: str | None = None) -> dict[str, Any]:
     normalized = _normalize_mime(mime_type)
     reasons: list[str] = []
     ok = True
+
+    # 비용 절감을 위해 GIF는 Pass1에서 즉시 차단
+    if normalized == "image/gif" or _is_gif_bytes(image_bytes):
+        ok = False
+        reasons.append("gif_not_allowed")
 
     if normalized not in SUPPORTED_IMAGE_MIMES:
         ok = False

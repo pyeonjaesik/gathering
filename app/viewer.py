@@ -9,6 +9,8 @@
 from __future__ import annotations
 
 import html
+import json
+import re
 import sqlite3
 import sys
 import webbrowser
@@ -364,48 +366,205 @@ def show_query_runs(conn: sqlite3.Connection) -> None:
 
 
 def show_final_outputs(conn: sqlite3.Connection) -> None:
-    print("\n  ✅ [최종 산출물 조회]")
-    mode = input("  조회 기준 [1:품목보고번호, 2:제품명, 3:최근순] : ").strip()
-    params: tuple[Any, ...]
-    if mode == "1":
-        q = input("  품목보고번호 검색어 : ").strip()
-        sql = """
-            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
-            FROM food_final
-            WHERE item_mnftr_rpt_no LIKE ?
-            ORDER BY id DESC
-            LIMIT 50
-        """
-        params = (f"%{q}%",)
-    elif mode == "2":
-        q = input("  제품명 검색어 : ").strip()
-        sql = """
-            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
-            FROM food_final
-            WHERE product_name LIKE ?
-            ORDER BY id DESC
-            LIMIT 50
-        """
-        params = (f"%{q}%",)
-    elif mode == "3":
-        sql = """
-            SELECT id, product_name, item_mnftr_rpt_no, nutrition_source, source_image_url, created_at
-            FROM food_final
-            ORDER BY id DESC
-            LIMIT 50
-        """
-        params = ()
-    else:
-        print("  ⚠️ 올바른 번호를 입력해주세요.")
-        return
+    print("\n  ✅ [최종 산출물 조회: 브라우저 리포트]")
+    limit = 100
+    sql = """
+        SELECT
+          f.id, f.product_name, f.item_mnftr_rpt_no, f.ingredients_text, f.nutrition_text,
+          f.nutrition_source, f.source_image_url, f.created_at,
+          c.data_source_path
+        FROM food_final f
+        LEFT JOIN query_image_analysis_cache c ON c.image_url = f.source_image_url
+        ORDER BY f.id DESC
+        LIMIT ?
+    """
+    params: tuple[Any, ...] = (limit,)
+
     rows = conn.execute(sql, params).fetchall()
     if not rows:
         print("  (결과 없음)")
         return
-    for row in rows:
-        rid, name, no, ns, url, ct = row
-        print(f"  - id={rid} | {name or '-'} | 번호={no or '-'} | nutrition={ns} | {ct}")
-        print(f"    url={url or '-'}")
+
+    def _parse_json_like(text: str | None) -> dict[str, Any] | None:
+        raw = str(text or "").strip()
+        if not raw:
+            return None
+        try:
+            return json.loads(raw)
+        except Exception:
+            pass
+        m = re.search(r"\{.*\}", raw, flags=re.DOTALL)
+        if m:
+            try:
+                return json.loads(m.group(0))
+            except Exception:
+                return None
+        return None
+
+    def _fmt_amount(v: Any) -> str:
+        t = str(v or "").strip()
+        return f" {t}" if t else ""
+
+    def _fmt_origin(origin: Any, detail: Any) -> str:
+        o = str(origin or "").strip()
+        d = str(detail or "").strip()
+        if o and d:
+            return f" ({o}, {d})"
+        if o:
+            return f" ({o})"
+        if d:
+            return f" ({d})"
+        return ""
+
+    def _render_sub_items(items: list[dict[str, Any]], depth: int = 0) -> str:
+        if not items:
+            return ""
+        buf: list[str] = []
+        for node in items:
+            if not isinstance(node, dict):
+                continue
+            name = str(node.get("name") or node.get("ingredient_name") or "").strip() or "미확인"
+            origin = _fmt_origin(node.get("origin"), node.get("origin_detail"))
+            amount = _fmt_amount(node.get("amount"))
+            buf.append(
+                f"<li><span class='nm'>{html.escape(name)}</span>{html.escape(origin)}{html.escape(amount)}"
+            )
+            children = node.get("sub_ingredients") or []
+            if isinstance(children, list) and children:
+                buf.append(f"<ul class='sub depth-{depth+1}'>")
+                buf.append(_render_sub_items(children, depth + 1))
+                buf.append("</ul>")
+            buf.append("</li>")
+        return "".join(buf)
+
+    def _format_ingredients_block(raw_text: str | None) -> str:
+        parsed = _parse_json_like(raw_text)
+        items = []
+        if parsed and isinstance(parsed, dict):
+            maybe_items = parsed.get("ingredients_items")
+            if isinstance(maybe_items, list):
+                items = maybe_items
+        if not items:
+            return "<span class='muted'>구조화 데이터 없음</span>"
+
+        out: list[str] = ["<ul class='ing-root'>"]
+        for it in items:
+            if not isinstance(it, dict):
+                continue
+            name = str(it.get("ingredient_name") or "").strip() or "미확인"
+            origin = _fmt_origin(it.get("origin"), it.get("origin_detail"))
+            amount = _fmt_amount(it.get("amount"))
+            out.append(f"<li><span class='nm'>{html.escape(name)}</span>{html.escape(origin)}{html.escape(amount)}")
+            subs = it.get("sub_ingredients") or []
+            if isinstance(subs, list) and subs:
+                out.append("<ul class='sub depth-1'>")
+                out.append(_render_sub_items(subs, 1))
+                out.append("</ul>")
+            out.append("</li>")
+        out.append("</ul>")
+        return "".join(out)
+
+    def _product_source_label(v: str | None) -> str:
+        value = str(v or "").strip()
+        if value == "public_food_enriched":
+            return "공공DB"
+        if value == "image_full_extraction":
+            return "이미지"
+        return "-"
+
+    def _nutrition_source_label(v: str | None) -> str:
+        value = str(v or "").strip()
+        if value == "public_food_db":
+            return "공공DB"
+        if value == "image_pass4":
+            return "이미지(Pass4)"
+        return value or "-"
+
+    trs: list[str] = []
+    for r in rows:
+        rid, name, rpt, ing_raw, nut_raw, nut_src, img_url, created_at, data_src = r
+        ing_html = _format_ingredients_block(ing_raw)
+        nut_preview = html.escape(str(nut_raw or "")[:500]) if nut_raw else "-"
+        trs.append(
+            "<tr>"
+            f"<td class='id'>{int(rid)}</td>"
+            f"<td class='img'><img src='{html.escape(str(img_url or ''))}' alt='img' loading='lazy' /><div class='u'>{html.escape(str(img_url or '-'))}</div></td>"
+            f"<td>{html.escape(str(name or '-'))}</td>"
+            f"<td>{html.escape(str(rpt or '-'))}</td>"
+            f"<td class='ing'>{ing_html}</td>"
+            f"<td><pre>{nut_preview}</pre></td>"
+            f"<td><div>제품명 출처: <b>{html.escape(_product_source_label(data_src))}</b></div>"
+            f"<div>영양성분 출처: <b>{html.escape(_nutrition_source_label(nut_src))}</b></div></td>"
+            f"<td>{html.escape(str(created_at or '-'))}</td>"
+            "</tr>"
+        )
+
+    body = "\n".join(trs)
+    html_text = f"""<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>최종 산출물 조회</title>
+  <style>
+    body {{
+      margin: 0; padding: 18px;
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      background: #f6f8fc; color: #1f2937;
+    }}
+    .card {{
+      background: #fff; border: 1px solid #dbe2ee; border-radius: 12px; padding: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04); margin-bottom: 12px;
+    }}
+    h1 {{ margin: 0 0 8px; font-size: 22px; }}
+    .sub {{ color: #6b7280; font-size: 13px; }}
+    table {{ width: 100%; border-collapse: collapse; font-size: 12px; background: #fff; }}
+    th, td {{ border: 1px solid #e5ebf5; padding: 6px; vertical-align: top; }}
+    th {{ background: #eef3ff; position: sticky; top: 0; z-index: 1; }}
+    .id {{ white-space: nowrap; text-align: right; }}
+    .img img {{ width: 92px; height: 92px; object-fit: cover; border-radius: 8px; border: 1px solid #dbe2ee; display:block; margin-bottom: 4px; }}
+    .u {{ max-width: 220px; word-break: break-all; color: #6b7280; font-size: 11px; }}
+    .ing {{ min-width: 320px; }}
+    .ing-root, .sub {{ margin: 0; padding-left: 16px; }}
+    .sub {{ margin-top: 3px; }}
+    .nm {{ font-weight: 600; }}
+    .muted {{ color: #6b7280; }}
+    pre {{ margin: 0; white-space: pre-wrap; word-break: break-word; max-width: 360px; }}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>최종 산출물 조회</h1>
+    <div class="sub">이미지 / 제품명 / 품목보고번호 / 구조화 원재료 / 영양성분(raw 일부) / 소스 정보를 압축 표시</div>
+    <div>총 {len(rows):,}건</div>
+  </div>
+  <div class="card" style="padding:0; overflow:auto; max-height:78vh;">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>이미지</th>
+          <th>제품명</th>
+          <th>품목보고번호</th>
+          <th>원재료(구조화)</th>
+          <th>영양성분 RAW</th>
+          <th>소스</th>
+          <th>수집시각</th>
+        </tr>
+      </thead>
+      <tbody>{body}</tbody>
+    </table>
+  </div>
+</body>
+</html>
+"""
+    out_dir = Path(__file__).resolve().parent.parent / "reports" / "final_outputs"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_path = out_dir / f"food_final_{ts}.html"
+    out_path.write_text(html_text, encoding="utf-8")
+    webbrowser.open_new_tab(out_path.resolve().as_uri())
+    print(f"  🌐 브라우저 리포트 생성: {out_path}")
 
 
 def show_mapping_coverage(conn: sqlite3.Connection) -> None:

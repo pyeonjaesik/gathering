@@ -1,0 +1,492 @@
+<!doctype html><html lang='ko'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>파이프라인 실행 결과 리포트 (최종 저장 중심)</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}.wrap{max-width:1440px;margin:0 auto;}.top{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:14px;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}.kpi .v{font-size:24px;font-weight:800;}.q{background:#fff;border:1px solid #dbe3ff;border-radius:12px;padding:14px;margin:14px 0;}.q h3{margin:0 0 8px 0;font-size:18px;}.meta{font-size:13px;color:#555;margin:2px 0;}.ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px;background:#fff;}th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}th{background:#f3f4f6;position:sticky;top:0;}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;font-size:11px;}.img{width:88px;height:88px;object-fit:cover;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:2px;}.small{font-size:12px;color:#555;}.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe4ff;font-size:11px;margin-right:6px;}.pill{display:inline-block;padding:3px 8px;border-radius:8px;background:#f3f4f6;font-size:11px;margin-right:4px;margin-bottom:4px;}</style>
+</head><body><div class='wrap'>
+<div class='top'>
+<h2 style='margin:0 0 8px 0;'>파이프라인 실행 결과 리포트 (최종 저장 중심)</h2>
+<div class='meta'>생성시각: 2026-02-24 21:25:38</div>
+</div>
+<div class='grid'>
+<div class='kpi'><div>검색어</div><div class='v'>1</div></div>
+<div class='kpi'><div>수집 이미지</div><div class='v'>100</div></div>
+<div class='kpi'><div>분석 시도</div><div class='v'>98</div></div>
+<div class='kpi'><div>최종 저장</div><div class='v'>4</div></div>
+<div class='kpi'><div>API 호출</div><div class='v'>103</div></div>
+</div>
+<div class='q'>
+<h3>단백질쉐이크 원재료명 성분표</h3>
+<div class='meta'><span class='badge'>provider: google</span><span class='badge'>run_id: 11</span></div>
+<div class='meta'>상태: <span class='ok'>done</span></div>
+<div class='meta'>total=100, analyzed=98, saved=4, api_calls=103</div>
+<div class='meta'><span class='pill'>최종 저장 대상만 표시: 4 / 전체 이미지 99</span></div>
+<table>
+<tr><th>No</th><th>이미지</th><th>URL</th><th>제품명</th><th>품목보고번호</th><th>원재료(raw)</th><th>영양성분(raw)</th><th>출처</th><th>Pass 요약</th></tr>
+<tr>
+<td>22</td>
+<td><img class='img' src='https://mblogthumb-phinf.pstatic.net/MjAxODA3MDVfMTQg/MDAxNTMwNzMyOTc2NDQ5.ncOI938APvbKiX7IMU6TXOBasi5MBo7k7LzxpASdktwg.V6awM5CKO5YAOCBHkww-9XLv7bVypYW2nm_VsAqfG5Qg.JPEG.visavis86/IMG_9991.JPG?type=w800' loading='lazy' referrerpolicy='no-referrer'></td>
+<td><a href='https://mblogthumb-phinf.pstatic.net/MjAxODA3MDVfMTQg/MDAxNTMwNzMyOTc2NDQ5.ncOI938APvbKiX7IMU6TXOBasi5MBo7k7LzxpASdktwg.V6awM5CKO5YAOCBHkww-9XLv7bVypYW2nm_VsAqfG5Qg.JPEG.visavis86/IMG_9991.JPG?type=w800' target='_blank' rel='noopener'>https://mblogthumb-phinf.pstatic.net/MjAxODA3MDVfMTQg/MDAxNTMwNzMyOTc2NDQ5.ncOI938APvbKiX7IMU6TXOBasi5MBo7k7LzxpASdktwg.V6awM5CKO5YAOCBHkww-9XLv7bVypYW2nm_VsAqfG5Qg.JPEG.visavis86/IMG_9991.JPG?type=w800</a></td>
+<td>파워쉐이크</td>
+<td>20070358224-748</td>
+<td><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;카제인칼슘&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;분리대두단백&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;대두단백&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: null,
+          &quot;origin&quot;: &quot;미국산&quot;,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;농축유청단백&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;유청단백분말&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;o</code></td>
+<td><code>{
+  &quot;nutrition_items&quot;: [
+    {
+      &quot;name&quot;: &quot;나트륨&quot;,
+      &quot;value&quot;: &quot;70&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;4%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;정보 탄수화물&quot;,
+      &quot;value&quot;: &quot;18&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;6%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;총 내용량 당&quot;,
+      &quot;value&quot;: null,
+      &quot;unit&quot;: null,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;당류&quot;,
+      &quot;value&quot;: &quot;7&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;7%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;지방&quot;,
+      &quot;value&quot;: &quot;0.6&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;1%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;트랜스지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;포화지방&quot;,
+      &quot;value&quot;: &quot;0.6&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;4%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;콜레스테롤&quot;,
+      &quot;value&quot;: &quot;20&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;7%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;칼로리&quot;,
+      &quot;value&quot;: &quot;185&quot;,
+      &quot;unit&quot;: &quot;kcal&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;단백질&quot;,
+      &quot;value&quot;: &quot;25&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;45%&quot;
+    }
+  ]
+}</code></td>
+<td>제품명 출처: <b>이미지</b><br>영양성분 출처: <b>이미지</b></td>
+<td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td>
+</tr>
+<tr>
+<td>2</td>
+<td><img class='img' src='https://cdn.ananti.kr/ej/1001402/editor/2024/03/21/20240321155126016.336050.jpg' loading='lazy' referrerpolicy='no-referrer'></td>
+<td><a href='https://cdn.ananti.kr/ej/1001402/editor/2024/03/21/20240321155126016.336050.jpg' target='_blank' rel='noopener'>https://cdn.ananti.kr/ej/1001402/editor/2024/03/21/20240321155126016.336050.jpg</a></td>
+<td>닥터빈 단백질 쉐이크 슈퍼세븐</td>
+<td>200703582241229</td>
+<td><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;분리대두단백&quot;,
+      &quot;origin&quot;: &quot;미국산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;분리대두단백&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;프락토올리고당&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;딸기과즙분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;덱스트린&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;딸기과즙고형분&quot;,
+          &quot;origin&quot;: &quot;국내산&quot;,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;딸기&quot;,
+              &quot;origin&quot;: null,
+     </code></td>
+<td><code>{
+  &quot;nutrition_items&quot;: [
+    {
+      &quot;name&quot;: &quot;총 내용량&quot;,
+      &quot;value&quot;: &quot;45&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;열량&quot;,
+      &quot;value&quot;: &quot;146.3&quot;,
+      &quot;unit&quot;: &quot;kcal&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;나트륨&quot;,
+      &quot;value&quot;: &quot;394.2&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;20%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;탄수화물&quot;,
+      &quot;value&quot;: &quot;21&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;6%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;당류&quot;,
+      &quot;value&quot;: &quot;2.7&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;3%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;식이섬유&quot;,
+      &quot;value&quot;: &quot;11&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;44%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;지방&quot;,
+      &quot;value&quot;: &quot;2.7&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;5%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;트랜스지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;포화지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;0%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;콜레스테롤&quot;,
+      &quot;value&quot;: null,
+      &quot;unit&quot;: null,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;단백질&quot;,
+      &quot;value&quot;: &quot;15&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;27%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;비타민A&quot;,
+      &quot;value&quot;: &quot;420&quot;,
+     </code></td>
+<td>제품명 출처: <b>이미지</b><br>영양성분 출처: <b>이미지</b></td>
+<td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td>
+</tr>
+<tr>
+<td>65</td>
+<td><img class='img' src='http://img.choroc.com/newshop/goods/label/026392_label1.png' loading='lazy' referrerpolicy='no-referrer'></td>
+<td><a href='http://img.choroc.com/newshop/goods/label/026392_label1.png' target='_blank' rel='noopener'>http://img.choroc.com/newshop/goods/label/026392_label1.png</a></td>
+<td>국내산 고구마 넣은 고단백 한끼 쉐이크</td>
+<td>20090358371395</td>
+<td><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;분리대두&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;44%&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;아몬드분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: &quot;미국산&quot;,
+      &quot;amount&quot;: &quot;20%&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;결정과당&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;고구마분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: &quot;국내산&quot;,
+      &quot;amount&quot;: &quot;7%&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;두유분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;콩&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;물엿&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;코코넛크림파우더&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;am</code></td>
+<td><code>{
+  &quot;nutrition_items&quot;: [
+    {
+      &quot;name&quot;: &quot;총 내용량&quot;,
+      &quot;value&quot;: &quot;300&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;1포당 열량&quot;,
+      &quot;value&quot;: &quot;115&quot;,
+      &quot;unit&quot;: &quot;kcal&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;나트륨&quot;,
+      &quot;value&quot;: &quot;150&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;8%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;탄수화물&quot;,
+      &quot;value&quot;: &quot;8&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;2%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;당류&quot;,
+      &quot;value&quot;: &quot;8&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;8%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;식이섬유&quot;,
+      &quot;value&quot;: &quot;3&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;12%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;지방&quot;,
+      &quot;value&quot;: &quot;1.7&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;3%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;트랜스지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;포화지방&quot;,
+      &quot;value&quot;: &quot;0.6&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;4%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;콜레스테롤&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;0%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;단백질&quot;,
+      &quot;value&quot;: &quot;16&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;29%&quot;
+    }
+  ]
+}</code></td>
+<td>제품명 출처: <b>이미지</b><br>영양성분 출처: <b>이미지</b></td>
+<td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td>
+</tr>
+<tr>
+<td>77</td>
+<td><img class='img' src='https://oneday1.com/web/product/extra/big/202404/cf61fcaf0ad13f1f88284fc7c37a3fc5.jpg' loading='lazy' referrerpolicy='no-referrer'></td>
+<td><a href='https://oneday1.com/web/product/extra/big/202404/cf61fcaf0ad13f1f88284fc7c37a3fc5.jpg' target='_blank' rel='noopener'>https://oneday1.com/web/product/extra/big/202404/cf61fcaf0ad13f1f88284fc7c37a3fc5.jpg</a></td>
+<td>마이바디다이어트프로틴쉐이크녹차라떼맛</td>
+<td>20050193275100</td>
+<td><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;분리대두단백&quot;,
+      &quot;origin&quot;: &quot;미국산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;43%&quot;,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: null,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;말토덱스트린&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;결정과당&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;녹차분말&quot;,
+      &quot;origin&quot;: &quot;국내산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;멀티비타민미네랄믹스&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;제2인산칼슘&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+     </code></td>
+<td><code>{&quot;source&quot;: &quot;public_food_db&quot;, &quot;items&quot;: {&quot;열량(kcal)&quot;: &quot;367&quot;, &quot;단백질(g)&quot;: &quot;40.00&quot;, &quot;지방(g)&quot;: &quot;3.00&quot;, &quot;탄수화물(g)&quot;: &quot;46.67&quot;, &quot;당류(g)&quot;: &quot;13.33&quot;, &quot;나트륨(mg)&quot;: &quot;433&quot;}}</code></td>
+<td>제품명 출처: <b>공공DB</b><br>영양성분 출처: <b>공공DB</b></td>
+<td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td>
+</tr>
+</table>
+</div>
+</div></body></html>

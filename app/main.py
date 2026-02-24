@@ -17,8 +17,9 @@ import shutil
 import webbrowser
 import threading
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, FIRST_COMPLETED, wait
 from typing import Callable
+from collections import Counter
 
 import sqlite3
 from app import collector, viewer
@@ -135,6 +136,7 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
     total_images = sum(int(r.get("total_images") or 0) for r in reports)
     total_analyzed = sum(int(r.get("analyzed_images") or 0) for r in reports)
     total_saved = sum(int(r.get("final_saved_count") or 0) for r in reports)
+    total_api_calls = sum(int(r.get("api_calls") or 0) for r in reports)
 
     def _yn(v: bool | None) -> str:
         if v is True:
@@ -143,33 +145,69 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             return "❌"
         return "-"
 
+    def _pass_level(row: dict) -> int:
+        if bool(row.get("pass4_ok")):
+            return 4
+        if bool(row.get("pass3_ok")):
+            return 3
+        if bool(row.get("p2a_ok")) and bool(row.get("p2b_ok")):
+            return 2
+        if bool(row.get("pass1_ok")):
+            return 1
+        return 0
+
+    all_rows: list[dict] = []
+    for q in reports:
+        for r in list(q.get("images") or []):
+            rr = dict(r)
+            rr["query_text"] = q.get("query_text")
+            rr["provider"] = q.get("provider")
+            rr["run_id"] = q.get("run_id")
+            rr["query_status"] = q.get("status")
+            rr["pass_level"] = _pass_level(rr)
+            all_rows.append(rr)
+
+    by_level = {
+        0: sum(1 for r in all_rows if int(r.get("pass_level") or 0) == 0),
+        1: sum(1 for r in all_rows if int(r.get("pass_level") or 0) >= 1),
+        2: sum(1 for r in all_rows if int(r.get("pass_level") or 0) >= 2),
+        3: sum(1 for r in all_rows if int(r.get("pass_level") or 0) >= 3),
+        4: sum(1 for r in all_rows if int(r.get("pass_level") or 0) >= 4),
+    }
+
     html_parts: list[str] = []
     html_parts.append("<!doctype html><html lang='ko'><head><meta charset='utf-8'>")
     html_parts.append("<meta name='viewport' content='width=device-width, initial-scale=1'>")
-    html_parts.append("<title>검색어 실행 결과 리포트</title>")
+    html_parts.append("<title>파이프라인 실행 결과 리포트</title>")
     html_parts.append(
         "<style>"
         "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}"
-        ".wrap{max-width:1280px;margin:0 auto;}"
-        ".top{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:14px;}"
+        ".wrap{max-width:1600px;margin:0 auto;}"
+        ".top,.flt,.q{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:12px;}"
         ".grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}"
         ".kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}"
         ".kpi .v{font-size:24px;font-weight:800;}"
-        ".q{background:#fff;border:1px solid #dbe3ff;border-radius:12px;padding:14px;margin:14px 0;}"
-        ".q h3{margin:0 0 8px 0;font-size:18px;}"
         ".meta{font-size:13px;color:#555;margin:2px 0;}"
         ".ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}"
-        "table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px;background:#fff;}"
+        ".badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe4ff;font-size:11px;margin-right:6px;}"
+        ".ctrl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}"
+        ".ctrl input,.ctrl select{height:34px;border:1px solid #d1d5db;border-radius:8px;padding:0 10px;font-size:13px;}"
+        "table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px;background:#fff;}"
         "th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}"
-        "th{background:#f3f4f6;position:sticky;top:0;}"
-        "code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;}"
-        ".img{max-width:220px;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:4px;}"
-        ".small{font-size:12px;color:#555;}"
+        "th{background:#f3f4f6;position:sticky;top:0;z-index:1;}"
+        ".img{width:88px;height:88px;object-fit:cover;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:2px;}"
+        "code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;font-size:11px;}"
+        "details{margin-top:4px;}"
+        ".raw{max-height:220px;overflow:auto;background:#fafafa;border:1px solid #eee;padding:6px;border-radius:6px;}"
+        ".small{font-size:12px;color:#666;}"
+        ".urlCell{display:flex;align-items:center;gap:8px;white-space:nowrap;}"
+        ".copyBtn{height:28px;padding:0 10px;border:1px solid #cfd6e3;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;}"
+        ".copyBtn:hover{background:#f3f6fb;}"
         "</style>"
     )
     html_parts.append("</head><body><div class='wrap'>")
     html_parts.append("<div class='top'>")
-    html_parts.append("<h2 style='margin:0 0 8px 0;'>검색어 실행 결과 리포트</h2>")
+    html_parts.append("<h2 style='margin:0 0 8px 0;'>파이프라인 실행 결과 리포트</h2>")
     html_parts.append(f"<div class='meta'>생성시각: {html.escape(time.strftime('%Y-%m-%d %H:%M:%S'))}</div>")
     html_parts.append("</div>")
     html_parts.append("<div class='grid'>")
@@ -177,6 +215,36 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
     html_parts.append(f"<div class='kpi'><div>수집 이미지</div><div class='v'>{total_images:,}</div></div>")
     html_parts.append(f"<div class='kpi'><div>분석 시도</div><div class='v'>{total_analyzed:,}</div></div>")
     html_parts.append(f"<div class='kpi'><div>최종 저장</div><div class='v'>{total_saved:,}</div></div>")
+    html_parts.append(f"<div class='kpi'><div>API 호출</div><div class='v'>{total_api_calls:,}</div></div>")
+    html_parts.append("</div>")
+
+    html_parts.append("<div class='flt'>")
+    html_parts.append("<div class='ctrl'>")
+    html_parts.append("<label>검색: <input id='qFilter' type='text' placeholder='query/url/사유/번호' /></label>")
+    html_parts.append(
+        "<label>Pass 필터: <select id='passFilter'>"
+        "<option value='all'>전체</option>"
+        "<option value='1'>Pass1 이상</option>"
+        "<option value='2'>Pass2 이상</option>"
+        "<option value='3'>Pass3 이상</option>"
+        "<option value='4'>Pass4 통과</option>"
+        "<option value='fail'>실패만</option>"
+        "<option value='saved'>저장만</option>"
+        "</select></label>"
+    )
+    html_parts.append("<label>Raw 보기: <select id='rawFilter'>"
+                      "<option value='none'>숨김</option>"
+                      "<option value='2a'>Pass2A</option>"
+                      "<option value='2b'>Pass2B</option>"
+                      "<option value='3'>Pass3</option>"
+                      "<option value='4'>Pass4</option>"
+                      "</select></label>")
+    html_parts.append("</div>")
+    html_parts.append(
+        f"<div class='small' style='margin-top:8px;'>"
+        f"Pass1+ {by_level[1]:,} | Pass2+ {by_level[2]:,} | Pass3+ {by_level[3]:,} | Pass4 {by_level[4]:,}"
+        "</div>"
+    )
     html_parts.append("</div>")
 
     for q in reports:
@@ -185,11 +253,12 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
         qreason = str(q.get("reason") or "")
         qclass = "ok" if qstatus == "done" else ("skip" if qstatus.startswith("skipped") else "bad")
         html_parts.append("<div class='q'>")
-        html_parts.append(f"<h3>{html.escape(qtext)}</h3>")
-        html_parts.append(f"<div class='meta'>provider={html.escape(str(q.get('provider') or ''))} | run_id={html.escape(str(q.get('run_id') or '-'))}</div>")
+        html_parts.append(f"<h3 style='margin:0 0 6px 0;'>{html.escape(qtext)}</h3>")
         html_parts.append(
-            f"<div class='meta'>상태: <span class='{qclass}'>{html.escape(qstatus)}</span>"
-            f"{' | 사유: ' + html.escape(qreason) if qreason else ''}</div>"
+            f"<div class='meta'><span class='badge'>provider: {html.escape(str(q.get('provider') or ''))}</span>"
+            f"<span class='badge'>run_id: {html.escape(str(q.get('run_id') or '-'))}</span>"
+            f"<span class='badge'>status: <span class='{qclass}'>{html.escape(qstatus)}</span></span>"
+            f"{' | reason: ' + html.escape(qreason) if qreason else ''}</div>"
         )
         html_parts.append(
             "<div class='meta'>"
@@ -200,32 +269,18 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
 
         rows = list(q.get("images") or [])
         if not rows:
-            html_parts.append("<div class='small' style='margin-top:8px;'>이미지 항목 없음</div>")
-            html_parts.append("</div>")
+            html_parts.append("<div class='small' style='margin-top:8px;'>이미지 항목 없음</div></div>")
             continue
 
-        html_parts.append("<table>")
-        html_parts.append(
-            "<tr>"
-            "<th>No</th><th>이미지</th><th>URL</th><th>처리결과</th><th>사유</th>"
-            "<th>Pass 시도</th><th>Pass 성공</th><th>경로/출처</th><th>데이터</th>"
-            "</tr>"
-        )
+        html_parts.append("<table><thead><tr>"
+                          "<th>No</th><th>이미지</th><th>URL</th><th>결과</th><th>Pass</th><th>사유</th>"
+                          "<th>제품명</th><th>품목보고번호</th><th>출처</th><th>Raw</th>"
+                          "</tr></thead><tbody>")
         for r in rows:
-            status = str(r.get("status") or "")
-            fail_reason = str(r.get("fail_reason") or "")
             data_source_path = str(r.get("data_source_path") or "-")
             nutrition_source = str(r.get("nutrition_data_source") or "-")
-            public_hit = _yn(bool(r.get("public_food_matched")))
-            pass_attempts = (
-                f"P1:{_yn(r.get('pass1_attempted'))} "
-                f"P2A:{_yn(r.get('pass2a_attempted'))} "
-                f"P2B:{_yn(r.get('pass2b_attempted'))} "
-                f"P3I:{_yn(r.get('pass3_ing_attempted'))} "
-                f"P3N:{_yn(r.get('pass3_nut_attempted'))} "
-                f"P4I:{_yn(r.get('pass4_ing_attempted'))} "
-                f"P4N:{_yn(r.get('pass4_nut_attempted'))}"
-            )
+            product_source = "공공DB" if data_source_path == "public_food_enriched" else ("이미지" if data_source_path == "image_full_extraction" else "-")
+            nutrition_source_label = "공공DB" if nutrition_source == "public_food_db" else ("이미지" if nutrition_source == "image_pass4" else nutrition_source)
             pass_ok = (
                 f"P1:{_yn(r.get('pass1_ok'))} "
                 f"P2A:{_yn(r.get('p2a_ok'))} "
@@ -233,32 +288,110 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 f"P3:{_yn(r.get('pass3_ok'))} "
                 f"P4:{_yn(r.get('pass4_ok'))}"
             )
-            data_text = (
-                f"report_no={html.escape(str(r.get('report_no') or ''))}<br>"
-                f"product={html.escape(str(r.get('product_name') or ''))}<br>"
-                f"ingredients(raw)={'있음' if r.get('ingredients_text') else '없음'}<br>"
-                f"nutrition(raw)={'있음' if r.get('nutrition_text') else '없음'}"
-            )
             url = str(r.get("url") or "")
-            html_parts.append("<tr>")
-            html_parts.append(f"<td>{int(r.get('idx') or 0)}</td>")
+            product_name = str(r.get("product_name") or "")
+            report_no = str(r.get("report_no") or "")
+            fail_reason = str(r.get("fail_reason") or "")
+            status = str(r.get("status") or "")
+            level = _pass_level(r)
+            raw2a = str(r.get("raw_pass2a") or "")
+            raw2b = str(r.get("raw_pass2b") or "")
+            raw3 = str(r.get("raw_pass3") or "")
+            raw4 = str(r.get("raw_pass4") or "")
             html_parts.append(
+                f"<tr class='rowItem' data-pass='{level}' data-status='{html.escape(status)}'>"
+                f"<td>{int(r.get('idx') or 0)}</td>"
                 f"<td><img class='img' src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer'></td>"
+                f"<td><div class='urlCell'>"
+                f"<button class='copyBtn' data-url='{html.escape(url, quote=True)}'>URL 복사</button>"
+                f"<span class='small'>{html.escape((url.split('/')[2] if '://' in url else url)[:28])}</span>"
+                f"</div></td>"
+                f"<td>{html.escape(status)}</td>"
+                f"<td>{html.escape(pass_ok)}</td>"
+                f"<td><code>{html.escape(fail_reason[:300] if fail_reason else '-')}</code></td>"
+                f"<td>{html.escape(product_name or '-')}</td>"
+                f"<td>{html.escape(report_no or '-')}</td>"
+                f"<td>제품명: <b>{html.escape(product_source)}</b><br>영양성분: <b>{html.escape(str(nutrition_source_label or '-'))}</b></td>"
+                "<td>"
+                f"<details class='rawBlock raw2a'><summary>Pass2A raw {'(있음)' if raw2a else '(없음)'}</summary><div class='raw'><code>{html.escape(raw2a or '-')}</code></div></details>"
+                f"<details class='rawBlock raw2b'><summary>Pass2B raw {'(있음)' if raw2b else '(없음)'}</summary><div class='raw'><code>{html.escape(raw2b or '-')}</code></div></details>"
+                f"<details class='rawBlock raw3'><summary>Pass3 raw {'(있음)' if raw3 else '(없음)'}</summary><div class='raw'><code>{html.escape(raw3 or '-')}</code></div></details>"
+                f"<details class='rawBlock raw4'><summary>Pass4 raw {'(있음)' if raw4 else '(없음)'}</summary><div class='raw'><code>{html.escape(raw4 or '-')}</code></div></details>"
+                "</td>"
+                "</tr>"
             )
-            html_parts.append(f"<td><a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></td>")
-            html_parts.append(f"<td>{html.escape(status)}</td>")
-            html_parts.append(f"<td><code>{html.escape(fail_reason)}</code></td>")
-            html_parts.append(f"<td>{html.escape(pass_attempts)}</td>")
-            html_parts.append(f"<td>{html.escape(pass_ok)}</td>")
-            html_parts.append(
-                f"<td>data_source_path={html.escape(data_source_path)}<br>"
-                f"nutrition_data_source={html.escape(nutrition_source)}<br>"
-                f"public_food_matched={public_hit}</td>"
-            )
-            html_parts.append(f"<td>{data_text}</td>")
-            html_parts.append("</tr>")
-        html_parts.append("</table>")
-        html_parts.append("</div>")
+        html_parts.append("</tbody></table></div>")
+
+    html_parts.append(
+        """
+<script>
+(() => {
+  const qInput = document.getElementById('qFilter');
+  const passSel = document.getElementById('passFilter');
+  const rawSel = document.getElementById('rawFilter');
+  const rows = Array.from(document.querySelectorAll('tr.rowItem'));
+
+  function passMatch(row, passVal) {
+    const level = parseInt(row.dataset.pass || "0", 10);
+    const status = (row.dataset.status || "").toLowerCase();
+    if (passVal === 'all') return true;
+    if (passVal === 'fail') return status !== 'saved';
+    if (passVal === 'saved') return status === 'saved';
+    const need = parseInt(passVal, 10);
+    if (Number.isNaN(need)) return true;
+    return level >= need;
+  }
+
+  function textMatch(row, q) {
+    if (!q) return true;
+    const txt = (row.textContent || "").toLowerCase();
+    return txt.includes(q);
+  }
+
+  function rawToggle(mode) {
+    const all = Array.from(document.querySelectorAll('.rawBlock'));
+    all.forEach(el => { el.style.display = 'none'; });
+    if (mode === 'none') return;
+    const show = Array.from(document.querySelectorAll('.raw' + mode));
+    show.forEach(el => { el.style.display = 'block'; });
+  }
+
+  function apply() {
+    const q = (qInput.value || '').toLowerCase().trim();
+    const passVal = passSel.value;
+    rows.forEach(row => {
+      const ok = passMatch(row, passVal) && textMatch(row, q);
+      row.style.display = ok ? '' : 'none';
+    });
+    rawToggle(rawSel.value);
+  }
+
+  qInput.addEventListener('input', apply);
+  passSel.addEventListener('change', apply);
+  rawSel.addEventListener('change', apply);
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copyBtn');
+    if (!btn) return;
+    const url = btn.getAttribute('data-url') || '';
+    try {
+      await navigator.clipboard.writeText(url);
+      const prev = btn.textContent;
+      btn.textContent = '복사됨';
+      setTimeout(() => { btn.textContent = prev || 'URL 복사'; }, 900);
+    } catch (_) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  });
+  apply();
+})();
+</script>
+"""
+    )
 
     html_parts.append("</div></body></html>")
     out_path.write_text("\n".join(html_parts), encoding="utf-8")
@@ -888,6 +1021,94 @@ def _query_exec_log(logger: Callable[[str], None] | None, text: str) -> None:
         print(text)
 
 
+def _yn_flag(v: bool | None) -> str:
+    if v is True:
+        return "✅"
+    if v is False:
+        return "❌"
+    return "-"
+
+
+def _compact_reason(reason: str | None, max_len: int = 72) -> str:
+    value = str(reason or "").strip().replace("\n", " ")
+    if len(value) <= max_len:
+        return value
+    return value[: max_len - 1] + "…"
+
+
+def _extract_image_size(image_bytes: bytes, mime_type: str | None = None) -> tuple[int | None, int | None]:
+    b = image_bytes or b""
+    if len(b) < 10:
+        return (None, None)
+    mime = str(mime_type or "").lower()
+    # PNG
+    if mime == "image/png" or b.startswith(b"\x89PNG\r\n\x1a\n"):
+        if len(b) >= 24:
+            w = int.from_bytes(b[16:20], "big", signed=False)
+            h = int.from_bytes(b[20:24], "big", signed=False)
+            return (w, h)
+        return (None, None)
+    # GIF
+    if mime == "image/gif" or b.startswith(b"GIF87a") or b.startswith(b"GIF89a"):
+        if len(b) >= 10:
+            w = int.from_bytes(b[6:8], "little", signed=False)
+            h = int.from_bytes(b[8:10], "little", signed=False)
+            return (w, h)
+        return (None, None)
+    # WebP (VP8X/VP8/VP8L)
+    if mime == "image/webp" or (len(b) >= 12 and b[0:4] == b"RIFF" and b[8:12] == b"WEBP"):
+        try:
+            if len(b) >= 30 and b[12:16] == b"VP8X":
+                w = 1 + int.from_bytes(b[24:27], "little", signed=False)
+                h = 1 + int.from_bytes(b[27:30], "little", signed=False)
+                return (w, h)
+            if len(b) >= 30 and b[12:16] == b"VP8L":
+                val = int.from_bytes(b[21:25], "little", signed=False)
+                w = (val & 0x3FFF) + 1
+                h = ((val >> 14) & 0x3FFF) + 1
+                return (w, h)
+            # VP8 lossy width/height in frame header
+            if len(b) >= 30 and b[12:16] == b"VP8 ":
+                w = int.from_bytes(b[26:28], "little", signed=False) & 0x3FFF
+                h = int.from_bytes(b[28:30], "little", signed=False) & 0x3FFF
+                return (w, h)
+        except Exception:  # pylint: disable=broad-except
+            return (None, None)
+        return (None, None)
+    # JPEG
+    if mime in ("image/jpeg", "image/jpg") or (len(b) >= 2 and b[0:2] == b"\xff\xd8"):
+        i = 2
+        try:
+            while i + 9 < len(b):
+                if b[i] != 0xFF:
+                    i += 1
+                    continue
+                marker = b[i + 1]
+                i += 2
+                if marker in (0xD8, 0xD9):  # SOI/EOI
+                    continue
+                if i + 1 >= len(b):
+                    break
+                seg_len = int.from_bytes(b[i:i + 2], "big", signed=False)
+                if seg_len < 2:
+                    break
+                if marker in (
+                    0xC0, 0xC1, 0xC2, 0xC3,
+                    0xC5, 0xC6, 0xC7,
+                    0xC9, 0xCA, 0xCB,
+                    0xCD, 0xCE, 0xCF,
+                ):
+                    if i + 7 < len(b):
+                        h = int.from_bytes(b[i + 3:i + 5], "big", signed=False)
+                        w = int.from_bytes(b[i + 5:i + 7], "big", signed=False)
+                        return (w, h)
+                    break
+                i += seg_len
+        except Exception:  # pylint: disable=broad-except
+            return (None, None)
+    return (None, None)
+
+
 def execute_query_pipeline_run(
     *,
     mode: str = "1",
@@ -933,6 +1154,155 @@ def execute_query_pipeline_run(
     from app.query_image_benchmark import _search_images_all
 
     reports: list[dict] = []
+    use_terminal_dashboard = logger is None
+    can_redraw_terminal = bool(
+        use_terminal_dashboard
+        and getattr(sys.stdout, "isatty", lambda: False)()
+        and str(os.getenv("TERM", "")).lower() not in ("", "dumb")
+    )
+
+    def _stage_to_gauge(stage: str) -> str:
+        s = str(stage or "").upper()
+        if s.startswith("PASS1"):
+            return "[█---]"
+        if s.startswith("PASS2"):
+            return "[██--]"
+        if s.startswith("PASS3"):
+            return "[███-]"
+        if s.startswith("PASS4") or s.startswith("DONE"):
+            return "[████]"
+        return "[----]"
+
+    def _format_eta(remain: int, speed: float) -> str:
+        if remain <= 0:
+            return "0s"
+        if speed <= 1e-9:
+            return "-"
+        sec = int(remain / speed)
+        if sec < 60:
+            return f"{sec}s"
+        m, s = divmod(sec, 60)
+        if m < 60:
+            return f"{m}m {s}s"
+        h, m = divmod(m, 60)
+        return f"{h}h {m}m"
+
+    class _PipelineDash:
+        def __init__(self, query_text: str, total: int, slots: int):
+            self.query_text = query_text
+            self.total = max(0, int(total))
+            self.slots = max(1, int(slots))
+            self.done = 0
+            self.saved = 0
+            self.api_calls = 0
+            self.skipped_existing = 0
+            self.fail_stage_counter = Counter()
+            self.fail_reason_counter = Counter()
+            self.started_at = time.time()
+            self.slot_state = {
+                i: {"idx": "-", "url": "", "stage": "IDLE", "msg": "-"}
+                for i in range(1, self.slots + 1)
+            }
+            self._lock = threading.Lock()
+            self._last_render_at = 0.0
+
+        def on_skip_existing(self, reason: str) -> None:
+            with self._lock:
+                self.done += 1
+                self.skipped_existing += 1
+                self.fail_stage_counter["skipped_existing"] += 1
+                if reason:
+                    self.fail_reason_counter[str(reason)] += 1
+                self.render()
+
+        def on_slot_stage(self, slot_id: int, idx: int, url: str, stage: str, msg: str = "") -> None:
+            with self._lock:
+                self.slot_state[slot_id] = {
+                    "idx": idx,
+                    "url": str(url or ""),
+                    "stage": str(stage or ""),
+                    "msg": str(msg or "-"),
+                }
+                self.render()
+
+        def on_finish(self, slot_id: int, idx: int, url: str, *, pass4_ok: bool, fail_stage: str, fail_reason: str, api_calls: int) -> None:
+            with self._lock:
+                self.done += 1
+                self.api_calls += int(api_calls or 0)
+                if pass4_ok:
+                    self.saved += 1
+                    self.slot_state[slot_id] = {
+                        "idx": idx,
+                        "url": str(url or ""),
+                        "stage": "DONE-SAVED",
+                        "msg": "🏆 최종통과",
+                    }
+                    self.fail_stage_counter["saved"] += 1
+                else:
+                    stage = str(fail_stage or "failed")
+                    self.fail_stage_counter[stage] += 1
+                    if fail_reason:
+                        self.fail_reason_counter[str(fail_reason)] += 1
+                    self.slot_state[slot_id] = {
+                        "idx": idx,
+                        "url": str(url or ""),
+                        "stage": "DONE-FAIL",
+                        "msg": f"⛔ {stage}",
+                    }
+                self.render(force=True)
+
+        def release_slot(self, slot_id: int) -> None:
+            with self._lock:
+                self.slot_state[slot_id] = {"idx": "-", "url": "", "stage": "IDLE", "msg": "-"}
+                self.render()
+
+        def render(self, force: bool = False) -> None:
+            if not use_terminal_dashboard:
+                return
+            now = time.time()
+            if not force and (now - self._last_render_at) < 0.35:
+                return
+            self._last_render_at = now
+            elapsed = max(1e-9, time.time() - self.started_at)
+            speed = self.done / elapsed if self.done > 0 else 0.0
+            remain = max(0, self.total - self.done)
+            eta = _format_eta(remain, speed)
+            yield_ratio = (self.saved / self.done * 100.0) if self.done else 0.0
+            top3 = self.fail_reason_counter.most_common(3)
+            top3_txt = " | ".join(f"{k[:36]}:{v}" for k, v in top3) if top3 else "-"
+            fail_txt = (
+                f"P1fail:{self.fail_stage_counter.get('pass1', 0)} "
+                f"P2fail:{self.fail_stage_counter.get('pass2', 0) + self.fail_stage_counter.get('pass2b', 0)} "
+                f"P3fail:{self.fail_stage_counter.get('pass3', 0)} "
+                f"P4fail:{self.fail_stage_counter.get('pass4', 0)} "
+                f"saved:{self.fail_stage_counter.get('saved', 0)}"
+            )
+
+            if can_redraw_terminal:
+                print("\033[2J\033[H", end="")
+            else:
+                # 리다이렉트/비TTY 환경에선 과다 출력 방지용 구분선만 사용
+                print("\n" + "=" * 80)
+            print(f"검색어: {self.query_text}")
+            print(f"total: {self.total} done: {self.done} 최종 저장: {self.saved}")
+            print(f"API 호출 횟수: {self.api_calls}회")
+            print(f"단계별 카운터: {fail_txt}")
+            print(f"유효 처리율(saved/done): {yield_ratio:.1f}%")
+            print(f"중복 스킵: {self.skipped_existing}건")
+            print(f"평균 속도: {speed:.2f} img/s | ETA: {eta}")
+            print(f"최근 실패 TOP3: {top3_txt}")
+            print("-" * 120)
+            for i in range(1, self.slots + 1):
+                s = self.slot_state[i]
+                idx = s["idx"]
+                url = str(s["url"] or "")
+                stage = str(s["stage"] or "IDLE").upper()
+                msg = str(s["msg"] or "-")
+                gauge = _stage_to_gauge(stage)
+                url_short = (url[:70] + "…") if len(url) > 71 else (url or "-")
+                print(f"[{i:02}] [{idx}] {url_short:<72} {gauge} {stage:<8} {msg}")
+            if can_redraw_terminal:
+                sys.stdout.flush()
     with sqlite3.connect(DB_FILE) as conn:
         init_query_pipeline_tables(conn)
         conn.row_factory = sqlite3.Row
@@ -1063,6 +1433,9 @@ def execute_query_pipeline_run(
 
                 _query_exec_log(logger, f"    수집 이미지: {total_images}개 | pass 동시호출: {pass_workers}")
                 query_report["total_images"] = total_images
+                dash = _PipelineDash(query_text=query_text, total=total_images, slots=pass_workers)
+                if use_terminal_dashboard:
+                    dash.render()
 
                 to_process: list[tuple[int, object]] = []
                 for idx, img in enumerate(images, 1):
@@ -1070,7 +1443,9 @@ def execute_query_pipeline_run(
                     if cached:
                         fail_stage = str(cached["fail_stage"] or "").strip() if "fail_stage" in cached.keys() else ""
                         stage_txt = fail_stage or ("pass4" if int(cached["pass4_ok"] or 0) == 1 else "attempted")
-                        _query_exec_log(logger, f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
+                        if not use_terminal_dashboard:
+                            _query_exec_log(logger, f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
+                        dash.on_skip_existing(f"existing_history(stage={stage_txt})")
                         query_report["images"].append(
                             {
                                 "idx": idx,
@@ -1096,6 +1471,10 @@ def execute_query_pipeline_run(
                                 "product_name": None,
                                 "ingredients_text": None,
                                 "nutrition_text": None,
+                                "raw_pass2a": str(cached["raw_pass2a"]) if "raw_pass2a" in cached.keys() and cached["raw_pass2a"] is not None else None,
+                                "raw_pass2b": str(cached["raw_pass2b"]) if "raw_pass2b" in cached.keys() and cached["raw_pass2b"] is not None else None,
+                                "raw_pass3": str(cached["raw_pass3"]) if "raw_pass3" in cached.keys() and cached["raw_pass3"] is not None else None,
+                                "raw_pass4": str(cached["raw_pass4"]) if "raw_pass4" in cached.keys() and cached["raw_pass4"] is not None else None,
                             }
                         )
                         continue
@@ -1110,11 +1489,13 @@ def execute_query_pipeline_run(
                         thread_local.analyzer = az
                     return az
 
-                def _analyze_one(idx: int, img_obj: object) -> dict:
+                def _analyze_one(idx: int, img_obj: object, slot_id: int) -> dict:
                     img_url = str(getattr(img_obj, "url"))
                     az = _get_analyzer()
+                    dash.on_slot_stage(slot_id, idx, img_url, "PASS1", "start")
                     result: dict = {
                         "idx": idx,
+                        "slot_id": slot_id,
                         "url": img_url,
                         "api_calls": 0,
                         "pass1_ok": False,
@@ -1143,6 +1524,11 @@ def execute_query_pipeline_run(
                         "pass3_nut_attempted": False,
                         "pass4_ing_attempted": False,
                         "pass4_nut_attempted": False,
+                        "orig_w": None,
+                        "orig_h": None,
+                        "resized": False,
+                        "resize_to_w": None,
+                        "resize_to_h": None,
                     }
 
                     try:
@@ -1151,6 +1537,16 @@ def execute_query_pipeline_run(
                         result["fail_stage"] = "download"
                         result["fail_reason"] = str(exc) or "image_download_failed"
                         return result
+                    ow, oh = _extract_image_size(image_bytes, mime_type)
+                    result["orig_w"] = ow
+                    result["orig_h"] = oh
+                    dash.on_slot_stage(
+                        slot_id,
+                        idx,
+                        img_url,
+                        "PASS1",
+                        f"{ow}x{oh} | no-resize" if ow and oh else "size=unknown | no-resize",
+                    )
 
                     result["pass1_attempted"] = True
                     pass1 = run_pass1_precheck(az, image_bytes=image_bytes, mime_type=mime_type, image_url=img_url)
@@ -1162,6 +1558,7 @@ def execute_query_pipeline_run(
                         return result
 
                     result["pass2a_attempted"] = True
+                    dash.on_slot_stage(slot_id, idx, img_url, "PASS2A", "running")
                     pass2 = az.analyze_pass2_from_bytes(image_bytes, mime_type, target_item_rpt_no=None)
                     result["api_calls"] += 1
                     qf = pass2.get("quality_flags") or {}
@@ -1188,6 +1585,7 @@ def execute_query_pipeline_run(
                     result["pass2_ok"] = True
                     result["pass3_ing_attempted"] = True
                     result["pass3_nut_attempted"] = False
+                    dash.on_slot_stage(slot_id, idx, img_url, "PASS3", "ingredients")
                     pass3_ing = az.analyze_pass3_from_bytes(
                         image_bytes=image_bytes,
                         mime_type=mime_type,
@@ -1234,12 +1632,21 @@ def execute_query_pipeline_run(
                             return result
                         # Case B에서만 Pass3-Nutrition 별도 호출
                         result["pass3_nut_attempted"] = True
+                        dash.on_slot_stage(slot_id, idx, img_url, "PASS3", "nutrition")
                         prompt_nut = az._build_prompt_pass3_nutrition(target_item_rpt_no=None)  # pylint: disable=protected-access
                         raw_nut = None
                         parsed_nut = {}
                         last_nut_err = None
                         max_attempts = max(1, int(getattr(az, "model_retries", 0)) + 1)
-                        for attempt in range(max_attempts):
+                        max_429_attempts = max(
+                            max_attempts,
+                            int(getattr(az, "pass3_retry_on_429_max_attempts", 6)),
+                        )
+                        base_429 = float(getattr(az, "pass3_retry_on_429_base_sec", 2.0))
+                        cap_429 = float(getattr(az, "pass3_retry_on_429_max_sec", 30.0))
+                        default_backoff = float(getattr(az, "retry_backoff_sec", 0.8))
+                        attempt = 0
+                        while attempt < max_attempts:
                             try:
                                 raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
                                     image_bytes=image_bytes,
@@ -1249,9 +1656,49 @@ def execute_query_pipeline_run(
                                 break
                             except Exception as exc:  # pylint: disable=broad-except
                                 last_nut_err = exc
-                                if attempt < (max_attempts - 1):
-                                    time.sleep(float(getattr(az, "retry_backoff_sec", 0.8)) * (attempt + 1))
+                                msg = str(exc).lower()
+                                is_429 = ("429" in msg) or ("resource_exhausted" in msg)
+                                retryable = any(
+                                    k in msg
+                                    for k in (
+                                        "429",
+                                        "resource_exhausted",
+                                        "503",
+                                        "502",
+                                        "504",
+                                        "deadline",
+                                        "timeout",
+                                        "temporarily unavailable",
+                                    )
+                                )
+                                # 429는 더 길게/많이 재시도
+                                limit = max_429_attempts if is_429 else max_attempts
+                                if retryable and attempt < (limit - 1):
+                                    if is_429:
+                                        delay = min(cap_429, base_429 * (2 ** attempt))
+                                        dash.on_slot_stage(
+                                            slot_id,
+                                            idx,
+                                            img_url,
+                                            "PASS3",
+                                            f"nutrition retry {attempt+1}/{limit} in {delay:.1f}s (429)",
+                                        )
+                                    else:
+                                        delay = default_backoff * (attempt + 1)
+                                        dash.on_slot_stage(
+                                            slot_id,
+                                            idx,
+                                            img_url,
+                                            "PASS3",
+                                            f"nutrition retry {attempt+1}/{limit} in {delay:.1f}s",
+                                        )
+                                    time.sleep(delay)
+                                    # 429 추가 재시도를 위해 loop length 동적 확장
+                                    if is_429 and max_attempts < max_429_attempts:
+                                        max_attempts = max_429_attempts
+                                    attempt += 1
                                     continue
+                            attempt += 1
                         if raw_nut is None and parsed_nut == {}:
                             result["fail_stage"] = "pass3"
                             result["fail_reason"] = f"pass3_nutrition_error:{last_nut_err}"
@@ -1280,6 +1727,7 @@ def execute_query_pipeline_run(
 
                     result["pass4_ing_attempted"] = True
                     result["pass4_nut_attempted"] = bool((not public_complete) and nutrition_text)
+                    dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "normalize")
                     pass3_for_pass4 = dict(pass3_ing)
                     if public_complete:
                         # Case A: 영양성분은 공공DB 사용, Pass4 영양 파싱 호출 차단
@@ -1336,14 +1784,70 @@ def execute_query_pipeline_run(
 
                 done_count = 0
                 with ThreadPoolExecutor(max_workers=pass_workers) as ex:
-                    fut_map = {ex.submit(_analyze_one, idx, img): idx for idx, img in to_process}
-                    for fut in as_completed(fut_map):
-                        res = fut.result()
+                    pending = list(to_process)
+                    free_slots = list(range(1, pass_workers + 1))
+                    fut_map: dict = {}
+
+                    while pending or fut_map:
+                        while pending and free_slots:
+                            idx, img = pending.pop(0)
+                            slot_id = free_slots.pop(0)
+                            fut = ex.submit(_analyze_one, idx, img, slot_id)
+                            fut_map[fut] = slot_id
+
+                        if not fut_map:
+                            break
+
+                        done_futs, _ = wait(set(fut_map.keys()), return_when=FIRST_COMPLETED)
+                        for fut in done_futs:
+                            slot_id = int(fut_map.pop(fut))
+                            res = fut.result()
+                            free_slots.append(slot_id)
+                            free_slots.sort()
+
                         idx = int(res["idx"])
                         done_count += 1
                         analyzed_images += 1
                         api_calls += int(res.get("api_calls", 0))
-                        _query_exec_log(logger, f"    [{idx}/{total_images}] 완료 ({done_count}/{len(to_process)})")
+                        p1 = _yn_flag(res.get("pass1_ok"))
+                        p2a = _yn_flag(res.get("p2a_ok"))
+                        p2b = _yn_flag(res.get("p2b_ok"))
+                        p3 = _yn_flag(res.get("pass3_ok"))
+                        p4 = _yn_flag(res.get("pass4_ok"))
+                        fail_stage = str(res.get("fail_stage") or "")
+                        fail_reason = _compact_reason(str(res.get("fail_reason") or ""))
+                        url_short = str(res.get("url") or "")
+                        if bool(res.get("pass4_ok")):
+                            status_txt = "🏆 PASS4 최종통과"
+                            reason_txt = ""
+                        else:
+                            last_ok = "pass0"
+                            if res.get("pass1_ok"):
+                                last_ok = "pass1"
+                            if res.get("p2a_ok") and res.get("p2b_ok"):
+                                last_ok = "pass2"
+                            if res.get("pass3_ok"):
+                                last_ok = "pass3"
+                            status_txt = f"⛔ {last_ok}까지 통과"
+                            reason_txt = f" | fail={fail_stage}:{fail_reason}" if fail_stage else ""
+                        if not use_terminal_dashboard:
+                            _query_exec_log(
+                                logger,
+                                (
+                                    f"    [{idx}/{total_images}] {status_txt} "
+                                    f"| P1 {p1} P2A {p2a} P2B {p2b} P3 {p3} P4 {p4}"
+                                    f"{reason_txt} | url={url_short}"
+                                ),
+                            )
+                        dash.on_finish(
+                            int(res.get("slot_id") or slot_id),
+                            idx,
+                            str(res.get("url") or ""),
+                            pass4_ok=bool(res.get("pass4_ok")),
+                            fail_stage=str(res.get("fail_stage") or ""),
+                            fail_reason=str(res.get("fail_reason") or ""),
+                            api_calls=int(res.get("api_calls") or 0),
+                        )
                         image_status = "saved" if bool(res.get("pass4_ok")) else "failed"
                         query_report["images"].append(
                             {
@@ -1370,6 +1874,15 @@ def execute_query_pipeline_run(
                                 "product_name": res.get("product_name"),
                                 "ingredients_text": res.get("ingredients_text"),
                                 "nutrition_text": res.get("nutrition_text"),
+                                "raw_pass2a": res.get("raw_pass2a"),
+                                "raw_pass2b": res.get("raw_pass2b"),
+                                "raw_pass3": res.get("raw_pass3"),
+                                "raw_pass4": res.get("raw_pass4"),
+                                "orig_w": res.get("orig_w"),
+                                "orig_h": res.get("orig_h"),
+                                "resized": bool(res.get("resized")),
+                                "resize_to_w": res.get("resize_to_w"),
+                                "resize_to_h": res.get("resize_to_h"),
                             }
                         )
 
@@ -1571,9 +2084,7 @@ def run_query_pipeline_execute() -> None:
     print("    [2] 직접 검색어 입력 실행")
     mode = input("  선택 > ").strip() or "1"
 
-    raw_q = input("  🔹 실행할 검색어 개수 [기본 3]: ").strip()
     raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
-    raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
@@ -1590,9 +2101,13 @@ def run_query_pipeline_execute() -> None:
     else:
         provider = "google"
 
-    query_limit = int(raw_q) if raw_q.isdigit() else 3
+    if mode == "2":
+        query_limit = 1
+    else:
+        raw_q = input("  🔹 실행할 검색어 개수 [기본 3]: ").strip()
+        query_limit = int(raw_q) if raw_q.isdigit() else 3
     max_pages = int(raw_pages) if raw_pages.isdigit() else 1
-    max_images = int(raw_max_images) if raw_max_images.isdigit() else 0
+    max_images = 0
     pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
 
     direct_query = None
@@ -1628,8 +2143,7 @@ def main() -> None:
         print("    [3] 💾 백업/복원 관리")
         print("    [4] 📊 analyze 벤치마크 도우미")
         print("    [5] 🧩 검색어 관리")
-        print("    [6] 🚀 검색어 실행 (수집 → 분석 → 최종저장)")
-        print("    [7] 🧭 브라우저 어드민 실행")
+        print("    [6] 🚀 파이프라인 실행")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -1645,18 +2159,7 @@ def main() -> None:
         elif choice == "5":
             run_query_pipeline_menu()
         elif choice == "6":
-            print("\n  🚀 [검색어 실행]")
-            print("    [1] 터미널에서 실행")
-            print("    [2] 브라우저 실행 UI 열기 (실시간)")
-            sub = input("  👉 선택 : ").strip().lower()
-            if sub == "1":
-                run_query_pipeline_execute()
-            elif sub == "2":
-                run_query_web_monitor()
-            else:
-                print("  ⚠️ 올바른 번호를 입력해주세요.")
-        elif choice == "7":
-            run_admin_web()
+            run_query_pipeline_execute()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break

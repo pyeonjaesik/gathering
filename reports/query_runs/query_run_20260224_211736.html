@@ -1,0 +1,158 @@
+<!doctype html><html lang='ko'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>파이프라인 실행 결과 리포트 (최종 저장 중심)</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}.wrap{max-width:1440px;margin:0 auto;}.top{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:14px;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}.kpi .v{font-size:24px;font-weight:800;}.q{background:#fff;border:1px solid #dbe3ff;border-radius:12px;padding:14px;margin:14px 0;}.q h3{margin:0 0 8px 0;font-size:18px;}.meta{font-size:13px;color:#555;margin:2px 0;}.ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px;background:#fff;}th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}th{background:#f3f4f6;position:sticky;top:0;}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;font-size:11px;}.img{width:88px;height:88px;object-fit:cover;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:2px;}.small{font-size:12px;color:#555;}.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe4ff;font-size:11px;margin-right:6px;}.pill{display:inline-block;padding:3px 8px;border-radius:8px;background:#f3f4f6;font-size:11px;margin-right:4px;margin-bottom:4px;}</style>
+</head><body><div class='wrap'>
+<div class='top'>
+<h2 style='margin:0 0 8px 0;'>파이프라인 실행 결과 리포트 (최종 저장 중심)</h2>
+<div class='meta'>생성시각: 2026-02-24 21:17:36</div>
+</div>
+<div class='grid'>
+<div class='kpi'><div>검색어</div><div class='v'>1</div></div>
+<div class='kpi'><div>수집 이미지</div><div class='v'>417</div></div>
+<div class='kpi'><div>분석 시도</div><div class='v'>319</div></div>
+<div class='kpi'><div>최종 저장</div><div class='v'>1</div></div>
+<div class='kpi'><div>API 호출</div><div class='v'>294</div></div>
+</div>
+<div class='q'>
+<h3>플라이밀 원재료명 성분표</h3>
+<div class='meta'><span class='badge'>provider: naver_official</span><span class='badge'>run_id: 10</span></div>
+<div class='meta'>상태: <span class='ok'>done</span></div>
+<div class='meta'>total=417, analyzed=319, saved=1, api_calls=294</div>
+<div class='meta'><span class='pill'>최종 저장 대상만 표시: 1 / 전체 이미지 411</span></div>
+<table>
+<tr><th>No</th><th>이미지</th><th>URL</th><th>제품명</th><th>품목보고번호</th><th>원재료(raw)</th><th>영양성분(raw)</th><th>출처</th><th>Pass 요약</th></tr>
+<tr>
+<td>146</td>
+<td><img class='img' src='http://shop1.phinf.naver.net/20250220_44/1740028650496tsVqO_JPEG/3273422335632146_807334942.jpg' loading='lazy' referrerpolicy='no-referrer'></td>
+<td><a href='http://shop1.phinf.naver.net/20250220_44/1740028650496tsVqO_JPEG/3273422335632146_807334942.jpg' target='_blank' rel='noopener'>http://shop1.phinf.naver.net/20250220_44/1740028650496tsVqO_JPEG/3273422335632146_807334942.jpg</a></td>
+<td>쉐프원돈까스소스</td>
+<td>1995044900261</td>
+<td><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;정제수&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;물엿&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;토마토페이스트&quot;,
+      &quot;origin&quot;: &quot;중국산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;설탕&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;발효식초&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: &quot;주요, 주정&quot;,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;양파&quot;,
+      &quot;origin&quot;: &quot;국산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;변성전분&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;정제소금&quot;,
+      &quot;origin&quot;: &quot;국산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+   </code></td>
+<td><code>{
+  &quot;nutrition_items&quot;: [
+    {
+      &quot;name&quot;: &quot;총 내용량&quot;,
+      &quot;value&quot;: &quot;2,010&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;칼로리&quot;,
+      &quot;value&quot;: &quot;110&quot;,
+      &quot;unit&quot;: &quot;kcal&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;나트륨&quot;,
+      &quot;value&quot;: &quot;780&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;39%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;탄수화물&quot;,
+      &quot;value&quot;: &quot;26&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;8%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;당류&quot;,
+      &quot;value&quot;: &quot;16&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;16%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;0%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;트랜스지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: null
+    },
+    {
+      &quot;name&quot;: &quot;포화지방&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;g&quot;,
+      &quot;daily_value&quot;: &quot;0%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;콜레스테롤&quot;,
+      &quot;value&quot;: &quot;0&quot;,
+      &quot;unit&quot;: &quot;mg&quot;,
+      &quot;daily_value&quot;: &quot;0%&quot;
+    },
+    {
+      &quot;name&quot;: &quot;단백질&quot;,
+      &quot;value&quot;: &quot;1&quot;,
+      &quot;unit&quot;: &quot;g 미만&quot;,
+      &quot;daily_value&quot;: &quot;2%&quot;
+    }
+  ]
+}</code></td>
+<td>제품명 출처: <b>이미지</b><br>영양성분 출처: <b>이미지</b></td>
+<td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td>
+</tr>
+</table>
+</div>
+</div></body></html>

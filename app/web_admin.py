@@ -1,5 +1,5 @@
 """
-검색어 실행 어드민 대시보드
+파이프라인 실행 어드민 대시보드
 실행:
     uv run streamlit run app/web_admin.py --server.port 8503
 """
@@ -267,7 +267,7 @@ def _render_failure_summary(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def main() -> None:
-    st.set_page_config(page_title="검색어 실행 어드민", page_icon="🧭", layout="wide")
+    st.set_page_config(page_title="파이프라인 실행 어드민", page_icon="🧭", layout="wide")
     _ensure_state()
     _drain_events()
 
@@ -275,7 +275,7 @@ def main() -> None:
         init_query_pipeline_tables(conn)
         k = _load_kpis(conn)
 
-    st.title("🧭 검색어 실행 어드민")
+    st.title("🧭 파이프라인 실행 어드민")
     st.caption("검색어 관리, 실행, 실행 상세 추적, 최종 저장 DB 조회를 한 화면에서 관리합니다.")
 
     c1, c2, c3, c4, c5 = st.columns(5)
