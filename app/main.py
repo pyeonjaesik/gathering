@@ -68,9 +68,73 @@ ADMIN_WEB_UI_URL = f"http://localhost:{ADMIN_WEB_UI_PORT}"
 
 def _normalize_report_no(value: str | None) -> str | None:
     digits = re.sub(r"[^0-9]", "", str(value or ""))
-    if len(digits) < 10:
+    if len(digits) < 10 or len(digits) > 16:
         return None
     return digits
+
+
+def _extract_report_no_candidates(value: str | None) -> list[str]:
+    text = str(value or "").strip()
+    if not text:
+        return []
+    # 복수 표기를 먼저 큰 구분자로 분리하고, 각 토큰에서 10~16자리 숫자 시퀀스를 추출
+    parts = [p for p in re.split(r"[\/,;|\n]+", text) if p and str(p).strip()]
+    out: list[str] = []
+    seen: set[str] = set()
+    for part in parts:
+        part_text = str(part)
+        # 하이픈/괄호/F1 라벨 등이 섞여 있어도 숫자 블록 단위로 찾는다.
+        for m in re.finditer(r"\d[\d\-\s]{8,24}\d|\d{10,16}", part_text):
+            digits = re.sub(r"[^0-9]", "", m.group(0))
+            if len(digits) < 10 or len(digits) > 16:
+                continue
+            if digits in seen:
+                continue
+            seen.add(digits)
+            out.append(digits)
+    # 위 정규식으로 못 잡는 경우 대비: 전체 텍스트에서도 한 번 더 탐색
+    if not out:
+        for m in re.finditer(r"\d{10,16}", text):
+            digits = m.group(0)
+            if digits in seen:
+                continue
+            seen.add(digits)
+            out.append(digits)
+    return out
+
+
+def _select_best_report_candidate(
+    report_candidates: list[str],
+    public_food_index: dict[str, dict],
+) -> tuple[str | None, dict | None, str]:
+    if not report_candidates:
+        return (None, None, "no_candidates")
+    # 우선순위: has_name+has_nutrition > has_nutrition > any-hit > first-candidate
+    best_no = None
+    best_row = None
+    best_score = -1
+    for no in report_candidates:
+        row = public_food_index.get(no)
+        if not row:
+            continue
+        score = 0
+        if bool(row.get("has_name")) and bool(row.get("has_nutrition")):
+            score = 300
+        elif bool(row.get("has_nutrition")):
+            score = 200
+        else:
+            score = 100
+        if score > best_score:
+            best_score = score
+            best_no = no
+            best_row = row
+    if best_no is not None:
+        if best_score >= 300:
+            return (best_no, best_row, "public_best_name_nutrition")
+        if best_score >= 200:
+            return (best_no, best_row, "public_best_nutrition")
+        return (best_no, best_row, "public_any_hit")
+    return (report_candidates[0], None, "first_candidate_no_public_match")
 
 
 def _build_public_food_index(conn: sqlite3.Connection) -> dict[str, dict]:
@@ -156,6 +220,21 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             return 1
         return 0
 
+    def _extract_raw_section(raw_text: str, start_marker: str, end_markers: list[str]) -> str:
+        text = str(raw_text or "")
+        if not text:
+            return ""
+        start_idx = text.find(start_marker)
+        if start_idx < 0:
+            return ""
+        body_start = start_idx + len(start_marker)
+        body_end = len(text)
+        for marker in end_markers:
+            idx = text.find(marker, body_start)
+            if idx >= 0 and idx < body_end:
+                body_end = idx
+        return text[body_start:body_end].strip()
+
     all_rows: list[dict] = []
     for q in reports:
         for r in list(q.get("images") or []):
@@ -224,20 +303,26 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
     html_parts.append(
         "<label>Pass 필터: <select id='passFilter'>"
         "<option value='all'>전체</option>"
-        "<option value='1'>Pass1 이상</option>"
-        "<option value='2'>Pass2 이상</option>"
-        "<option value='3'>Pass3 이상</option>"
-        "<option value='4'>Pass4 통과</option>"
+        "<option value='processed'>이번 실행 검수만</option>"
+        "<option value='2a'>Pass2A 통과</option>"
+        "<option value='2b'>Pass2B 통과</option>"
+        "<option value='3ing'>Pass3-ING 통과</option>"
+        "<option value='3nut'>Pass3-NUT 통과</option>"
+        "<option value='4ing'>Pass4-ING 통과</option>"
+        "<option value='4nut'>Pass4-NUT 통과</option>"
         "<option value='fail'>실패만</option>"
         "<option value='saved'>저장만</option>"
         "</select></label>"
     )
     html_parts.append("<label>Raw 보기: <select id='rawFilter'>"
+                      "<option value='all'>전체</option>"
                       "<option value='none'>숨김</option>"
                       "<option value='2a'>Pass2A</option>"
                       "<option value='2b'>Pass2B</option>"
-                      "<option value='3'>Pass3</option>"
-                      "<option value='4'>Pass4</option>"
+                      "<option value='3ing'>Pass3-ING</option>"
+                      "<option value='3nut'>Pass3-NUT</option>"
+                      "<option value='4ing'>Pass4-ING</option>"
+                      "<option value='4nut'>Pass4-NUT</option>"
                       "</select></label>")
     html_parts.append("</div>")
     html_parts.append(
@@ -298,6 +383,20 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             raw2b = str(r.get("raw_pass2b") or "")
             raw3 = str(r.get("raw_pass3") or "")
             raw4 = str(r.get("raw_pass4") or "")
+            raw3_ing = _extract_raw_section(raw3, "[PASS3-INGREDIENTS]\n", ["[PASS3-NUTRITION]\n"])
+            raw3_nut = _extract_raw_section(raw3, "[PASS3-NUTRITION]\n", [])
+            if (not raw3_ing) and raw3 and ("[PASS3-" not in raw3):
+                raw3_ing = raw3
+            raw4_ing = _extract_raw_section(raw4, "[PASS4-INGREDIENTS]\n", ["[PASS4-NUTRITION]\n"])
+            raw4_nut = _extract_raw_section(raw4, "[PASS4-NUTRITION]\n", [])
+            if (not raw4_ing) and raw4 and ("[PASS4-" not in raw4):
+                raw4_ing = raw4
+            p2a_ok = bool(r.get("p2a_ok"))
+            p2b_ok = bool(r.get("p2b_ok"))
+            p3_ing_ok = bool(r.get("pass3_ok"))
+            p3_nut_ok = bool(r.get("pass3_nut_attempted")) and bool((r.get("nutrition_text") or "").strip())
+            p4_ing_ok = bool(r.get("pass4_ok"))
+            p4_nut_ok = bool(r.get("pass4_nut_attempted")) and bool((r.get("nutrition_text") or "").strip())
             ow = r.get("orig_w")
             oh = r.get("orig_h")
             per_tok = r.get("estimated_tokens_per_call")
@@ -307,7 +406,10 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 size_txt = "-"
             tok_txt = f"{int(per_tok):,}" if isinstance(per_tok, int) else "-"
             html_parts.append(
-                f"<tr class='rowItem' data-pass='{level}' data-status='{html.escape(status)}'>"
+                f"<tr class='rowItem' data-pass='{level}' data-status='{html.escape(status)}'"
+                f" data-p2a='{1 if p2a_ok else 0}' data-p2b='{1 if p2b_ok else 0}'"
+                f" data-p3ing='{1 if p3_ing_ok else 0}' data-p3nut='{1 if p3_nut_ok else 0}'"
+                f" data-p4ing='{1 if p4_ing_ok else 0}' data-p4nut='{1 if p4_nut_ok else 0}'>"
                 f"<td>{int(r.get('idx') or 0)}</td>"
                 f"<td><img class='img' src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer'>"
                 f"<div class='urlCell'>"
@@ -324,8 +426,10 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 "<td>"
                 f"<details class='rawBlock raw2a'><summary>Pass2A raw {'(있음)' if raw2a else '(없음)'}</summary><div class='raw'><code>{html.escape(raw2a or '-')}</code></div></details>"
                 f"<details class='rawBlock raw2b'><summary>Pass2B raw {'(있음)' if raw2b else '(없음)'}</summary><div class='raw'><code>{html.escape(raw2b or '-')}</code></div></details>"
-                f"<details class='rawBlock raw3'><summary>Pass3 raw {'(있음)' if raw3 else '(없음)'}</summary><div class='raw'><code>{html.escape(raw3 or '-')}</code></div></details>"
-                f"<details class='rawBlock raw4'><summary>Pass4 raw {'(있음)' if raw4 else '(없음)'}</summary><div class='raw'><code>{html.escape(raw4 or '-')}</code></div></details>"
+                f"<details class='rawBlock raw3ing'><summary>Pass3-ING raw {'(있음)' if raw3_ing else '(없음)'}</summary><div class='raw'><code>{html.escape(raw3_ing or '-')}</code></div></details>"
+                f"<details class='rawBlock raw3nut'><summary>Pass3-NUT raw {'(있음)' if raw3_nut else '(없음)'}</summary><div class='raw'><code>{html.escape(raw3_nut or '-')}</code></div></details>"
+                f"<details class='rawBlock raw4ing'><summary>Pass4-ING raw {'(있음)' if raw4_ing else '(없음)'}</summary><div class='raw'><code>{html.escape(raw4_ing or '-')}</code></div></details>"
+                f"<details class='rawBlock raw4nut'><summary>Pass4-NUT raw {'(있음)' if raw4_nut else '(없음)'}</summary><div class='raw'><code>{html.escape(raw4_nut or '-')}</code></div></details>"
                 "</td>"
                 "</tr>"
             )
@@ -343,7 +447,20 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
   function passMatch(row, passVal) {
     const level = parseInt(row.dataset.pass || "0", 10);
     const status = (row.dataset.status || "").toLowerCase();
+    const p2a = row.dataset.p2a === '1';
+    const p2b = row.dataset.p2b === '1';
+    const p3ing = row.dataset.p3ing === '1';
+    const p3nut = row.dataset.p3nut === '1';
+    const p4ing = row.dataset.p4ing === '1';
+    const p4nut = row.dataset.p4nut === '1';
     if (passVal === 'all') return true;
+    if (passVal === 'processed') return status !== 'skipped_by_existing_history';
+    if (passVal === '2a') return p2a;
+    if (passVal === '2b') return p2b;
+    if (passVal === '3ing') return p3ing;
+    if (passVal === '3nut') return p3nut;
+    if (passVal === '4ing') return p4ing;
+    if (passVal === '4nut') return p4nut;
     if (passVal === 'fail') return status !== 'saved';
     if (passVal === 'saved') return status === 'saved';
     const need = parseInt(passVal, 10);
@@ -359,6 +476,10 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
 
   function rawToggle(mode) {
     const all = Array.from(document.querySelectorAll('.rawBlock'));
+    if (mode === 'all') {
+      all.forEach(el => { el.style.display = 'block'; });
+      return;
+    }
     all.forEach(el => { el.style.display = 'none'; });
     if (mode === 'none') return;
     const show = Array.from(document.querySelectorAll('.raw' + mode));
@@ -1614,6 +1735,8 @@ def execute_query_pipeline_run(
                                 ),
                                 "public_food_matched": bool(int(cached["public_food_matched"])) if "public_food_matched" in cached.keys() and cached["public_food_matched"] is not None else False,
                                 "report_no": None,
+                                "report_no_candidates": None,
+                                "report_no_selected_from": None,
                                 "product_name": None,
                                 "ingredients_text": None,
                                 "nutrition_text": None,
@@ -1665,6 +1788,8 @@ def execute_query_pipeline_run(
                         "raw_pass4": None,
                         "product_name": None,
                         "report_no": None,
+                        "report_no_candidates": None,
+                        "report_no_selected_from": None,
                         "ingredients_text": None,
                         "nutrition_text": None,
                         "data_source_path": None,
@@ -1776,22 +1901,32 @@ def execute_query_pipeline_run(
                         return result
 
                     product_name = (pass3_ing.get("product_name_in_image") or "").strip()
-                    report_no = (pass3_ing.get("product_report_number") or "").strip()
+                    report_raw = (pass3_ing.get("product_report_number") or "").strip()
+                    report_candidates = _extract_report_no_candidates(report_raw)
+                    selected_report_no, public_row, selected_reason = _select_best_report_candidate(
+                        report_candidates=report_candidates,
+                        public_food_index=public_food_index,
+                    )
                     ingredients_text = (pass3_ing.get("ingredients_text") or "").strip()
                     nutrition_text = None
-                    if not (report_no and ingredients_text):
+                    if not ingredients_text:
                         result["fail_stage"] = "pass3"
-                        result["fail_reason"] = "required_fields_missing(report_no_or_ingredients)"
+                        result["fail_reason"] = "required_fields_missing(ingredients)"
                         return result
-                    report_no_norm = _normalize_report_no(report_no)
-                    public_row = public_food_index.get(report_no_norm or "") if report_no_norm else None
+                    report_no = selected_report_no
                     public_complete = bool(
                         public_row
                         and public_row.get("has_name")
                         and public_row.get("has_nutrition")
                     )
+                    result["report_no_candidates"] = json.dumps(report_candidates, ensure_ascii=False)
+                    result["report_no_selected_from"] = selected_reason
                     result["public_food_matched"] = bool(public_row)
                     result["data_source_path"] = "public_food_enriched" if public_complete else "image_full_extraction"
+                    if not report_no:
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = "no_valid_report_candidates"
+                        return result
 
                     # Case B: Pass3 번호 기준 공공DB 미완전이면, Pass2B에서 제품명/영양성분 존재가 둘 다 필요
                     if not public_complete:
@@ -1917,6 +2052,7 @@ def execute_query_pipeline_run(
                     result["pass4_nut_attempted"] = bool((not public_complete) and nutrition_text)
                     dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "parse")
                     pass3_for_pass4 = dict(pass3_ing)
+                    pass3_for_pass4["product_report_number"] = report_no
                     if public_complete:
                         # Case A: 영양성분은 공공DB 사용, Pass4 영양 파싱 호출 차단
                         pass3_for_pass4["nutrition_text"] = None
@@ -1925,23 +2061,46 @@ def execute_query_pipeline_run(
                     else:
                         pass3_for_pass4["nutrition_text"] = nutrition_text
                         pass3_for_pass4["nutrition_complete"] = True if nutrition_text else False
-                    pass4 = az.analyze_pass4_normalize(
-                        pass2_result=pass2,
-                        pass3_result=pass3_for_pass4,
-                        target_item_rpt_no=None,
-                    )
-                    result["api_calls"] += 1
-                    result["raw_pass4"] = pass4.get("raw_model_text_pass4")
-                    pass4_err = str(pass4.get("pass4_ai_error") or "").strip()
-                    if pass4_err:
-                        result["fail_stage"] = "pass4"
-                        result["fail_reason"] = pass4_err or "pass4_fail"
-                        return result
+                    pass4 = None
+                    ingredient_items = []
+                    pass4_raw_parts: list[str] = []
+                    for pass4_try in range(2):
+                        if pass4_try == 1:
+                            dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "retry-empty-ingredients")
+                        current_pass4 = az.analyze_pass4_normalize(
+                            pass2_result=pass2,
+                            pass3_result=pass3_for_pass4,
+                            target_item_rpt_no=None,
+                        )
+                        result["api_calls"] += 1
+                        current_raw = str(current_pass4.get("raw_model_text_pass4") or "").strip()
+                        if current_raw:
+                            pass4_raw_parts.append(
+                                f"[ATTEMPT {pass4_try + 1}]\n{current_raw}"
+                            )
 
-                    ingredient_items = pass4.get("ingredient_items") or []
+                        pass4_err = str(current_pass4.get("pass4_ai_error") or "").strip()
+                        if pass4_err:
+                            result["raw_pass4"] = "\n\n".join(pass4_raw_parts) if pass4_raw_parts else None
+                            result["fail_stage"] = "pass4"
+                            result["fail_reason"] = pass4_err or "pass4_fail"
+                            return result
+
+                        current_items = current_pass4.get("ingredient_items") or []
+                        pass4 = current_pass4
+                        ingredient_items = current_items if isinstance(current_items, list) else []
+                        if ingredient_items:
+                            break
+
+                    result["raw_pass4"] = "\n\n".join(pass4_raw_parts) if pass4_raw_parts else (pass4.get("raw_model_text_pass4") if pass4 else None)
                     if not isinstance(ingredient_items, list) or len(ingredient_items) == 0:
                         result["fail_stage"] = "pass4"
-                        result["fail_reason"] = "pass4_no_structured_ingredients"
+                        ingredient_reason = str(pass4.get("ingredient_items_reason") or "").strip().lower()
+                        # Pass4 내부에서 필수 필드 부족으로 API 호출 자체가 스킵된 경우를 명확히 구분
+                        if ingredient_reason in ("pass4_skipped_missing_required_fields", "pass4_skipped_missing_ingredients_text"):
+                            result["fail_reason"] = "pass4_skipped_no_api_call_missing_required_fields"
+                        else:
+                            result["fail_reason"] = "pass4_no_structured_ingredients"
                         return result
 
                     raw_pass4_ing = str(pass4.get("raw_model_text_pass4_ingredients") or "").strip()
@@ -2059,6 +2218,8 @@ def execute_query_pipeline_run(
                                 "nutrition_data_source": res.get("nutrition_data_source"),
                                 "public_food_matched": bool(res.get("public_food_matched")),
                                 "report_no": res.get("report_no"),
+                                "report_no_candidates": res.get("report_no_candidates"),
+                                "report_no_selected_from": res.get("report_no_selected_from"),
                                 "product_name": res.get("product_name"),
                                 "ingredients_text": res.get("ingredients_text"),
                                 "nutrition_text": res.get("nutrition_text"),
@@ -2167,6 +2328,8 @@ def execute_query_pipeline_run(
                             conn,
                             product_name=str(res.get("product_name") or ""),
                             item_mnftr_rpt_no=str(res.get("report_no") or ""),
+                            all_report_nos_json=str(res.get("report_no_candidates") or ""),
+                            report_no_selected_from=str(res.get("report_no_selected_from") or ""),
                             ingredients_text=str(res.get("ingredients_text") or ""),
                             nutrition_text=res.get("nutrition_text"),
                             nutrition_source=str(res.get("nutrition_data_source") or "none"),
@@ -2278,7 +2441,6 @@ def run_query_pipeline_execute() -> None:
 
     raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
-    raw_show_pass3 = input("  🔹 Pass3 RAW 터미널 출력? [y/N]: ").strip().lower()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
     print("    [2] Naver Images (Official OpenAPI)")
@@ -2302,7 +2464,6 @@ def run_query_pipeline_execute() -> None:
     max_pages = int(raw_pages) if raw_pages.isdigit() else 1
     max_images = 0
     pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
-    show_pass3_raw = raw_show_pass3 == "y"
 
     direct_query = None
     if mode == "2":
@@ -2317,7 +2478,7 @@ def run_query_pipeline_execute() -> None:
         pass_workers=pass_workers,
         direct_query=direct_query,
         open_browser_report=True,
-        show_pass3_raw=show_pass3_raw,
+        show_pass3_raw=False,
         logger=None,
     )
 

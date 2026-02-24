@@ -1102,6 +1102,17 @@ def run_query_image_benchmark(
                         target_item_rpt_no=None,
                     )
                     trace["pass4_ms"] = int((time.time() - t_pass4) * 1000)
+                    p4_err = str((pass4_result or {}).get("pass4_ai_error") or "").strip()
+                    p4_items = (pass4_result or {}).get("ingredient_items") or []
+                    if (not p4_err) and (not isinstance(p4_items, list) or len(p4_items) == 0):
+                        trace["pass4_retry_no_structured"] = True
+                        t_pass4_retry = time.time()
+                        pass4_result = analyzer.analyze_pass4_normalize(
+                            pass2_result=result,
+                            pass3_result=pass3_result,
+                            target_item_rpt_no=None,
+                        )
+                        trace["pass4_retry_ms"] = int((time.time() - t_pass4_retry) * 1000)
             return (idx, img, result, None, pass3_result, pass3_err, pass4_result, trace)
         except Exception as exc:  # pylint: disable=broad-except
             result = {

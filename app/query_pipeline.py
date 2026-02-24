@@ -185,6 +185,8 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             product_name TEXT,
             item_mnftr_rpt_no TEXT,
+            all_report_nos_json TEXT,
+            report_no_selected_from TEXT,
             ingredients_text TEXT,
             ingredients_hash TEXT,
             nutrition_text TEXT,
@@ -205,6 +207,15 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
     )
     conn.execute("DROP INDEX IF EXISTS uq_food_final_report_no")
     conn.execute("DROP INDEX IF EXISTS uq_food_final_fallback")
+    existing_food_final_cols = {
+        str(r[1]) for r in conn.execute("PRAGMA table_info(food_final)").fetchall()
+    }
+    for col, typ in (
+        ("all_report_nos_json", "TEXT"),
+        ("report_no_selected_from", "TEXT"),
+    ):
+        if col not in existing_food_final_cols:
+            conn.execute(f"ALTER TABLE food_final ADD COLUMN {col} {typ}")
     conn.commit()
 
 
@@ -561,6 +572,8 @@ def upsert_food_final(
     *,
     product_name: str | None,
     item_mnftr_rpt_no: str | None,
+    all_report_nos_json: str | None = None,
+    report_no_selected_from: str | None = None,
     ingredients_text: str | None,
     nutrition_text: str | None,
     nutrition_source: str = "none",
@@ -570,6 +583,8 @@ def upsert_food_final(
 ) -> int:
     product_name = (product_name or "").strip() or None
     item_no = (item_mnftr_rpt_no or "").strip() or None
+    all_report_nos_json = (all_report_nos_json or "").strip() or None
+    report_no_selected_from = (report_no_selected_from or "").strip() or None
     ingredients_text = (ingredients_text or "").strip() or None
     nutrition_text = (nutrition_text or "").strip() or None
     ing_hash = hash_text(ingredients_text) if ingredients_text else None
@@ -577,15 +592,18 @@ def upsert_food_final(
     conn.execute(
         """
         INSERT INTO food_final (
-            product_name, item_mnftr_rpt_no, ingredients_text, ingredients_hash,
+            product_name, item_mnftr_rpt_no, all_report_nos_json, report_no_selected_from,
+            ingredients_text, ingredients_hash,
             nutrition_text, nutrition_source, source_image_url, source_query_id, source_run_id,
             created_at, updated_at
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
         """,
         (
             product_name,
             item_no,
+            all_report_nos_json,
+            report_no_selected_from,
             ingredients_text,
             ing_hash,
             nutrition_text,

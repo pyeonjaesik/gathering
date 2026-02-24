@@ -305,8 +305,8 @@ def run_pass4_normalize(
     raw_model_text_pass4: str | None = None
     raw_api_response_pass4: str | None = None
     pass4_ai_error: str | None = None
-    # 요청사항 반영: 제품명 없어도 Pass4 실행 (품목번호/원재료명만 필수, 영양성분은 선택)
-    if report_no and ingredients_text:
+    # 요청사항 반영: 제품명/품목번호 없어도 Pass4 원재료 구조화는 실행 (원재료명만 필수)
+    if ingredients_text:
         try:
             prompt_ing = analyzer._build_prompt_pass4_ingredients(
                 ingredients_text=ingredients_text,
@@ -401,7 +401,7 @@ def run_pass4_normalize(
             pass4_ai_error = str(exc)
             ingredient_items_reason = f"pass4_structuring_failed:{exc}"
     else:
-        ingredient_items_reason = "pass4_skipped_missing_required_fields"
+        ingredient_items_reason = "pass4_skipped_missing_ingredients_text"
 
     return {
         "itemMnftrRptNo": report_no,
