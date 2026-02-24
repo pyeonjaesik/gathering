@@ -36,16 +36,19 @@ from app.ingredient_enricher import (
     run_enricher_for_report_no,
 )
 from app.analyzer import URLIngredientAnalyzer
+from app.analyzer.pass1_precheck import run_pass1_precheck
 from app.query_image_benchmark import run_query_image_benchmark_interactive
 from app.serp_simple_debug import run_serp_simple_debug_interactive
 from app.query_pipeline import (
     cache_serp_images,
     finish_query_run,
     get_image_analysis_cache,
+    get_provider_max_page_done,
     init_query_pipeline_tables,
     list_next_queries,
     list_recent_runs,
     start_query_run,
+    upsert_provider_max_page_done,
     upsert_food_final,
     upsert_image_analysis_cache,
     upsert_query,
@@ -54,6 +57,66 @@ from app.query_pipeline import (
 W = 68
 WEB_UI_PORT = 8501
 WEB_UI_URL = f"http://localhost:{WEB_UI_PORT}"
+
+
+def _normalize_report_no(value: str | None) -> str | None:
+    digits = re.sub(r"[^0-9]", "", str(value or ""))
+    if len(digits) < 10:
+        return None
+    return digits
+
+
+def _build_public_food_index(conn: sqlite3.Connection) -> dict[str, dict]:
+    cur = conn.execute(
+        """
+        SELECT itemMnftrRptNo, foodNm, enerc, prot, fatce, chocdf, sugar, nat
+        FROM processed_food_info
+        WHERE COALESCE(itemMnftrRptNo, '') != ''
+        """
+    )
+    out: dict[str, dict] = {}
+    for row in cur.fetchall():
+        item_no = row[0]
+        norm = _normalize_report_no(item_no)
+        if not norm:
+            continue
+        product_name = (row[1] or "").strip()
+        fields = {
+            "열량(kcal)": row[2],
+            "단백질(g)": row[3],
+            "지방(g)": row[4],
+            "탄수화물(g)": row[5],
+            "당류(g)": row[6],
+            "나트륨(mg)": row[7],
+        }
+        nutrition_payload: dict[str, str] = {}
+        filled_cnt = 0
+        for k, v in fields.items():
+            txt = (str(v).strip() if v is not None else "")
+            if txt:
+                nutrition_payload[k] = txt
+                filled_cnt += 1
+        nutrition_text = json.dumps(
+            {"source": "public_food_db", "items": nutrition_payload},
+            ensure_ascii=False,
+        ) if nutrition_payload else None
+        candidate = {
+            "item_mnftr_rpt_no": str(item_no),
+            "product_name": product_name or None,
+            "nutrition_text": nutrition_text,
+            "has_name": bool(product_name),
+            "has_nutrition": bool(nutrition_text),
+            "nutrition_fields_count": filled_cnt,
+        }
+        prev = out.get(norm)
+        if prev is None:
+            out[norm] = candidate
+            continue
+        prev_score = int(prev.get("has_name", False)) * 100 + int(prev.get("nutrition_fields_count", 0))
+        new_score = int(candidate.get("has_name", False)) * 100 + int(candidate.get("nutrition_fields_count", 0))
+        if new_score > prev_score:
+            out[norm] = candidate
+    return out
 
 
 def _bar(char: str = "─") -> str:
@@ -599,11 +662,11 @@ def run_backup_menu() -> None:
 
 def run_query_pipeline_menu() -> None:
     while True:
-        print("\n  🧩 [검색어 파이프라인 관리]")
-        print("    [1] 검색어 직접 추가")
-        print("    [2] 우선순위 대기 검색어 보기")
-        print("    [3] 최근 실행 기록 보기")
-        print("    [4] 검색어 실행 (SERP -> 분석 -> 최종저장)")
+        print("\n  🧩 [검색어 파이프라인]")
+        print("    [1] ➕ 검색어 직접 추가")
+        print("    [2] 🌐 검색어 풀 브라우저 보기")
+        print("    [3] 🕘 최근 실행 기록 보기")
+        print("    [4] 🚀 검색어 실행 (수집 → 분석 → 최종저장)")
         print("    [b] ↩️ 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
@@ -685,8 +748,8 @@ def run_query_pipeline_execute() -> None:
         print("  ❌ OPENAI_API_KEY가 필요합니다.")
         return
 
-    raw_q = input("  🔹 실행할 pending 검색어 개수 [기본 3]: ").strip()
-    raw_pages = input("  🔹 검색 페이지 수 [기본 1]: ").strip()
+    raw_q = input("  🔹 실행할 검색어 개수 [기본 3]: ").strip()
+    raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
     raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
     print("  🔹 이미지 검색 엔진")
@@ -727,11 +790,19 @@ def run_query_pipeline_execute() -> None:
     with sqlite3.connect(DB_FILE) as conn:
         init_query_pipeline_tables(conn)
         conn.row_factory = sqlite3.Row
+        public_food_index = _build_public_food_index(conn)
+        print("\n  📋 [실행 설정]")
+        print(f"    - provider           : {provider}")
+        print(f"    - query limit        : {query_limit}")
+        print(f"    - max pages          : {max_pages} (항상 1페이지부터 수집)")
+        print(f"    - max images/query   : {max_images if max_images > 0 else '전체'}")
+        print(f"    - pass workers       : {pass_workers}")
+        print(f"    - 공공DB 번호 인덱스    : {len(public_food_index):,}개")
         queries = conn.execute(
             """
-            SELECT id, query_text, priority_score, status
+            SELECT id, query_text, query_norm, priority_score, status
             FROM query_pool
-            WHERE status='pending'
+            WHERE status IN ('pending', 'done', 'failed')
             ORDER BY priority_score DESC, id ASC
             LIMIT ?
             """,
@@ -739,15 +810,28 @@ def run_query_pipeline_execute() -> None:
         ).fetchall()
 
         if not queries:
-            print("  ⚠️ 실행할 pending 검색어가 없습니다.")
+            print("  ⚠️ 실행할 검색어가 없습니다.")
             return
 
-        print(f"\n  🚀 실행 시작: pending {len(queries)}개")
-        print(f"    검색엔진: {provider}")
+        print(f"\n  🚀 실행 시작: 대상 {len(queries)}개")
 
         for q in queries:
             query_id = int(q["id"])
             query_text = str(q["query_text"] or "").strip()
+            query_norm = str(q["query_norm"] or "").strip()
+            max_page_done = get_provider_max_page_done(
+                conn,
+                query_norm=query_norm,
+                provider=provider,
+            )
+            if max_pages <= max_page_done:
+                print(f"\n  ⏭️ query_id={query_id} 스킵")
+                print(f"    q={query_text}")
+                print(
+                    f"    사유: provider={provider} 기준 기존 max_page_done={max_page_done} "
+                    f">= 요청 max_pages={max_pages}"
+                )
+                continue
             run_id = start_query_run(conn, query_id=query_id)
             print(f"\n  ▶ query_id={query_id} run_id={run_id}")
             print(f"    q={query_text}")
@@ -797,8 +881,10 @@ def run_query_pipeline_execute() -> None:
                 to_process: list[tuple[int, object]] = []
                 for idx, img in enumerate(images, 1):
                     cached = get_image_analysis_cache(conn, img.url)
-                    if cached and int(cached["pass4_ok"] or 0) == 1:
-                        print(f"    [{idx}/{total_images}] 캐시통과 스킵")
+                    if cached:
+                        fail_stage = str(cached["fail_stage"] or "").strip() if "fail_stage" in cached.keys() else ""
+                        stage_txt = fail_stage or ("pass4" if int(cached["pass4_ok"] or 0) == 1 else "attempted")
+                        print(f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
                         continue
                     to_process.append((idx, img))
 
@@ -818,6 +904,7 @@ def run_query_pipeline_execute() -> None:
                         "idx": idx,
                         "url": img_url,
                         "api_calls": 0,
+                        "pass1_ok": False,
                         "pass2_ok": False,
                         "pass3_ok": False,
                         "pass4_ok": False,
@@ -833,18 +920,47 @@ def run_query_pipeline_execute() -> None:
                         "report_no": None,
                         "ingredients_text": None,
                         "nutrition_text": None,
+                        "data_source_path": None,
+                        "nutrition_data_source": "none",
+                        "public_food_matched": False,
+                        "pass1_attempted": False,
+                        "pass2a_attempted": False,
+                        "pass2b_attempted": False,
+                        "pass3_ing_attempted": False,
+                        "pass3_nut_attempted": False,
+                        "pass4_ing_attempted": False,
+                        "pass4_nut_attempted": False,
                     }
 
-                    pass2 = az.analyze_pass2(image_url=img_url, target_item_rpt_no=None)
+                    try:
+                        image_bytes, mime_type = az._download_image(img_url)  # pylint: disable=protected-access
+                    except Exception as exc:  # pylint: disable=broad-except
+                        result["fail_stage"] = "download"
+                        result["fail_reason"] = str(exc) or "image_download_failed"
+                        return result
+
+                    result["pass1_attempted"] = True
+                    pass1 = run_pass1_precheck(az, image_bytes=image_bytes, mime_type=mime_type, image_url=img_url)
+                    pass1_ok = bool(pass1.get("precheck_pass"))
+                    result["pass1_ok"] = pass1_ok
+                    if not pass1_ok:
+                        result["fail_stage"] = "pass1"
+                        result["fail_reason"] = str(pass1.get("precheck_reason") or "pass1_precheck_failed")
+                        return result
+
+                    result["pass2a_attempted"] = True
+                    pass2 = az.analyze_pass2_from_bytes(image_bytes, mime_type, target_item_rpt_no=None)
                     result["api_calls"] += 1
                     qf = pass2.get("quality_flags") or {}
                     p2a_ok = bool(qf.get("pass2a_ok"))
                     p2b_ok = bool(qf.get("pass2b_pass"))
+                    p2b_executed = bool(qf.get("pass2b_executed"))
                     gate_ok = bool(pass2.get("quality_gate_pass"))
                     decision = str(pass2.get("ai_decision") or "").upper()
                     pass2_ok = gate_ok and p2a_ok and p2b_ok and decision == "READ"
                     result["p2a_ok"] = p2a_ok
                     result["p2b_ok"] = p2b_ok
+                    result["pass2b_attempted"] = p2b_executed
                     result["raw_pass2a"] = pass2.get("raw_model_text_pass2a")
                     result["raw_pass2b"] = pass2.get("raw_model_text_pass2b")
 
@@ -857,46 +973,150 @@ def run_query_pipeline_execute() -> None:
                         return result
 
                     result["pass2_ok"] = True
-                    pass3 = az.analyze_pass3(
-                        image_url=img_url,
+                    result["pass3_ing_attempted"] = True
+                    result["pass3_nut_attempted"] = False
+                    pass3_ing = az.analyze_pass3_from_bytes(
+                        image_bytes=image_bytes,
+                        mime_type=mime_type,
                         target_item_rpt_no=None,
-                        include_nutrition=bool(qf.get("has_nutrition_section")),
+                        include_nutrition=False,
                     )
                     result["api_calls"] += 1
-                    result["raw_pass3"] = pass3.get("raw_model_text_pass3_ingredients")
-                    pass3_err = str(pass3.get("error") or "").strip()
+                    raw_pass3_ing = pass3_ing.get("raw_model_text_pass3")
+                    pass3_err = str(pass3_ing.get("error") or "").strip()
                     if pass3_err:
                         result["fail_stage"] = "pass3"
                         result["fail_reason"] = pass3_err
                         return result
 
-                    product_name = (pass3.get("product_name_in_image") or "").strip()
-                    report_no = (pass3.get("product_report_number") or "").strip()
-                    ingredients_text = (pass3.get("ingredients_text") or "").strip()
-                    nutrition_text = (pass3.get("nutrition_text") or "").strip() or None
+                    product_name = (pass3_ing.get("product_name_in_image") or "").strip()
+                    report_no = (pass3_ing.get("product_report_number") or "").strip()
+                    ingredients_text = (pass3_ing.get("ingredients_text") or "").strip()
+                    nutrition_text = None
                     if not (report_no and ingredients_text):
                         result["fail_stage"] = "pass3"
-                        result["fail_reason"] = "required_fields_missing"
+                        result["fail_reason"] = "required_fields_missing(report_no_or_ingredients)"
                         return result
+                    report_no_norm = _normalize_report_no(report_no)
+                    public_row = public_food_index.get(report_no_norm or "") if report_no_norm else None
+                    public_complete = bool(
+                        public_row
+                        and public_row.get("has_name")
+                        and public_row.get("has_nutrition")
+                    )
+                    result["public_food_matched"] = bool(public_row)
+                    result["data_source_path"] = "public_food_enriched" if public_complete else "image_full_extraction"
+
+                    # Case B: Pass3 번호 기준 공공DB 미완전이면, Pass2B에서 제품명/영양성분 존재가 둘 다 필요
+                    if not public_complete:
+                        has_product_in_p2b = bool(qf.get("has_product_name"))
+                        has_nutri_in_p2b = bool(qf.get("has_nutrition_section"))
+                        if not (has_product_in_p2b and has_nutri_in_p2b):
+                            result["fail_stage"] = "pass2b"
+                            result["fail_reason"] = "case_b_requires_product_and_nutrition_at_pass2b"
+                            return result
+                        if not product_name:
+                            result["fail_stage"] = "pass3"
+                            result["fail_reason"] = "case_b_requires_product_name_at_pass3_ingredients"
+                            return result
+                        # Case B에서만 Pass3-Nutrition 별도 호출
+                        result["pass3_nut_attempted"] = True
+                        prompt_nut = az._build_prompt_pass3_nutrition(target_item_rpt_no=None)  # pylint: disable=protected-access
+                        raw_nut = None
+                        parsed_nut = {}
+                        last_nut_err = None
+                        max_attempts = max(1, int(getattr(az, "model_retries", 0)) + 1)
+                        for attempt in range(max_attempts):
+                            try:
+                                raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
+                                    image_bytes=image_bytes,
+                                    mime_type=mime_type,
+                                    prompt=prompt_nut,
+                                )
+                                break
+                            except Exception as exc:  # pylint: disable=broad-except
+                                last_nut_err = exc
+                                if attempt < (max_attempts - 1):
+                                    time.sleep(float(getattr(az, "retry_backoff_sec", 0.8)) * (attempt + 1))
+                                    continue
+                        if raw_nut is None and parsed_nut == {}:
+                            result["fail_stage"] = "pass3"
+                            result["fail_reason"] = f"pass3_nutrition_error:{last_nut_err}"
+                            return result
+                        result["api_calls"] += 1
+                        nutrition_text = (parsed_nut.get("nutrition_text") or "").strip() or None
+                        if not nutrition_text:
+                            result["fail_stage"] = "pass3"
+                            result["fail_reason"] = "case_b_requires_nutrition_at_pass3_nutrition"
+                            return result
+                        result["raw_pass3"] = (raw_pass3_ing or "") + "\n\n[PASS3-NUTRITION]\n" + (raw_nut or "")
+                    else:
+                        result["raw_pass3"] = raw_pass3_ing
 
                     result["pass3_ok"] = True
-                    result["product_name"] = product_name
+                    if public_complete and public_row:
+                        result["product_name"] = str(public_row.get("product_name") or "").strip() or product_name
+                        result["nutrition_text"] = str(public_row.get("nutrition_text") or "").strip() or None
+                        result["nutrition_data_source"] = "public_food_db"
+                    else:
+                        result["product_name"] = product_name
+                        result["nutrition_text"] = nutrition_text
+                        result["nutrition_data_source"] = "image_pass4"
                     result["report_no"] = report_no
                     result["ingredients_text"] = ingredients_text
-                    result["nutrition_text"] = nutrition_text
 
+                    result["pass4_ing_attempted"] = True
+                    result["pass4_nut_attempted"] = bool((not public_complete) and nutrition_text)
+                    pass3_for_pass4 = dict(pass3_ing)
+                    if public_complete:
+                        # Case A: 영양성분은 공공DB 사용, Pass4 영양 파싱 호출 차단
+                        pass3_for_pass4["nutrition_text"] = None
+                        pass3_for_pass4["nutrition_complete"] = False
+                        result["pass4_nut_attempted"] = False
+                    else:
+                        pass3_for_pass4["nutrition_text"] = nutrition_text
+                        pass3_for_pass4["nutrition_complete"] = True if nutrition_text else False
                     pass4 = az.analyze_pass4_normalize(
                         pass2_result=pass2,
-                        pass3_result=pass3,
+                        pass3_result=pass3_for_pass4,
                         target_item_rpt_no=None,
                     )
                     result["api_calls"] += 1
-                    result["raw_pass4"] = pass4.get("raw_model_text_pass4_ingredients")
+                    result["raw_pass4"] = pass4.get("raw_model_text_pass4")
                     pass4_err = str(pass4.get("pass4_ai_error") or "").strip()
                     if pass4_err:
                         result["fail_stage"] = "pass4"
                         result["fail_reason"] = pass4_err or "pass4_fail"
                         return result
+
+                    ingredient_items = pass4.get("ingredient_items") or []
+                    if not isinstance(ingredient_items, list) or len(ingredient_items) == 0:
+                        result["fail_stage"] = "pass4"
+                        result["fail_reason"] = "pass4_no_structured_ingredients"
+                        return result
+
+                    raw_pass4_ing = str(pass4.get("raw_model_text_pass4_ingredients") or "").strip()
+                    if raw_pass4_ing:
+                        result["ingredients_text"] = raw_pass4_ing
+                    else:
+                        result["ingredients_text"] = json.dumps(
+                            {"ingredients_items": ingredient_items},
+                            ensure_ascii=False,
+                        )
+
+                    if not public_complete:
+                        raw_pass4_nut = str(pass4.get("raw_model_text_pass4_nutrition") or "").strip()
+                        if raw_pass4_nut:
+                            result["nutrition_text"] = raw_pass4_nut
+                        else:
+                            nut_items = pass4.get("nutrition_items") or []
+                            if isinstance(nut_items, list) and nut_items:
+                                result["nutrition_text"] = json.dumps(
+                                    {"nutrition_items": nut_items},
+                                    ensure_ascii=False,
+                                )
+                            else:
+                                result["nutrition_text"] = None
 
                     result["pass4_ok"] = True
                     return result
@@ -917,7 +1137,7 @@ def run_query_pipeline_execute() -> None:
                                 conn,
                                 image_url=str(res["url"]),
                                 run_id=run_id,
-                                pass1_ok=None,
+                                pass1_ok=bool(res.get("pass1_ok")),
                                 pass2a_ok=bool(res.get("p2a_ok")),
                                 pass2b_ok=bool(res.get("p2b_ok")),
                                 pass3_ok=False,
@@ -926,6 +1146,16 @@ def run_query_pipeline_execute() -> None:
                                 fail_reason=str(res.get("fail_reason") or "pass2_fail"),
                                 raw_pass2a=res.get("raw_pass2a"),
                                 raw_pass2b=res.get("raw_pass2b"),
+                                pass1_attempted=bool(res.get("pass1_attempted")),
+                                pass2a_attempted=bool(res.get("pass2a_attempted")),
+                                pass2b_attempted=bool(res.get("pass2b_attempted")),
+                                pass3_ing_attempted=False,
+                                pass3_nut_attempted=False,
+                                pass4_ing_attempted=False,
+                                pass4_nut_attempted=False,
+                                data_source_path=res.get("data_source_path"),
+                                nutrition_data_source=res.get("nutrition_data_source"),
+                                public_food_matched=bool(res.get("public_food_matched")),
                             )
                             continue
 
@@ -936,7 +1166,7 @@ def run_query_pipeline_execute() -> None:
                                 conn,
                                 image_url=str(res["url"]),
                                 run_id=run_id,
-                                pass1_ok=None,
+                                pass1_ok=bool(res.get("pass1_ok")),
                                 pass2a_ok=bool(res.get("p2a_ok")),
                                 pass2b_ok=bool(res.get("p2b_ok")),
                                 pass3_ok=False,
@@ -946,6 +1176,16 @@ def run_query_pipeline_execute() -> None:
                                 raw_pass2a=res.get("raw_pass2a"),
                                 raw_pass2b=res.get("raw_pass2b"),
                                 raw_pass3=res.get("raw_pass3"),
+                                pass1_attempted=bool(res.get("pass1_attempted")),
+                                pass2a_attempted=bool(res.get("pass2a_attempted")),
+                                pass2b_attempted=bool(res.get("pass2b_attempted")),
+                                pass3_ing_attempted=bool(res.get("pass3_ing_attempted")),
+                                pass3_nut_attempted=bool(res.get("pass3_nut_attempted")),
+                                pass4_ing_attempted=False,
+                                pass4_nut_attempted=False,
+                                data_source_path=res.get("data_source_path"),
+                                nutrition_data_source=res.get("nutrition_data_source"),
+                                public_food_matched=bool(res.get("public_food_matched")),
                             )
                             continue
 
@@ -954,7 +1194,7 @@ def run_query_pipeline_execute() -> None:
                                 conn,
                                 image_url=str(res["url"]),
                                 run_id=run_id,
-                                pass1_ok=None,
+                                pass1_ok=bool(res.get("pass1_ok")),
                                 pass2a_ok=bool(res.get("p2a_ok")),
                                 pass2b_ok=bool(res.get("p2b_ok")),
                                 pass3_ok=True,
@@ -965,6 +1205,16 @@ def run_query_pipeline_execute() -> None:
                                 raw_pass2b=res.get("raw_pass2b"),
                                 raw_pass3=res.get("raw_pass3"),
                                 raw_pass4=res.get("raw_pass4"),
+                                pass1_attempted=bool(res.get("pass1_attempted")),
+                                pass2a_attempted=bool(res.get("pass2a_attempted")),
+                                pass2b_attempted=bool(res.get("pass2b_attempted")),
+                                pass3_ing_attempted=bool(res.get("pass3_ing_attempted")),
+                                pass3_nut_attempted=bool(res.get("pass3_nut_attempted")),
+                                pass4_ing_attempted=bool(res.get("pass4_ing_attempted")),
+                                pass4_nut_attempted=bool(res.get("pass4_nut_attempted")),
+                                data_source_path=res.get("data_source_path"),
+                                nutrition_data_source=res.get("nutrition_data_source"),
+                                public_food_matched=bool(res.get("public_food_matched")),
                             )
                             continue
 
@@ -975,7 +1225,7 @@ def run_query_pipeline_execute() -> None:
                             item_mnftr_rpt_no=str(res.get("report_no") or ""),
                             ingredients_text=str(res.get("ingredients_text") or ""),
                             nutrition_text=res.get("nutrition_text"),
-                            nutrition_source="pass3",
+                            nutrition_source=str(res.get("nutrition_data_source") or "none"),
                             source_image_url=str(res["url"]),
                             source_query_id=query_id,
                             source_run_id=run_id,
@@ -986,7 +1236,7 @@ def run_query_pipeline_execute() -> None:
                             conn,
                             image_url=str(res["url"]),
                             run_id=run_id,
-                            pass1_ok=None,
+                            pass1_ok=bool(res.get("pass1_ok")),
                             pass2a_ok=bool(res.get("p2a_ok")),
                             pass2b_ok=bool(res.get("p2b_ok")),
                             pass3_ok=True,
@@ -997,8 +1247,24 @@ def run_query_pipeline_execute() -> None:
                             raw_pass2b=res.get("raw_pass2b"),
                             raw_pass3=res.get("raw_pass3"),
                             raw_pass4=res.get("raw_pass4"),
+                            pass1_attempted=bool(res.get("pass1_attempted")),
+                            pass2a_attempted=bool(res.get("pass2a_attempted")),
+                            pass2b_attempted=bool(res.get("pass2b_attempted")),
+                            pass3_ing_attempted=bool(res.get("pass3_ing_attempted")),
+                            pass3_nut_attempted=bool(res.get("pass3_nut_attempted")),
+                            pass4_ing_attempted=bool(res.get("pass4_ing_attempted")),
+                            pass4_nut_attempted=bool(res.get("pass4_nut_attempted")),
+                            data_source_path=res.get("data_source_path"),
+                            nutrition_data_source=res.get("nutrition_data_source"),
+                            public_food_matched=bool(res.get("public_food_matched")),
                         )
 
+                upsert_provider_max_page_done(
+                    conn,
+                    query_norm=query_norm,
+                    provider=provider,
+                    max_page_done=max_pages,
+                )
                 finish_query_run(
                     conn,
                     run_id=run_id,

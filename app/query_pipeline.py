@@ -121,6 +121,16 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
             raw_pass2b TEXT,
             raw_pass3 TEXT,
             raw_pass4 TEXT,
+            pass1_attempted INTEGER,
+            pass2a_attempted INTEGER,
+            pass2b_attempted INTEGER,
+            pass3_ing_attempted INTEGER,
+            pass3_nut_attempted INTEGER,
+            pass4_ing_attempted INTEGER,
+            pass4_nut_attempted INTEGER,
+            data_source_path TEXT,
+            nutrition_data_source TEXT,
+            public_food_matched INTEGER,
             retryable INTEGER NOT NULL DEFAULT 0,
             analyzed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (last_run_id) REFERENCES query_runs(id)
@@ -129,6 +139,45 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
     )
     conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS uq_query_image_analysis_url ON query_image_analysis_cache(image_url)")
     conn.execute("CREATE INDEX IF NOT EXISTS ix_query_image_analysis_hash ON query_image_analysis_cache(image_url_hash)")
+    # Backward-compatible schema migration for existing DBs
+    existing_cols = {
+        str(r[1]) for r in conn.execute("PRAGMA table_info(query_image_analysis_cache)").fetchall()
+    }
+    add_cols = [
+        ("pass1_attempted", "INTEGER"),
+        ("pass2a_attempted", "INTEGER"),
+        ("pass2b_attempted", "INTEGER"),
+        ("pass3_ing_attempted", "INTEGER"),
+        ("pass3_nut_attempted", "INTEGER"),
+        ("pass4_ing_attempted", "INTEGER"),
+        ("pass4_nut_attempted", "INTEGER"),
+        ("data_source_path", "TEXT"),
+        ("nutrition_data_source", "TEXT"),
+        ("public_food_matched", "INTEGER"),
+        # backward compatibility (old names)
+        ("pipeline_case", "TEXT"),
+        ("nutrition_strategy", "TEXT"),
+        ("public_db_hit", "INTEGER"),
+    ]
+    for col, typ in add_cols:
+        if col not in existing_cols:
+            conn.execute(f"ALTER TABLE query_image_analysis_cache ADD COLUMN {col} {typ}")
+
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS query_provider_progress (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            query_norm TEXT NOT NULL,
+            provider TEXT NOT NULL,
+            max_page_done INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+        """
+    )
+    conn.execute(
+        "CREATE UNIQUE INDEX IF NOT EXISTS uq_query_provider_progress "
+        "ON query_provider_progress(query_norm, provider)"
+    )
 
     conn.execute(
         """
@@ -151,15 +200,11 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
         """
     )
     conn.execute(
-        "CREATE UNIQUE INDEX IF NOT EXISTS uq_food_final_report_no "
-        "ON food_final(item_mnftr_rpt_no) "
-        "WHERE item_mnftr_rpt_no IS NOT NULL AND item_mnftr_rpt_no != ''"
+        "CREATE INDEX IF NOT EXISTS ix_food_final_report_no "
+        "ON food_final(item_mnftr_rpt_no)"
     )
-    conn.execute(
-        "CREATE UNIQUE INDEX IF NOT EXISTS uq_food_final_fallback "
-        "ON food_final(product_name, ingredients_hash) "
-        "WHERE (item_mnftr_rpt_no IS NULL OR item_mnftr_rpt_no = '')"
-    )
+    conn.execute("DROP INDEX IF EXISTS uq_food_final_report_no")
+    conn.execute("DROP INDEX IF EXISTS uq_food_final_fallback")
     conn.commit()
 
 
@@ -384,6 +429,16 @@ def upsert_image_analysis_cache(
     raw_pass2b: str | None,
     raw_pass3: str | None = None,
     raw_pass4: str | None = None,
+    pass1_attempted: bool | None = None,
+    pass2a_attempted: bool | None = None,
+    pass2b_attempted: bool | None = None,
+    pass3_ing_attempted: bool | None = None,
+    pass3_nut_attempted: bool | None = None,
+    pass4_ing_attempted: bool | None = None,
+    pass4_nut_attempted: bool | None = None,
+    data_source_path: str | None = None,
+    nutrition_data_source: str | None = None,
+    public_food_matched: bool | None = None,
     retryable: bool = False,
 ) -> None:
     image_url = str(image_url or "").strip()
@@ -397,9 +452,11 @@ def upsert_image_analysis_cache(
             pass1_ok, pass2a_ok, pass2b_ok, pass3_ok, pass4_ok,
             fail_stage, fail_reason,
             raw_pass2a, raw_pass2b, raw_pass3, raw_pass4,
+            pass1_attempted, pass2a_attempted, pass2b_attempted, pass3_ing_attempted, pass3_nut_attempted,
+            pass4_ing_attempted, pass4_nut_attempted, data_source_path, nutrition_data_source, public_food_matched,
             retryable, analyzed_at
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
         ON CONFLICT(image_url) DO UPDATE SET
             image_url_hash=excluded.image_url_hash,
             last_run_id=excluded.last_run_id,
@@ -414,6 +471,16 @@ def upsert_image_analysis_cache(
             raw_pass2b=excluded.raw_pass2b,
             raw_pass3=excluded.raw_pass3,
             raw_pass4=excluded.raw_pass4,
+            pass1_attempted=excluded.pass1_attempted,
+            pass2a_attempted=excluded.pass2a_attempted,
+            pass2b_attempted=excluded.pass2b_attempted,
+            pass3_ing_attempted=excluded.pass3_ing_attempted,
+            pass3_nut_attempted=excluded.pass3_nut_attempted,
+            pass4_ing_attempted=excluded.pass4_ing_attempted,
+            pass4_nut_attempted=excluded.pass4_nut_attempted,
+            data_source_path=excluded.data_source_path,
+            nutrition_data_source=excluded.nutrition_data_source,
+            public_food_matched=excluded.public_food_matched,
             retryable=excluded.retryable,
             analyzed_at=CURRENT_TIMESTAMP
         """,
@@ -432,8 +499,50 @@ def upsert_image_analysis_cache(
             raw_pass2b,
             raw_pass3,
             raw_pass4,
+            int(pass1_attempted) if pass1_attempted is not None else None,
+            int(pass2a_attempted) if pass2a_attempted is not None else None,
+            int(pass2b_attempted) if pass2b_attempted is not None else None,
+            int(pass3_ing_attempted) if pass3_ing_attempted is not None else None,
+            int(pass3_nut_attempted) if pass3_nut_attempted is not None else None,
+            int(pass4_ing_attempted) if pass4_ing_attempted is not None else None,
+            int(pass4_nut_attempted) if pass4_nut_attempted is not None else None,
+            data_source_path,
+            nutrition_data_source,
+            int(public_food_matched) if public_food_matched is not None else None,
             1 if retryable else 0,
         ),
+    )
+    conn.commit()
+
+
+def get_provider_max_page_done(conn: sqlite3.Connection, *, query_norm: str, provider: str) -> int:
+    row = conn.execute(
+        """
+        SELECT max_page_done
+        FROM query_provider_progress
+        WHERE query_norm=? AND provider=?
+        """,
+        (str(query_norm or ""), str(provider or "")),
+    ).fetchone()
+    return int(row[0]) if row and row[0] is not None else 0
+
+
+def upsert_provider_max_page_done(
+    conn: sqlite3.Connection,
+    *,
+    query_norm: str,
+    provider: str,
+    max_page_done: int,
+) -> None:
+    conn.execute(
+        """
+        INSERT INTO query_provider_progress (query_norm, provider, max_page_done, updated_at)
+        VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(query_norm, provider) DO UPDATE SET
+            max_page_done=MAX(query_provider_progress.max_page_done, excluded.max_page_done),
+            updated_at=CURRENT_TIMESTAMP
+        """,
+        (str(query_norm or ""), str(provider or ""), int(max_page_done)),
     )
     conn.commit()
 
@@ -465,90 +574,6 @@ def upsert_food_final(
     nutrition_text = (nutrition_text or "").strip() or None
     ing_hash = hash_text(ingredients_text) if ingredients_text else None
 
-    if item_no:
-        conn.execute(
-            """
-            INSERT INTO food_final (
-                product_name, item_mnftr_rpt_no, ingredients_text, ingredients_hash,
-                nutrition_text, nutrition_source, source_image_url, source_query_id, source_run_id,
-                created_at, updated_at
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
-            ON CONFLICT(item_mnftr_rpt_no) DO UPDATE SET
-                product_name=COALESCE(excluded.product_name, food_final.product_name),
-                ingredients_text=COALESCE(excluded.ingredients_text, food_final.ingredients_text),
-                ingredients_hash=COALESCE(excluded.ingredients_hash, food_final.ingredients_hash),
-                nutrition_text=COALESCE(excluded.nutrition_text, food_final.nutrition_text),
-                nutrition_source=CASE
-                    WHEN excluded.nutrition_text IS NOT NULL AND excluded.nutrition_text != '' THEN excluded.nutrition_source
-                    ELSE food_final.nutrition_source
-                END,
-                source_image_url=excluded.source_image_url,
-                source_query_id=COALESCE(excluded.source_query_id, food_final.source_query_id),
-                source_run_id=COALESCE(excluded.source_run_id, food_final.source_run_id),
-                updated_at=CURRENT_TIMESTAMP
-            """,
-            (
-                product_name,
-                item_no,
-                ingredients_text,
-                ing_hash,
-                nutrition_text,
-                nutrition_source,
-                source_image_url,
-                source_query_id,
-                source_run_id,
-            ),
-        )
-        row = conn.execute("SELECT id FROM food_final WHERE item_mnftr_rpt_no = ?", (item_no,)).fetchone()
-        conn.commit()
-        return int(row[0]) if row else 0
-
-    existing = None
-    if product_name and ing_hash:
-        existing = conn.execute(
-            """
-            SELECT id
-            FROM food_final
-            WHERE (item_mnftr_rpt_no IS NULL OR item_mnftr_rpt_no = '')
-              AND product_name = ?
-              AND ingredients_hash = ?
-            LIMIT 1
-            """,
-            (product_name, ing_hash),
-        ).fetchone()
-
-    if existing:
-        conn.execute(
-            """
-            UPDATE food_final
-            SET ingredients_text=COALESCE(?, ingredients_text),
-                nutrition_text=COALESCE(?, nutrition_text),
-                nutrition_source=CASE
-                    WHEN ? IS NOT NULL AND ? != '' THEN ?
-                    ELSE nutrition_source
-                END,
-                source_image_url=?,
-                source_query_id=COALESCE(?, source_query_id),
-                source_run_id=COALESCE(?, source_run_id),
-                updated_at=CURRENT_TIMESTAMP
-            WHERE id=?
-            """,
-            (
-                ingredients_text,
-                nutrition_text,
-                nutrition_text,
-                nutrition_text,
-                nutrition_source,
-                source_image_url,
-                source_query_id,
-                source_run_id,
-                int(existing[0]),
-            ),
-        )
-        conn.commit()
-        return int(existing[0])
-
     conn.execute(
         """
         INSERT INTO food_final (
@@ -556,10 +581,11 @@ def upsert_food_final(
             nutrition_text, nutrition_source, source_image_url, source_query_id, source_run_id,
             created_at, updated_at
         )
-        VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
         """,
         (
             product_name,
+            item_no,
             ingredients_text,
             ing_hash,
             nutrition_text,
