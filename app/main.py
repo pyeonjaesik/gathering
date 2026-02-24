@@ -273,7 +273,7 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             continue
 
         html_parts.append("<table><thead><tr>"
-                          "<th>No</th><th>이미지</th><th>URL</th><th>결과</th><th>Pass</th><th>사유</th>"
+                          "<th>No</th><th>이미지</th><th>해상도/토큰</th><th>결과</th><th>Pass</th><th>사유</th>"
                           "<th>제품명</th><th>품목보고번호</th><th>출처</th><th>Raw</th>"
                           "</tr></thead><tbody>")
         for r in rows:
@@ -298,14 +298,23 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             raw2b = str(r.get("raw_pass2b") or "")
             raw3 = str(r.get("raw_pass3") or "")
             raw4 = str(r.get("raw_pass4") or "")
+            ow = r.get("orig_w")
+            oh = r.get("orig_h")
+            per_tok = r.get("estimated_tokens_per_call")
+            if ow and oh:
+                size_txt = f"{ow}x{oh}"
+            else:
+                size_txt = "-"
+            tok_txt = f"{int(per_tok):,}" if isinstance(per_tok, int) else "-"
             html_parts.append(
                 f"<tr class='rowItem' data-pass='{level}' data-status='{html.escape(status)}'>"
                 f"<td>{int(r.get('idx') or 0)}</td>"
-                f"<td><img class='img' src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer'></td>"
-                f"<td><div class='urlCell'>"
+                f"<td><img class='img' src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer'>"
+                f"<div class='urlCell'>"
                 f"<button class='copyBtn' data-url='{html.escape(url, quote=True)}'>URL 복사</button>"
                 f"<span class='small'>{html.escape((url.split('/')[2] if '://' in url else url)[:28])}</span>"
                 f"</div></td>"
+                f"<td>해상도: <b>{html.escape(size_txt)}</b><br>예상토큰(이미지 1회 기준): <b>{html.escape(tok_txt)}</b></td>"
                 f"<td>{html.escape(status)}</td>"
                 f"<td>{html.escape(pass_ok)}</td>"
                 f"<td><code>{html.escape(fail_reason[:300] if fail_reason else '-')}</code></td>"
@@ -1109,6 +1118,18 @@ def _extract_image_size(image_bytes: bytes, mime_type: str | None = None) -> tup
     return (None, None)
 
 
+def _estimate_vision_tokens(width: int | None, height: int | None) -> int | None:
+    """
+    이미지 해상도 기반 매우 러프한 토큰 추정치.
+    - 모델/서버 내부 타일링 정책에 따라 실제 청구와 다를 수 있음.
+    """
+    if not width or not height:
+        return None
+    pixels = max(1, int(width) * int(height))
+    # 대략치: 1토큰 ~= 1024px 가정
+    return max(1, int(round(pixels / 1024.0)))
+
+
 def execute_query_pipeline_run(
     *,
     mode: str = "1",
@@ -1119,6 +1140,7 @@ def execute_query_pipeline_run(
     pass_workers: int = 5,
     direct_query: str | None = None,
     open_browser_report: bool = True,
+    show_pass3_raw: bool = False,
     logger: Callable[[str], None] | None = None,
 ) -> str | None:
     from app import config as app_config
@@ -1150,6 +1172,8 @@ def execute_query_pipeline_run(
     max_pages = max(1, min(20, max_pages))
     max_images = max(0, max_images)
     pass_workers = max(1, min(50, pass_workers))
+    pass3_gemini_concurrency = max(1, int(os.getenv("PASS3_GEMINI_CONCURRENCY", "1") or "1"))
+    pass3_gemini_sem = threading.BoundedSemaphore(pass3_gemini_concurrency)
 
     from app.query_image_benchmark import _search_images_all
 
@@ -1160,6 +1184,26 @@ def execute_query_pipeline_run(
         and getattr(sys.stdout, "isatty", lambda: False)()
         and str(os.getenv("TERM", "")).lower() not in ("", "dumb")
     )
+
+    def _print_pass3_raw_for_query(query_report: dict) -> None:
+        if not show_pass3_raw:
+            return
+        rows = list(query_report.get("images") or [])
+        targets = [r for r in rows if str(r.get("raw_pass3") or "").strip()]
+        _query_exec_log(
+            logger,
+            f"\n  🧾 [Pass3 RAW] query='{query_report.get('query_text')}' | {len(targets)}/{len(rows)}건",
+        )
+        if not targets:
+            _query_exec_log(logger, "    (Pass3 RAW 없음)")
+            return
+        for r in targets:
+            idx = int(r.get("idx") or 0)
+            url = str(r.get("url") or "")
+            raw3 = str(r.get("raw_pass3") or "")
+            _query_exec_log(logger, f"\n    [#{idx}] {url}")
+            _query_exec_log(logger, "    [PASS3 RAW]")
+            _query_exec_log(logger, raw3)
 
     def _stage_to_gauge(stage: str) -> str:
         s = str(stage or "").upper()
@@ -1198,13 +1242,44 @@ def execute_query_pipeline_run(
             self.skipped_existing = 0
             self.fail_stage_counter = Counter()
             self.fail_reason_counter = Counter()
+            self.policy_fail_counter = Counter()
+            self.error_fail_counter = Counter()
             self.started_at = time.time()
             self.slot_state = {
                 i: {"idx": "-", "url": "", "stage": "IDLE", "msg": "-"}
                 for i in range(1, self.slots + 1)
             }
+            self.pass3_waiting = 0
             self._lock = threading.Lock()
             self._last_render_at = 0.0
+
+        @staticmethod
+        def _is_system_error(fail_stage: str, fail_reason: str) -> bool:
+            stage = str(fail_stage or "").lower()
+            reason = str(fail_reason or "").lower()
+            # 통신/쿼터/타임아웃/예외/AI 호출 실패 계열은 시스템 오류로 분류
+            error_keys = (
+                "http_",
+                "timeout",
+                "timed out",
+                "resource_exhausted",
+                "connection",
+                "name resolution",
+                "exception",
+                "traceback",
+                "error:",
+                "pass3_nutrition_error",
+                "pass4_ai_error",
+                "image_download_failed",
+                "openai_http_",
+                "gemini_http_",
+                "empty_model_response",
+            )
+            if any(k in reason for k in error_keys):
+                return True
+            if stage in ("download",):
+                return True
+            return False
 
         def on_skip_existing(self, reason: str) -> None:
             with self._lock:
@@ -1225,6 +1300,28 @@ def execute_query_pipeline_run(
                 }
                 self.render()
 
+        def on_pass3_wait_start(self, slot_id: int, idx: int, url: str, kind: str) -> None:
+            with self._lock:
+                self.pass3_waiting += 1
+                self.slot_state[slot_id] = {
+                    "idx": idx,
+                    "url": str(url or ""),
+                    "stage": "PASS3-QUEUE",
+                    "msg": f"gemini {kind} queued",
+                }
+                self.render(force=True)
+
+        def on_pass3_wait_end(self, slot_id: int, idx: int, url: str, kind: str) -> None:
+            with self._lock:
+                self.pass3_waiting = max(0, self.pass3_waiting - 1)
+                self.slot_state[slot_id] = {
+                    "idx": idx,
+                    "url": str(url or ""),
+                    "stage": "PASS3-RUN",
+                    "msg": f"gemini {kind} running",
+                }
+                self.render(force=True)
+
         def on_finish(self, slot_id: int, idx: int, url: str, *, pass4_ok: bool, fail_stage: str, fail_reason: str, api_calls: int) -> None:
             with self._lock:
                 self.done += 1
@@ -1243,6 +1340,10 @@ def execute_query_pipeline_run(
                     self.fail_stage_counter[stage] += 1
                     if fail_reason:
                         self.fail_reason_counter[str(fail_reason)] += 1
+                    if self._is_system_error(stage, fail_reason):
+                        self.error_fail_counter[stage] += 1
+                    else:
+                        self.policy_fail_counter[stage] += 1
                     self.slot_state[slot_id] = {
                         "idx": idx,
                         "url": str(url or ""),
@@ -1271,12 +1372,19 @@ def execute_query_pipeline_run(
             top3 = self.fail_reason_counter.most_common(3)
             top3_txt = " | ".join(f"{k[:36]}:{v}" for k, v in top3) if top3 else "-"
             fail_txt = (
-                f"P1fail:{self.fail_stage_counter.get('pass1', 0)} "
-                f"P2fail:{self.fail_stage_counter.get('pass2', 0) + self.fail_stage_counter.get('pass2b', 0)} "
-                f"P3fail:{self.fail_stage_counter.get('pass3', 0)} "
-                f"P4fail:{self.fail_stage_counter.get('pass4', 0)} "
+                f"P1fail:{self.fail_stage_counter.get('pass1', 0)}"
+                f"(정책{self.policy_fail_counter.get('pass1',0)}/오류{self.error_fail_counter.get('pass1',0)}) "
+                f"P2fail:{self.fail_stage_counter.get('pass2', 0) + self.fail_stage_counter.get('pass2b', 0)}"
+                f"(정책{self.policy_fail_counter.get('pass2',0)+self.policy_fail_counter.get('pass2b',0)}/"
+                f"오류{self.error_fail_counter.get('pass2',0)+self.error_fail_counter.get('pass2b',0)}) "
+                f"P3fail:{self.fail_stage_counter.get('pass3', 0)}"
+                f"(정책{self.policy_fail_counter.get('pass3',0)}/오류{self.error_fail_counter.get('pass3',0)}) "
+                f"P4fail:{self.fail_stage_counter.get('pass4', 0)}"
+                f"(정책{self.policy_fail_counter.get('pass4',0)}/오류{self.error_fail_counter.get('pass4',0)}) "
                 f"saved:{self.fail_stage_counter.get('saved', 0)}"
             )
+            policy_total = sum(self.policy_fail_counter.values())
+            error_total = sum(self.error_fail_counter.values())
 
             if can_redraw_terminal:
                 print("\033[2J\033[H", end="")
@@ -1287,8 +1395,10 @@ def execute_query_pipeline_run(
             print(f"total: {self.total} done: {self.done} 최종 저장: {self.saved}")
             print(f"API 호출 횟수: {self.api_calls}회")
             print(f"단계별 카운터: {fail_txt}")
+            print(f"실패 구분: 정책 실패 {policy_total}건 | 시스템 오류 {error_total}건")
             print(f"유효 처리율(saved/done): {yield_ratio:.1f}%")
             print(f"중복 스킵: {self.skipped_existing}건")
+            print(f"Pass3 대기중(sem): {self.pass3_waiting}건")
             print(f"평균 속도: {speed:.2f} img/s | ETA: {eta}")
             print(f"최근 실패 TOP3: {top3_txt}")
             print("-" * 120)
@@ -1313,6 +1423,7 @@ def execute_query_pipeline_run(
         _query_exec_log(logger, f"    - max pages          : {max_pages} (항상 1페이지부터 수집)")
         _query_exec_log(logger, f"    - max images/query   : {max_images if max_images > 0 else '전체'}")
         _query_exec_log(logger, f"    - pass workers       : {pass_workers}")
+        _query_exec_log(logger, f"    - pass3 gemini conc  : {pass3_gemini_concurrency}")
         _query_exec_log(logger, f"    - 공공DB 번호 인덱스    : {len(public_food_index):,}개")
         queries = []
         if mode == "2":
@@ -1441,8 +1552,31 @@ def execute_query_pipeline_run(
                 for idx, img in enumerate(images, 1):
                     cached = get_image_analysis_cache(conn, img.url)
                     if cached:
+                        def _cached_bool(key: str) -> bool | None:
+                            if key not in cached.keys():
+                                return None
+                            v = cached[key]
+                            if v is None:
+                                return None
+                            return bool(int(v))
+
                         fail_stage = str(cached["fail_stage"] or "").strip() if "fail_stage" in cached.keys() else ""
                         stage_txt = fail_stage or ("pass4" if int(cached["pass4_ok"] or 0) == 1 else "attempted")
+                        pass1_ok_cached = _cached_bool("pass1_ok")
+                        p2a_ok_cached = _cached_bool("pass2a_ok")
+                        p2b_ok_cached = _cached_bool("pass2b_ok")
+                        pass3_ok_cached = _cached_bool("pass3_ok")
+                        pass4_ok_cached = _cached_bool("pass4_ok")
+
+                        # 과거 레코드에 pass 컬럼이 비어있는 경우 fail_stage 기준으로 최소 복원
+                        if pass1_ok_cached is None and fail_stage in ("pass2", "pass2b", "pass3", "pass4"):
+                            pass1_ok_cached = True
+                        if p2a_ok_cached is None and p2b_ok_cached is None and fail_stage in ("pass3", "pass4"):
+                            p2a_ok_cached = True
+                            p2b_ok_cached = True
+                        if pass3_ok_cached is None and fail_stage == "pass4":
+                            pass3_ok_cached = True
+
                         if not use_terminal_dashboard:
                             _query_exec_log(logger, f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
                         dash.on_skip_existing(f"existing_history(stage={stage_txt})")
@@ -1450,23 +1584,35 @@ def execute_query_pipeline_run(
                             {
                                 "idx": idx,
                                 "url": img.url,
-                                "status": "skipped_by_existing_history",
-                                "fail_reason": f"existing_history(stage={stage_txt})",
-                                "pass1_attempted": False,
-                                "pass2a_attempted": False,
-                                "pass2b_attempted": False,
-                                "pass3_ing_attempted": False,
-                                "pass3_nut_attempted": False,
-                                "pass4_ing_attempted": False,
-                                "pass4_nut_attempted": False,
-                                "pass1_ok": None,
-                                "p2a_ok": None,
-                                "p2b_ok": None,
-                                "pass3_ok": None,
-                                "pass4_ok": None,
-                                "data_source_path": None,
-                                "nutrition_data_source": "none",
-                                "public_food_matched": False,
+                                "status": ("saved" if pass4_ok_cached else "failed_cached"),
+                                "fail_reason": (
+                                    str(cached["fail_reason"])
+                                    if "fail_reason" in cached.keys() and cached["fail_reason"] is not None
+                                    else f"existing_history(stage={stage_txt})"
+                                ),
+                                "pass1_attempted": _cached_bool("pass1_attempted"),
+                                "pass2a_attempted": _cached_bool("pass2a_attempted"),
+                                "pass2b_attempted": _cached_bool("pass2b_attempted"),
+                                "pass3_ing_attempted": _cached_bool("pass3_ing_attempted"),
+                                "pass3_nut_attempted": _cached_bool("pass3_nut_attempted"),
+                                "pass4_ing_attempted": _cached_bool("pass4_ing_attempted"),
+                                "pass4_nut_attempted": _cached_bool("pass4_nut_attempted"),
+                                "pass1_ok": pass1_ok_cached,
+                                "p2a_ok": p2a_ok_cached,
+                                "p2b_ok": p2b_ok_cached,
+                                "pass3_ok": pass3_ok_cached,
+                                "pass4_ok": pass4_ok_cached,
+                                "data_source_path": (
+                                    str(cached["data_source_path"])
+                                    if "data_source_path" in cached.keys() and cached["data_source_path"] is not None
+                                    else None
+                                ),
+                                "nutrition_data_source": (
+                                    str(cached["nutrition_data_source"])
+                                    if "nutrition_data_source" in cached.keys() and cached["nutrition_data_source"] is not None
+                                    else "none"
+                                ),
+                                "public_food_matched": bool(int(cached["public_food_matched"])) if "public_food_matched" in cached.keys() and cached["public_food_matched"] is not None else False,
                                 "report_no": None,
                                 "product_name": None,
                                 "ingredients_text": None,
@@ -1475,6 +1621,13 @@ def execute_query_pipeline_run(
                                 "raw_pass2b": str(cached["raw_pass2b"]) if "raw_pass2b" in cached.keys() and cached["raw_pass2b"] is not None else None,
                                 "raw_pass3": str(cached["raw_pass3"]) if "raw_pass3" in cached.keys() and cached["raw_pass3"] is not None else None,
                                 "raw_pass4": str(cached["raw_pass4"]) if "raw_pass4" in cached.keys() and cached["raw_pass4"] is not None else None,
+                                "orig_w": None,
+                                "orig_h": None,
+                                "resized": False,
+                                "resize_to_w": None,
+                                "resize_to_h": None,
+                                "estimated_tokens_per_call": None,
+                                "estimated_tokens_total": None,
                             }
                         )
                         continue
@@ -1529,6 +1682,8 @@ def execute_query_pipeline_run(
                         "resized": False,
                         "resize_to_w": None,
                         "resize_to_h": None,
+                        "estimated_tokens_per_call": None,
+                        "estimated_tokens_total": None,
                     }
 
                     try:
@@ -1540,12 +1695,18 @@ def execute_query_pipeline_run(
                     ow, oh = _extract_image_size(image_bytes, mime_type)
                     result["orig_w"] = ow
                     result["orig_h"] = oh
+                    est_tok = _estimate_vision_tokens(ow, oh)
+                    result["estimated_tokens_per_call"] = est_tok
                     dash.on_slot_stage(
                         slot_id,
                         idx,
                         img_url,
                         "PASS1",
-                        f"{ow}x{oh} | no-resize" if ow and oh else "size=unknown | no-resize",
+                        (
+                            f"{ow}x{oh} | tok~{est_tok or '-'} | no-resize"
+                            if ow and oh
+                            else "size=unknown | tok~- | no-resize"
+                        ),
                     )
 
                     result["pass1_attempted"] = True
@@ -1586,12 +1747,26 @@ def execute_query_pipeline_run(
                     result["pass3_ing_attempted"] = True
                     result["pass3_nut_attempted"] = False
                     dash.on_slot_stage(slot_id, idx, img_url, "PASS3", "ingredients")
-                    pass3_ing = az.analyze_pass3_from_bytes(
-                        image_bytes=image_bytes,
-                        mime_type=mime_type,
-                        target_item_rpt_no=None,
-                        include_nutrition=False,
-                    )
+                    if str(getattr(az, "pass3_provider", "")).lower() == "gemini":
+                        dash.on_pass3_wait_start(slot_id, idx, img_url, "ingredients")
+                        pass3_gemini_sem.acquire()
+                        try:
+                            dash.on_pass3_wait_end(slot_id, idx, img_url, "ingredients")
+                            pass3_ing = az.analyze_pass3_from_bytes(
+                                image_bytes=image_bytes,
+                                mime_type=mime_type,
+                                target_item_rpt_no=None,
+                                include_nutrition=False,
+                            )
+                        finally:
+                            pass3_gemini_sem.release()
+                    else:
+                        pass3_ing = az.analyze_pass3_from_bytes(
+                            image_bytes=image_bytes,
+                            mime_type=mime_type,
+                            target_item_rpt_no=None,
+                            include_nutrition=False,
+                        )
                     result["api_calls"] += 1
                     raw_pass3_ing = pass3_ing.get("raw_model_text_pass3")
                     pass3_err = str(pass3_ing.get("error") or "").strip()
@@ -1648,11 +1823,24 @@ def execute_query_pipeline_run(
                         attempt = 0
                         while attempt < max_attempts:
                             try:
-                                raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
-                                    image_bytes=image_bytes,
-                                    mime_type=mime_type,
-                                    prompt=prompt_nut,
-                                )
+                                if str(getattr(az, "pass3_provider", "")).lower() == "gemini":
+                                    dash.on_pass3_wait_start(slot_id, idx, img_url, "nutrition")
+                                    pass3_gemini_sem.acquire()
+                                    try:
+                                        dash.on_pass3_wait_end(slot_id, idx, img_url, "nutrition")
+                                        raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
+                                            image_bytes=image_bytes,
+                                            mime_type=mime_type,
+                                            prompt=prompt_nut,
+                                        )
+                                    finally:
+                                        pass3_gemini_sem.release()
+                                else:
+                                    raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
+                                        image_bytes=image_bytes,
+                                        mime_type=mime_type,
+                                        prompt=prompt_nut,
+                                    )
                                 break
                             except Exception as exc:  # pylint: disable=broad-except
                                 last_nut_err = exc
@@ -1727,7 +1915,7 @@ def execute_query_pipeline_run(
 
                     result["pass4_ing_attempted"] = True
                     result["pass4_nut_attempted"] = bool((not public_complete) and nutrition_text)
-                    dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "normalize")
+                    dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "parse")
                     pass3_for_pass4 = dict(pass3_ing)
                     if public_complete:
                         # Case A: 영양성분은 공공DB 사용, Pass4 영양 파싱 호출 차단
@@ -1883,6 +2071,8 @@ def execute_query_pipeline_run(
                                 "resized": bool(res.get("resized")),
                                 "resize_to_w": res.get("resize_to_w"),
                                 "resize_to_h": res.get("resize_to_h"),
+                                "estimated_tokens_per_call": res.get("estimated_tokens_per_call"),
+                                "estimated_tokens_total": res.get("estimated_tokens_total"),
                             }
                         )
 
@@ -2042,6 +2232,7 @@ def execute_query_pipeline_run(
                 query_report["analyzed_images"] = analyzed_images
                 query_report["final_saved_count"] = final_saved_count
                 query_report["api_calls"] = api_calls
+                _print_pass3_raw_for_query(query_report)
                 reports.append(query_report)
             except Exception as exc:  # pylint: disable=broad-except
                 finish_query_run(
@@ -2062,6 +2253,7 @@ def execute_query_pipeline_run(
                 query_report["analyzed_images"] = analyzed_images
                 query_report["final_saved_count"] = final_saved_count
                 query_report["api_calls"] = api_calls
+                _print_pass3_raw_for_query(query_report)
                 reports.append(query_report)
 
     if not reports:
@@ -2086,6 +2278,7 @@ def run_query_pipeline_execute() -> None:
 
     raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
+    raw_show_pass3 = input("  🔹 Pass3 RAW 터미널 출력? [y/N]: ").strip().lower()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
     print("    [2] Naver Images (Official OpenAPI)")
@@ -2109,6 +2302,7 @@ def run_query_pipeline_execute() -> None:
     max_pages = int(raw_pages) if raw_pages.isdigit() else 1
     max_images = 0
     pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
+    show_pass3_raw = raw_show_pass3 == "y"
 
     direct_query = None
     if mode == "2":
@@ -2123,6 +2317,7 @@ def run_query_pipeline_execute() -> None:
         pass_workers=pass_workers,
         direct_query=direct_query,
         open_browser_report=True,
+        show_pass3_raw=show_pass3_raw,
         logger=None,
     )
 

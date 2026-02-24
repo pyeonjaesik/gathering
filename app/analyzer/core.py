@@ -165,10 +165,10 @@ class URLIngredientAnalyzer:
     pass2a_provider: str = "openai"
     pass2a_openai_model: str = "gpt-4o-mini"
     pass2b_openai_model: str = "gpt-4o-mini"
-    pass2a_gemini_model: str = "gemini-2.0-flash"
+    pass2a_gemini_model: str = "gemini-2.5-flash"
     pass2a_gemini_api_key: str | None = None
     pass3_provider: str = "gemini"
-    pass3_gemini_model: str = "gemini-2.0-flash"
+    pass3_gemini_model: str = "gemini-2.5-flash"
     pass3_gemini_api_key: str | None = None
     pass3_retry_on_429_max_attempts: int = 6
     pass3_retry_on_429_base_sec: float = 2.0
@@ -262,11 +262,27 @@ class URLIngredientAnalyzer:
             )
             .strip()
         )
+        self.pass2a_gemini_model = (
+            str(
+                self.pass2a_gemini_model
+                or os.getenv("PASS2A_GEMINI_MODEL")
+                or "gemini-2.5-flash"
+            )
+            .strip()
+        )
         self.pass2b_openai_model = (
             str(
                 self.pass2b_openai_model
                 or os.getenv("PASS2B_OPENAI_MODEL")
                 or "gpt-4o-mini"
+            )
+            .strip()
+        )
+        self.pass3_gemini_model = (
+            str(
+                self.pass3_gemini_model
+                or os.getenv("PASS3_GEMINI_MODEL")
+                or "gemini-2.5-flash"
             )
             .strip()
         )
