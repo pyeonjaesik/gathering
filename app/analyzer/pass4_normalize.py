@@ -355,7 +355,7 @@ def run_pass4_normalize(
                 cloned = _sanitize_origin_detail_tree(cloned, ingredients_text)
                 sanitized_items.append(cloned)
             ingredient_items = sanitized_items
-            ingredient_items_reason = str(parsed_ing.get("reason") or "pass4_ingredients_structured")
+            ingredient_items_reason = "pass4_ingredients_structured"
 
             if nutrition_text:
                 prompt_nut = analyzer._build_prompt_pass4_nutrition(

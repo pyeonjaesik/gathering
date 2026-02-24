@@ -7,6 +7,7 @@
 
 import os
 import json
+import html
 import socket
 import subprocess
 import sys
@@ -17,6 +18,7 @@ import webbrowser
 import threading
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Callable
 
 import sqlite3
 from app import collector, viewer
@@ -57,6 +59,10 @@ from app.query_pipeline import (
 W = 68
 WEB_UI_PORT = 8501
 WEB_UI_URL = f"http://localhost:{WEB_UI_PORT}"
+QUERY_WEB_UI_PORT = 8502
+QUERY_WEB_UI_URL = f"http://localhost:{QUERY_WEB_UI_PORT}"
+ADMIN_WEB_UI_PORT = 8503
+ADMIN_WEB_UI_URL = f"http://localhost:{ADMIN_WEB_UI_PORT}"
 
 
 def _normalize_report_no(value: str | None) -> str | None:
@@ -119,6 +125,146 @@ def _build_public_food_index(conn: sqlite3.Connection) -> dict[str, dict]:
     return out
 
 
+def _write_query_execution_html_report(reports: list[dict]) -> Path:
+    reports_dir = Path(__file__).resolve().parent.parent / "reports" / "query_runs"
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    out_path = reports_dir / f"query_run_{ts}.html"
+
+    total_queries = len(reports)
+    total_images = sum(int(r.get("total_images") or 0) for r in reports)
+    total_analyzed = sum(int(r.get("analyzed_images") or 0) for r in reports)
+    total_saved = sum(int(r.get("final_saved_count") or 0) for r in reports)
+
+    def _yn(v: bool | None) -> str:
+        if v is True:
+            return "✅"
+        if v is False:
+            return "❌"
+        return "-"
+
+    html_parts: list[str] = []
+    html_parts.append("<!doctype html><html lang='ko'><head><meta charset='utf-8'>")
+    html_parts.append("<meta name='viewport' content='width=device-width, initial-scale=1'>")
+    html_parts.append("<title>검색어 실행 결과 리포트</title>")
+    html_parts.append(
+        "<style>"
+        "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}"
+        ".wrap{max-width:1280px;margin:0 auto;}"
+        ".top{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:14px;}"
+        ".grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}"
+        ".kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}"
+        ".kpi .v{font-size:24px;font-weight:800;}"
+        ".q{background:#fff;border:1px solid #dbe3ff;border-radius:12px;padding:14px;margin:14px 0;}"
+        ".q h3{margin:0 0 8px 0;font-size:18px;}"
+        ".meta{font-size:13px;color:#555;margin:2px 0;}"
+        ".ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}"
+        "table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px;background:#fff;}"
+        "th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}"
+        "th{background:#f3f4f6;position:sticky;top:0;}"
+        "code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;}"
+        ".img{max-width:220px;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:4px;}"
+        ".small{font-size:12px;color:#555;}"
+        "</style>"
+    )
+    html_parts.append("</head><body><div class='wrap'>")
+    html_parts.append("<div class='top'>")
+    html_parts.append("<h2 style='margin:0 0 8px 0;'>검색어 실행 결과 리포트</h2>")
+    html_parts.append(f"<div class='meta'>생성시각: {html.escape(time.strftime('%Y-%m-%d %H:%M:%S'))}</div>")
+    html_parts.append("</div>")
+    html_parts.append("<div class='grid'>")
+    html_parts.append(f"<div class='kpi'><div>검색어</div><div class='v'>{total_queries:,}</div></div>")
+    html_parts.append(f"<div class='kpi'><div>수집 이미지</div><div class='v'>{total_images:,}</div></div>")
+    html_parts.append(f"<div class='kpi'><div>분석 시도</div><div class='v'>{total_analyzed:,}</div></div>")
+    html_parts.append(f"<div class='kpi'><div>최종 저장</div><div class='v'>{total_saved:,}</div></div>")
+    html_parts.append("</div>")
+
+    for q in reports:
+        qtext = str(q.get("query_text") or "")
+        qstatus = str(q.get("status") or "")
+        qreason = str(q.get("reason") or "")
+        qclass = "ok" if qstatus == "done" else ("skip" if qstatus.startswith("skipped") else "bad")
+        html_parts.append("<div class='q'>")
+        html_parts.append(f"<h3>{html.escape(qtext)}</h3>")
+        html_parts.append(f"<div class='meta'>provider={html.escape(str(q.get('provider') or ''))} | run_id={html.escape(str(q.get('run_id') or '-'))}</div>")
+        html_parts.append(
+            f"<div class='meta'>상태: <span class='{qclass}'>{html.escape(qstatus)}</span>"
+            f"{' | 사유: ' + html.escape(qreason) if qreason else ''}</div>"
+        )
+        html_parts.append(
+            "<div class='meta'>"
+            f"total={int(q.get('total_images') or 0)}, analyzed={int(q.get('analyzed_images') or 0)}, "
+            f"saved={int(q.get('final_saved_count') or 0)}, api_calls={int(q.get('api_calls') or 0)}"
+            "</div>"
+        )
+
+        rows = list(q.get("images") or [])
+        if not rows:
+            html_parts.append("<div class='small' style='margin-top:8px;'>이미지 항목 없음</div>")
+            html_parts.append("</div>")
+            continue
+
+        html_parts.append("<table>")
+        html_parts.append(
+            "<tr>"
+            "<th>No</th><th>이미지</th><th>URL</th><th>처리결과</th><th>사유</th>"
+            "<th>Pass 시도</th><th>Pass 성공</th><th>경로/출처</th><th>데이터</th>"
+            "</tr>"
+        )
+        for r in rows:
+            status = str(r.get("status") or "")
+            fail_reason = str(r.get("fail_reason") or "")
+            data_source_path = str(r.get("data_source_path") or "-")
+            nutrition_source = str(r.get("nutrition_data_source") or "-")
+            public_hit = _yn(bool(r.get("public_food_matched")))
+            pass_attempts = (
+                f"P1:{_yn(r.get('pass1_attempted'))} "
+                f"P2A:{_yn(r.get('pass2a_attempted'))} "
+                f"P2B:{_yn(r.get('pass2b_attempted'))} "
+                f"P3I:{_yn(r.get('pass3_ing_attempted'))} "
+                f"P3N:{_yn(r.get('pass3_nut_attempted'))} "
+                f"P4I:{_yn(r.get('pass4_ing_attempted'))} "
+                f"P4N:{_yn(r.get('pass4_nut_attempted'))}"
+            )
+            pass_ok = (
+                f"P1:{_yn(r.get('pass1_ok'))} "
+                f"P2A:{_yn(r.get('p2a_ok'))} "
+                f"P2B:{_yn(r.get('p2b_ok'))} "
+                f"P3:{_yn(r.get('pass3_ok'))} "
+                f"P4:{_yn(r.get('pass4_ok'))}"
+            )
+            data_text = (
+                f"report_no={html.escape(str(r.get('report_no') or ''))}<br>"
+                f"product={html.escape(str(r.get('product_name') or ''))}<br>"
+                f"ingredients(raw)={'있음' if r.get('ingredients_text') else '없음'}<br>"
+                f"nutrition(raw)={'있음' if r.get('nutrition_text') else '없음'}"
+            )
+            url = str(r.get("url") or "")
+            html_parts.append("<tr>")
+            html_parts.append(f"<td>{int(r.get('idx') or 0)}</td>")
+            html_parts.append(
+                f"<td><img class='img' src='{html.escape(url)}' loading='lazy' referrerpolicy='no-referrer'></td>"
+            )
+            html_parts.append(f"<td><a href='{html.escape(url)}' target='_blank' rel='noopener'>{html.escape(url)}</a></td>")
+            html_parts.append(f"<td>{html.escape(status)}</td>")
+            html_parts.append(f"<td><code>{html.escape(fail_reason)}</code></td>")
+            html_parts.append(f"<td>{html.escape(pass_attempts)}</td>")
+            html_parts.append(f"<td>{html.escape(pass_ok)}</td>")
+            html_parts.append(
+                f"<td>data_source_path={html.escape(data_source_path)}<br>"
+                f"nutrition_data_source={html.escape(nutrition_source)}<br>"
+                f"public_food_matched={public_hit}</td>"
+            )
+            html_parts.append(f"<td>{data_text}</td>")
+            html_parts.append("</tr>")
+        html_parts.append("</table>")
+        html_parts.append("</div>")
+
+    html_parts.append("</div></body></html>")
+    out_path.write_text("\n".join(html_parts), encoding="utf-8")
+    return out_path
+
+
 def _bar(char: str = "─") -> str:
     return "  " + char * (W - 4)
 
@@ -167,14 +313,14 @@ def _is_port_open(port: int) -> bool:
         return sock.connect_ex(("127.0.0.1", port)) == 0
 
 
-def run_web_monitor() -> None:
-    if _is_port_open(WEB_UI_PORT):
-        print(f"\n  🌐 웹 모니터가 이미 실행 중입니다. 브라우저를 엽니다: {WEB_UI_URL}")
-        webbrowser.open_new_tab(WEB_UI_URL)
+def _run_streamlit_app(*, app_path: str, port: int, url: str, log_name: str) -> None:
+    if _is_port_open(port):
+        print(f"\n  🌐 웹 UI가 이미 실행 중입니다. 브라우저를 엽니다: {url}")
+        webbrowser.open_new_tab(url)
         return
 
     project_root = Path(__file__).resolve().parent.parent
-    log_path = project_root / "streamlit_web_ui.log"
+    log_path = project_root / log_name
     env = os.environ.copy()
     env.setdefault("UV_CACHE_DIR", "/tmp/uv-cache")
 
@@ -183,15 +329,15 @@ def run_web_monitor() -> None:
         "run",
         "streamlit",
         "run",
-        "app/web_ui.py",
+        app_path,
         "--server.port",
-        str(WEB_UI_PORT),
+        str(port),
         "--server.headless",
         "true",
     ]
 
-    print("\n  🚀 웹 모니터 서버를 시작합니다...")
-    print(f"  - URL: {WEB_UI_URL}")
+    print("\n  🚀 웹 UI 서버를 시작합니다...")
+    print(f"  - URL: {url}")
     print(f"  - 로그: {log_path}")
 
     try:
@@ -208,19 +354,45 @@ def run_web_monitor() -> None:
         print("  ❌ uv 명령을 찾지 못했습니다. `uv` 설치 상태를 확인해주세요.")
         return
     except Exception as exc:  # pylint: disable=broad-except
-        print(f"  ❌ 웹 모니터 실행 실패: {exc}")
+        print(f"  ❌ 웹 UI 실행 실패: {exc}")
         return
 
     for _ in range(20):
-        if _is_port_open(WEB_UI_PORT):
-            print("  ✅ 웹 모니터 준비 완료. 브라우저를 엽니다.")
-            webbrowser.open_new_tab(WEB_UI_URL)
+        if _is_port_open(port):
+            print("  ✅ 웹 UI 준비 완료. 브라우저를 엽니다.")
+            webbrowser.open_new_tab(url)
             return
         time.sleep(0.5)
 
     print("  ⚠️ 서버 시작이 지연되고 있습니다. 수동으로 URL을 열어주세요.")
-    print(f"  👉 {WEB_UI_URL}")
+    print(f"  👉 {url}")
     print(f"  💡 문제 확인: {log_path}")
+
+
+def run_web_monitor() -> None:
+    _run_streamlit_app(
+        app_path="app/web_ui.py",
+        port=WEB_UI_PORT,
+        url=WEB_UI_URL,
+        log_name="streamlit_web_ui.log",
+    )
+
+
+def run_query_web_monitor() -> None:
+    _run_streamlit_app(
+        app_path="app/web_query_pipeline_ui.py",
+        port=QUERY_WEB_UI_PORT,
+        url=QUERY_WEB_UI_URL,
+        log_name="streamlit_query_web_ui.log",
+    )
+
+def run_admin_web() -> None:
+    _run_streamlit_app(
+        app_path="app/web_admin.py",
+        port=ADMIN_WEB_UI_PORT,
+        url=ADMIN_WEB_UI_URL,
+        log_name="streamlit_admin_web_ui.log",
+    )
 
 
 def run_image_analyzer_test() -> None:
@@ -665,8 +837,6 @@ def run_query_pipeline_menu() -> None:
         print("\n  🧩 [검색어 파이프라인]")
         print("    [1] ➕ 검색어 직접 추가")
         print("    [2] 🌐 검색어 풀 브라우저 보기")
-        print("    [3] 🕘 최근 실행 기록 보기")
-        print("    [4] 🚀 검색어 실행 (수집 → 분석 → 최종저장)")
         print("    [b] ↩️ 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
 
@@ -699,33 +869,6 @@ def run_query_pipeline_menu() -> None:
         elif sub == "2":
             run_query_pool_browser_view()
 
-        elif sub == "3":
-            raw = input("  🔹 조회 개수 [기본 20]: ").strip()
-            limit = 20
-            if raw:
-                try:
-                    limit = max(1, int(raw))
-                except ValueError:
-                    print("  ⚠️ 숫자 입력이 아니어서 기본 20을 사용합니다.")
-                    limit = 20
-            with sqlite3.connect(DB_FILE) as conn:
-                init_query_pipeline_tables(conn)
-                rows = list_recent_runs(conn, limit=limit)
-            print("\n  🕘 [최근 실행]")
-            if not rows:
-                print("    (없음)")
-            else:
-                for row in rows:
-                    print(
-                        f"    - run={row['id']} | query_id={row['query_id']} | status={row['status']} "
-                        f"| images={row['analyzed_images']}/{row['total_images']} "
-                        f"| saved={row['final_saved_count']} | score={row['overall_score']:.1f}"
-                    )
-                    print(f"      q={row['query_text']}")
-
-        elif sub == "4":
-            run_query_pipeline_execute()
-
         elif sub == "b":
             break
         else:
@@ -738,48 +881,50 @@ def run_query_pool_browser_view() -> None:
     print(f"\n  ✅ 검색어 풀 브라우저 리포트 생성: {out_path}")
 
 
-def run_query_pipeline_execute() -> None:
+def _query_exec_log(logger: Callable[[str], None] | None, text: str) -> None:
+    if logger is not None:
+        logger(text)
+    else:
+        print(text)
+
+
+def execute_query_pipeline_run(
+    *,
+    mode: str = "1",
+    provider: str = "google",
+    query_limit: int = 3,
+    max_pages: int = 1,
+    max_images: int = 0,
+    pass_workers: int = 5,
+    direct_query: str | None = None,
+    open_browser_report: bool = True,
+    logger: Callable[[str], None] | None = None,
+) -> str | None:
     from app import config as app_config
     app_config.reload_dotenv()
 
     serp_key = os.getenv("SERPAPI_KEY", "").strip()
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not openai_key:
-        print("  ❌ OPENAI_API_KEY가 필요합니다.")
-        return
-
-    raw_q = input("  🔹 실행할 검색어 개수 [기본 3]: ").strip()
-    raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
-    raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
-    raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
-    print("  🔹 이미지 검색 엔진")
-    print("    [1] Google Images")
-    print("    [2] Naver Images (Official OpenAPI)")
-    print("    [3] Naver Images (Blog source only)")
-    print("    [4] Naver Shop Detail Images")
-    raw_provider = input("  선택 > ").strip()
-    if raw_provider == "2":
-        provider = "naver_official"
-    elif raw_provider == "3":
-        provider = "naver_blog"
-    elif raw_provider == "4":
-        provider = "naver_shop"
-    else:
-        provider = "google"
+        _query_exec_log(logger, "  ❌ OPENAI_API_KEY가 필요합니다.")
+        return None
 
     if provider not in ("naver_official", "naver_blog", "naver_shop") and not serp_key:
-        print("  ❌ SERPAPI_KEY가 필요합니다.")
-        return
+        _query_exec_log(logger, "  ❌ SERPAPI_KEY가 필요합니다.")
+        return None
     if provider in ("naver_official", "naver_blog", "naver_shop"):
         naver_client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
         naver_client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
         if not (naver_client_id and naver_client_secret):
-            print("  ❌ NAVER_CLIENT_ID / NAVER_CLIENT_SECRET이 필요합니다.")
-            return
-    query_limit = int(raw_q) if raw_q.isdigit() else 3
-    max_pages = int(raw_pages) if raw_pages.isdigit() else 1
-    max_images = int(raw_max_images) if raw_max_images.isdigit() else 0
-    pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
+            _query_exec_log(logger, "  ❌ NAVER_CLIENT_ID / NAVER_CLIENT_SECRET이 필요합니다.")
+            return None
+
+    mode = (mode or "1").strip()
+    provider = (provider or "google").strip()
+    query_limit = int(query_limit)
+    max_pages = int(max_pages)
+    max_images = int(max_images)
+    pass_workers = int(pass_workers)
     query_limit = max(1, query_limit)
     max_pages = max(1, min(20, max_pages))
     max_images = max(0, max_images)
@@ -787,54 +932,94 @@ def run_query_pipeline_execute() -> None:
 
     from app.query_image_benchmark import _search_images_all
 
+    reports: list[dict] = []
     with sqlite3.connect(DB_FILE) as conn:
         init_query_pipeline_tables(conn)
         conn.row_factory = sqlite3.Row
         public_food_index = _build_public_food_index(conn)
-        print("\n  📋 [실행 설정]")
-        print(f"    - provider           : {provider}")
-        print(f"    - query limit        : {query_limit}")
-        print(f"    - max pages          : {max_pages} (항상 1페이지부터 수집)")
-        print(f"    - max images/query   : {max_images if max_images > 0 else '전체'}")
-        print(f"    - pass workers       : {pass_workers}")
-        print(f"    - 공공DB 번호 인덱스    : {len(public_food_index):,}개")
-        queries = conn.execute(
-            """
-            SELECT id, query_text, query_norm, priority_score, status
-            FROM query_pool
-            WHERE status IN ('pending', 'done', 'failed')
-            ORDER BY priority_score DESC, id ASC
-            LIMIT ?
-            """,
-            (query_limit,),
-        ).fetchall()
+        _query_exec_log(logger, "\n  📋 [실행 설정]")
+        _query_exec_log(logger, f"    - provider           : {provider}")
+        _query_exec_log(logger, f"    - query limit        : {query_limit}")
+        _query_exec_log(logger, f"    - max pages          : {max_pages} (항상 1페이지부터 수집)")
+        _query_exec_log(logger, f"    - max images/query   : {max_images if max_images > 0 else '전체'}")
+        _query_exec_log(logger, f"    - pass workers       : {pass_workers}")
+        _query_exec_log(logger, f"    - 공공DB 번호 인덱스    : {len(public_food_index):,}개")
+        queries = []
+        if mode == "2":
+            if not str(direct_query or "").strip():
+                _query_exec_log(logger, "  ⚠️ 직접 입력 모드인데 검색어가 비어 있습니다.")
+                return None
+            qid = upsert_query(
+                conn,
+                str(direct_query).strip(),
+                source="manual_direct",
+                priority_score=1000.0,
+                target_segment_score=0.0,
+                status="pending",
+                notes="direct_run",
+            )
+            queries = conn.execute(
+                "SELECT id, query_text, query_norm, priority_score, status FROM query_pool WHERE id=?",
+                (qid,),
+            ).fetchall()
+        else:
+            queries = conn.execute(
+                """
+                SELECT id, query_text, query_norm, priority_score, status
+                FROM query_pool
+                WHERE status IN ('pending', 'done', 'failed')
+                ORDER BY priority_score DESC, id ASC
+                LIMIT ?
+                """,
+                (query_limit,),
+            ).fetchall()
 
         if not queries:
-            print("  ⚠️ 실행할 검색어가 없습니다.")
-            return
+            _query_exec_log(logger, "  ⚠️ 실행할 검색어가 없습니다.")
+            return None
 
-        print(f"\n  🚀 실행 시작: 대상 {len(queries)}개")
+        _query_exec_log(logger, f"\n  🚀 실행 시작: 대상 {len(queries)}개")
 
         for q in queries:
             query_id = int(q["id"])
             query_text = str(q["query_text"] or "").strip()
             query_norm = str(q["query_norm"] or "").strip()
+            query_report: dict = {
+                "query_id": query_id,
+                "query_text": query_text,
+                "provider": provider,
+                "run_id": None,
+                "status": "running",
+                "reason": "",
+                "total_images": 0,
+                "analyzed_images": 0,
+                "final_saved_count": 0,
+                "api_calls": 0,
+                "images": [],
+            }
             max_page_done = get_provider_max_page_done(
                 conn,
                 query_norm=query_norm,
                 provider=provider,
             )
             if max_pages <= max_page_done:
-                print(f"\n  ⏭️ query_id={query_id} 스킵")
-                print(f"    q={query_text}")
-                print(
+                _query_exec_log(logger, f"\n  ⏭️ query_id={query_id} 스킵")
+                _query_exec_log(logger, f"    q={query_text}")
+                _query_exec_log(
+                    logger,
                     f"    사유: provider={provider} 기준 기존 max_page_done={max_page_done} "
                     f">= 요청 max_pages={max_pages}"
                 )
+                query_report["status"] = "skipped_by_provider_max_page"
+                query_report["reason"] = (
+                    f"provider={provider}, max_page_done={max_page_done}, requested={max_pages}"
+                )
+                reports.append(query_report)
                 continue
             run_id = start_query_run(conn, query_id=query_id)
-            print(f"\n  ▶ query_id={query_id} run_id={run_id}")
-            print(f"    q={query_text}")
+            _query_exec_log(logger, f"\n  ▶ query_id={query_id} run_id={run_id}")
+            _query_exec_log(logger, f"    q={query_text}")
+            query_report["run_id"] = run_id
 
             analyzed_images = 0
             pass2b_pass_count = 0
@@ -876,7 +1061,8 @@ def run_query_pipeline_execute() -> None:
                         run_id=run_id,
                     )
 
-                print(f"    수집 이미지: {total_images}개 | pass 동시호출: {pass_workers}")
+                _query_exec_log(logger, f"    수집 이미지: {total_images}개 | pass 동시호출: {pass_workers}")
+                query_report["total_images"] = total_images
 
                 to_process: list[tuple[int, object]] = []
                 for idx, img in enumerate(images, 1):
@@ -884,7 +1070,34 @@ def run_query_pipeline_execute() -> None:
                     if cached:
                         fail_stage = str(cached["fail_stage"] or "").strip() if "fail_stage" in cached.keys() else ""
                         stage_txt = fail_stage or ("pass4" if int(cached["pass4_ok"] or 0) == 1 else "attempted")
-                        print(f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
+                        _query_exec_log(logger, f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
+                        query_report["images"].append(
+                            {
+                                "idx": idx,
+                                "url": img.url,
+                                "status": "skipped_by_existing_history",
+                                "fail_reason": f"existing_history(stage={stage_txt})",
+                                "pass1_attempted": False,
+                                "pass2a_attempted": False,
+                                "pass2b_attempted": False,
+                                "pass3_ing_attempted": False,
+                                "pass3_nut_attempted": False,
+                                "pass4_ing_attempted": False,
+                                "pass4_nut_attempted": False,
+                                "pass1_ok": None,
+                                "p2a_ok": None,
+                                "p2b_ok": None,
+                                "pass3_ok": None,
+                                "pass4_ok": None,
+                                "data_source_path": None,
+                                "nutrition_data_source": "none",
+                                "public_food_matched": False,
+                                "report_no": None,
+                                "product_name": None,
+                                "ingredients_text": None,
+                                "nutrition_text": None,
+                            }
+                        )
                         continue
                     to_process.append((idx, img))
 
@@ -1130,7 +1343,35 @@ def run_query_pipeline_execute() -> None:
                         done_count += 1
                         analyzed_images += 1
                         api_calls += int(res.get("api_calls", 0))
-                        print(f"    [{idx}/{total_images}] 완료 ({done_count}/{len(to_process)})")
+                        _query_exec_log(logger, f"    [{idx}/{total_images}] 완료 ({done_count}/{len(to_process)})")
+                        image_status = "saved" if bool(res.get("pass4_ok")) else "failed"
+                        query_report["images"].append(
+                            {
+                                "idx": idx,
+                                "url": str(res.get("url") or ""),
+                                "status": image_status,
+                                "fail_reason": str(res.get("fail_reason") or ""),
+                                "pass1_attempted": bool(res.get("pass1_attempted")),
+                                "pass2a_attempted": bool(res.get("pass2a_attempted")),
+                                "pass2b_attempted": bool(res.get("pass2b_attempted")),
+                                "pass3_ing_attempted": bool(res.get("pass3_ing_attempted")),
+                                "pass3_nut_attempted": bool(res.get("pass3_nut_attempted")),
+                                "pass4_ing_attempted": bool(res.get("pass4_ing_attempted")),
+                                "pass4_nut_attempted": bool(res.get("pass4_nut_attempted")),
+                                "pass1_ok": res.get("pass1_ok"),
+                                "p2a_ok": res.get("p2a_ok"),
+                                "p2b_ok": res.get("p2b_ok"),
+                                "pass3_ok": res.get("pass3_ok"),
+                                "pass4_ok": res.get("pass4_ok"),
+                                "data_source_path": res.get("data_source_path"),
+                                "nutrition_data_source": res.get("nutrition_data_source"),
+                                "public_food_matched": bool(res.get("public_food_matched")),
+                                "report_no": res.get("report_no"),
+                                "product_name": res.get("product_name"),
+                                "ingredients_text": res.get("ingredients_text"),
+                                "nutrition_text": res.get("nutrition_text"),
+                            }
+                        )
 
                         if not bool(res.get("pass2_ok")):
                             upsert_image_analysis_cache(
@@ -1259,12 +1500,15 @@ def run_query_pipeline_execute() -> None:
                             public_food_matched=bool(res.get("public_food_matched")),
                         )
 
-                upsert_provider_max_page_done(
-                    conn,
-                    query_norm=query_norm,
-                    provider=provider,
-                    max_page_done=max_pages,
-                )
+                if total_images > 0:
+                    upsert_provider_max_page_done(
+                        conn,
+                        query_norm=query_norm,
+                        provider=provider,
+                        max_page_done=max_pages,
+                    )
+                else:
+                    _query_exec_log(logger, "    ℹ️ 수집 0건으로 provider max_page_done은 갱신하지 않음")
                 finish_query_run(
                     conn,
                     run_id=run_id,
@@ -1276,10 +1520,16 @@ def run_query_pipeline_execute() -> None:
                     final_saved_count=final_saved_count,
                     api_calls=api_calls,
                 )
-                print(
+                _query_exec_log(
+                    logger,
                     f"    ✅ 완료: analyzed={analyzed_images}, pass2b={pass2b_pass_count}, "
                     f"pass4={pass4_pass_count}, saved={final_saved_count}"
                 )
+                query_report["status"] = "done"
+                query_report["analyzed_images"] = analyzed_images
+                query_report["final_saved_count"] = final_saved_count
+                query_report["api_calls"] = api_calls
+                reports.append(query_report)
             except Exception as exc:  # pylint: disable=broad-except
                 finish_query_run(
                     conn,
@@ -1293,7 +1543,73 @@ def run_query_pipeline_execute() -> None:
                     api_calls=api_calls,
                     error_message=str(exc),
                 )
-                print(f"    ❌ 실패: {exc}")
+                _query_exec_log(logger, f"    ❌ 실패: {exc}")
+                query_report["status"] = "failed"
+                query_report["reason"] = str(exc)
+                query_report["analyzed_images"] = analyzed_images
+                query_report["final_saved_count"] = final_saved_count
+                query_report["api_calls"] = api_calls
+                reports.append(query_report)
+
+    if not reports:
+        return None
+
+    report_path = _write_query_execution_html_report(reports)
+    _query_exec_log(logger, f"\n  🌐 실행 결과 브라우저 리포트: {report_path}")
+    if open_browser_report:
+        try:
+            webbrowser.open(report_path.resolve().as_uri())
+            _query_exec_log(logger, "  🖥️ 브라우저 자동 열기 완료")
+        except Exception as exc:  # pylint: disable=broad-except
+            _query_exec_log(logger, f"  ⚠️ 브라우저 자동 열기 실패: {exc}")
+    return str(report_path)
+
+
+def run_query_pipeline_execute() -> None:
+    print("\n  🔹 실행 대상 선택")
+    print("    [1] 검색어 풀에서 선택 실행")
+    print("    [2] 직접 검색어 입력 실행")
+    mode = input("  선택 > ").strip() or "1"
+
+    raw_q = input("  🔹 실행할 검색어 개수 [기본 3]: ").strip()
+    raw_pages = input("  🔹 최대 페이지 수 [기본 1]: ").strip()
+    raw_max_images = input("  🔹 검색어당 최대 이미지 수 [기본 전체=0]: ").strip()
+    raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
+    print("  🔹 이미지 검색 엔진")
+    print("    [1] Google Images")
+    print("    [2] Naver Images (Official OpenAPI)")
+    print("    [3] Naver Images (Blog source only)")
+    print("    [4] Naver Shop Detail Images")
+    raw_provider = input("  선택 > ").strip()
+    if raw_provider == "2":
+        provider = "naver_official"
+    elif raw_provider == "3":
+        provider = "naver_blog"
+    elif raw_provider == "4":
+        provider = "naver_shop"
+    else:
+        provider = "google"
+
+    query_limit = int(raw_q) if raw_q.isdigit() else 3
+    max_pages = int(raw_pages) if raw_pages.isdigit() else 1
+    max_images = int(raw_max_images) if raw_max_images.isdigit() else 0
+    pass_workers = int(raw_workers) if raw_workers.isdigit() else 5
+
+    direct_query = None
+    if mode == "2":
+        direct_query = input("  🔹 직접 실행할 검색어 입력: ").strip()
+
+    execute_query_pipeline_run(
+        mode=mode,
+        provider=provider,
+        query_limit=query_limit,
+        max_pages=max_pages,
+        max_images=max_images,
+        pass_workers=pass_workers,
+        direct_query=direct_query,
+        open_browser_report=True,
+        logger=None,
+    )
 
 
 def main() -> None:
@@ -1311,7 +1627,9 @@ def main() -> None:
         print("    [2] 🌐 공공 API 관리 (가공식품)")
         print("    [3] 💾 백업/복원 관리")
         print("    [4] 📊 analyze 벤치마크 도우미")
-        print("    [5] 🧩 검색어 파이프라인 관리")
+        print("    [5] 🧩 검색어 관리")
+        print("    [6] 🚀 검색어 실행 (수집 → 분석 → 최종저장)")
+        print("    [7] 🧭 브라우저 어드민 실행")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -1326,6 +1644,19 @@ def main() -> None:
             run_benchmark_menu()
         elif choice == "5":
             run_query_pipeline_menu()
+        elif choice == "6":
+            print("\n  🚀 [검색어 실행]")
+            print("    [1] 터미널에서 실행")
+            print("    [2] 브라우저 실행 UI 열기 (실시간)")
+            sub = input("  👉 선택 : ").strip().lower()
+            if sub == "1":
+                run_query_pipeline_execute()
+            elif sub == "2":
+                run_query_web_monitor()
+            else:
+                print("  ⚠️ 올바른 번호를 입력해주세요.")
+        elif choice == "7":
+            run_admin_web()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break

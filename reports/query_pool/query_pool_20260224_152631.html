@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>검색어 풀 조회</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --line: #d9e0ea;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --badge: #eef4ff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+    }
+    .wrap { max-width: 1400px; margin: 0 auto; padding: 24px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(31,41,55,0.04);
+    }
+    h1 { margin: 0 0 6px; font-size: 24px; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+    .badge {
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--badge);
+      border: 1px solid #dbe7ff;
+      font-size: 12px;
+      color: #1e3a8a;
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 10px;
+      align-items: center;
+    }
+    input, select {
+      width: 100%;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead th {
+      position: sticky; top: 0; z-index: 1;
+      background: #eef3fb;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      white-space: nowrap;
+    }
+    tbody td {
+      border-bottom: 1px solid #edf1f7;
+      padding: 8px;
+      vertical-align: top;
+    }
+    tbody tr:hover { background: #f8fbff; }
+    .num { text-align: right; white-space: nowrap; }
+    .query { min-width: 420px; }
+    .glossary { margin-top: 10px; font-size: 13px; line-height: 1.6; }
+    .glossary b { display: inline-block; min-width: 180px; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>검색어 풀 조회</h1>
+      <div class="sub">query_pool 전체를 브라우저에서 조회합니다.</div>
+      <div><strong>총 검색어:</strong> 2</div>
+      <div style="margin-top:8px;"><strong>상태 분포</strong><br><span class='badge'>pending: 2</span></div>
+      <div style="margin-top:8px;"><strong>소스 분포</strong><br><span class='badge'>manual: 1</span> <span class='badge'>manual_direct: 1</span></div>
+      <div class="glossary">
+        <div><strong>용어 설명</strong></div>
+        <div><b>pending</b>다음 실행 대상(대기열 포함)</div>
+        <div><b>paused</b>저장만 해둔 상태(실행 제외)</div>
+        <div><b>running</b>현재 실행 중</div>
+        <div><b>done</b>최근 실행 완료</div>
+        <div><b>failed</b>최근 실행 실패</div>
+        <div><b>consumer_taxonomy_seed</b>공공 API 카테고리를 소비자 검색어로 변환해 자동 적재한 소스</div>
+        <div class="muted">※ run, 마지막 실행 시각과 함께 보면 “실행 이력” 해석이 더 정확합니다.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <input id="q" type="text" placeholder="검색어/소스/상태 텍스트 검색" />
+        <select id="statusFilter">
+          <option value="">전체 상태</option>
+          <option value="pending">pending</option>
+          <option value="paused">paused</option>
+          <option value="running">running</option>
+          <option value="done">done</option>
+          <option value="failed">failed</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card" style="padding:0; overflow:auto; max-height:70vh;">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>상태</th>
+            <th>소스</th>
+            <th>점수</th>
+            <th>run</th>
+            <th>마지막 실행</th>
+            <th>검색어</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>1743</td><td>pending</td><td>manual_direct</td><td class='num'>1000.0</td><td class='num'>2</td><td>2026-02-24 06:20:07</td><td class='query'>라면 원재료명 성분표</td></tr>
+<tr><td>1742</td><td>pending</td><td>manual</td><td class='num'>0.0</td><td class='num'>0</td><td>-</td><td class='query'>b</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const sf = document.getElementById('statusFilter');
+    const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
+    function applyFilter() {
+      const text = (q.value || '').toLowerCase();
+      const st = (sf.value || '').toLowerCase();
+      rows.forEach((tr) => {
+        const t = tr.textContent.toLowerCase();
+        const statusCell = (tr.children[1]?.textContent || '').toLowerCase().trim();
+        const matchText = !text || t.includes(text);
+        const matchStatus = !st || statusCell === st;
+        tr.style.display = (matchText && matchStatus) ? '' : 'none';
+      });
+    }
+    q.addEventListener('input', applyFilter);
+    sf.addEventListener('change', applyFilter);
+  </script>
+</body>
+</html>
