@@ -30,6 +30,7 @@ QUERY_POOL_WEB_PORT = 8765
 _QUERY_POOL_SERVER_STARTED = False
 _QUERY_POOL_SERVER_LOCK = threading.Lock()
 FINAL_OUTPUTS_WEB_PORT = 8766
+_FINAL_OUTPUTS_SERVER_PORT = FINAL_OUTPUTS_WEB_PORT
 _FINAL_OUTPUTS_SERVER_STARTED = False
 _FINAL_OUTPUTS_SERVER_LOCK = threading.Lock()
 
@@ -736,6 +737,8 @@ def _fetch_final_output_rows(conn: sqlite3.Connection, limit: int = 100) -> list
           c.pass2_w, c.pass2_h, c.pass2_est_tokens, c.pass2_resized,
           c.pass3_w, c.pass3_h, c.pass3_est_tokens, c.pass3_resized,
           c.resize_policy_code, c.resize_policy_reason,
+          c.pass3_ingredients_raw, c.pass3_ingredients_corrected,
+          c.pass3_boundary_corrected, c.pass3_boundary_confidence, c.pass3_boundary_issue_codes_json,
           c.raw_pass2a, c.raw_pass2b, c.raw_pass3, c.raw_pass4
         FROM food_final f
         LEFT JOIN query_image_analysis_cache c ON c.image_url = f.source_image_url
@@ -897,6 +900,11 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
             p3resized,
             resize_code,
             resize_reason,
+            p3_ing_raw,
+            p3_ing_corrected,
+            p3_boundary_corrected,
+            p3_boundary_confidence,
+            p3_boundary_issue_codes,
             raw2a,
             raw2b,
             raw3,
@@ -923,6 +931,11 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
             f"P3 {p3w or '-'}x{p3h or '-'} tok~{p3tok or '-'} r={'Y' if p3resized else 'N'}"
         )
         policy_meta = f"{resize_code or '-'} | {str(resize_reason or '-')[:140]}"
+        pass3_boundary_meta = (
+            f"corr={'Y' if p3_boundary_corrected else 'N'}"
+            f" / conf={p3_boundary_confidence if p3_boundary_confidence is not None else '-'}"
+            f" / issue={str(p3_boundary_issue_codes or '-')[:120]}"
+        )
         trs.append(
             f"<tr data-has-pass2a='{has2a}' data-has-pass2b='{has2b}' data-has-pass3ing='{has3i}' data-has-pass3nut='{has3n}' data-has-pass4ing='{has4i}' data-has-pass4nut='{has4n}'>"
             f"<td class='id'>{int(rid)}</td>"
@@ -943,6 +956,9 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
             f"<div>영양성분 출처: <b>{html.escape(_nutrition_source_label(nut_src))}</b></div>"
             f"<div class='muted'>사이즈/토큰: {html.escape(size_meta)}</div>"
             f"<div class='muted'>정책: {html.escape(policy_meta)}</div></td>"
+            f"<td><div class='muted'>Pass3 경계교정: {html.escape(pass3_boundary_meta)}</div>"
+            f"<details class='raw-block'><summary>Pass3 원재료 RAW</summary><pre class='raw-pre'>{html.escape(str(p3_ing_raw or '-'))}</pre></details>"
+            f"<details class='raw-block'><summary>Pass3 원재료 Corrected</summary><pre class='raw-pre'>{html.escape(str(p3_ing_corrected or '-'))}</pre></details></td>"
             f"<td><div class='resetCol'><button type='button' class='mini reset-btn' data-mode='cache' data-url='{safe_url}'>캐시만 삭제</button>"
             f"<button type='button' class='mini danger reset-btn' data-mode='full' data-url='{safe_url}'>캐시+최종 산출물 삭제</button></div></td>"
             f"<td>{html.escape(str(created_at or '-'))}</td>"
@@ -1008,7 +1024,7 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
   <div class="card" style="padding:0; overflow:auto; max-height:78vh;">
     <table>
       <thead>
-        <tr><th>ID</th><th>이미지</th><th>제품명</th><th>품목보고번호</th><th>원재료(구조화)</th><th>영양성분 RAW</th><th>Pass RAW</th><th>소스</th><th>재검수</th><th>수집시각</th></tr>
+        <tr><th>ID</th><th>이미지</th><th>제품명</th><th>품목보고번호</th><th>원재료(구조화)</th><th>영양성분 RAW</th><th>Pass RAW</th><th>소스</th><th>Pass3 경계교정</th><th>재검수</th><th>수집시각</th></tr>
       </thead>
       <tbody>{body}</tbody>
     </table>
@@ -1067,7 +1083,7 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
 
 
 def _ensure_final_outputs_server() -> None:
-    global _FINAL_OUTPUTS_SERVER_STARTED
+    global _FINAL_OUTPUTS_SERVER_STARTED, _FINAL_OUTPUTS_SERVER_PORT
     with _FINAL_OUTPUTS_SERVER_LOCK:
         if _FINAL_OUTPUTS_SERVER_STARTED:
             return
@@ -1109,15 +1125,24 @@ def _ensure_final_outputs_server() -> None:
             def log_message(self, format: str, *args: Any) -> None:  # noqa: A003
                 return
 
-        server = HTTPServer(("127.0.0.1", FINAL_OUTPUTS_WEB_PORT), _FinalOutputsHandler)
-        th = threading.Thread(target=server.serve_forever, daemon=True)
-        th.start()
-        _FINAL_OUTPUTS_SERVER_STARTED = True
+        last_err: Exception | None = None
+        for port in range(FINAL_OUTPUTS_WEB_PORT, FINAL_OUTPUTS_WEB_PORT + 20):
+            try:
+                server = HTTPServer(("127.0.0.1", port), _FinalOutputsHandler)
+                th = threading.Thread(target=server.serve_forever, daemon=True)
+                th.start()
+                _FINAL_OUTPUTS_SERVER_PORT = port
+                _FINAL_OUTPUTS_SERVER_STARTED = True
+                return
+            except OSError as exc:
+                last_err = exc
+                continue
+        raise RuntimeError(f"최종 산출물 서버 포트 바인딩 실패: {last_err}")
 
 
 def open_final_outputs_browser_report() -> str:
     _ensure_final_outputs_server()
-    url = f"http://127.0.0.1:{FINAL_OUTPUTS_WEB_PORT}/"
+    url = f"http://127.0.0.1:{_FINAL_OUTPUTS_SERVER_PORT}/"
     webbrowser.open_new_tab(url)
     return url
 

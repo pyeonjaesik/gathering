@@ -409,12 +409,13 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
         return []
 
     def _render_ingredient_tree(items: list[dict]) -> str:
-        def _node_html(node: dict) -> str:
+        def _node_html(node: dict, depth: int) -> str:
             name = str(node.get("ingredient_name") or node.get("name") or "").strip() or "(이름없음)"
             amount = str(node.get("amount_ratio") or node.get("amount") or "").strip()
             origin = str(node.get("origin") or "").strip()
             origin_detail = str(node.get("origin_detail") or "").strip()
             metas: list[str] = []
+            metas.append(f"<span class='ingMeta level'>Lv{depth + 1}</span>")
             if amount:
                 metas.append(f"<span class='ingMeta'>함량 {html.escape(amount)}</span>")
             if origin:
@@ -422,22 +423,30 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             if origin_detail:
                 metas.append(f"<span class='ingMeta'>상세 {html.escape(origin_detail)}</span>")
             children = node.get("sub_ingredients")
-            children_html = ""
+            children_html = "<div class='ingChildren none'>하위 원재료 없음</div>"
             if isinstance(children, list) and children:
-                child_nodes = "".join(_node_html(ch) for ch in children if isinstance(ch, dict))
+                child_nodes = "".join(_node_html(ch, depth + 1) for ch in children if isinstance(ch, dict))
                 if child_nodes:
-                    children_html = f"<ul class='ingList'>{child_nodes}</ul>"
-            return (
-                "<li>"
-                f"<div class='ingLine'><span class='ingName'>{html.escape(name)}</span>{''.join(metas)}</div>"
-                f"{children_html}"
-                "</li>"
-            )
+                    children_html = f"<div class='ingChildren'>{child_nodes}</div>"
+                    return (
+                        f"<details class='ingNode depth-{depth}' open>"
+                        f"<summary class='ingLine'><span class='ingName'>{html.escape(name)}</span>{''.join(metas)}</summary>"
+                        f"{children_html}"
+                        f"</details>"
+                    )
+            return f"<div class='ingLeaf depth-{depth}'><div class='ingLine'><span class='ingName'>{html.escape(name)}</span>{''.join(metas)}</div></div>"
 
         if not items:
             return "<span class='small'>파싱된 원재료 구조가 없습니다.</span>"
-        body = "".join(_node_html(it) for it in items if isinstance(it, dict))
-        return f"<div class='ingSummary'>구조화 항목 {len(items)}개</div><ul class='ingList root'>{body}</ul>"
+        cards = []
+        for i, it in enumerate((x for x in items if isinstance(x, dict)), 1):
+            cards.append(
+                "<div class='ingRootCard'>"
+                f"<div class='ingRootIdx'>#{i}</div>"
+                f"{_node_html(it, 0)}"
+                "</div>"
+            )
+        return f"<div class='ingSummary'>구조화 항목 {len(cards)}개</div><div class='ingTree'>{''.join(cards)}</div>"
 
     def _format_ingredients_rich_html(raw_text: str | None) -> str:
         text = str(raw_text or "").strip()
@@ -448,9 +457,17 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             return _render_ingredient_tree(items)
         parts = [p.strip() for p in re.split(r"[,;\n]+", text) if p and p.strip()]
         if len(parts) >= 2:
-            lis = "".join(f"<li><div class='ingLine'><span class='ingName'>{html.escape(p)}</span></div></li>" for p in parts[:80])
+            cards = []
+            for i, p in enumerate(parts[:80], 1):
+                cards.append(
+                    "<div class='ingRootCard'>"
+                    f"<div class='ingRootIdx'>#{i}</div>"
+                    f"<div class='ingLeaf depth-0'><div class='ingLine'><span class='ingName'>{html.escape(p)}</span>"
+                    "<span class='ingMeta warn'>텍스트 분해</span></div></div>"
+                    "</div>"
+                )
             more = f"<div class='small'>+{len(parts)-80}개 더 있음</div>" if len(parts) > 80 else ""
-            return f"<div class='ingSummary'>텍스트 분해 {len(parts)}개</div><ul class='ingList root'>{lis}</ul>{more}"
+            return f"<div class='ingSummary'>텍스트 분해 {len(parts)}개</div><div class='ingTree'>{''.join(cards)}</div>{more}"
         return f"<code>{html.escape(text[:1200])}</code>"
 
     all_rows: list[dict] = []
@@ -498,13 +515,24 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
         ".raw{max-height:220px;overflow:auto;background:#fafafa;border:1px solid #eee;padding:6px;border-radius:6px;}"
         ".small{font-size:12px;color:#666;}"
         ".ingRaw{max-height:140px;overflow:auto;background:#fbfcfe;border:1px solid #e5e7eb;padding:6px;border-radius:6px;}"
-        ".ingPane{min-width:300px;max-width:560px;}"
-        ".ingSummary{font-size:11px;color:#4b5563;margin:4px 0 6px 0;}"
-        ".ingList{margin:0;padding-left:18px;line-height:1.45;}"
-        ".ingList.root{padding-left:16px;}"
-        ".ingLine{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}"
-        ".ingName{font-weight:700;color:#111827;}"
-        ".ingMeta{font-size:11px;background:#eef2ff;border:1px solid #dbe4ff;color:#1f3a8a;border-radius:999px;padding:1px 7px;}"
+        ".ingPane{min-width:340px;max-width:660px;}"
+        ".ingSummary{font-size:11px;color:#475569;margin:4px 0 6px 0;font-weight:700;}"
+        ".ingTree{display:grid;gap:8px;}"
+        ".ingRootCard{background:linear-gradient(180deg,#fbfdff 0%,#f8fbff 100%);border:1px solid #dbe7f7;border-radius:10px;padding:8px;}"
+        ".ingRootIdx{display:inline-block;font-size:11px;color:#0f4a8a;background:#e5efff;border:1px solid #cfe0ff;border-radius:999px;padding:1px 8px;margin-bottom:6px;font-weight:700;}"
+        ".ingNode,.ingLeaf{border-left:2px solid #dbe4ef;padding-left:8px;margin-left:2px;}"
+        ".ingNode + .ingNode,.ingLeaf + .ingNode,.ingNode + .ingLeaf,.ingLeaf + .ingLeaf{margin-top:6px;}"
+        ".ingNode summary{cursor:pointer;list-style:none;}"
+        ".ingNode summary::-webkit-details-marker{display:none;}"
+        ".ingNode summary::before{content:'▾';display:inline-block;margin-right:6px;color:#2563eb;font-weight:700;}"
+        ".ingNode:not([open]) summary::before{content:'▸';}"
+        ".ingChildren{margin:6px 0 0 8px;display:grid;gap:6px;}"
+        ".ingChildren.none{font-size:11px;color:#94a3b8;font-style:italic;}"
+        ".ingLine{display:flex;gap:6px;flex-wrap:wrap;align-items:center;line-height:1.4;}"
+        ".ingName{font-weight:800;color:#0f172a;font-size:12px;}"
+        ".ingMeta{font-size:10px;background:#eef2ff;border:1px solid #dbe4ff;color:#1f3a8a;border-radius:999px;padding:1px 7px;font-weight:700;}"
+        ".ingMeta.level{background:#e8fff4;border-color:#bef3d2;color:#0f766e;}"
+        ".ingMeta.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412;}"
         ".urlCell{display:flex;align-items:center;gap:8px;white-space:nowrap;}"
         ".copyBtn{height:28px;padding:0 10px;border:1px solid #cfd6e3;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;}"
         ".copyBtn:hover{background:#f3f6fb;}"
@@ -609,8 +637,12 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             raw2b = str(r.get("raw_pass2b") or "")
             raw3 = str(r.get("raw_pass3") or "")
             raw4 = str(r.get("raw_pass4") or "")
-            ingredients_raw = str(r.get("ingredients_text") or "")
-            ingredients_rich_html = _format_ingredients_rich_html(ingredients_raw)
+            ingredients_raw = str(r.get("ingredients_text_raw") or r.get("ingredients_text") or "")
+            ingredients_corrected = str(r.get("ingredients_text_corrected") or r.get("ingredients_text") or "")
+            boundary_corrected = bool(r.get("pass3_boundary_corrected"))
+            boundary_confidence = r.get("pass3_boundary_confidence")
+            boundary_issues = str(r.get("pass3_boundary_issue_codes_json") or "")
+            ingredients_rich_html = _format_ingredients_rich_html(ingredients_corrected or ingredients_raw)
             raw3_ing = _extract_raw_section(raw3, "[PASS3-INGREDIENTS]\n", ["[PASS3-NUTRITION]\n"])
             raw3_nut = _extract_raw_section(raw3, "[PASS3-NUTRITION]\n", [])
             if (not raw3_ing) and raw3 and ("[PASS3-" not in raw3):
@@ -666,6 +698,9 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 f"<td>{html.escape(report_no or '-')}</td>"
                 f"<td class='ingPane'>"
                 f"<details><summary>원재료 RAW {'(있음)' if ingredients_raw else '(없음)'}</summary><div class='ingRaw'><code>{html.escape(ingredients_raw or '-')}</code></div></details>"
+                f"<details><summary>원재료 Corrected {'(있음)' if ingredients_corrected else '(없음)'}</summary><div class='ingRaw'><code>{html.escape(ingredients_corrected or '-')}</code></div></details>"
+                f"<div class='small'>Pass3 경계교정: {'Y' if boundary_corrected else 'N'} | conf: {html.escape(str(boundary_confidence if boundary_confidence is not None else '-'))}</div>"
+                f"<div class='small'>issue: {html.escape(boundary_issues[:200] if boundary_issues else '-')}</div>"
                 f"{ingredients_rich_html}"
                 f"</td>"
                 f"<td>제품명: <b>{html.escape(product_source)}</b><br>영양성분: <b>{html.escape(str(nutrition_source_label or '-'))}</b></td>"
@@ -1497,6 +1532,110 @@ def _estimate_vision_tokens(width: int | None, height: int | None) -> int | None
     return max(1, int(round(pixels / 1024.0)))
 
 
+def _correct_ingredients_boundaries(raw_text: str | None) -> dict[str, Any]:
+    """
+    Pass3 원재료 문자열의 괄호/경계 오독을 완화한다.
+    - top-level 콤마 기준 분리
+    - 괄호 불균형 진단
+    - `), <재료명>[` 패턴에서 상위 항목 강제 분리
+    """
+    text = str(raw_text or "").strip()
+    if not text:
+        return {
+            "corrected_text": "",
+            "boundary_corrected": False,
+            "boundary_confidence": 100,
+            "issue_codes": [],
+            "actions": [],
+        }
+    text = (
+        text.replace("（", "(").replace("）", ")")
+        .replace("［", "[").replace("］", "]")
+        .replace("｛", "{").replace("｝", "}")
+    )
+    issue_codes: list[str] = []
+    actions: list[str] = []
+    items: list[str] = []
+    buf: list[str] = []
+    round_depth = 0
+    square_depth = 0
+
+    def _flush() -> None:
+        token = "".join(buf).strip(" ,")
+        buf.clear()
+        if token:
+            items.append(re.sub(r"\s+", " ", token).strip())
+
+    for i, ch in enumerate(text):
+        if ch == "(":
+            round_depth += 1
+            buf.append(ch)
+            continue
+        if ch == "[":
+            square_depth += 1
+            buf.append(ch)
+            continue
+        if ch == ")":
+            if round_depth > 0:
+                round_depth -= 1
+            elif square_depth > 0:
+                # 교차 닫힘: square를 닫고 이슈 기록
+                square_depth -= 1
+                issue_codes.append("cross_closer_paren")
+            else:
+                issue_codes.append("unexpected_closer_paren")
+            buf.append(ch)
+            continue
+        if ch == "]":
+            if square_depth > 0:
+                square_depth -= 1
+            elif round_depth > 0:
+                round_depth -= 1
+                issue_codes.append("cross_closer_square")
+            else:
+                issue_codes.append("unexpected_closer_square")
+            buf.append(ch)
+            continue
+        if ch == ",":
+            nxt = text[i + 1:].lstrip()
+            is_top = (round_depth == 0 and square_depth == 0)
+            forced_split = False
+            if (not is_top) and square_depth == 0 and round_depth > 0:
+                # 예: "...), 코코아가공품[...]" -> sibling 분리
+                if re.match(r"^[A-Za-z가-힣0-9][^,\[\]\(\)]{0,40}\[", nxt):
+                    forced_split = True
+                    actions.append("forced_split_after_comma_before_bracket_item")
+                    issue_codes.append("missing_closer_paren_recovered")
+                    if round_depth > 0:
+                        buf.append(")" * round_depth)
+                    round_depth = 0
+            if is_top or forced_split:
+                _flush()
+                continue
+            buf.append(ch)
+            continue
+        buf.append(ch)
+    _flush()
+
+    if round_depth > 0:
+        issue_codes.append("missing_closer_paren")
+    if square_depth > 0:
+        issue_codes.append("missing_closer_square")
+
+    corrected = ", ".join(x for x in items if x)
+    corrected = re.sub(r"\s+,", ",", corrected).strip(" ,")
+    boundary_corrected = corrected != text or bool(issue_codes) or bool(actions)
+    confidence = 100 - (len(issue_codes) * 12) - (len(actions) * 8)
+    confidence = max(0, min(100, confidence))
+    return {
+        "corrected_text": corrected or text,
+        "boundary_corrected": boundary_corrected,
+        "boundary_confidence": confidence,
+        "issue_codes": sorted(set(issue_codes)),
+        "actions": actions,
+    }
+
+
 def _resize_image_to_target_tokens(
     image_bytes: bytes,
     mime_type: str | None,
@@ -2117,6 +2256,11 @@ def execute_query_pipeline_run(
                         "report_no_candidates": None,
                         "report_no_selected_from": None,
                         "ingredients_text": None,
+                        "ingredients_text_raw": None,
+                        "ingredients_text_corrected": None,
+                        "pass3_boundary_corrected": False,
+                        "pass3_boundary_confidence": None,
+                        "pass3_boundary_issue_codes_json": None,
                         "nutrition_text": None,
                         "data_source_path": None,
                         "nutrition_data_source": "none",
@@ -2342,6 +2486,8 @@ def execute_query_pipeline_run(
                         )
                     result["api_calls"] += 1
                     raw_pass3_ing = pass3_ing.get("raw_model_text_pass3")
+                    # Pass3 조기 차단 시에도 리포트에서 RAW를 확인할 수 있도록 즉시 보관한다.
+                    result["raw_pass3"] = raw_pass3_ing
                     pass3_err = str(pass3_ing.get("error") or "").strip()
                     if pass3_err:
                         result["fail_stage"] = "pass3"
@@ -2350,6 +2496,10 @@ def execute_query_pipeline_run(
 
                     product_name = (pass3_ing.get("product_name_in_image") or "").strip()
                     report_raw = (pass3_ing.get("product_report_number") or "").strip()
+                    ingredients_complete_flag = bool(pass3_ing.get("ingredients_complete"))
+                    report_number_complete_flag = bool(pass3_ing.get("report_number_complete"))
+                    has_report_label_flag = bool(pass3_ing.get("has_report_label"))
+                    product_name_complete_flag = bool(pass3_ing.get("product_name_complete"))
                     report_candidates = _extract_report_no_candidates(report_raw)
                     selected_report_no, public_row, selected_reason = _select_best_report_candidate(
                         report_candidates=report_candidates,
@@ -2357,6 +2507,19 @@ def execute_query_pipeline_run(
                     )
                     ingredients_text = (pass3_ing.get("ingredients_text") or "").strip()
                     ingredients_evidence_text = (pass3_ing.get("ingredients_evidence_text") or "").strip()
+                    boundary_fix = _correct_ingredients_boundaries(ingredients_text)
+                    ingredients_text_corrected = str(boundary_fix.get("corrected_text") or ingredients_text).strip()
+                    result["ingredients_text_raw"] = ingredients_text
+                    result["ingredients_text_corrected"] = ingredients_text_corrected
+                    result["pass3_boundary_corrected"] = bool(boundary_fix.get("boundary_corrected"))
+                    result["pass3_boundary_confidence"] = int(boundary_fix.get("boundary_confidence") or 0)
+                    result["pass3_boundary_issue_codes_json"] = json.dumps(
+                        {
+                            "issues": boundary_fix.get("issue_codes") or [],
+                            "actions": boundary_fix.get("actions") or [],
+                        },
+                        ensure_ascii=False,
+                    )
                     validation = _validate_pass3_ingredients_verbatim(
                         ingredients_text=ingredients_text,
                         evidence_text=ingredients_evidence_text,
@@ -2371,7 +2534,21 @@ def execute_query_pipeline_run(
                     nutrition_text = None
                     if not ingredients_text:
                         result["fail_stage"] = "pass3"
-                        result["fail_reason"] = "required_fields_missing(ingredients)"
+                        guard_issues = pass3_ing.get("pass3_guard_issues") or []
+                        if isinstance(guard_issues, list) and guard_issues:
+                            result["fail_reason"] = "required_fields_missing(ingredients)|" + ",".join(
+                                str(x) for x in guard_issues
+                            )
+                        else:
+                            result["fail_reason"] = "required_fields_missing(ingredients)"
+                        return result
+                    if not ingredients_complete_flag:
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = "pass3_incomplete_ingredients"
+                        return result
+                    if (not has_report_label_flag) or (not report_number_complete_flag):
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = "pass3_incomplete_report_number_or_label"
                         return result
                     report_no = selected_report_no
                     public_complete = bool(
@@ -2396,7 +2573,7 @@ def execute_query_pipeline_run(
                             result["fail_stage"] = "pass2b"
                             result["fail_reason"] = "case_b_requires_product_and_nutrition_at_pass2b"
                             return result
-                        if not product_name:
+                        if (not product_name) or (not product_name_complete_flag):
                             result["fail_stage"] = "pass3"
                             result["fail_reason"] = "case_b_requires_product_name_at_pass3_ingredients"
                             return result
@@ -2506,12 +2683,13 @@ def execute_query_pipeline_run(
                         result["nutrition_text"] = nutrition_text
                         result["nutrition_data_source"] = "image_pass4"
                     result["report_no"] = report_no
-                    result["ingredients_text"] = ingredients_text
+                    result["ingredients_text"] = ingredients_text_corrected or ingredients_text
 
                     result["pass4_ing_attempted"] = True
                     result["pass4_nut_attempted"] = bool((not public_complete) and nutrition_text)
                     dash.on_slot_stage(slot_id, idx, img_url, "PASS4", "parse")
                     pass3_for_pass4 = dict(pass3_ing)
+                    pass3_for_pass4["ingredients_text"] = ingredients_text_corrected or ingredients_text
                     pass3_for_pass4["product_report_number"] = report_no
                     if public_complete:
                         # Case A: 영양성분은 공공DB 사용, Pass4 영양 파싱 호출 차단
@@ -2697,6 +2875,11 @@ def execute_query_pipeline_run(
                                 "report_no_selected_from": res.get("report_no_selected_from"),
                                 "product_name": res.get("product_name"),
                                 "ingredients_text": res.get("ingredients_text"),
+                                "ingredients_text_raw": res.get("ingredients_text_raw"),
+                                "ingredients_text_corrected": res.get("ingredients_text_corrected"),
+                                "pass3_boundary_corrected": bool(res.get("pass3_boundary_corrected")),
+                                "pass3_boundary_confidence": res.get("pass3_boundary_confidence"),
+                                "pass3_boundary_issue_codes_json": res.get("pass3_boundary_issue_codes_json"),
                                 "nutrition_text": res.get("nutrition_text"),
                                 "raw_pass2a": res.get("raw_pass2a"),
                                 "raw_pass2b": res.get("raw_pass2b"),
@@ -2759,6 +2942,11 @@ def execute_query_pipeline_run(
                                 resize_policy_code=res.get("resize_policy_code"),
                                 resize_policy_reason=res.get("resize_policy_reason"),
                                 resize_trace_json=res.get("resize_trace_json"),
+                                pass3_ingredients_raw=res.get("ingredients_text_raw"),
+                                pass3_ingredients_corrected=res.get("ingredients_text_corrected"),
+                                pass3_boundary_corrected=bool(res.get("pass3_boundary_corrected")),
+                                pass3_boundary_confidence=res.get("pass3_boundary_confidence"),
+                                pass3_boundary_issue_codes_json=res.get("pass3_boundary_issue_codes_json"),
                             )
                             continue
 
@@ -2804,6 +2992,11 @@ def execute_query_pipeline_run(
                                 resize_policy_code=res.get("resize_policy_code"),
                                 resize_policy_reason=res.get("resize_policy_reason"),
                                 resize_trace_json=res.get("resize_trace_json"),
+                                pass3_ingredients_raw=res.get("ingredients_text_raw"),
+                                pass3_ingredients_corrected=res.get("ingredients_text_corrected"),
+                                pass3_boundary_corrected=bool(res.get("pass3_boundary_corrected")),
+                                pass3_boundary_confidence=res.get("pass3_boundary_confidence"),
+                                pass3_boundary_issue_codes_json=res.get("pass3_boundary_issue_codes_json"),
                             )
                             continue
 
@@ -2848,6 +3041,11 @@ def execute_query_pipeline_run(
                                 resize_policy_code=res.get("resize_policy_code"),
                                 resize_policy_reason=res.get("resize_policy_reason"),
                                 resize_trace_json=res.get("resize_trace_json"),
+                                pass3_ingredients_raw=res.get("ingredients_text_raw"),
+                                pass3_ingredients_corrected=res.get("ingredients_text_corrected"),
+                                pass3_boundary_corrected=bool(res.get("pass3_boundary_corrected")),
+                                pass3_boundary_confidence=res.get("pass3_boundary_confidence"),
+                                pass3_boundary_issue_codes_json=res.get("pass3_boundary_issue_codes_json"),
                             )
                             continue
 
@@ -2907,6 +3105,11 @@ def execute_query_pipeline_run(
                             resize_policy_code=res.get("resize_policy_code"),
                             resize_policy_reason=res.get("resize_policy_reason"),
                             resize_trace_json=res.get("resize_trace_json"),
+                            pass3_ingredients_raw=res.get("ingredients_text_raw"),
+                            pass3_ingredients_corrected=res.get("ingredients_text_corrected"),
+                            pass3_boundary_corrected=bool(res.get("pass3_boundary_corrected")),
+                            pass3_boundary_confidence=res.get("pass3_boundary_confidence"),
+                            pass3_boundary_issue_codes_json=res.get("pass3_boundary_issue_codes_json"),
                         )
 
                 if total_images > 0:

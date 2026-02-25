@@ -20,6 +20,14 @@
   - 내부 텍스트를 ingredient_name으로 올리지 말고 sub_ingredients로 유지
   - 상위 항목명이 불명확하면 ingredient_name=null 처리
 - 원산지는 origin(상위 분류) / origin_detail(상세)로 분리
+- "N종" 표기 규칙:
+  - "코코아분말 2종", "산도조절제 2종"처럼 `원재료명 + N종` 형태면
+    - ingredient_name(또는 name)은 "코코아분말", "산도조절제"처럼 기본명만 기록
+    - amount는 "2종"으로 기록
+    - "2종"을 하위노드 2개로 분해하지 말 것
+  - 구성 성분이 원문에 실제로 적혀있지 않으면 name=null 노드 생성 금지
+- 부모와 이름이 완전히 같은 의미 없는 하위노드 생성 금지
+  - 예: 코코아분말 -> sub_ingredients:[{name:"코코아분말"}] (금지)
 
 용어 정의(중요):
 - "승격" = 괄호/대괄호/중괄호 내부의 하위 설명 텍스트를 메인 ingredient_name으로 올리는 것
@@ -32,6 +40,7 @@
   - origin_detail="미국산, 호주산"
   - name=null인 하위 노드를 만들지 마세요.
 - 이름 없는 노드(name=null)는 생성하지 마세요.
+- 루트 항목도 ingredient_name=null로 만들지 마세요. (애매하면 해당 조각은 ignored_fragments로 이동)
 - 콜론(:) 뒤가 전부 원산지/원산지 나열이면, 이를 하위항목으로 분해하지 말고 동일 노드의 origin/origin_detail로 귀속하세요.
 - 특히 "밀:미국산, 호주산"은 아래처럼 해석합니다:
   - name="밀"
@@ -58,13 +67,13 @@
 {
   "ingredients_items": [
     {
-      "ingredient_name": "문자열 또는 null",
+      "ingredient_name": "문자열(필수)",
       "origin": "문자열 또는 null",
       "origin_detail": "문자열 또는 null",
       "amount": "문자열 또는 null",
       "sub_ingredients": [
         {
-          "name": "문자열 또는 null",
+          "name": "문자열(필수)",
           "origin": "문자열 또는 null",
           "origin_detail": "문자열 또는 null",
           "amount": "문자열 또는 null",

@@ -1,0 +1,211 @@
+<!doctype html><html lang='ko'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>파이프라인 실행 결과 리포트</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}.wrap{max-width:1600px;margin:0 auto;}.top,.flt,.q{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:12px;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}.kpi .v{font-size:24px;font-weight:800;}.meta{font-size:13px;color:#555;margin:2px 0;}.ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe4ff;font-size:11px;margin-right:6px;}.ctrl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ctrl input,.ctrl select{height:34px;border:1px solid #d1d5db;border-radius:8px;padding:0 10px;font-size:13px;}table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px;background:#fff;}th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}th{background:#f3f4f6;position:sticky;top:0;z-index:1;}.img{width:88px;height:88px;object-fit:cover;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:2px;}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;font-size:11px;}details{margin-top:4px;}.raw{max-height:220px;overflow:auto;background:#fafafa;border:1px solid #eee;padding:6px;border-radius:6px;}.small{font-size:12px;color:#666;}.ingRaw{max-height:140px;overflow:auto;background:#fbfcfe;border:1px solid #e5e7eb;padding:6px;border-radius:6px;}.ingPane{min-width:340px;max-width:660px;}.ingSummary{font-size:11px;color:#475569;margin:4px 0 6px 0;font-weight:700;}.ingTree{display:grid;gap:8px;}.ingRootCard{background:linear-gradient(180deg,#fbfdff 0%,#f8fbff 100%);border:1px solid #dbe7f7;border-radius:10px;padding:8px;}.ingRootIdx{display:inline-block;font-size:11px;color:#0f4a8a;background:#e5efff;border:1px solid #cfe0ff;border-radius:999px;padding:1px 8px;margin-bottom:6px;font-weight:700;}.ingNode,.ingLeaf{border-left:2px solid #dbe4ef;padding-left:8px;margin-left:2px;}.ingNode + .ingNode,.ingLeaf + .ingNode,.ingNode + .ingLeaf,.ingLeaf + .ingLeaf{margin-top:6px;}.ingNode summary{cursor:pointer;list-style:none;}.ingNode summary::-webkit-details-marker{display:none;}.ingNode summary::before{content:'▾';display:inline-block;margin-right:6px;color:#2563eb;font-weight:700;}.ingNode:not([open]) summary::before{content:'▸';}.ingChildren{margin:6px 0 0 8px;display:grid;gap:6px;}.ingChildren.none{font-size:11px;color:#94a3b8;font-style:italic;}.ingLine{display:flex;gap:6px;flex-wrap:wrap;align-items:center;line-height:1.4;}.ingName{font-weight:800;color:#0f172a;font-size:12px;}.ingMeta{font-size:10px;background:#eef2ff;border:1px solid #dbe4ff;color:#1f3a8a;border-radius:999px;padding:1px 7px;font-weight:700;}.ingMeta.level{background:#e8fff4;border-color:#bef3d2;color:#0f766e;}.ingMeta.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412;}.urlCell{display:flex;align-items:center;gap:8px;white-space:nowrap;}.copyBtn{height:28px;padding:0 10px;border:1px solid #cfd6e3;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;}.copyBtn:hover{background:#f3f6fb;}</style>
+</head><body><div class='wrap'>
+<div class='top'>
+<h2 style='margin:0 0 8px 0;'>파이프라인 실행 결과 리포트</h2>
+<div class='meta'>생성시각: 2026-02-25 17:23:54</div>
+</div>
+<div class='grid'>
+<div class='kpi'><div>검색어</div><div class='v'>1</div></div>
+<div class='kpi'><div>수집 이미지</div><div class='v'>100</div></div>
+<div class='kpi'><div>분석 시도</div><div class='v'>2</div></div>
+<div class='kpi'><div>최종 저장</div><div class='v'>1</div></div>
+<div class='kpi'><div>API 호출</div><div class='v'>4</div></div>
+</div>
+<div class='flt'>
+<div class='ctrl'>
+<label>검색: <input id='qFilter' type='text' placeholder='query/url/사유/번호' /></label>
+<label>Pass 필터: <select id='passFilter'><option value='all'>전체</option><option value='processed'>이번 실행 검수만</option><option value='2a'>Pass2A 통과</option><option value='2b'>Pass2B 통과</option><option value='3ing'>Pass3-ING 통과</option><option value='3nut'>Pass3-NUT 통과</option><option value='4ing'>Pass4-ING 통과</option><option value='4nut'>Pass4-NUT 통과</option><option value='fail'>실패만</option><option value='saved'>저장만</option></select></label>
+<label>Raw 보기: <select id='rawFilter'><option value='all'>전체</option><option value='none'>숨김</option><option value='2a'>Pass2A</option><option value='2b'>Pass2B</option><option value='3ing'>Pass3-ING</option><option value='3nut'>Pass3-NUT</option><option value='4ing'>Pass4-ING</option><option value='4nut'>Pass4-NUT</option></select></label>
+</div>
+<div class='small' style='margin-top:8px;'>Pass1+ 2 | Pass2+ 1 | Pass3+ 1 | Pass4 1</div>
+</div>
+<div class='q'>
+<h3 style='margin:0 0 6px 0;'>시리얼 원재료성분</h3>
+<div class='meta'><span class='badge'>provider: google</span><span class='badge'>run_id: 31</span><span class='badge'>status: <span class='ok'>done</span></span></div>
+<div class='meta'>total=100, analyzed=2, saved=1, api_calls=4</div>
+<table><thead><tr><th>No</th><th>이미지</th><th>해상도/토큰</th><th>결과</th><th>Pass</th><th>사유</th><th>제품명</th><th>품목보고번호</th><th>원재료 RAW+파싱</th><th>출처</th><th>Raw</th></tr></thead><tbody>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='1' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>94</td><td><img class='img' src='https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/360f743e-787c-4cb2-b456-ac33382c4da8/500x500.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/360f743e-787c-4cb2-b456-ac33382c4da8/500x500.jpg'>URL 복사</button><span class='small'>lottemartzetta.com</span></div></td><td>원본: <b>500x500</b> / tok~<b>244</b><br>P2: <b>500x500</b> / tok~<b>244</b> / resized=N<br>P3: <b>500x500</b> / tok~<b>244</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:❌ P3:❌ P4:❌</td><td><code>missing_ingredients_section|missing_report_label|ai_skip:missing_ingredients_section,missing_report_label</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: false,
+  &quot;has_report_number_label&quot;: false,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: false
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='4' data-status='saved' data-p2a='1' data-p2b='1' data-p3ing='1' data-p3nut='0' data-p4ing='1' data-p4nut='0'><td>89</td><td><img class='img' src='http://image3.exponet.co.kr/images3/228/L291/8441/L2918441_1002.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://image3.exponet.co.kr/images3/228/L291/8441/L2918441_1002.jpg'>URL 복사</button><span class='small'>image3.exponet.co.kr</span></div></td><td>원본: <b>860x713</b> / tok~<b>599</b><br>P2: <b>768x637</b> / tok~<b>478</b> / resized=Y<br>P3: <b>860x713</b> / tok~<b>599</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>saved</td><td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td><td><code>-</code></td><td>씨리얼초코</td><td>1994048423965</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코</code></div></details><div class='small'>Pass3 경계교정: Y | conf: 76</div><div class='small'>issue: {&quot;issues&quot;: [&quot;missing_closer_paren&quot;, &quot;missing_closer_square&quot;], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 3개</div><div class='ingTree'><div class='ingRootCard'><div class='ingRootIdx'>#1</div><div class='ingLeaf depth-0'><div class='ingLine'><span class='ingName'>준초콜릿[설탕</span><span class='ingMeta warn'>텍스트 분해</span></div></div></div><div class='ingRootCard'><div class='ingRootIdx'>#2</div><div class='ingLeaf depth-0'><div class='ingLine'><span class='ingName'>쇼트닝(가공유지(팜핵에스테르화유:말레이시아산))</span><span class='ingMeta warn'>텍스트 분해</span></div></div></div><div class='ingRootCard'><div class='ingRootIdx'>#3</div><div class='ingLeaf depth-0'><div class='ingLine'><span class='ingName'>코코아매스(코</span><span class='ingMeta warn'>텍스트 분해</span></div></div></div></div></td><td>제품명: <b>공공DB</b><br>영양성분: <b>공공DB</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;product_report_number&quot;: &quot;1994048423965&quot;,
+  &quot;ingredients_text&quot;: &quot;준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코&quot;,
+  &quot;ingredients_evidence_text&quot;: &quot;원재료명 준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코&quot;,
+  &quot;allergen_text&quot;: null,
+  &quot;product_name_in_image&quot;: &quot;씨리얼 초코&quot;,
+  &quot;ingredients_complete&quot;: false,
+  &quot;report_number_complete&quot;: true,
+  &quot;product_name_complete&quot;: false,
+  &quot;has_report_label&quot;: true
+}</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (있음)</summary><div class='raw'><code>(skipped_by_pass2_no_nutrition)</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;준초콜릿&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;설탕&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;쇼트닝&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;가공유지&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: [
+                {
+                  &quot;name&quot;: &quot;팜핵에스테르화유&quot;,
+                  &quot;origin&quot;: null,
+                  &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+                  &quot;amount&quot;: null,
+                  &quot;sub_ingredients&quot;: []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;코코아매스&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    }
+  ],
+  &quot;ignored_fragments&quot;: []
+}</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+</tbody></table></div>
+
+<script>
+(() => {
+  const qInput = document.getElementById('qFilter');
+  const passSel = document.getElementById('passFilter');
+  const rawSel = document.getElementById('rawFilter');
+  const rows = Array.from(document.querySelectorAll('tr.rowItem'));
+
+  function passMatch(row, passVal) {
+    const level = parseInt(row.dataset.pass || "0", 10);
+    const status = (row.dataset.status || "").toLowerCase();
+    const p2a = row.dataset.p2a === '1';
+    const p2b = row.dataset.p2b === '1';
+    const p3ing = row.dataset.p3ing === '1';
+    const p3nut = row.dataset.p3nut === '1';
+    const p4ing = row.dataset.p4ing === '1';
+    const p4nut = row.dataset.p4nut === '1';
+    if (passVal === 'all') return true;
+    if (passVal === 'processed') return status !== 'skipped_by_existing_history';
+    if (passVal === '2a') return p2a;
+    if (passVal === '2b') return p2b;
+    if (passVal === '3ing') return p3ing;
+    if (passVal === '3nut') return p3nut;
+    if (passVal === '4ing') return p4ing;
+    if (passVal === '4nut') return p4nut;
+    if (passVal === 'fail') return status !== 'saved';
+    if (passVal === 'saved') return status === 'saved';
+    const need = parseInt(passVal, 10);
+    if (Number.isNaN(need)) return true;
+    return level >= need;
+  }
+
+  function textMatch(row, q) {
+    if (!q) return true;
+    const txt = (row.textContent || "").toLowerCase();
+    return txt.includes(q);
+  }
+
+  function rawToggle(mode) {
+    const all = Array.from(document.querySelectorAll('.rawBlock'));
+    if (mode === 'all') {
+      all.forEach(el => { el.style.display = 'block'; });
+      return;
+    }
+    all.forEach(el => { el.style.display = 'none'; });
+    if (mode === 'none') return;
+    const show = Array.from(document.querySelectorAll('.raw' + mode));
+    show.forEach(el => { el.style.display = 'block'; });
+  }
+
+  function apply() {
+    const q = (qInput.value || '').toLowerCase().trim();
+    const passVal = passSel.value;
+    rows.forEach(row => {
+      const ok = passMatch(row, passVal) && textMatch(row, q);
+      row.style.display = ok ? '' : 'none';
+    });
+    rawToggle(rawSel.value);
+  }
+
+  qInput.addEventListener('input', apply);
+  passSel.addEventListener('change', apply);
+  rawSel.addEventListener('change', apply);
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copyBtn');
+    if (!btn) return;
+    const url = btn.getAttribute('data-url') || '';
+    try {
+      await navigator.clipboard.writeText(url);
+      const prev = btn.textContent;
+      btn.textContent = '복사됨';
+      setTimeout(() => { btn.textContent = prev || 'URL 복사'; }, 900);
+    } catch (_) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  });
+  apply();
+})();
+</script>
+
+</div></body></html>

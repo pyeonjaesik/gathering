@@ -1,0 +1,1263 @@
+<!doctype html><html lang='ko'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>파이프라인 실행 결과 리포트</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#111;margin:24px;}.wrap{max-width:1600px;margin:0 auto;}.top,.flt,.q{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px;margin-bottom:12px;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;}.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px;}.kpi .v{font-size:24px;font-weight:800;}.meta{font-size:13px;color:#555;margin:2px 0;}.ok{color:#0a7f2e;font-weight:700;}.bad{color:#c21f39;font-weight:700;}.skip{color:#6b7280;font-weight:700;}.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe4ff;font-size:11px;margin-right:6px;}.ctrl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ctrl input,.ctrl select{height:34px;border:1px solid #d1d5db;border-radius:8px;padding:0 10px;font-size:13px;}table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px;background:#fff;}th,td{border:1px solid #e5e7eb;padding:8px;vertical-align:top;text-align:left;}th{background:#f3f4f6;position:sticky;top:0;z-index:1;}.img{width:88px;height:88px;object-fit:cover;border:1px solid #e5e7eb;border-radius:8px;background:#fafafa;padding:2px;}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;font-size:11px;}details{margin-top:4px;}.raw{max-height:220px;overflow:auto;background:#fafafa;border:1px solid #eee;padding:6px;border-radius:6px;}.small{font-size:12px;color:#666;}.ingRaw{max-height:140px;overflow:auto;background:#fbfcfe;border:1px solid #e5e7eb;padding:6px;border-radius:6px;}.ingPane{min-width:300px;max-width:560px;}.ingSummary{font-size:11px;color:#4b5563;margin:4px 0 6px 0;}.ingList{margin:0;padding-left:18px;line-height:1.45;}.ingList.root{padding-left:16px;}.ingLine{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}.ingName{font-weight:700;color:#111827;}.ingMeta{font-size:11px;background:#eef2ff;border:1px solid #dbe4ff;color:#1f3a8a;border-radius:999px;padding:1px 7px;}.urlCell{display:flex;align-items:center;gap:8px;white-space:nowrap;}.copyBtn{height:28px;padding:0 10px;border:1px solid #cfd6e3;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;}.copyBtn:hover{background:#f3f6fb;}</style>
+</head><body><div class='wrap'>
+<div class='top'>
+<h2 style='margin:0 0 8px 0;'>파이프라인 실행 결과 리포트</h2>
+<div class='meta'>생성시각: 2026-02-25 17:08:25</div>
+</div>
+<div class='grid'>
+<div class='kpi'><div>검색어</div><div class='v'>1</div></div>
+<div class='kpi'><div>수집 이미지</div><div class='v'>100</div></div>
+<div class='kpi'><div>분석 시도</div><div class='v'>25</div></div>
+<div class='kpi'><div>최종 저장</div><div class='v'>4</div></div>
+<div class='kpi'><div>API 호출</div><div class='v'>31</div></div>
+</div>
+<div class='flt'>
+<div class='ctrl'>
+<label>검색: <input id='qFilter' type='text' placeholder='query/url/사유/번호' /></label>
+<label>Pass 필터: <select id='passFilter'><option value='all'>전체</option><option value='processed'>이번 실행 검수만</option><option value='2a'>Pass2A 통과</option><option value='2b'>Pass2B 통과</option><option value='3ing'>Pass3-ING 통과</option><option value='3nut'>Pass3-NUT 통과</option><option value='4ing'>Pass4-ING 통과</option><option value='4nut'>Pass4-NUT 통과</option><option value='fail'>실패만</option><option value='saved'>저장만</option></select></label>
+<label>Raw 보기: <select id='rawFilter'><option value='all'>전체</option><option value='none'>숨김</option><option value='2a'>Pass2A</option><option value='2b'>Pass2B</option><option value='3ing'>Pass3-ING</option><option value='3nut'>Pass3-NUT</option><option value='4ing'>Pass4-ING</option><option value='4nut'>Pass4-NUT</option></select></label>
+</div>
+<div class='small' style='margin-top:8px;'>Pass1+ 21 | Pass2+ 5 | Pass3+ 4 | Pass4 4</div>
+</div>
+<div class='q'>
+<h3 style='margin:0 0 6px 0;'>시리얼 원재료성분</h3>
+<div class='meta'><span class='badge'>provider: google</span><span class='badge'>run_id: 30</span><span class='badge'>status: <span class='ok'>done</span></span></div>
+<div class='meta'>total=100, analyzed=25, saved=4, api_calls=31</div>
+<table><thead><tr><th>No</th><th>이미지</th><th>해상도/토큰</th><th>결과</th><th>Pass</th><th>사유</th><th>제품명</th><th>품목보고번호</th><th>원재료 RAW+파싱</th><th>출처</th><th>Raw</th></tr></thead><tbody>
+<tr class='rowItem' data-pass='0' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>59</td><td><img class='img' src='https://www.dnmart.co.kr/attach/cont_img_3/0_8801083381329_cont.gif' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://www.dnmart.co.kr/attach/cont_img_3/0_8801083381329_cont.gif'>URL 복사</button><span class='small'>www.dnmart.co.kr</span></div></td><td>원본: <b>-x-</b> / tok~<b>-</b><br>P2: <b>-x-</b> / tok~<b>-</b> / resized=N<br>P3: <b>-x-</b> / tok~<b>-</b> / resized=N<br><span class='small'>policy: ok | -</span></td><td>failed</td><td>P1:❌ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>image download error: HTTPSConnectionPool(host=&#x27;www.dnmart.co.kr&#x27;, port=443): Max retries exceeded with url: /attach/cont_img_3/0_8801083381329_cont.gif (Caused by SSLError(SSLError(1, &#x27;[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)&#x27;)))</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='0' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>82</td><td><img class='img' src='https://blog.kakaocdn.net/dna/QgPLU/btrpu6Wwshg/AAAAAAAAAAAAAAAAAAAAAM8DU7IPg7ceoaLjfvGrJcrm5AdTT4DkG9Ax8lbmMmKe/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1772290799&amp;allow_ip=&amp;allow_referer=&amp;signature=yq58rh%2BUoEomTGTCfpXM8KXwkYM%3D' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://blog.kakaocdn.net/dna/QgPLU/btrpu6Wwshg/AAAAAAAAAAAAAAAAAAAAAM8DU7IPg7ceoaLjfvGrJcrm5AdTT4DkG9Ax8lbmMmKe/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1772290799&amp;allow_ip=&amp;allow_referer=&amp;signature=yq58rh%2BUoEomTGTCfpXM8KXwkYM%3D'>URL 복사</button><span class='small'>blog.kakaocdn.net</span></div></td><td>원본: <b>-x-</b> / tok~<b>-</b><br>P2: <b>-x-</b> / tok~<b>-</b> / resized=N<br>P3: <b>-x-</b> / tok~<b>-</b> / resized=N<br><span class='small'>policy: ok | -</span></td><td>failed</td><td>P1:❌ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>image download error: image download failed: http=404</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='0' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>91</td><td><img class='img' src='https://images.emarteveryday.co.kr/images/app/webapps/evd_web2/share/SKU/mall/05/33/8801083323305_3.png' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://images.emarteveryday.co.kr/images/app/webapps/evd_web2/share/SKU/mall/05/33/8801083323305_3.png'>URL 복사</button><span class='small'>images.emarteveryday.co.kr</span></div></td><td>원본: <b>720x5977</b> / tok~<b>4,203</b><br>P2: <b>-x-</b> / tok~<b>-</b> / resized=N<br>P3: <b>-x-</b> / tok~<b>-</b> / resized=N<br><span class='small'>policy: policy_excessive_aspect_ratio | policy_excessive_aspect_ratio: aspect=8.30&gt;4.00</span></td><td>failed</td><td>P1:❌ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>policy_excessive_aspect_ratio: aspect=8.30&gt;4.00</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>89</td><td><img class='img' src='http://www.sobilife.com/news/photo/201401/4661_1931_126.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://www.sobilife.com/news/photo/201401/4661_1931_126.jpg'>URL 복사</button><span class='small'>www.sobilife.com</span></div></td><td>원본: <b>540x187</b> / tok~<b>99</b><br>P2: <b>540x187</b> / tok~<b>99</b> / resized=N<br>P3: <b>540x187</b> / tok~<b>99</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_single_product|key_fields_not_fully_visible|any_text_occlusion_on_key_fields|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_single_product,key_fields_not_fully_visible,any_text_occlusion_on_key_fields,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>6</td><td><img class='img' src='https://m.health.chosun.com/site/data/img_dir/2025/06/19/2025061903425_0.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://m.health.chosun.com/site/data/img_dir/2025/06/19/2025061903425_0.jpg'>URL 복사</button><span class='small'>m.health.chosun.com</span></div></td><td>원본: <b>600x490</b> / tok~<b>287</b><br>P2: <b>600x490</b> / tok~<b>287</b> / resized=N<br>P3: <b>600x490</b> / tok~<b>287</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_single_product|pass2b_skipped_by_pass2a_fail|ai_skip:not_single_product,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>36</td><td><img class='img' src='https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2024/20240306/1b6531ad801f214ccaf284ae59b9d511.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2024/20240306/1b6531ad801f214ccaf284ae59b9d511.jpg'>URL 복사</button><span class='small'>img.daily.co.kr</span></div></td><td>원본: <b>600x900</b> / tok~<b>527</b><br>P2: <b>513x768</b> / tok~<b>385</b> / resized=Y<br>P3: <b>600x900</b> / tok~<b>527</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_single_product|key_fields_not_fully_visible|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_single_product,key_fields_not_fully_visible,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>77</td><td><img class='img' src='https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/30fab9cf-b7c2-44e3-a220-5f811a394442/500x500.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://lottemartzetta.com/images-v3/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d/30fab9cf-b7c2-44e3-a220-5f811a394442/500x500.jpg'>URL 복사</button><span class='small'>lottemartzetta.com</span></div></td><td>원본: <b>500x500</b> / tok~<b>244</b><br>P2: <b>500x500</b> / tok~<b>244</b> / resized=N<br>P3: <b>500x500</b> / tok~<b>244</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|object_occlusion_on_key_fields|any_text_occlusion_on_key_fields|occlusion_overlap_on_key_text|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_full_frame,not_flat</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: false,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: false,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>88</td><td><img class='img' src='https://cdn.newstopkorea.com/news/photo/202206/12625_16998_1942.png' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://cdn.newstopkorea.com/news/photo/202206/12625_16998_1942.png'>URL 복사</button><span class='small'>cdn.newstopkorea.com</span></div></td><td>원본: <b>960x822</b> / tok~<b>771</b><br>P2: <b>768x658</b> / tok~<b>494</b> / resized=Y<br>P3: <b>960x822</b> / tok~<b>771</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_single_product|pass2b_skipped_by_pass2a_fail|ai_skip:not_single_product,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>61</td><td><img class='img' src='https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&amp;idx=3&amp;simg=20201214174038046785796a9480c11847181129.jpg&amp;nmt=29' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&amp;idx=3&amp;simg=20201214174038046785796a9480c11847181129.jpg&amp;nmt=29'>URL 복사</button><span class='small'>cgeimage.commutil.kr</span></div></td><td>원본: <b>660x431</b> / tok~<b>278</b><br>P2: <b>660x431</b> / tok~<b>278</b> / resized=N<br>P3: <b>660x431</b> / tok~<b>278</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_full_frame,not_flat_undistorted,curved_surface_text_distortion,not_single_product,key_fields_not_fully_visible,pa</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>85</td><td><img class='img' src='https://www.costco.co.kr/medias/sys_master/images/hca/h15/240948083654686.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://www.costco.co.kr/medias/sys_master/images/hca/h15/240948083654686.jpg'>URL 복사</button><span class='small'>www.costco.co.kr</span></div></td><td>원본: <b>1200x1200</b> / tok~<b>1,406</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>1012x1012</b> / tok~<b>1,000</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|glare_on_key_fields|object_occlusion_on_key_fields|any_text_occlusion_on_key_fields|occlusion_overlap_on_key_text|wrinkle_fold_occlusion_on_key_fields|pass2b_skipped_by_p</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: false,
+  &quot;no_object_occlusion_on_key_fields&quot;: false,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: false,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: false
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>65</td><td><img class='img' src='https://jonisgrocery.com/web/product/big/202403/c555a9b4d1f61e2d42c035dc85328361.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://jonisgrocery.com/web/product/big/202403/c555a9b4d1f61e2d42c035dc85328361.jpg'>URL 복사</button><span class='small'>jonisgrocery.com</span></div></td><td>원본: <b>800x520</b> / tok~<b>406</b><br>P2: <b>788x512</b> / tok~<b>394</b> / resized=Y<br>P3: <b>800x520</b> / tok~<b>406</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|glare_on_key_fields|object_occlusion_on_key_fields|any_text_occlusion_on_key_fields|occlusion_overlap_on_key_text|wrinkle_fold_occlusion_on_key_fields|pass2b_skipped_by_p</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: false,
+  &quot;no_object_occlusion_on_key_fields&quot;: false,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: false,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: false
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>68</td><td><img class='img' src='https://m.ssarijai.com/web/product/big/20231130/d326c3354421fc27c445b01ad3558c48.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://m.ssarijai.com/web/product/big/20231130/d326c3354421fc27c445b01ad3558c48.jpg'>URL 복사</button><span class='small'>m.ssarijai.com</span></div></td><td>원본: <b>1000x1000</b> / tok~<b>977</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>1000x1000</b> / tok~<b>977</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|any_text_occlusion_on_key_fields|occlusion_overlap_on_key_text|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_full_frame,not_flat_undistorted,curved_surface_tex</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: false,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>73</td><td><img class='img' src='https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20200710/gv30000106693_2.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20200710/gv30000106693_2.jpg'>URL 복사</button><span class='small'>img-cf.kurly.com</span></div></td><td>원본: <b>710x695</b> / tok~<b>482</b><br>P2: <b>710x695</b> / tok~<b>482</b> / resized=N<br>P3: <b>710x695</b> / tok~<b>482</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>key_fields_not_fully_visible|any_text_occlusion_on_key_fields|pass2b_skipped_by_pass2a_fail|ai_skip:key_fields_not_fully_visible,any_text_occlusion_on_key_fields,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='0' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>95</td><td><img class='img' src='https://gedcorp.cafe24.com/img/BOH003.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://gedcorp.cafe24.com/img/BOH003.jpg'>URL 복사</button><span class='small'>gedcorp.cafe24.com</span></div></td><td>원본: <b>860x7263</b> / tok~<b>6,100</b><br>P2: <b>-x-</b> / tok~<b>-</b> / resized=N<br>P3: <b>-x-</b> / tok~<b>-</b> / resized=N<br><span class='small'>policy: policy_excessive_aspect_ratio | policy_excessive_aspect_ratio: aspect=8.45&gt;4.00</span></td><td>failed</td><td>P1:❌ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>policy_excessive_aspect_ratio: aspect=8.45&gt;4.00</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>83</td><td><img class='img' src='https://m.organic-story.com/web/product/big/201909/abeb1dd00faa0639eb3b4f70ce4863b5.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://m.organic-story.com/web/product/big/201909/abeb1dd00faa0639eb3b4f70ce4863b5.jpg'>URL 복사</button><span class='small'>m.organic-story.com</span></div></td><td>원본: <b>800x800</b> / tok~<b>625</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>800x800</b> / tok~<b>625</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>key_fields_not_fully_visible|any_text_occlusion_on_key_fields|pass2b_skipped_by_pass2a_fail|ai_skip:key_fields_not_fully_visible,any_text_occlusion_on_key_fields,pass2b_skipped_by_pass2a_fail | pass2b_skipped_by_pass2a_fail</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='1' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>67</td><td><img class='img' src='http://image.foodshop.co.kr/images/desc/desc/2017/201703_8994.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://image.foodshop.co.kr/images/desc/desc/2017/201703_8994.jpg'>URL 복사</button><span class='small'>image.foodshop.co.kr</span></div></td><td>원본: <b>1000x1647</b> / tok~<b>1,608</b><br>P2: <b>512x843</b> / tok~<b>422</b> / resized=Y<br>P3: <b>789x1299</b> / tok~<b>1,001</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:❌ P3:❌ P4:❌</td><td><code>missing_report_label|ai_skip:missing_report_label</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: false,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='1' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>14</td><td><img class='img' src='https://media.nudge-community.com/7062112' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://media.nudge-community.com/7062112'>URL 복사</button><span class='small'>media.nudge-community.com</span></div></td><td>원본: <b>856x1141</b> / tok~<b>954</b><br>P2: <b>576x768</b> / tok~<b>432</b> / resized=Y<br>P3: <b>856x1141</b> / tok~<b>954</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:❌ P3:❌ P4:❌</td><td><code>missing_ingredients_section|missing_report_label|ai_skip:missing_ingredients_section,missing_report_label</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: false,
+  &quot;has_report_number_label&quot;: false,
+  &quot;has_product_name&quot;: false,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='1' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>78</td><td><img class='img' src='https://www.kellogg.co.kr/Images/Products/cag.png' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://www.kellogg.co.kr/Images/Products/cag.png'>URL 복사</button><span class='small'>www.kellogg.co.kr</span></div></td><td>원본: <b>1140x1140</b> / tok~<b>1,269</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>1012x1012</b> / tok~<b>1,000</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:❌ P3:❌ P4:❌</td><td><code>missing_report_label|ai_skip:missing_report_label</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: false,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='0' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>98</td><td><img class='img' src='https://www.foodtoday.or.kr/data/photos/20190625/art_156084203673_beb84a.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://www.foodtoday.or.kr/data/photos/20190625/art_156084203673_beb84a.jpg'>URL 복사</button><span class='small'>www.foodtoday.or.kr</span></div></td><td>원본: <b>600x247</b> / tok~<b>145</b><br>P2: <b>600x247</b> / tok~<b>145</b> / resized=N<br>P3: <b>600x247</b> / tok~<b>145</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:❌ P2B:❌ P3:❌ P4:❌</td><td><code>not_clear_text|not_full_frame|not_flat_undistorted|curved_surface_text_distortion|not_single_product|key_fields_not_fully_visible|any_text_occlusion_on_key_fields|occlusion_overlap_on_key_text|pass2b_skipped_by_pass2a_fail|ai_skip:not_clear_text,not_full_frame,not_flat_undistorted,curved_surface_tex</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: false,
+  &quot;is_full_frame&quot;: false,
+  &quot;is_flat_undistorted&quot;: false,
+  &quot;no_curved_surface_text_distortion&quot;: false,
+  &quot;has_single_product&quot;: false,
+  &quot;key_fields_fully_visible&quot;: false,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: false,
+  &quot;no_occlusion_overlap_on_key_text&quot;: false,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='1' data-status='failed' data-p2a='1' data-p2b='0' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>94</td><td><img class='img' src='http://ysmilk2010.com/data/file/2_sub1/2040427560_5boH8KAS_EC97B0EC84B8-EAB3A0EC868CED959C-EC8B9CEBA6ACEC96BC-EC9AB0EC9CA0_1.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://ysmilk2010.com/data/file/2_sub1/2040427560_5boH8KAS_EC97B0EC84B8-EAB3A0EC868CED959C-EC8B9CEBA6ACEC96BC-EC9AB0EC9CA0_1.jpg'>URL 복사</button><span class='small'>ysmilk2010.com</span></div></td><td>원본: <b>724x810</b> / tok~<b>573</b><br>P2: <b>687x768</b> / tok~<b>515</b> / resized=Y<br>P3: <b>724x810</b> / tok~<b>573</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:❌ P3:❌ P4:❌</td><td><code>missing_ingredients_section|missing_report_label|ai_skip:missing_ingredients_section,missing_report_label</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (없음)</summary><div class='ingRaw'><code>-</code></div></details><details><summary>원재료 Corrected (없음)</summary><div class='ingRaw'><code>-</code></div></details><div class='small'>Pass3 경계교정: N | conf: -</div><div class='small'>issue: -</div><span class='small'>원재료명 없음</span></td><td>제품명: <b>-</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: false,
+  &quot;has_report_number_label&quot;: false,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: false
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='2' data-status='failed' data-p2a='1' data-p2b='1' data-p3ing='0' data-p3nut='0' data-p4ing='0' data-p4nut='0'><td>17</td><td><img class='img' src='https://thingotr4652.cdn-nhncommerce.com/data/editor/goods/190821/DQ09TP0031A000_info_02_141402.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://thingotr4652.cdn-nhncommerce.com/data/editor/goods/190821/DQ09TP0031A000_info_02_141402.jpg'>URL 복사</button><span class='small'>thingotr4652.cdn-nhncommerce</span></div></td><td>원본: <b>1050x1050</b> / tok~<b>1,077</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>1012x1012</b> / tok~<b>1,000</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>failed</td><td>P1:✅ P2A:✅ P2B:✅ P3:❌ P4:❌</td><td><code>case_b_requires_nutrition_at_pass3_nutrition</code></td><td>-</td><td>-</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>압착귀리(국산) 12.1%, 유기농현미볶음 (유기농현미100%, 국산) 12.1%, 아몬드 슬라이스(미국산)13.1%, 캐슈넛(인도산) 5.9%, 해바라기씨(미국산), 유기농쌀조청 [유기농쌀(국산) 98.5%, 엿기름(국산), 효소(아밀라아제)] 17.4%, 올리고당, 유기농아가베시럽 3.7%(멕시코산), 아카시아벌꿀(국산), 건조크랜베리[크랜베리 (미국산)69%, 설탕, 크랜베리주스농축액, 해바라기유] 10.8%, 무염버터(국산), 계피분말(베트남)</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>압착귀리(국산) 12.1%, 유기농현미볶음 (유기농현미100%, 국산) 12.1%, 아몬드 슬라이스(미국산)13.1%, 캐슈넛(인도산) 5.9%, 해바라기씨(미국산), 유기농쌀조청 [유기농쌀(국산) 98.5%, 엿기름(국산), 효소(아밀라아제)] 17.4%, 올리고당, 유기농아가베시럽 3.7%(멕시코산), 아카시아벌꿀(국산), 건조크랜베리[크랜베리 (미국산)69%, 설탕, 크랜베리주스농축액, 해바라기유] 10.8%, 무염버터(국산), 계피분말(베트남)</code></div></details><div class='small'>Pass3 경계교정: N | conf: 100</div><div class='small'>issue: {&quot;issues&quot;: [], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 18개</div><ul class='ingList root'><li><div class='ingLine'><span class='ingName'>압착귀리(국산) 12.1%</span></div></li><li><div class='ingLine'><span class='ingName'>유기농현미볶음 (유기농현미100%</span></div></li><li><div class='ingLine'><span class='ingName'>국산) 12.1%</span></div></li><li><div class='ingLine'><span class='ingName'>아몬드 슬라이스(미국산)13.1%</span></div></li><li><div class='ingLine'><span class='ingName'>캐슈넛(인도산) 5.9%</span></div></li><li><div class='ingLine'><span class='ingName'>해바라기씨(미국산)</span></div></li><li><div class='ingLine'><span class='ingName'>유기농쌀조청 [유기농쌀(국산) 98.5%</span></div></li><li><div class='ingLine'><span class='ingName'>엿기름(국산)</span></div></li><li><div class='ingLine'><span class='ingName'>효소(아밀라아제)] 17.4%</span></div></li><li><div class='ingLine'><span class='ingName'>올리고당</span></div></li><li><div class='ingLine'><span class='ingName'>유기농아가베시럽 3.7%(멕시코산)</span></div></li><li><div class='ingLine'><span class='ingName'>아카시아벌꿀(국산)</span></div></li><li><div class='ingLine'><span class='ingName'>건조크랜베리[크랜베리 (미국산)69%</span></div></li><li><div class='ingLine'><span class='ingName'>설탕</span></div></li><li><div class='ingLine'><span class='ingName'>크랜베리주스농축액</span></div></li><li><div class='ingLine'><span class='ingName'>해바라기유] 10.8%</span></div></li><li><div class='ingLine'><span class='ingName'>무염버터(국산)</span></div></li><li><div class='ingLine'><span class='ingName'>계피분말(베트남)</span></div></li></ul></td><td>제품명: <b>이미지</b><br>영양성분: <b>none</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (없음)</summary><div class='raw'><code>-</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='4' data-status='saved' data-p2a='1' data-p2b='1' data-p3ing='1' data-p3nut='0' data-p4ing='1' data-p4nut='0'><td>90</td><td><img class='img' src='http://image3.exponet.co.kr/images3/228/L291/8441/L2918441_1002.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://image3.exponet.co.kr/images3/228/L291/8441/L2918441_1002.jpg'>URL 복사</button><span class='small'>image3.exponet.co.kr</span></div></td><td>원본: <b>860x713</b> / tok~<b>599</b><br>P2: <b>768x637</b> / tok~<b>478</b> / resized=Y<br>P3: <b>860x713</b> / tok~<b>599</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>saved</td><td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td><td><code>-</code></td><td>씨리얼초코</td><td>1994048423965</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코</code></div></details><div class='small'>Pass3 경계교정: Y | conf: 76</div><div class='small'>issue: {&quot;issues&quot;: [&quot;missing_closer_paren&quot;, &quot;missing_closer_square&quot;], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 3개</div><ul class='ingList root'><li><div class='ingLine'><span class='ingName'>준초콜릿[설탕</span></div></li><li><div class='ingLine'><span class='ingName'>쇼트닝(가공유지(팜핵에스테르화유:말레이시아산))</span></div></li><li><div class='ingLine'><span class='ingName'>코코아매스(코</span></div></li></ul></td><td>제품명: <b>공공DB</b><br>영양성분: <b>공공DB</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;product_report_number&quot;: &quot;1994048423965&quot;,
+  &quot;ingredients_text&quot;: &quot;준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코&quot;,
+  &quot;ingredients_evidence_text&quot;: &quot;원재료명 준초콜릿[설탕, 쇼트닝(가공유지(팜핵에스테르화유:말레이시아산)), 코코아매스(코&quot;,
+  &quot;allergen_text&quot;: null,
+  &quot;product_name_in_image&quot;: null,
+  &quot;ingredients_complete&quot;: false,
+  &quot;report_number_complete&quot;: true,
+  &quot;product_name_complete&quot;: false,
+  &quot;has_report_label&quot;: true
+}</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (있음)</summary><div class='raw'><code>(skipped_by_pass2_no_nutrition)</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;준초콜릿&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;설탕&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;쇼트닝&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;가공유지&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: [
+                {
+                  &quot;name&quot;: &quot;팜핵에스테르화유&quot;,
+                  &quot;origin&quot;: null,
+                  &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+                  &quot;amount&quot;: null,
+                  &quot;sub_ingredients&quot;: []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;코코아매스&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    }
+  ],
+  &quot;ignored_fragments&quot;: []
+}</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='4' data-status='saved' data-p2a='1' data-p2b='1' data-p3ing='1' data-p3nut='0' data-p4ing='1' data-p4nut='0'><td>20</td><td><img class='img' src='https://ai.esmplus.com/reveur2116/0823/%EC%98%A4%EB%A6%AC%EC%98%A8%20%EB%AF%B8%EC%AF%94%2042g%2024%EC%9E%85%209480%EC%9B%90.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://ai.esmplus.com/reveur2116/0823/%EC%98%A4%EB%A6%AC%EC%98%A8%20%EB%AF%B8%EC%AF%94%2042g%2024%EC%9E%85%209480%EC%9B%90.jpg'>URL 복사</button><span class='small'>ai.esmplus.com</span></div></td><td>원본: <b>1000x1000</b> / tok~<b>977</b><br>P2: <b>768x768</b> / tok~<b>576</b> / resized=Y<br>P3: <b>1000x1000</b> / tok~<b>977</b> / resized=N<br><span class='small'>policy: ok | ok</span></td><td>saved</td><td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td><td><code>-</code></td><td>미쯔블랙</td><td>19870415003205</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>영양강화밀가루 (밀 미국산, 호주산), 백설탕, 마가린[팜올레인유 말레이시아산, 가공유지(팜스테아 린유 말레이시아산)], 코코아가공품[백설탕, 식물성유지(팜핵에스테르화유 말레이시아산/경화유), 코코아버터 싱가폴산, 레시틴, 바닐린], 옥수수분말, 탈지분유, 코코아분말 2종, 쇼트닝, 과당, 유청 분말, 코코아매스, 식염, 레시틴, 산도조절제 2종, 계피분말, 합성향료</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>영양강화밀가루 (밀 미국산, 호주산), 백설탕, 마가린[팜올레인유 말레이시아산, 가공유지(팜스테아 린유 말레이시아산)], 코코아가공품[백설탕, 식물성유지(팜핵에스테르화유 말레이시아산/경화유), 코코아버터 싱가폴산, 레시틴, 바닐린], 옥수수분말, 탈지분유, 코코아분말 2종, 쇼트닝, 과당, 유청 분말, 코코아매스, 식염, 레시틴, 산도조절제 2종, 계피분말, 합성향료</code></div></details><div class='small'>Pass3 경계교정: N | conf: 100</div><div class='small'>issue: {&quot;issues&quot;: [], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 22개</div><ul class='ingList root'><li><div class='ingLine'><span class='ingName'>영양강화밀가루 (밀 미국산</span></div></li><li><div class='ingLine'><span class='ingName'>호주산)</span></div></li><li><div class='ingLine'><span class='ingName'>백설탕</span></div></li><li><div class='ingLine'><span class='ingName'>마가린[팜올레인유 말레이시아산</span></div></li><li><div class='ingLine'><span class='ingName'>가공유지(팜스테아 린유 말레이시아산)]</span></div></li><li><div class='ingLine'><span class='ingName'>코코아가공품[백설탕</span></div></li><li><div class='ingLine'><span class='ingName'>식물성유지(팜핵에스테르화유 말레이시아산/경화유)</span></div></li><li><div class='ingLine'><span class='ingName'>코코아버터 싱가폴산</span></div></li><li><div class='ingLine'><span class='ingName'>레시틴</span></div></li><li><div class='ingLine'><span class='ingName'>바닐린]</span></div></li><li><div class='ingLine'><span class='ingName'>옥수수분말</span></div></li><li><div class='ingLine'><span class='ingName'>탈지분유</span></div></li><li><div class='ingLine'><span class='ingName'>코코아분말 2종</span></div></li><li><div class='ingLine'><span class='ingName'>쇼트닝</span></div></li><li><div class='ingLine'><span class='ingName'>과당</span></div></li><li><div class='ingLine'><span class='ingName'>유청 분말</span></div></li><li><div class='ingLine'><span class='ingName'>코코아매스</span></div></li><li><div class='ingLine'><span class='ingName'>식염</span></div></li><li><div class='ingLine'><span class='ingName'>레시틴</span></div></li><li><div class='ingLine'><span class='ingName'>산도조절제 2종</span></div></li><li><div class='ingLine'><span class='ingName'>계피분말</span></div></li><li><div class='ingLine'><span class='ingName'>합성향료</span></div></li></ul></td><td>제품명: <b>공공DB</b><br>영양성분: <b>공공DB</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;product_report_number&quot;: &quot;19870415003205&quot;,
+  &quot;ingredients_text&quot;: &quot;영양강화밀가루 (밀 미국산, 호주산), 백설탕, 마가린[팜올레인유 말레이시아산, 가공유지(팜스테아 린유 말레이시아산)], 코코아가공품[백설탕, 식물성유지(팜핵에스테르화유 말레이시아산/경화유), 코코아버터 싱가폴산, 레시틴, 바닐린], 옥수수분말, 탈지분유, 코코아분말 2종, 쇼트닝, 과당, 유청 분말, 코코아매스, 식염, 레시틴, 산도조절제 2종, 계피분말, 합성향료&quot;,
+  &quot;ingredients_evidence_text&quot;: &quot;원재료명 영양강화밀가루 (밀 미국산, 호주산), 백설탕, 마가린[팜올레인유 말레이시아산, 가공유지(팜스테아 린유 말레이시아산)], 코코아가공품[백설탕, 식물성유지(팜핵에스테르화유 말레이시아산/경화유), 코코아버터 싱가폴산, 레시틴, 바닐린], 옥수수분말, 탈지분유, 코코아분말 2종, 쇼트닝, 과당, 유청 분말, 코코아매스, 식염, 레시틴, 산도조절제 2종, 계피분말, 합성향료 밀, 우유, 대두, 게 함유 • 달걀, 땅콩, 호두, 복숭아, 토마토, 돼지고기, 닭고기, 오징어, 새우, 조개류(굴, 홍합) 혼입가능&quot;,
+  &quot;allergen_text&quot;: &quot;밀, 우유, 대두, 게 함유 • 달걀, 땅콩, 호두, 복숭아, 토마토, 돼지고기, 닭고기, 오징어, 새우, 조개류(굴, 홍합) 혼입가능&quot;,
+  &quot;product_name_in_image&quot;: &quot;미쯔블랙&quot;,
+  &quot;ingredients_complete&quot;: true,
+  &quot;report_number_complete&quot;: true,
+  &quot;product_name_complete&quot;: true,
+  &quot;has_report_label&quot;: true
+}</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (있음)</summary><div class='raw'><code>(skipped_by_pass2_no_nutrition)</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;영양강화밀가루&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: &quot;미국산, 호주산&quot;,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;밀&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;미국산, 호주산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;백설탕&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;마가린&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;팜올레인유&quot;,
+          &quot;origin&quot;: &quot;말레이시아산&quot;,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;가공유지&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;팜스테아린유&quot;,
+              &quot;origin&quot;: &quot;말레이시아산&quot;,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;코코아가공품&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;백설탕&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;식물성유지&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;팜핵에스테르화유&quot;,
+              &quot;origin&quot;: &quot;말레이시아산&quot;,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;경화유&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;코코아버터&quot;,
+          &quot;origin&quot;: &quot;싱가폴산&quot;,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;바닐린&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;옥수수분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;탈지분유&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;코코아분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;2종&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;쇼트닝&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;과당&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;유청 분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;코코아매스&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;식염&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;레시틴&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;산도조절제&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;2종&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;계피분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;합성향료&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    }
+  ],
+  &quot;ignored_fragments&quot;: []
+}</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='4' data-status='saved' data-p2a='1' data-p2b='1' data-p3ing='1' data-p3nut='0' data-p4ing='1' data-p4nut='0'><td>55</td><td><img class='img' src='http://image.hnsmall.com/images/htmleditor/215/750_con1611112925336.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='http://image.hnsmall.com/images/htmleditor/215/750_con1611112925336.jpg'>URL 복사</button><span class='small'>image.hnsmall.com</span></div></td><td>원본: <b>750x2946</b> / tok~<b>2,158</b><br>P2: <b>512x2008</b> / tok~<b>1,004</b> / resized=Y<br>P3: <b>512x2009</b> / tok~<b>1,004</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>saved</td><td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td><td><code>-</code></td><td>콘푸레이크</td><td>198303600161</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>옥수수 88%(인도산), 설탕, 맥아엑기스(인도산), 정제소금(국내산), 혼합제제1[비타민C, L-아스코르빈산나트륨, 비타민A, 비타민D3], 혼합제제2[dl-a-토코페릴아세테이트, 나이아신아미드, 비타민B2, 비타민B6염산염, 엽산], 혼합제제3[환원철, 산화아연], 혼합제제4[d-토코페롤(혼합형), 글리세린, 글리세린지방산에스테르], 비타민B1염산염</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>옥수수 88%(인도산), 설탕, 맥아엑기스(인도산), 정제소금(국내산), 혼합제제1[비타민C, L-아스코르빈산나트륨, 비타민A, 비타민D3], 혼합제제2[dl-a-토코페릴아세테이트, 나이아신아미드, 비타민B2, 비타민B6염산염, 엽산], 혼합제제3[환원철, 산화아연], 혼합제제4[d-토코페롤(혼합형), 글리세린, 글리세린지방산에스테르], 비타민B1염산염</code></div></details><div class='small'>Pass3 경계교정: N | conf: 100</div><div class='small'>issue: {&quot;issues&quot;: [], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 19개</div><ul class='ingList root'><li><div class='ingLine'><span class='ingName'>옥수수 88%(인도산)</span></div></li><li><div class='ingLine'><span class='ingName'>설탕</span></div></li><li><div class='ingLine'><span class='ingName'>맥아엑기스(인도산)</span></div></li><li><div class='ingLine'><span class='ingName'>정제소금(국내산)</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제1[비타민C</span></div></li><li><div class='ingLine'><span class='ingName'>L-아스코르빈산나트륨</span></div></li><li><div class='ingLine'><span class='ingName'>비타민A</span></div></li><li><div class='ingLine'><span class='ingName'>비타민D3]</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제2[dl-a-토코페릴아세테이트</span></div></li><li><div class='ingLine'><span class='ingName'>나이아신아미드</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B2</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B6염산염</span></div></li><li><div class='ingLine'><span class='ingName'>엽산]</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제3[환원철</span></div></li><li><div class='ingLine'><span class='ingName'>산화아연]</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제4[d-토코페롤(혼합형)</span></div></li><li><div class='ingLine'><span class='ingName'>글리세린</span></div></li><li><div class='ingLine'><span class='ingName'>글리세린지방산에스테르]</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B1염산염</span></div></li></ul></td><td>제품명: <b>공공DB</b><br>영양성분: <b>공공DB</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;product_report_number&quot;: &quot;198303600161&quot;,
+  &quot;ingredients_text&quot;: &quot;옥수수 88%(인도산), 설탕, 맥아엑기스(인도산), 정제소금(국내산), 혼합제제1[비타민C, L-아스코르빈산나트륨, 비타민A, 비타민D3], 혼합제제2[dl-a-토코페릴아세테이트, 나이아신아미드, 비타민B2, 비타민B6염산염, 엽산], 혼합제제3[환원철, 산화아연], 혼합제제4[d-토코페롤(혼합형), 글리세린, 글리세린지방산에스테르], 비타민B1염산염&quot;,
+  &quot;ingredients_evidence_text&quot;: &quot;원재료명 옥수수 88%(인도산), 설탕, 맥아엑기스(인도산), 정제소금(국내산), 혼합제제1[비타민C, L-아스코르빈산나트륨, 비타민A, 비타민D3], 혼합제제2[dl-a-토코페릴아세테이트, 나이아신아미드, 비타민B2, 비타민B6염산염, 엽산], 혼합제제3[환원철, 산화아연], 혼합제제4[d-토코페롤(혼합형), 글리세린, 글리세린지방산에스테르], 비타민B1염산염&quot;,
+  &quot;allergen_text&quot;: &quot;대두 함유\n이 제품은 밀, 우유, 아몬드, 쇠고기가 포함된 제품과 같은 제조시설에서 제조하고 있습니다.&quot;,
+  &quot;product_name_in_image&quot;: &quot;콘푸레이크&quot;,
+  &quot;ingredients_complete&quot;: true,
+  &quot;report_number_complete&quot;: true,
+  &quot;product_name_complete&quot;: true,
+  &quot;has_report_label&quot;: true
+}</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (있음)</summary><div class='raw'><code>(skipped_by_pass2_no_nutrition)</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;옥수수&quot;,
+      &quot;origin&quot;: &quot;인도산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;88%&quot;,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;설탕&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;맥아엑기스&quot;,
+      &quot;origin&quot;: &quot;인도산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;정제소금&quot;,
+      &quot;origin&quot;: &quot;국내산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;혼합제제1&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;비타민C&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;L-아스코르빈산나트륨&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;비타민A&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;비타민D3&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;혼합제제2&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;dl-a-토코페릴아세테이트&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;나이아신아미드&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;비타민B2&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;비타민B6염산염&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;엽산&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;혼합제제3&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;환원철&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;산화아연&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;혼합제제4&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;d-토코페롤(혼합형)&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;글리세린&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;글리세린지방산에스테르&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;비타민B1염산염&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    }
+  ],
+  &quot;ignored_fragments&quot;: []
+}</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+<tr class='rowItem' data-pass='4' data-status='saved' data-p2a='1' data-p2b='1' data-p3ing='1' data-p3nut='0' data-p4ing='1' data-p4nut='0'><td>57</td><td><img class='img' src='https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230731/gv10000713638_2.jpg' loading='lazy' referrerpolicy='no-referrer'><div class='urlCell'><button class='copyBtn' data-url='https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230731/gv10000713638_2.jpg'>URL 복사</button><span class='small'>img-cf.kurly.com</span></div></td><td>원본: <b>710x2651</b> / tok~<b>1,838</b><br>P2: <b>512x1911</b> / tok~<b>956</b> / resized=Y<br>P3: <b>524x1955</b> / tok~<b>1,000</b> / resized=Y<br><span class='small'>policy: ok | ok</span></td><td>saved</td><td>P1:✅ P2A:✅ P2B:✅ P3:✅ P4:✅</td><td><code>-</code></td><td>오레오오즈</td><td>1993044304646</td><td class='ingPane'><details><summary>원재료 RAW (있음)</summary><div class='ingRaw'><code>옥수수가루(옥수수 : 호주산), 설탕, 쿠키분말 6.8%{밀가루(밀 : 호주산, 미국산), 설탕, 식물성유{팜유(말레이시아산)}, 코코아분말, 물엿, 레시틴, 마시멜로{물엿, 포도당, 젤라틴}, 코코아분말(말레이시아산), 바닐라향크런치, 식물성경화유지, 혼합삼곡(현미가루, 보리가루, 귀리가루), 물엿, 향료(바닐라크림향), 혼합제제(제삼인산칼슘, 탄산칼슘), 정제소금, 혼합제제(비타민C, 나이아신아미드, 말토덱스트린, dl-a-토코페릴아세테이트, 포도당시럽분말, 변성전분, 아라비아검, 비타민B6염산염, 옥수수전분, 비타민B1염산염, 설탕, 분말비타민A, 엽산, 팜유, 이산화규소, 비타민E, 비타민D3), 향료제제, 피로인산제이철, 산화아연, 비타민B2인산에스테르나트륨</code></div></details><details><summary>원재료 Corrected (있음)</summary><div class='ingRaw'><code>옥수수가루(옥수수 : 호주산), 설탕, 쿠키분말 6.8%{밀가루(밀 : 호주산, 미국산), 설탕, 식물성유{팜유(말레이시아산)}, 코코아분말, 물엿, 레시틴, 마시멜로{물엿, 포도당, 젤라틴}, 코코아분말(말레이시아산), 바닐라향크런치, 식물성경화유지, 혼합삼곡(현미가루, 보리가루, 귀리가루), 물엿, 향료(바닐라크림향), 혼합제제(제삼인산칼슘, 탄산칼슘), 정제소금, 혼합제제(비타민C, 나이아신아미드, 말토덱스트린, dl-a-토코페릴아세테이트, 포도당시럽분말, 변성전분, 아라비아검, 비타민B6염산염, 옥수수전분, 비타민B1염산염, 설탕, 분말비타민A, 엽산, 팜유, 이산화규소, 비타민E, 비타민D3), 향료제제, 피로인산제이철, 산화아연, 비타민B2인산에스테르나트륨</code></div></details><div class='small'>Pass3 경계교정: N | conf: 100</div><div class='small'>issue: {&quot;issues&quot;: [], &quot;actions&quot;: []}</div><div class='ingSummary'>텍스트 분해 44개</div><ul class='ingList root'><li><div class='ingLine'><span class='ingName'>옥수수가루(옥수수 : 호주산)</span></div></li><li><div class='ingLine'><span class='ingName'>설탕</span></div></li><li><div class='ingLine'><span class='ingName'>쿠키분말 6.8%{밀가루(밀 : 호주산</span></div></li><li><div class='ingLine'><span class='ingName'>미국산)</span></div></li><li><div class='ingLine'><span class='ingName'>설탕</span></div></li><li><div class='ingLine'><span class='ingName'>식물성유{팜유(말레이시아산)}</span></div></li><li><div class='ingLine'><span class='ingName'>코코아분말</span></div></li><li><div class='ingLine'><span class='ingName'>물엿</span></div></li><li><div class='ingLine'><span class='ingName'>레시틴</span></div></li><li><div class='ingLine'><span class='ingName'>마시멜로{물엿</span></div></li><li><div class='ingLine'><span class='ingName'>포도당</span></div></li><li><div class='ingLine'><span class='ingName'>젤라틴}</span></div></li><li><div class='ingLine'><span class='ingName'>코코아분말(말레이시아산)</span></div></li><li><div class='ingLine'><span class='ingName'>바닐라향크런치</span></div></li><li><div class='ingLine'><span class='ingName'>식물성경화유지</span></div></li><li><div class='ingLine'><span class='ingName'>혼합삼곡(현미가루</span></div></li><li><div class='ingLine'><span class='ingName'>보리가루</span></div></li><li><div class='ingLine'><span class='ingName'>귀리가루)</span></div></li><li><div class='ingLine'><span class='ingName'>물엿</span></div></li><li><div class='ingLine'><span class='ingName'>향료(바닐라크림향)</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제(제삼인산칼슘</span></div></li><li><div class='ingLine'><span class='ingName'>탄산칼슘)</span></div></li><li><div class='ingLine'><span class='ingName'>정제소금</span></div></li><li><div class='ingLine'><span class='ingName'>혼합제제(비타민C</span></div></li><li><div class='ingLine'><span class='ingName'>나이아신아미드</span></div></li><li><div class='ingLine'><span class='ingName'>말토덱스트린</span></div></li><li><div class='ingLine'><span class='ingName'>dl-a-토코페릴아세테이트</span></div></li><li><div class='ingLine'><span class='ingName'>포도당시럽분말</span></div></li><li><div class='ingLine'><span class='ingName'>변성전분</span></div></li><li><div class='ingLine'><span class='ingName'>아라비아검</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B6염산염</span></div></li><li><div class='ingLine'><span class='ingName'>옥수수전분</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B1염산염</span></div></li><li><div class='ingLine'><span class='ingName'>설탕</span></div></li><li><div class='ingLine'><span class='ingName'>분말비타민A</span></div></li><li><div class='ingLine'><span class='ingName'>엽산</span></div></li><li><div class='ingLine'><span class='ingName'>팜유</span></div></li><li><div class='ingLine'><span class='ingName'>이산화규소</span></div></li><li><div class='ingLine'><span class='ingName'>비타민E</span></div></li><li><div class='ingLine'><span class='ingName'>비타민D3)</span></div></li><li><div class='ingLine'><span class='ingName'>향료제제</span></div></li><li><div class='ingLine'><span class='ingName'>피로인산제이철</span></div></li><li><div class='ingLine'><span class='ingName'>산화아연</span></div></li><li><div class='ingLine'><span class='ingName'>비타민B2인산에스테르나트륨</span></div></li></ul></td><td>제품명: <b>공공DB</b><br>영양성분: <b>공공DB</b></td><td><details class='rawBlock raw2a'><summary>Pass2A raw (있음)</summary><div class='raw'><code>{
+  &quot;is_clear_text&quot;: true,
+  &quot;is_full_frame&quot;: true,
+  &quot;is_flat_undistorted&quot;: true,
+  &quot;no_curved_surface_text_distortion&quot;: true,
+  &quot;has_single_product&quot;: true,
+  &quot;key_fields_fully_visible&quot;: true,
+  &quot;no_glare_on_key_fields&quot;: true,
+  &quot;no_object_occlusion_on_key_fields&quot;: true,
+  &quot;no_any_text_occlusion_on_key_fields&quot;: true,
+  &quot;no_occlusion_overlap_on_key_text&quot;: true,
+  &quot;no_wrinkle_fold_occlusion_on_key_fields&quot;: true
+}</code></div></details><details class='rawBlock raw2b'><summary>Pass2B raw (있음)</summary><div class='raw'><code>{
+  &quot;has_ingredients_section&quot;: true,
+  &quot;has_report_number_label&quot;: true,
+  &quot;has_product_name&quot;: true,
+  &quot;has_nutrition_section&quot;: true
+}</code></div></details><details class='rawBlock raw3ing'><summary>Pass3-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;product_report_number&quot;: &quot;19930443046-46&quot;,
+  &quot;ingredients_text&quot;: &quot;옥수수가루(옥수수 : 호주산), 설탕, 쿠키분말 6.8%{밀가루(밀 : 호주산, 미국산), 설탕, 식물성유{팜유(말레이시아산)}, 코코아분말, 물엿, 레시틴, 마시멜로{물엿, 포도당, 젤라틴}, 코코아분말(말레이시아산), 바닐라향크런치, 식물성경화유지, 혼합삼곡(현미가루, 보리가루, 귀리가루), 물엿, 향료(바닐라크림향), 혼합제제(제삼인산칼슘, 탄산칼슘), 정제소금, 혼합제제(비타민C, 나이아신아미드, 말토덱스트린, dl-a-토코페릴아세테이트, 포도당시럽분말, 변성전분, 아라비아검, 비타민B6염산염, 옥수수전분, 비타민B1염산염, 설탕, 분말비타민A, 엽산, 팜유, 이산화규소, 비타민E, 비타민D3), 향료제제, 피로인산제이철, 산화아연, 비타민B2인산에스테르나트륨&quot;,
+  &quot;ingredients_evidence_text&quot;: &quot;원재료명: 옥수수가루(옥수수 : 호주산), 설탕, 쿠키분말 6.8%{밀가루(밀 : 호주산, 미국산), 설탕, 식물성유{팜유(말레이시아산)}, 코코아분말, 물엿, 레시틴, 마시멜로{물엿, 포도당, 젤라틴}, 코코아분말(말레이시아산), 바닐라향크런치, 식물성경화유지, 혼합삼곡(현미가루, 보리가루, 귀리가루), 물엿, 향료(바닐라크림향), 혼합제제(제삼인산칼슘, 탄산칼슘), 정제소금, 혼합제제(비타민C, 나이아신아미드, 말토덱스트린, dl-a-토코페릴아세테이트, 포도당시럽분말, 변성전분, 아라비아검, 비타민B6염산염, 옥수수전분, 비타민B1염산염, 설탕, 분말비타민A, 엽산, 팜유, 이산화규소, 비타민E, 비타민D3), 향료제제, 피로인산제이철, 산화아연, 비타민B2인산에스테르나트륨&quot;,
+  &quot;allergen_text&quot;: &quot;밀, 대두, 우유, 돼지고기 함유\n이 제품은 알레르기 발생 가능성이 있는 호두, 땅콩, 메밀, 토마토, 복숭아를 사용한 제품과 같은 제조시설에서 제조하고 있습니다.&quot;,
+  &quot;product_name_in_image&quot;: &quot;포스트 오레오 오즈&quot;,
+  &quot;ingredients_complete&quot;: true,
+  &quot;report_number_complete&quot;: true,
+  &quot;product_name_complete&quot;: true,
+  &quot;has_report_label&quot;: true
+}</code></div></details><details class='rawBlock raw3nut'><summary>Pass3-NUT raw (있음)</summary><div class='raw'><code>(skipped_by_pass2_no_nutrition)</code></div></details><details class='rawBlock raw4ing'><summary>Pass4-ING raw (있음)</summary><div class='raw'><code>{
+  &quot;ingredients_items&quot;: [
+    {
+      &quot;ingredient_name&quot;: &quot;옥수수가루&quot;,
+      &quot;origin&quot;: &quot;호주산&quot;,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;옥수수&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;호주산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;설탕&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;sub_ingredients&quot;: []
+    },
+    {
+      &quot;ingredient_name&quot;: &quot;쿠키분말&quot;,
+      &quot;origin&quot;: null,
+      &quot;origin_detail&quot;: null,
+      &quot;amount&quot;: &quot;6.8%&quot;,
+      &quot;sub_ingredients&quot;: [
+        {
+          &quot;name&quot;: &quot;밀가루&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;호주산, 미국산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;밀&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: &quot;호주산, 미국산&quot;,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;설탕&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;식물성유&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;팜유&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;코코아분말&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;물엿&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;레시틴&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;마시멜로&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;물엿&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;포도당&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;젤라틴&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;코코아분말&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;말레이시아산&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;바닐라향크런치&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;식물성경화유지&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;혼합삼곡&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;현미가루&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;보리가루&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;귀리가루&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;물엿&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;향료&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: &quot;바닐라크림향&quot;,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;혼합제제&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;제삼인산칼슘&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;탄산칼슘&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;정제소금&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;혼합제제&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: [
+            {
+              &quot;name&quot;: &quot;비타민C&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;나이아신아미드&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;말토덱스트린&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;dl-a-토코페릴아세테이트&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;포도당시럽분말&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;변성전분&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;아라비아검&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;비타민B6염산염&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;옥수수전분&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;비타민B1염산염&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;설탕&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;분말비타민A&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;엽산&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;팜유&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;이산화규소&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;비타민E&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            },
+            {
+              &quot;name&quot;: &quot;비타민D3&quot;,
+              &quot;origin&quot;: null,
+              &quot;origin_detail&quot;: null,
+              &quot;amount&quot;: null,
+              &quot;sub_ingredients&quot;: []
+            }
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;향료제제&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;피로인산제이철&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;산화아연&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        },
+        {
+          &quot;name&quot;: &quot;비타민B2인산에스테르나트륨&quot;,
+          &quot;origin&quot;: null,
+          &quot;origin_detail&quot;: null,
+          &quot;amount&quot;: null,
+          &quot;sub_ingredients&quot;: []
+        }
+      ]
+    }
+  ],
+  &quot;ignored_fragments&quot;: []
+}</code></div></details><details class='rawBlock raw4nut'><summary>Pass4-NUT raw (없음)</summary><div class='raw'><code>-</code></div></details></td></tr>
+</tbody></table></div>
+
+<script>
+(() => {
+  const qInput = document.getElementById('qFilter');
+  const passSel = document.getElementById('passFilter');
+  const rawSel = document.getElementById('rawFilter');
+  const rows = Array.from(document.querySelectorAll('tr.rowItem'));
+
+  function passMatch(row, passVal) {
+    const level = parseInt(row.dataset.pass || "0", 10);
+    const status = (row.dataset.status || "").toLowerCase();
+    const p2a = row.dataset.p2a === '1';
+    const p2b = row.dataset.p2b === '1';
+    const p3ing = row.dataset.p3ing === '1';
+    const p3nut = row.dataset.p3nut === '1';
+    const p4ing = row.dataset.p4ing === '1';
+    const p4nut = row.dataset.p4nut === '1';
+    if (passVal === 'all') return true;
+    if (passVal === 'processed') return status !== 'skipped_by_existing_history';
+    if (passVal === '2a') return p2a;
+    if (passVal === '2b') return p2b;
+    if (passVal === '3ing') return p3ing;
+    if (passVal === '3nut') return p3nut;
+    if (passVal === '4ing') return p4ing;
+    if (passVal === '4nut') return p4nut;
+    if (passVal === 'fail') return status !== 'saved';
+    if (passVal === 'saved') return status === 'saved';
+    const need = parseInt(passVal, 10);
+    if (Number.isNaN(need)) return true;
+    return level >= need;
+  }
+
+  function textMatch(row, q) {
+    if (!q) return true;
+    const txt = (row.textContent || "").toLowerCase();
+    return txt.includes(q);
+  }
+
+  function rawToggle(mode) {
+    const all = Array.from(document.querySelectorAll('.rawBlock'));
+    if (mode === 'all') {
+      all.forEach(el => { el.style.display = 'block'; });
+      return;
+    }
+    all.forEach(el => { el.style.display = 'none'; });
+    if (mode === 'none') return;
+    const show = Array.from(document.querySelectorAll('.raw' + mode));
+    show.forEach(el => { el.style.display = 'block'; });
+  }
+
+  function apply() {
+    const q = (qInput.value || '').toLowerCase().trim();
+    const passVal = passSel.value;
+    rows.forEach(row => {
+      const ok = passMatch(row, passVal) && textMatch(row, q);
+      row.style.display = ok ? '' : 'none';
+    });
+    rawToggle(rawSel.value);
+  }
+
+  qInput.addEventListener('input', apply);
+  passSel.addEventListener('change', apply);
+  rawSel.addEventListener('change', apply);
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copyBtn');
+    if (!btn) return;
+    const url = btn.getAttribute('data-url') || '';
+    try {
+      await navigator.clipboard.writeText(url);
+      const prev = btn.textContent;
+      btn.textContent = '복사됨';
+      setTimeout(() => { btn.textContent = prev || 'URL 복사'; }, 900);
+    } catch (_) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  });
+  apply();
+})();
+</script>
+
+</div></body></html>

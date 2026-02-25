@@ -61,6 +61,7 @@ def _normalize_sub_ingredient_node(node: Any) -> dict[str, Any] | None:
     origin = str(node.get("origin")).strip() if node.get("origin") else None
     origin_detail = str(node.get("origin_detail")).strip() if node.get("origin_detail") else None
     amount = str(node.get("amount")).strip() if node.get("amount") else None
+    name, amount = _normalize_kind_suffix(name, amount)
     children: list[dict[str, Any]] = []
     raw_children = node.get("sub_ingredients") or []
     if isinstance(raw_children, list):
@@ -68,6 +69,9 @@ def _normalize_sub_ingredient_node(node: Any) -> dict[str, Any] | None:
             n = _normalize_sub_ingredient_node(child)
             if n is not None:
                 children.append(n)
+    children = _drop_redundant_same_name_children(name, children)
+    if not name:
+        return None
     return {
         "name": name,
         "origin": origin,
@@ -75,6 +79,48 @@ def _normalize_sub_ingredient_node(node: Any) -> dict[str, Any] | None:
         "amount": amount,
         "sub_ingredients": children,
     }
+
+
+def _normalize_kind_suffix(name: str | None, amount: str | None) -> tuple[str | None, str | None]:
+    """
+    '코코아분말 2종' 같은 패턴은 name='코코아분말', amount='2종'으로 정규화한다.
+    """
+    nm = str(name or "").strip()
+    am = str(amount or "").strip() or None
+    if not nm:
+        return (None, am)
+    m = re.match(r"^(?P<base>.+?)\s*(?P<count>\d{1,2})\s*종$", nm)
+    if not m:
+        return (nm, am)
+    base = str(m.group("base") or "").strip() or nm
+    count_txt = str(m.group("count") or "").strip()
+    if am is None and count_txt:
+        am = f"{count_txt}종"
+    return (base, am)
+
+
+def _drop_redundant_same_name_children(
+    parent_name: str | None,
+    children: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    부모와 이름이 완전히 같은 의미 없는 하위 노드는 제거한다.
+    예: 코코아분말 -> [코코아분말] (부가 정보/하위노드 없음)
+    """
+    p = str(parent_name or "").strip()
+    if not p:
+        return children
+    out: list[dict[str, Any]] = []
+    for c in children:
+        if not isinstance(c, dict):
+            continue
+        cname = str(c.get("name") or "").strip()
+        c_has_meta = bool(c.get("origin") or c.get("origin_detail") or c.get("amount"))
+        c_has_children = bool(c.get("sub_ingredients"))
+        if cname and cname == p and (not c_has_meta) and (not c_has_children):
+            continue
+        out.append(c)
+    return out
 
 
 def _sanitize_origin_detail(detail: str | None, source_text: str | None) -> str | None:
@@ -329,6 +375,9 @@ def run_pass4_normalize(
                     origin = item.get("origin")
                     origin_detail = item.get("origin_detail")
                     amount = item.get("amount")
+                    ingredient_name = str(ingredient_name).strip() if ingredient_name else None
+                    amount = str(amount).strip() if amount else None
+                    ingredient_name, amount = _normalize_kind_suffix(ingredient_name, amount)
                     sub_items: list[dict[str, Any]] = []
                     raw_sub_items = item.get("sub_ingredients") or []
                     if isinstance(raw_sub_items, list):
@@ -336,12 +385,16 @@ def run_pass4_normalize(
                             normalized = _normalize_sub_ingredient_node(s)
                             if normalized is not None:
                                 sub_items.append(normalized)
+                    sub_items = _drop_redundant_same_name_children(ingredient_name, sub_items)
+                    if not ingredient_name:
+                        # 이름 없는 루트 항목은 저장하지 않는다.
+                        continue
                     ingredient_items.append(
                         {
-                            "ingredient_name": (str(ingredient_name).strip() if ingredient_name else None),
+                            "ingredient_name": ingredient_name,
                             "origin": (str(origin).strip() if origin else None),
                             "origin_detail": (str(origin_detail).strip() if origin_detail else None),
-                            "amount": (str(amount).strip() if amount else None),
+                            "amount": amount,
                             "sub_ingredients": sub_items,
                         }
                     )

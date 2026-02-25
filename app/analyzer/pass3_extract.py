@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import random
+import re
 import time
 from typing import Any
 
@@ -51,6 +52,78 @@ def _call_pass3_with_retry(
     raise RuntimeError(str(last_error) if last_error else "unknown")
 
 
+_INGREDIENT_LABEL_PATTERNS = (
+    "원재료명",
+    "원재료",
+    "ingredients",
+)
+_NON_INGREDIENT_LABEL_PATTERNS = (
+    "품목보고번호",
+    "품목제조보고번호",
+    "제조원",
+    "유통전문판매원",
+    "소비기한",
+    "내포장재질",
+    "영양정보",
+    "영양성분",
+)
+
+
+def _contains_any(text: str, needles: tuple[str, ...]) -> bool:
+    t = str(text or "").lower()
+    return any(n.lower() in t for n in needles)
+
+
+def _ingredient_shape_score(text: str) -> int:
+    t = str(text or "").strip()
+    if not t:
+        return 0
+    score = 0
+    if "," in t:
+        score += 2
+    if "(" in t or "[" in t:
+        score += 1
+    if re.search(r"[가-힣A-Za-z]{2,}\s*\d+\s*%", t):
+        score += 1
+    if len(t) >= 30:
+        score += 1
+    return score
+
+
+def _post_validate_pass3_ingredients(parsed_ing: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
+    out = dict(parsed_ing or {})
+    issues: list[str] = []
+    ing = str(out.get("ingredients_text") or "").strip()
+    ev = str(out.get("ingredients_evidence_text") or "").strip()
+    if not ing:
+        issues.append("missing_ingredients_text")
+        out["ingredients_complete"] = False
+        return out, issues
+
+    anchor_ok = _contains_any(ing, _INGREDIENT_LABEL_PATTERNS) or _contains_any(ev, _INGREDIENT_LABEL_PATTERNS)
+    if not anchor_ok:
+        issues.append("missing_ingredient_label_anchor")
+
+    # 원재료형 텍스트가 아닌 관리/표기 항목 텍스트를 읽어온 경우 차단
+    non_ing_hits = sum(1 for x in _NON_INGREDIENT_LABEL_PATTERNS if x in ing)
+    shape_score = _ingredient_shape_score(ing)
+    if non_ing_hits >= 2 and shape_score <= 1:
+        issues.append("non_ingredient_block_detected")
+
+    if shape_score == 0:
+        issues.append("weak_ingredient_shape")
+
+    if issues:
+        out["ingredients_complete"] = False
+        out["ingredients_text"] = None
+        if not out.get("ingredients_evidence_text"):
+            out["ingredients_evidence_text"] = ev or ing
+        reason = str(out.get("reason") or "").strip()
+        suffix = ",".join(issues)
+        out["reason"] = f"{reason} | pass3_ingredient_guard:{suffix}".strip(" |")
+    return out, issues
+
+
 def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_item_rpt_no: str | None = None) -> dict[str, Any]:
     prompt_pass3_ing = analyzer._build_prompt_pass3_ingredients(target_item_rpt_no=target_item_rpt_no)
     include_nutrition = bool(getattr(analyzer, "_pass3_include_nutrition", True))
@@ -70,6 +143,7 @@ def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_
             mime_type=mime_type,
             prompt=prompt_pass3_ing,
         )
+        parsed_ing, guard_issues = _post_validate_pass3_ingredients(parsed_ing if isinstance(parsed_ing, dict) else {})
         last_raw_text = raw_ing
         raw_nut: str | None = None
         parsed_nut: dict[str, Any] = {}
@@ -114,6 +188,7 @@ def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_
             "raw_api_response_pass3_ingredients": raw_api_ing,
             "raw_api_response_pass3_nutrition": (raw_api_nut if include_nutrition else None),
             "source_model": analyzer._pass3_source_model(),
+            "pass3_guard_issues": guard_issues,
         }
     except Exception as exc:
         return {

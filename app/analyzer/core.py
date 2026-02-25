@@ -18,7 +18,7 @@ import os
 from dataclasses import dataclass
 from typing import Any
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote, quote, urlunparse
 
 import requests
 
@@ -471,15 +471,62 @@ class URLIngredientAnalyzer:
             return "image/webp"
         return "application/octet-stream"
 
+    def _normalize_image_url_for_download(self, image_url: str) -> str:
+        """
+        다운로드 전 URL을 정규화한다.
+        - host: percent-encoding 해제 후 IDNA(punycode) 적용
+        - path/query: unicode 안전 인코딩
+        """
+        src = str(image_url or "").strip()
+        if not src:
+            return src
+        parsed = urlparse(src)
+        if not parsed.scheme or not parsed.netloc:
+            return src
+
+        host_raw = parsed.hostname or ""
+        if not host_raw:
+            return src
+
+        try:
+            host_decoded = unquote(host_raw).strip()
+            host_ascii = host_decoded.encode("idna").decode("ascii")
+        except Exception:
+            host_ascii = host_raw
+
+        host_part = host_ascii
+        if ":" in host_ascii and not host_ascii.startswith("["):
+            # IPv6 literal 보정
+            host_part = f"[{host_ascii}]"
+
+        userinfo = ""
+        if parsed.username is not None:
+            user = quote(unquote(parsed.username), safe="")
+            userinfo = user
+            if parsed.password is not None:
+                pw = quote(unquote(parsed.password), safe="")
+                userinfo += f":{pw}"
+            userinfo += "@"
+
+        netloc = f"{userinfo}{host_part}"
+        if parsed.port is not None:
+            netloc = f"{netloc}:{parsed.port}"
+
+        path = quote(unquote(parsed.path or ""), safe="/%:@+~,;=-._")
+        query = quote(unquote(parsed.query or ""), safe="=&%:@+~,;/-._")
+        fragment = quote(unquote(parsed.fragment or ""), safe="%:@+~,;/-._")
+        return urlunparse((parsed.scheme, netloc, path, parsed.params, query, fragment))
+
     def _download_image(self, image_url: str) -> tuple[bytes, str]:
         if image_url.startswith("data:image/"):
             return self._decode_data_url(image_url)
 
+        request_url = self._normalize_image_url_for_download(image_url)
         last_error: Exception | None = None
         for attempt in range(self.download_retries + 1):
             try:
                 response = self.session.get(
-                    image_url,
+                    request_url,
                     timeout=self.download_timeout_sec,
                     allow_redirects=True,
                     stream=True,
@@ -506,7 +553,7 @@ class URLIngredientAnalyzer:
                 if not image_bytes:
                     raise RuntimeError("empty image bytes")
                 mime_type = self._guess_mime_type(
-                    image_url=image_url,
+                    image_url=request_url,
                     content_type=response.headers.get("Content-Type"),
                     image_bytes=image_bytes,
                 )

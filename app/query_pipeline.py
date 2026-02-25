@@ -146,6 +146,11 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
             resize_policy_code TEXT,
             resize_policy_reason TEXT,
             resize_trace_json TEXT,
+            pass3_ingredients_raw TEXT,
+            pass3_ingredients_corrected TEXT,
+            pass3_boundary_corrected INTEGER,
+            pass3_boundary_confidence INTEGER,
+            pass3_boundary_issue_codes_json TEXT,
             retryable INTEGER NOT NULL DEFAULT 0,
             analyzed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (last_run_id) REFERENCES query_runs(id)
@@ -183,6 +188,11 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
         ("resize_policy_code", "TEXT"),
         ("resize_policy_reason", "TEXT"),
         ("resize_trace_json", "TEXT"),
+        ("pass3_ingredients_raw", "TEXT"),
+        ("pass3_ingredients_corrected", "TEXT"),
+        ("pass3_boundary_corrected", "INTEGER"),
+        ("pass3_boundary_confidence", "INTEGER"),
+        ("pass3_boundary_issue_codes_json", "TEXT"),
         ("validation_log_json", "TEXT"),
         # backward compatibility (old names)
         ("pipeline_case", "TEXT"),
@@ -495,6 +505,11 @@ def upsert_image_analysis_cache(
     resize_policy_code: str | None = None,
     resize_policy_reason: str | None = None,
     resize_trace_json: str | None = None,
+    pass3_ingredients_raw: str | None = None,
+    pass3_ingredients_corrected: str | None = None,
+    pass3_boundary_corrected: bool | None = None,
+    pass3_boundary_confidence: int | None = None,
+    pass3_boundary_issue_codes_json: str | None = None,
     retryable: bool = False,
 ) -> None:
     image_url = str(image_url or "").strip()
@@ -514,9 +529,11 @@ def upsert_image_analysis_cache(
             pass2_w, pass2_h, pass2_est_tokens, pass2_resized,
             pass3_w, pass3_h, pass3_est_tokens, pass3_resized,
             resize_policy_code, resize_policy_reason, resize_trace_json,
+            pass3_ingredients_raw, pass3_ingredients_corrected, pass3_boundary_corrected,
+            pass3_boundary_confidence, pass3_boundary_issue_codes_json,
             retryable, analyzed_at
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
         ON CONFLICT(image_url) DO UPDATE SET
             image_url_hash=excluded.image_url_hash,
             last_run_id=excluded.last_run_id,
@@ -556,6 +573,11 @@ def upsert_image_analysis_cache(
             resize_policy_code=excluded.resize_policy_code,
             resize_policy_reason=excluded.resize_policy_reason,
             resize_trace_json=excluded.resize_trace_json,
+            pass3_ingredients_raw=excluded.pass3_ingredients_raw,
+            pass3_ingredients_corrected=excluded.pass3_ingredients_corrected,
+            pass3_boundary_corrected=excluded.pass3_boundary_corrected,
+            pass3_boundary_confidence=excluded.pass3_boundary_confidence,
+            pass3_boundary_issue_codes_json=excluded.pass3_boundary_issue_codes_json,
             retryable=excluded.retryable,
             analyzed_at=CURRENT_TIMESTAMP
         """,
@@ -599,6 +621,11 @@ def upsert_image_analysis_cache(
             resize_policy_code,
             resize_policy_reason,
             resize_trace_json,
+            pass3_ingredients_raw,
+            pass3_ingredients_corrected,
+            int(pass3_boundary_corrected) if pass3_boundary_corrected is not None else None,
+            int(pass3_boundary_confidence) if pass3_boundary_confidence is not None else None,
+            pass3_boundary_issue_codes_json,
             1 if retryable else 0,
         ),
     )
