@@ -145,6 +145,9 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
 
     table_rows: list[str] = []
     for r in rows:
+        query_text = str(r["query_text"] or "")
+        query_text_esc = html.escape(query_text)
+        query_attr = html.escape(query_text, quote=True)
         table_rows.append(
             "<tr>"
             f"<td><input type='checkbox' class='delChk' value='{int(r['id'])}' /> {int(r['id'])}</td>"
@@ -155,7 +158,7 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
             f"<td>{html.escape(str(r['last_run_at'] or '-'))}</td>"
             f"<td>{html.escape(str(r['provider_pages'] or '-'))}</td>"
             f"<td class='num'>{int(r['final_saved_count'] or 0):,}</td>"
-            f"<td class='query'>{html.escape(str(r['query_text'] or ''))}</td>"
+            f"<td class='query'><button type='button' class='query-copy' data-query='{query_attr}'>{query_text_esc}</button></td>"
             "</tr>"
         )
     tbody = "\n".join(table_rows)
@@ -241,6 +244,21 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
     tbody tr:hover {{ background: #f8fbff; }}
     .num {{ text-align: right; white-space: nowrap; }}
     .query {{ min-width: 420px; }}
+    .query-copy {{
+      width: 100%;
+      text-align: left;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      font-size: 13px;
+      color: inherit;
+      word-break: break-word;
+    }}
+    .query-copy.copied {{
+      color: #0f766e;
+      font-weight: 700;
+    }}
     .glossary {{ margin-top: 10px; font-size: 13px; line-height: 1.6; }}
     .glossary b {{ display: inline-block; min-width: 180px; }}
     .muted {{ color: var(--muted); }}
@@ -285,7 +303,8 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
         <button id="selectVisibleBtn" class="btn" type="button">보이는 항목 전체 선택</button>
         <button id="clearSelBtn" class="btn" type="button">선택 해제</button>
         <button id="rerunSearchBtn" class="btn" type="button">선택 검색어 검색만 다시</button>
-        <button id="rerunAnalyzeBtn" class="btn" type="button">선택 검색어 URL까지 다시 분석</button>
+        <button id="resetUrlCacheBtn" class="btn" type="button">선택 검색어 URL 캐시 삭제</button>
+        <button id="resetUrlCacheAndFinalBtn" class="btn" type="button">선택 검색어 URL 캐시 + food_final 전면 삭제</button>
         <button id="deleteBtn" class="btn danger" type="button">선택 검색어 삭제</button>
       </div>
     </div>
@@ -317,7 +336,8 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
     const selectVisibleBtn = document.getElementById('selectVisibleBtn');
     const clearSelBtn = document.getElementById('clearSelBtn');
     const rerunSearchBtn = document.getElementById('rerunSearchBtn');
-    const rerunAnalyzeBtn = document.getElementById('rerunAnalyzeBtn');
+    const resetUrlCacheBtn = document.getElementById('resetUrlCacheBtn');
+    const resetUrlCacheAndFinalBtn = document.getElementById('resetUrlCacheAndFinalBtn');
     const deleteBtn = document.getElementById('deleteBtn');
     const rows = Array.from(document.querySelectorAll('#tbl tbody tr'));
 
@@ -368,15 +388,25 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
       const qs = encodeURIComponent(ids.join(','));
       window.location.href = `/rerun?mode=search_only&ids=${{qs}}`;
     }});
-    rerunAnalyzeBtn.addEventListener('click', () => {{
+    resetUrlCacheBtn.addEventListener('click', () => {{
       const ids = Array.from(document.querySelectorAll('.delChk:checked')).map((ck) => ck.value);
       if (!ids.length) {{
-        alert('재분석할 검색어를 선택하세요.');
+        alert('URL 캐시를 삭제할 검색어를 선택하세요.');
         return;
       }}
-      if (!confirm(`선택한 검색어 ${{ids.length}}개의 URL 분석 캐시를 함께 지울까요?\\n(검색+URL 재분석 가능)`)) return;
+      if (!confirm(`선택한 검색어 ${{ids.length}}개의 URL 캐시/분석 캐시를 삭제할까요?\\n(검색 API 재수집 + URL 재분석)`)) return;
       const qs = encodeURIComponent(ids.join(','));
-      window.location.href = `/rerun?mode=reanalyze_urls&ids=${{qs}}`;
+      window.location.href = `/rerun?mode=reset_url_cache&ids=${{qs}}`;
+    }});
+    resetUrlCacheAndFinalBtn.addEventListener('click', () => {{
+      const ids = Array.from(document.querySelectorAll('.delChk:checked')).map((ck) => ck.value);
+      if (!ids.length) {{
+        alert('전면 삭제할 검색어를 선택하세요.');
+        return;
+      }}
+      if (!confirm(`선택한 검색어 ${{ids.length}}개의 URL 캐시/분석 캐시와 food_final을 전면 삭제할까요?\\n(다음 실행 시 처음부터 재생성)`)) return;
+      const qs = encodeURIComponent(ids.join(','));
+      window.location.href = `/rerun?mode=reset_url_cache_and_final&ids=${{qs}}`;
     }});
     deleteBtn.addEventListener('click', () => {{
       const ids = Array.from(document.querySelectorAll('.delChk:checked')).map((ck) => ck.value);
@@ -387,6 +417,29 @@ def _build_query_pool_html(rows: list[sqlite3.Row]) -> str:
       if (!confirm(`선택한 검색어 ${{ids.length}}개를 삭제할까요?\\n(관련 실행로그/캐시도 함께 삭제)`)) return;
       const qs = encodeURIComponent(ids.join(','));
       window.location.href = `/delete?ids=${{qs}}`;
+    }});
+    document.querySelectorAll('.query-copy').forEach((btn) => {{
+      btn.addEventListener('click', async () => {{
+        const text = btn.getAttribute('data-query') || '';
+        if (!text) return;
+        try {{
+          await navigator.clipboard.writeText(text);
+        }} catch (_err) {{
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }}
+        const old = btn.textContent || '';
+        btn.classList.add('copied');
+        btn.textContent = '복사됨';
+        setTimeout(() => {{
+          btn.classList.remove('copied');
+          btn.textContent = old;
+        }}, 800);
+      }});
     }});
   </script>
 </body>
@@ -458,7 +511,13 @@ def _delete_query_pool_ids(ids: list[int]) -> int:
 
 def _reset_query_pool_for_rerun(ids: list[int], mode: str) -> dict[str, int]:
     if not ids:
-        return {"queries": 0, "provider_progress_reset": 0, "url_cache_deleted": 0}
+        return {
+            "queries": 0,
+            "provider_progress_reset": 0,
+            "serp_cache_deleted": 0,
+            "url_cache_deleted": 0,
+            "food_final_deleted": 0,
+        }
     conn = sqlite3.connect(DB_FILE)
     try:
         init_query_pipeline_tables(conn)
@@ -469,7 +528,13 @@ def _reset_query_pool_for_rerun(ids: list[int], mode: str) -> dict[str, int]:
             tuple(ids),
         ).fetchall()
         if not rows:
-            return {"queries": 0, "provider_progress_reset": 0, "url_cache_deleted": 0}
+            return {
+                "queries": 0,
+                "provider_progress_reset": 0,
+                "serp_cache_deleted": 0,
+                "url_cache_deleted": 0,
+                "food_final_deleted": 0,
+            }
         qids = [int(r["id"]) for r in rows]
         norms = [str(r["query_norm"] or "") for r in rows if str(r["query_norm"] or "").strip()]
         qid_marks = ",".join(["?"] * len(qids))
@@ -489,13 +554,27 @@ def _reset_query_pool_for_rerun(ids: list[int], mode: str) -> dict[str, int]:
             tuple(qids),
         )
 
+        mode = str(mode or "search_only").strip().lower()
+        valid_modes = ("search_only", "reset_url_cache", "reset_url_cache_and_final")
+        if mode not in valid_modes:
+            mode = "search_only"
+
+        serp_cache_deleted = 0
         url_cache_deleted = 0
-        if mode == "reanalyze_urls":
+        food_final_deleted = 0
+        if mode in ("reset_url_cache", "reset_url_cache_and_final"):
             urows = conn.execute(
                 f"SELECT DISTINCT image_url FROM serp_cache WHERE query_id IN ({qid_marks})",
                 tuple(qids),
             ).fetchall()
             urls = [str(r[0] or "").strip() for r in urows if str(r[0] or "").strip()]
+
+            cur1 = conn.execute(
+                f"DELETE FROM serp_cache WHERE query_id IN ({qid_marks})",
+                tuple(qids),
+            )
+            serp_cache_deleted = int(cur1.rowcount or 0)
+
             if urls:
                 url_marks = ",".join(["?"] * len(urls))
                 cur2 = conn.execute(
@@ -504,11 +583,20 @@ def _reset_query_pool_for_rerun(ids: list[int], mode: str) -> dict[str, int]:
                 )
                 url_cache_deleted = int(cur2.rowcount or 0)
 
+        if mode == "reset_url_cache_and_final":
+            cur3 = conn.execute(
+                f"DELETE FROM food_final WHERE source_query_id IN ({qid_marks})",
+                tuple(qids),
+            )
+            food_final_deleted = int(cur3.rowcount or 0)
+
         conn.commit()
         return {
             "queries": len(qids),
             "provider_progress_reset": provider_progress_reset,
+            "serp_cache_deleted": serp_cache_deleted,
             "url_cache_deleted": url_cache_deleted,
+            "food_final_deleted": food_final_deleted,
         }
     finally:
         conn.close()
@@ -547,7 +635,7 @@ def _ensure_query_pool_server() -> None:
                 if path == "/rerun":
                     qs = parse_qs(parsed.query)
                     mode = str((qs.get("mode") or ["search_only"])[0] or "search_only").strip().lower()
-                    if mode not in ("search_only", "reanalyze_urls"):
+                    if mode not in ("search_only", "reset_url_cache", "reset_url_cache_and_final"):
                         mode = "search_only"
                     raw_ids = (qs.get("ids") or [""])[0]
                     ids: list[int] = []
@@ -559,7 +647,7 @@ def _ensure_query_pool_server() -> None:
                     body = (
                         "<html><head><meta charset='utf-8'></head><body>"
                         "<script>"
-                        f"alert('리셋 완료\\n검색어: {out.get('queries',0)}건\\n진행도 리셋: {out.get('provider_progress_reset',0)}건\\nURL 캐시 삭제: {out.get('url_cache_deleted',0)}건');"
+                        f"alert('리셋 완료\\n검색어: {out.get('queries',0)}건\\n진행도 리셋: {out.get('provider_progress_reset',0)}건\\nSERP 캐시 삭제: {out.get('serp_cache_deleted',0)}건\\nURL 분석 캐시 삭제: {out.get('url_cache_deleted',0)}건\\nfood_final 삭제: {out.get('food_final_deleted',0)}건');"
                         "location.href='/'"
                         "</script>"
                         "</body></html>"
