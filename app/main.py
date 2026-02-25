@@ -8,6 +8,7 @@
 import os
 import json
 import html
+import io
 import socket
 import subprocess
 import sys
@@ -381,6 +382,77 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 body_end = idx
         return text[body_start:body_end].strip()
 
+    def _try_parse_ingredients_items(raw_text: str) -> list[dict]:
+        text = str(raw_text or "").strip()
+        if not text:
+            return []
+        parsed: Any | None = None
+        try:
+            parsed = json.loads(text)
+        except Exception:
+            # 모델 응답에 코드펜스가 섞여 들어온 경우를 완화한다.
+            fenced = text
+            if fenced.startswith("```"):
+                fenced = re.sub(r"^```[a-zA-Z0-9_-]*\n?", "", fenced).strip()
+                fenced = re.sub(r"\n?```$", "", fenced).strip()
+                try:
+                    parsed = json.loads(fenced)
+                except Exception:
+                    parsed = None
+        if isinstance(parsed, dict):
+            items = parsed.get("ingredients_items")
+            if isinstance(items, list):
+                return [x for x in items if isinstance(x, dict)]
+            return []
+        if isinstance(parsed, list):
+            return [x for x in parsed if isinstance(x, dict)]
+        return []
+
+    def _render_ingredient_tree(items: list[dict]) -> str:
+        def _node_html(node: dict) -> str:
+            name = str(node.get("ingredient_name") or node.get("name") or "").strip() or "(이름없음)"
+            amount = str(node.get("amount_ratio") or node.get("amount") or "").strip()
+            origin = str(node.get("origin") or "").strip()
+            origin_detail = str(node.get("origin_detail") or "").strip()
+            metas: list[str] = []
+            if amount:
+                metas.append(f"<span class='ingMeta'>함량 {html.escape(amount)}</span>")
+            if origin:
+                metas.append(f"<span class='ingMeta'>원산지 {html.escape(origin)}</span>")
+            if origin_detail:
+                metas.append(f"<span class='ingMeta'>상세 {html.escape(origin_detail)}</span>")
+            children = node.get("sub_ingredients")
+            children_html = ""
+            if isinstance(children, list) and children:
+                child_nodes = "".join(_node_html(ch) for ch in children if isinstance(ch, dict))
+                if child_nodes:
+                    children_html = f"<ul class='ingList'>{child_nodes}</ul>"
+            return (
+                "<li>"
+                f"<div class='ingLine'><span class='ingName'>{html.escape(name)}</span>{''.join(metas)}</div>"
+                f"{children_html}"
+                "</li>"
+            )
+
+        if not items:
+            return "<span class='small'>파싱된 원재료 구조가 없습니다.</span>"
+        body = "".join(_node_html(it) for it in items if isinstance(it, dict))
+        return f"<div class='ingSummary'>구조화 항목 {len(items)}개</div><ul class='ingList root'>{body}</ul>"
+
+    def _format_ingredients_rich_html(raw_text: str | None) -> str:
+        text = str(raw_text or "").strip()
+        if not text:
+            return "<span class='small'>원재료명 없음</span>"
+        items = _try_parse_ingredients_items(text)
+        if items:
+            return _render_ingredient_tree(items)
+        parts = [p.strip() for p in re.split(r"[,;\n]+", text) if p and p.strip()]
+        if len(parts) >= 2:
+            lis = "".join(f"<li><div class='ingLine'><span class='ingName'>{html.escape(p)}</span></div></li>" for p in parts[:80])
+            more = f"<div class='small'>+{len(parts)-80}개 더 있음</div>" if len(parts) > 80 else ""
+            return f"<div class='ingSummary'>텍스트 분해 {len(parts)}개</div><ul class='ingList root'>{lis}</ul>{more}"
+        return f"<code>{html.escape(text[:1200])}</code>"
+
     all_rows: list[dict] = []
     for q in reports:
         for r in list(q.get("images") or []):
@@ -425,6 +497,14 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
         "details{margin-top:4px;}"
         ".raw{max-height:220px;overflow:auto;background:#fafafa;border:1px solid #eee;padding:6px;border-radius:6px;}"
         ".small{font-size:12px;color:#666;}"
+        ".ingRaw{max-height:140px;overflow:auto;background:#fbfcfe;border:1px solid #e5e7eb;padding:6px;border-radius:6px;}"
+        ".ingPane{min-width:300px;max-width:560px;}"
+        ".ingSummary{font-size:11px;color:#4b5563;margin:4px 0 6px 0;}"
+        ".ingList{margin:0;padding-left:18px;line-height:1.45;}"
+        ".ingList.root{padding-left:16px;}"
+        ".ingLine{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}"
+        ".ingName{font-weight:700;color:#111827;}"
+        ".ingMeta{font-size:11px;background:#eef2ff;border:1px solid #dbe4ff;color:#1f3a8a;border-radius:999px;padding:1px 7px;}"
         ".urlCell{display:flex;align-items:center;gap:8px;white-space:nowrap;}"
         ".copyBtn{height:28px;padding:0 10px;border:1px solid #cfd6e3;border-radius:8px;background:#fff;cursor:pointer;font-size:12px;}"
         ".copyBtn:hover{background:#f3f6fb;}"
@@ -505,7 +585,7 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
 
         html_parts.append("<table><thead><tr>"
                           "<th>No</th><th>이미지</th><th>해상도/토큰</th><th>결과</th><th>Pass</th><th>사유</th>"
-                          "<th>제품명</th><th>품목보고번호</th><th>출처</th><th>Raw</th>"
+                          "<th>제품명</th><th>품목보고번호</th><th>원재료 RAW+파싱</th><th>출처</th><th>Raw</th>"
                           "</tr></thead><tbody>")
         for r in rows:
             data_source_path = str(r.get("data_source_path") or "-")
@@ -529,6 +609,8 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             raw2b = str(r.get("raw_pass2b") or "")
             raw3 = str(r.get("raw_pass3") or "")
             raw4 = str(r.get("raw_pass4") or "")
+            ingredients_raw = str(r.get("ingredients_text") or "")
+            ingredients_rich_html = _format_ingredients_rich_html(ingredients_raw)
             raw3_ing = _extract_raw_section(raw3, "[PASS3-INGREDIENTS]\n", ["[PASS3-NUTRITION]\n"])
             raw3_nut = _extract_raw_section(raw3, "[PASS3-NUTRITION]\n", [])
             if (not raw3_ing) and raw3 and ("[PASS3-" not in raw3):
@@ -545,12 +627,26 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
             p4_nut_ok = bool(r.get("pass4_nut_attempted")) and bool((r.get("nutrition_text") or "").strip())
             ow = r.get("orig_w")
             oh = r.get("orig_h")
-            per_tok = r.get("estimated_tokens_per_call")
-            if ow and oh:
-                size_txt = f"{ow}x{oh}"
-            else:
-                size_txt = "-"
-            tok_txt = f"{int(per_tok):,}" if isinstance(per_tok, int) else "-"
+            otok = r.get("orig_est_tokens")
+            p2w = r.get("pass2_w")
+            p2h = r.get("pass2_h")
+            p2tok = r.get("pass2_est_tokens")
+            p2r = bool(r.get("pass2_resized"))
+            p3w = r.get("pass3_w")
+            p3h = r.get("pass3_h")
+            p3tok = r.get("pass3_est_tokens")
+            p3r = bool(r.get("pass3_resized"))
+            resize_code = str(r.get("resize_policy_code") or "-")
+            resize_reason = str(r.get("resize_policy_reason") or "-")
+            otok_txt = f"{int(otok):,}" if otok is not None else "-"
+            p2tok_txt = f"{int(p2tok):,}" if p2tok is not None else "-"
+            p3tok_txt = f"{int(p3tok):,}" if p3tok is not None else "-"
+            size_tok_txt = (
+                f"원본: <b>{ow or '-'}x{oh or '-'}</b> / tok~<b>{otok_txt}</b><br>"
+                f"P2: <b>{p2w or '-'}x{p2h or '-'}</b> / tok~<b>{p2tok_txt}</b> / resized={'Y' if p2r else 'N'}<br>"
+                f"P3: <b>{p3w or '-'}x{p3h or '-'}</b> / tok~<b>{p3tok_txt}</b> / resized={'Y' if p3r else 'N'}<br>"
+                f"<span class='small'>policy: {html.escape(resize_code)} | {html.escape(resize_reason[:120])}</span>"
+            )
             html_parts.append(
                 f"<tr class='rowItem' data-pass='{level}' data-status='{html.escape(status)}'"
                 f" data-p2a='{1 if p2a_ok else 0}' data-p2b='{1 if p2b_ok else 0}'"
@@ -562,12 +658,16 @@ def _write_query_execution_html_report(reports: list[dict]) -> Path:
                 f"<button class='copyBtn' data-url='{html.escape(url, quote=True)}'>URL 복사</button>"
                 f"<span class='small'>{html.escape((url.split('/')[2] if '://' in url else url)[:28])}</span>"
                 f"</div></td>"
-                f"<td>해상도: <b>{html.escape(size_txt)}</b><br>예상토큰(이미지 1회 기준): <b>{html.escape(tok_txt)}</b></td>"
+                f"<td>{size_tok_txt}</td>"
                 f"<td>{html.escape(status)}</td>"
                 f"<td>{html.escape(pass_ok)}</td>"
                 f"<td><code>{html.escape(fail_reason[:300] if fail_reason else '-')}</code></td>"
                 f"<td>{html.escape(product_name or '-')}</td>"
                 f"<td>{html.escape(report_no or '-')}</td>"
+                f"<td class='ingPane'>"
+                f"<details><summary>원재료 RAW {'(있음)' if ingredients_raw else '(없음)'}</summary><div class='ingRaw'><code>{html.escape(ingredients_raw or '-')}</code></div></details>"
+                f"{ingredients_rich_html}"
+                f"</td>"
                 f"<td>제품명: <b>{html.escape(product_source)}</b><br>영양성분: <b>{html.escape(str(nutrition_source_label or '-'))}</b></td>"
                 "<td>"
                 f"<details class='rawBlock raw2a'><summary>Pass2A raw {'(있음)' if raw2a else '(없음)'}</summary><div class='raw'><code>{html.escape(raw2a or '-')}</code></div></details>"
@@ -1397,6 +1497,95 @@ def _estimate_vision_tokens(width: int | None, height: int | None) -> int | None
     return max(1, int(round(pixels / 1024.0)))
 
 
+def _resize_image_to_target_tokens(
+    image_bytes: bytes,
+    mime_type: str | None,
+    *,
+    target_tokens: int,
+    min_short_side: int = 512,
+    min_long_side: int = 768,
+) -> tuple[bytes, str, int | None, int | None, int | None, bool, str]:
+    """
+    토큰 목표에 맞춰 다운스케일만 수행한다.
+    - 업스케일은 금지한다.
+    - 원본 토큰이 이미 목표 이하이면 원본 유지.
+    """
+    ow, oh = _extract_image_size(image_bytes, mime_type)
+    est = _estimate_vision_tokens(ow, oh)
+    if not ow or not oh or not est:
+        return (image_bytes, str(mime_type or "image/jpeg"), ow, oh, est, False, "size_unknown_keep_original")
+    if est <= max(1, int(target_tokens)):
+        return (image_bytes, str(mime_type or "image/jpeg"), ow, oh, est, False, "target_already_met")
+
+    try:
+        from PIL import Image  # type: ignore
+    except Exception as exc:  # pylint: disable=broad-except
+        raise RuntimeError(f"pil_import_failed:{exc}") from exc
+
+    try:
+        img = Image.open(io.BytesIO(image_bytes))
+        img.load()
+    except Exception as exc:  # pylint: disable=broad-except
+        raise RuntimeError(f"image_decode_failed:{exc}") from exc
+
+    ratio = (max(1, int(target_tokens)) / float(est)) ** 0.5
+    nw = max(1, int(round(ow * ratio)))
+    nh = max(1, int(round(oh * ratio)))
+    # 업스케일 금지
+    nw = min(nw, ow)
+    nh = min(nh, oh)
+
+    short_side = min(nw, nh)
+    long_side = max(nw, nh)
+    if short_side < min_short_side:
+        s = float(min_short_side) / float(max(1, short_side))
+        nw = int(round(nw * s))
+        nh = int(round(nh * s))
+    short_side = min(nw, nh)
+    long_side = max(nw, nh)
+    if long_side < min_long_side:
+        s = float(min_long_side) / float(max(1, long_side))
+        nw = int(round(nw * s))
+        nh = int(round(nh * s))
+
+    # 최소값 보정 후에도 업스케일 금지
+    nw = min(max(1, nw), ow)
+    nh = min(max(1, nh), oh)
+    if nw == ow and nh == oh:
+        return (image_bytes, str(mime_type or "image/jpeg"), ow, oh, est, False, "no_downscale_possible_keep_original")
+
+    try:
+        resized = img.resize((nw, nh), Image.Resampling.LANCZOS)
+        fmt = "JPEG"
+        out_mime = "image/jpeg"
+        if str(mime_type or "").lower() == "image/png":
+            fmt = "PNG"
+            out_mime = "image/png"
+        elif str(mime_type or "").lower() == "image/webp":
+            fmt = "WEBP"
+            out_mime = "image/webp"
+        buf = io.BytesIO()
+        if fmt == "JPEG":
+            if resized.mode not in ("RGB", "L"):
+                resized = resized.convert("RGB")
+            resized.save(buf, format=fmt, quality=92, optimize=True)
+        elif fmt == "PNG":
+            if resized.mode not in ("RGB", "RGBA", "L"):
+                resized = resized.convert("RGB")
+            resized.save(buf, format=fmt, optimize=True)
+        else:
+            if resized.mode not in ("RGB", "RGBA", "L"):
+                resized = resized.convert("RGB")
+            resized.save(buf, format=fmt, quality=92, method=6)
+        out_bytes = buf.getvalue()
+    except Exception as exc:  # pylint: disable=broad-except
+        raise RuntimeError(f"image_resize_encode_failed:{exc}") from exc
+
+    est2 = _estimate_vision_tokens(nw, nh)
+    trace = f"{ow}x{oh} tok~{est} -> {nw}x{nh} tok~{est2}"
+    return (out_bytes, out_mime, nw, nh, est2, True, trace)
+
+
 def execute_query_pipeline_run(
     *,
     mode: str = "1",
@@ -1439,6 +1628,30 @@ def execute_query_pipeline_run(
     max_pages = max(1, min(20, max_pages))
     max_images = max(0, max_images)
     pass_workers = max(1, min(50, pass_workers))
+    try:
+        vision_reject_aspect_ratio = float(os.getenv("VISION_REJECT_ASPECT_RATIO", "4.0"))
+    except Exception:
+        vision_reject_aspect_ratio = 4.0
+    try:
+        vision_target_tokens_pass2 = int(os.getenv("VISION_TARGET_TOKENS_PASS2", "300"))
+    except Exception:
+        vision_target_tokens_pass2 = 300
+    try:
+        vision_target_tokens_pass3 = int(os.getenv("VISION_TARGET_TOKENS_PASS3", "1000"))
+    except Exception:
+        vision_target_tokens_pass3 = 1000
+    try:
+        vision_min_short_side = int(os.getenv("VISION_MIN_SHORT_SIDE", "512"))
+    except Exception:
+        vision_min_short_side = 512
+    try:
+        vision_min_long_side = int(os.getenv("VISION_MIN_LONG_SIDE", "768"))
+    except Exception:
+        vision_min_long_side = 768
+    vision_target_tokens_pass2 = max(64, vision_target_tokens_pass2)
+    vision_target_tokens_pass3 = max(128, vision_target_tokens_pass3)
+    vision_min_short_side = max(64, vision_min_short_side)
+    vision_min_long_side = max(64, vision_min_long_side)
     pass3_gemini_concurrency = max(1, int(os.getenv("PASS3_GEMINI_CONCURRENCY", "1") or "1"))
     pass3_gemini_sem = threading.BoundedSemaphore(pass3_gemini_concurrency)
 
@@ -1476,6 +1689,8 @@ def execute_query_pipeline_run(
         s = str(stage or "").upper()
         if s.startswith("PASS1"):
             return "[█---]"
+        if s.startswith("RESIZE"):
+            return "[█---]"
         if s.startswith("PASS2"):
             return "[██--]"
         if s.startswith("PASS3"):
@@ -1511,6 +1726,10 @@ def execute_query_pipeline_run(
             self.fail_reason_counter = Counter()
             self.policy_fail_counter = Counter()
             self.error_fail_counter = Counter()
+            self.aspect_ratio_blocked = 0
+            self.orig_tokens_sum = 0
+            self.pass2_tokens_sum = 0
+            self.pass3_tokens_sum = 0
             self.started_at = time.time()
             self.slot_state = {
                 i: {"idx": "-", "url": "", "stage": "IDLE", "msg": "-"}
@@ -1589,10 +1808,29 @@ def execute_query_pipeline_run(
                 }
                 self.render(force=True)
 
-        def on_finish(self, slot_id: int, idx: int, url: str, *, pass4_ok: bool, fail_stage: str, fail_reason: str, api_calls: int) -> None:
+        def on_finish(
+            self,
+            slot_id: int,
+            idx: int,
+            url: str,
+            *,
+            pass4_ok: bool,
+            fail_stage: str,
+            fail_reason: str,
+            api_calls: int,
+            orig_tokens: int | None = None,
+            pass2_tokens: int | None = None,
+            pass3_tokens: int | None = None,
+        ) -> None:
             with self._lock:
                 self.done += 1
                 self.api_calls += int(api_calls or 0)
+                if orig_tokens is not None:
+                    self.orig_tokens_sum += int(orig_tokens)
+                if pass2_tokens is not None:
+                    self.pass2_tokens_sum += int(pass2_tokens)
+                if pass3_tokens is not None:
+                    self.pass3_tokens_sum += int(pass3_tokens)
                 if pass4_ok:
                     self.saved += 1
                     self.slot_state[slot_id] = {
@@ -1611,6 +1849,8 @@ def execute_query_pipeline_run(
                         self.error_fail_counter[stage] += 1
                     else:
                         self.policy_fail_counter[stage] += 1
+                    if "policy_excessive_aspect_ratio" in str(fail_reason):
+                        self.aspect_ratio_blocked += 1
                     self.slot_state[slot_id] = {
                         "idx": idx,
                         "url": str(url or ""),
@@ -1638,6 +1878,10 @@ def execute_query_pipeline_run(
             yield_ratio = (self.saved / self.done * 100.0) if self.done else 0.0
             top3 = self.fail_reason_counter.most_common(3)
             top3_txt = " | ".join(f"{k[:36]}:{v}" for k, v in top3) if top3 else "-"
+            saved_p2 = max(0, self.orig_tokens_sum - self.pass2_tokens_sum)
+            saved_p3 = max(0, self.orig_tokens_sum - self.pass3_tokens_sum)
+            saved_p2_rate = (saved_p2 / self.orig_tokens_sum * 100.0) if self.orig_tokens_sum else 0.0
+            saved_p3_rate = (saved_p3 / self.orig_tokens_sum * 100.0) if self.orig_tokens_sum else 0.0
             fail_txt = (
                 f"P1fail:{self.fail_stage_counter.get('pass1', 0)}"
                 f"(정책{self.policy_fail_counter.get('pass1',0)}/오류{self.error_fail_counter.get('pass1',0)}) "
@@ -1667,6 +1911,11 @@ def execute_query_pipeline_run(
             print(f"중복 스킵: {self.skipped_existing}건")
             print(f"Pass3 대기중(sem): {self.pass3_waiting}건")
             print(f"평균 속도: {speed:.2f} img/s | ETA: {eta}")
+            print(
+                f"토큰합(원본/P2/P3): {self.orig_tokens_sum:,}/{self.pass2_tokens_sum:,}/{self.pass3_tokens_sum:,} "
+                f"| 절감 P2 {saved_p2:,}({saved_p2_rate:.1f}%) P3 {saved_p3:,}({saved_p3_rate:.1f}%)"
+            )
+            print(f"세로비 정책 컷(aspect>{vision_reject_aspect_ratio:.2f}): {self.aspect_ratio_blocked}")
             print(f"최근 실패 TOP3: {top3_txt}")
             print("-" * 120)
             for i in range(1, self.slots + 1):
@@ -1691,6 +1940,9 @@ def execute_query_pipeline_run(
         _query_exec_log(logger, f"    - max images/query   : {max_images if max_images > 0 else '전체'}")
         _query_exec_log(logger, f"    - pass workers       : {pass_workers}")
         _query_exec_log(logger, f"    - pass3 gemini conc  : {pass3_gemini_concurrency}")
+        _query_exec_log(logger, f"    - reject aspect ratio: h/w > {vision_reject_aspect_ratio:.2f}")
+        _query_exec_log(logger, f"    - pass2 token target : ~{vision_target_tokens_pass2}")
+        _query_exec_log(logger, f"    - pass3 token target : ~{vision_target_tokens_pass3}")
         _query_exec_log(logger, f"    - 공공DB 번호 인덱스    : {len(public_food_index):,}개")
         queries = []
         if mode == "2":
@@ -1819,91 +2071,13 @@ def execute_query_pipeline_run(
                 for idx, img in enumerate(images, 1):
                     cached = get_image_analysis_cache(conn, img.url)
                     if cached:
-                        def _cached_bool(key: str) -> bool | None:
-                            if key not in cached.keys():
-                                return None
-                            v = cached[key]
-                            if v is None:
-                                return None
-                            return bool(int(v))
-
                         fail_stage = str(cached["fail_stage"] or "").strip() if "fail_stage" in cached.keys() else ""
                         stage_txt = fail_stage or ("pass4" if int(cached["pass4_ok"] or 0) == 1 else "attempted")
-                        pass1_ok_cached = _cached_bool("pass1_ok")
-                        p2a_ok_cached = _cached_bool("pass2a_ok")
-                        p2b_ok_cached = _cached_bool("pass2b_ok")
-                        pass3_ok_cached = _cached_bool("pass3_ok")
-                        pass4_ok_cached = _cached_bool("pass4_ok")
-
-                        # 과거 레코드에 pass 컬럼이 비어있는 경우 fail_stage 기준으로 최소 복원
-                        if pass1_ok_cached is None and fail_stage in ("pass2", "pass2b", "pass3", "pass4"):
-                            pass1_ok_cached = True
-                        if p2a_ok_cached is None and p2b_ok_cached is None and fail_stage in ("pass3", "pass4"):
-                            p2a_ok_cached = True
-                            p2b_ok_cached = True
-                        if pass3_ok_cached is None and fail_stage == "pass4":
-                            pass3_ok_cached = True
 
                         if not use_terminal_dashboard:
                             _query_exec_log(logger, f"    [{idx}/{total_images}] 기존 분석이력 스킵 (stage={stage_txt})")
                         dash.on_skip_existing(f"existing_history(stage={stage_txt})")
-                        query_report["images"].append(
-                            {
-                                "idx": idx,
-                                "url": img.url,
-                                "status": ("saved" if pass4_ok_cached else "failed_cached"),
-                                "fail_reason": (
-                                    str(cached["fail_reason"])
-                                    if "fail_reason" in cached.keys() and cached["fail_reason"] is not None
-                                    else f"existing_history(stage={stage_txt})"
-                                ),
-                                "pass1_attempted": _cached_bool("pass1_attempted"),
-                                "pass2a_attempted": _cached_bool("pass2a_attempted"),
-                                "pass2b_attempted": _cached_bool("pass2b_attempted"),
-                                "pass3_ing_attempted": _cached_bool("pass3_ing_attempted"),
-                                "pass3_nut_attempted": _cached_bool("pass3_nut_attempted"),
-                                "pass4_ing_attempted": _cached_bool("pass4_ing_attempted"),
-                                "pass4_nut_attempted": _cached_bool("pass4_nut_attempted"),
-                                "pass1_ok": pass1_ok_cached,
-                                "p2a_ok": p2a_ok_cached,
-                                "p2b_ok": p2b_ok_cached,
-                                "pass3_ok": pass3_ok_cached,
-                                "pass4_ok": pass4_ok_cached,
-                                "data_source_path": (
-                                    str(cached["data_source_path"])
-                                    if "data_source_path" in cached.keys() and cached["data_source_path"] is not None
-                                    else None
-                                ),
-                                "nutrition_data_source": (
-                                    str(cached["nutrition_data_source"])
-                                    if "nutrition_data_source" in cached.keys() and cached["nutrition_data_source"] is not None
-                                    else "none"
-                                ),
-                                "public_food_matched": bool(int(cached["public_food_matched"])) if "public_food_matched" in cached.keys() and cached["public_food_matched"] is not None else False,
-                                "report_no": None,
-                                "report_no_candidates": None,
-                                "report_no_selected_from": None,
-                                "product_name": None,
-                                "ingredients_text": None,
-                                "nutrition_text": None,
-                                "raw_pass2a": str(cached["raw_pass2a"]) if "raw_pass2a" in cached.keys() and cached["raw_pass2a"] is not None else None,
-                                "raw_pass2b": str(cached["raw_pass2b"]) if "raw_pass2b" in cached.keys() and cached["raw_pass2b"] is not None else None,
-                                "raw_pass3": str(cached["raw_pass3"]) if "raw_pass3" in cached.keys() and cached["raw_pass3"] is not None else None,
-                                "raw_pass4": str(cached["raw_pass4"]) if "raw_pass4" in cached.keys() and cached["raw_pass4"] is not None else None,
-                                "validation_log_json": (
-                                    str(cached["validation_log_json"])
-                                    if "validation_log_json" in cached.keys() and cached["validation_log_json"] is not None
-                                    else None
-                                ),
-                                "orig_w": None,
-                                "orig_h": None,
-                                "resized": False,
-                                "resize_to_w": None,
-                                "resize_to_h": None,
-                                "estimated_tokens_per_call": None,
-                                "estimated_tokens_total": None,
-                            }
-                        )
+                        # 실행 결과 리포트는 "이번 실행에서 실제 검수한 이미지"만 노출한다.
                         continue
                     to_process.append((idx, img))
 
@@ -1956,11 +2130,18 @@ def execute_query_pipeline_run(
                         "pass4_nut_attempted": False,
                         "orig_w": None,
                         "orig_h": None,
-                        "resized": False,
-                        "resize_to_w": None,
-                        "resize_to_h": None,
-                        "estimated_tokens_per_call": None,
-                        "estimated_tokens_total": None,
+                        "orig_est_tokens": None,
+                        "pass2_w": None,
+                        "pass2_h": None,
+                        "pass2_est_tokens": None,
+                        "pass2_resized": False,
+                        "pass3_w": None,
+                        "pass3_h": None,
+                        "pass3_est_tokens": None,
+                        "pass3_resized": False,
+                        "resize_policy_code": "ok",
+                        "resize_policy_reason": None,
+                        "resize_trace_json": None,
                     }
 
                     try:
@@ -1973,21 +2154,136 @@ def execute_query_pipeline_run(
                     result["orig_w"] = ow
                     result["orig_h"] = oh
                     est_tok = _estimate_vision_tokens(ow, oh)
-                    result["estimated_tokens_per_call"] = est_tok
+                    result["orig_est_tokens"] = est_tok
+                    ratio = (float(oh) / float(ow)) if ow and oh else None
+                    if ratio is not None and ratio > float(vision_reject_aspect_ratio):
+                        result["fail_stage"] = "pass1"
+                        result["fail_reason"] = (
+                            f"policy_excessive_aspect_ratio: aspect={ratio:.2f}>{vision_reject_aspect_ratio:.2f}"
+                        )
+                        result["resize_policy_code"] = "policy_excessive_aspect_ratio"
+                        result["resize_policy_reason"] = result["fail_reason"]
+                        dash.on_slot_stage(
+                            slot_id,
+                            idx,
+                            img_url,
+                            "PASS1",
+                            f"policy_block aspect={ratio:.2f}>{vision_reject_aspect_ratio:.2f}",
+                        )
+                        return result
+
+                    pass2_bytes = image_bytes
+                    pass2_mime = mime_type
+                    pass3_bytes = image_bytes
+                    pass3_mime = mime_type
+                    resize_trace: dict[str, Any] = {
+                        "aspect_ratio": ratio,
+                        "aspect_limit": float(vision_reject_aspect_ratio),
+                        "pass2_target_tokens": int(vision_target_tokens_pass2),
+                        "pass3_target_tokens": int(vision_target_tokens_pass3),
+                    }
+                    try:
+                        dash.on_slot_stage(slot_id, idx, img_url, "RESIZE-P2", "prepare")
+                        (
+                            pass2_bytes,
+                            pass2_mime,
+                            p2w,
+                            p2h,
+                            p2tok,
+                            p2resized,
+                            p2trace,
+                        ) = _resize_image_to_target_tokens(
+                            image_bytes=image_bytes,
+                            mime_type=mime_type,
+                            target_tokens=vision_target_tokens_pass2,
+                            min_short_side=vision_min_short_side,
+                            min_long_side=vision_min_long_side,
+                        )
+                        result["pass2_w"] = p2w
+                        result["pass2_h"] = p2h
+                        result["pass2_est_tokens"] = p2tok
+                        result["pass2_resized"] = bool(p2resized)
+                        resize_trace["pass2"] = p2trace
+                        dash.on_slot_stage(
+                            slot_id,
+                            idx,
+                            img_url,
+                            "RESIZE-P2",
+                            f"{p2trace} | {'resized' if p2resized else 'keep'}",
+                        )
+                    except Exception as exc:  # pylint: disable=broad-except
+                        result["fail_stage"] = "pass1"
+                        result["fail_reason"] = f"policy_resize_failed_pass2:{exc}"
+                        result["resize_policy_code"] = "policy_resize_failed_pass2"
+                        result["resize_policy_reason"] = str(exc)
+                        resize_trace["pass2"] = f"error:{exc}"
+                        result["resize_trace_json"] = json.dumps(resize_trace, ensure_ascii=False)
+                        dash.on_slot_stage(slot_id, idx, img_url, "RESIZE-P2", f"error:{exc}")
+                        return result
+
+                    try:
+                        dash.on_slot_stage(slot_id, idx, img_url, "RESIZE-P3", "prepare")
+                        (
+                            pass3_bytes,
+                            pass3_mime,
+                            p3w,
+                            p3h,
+                            p3tok,
+                            p3resized,
+                            p3trace,
+                        ) = _resize_image_to_target_tokens(
+                            image_bytes=image_bytes,
+                            mime_type=mime_type,
+                            target_tokens=vision_target_tokens_pass3,
+                            min_short_side=vision_min_short_side,
+                            min_long_side=vision_min_long_side,
+                        )
+                        result["pass3_w"] = p3w
+                        result["pass3_h"] = p3h
+                        result["pass3_est_tokens"] = p3tok
+                        result["pass3_resized"] = bool(p3resized)
+                        resize_trace["pass3"] = p3trace
+                        dash.on_slot_stage(
+                            slot_id,
+                            idx,
+                            img_url,
+                            "RESIZE-P3",
+                            f"{p3trace} | {'resized' if p3resized else 'keep'}",
+                        )
+                    except Exception as exc:  # pylint: disable=broad-except
+                        result["fail_stage"] = "pass1"
+                        result["fail_reason"] = f"policy_resize_failed_pass3:{exc}"
+                        result["resize_policy_code"] = "policy_resize_failed_pass3"
+                        result["resize_policy_reason"] = str(exc)
+                        resize_trace["pass3"] = f"error:{exc}"
+                        result["resize_trace_json"] = json.dumps(resize_trace, ensure_ascii=False)
+                        dash.on_slot_stage(slot_id, idx, img_url, "RESIZE-P3", f"error:{exc}")
+                        return result
+
+                    result["resize_policy_code"] = "ok"
+                    result["resize_policy_reason"] = "ok"
+                    result["resize_trace_json"] = json.dumps(resize_trace, ensure_ascii=False)
                     dash.on_slot_stage(
                         slot_id,
                         idx,
                         img_url,
                         "PASS1",
                         (
-                            f"{ow}x{oh} | tok~{est_tok or '-'} | no-resize"
+                            f"orig {ow}x{oh} tok~{est_tok or '-'} | "
+                            f"p2 {result.get('pass2_w')}x{result.get('pass2_h')} tok~{result.get('pass2_est_tokens') or '-'} | "
+                            f"p3 {result.get('pass3_w')}x{result.get('pass3_h')} tok~{result.get('pass3_est_tokens') or '-'}"
                             if ow and oh
-                            else "size=unknown | tok~- | no-resize"
+                            else "size=unknown"
                         ),
                     )
 
                     result["pass1_attempted"] = True
-                    pass1 = run_pass1_precheck(az, image_bytes=image_bytes, mime_type=mime_type, image_url=img_url)
+                    pass1 = run_pass1_precheck(
+                        az,
+                        image_bytes=pass2_bytes,
+                        mime_type=pass2_mime,
+                        image_url=img_url,
+                    )
                     pass1_ok = bool(pass1.get("precheck_pass"))
                     result["pass1_ok"] = pass1_ok
                     if not pass1_ok:
@@ -1997,7 +2293,7 @@ def execute_query_pipeline_run(
 
                     result["pass2a_attempted"] = True
                     dash.on_slot_stage(slot_id, idx, img_url, "PASS2A", "running")
-                    pass2 = az.analyze_pass2_from_bytes(image_bytes, mime_type, target_item_rpt_no=None)
+                    pass2 = az.analyze_pass2_from_bytes(pass2_bytes, pass2_mime, target_item_rpt_no=None)
                     result["api_calls"] += 1
                     qf = pass2.get("quality_flags") or {}
                     p2a_ok = bool(qf.get("pass2a_ok"))
@@ -2030,8 +2326,8 @@ def execute_query_pipeline_run(
                         try:
                             dash.on_pass3_wait_end(slot_id, idx, img_url, "ingredients")
                             pass3_ing = az.analyze_pass3_from_bytes(
-                                image_bytes=image_bytes,
-                                mime_type=mime_type,
+                                image_bytes=pass3_bytes,
+                                mime_type=pass3_mime,
                                 target_item_rpt_no=None,
                                 include_nutrition=False,
                             )
@@ -2039,8 +2335,8 @@ def execute_query_pipeline_run(
                             pass3_gemini_sem.release()
                     else:
                         pass3_ing = az.analyze_pass3_from_bytes(
-                            image_bytes=image_bytes,
-                            mime_type=mime_type,
+                            image_bytes=pass3_bytes,
+                            mime_type=pass3_mime,
                             target_item_rpt_no=None,
                             include_nutrition=False,
                         )
@@ -2128,16 +2424,16 @@ def execute_query_pipeline_run(
                                     try:
                                         dash.on_pass3_wait_end(slot_id, idx, img_url, "nutrition")
                                         raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
-                                            image_bytes=image_bytes,
-                                            mime_type=mime_type,
+                                            image_bytes=pass3_bytes,
+                                            mime_type=pass3_mime,
                                             prompt=prompt_nut,
                                         )
                                     finally:
                                         pass3_gemini_sem.release()
                                 else:
                                     raw_nut, parsed_nut, _raw_api_nut = az._call_model_pass3(  # pylint: disable=protected-access
-                                        image_bytes=image_bytes,
-                                        mime_type=mime_type,
+                                        image_bytes=pass3_bytes,
+                                        mime_type=pass3_mime,
                                         prompt=prompt_nut,
                                     )
                                 break
@@ -2358,6 +2654,21 @@ def execute_query_pipeline_run(
                             fail_stage=str(res.get("fail_stage") or ""),
                             fail_reason=str(res.get("fail_reason") or ""),
                             api_calls=int(res.get("api_calls") or 0),
+                            orig_tokens=(
+                                int(res.get("orig_est_tokens"))
+                                if res.get("orig_est_tokens") is not None
+                                else None
+                            ),
+                            pass2_tokens=(
+                                int(res.get("pass2_est_tokens"))
+                                if res.get("pass2_est_tokens") is not None
+                                else None
+                            ),
+                            pass3_tokens=(
+                                int(res.get("pass3_est_tokens"))
+                                if res.get("pass3_est_tokens") is not None
+                                else None
+                            ),
                         )
                         image_status = "saved" if bool(res.get("pass4_ok")) else "failed"
                         query_report["images"].append(
@@ -2394,11 +2705,18 @@ def execute_query_pipeline_run(
                                 "validation_log_json": res.get("validation_log_json"),
                                 "orig_w": res.get("orig_w"),
                                 "orig_h": res.get("orig_h"),
-                                "resized": bool(res.get("resized")),
-                                "resize_to_w": res.get("resize_to_w"),
-                                "resize_to_h": res.get("resize_to_h"),
-                                "estimated_tokens_per_call": res.get("estimated_tokens_per_call"),
-                                "estimated_tokens_total": res.get("estimated_tokens_total"),
+                                "orig_est_tokens": res.get("orig_est_tokens"),
+                                "pass2_w": res.get("pass2_w"),
+                                "pass2_h": res.get("pass2_h"),
+                                "pass2_est_tokens": res.get("pass2_est_tokens"),
+                                "pass2_resized": bool(res.get("pass2_resized")),
+                                "pass3_w": res.get("pass3_w"),
+                                "pass3_h": res.get("pass3_h"),
+                                "pass3_est_tokens": res.get("pass3_est_tokens"),
+                                "pass3_resized": bool(res.get("pass3_resized")),
+                                "resize_policy_code": res.get("resize_policy_code"),
+                                "resize_policy_reason": res.get("resize_policy_reason"),
+                                "resize_trace_json": res.get("resize_trace_json"),
                             }
                         )
 
@@ -2427,6 +2745,20 @@ def execute_query_pipeline_run(
                                 data_source_path=res.get("data_source_path"),
                                 nutrition_data_source=res.get("nutrition_data_source"),
                                 public_food_matched=bool(res.get("public_food_matched")),
+                                orig_w=res.get("orig_w"),
+                                orig_h=res.get("orig_h"),
+                                orig_est_tokens=res.get("orig_est_tokens"),
+                                pass2_w=res.get("pass2_w"),
+                                pass2_h=res.get("pass2_h"),
+                                pass2_est_tokens=res.get("pass2_est_tokens"),
+                                pass2_resized=bool(res.get("pass2_resized")),
+                                pass3_w=res.get("pass3_w"),
+                                pass3_h=res.get("pass3_h"),
+                                pass3_est_tokens=res.get("pass3_est_tokens"),
+                                pass3_resized=bool(res.get("pass3_resized")),
+                                resize_policy_code=res.get("resize_policy_code"),
+                                resize_policy_reason=res.get("resize_policy_reason"),
+                                resize_trace_json=res.get("resize_trace_json"),
                             )
                             continue
 
@@ -2458,6 +2790,20 @@ def execute_query_pipeline_run(
                                 data_source_path=res.get("data_source_path"),
                                 nutrition_data_source=res.get("nutrition_data_source"),
                                 public_food_matched=bool(res.get("public_food_matched")),
+                                orig_w=res.get("orig_w"),
+                                orig_h=res.get("orig_h"),
+                                orig_est_tokens=res.get("orig_est_tokens"),
+                                pass2_w=res.get("pass2_w"),
+                                pass2_h=res.get("pass2_h"),
+                                pass2_est_tokens=res.get("pass2_est_tokens"),
+                                pass2_resized=bool(res.get("pass2_resized")),
+                                pass3_w=res.get("pass3_w"),
+                                pass3_h=res.get("pass3_h"),
+                                pass3_est_tokens=res.get("pass3_est_tokens"),
+                                pass3_resized=bool(res.get("pass3_resized")),
+                                resize_policy_code=res.get("resize_policy_code"),
+                                resize_policy_reason=res.get("resize_policy_reason"),
+                                resize_trace_json=res.get("resize_trace_json"),
                             )
                             continue
 
@@ -2488,6 +2834,20 @@ def execute_query_pipeline_run(
                                 data_source_path=res.get("data_source_path"),
                                 nutrition_data_source=res.get("nutrition_data_source"),
                                 public_food_matched=bool(res.get("public_food_matched")),
+                                orig_w=res.get("orig_w"),
+                                orig_h=res.get("orig_h"),
+                                orig_est_tokens=res.get("orig_est_tokens"),
+                                pass2_w=res.get("pass2_w"),
+                                pass2_h=res.get("pass2_h"),
+                                pass2_est_tokens=res.get("pass2_est_tokens"),
+                                pass2_resized=bool(res.get("pass2_resized")),
+                                pass3_w=res.get("pass3_w"),
+                                pass3_h=res.get("pass3_h"),
+                                pass3_est_tokens=res.get("pass3_est_tokens"),
+                                pass3_resized=bool(res.get("pass3_resized")),
+                                resize_policy_code=res.get("resize_policy_code"),
+                                resize_policy_reason=res.get("resize_policy_reason"),
+                                resize_trace_json=res.get("resize_trace_json"),
                             )
                             continue
 
@@ -2533,6 +2893,20 @@ def execute_query_pipeline_run(
                             data_source_path=res.get("data_source_path"),
                             nutrition_data_source=res.get("nutrition_data_source"),
                             public_food_matched=bool(res.get("public_food_matched")),
+                            orig_w=res.get("orig_w"),
+                            orig_h=res.get("orig_h"),
+                            orig_est_tokens=res.get("orig_est_tokens"),
+                            pass2_w=res.get("pass2_w"),
+                            pass2_h=res.get("pass2_h"),
+                            pass2_est_tokens=res.get("pass2_est_tokens"),
+                            pass2_resized=bool(res.get("pass2_resized")),
+                            pass3_w=res.get("pass3_w"),
+                            pass3_h=res.get("pass3_h"),
+                            pass3_est_tokens=res.get("pass3_est_tokens"),
+                            pass3_resized=bool(res.get("pass3_resized")),
+                            resize_policy_code=res.get("resize_policy_code"),
+                            resize_policy_reason=res.get("resize_policy_reason"),
+                            resize_trace_json=res.get("resize_trace_json"),
                         )
 
                 if total_images > 0:

@@ -732,6 +732,10 @@ def _fetch_final_output_rows(conn: sqlite3.Connection, limit: int = 100) -> list
           f.id, f.product_name, f.item_mnftr_rpt_no, f.ingredients_text, f.nutrition_text,
           f.nutrition_source, f.source_image_url, f.created_at,
           c.data_source_path,
+          c.orig_w, c.orig_h, c.orig_est_tokens,
+          c.pass2_w, c.pass2_h, c.pass2_est_tokens, c.pass2_resized,
+          c.pass3_w, c.pass3_h, c.pass3_est_tokens, c.pass3_resized,
+          c.resize_policy_code, c.resize_policy_reason,
           c.raw_pass2a, c.raw_pass2b, c.raw_pass3, c.raw_pass4
         FROM food_final f
         LEFT JOIN query_image_analysis_cache c ON c.image_url = f.source_image_url
@@ -870,7 +874,34 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
 
     trs: list[str] = []
     for r in rows:
-        rid, name, rpt, ing_raw, nut_raw, nut_src, img_url, created_at, data_src, raw2a, raw2b, raw3, raw4 = r
+        (
+            rid,
+            name,
+            rpt,
+            ing_raw,
+            nut_raw,
+            nut_src,
+            img_url,
+            created_at,
+            data_src,
+            ow,
+            oh,
+            otok,
+            p2w,
+            p2h,
+            p2tok,
+            p2resized,
+            p3w,
+            p3h,
+            p3tok,
+            p3resized,
+            resize_code,
+            resize_reason,
+            raw2a,
+            raw2b,
+            raw3,
+            raw4,
+        ) = r
         ing_html = _format_ingredients_block(ing_raw)
         nut_preview = html.escape(str(nut_raw or "")[:500]) if nut_raw else "-"
         raw2a_txt = str(raw2a or "").strip()
@@ -886,6 +917,12 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
         has4i = "1" if raw4_ing_txt else "0"
         has4n = "1" if raw4_nut_txt else "0"
         safe_url = html.escape(str(img_url or ""))
+        size_meta = (
+            f"원본 {ow or '-'}x{oh or '-'} tok~{otok or '-'} | "
+            f"P2 {p2w or '-'}x{p2h or '-'} tok~{p2tok or '-'} r={'Y' if p2resized else 'N'} | "
+            f"P3 {p3w or '-'}x{p3h or '-'} tok~{p3tok or '-'} r={'Y' if p3resized else 'N'}"
+        )
+        policy_meta = f"{resize_code or '-'} | {str(resize_reason or '-')[:140]}"
         trs.append(
             f"<tr data-has-pass2a='{has2a}' data-has-pass2b='{has2b}' data-has-pass3ing='{has3i}' data-has-pass3nut='{has3n}' data-has-pass4ing='{has4i}' data-has-pass4nut='{has4n}'>"
             f"<td class='id'>{int(rid)}</td>"
@@ -902,7 +939,10 @@ def _build_final_outputs_html(rows: list[sqlite3.Row]) -> str:
             f"<details class='raw-block raw-pass4ing' {'open' if raw4_ing_txt else ''}><summary>Pass4-ING RAW</summary><pre class='raw-pre'>{html.escape(raw4_ing_txt or '-')}</pre></details>"
             f"<details class='raw-block raw-pass4nut' {'open' if raw4_nut_txt else ''}><summary>Pass4-NUT RAW</summary><pre class='raw-pre'>{html.escape(raw4_nut_txt or '-')}</pre></details>"
             "</td>"
-            f"<td><div>제품명 출처: <b>{html.escape(_product_source_label(data_src))}</b></div><div>영양성분 출처: <b>{html.escape(_nutrition_source_label(nut_src))}</b></div></td>"
+            f"<td><div>제품명 출처: <b>{html.escape(_product_source_label(data_src))}</b></div>"
+            f"<div>영양성분 출처: <b>{html.escape(_nutrition_source_label(nut_src))}</b></div>"
+            f"<div class='muted'>사이즈/토큰: {html.escape(size_meta)}</div>"
+            f"<div class='muted'>정책: {html.escape(policy_meta)}</div></td>"
             f"<td><div class='resetCol'><button type='button' class='mini reset-btn' data-mode='cache' data-url='{safe_url}'>캐시만 삭제</button>"
             f"<button type='button' class='mini danger reset-btn' data-mode='full' data-url='{safe_url}'>캐시+최종 산출물 삭제</button></div></td>"
             f"<td>{html.escape(str(created_at or '-'))}</td>"
