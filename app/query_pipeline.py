@@ -121,6 +121,7 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
             raw_pass2b TEXT,
             raw_pass3 TEXT,
             raw_pass4 TEXT,
+            validation_log_json TEXT,
             pass1_attempted INTEGER,
             pass2a_attempted INTEGER,
             pass2b_attempted INTEGER,
@@ -154,6 +155,7 @@ def init_query_pipeline_tables(conn: sqlite3.Connection) -> None:
         ("data_source_path", "TEXT"),
         ("nutrition_data_source", "TEXT"),
         ("public_food_matched", "INTEGER"),
+        ("validation_log_json", "TEXT"),
         # backward compatibility (old names)
         ("pipeline_case", "TEXT"),
         ("nutrition_strategy", "TEXT"),
@@ -440,6 +442,7 @@ def upsert_image_analysis_cache(
     raw_pass2b: str | None,
     raw_pass3: str | None = None,
     raw_pass4: str | None = None,
+    validation_log_json: str | None = None,
     pass1_attempted: bool | None = None,
     pass2a_attempted: bool | None = None,
     pass2b_attempted: bool | None = None,
@@ -462,12 +465,12 @@ def upsert_image_analysis_cache(
             image_url, image_url_hash, last_run_id,
             pass1_ok, pass2a_ok, pass2b_ok, pass3_ok, pass4_ok,
             fail_stage, fail_reason,
-            raw_pass2a, raw_pass2b, raw_pass3, raw_pass4,
+            raw_pass2a, raw_pass2b, raw_pass3, raw_pass4, validation_log_json,
             pass1_attempted, pass2a_attempted, pass2b_attempted, pass3_ing_attempted, pass3_nut_attempted,
             pass4_ing_attempted, pass4_nut_attempted, data_source_path, nutrition_data_source, public_food_matched,
             retryable, analyzed_at
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
         ON CONFLICT(image_url) DO UPDATE SET
             image_url_hash=excluded.image_url_hash,
             last_run_id=excluded.last_run_id,
@@ -482,6 +485,7 @@ def upsert_image_analysis_cache(
             raw_pass2b=excluded.raw_pass2b,
             raw_pass3=excluded.raw_pass3,
             raw_pass4=excluded.raw_pass4,
+            validation_log_json=excluded.validation_log_json,
             pass1_attempted=excluded.pass1_attempted,
             pass2a_attempted=excluded.pass2a_attempted,
             pass2b_attempted=excluded.pass2b_attempted,
@@ -510,6 +514,7 @@ def upsert_image_analysis_cache(
             raw_pass2b,
             raw_pass3,
             raw_pass4,
+            validation_log_json,
             int(pass1_attempted) if pass1_attempted is not None else None,
             int(pass2a_attempted) if pass2a_attempted is not None else None,
             int(pass2b_attempted) if pass2b_attempted is not None else None,

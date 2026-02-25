@@ -97,6 +97,7 @@ def run_pass3_extract(analyzer: Any, image_bytes: bytes, mime_type: str, target_
             "note": parsed_ing.get("reason") or parsed_nut.get("reason") or "ai(pass3)",
             "product_report_number": parsed_ing.get("product_report_number"),
             "ingredients_text": parsed_ing.get("ingredients_text"),
+            "ingredients_evidence_text": parsed_ing.get("ingredients_evidence_text"),
             "allergen_text": parsed_ing.get("allergen_text"),
             "nutrition_text": (parsed_nut.get("nutrition_text") if include_nutrition else None),
             "product_name_in_image": parsed_ing.get("product_name_in_image"),

@@ -18,7 +18,7 @@ import webbrowser
 import threading
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, FIRST_COMPLETED, wait
-from typing import Callable
+from typing import Callable, Any
 from collections import Counter
 
 import sqlite3
@@ -135,6 +135,152 @@ def _select_best_report_candidate(
             return (best_no, best_row, "public_best_nutrition")
         return (best_no, best_row, "public_any_hit")
     return (report_candidates[0], None, "first_candidate_no_public_match")
+
+
+_INGREDIENT_CONFUSION_PAIRS: tuple[tuple[str, str], ...] = (
+    ("알룰로스", "과당"),
+    ("유청단백", "대두단백"),
+    ("에리스리톨", "자일리톨"),
+)
+
+
+def _norm_for_match(text: str | None) -> str:
+    v = str(text or "").strip().lower()
+    v = re.sub(r"\s+", "", v)
+    v = re.sub(r"[^\w가-힣]", "", v)
+    return v
+
+
+def _is_edit_distance_le1(a: str, b: str) -> bool:
+    if a == b:
+        return True
+    la, lb = len(a), len(b)
+    if abs(la - lb) > 1:
+        return False
+    # same length: at most one substitution
+    if la == lb:
+        mismatches = 0
+        for i in range(la):
+            if a[i] != b[i]:
+                mismatches += 1
+                if mismatches > 1:
+                    return False
+        return True
+    # one insertion/deletion
+    if la > lb:
+        a, b = b, a
+        la, lb = lb, la
+    i = j = 0
+    used = False
+    while i < la and j < lb:
+        if a[i] == b[j]:
+            i += 1
+            j += 1
+            continue
+        if used:
+            return False
+        used = True
+        j += 1
+    return True
+
+
+def _validate_pass3_ingredients_verbatim(
+    ingredients_text: str | None,
+    evidence_text: str | None,
+) -> dict[str, Any]:
+    pred_raw = str(ingredients_text or "").strip()
+    src_raw = str(evidence_text or "").strip()
+    pred_norm = _norm_for_match(pred_raw)
+    src_norm = _norm_for_match(src_raw)
+
+    if not pred_raw:
+        return {
+            "status": "fail",
+            "code": "pass3_ingredients_missing",
+            "message": "원재료명이 비어 있습니다.",
+            "pred_raw": pred_raw,
+            "source_raw": src_raw,
+            "pred_norm": pred_norm,
+            "source_norm": src_norm,
+        }
+
+    if not src_raw:
+        return {
+            "status": "warn",
+            "code": "pass3_evidence_missing",
+            "message": "원문 근거 텍스트가 없어 보수 검증을 축소 적용했습니다.",
+            "pred_raw": pred_raw,
+            "source_raw": src_raw,
+            "pred_norm": pred_norm,
+            "source_norm": src_norm,
+        }
+
+    # 혼동쌍은 완전일치 원칙(의미 변경 금지)
+    for a, b in _INGREDIENT_CONFUSION_PAIRS:
+        an = _norm_for_match(a)
+        bn = _norm_for_match(b)
+        src_has_a = an in src_norm
+        src_has_b = bn in src_norm
+        pred_has_a = an in pred_norm
+        pred_has_b = bn in pred_norm
+        if src_has_a and pred_has_b and not src_has_b:
+            return {
+                "status": "fail",
+                "code": "ingredient_substitution_mismatch",
+                "message": f"원문 '{a}'를 예측에서 '{b}'로 치환한 것으로 판단되어 폐기합니다.",
+                "source_term": a,
+                "pred_term": b,
+                "pred_raw": pred_raw,
+                "source_raw": src_raw,
+                "pred_norm": pred_norm,
+                "source_norm": src_norm,
+            }
+        if src_has_b and pred_has_a and not src_has_a:
+            return {
+                "status": "fail",
+                "code": "ingredient_substitution_mismatch",
+                "message": f"원문 '{b}'를 예측에서 '{a}'로 치환한 것으로 판단되어 폐기합니다.",
+                "source_term": b,
+                "pred_term": a,
+                "pred_raw": pred_raw,
+                "source_raw": src_raw,
+                "pred_norm": pred_norm,
+                "source_norm": src_norm,
+            }
+
+    # 띄어쓰기/줄바꿈 차이는 허용. 완전 포함이면 통과.
+    if pred_norm and pred_norm in src_norm:
+        return {
+            "status": "pass",
+            "code": "ok_verbatim_match",
+            "message": "원문 근거와 일치합니다(공백/줄바꿈 차이 허용).",
+            "pred_raw": pred_raw,
+            "source_raw": src_raw,
+            "pred_norm": pred_norm,
+            "source_norm": src_norm,
+        }
+
+    # 근거 미포함이지만 1글자 오탈자 수준이면 경고 통과
+    if pred_norm and src_norm and _is_edit_distance_le1(pred_norm, src_norm):
+        return {
+            "status": "warn",
+            "code": "ok_minor_ocr_tolerated",
+            "message": "원문과 1글자 내 OCR 오차로 판단되어 통과 처리했습니다.",
+            "pred_raw": pred_raw,
+            "source_raw": src_raw,
+            "pred_norm": pred_norm,
+            "source_norm": src_norm,
+        }
+
+    return {
+        "status": "fail",
+        "code": "ingredient_evidence_mismatch",
+        "message": "원문 근거와 예측 원재료명이 일치하지 않아 보수적으로 폐기합니다.",
+        "pred_raw": pred_raw,
+        "source_raw": src_raw,
+        "pred_norm": pred_norm,
+        "source_norm": src_norm,
+    }
 
 
 def _build_public_food_index(conn: sqlite3.Connection) -> dict[str, dict]:
@@ -1744,6 +1890,11 @@ def execute_query_pipeline_run(
                                 "raw_pass2b": str(cached["raw_pass2b"]) if "raw_pass2b" in cached.keys() and cached["raw_pass2b"] is not None else None,
                                 "raw_pass3": str(cached["raw_pass3"]) if "raw_pass3" in cached.keys() and cached["raw_pass3"] is not None else None,
                                 "raw_pass4": str(cached["raw_pass4"]) if "raw_pass4" in cached.keys() and cached["raw_pass4"] is not None else None,
+                                "validation_log_json": (
+                                    str(cached["validation_log_json"])
+                                    if "validation_log_json" in cached.keys() and cached["validation_log_json"] is not None
+                                    else None
+                                ),
                                 "orig_w": None,
                                 "orig_h": None,
                                 "resized": False,
@@ -1786,6 +1937,7 @@ def execute_query_pipeline_run(
                         "raw_pass2b": None,
                         "raw_pass3": None,
                         "raw_pass4": None,
+                        "validation_log_json": None,
                         "product_name": None,
                         "report_no": None,
                         "report_no_candidates": None,
@@ -1908,6 +2060,18 @@ def execute_query_pipeline_run(
                         public_food_index=public_food_index,
                     )
                     ingredients_text = (pass3_ing.get("ingredients_text") or "").strip()
+                    ingredients_evidence_text = (pass3_ing.get("ingredients_evidence_text") or "").strip()
+                    validation = _validate_pass3_ingredients_verbatim(
+                        ingredients_text=ingredients_text,
+                        evidence_text=ingredients_evidence_text,
+                    )
+                    result["validation_log_json"] = json.dumps(validation, ensure_ascii=False)
+                    if str(validation.get("status")) == "fail":
+                        result["fail_stage"] = "pass3"
+                        result["fail_reason"] = (
+                            f"{validation.get('code')}:{validation.get('message')}"
+                        )
+                        return result
                     nutrition_text = None
                     if not ingredients_text:
                         result["fail_stage"] = "pass3"
@@ -2227,6 +2391,7 @@ def execute_query_pipeline_run(
                                 "raw_pass2b": res.get("raw_pass2b"),
                                 "raw_pass3": res.get("raw_pass3"),
                                 "raw_pass4": res.get("raw_pass4"),
+                                "validation_log_json": res.get("validation_log_json"),
                                 "orig_w": res.get("orig_w"),
                                 "orig_h": res.get("orig_h"),
                                 "resized": bool(res.get("resized")),
@@ -2251,6 +2416,7 @@ def execute_query_pipeline_run(
                                 fail_reason=str(res.get("fail_reason") or "pass2_fail"),
                                 raw_pass2a=res.get("raw_pass2a"),
                                 raw_pass2b=res.get("raw_pass2b"),
+                                validation_log_json=res.get("validation_log_json"),
                                 pass1_attempted=bool(res.get("pass1_attempted")),
                                 pass2a_attempted=bool(res.get("pass2a_attempted")),
                                 pass2b_attempted=bool(res.get("pass2b_attempted")),
@@ -2281,6 +2447,7 @@ def execute_query_pipeline_run(
                                 raw_pass2a=res.get("raw_pass2a"),
                                 raw_pass2b=res.get("raw_pass2b"),
                                 raw_pass3=res.get("raw_pass3"),
+                                validation_log_json=res.get("validation_log_json"),
                                 pass1_attempted=bool(res.get("pass1_attempted")),
                                 pass2a_attempted=bool(res.get("pass2a_attempted")),
                                 pass2b_attempted=bool(res.get("pass2b_attempted")),
@@ -2310,6 +2477,7 @@ def execute_query_pipeline_run(
                                 raw_pass2b=res.get("raw_pass2b"),
                                 raw_pass3=res.get("raw_pass3"),
                                 raw_pass4=res.get("raw_pass4"),
+                                validation_log_json=res.get("validation_log_json"),
                                 pass1_attempted=bool(res.get("pass1_attempted")),
                                 pass2a_attempted=bool(res.get("pass2a_attempted")),
                                 pass2b_attempted=bool(res.get("pass2b_attempted")),
@@ -2354,6 +2522,7 @@ def execute_query_pipeline_run(
                             raw_pass2b=res.get("raw_pass2b"),
                             raw_pass3=res.get("raw_pass3"),
                             raw_pass4=res.get("raw_pass4"),
+                            validation_log_json=res.get("validation_log_json"),
                             pass1_attempted=bool(res.get("pass1_attempted")),
                             pass2a_attempted=bool(res.get("pass2a_attempted")),
                             pass2b_attempted=bool(res.get("pass2b_attempted")),
