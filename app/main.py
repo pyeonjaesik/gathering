@@ -3190,15 +3190,18 @@ def run_query_pipeline_execute() -> None:
     raw_workers = input("  🔹 Pass 동시호출 수 [기본 5]: ").strip()
     print("  🔹 이미지 검색 엔진")
     print("    [1] Google Images")
-    print("    [2] Naver Images (Official OpenAPI)")
-    print("    [3] Naver Images (Blog source only)")
-    print("    [4] Naver Shop Detail Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [4] Naver Images (Blog source only)")
+    print("    [5] Naver Shop Detail Images")
     raw_provider = input("  선택 > ").strip()
     if raw_provider == "2":
-        provider = "naver_official"
+        provider = "naver_serpapi"
     elif raw_provider == "3":
-        provider = "naver_blog"
+        provider = "naver_official"
     elif raw_provider == "4":
+        provider = "naver_blog"
+    elif raw_provider == "5":
         provider = "naver_shop"
     else:
         provider = "google"
@@ -3286,6 +3289,74 @@ def run_backend_import_menu() -> None:
     )
 
 
+def run_backend_import_payload_view_menu() -> None:
+    print("\n  🧾 [backend Import payload JSON 파일 생성]")
+    raw_limit = input("  🔹 최대 조회 건수 [기본 전체]: ").strip()
+    raw_min_id = input("  🔹 시작 id(min, 선택): ").strip()
+    raw_max_id = input("  🔹 끝 id(max, 선택): ").strip()
+
+    limit = int(raw_limit) if raw_limit.isdigit() else None
+    min_id = int(raw_min_id) if raw_min_id.isdigit() else None
+    max_id = int(raw_max_id) if raw_max_id.isdigit() else None
+
+    rows = fetch_food_final_rows(
+        DB_FILE,
+        min_id=min_id,
+        max_id=max_id,
+        limit=(max(1, limit) if isinstance(limit, int) else None),
+    )
+    print(f"\n  📦 조회 건수: {len(rows):,}건")
+
+    payload_rows: list[tuple[int, dict[str, Any]]] = []
+    transform_errors = 0
+    for row in rows:
+        transformed = transform_food_final_row(row)
+        if transformed.payload is not None:
+            payload_rows.append((int(row["id"]), transformed.payload))
+        else:
+            transform_errors += 1
+            print(f"  ⚠️ row id={row['id']} 변환 스킵: {transformed.error}")
+
+    print(f"  🔧 변환 성공: {len(payload_rows):,}건 | 변환 실패: {transform_errors:,}건")
+    if not payload_rows:
+        print("  ℹ️ 저장할 payload가 없습니다.")
+        return
+
+    base_dir = Path(__file__).resolve().parent.parent / "reports" / "backend_import_payloads"
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    out_dir = base_dir / ts
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    payloads = [p for _, p in payload_rows]
+    manifest = {
+        "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "count": len(payload_rows),
+        "transform_errors": transform_errors,
+        "min_id": min_id,
+        "max_id": max_id,
+        "limit": (max(1, limit) if isinstance(limit, int) else None),
+    }
+    (out_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out_dir / "payloads_all.json").write_text(json.dumps(payloads, ensure_ascii=False, indent=2), encoding="utf-8")
+    with (out_dir / "payloads.ndjson").open("w", encoding="utf-8") as f:
+        for p in payloads:
+            f.write(json.dumps(p, ensure_ascii=False) + "\n")
+
+    items_dir = out_dir / "items"
+    items_dir.mkdir(parents=True, exist_ok=True)
+    for i, (row_id, payload) in enumerate(payload_rows, 1):
+        item_no = str(payload.get("itemMnftrRptNo") or payload.get("item_mnftr_rpt_no") or "")
+        safe_item_no = re.sub(r"[^0-9A-Za-z_-]", "_", item_no)[:40] or "no_report_no"
+        fname = f"{i:04d}_row{row_id}_{safe_item_no}.json"
+        (items_dir / fname).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print("\n  ✅ JSON 파일 생성 완료")
+    print(f"  - 폴더: {out_dir}")
+    print(f"  - 전체(JSON array): {out_dir / 'payloads_all.json'}")
+    print(f"  - 전체(NDJSON): {out_dir / 'payloads.ndjson'}")
+    print(f"  - 개별 파일: {items_dir} ({len(payload_rows):,}개)")
+
+
 def main() -> None:
     try:
         with sqlite3.connect(DB_FILE) as _conn:
@@ -3304,6 +3375,7 @@ def main() -> None:
         print("    [5] 🧩 검색어 관리")
         print("    [6] 🚀 파이프라인 실행")
         print("    [7] 📤 backend Import 전송")
+        print("    [8] 🧾 backend Import payload JSON 파일 생성")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -3322,6 +3394,8 @@ def main() -> None:
             run_query_pipeline_execute()
         elif choice == "7":
             run_backend_import_menu()
+        elif choice == "8":
+            run_backend_import_payload_view_menu()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break

@@ -3,6 +3,7 @@
 
 예시:
   python3 -m app.serp_simple_debug --provider google --query "성분표 원재료명" --pages 1 --per-page 20
+  python3 -m app.serp_simple_debug --provider naver_serpapi --query "성분표 원재료명" --pages 1 --per-page 20
   python3 -m app.serp_simple_debug --provider naver_official --query "성분표 원재료명" --pages 1 --per-page 20
 """
 
@@ -30,6 +31,20 @@ SERP_REPORT_DIR = Path("reports/serp_batch")
 
 
 def build_request(provider: str, query: str, page: int, per_page: int, api_key: str) -> tuple[str, dict[str, Any], dict[str, str] | None]:
+    if provider == "naver_serpapi":
+        return (
+            URL,
+            {
+                "engine": "naver",
+                "where": "image",
+                "query": query,
+                "num": per_page,
+                "page": page + 1,
+                "no_cache": "true",
+                "api_key": api_key,
+            },
+            None,
+        )
     if provider in ("naver_official", "naver_blog", "naver_shop"):
         client_id = os.getenv("NAVER_CLIENT_ID", "").strip()
         client_secret = os.getenv("NAVER_CLIENT_SECRET", "").strip()
@@ -270,15 +285,18 @@ def _score_shop_image_candidate(
 def run_serp_simple_debug_interactive() -> None:
     print("\n  🧩 [초간단 SERP 디버그]")
     print("    [1] Google Images (SerpAPI)")
-    print("    [2] Naver Images (Official OpenAPI)")
-    print("    [3] Naver Images (Blog source only)")
-    print("    [4] Naver Shop Detail Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [4] Naver Images (Blog source only)")
+    print("    [5] Naver Shop Detail Images")
     raw_provider = input("  🔹 검색엔진 선택: ").strip()
     if raw_provider == "2":
-        provider = "naver_official"
+        provider = "naver_serpapi"
     elif raw_provider == "3":
-        provider = "naver_blog"
+        provider = "naver_official"
     elif raw_provider == "4":
+        provider = "naver_blog"
+    elif raw_provider == "5":
         provider = "naver_shop"
     else:
         provider = "google"
@@ -419,6 +437,12 @@ def run_serp_simple_debug_interactive() -> None:
                     }
                 )
                 continue
+            elif provider == "naver_serpapi":
+                url = item.get("original") or item.get("thumbnail") or item.get("link")
+                source = item.get("source") or (urlparse(str(item.get("link") or "")).netloc if item.get("link") else None)
+                thumb = item.get("thumbnail")
+                width = item.get("original_width") or item.get("width")
+                height = item.get("original_height") or item.get("height")
             else:
                 url = item.get("original") or item.get("thumbnail")
                 source = item.get("source")
@@ -621,7 +645,7 @@ def _write_debug_html_report(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="SerpAPI 초간단 디버그")
-    parser.add_argument("--provider", choices=["google", "naver_official", "naver_blog", "naver_shop"], default="google")
+    parser.add_argument("--provider", choices=["google", "naver_serpapi", "naver_official", "naver_blog", "naver_shop"], default="google")
     parser.add_argument("--query", required=True)
     parser.add_argument("--pages", type=int, default=1)
     parser.add_argument("--per-page", type=int, default=20)
@@ -721,6 +745,12 @@ def main() -> None:
                 thumb = item.get("image")
                 width = None
                 height = None
+            elif args.provider == "naver_serpapi":
+                url = item.get("original") or item.get("thumbnail") or item.get("link")
+                source = item.get("source")
+                thumb = item.get("thumbnail")
+                width = item.get("original_width") or item.get("width")
+                height = item.get("original_height") or item.get("height")
             else:
                 url = item.get("original") or item.get("thumbnail")
                 source = item.get("source")

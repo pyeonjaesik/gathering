@@ -297,7 +297,7 @@ def _search_images_all(
     seen: set[str] = set()
     out: list[ImageCandidate] = []
     provider_norm = str(provider or "google").strip().lower()
-    if provider_norm not in ("google", "naver_official", "naver_blog", "naver_shop"):
+    if provider_norm not in ("google", "naver_serpapi", "naver_official", "naver_blog", "naver_shop"):
         provider_norm = "google"
     consecutive_failures = 0
 
@@ -355,6 +355,17 @@ def _search_images_all(
             request_headers = {
                 "X-Naver-Client-Id": naver_client_id,
                 "X-Naver-Client-Secret": naver_client_secret,
+            }
+        elif provider_norm == "naver_serpapi":
+            page_size = min(per_page, 100)
+            params = {
+                "engine": "naver",
+                "where": "image",
+                "query": query,
+                "num": page_size,
+                "page": page_no + 1,
+                "api_key": api_key,
+                "no_cache": "true",
             }
         else:
             # SerpAPI Google Images
@@ -507,6 +518,9 @@ def _search_images_all(
                     )
                     added += 1
                 continue
+            elif provider_norm == "naver_serpapi":
+                url = item.get("original") or item.get("thumbnail") or item.get("link")
+                source = item.get("source") or (urlparse(str(item.get("link") or "")).netloc or "naver_serpapi")
             else:
                 url = item.get("original") or item.get("thumbnail")
                 source = item.get("source")
@@ -2102,15 +2116,18 @@ def run_query_image_benchmark_interactive() -> None:
     print("\n  🔎 [검색어 기반 이미지 벤치마크]")
     print("  🔹 이미지 검색 엔진 선택")
     print("    [1] Google Images")
-    print("    [2] Naver Images (Official OpenAPI)")
-    print("    [3] Naver Images (Blog source only)")
-    print("    [4] Naver Shop Detail Images")
+    print("    [2] Naver Images (SerpAPI)")
+    print("    [3] Naver Images (Official OpenAPI)")
+    print("    [4] Naver Images (Blog source only)")
+    print("    [5] Naver Shop Detail Images")
     raw_provider = input("  선택 > ").strip()
     if raw_provider == "2":
-        provider = "naver_official"
+        provider = "naver_serpapi"
     elif raw_provider == "3":
-        provider = "naver_blog"
+        provider = "naver_official"
     elif raw_provider == "4":
+        provider = "naver_blog"
+    elif raw_provider == "5":
         provider = "naver_shop"
     else:
         provider = "google"
