@@ -51,3 +51,31 @@ python3 -m app.validation_benchmark --dataset validation/samples.jsonl
 
 - 요약: `validation_reports/benchmark_YYYYMMDD_HHMMSS/summary.json`
 - 상세: `validation_reports/benchmark_YYYYMMDD_HHMMSS/details.csv`
+
+## backend(`/api/import`) 배치 전송
+
+`food_final` 데이터를 `insidefood backend`의 `POST /api/import` 포맷으로 변환해 전송합니다.
+
+1. 백엔드 실행 (`/Users/dmyeon/backend`)
+
+```bash
+npm run dev
+```
+
+2. Dry-run으로 변환 결과 확인
+
+```bash
+python3 -m app.export_to_backend --dry-run --limit 3
+```
+
+3. 실제 배치 전송
+
+```bash
+python3 -m app.export_to_backend --batch-size 50
+```
+
+주요 옵션:
+- `--import-url` (기본: `http://localhost:3000/api/import`)
+- `--min-id`, `--max-id` (특정 id 구간만 전송)
+- `--limit` (최대 건수 제한)
+- `--dry-run` (전송 없이 변환만 수행)

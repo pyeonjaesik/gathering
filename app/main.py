@@ -57,6 +57,7 @@ from app.query_pipeline import (
     upsert_image_analysis_cache,
     upsert_query,
 )
+from app.export_to_backend import fetch_food_final_rows, transform_food_final_row, send_batches
 
 W = 68
 WEB_UI_PORT = 8501
@@ -3229,6 +3230,62 @@ def run_query_pipeline_execute() -> None:
     )
 
 
+def run_backend_import_menu() -> None:
+    print("\n  📤 [backend Import 전송]")
+    default_import_url = os.getenv("BACKEND_IMPORT_URL", "http://localhost:3000/api/import").strip()
+    import_url = input(f"  🔹 Import URL [기본 {default_import_url}]: ").strip() or default_import_url
+
+    raw_batch_size = input("  🔹 배치 크기 [기본 50]: ").strip()
+    raw_limit = input("  🔹 최대 처리 건수 [기본 전체]: ").strip()
+    raw_min_id = input("  🔹 시작 id(min, 선택): ").strip()
+    raw_max_id = input("  🔹 끝 id(max, 선택): ").strip()
+    dry_run = input("  🔹 Dry-run(전송 없이 미리보기)? [y/N]: ").strip().lower() == "y"
+
+    batch_size = int(raw_batch_size) if raw_batch_size.isdigit() else 50
+    limit = int(raw_limit) if raw_limit.isdigit() else None
+    min_id = int(raw_min_id) if raw_min_id.isdigit() else None
+    max_id = int(raw_max_id) if raw_max_id.isdigit() else None
+
+    rows = fetch_food_final_rows(
+        DB_FILE,
+        min_id=min_id,
+        max_id=max_id,
+        limit=limit,
+    )
+    print(f"\n  📦 조회 건수: {len(rows):,}건")
+
+    payloads: list[dict[str, Any]] = []
+    transform_errors = 0
+    for row in rows:
+        transformed = transform_food_final_row(row)
+        if transformed.payload is not None:
+            payloads.append(transformed.payload)
+        else:
+            transform_errors += 1
+            print(f"  ⚠️ row id={row['id']} 변환 스킵: {transformed.error}")
+
+    print(f"  🔧 변환 성공: {len(payloads):,}건 | 변환 실패: {transform_errors:,}건")
+    if not payloads:
+        print("  ℹ️ 전송할 데이터가 없습니다.")
+        return
+
+    if dry_run:
+        print("\n  🧪 [Dry-run 첫 payload]")
+        print(json.dumps(payloads[0], ensure_ascii=False, indent=2))
+        return
+
+    sent_count, send_errors = send_batches(
+        payloads,
+        import_url=import_url,
+        batch_size=max(1, batch_size),
+        timeout_sec=30,
+    )
+    print(
+        f"\n  ✅ 전송 완료: 대상={len(payloads):,} sent={sent_count:,} "
+        f"send_errors={send_errors:,} transform_errors={transform_errors:,}"
+    )
+
+
 def main() -> None:
     try:
         with sqlite3.connect(DB_FILE) as _conn:
@@ -3246,6 +3303,7 @@ def main() -> None:
         print("    [4] 📊 analyze 벤치마크 도우미")
         print("    [5] 🧩 검색어 관리")
         print("    [6] 🚀 파이프라인 실행")
+        print("    [7] 📤 backend Import 전송")
         print("    [q] 🚪 종료")
         print(_bar())
         choice = input("  👉 선택 : ").strip().lower()
@@ -3262,6 +3320,8 @@ def main() -> None:
             run_query_pipeline_menu()
         elif choice == "6":
             run_query_pipeline_execute()
+        elif choice == "7":
+            run_backend_import_menu()
         elif choice == "q":
             print("\n  👋 실행기를 종료합니다.\n")
             break
