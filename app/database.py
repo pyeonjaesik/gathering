@@ -2,12 +2,34 @@
 SQLite DB 초기화 및 데이터 삽입 기능
 """
 
+import json
 import sqlite3
 
 from app.config import COLUMNS
 
 FOOD_TABLE = "processed_food_info"
 LEGACY_FOOD_TABLE = "food_info"
+HACCP_TABLE = "haccp_product_info"
+HACCP_PROGRESS_TABLE = "haccp_ingest_progress"
+HACCP_PARSED_TABLE = "haccp_parsed_cache"
+HACCP_BLOCK_TABLE = "haccp_parse_blocklist"
+HACCP_COLUMNS = [
+    "rnum",
+    "prdlstReportNo",
+    "productGb",
+    "prdlstNm",
+    "rawmtrl",
+    "allergy",
+    "nutrient",
+    "barcode",
+    "prdkind",
+    "prdkindstate",
+    "manufacture",
+    "seller",
+    "capacity",
+    "imgurl1",
+    "imgurl2",
+]
 
 
 def _table_exists(conn: sqlite3.Connection, name: str) -> bool:
@@ -185,3 +207,203 @@ def mark_page_done(
         (page_no, num_of_rows, saved_rows),
     )
     conn.commit()
+
+
+def init_haccp_tables(conn: sqlite3.Connection) -> None:
+    """HACCP 원본 테이블/진행 캐시 테이블 준비."""
+    cols_def = ", ".join(f'"{col}" TEXT' for col in HACCP_COLUMNS)
+    conn.execute(
+        f"""
+        CREATE TABLE IF NOT EXISTS {HACCP_TABLE} (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            {cols_def},
+            raw_json TEXT,
+            fetched_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(prdlstReportNo)
+        )
+        """
+    )
+    conn.execute(
+        f"""
+        CREATE TABLE IF NOT EXISTS {HACCP_PROGRESS_TABLE} (
+            page_no INTEGER NOT NULL,
+            num_of_rows INTEGER NOT NULL,
+            status TEXT NOT NULL,
+            saved_rows INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            PRIMARY KEY (page_no, num_of_rows)
+        )
+        """
+    )
+    conn.execute(
+        f"""
+        CREATE TABLE IF NOT EXISTS {HACCP_PARSED_TABLE} (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            prdlstReportNo TEXT NOT NULL UNIQUE,
+            ingredients_items_json TEXT,
+            nutrition_items_json TEXT,
+            parse_status TEXT NOT NULL DEFAULT 'ok',
+            parse_error TEXT,
+            parser_version TEXT NOT NULL DEFAULT 'code_v1',
+            source_rawmtrl TEXT,
+            source_nutrient TEXT,
+            parsed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+        """
+    )
+    conn.execute(
+        f"""
+        CREATE TABLE IF NOT EXISTS {HACCP_BLOCK_TABLE} (
+            prdlstReportNo TEXT NOT NULL PRIMARY KEY,
+            is_blocked INTEGER NOT NULL DEFAULT 1,
+            reason TEXT,
+            blocked_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )
+        """
+    )
+    conn.commit()
+
+
+def upsert_haccp_rows(conn: sqlite3.Connection, rows: list[dict]) -> int:
+    """HACCP rows를 prdlstReportNo 기준 upsert."""
+    if not rows:
+        return 0
+    placeholders = ", ".join("?" for _ in HACCP_COLUMNS)
+    col_names = ", ".join(HACCP_COLUMNS)
+    update_cols = ", ".join(
+        [f'{c}=excluded.{c}' for c in HACCP_COLUMNS if c != "prdlstReportNo"]
+        + ["raw_json=excluded.raw_json", "fetched_at=CURRENT_TIMESTAMP"]
+    )
+    sql = (
+        f"INSERT INTO {HACCP_TABLE} ({col_names}, raw_json) "
+        f"VALUES ({placeholders}, ?) "
+        "ON CONFLICT(prdlstReportNo) DO UPDATE SET "
+        f"{update_cols}"
+    )
+    values: list[tuple] = []
+    for row in rows:
+        raw_json = json.dumps(row, ensure_ascii=False, separators=(",", ":"))
+        values.append(tuple(str(row.get(c) or "") for c in HACCP_COLUMNS) + (raw_json,))
+    conn.executemany(sql, values)
+    conn.commit()
+    return len(values)
+
+
+def get_haccp_completed_pages(conn: sqlite3.Connection, num_of_rows: int) -> set[int]:
+    rows = conn.execute(
+        f"SELECT page_no FROM {HACCP_PROGRESS_TABLE} WHERE num_of_rows=? AND status='done'",
+        (num_of_rows,),
+    ).fetchall()
+    return {int(r[0]) for r in rows}
+
+
+def mark_haccp_page_done(
+    conn: sqlite3.Connection,
+    page_no: int,
+    num_of_rows: int,
+    saved_rows: int,
+) -> None:
+    conn.execute(
+        f"""
+        INSERT INTO {HACCP_PROGRESS_TABLE} (page_no, num_of_rows, status, saved_rows, updated_at)
+        VALUES (?, ?, 'done', ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(page_no, num_of_rows) DO UPDATE SET
+            status='done',
+            saved_rows=excluded.saved_rows,
+            updated_at=CURRENT_TIMESTAMP
+        """,
+        (page_no, num_of_rows, saved_rows),
+    )
+    conn.commit()
+
+
+def clear_haccp_progress(conn: sqlite3.Connection) -> int:
+    cur = conn.execute(f"DELETE FROM {HACCP_PROGRESS_TABLE}")
+    conn.commit()
+    return int(cur.rowcount)
+
+
+def clear_haccp_data(conn: sqlite3.Connection) -> int:
+    cur = conn.execute(f"DELETE FROM {HACCP_TABLE}")
+    conn.commit()
+    return int(cur.rowcount)
+
+
+def upsert_haccp_parsed_row(
+    conn: sqlite3.Connection,
+    *,
+    report_no: str,
+    ingredients_items_json: str | None,
+    nutrition_items_json: str | None,
+    parse_status: str,
+    parse_error: str | None,
+    parser_version: str = "code_v1",
+    source_rawmtrl: str | None = None,
+    source_nutrient: str | None = None,
+) -> None:
+    conn.execute(
+        f"""
+        INSERT INTO {HACCP_PARSED_TABLE} (
+            prdlstReportNo, ingredients_items_json, nutrition_items_json,
+            parse_status, parse_error, parser_version, source_rawmtrl, source_nutrient, parsed_at
+        )
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(prdlstReportNo) DO UPDATE SET
+            ingredients_items_json=excluded.ingredients_items_json,
+            nutrition_items_json=excluded.nutrition_items_json,
+            parse_status=excluded.parse_status,
+            parse_error=excluded.parse_error,
+            parser_version=excluded.parser_version,
+            source_rawmtrl=excluded.source_rawmtrl,
+            source_nutrient=excluded.source_nutrient,
+            parsed_at=CURRENT_TIMESTAMP
+        """,
+        (
+            report_no,
+            ingredients_items_json,
+            nutrition_items_json,
+            parse_status,
+            parse_error,
+            parser_version,
+            source_rawmtrl,
+            source_nutrient,
+        ),
+    )
+    conn.commit()
+
+
+def clear_haccp_parsed_cache(conn: sqlite3.Connection) -> int:
+    cur = conn.execute(f"DELETE FROM {HACCP_PARSED_TABLE}")
+    conn.commit()
+    return int(cur.rowcount)
+
+
+def upsert_haccp_parse_block(
+    conn: sqlite3.Connection,
+    *,
+    report_no: str,
+    reason: str | None = None,
+) -> None:
+    conn.execute(
+        f"""
+        INSERT INTO {HACCP_BLOCK_TABLE}
+        (prdlstReportNo, is_blocked, reason, blocked_at, updated_at)
+        VALUES (?, 1, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+        ON CONFLICT(prdlstReportNo) DO UPDATE SET
+            is_blocked=1,
+            reason=excluded.reason,
+            updated_at=CURRENT_TIMESTAMP
+        """,
+        (str(report_no or "").strip(), str(reason or "").strip() or None),
+    )
+    conn.commit()
+
+
+def clear_haccp_parse_block(conn: sqlite3.Connection, report_no: str) -> int:
+    cur = conn.execute(
+        f"DELETE FROM {HACCP_BLOCK_TABLE} WHERE prdlstReportNo=?",
+        (str(report_no or "").strip(),),
+    )
+    conn.commit()
+    return int(cur.rowcount or 0)

@@ -21,8 +21,12 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, FIRST_COMPLETED, wait
 from typing import Callable, Any
 from collections import Counter
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import parse_qs, quote, urlencode, urlparse
 
 import sqlite3
+import random
+import requests
 from app import collector, viewer
 from app.backup_tools import create_backup, list_backups, read_backup_metadata, restore_backup, verify_backup
 from app.config import DB_FILE
@@ -33,6 +37,18 @@ from app.dedupe_tools import (
     run_dedupe,
 )
 from app.database import ensure_processed_food_table
+from app.database import (
+    clear_haccp_data,
+    clear_haccp_parse_block,
+    clear_haccp_parsed_cache,
+    clear_haccp_progress,
+    get_haccp_completed_pages,
+    init_haccp_tables,
+    mark_haccp_page_done,
+    upsert_haccp_parse_block,
+    upsert_haccp_parsed_row,
+    upsert_haccp_rows,
+)
 from app.ingredient_enricher import (
     diagnose_analysis,
     get_priority_subcategories,
@@ -40,6 +56,7 @@ from app.ingredient_enricher import (
     run_enricher_for_report_no,
 )
 from app.analyzer import URLIngredientAnalyzer
+from app.analyzer.core import _extract_first_json_object, _extract_openai_text
 from app.analyzer.pass1_precheck import run_pass1_precheck
 from app.query_image_benchmark import run_query_image_benchmark_interactive
 from app.serp_simple_debug import run_serp_simple_debug_interactive
@@ -57,7 +74,28 @@ from app.query_pipeline import (
     upsert_image_analysis_cache,
     upsert_query,
 )
-from app.export_to_backend import fetch_food_final_rows, transform_food_final_row, send_batches
+from app.export_to_backend import (
+    fetch_food_final_rows,
+    fetch_haccp_parsed_rows,
+    send_batches,
+    transform_food_final_row,
+    transform_haccp_parsed_row,
+)
+from app.haccp_api import (
+    fetch_haccp_page,
+    fetch_haccp_products_by_report_no,
+    fetch_haccp_total_count,
+)
+from app.haccp_code_parser import (
+    dumps_json,
+)
+from app.haccp_audit import (
+    init_haccp_audit_tables,
+    clear_haccp_audit_tables,
+    run_haccp_parsed_audit,
+    fetch_haccp_audit_summary,
+    fetch_haccp_audit_top,
+)
 
 W = 68
 WEB_UI_PORT = 8501
@@ -66,6 +104,10 @@ QUERY_WEB_UI_PORT = 8502
 QUERY_WEB_UI_URL = f"http://localhost:{QUERY_WEB_UI_PORT}"
 ADMIN_WEB_UI_PORT = 8503
 ADMIN_WEB_UI_URL = f"http://localhost:{ADMIN_WEB_UI_PORT}"
+HACCP_PARSED_WEB_PORT = 8504
+
+_HACCP_PARSED_WEB_SERVER: HTTPServer | None = None
+_HACCP_PARSED_WEB_THREAD: threading.Thread | None = None
 
 
 def _normalize_report_no(value: str | None) -> str | None:
@@ -1204,11 +1246,28 @@ def run_public_api_collection() -> None:
 def run_public_api_menu() -> None:
     while True:
         print("\n  🌐 [공공 API 하위 메뉴]")
+        print("    [1] 가공식품")
+        print("    [2] HACCP")
+        print("    [b] ↩️ 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+
+        if sub == "1":
+            run_public_api_processed_food_menu()
+        elif sub == "2":
+            run_public_api_haccp_menu()
+        elif sub == "b":
+            break
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
+def run_public_api_processed_food_menu() -> None:
+    while True:
+        print("\n  🥫 [공공 API > 가공식품]")
         print("    [1] 가공식품 데이터 수집")
         print("    [2] 가공식품 중복 데이터 점검/삭제")
         print("    [b] ↩️ 뒤로가기")
         sub = input("  👉 선택 : ").strip().lower()
-
         if sub == "1":
             run_public_api_collection()
         elif sub == "2":
@@ -1217,6 +1276,3277 @@ def run_public_api_menu() -> None:
             break
         else:
             print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
+def run_public_api_haccp_menu() -> None:
+    while True:
+        print("\n  🧪 [공공 API > HACCP]")
+        print("    [1] HACCP API 조회 (품목보고번호)")
+        print("    [2] HACCP API 전체 수집")
+        print("    [3] HACCP 진행 캐시 초기화")
+        print("    [4] HACCP 데이터 테이블 비우기")
+        print("    [5] HACCP Pass4 파싱 실행 (실시간/Batch)")
+        print("    [6] HACCP 파싱 캐시 비우기")
+        print("    [7] HACCP 파싱 결과 조회 (브라우저)")
+        print("    [8] HACCP 파싱 감사 실행 (haccp_parsed_cache)")
+        print("    [9] HACCP 감사 결과 요약/상위 조회")
+        print("    [0] HACCP 감사 캐시 비우기")
+        print("    [10] HACCP backend Import 전송")
+        print("    [11] HACCP backend Import payload JSON 파일 생성")
+        print("    [b] ↩️ 뒤로가기")
+        sub = input("  👉 선택 : ").strip().lower()
+        if sub == "1":
+            run_haccp_lookup_menu()
+        elif sub == "2":
+            run_haccp_full_collection_menu()
+        elif sub == "3":
+            run_haccp_progress_reset_menu()
+        elif sub == "4":
+            run_haccp_data_reset_menu()
+        elif sub == "5":
+            run_haccp_pass4_parse_menu()
+        elif sub == "6":
+            run_haccp_parsed_reset_menu()
+        elif sub == "7":
+            run_haccp_parsed_view_menu()
+        elif sub == "8":
+            run_haccp_audit_run_menu()
+        elif sub == "9":
+            run_haccp_audit_summary_menu()
+        elif sub == "0":
+            run_haccp_audit_clear_menu()
+        elif sub == "10":
+            run_haccp_backend_import_menu()
+        elif sub == "11":
+            run_haccp_backend_import_payload_view_menu()
+        elif sub == "b":
+            break
+        else:
+            print("  ⚠️ 올바른 메뉴 번호를 입력해주세요.")
+
+
+def run_haccp_audit_run_menu() -> None:
+    print("\n  🧭 [HACCP 파싱 감사 실행]")
+    raw_ver = input("  🔹 감사 버전 [기본 haccp_audit_v1]: ").strip()
+    audit_version = raw_ver or "haccp_audit_v1"
+    raw_limit = input("  🔹 최대 감사 건수 [기본 0=전체]: ").strip()
+    limit = int(raw_limit) if raw_limit.isdigit() else 0
+    limit = max(0, limit)
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        init_haccp_audit_tables(conn)
+        summary = run_haccp_parsed_audit(
+            conn,
+            audit_version=audit_version,
+            limit=limit,
+        )
+    print("\n  ✅ HACCP 감사 완료")
+    print(f"  - audit_version : {summary.get('audit_version')}")
+    print(f"  - 대상 상품수    : {int(summary.get('target_products') or 0):,}")
+    print(f"  - 토큰 수       : {int(summary.get('token_count') or 0):,}")
+    print(f"  - 결과 건수      : {int(summary.get('result_count') or 0):,}")
+    print(f"  - 이슈 건수      : {int(summary.get('issue_count') or 0):,}")
+    print(f"  - JSON 파싱 실패 : {int(summary.get('parse_json_errors') or 0):,}")
+
+
+def run_haccp_audit_summary_menu() -> None:
+    print("\n  📊 [HACCP 감사 결과 요약]")
+    raw_ver = input("  🔹 조회할 감사 버전 [기본 haccp_audit_v1]: ").strip()
+    audit_version = raw_ver or "haccp_audit_v1"
+    raw_top = input("  🔹 상위 의심 건수 [기본 20]: ").strip()
+    top_n = int(raw_top) if raw_top.isdigit() else 20
+    top_n = max(1, min(200, top_n))
+    api_base = ""
+    try:
+        port = _ensure_haccp_parsed_server()
+        api_base = f"http://127.0.0.1:{int(port)}"
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ⚠️ 캐시 액션 서버 준비 실패: {exc}")
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_audit_tables(conn)
+        summary = fetch_haccp_audit_summary(conn, audit_version=audit_version)
+        if int(summary.get("rows") or 0) <= 0:
+            print("\n  ℹ️ 감사 결과가 없습니다. 먼저 [8] 감사 실행을 진행하세요.")
+            return
+        rows = conn.execute(
+            """
+            SELECT r.prdlstReportNo, r.suspicion_score, r.error_count, r.warn_count,
+                   r.node_count, r.max_depth, r.low_freq_node_count, r.rule_hits_json, r.audited_at,
+                   COALESCE(h.prdlstNm,'') AS prdlstNm,
+                   p.ingredients_items_json, p.nutrition_items_json, p.source_rawmtrl, p.source_nutrient
+            FROM haccp_audit_result r
+            LEFT JOIN haccp_product_info h ON h.prdlstReportNo = r.prdlstReportNo
+            LEFT JOIN haccp_parsed_cache p ON p.prdlstReportNo = r.prdlstReportNo
+            WHERE r.audit_version=?
+            ORDER BY r.suspicion_score DESC, r.error_count DESC, r.warn_count DESC, r.prdlstReportNo
+            LIMIT ?
+            """,
+            (audit_version, top_n),
+        ).fetchall()
+        token_rows = conn.execute(
+            """
+            SELECT token_norm, product_count
+            FROM haccp_audit_token_stats
+            WHERE audit_version=?
+            """,
+            (audit_version,),
+        ).fetchall()
+        issue_rows = conn.execute(
+            """
+            SELECT prdlstReportNo, severity, rule_code, path, node_name, origin, amount, evidence
+            FROM haccp_audit_issue
+            WHERE audit_version=?
+            ORDER BY id DESC
+            """,
+            (audit_version,),
+        ).fetchall()
+    token_product_count = {str(x[0] or ""): int(x[1] or 0) for x in token_rows}
+
+    issues_by_report: dict[str, list[dict[str, str]]] = {}
+    for ir in issue_rows:
+        rpt = str(ir[0] or "").strip()
+        if not rpt:
+            continue
+        bucket = issues_by_report.setdefault(rpt, [])
+        if len(bucket) >= 20:
+            continue
+        bucket.append(
+            {
+                "severity": str(ir[1] or ""),
+                "rule_code": str(ir[2] or ""),
+                "path": str(ir[3] or ""),
+                "node_name": str(ir[4] or ""),
+                "origin": str(ir[5] or ""),
+                "amount": str(ir[6] or ""),
+                "evidence": str(ir[7] or ""),
+            }
+        )
+
+    cards: list[str] = []
+    for idx, r in enumerate(rows, start=1):
+        rpt = str(r[0] or "")
+        score = int(r[1] or 0)
+        err = int(r[2] or 0)
+        warn = int(r[3] or 0)
+        node_count = int(r[4] or 0)
+        max_depth = int(r[5] or 0)
+        low_freq = int(r[6] or 0)
+        rule_hits = str(r[7] or "")
+        audited_at = str(r[8] or "")
+        pname = str(r[9] or "").strip()
+        ing_json = str(r[10] or "")
+        nut_json = str(r[11] or "")
+        src_rawmtrl = str(r[12] or "")
+        src_nutrient = str(r[13] or "")
+        sev_class = "sev-high" if score >= 60 else ("sev-mid" if score >= 30 else "sev-low")
+        issues = issues_by_report.get(rpt, [])
+        issue_html = ""
+        if issues:
+            rows_html: list[str] = []
+            for it in issues[:12]:
+                sev = str(it.get("severity") or "")
+                sev_badge = "err" if sev == "error" else "warn"
+                rows_html.append(
+                    "<tr>"
+                    f"<td><span class='badge {sev_badge}'>{html.escape(sev or '-')}</span></td>"
+                    f"<td>{html.escape(str(it.get('rule_code') or '-'))}</td>"
+                    f"<td>{html.escape(str(it.get('path') or '-'))}</td>"
+                    f"<td>{html.escape(str(it.get('node_name') or '-'))}</td>"
+                    f"<td>{html.escape(str(it.get('origin') or '-'))}</td>"
+                    f"<td>{html.escape(str(it.get('amount') or '-'))}</td>"
+                    f"<td>{html.escape(str(it.get('evidence') or '-'))}</td>"
+                    "</tr>"
+                )
+            issue_html = (
+                "<details class='issue-wrap'><summary>이슈 상세 보기</summary>"
+                "<table class='issue-table'><thead><tr>"
+                "<th>severity</th><th>rule</th><th>path</th><th>name</th><th>origin</th><th>amount</th><th>evidence</th>"
+                "</tr></thead><tbody>"
+                + "".join(rows_html)
+                + "</tbody></table></details>"
+            )
+        cards.append(
+            f"<article class='card {sev_class}' data-score='{score}' data-rpt='{html.escape(rpt)}'>"
+            "<div class='card-head'>"
+            "<div class='left'>"
+            f"<span class='idx'>#{idx}</span>"
+            f"<span class='rpt'>{html.escape(rpt)}</span>"
+            f"<span class='pname'>{html.escape(pname or '(상품명 없음)')}</span>"
+            "</div>"
+            "<div class='right'>"
+            f"<span class='pill score'>score {score:,}</span>"
+            f"<span class='pill err'>error {err:,}</span>"
+            f"<span class='pill warn'>warn {warn:,}</span>"
+            f"<span class='pill'>nodes {node_count:,}</span>"
+            f"<span class='pill'>depth {max_depth:,}</span>"
+            f"<span class='pill'>low-freq {low_freq:,}</span>"
+            "</div>"
+            "</div>"
+            "<div class='meta-row'>"
+            f"<span class='meta'>audited_at: {html.escape(audited_at)}</span>"
+            "<div class='actions'>"
+            f"<button class='act btn-del' data-act='delete' data-rpt='{html.escape(rpt)}'>캐시 삭제</button>"
+            f"<button class='act btn-block' data-act='delete_block' data-rpt='{html.escape(rpt)}'>삭제 + 재파싱 차단</button>"
+            "</div>"
+            "</div>"
+            "<details><summary>rule_hits_json</summary>"
+            f"<pre>{html.escape(_pretty_json_for_report(rule_hits))}</pre></details>"
+            "<section class='compare-wrap'>"
+            "<h4>원재료: 구조화 GUI + RAW</h4>"
+            "<div class='compare-grid'>"
+            f"<div class='pane pane-parsed'><h5>원재료 구조화 GUI</h5><div class='ingredient-tree'>{_build_haccp_ingredient_preview(ing_json, token_product_count=token_product_count)}</div></div>"
+            f"<div class='pane pane-raw'><h5>원재료 RAW</h5><pre>{html.escape(src_rawmtrl or '-')}</pre></div>"
+            "</div>"
+            "</section>"
+            "<section class='compare-wrap'>"
+            "<h4>영양성분: 구조화 GUI + RAW</h4>"
+            "<div class='compare-grid'>"
+            f"<div class='pane pane-parsed'><h5>영양성분 구조화 GUI</h5>{_build_haccp_nutrition_preview(nut_json)}</div>"
+            f"<div class='pane pane-raw'><h5>영양성분 RAW</h5><pre>{html.escape(src_nutrient or '-')}</pre></div>"
+            "</div>"
+            "</section>"
+            f"{issue_html}"
+            "</article>"
+        )
+
+    top_rules = summary.get("top_rules") or []
+    top_rule_chips = "".join(
+        f"<span class='chip'>{html.escape(str(k))}: <b>{int(v):,}</b></span>"
+        for k, v in top_rules
+    )
+    html_doc = f"""<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HACCP 감사 결과 브라우저</title>
+  <style>
+    :root {{
+      --bg:#f5f7fb; --card:#fff; --ink:#13202b; --muted:#607080; --line:#d9e1ea;
+      --high:#8a1538; --mid:#915200; --low:#0d6a58;
+    }}
+    * {{ box-sizing:border-box; }}
+    body {{ margin:0; background:linear-gradient(180deg,#eaf0f7 0%, var(--bg) 30%); color:var(--ink); font-family:'Pretendard','Noto Sans KR',sans-serif; }}
+    .wrap {{ max-width:1320px; margin:0 auto; padding:22px; }}
+    .hero {{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 8px 24px rgba(14,30,45,.06); }}
+    h1 {{ margin:0 0 8px; font-size:28px; }}
+    .meta {{ color:var(--muted); font-size:13px; }}
+    .kpis {{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }}
+    .chip {{ background:#eef3f8; border:1px solid #d6e0ea; border-radius:999px; padding:6px 10px; font-size:12px; }}
+    .controls {{ margin:14px 0; display:flex; gap:8px; flex-wrap:wrap; }}
+    .controls input {{ padding:10px 12px; border:1px solid var(--line); border-radius:10px; min-width:280px; }}
+    .compare-wrap {{ margin-top:10px; }}
+    .compare-grid {{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }}
+    .pane {{ border:1px solid var(--line); border-radius:12px; background:#f8fcfd; padding:10px; }}
+    .pane h5 {{ margin:0 0 6px; font-size:12px; color:#5f7080; }}
+    .ingredient-tree {{ border:1px solid var(--line); border-radius:12px; background:#f9fcfd; padding:10px; }}
+    .ing-tree {{ list-style:none; margin:0; padding-left:16px; border-left:2px solid #dce8ee; }}
+    .ing-tree.depth-0 {{ padding-left:8px; border-left:none; }}
+    .ing-node {{ margin:8px 0; }}
+    .ing-row {{ display:flex; flex-wrap:wrap; gap:8px; align-items:flex-start; }}
+    .ing-row .name {{ font-weight:700; color:#0f2c3a; background:#edf6fa; border:1px solid #d8e8f1; border-radius:8px; padding:4px 8px; }}
+    .ing-row .meta {{ display:flex; flex-wrap:wrap; gap:6px; }}
+    .meta-chip {{ font-size:11px; background:#f2f5f7; border:1px solid #dde6eb; border-radius:999px; padding:3px 8px; color:#30424e; }}
+    .meta-chip b {{ margin-right:4px; color:#4b5f6e; font-weight:700; }}
+    .meta-chip.amount {{ background:#fff8e9; border-color:#efd9ad; }}
+    .nut-table {{ width:100%; border-collapse:collapse; background:#fffdf8; border:1px solid #efdfbf; border-radius:10px; overflow:hidden; font-size:12px; }}
+    .nut-table th, .nut-table td {{ border-bottom:1px solid #f1e5cb; padding:8px 10px; text-align:left; }}
+    .nut-table th {{ background:#fff4dc; color:#5d4a22; font-weight:700; }}
+    .nut-table td.num {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-weight:700; color:#7a4310; }}
+    .nut-table tbody tr:last-child td {{ border-bottom:none; }}
+    .grid {{ display:grid; gap:12px; }}
+    .card {{ background:var(--card); border:1px solid var(--line); border-left:6px solid #d7dee8; border-radius:14px; padding:12px; }}
+    .card.sev-high {{ border-left-color:#e34b79; }}
+    .card.sev-mid {{ border-left-color:#efb14b; }}
+    .card.sev-low {{ border-left-color:#49b89d; }}
+    .card-head {{ display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }}
+    .left {{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }}
+    .right {{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; }}
+    .idx {{ font-weight:800; color:#31576b; }}
+    .rpt {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; background:#edf3f8; border:1px solid #dbe5ef; border-radius:8px; padding:3px 7px; font-size:13px; }}
+    .pname {{ background:#f1f8f3; border:1px solid #d7e8dc; border-radius:8px; padding:3px 7px; font-size:12px; max-width:560px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
+    .pill {{ border-radius:999px; padding:3px 8px; font-size:11px; border:1px solid #d6e0ea; background:#f0f4f8; }}
+    .pill.score {{ background:#eef2ff; border-color:#cad6ff; font-weight:700; }}
+    .pill.err {{ background:#ffe9ef; border-color:#f4b9ca; color:#8c153b; }}
+    .pill.warn {{ background:#fff4e3; border-color:#efce9d; color:#88520f; }}
+    .meta-row {{ margin-top:6px; }}
+    .actions {{ margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; }}
+    .act {{ border:1px solid #d6e0ea; border-radius:8px; padding:6px 10px; background:#f5f8fb; cursor:pointer; font-size:12px; font-weight:700; }}
+    .act:hover {{ background:#ebf1f7; }}
+    .act.btn-del {{ color:#8d1238; border-color:#f2b8c8; background:#ffeaf0; }}
+    .act.btn-block {{ color:#6b3e00; border-color:#efcf9f; background:#fff3e0; }}
+    pre {{ margin:8px 0 0; background:#f8fbfd; border:1px solid var(--line); border-radius:10px; padding:10px; font-size:12px; line-height:1.45; white-space:pre-wrap; word-break:break-word; }}
+    details summary {{ cursor:pointer; color:#1f4f8a; font-weight:600; margin-top:8px; }}
+    .issue-table {{ width:100%; border-collapse:collapse; margin-top:8px; font-size:12px; }}
+    .issue-table th, .issue-table td {{ border:1px solid #dce4ec; padding:6px 8px; text-align:left; vertical-align:top; }}
+    .issue-table th {{ background:#f0f5fa; }}
+    .badge {{ border-radius:999px; padding:2px 7px; font-size:11px; font-weight:700; text-transform:uppercase; }}
+    .badge.err {{ background:#ffe6ee; color:#8d1238; }}
+    .badge.warn {{ background:#fff2df; color:#8a5206; }}
+    @media (max-width: 900px) {{ .wrap {{ padding:12px; }} .compare-grid {{ grid-template-columns:1fr; }} }}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>HACCP 감사 결과 브라우저</h1>
+      <div class="meta">DB: food_data.db · table: haccp_audit_result / haccp_audit_issue · audit_version={html.escape(audit_version)}</div>
+      <div class="meta">cache_api: {html.escape(api_base or 'N/A')}</div>
+      <div class="kpis">
+        <span class="chip">rows: <b>{int(summary.get('rows') or 0):,}</b></span>
+        <span class="chip">errors: <b>{int(summary.get('errors') or 0):,}</b></span>
+        <span class="chip">warns: <b>{int(summary.get('warns') or 0):,}</b></span>
+        <span class="chip">avg_score: <b>{float(summary.get('avg_score') or 0.0):.2f}</b></span>
+        <span class="chip">max_score: <b>{int(summary.get('max_score') or 0):,}</b></span>
+      </div>
+      <div class="kpis">{top_rule_chips or "<span class='chip'>top_rules 없음</span>"}</div>
+    </div>
+    <div class="controls">
+      <input id="q" type="text" placeholder="품목보고번호/상품명/규칙 검색">
+    </div>
+    <div id="list" class="grid">
+      {''.join(cards) if cards else "<article class='card'>데이터가 없습니다.</article>"}
+    </div>
+  </div>
+  <script>
+    const API_BASE = {json.dumps(api_base)};
+    const q = document.getElementById('q');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    function applyFilter() {{
+      const kw = (q.value || '').toLowerCase();
+      cards.forEach(card => {{
+        const t = card.textContent.toLowerCase();
+        card.style.display = (!kw || t.includes(kw)) ? '' : 'none';
+      }});
+    }}
+    q.addEventListener('input', applyFilter);
+    async function callCacheAction(act, rpt, btnEl) {{
+      if (!API_BASE) {{
+        alert('캐시 액션 서버가 준비되지 않았습니다. 다시 시도하세요.');
+        return;
+      }}
+      const target = String(rpt || '').replace(/[^0-9]/g, '');
+      if (!target) {{
+        alert('품목보고번호가 비어있습니다.');
+        return;
+      }}
+      const msg = act === 'delete_block'
+        ? '해당 품목보고번호 캐시를 삭제하고 재파싱 차단할까요?'
+        : '해당 품목보고번호 캐시를 삭제할까요?';
+      if (!confirm(msg)) return;
+      const prev = btnEl ? btnEl.textContent : '';
+      if (btnEl) {{ btnEl.disabled = true; btnEl.textContent = '처리중...'; }}
+      try {{
+        const url = `${{API_BASE}}/cache_api?action=${{encodeURIComponent(act)}}&report_no=${{encodeURIComponent(target)}}`;
+        const res = await fetch(url, {{ method: 'GET' }});
+        const data = await res.json();
+        if (!res.ok || !data.ok) {{
+          throw new Error(data.error || `http_${{res.status}}`);
+        }}
+        const card = btnEl ? btnEl.closest('.card') : null;
+        if (card) {{
+          card.style.opacity = '0.45';
+          card.style.filter = 'grayscale(0.2)';
+        }}
+        alert(`완료: report_no=${{target}} / deleted=${{data.deleted || 0}}` + (act === 'delete_block' ? ' / blocked=Y' : ''));
+      }} catch (e) {{
+        alert('실패: ' + (e && e.message ? e.message : e));
+      }} finally {{
+        if (btnEl) {{ btnEl.disabled = false; btnEl.textContent = prev || '실행'; }}
+      }}
+    }}
+    document.querySelectorAll('.act[data-act]').forEach((btn) => {{
+      btn.addEventListener('click', (ev) => {{
+        const b = ev.currentTarget;
+        callCacheAction(b.getAttribute('data-act'), b.getAttribute('data-rpt'), b);
+      }});
+    }});
+    applyFilter();
+  </script>
+</body>
+</html>"""
+    out_dir = Path("reports") / "haccp_audit"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    out_path = out_dir / f"haccp_audit_{audit_version}_{ts}.html"
+    out_path.write_text(html_doc, encoding="utf-8")
+    print(f"\n  ✅ 브라우저 리포트 생성: {out_path}")
+    try:
+        webbrowser.open(out_path.resolve().as_uri())
+        print("  🖥️ 브라우저 자동 열기 완료")
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ⚠️ 브라우저 자동 열기 실패: {exc}")
+
+
+def run_haccp_audit_clear_menu() -> None:
+    print("\n  🧹 [HACCP 감사 캐시 비우기]")
+    raw_ver = input("  🔹 삭제할 감사 버전 [비우면 전체 삭제]: ").strip()
+    confirm = input("  ⚠️ 삭제를 진행할까요? [y/N]: ").strip().lower()
+    if confirm != "y":
+        print("  취소했습니다.")
+        return
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_audit_tables(conn)
+        deleted = clear_haccp_audit_tables(conn, audit_version=(raw_ver or None))
+    print("\n  ✅ 감사 캐시 삭제 완료")
+    print(f"  - token_stats: {int(deleted.get('token_stats') or 0):,}")
+    print(f"  - results    : {int(deleted.get('results') or 0):,}")
+    print(f"  - issues     : {int(deleted.get('issues') or 0):,}")
+
+
+def run_haccp_lookup_menu() -> None:
+    from app import config as app_config
+    app_config.reload_dotenv()
+
+    print("\n  🧪 [HACCP API 조회 - 품목보고번호]")
+    raw_report_no = input("  🔹 품목보고번호 입력: ").strip()
+    report_no = re.sub(r"[^0-9]", "", raw_report_no)
+    if not report_no:
+        print("  ⚠️ 품목보고번호(숫자)를 입력해주세요.")
+        return
+
+    raw_rows = input("  🔹 조회 건수(numOfRows) [기본 20]: ").strip()
+    num_of_rows = int(raw_rows) if raw_rows.isdigit() else 20
+    num_of_rows = max(1, min(100, num_of_rows))
+
+    try:
+        result = fetch_haccp_products_by_report_no(
+            report_no=report_no,
+            page_no=1,
+            num_of_rows=num_of_rows,
+        )
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ❌ HACCP API 조회 실패: {exc}")
+        return
+
+    header = result.get("header") or {}
+    body = result.get("body") or {}
+    items = result.get("items") or []
+    print("\n  📌 [응답 헤더]")
+    print(f"    resultCode   : {header.get('resultCode')}")
+    print(f"    resultMessage: {header.get('resultMessage')}")
+    print("  📌 [응답 본문]")
+    print(f"    pageNo       : {body.get('pageNo')}")
+    print(f"    numOfRows    : {body.get('numOfRows')}")
+    print(f"    totalCount   : {body.get('totalCount')}")
+    print(f"    items        : {len(items):,}건")
+
+    if not items:
+        print("  ℹ️ 조회 결과가 없습니다.")
+        return
+
+    print("\n  📦 [조회 결과]")
+    for i, it in enumerate(items, start=1):
+        print(f"    [{i}] prdlstReportNo: {it.get('prdlstReportNo')}")
+        print(f"        prdlstNm      : {it.get('prdlstNm')}")
+        print(f"        manufacture   : {it.get('manufacture')}")
+        print(f"        seller        : {it.get('seller')}")
+        print(f"        productGb     : {it.get('productGb')}")
+        print(f"        prdkind       : {it.get('prdkind')}")
+        print(f"        capacity      : {it.get('capacity')}")
+        print(f"        barcode       : {it.get('barcode')}")
+        print(f"        allergy       : {it.get('allergy')}")
+        print(f"        nutrient      : {it.get('nutrient')}")
+        print(f"        rawmtrl       : {it.get('rawmtrl')}")
+        print(f"        imgurl1       : {it.get('imgurl1')}")
+        print(f"        imgurl2       : {it.get('imgurl2')}")
+
+
+def run_haccp_full_collection_menu() -> None:
+    from app import config as app_config
+    app_config.reload_dotenv()
+
+    print("\n  🌐 [HACCP API 전체 수집]")
+    raw_rows = input("  🔹 페이지당 조회 건수(numOfRows) [기본 100]: ").strip()
+    num_of_rows = int(raw_rows) if raw_rows.isdigit() else 100
+    num_of_rows = max(1, min(1000, num_of_rows))
+
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        try:
+            total_count = fetch_haccp_total_count()
+        except Exception as exc:  # pylint: disable=broad-except
+            print(f"  ❌ 전체 건수 조회 실패: {exc}")
+            return
+        if total_count <= 0:
+            print("  ⚠️ totalCount가 0입니다. API 키/권한/요청 제한을 확인해주세요.")
+            return
+
+        total_pages = (total_count + num_of_rows - 1) // num_of_rows
+        completed_pages = {
+            p for p in get_haccp_completed_pages(conn, num_of_rows)
+            if 1 <= p <= total_pages
+        }
+        remaining_pages = [p for p in range(1, total_pages + 1) if p not in completed_pages]
+
+        print(f"  📌 totalCount: {total_count:,}건")
+        print(f"  📄 totalPages: {total_pages:,}페이지 (numOfRows={num_of_rows})")
+        if completed_pages:
+            print(f"  ↺ 재개 모드: 완료 {len(completed_pages):,}페이지 / 남은 {len(remaining_pages):,}페이지")
+        if not remaining_pages:
+            print("  ✅ 이미 모든 페이지가 완료 상태입니다.")
+            return
+
+        saved_total = 0
+        failed_pages: list[int] = []
+        started_at = time.time()
+        for idx, page_no in enumerate(remaining_pages, start=1):
+            try:
+                result = fetch_haccp_page(page_no=page_no, num_of_rows=num_of_rows)
+                items = result.get("items") or []
+                saved = upsert_haccp_rows(conn, items)
+                mark_haccp_page_done(conn, page_no, num_of_rows, saved)
+                saved_total += saved
+            except Exception as exc:  # pylint: disable=broad-except
+                failed_pages.append(page_no)
+                print(f"  ⚠️ 페이지 {page_no} 실패: {exc}")
+                continue
+
+            if (idx % 10 == 0) or (idx == len(remaining_pages)):
+                elapsed = time.time() - started_at
+                print(
+                    f"  진행: {idx:,}/{len(remaining_pages):,}페이지 | "
+                    f"이번 실행 저장 {saved_total:,}건 | 경과 {elapsed:.1f}s"
+                )
+
+        now_total = conn.execute("SELECT COUNT(*) FROM haccp_product_info").fetchone()[0]
+        print("\n  ✅ HACCP 전체 수집 완료")
+        print(f"  - 이번 실행 저장(upsert): {saved_total:,}건")
+        print(f"  - 테이블 총 건수       : {now_total:,}건")
+        if failed_pages:
+            preview = ", ".join(str(p) for p in failed_pages[:12])
+            suffix = " ..." if len(failed_pages) > 12 else ""
+            print(f"  - 실패 페이지          : {len(failed_pages):,}개 ({preview}{suffix})")
+            print("    다음 실행 시 실패 페이지부터 재개 가능합니다.")
+
+
+def run_haccp_progress_reset_menu() -> None:
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        deleted = clear_haccp_progress(conn)
+    print(f"\n  ✅ HACCP 진행 캐시 초기화 완료: {deleted:,}건 삭제")
+
+
+def run_haccp_data_reset_menu() -> None:
+    answer = input("  ⚠️ haccp_product_info 전체 삭제합니다. 계속할까요? [y/N]: ").strip().lower()
+    if answer != "y":
+        print("  취소했습니다.")
+        return
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        deleted = clear_haccp_data(conn)
+    print(f"\n  ✅ HACCP 데이터 삭제 완료: {deleted:,}건 삭제")
+
+
+def run_haccp_pass4_parse_menu() -> None:
+    from app import config as app_config
+    app_config.reload_dotenv()
+
+    print("\n  🤖 [HACCP Pass4 파싱 실행 - 정책형]")
+    openai_api_key = str(os.getenv("OPENAI_API_KEY") or "").strip()
+    if not openai_api_key:
+        print("  ❌ OPENAI_API_KEY 환경변수가 필요합니다.")
+        return
+
+    raw_limit = input("  🔹 최대 처리 건수 [기본 20, 0=전체]: ").strip()
+    limit = int(raw_limit) if raw_limit.isdigit() else 20
+    limit = max(0, limit)
+    raw_target_report_nos = input("  🔹 품목보고번호 지정(쉼표구분, 비우면 전체 대상 규칙): ").strip()
+    target_report_keys: list[str] = []
+    if raw_target_report_nos:
+        seen: set[str] = set()
+        for tok in re.split(r"[,\s]+", raw_target_report_nos):
+            digits = re.sub(r"[^0-9]", "", str(tok or ""))
+            if not digits:
+                continue
+            if digits in seen:
+                continue
+            seen.add(digits)
+            target_report_keys.append(digits)
+        if not target_report_keys:
+            print("  ⚠️ 품목보고번호 지정값에서 유효한 숫자를 찾지 못했습니다. 전체 대상 규칙으로 진행합니다.")
+    raw_stratified = input("  🔹 층화 샘플링(카테고리 균등) 사용할까요? [y/N]: ").strip().lower()
+    use_stratified = raw_stratified in ("y", "yes")
+    strat_per_bucket = 3
+    strat_bucket_limit = 10
+    if use_stratified:
+        raw_per_bucket = input("  🔹 층화 샘플: 카테고리당 건수 [기본 3]: ").strip()
+        strat_per_bucket = int(raw_per_bucket) if raw_per_bucket.isdigit() else 3
+        strat_per_bucket = max(1, min(20, strat_per_bucket))
+        raw_bucket_limit = input("  🔹 층화 샘플: 최대 카테고리 수 [기본 10]: ").strip()
+        strat_bucket_limit = int(raw_bucket_limit) if raw_bucket_limit.isdigit() else 10
+        strat_bucket_limit = max(1, min(100, strat_bucket_limit))
+    if target_report_keys and use_stratified:
+        print("  ℹ️ 품목보고번호 지정 모드가 우선되어 층화 샘플링은 무시됩니다.")
+        use_stratified = False
+
+    raw_skip_done = input("  🔹 이미 Pass4 성공 저장된 품목보고번호는 스킵할까요? [Y/n]: ").strip().lower()
+    skip_done = not (raw_skip_done in ("n", "no"))
+    verbose = False
+    raw_mode = input("  🔹 호출 방식 선택 [r=실시간, b=Batch] (기본 r): ").strip().lower()
+    use_batch = raw_mode in ("b", "batch")
+    workers = 1
+    batch_poll_sec = 8
+    batch_max_wait_min = 90
+    if use_batch:
+        raw_poll = input("  🔹 Batch 상태 확인 주기(초) [기본 8]: ").strip()
+        batch_poll_sec = int(raw_poll) if raw_poll.isdigit() else 8
+        batch_poll_sec = max(3, min(60, batch_poll_sec))
+        raw_wait = input("  🔹 Batch 최대 대기시간(분) [기본 90]: ").strip()
+        batch_max_wait_min = int(raw_wait) if raw_wait.isdigit() else 90
+        batch_max_wait_min = max(5, min(24 * 60, batch_max_wait_min))
+    else:
+        raw_workers = input("  🔹 병렬 처리 개수 [기본 4, 최소 1]: ").strip()
+        workers = int(raw_workers) if raw_workers.isdigit() else 4
+        workers = max(1, min(16, workers))
+    def _normalize_report_no_key(value: str | None) -> str:
+        return re.sub(r"[^0-9]", "", str(value or ""))
+
+    def _extract_nutrition_basis(text: str | None) -> dict[str, Any] | None:
+        src = str(text or "").strip()
+        if not src:
+            return None
+        def _num(v: str) -> str:
+            return re.sub(r"[,\s]", "", str(v or ""))
+
+        count_units = ("개", "알", "봉", "봉지", "포", "캔", "정", "스틱")
+
+        # 1) 1회 제공량 우선
+        m = re.search(r"1\s*회[^\n,]{0,80}\(\s*([\d,]+(?:\.\d+)?)\s*(g|ml)\s*\)", src, re.IGNORECASE)
+        if not m:
+            m = re.search(r"1\s*회\s*제공량\s*[:：]?\s*([\d,]+(?:\.\d+)?)\s*(g|ml)", src, re.IGNORECASE)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2).lower(),
+                "basis_text": m.group(0),
+            }
+
+        # 1-b) 1회 제공량에서 g/ml가 없고 개수 단위만 있는 경우
+        unit_pat = "|".join(count_units)
+        m = re.search(rf"1\s*회[^\n,]{{0,50}}?([\d,]+(?:\.\d+)?)\s*({unit_pat})\b", src)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2),
+                "basis_text": m.group(0),
+            }
+
+        # 2) 총내용량 기준
+        m = re.search(r"총\s*내용량\s*[:：]?\s*([\d,]+(?:\.\d+)?)\s*(g|ml)", src, re.IGNORECASE)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2).lower(),
+                "basis_text": m.group(0),
+            }
+
+        # 3) 총 N회 제공량 (1회 제공량이 없을 때만 사용)
+        m = re.search(r"총\s*\d+\s*회\s*제공량\s*\(\s*([\d,]+(?:\.\d+)?)\s*(g|ml)\s*\)", src, re.IGNORECASE)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2).lower(),
+                "basis_text": m.group(0),
+            }
+
+        # 4) 일반 N g/ml 당
+        m = re.search(r"([\d,]+(?:\.\d+)?)\s*(g|ml)\s*당", src, re.IGNORECASE)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2).lower(),
+                "basis_text": m.group(0),
+            }
+
+        # 5) 일반 N개/알/봉/포/캔 당 (g/ml가 없을 때만 fallback)
+        m = re.search(rf"([\d,]+(?:\.\d+)?)\s*({unit_pat})\s*당", src)
+        if m:
+            return {
+                "per_amount": _num(m.group(1)),
+                "per_unit": m.group(2),
+                "basis_text": m.group(0),
+            }
+
+        # 6) 100g/ml 기준 표기
+        m = re.search(r"100\s*(g|ml)", src, re.IGNORECASE)
+        if m:
+            return {
+                "per_amount": "100",
+                "per_unit": m.group(1).lower(),
+                "basis_text": m.group(0),
+            }
+
+        return None
+
+    def _ensure_kcal_nutrition_item(items: list[dict[str, Any]], raw_text: str | None) -> list[dict[str, Any]]:
+        out: list[dict[str, Any]] = [x for x in items if isinstance(x, dict)]
+        has_energy = False
+        for it in out:
+            name = str(it.get("name") or "").strip().lower()
+            unit = str(it.get("unit") or "").strip().lower()
+            if ("열량" in name) or ("에너지" in name) or (name == "kcal") or (unit == "kcal"):
+                has_energy = True
+                # kcal가 단위로 빠져있으면 보정
+                if not unit:
+                    it["unit"] = "kcal"
+                if name == "kcal":
+                    it["name"] = "열량"
+                break
+        if has_energy:
+            return out
+
+        src = str(raw_text or "")
+        # 예: "총 내용량 (86g) 525kcal", "열량 95kcal"
+        m = re.search(r"([\d,]+(?:\.\d+)?)\s*kcal", src, re.IGNORECASE)
+        if not m:
+            return out
+        kcal_val = re.sub(r"[,\s]", "", m.group(1))
+        if not kcal_val:
+            return out
+        out.insert(
+            0,
+            {
+                "name": "열량",
+                "value": kcal_val,
+                "unit": "kcal",
+                "daily_value": None,
+            },
+        )
+        return out
+
+    def _sanitize_ingredients_origin_fields(
+        payload: dict[str, Any],
+        raw_ingredients_text: str | None = None,
+    ) -> tuple[dict[str, Any], dict[str, int]]:
+        """
+        origin 필드에는 원산지 정보만 남긴다.
+        - 원산지가 아닌 토큰(예: 밀, 합성보존료)은 sub_ingredients로 이동
+        - 교정 후에도 origin이 유효하지 않으면 invalid로 집계
+        """
+        stats = {
+            "nodes": 0,
+            "origin_cleaned": 0,
+            "moved_to_sub": 0,
+            "lifted_from_sub": 0,
+            "dropped_qualifier_sub": 0,
+            "invalid_remaining": 0,
+        }
+        origin_generic = {"국산", "국내산", "수입산", "외국산", "기타외국산"}
+        allergen_words = {
+            "우유", "대두", "밀", "난류", "땅콩", "메밀", "고등어", "게", "새우",
+            "돼지고기", "복숭아", "토마토", "아황산류", "호두", "닭고기", "쇠고기",
+            "오징어", "조개류", "잣",
+        }
+        country_words = {
+            "한국", "대한민국", "북한",
+            "미국", "캐나다", "멕시코", "과테말라", "온두라스", "니카라과", "코스타리카", "파나마",
+            "쿠바", "도미니카공화국", "자메이카", "아이티", "엘살바도르",
+            "브라질", "아르헨티나", "칠레", "페루", "콜롬비아", "볼리비아", "에콰도르", "파라과이", "우루과이", "베네수엘라",
+            "영국", "아일랜드", "독일", "프랑스", "이탈리아", "스페인", "포르투갈", "네덜란드", "벨기에", "룩셈부르크",
+            "스위스", "오스트리아", "폴란드", "체코", "슬로바키아", "헝가리", "루마니아", "불가리아",
+            "그리스", "크로아티아", "슬로베니아", "세르비아", "보스니아헤르체고비나", "몬테네그로", "북마케도니아", "알바니아",
+            "노르웨이", "스웨덴", "핀란드", "덴마크", "아이슬란드", "에스토니아", "라트비아", "리투아니아",
+            "러시아", "우크라이나", "벨라루스", "몰도바", "조지아", "아르메니아", "아제르바이잔",
+            "중국", "일본", "대만", "홍콩", "마카오", "몽골",
+            "인도", "파키스탄", "방글라데시", "네팔", "스리랑카", "부탄", "몰디브",
+            "베트남", "태국", "인도네시아", "필리핀", "말레이시아", "싱가포르", "캄보디아", "라오스", "미얀마", "브루나이", "동티모르",
+            "호주", "뉴질랜드", "파푸아뉴기니", "피지",
+            "터키", "이란", "이라크", "시리아", "레바논", "요르단", "이스라엘", "사우디아라비아",
+            "아랍에미리트", "카타르", "쿠웨이트", "오만", "예멘", "바레인",
+            "이집트", "모로코", "알제리", "튀니지", "리비아", "수단", "에티오피아", "케냐", "탄자니아", "우간다",
+            "나이지리아", "가나", "코트디부아르", "세네갈", "카메룬", "콩고", "콩고민주공화국",
+            "남아공", "잠비아", "짐바브웨", "보츠와나", "나미비아", "모잠비크", "마다가스카르",
+        }
+        non_origin_banned = {
+            "합성보존료", "향미증진제", "산도조절제", "유화제", "증점제", "감미료",
+            "밀", "소맥", "소맥분", "대두", "옥수수", "정제소금", "설탕", "포도당",
+        }
+
+        raw_compact = re.sub(r"\s+", "", str(raw_ingredients_text or ""))
+
+        def _norm_token(token: str) -> str:
+            t = re.sub(r"[\s\(\)\[\]\{\}]+", "", str(token or ""))
+            # "호주산등", "미국산등" 같은 표기를 원산지 토큰으로 정규화
+            t = re.sub(r"[·\.,;:]+$", "", t)
+            t = re.sub(r"등$", "", t)
+            return t
+
+        def _looks_origin_token(token: str) -> bool:
+            t = _norm_token(token)
+            if not t:
+                return False
+            # 원산지+비율 결합 표기 허용 (예: 이탈리아산67%)
+            t = re.sub(r"\d+(?:\.\d+)?%$", "", t)
+            if t in non_origin_banned:
+                return False
+            if t in origin_generic:
+                return True
+            if t in country_words:
+                # 외국산:미국,인도 같은 상세 표현 대응
+                return True
+            if t.endswith("산"):
+                # 예: 미국산, 호주산, 중국산만 허용하고
+                # 젖산/구연산 같은 성분명은 원산지로 보지 않는다.
+                core = t[:-1]
+                if core in country_words:
+                    return True
+                if core in {"국내", "외국", "수입", "기타외국"}:
+                    return True
+            return False
+
+        def _split_origin_chunks(text: str) -> list[str]:
+            raw = str(text or "").strip()
+            if not raw:
+                return []
+            chunks: list[str] = []
+            for part in re.split(r"[,/;|]+", raw):
+                part = str(part or "").strip()
+                if not part:
+                    continue
+                # 예: 외국산(네덜란드·캐나다·미국)
+                m = re.match(r"^(국산|국내산|수입산|외국산|기타외국산)\s*[\(\[]\s*(.+?)\s*[\)\]]?$", part)
+                if m:
+                    head = m.group(1).strip()
+                    tail = m.group(2).strip()
+                    if head:
+                        chunks.append(head)
+                    if tail:
+                        chunks.extend([x.strip() for x in re.split(r"[,/;|·ㆍ]+", tail) if str(x).strip()])
+                    continue
+                if ":" in part:
+                    head, tail = part.split(":", 1)
+                    head = head.strip()
+                    tail = tail.strip()
+                    if head:
+                        chunks.append(head)
+                    if tail:
+                        chunks.extend([x.strip() for x in re.split(r"[,/;|·ㆍ]+", tail) if str(x).strip()])
+                else:
+                    chunks.extend([x.strip() for x in re.split(r"[·ㆍ]+", part) if str(x).strip()])
+            return [c for c in chunks if c]
+
+        def _push_sub(node: dict[str, Any], name: str) -> None:
+            nm = str(name or "").strip()
+            if not nm:
+                return
+            subs = node.get("sub_ingredients")
+            if not isinstance(subs, list):
+                subs = []
+            for it in subs:
+                if not isinstance(it, dict):
+                    continue
+                existing = str(it.get("name") or it.get("ingredient_name") or "").strip()
+                if existing == nm:
+                    node["sub_ingredients"] = subs
+                    return
+            subs.append(
+                {
+                    "name": nm,
+                    "origin": None,
+                    "amount": None,
+                    "sub_ingredients": [],
+                }
+            )
+            node["sub_ingredients"] = subs
+
+        def _merge_origin_tokens(node: dict[str, Any], tokens: list[str]) -> None:
+            def _normalize_origin_label(token: str) -> str:
+                t = _norm_token(token)
+                if not t:
+                    return ""
+                amt = ""
+                m_amt = re.search(r"(\d+(?:\.\d+)?%)$", t)
+                if m_amt:
+                    amt = m_amt.group(1)
+                    t = t[: -len(amt)]
+                if t in {"국내", "외국", "수입", "기타외국"}:
+                    out = f"{t}산"
+                    return f"{out} {amt}".strip() if amt else out
+                if t in origin_generic:
+                    return f"{t} {amt}".strip() if amt else t
+                if t in country_words:
+                    out = t if t.endswith("산") else f"{t}산"
+                    return f"{out} {amt}".strip() if amt else out
+                if t.endswith("산"):
+                    core = t[:-1]
+                    if core in country_words:
+                        out = f"{core}산"
+                        return f"{out} {amt}".strip() if amt else out
+                out = t
+                return f"{out} {amt}".strip() if amt else out
+
+            current = str(node.get("origin") or "").strip()
+            merged_tokens = _split_origin_chunks(current) + [str(t).strip() for t in tokens if str(t).strip()]
+            valid: list[str] = []
+            for tok in merged_tokens:
+                if _looks_origin_token(tok):
+                    normed = _normalize_origin_label(tok)
+                    if normed:
+                        valid.append(normed)
+            seen: set[str] = set()
+            valid = [x for x in valid if (not (x in seen or seen.add(x)))]
+            # 단일 국가에서 "국가산" + "국가산 100%"가 함께 있으면 100% 표기는 중복으로 본다.
+            # 예: "이스라엘산, 이스라엘산 100%" -> "이스라엘산"
+            base_only: dict[str, set[str]] = {}
+            for x in valid:
+                m = re.match(r"^(.*?산)(?:\s+(\d+(?:\.\d+)?%))?$", x)
+                if not m:
+                    continue
+                b = str(m.group(1) or "").strip()
+                a = str(m.group(2) or "").strip()
+                if not b:
+                    continue
+                base_only.setdefault(b, set()).add(a or "")
+            cleaned_valid: list[str] = []
+            for x in valid:
+                m = re.match(r"^(.*?산)(?:\s+(\d+(?:\.\d+)?%))?$", x)
+                if not m:
+                    cleaned_valid.append(x)
+                    continue
+                b = str(m.group(1) or "").strip()
+                a = str(m.group(2) or "").strip()
+                amounts = base_only.get(b, set())
+                if a == "100%" and "" in amounts:
+                    # 같은 base의 무비율 표기가 이미 있으면 100%는 제거
+                    continue
+                cleaned_valid.append(x)
+            valid = cleaned_valid
+            cleaned = ", ".join(valid) if valid else None
+            if cleaned != (current or None):
+                node["origin"] = cleaned
+                stats["origin_cleaned"] += 1
+
+        def _is_non_ingredient_qualifier(token: str) -> bool:
+            t = _norm_token(token)
+            if not t:
+                return False
+            if t in {
+                "세균수기준", "규격기준", "품질기준", "검사기준", "관리기준",
+                "강화성분제외", "강화성분제외함", "강화성분제외제품",
+                "포함", "함유",
+            }:
+                return True
+            # 예: "...기준", "...기준치" 는 설명성 문구로 간주
+            if re.search(r"(기준|기준치)$", t):
+                return True
+            return False
+
+        def _append_allergen_token(text: str) -> None:
+            tok = str(text or "").strip()
+            if not tok:
+                return
+            vals = payload.get("allergen_tokens")
+            if not isinstance(vals, list):
+                vals = []
+            if tok not in vals:
+                vals.append(tok)
+            payload["allergen_tokens"] = vals
+
+        def _strip_include_suffix(token: str) -> tuple[str, bool]:
+            s = str(token or "").strip()
+            if not s:
+                return s, False
+            # "우유포함", "대두 함유" -> "우유", "대두"
+            m = re.search(r"\s*(포함|함유)\s*$", s)
+            if not m:
+                return s, False
+            s2 = re.sub(r"\s*(포함|함유)\s*$", "", s).strip()
+            return (s2 if s2 else s), True
+
+        def _append_ignored_fragment(text: str) -> None:
+            frag = str(text or "").strip()
+            if not frag:
+                return
+            ignored = payload.get("ignored_fragments")
+            if not isinstance(ignored, list):
+                ignored = []
+            if frag not in ignored:
+                ignored.append(frag)
+            payload["ignored_fragments"] = ignored
+
+        def _clean_amount_value(amount: str) -> tuple[str | None, list[str]]:
+            raw = str(amount or "").strip()
+            if not raw:
+                return None, []
+            # "-1" 같은 이름 suffix 오인값은 amount로 보지 않는다.
+            if re.fullmatch(r"-\d+(?:\.\d+)?", raw):
+                return None, [raw]
+            parts = [p.strip() for p in re.split(r"[,/;|]+", raw) if str(p).strip()]
+            kept: list[str] = []
+            dropped: list[str] = []
+            for p in parts:
+                # Brix는 함량(%)이 아니라 당도/규격 표기이므로 amount에서 제외
+                if re.fullmatch(r"\d+(?:\.\d+)?\s*Brix", p, flags=re.IGNORECASE):
+                    dropped.append(p)
+                    continue
+                if _is_non_ingredient_qualifier(p):
+                    dropped.append(p)
+                else:
+                    kept.append(p)
+            if not parts:
+                return None, []
+            # 분리되지 않은 단일 토큰도 검사
+            if len(parts) == 1 and _is_non_ingredient_qualifier(raw):
+                return None, [raw]
+            cleaned = ", ".join(kept).strip() if kept else None
+            return cleaned, dropped
+
+        def _is_empty_name(name: str) -> bool:
+            n = str(name or "").strip().lower()
+            return (not n) or (n in {"null", "none", "없음", "(없음)"})
+
+        valid_single_char_ingredients = {
+            # 실제 식품 원재료로 빈번히 등장하는 1글자 토큰
+            "파", "쌀", "콩", "차", "꿀", "무", "밀", "팥", "감",
+        }
+        valid_single_char_ingredients_norm = {_norm_token(x) for x in valid_single_char_ingredients}
+
+        def _can_merge_suffix_token(parent_name: str, child_name: str) -> bool:
+            """
+            parent-child 이름 결합은 매우 제한적으로 허용:
+            1) 원문에 실제로 `parent-child` 표기가 존재
+            2) child가 1글자 꼬리 토큰(예: 엔)
+            3) 알레르겐/원산지/수량/정상 1글자 원재료는 제외
+            """
+            p = str(parent_name or "").strip()
+            c = str(child_name or "").strip()
+            if (not p) or (not c):
+                return False
+            c_norm = _norm_token(c)
+            if len(c_norm) != 1:
+                return False
+            if c_norm in valid_single_char_ingredients_norm:
+                return False
+            if c in allergen_words:
+                return False
+            if _looks_origin_token(c):
+                return False
+            if re.fullmatch(r"\d+(?:\.\d+)?%?", c_norm):
+                return False
+            if not raw_compact:
+                return False
+            compound = re.sub(r"\s+", "", f"{p}-{c}")
+            return bool(compound and (compound in raw_compact))
+
+        def _try_merge_chemical_prefix(parent_name: str, child_name: str) -> str | None:
+            """
+            화학 접두 표기 복원:
+            - DL-알파토코페롤, L-시스틴, D-소르비톨, d-토코페롤 등
+            - 원문에 실제 compound가 있을 때만 복원
+            """
+            p = str(parent_name or "").strip()
+            c = str(child_name or "").strip()
+            if (not p) or (not c) or (not raw_compact):
+                return None
+            p_norm = _norm_token(p)
+            c_norm = _norm_token(c)
+            if (not p_norm) or (not c_norm):
+                return None
+            # 접두어만 부모명으로 분리된 경우만 허용
+            if p_norm.lower() not in {"dl", "d", "l"}:
+                return None
+            # 너무 짧은/노이즈 child 제외
+            if len(c_norm) <= 1:
+                return None
+            # 원산지/알레르겐/수량 토큰과 결합 금지
+            if _looks_origin_token(c):
+                return None
+            if c in allergen_words:
+                return None
+            if re.fullmatch(r"\d+(?:\.\d+)?%?", c_norm):
+                return None
+            compound = re.sub(r"\s+", "", f"{p}-{c}")
+            if compound in raw_compact:
+                return f"{p}-{c}"
+            return None
+
+        def _origin_name_to_country_label(name: str) -> str:
+            t = _norm_token(name)
+            if t.endswith("산"):
+                core = t[:-1]
+                if core in country_words:
+                    return core
+            return str(name or "").strip()
+
+        def _parse_origin_amount_token(text: str) -> tuple[str | None, str | None]:
+            s = _norm_token(text)
+            if not s:
+                return None, None
+            m = re.match(r"^(.+?산)(\d+(?:\.\d+)?%)$", s)
+            if m:
+                return m.group(1), m.group(2)
+            return None, None
+
+        def _split_name_percent_suffix(name: str) -> tuple[str, str | None]:
+            """
+            예: 유자과즙3% -> (유자과즙, 3%)
+            """
+            s = str(name or "").strip()
+            if not s:
+                return s, None
+            m = re.match(r"^(.*?)(\d+(?:\.\d+)?%)$", s)
+            if not m:
+                return s, None
+            base = str(m.group(1) or "").strip()
+            pct = str(m.group(2) or "").strip()
+            if (not base) or (not pct):
+                return s, None
+            return base, pct
+
+        def _walk(node: dict[str, Any]) -> None:
+            stats["nodes"] += 1
+            # 이름에 원산지 꼬리(괄호 미닫힘 포함)가 붙은 경우 분리
+            name_key = "ingredient_name" if ("ingredient_name" in node) else ("name" if ("name" in node) else None)
+            node_name_text = ""
+            if name_key:
+                raw_name_input = str(node.get(name_key) or "").strip()
+                raw_name, had_include_suffix = _strip_include_suffix(raw_name_input)
+                # 알레르기 안내(우유포함/대두함유 등)는 별도 필드에도 저장하고 트리에도 유지
+                if had_include_suffix and (raw_name in allergen_words):
+                    _append_allergen_token(raw_name)
+                node[name_key] = raw_name or None
+                if raw_name:
+                    # name 끝 %는 amount로 분리
+                    base_name, inline_pct = _split_name_percent_suffix(raw_name)
+                    if inline_pct:
+                        # amount가 이미 있어도 이름의 % 꼬리는 항상 제거
+                        node[name_key] = base_name
+                        if not str(node.get("amount") or "").strip():
+                            node["amount"] = inline_pct
+                        raw_name = base_name
+                    # "에티오피아산" 같은 원산지명이 원재료명으로 들어오면
+                    # origin으로 승격하고, name은 국가명으로 축약해 중복 트리 생성을 줄인다.
+                    if _looks_origin_token(raw_name):
+                        node_origin = str(node.get("origin") or "").strip()
+                        if not node_origin:
+                            _merge_origin_tokens(node, [raw_name])
+                        node[name_key] = _origin_name_to_country_label(raw_name) or raw_name
+
+                    # 예: 야자유(외국산, 야자유(외국산), 야자유[외국산]
+                    m = re.match(r"^(?P<base>.+?)[\(\[]\s*(?P<orig>[^\)\]]+)\s*[\)\]]?\s*$", raw_name)
+                    if m:
+                        base_name = str(m.group("base") or "").strip()
+                        origin_cand = str(m.group("orig") or "").strip()
+                        origin_parts = _split_origin_chunks(origin_cand)
+                        if base_name and origin_parts and all(_looks_origin_token(x) for x in origin_parts):
+                            node[name_key] = base_name
+                            _merge_origin_tokens(node, origin_parts)
+                node_name_text = str(node.get(name_key) or "").strip()
+
+            amount_val = str(node.get("amount") or "").strip()
+            if amount_val:
+                cleaned_amount, dropped_amount = _clean_amount_value(amount_val)
+                if cleaned_amount != (amount_val or None):
+                    node["amount"] = cleaned_amount
+                for d in dropped_amount:
+                    _append_ignored_fragment(d)
+                    stats["dropped_qualifier_sub"] += 1
+
+            origin_val = str(node.get("origin") or "").strip()
+            if origin_val:
+                tokens = _split_origin_chunks(origin_val)
+                valid: list[str] = []
+                invalid: list[str] = []
+                for tok in tokens:
+                    if _looks_origin_token(tok):
+                        t = _norm_token(tok)
+                        amt = ""
+                        m_amt = re.search(r"(\d+(?:\.\d+)?%)$", t)
+                        if m_amt:
+                            amt = m_amt.group(1)
+                            t = t[: -len(amt)]
+                        if t in country_words and (not t.endswith("산")):
+                            t = f"{t}산"
+                        elif t in {"국내", "외국", "수입", "기타외국"}:
+                            t = f"{t}산"
+                        if t:
+                            valid.append(f"{t} {amt}".strip() if amt else t)
+                    else:
+                        invalid.append(str(tok).strip())
+                # 중복 제거(순서 유지)
+                seen: set[str] = set()
+                valid = [x for x in valid if (not (x in seen or seen.add(x)))]
+                invalid = [x for x in invalid if x]
+                cleaned = ", ".join(valid) if valid else None
+                if cleaned != (origin_val or None):
+                    node["origin"] = cleaned
+                    stats["origin_cleaned"] += 1
+                for bad in invalid:
+                    _push_sub(node, bad)
+                    stats["moved_to_sub"] += 1
+            children = node.get("sub_ingredients")
+            if isinstance(children, list):
+                kept: list[dict[str, Any]] = []
+                lifted_tokens: list[str] = []
+                for c in children:
+                    if isinstance(c, dict):
+                        child_name_key = "name" if ("name" in c) else ("ingredient_name" if ("ingredient_name" in c) else None)
+                        child_name_raw = str(c.get("name") or c.get("ingredient_name") or "").strip()
+                        child_name, child_had_include_suffix = _strip_include_suffix(child_name_raw)
+                        if child_had_include_suffix and (child_name in allergen_words):
+                            _append_allergen_token(child_name)
+                        if child_name in allergen_words:
+                            _append_allergen_token(child_name)
+                        if child_name_key:
+                            c[child_name_key] = child_name or None
+                        # child name 끝 %는 amount로 분리
+                        if child_name:
+                            c_base_name, c_inline_pct = _split_name_percent_suffix(child_name)
+                            if c_inline_pct:
+                                # amount가 이미 있어도 이름의 % 꼬리는 항상 제거
+                                c[child_name_key] = c_base_name
+                                if not str(c.get("amount") or "").strip():
+                                    c["amount"] = c_inline_pct
+                                child_name = c_base_name
+                        child_origin = str(c.get("origin") or "").strip()
+                        child_amount = str(c.get("amount") or "").strip()
+                        child_sub = c.get("sub_ingredients")
+                        child_has_nested = isinstance(child_sub, list) and any(isinstance(x, dict) for x in child_sub)
+
+                        # 부모와 동일명 wrapper 노드 평탄화
+                        # 예: 식물성크림[식물성크림(...)] -> 내부 하위항목을 부모 직계로 승격
+                        if (
+                            child_name
+                            and node_name_text
+                            and (_norm_token(child_name) == _norm_token(node_name_text))
+                            and (not child_origin)
+                            and (not child_amount)
+                            and isinstance(child_sub, list)
+                            and any(isinstance(x, dict) for x in child_sub)
+                        ):
+                            for gc in child_sub:
+                                if isinstance(gc, dict):
+                                    _walk(gc)
+                                    kept.append(gc)
+                            stats["lifted_from_sub"] += 1
+                            continue
+
+                        # 부모와 완전히 같은 자기복제 하위노드는 제거
+                        # 예: 대두유[대두유, d-토코페롤, ...]
+                        if (
+                            child_name
+                            and node_name_text
+                            and (_norm_token(child_name) == _norm_token(node_name_text))
+                            and (not child_origin)
+                            and (not child_amount)
+                            and (not child_has_nested)
+                        ):
+                            stats["dropped_qualifier_sub"] += 1
+                            continue
+
+                        # 잘못 분해된 접미 토큰 복원(원문 근거 기반)
+                        # 예: 코치닐색소-엔 -> parent=코치닐색소, child=엔
+                        if (
+                            child_name_key
+                            and child_name
+                            and (not child_origin)
+                            and (not child_amount)
+                            and (not child_has_nested)
+                            and node_name_text
+                            and (not str(node_name_text).endswith(f"-{child_name}"))
+                            and _can_merge_suffix_token(node_name_text, child_name)
+                        ):
+                            merged_name = f"{node_name_text}-{child_name}".strip("-")
+                            if name_key and merged_name:
+                                node[name_key] = merged_name
+                                node_name_text = merged_name
+                                stats["origin_cleaned"] += 1
+                                continue
+
+                        # 화학 접두어 결합 복원(원문 근거 기반)
+                        # 예: DL + 알파토코페롤 -> DL-알파토코페롤
+                        merged_chem = _try_merge_chemical_prefix(node_name_text, child_name)
+                        if (
+                            child_name_key
+                            and merged_chem
+                            and (not child_origin)
+                            and (not child_amount)
+                            and (not child_has_nested)
+                            and name_key
+                        ):
+                            node[name_key] = merged_chem
+                            node_name_text = merged_chem
+                            stats["origin_cleaned"] += 1
+                            continue
+
+                        # 원산지+함량 결합 토큰 처리
+                        # 예: 중국산75% -> name=중국, origin=중국산, amount=75%
+                        p_origin, p_amt = _parse_origin_amount_token(child_name)
+                        if p_origin and p_amt:
+                            if not child_origin:
+                                _merge_origin_tokens(c, [p_origin])
+                            c["amount"] = p_amt
+                            child_amount = p_amt
+                            if child_name_key:
+                                c[child_name_key] = _origin_name_to_country_label(p_origin) or child_name
+                            child_name = str(c.get(child_name_key) or "").strip() if child_name_key else child_name
+
+                        # 퍼센트 단독 토큰 + 부모 origin 존재 시 첫 origin에 귀속
+                        # 예: (국산:25%,중국산75%)의 "25%" 처리
+                        if (not p_origin) and re.fullmatch(r"\d+(?:\.\d+)?%", _norm_token(child_name or "")) and (not child_origin):
+                            parent_origin_tokens = _split_origin_chunks(str(node.get("origin") or ""))
+                            if parent_origin_tokens:
+                                base_origin = parent_origin_tokens[0]
+                                _merge_origin_tokens(c, [base_origin])
+                                c["amount"] = _norm_token(child_name)
+                                child_amount = str(c.get("amount") or "").strip()
+                                if child_name_key:
+                                    c[child_name_key] = _origin_name_to_country_label(base_origin) or child_name
+                                child_name = str(c.get(child_name_key) or "").strip() if child_name_key else child_name
+
+                        # leaf 원산지 토큰은 부모 origin으로 승격
+                        if child_name and (not child_amount) and (not child_has_nested):
+                            child_origin_parts = _split_origin_chunks(child_name)
+                            if child_origin_parts and all(_looks_origin_token(x) for x in child_origin_parts):
+                                lifted_tokens.extend(child_origin_parts)
+                                stats["lifted_from_sub"] += 1
+                                continue
+
+                        # 자기복제 하위노드 제거:
+                        # 예) 에티오피아산(44.4%) -> 하위 [에티오피아산]
+                        if isinstance(child_sub, list) and len(child_sub) == 1 and isinstance(child_sub[0], dict):
+                            only = child_sub[0]
+                            only_name = str(only.get("name") or only.get("ingredient_name") or "").strip()
+                            only_origin = str(only.get("origin") or "").strip()
+                            only_amount = str(only.get("amount") or "").strip()
+                            only_sub = only.get("sub_ingredients")
+                            if (
+                                only_name
+                                and child_name
+                                and (_norm_token(only_name) == _norm_token(child_name))
+                                and (not only_origin)
+                                and (not only_amount)
+                                and (not (isinstance(only_sub, list) and any(isinstance(x, dict) for x in only_sub)))
+                            ):
+                                c["sub_ingredients"] = []
+                                child_sub = []
+                                child_has_nested = False
+
+                        # "국가산 + 함량" 패턴은 원산지 분포 노드로 정규화
+                        # name은 국가명으로 축약, origin은 국가산으로 유지
+                        if child_name and _looks_origin_token(child_name):
+                            if not str(c.get("origin") or "").strip():
+                                _merge_origin_tokens(c, [child_name])
+                            if child_name_key:
+                                c[child_name_key] = _origin_name_to_country_label(child_name) or child_name
+                            child_name = str(c.get(child_name_key) or "").strip() if child_name_key else child_name
+
+                        # 원산지 분포 노드는 부모 origin으로 승격하고 하위에서는 제거
+                        # 예: 포도과즙(이탈리아산67%, 스페인산33%)에서
+                        #     하위 [{name:이탈리아, origin:이탈리아산, amount:67%}, ...] 제거
+                        child_origin_now = str(c.get("origin") or "").strip()
+                        child_amount_now = str(c.get("amount") or "").strip()
+                        child_sub_now = c.get("sub_ingredients")
+                        child_has_nested_now = isinstance(child_sub_now, list) and any(isinstance(x, dict) for x in child_sub_now)
+                        if (
+                            child_origin_now
+                            and child_name
+                            and _looks_origin_token(child_name)
+                            and _looks_origin_token(child_origin_now)
+                            and re.fullmatch(r"\d+(?:\.\d+)?%", _norm_token(child_amount_now or ""))
+                            and (not child_has_nested_now)
+                        ):
+                            lifted_tokens.append(f"{_norm_token(child_origin_now)}{_norm_token(child_amount_now)}")
+                            stats["lifted_from_sub"] += 1
+                            continue
+
+                        # "세균수기준" 같은 설명성 문구는 하위 원재료에서 제거
+                        if child_name and _is_non_ingredient_qualifier(child_name) and (not child_origin) and (not child_amount) and (not child_has_nested):
+                            _append_ignored_fragment(child_name)
+                            stats["dropped_qualifier_sub"] += 1
+                            continue
+                        _walk(c)
+                        kept.append(c)
+                node["sub_ingredients"] = kept
+                if lifted_tokens:
+                    _merge_origin_tokens(node, lifted_tokens)
+
+            # 최종 유효성 검사
+            final_origin = str(node.get("origin") or "").strip()
+            if final_origin:
+                final_tokens = _split_origin_chunks(final_origin)
+                if not final_tokens or any((not _looks_origin_token(t)) for t in final_tokens):
+                    stats["invalid_remaining"] += 1
+
+        def _prune_nodes(nodes: list[Any]) -> list[dict[str, Any]]:
+            pruned: list[dict[str, Any]] = []
+            for raw in nodes:
+                if not isinstance(raw, dict):
+                    continue
+                node = raw
+                subs_raw = node.get("sub_ingredients")
+                subs = _prune_nodes(subs_raw) if isinstance(subs_raw, list) else []
+                node["sub_ingredients"] = subs
+                name = str(node.get("name") or node.get("ingredient_name") or "").strip()
+                origin = str(node.get("origin") or "").strip()
+                amount = str(node.get("amount") or "").strip()
+
+                # "세균수기준", "강화성분제외" 같은 설명성 노드는 트리에서 제거
+                if name and _is_non_ingredient_qualifier(name) and (not origin) and (not amount) and (not subs):
+                    _append_ignored_fragment(name)
+                    stats["dropped_qualifier_sub"] += 1
+                    continue
+
+                # 이름 없는/의미 없는 노드는 제거
+                if _is_empty_name(name) and (not origin) and (not amount) and (not subs):
+                    stats["dropped_qualifier_sub"] += 1
+                    continue
+
+                # 한 글자 꼬리 토큰(예: '-엔' 분리 잔여)은 노이즈로 제거
+                name_norm = _norm_token(name)
+                if (
+                    len(name_norm) <= 1
+                    and (name_norm not in valid_single_char_ingredients_norm)
+                    and (not origin)
+                    and (not amount)
+                    and (not subs)
+                ):
+                    _append_ignored_fragment(name)
+                    stats["dropped_qualifier_sub"] += 1
+                    continue
+
+                # 이름이 null/빈값이면 노드를 제거한다.
+                # - 메타만 있는 경우: ignored_fragments로 이동
+                # - 자식이 있는 경우: 자식을 부모 레벨로 승격(flatten)
+                if _is_empty_name(name):
+                    if origin:
+                        _append_ignored_fragment(origin)
+                    if amount:
+                        _append_ignored_fragment(amount)
+                    stats["dropped_qualifier_sub"] += 1
+                    if subs:
+                        pruned.extend(subs)
+                    continue
+
+                pruned.append(node)
+            return pruned
+
+        def _merge_duplicate_named_nodes(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
+            merged: list[dict[str, Any]] = []
+            index_by_name: dict[str, dict[str, Any]] = {}
+
+            for raw in nodes:
+                if not isinstance(raw, dict):
+                    continue
+                node = raw
+                subs = node.get("sub_ingredients")
+                if isinstance(subs, list):
+                    node["sub_ingredients"] = _merge_duplicate_named_nodes(
+                        [x for x in subs if isinstance(x, dict)]
+                    )
+                else:
+                    node["sub_ingredients"] = []
+
+                nm = str(node.get("name") or node.get("ingredient_name") or "").strip()
+                key = _norm_token(nm)
+                if (not nm) or (not key):
+                    merged.append(node)
+                    continue
+
+                existing = index_by_name.get(key)
+                if existing is None:
+                    index_by_name[key] = node
+                    merged.append(node)
+                    continue
+
+                # origin 통합
+                ex_origin = str(existing.get("origin") or "").strip()
+                nd_origin = str(node.get("origin") or "").strip()
+                if nd_origin:
+                    _merge_origin_tokens(existing, [nd_origin])
+                elif ex_origin:
+                    existing["origin"] = ex_origin
+
+                # amount 통합
+                ex_amount = str(existing.get("amount") or "").strip()
+                nd_amount = str(node.get("amount") or "").strip()
+                if (not ex_amount) and nd_amount:
+                    existing["amount"] = nd_amount
+                elif ex_amount and nd_amount and (ex_amount != nd_amount):
+                    _append_ignored_fragment(nd_amount)
+
+                # sub 통합
+                ex_sub = existing.get("sub_ingredients")
+                if not isinstance(ex_sub, list):
+                    ex_sub = []
+                nd_sub = node.get("sub_ingredients")
+                if isinstance(nd_sub, list) and nd_sub:
+                    ex_sub.extend([x for x in nd_sub if isinstance(x, dict)])
+                    existing["sub_ingredients"] = _merge_duplicate_named_nodes(ex_sub)
+                else:
+                    existing["sub_ingredients"] = _merge_duplicate_named_nodes(ex_sub)
+
+            return merged
+
+        def _iter_nodes(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
+            out: list[dict[str, Any]] = []
+            stack: list[dict[str, Any]] = list(nodes)
+            while stack:
+                n = stack.pop()
+                out.append(n)
+                children = n.get("sub_ingredients")
+                if isinstance(children, list):
+                    for c in children:
+                        if isinstance(c, dict):
+                            stack.append(c)
+            return out
+
+        def _append_sub_if_missing(parent: dict[str, Any], name: str, amount: str | None) -> bool:
+            nm = str(name or "").strip()
+            if not nm:
+                return False
+            subs = parent.get("sub_ingredients")
+            if not isinstance(subs, list):
+                subs = []
+            for s in subs:
+                if not isinstance(s, dict):
+                    continue
+                sname = str(s.get("name") or s.get("ingredient_name") or "").strip()
+                if sname == nm:
+                    if amount and (not str(s.get("amount") or "").strip()):
+                        s["amount"] = amount
+                    parent["sub_ingredients"] = subs
+                    return True
+            subs.append(
+                {
+                    "name": nm,
+                    "origin": None,
+                    "amount": amount,
+                    "sub_ingredients": [],
+                }
+            )
+            parent["sub_ingredients"] = subs
+            return True
+
+        def _recover_ignored_include_fragments() -> None:
+            ignored = payload.get("ignored_fragments")
+            if not isinstance(ignored, list) or not ignored:
+                return
+            items = payload.get("ingredients_items")
+            if not isinstance(items, list):
+                return
+
+            nodes = [n for n in _iter_nodes(items) if isinstance(n, dict)]
+            name_index: dict[str, dict[str, Any]] = {}
+            for n in nodes:
+                nm = str(n.get("ingredient_name") or n.get("name") or "").strip()
+                if nm and nm not in name_index:
+                    name_index[nm] = n
+
+            kept_ignored: list[str] = []
+            for raw_frag in ignored:
+                frag = str(raw_frag or "").strip()
+                if not frag:
+                    continue
+                compact = re.sub(r"\s+", "", frag)
+                # 예: 특정성분및함량:분말스프중된장분말9%함유
+                if "함유" not in compact and "포함" not in compact:
+                    kept_ignored.append(frag)
+                    continue
+
+                body = re.sub(r"^특정성분및함량[:：]?", "", compact)
+                body = re.sub(r"(함유|포함)$", "", body)
+                if not body:
+                    kept_ignored.append(frag)
+                    continue
+
+                amount_match = re.search(r"(\d+(?:\.\d+)?%)", body)
+                amount = amount_match.group(1) if amount_match else None
+                if amount:
+                    body = body.replace(amount, "")
+
+                parent_hint = ""
+                candidate = body
+                if "중" in body:
+                    parent_hint, candidate = body.split("중", 1)
+                candidate = re.sub(r"^[\[\(\{]+|[\]\)\}]+$", "", candidate).strip()
+                parent_hint = re.sub(r"^[\[\(\{]+|[\]\)\}]+$", "", parent_hint).strip()
+
+                if (not candidate) or _is_non_ingredient_qualifier(candidate):
+                    kept_ignored.append(frag)
+                    continue
+
+                recovered = False
+                if parent_hint:
+                    pnode = name_index.get(parent_hint)
+                    if pnode is None and ("스프" in parent_hint):
+                        for nname, nnode in name_index.items():
+                            if "스프" in nname:
+                                pnode = nnode
+                                break
+                    if pnode is not None:
+                        recovered = _append_sub_if_missing(pnode, candidate, amount)
+
+                if not recovered:
+                    # 부모를 못 찾으면 상위 항목으로라도 복구
+                    if candidate not in name_index:
+                        items.append(
+                            {
+                                "ingredient_name": candidate,
+                                "origin": None,
+                                "amount": amount,
+                                "sub_ingredients": [],
+                            }
+                        )
+                        name_index[candidate] = items[-1]
+                        recovered = True
+                    else:
+                        existing = name_index[candidate]
+                        if amount and (not str(existing.get("amount") or "").strip()):
+                            existing["amount"] = amount
+                        recovered = True
+
+                if not recovered:
+                    kept_ignored.append(frag)
+
+            payload["ignored_fragments"] = kept_ignored
+
+        items = payload.get("ingredients_items")
+        if not isinstance(items, list):
+            return payload, stats
+        for n in items:
+            if isinstance(n, dict):
+                _walk(n)
+        payload["ingredients_items"] = _merge_duplicate_named_nodes(_prune_nodes(items))
+        _recover_ignored_include_fragments()
+        if not isinstance(payload.get("allergen_tokens"), list):
+            payload["allergen_tokens"] = []
+        # ignored_fragments와 allergen_tokens가 중복되면 allergen 쪽만 유지
+        ignored = payload.get("ignored_fragments")
+        allergens = payload.get("allergen_tokens")
+        if isinstance(ignored, list) and isinstance(allergens, list):
+            allergen_set = {str(x).strip() for x in allergens if str(x).strip()}
+            payload["ignored_fragments"] = [
+                x for x in ignored if str(x or "").strip() and (str(x).strip() not in allergen_set)
+            ]
+        return payload, stats
+
+    def _build_processed_nutrition_payload(row: dict[str, Any]) -> dict[str, Any]:
+
+        # processed_food_info의 구조화 컬럼을 nutrition_items로 매핑
+        field_defs = [
+            ("enerc", "열량", "kcal"),
+            ("chocdf", "탄수화물", "g"),
+            ("prot", "단백질", "g"),
+            ("fatce", "지방", "g"),
+            ("sugar", "당류", "g"),
+            ("nat", "나트륨", "mg"),
+            ("water", "수분", "g"),
+            ("ash", "회분", "g"),
+            ("fibtg", "식이섬유", "g"),
+            ("ca", "칼슘", "mg"),
+            ("fe", "철", "mg"),
+            ("p", "인", "mg"),
+            ("k", "칼륨", "mg"),
+            ("vitaRae", "비타민A", "μg RAE"),
+            ("retol", "레티놀", "μg"),
+            ("cartb", "베타카로틴", "μg"),
+            ("thia", "비타민B1", "mg"),
+            ("ribf", "비타민B2", "mg"),
+            ("nia", "나이아신", "mg"),
+            ("vitc", "비타민C", "mg"),
+            ("vitd", "비타민D", "μg"),
+            ("chole", "콜레스테롤", "mg"),
+            ("fasat", "포화지방산", "g"),
+            ("fatrn", "트랜스지방산", "g"),
+        ]
+        items: list[dict[str, Any]] = []
+        for col, name, unit in field_defs:
+            val = str(row[col] or "").strip()
+            if not val:
+                continue
+            items.append(
+                {
+                    "name": name,
+                    "value": val,
+                    "unit": unit,
+                    "daily_value": None,
+                }
+            )
+        base_txt = str(row["nutConSrtrQua"] or "").strip()
+        serv_size = str(row.get("servSize") or "").strip()
+        food_size = str(row.get("foodSize") or "").strip()
+        if base_txt:
+            items.insert(
+                0,
+                {
+                    "name": "기준량",
+                    "value": base_txt,
+                    "unit": None,
+                    "daily_value": None,
+                },
+            )
+        basis = _extract_nutrition_basis(base_txt) if base_txt else None
+        if basis is None and serv_size:
+            basis = _extract_nutrition_basis(f"1회 제공량 {serv_size}")
+        if basis is None and food_size:
+            basis = _extract_nutrition_basis(f"총내용량 {food_size}")
+        return {
+            "nutrition_items": items,
+            "nutrition_basis": basis,
+            "parser": "processed_food_db_v1",
+            "serv_size": serv_size or None,
+            "food_size": food_size or None,
+        }
+
+    def _upsert_haccp_parsed_with_retry(
+        conn: sqlite3.Connection,
+        *,
+        report_no: str,
+        ingredients_items_json: str | None,
+        nutrition_items_json: str | None,
+        parse_status: str,
+        parse_error: str | None,
+        parser_version: str,
+        source_rawmtrl: str | None,
+        source_nutrient: str | None,
+        max_retries: int = 8,
+    ) -> None:
+        for attempt in range(max_retries):
+            try:
+                upsert_haccp_parsed_row(
+                    conn,
+                    report_no=report_no,
+                    ingredients_items_json=ingredients_items_json,
+                    nutrition_items_json=nutrition_items_json,
+                    parse_status=parse_status,
+                    parse_error=parse_error,
+                    parser_version=parser_version,
+                    source_rawmtrl=source_rawmtrl,
+                    source_nutrient=source_nutrient,
+                )
+                return
+            except sqlite3.OperationalError as exc:
+                msg = str(exc).lower()
+                if "database is locked" not in msg:
+                    raise
+                if attempt >= max_retries - 1:
+                    raise
+                # 짧은 지터 백오프로 잠금 해제 대기
+                backoff = min(2.0, 0.15 * (2 ** attempt)) + random.uniform(0.0, 0.12)
+                time.sleep(backoff)
+
+    def _sample_stratified_report_keys(
+        conn: sqlite3.Connection,
+        *,
+        per_bucket: int,
+        bucket_limit: int,
+        skip_done_ok: bool,
+    ) -> tuple[list[str], dict[str, int]]:
+        norm_expr = "REPLACE(REPLACE(REPLACE(h.prdlstReportNo,'-',''),' ',''),'.','')"
+        where: list[str] = [
+            "COALESCE(TRIM(h.prdlstReportNo),'') != ''",
+            "COALESCE(TRIM(h.rawmtrl),'') != ''",
+        ]
+        if skip_done_ok:
+            where.append(
+                "NOT EXISTS ("
+                "SELECT 1 FROM haccp_parsed_cache p "
+                "WHERE REPLACE(REPLACE(REPLACE(p.prdlstReportNo,'-',''),' ',''),'.','') = "
+                f"{norm_expr} "
+                "AND p.parse_status='ok' AND p.parser_version LIKE 'pass4_%'"
+                ")"
+            )
+        sql = f"""
+        WITH base AS (
+            SELECT {norm_expr} AS report_key,
+                   COALESCE(NULLIF(TRIM(h.prdkind),''), '미분류') AS bucket,
+                   MAX(h.id) AS max_id
+            FROM haccp_product_info h
+            WHERE {' AND '.join(where)}
+            GROUP BY report_key, bucket
+        ),
+        ranked AS (
+            SELECT report_key, bucket,
+                   ROW_NUMBER() OVER (PARTITION BY bucket ORDER BY RANDOM()) AS rn,
+                   DENSE_RANK() OVER (ORDER BY bucket) AS bidx
+            FROM base
+        )
+        SELECT report_key, bucket
+        FROM ranked
+        WHERE rn <= ? AND bidx <= ?
+        ORDER BY bucket, rn
+        """
+        rows = conn.execute(sql, (per_bucket, bucket_limit)).fetchall()
+        keys: list[str] = []
+        bucket_counts: dict[str, int] = {}
+        for r in rows:
+            k = str(r[0] or "").strip()
+            b = str(r[1] or "").strip() or "미분류"
+            if not k:
+                continue
+            keys.append(k)
+            bucket_counts[b] = bucket_counts.get(b, 0) + 1
+        return keys, bucket_counts
+
+    with sqlite3.connect(DB_FILE, timeout=30) as conn:
+        conn.row_factory = sqlite3.Row
+        conn.execute("PRAGMA busy_timeout=30000")
+        init_haccp_tables(conn)
+        if use_stratified and not target_report_keys:
+            sampled_keys, sampled_buckets = _sample_stratified_report_keys(
+                conn,
+                per_bucket=strat_per_bucket,
+                bucket_limit=strat_bucket_limit,
+                skip_done_ok=skip_done,
+            )
+            if not sampled_keys:
+                print("  ℹ️ 층화 샘플링 결과가 없습니다. (스킵 조건 포함)")
+                return
+            target_report_keys = sampled_keys
+            print(
+                f"  📌 층화 샘플링 선택: 카테고리 {len(sampled_buckets):,}개, "
+                f"총 대상 {len(target_report_keys):,}개"
+            )
+            for b, c in list(sampled_buckets.items())[:12]:
+                print(f"    - {b}: {c}개")
+            if len(sampled_buckets) > 12:
+                print(f"    ... 외 {len(sampled_buckets) - 12}개 카테고리")
+
+        where: list[str] = ["COALESCE(TRIM(h.prdlstReportNo),'') != ''"]
+        where.append("COALESCE(TRIM(h.rawmtrl),'') != ''")
+        where.append(
+            "REPLACE(REPLACE(REPLACE(h.prdlstReportNo,'-',''),' ',''),'.','') NOT IN ("
+            "SELECT REPLACE(REPLACE(REPLACE(b.prdlstReportNo,'-',''),' ',''),'.','') "
+            "FROM haccp_parse_blocklist b WHERE COALESCE(b.is_blocked,1)=1)"
+        )
+        params: list[Any] = []
+        if target_report_keys:
+            placeholders = ",".join(["?"] * len(target_report_keys))
+            where.append(
+                "REPLACE(REPLACE(REPLACE(h.prdlstReportNo,'-',''),' ',''),'.','') "
+                f"IN ({placeholders})"
+            )
+            params.extend(target_report_keys)
+        if skip_done:
+            where.append(
+                "h.prdlstReportNo NOT IN ("
+                "SELECT p.prdlstReportNo FROM haccp_parsed_cache p "
+                "WHERE p.parse_status='ok' AND p.parser_version LIKE 'pass4_%'"
+                ")"
+            )
+        sql = (
+            "SELECT h.prdlstReportNo, h.prdlstNm, h.rawmtrl, h.nutrient "
+            "FROM haccp_product_info h "
+            f"WHERE {' AND '.join(where)} "
+            "ORDER BY h.id DESC"
+        )
+        if (limit > 0) and (not target_report_keys):
+            sql += f" LIMIT {limit}"
+        rows = conn.execute(sql, tuple(params)).fetchall()
+        if not rows:
+            print("  ℹ️ 처리할 대상이 없습니다. (스킵 조건 포함)")
+            return
+        if target_report_keys:
+            print(f"  📌 지정 품목보고번호 모드: 요청 {len(target_report_keys):,}개 / 대상 조회 {len(rows):,}개")
+
+        processed_rows = conn.execute(
+            """
+            SELECT itemMnftrRptNo, foodNm, nutConSrtrQua, enerc, water, prot, fatce, ash,
+                   chocdf, sugar, fibtg, ca, fe, p, k, nat,
+                   vitaRae, retol, cartb, thia, ribf, nia, vitc, vitd,
+                   chole, fasat, fatrn, servSize, foodSize
+            FROM processed_food_info
+            WHERE COALESCE(TRIM(itemMnftrRptNo),'') != ''
+            ORDER BY id DESC
+            """
+        ).fetchall()
+        processed_by_report: dict[str, dict[str, Any]] = {}
+        for prow in processed_rows:
+            key = _normalize_report_no_key(prow["itemMnftrRptNo"])
+            if not key or key in processed_by_report:
+                continue
+            processed_by_report[key] = {k: prow[k] for k in prow.keys()}
+        prompt_dir = Path(__file__).resolve().parent / "analyzer" / "prompts"
+        ing_prompt_path = prompt_dir / "analyze_haccp_pass4_ingredients_prompt.txt"
+        nut_prompt_path = prompt_dir / "analyze_haccp_pass4_nutrition_prompt.txt"
+        if not ing_prompt_path.exists() or not nut_prompt_path.exists():
+            print("  ❌ HACCP 전용 프롬프트 파일이 없습니다.")
+            print(f"    - {ing_prompt_path}")
+            print(f"    - {nut_prompt_path}")
+            return
+        ing_prompt_template = ing_prompt_path.read_text(encoding="utf-8")
+        nut_prompt_template = nut_prompt_path.read_text(encoding="utf-8")
+
+        ok = 0
+        fail = 0
+        skip = 0
+        skip_no_haccp_nutrient = 0
+        ing_success = 0
+        nut_from_processed = 0
+        nut_from_haccp_pass4 = 0
+        total_tasks = len(rows)
+        analyzer_local = threading.local()
+
+        def _get_worker_analyzer() -> URLIngredientAnalyzer:
+            az = getattr(analyzer_local, "analyzer", None)
+            if az is None:
+                az = URLIngredientAnalyzer(api_key=openai_api_key)
+                setattr(analyzer_local, "analyzer", az)
+            return az
+
+        def _openai_batch_chat_json(
+            *,
+            stage: str,
+            requests_payloads: list[dict[str, Any]],
+            model_name: str,
+            poll_sec: int,
+            max_wait_min: int,
+        ) -> dict[str, dict[str, Any]]:
+            if not requests_payloads:
+                return {}
+            sess = requests.Session()
+            auth_headers = {"Authorization": f"Bearer {openai_api_key}"}
+            jsonl_data = "\n".join(
+                json.dumps(x, ensure_ascii=False, separators=(",", ":"))
+                for x in requests_payloads
+            ) + "\n"
+            upload = sess.post(
+                "https://api.openai.com/v1/files",
+                headers=auth_headers,
+                data={"purpose": "batch"},
+                files={"file": (f"haccp_{stage}_input.jsonl", jsonl_data.encode("utf-8"), "application/jsonl")},
+                timeout=60,
+            )
+            upload.raise_for_status()
+            input_file_id = str((upload.json() or {}).get("id") or "").strip()
+            if not input_file_id:
+                raise RuntimeError(f"{stage}_batch_upload_missing_file_id")
+
+            batch_resp = sess.post(
+                "https://api.openai.com/v1/batches",
+                headers={**auth_headers, "Content-Type": "application/json"},
+                data=json.dumps(
+                    {
+                        "input_file_id": input_file_id,
+                        "endpoint": "/v1/chat/completions",
+                        "completion_window": "24h",
+                        "metadata": {"scope": "haccp_pass4", "stage": stage},
+                    },
+                    ensure_ascii=False,
+                ),
+                timeout=60,
+            )
+            batch_resp.raise_for_status()
+            batch_id = str((batch_resp.json() or {}).get("id") or "").strip()
+            if not batch_id:
+                raise RuntimeError(f"{stage}_batch_create_missing_batch_id")
+            print(f"  📦 [{stage.upper()}-BATCH] 제출 완료: batch_id={batch_id}")
+
+            terminal = {"completed", "failed", "cancelled", "expired"}
+            deadline = time.time() + (max_wait_min * 60)
+            output_file_id = ""
+            last_status = ""
+            while True:
+                stat_resp = sess.get(
+                    f"https://api.openai.com/v1/batches/{batch_id}",
+                    headers=auth_headers,
+                    timeout=30,
+                )
+                stat_resp.raise_for_status()
+                stat = stat_resp.json() or {}
+                st = str(stat.get("status") or "").strip().lower()
+                if st != last_status:
+                    print(f"  ⏳ [{stage.upper()}-BATCH] 상태: {st or '-'}")
+                    last_status = st
+                if st in terminal:
+                    output_file_id = str(stat.get("output_file_id") or "").strip()
+                    if st != "completed":
+                        err_file = str(stat.get("error_file_id") or "").strip()
+                        raise RuntimeError(
+                            f"{stage}_batch_not_completed: status={st}, output_file_id={output_file_id or '-'}, error_file_id={err_file or '-'}"
+                        )
+                    break
+                if time.time() >= deadline:
+                    raise RuntimeError(f"{stage}_batch_timeout_after_{max_wait_min}min")
+                time.sleep(poll_sec)
+
+            if not output_file_id:
+                raise RuntimeError(f"{stage}_batch_completed_without_output_file")
+
+            out_resp = sess.get(
+                f"https://api.openai.com/v1/files/{output_file_id}/content",
+                headers=auth_headers,
+                timeout=120,
+            )
+            out_resp.raise_for_status()
+            results: dict[str, dict[str, Any]] = {}
+            for raw_line in out_resp.text.splitlines():
+                line = str(raw_line or "").strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except Exception:
+                    continue
+                custom_id = str(row.get("custom_id") or "").strip()
+                if not custom_id:
+                    continue
+                resp = row.get("response") if isinstance(row, dict) else None
+                if not isinstance(resp, dict):
+                    err = row.get("error")
+                    results[custom_id] = {"ok": False, "error": f"batch_line_no_response: {err}"}
+                    continue
+                code = int(resp.get("status_code") or 0)
+                body = resp.get("body") or {}
+                if code >= 400:
+                    results[custom_id] = {"ok": False, "error": f"batch_http_{code}: {str(body)[:800]}"}
+                    continue
+                try:
+                    model_text = _extract_openai_text(body if isinstance(body, dict) else {})
+                    parsed = _extract_first_json_object(model_text)
+                    results[custom_id] = {
+                        "ok": True,
+                        "raw_text": model_text,
+                        "parsed": parsed,
+                    }
+                except Exception as exc:
+                    results[custom_id] = {"ok": False, "error": f"batch_parse_error: {exc}"}
+            return results
+
+        def _process_one(task: tuple[int, dict[str, Any]]) -> dict[str, Any]:
+            idx, row = task
+            report_no = str(row.get("prdlstReportNo") or "").strip()
+            product_name = str(row.get("prdlstNm") or "").strip() or None
+            rawmtrl = str(row.get("rawmtrl") or "").strip()
+            nutrient = str(row.get("nutrient") or "").strip()
+            report_key = _normalize_report_no_key(report_no)
+            processed_match = processed_by_report.get(report_key) if report_key else None
+            log_lines: list[str] = []
+            if verbose:
+                log_lines.append("\n" + "-" * 96)
+                log_lines.append(f"[대상 {idx}/{total_tasks}] report_no={report_no} | product={product_name or '-'}")
+                log_lines.append(f"  - processed_match={'Y' if processed_match is not None else 'N'}")
+
+            if not rawmtrl:
+                if verbose:
+                    log_lines.append("  - SKIP: rawmtrl 없음")
+                return {"status": "skip_raw", "log": "\n".join(log_lines)}
+
+            haccp_nutrient_missing = (not nutrient) or (nutrient == "알수없음")
+            if (processed_match is None) and haccp_nutrient_missing:
+                if verbose:
+                    log_lines.append("  - STOP: processed 미매칭 + HACCP nutrient 없음(또는 알수없음)")
+                return {"status": "skip_no_nutrient", "log": "\n".join(log_lines)}
+
+            try:
+                az = _get_worker_analyzer()
+                if processed_match is not None:
+                    nut_payload = _build_processed_nutrition_payload(processed_match)
+                    parser_version = "pass4_policy_v3_processed_nut"
+                    p_base = str(processed_match.get("nutConSrtrQua") or "").strip()
+                    p_serv = str(processed_match.get("servSize") or "").strip()
+                    p_food = str(processed_match.get("foodSize") or "").strip()
+                    source_nutrient = (
+                        f"basis={p_base or '-'} | servSize={p_serv or '-'} | foodSize={p_food or '-'} | processed_food_info"
+                    )
+                    nut_source = "processed"
+                    if verbose:
+                        log_lines.append("  [NUT] source=processed_food_info (모델 호출 없음)")
+                        log_lines.append(f"    raw(base): {source_nutrient}")
+                        log_lines.append(f"    parsed: {dumps_json(nut_payload)}")
+                else:
+                    nut_prompt = nut_prompt_template.replace("__NUTRIENT_TEXT__", nutrient or "")
+                    if verbose:
+                        log_lines.append("  [NUT] source=haccp_nutrient (모델 호출)")
+                        log_lines.append(f"    raw(input): {nutrient or '-'}")
+                    try:
+                        nut_raw_text, nut_parsed, _nut_api_raw = az._call_text_model_openai(
+                            nut_prompt,
+                            model_name=getattr(az, "pass4_openai_model", None),
+                            timeout_sec=getattr(az, "pass4_request_timeout_sec", None),
+                            max_retries=getattr(az, "pass4_model_retries", None),
+                            retry_backoff_sec=getattr(az, "pass4_retry_backoff_sec", None),
+                        )
+                    except Exception as exc:  # pylint: disable=broad-except
+                        if verbose:
+                            log_lines.append(f"    FAIL: haccp_pass4_nut_error: {exc}")
+                        return {
+                            "status": "error",
+                            "report_no": report_no,
+                            "ingredients_items_json": None,
+                            "nutrition_items_json": None,
+                            "parse_error": f"haccp_pass4_nut_error: {exc}",
+                            "parser_version": "pass4_policy_v3_error",
+                            "source_rawmtrl": rawmtrl or None,
+                            "source_nutrient": nutrient or None,
+                            "log": "\n".join(log_lines),
+                        }
+                    nutrition_items = nut_parsed.get("nutrition_items") or []
+                    if not isinstance(nutrition_items, list):
+                        nutrition_items = []
+                    nutrition_items = _ensure_kcal_nutrition_item(nutrition_items, nutrient)
+                    basis_from_model = nut_parsed.get("nutrition_basis")
+                    if not isinstance(basis_from_model, dict):
+                        basis_from_model = None
+                    if isinstance(basis_from_model, dict):
+                        basis_from_model = {
+                            "per_amount": (str(basis_from_model.get("per_amount") or "").strip() or None),
+                            "per_unit": (str(basis_from_model.get("per_unit") or "").strip().lower() or None),
+                            "basis_text": (str(basis_from_model.get("basis_text") or "").strip() or None),
+                        }
+                    text_basis = _extract_nutrition_basis(nutrient)
+                    # 규칙 보정:
+                    # - 1회 제공량에서 g/ml 추출 가능하면 그 기준 우선
+                    # - g/ml가 없고 개수 단위만 있으면 개수 단위 사용
+                    if text_basis and isinstance(text_basis, dict):
+                        t_unit = str(text_basis.get("per_unit") or "").strip().lower()
+                        m_unit = str((basis_from_model or {}).get("per_unit") or "").strip().lower()
+                        if (not basis_from_model):
+                            basis_from_model = text_basis
+                        elif t_unit in {"g", "ml"} and m_unit not in {"g", "ml"}:
+                            basis_from_model = text_basis
+                        elif (t_unit not in {"g", "ml"}) and (not m_unit):
+                            basis_from_model = text_basis
+                    nut_payload = {
+                        "nutrition_items": nutrition_items,
+                        "nutrition_basis": basis_from_model,
+                        "parser": "haccp_pass4_nut_v1",
+                        "raw_model_text": nut_raw_text,
+                    }
+                    parser_version = "pass4_policy_v3_haccp_nut"
+                    source_nutrient = nutrient or None
+                    nut_source = "haccp"
+                    if verbose:
+                        log_lines.append(f"    raw(model): {nut_raw_text or '-'}")
+                        log_lines.append(f"    parsed: {dumps_json(nut_payload)}")
+
+                ing_prompt = ing_prompt_template.replace("__RAWMTRL_TEXT__", rawmtrl or "")
+                if verbose:
+                    log_lines.append("  [ING] source=haccp_rawmtrl (모델 호출)")
+                    log_lines.append(f"    raw(input): {rawmtrl or '-'}")
+                try:
+                    ing_raw_text, ing_parsed, _ing_api_raw = az._call_text_model_openai(
+                        ing_prompt,
+                        model_name=getattr(az, "pass4_openai_model", None),
+                        timeout_sec=getattr(az, "pass4_request_timeout_sec", None),
+                        max_retries=getattr(az, "pass4_model_retries", None),
+                        retry_backoff_sec=getattr(az, "pass4_retry_backoff_sec", None),
+                    )
+                except Exception as exc:  # pylint: disable=broad-except
+                    if verbose:
+                        log_lines.append(f"    FAIL: haccp_pass4_ing_error: {exc}")
+                    return {
+                        "status": "error",
+                        "report_no": report_no,
+                        "ingredients_items_json": None,
+                        "nutrition_items_json": dumps_json(nut_payload),
+                        "parse_error": f"haccp_pass4_ing_error: {exc}",
+                        "parser_version": "pass4_policy_v3_error",
+                        "source_rawmtrl": rawmtrl or None,
+                        "source_nutrient": source_nutrient,
+                        "log": "\n".join(log_lines),
+                    }
+                ingredient_items = ing_parsed.get("ingredients_items") or []
+                if not isinstance(ingredient_items, list):
+                    ingredient_items = []
+                if not ingredient_items:
+                    if verbose:
+                        log_lines.append("    FAIL: haccp_pass4_ing_empty_or_invalid")
+                    return {
+                        "status": "error",
+                        "report_no": report_no,
+                        "ingredients_items_json": None,
+                        "nutrition_items_json": dumps_json(nut_payload),
+                        "parse_error": "haccp_pass4_ing_empty_or_invalid",
+                        "parser_version": "pass4_policy_v3_error",
+                        "source_rawmtrl": rawmtrl or None,
+                        "source_nutrient": source_nutrient,
+                        "log": "\n".join(log_lines),
+                    }
+
+                ing_payload = {
+                    "ingredients_items": ingredient_items,
+                    "ignored_fragments": list(ing_parsed.get("ignored_fragments") or []),
+                    "parser": "haccp_pass4_ing_v1",
+                    "raw_model_text": ing_raw_text,
+                }
+                ing_payload, origin_stats = _sanitize_ingredients_origin_fields(
+                    ing_payload,
+                    raw_ingredients_text=rawmtrl,
+                )
+                if int(origin_stats.get("invalid_remaining") or 0) > 0:
+                    return {
+                        "status": "error",
+                        "report_no": report_no,
+                        "ingredients_items_json": dumps_json(ing_payload),
+                        "nutrition_items_json": dumps_json(nut_payload),
+                        "parse_error": "haccp_pass4_ing_invalid_origin_field",
+                        "parser_version": "pass4_policy_v3_error",
+                        "source_rawmtrl": rawmtrl or None,
+                        "source_nutrient": source_nutrient,
+                        "log": "\n".join(log_lines),
+                    }
+                if verbose:
+                    log_lines.append(f"    raw(model): {ing_raw_text or '-'}")
+                    log_lines.append(f"    parsed: {dumps_json(ing_payload)}")
+                    log_lines.append("  - SAVE: ok")
+                return {
+                    "status": "ok",
+                    "report_no": report_no,
+                    "ingredients_items_json": dumps_json(ing_payload),
+                    "nutrition_items_json": dumps_json(nut_payload),
+                    "parse_error": None,
+                    "parser_version": parser_version,
+                    "source_rawmtrl": rawmtrl or None,
+                    "source_nutrient": source_nutrient,
+                    "nut_source": nut_source,
+                    "ing_has_items": bool(ing_payload.get("ingredients_items")),
+                    "log": "\n".join(log_lines),
+                }
+            except Exception as exc:  # pylint: disable=broad-except
+                if verbose:
+                    log_lines.append(f"  - FAIL: unexpected_error: {exc}")
+                return {
+                    "status": "error",
+                    "report_no": report_no,
+                    "ingredients_items_json": None,
+                    "nutrition_items_json": None,
+                    "parse_error": str(exc),
+                    "parser_version": "pass4_policy_v3_error",
+                    "source_rawmtrl": rawmtrl or None,
+                    "source_nutrient": nutrient or None,
+                    "log": "\n".join(log_lines),
+                }
+
+        def _print_progress_bar(completed_count: int) -> None:
+            width = 34
+            ratio = (completed_count / total_tasks) if total_tasks > 0 else 1.0
+            filled = int(width * ratio)
+            bar = ("█" * filled) + ("-" * (width - filled))
+            stage = "NUT->ING->SAVE"
+            sys.stdout.write(
+                f"\r  진행률 [{bar}] {completed_count:,}/{total_tasks:,} ({ratio * 100:5.1f}%) | 단계: {stage}"
+            )
+            sys.stdout.flush()
+
+        def _handle_result(result: dict[str, Any], completed_count: int) -> None:
+            nonlocal ok, fail, skip, skip_no_haccp_nutrient, ing_success, nut_from_processed, nut_from_haccp_pass4
+            status = str(result.get("status") or "")
+            if verbose:
+                log_text = str(result.get("log") or "").strip()
+                if log_text:
+                    print(log_text)
+            if status == "skip_raw":
+                skip += 1
+            elif status == "skip_no_nutrient":
+                skip_no_haccp_nutrient += 1
+            elif status == "ok":
+                _upsert_haccp_parsed_with_retry(
+                    conn,
+                    report_no=str(result.get("report_no") or ""),
+                    ingredients_items_json=result.get("ingredients_items_json"),
+                    nutrition_items_json=result.get("nutrition_items_json"),
+                    parse_status="ok",
+                    parse_error=None,
+                    parser_version=str(result.get("parser_version") or "pass4_policy_v3_haccp_nut"),
+                    source_rawmtrl=result.get("source_rawmtrl"),
+                    source_nutrient=result.get("source_nutrient"),
+                )
+                ok += 1
+                if bool(result.get("ing_has_items")):
+                    ing_success += 1
+                if str(result.get("nut_source") or "") == "processed":
+                    nut_from_processed += 1
+                elif str(result.get("nut_source") or "") == "haccp":
+                    nut_from_haccp_pass4 += 1
+            else:
+                _upsert_haccp_parsed_with_retry(
+                    conn,
+                    report_no=str(result.get("report_no") or ""),
+                    ingredients_items_json=result.get("ingredients_items_json"),
+                    nutrition_items_json=result.get("nutrition_items_json"),
+                    parse_status="error",
+                    parse_error=str(result.get("parse_error") or "unknown_error"),
+                    parser_version=str(result.get("parser_version") or "pass4_policy_v3_error"),
+                    source_rawmtrl=result.get("source_rawmtrl"),
+                    source_nutrient=result.get("source_nutrient"),
+                )
+                fail += 1
+
+            _print_progress_bar(completed_count)
+
+        tasks = [
+            (
+                idx,
+                {
+                    "prdlstReportNo": row[0],
+                    "prdlstNm": row[1],
+                    "rawmtrl": row[2],
+                    "nutrient": row[3],
+                },
+            )
+            for idx, row in enumerate(rows, start=1)
+        ]
+        completed = 0
+        if use_batch:
+            az = _get_worker_analyzer()
+            batch_model = str(getattr(az, "pass4_openai_model", None) or az.model).strip()
+            pending_items: list[dict[str, Any]] = []
+            nut_batch_requests: list[dict[str, Any]] = []
+
+            for idx, row in tasks:
+                report_no = str(row.get("prdlstReportNo") or "").strip()
+                rawmtrl = str(row.get("rawmtrl") or "").strip()
+                nutrient = str(row.get("nutrient") or "").strip()
+                report_key = _normalize_report_no_key(report_no)
+                processed_match = processed_by_report.get(report_key) if report_key else None
+
+                if not rawmtrl:
+                    completed += 1
+                    _handle_result({"status": "skip_raw"}, completed)
+                    continue
+
+                haccp_nutrient_missing = (not nutrient) or (nutrient == "알수없음")
+                if (processed_match is None) and haccp_nutrient_missing:
+                    completed += 1
+                    _handle_result({"status": "skip_no_nutrient"}, completed)
+                    continue
+
+                item: dict[str, Any] = {
+                    "idx": idx,
+                    "report_no": report_no,
+                    "rawmtrl": rawmtrl,
+                    "nutrient": nutrient,
+                    "processed_match": processed_match,
+                    "nut_payload": None,
+                    "source_nutrient": None,
+                    "nut_source": None,
+                    "nut_custom_id": None,
+                    "ing_custom_id": f"ing:{idx}:{report_no}",
+                }
+                if processed_match is not None:
+                    nut_payload = _build_processed_nutrition_payload(processed_match)
+                    p_base = str(processed_match.get("nutConSrtrQua") or "").strip()
+                    p_serv = str(processed_match.get("servSize") or "").strip()
+                    p_food = str(processed_match.get("foodSize") or "").strip()
+                    source_nutrient = (
+                        f"basis={p_base or '-'} | servSize={p_serv or '-'} | foodSize={p_food or '-'} | processed_food_info"
+                    )
+                    item["nut_payload"] = nut_payload
+                    item["source_nutrient"] = source_nutrient
+                    item["nut_source"] = "processed"
+                else:
+                    nut_prompt = nut_prompt_template.replace("__NUTRIENT_TEXT__", nutrient or "")
+                    cid = f"nut:{idx}:{report_no}"
+                    item["nut_custom_id"] = cid
+                    nut_batch_requests.append(
+                        {
+                            "custom_id": cid,
+                            "method": "POST",
+                            "url": "/v1/chat/completions",
+                            "body": {
+                                "model": batch_model,
+                                "messages": [{"role": "user", "content": nut_prompt}],
+                                "temperature": 0,
+                                "response_format": {"type": "json_object"},
+                            },
+                        }
+                    )
+                pending_items.append(item)
+
+            if nut_batch_requests:
+                print(f"  📦 NUT Batch 요청 생성: {len(nut_batch_requests):,}건")
+                try:
+                    nut_outputs = _openai_batch_chat_json(
+                        stage="nut",
+                        requests_payloads=nut_batch_requests,
+                        model_name=batch_model,
+                        poll_sec=batch_poll_sec,
+                        max_wait_min=batch_max_wait_min,
+                    )
+                except Exception as exc:  # pylint: disable=broad-except
+                    for item in pending_items:
+                        if item.get("nut_payload") is not None:
+                            continue
+                        completed += 1
+                        _handle_result(
+                            {
+                                "status": "error",
+                                "report_no": str(item.get("report_no") or ""),
+                                "ingredients_items_json": None,
+                                "nutrition_items_json": None,
+                                "parse_error": f"haccp_pass4_nut_batch_error: {exc}",
+                                "parser_version": "pass4_policy_v3_error",
+                                "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                                "source_nutrient": str(item.get("nutrient") or ""),
+                            },
+                            completed,
+                        )
+                    pending_items = [x for x in pending_items if x.get("nut_payload") is not None]
+                    nut_outputs = {}
+
+                for item in pending_items:
+                    if item.get("nut_payload") is not None:
+                        continue
+                    cid = str(item.get("nut_custom_id") or "")
+                    out = nut_outputs.get(cid) or {}
+                    if not bool(out.get("ok")):
+                        completed += 1
+                        _handle_result(
+                            {
+                                "status": "error",
+                                "report_no": str(item.get("report_no") or ""),
+                                "ingredients_items_json": None,
+                                "nutrition_items_json": None,
+                                "parse_error": f"haccp_pass4_nut_error: {str(out.get('error') or 'batch_result_missing')}",
+                                "parser_version": "pass4_policy_v3_error",
+                                "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                                "source_nutrient": str(item.get("nutrient") or ""),
+                            },
+                            completed,
+                        )
+                        item["failed"] = True
+                        continue
+                    nut_parsed = out.get("parsed") if isinstance(out.get("parsed"), dict) else {}
+                    nut_raw_text = str(out.get("raw_text") or "").strip()
+                    nutrition_items = nut_parsed.get("nutrition_items") or []
+                    if not isinstance(nutrition_items, list):
+                        nutrition_items = []
+                    nutrition_items = _ensure_kcal_nutrition_item(nutrition_items, str(item.get("nutrient") or ""))
+                    basis_from_model = nut_parsed.get("nutrition_basis")
+                    if not isinstance(basis_from_model, dict):
+                        basis_from_model = None
+                    if isinstance(basis_from_model, dict):
+                        basis_from_model = {
+                            "per_amount": (str(basis_from_model.get("per_amount") or "").strip() or None),
+                            "per_unit": (str(basis_from_model.get("per_unit") or "").strip().lower() or None),
+                            "basis_text": (str(basis_from_model.get("basis_text") or "").strip() or None),
+                        }
+                    text_basis = _extract_nutrition_basis(str(item.get("nutrient") or ""))
+                    if text_basis and isinstance(text_basis, dict):
+                        t_unit = str(text_basis.get("per_unit") or "").strip().lower()
+                        m_unit = str((basis_from_model or {}).get("per_unit") or "").strip().lower()
+                        if (not basis_from_model):
+                            basis_from_model = text_basis
+                        elif t_unit in {"g", "ml"} and m_unit not in {"g", "ml"}:
+                            basis_from_model = text_basis
+                        elif (t_unit not in {"g", "ml"}) and (not m_unit):
+                            basis_from_model = text_basis
+                    item["nut_payload"] = {
+                        "nutrition_items": nutrition_items,
+                        "nutrition_basis": basis_from_model,
+                        "parser": "haccp_pass4_nut_v1",
+                        "raw_model_text": nut_raw_text,
+                    }
+                    item["source_nutrient"] = str(item.get("nutrient") or "") or None
+                    item["nut_source"] = "haccp"
+
+            ing_batch_requests: list[dict[str, Any]] = []
+            ready_items = [x for x in pending_items if (not x.get("failed")) and isinstance(x.get("nut_payload"), dict)]
+            for item in ready_items:
+                ing_prompt = ing_prompt_template.replace("__RAWMTRL_TEXT__", str(item.get("rawmtrl") or ""))
+                ing_batch_requests.append(
+                    {
+                        "custom_id": str(item.get("ing_custom_id") or ""),
+                        "method": "POST",
+                        "url": "/v1/chat/completions",
+                        "body": {
+                            "model": batch_model,
+                            "messages": [{"role": "user", "content": ing_prompt}],
+                            "temperature": 0,
+                            "response_format": {"type": "json_object"},
+                        },
+                    }
+                )
+
+            ing_outputs: dict[str, dict[str, Any]] = {}
+            if ing_batch_requests:
+                print(f"  📦 ING Batch 요청 생성: {len(ing_batch_requests):,}건")
+                try:
+                    ing_outputs = _openai_batch_chat_json(
+                        stage="ing",
+                        requests_payloads=ing_batch_requests,
+                        model_name=batch_model,
+                        poll_sec=batch_poll_sec,
+                        max_wait_min=batch_max_wait_min,
+                    )
+                except Exception as exc:  # pylint: disable=broad-except
+                    for item in ready_items:
+                        completed += 1
+                        _handle_result(
+                            {
+                                "status": "error",
+                                "report_no": str(item.get("report_no") or ""),
+                                "ingredients_items_json": None,
+                                "nutrition_items_json": dumps_json(item.get("nut_payload") or {}),
+                                "parse_error": f"haccp_pass4_ing_batch_error: {exc}",
+                                "parser_version": "pass4_policy_v3_error",
+                                "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                                "source_nutrient": item.get("source_nutrient"),
+                            },
+                            completed,
+                        )
+                    ready_items = []
+
+            for item in ready_items:
+                out = ing_outputs.get(str(item.get("ing_custom_id") or "")) or {}
+                nut_payload = item.get("nut_payload") or {}
+                if not bool(out.get("ok")):
+                    completed += 1
+                    _handle_result(
+                        {
+                            "status": "error",
+                            "report_no": str(item.get("report_no") or ""),
+                            "ingredients_items_json": None,
+                            "nutrition_items_json": dumps_json(nut_payload),
+                            "parse_error": f"haccp_pass4_ing_error: {str(out.get('error') or 'batch_result_missing')}",
+                            "parser_version": "pass4_policy_v3_error",
+                            "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                            "source_nutrient": item.get("source_nutrient"),
+                        },
+                        completed,
+                    )
+                    continue
+                ing_parsed = out.get("parsed") if isinstance(out.get("parsed"), dict) else {}
+                ing_raw_text = str(out.get("raw_text") or "").strip()
+                ingredient_items = ing_parsed.get("ingredients_items") or []
+                if not isinstance(ingredient_items, list):
+                    ingredient_items = []
+                if not ingredient_items:
+                    completed += 1
+                    _handle_result(
+                        {
+                            "status": "error",
+                            "report_no": str(item.get("report_no") or ""),
+                            "ingredients_items_json": None,
+                            "nutrition_items_json": dumps_json(nut_payload),
+                            "parse_error": "haccp_pass4_ing_empty_or_invalid",
+                            "parser_version": "pass4_policy_v3_error",
+                            "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                            "source_nutrient": item.get("source_nutrient"),
+                        },
+                        completed,
+                    )
+                    continue
+                ing_payload = {
+                    "ingredients_items": ingredient_items,
+                    "ignored_fragments": list(ing_parsed.get("ignored_fragments") or []),
+                    "parser": "haccp_pass4_ing_v1",
+                    "raw_model_text": ing_raw_text,
+                }
+                ing_payload, origin_stats = _sanitize_ingredients_origin_fields(
+                    ing_payload,
+                    raw_ingredients_text=str(item.get("rawmtrl") or ""),
+                )
+                if int(origin_stats.get("invalid_remaining") or 0) > 0:
+                    completed += 1
+                    _handle_result(
+                        {
+                            "status": "error",
+                            "report_no": str(item.get("report_no") or ""),
+                            "ingredients_items_json": dumps_json(ing_payload),
+                            "nutrition_items_json": dumps_json(nut_payload),
+                            "parse_error": "haccp_pass4_ing_invalid_origin_field",
+                            "parser_version": "pass4_policy_v3_error",
+                            "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                            "source_nutrient": item.get("source_nutrient"),
+                        },
+                        completed,
+                    )
+                    continue
+                parser_version = (
+                    "pass4_policy_v3_processed_nut"
+                    if str(item.get("nut_source") or "") == "processed"
+                    else "pass4_policy_v3_haccp_nut"
+                )
+                completed += 1
+                _handle_result(
+                    {
+                        "status": "ok",
+                        "report_no": str(item.get("report_no") or ""),
+                        "ingredients_items_json": dumps_json(ing_payload),
+                        "nutrition_items_json": dumps_json(nut_payload),
+                        "parse_error": None,
+                        "parser_version": parser_version,
+                        "source_rawmtrl": str(item.get("rawmtrl") or ""),
+                        "source_nutrient": item.get("source_nutrient"),
+                        "nut_source": str(item.get("nut_source") or ""),
+                        "ing_has_items": bool(ing_payload.get("ingredients_items")),
+                    },
+                    completed,
+                )
+            if completed < total_tasks:
+                # 배치 결과가 비정상 누락된 경우를 대비해 남은 건을 에러 집계로 마감
+                for _ in range(total_tasks - completed):
+                    completed += 1
+                    _handle_result(
+                        {
+                            "status": "error",
+                            "report_no": "",
+                            "ingredients_items_json": None,
+                            "nutrition_items_json": None,
+                            "parse_error": "batch_unresolved_item",
+                            "parser_version": "pass4_policy_v3_error",
+                            "source_rawmtrl": None,
+                            "source_nutrient": None,
+                        },
+                        completed,
+                    )
+        elif workers == 1:
+            for task in tasks:
+                completed += 1
+                _handle_result(_process_one(task), completed)
+        else:
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                pending = {ex.submit(_process_one, task): task for task in tasks}
+                while pending:
+                    done, _ = wait(tuple(pending.keys()), return_when=FIRST_COMPLETED)
+                    for fut in done:
+                        task_ref = pending.pop(fut, None)
+                        completed += 1
+                        try:
+                            result = fut.result()
+                        except Exception as exc:  # pylint: disable=broad-except
+                            idx, row = task_ref if task_ref is not None else (completed, tasks[min(completed - 1, len(tasks) - 1)][1])
+                            result = {
+                                "status": "error",
+                                "report_no": str(row.get("prdlstReportNo") or ""),
+                                "ingredients_items_json": None,
+                                "nutrition_items_json": None,
+                                "parse_error": f"worker_unexpected_error: {exc}",
+                                "parser_version": "pass4_policy_v3_error",
+                                "source_rawmtrl": str(row.get("rawmtrl") or ""),
+                                "source_nutrient": str(row.get("nutrient") or ""),
+                                "log": "",
+                            }
+                        _handle_result(result, completed)
+
+        sys.stdout.write("\n")
+        sys.stdout.flush()
+        mode_label = "Batch" if use_batch else "실시간"
+        print(f"\n  ✅ HACCP Pass4 파싱 완료 ({mode_label}, HACCP 전용 프롬프트)")
+        print(f"  - 대상        : {len(rows):,}")
+        print(f"  - 성공        : {ok:,}")
+        print(f"  - 실패        : {fail:,}")
+        print(f"  - 스킵(rawmtrl없음): {skip:,}")
+        print(f"  - 중단(미매칭+HACCP nutrient 없음): {skip_no_haccp_nutrient:,}")
+        print(f"  - ING 저장성공: {ing_success:,}")
+        print(f"  - NUT 저장(가공식품DB): {nut_from_processed:,}")
+        print(f"  - NUT 저장(HACCP Pass4): {nut_from_haccp_pass4:,}")
+        print("  - parser_version: pass4_policy_v3_*")
+
+
+def run_haccp_parsed_reset_menu() -> None:
+    answer = input("  ⚠️ haccp_parsed_cache 전체 삭제합니다. 계속할까요? [y/N]: ").strip().lower()
+    if answer != "y":
+        print("  취소했습니다.")
+        return
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        deleted = clear_haccp_parsed_cache(conn)
+    print(f"\n  ✅ HACCP 파싱 캐시 삭제 완료: {deleted:,}건 삭제")
+
+
+def _build_haccp_ingredient_preview(
+    ingredients_items_json: str | None,
+    *,
+    token_product_count: dict[str, int] | None = None,
+) -> str:
+    try:
+        payload = json.loads(str(ingredients_items_json or "{}"))
+    except Exception:
+        return "<span class='muted'>파싱 JSON 읽기 실패</span>"
+    items = payload.get("ingredients_items") if isinstance(payload, dict) else None
+    if not isinstance(items, list) or not items:
+        return "<span class='muted'>원재료 파싱 없음</span>"
+    items = [it for it in items if isinstance(it, dict)]
+    if not items:
+        return "<span class='muted'>원재료 파싱 없음</span>"
+    ignored_fragments = payload.get("ignored_fragments") if isinstance(payload, dict) else None
+    ignored_fragments = [str(x).strip() for x in (ignored_fragments or []) if str(x).strip()]
+    allergen_tokens = payload.get("allergen_tokens") if isinstance(payload, dict) else None
+    allergen_tokens = [str(x).strip() for x in (allergen_tokens or []) if str(x).strip()]
+
+    def _merge_origin(origin: str, origin_detail: str) -> str:
+        base = origin.strip()
+        extra = origin_detail.strip()
+        if not extra:
+            return base
+        if not base:
+            return extra
+        if extra in base:
+            return base
+        return f"{base}, {extra}"
+
+    def _norm_tok(text: str) -> str:
+        t = re.sub(r"[\s\(\)\[\]\{\}]+", "", str(text or "").strip().lower())
+        t = re.sub(r"[·\.,;:]+$", "", t)
+        return t
+
+    def _meta_badges(*, name: str, origin: str, amount: str) -> str:
+        badges: list[str] = []
+        if token_product_count:
+            k = _norm_tok(name)
+            pc = int(token_product_count.get(k, 0)) if k else 0
+            other = max(0, pc - 1)
+            if k:
+                badges.append(f"<span class='meta-chip'><b>other</b> {other:,}</span>")
+        if origin:
+            badges.append(f"<span class='meta-chip'><b>origin</b> {html.escape(origin)}</span>")
+        if amount:
+            badges.append(f"<span class='meta-chip amount'><b>amount</b> {html.escape(amount)}</span>")
+        return "".join(badges)
+
+    def _render_subtree(nodes: list[dict[str, Any]], depth: int = 0) -> str:
+        parts: list[str] = [f"<ul class='ing-tree depth-{depth}'>"]
+        for node in nodes:
+            name = str(node.get("ingredient_name") or node.get("name") or "").strip()
+            origin = _merge_origin(
+                str(node.get("origin") or "").strip(),
+                str(node.get("origin_detail") or "").strip(),
+            )
+            amount = str(node.get("amount") or "").strip()
+            sub_nodes_raw = node.get("sub_ingredients") or []
+            sub_nodes = [c for c in sub_nodes_raw if isinstance(c, dict)] if isinstance(sub_nodes_raw, list) else []
+            has_any_field = bool(name or origin or amount or sub_nodes)
+            if not has_any_field:
+                continue
+            parts.append("<li class='ing-node'>")
+            parts.append(
+                "<div class='ing-row'>"
+                f"<span class='name'>{html.escape(name or '(미분류 노드)')}</span>"
+                f"<span class='meta'>{_meta_badges(name=name or '', origin=origin, amount=amount)}</span>"
+                "</div>"
+            )
+            if sub_nodes:
+                parts.append(_render_subtree(sub_nodes, depth + 1))
+            parts.append("</li>")
+        parts.append("</ul>")
+        return "".join(parts)
+
+    tree_html = _render_subtree(items)
+    ignored_html = ""
+    if ignored_fragments:
+        ignored_html = (
+            "<div class='ignored-wrap'><h5>ignored_fragments</h5>"
+            "<div class='ignored-chips'>"
+            + "".join(f"<span class='meta-chip ignored'>{html.escape(x)}</span>" for x in ignored_fragments)
+            + "</div></div>"
+        )
+    allergen_html = ""
+    if allergen_tokens:
+        allergen_html = (
+            "<div class='ignored-wrap'><h5>allergen_tokens</h5>"
+            "<div class='ignored-chips'>"
+            + "".join(f"<span class='meta-chip allergen'>{html.escape(x)}</span>" for x in allergen_tokens)
+            + "</div></div>"
+        )
+    return tree_html + allergen_html + ignored_html
+
+
+def _build_haccp_nutrition_preview(nutrition_items_json: str | None) -> str:
+    try:
+        payload = json.loads(str(nutrition_items_json or "{}"))
+    except Exception:
+        return "<span class='muted'>영양 파싱 JSON 읽기 실패</span>"
+    items = payload.get("nutrition_items") if isinstance(payload, dict) else None
+    basis = payload.get("nutrition_basis") if isinstance(payload, dict) else None
+    if not isinstance(items, list) or not items:
+        return "<span class='muted'>영양 파싱 없음</span>"
+    rows: list[str] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        name = str(item.get("name") or "").strip()
+        value = str(item.get("value") or "").strip()
+        unit = str(item.get("unit") or "").strip()
+        daily_value = str(item.get("daily_value") or "").strip()
+        if not name:
+            continue
+        rows.append(
+            "<tr>"
+            f"<td>{html.escape(name)}</td>"
+            f"<td class='num'>{html.escape(value or '-')}</td>"
+            f"<td>{html.escape(unit or '-')}</td>"
+            f"<td>{html.escape(daily_value or '-')}</td>"
+            "</tr>"
+        )
+    if not rows:
+        return "<span class='muted'>영양 파싱 없음</span>"
+    basis_html = ""
+    if isinstance(basis, dict):
+        btxt = str(basis.get("basis_text") or "").strip()
+        bamt = str(basis.get("per_amount") or "").strip()
+        bunit = str(basis.get("per_unit") or "").strip()
+        if btxt or (bamt and bunit):
+            label = btxt or f"{bamt}{bunit}당"
+            basis_html = f"<div class='meta'><span class='meta-chip'><b>기준량</b> {html.escape(label)}</span></div>"
+    return (
+        basis_html +
+        "<table class='nut-table'>"
+        "<thead><tr><th>성분명</th><th>값</th><th>단위</th><th>일일기준치(%)</th></tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody>"
+        "</table>"
+    )
+
+
+def _pretty_json_for_report(raw_json_text: str | None) -> str:
+    src = str(raw_json_text or "").strip()
+    if not src:
+        return ""
+    try:
+        obj = json.loads(src)
+    except Exception:
+        # 파싱 실패 시 최소한 줄바꿈 escape는 완화해서 표시
+        return src.replace("\\n", "\n")
+
+    if isinstance(obj, dict):
+        # 상세 비교 화면에서는 구조 확인이 목적이므로 긴 raw 모델 텍스트는 숨김
+        obj = {k: v for k, v in obj.items() if k not in {"raw_model_text"}}
+    return json.dumps(obj, ensure_ascii=False, indent=2)
+
+
+def _query_haccp_parsed_rows(*, limit: int, report_no: str, status_filter: str) -> tuple[int, list[sqlite3.Row], int, int]:
+    with sqlite3.connect(DB_FILE) as conn:
+        conn.row_factory = sqlite3.Row
+        init_haccp_tables(conn)
+        where: list[str] = []
+        params: list[Any] = []
+        if report_no:
+            digits = re.sub(r"[^0-9]", "", report_no)
+            if digits:
+                where.append("REPLACE(REPLACE(REPLACE(p.prdlstReportNo,'-',''),' ',''),'.','') = ?")
+                params.append(digits)
+        if status_filter == "ok":
+            where.append("p.parse_status = 'ok'")
+        elif status_filter == "error":
+            where.append("p.parse_status != 'ok'")
+        where_sql = ("WHERE " + " AND ".join(where)) if where else ""
+        total = int(conn.execute(
+            f"SELECT COUNT(*) FROM haccp_parsed_cache p {where_sql}",
+            tuple(params),
+        ).fetchone()[0] or 0)
+        rows = conn.execute(
+            f"""
+            SELECT p.prdlstReportNo, p.parse_status, p.parser_version, p.parsed_at,
+                   COALESCE(h.prdlstNm, '') AS prdlstNm,
+                   p.ingredients_items_json, p.nutrition_items_json, p.parse_error,
+                   p.source_rawmtrl, p.source_nutrient
+            FROM haccp_parsed_cache p
+            LEFT JOIN haccp_product_info h ON h.prdlstReportNo = p.prdlstReportNo
+            {where_sql}
+            ORDER BY p.parsed_at DESC
+            LIMIT ?
+            """,
+            tuple(params + [limit]),
+        ).fetchall()
+    ok_cnt = sum(1 for r in rows if str(r[1]) == "ok")
+    err_cnt = len(rows) - ok_cnt
+    return total, rows, ok_cnt, err_cnt
+
+
+def _delete_haccp_parsed_cache_by_report_no(report_no: str) -> int:
+    digits = re.sub(r"[^0-9]", "", str(report_no or ""))
+    if not digits:
+        return 0
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        cur = conn.execute(
+            """
+            DELETE FROM haccp_parsed_cache
+            WHERE REPLACE(REPLACE(REPLACE(prdlstReportNo,'-',''),' ',''),'.','') = ?
+            """,
+            (digits,),
+        )
+        conn.commit()
+        return int(cur.rowcount or 0)
+
+
+def _delete_and_block_haccp_parsed_by_report_no(report_no: str, *, reason: str | None = None) -> tuple[int, bool]:
+    digits = re.sub(r"[^0-9]", "", str(report_no or ""))
+    if not digits:
+        return 0, False
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+        cur = conn.execute(
+            """
+            DELETE FROM haccp_parsed_cache
+            WHERE REPLACE(REPLACE(REPLACE(prdlstReportNo,'-',''),' ',''),'.','') = ?
+            """,
+            (digits,),
+        )
+        deleted = int(cur.rowcount or 0)
+        upsert_haccp_parse_block(conn, report_no=digits, reason=reason or "audit_browser_block")
+        return deleted, True
+
+
+def _build_haccp_parsed_browser_html(
+    *,
+    limit: int,
+    report_no: str,
+    status_filter: str,
+    flash_msg: str | None = None,
+) -> str:
+    total, rows, ok_cnt, err_cnt = _query_haccp_parsed_rows(
+        limit=limit,
+        report_no=report_no,
+        status_filter=status_filter,
+    )
+    cards: list[str] = []
+    for idx, row in enumerate(rows, start=1):
+        rpt = str(row[0] or "")
+        status = str(row[1] or "")
+        parser_ver = str(row[2] or "")
+        parsed_at = str(row[3] or "")
+        product_name = str(row[4] or "").strip()
+        ing_json = str(row[5] or "")
+        nut_json = str(row[6] or "")
+        ing_json_pretty = _pretty_json_for_report(ing_json)
+        nut_json_pretty = _pretty_json_for_report(nut_json)
+        parse_err = str(row[7] or "")
+        src_rawmtrl = str(row[8] or "")
+        src_nutrient = str(row[9] or "")
+        status_cls = "ok" if status == "ok" else "err"
+        src_nut_l = src_nutrient.lower()
+        if ("processed_food_info" in src_nut_l) or ("processed_nut" in parser_ver):
+            nutrition_source_label = "영양 출처: 가공식품 DB"
+            nutrition_source_cls = "src-processed"
+        elif ("haccp_nut" in parser_ver) or ("haccp_pass4_nut_v1" in nut_json):
+            nutrition_source_label = "영양 출처: HACCP Pass4-NUT"
+            nutrition_source_cls = "src-haccp"
+        else:
+            nutrition_source_label = "영양 출처: 기타/미확인"
+            nutrition_source_cls = "src-unknown"
+
+        delete_query = urlencode(
+            {
+                "target_report_no": rpt,
+                "limit": str(limit),
+                "report_no": report_no,
+                "status": status_filter,
+            }
+        )
+        delete_href = f"/delete?{delete_query}"
+        cards.append(
+            "<article class='card' data-status='{status}'>"
+            "<div class='card-head'>"
+            "<div class='left'><span class='idx'>#{idx}</span><span class='rpt'>{rpt}</span>"
+            "<span class='pname'>{pname}</span></div>"
+            "<div class='right'><span class='badge {status_cls}'>{status}</span>"
+            "<span class='badge src {nutrition_source_cls}'>{nutrition_source_label}</span>"
+            "<span class='ver'>{ver}</span><span class='at'>{at}</span>"
+            "<a class='btn-del' href='{delete_href}' onclick=\"return confirm('해당 품목보고번호 파싱 캐시를 삭제하고 재파싱 대상으로 돌릴까요?');\">삭제</a>"
+            "</div>"
+            "</div>"
+            "<section class='compare-wrap'>"
+            "<h4>원재료: RAW vs 구조화</h4>"
+            "<div class='compare-grid'>"
+            "<div class='pane pane-raw'><h5>원재료 RAW</h5><pre>{rawmtrl}</pre></div>"
+            "<div class='pane pane-parsed'><h5>원재료 구조화 GUI</h5><div class='ingredient-tree'>{ing_preview}</div></div>"
+            "</div>"
+            "</section>"
+            "<section class='compare-wrap'>"
+            "<h4>영양성분: RAW vs 구조화 <span class='badge src {nutrition_source_cls}'>{nutrition_source_label}</span></h4>"
+            "<div class='compare-grid'>"
+            "<div class='pane pane-raw'><h5>영양성분 RAW</h5><pre>{nutrient}</pre></div>"
+            "<div class='pane pane-parsed'><h5>영양성분 구조화 GUI</h5><div class='chips'>{nut_preview}</div></div>"
+            "</div>"
+            "</section>"
+            "<details><summary>파싱 JSON 보기</summary>"
+            "<div class='cols'><div><h5>ingredients_items_json</h5><pre>{ing_json}</pre></div>"
+            "<div><h5>nutrition_items_json</h5><pre>{nut_json}</pre></div></div>"
+            "{err_block}</details>"
+            "</article>".format(
+                status=html.escape(status),
+                idx=idx,
+                rpt=html.escape(rpt),
+                pname=html.escape(product_name or "(상품명 없음)"),
+                status_cls=status_cls,
+                nutrition_source_cls=nutrition_source_cls,
+                nutrition_source_label=html.escape(nutrition_source_label),
+                ver=html.escape(parser_ver),
+                at=html.escape(parsed_at),
+                delete_href=html.escape(delete_href),
+                ing_preview=_build_haccp_ingredient_preview(ing_json),
+                nut_preview=_build_haccp_nutrition_preview(nut_json),
+                rawmtrl=html.escape(src_rawmtrl),
+                nutrient=html.escape(src_nutrient),
+                ing_json=html.escape(ing_json_pretty),
+                nut_json=html.escape(nut_json_pretty),
+                err_block=(
+                    f"<div class='errbox'><h5>parse_error</h5><pre>{html.escape(parse_err)}</pre></div>"
+                    if parse_err
+                    else ""
+                ),
+            )
+        )
+
+    flash_html = ""
+    if flash_msg:
+        flash_html = f"<div class='flash'>{html.escape(flash_msg)}</div>"
+    if not cards:
+        cards.append("<article class='card'><span class='muted'>조건에 맞는 파싱 결과가 없습니다.</span></article>")
+
+    html_doc = f"""<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HACCP 파싱 결과 리포트</title>
+  <style>
+    :root {{
+      --bg:#f3f7f8; --card:#ffffff; --ink:#0e1f29; --muted:#5f7280; --line:#d8e2e7;
+      --ok:#0f766e; --ok-bg:#d8f3ef; --err:#9f1239; --err-bg:#ffe4ec; --chip:#eef4f7;
+    }}
+    * {{ box-sizing:border-box; }}
+    body {{ margin:0; background:linear-gradient(180deg,#e8f1f3 0%, var(--bg) 35%); color:var(--ink); font-family:'Pretendard','Noto Sans KR',sans-serif; }}
+    .wrap {{ max-width:1280px; margin:0 auto; padding:24px; }}
+    .hero {{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; box-shadow:0 8px 24px rgba(9,30,45,.06); }}
+    .hero h1 {{ margin:0 0 10px; font-size:28px; letter-spacing:-.3px; }}
+    .meta {{ color:var(--muted); font-size:14px; }}
+    .kpi {{ display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }}
+    .pill {{ background:#e9f0f3; border:1px solid var(--line); border-radius:999px; padding:6px 12px; font-size:13px; }}
+    .controls {{ margin:16px 0; display:flex; gap:10px; flex-wrap:wrap; }}
+    .controls input, .controls select {{
+      background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; min-width:220px; color:var(--ink);
+    }}
+    .grid {{ display:grid; gap:14px; }}
+    .card {{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px; box-shadow:0 4px 14px rgba(9,30,45,.05); }}
+    .card-head {{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:8px; }}
+    .left {{ display:flex; align-items:center; gap:10px; }}
+    .idx {{ font-weight:700; color:#0b7285; }}
+    .rpt {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; background:#edf4f7; padding:4px 8px; border-radius:8px; }}
+    .pname {{ font-size:13px; color:#1e3a4a; background:#eef7ec; border:1px solid #d8e8d4; border-radius:8px; padding:4px 8px; max-width:560px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
+    .right {{ display:flex; gap:8px; align-items:center; color:var(--muted); font-size:12px; }}
+    .badge {{ padding:3px 8px; border-radius:999px; font-weight:700; text-transform:uppercase; font-size:11px; }}
+    .badge.ok {{ color:var(--ok); background:var(--ok-bg); }}
+    .badge.err {{ color:var(--err); background:var(--err-bg); }}
+    .badge.src {{ text-transform:none; font-size:12px; border:1px solid transparent; }}
+    .badge.src-processed {{ color:#0a5b27; background:#def6e5; border-color:#9fd7ae; }}
+    .badge.src-haccp {{ color:#7a3f00; background:#fff1d9; border-color:#ebc68f; }}
+    .badge.src-unknown {{ color:#5b6670; background:#edf2f6; border-color:#cfdbe4; }}
+    .btn-del {{ text-decoration:none; font-size:12px; font-weight:700; color:#8a112f; background:#ffe6ee; border:1px solid #f2b4c6; border-radius:8px; padding:4px 8px; }}
+    .btn-del:hover {{ background:#ffdce7; }}
+    .flash {{ margin-top:10px; background:#e8f7ed; border:1px solid #b7e1c3; color:#15623a; border-radius:10px; padding:10px 12px; font-size:13px; }}
+    .compare-wrap {{ margin-top:10px; }}
+    .compare-wrap h4 {{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }}
+    .compare-grid {{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }}
+    .pane {{ border:1px solid var(--line); border-radius:12px; background:#f8fcfd; padding:10px; }}
+    .pane-raw {{ background:#fbfdff; }}
+    .pane-parsed {{ background:#f7fbf8; }}
+    section h4 {{ margin:10px 0 6px; font-size:14px; }}
+    .chips {{ display:flex; flex-wrap:wrap; gap:6px; }}
+    .chip {{ background:var(--chip); border:1px solid #d9e6ec; border-radius:999px; padding:5px 10px; font-size:12px; }}
+    .chip.nut {{ background:#fff6e8; border-color:#f0d9b0; }}
+    .ingredient-tree {{ border:1px solid var(--line); border-radius:12px; background:#f9fcfd; padding:10px; }}
+    .ing-tree {{ list-style:none; margin:0; padding-left:16px; border-left:2px solid #dce8ee; }}
+    .ing-tree.depth-0 {{ padding-left:8px; border-left:none; }}
+    .ing-node {{ margin:8px 0; }}
+    .ing-row {{ display:flex; flex-wrap:wrap; gap:8px; align-items:flex-start; }}
+    .ing-row .name {{ font-weight:700; color:#0f2c3a; background:#edf6fa; border:1px solid #d8e8f1; border-radius:8px; padding:4px 8px; }}
+    .ing-row .meta {{ display:flex; flex-wrap:wrap; gap:6px; }}
+    .meta-chip {{ font-size:11px; background:#f2f5f7; border:1px solid #dde6eb; border-radius:999px; padding:3px 8px; color:#30424e; }}
+    .meta-chip b {{ margin-right:4px; color:#4b5f6e; font-weight:700; }}
+    .meta-chip.amount {{ background:#fff8e9; border-color:#efd9ad; }}
+    .ignored-wrap {{ margin-top:10px; border-top:1px dashed var(--line); padding-top:8px; }}
+    .ignored-chips {{ display:flex; flex-wrap:wrap; gap:6px; }}
+    .meta-chip.ignored {{ background:#fff1f3; border-color:#f0c8cf; color:#7f2d3a; }}
+    .meta-chip.allergen {{ background:#fff7d9; border-color:#f1db86; color:#6a4c00; }}
+    .nut-table {{ width:100%; border-collapse:collapse; background:#fffdf8; border:1px solid #efdfbf; border-radius:10px; overflow:hidden; font-size:12px; }}
+    .nut-table th, .nut-table td {{ border-bottom:1px solid #f1e5cb; padding:8px 10px; text-align:left; }}
+    .nut-table th {{ background:#fff4dc; color:#5d4a22; font-weight:700; }}
+    .nut-table td.num {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-weight:700; color:#7a4310; }}
+    .nut-table tbody tr:last-child td {{ border-bottom:none; }}
+    .muted {{ color:var(--muted); }}
+    details {{ margin-top:10px; border-top:1px dashed var(--line); padding-top:8px; }}
+    summary {{ cursor:pointer; color:#1d4e89; font-weight:600; }}
+    .cols {{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px; }}
+    h5 {{ margin:4px 0; font-size:12px; color:var(--muted); }}
+    pre {{ margin:0; background:#f8fbfc; border:1px solid var(--line); border-radius:10px; padding:10px; font-size:12px; line-height:1.45; white-space:pre-wrap; word-break:break-word; max-height:260px; overflow:auto; }}
+    .errbox pre {{ border-color:#f3b4c6; background:#fff2f6; }}
+    @media (max-width: 900px) {{ .cols {{ grid-template-columns:1fr; }} .compare-grid {{ grid-template-columns:1fr; }} .wrap {{ padding:14px; }} }}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>HACCP 파싱 결과 브라우저</h1>
+      <div class="meta">DB: food_data.db · table: haccp_parsed_cache · filter: status={html.escape(status_filter)}, report_no={html.escape(report_no or '-')}</div>
+      {flash_html}
+      <div class="kpi">
+        <span class="pill">총 표시 건수: <b>{len(rows):,}</b></span>
+        <span class="pill">조건 일치 전체: <b>{total:,}</b></span>
+        <span class="pill">OK: <b>{ok_cnt:,}</b></span>
+        <span class="pill">ERROR: <b>{err_cnt:,}</b></span>
+      </div>
+    </div>
+    <div class="controls">
+      <input id="q" type="text" placeholder="품목보고번호/텍스트 검색">
+      <select id="st">
+        <option value="all">상태 전체</option>
+        <option value="ok">ok만</option>
+        <option value="error">error만</option>
+      </select>
+    </div>
+    <div id="list" class="grid">
+      {''.join(cards)}
+    </div>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const st = document.getElementById('st');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    st.value = {json.dumps(status_filter)};
+    function applyFilter() {{
+      const kw = (q.value || '').toLowerCase();
+      const sv = st.value;
+      cards.forEach(card => {{
+        const t = card.textContent.toLowerCase();
+        const status = (card.dataset.status || '').toLowerCase();
+        const okStatus = (sv === 'all') || (sv === 'ok' && status === 'ok') || (sv === 'error' && status !== 'ok');
+        const okText = !kw || t.includes(kw);
+        card.style.display = (okStatus && okText) ? '' : 'none';
+      }});
+    }}
+    q.addEventListener('input', applyFilter);
+    st.addEventListener('change', applyFilter);
+    applyFilter();
+  </script>
+</body>
+</html>"""
+    return html_doc
+
+
+def _ensure_haccp_parsed_server() -> int:
+    global _HACCP_PARSED_WEB_SERVER, _HACCP_PARSED_WEB_THREAD
+    if _HACCP_PARSED_WEB_SERVER is not None and _HACCP_PARSED_WEB_THREAD is not None and _HACCP_PARSED_WEB_THREAD.is_alive():
+        port = _HACCP_PARSED_WEB_SERVER.server_port
+        return int(port)
+
+    class _HaccpParsedHandler(BaseHTTPRequestHandler):
+        def _send_json(self, payload: dict[str, Any], status: int = 200) -> None:
+            data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self.send_response(status)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+
+        def do_OPTIONS(self):  # noqa: N802
+            self.send_response(204)
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type")
+            self.end_headers()
+
+        def do_GET(self):  # noqa: N802
+            parsed = urlparse(self.path)
+            qs = parse_qs(parsed.query or "")
+
+            def _q(name: str, default: str = "") -> str:
+                return str((qs.get(name) or [default])[0] or default)
+
+            limit = int(_q("limit", "200")) if _q("limit", "200").isdigit() else 200
+            limit = max(1, min(1000, limit))
+            report_no = _q("report_no", "")
+            status_filter = _q("status", "all").lower()
+            if status_filter not in ("all", "ok", "error"):
+                status_filter = "all"
+
+            if parsed.path == "/cache_api":
+                action = _q("action", "").lower()
+                target = _q("report_no", "")
+                if action == "delete":
+                    deleted = _delete_haccp_parsed_cache_by_report_no(target)
+                    self._send_json(
+                        {
+                            "ok": True,
+                            "action": "delete",
+                            "report_no": re.sub(r"[^0-9]", "", target),
+                            "deleted": int(deleted),
+                        },
+                        status=200,
+                    )
+                    return
+                if action == "delete_block":
+                    deleted, blocked = _delete_and_block_haccp_parsed_by_report_no(
+                        target,
+                        reason="audit_manual_block",
+                    )
+                    self._send_json(
+                        {
+                            "ok": True,
+                            "action": "delete_block",
+                            "report_no": re.sub(r"[^0-9]", "", target),
+                            "deleted": int(deleted),
+                            "blocked": bool(blocked),
+                        },
+                        status=200,
+                    )
+                    return
+                self._send_json({"ok": False, "error": "invalid_action"}, status=400)
+                return
+
+            if parsed.path == "/delete":
+                target = _q("target_report_no", "")
+                deleted = _delete_haccp_parsed_cache_by_report_no(target)
+                msg = f"삭제 완료: report_no={target} / {deleted}건"
+                redirect_qs = urlencode(
+                    {
+                        "limit": str(limit),
+                        "report_no": report_no,
+                        "status": status_filter,
+                        "msg": msg,
+                    }
+                )
+                self.send_response(302)
+                self.send_header("Location", f"/?{redirect_qs}")
+                self.end_headers()
+                return
+
+            msg = _q("msg", "")
+            html_doc = _build_haccp_parsed_browser_html(
+                limit=limit,
+                report_no=report_no,
+                status_filter=status_filter,
+                flash_msg=msg or None,
+            )
+            data = html_doc.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+
+        def log_message(self, format: str, *args: Any) -> None:  # noqa: A003
+            return
+
+    last_exc: Exception | None = None
+    for p in [HACCP_PARSED_WEB_PORT] + list(range(HACCP_PARSED_WEB_PORT + 1, HACCP_PARSED_WEB_PORT + 20)):
+        try:
+            server = HTTPServer(("127.0.0.1", p), _HaccpParsedHandler)
+            th = threading.Thread(target=server.serve_forever, daemon=True)
+            th.start()
+            _HACCP_PARSED_WEB_SERVER = server
+            _HACCP_PARSED_WEB_THREAD = th
+            return p
+        except OSError as exc:
+            last_exc = exc
+            continue
+    raise RuntimeError(f"HACCP parsed browser server start failed: {last_exc}")
+
+
+def run_haccp_parsed_view_menu() -> None:
+    print("\n  🌐 [HACCP 파싱 결과 브라우저 열기]")
+    raw_limit = input("  🔹 조회 건수 [기본 200]: ").strip()
+    limit = int(raw_limit) if raw_limit.isdigit() else 200
+    limit = max(1, min(1000, limit))
+    report_no = input("  🔹 품목보고번호 필터(선택): ").strip()
+    status_filter = input("  🔹 상태 필터 [all/ok/error, 기본 all]: ").strip().lower() or "all"
+    if status_filter not in ("all", "ok", "error"):
+        status_filter = "all"
+    port = _ensure_haccp_parsed_server()
+    url = f"http://127.0.0.1:{port}/?{urlencode({'limit': str(limit), 'report_no': report_no, 'status': status_filter})}"
+    print(f"  🌐 HACCP 브라우저 URL: {url}")
+    try:
+        webbrowser.open(url)
+        print("  🖥️ 브라우저 자동 열기 완료")
+    except Exception as exc:  # pylint: disable=broad-except
+        print(f"  ⚠️ 브라우저 자동 열기 실패: {exc}")
 
 
 def _print_duplicate_stats(stats: dict[str, int]) -> None:
@@ -3231,6 +6561,144 @@ def run_query_pipeline_execute() -> None:
         show_pass3_raw=False,
         logger=None,
     )
+
+
+def run_haccp_backend_import_menu() -> None:
+    print("\n  📤 [HACCP backend Import 전송]")
+    default_import_url = os.getenv("BACKEND_IMPORT_URL", "http://localhost:3000/api/import").strip()
+    import_url = input(f"  🔹 Import URL [기본 {default_import_url}]: ").strip() or default_import_url
+
+    raw_batch_size = input("  🔹 배치 크기 [기본 50]: ").strip()
+    raw_limit = input("  🔹 최대 처리 건수 [기본 전체]: ").strip()
+    raw_min_id = input("  🔹 시작 id(min, 선택): ").strip()
+    raw_max_id = input("  🔹 끝 id(max, 선택): ").strip()
+    raw_exclude_blocked = input("  🔹 재파싱 차단(blocklist) 제외? [Y/n]: ").strip().lower()
+    dry_run = input("  🔹 Dry-run(전송 없이 미리보기)? [y/N]: ").strip().lower() == "y"
+
+    batch_size = int(raw_batch_size) if raw_batch_size.isdigit() else 50
+    limit = int(raw_limit) if raw_limit.isdigit() else None
+    min_id = int(raw_min_id) if raw_min_id.isdigit() else None
+    max_id = int(raw_max_id) if raw_max_id.isdigit() else None
+    exclude_blocked = raw_exclude_blocked != "n"
+
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+
+    rows = fetch_haccp_parsed_rows(
+        DB_FILE,
+        min_id=min_id,
+        max_id=max_id,
+        limit=limit,
+        exclude_blocked=exclude_blocked,
+    )
+    print(f"\n  📦 조회 건수: {len(rows):,}건")
+
+    payloads: list[dict[str, Any]] = []
+    transform_errors = 0
+    for row in rows:
+        transformed = transform_haccp_parsed_row(row)
+        if transformed.payload is not None:
+            payloads.append(transformed.payload)
+        else:
+            transform_errors += 1
+            print(f"  ⚠️ row id={row['id']} 변환 스킵: {transformed.error}")
+
+    print(f"  🔧 변환 성공: {len(payloads):,}건 | 변환 실패: {transform_errors:,}건")
+    if not payloads:
+        print("  ℹ️ 전송할 데이터가 없습니다.")
+        return
+
+    if dry_run:
+        print("\n  🧪 [Dry-run 첫 payload]")
+        print(json.dumps(payloads[0], ensure_ascii=False, indent=2))
+        return
+
+    sent_count, send_errors = send_batches(
+        payloads,
+        import_url=import_url,
+        batch_size=max(1, batch_size),
+        timeout_sec=30,
+    )
+    print(
+        f"\n  ✅ 전송 완료: 대상={len(payloads):,} sent={sent_count:,} "
+        f"send_errors={send_errors:,} transform_errors={transform_errors:,}"
+    )
+
+
+def run_haccp_backend_import_payload_view_menu() -> None:
+    print("\n  🧾 [HACCP backend Import payload JSON 파일 생성]")
+    raw_limit = input("  🔹 최대 조회 건수 [기본 전체]: ").strip()
+    raw_min_id = input("  🔹 시작 id(min, 선택): ").strip()
+    raw_max_id = input("  🔹 끝 id(max, 선택): ").strip()
+    raw_exclude_blocked = input("  🔹 재파싱 차단(blocklist) 제외? [Y/n]: ").strip().lower()
+
+    limit = int(raw_limit) if raw_limit.isdigit() else None
+    min_id = int(raw_min_id) if raw_min_id.isdigit() else None
+    max_id = int(raw_max_id) if raw_max_id.isdigit() else None
+    exclude_blocked = raw_exclude_blocked != "n"
+
+    with sqlite3.connect(DB_FILE) as conn:
+        init_haccp_tables(conn)
+
+    rows = fetch_haccp_parsed_rows(
+        DB_FILE,
+        min_id=min_id,
+        max_id=max_id,
+        limit=(max(1, limit) if isinstance(limit, int) else None),
+        exclude_blocked=exclude_blocked,
+    )
+    print(f"\n  📦 조회 건수: {len(rows):,}건")
+
+    payload_rows: list[tuple[int, dict[str, Any]]] = []
+    transform_errors = 0
+    for row in rows:
+        transformed = transform_haccp_parsed_row(row)
+        if transformed.payload is not None:
+            payload_rows.append((int(row["id"]), transformed.payload))
+        else:
+            transform_errors += 1
+            print(f"  ⚠️ row id={row['id']} 변환 스킵: {transformed.error}")
+
+    print(f"  🔧 변환 성공: {len(payload_rows):,}건 | 변환 실패: {transform_errors:,}건")
+    if not payload_rows:
+        print("  ℹ️ 저장할 payload가 없습니다.")
+        return
+
+    base_dir = Path(__file__).resolve().parent.parent / "reports" / "backend_import_payloads_haccp"
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    out_dir = base_dir / ts
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    payloads = [p for _, p in payload_rows]
+    manifest = {
+        "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "source": "haccp_parsed_cache",
+        "count": len(payload_rows),
+        "transform_errors": transform_errors,
+        "min_id": min_id,
+        "max_id": max_id,
+        "limit": (max(1, limit) if isinstance(limit, int) else None),
+        "exclude_blocked": exclude_blocked,
+    }
+    (out_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out_dir / "payloads_all.json").write_text(json.dumps(payloads, ensure_ascii=False, indent=2), encoding="utf-8")
+    with (out_dir / "payloads.ndjson").open("w", encoding="utf-8") as f:
+        for p in payloads:
+            f.write(json.dumps(p, ensure_ascii=False) + "\n")
+
+    items_dir = out_dir / "items"
+    items_dir.mkdir(parents=True, exist_ok=True)
+    for i, (row_id, payload) in enumerate(payload_rows, 1):
+        item_no = str(payload.get("itemMnftrRptNo") or payload.get("item_mnftr_rpt_no") or "")
+        safe_item_no = re.sub(r"[^0-9A-Za-z_-]", "_", item_no)[:40] or "no_report_no"
+        fname = f"{i:04d}_row{row_id}_{safe_item_no}.json"
+        (items_dir / fname).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print("\n  ✅ JSON 파일 생성 완료")
+    print(f"  - 폴더: {out_dir}")
+    print(f"  - 전체(JSON array): {out_dir / 'payloads_all.json'}")
+    print(f"  - 전체(NDJSON): {out_dir / 'payloads.ndjson'}")
+    print(f"  - 개별 파일: {items_dir} ({len(payload_rows):,}개)")
 
 
 def run_backend_import_menu() -> None:

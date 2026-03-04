@@ -257,6 +257,38 @@ def transform_food_final_row(row: sqlite3.Row) -> TransformResult:
     return TransformResult(payload=payload)
 
 
+def transform_haccp_parsed_row(row: sqlite3.Row) -> TransformResult:
+    product_name = str(row["product_name"] or "").strip()
+    product_name_error = _validate_product_name(product_name)
+    if product_name_error is not None:
+        return TransformResult(payload=None, error=product_name_error)
+
+    payload: dict[str, Any] = {
+        "product": {
+            "name_ko": product_name,
+            "reportnum": (str(row["item_mnftr_rpt_no"]).strip() if row["item_mnftr_rpt_no"] else None),
+        },
+        "source": {
+            "url": str(row["source_image_url"] or "").strip() or None,
+        },
+    }
+
+    ingredients_items = _parse_ingredients(row["ingredients_text"])
+    if ingredients_items:
+        payload["ingredients"] = {
+            "ingredients_items": ingredients_items,
+            "allergens": [],
+            "collected_at": row["created_at"],
+        }
+
+    nutrition = _parse_nutrition(row["nutrition_text"], row["nutrition_source"])
+    if nutrition:
+        nutrition["collected_at"] = row["created_at"]
+        payload["nutrition"] = nutrition
+
+    return TransformResult(payload=payload)
+
+
 def fetch_food_final_rows(
     db_path: str,
     *,
@@ -299,6 +331,61 @@ def fetch_food_final_rows(
             sql += " LIMIT ?"
             params.append(limit)
 
+        rows = conn.execute(sql, params).fetchall()
+        return rows
+    finally:
+        conn.close()
+
+
+def fetch_haccp_parsed_rows(
+    db_path: str,
+    *,
+    min_id: int | None,
+    max_id: int | None,
+    limit: int | None,
+    exclude_blocked: bool = True,
+) -> list[sqlite3.Row]:
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        where_clauses: list[str] = []
+        params: list[Any] = []
+
+        where_clauses.append("p.parse_status = 'ok'")
+        where_clauses.append("COALESCE(TRIM(h.prdlstNm), '') != ''")
+        where_clauses.append(
+            "(COALESCE(TRIM(p.ingredients_items_json), '') != '' OR COALESCE(TRIM(p.nutrition_items_json), '') != '')"
+        )
+        if exclude_blocked:
+            where_clauses.append("b.prdlstReportNo IS NULL")
+        if min_id is not None:
+            where_clauses.append("p.id >= ?")
+            params.append(min_id)
+        if max_id is not None:
+            where_clauses.append("p.id <= ?")
+            params.append(max_id)
+
+        where_sql = " AND ".join(where_clauses)
+        sql = f"""
+            SELECT
+              p.id,
+              p.prdlstReportNo AS item_mnftr_rpt_no,
+              h.prdlstNm AS product_name,
+              p.ingredients_items_json AS ingredients_text,
+              p.nutrition_items_json AS nutrition_text,
+              'image_pass4' AS nutrition_source,
+              COALESCE(NULLIF(TRIM(h.imgurl1), ''), NULLIF(TRIM(h.imgurl2), '')) AS source_image_url,
+              p.parsed_at AS created_at
+            FROM haccp_parsed_cache p
+            JOIN haccp_product_info h ON h.prdlstReportNo = p.prdlstReportNo
+            LEFT JOIN haccp_parse_blocklist b
+              ON b.prdlstReportNo = p.prdlstReportNo AND b.is_blocked = 1
+            WHERE {where_sql}
+            ORDER BY p.id ASC
+        """
+        if limit is not None:
+            sql += " LIMIT ?"
+            params.append(limit)
         rows = conn.execute(sql, params).fetchall()
         return rows
     finally:

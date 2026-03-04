@@ -35,3 +35,8 @@ build/
 backups/
 *.db.bak*
 dedupe_removed_run_*.csv
+
+# Backend import payload exports
+reports/backend_import_payloads/
+reports/final_outputs/
+reports/haccp_parsed/
