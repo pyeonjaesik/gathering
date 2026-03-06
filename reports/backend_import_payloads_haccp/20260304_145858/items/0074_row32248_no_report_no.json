@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "뼈에 강한 고칼슘&글루코사민(NAG)우유",
+    "reportnum": "2002044800212"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800212/2002044800212-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800212/2002044800212-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800212/2002044800212-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유(국산)98.94786%(세균수기준),칼슘혼합제0.99%[탄산칼슘,대두식이섬유),N-아세틸글루코시민분말(게)0.011%(글루코사민(NAG),N-아세틸글루코사민,95%),피지에이(PGA)0.001%,비타민프리믹스ND M/03(덱스트린,비타민D3 1㎍,영양강화제},낫토추출물0.00014%[대두,비타민K2 0.00000021%]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800212/2002044800212-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[1회제공량 185ml 총1회 제공량(185ml)] 1회 제공량당 함량 :열량 125kcal 탄수화물 9g(3%)·당류 9g, 단백질 5.5g (10%),지방 7.4g (15%),포화지방 5g (33%),트랜스지방 0.5g미만,콜레스테롤 27g(9%),나트륨 90mg (5%)/성분명 및 함량(185ml당)칼슘470mg(67%),비타민D3 1.8㎍(36%) *( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800212/2002044800212-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "98.94786%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제",
+        "amount": "0.99%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "N-아세틸글루코시민분말",
+        "amount": "0.011%",
+        "sub_ingredients": [
+          {
+            "name": "글루코사민",
+            "amount": "95%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "N-아세틸글루코사민",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피지에이",
+        "amount": "0.001%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민프리믹스ND M/03",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "amount": "1㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "낫토추출물",
+        "amount": "0.00014%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민K2",
+            "amount": "0.00000021%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:17"
+  },
+  "nutrition": {
+    "kcal": 125.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 9.0,
+    "protein_g": 5.5,
+    "fat_g": 7.4,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 27.0,
+    "sodium_mg": 90.0,
+    "calcium_mg": 470.0,
+    "basis_amount": 185.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 185ml 총1회 제공량(185ml)",
+    "collected_at": "2026-03-03 13:05:17"
+  }
+}

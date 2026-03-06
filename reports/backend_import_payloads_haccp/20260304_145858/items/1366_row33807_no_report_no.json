@@ -1,0 +1,572 @@
+{
+  "product": {
+    "name_ko": "델리모듬소시지",
+    "reportnum": "19830262001136"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830262001136/19830262001136-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830262001136/19830262001136-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830262001136/19830262001136-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*컨츄리소시지:돼지고기(국산),정제수,농축대두단백(미국산),전분(수입산),모듬소세지용씨즈닝 비[L-글루타민산나트륨(향미증진제)],정제소금,호스이엔알(폴리인산나트륨,피로인산나트륨,산성피로인산나트륨),프로큐어파우다[아질산나트륨(발색제),산도조절제] *그릴소시지:돼지고기(국산),정제수,농축대두단백(미국산),전분(수입산),모듬소세지용씨즈닝-비[L-글루타민산나트륨(향미증진제)],정제소금,호스이엔알(폴리인산나트륨,피로인산나트륨,산성피로인산나트륨),프로큐어파우다[아질산나트륨(발색제),산도조절제],햄스파이스디비-1,분말비프향미료,파슬리후레이크 *청양고추맛소시지:돼지고기(국산),정제수,청양고추(국산)3.55%,전분(수입산),농축대두단백,모듬소세지용씨즈닝-에이[L-글루타민산나트륨(향미증진제),산도조절제],아질산나트륨(발색제),치자그릴-비에스(치자청색소추출물,홍화황색소추출물) *부추맛소시지:돼지고기(국산),정제수,부추(국산)3.9%,전분(수입산),농축대두단백,모듬소세지용씨즈닝-에이[L-글루타민산나트륨(향미증진제),산도조절제,아질산나트륨(발색제) *양파맛소시지:돼지고기(국산),정제수,양파(국산)5.13%,전분(수입산),농축대두단백,모듬소세지용씨즈닝-에이[L-글루타민산나트륨(향미증진제),산도조절제,아질산나트륨(발색제)],양파분말0.13%,메이스스파이스로얄 *파프리카맛소시지:돼지고기(국산),정제수,전분(수입산),농축대두단백(미국산),모듬소세지용씨즈닝-에이[L-글루타민산나트륨(향미증진제),산도조절제,아질산나트륨(발색제)],청양고추(국산),마늘(중국산),파프리카씨즈닝0.4%,파프리카추출색소,유용성파프리카 *카레맛소시지:돼지고기(국산),정제수,전분(수입산),농축대두단백(미국산),모듬소세지용씨즈닝-에이[L-글루타민산나트륨(향미증진제),산도조절제,아질산나트륨(발색제)],양파(국산),피망(국산),당근(국산),카레조미분말0.92%,마늘(중국산),치자황색소,콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830262001136/19830262001136-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=450g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830262001136/19830262001136-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "컨츄리소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝 비",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호스이엔알",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로큐어파우다",
+            "sub_ingredients": [
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그릴소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-비",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호스이엔알",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로큐어파우다",
+            "sub_ingredients": [
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "햄스파이스디비-1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말비프향미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파슬리후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추맛소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청양고추",
+            "origin": "국산",
+            "amount": "3.55%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-에이",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치자그릴-비에스",
+            "sub_ingredients": [
+              {
+                "name": "치자청색소추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍화황색소추출물",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부추맛소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "부추",
+            "origin": "국산",
+            "amount": "3.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-에이",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파맛소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "amount": "5.13%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-에이",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "양파분말",
+            "amount": "0.13%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메이스스파이스로얄",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카맛소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-에이",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "청양고추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카씨즈닝",
+            "amount": "0.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유용성파프리카",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카레맛소시지",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모듬소세지용씨즈닝-에이",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피망",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카레조미분말",
+            "amount": "0.92%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콜라겐케이싱",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:01:22"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 305.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 13.0,
+    "fat_g": 27.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 510.0,
+    "cholesterol_mg": 35.0,
+    "saturated_fat_g": 9.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "450g",
+    "collected_at": "2026-03-03 15:01:22"
+  }
+}

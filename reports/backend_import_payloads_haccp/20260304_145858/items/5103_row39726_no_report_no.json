@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "CJ국산콩 손두부",
+    "reportnum": "2005038930115"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005038930115/2005038930115-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005038930115/2005038930115-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005038930115/2005038930115-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두100%(국산),천일염천연응고제1(조제해수염화마그네슘,현미유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005038930115/2005038930115-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량60g/총약6회제공량(380g)(380kcal) ()안의수치는1일영양성분기준치에대한비율임, 1회제공량당함량:열량60kcal, 탄수화물3g(1%), 당류0g, 단백질6g(11%), 지방3.3g(6%), 포화지방1g(7%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨20mg(1%), 식이섬유2.2g(9%), 칼슘37mg(5%), 철1mg(8%), 비타민A0RE(0%), 비타민C1mg(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005038930115/2005038930115-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염천연응고제",
+        "sub_ingredients": [
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:40"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 3.3,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "dietary_fiber_g": 2.2,
+    "calcium_mg": 37.0,
+    "iron_mg": 1.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량60g",
+    "collected_at": "2026-03-04 03:52:40"
+  }
+}

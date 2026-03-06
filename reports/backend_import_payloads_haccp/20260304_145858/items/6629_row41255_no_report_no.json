@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "크런키 믹스크리스피 미니",
+    "reportnum": "2014033246829"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246829/2014033246829-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246829/2014033246829-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246829/2014033246829-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "L-크런키[준초콜릿{설탕,가공유지(팜핵스테아린유(경화유:말레이시아산))},크리스피{밀가루(밀:미국산,호주산)},프레첼칩,인조쌀,땅콩분태],준초콜릿[설탕,가공유지{팜핵스테아린유(경화유;말레이시아산)},코코아분말(싱가포르산,말레이시아산),유청,유당]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246829/2014033246829-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 364g (13.5g x 27봉) 1봉(13.5g)당 70Kcal\n<1봉당 1일 영양성분 기준치에 대한 비율>\n나트륨15mg 1%, 탄수화물9g 3%, 당류6g 6%, 지방3.3g 6%, 트랜스지방0g, 포화지방3.2g 21%, 콜레스테롤0mg 0%, 단백질1g미만 1% \n<100g당 1일 영양성분 기준치에 대한 비율>\n나트륨110mg 6%, 탄수화물70g 22%, 당류43g 43%, 지방25g 46%, 트랜스지방0g, 포화지방24g 160%, 콜레스테롤0mg 0%, 단백질5g미만 9% \n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246829/2014033246829-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "L-크런키",
+        "sub_ingredients": [
+          {
+            "name": "준초콜릿",
+            "sub_ingredients": [
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜핵스테아린유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": [
+                      {
+                        "name": "경화유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "크리스피",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "프레첼칩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인조쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩분태",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜핵스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "경화유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산, 말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:55"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "sodium_mg": 110.0,
+    "carbohydrate_g": 70.0,
+    "sugar_g": 43.0,
+    "fat_g": 25.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 24.0,
+    "cholesterol_mg": 0.0,
+    "basis_amount": 13.5,
+    "basis_unit": "g",
+    "basis_text": "1봉(13.5g)당",
+    "collected_at": "2026-03-04 04:40:55"
+  }
+}

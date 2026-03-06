@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "담백한버섯된장찌개",
+    "reportnum": "20150445222395"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222395/20150445222395-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222395/20150445222395-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222395/20150445222395-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,두부[대두(외국산),응고제(황산칼슘)],팽이버섯(국내산),느타리버섯(국내산),재래된장,양파,찌개된장,마늘,찹쌀가루,혼합간장,복합조미식품,건표고버섯(국내산),대파,양지육수페이스트,청양고추,L-글루탐산나트륨(향미증진제),다시마엑기스S,고춧가루,표고엑기스[표고추출액(표고:국산)],향미증진제,흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222395/20150445222395-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=200ml(g) | foodSize=480g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222395/20150445222395-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": [
+              {
+                "name": "황산칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "느타리버섯",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재래된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찌개된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건표고버섯",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지육수페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고엑기스",
+        "sub_ingredients": [
+          {
+            "name": "표고추출액",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:55"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 33.0,
+    "carbohydrate_g": 1.67,
+    "protein_g": 2.5,
+    "fat_g": 1.88,
+    "sugar_g": 1.04,
+    "sodium_mg": 552.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.29,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "200ml(g)",
+    "total_content": "480g",
+    "collected_at": "2026-03-04 04:45:55"
+  }
+}

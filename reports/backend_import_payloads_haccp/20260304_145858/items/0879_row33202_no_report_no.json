@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "마가렛트",
+    "reportnum": "1978061400912"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978061400912/1978061400912-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978061400912/1978061400912-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978061400912/1978061400912-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀;수입산),케익분말[밀가루(수입산),백설탕,전란액(국내산),채종유,가공버터],쇼트닝Ⅰ(정제가공유지(말레이시아산;부분경화유),정제우지(호주산)),백설탕,물엿,전란액,가공버터,땅콩,글리세린,전지분골드Ⅰ,D-소르비톨액,쇼트닝Ⅱ,당류가공품,주정,정제소금,혼합제제Ⅰ(산도조절제,옥수수전분),혼합제제Ⅱ(변성전분,백설탕,덱스트린),산도조절제,레시틴,혼합분유,기타가공품,합성착향료(바닐라향,버텨향),팜추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978061400912/1978061400912-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=342g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978061400912/1978061400912-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케익분말",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란액",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "정제가공유지",
+            "origin": "말레이시아산",
+            "amount": "부분경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제우지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분골드Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝Ⅱ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제Ⅱ",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:14:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 59.09,
+    "protein_g": 6.82,
+    "fat_g": 27.27,
+    "sugar_g": 27.27,
+    "sodium_mg": 364.0,
+    "cholesterol_mg": 68.18,
+    "saturated_fat_g": 15.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "342g",
+    "collected_at": "2026-03-03 14:14:58"
+  }
+}

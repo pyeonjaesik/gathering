@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "파인애플샐러드소스",
+    "reportnum": "199104450775156"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775156/199104450775156-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775156/199104450775156-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775156/199104450775156-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,파인애플청크35%[필리핀산/파인애플62.6%,설탕,산도조절제],양조식초[주정,맥아엑기스(겉보리:미국산),발효영양원],백설탕,저당,카놀라유,정제소금(국산),레몬농축액,라임농축액0.5%(이탈리아산),주정,잔탄검,홍화황색소,혼합제제{글리세린,아미노엑시드콤플렉스(폴리리신),주정},파슬리후레이크,천연라임향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775156/199104450775156-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 (250 g) 100g당 함량 *()안의 수치는 1일 영양성분 기준치에 대한 비율임 열량 105kcal, 탄수화물 21g(6%), 당류 16g, 단백질 0g (0%), 지방 2.3g(5%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 360mg(18%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775156/199104450775156-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플청크",
+        "origin": "필리핀산",
+        "amount": "35%",
+        "sub_ingredients": [
+          {
+            "name": "파인애플",
+            "origin": "필리핀산",
+            "amount": "62.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "겉보리",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라임농축액",
+        "origin": "이탈리아산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미노엑시드콤플렉스",
+            "sub_ingredients": [
+              {
+                "name": "폴리리신",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파슬리후레이크",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연라임향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:40:48"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 16.0,
+    "protein_g": 0.0,
+    "fat_g": 2.3,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 360.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 18:40:48"
+  }
+}

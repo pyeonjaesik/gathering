@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "숲속산양목장 산양유",
+    "reportnum": "201304760252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304760252/201304760252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304760252/201304760252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304760252/201304760252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "산양원유(국내산)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304760252/201304760252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1컵(150ml) 1회 제공량당함량 기준, 열량 115kcal,/총 열량 380kcal, 탄수화물 7g(2%), 당류 6g, 단백질 6g(10%), 지방 7g(14%), 포화지방 5g(14%), 트랜스지방 0g, 콜레스테롤 14mg(5%), 나트륨74mg(4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304760252/201304760252-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "산양원유",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:05"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 6.0,
+    "protein_g": 6.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 14.0,
+    "sodium_mg": 74.0,
+    "basis_amount": 150.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 1컵(150ml)",
+    "collected_at": "2026-03-04 04:39:05"
+  }
+}

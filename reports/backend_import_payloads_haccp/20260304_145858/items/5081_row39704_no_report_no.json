@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "대구까스",
+    "reportnum": "20050144137126"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050144137126/20050144137126-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050144137126/20050144137126-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050144137126/20050144137126-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "청대구(블루화이팅)54.69%(네덜란드산),빵가루[밀가루(밀:미국산,호주산,캐나다산), 식물성 유지[팜유:말레이시아산],포도당,이스트,정제소금], 밀가루(밀:미국산,호주산), 옥수수전분, 정제소금,백설탕,구아검,유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050144137126/20050144137126-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1,200g 100g당 145kcal 100g당 1일 영양성분 기준치에 대한 비율 나드퓸 370mg 19% 탄수화물 25g 8% 당류 0g 지방 0.4g 1% 트랜스지방 0g 포화지방 0.3g 2% 콜레스테롤 5mg 2% 단백질 10g 18% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050144137126/20050144137126-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "청대구",
+        "origin": "네덜란드산",
+        "amount": "54.69%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성 유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:25"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "sodium_mg": 370.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.3,
+    "cholesterol_mg": 5.0,
+    "protein_g": 10.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:52:25"
+  }
+}

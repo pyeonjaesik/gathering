@@ -1,0 +1,182 @@
+{
+  "product": {
+    "name_ko": "1등급 허브갈릭 훈제슬라이스",
+    "reportnum": "2010047602399"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602399/2010047602399-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602399/2010047602399-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602399/2010047602399-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오리육(국내산)95.373%,훈제오리시즈닝-FD[포도당,카제인나트륨(우유),정제소금(국내산),혼합제제(산도조절제),비프분말2호{비프분말2호베이스(쇠고기:호주산,정제소금:국내산)},L-글루타민산나트륨(향미증진제),마늘(국내산)1%,허브(파슬리100%:네덜란드산)0.5%,에리쏘르빈산나트륨(산화방지제),비프후레바(대두),천연색소(락색소),핫팜믹스,정제소금(국내산),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602399/2010047602399-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 100g- 열량 345kcal,탄수화물 7g(2%),당류 0g(0%),단백질 16g(29%),지방 28g(52%), 포화지방 8g(53%), 트랜스지방 0g,콜레스테롤 110mg(37%), 나트륨 307mg(15%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602399/2010047602399-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리육",
+        "origin": "국내산",
+        "amount": "95.373%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "훈제오리시즈닝-FD",
+        "sub_ingredients": [
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프분말2호",
+            "amount": "2호",
+            "sub_ingredients": [
+              {
+                "name": "비프분말2호베이스",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "정제소금",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "쇠고기",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘",
+            "origin": "국내산",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허브",
+            "origin": "네덜란드산",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "파슬리",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에리쏘르빈산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프후레바",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "락색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "핫팜믹스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:28:39"
+  },
+  "nutrition": {
+    "kcal": 345.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 0.0,
+    "protein_g": 16.0,
+    "fat_g": 28.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 110.0,
+    "sodium_mg": 307.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 100g",
+    "collected_at": "2026-03-04 04:28:39"
+  }
+}

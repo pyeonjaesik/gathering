@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "베비언스 베이비워터",
+    "reportnum": "20070443110190"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110190/20070443110190-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110190/20070443110190-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110190/20070443110190-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 루이보스추출액(남아프리카공화국, 고형분 1.0%이상)0.2%, 젖산칼슘, L-젖산마그네슘, 아연혼합제제[덱스트린, 산화아연, 글리세린지방산에스테르, 효소분해레시틴(대두)], L-로이신, L-이소로이신, L-발린, 비타민B1질산염, 니코틴산아미드, 판토텐산칼슘, 효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110190/20070443110190-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=240ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110190/20070443110190-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "루이보스추출액",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "1.0%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "남아프리카공화국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-젖산마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아연혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소분해레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-로이신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-이소로이신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-발린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B1질산염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "니코틴산아미드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "판토텐산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:20"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "240ml",
+    "collected_at": "2026-03-04 04:05:20"
+  }
+}

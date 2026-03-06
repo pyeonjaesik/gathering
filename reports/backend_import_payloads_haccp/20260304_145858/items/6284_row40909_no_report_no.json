@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "커널스팝콘 카라멜&솔트",
+    "reportnum": "2010046130354"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046130354/2010046130354-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046130354/2010046130354-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046130354/2010046130354-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)46.5%,브라운카라멜베이스믹스(흑설탕,바닐라:캐나다산)15.5%,가공버터{유지방(우유),코코넛오일,무지유고형분:수입산},물엿,백설탕,야자유,덱스트린,플레인팝콘솔트(캐나다산)0.8%,레시틴(대두),혼합제제(탄산수소나트륨,제3인산칼슘),합성착향료(버터향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046130354/2010046130354-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량약1/3컵(23g) 총약3회제공량(70g), 1회제공량당함량:열량110kcal, 탄수화물17g(5%), 식이섬유1g(5%),당류4g, 단백질1g(2%),지방4.1g(8%), 포화지방2.7g(18%), 트랜스지방0g, 콜레스테롤5mg(2%), 나트륨88mg(4%) ()안의수치는1일영양소기준치에대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046130354/2010046130354-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "46.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브라운카라멜베이스믹스",
+        "origin": "캐나다산",
+        "amount": "15.5%",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코넛오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "플레인팝콘솔트",
+        "origin": "캐나다산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제3인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:12"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "carbohydrate_g": 17.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 4.0,
+    "protein_g": 1.0,
+    "fat_g": 4.1,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 88.0,
+    "basis_amount": 23.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량약1/3컵(23g)",
+    "collected_at": "2026-03-04 04:27:12"
+  }
+}

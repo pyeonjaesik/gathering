@@ -1,0 +1,76 @@
+{
+  "product": {
+    "name_ko": "크고 단단한 두부",
+    "reportnum": "201104450386"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104450386/201104450386-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104450386/201104450386-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104450386/201104450386-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두100%[외국산(미국, 캐나다, 중국 등)], 조제해수염화마그네슘, 현미유, 올리브유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104450386/201104450386-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량500g 100g당 90kcal\n나트륨5mg 0%, 탄수화물2g 1%, 당류0g 0%, 식이섬유1g미만 4%, 지방6g 11%, 트랜스지방0g, 포화지방0.9g 6%, 콜레스테롤0mg 0%, 단백질8g 15%, 비타민A0㎍ RE 0%, 비타민C0mg 0%, 칼슘42mg 6%, 철0.9mg 8%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104450386/201104450386-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조제해수염화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리브유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:07"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "sodium_mg": 5.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.9,
+    "cholesterol_mg": 0.0,
+    "protein_g": 8.0,
+    "calcium_mg": 42.0,
+    "iron_mg": 0.9,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:31:07"
+  }
+}

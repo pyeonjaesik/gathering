@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "후디스 우리아이 김과자 코코넛",
+    "reportnum": "2013047101822"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047101822/2013047101822-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047101822/2013047101822-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047101822/2013047101822-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "볶은코코넛[코코넛분말(필리핀산),덱스트린,고화방지분당]49.46%,마른김(국내산)24.73%,조청(쌀98.7%,엿기름,효소),정백당,올리고당,탄산칼슘1.08%,현미유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047101822/2013047101822-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2g 당 함량/총 10회 제공량 \n<1회 제공량 당 함량> \n열량10kcal, 탄수화물1g미만, 당류0g, 단백질0.3g, 지방0.8g, 포화지방0g, 트랜스지방0g, 콜레스테롤0mg, 나트륨10mg, DHA9.6mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047101822/2013047101822-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "볶은코코넛",
+        "amount": "49.46%",
+        "sub_ingredients": [
+          {
+            "name": "코코넛분말",
+            "origin": "필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고화방지분당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마른김",
+        "origin": "국내산",
+        "amount": "24.73%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조청",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "amount": "98.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "amount": "1.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:34"
+  },
+  "nutrition": {
+    "kcal": 10.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.3,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2g",
+    "collected_at": "2026-03-04 04:38:34"
+  }
+}

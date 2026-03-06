@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "요리愛[애]요리당",
+    "reportnum": "20050415020934"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050415020934/20050415020934-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050415020934/20050415020934-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050415020934/20050415020934-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "프락토올리고당43.5%,유기농설탕(태국산),정제수,마스코바도(당류가공품,필리핀/공정무역)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050415020934/20050415020934-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(100g) 총6.7회분량(670g), 1회제공량당함량 *%영양소기준치, 열량314kcal, 탄수화물78g 23.8%, 당류58g, 단백질0.1g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨3mg 0.2%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050415020934/20050415020934-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "43.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마스코바도",
+        "origin": "필리핀산",
+        "amount": "당류가공품",
+        "sub_ingredients": [
+          {
+            "name": "공정무역",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:23"
+  },
+  "nutrition": {
+    "kcal": 314.0,
+    "carbohydrate_g": 78.0,
+    "sugar_g": 58.0,
+    "protein_g": 0.1,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 3.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(100g)",
+    "collected_at": "2026-03-04 03:54:23"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "고르곤졸라 씬피자",
+    "reportnum": "19970311100213"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100213/19970311100213-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100213/19970311100213-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100213/19970311100213-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "피자도우[밀가루(밀:미국산,캐나다산), 식용유지(수입산), 백설탕, 생효모, 정제소금], 피자치즈 37.86%[모짜렐라치즈(수입산),고다치즈(수입산),분말셀룰로오스],고르곤피자치즈 7.23%[모짜렐라치즈(수입산),고르곤졸라치즈20%(이탈리아산),렌넷카제인, 합성착향료(로마노치즈향),변성전분], 정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100213/19970311100213-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 3/6조각 (144g)/ 총 2회 제공량(288g) 1회 제공량당 함량 : 열량 455kcal, 탄수화물 44g 13%,  당류 2g, 단백질 22g(40%), 지방 21g 41%, 포화지방 17g 113%, 트랜스지방 0g 0%,  콜레스테롤 75mg 25%, 나트륨 750mg(38%) *%영양성분기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100213/19970311100213-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "피자도우",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피자치즈",
+        "amount": "37.86%",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고다치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고르곤피자치즈",
+        "amount": "7.23%",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고르곤졸라치즈",
+            "origin": "이탈리아산",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "렌넷카제인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "로마노치즈향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:22:51"
+  },
+  "nutrition": {
+    "kcal": 455.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 2.0,
+    "protein_g": 22.0,
+    "fat_g": 21.0,
+    "saturated_fat_g": 17.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 75.0,
+    "sodium_mg": 750.0,
+    "basis_amount": 144.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 3/6조각 (144g)",
+    "collected_at": "2026-03-03 21:22:51"
+  }
+}

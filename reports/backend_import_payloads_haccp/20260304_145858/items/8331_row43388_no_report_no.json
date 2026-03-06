@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "스테이크소스",
+    "reportnum": "200104450558"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200104450558/200104450558-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200104450558/200104450558-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200104450558/200104450558-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,발효식초(주정,발효영양원),정제소금(국산),토마토페이스트[외국산(미국,칠레,중국등)],사과농축액(중국산),건조당밀,적포도주,향신료,카라멜색소,변성전분,식물성분해단백,마늘엑기스,잔탄검,양파엑기스,표고버섯엑기스,고추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200104450558/200104450558-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=470g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200104450558/200104450558-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "origin": "외국산, 미국산, 칠레산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조당밀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도주",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성분해단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 112.0,
+    "carbohydrate_g": 27.0,
+    "protein_g": 0.75,
+    "fat_g": 0.0,
+    "sugar_g": 26.0,
+    "sodium_mg": 1800.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "470g",
+    "collected_at": "2026-03-04 03:33:07"
+  }
+}

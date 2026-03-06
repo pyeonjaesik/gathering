@@ -1,0 +1,90 @@
+{
+  "product": {
+    "name_ko": "담미정통산자",
+    "reportnum": "2010037227296"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227296/2010037227296-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227296/2010037227296-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227296/2010037227296-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "인조미40%(소맥분(밀):미국산,호주산),백미35%(중국산),물엿,설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227296/2010037227296-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량:30g 총5회분량, 열량 106kcal, 탄수화물 26g(8%), 당류 13g, 단백질 1g(1%), 지방 0g(0%), 포화지방산 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 21mg(1%), ※%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227296/2010037227296-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "인조미",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "amount": "null",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백미",
+        "origin": "중국산",
+        "amount": "35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:22"
+  },
+  "nutrition": {
+    "kcal": 106.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 13.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 21.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:30g",
+    "collected_at": "2026-03-04 04:23:22"
+  }
+}

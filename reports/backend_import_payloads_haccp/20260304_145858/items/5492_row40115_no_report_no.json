@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "정갈한 소고기 무국",
+    "reportnum": "20070355030188"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030188/20070355030188-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030188/20070355030188-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030188/20070355030188-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "양지자숙액C{소고기(양지/호주산),무(국내산),청양고추,마늘,대파},정제수,무(국내산)0.57%,다림쇠고기육수(소고기:호주산/밀,대두,우유),소고기맛다시다(소고기:호주산,뉴질랜드산),L-글루타민산나트륨(향미증진제),백설탕,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030188/20070355030188-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(500g)/총 1회 제공량(500g) 1회 제공량당 함량 *%영양소 기준치 열량 85kcal 탄수화물 6g 2% 당류 2g 단백질 8g 15% 지방 3.1g 6% 포화지방 1.3g 8% 트랜스지방 0g 콜레스테롤 15mg 5% 나트륨 1,310mg 65% *%영양소 기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030188/20070355030188-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "양지자숙액C",
+        "sub_ingredients": [
+          {
+            "name": "소고기",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "양지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청양고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국내산",
+        "amount": "0.57%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다림쇠고기육수",
+        "sub_ingredients": [
+          {
+            "name": "소고기",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소고기맛다시다",
+        "sub_ingredients": [
+          {
+            "name": "소고기",
+            "origin": "호주산, 뉴질랜드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:43"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 2.0,
+    "protein_g": 8.0,
+    "fat_g": 3.1,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 1310.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(500g)",
+    "collected_at": "2026-03-04 04:02:43"
+  }
+}

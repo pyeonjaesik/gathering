@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "박찬회 녹차연양갱",
+    "reportnum": "19920484128422"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128422/19920484128422-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128422/19920484128422-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128422/19920484128422-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿,백앙금B[백물앙금W{흰강낭콩:중국산},백설탕,폴리글리시톨시럽],백설탕,한천(국산),녹차분말0.3%(녹차100%:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128422/19920484128422-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1갑(45g)/총 2회 제공량(90g) 1회 제공량당 함량:열량 130kcal, 탄수화물 31g(9%)·당류 22g, 단백질 1g(2%), 지방 0g(0%)포화지방 0g(0%)·트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 0mg(0%) *()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128422/19920484128422-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백앙금B",
+        "sub_ingredients": [
+          {
+            "name": "백물앙금W",
+            "sub_ingredients": [
+              {
+                "name": "흰강낭콩",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한천",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차분말",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "녹차",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:16:26"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 22.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1갑(45g)",
+    "collected_at": "2026-03-03 19:16:26"
+  }
+}

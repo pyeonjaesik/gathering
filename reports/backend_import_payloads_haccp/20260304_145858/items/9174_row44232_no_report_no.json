@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "어린이슬라이스치즈",
+    "reportnum": "20090262001127"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001127/20090262001127-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001127/20090262001127-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001127/20090262001127-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "자연치즈81.5%[체다81.6%(외국산):미국,호주,뉴질랜드):원유,식염,유산균배양액,우유응고효소/고다18.4%(네덜란드):원유,식염,유산균배양액,우유응고효소,염화칼슘],우유칼슘(독일),산도조절제,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001127/20090262001127-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=1800g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001127/20090262001127-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "amount": "81.5%",
+        "sub_ingredients": [
+          {
+            "name": "체다",
+            "origin": "외국산, 미국산, 호주산, 뉴질랜드산",
+            "amount": "81.6%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고다",
+            "origin": "네덜란드산",
+            "amount": "18.4%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유칼슘",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 328.0,
+    "carbohydrate_g": 1.67,
+    "protein_g": 20.56,
+    "fat_g": 26.67,
+    "sugar_g": 0.0,
+    "sodium_mg": 666.0,
+    "calcium_mg": 1220.0,
+    "cholesterol_mg": 60.0,
+    "saturated_fat_g": 17.22,
+    "trans_fat_g": 1.11,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "1800g",
+    "collected_at": "2026-03-04 04:17:12"
+  }
+}

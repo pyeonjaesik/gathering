@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "쉐프원바삭튀김가루",
+    "reportnum": "2011036006371"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011036006371/2011036006371-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011036006371/2011036006371-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011036006371/2011036006371-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀:미국, 호주산), 옥수수전분(수입산), 정제소금(국내산), 마늘분말, 양파분말, 혼합제재{소암모늄명반, 탄산수소나트륨, 소맥분(밀)}, 치자황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011036006371/2011036006371-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 함량 / *%영양소기준치\n열량345kcal, 탄수화물77g (23%), 당류2g, 단백질8g (15%), 지방0.7g (1%), 포화지방0g (0%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨870mg (44%)\n*%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011036006371/2011036006371-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제재",
+        "sub_ingredients": [
+          {
+            "name": "소암모늄명반",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:36"
+  },
+  "nutrition": {
+    "kcal": 345.0,
+    "carbohydrate_g": 77.0,
+    "sugar_g": 2.0,
+    "protein_g": 8.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 870.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당 함량",
+    "collected_at": "2026-03-04 04:30:36"
+  }
+}

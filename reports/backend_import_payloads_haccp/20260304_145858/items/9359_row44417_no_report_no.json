@@ -1,0 +1,222 @@
+{
+  "product": {
+    "name_ko": "포켓팝콘 화이트블러썸",
+    "reportnum": "20100461303290"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303290/20100461303290-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303290/20100461303290-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303290/20100461303290-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(미국산)39.78%, 설탕, 식물성유지[팜올레인유(말레이시아산), 해바라기유(외국산), d-토코페롤(혼합형)], 복합조미식품[샤워크림파우다(미국산), 화이트체다씨즈닝(미국산)20%, 가공소금, 설탕, 난황분, 혼합제제1(감자말토덱스트린, 유당, 크림치즈, 부틸락테이트, 낙산, 버터엑시드, 핵사노익엑시드, 아세토인), 제삼인산칼슘, 합성향료(크림치즈향), 혼합제제2(젖산, 젖산칼슘, 이산화규소), 혼합제제3(덱스트린, 스테비올배당체, 포도당), 아스파탐(감미료,페닐알라닌함유)6.72%, 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303290/20100461303290-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=25g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303290/20100461303290-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "39.78%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "샤워크림파우다",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트체다씨즈닝",
+            "origin": "미국산",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제1",
+            "sub_ingredients": [
+              {
+                "name": "감자말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크림치즈",
+                "sub_ingredients": []
+              },
+              {
+                "name": "부틸락테이트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "낙산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터엑시드",
+                "sub_ingredients": []
+              },
+              {
+                "name": "핵사노익엑시드",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아세토인",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "크림치즈향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제2",
+            "sub_ingredients": [
+              {
+                "name": "젖산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이산화규소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제3",
+            "sub_ingredients": [
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스테비올배당체",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "amount": "6.72%",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 520.0,
+    "carbohydrate_g": 64.0,
+    "protein_g": 4.0,
+    "fat_g": 28.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 180.0,
+    "cholesterol_mg": 12.0,
+    "saturated_fat_g": 8.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "25g",
+    "collected_at": "2026-03-04 04:26:53"
+  }
+}

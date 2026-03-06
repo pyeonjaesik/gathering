@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "웅진 자연은 고칼슘 오렌지 100",
+    "reportnum": "19960458039483"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039483/19960458039483-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039483/19960458039483-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039483/19960458039483-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오렌지농축액(오렌지과즙으로100%:이스라엘산70%,브라질산30%),정제수,백설탕,젖산칼슘0.868%,구연산,유화제,오렌지오일,천연오렌지향,구연산삼나트륨,비타민C *칼슘함량:189mg/180ml기준",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039483/19960458039483-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(180ml) 1회 제공량 당 함량:열량 105kcal, 탄수화물 25g(8%) 당류 22g, 단백질 1g(2%), 지방 0g(0%) 포화지방 0g(0%)·트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 25mg(1%), 칼슘 189mg(27%) ()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039483/19960458039483-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오렌지농축액",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙",
+            "origin": "이스라엘산 70%, 브라질산 30%",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "amount": "0.868%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연오렌지향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:15:08"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 22.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 25.0,
+    "calcium_mg": 189.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(180ml)",
+    "collected_at": "2026-03-03 21:15:08"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "ONLY price 오리지널&카라멜 팝콘",
+    "reportnum": "20100461303274"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303274/20100461303274-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303274/20100461303274-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303274/20100461303274-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(미국산)54%, 믹스설탕{설탕, 제삼인산칼슘, 합성착향료(카라멜향, 버터향), 가공소금, 브라운칼라}, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산:아르헨티나,스페인,호주 등), d-토코페롤(혼합형)], 가공버터0.94%(버터유,유크림,야자경화유)/뉴질랜드산, 가공소금(정제소금,제삼인산칼슘), 카로틴, 혼합제제(버터향,천연버터향,가공유지)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303274/20100461303274-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303274/20100461303274-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "믹스설탕",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "카라멜향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "브라운칼라",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "amount": "0.94%",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 575.0,
+    "carbohydrate_g": 59.5,
+    "protein_g": 5.0,
+    "fat_g": 35.0,
+    "sugar_g": 16.5,
+    "sodium_mg": 275.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 7.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "280g",
+    "collected_at": "2026-03-04 04:26:43"
+  }
+}

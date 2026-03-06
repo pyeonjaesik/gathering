@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "화인쿨파인애플",
+    "reportnum": "198005600032"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/198005600032/198005600032-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/198005600032/198005600032-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/198005600032/198005600032-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "탈지분유0.6%(국산),정제수,액상과당,셀룰로오스검,파인애플농축과즙(파인애플과즙으로 2%,태국산),산도조절제,파프리카추출색소,심황색소,효소처리스테비아(천연감미료),합성착향료(파인애플향),유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/198005600032/198005600032-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=930ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/198005600032/198005600032-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플농축과즙",
+        "origin": "태국산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "파인애플과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "파인애플향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:37:32"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 30.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 7.0,
+    "sodium_mg": 30.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "930ml",
+    "collected_at": "2026-03-03 14:37:32"
+  }
+}

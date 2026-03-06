@@ -1,0 +1,237 @@
+{
+  "product": {
+    "name_ko": "명인 잎새김치만두",
+    "reportnum": "20000370201256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000370201256/20000370201256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000370201256/20000370201256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000370201256/20000370201256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "명인김치소77.4%[무말랭이(중국산),배추김치17.37%{배추(국내산),고춧가루(중국산)},돼지고기(국내산),양파,당면(고구마전분),대파,부추,간장(대두,밀),콩단백,L-글루타민나트륨(항미증진제),설탕,고춧가루,복합조미식품(대두),생강,마늘,참깨,참기름,액젓,후추,혼합제제(산도조절제)],밀가루(밀:호주산)20%,전분T[혼합제제(변성분87%,미립당,탈지분유)],정제소금,밀글루텐,대두유(콩기름),유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000370201256/20000370201256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000370201256/20000370201256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "명인김치소",
+        "amount": "77.4%",
+        "sub_ingredients": [
+          {
+            "name": "무말랭이",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배추김치",
+            "amount": "17.37%",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고춧가루",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당면",
+            "sub_ingredients": [
+              {
+                "name": "고구마전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "부추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콩단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민나트륨",
+            "sub_ingredients": [
+              {
+                "name": "항미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분T",
+        "sub_ingredients": [
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성분",
+                "amount": "87%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미립당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "콩기름",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:14:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 153.0,
+    "carbohydrate_g": 8.84,
+    "protein_g": 3.4,
+    "fat_g": 11.56,
+    "sugar_g": 2.04,
+    "sodium_mg": 286.0,
+    "cholesterol_mg": 10.2,
+    "saturated_fat_g": 4.08,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 22:14:33"
+  }
+}

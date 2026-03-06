@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "매콤달콤 순대볶음",
+    "reportnum": "20140188028117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140188028117/20140188028117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140188028117/20140188028117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140188028117/20140188028117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "엣날맛순대61.2%[건면(고구마전분,타피오카전분/중국산),돈창자(국내산),돈혈(국내산),돈지,당근],생라면20.4%[소맥분(밀:호주산,미국산),변성전분(태국산,합성글루텐(밀),주정,정제소금,식용유지가공품(대두유,솔비톨액,유화제),혼합제제(말티톨시럽,산도조절제),삼황색소],당으로 순대볶음소스18.4%[저감미당,정제수,물엿,설탕,고추장,{소맥분(밀:미국산,호주산)},혼합간장{탈지대두(외국산)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140188028117/20140188028117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=490g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140188028117/20140188028117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "엣날맛순대",
+        "amount": "61.2%",
+        "sub_ingredients": [
+          {
+            "name": "건면",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "고구마전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "타피오카전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "돈창자",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈혈",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생라면",
+        "amount": "20.4%",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성글루텐",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지가공품",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "솔비톨액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "말티톨시럽",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "삼황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당으로 순대볶음소스",
+        "amount": "18.4%",
+        "sub_ingredients": [
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 170.0,
+    "carbohydrate_g": 33.0,
+    "protein_g": 3.3,
+    "fat_g": 2.7,
+    "sugar_g": 4.0,
+    "sodium_mg": 510.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "490g",
+    "collected_at": "2026-03-04 04:40:11"
+  }
+}

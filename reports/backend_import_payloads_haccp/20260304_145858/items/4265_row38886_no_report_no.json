@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "클램차우더생수프",
+    "reportnum": "19990364158492"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158492/19990364158492-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158492/19990364158492-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158492/19990364158492-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,우유(국산),가리비살7.0%(중국산),생크림(국산),감자,양파,화이트루,조미분VII,증숙감자,피쉬스톡P,순베이컨,옥배유,무염버터,마늘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158492/19990364158492-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(190g)/ 총 3회 제공량(570g)*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 : 열량 170kcal, 탄수화물 13g 4%, 식이섬유 1g 4%, 당류 7g, 단백질 5g 9%, 지방 11g 22%, 포화지방 6g 40%, 트랜스지방 0g, 콜레스테롤 25mg 8%, 나트륨 270mg 14%, 비타민A 0㎍RE%/비타민C 0mg0%/칼슘24mg 3%/철0mg0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158492/19990364158492-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가리비살",
+        "origin": "중국산",
+        "amount": "7.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미분",
+        "amount": "VII",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피쉬스톡P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "순베이컨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무염버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:01:25"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 13.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 7.0,
+    "protein_g": 5.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 270.0,
+    "calcium_mg": 24.0,
+    "iron_mg": 0.0,
+    "basis_amount": 190.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(190g)",
+    "collected_at": "2026-03-03 22:01:25"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "청정원 발사믹식초",
+    "reportnum": "1993033606088"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993033606088/1993033606088-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993033606088/1993033606088-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993033606088/1993033606088-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "발사믹식초35%{와인식초74.993%(이탈리아산),포도농축액25%(이탈리아산),산화방지제(무수아황산)},적포도농축액23%(적포도100%,이탈리아산,65Bx기준),정제수,발사믹풍미베이스{액상과당,레드와인향,구연산,함수포도당,맥아추출물,합성착향료(스위트향),액상과당,올리고당,주요,주정,사과산,레드와인향,합성착향료(발사믹향),효모추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993033606088/1993033606088-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5ml | foodSize=350ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993033606088/1993033606088-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "발사믹식초",
+        "amount": "35%",
+        "sub_ingredients": [
+          {
+            "name": "와인식초",
+            "origin": "이탈리아산",
+            "amount": "74.993%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도농축액",
+            "origin": "이탈리아산",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화방지제",
+            "amount": "무수아황산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "적포도농축액",
+        "origin": "이탈리아산",
+        "amount": "적포도100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발사믹풍미베이스",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레드와인향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "스위트향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발사믹향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주요",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:31:46"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 165.0,
+    "carbohydrate_g": 41.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 37.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5ml",
+    "total_content": "350ml",
+    "collected_at": "2026-03-03 19:31:46"
+  }
+}

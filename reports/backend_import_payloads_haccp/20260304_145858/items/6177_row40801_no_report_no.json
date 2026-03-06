@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "우리애들 유기농 쌀과자 떡뻥 단호박",
+    "reportnum": "20100294933200"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100294933200/20100294933200-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100294933200/20100294933200-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100294933200/20100294933200-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농쌀(국내산)98.2%,유기농 단호박분말(국내산)1.8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100294933200/20100294933200-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "30g당115kcal\n나트륨14mg 1%, 탄수화물27g 8%, 당류0g, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg , 단백질2g 4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100294933200/20100294933200-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국내산",
+        "amount": "98.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 단호박분말",
+        "origin": "국내산",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:08"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 14.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "30g당",
+    "collected_at": "2026-03-04 04:23:08"
+  }
+}

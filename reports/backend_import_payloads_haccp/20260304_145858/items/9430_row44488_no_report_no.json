@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "오잉",
+    "reportnum": "2011022182812"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182812/2011022182812-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182812/2011022182812-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182812/2011022182812-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀;미국산),전분Ⅰ(리투아니아산),식물성유지(말레이시아산),전분Ⅱ,오징어농축액4.9%(오징어;국내산,배합함량20%),설탕,오징어씨즈닝,새우(국내산),다시마엑기스,혼합제제(프로필렌글리콜,곡물발효주정,치자적색소,고량색소,치자황색소),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182812/2011022182812-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=75g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182812/2011022182812-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분Ⅰ",
+        "origin": "리투아니아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분Ⅱ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어농축액",
+        "origin": "국내산",
+        "amount": "4.9%",
+        "sub_ingredients": [
+          {
+            "name": "오징어",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡물발효주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자적색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고량색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 487.0,
+    "carbohydrate_g": 73.33,
+    "protein_g": 6.67,
+    "fat_g": 18.67,
+    "sugar_g": 6.67,
+    "sodium_mg": 560.0,
+    "cholesterol_mg": 4.0,
+    "saturated_fat_g": 9.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "75g",
+    "collected_at": "2026-03-04 04:29:49"
+  }
+}

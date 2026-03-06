@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "생귤탱귤 감귤",
+    "reportnum": "1984046401414"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984046401414/1984046401414-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984046401414/1984046401414-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984046401414/1984046401414-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 감귤쌕시럽10.3%[감귤(제주산)68%,설탕,감귤농축과즙(제주산)2.7%(고형분60%,감귤과즙으로17.9%),베타카로틴,잔탄검], 감귤농축과즙(제주산)6.2%(고형분60%,감귤과즙으로41.3%),설탕,말티톨시럽,기타과당,포도당,혼합제제(덱스트린,카라기난),산도조절제,혼합제제(카라기난,젖산칼슘,로커스트콩검),구연산,합성향료(감귤향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984046401414/1984046401414-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984046401414/1984046401414-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감귤쌕시럽",
+        "amount": "10.3%",
+        "sub_ingredients": [
+          {
+            "name": "감귤",
+            "amount": "68%",
+            "sub_ingredients": [
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감귤농축과즙",
+            "amount": "2.7%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "60%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "감귤과즙",
+                "amount": "17.9%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감귤농축과즙",
+        "amount": "6.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감귤과즙",
+            "amount": "41.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "감귤향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:49:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 79.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 17.14,
+    "sodium_mg": 14.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "70g",
+    "collected_at": "2026-03-03 15:49:12"
+  }
+}

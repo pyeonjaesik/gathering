@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "오징어집 버터구이맛",
+    "reportnum": "1991046110192"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110192/1991046110192-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110192/1991046110192-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110192/1991046110192-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀;미국산), 미강유(태국산), 전분, 팜유, 오징어육(오징어), 버터구이오징어맛시즈닝, 오징어페이스트, 오징어맛조미분말-적, 오징어맛조미분말-원, 적무색소, 자주색고구마색소, 카카오색소, 탈지대두(대두), 유당(우유), 새우분말(새우) · 특정성분함량 및 원산지 : 오징어 6.5%(국산), 오징어분말 0.8(페루산), 버터 0.04%(국산), 타우린 181mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110192/1991046110192-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=78g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110192/1991046110192-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어육",
+        "sub_ingredients": [
+          {
+            "name": "오징어",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터구이오징어맛시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어맛조미분말-적",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적무색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자주색고구마색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카카오색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "새우분말",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:50:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 538.0,
+    "carbohydrate_g": 58.98,
+    "protein_g": 6.41,
+    "fat_g": 30.77,
+    "sugar_g": 6.41,
+    "sodium_mg": 500.0,
+    "cholesterol_mg": 6.41,
+    "saturated_fat_g": 11.54,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "78g",
+    "collected_at": "2026-03-03 18:50:50"
+  }
+}

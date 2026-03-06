@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "소문난서천김(4g)",
+    "reportnum": "2004047100210"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047100210/2004047100210-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047100210/2004047100210-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047100210/2004047100210-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "도시락(100%국내산),김58%국내산,옥수수기름30%(미국산)들기름7%(중국산),참기름3.5%(중국산),맛소금1.5%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047100210/2004047100210-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 열량40, 총지방2g 35, 포화지방0g 0%, 나트륨120mg 5%, 총탄수화물3g 1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047100210/2004047100210-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "도시락",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김",
+        "origin": "국내산",
+        "amount": "58%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수기름",
+        "origin": "미국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "amount": "7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "중국산",
+        "amount": "3.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "origin": "국내산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:34"
+  },
+  "nutrition": {
+    "saturated_fat_g": 0.0,
+    "sodium_mg": 120.0,
+    "collected_at": "2026-03-04 03:51:34"
+  }
+}

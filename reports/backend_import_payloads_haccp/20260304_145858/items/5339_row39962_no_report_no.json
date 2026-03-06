@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "명란젓갈",
+    "reportnum": "20060392118145"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060392118145/20060392118145-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060392118145/20060392118145-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060392118145/20060392118145-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "명란85.40%(러시아), 식염5.30%(정제염/국산),고춧가루(중국산),설탕,L-글루타민산나트륨(향미증진제),조미고추분(파프리카올레오레진),DL-사과산나트륨(산도조절제),D-소르비톨,주정,혼합제제(덱스트린,스테비올배당체),식용색소 적색40호 황색5호(합성착색료),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060392118145/20060392118145-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 26kcal 탄수화물 3g 1% 당류 1g 단백질 3g 5% 지방 0.3g 1% 포화지방 0.2g 1% 트랜스지방 0g 콜레스테롤 78mg 26% 나트륨 622mg 31% 1회 제공량 20g 당 함량 *%영양소 기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060392118145/20060392118145-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "명란",
+        "origin": "러시아산",
+        "amount": "85.40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "origin": "국산",
+        "amount": "5.30%",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미고추분",
+        "sub_ingredients": [
+          {
+            "name": "파프리카올레오레진",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "DL-사과산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테비올배당체",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식용색소",
+        "sub_ingredients": [
+          {
+            "name": "적색40호",
+            "sub_ingredients": [
+              {
+                "name": "합성착색료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "황색5호",
+            "sub_ingredients": [
+              {
+                "name": "합성착색료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:40"
+  },
+  "nutrition": {
+    "kcal": 26.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 1.0,
+    "protein_g": 3.0,
+    "fat_g": 0.3,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 78.0,
+    "sodium_mg": 622.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 03:58:40"
+  }
+}

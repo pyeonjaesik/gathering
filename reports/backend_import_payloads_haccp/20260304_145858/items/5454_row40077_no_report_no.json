@@ -1,0 +1,220 @@
+{
+  "product": {
+    "name_ko": "카레라이스 쌀면",
+    "reportnum": "2007014900260"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900260/2007014900260-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900260/2007014900260-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900260/2007014900260-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "면/쌀가루(쌀:외국산90%, 국내산10%), 감자전분(독일산), 식이섬유혼합분말, 다시마추출물, 정제염, 알긴산프로필렌글리콜\n스프류/카레풍미베이스[양파(국산), 카레분말{터메릭(인도산)}, 토마토페이스트, 돈골추출물, 물엿], 루풍미분말, 정백당, 포도당, 튀김감자, 가공전지분, 야채오일분말, 비크림, 팜유조미분말, 분말카라멜(카라멜색소, 물엿분말), 정제염, 감칠맛분말, 발효사과분말, 5`-리보뉴클레오티드이나트륨, 글리신, 수육조미분, 수화검(구아검, 잔탄검), 건청경채, 고기고명, 건당근, 동결건조완두콩.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900260/2007014900260-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 372g(124g X 3봉지) 1봉지(124g)당 465kcal\n나트륨1,470mg 74%, 탄수화물96g 30%, 당류12g 12%, 지방5g 9%, 트랜스지방0g, 포화지방3g 20%, 콜레스테롤5mg미만 1%, 단백질9g 16%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900260/2007014900260-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면/쌀가루",
+        "origin": "외국산 90%, 국내산 10%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "amount": "90%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀가루",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식이섬유혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알긴산프로필렌글리콜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스프류/카레풍미베이스",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카레분말",
+            "origin": "인도산",
+            "sub_ingredients": [
+              {
+                "name": "터메릭",
+                "origin": "인도산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈골추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "루풍미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "튀김감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채오일분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유조미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말카라멜",
+        "sub_ingredients": [
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감칠맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효사과분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5`-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수육조미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수화검",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건청경채",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고기고명",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결건조완두콩",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:39"
+  },
+  "nutrition": {
+    "kcal": 465.0,
+    "sodium_mg": 1470.0,
+    "carbohydrate_g": 96.0,
+    "sugar_g": 12.0,
+    "fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "protein_g": 9.0,
+    "basis_amount": 124.0,
+    "basis_unit": "g",
+    "basis_text": "1봉지(124g)당",
+    "collected_at": "2026-03-04 04:01:39"
+  }
+}

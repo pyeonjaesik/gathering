@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "후루티포션스무디딸기",
+    "reportnum": "199104430101108"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101108/199104430101108-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101108/199104430101108-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101108/199104430101108-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "딸기70%(중국산),백설탕,액상과당,혼합제제(변성전분,덱스트린),아미드펙틴,베리류색소,레몬농축액45bx0.04%(d이스라엘산),구연산,구연산나트륨,산탄검,제이인산칼슘혼합제제(규소수지,유화제,증점제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101108/199104430101108-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101108/199104430101108-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "딸기",
+        "origin": "중국산",
+        "amount": "70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베리류색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "origin": "이스라엘산",
+        "amount": "45bx0.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼슘혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증점제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:37:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 100.0,
+    "carbohydrate_g": 27.78,
+    "protein_g": 0.56,
+    "fat_g": 0.0,
+    "sugar_g": 26.67,
+    "sodium_mg": 58.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 18:37:50"
+  }
+}

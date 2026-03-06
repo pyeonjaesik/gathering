@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "Fresh 뚜또코코딸기",
+    "reportnum": "2008057106288"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008057106288/2008057106288-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008057106288/2008057106288-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008057106288/2008057106288-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,나타데코코(나타데코코,백설탕,구연산),딸기(딸기,백설탕),식물성크림(정제야자유,유화제,백설탕,탈지분유,유청분말,메타인산나트륨),백설탕,혼합제제(변성전분,한천,카라기난,로커스트콩검,구연산삼나트륨,잔탄검),구연산,비타민C,합성착향료(야쿠르트향,딸기향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008057106288/2008057106288-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(250g) 1회 제공량당 함량 *%영양성분 기준치 열량 260kcal, 탄수화물 46g 14%,당류 43g,단백질 1g 2%,지방 8g 16%, 포화지방 1.0g 7%,트랜스지방 없음,콜레스테롤 없음,나트륨 180mg 9% *%영양성분기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008057106288/2008057106288-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타데코코",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "정제야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "야쿠르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:54"
+  },
+  "nutrition": {
+    "kcal": 260.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 43.0,
+    "protein_g": 1.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 1.0,
+    "sodium_mg": 180.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(250g)",
+    "collected_at": "2026-03-04 04:15:54"
+  }
+}

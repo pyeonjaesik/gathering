@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "미니꿀호떡",
+    "reportnum": "20070156181587"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181587/20070156181587-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181587/20070156181587-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181587/20070156181587-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:수입산),꿀호떡크림36.50%[흑설탕,백설탕,변성전분,아카시아꿀(국산)2.99%,옥수수전분(수입산)],백설탕,쇼트닝,미분2.37%(쌀100%:국내산),효모,정제소금,합성팽창제(산도조절제,전분),글리세린에스테르,일반가공식품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181587/20070156181587-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181587/20070156181587-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "꿀호떡크림",
+        "amount": "36.50%",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아카시아꿀",
+            "origin": "국산",
+            "amount": "2.99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미분",
+        "origin": "국내산",
+        "amount": "2.37%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국내산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성팽창제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리세린에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "일반가공식품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 299.0,
+    "carbohydrate_g": 59.25,
+    "protein_g": 4.75,
+    "fat_g": 4.75,
+    "sugar_g": 28.5,
+    "sodium_mg": 310.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.25,
+    "trans_fat_g": 0.05,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 04:01:45"
+  }
+}

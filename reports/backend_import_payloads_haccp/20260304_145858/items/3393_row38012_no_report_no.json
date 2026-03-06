@@ -1,0 +1,239 @@
+{
+  "product": {
+    "name_ko": "치즈쿠키",
+    "reportnum": "19930618060331"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060331/19930618060331-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060331/19930618060331-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060331/19930618060331-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "박력밀가루[미국산/밀],백설탕,마가린{식물성유지[팜유(말레이시아산),대두유(수입산),야자유],가공유지[야자에스테르화유(말레이시아산),팜올레인에스테르화유(말레이시아산)],정제소금,유화제,레시틴}(대두,우유),쇼트닝{식물성유지[팜유(말레이시아산)],가공유지[에스테르화유:팜올레인유(말레이시아산),팜유(말레이시아산)],동물성유지},전란액[국산/계란],기타가공품(프리미엄파마산),정제소금,기타가공품(생크림레진),식품첨가물(치자황색소),베이킹파우더[합성팽창제/탄산수소나트륨,산성피로인산나트륨,전분,제일인산칼슘,젖산,칼슘]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060331/19930618060331-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 40g 200kcal\n<40g당>\n나트륨32mg (2%), 탄수화물28g (9%), 당류9g, 지방9g (18%), 트랜스지방0.18g, 포화지방4.5g (30%), 콜레스테롤12mg (4%), 단백질2.0g (3%)\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060331/19930618060331-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "박력밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "야자에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "에스테르화유",
+                "sub_ingredients": [
+                  {
+                    "name": "팜올레인유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "동물성유지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "프리미엄파마산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림레진",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식품첨가물",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": [
+          {
+            "name": "합성팽창제",
+            "sub_ingredients": [
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제일인산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:51:36"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "sodium_mg": 32.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 9.0,
+    "fat_g": 9.0,
+    "trans_fat_g": 0.18,
+    "saturated_fat_g": 4.5,
+    "cholesterol_mg": 12.0,
+    "protein_g": 2.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 40g",
+    "collected_at": "2026-03-03 19:51:36"
+  }
+}

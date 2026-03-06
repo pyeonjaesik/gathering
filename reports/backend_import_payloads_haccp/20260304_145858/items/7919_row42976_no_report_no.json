@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "꿀 먹은 헛개",
+    "reportnum": "19960458039488"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039488/19960458039488-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039488/19960458039488-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039488/19960458039488-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,벌꿀2%(국산),사과농축액(칠레산),헛개나무열매추출농축액0.2%(고형분52%이상,중국산),합성착향료(헛개향,허니향),구연산,카라기난,카라멜색소,시클로덱스트린,스테비올배당체",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039488/19960458039488-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039488/19960458039488-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "헛개나무열매추출농축액",
+        "origin": "중국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "52%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "헛개향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허니향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시클로덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비올배당체",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:15:12"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 64.0,
+    "carbohydrate_g": 16.11,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 15.56,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-03 21:15:12"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "커피메이트",
+    "reportnum": "1981041500254"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981041500254/1981041500254-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981041500254/1981041500254-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981041500254/1981041500254-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿, 식물성유지, 경화유[야자유 55% 외국산(인도네시아, 필리필, 말레이시아 등), 팜핵유 45%(말레이시아산)], 산도조절제, 카제인, 유화제, 이산화규소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981041500254/1981041500254-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(5g) 약 200회 제공량(1kg)\n<1회 제공량당 함량>\n열량 26kcal, 탄수화물 3g 1%, 당류 0.7g, 단백질 0g 0%, 지방 1.5g 3%, 포화지방 1.4g 9%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 5mg 0%\n*(%)1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981041500254/1981041500254-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "경화유",
+        "origin": "외국산, 인도네시아산, 필리핀산, 말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "야자유",
+            "origin": "외국산, 인도네시아산, 필리핀산, 말레이시아산",
+            "amount": "55%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜핵유",
+            "origin": "말레이시아산",
+            "amount": "45%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:51:35"
+  },
+  "nutrition": {
+    "kcal": 26.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 0.7,
+    "protein_g": 0.0,
+    "fat_g": 1.5,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 5.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(5g)",
+    "collected_at": "2026-03-03 14:51:35"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "트러플 리조또 KIT",
+    "reportnum": "19960080359699"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359699/19960080359699-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359699/19960080359699-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359699/19960080359699-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*리조또용건조쌀:멥쌀99.35%(국내산),식용유지가공품,혼합제제(산도조절제) *트러플리조또파우더:혼합버터분말{버터혼합분말(가공버터:수입산),유크림분말(유크림:국내산)},분말유크림{가공버터(호주산),유크림(국내산),유당,유청단백분말,제이인산칼륨},경성가공치즈(덴마크산,치즈분말,제이인산나트륨),변성전분,베지터블브로스분말(덱스트린,당근,양파,비프엑기스에프,버터),복합조미분말,트러플향오일1.3%(이탈리아산),덱스트린,비프브로스파우다,양송이시즈닝파우더,정제소금,흑후추가루,로스티드갈릭파우더",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359699/19960080359699-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총분량 180g 표시기준분량(100g) 100g당 함량 *%영양성분 기준치 : 열량 450kcal,탄수화물66g 20%, 당류6g, 단백질 8g 15%,지방17g 33%, 포화지방10g 67%, 트랜스지방 0.5g미만, 콜레스테롤50mg 17%, 나트륨 290mg 15%, *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359699/19960080359699-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "리조또용건조쌀",
+        "origin": "국내산",
+        "amount": "99.35%",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "origin": "국내산",
+            "amount": "99.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "트러플리조또파우더",
+        "sub_ingredients": [
+          {
+            "name": "혼합버터분말",
+            "sub_ingredients": [
+              {
+                "name": "버터혼합분말",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유크림분말",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말유크림",
+            "sub_ingredients": [
+              {
+                "name": "가공버터",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유크림",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청단백분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산칼륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "경성가공치즈",
+            "origin": "덴마크산",
+            "sub_ingredients": [
+              {
+                "name": "치즈분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베지터블브로스분말",
+            "sub_ingredients": [
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비프엑기스에프",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "복합조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트러플향오일",
+            "origin": "이탈리아산",
+            "amount": "1.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프브로스파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이시즈닝파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑후추가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로스티드갈릭파우더",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:46:43"
+  },
+  "nutrition": {
+    "kcal": 450.0,
+    "carbohydrate_g": 66.0,
+    "sugar_g": 6.0,
+    "protein_g": 8.0,
+    "fat_g": 17.0,
+    "saturated_fat_g": 10.0,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 50.0,
+    "sodium_mg": 290.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "표시기준분량(100g)",
+    "collected_at": "2026-03-03 20:46:43"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "동원통그릴비엔나",
+    "reportnum": "2005040500333"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500333/2005040500333-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500333/2005040500333-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500333/2005040500333-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기83.87%(외국산),정제수,대두단백(중국산),복합스파이스DWP[알파미분{쌀(외국산)},에이취브이피와이큐(미국산),L-글루탐산나트륨(향미증진제)],정제소금,분말난백,카라기난,백설탕, 혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),락색소,트랜스글루타미나아제,아질산나트륨(발색제),콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500333/2005040500333-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=320g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500333/2005040500333-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "외국산",
+        "amount": "83.87%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스DWP",
+        "sub_ingredients": [
+          {
+            "name": "알파미분",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에이취브이피와이큐",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트랜스글루타미나아제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:53:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 283.0,
+    "carbohydrate_g": 0.83,
+    "protein_g": 10.0,
+    "fat_g": 26.67,
+    "sugar_g": 0.83,
+    "sodium_mg": 833.0,
+    "cholesterol_mg": 66.67,
+    "saturated_fat_g": 10.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "320g",
+    "collected_at": "2026-03-04 03:53:11"
+  }
+}

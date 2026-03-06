@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "구워먹는 치즈",
+    "reportnum": "2007050200249"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200249/2007050200249-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200249/2007050200249-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200249/2007050200249-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유99.395%(국산),유산균배양액,정제염,우유응고효소,비타믹스B",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200249/2007050200249-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 약 1/6개(20g),총 약 6회제공량 (125g)  *()안의 수치는 1일 영양성분 기준치에 대한 비율임 1회제공량당 햠량:  열량 70kcal 탄수화물 1g(0%),당류 0g, 단백질 4.5g (8%),지방 5.6g (11%),포화지방 3.5g (23%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 100mg (5%),칼슘140mg(20%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200249/2007050200249-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "99.395%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유응고효소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타믹스B",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:53"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 4.5,
+    "fat_g": 5.6,
+    "saturated_fat_g": 3.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 100.0,
+    "calcium_mg": 140.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 약 1/6개(20g)",
+    "collected_at": "2026-03-04 04:06:53"
+  }
+}

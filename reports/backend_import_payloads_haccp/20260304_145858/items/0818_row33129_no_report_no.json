@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "월드콘XQ",
+    "reportnum": "1978057500153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978057500153/1978057500153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978057500153/1978057500153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978057500153/1978057500153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,과자[밀가루(미국산,호주산),백설탕,쇼트닝(부분경화유;말레이시아산),레시틴,정제소금],백설탕,준초콜릿[백설탕,식물성유지(수입산),코코아분말(수입산),유당,레시틴],농축우유(국산),가공버터(유크림,야자유,젖산),탈지분유,기타올리고당,견과류가공품,커피땅콩,식물성유지,혼합제제Ⅰ(유화제,셀룰로오스검,구아검,카라기난,로커스트콩검),정제소금,천연착향료(바닐라향),혼합제제Ⅱ(치자황색소,비트레드,덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978057500153/1978057500153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(160ml)/총 5회 제공량(800ml) 1회제공량당 함량 *%영양소기준치 열량 260kcal, 탄수화물 32g 10%, 당류 21g, 단백질 4g 7%,지방 12g 24%, 포화지방 7g 47%,트랜스지방 0g,콜레스테롤 15mg 5%,나트륨 55mg 3% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978057500153/1978057500153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "말레이시아산",
+            "amount": "부분경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "농축우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "견과류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제Ⅱ",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:09:47"
+  },
+  "nutrition": {
+    "kcal": 260.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 21.0,
+    "protein_g": 4.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 55.0,
+    "basis_amount": 160.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1개(160ml)",
+    "collected_at": "2026-03-03 14:09:47"
+  }
+}

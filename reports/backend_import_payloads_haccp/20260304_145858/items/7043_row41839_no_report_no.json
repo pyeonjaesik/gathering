@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name_ko": "맛있는두유GT고칼슘검은콩깨",
+    "reportnum": "1989044900256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900256/1989044900256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900256/1989044900256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900256/1989044900256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두액(대두고형분7%이상)85%(대두:외국산(미국,캐나다,중국 등)),정제수,백설탕,덱스트린,대두유(외국산(미국,아르헨티나,중국 등)),검은깨페이스트(검은깨100%,중국산60%,미얀마산40%)0.8%,D-말티톨,약콩(검은콩)농축액(고형분60%이상,국산)0.3%,글리세린지방산에스테르,칼슘혼합제제(정제수,탄산칼슘,아라비아검,글리세린지방산에스테르)0.165%,정제소금,탄산수소나트륨,구연산삼나트륨,믹스검(카라기난,잔탄검,덱스트린),카라기난,영양강화제,합성착향료(검은콩향,검은깨향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900256/1989044900256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900256/1989044900256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두액",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "85%(대두:외국산(미국, 캐나다, 중국 등))",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 아르헨티나산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은깨페이스트",
+        "origin": "중국산 60%, 미얀마산 40%",
+        "amount": "0.8%",
+        "sub_ingredients": [
+          {
+            "name": "검은깨",
+            "origin": "중국산 60%, 미얀마산 40%",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-말티톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "약콩(검은콩)농축액",
+        "origin": "국산",
+        "amount": "0.3%(고형분60%이상)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제제",
+        "amount": "0.165%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "믹스검",
+        "sub_ingredients": [
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "검은콩향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검은깨향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:33"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 71.0,
+    "carbohydrate_g": 7.89,
+    "protein_g": 2.63,
+    "fat_g": 3.32,
+    "sugar_g": 4.47,
+    "sodium_mg": 84.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.74,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-04 03:26:33"
+  }
+}

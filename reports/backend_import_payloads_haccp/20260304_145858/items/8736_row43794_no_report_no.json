@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "쿠키오",
+    "reportnum": "200504480012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504480012/200504480012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504480012/200504480012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504480012/200504480012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쿠키오/정제수,코코아비스킷27.6%[미국산,소맥분,백설탕,카라멜색소,덱스트로스,쇼프닝,코코아1%],백설탕,가공버터(수입산,유크림,버터,버터오일,야자유,젖산),혼합분유,기타올리고당,카라멜시럽,유청분말,난황액,혼합제제(유화제,CMC,구아검,카라기난),합성착향료(바닐라향),옐로우칼라(치자황색소,덱스트린,구연산,DL-주석산나트륨,비트레드)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504480012/200504480012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=130ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504480012/200504480012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쿠키오",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아비스킷",
+            "origin": "미국산",
+            "amount": "27.6%",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라멜색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트로스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼프닝",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "유크림",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "CMC",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옐로우칼라",
+            "sub_ingredients": [
+              {
+                "name": "치자황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "DL-주석산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비트레드",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:56"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 146.0,
+    "carbohydrate_g": 20.77,
+    "protein_g": 2.31,
+    "fat_g": 6.15,
+    "sugar_g": 10.0,
+    "sodium_mg": 108.0,
+    "cholesterol_mg": 11.54,
+    "saturated_fat_g": 3.85,
+    "trans_fat_g": 0.23,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "130ml",
+    "collected_at": "2026-03-04 03:54:56"
+  }
+}

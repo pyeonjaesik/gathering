@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "유기농 현미조청강정",
+    "reportnum": "2007046401580"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401580/2007046401580-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401580/2007046401580-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401580/2007046401580-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기쌀조청51.5%(쌀,엿기름,α-아밀라아제),유기농현미볶음(국산)24%,유기농현미(국산)22.2%,유기농해바라기유(네덜란드산),유기농설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401580/2007046401580-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 180g 695kcal\n<총 내용량 당 1일 영양성분 기준치에 대한 비율>\n나트륨220mg 11%, 탄수화물156g 48%, 당류53g 53%, 지방5g 9%, 트랜스지방0g, 포화지방0.8g 5%, 콜레스테롤0mg 0%, 단백질6g 11%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401580/2007046401580-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기쌀조청",
+        "amount": "51.5%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "α-아밀라아제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농현미볶음",
+        "origin": "국산",
+        "amount": "24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "22.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농해바라기유",
+        "origin": "네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:03"
+  },
+  "nutrition": {
+    "kcal": 695.0,
+    "sodium_mg": 220.0,
+    "carbohydrate_g": 156.0,
+    "sugar_g": 53.0,
+    "fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 6.0,
+    "basis_amount": 180.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 180g",
+    "collected_at": "2026-03-04 04:06:03"
+  }
+}

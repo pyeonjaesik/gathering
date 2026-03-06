@@ -1,0 +1,76 @@
+{
+  "product": {
+    "name_ko": "햇반 흰쌀죽",
+    "reportnum": "19910144038519"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038519/19910144038519-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038519/19910144038519-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038519/19910144038519-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,멥쌀12.5%(국산),찹쌀1.4%(국산),쌀미강추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038519/19910144038519-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (270g) 1회제공량당 함량: 열량 130kcal, 탄수화물 28g (9%),당류 0g, 단백질 3g (5%),지방 0.5g (1%),포화지방 0g (0%),트랜스지방 0mg,콜레스테롤 0mg (0%),나트륨 10mg (1%) *()안의수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038519/19910144038519-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "12.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀미강추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:28:29"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 270.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (270g)",
+    "collected_at": "2026-03-03 18:28:29"
+  }
+}

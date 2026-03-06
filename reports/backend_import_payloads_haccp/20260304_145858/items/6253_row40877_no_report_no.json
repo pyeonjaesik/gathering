@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "홍삼이 들어가 건강한 흑마늘",
+    "reportnum": "2010044901624"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901624/2010044901624-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901624/2010044901624-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901624/2010044901624-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "홍삼흑마늘혼합액85.5%[1.5brix/정제수,홍삼농축액(홍삼성분70mg/g이상,고형분60%,국산)0.15%,{원료삼배합비율:홍삼근70%,홍미삼30%},숙성발효흑마늘농축액(70Brix,국산)2.5%],액상프락토올리고당,오자추출농축액(복분자,구기자,오미자,사상자,토사자/중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901624/2010044901624-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(50ml) 총30회제공량(1500mL), 1회제공량당함량 *%영양성분기준치, 열량25kcal, 탄수화물6g 2%, 당류5g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0% *%영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901624/2010044901624-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍삼흑마늘혼합액",
+        "amount": "85.5%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼농축액",
+            "origin": "국산",
+            "amount": "0.15%",
+            "sub_ingredients": [
+              {
+                "name": "홍삼성분",
+                "amount": "70mg, g이상",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고형분",
+                "amount": "60%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "원료삼배합비율",
+                "sub_ingredients": [
+                  {
+                    "name": "홍삼근",
+                    "amount": "70%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "홍미삼",
+                    "amount": "30%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "숙성발효흑마늘농축액",
+            "origin": "국산",
+            "amount": "2.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오자추출농축액",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "복분자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구기자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오미자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사상자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토사자",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:25:49"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 5.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1포(50ml)",
+    "collected_at": "2026-03-04 04:25:49"
+  }
+}

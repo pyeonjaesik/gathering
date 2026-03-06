@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "소고기미역국",
+    "reportnum": "20020614179842"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179842/20020614179842-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179842/20020614179842-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179842/20020614179842-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 소고기(호주산)2%, 양지육수농축액[양지추출베이스{우정육:양지살(소고기:호주산)26.95%}40.44%, 사골엑기스{사골농축액(사골:뉴질랜드산)}]1.5%, 마늘(중국산), 건미역(국산)0.6%, 혼합간장, 감칠맛분에스, 마늘엑기스, 정제소금, 조미액젓, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179842/20020614179842-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉(300g), 1회제공량당함량(%영양소기준치):열량30kcal, 탄수화물4g(1%), 당류 0g, 단백질3g(5%), 지방 0g(0%), 포화지방0g(0%),트랜스지방0g, 콜레스테롤5mg미만(2%), 나트륨890mg(45%)/%영양소기준치 : 1일영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179842/20020614179842-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지육수농축액",
+        "amount": "1.5%",
+        "sub_ingredients": [
+          {
+            "name": "양지추출베이스",
+            "sub_ingredients": [
+              {
+                "name": "우정육",
+                "origin": "호주산",
+                "amount": "26.95%",
+                "sub_ingredients": [
+                  {
+                    "name": "양지살",
+                    "origin": "호주산",
+                    "sub_ingredients": [
+                      {
+                        "name": "소고기",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "사골농축액",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": [
+                  {
+                    "name": "사골",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건미역",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액젓",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:24"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 890.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉(300g)",
+    "collected_at": "2026-03-04 03:44:24"
+  }
+}

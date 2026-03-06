@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "NH 콘칩",
+    "reportnum": "2014038329962"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329962/2014038329962-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329962/2014038329962-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329962/2014038329962-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "콘칩펠렛1 / 67.3%[옥수수그릿츠99.41%{외국산(브라질,호주,러시아 등)}, 정제염(국내산)], 팜올레인유(말레이시아산), 구운옥수수맛씨즈닝분말[군옥수수맛시즈닝분말{그레이비스농축분말엔(우육:호주산)}, 슈퍼스위트콘믹스-1{알파콘(옥수수:브라질,호주,미국산)}] / 특정성분 : 옥수수{외국산(브라질,호주,러시아 등)}66%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329962/2014038329962-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=190g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329962/2014038329962-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "콘칩펠렛1",
+        "amount": "67.3%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수그릿츠",
+            "origin": "외국산, 브라질산, 호주산, 러시아산",
+            "amount": "99.41%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운옥수수맛씨즈닝분말",
+        "sub_ingredients": [
+          {
+            "name": "군옥수수맛시즈닝분말",
+            "sub_ingredients": [
+              {
+                "name": "그레이비스농축분말엔",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "우육",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "슈퍼스위트콘믹스-1",
+            "sub_ingredients": [
+              {
+                "name": "알파콘",
+                "origin": "브라질산, 호주산, 미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:48"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 503.0,
+    "carbohydrate_g": 68.0,
+    "protein_g": 6.0,
+    "fat_g": 23.0,
+    "sugar_g": 2.0,
+    "sodium_mg": 558.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "190g",
+    "collected_at": "2026-03-04 04:41:48"
+  }
+}

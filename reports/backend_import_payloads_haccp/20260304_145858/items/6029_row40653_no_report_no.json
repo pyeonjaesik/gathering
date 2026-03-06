@@ -1,0 +1,101 @@
+{
+  "product": {
+    "name_ko": "레드비트&당근",
+    "reportnum": "2009044204078"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204078/2009044204078-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204078/2009044204078-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204078/2009044204078-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사과퓨레(사과:국산), 당근퓨레 15%(베트남산), 레드비트혼합퓨레 15%[레드비트 60%(국산), 당근즙 40%(당근:국산)], 코코넛워터, 배농축과즙, 정제수, 아세로라추출분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204078/2009044204078-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "구분 함량 영양소 기준치 열량 70kcal - 탄수화물 16g 7% 식이섬유 0g 0% 당류 16g - 단백질 2g 4% 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g - 콜레스테롤 0mg 0% 나트륨 40mg 2% 비타민A 138㎍RE 20% 비타민C 65mg 65% 칼슘 19mg 3% 철 0mg 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204078/2009044204078-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과퓨레",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근퓨레",
+        "origin": "베트남산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드비트혼합퓨레",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "레드비트",
+            "origin": "국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근즙",
+            "origin": "국산",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코넛워터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아세로라추출분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:53"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 16.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 16.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "calcium_mg": 19.0,
+    "iron_mg": 0.0,
+    "collected_at": "2026-03-04 04:19:53"
+  }
+}

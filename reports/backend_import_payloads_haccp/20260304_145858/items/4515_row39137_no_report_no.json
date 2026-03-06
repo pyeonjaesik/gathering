@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "두유",
+    "reportnum": "20010515081223"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081223/20010515081223-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081223/20010515081223-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081223/20010515081223-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두유액92.07%[대두고형분7%이상,[대두-외국산(미국산,호주산,캐나다산등)],정백당,정제수,옥배유[옥수수-외국산(러시아,세르비아,헝가리등),탄산칼슘혼합제제(탄산칼슘,대두다당류),글리세린지방산에스테르,정제염,구연산나트륨,합성착향료(땅콩향,현미향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081223/20010515081223-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190mL) 총24회 제공량당(4,560mL) 1회 제공량당 함량 *%영양성분 기준치 : 열량 120kcal, 탄수화물11g 3%, 당류9g, 단백질 6g 11%, 지방 6g 12%, 포화지방1g 7%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 200mg 10%, 영양성분 기준치란?4세이상 어린이부터 성인까지 1일 평균 영양성분 섭취 기준량을 정해 놓은것입니다.*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081223/20010515081223-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "92.07%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 호주산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "origin": "외국산, 러시아산, 세르비아산, 헝가리산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두다당류",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "땅콩향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "현미향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:52"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 9.0,
+    "protein_g": 6.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190mL)",
+    "collected_at": "2026-03-04 03:33:52"
+  }
+}

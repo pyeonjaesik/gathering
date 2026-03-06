@@ -1,0 +1,189 @@
+{
+  "product": {
+    "name_ko": "복분자초콜릿",
+    "reportnum": "201006280668"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201006280668/201006280668-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201006280668/201006280668-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201006280668/201006280668-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "제키스다크65%[백설탕,식물성가공유지(팜핵경화유,말레이시아산),유청분말(우유),코코아분말14.5%(말레이시아산),유화제(소르비탄에스테르)0.5%, 유화제(대두레시틴,글리세린지방산에스테르)0.5%, 바닐린0.02%],제키스필링화이트34.1%[백설탕,식물성유지(팜핵경화유,말레이시아산),탈지분유(수입산),전지분유,유청분말,유화제(대두레시틴),바닐린],복분자분말0.7%(국내산,제주),합성착향료(복분자향),천연착색료(코치닐추출색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201006280668/201006280668-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 3개(24g) 총 2회 제공량(48g)\n<1회 제공량 당 함량 * %영양소기준치>\n열량133kcal, 탄수화물12g 4%, 당류12g, 단백질1g 2%, 지방9g 18%, 포화지방7g 47%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨18mg 1%\n* %영양소기준치:1일영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201006280668/201006280668-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "제키스다크",
+        "amount": "65%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "origin": "말레이시아산",
+            "amount": "14.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "소르비탄에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바닐린",
+            "amount": "0.02%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제키스필링화이트",
+        "amount": "34.1%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈지분유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두레시틴",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복분자분말",
+        "origin": "국내산",
+        "amount": "0.7%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복분자향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연착색료",
+        "sub_ingredients": [
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:56"
+  },
+  "nutrition": {
+    "kcal": 133.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 12.0,
+    "protein_g": 1.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 18.0,
+    "basis_amount": 24.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 3개(24g)",
+    "collected_at": "2026-03-04 04:29:56"
+  }
+}

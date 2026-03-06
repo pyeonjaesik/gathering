@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "순닭가슴살 콜라겐플러스",
+    "reportnum": "2005040500387"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500387/2005040500387-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500387/2005040500387-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500387/2005040500387-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(가슴살/수입산)80.06%,정제수,조개야채엑기스[조개엑기스{조개농축액(홍합살/국산,정제염/국산),조개엑기스#SE-C244(조개추출액#E-C381/국산,정제염/국산),대두,밀},야채츱{생강엑기스(생강추출액#E-G94/국산),야채즙(양파/국산,양배추/국산)}],조개관자엑기스,콜라겐(도미/태국산)1.03%,산도조절제,정제소금,비타민C,산탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500387/2005040500387-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/3캔(45g),총 3회 제공량(135g),1회 제공량당 함량,%영양소기준치,열량(Calories) 30kcal,탄수화물(Carbonhydrate) 0g(0%),당류 0g,단백질(Protein) 8g(13%),지방(Fat) 0g(0%),포화지방 0g(0%),트랜지방 0g,콜레스테롤 15mg(5%),나트륨(Sodium) 50mg(3%),*영양소기준치:1일 영양소 기준치에 대한 비율[*Nutrition reference:Daily reference value ration]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500387/2005040500387-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "수입산",
+        "amount": "80.06%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조개야채엑기스",
+        "sub_ingredients": [
+          {
+            "name": "조개엑기스",
+            "sub_ingredients": [
+              {
+                "name": "조개농축액",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "홍합살",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제염",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "조개엑기스#SE-C244",
+                "sub_ingredients": [
+                  {
+                    "name": "조개추출액#E-C381",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제염",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "야채츱",
+            "sub_ingredients": [
+              {
+                "name": "생강엑기스",
+                "sub_ingredients": [
+                  {
+                    "name": "생강추출액#E-G94",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "야채즙",
+                "sub_ingredients": [
+                  {
+                    "name": "양파",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "양배추",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조개관자엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "origin": "태국산",
+        "amount": "1.03%",
+        "sub_ingredients": [
+          {
+            "name": "도미",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:53:44"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 8.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/3캔(45g)",
+    "collected_at": "2026-03-04 03:53:44"
+  }
+}

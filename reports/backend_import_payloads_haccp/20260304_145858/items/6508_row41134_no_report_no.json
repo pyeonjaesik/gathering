@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "자연깃든소내장탕",
+    "reportnum": "2013018901121"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901121/2013018901121-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901121/2013018901121-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901121/2013018901121-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소곱창(외국산:호주,뉴질랜드,칠레산 등)13.3%,소양(외국산:호주,뉴질랜드,칠레산 등)4.2%,우거지(국내산)5.5%,토란줄기,고구마줄기,복합조미식품{정제소금,L-글루타민산나트륨,백설탕,옥수수전분(옥수수/외국산),간장분말[아미노산간장3호(대두),말토덱스트린분말,식염]},콩나물,고춧가루,국간장(대두,밀),마늘,된장,농축사골액,식용우지,L-글루타민산나트륨(향미증진제),생강,정제소금,들깨가루,후추가루,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901121/2013018901121-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 600g,1회 제공량(300g)당 155 kcal,총 내용량당 함량, 1일 영양성분 기준치에 대한 비율,나트륨 1,560 mg(78%),탄수화물 12 g(4%),당류 0g,지방 8.1g(16%),트랜스지방 0g,포화지방 1.5g(10%),콜레스테롤 135 mg(45%),단백질 9g(16%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901121/2013018901121-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소곱창",
+        "origin": "외국산, 호주산, 뉴질랜드산, 칠레산",
+        "amount": "13.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소양",
+        "origin": "외국산, 호주산, 뉴질랜드산, 칠레산",
+        "amount": "4.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우거지",
+        "origin": "국내산",
+        "amount": "5.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란줄기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마줄기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "아미노산간장3호",
+                "amount": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩나물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국간장",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축사골액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용우지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들깨가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:04"
+  },
+  "nutrition": {
+    "kcal": 155.0,
+    "sodium_mg": 1560.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 0.0,
+    "fat_g": 8.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 135.0,
+    "protein_g": 9.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(300g)",
+    "collected_at": "2026-03-04 04:37:04"
+  }
+}

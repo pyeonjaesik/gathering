@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "피코크 씨푸드포모도로파스타",
+    "reportnum": "20070355030160"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030160/20070355030160-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030160/20070355030160-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030160/20070355030160-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "피코크씨푸드포모도로파스타용소스{토마토다이스(이탈리아),부이토니토마토쿨리(스페인),양파,대두유,마늘,L-글루타민산나트륨(향미증진제)},스파게티18.06%(이탈리아산/밀),정제수,새우8.33%(수입산),모시조개6.94%(중국산),시금치",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030160/20070355030160-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 함량 %영양소 기준치 영양소 기준치 열량 115kcal - 탄수화물 20g 6% 330g 당류 4g - 단백질 5g 8% 55g 지방 2.2g 4% 51g 포화지방 1.9g 13% 15g 트랜스지방 0g 콜레스테롤 0mg 1% 300mg 나트륨 170mg 9% 2,000mg 영양소 기준치란? 4세이상 어린이 부터 성인까지 1일 평균 영양소섭취 기준량을 식약청기준치에 의해 정해 놓은 것입니다. %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030160/20070355030160-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "피코크씨푸드포모도로파스타용소스",
+        "sub_ingredients": [
+          {
+            "name": "토마토다이스",
+            "origin": "이탈리아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "부이토니토마토쿨리",
+            "origin": "스페인산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "18.06%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "수입산",
+        "amount": "8.33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "모시조개",
+        "origin": "중국산",
+        "amount": "6.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:30"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 4.0,
+    "protein_g": 5.0,
+    "fat_g": 2.2,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 170.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당 함량",
+    "collected_at": "2026-03-04 04:02:30"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "밤초콜릿",
+    "reportnum": "201504452425"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504452425/201504452425-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504452425/201504452425-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504452425/201504452425-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "코코아파우더8%(싱가폴산), 정백당, 우유, 식물성지방31.5%, 바날린, 레시틴, 밤분말(국내산),밤향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504452425/201504452425-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504452425/201504452425-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "코코아파우더",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "싱가폴산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성지방",
+        "amount": "31.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바날린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤분말",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 533.0,
+    "carbohydrate_g": 63.0,
+    "protein_g": 5.0,
+    "fat_g": 29.0,
+    "sugar_g": 58.0,
+    "sodium_mg": 37.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 24.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "120g",
+    "collected_at": "2026-03-04 04:45:58"
+  }
+}

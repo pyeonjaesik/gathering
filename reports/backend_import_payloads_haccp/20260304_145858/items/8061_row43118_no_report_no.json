@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "굽네 닭가슴살 후랑크 청양고추",
+    "reportnum": "19980448010301"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010301/19980448010301-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010301/19980448010301-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010301/19980448010301-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기71.09%(국산),대두유(대두:수입산),청양고추(국산),전분(밀),다시마엑기스(5'-리보뉴클레오티드이나트륨/향미증진제),분말결정포도당,치카이트-GR{정제소금,옥수수분말,L-글루타민산나트륨(향미증진제),소맥분,백후추분말},대두단백,백설탕,유청분말,혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),카라기난,천연향신료(파슬리),L-아스코르빈산나트륨,콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010301/19980448010301-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010301/19980448010301-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "71.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "amount": "밀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": [
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치카이트-GR",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백후추분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향신료",
+        "sub_ingredients": [
+          {
+            "name": "파슬리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:43:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 185.0,
+    "carbohydrate_g": 3.33,
+    "protein_g": 16.67,
+    "fat_g": 11.67,
+    "sugar_g": 1.67,
+    "sodium_mg": 458.0,
+    "cholesterol_mg": 45.0,
+    "saturated_fat_g": 1.83,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "120g",
+    "collected_at": "2026-03-03 21:43:01"
+  }
+}

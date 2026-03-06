@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "쑥양갱",
+    "reportnum": "20030614307435"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307435/20030614307435-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307435/20030614307435-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307435/20030614307435-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "설록앙금{강낭콩(외국산),정백당,말토덱스트린,정제염,차아황산나트륨(표백제)}D-소르비톨액,정백당,쑥엑기스분말11%[쑥추출액95,24%(가용성고형분함량1%,국산),시클로덱스트린],물엿,함수결정포도당,사과농축액{사과과즙으로20%,국산},실한천(국내산),합성착향료(쑥향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307435/20030614307435-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉(20g) 총20회제공량(400g), 1회제공량당함량:열량60kcal, 탄수화물14g(4%), 당류10g, 식이섬유1g(4%), 단백질1g미만(1%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨10mg(0.4%) *()안의수치는1일영양소기준치에대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307435/20030614307435-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "설록앙금",
+        "sub_ingredients": [
+          {
+            "name": "강낭콩",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "차아황산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "표백제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쑥엑기스분말",
+        "amount": "11%",
+        "sub_ingredients": [
+          {
+            "name": "쑥추출액",
+            "origin": "국산",
+            "amount": "95.24%",
+            "sub_ingredients": [
+              {
+                "name": "가용성고형분함량",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "실한천",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "쑥향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:32"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 10.0,
+    "dietary_fiber_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉(20g)",
+    "collected_at": "2026-03-04 03:49:32"
+  }
+}

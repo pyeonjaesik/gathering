@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "농심가락냉동짜장면(업소용)",
+    "reportnum": "19760342001165"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760342001165/19760342001165-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760342001165/19760342001165-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760342001165/19760342001165-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(호주산),변성전분,글루텐(프랑스산),정제염(국내산),면류첨가알칼리제(산도조절제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760342001165/19760342001165-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=1250g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760342001165/19760342001165-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루텐",
+        "origin": "프랑스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면류첨가알칼리제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:55:22"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 140.0,
+    "carbohydrate_g": 28.4,
+    "protein_g": 4.0,
+    "fat_g": 1.2,
+    "sugar_g": 1.2,
+    "sodium_mg": 128.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "1250g",
+    "collected_at": "2026-03-03 13:55:22"
+  }
+}

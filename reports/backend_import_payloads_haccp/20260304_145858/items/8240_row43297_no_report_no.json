@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "대림선 교자만두",
+    "reportnum": "20000498027262"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027262/20000498027262-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027262/20000498027262-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027262/20000498027262-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루37.66%(수입산),돼지고기12.24%(국산),부추11.98%,대두단백,당면,대파,양배추,두부,양파,간장,정제염,L-글루타민산나트륨(향미증진제),정백당,씨즈닝오일씨,진다시NM,마늘,감미유-S,후추분말,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027262/20000498027262-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=1350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027262/20000498027262-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "amount": "37.66%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "12.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "amount": "11.98%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "씨즈닝오일씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진다시NM",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:43:59"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 205.0,
+    "carbohydrate_g": 28.0,
+    "protein_g": 8.0,
+    "fat_g": 7.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 300.0,
+    "cholesterol_mg": 3.2,
+    "saturated_fat_g": 2.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "1350g",
+    "collected_at": "2026-03-03 22:43:59"
+  }
+}

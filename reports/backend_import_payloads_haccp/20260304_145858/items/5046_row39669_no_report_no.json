@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "초코크런치롤",
+    "reportnum": "200404490103048"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103048/200404490103048-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103048/200404490103048-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103048/200404490103048-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "계란(국산), 준초콜릿26.02%[스페인/설탕, 경화식물성유지, 저지방코코아분말, 유당(우유), 식물성유지(해바라기씨유, 팜유)], 백설탕, 초코크런치 8.99% {초코쿠키크런치[소맥분(밀:호주산, 미국산), 쇼트닝(부분경화유: 말레이시아)]}, 소맥분(밀), 콩기름(콩기름, 규소수지), 물엿, 우유, 코코아분말, 흑미가루, 혼합제제식품첨가물[액상과당, 유화제, 주정, 합성착향료(바닐라향)], 일반증류주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103048/200404490103048-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 1개(140 g) / 총 1회 제공량(140 g), 1회 제공량당 함량 : 열량 711 kcal, 탄수화물 59g(18%), 당류 48g, 단백질 9g(16%), 지방 49g(96%), 포화지방 26g(173%), 트랜스지방 0g, 콜레스테롤 113mg(38%), 나트륨 93mg(5%) *()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103048/200404490103048-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "origin": "스페인산",
+        "amount": "26.02%",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "경화식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저지방코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "해바라기씨유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초코크런치",
+        "amount": "8.99%",
+        "sub_ingredients": [
+          {
+            "name": "초코쿠키크런치",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "origin": "호주산, 미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼트닝",
+                "origin": "말레이시아산",
+                "amount": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩기름",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제식품첨가물",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "일반증류주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:35"
+  },
+  "nutrition": {
+    "kcal": 711.0,
+    "carbohydrate_g": 59.0,
+    "sugar_g": 48.0,
+    "protein_g": 9.0,
+    "fat_g": 49.0,
+    "saturated_fat_g": 26.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 113.0,
+    "sodium_mg": 93.0,
+    "basis_amount": 140.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(140 g) / 총 1회 제공량(140 g)",
+    "collected_at": "2026-03-04 03:51:35"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "product": {
+    "name_ko": "여주쌀찹쌀떡바",
+    "reportnum": "19960379001317"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001317/19960379001317-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001317/19960379001317-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001317/19960379001317-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우유(국산),유크림(외국산:이탈리아,미국,호주),냉동구슬찹쌀떡[찹쌀(국산),설탕,정제수,옥수수전분(러시아산),물엿,혼합제제1(기타과장,클리세린지방산에스테르,정제수,프로필렌글리콜,소르비탄지방산에스테르,폴리소르베이트60,주정,자당지방산에스테르)],설탕,여주쌀농협쌀가루(쌀100%,국산),탈지분유(외국산:미국,벨기에,네덜란드),물엿,합성향료(인절미향),혼합제제2(구아검,글리세린지방산에스테르,카라기난,카복시메틸셀룰로스나트륨,알긴산나트륨,메타인산나트륨),혼합제제3(글리세린지방산에스테르,알긴산나트륨,구연산삼나트륨,황산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001317/19960379001317-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=75ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001317/19960379001317-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "외국산, 이탈리아산, 미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동구슬찹쌀떡",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "러시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제1",
+            "sub_ingredients": [
+              {
+                "name": "기타과장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "클리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소르비탄지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리소르베이트60",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "자당지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "여주쌀농협쌀가루",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산, 미국산, 벨기에산, 네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "인절미향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카복시메틸셀룰로스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:07:25"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 200.0,
+    "carbohydrate_g": 26.67,
+    "protein_g": 2.67,
+    "fat_g": 9.33,
+    "sugar_g": 18.67,
+    "sodium_mg": 53.0,
+    "cholesterol_mg": 24.0,
+    "saturated_fat_g": 5.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "75ml",
+    "collected_at": "2026-03-03 21:07:25"
+  }
+}

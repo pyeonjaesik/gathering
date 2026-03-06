@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "전복.더죽",
+    "reportnum": "200204610734172"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734172/200204610734172-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734172/200204610734172-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734172/200204610734172-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 찹쌀(국산), 양파(국산), 쌀(국산), 전복 3%(국산), 오징어, 당근(국산), 새우살, 조미액베이스#217, 조미씨즈닝#778, 참기름, 마늘(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734172/200204610734172-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734172/200204610734172-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전복",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우살",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액베이스#217",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미씨즈닝#778",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:40:08"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 61.0,
+    "carbohydrate_g": 6.79,
+    "protein_g": 5.36,
+    "fat_g": 1.25,
+    "sugar_g": 0.0,
+    "sodium_mg": 246.0,
+    "cholesterol_mg": 12.5,
+    "saturated_fat_g": 0.29,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "280g",
+    "collected_at": "2026-03-04 03:40:08"
+  }
+}

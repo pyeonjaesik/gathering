@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "자연은 365일 오렌지 100",
+    "reportnum": "19960458039233"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039233/19960458039233-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039233/19960458039233-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039233/19960458039233-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오렌지농축액(오렌지과즙으로100%,그리스산),정제수,백설탕,천연오렌지향,구연산,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039233/19960458039233-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200ml) 총 약 8회 제공량(1,500ml) 1회 제공량당 함량 *%영양소기준치 열량 115kcal, 탄수화물 27g 8%, 당류 22g, 단백질 1g미만 1%, 지방 0.6g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 45mg 2% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039233/19960458039233-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "그리스산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연오렌지향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:10:31"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 22.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200ml)",
+    "collected_at": "2026-03-03 21:10:31"
+  }
+}

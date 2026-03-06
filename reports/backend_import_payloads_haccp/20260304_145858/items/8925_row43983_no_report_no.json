@@ -1,0 +1,242 @@
+{
+  "product": {
+    "name_ko": "둥근달2입",
+    "reportnum": "20070156181785"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181785/20070156181785-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181785/20070156181785-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181785/20070156181785-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루1(밀:미국,싱가포르산),백설탕,전란액(국산),딸기크림10.96%[마가린{가공유지(팜에스테르화유:말레이시아산)},기타설탕,딸기농축액(딸기:국산), 합성착향료(딸기향),혼합제제(락색소,덱스트린),정제소금],액상과당,밀가루2,옥수수전분,채종유,혼합제제1(글리세린,폴리글리세린지방산에스테르,유화제),혼합제제2(산도조절제,전분),마가린,혼합제제3(산도조절제,시클로덱스트린,유화제),합성착향료(럼향),탄산수소나트륨,비타민B2,혼합제제4[베타카로틴(합성착색료),글리세린에스테르,비타민E,구연산],정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181785/20070156181785-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181785/20070156181785-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루1",
+        "origin": "미국산, 싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기크림",
+        "amount": "10.96%",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜에스테르화유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "락색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "럼향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제4",
+        "sub_ingredients": [
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": [
+              {
+                "name": "합성착색료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:08"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 400.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 4.29,
+    "fat_g": 17.14,
+    "sugar_g": 38.57,
+    "sodium_mg": 329.0,
+    "cholesterol_mg": 100.0,
+    "saturated_fat_g": 8.57,
+    "trans_fat_g": 0.71,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "140g",
+    "collected_at": "2026-03-04 04:02:08"
+  }
+}

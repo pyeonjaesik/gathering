@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "1/2 하프딸기쨈",
+    "reportnum": "197202880023137"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023137/197202880023137-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023137/197202880023137-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023137/197202880023137-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "딸기슬라이스45.3%[딸기(국산),백설탕], 딸기퓨레6.6%[딸기(국산),백설탕], 딸기농축액1.44%(딸기과즙으로13.78%,7Brix이상, 미국산), 말티톨시럽33.3%, 에리스리톨, 효소처리스테비아, 아미드펙틴, 산도조절제, 구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023137/197202880023137-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2작은술(20g) 총 14회 제공량(285g) 1회제공량당 함량 : 열량 25kcal 탄수화물 10g(3%) ·당류 2g ·에리스리톨2g ·당알콜 5g, 단백질 0g(0%), 지방 0g(0%) ·포화지방 0g(0%) ·트랜스지방0g, 콜레스테롤 0mg(0%), 나트륨 0mg(0%) *()안의 수치는 1일 영양소기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023137/197202880023137-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "딸기슬라이스",
+        "origin": "국산",
+        "amount": "45.3%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기퓨레",
+        "origin": "국산",
+        "amount": "6.6%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기농축액",
+        "origin": "미국산",
+        "amount": "1.44%",
+        "sub_ingredients": [
+          {
+            "name": "딸기과즙",
+            "amount": "13.78%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "7Brix이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "33.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리스리톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:40:27"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 2.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2작은술(20g)",
+    "collected_at": "2026-03-03 13:40:27"
+  }
+}

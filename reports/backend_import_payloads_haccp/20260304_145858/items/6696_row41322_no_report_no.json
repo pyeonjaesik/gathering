@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "쌀눈담은 건강한 쌀과자 곡물그대로 연근",
+    "reportnum": "20140466024527"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024527/20140466024527-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024527/20140466024527-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024527/20140466024527-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무농약현미(국내산)93.02%, 쌀눈가루(국내산)3.72%, 연근분말(국내산)1.86%, 찹쌀가루(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024527/20140466024527-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<총 내용량당>\n나트륨0㎎ 0%, 탄수화물24g 8%, 당류1.0g 1%, 지방0.8g 2%, 트랜스지방0g, 포화지방0g 2%, 콜레스테롤0㎎ 0%, 단백질2g 5%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024527/20140466024527-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약현미",
+        "origin": "국내산",
+        "amount": "93.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀눈가루",
+        "origin": "국내산",
+        "amount": "3.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연근분말",
+        "origin": "국내산",
+        "amount": "1.86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:35"
+  },
+  "nutrition": {
+    "kcal": 2000.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 1.0,
+    "fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_text": "총 내용량당",
+    "collected_at": "2026-03-04 04:42:35"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "홍삼자양갱",
+    "reportnum": "19920484128645"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128645/19920484128645-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128645/19920484128645-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128645/19920484128645-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "팥앙금{팥47%(중국산),백설탕,폴리글리시톨시럽},프락토올리고당,백설탕,제인농축액4.7%{고형분60%/오가피(국산),지황(국산),복령,벌꿀},한천,홍삼정E0.2%{홍삼농축액1005(홍삼성분70mg/g,고형분60%/국산)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128645/19920484128645-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(45g) 총 15회 제공량(675g) 1회 제공량당 함량 %영양소 기준치 열량 130kcal, 탄수화물 32g 10%, 당류 15g, 단백질 1g 2%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 0mg 0% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128645/19920484128645-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "팥앙금",
+        "origin": "중국산",
+        "amount": "47%",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "origin": "중국산",
+            "amount": "47%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제인농축액",
+        "amount": "4.7%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오가피",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지황",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복령",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한천",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼정",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "홍삼농축액",
+            "origin": "국산",
+            "amount": "1005",
+            "sub_ingredients": [
+              {
+                "name": "홍삼성분",
+                "amount": "70mg, g",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고형분",
+                "amount": "60%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:16:58"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 15.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(45g)",
+    "collected_at": "2026-03-03 19:16:58"
+  }
+}

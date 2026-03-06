@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "매운오징어덮밥세트",
+    "reportnum": "19880442004527"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004527/19880442004527-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004527/19880442004527-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004527/19880442004527-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "매운오징어덮밥(57.97%)-정제수,오징어17.60%(국산),현미(국산),백미,양배추,양파,콩나물 채소스틱-양배추(국산),방울토마토(국산),다다기오이,당근 가지미소사브지-가지(국산),양파(국산),파프리카(빨강),파프리카(노랑),청피망,정제수,올리고당,된장",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004527/19880442004527-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량287kcal,탄수화물48g(15%), 당류11g, 단백질17g(31%), 지방3.0g(6%), 포화지방0.7g(5%), 트랜스지방0g, 콜레스테롤100mg(33%), 나트륨460mg(23%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004527/19880442004527-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "매운오징어덮밥",
+        "amount": "57.97%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어",
+            "origin": "국산",
+            "amount": "17.60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩나물 채소스틱",
+            "sub_ingredients": [
+              {
+                "name": "양배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "방울토마토",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다다기오이",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가지미소사브지",
+            "sub_ingredients": [
+              {
+                "name": "가지",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카",
+                "sub_ingredients": [
+                  {
+                    "name": "파프리카",
+                    "sub_ingredients": [
+                      {
+                        "name": "빨강",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "노랑",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "청피망",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올리고당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "된장",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:22:43"
+  },
+  "nutrition": {
+    "kcal": 287.0,
+    "carbohydrate_g": 48.0,
+    "sugar_g": 11.0,
+    "protein_g": 17.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 100.0,
+    "sodium_mg": 460.0,
+    "collected_at": "2026-03-04 03:22:43"
+  }
+}

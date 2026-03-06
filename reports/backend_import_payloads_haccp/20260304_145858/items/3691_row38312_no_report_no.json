@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "쿡스쿡스 군만두",
+    "reportnum": "19950492079228"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079228/19950492079228-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079228/19950492079228-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079228/19950492079228-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루21%(미국,호주산),돼지고기18.5%(국산),부추(중국산),파,당면(고구마전분),대두단백,난백액,양조간장,마늘,설탕,정제소금,혼합제제(변성전분,말토덱스트린),복합조미식품,생강,감미유-S,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079228/19950492079228-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 2,000g 100g당 205kcal 100g당 1일 영양성분 기준치에 대한 비율 나트륨 340mg 17%,탄수화물 24g 7%, 당류 3g 3%,지방 10g 18%,트랜스지방 0g,포화지방 3.6g 24%,콜레스테롤 5mg 2%,단백질 6g 10% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079228/19950492079228-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "amount": "21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "18.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": [
+          {
+            "name": "고구마전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:39:37"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "sodium_mg": 340.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 3.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.6,
+    "cholesterol_mg": 5.0,
+    "protein_g": 6.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 20:39:37"
+  }
+}

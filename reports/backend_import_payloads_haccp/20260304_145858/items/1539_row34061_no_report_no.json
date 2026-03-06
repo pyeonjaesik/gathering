@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "CHOICE-L 대추차",
+    "reportnum": "19830464033328"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830464033328/19830464033328-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830464033328/19830464033328-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830464033328/19830464033328-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정백당,덱스트린,대추과육3.6%(국산),아몬드(미국산),대추농축분말2.5%(대추:국산,고형분40%),해바라기씨,합성착향료(대추향),카라멜색소,이산화규소,정제염,구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830464033328/19830464033328-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 225g(15gx15포) 1포(15g)당 55kcal 1포당 1일 영양성분 기준치에대한 비율 나트륨 0mg 0%, 탄수화물 13g 4%, 당류 9g 9%, 지방 0.5g 1%, 트랜스지방 0g, 포화지방 0g 0%,  콜레스테롤 0mg 0%, 단백질 0g 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830464033328/19830464033328-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추과육",
+        "origin": "국산",
+        "amount": "3.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추농축분말",
+        "origin": "국산",
+        "amount": "2.5%",
+        "sub_ingredients": [
+          {
+            "name": "대추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "대추향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:32:12"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 9.0,
+    "fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 15.0,
+    "basis_unit": "g",
+    "basis_text": "1포(15g)당",
+    "collected_at": "2026-03-03 15:32:12"
+  }
+}

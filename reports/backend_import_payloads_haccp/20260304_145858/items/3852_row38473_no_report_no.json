@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "비타500아이스",
+    "reportnum": "19960308010457"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010457/19960308010457-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010457/19960308010457-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010457/19960308010457-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,농축사과과즙(당도72Brixº이상,뉴질랜드산),비타민C 0.264(500mg),구연산,케이디SW,케이디비타2800,구연산삼나트륨,타우린,DL-사과산,오렌지추출물,합성착향료(드링크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010457/19960308010457-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml) /( )안의 수치는 1일 영양소 기준치에 대한 비율임 열량 130kcal, 탄수화물 33g (10%),당류 32g,단백질 0g (0%),지방 0g (0%), 트랜스/포화지방 0g (0%),비타민C 500mg(500%),콜레스테롤 0mg(0%),나트륨 65mg (3%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010457/19960308010457-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축사과과즙",
+        "origin": "뉴질랜드산",
+        "amount": "당도72Brixº이상",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.264(500mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이디SW",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이디비타2800",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "드링크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:03:28"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 32.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 65.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 21:03:28"
+  }
+}

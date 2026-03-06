@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "스타디움 에너지",
+    "reportnum": "19800415004282"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004282/19800415004282-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004282/19800415004282-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004282/19800415004282-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,구연산,이산화탄소,타우린,아라비아검,과라나추출분말(미국산),합성향료(애플향),구연산나트륨,흑당근추출물(영국산),아미노엑티브BACC(L-빌린,L-로이신, L-이소로이신),니코탄산아이드,알로에베라겔200:1분말(멕시코산),비타민B6염산염,비타민B1염산염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004282/19800415004282-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 250ml 115kcal\n나트륨25mg 1%, 탄수화물28g 9%, 당류28g 28%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질1g 2%, 비타민B1 12mg 100%,비타민B5 1.5mg 100%, 나이아신15mgNE 100%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004282/19800415004282-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과라나추출분말",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "애플향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑당근추출물",
+        "origin": "영국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미노엑티브BACC",
+        "sub_ingredients": [
+          {
+            "name": "L-빌린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-로이신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-이소로이신",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "니코탄산아이드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알로에베라겔200:1분말",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B6염산염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B1염산염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:35:44"
+  },
+  "nutrition": {
+    "total_content": "250",
+    "food_weight_g": null,
+    "food_weight_ml": 250.0,
+    "kcal": 115.0,
+    "sodium_mg": 25.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 28.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "niacin_mg": 15.0,
+    "basis_amount": 250.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 250ml",
+    "collected_at": "2026-03-03 14:35:44"
+  }
+}

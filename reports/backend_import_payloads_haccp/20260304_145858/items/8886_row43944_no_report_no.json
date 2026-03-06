@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "복음자리 논산딸기로 만든 통 딸기잼",
+    "reportnum": "20060464021246"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021246/20060464021246-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021246/20060464021246-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021246/20060464021246-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "가당딸기71.25%[딸기80%(논산),백설탕],백설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021246/20060464021246-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=1030g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021246/20060464021246-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가당딸기",
+        "amount": "71.25%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "amount": "80%",
+            "sub_ingredients": [
+              {
+                "name": "논산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 270.0,
+    "carbohydrate_g": 67.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 36.0,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "1030g",
+    "collected_at": "2026-03-04 04:00:11"
+  }
+}

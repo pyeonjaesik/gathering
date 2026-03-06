@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "그린포크소시지",
+    "reportnum": "1995026200219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995026200219/1995026200219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995026200219/1995026200219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995026200219/1995026200219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기45.5%(미국산),닭고기35%(국산),옥수수전분,대두단백,포크시즈닝[(함수결정포도당,정제소금,백설탕,L-글루타민산나트륨(향미증진제),비프분말디),미트코엘(산도조절제,락색소),에리쏘르빈산나트륨(산화방지제),아질산나트륨(발색제,합성보존료)],양파(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995026200219/1995026200219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(50g),총 10회 분량(500g),[()안의 수치는 1일 영양소기준치에 대한 비율임],열량 120kcal,탄수화물 9g(3%),당류 1g미만,단백질 6g(9%),지방 7g(14%),포화지방 4.0g(27%),트랜스지방 0g,콜레스테롤 15mg(6%),나트륨 220mg(11%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995026200219/1995026200219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "미국산",
+        "amount": "45.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포크시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프분말디",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미트코엘",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "락색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에리쏘르빈산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:11:28"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 6.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 220.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(50g)",
+    "collected_at": "2026-03-03 20:11:28"
+  }
+}

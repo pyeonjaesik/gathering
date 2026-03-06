@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "무항생제돼지고기에두부를 넣어씹을때더부드러운맛있는너비아니",
+    "reportnum": "2011040502117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502117/2011040502117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502117/2011040502117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502117/2011040502117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무항생제돼지고기(국산)73.49%,두부[대두(국산)100%,천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)]6.3%,양파(국산),갈비조미액,조직대두단백,유기설탕2.1%,대파,소맥전분,냉동마늘,냉동생강,정제소금,발효농축액,밀분해추출물,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502117/2011040502117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 당 함량(30g) 열량 65kcal 등 상세정보참조",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502117/2011040502117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무항생제돼지고기",
+        "origin": "국산",
+        "amount": "73.49%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "amount": "6.3%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염천연응고제",
+            "amount": "100",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "현미유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올리브유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈비조미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조직대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기설탕",
+        "amount": "2.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀분해추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:40"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 당 함량(30g)",
+    "collected_at": "2026-03-04 04:30:40"
+  }
+}

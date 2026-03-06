@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "청정원 파인애플 홍초",
+    "reportnum": "19930336060252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930336060252/19930336060252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930336060252/19930336060252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930336060252/19930336060252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "파인애플식초5{3색정통발효식초(사과농축액:중국산,레몬농축액:이탈리아산,당근농축액),파인애플농축액(파인애플100%,외국산),파인애플쥬스농축액(파인애플100%,베트남산),발효식초석류복합물,구연산,마테분말},정제수,올리고당",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930336060252/19930336060252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/45병 (20)ml 총45회 제공량 (900ml) 1회 제공량당 함량 *%영양성분 기준치 : 열량 24kcal,탄수화물6g 2%, 당류4g, 단백질 0g 0%,지방0g 0%, 포화지방0g 0%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 0mg 0%,  *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930336060252/19930336060252-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파인애플식초5",
+        "sub_ingredients": [
+          {
+            "name": "3색정통발효식초",
+            "sub_ingredients": [
+              {
+                "name": "사과농축액",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레몬농축액",
+                "origin": "이탈리아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근농축액",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파인애플농축액",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파인애플쥬스농축액",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초석류복합물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마테분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:31:26"
+  },
+  "nutrition": {
+    "kcal": 24.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1/45병 (20)ml",
+    "collected_at": "2026-03-03 19:31:26"
+  }
+}

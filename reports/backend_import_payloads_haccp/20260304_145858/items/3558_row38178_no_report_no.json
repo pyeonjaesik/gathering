@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "바게뜨롤",
+    "reportnum": "199503380155763"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155763/199503380155763-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155763/199503380155763-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155763/199503380155763-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀/외국산),백설탕,호모,쇼트닝/인도네시아산,정제소금,활성글루텐,혼합제제[소맥분,산도조절제,유화제,비타민C,효소제],혼합제제[소맥분,포도당,유화제,산도조절제,비타민C,효소제,유청단백질(우유),채종유],유화제,곡류가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155763/199503380155763-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(200g) 총3회 제공량(600g) 1회 제공량당 함량 *%영양성분기준치 : 열량 500kcal,탄수화물95g 29%, 당류6g, 단백질 14g 23%,지방6g 12%, 포화지방2.6g 17%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 800mg 40%, *%영양소 기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155763/199503380155763-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "활성글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백질",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:14:57"
+  },
+  "nutrition": {
+    "kcal": 500.0,
+    "carbohydrate_g": 95.0,
+    "sugar_g": 6.0,
+    "protein_g": 14.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 800.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(200g)",
+    "collected_at": "2026-03-03 20:14:57"
+  }
+}

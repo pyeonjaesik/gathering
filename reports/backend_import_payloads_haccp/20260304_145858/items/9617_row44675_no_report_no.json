@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "해달음 광천김",
+    "reportnum": "201403582742"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403582742/201403582742-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403582742/201403582742-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403582742/201403582742-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "재래김(국산)60%, 옥배유(수입산)24%, 참기름(수입산)15%, 맛소금[L-글루타민산나트륨(향미증진제)]1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403582742/201403582742-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=20g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403582742/201403582742-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "amount": "24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "수입산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 25.0,
+    "protein_g": 25.0,
+    "fat_g": 37.5,
+    "sugar_g": 0.0,
+    "sodium_mg": 1500.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "20g",
+    "collected_at": "2026-03-04 04:40:57"
+  }
+}

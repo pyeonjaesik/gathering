@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "체다치즈",
+    "reportnum": "2007050200246"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200246/2007050200246-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200246/2007050200246-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200246/2007050200246-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "체다치즈65%(수입산:원유99.255%,유산균,식염,우유응고효소),정제수,카제인나트륨,가공버터(수입산),산도조절제,야자경화유(인도네시아산,필리핀산),치즈파우더,유청분말,이엠씨,그린미S,혼합제제(가공유지,B-아포-8'-카로티날,dl-α-토코페롤)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200246/2007050200246-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1매(18g) 총30회 제공량(540g) 1회제공량당 함량 *%영양소기준치 열량 55kcal, 탄수화물 1g 0%, 당류 0g, 단백질 3g 5%,지방 4.7g 9%, 포화지방 3.1g 21%,트랜스지방 0g,  콜레스테롤 10mg 3%,나트륨 140mg 7%,칼슘 75mg 11% *%영양소기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200246/2007050200246-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "체다치즈",
+        "origin": "수입산",
+        "amount": "65%",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "amount": "99.255%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유응고효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "origin": "인도네시아산, 필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이엠씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그린미S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "B-아포-8'-카로티날",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:03"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 4.7,
+    "saturated_fat_g": 3.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 140.0,
+    "calcium_mg": 75.0,
+    "basis_amount": 18.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1매(18g)",
+    "collected_at": "2026-03-04 04:07:03"
+  }
+}

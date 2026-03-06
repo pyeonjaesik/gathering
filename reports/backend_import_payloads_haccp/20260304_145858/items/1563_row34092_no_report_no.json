@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "새알",
+    "reportnum": "198304870511"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198304870511/198304870511-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198304870511/198304870511-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198304870511/198304870511-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "백설탕,식물성유지(싱가폴산),코코아프리퍼레이션(싱가폴산/전지분유,코코아분말),브라운분말2(유청분말,유당),코코아분말,유당(우유),분리대두단백(대두),찰옥수수전분,혼합제제블랙칼라엘(치자적새색소,치자청색소,카카오색소,곡물주정),물엿,아라비아검,유화제,피막제,합성착향료(바닐린), 특정성분함량 : 카카오폴리페놀275mg(100g당)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198304870511/198304870511-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198304870511/198304870511-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "싱가폴산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "sub_ingredients": [
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "싱가폴산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브라운분말2",
+        "sub_ingredients": [
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찰옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제블랙칼라엘",
+        "sub_ingredients": [
+          {
+            "name": "치자적새색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카카오색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡물주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피막제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:33:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 504.0,
+    "carbohydrate_g": 66.0,
+    "protein_g": 6.0,
+    "fat_g": 24.0,
+    "sugar_g": 62.0,
+    "sodium_mg": 90.0,
+    "cholesterol_mg": 14.0,
+    "saturated_fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "50g",
+    "collected_at": "2026-03-03 15:33:49"
+  }
+}

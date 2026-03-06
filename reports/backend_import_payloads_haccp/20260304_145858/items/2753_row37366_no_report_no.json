@@ -1,0 +1,280 @@
+{
+  "product": {
+    "name_ko": "해물맛우동",
+    "reportnum": "19890440015121"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890440015121/19890440015121-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890440015121/19890440015121-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890440015121/19890440015121-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우동면:밀가루(밀/미국산,호주산),정제소금(국산),젖산 -해물맛우동스프:정제염(국산),포도당,L-글루타민산나트륨(향미증진제),간장분말[간장(탈지대두/인도산),식염(국산),말토덱스트린분말],별미튀김3호[밀가루(밀/미국산,호주산),팜유(말레이시아산),기타전분,양파,튀김씨즈닝파우다,난백파우다(계란),락토원(우유)],고추분(국산70.00%,중국산30.00%),풍미베이스2호(대두),건미역조미오징어분말3.2%(오징어/국산),가쓰오부시분말3.2%(가쓰오부시/인도네시아산),백설탕,건조맛살어묵2,건파,마늘분말,혼합제제(산도조절제),복합조미식품,양파분말,멸치분말0.7%(멸치/국산),새우분말0.7%(새우/국산),향신료조제품,카라멜색소분말1호(물엿,카라멜색소),향미증진제,코치닐추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890440015121/19890440015121-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량: 310kcal, 탄수화물 66g(20%), 당류 1g, 단백질 9g(15%), 지방 0.9g(2%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 2,220mg(111%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890440015121/19890440015121-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우동면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해물맛우동스프",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "간장",
+                "origin": "인도산",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "식염",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "별미튀김3호",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "기타전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "튀김씨즈닝파우다",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난백파우다",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "락토원",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "고추분",
+            "origin": "국산 70.00%, 중국산 30.00%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "풍미베이스2호",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건미역조미오징어분말",
+            "origin": "국산",
+            "amount": "3.2%",
+            "sub_ingredients": [
+              {
+                "name": "오징어",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가쓰오부시분말",
+            "origin": "인도네시아산",
+            "amount": "3.2%",
+            "sub_ingredients": [
+              {
+                "name": "가쓰오부시",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조맛살어묵2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치분말",
+            "origin": "국산",
+            "amount": "0.7%",
+            "sub_ingredients": [
+              {
+                "name": "멸치",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "새우분말",
+            "origin": "국산",
+            "amount": "0.7%",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "향신료조제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소분말1호",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라멜색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:43:30"
+  },
+  "nutrition": {
+    "kcal": 310.0,
+    "carbohydrate_g": 66.0,
+    "sugar_g": 1.0,
+    "protein_g": 9.0,
+    "fat_g": 0.9,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 2220.0,
+    "collected_at": "2026-03-03 17:43:30"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "product": {
+    "name_ko": "동원 야채고로케",
+    "reportnum": "20000149041248"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000149041248/20000149041248-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000149041248/20000149041248-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000149041248/20000149041248-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "생빵가루[밀가루(밀/미국산,호주산),쇼트닝(팜유/말레이시아),포도당,이스트,정제소금],감자(국산),돼지고기(국산),양파(국산),밀가루,대파,(국산),양배추(국산),동결난백,대두난백,고구마당면,빵가루,백설탕,식물성유지,L-글루탐산나트륨(향미증진제),정제소금,포도당,마늘(국산),분말난백,후추분말,너트매그분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000149041248/20000149041248-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 1,000g/100g당215kcal\n나트륨470mg 24%, 탄수화물30g 9%, 당류10g 10%, 지방8.0g 15%, 트랜스지방0g, 포화지방3g 18%, 콜레스테롤10mg 3%, 단백질6g 11%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000149041248/20000149041248-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "너트매그분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:10:01"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "sodium_mg": 470.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 10.0,
+    "fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "cholesterol_mg": 10.0,
+    "protein_g": 6.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 22:10:01"
+  }
+}

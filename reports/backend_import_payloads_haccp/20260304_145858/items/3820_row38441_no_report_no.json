@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "크림치즈미트번",
+    "reportnum": "19960262002273"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002273/19960262002273-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002273/19960262002273-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002273/19960262002273-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)62.33%,에스제이크림치즈15%,[자연치즈60%(미국산/우유,크림,정제소금,구아검,배양액),정제수,유크림(국내산),유청분말,가공버터,변성전분,산도조절제,카제인나트륨],양파(국내산),스테이크소스에스제이(정제수,토마토페이스트,액상과당,저감미당,당밀,사이다),독일화인빵가루,미트번시즈닝,알콘에스비(대두단백),옥수수전분,카라멜",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002273/19960262002273-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 800g(80g×10개) 80g당 205Kcal 80g당 1일 영양성분기준치에대한비율 : 나트륨410mg21% 탄수화물9g3% 당류2g2% 지방15g28% 트랜스지방0g 포화지방7.1g47% 콜레스테롤65mg22% 단백질10g18%  *1일영양성분기준치에대한비율(%)은 2,000Kcal기준이므로 개인의 필요열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002273/19960262002273-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "62.33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스제이크림치즈",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "origin": "미국산",
+            "amount": "60%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크림",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "배양액",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테이크소스에스제이",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사이다",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "독일화인빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미트번시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알콘에스비",
+        "sub_ingredients": [
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:59:55"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "sodium_mg": 410.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 2.0,
+    "fat_g": 15.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 7.1,
+    "cholesterol_mg": 65.0,
+    "protein_g": 10.0,
+    "basis_amount": 80.0,
+    "basis_unit": "g",
+    "basis_text": "80g당",
+    "collected_at": "2026-03-03 20:59:55"
+  }
+}

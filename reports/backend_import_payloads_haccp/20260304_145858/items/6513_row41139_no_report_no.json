@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "올레길모짜렐라자연치즈",
+    "reportnum": "201302620685"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201302620685/201302620685-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201302620685/201302620685-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201302620685/201302620685-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국내산 원유99.092%,유산균(DVS),렌넷,소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201302620685/201302620685-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 20g,총 10회,1회 제공량당 함량,열량 57.064 kcal, 탄수화물1.92g (0.5%),단백질 4.38g(7%),지방 3.53g(7%),포화지방 2.89g(19%),콜레스테롤 11.27mg(4%) ,나트륨 37.5mg(2.5%),칼슘 93.24mg(2%),()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201302620685/201302620685-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국내산",
+        "amount": "99.092%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": [
+          {
+            "name": "DVS",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "렌넷",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:48"
+  },
+  "nutrition": {
+    "kcal": 57.064,
+    "carbohydrate_g": 1.92,
+    "protein_g": 4.38,
+    "fat_g": 3.53,
+    "saturated_fat_g": 2.89,
+    "cholesterol_mg": 11.27,
+    "sodium_mg": 37.5,
+    "calcium_mg": 93.24,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 20g",
+    "collected_at": "2026-03-04 04:36:48"
+  }
+}

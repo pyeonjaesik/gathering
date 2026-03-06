@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "프로즌요거소프트믹스",
+    "reportnum": "1973019001576"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001576/1973019001576-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001576/1973019001576-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001576/1973019001576-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕, 무수결정포도당, 결정과당, 요구르트분말7%(우유), 컴파운드요거트파우더, 구연산, 합성착향료(요거트향), 혼합탈지분유(우유), 파인애플과즙분말, 식물성크림(팜유, 포도당, 우유고형분(우유), 카제인나트륨(우유), 유화제), 사과과즙분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001576/1973019001576-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "해당없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001576/1973019001576-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요구르트분말",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "컴파운드요거트파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요거트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플과즙분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유고형분",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과과즙분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:44:41"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "아워홈 소고기장조림",
+    "reportnum": "20020614179476"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179476/20020614179476-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179476/20020614179476-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179476/20020614179476-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 소고기(호주산) 33%, 간장 16.5%(밀)[탈지대두(수입산), 정제소금(국산), 액상과당, 양조간장원액, 주정], 정백당, 미림, 조미베이스[보일드비프(우육:호주산)22%)50%,양지엑기스(양지<호주산>45%)4.5%}11%]2.6%, 꽈리고추(국산)1.7%, 정제소금, 후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179476/20020614179476-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(200g)/총 1회 제공량 200g 1회 제공량당 함량(%영양소기준치): 열량175kcal, 탄수화물16g(5%), 당류13g, 단백질21g(24%), 지방3.2g(6%), 포화지방1.2g(8%), 트랜스지방0g, 콜레스테롤40mg(13%), 나트륨2,420mg(121%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179476/20020614179476-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "amount": "16.5%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장원액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미베이스",
+        "sub_ingredients": [
+          {
+            "name": "보일드비프",
+            "origin": "호주산",
+            "amount": "22%",
+            "sub_ingredients": [
+              {
+                "name": "우육",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양지엑기스",
+            "origin": "호주산",
+            "amount": "4.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "꽈리고추",
+        "origin": "국산",
+        "amount": "1.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:43"
+  },
+  "nutrition": {
+    "kcal": 175.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 13.0,
+    "protein_g": 21.0,
+    "fat_g": 3.2,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 2420.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(200g)/총 1회 제공량 200g",
+    "collected_at": "2026-03-04 03:43:43"
+  }
+}

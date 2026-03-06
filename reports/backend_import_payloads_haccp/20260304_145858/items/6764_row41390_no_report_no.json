@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "돈도리홈메이드파프리카소시지",
+    "reportnum": "201502130103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502130103/201502130103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502130103/201502130103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502130103/201502130103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돈후지육(국내산)90.6%,파프리카(국내산)5.5%,간마늘(국내산)0.5%,간양파(국내산)0.5%,정백당,정제염,큐어믹스-1,프리미엄후랑크베이스시즈닝,솔루불파브레진120",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502130103/201502130103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회분량100g:205kcal,수분65g,회분1.9g 탄수화물1g 단백질17g(31%) 지방14g(29%) 나트륨501mg(25%) 트랜스지방0g 당류1g 콜레스테롤51mg(17%) 포화지방산5g *(%)안수치는 1일 영양소 기준 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502130103/201502130103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돈후지육",
+        "origin": "국내산",
+        "amount": "90.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카",
+        "origin": "국내산",
+        "amount": "5.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간마늘",
+        "origin": "국내산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간양파",
+        "origin": "국내산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "큐어믹스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프리미엄후랑크베이스시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔루불파브레진120",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:43:59"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "water_g": 65.0,
+    "ash_g": 1.9,
+    "carbohydrate_g": 1.0,
+    "protein_g": 17.0,
+    "fat_g": 14.0,
+    "sodium_mg": 501.0,
+    "trans_fat_g": 0.0,
+    "sugar_g": 1.0,
+    "cholesterol_mg": 51.0,
+    "saturated_fat_g": 5.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회분량100g",
+    "collected_at": "2026-03-04 04:43:59"
+  }
+}

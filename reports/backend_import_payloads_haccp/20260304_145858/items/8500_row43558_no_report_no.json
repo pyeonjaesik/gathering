@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "생생비타",
+    "reportnum": "20020612459157"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020612459157/20020612459157-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020612459157/20020612459157-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020612459157/20020612459157-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유기농설탕12%,파인애플즙[파인애플(국산)100%]7%,레몬즙[레몬(미국)100%]4.5%,사과과즙[사과(국산)100%]2.5%,매실발효액[매실(국산/유기농)50%,유기농설탕50%],비타민C0.5%(500mg),비타민B2(1mg) ,구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020612459157/20020612459157-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020612459157/20020612459157-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플즙",
+        "origin": "국산",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "파인애플",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬즙",
+        "origin": "미국산",
+        "amount": "4.5%",
+        "sub_ingredients": [
+          {
+            "name": "레몬",
+            "origin": "미국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과과즙",
+        "origin": "국산",
+        "amount": "2.5%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매실발효액",
+        "sub_ingredients": [
+          {
+            "name": "매실",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "유기농",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.5%(500mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "amount": "(1mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:28"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 60.0,
+    "carbohydrate_g": 14.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 11.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-04 03:43:28"
+  }
+}

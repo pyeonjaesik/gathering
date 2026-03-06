@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "유기농 포시즌 후르츠믹스",
+    "reportnum": "20080517001191"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001191/20080517001191-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001191/20080517001191-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001191/20080517001191-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미72.14%(국산),유기농설탕23.03%, 유기농흑미 0.96%(국산), 감귤분말(감귤100%) 0.95%(국산), 유기농포도페이스트 0.87%(유기농포도 57%(국산), 유기농설탕 43%), 사과과즙분말 0.75%(사과농축과즙고형분 72Brix 40%(국산), 동결건조딸기분말 0.37%(국산),천일염 0.61%, 천연 딸기향, 천연 오렌지향, 천연 포도향, 천연 사과향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001191/20080517001191-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(30g) 총 약8회 제공량(230g) 1회 제공량당 함량 *%영양성분 기준치 열량 (Kcal) 115 Kcal 탄수화물(g) 26g 8% 당류(g) 7g 단백질(g) 2g 3% 지방(g) 0g 0% 포화지방(g) 0g 0% 트랜스지방(g) 0g 콜레스테롤(g) 0mg 0% 나트륨(g) 85mg 4% *(%)영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001191/20080517001191-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "72.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "23.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농흑미",
+        "origin": "국산",
+        "amount": "0.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감귤분말",
+        "origin": "국산",
+        "amount": "0.95%",
+        "sub_ingredients": [
+          {
+            "name": "감귤",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농포도페이스트",
+        "amount": "0.87%",
+        "sub_ingredients": [
+          {
+            "name": "유기농포도",
+            "origin": "국산",
+            "amount": "57%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "43%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과과즙분말",
+        "amount": "0.75%",
+        "sub_ingredients": [
+          {
+            "name": "사과농축과즙고형분",
+            "origin": "국산",
+            "amount": "72Brix 40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "동결건조딸기분말",
+        "origin": "국산",
+        "amount": "0.37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "amount": "0.61%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연 딸기향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연 오렌지향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연 포도향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연 사과향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:14"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 7.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 85.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(30g)",
+    "collected_at": "2026-03-04 04:15:14"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "이마트흑3곡미숫가루",
+    "reportnum": "19920355108283"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108283/19920355108283-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108283/19920355108283-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108283/19920355108283-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "보리35%(국산),흑미26%(국산),쌀보리(국산),검은콩10%(대두,국산),현미,멥쌀,옥수수,찹쌀,백태(대두),율무,검은깨0.5%(국산),땅콩,다시마,미역,고구마,당근,시금치,사과,양배추,감자,단호박",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108283/19920355108283-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 145kcal, 탄수화물 26g(8%), 당류 11g, 단백질 5g(8%), 지방 1.8g(4%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 35mg(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108283/19920355108283-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "보리",
+        "origin": "국산",
+        "amount": "35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀보리",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백태",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "율무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은깨",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미역",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:58:28"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 11.0,
+    "protein_g": 5.0,
+    "fat_g": 1.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 35.0,
+    "collected_at": "2026-03-03 18:58:28"
+  }
+}

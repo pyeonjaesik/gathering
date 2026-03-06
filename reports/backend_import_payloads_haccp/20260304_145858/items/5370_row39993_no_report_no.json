@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "흑초콜라겐생나또",
+    "reportnum": "2006044400716"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400716/2006044400716-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400716/2006044400716-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400716/2006044400716-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "나또90%[대두 100%(캐나다산), 종균], 흑초콜라겐소스 10%{양조간장[탈지대두(인도산), 소맥분(밀,미국산), 천일염, 주정], 정백당, 피쉬콜라겐 12.5%(콜라겐 100%:프랑스산), 화이트식초, 순발효흑초5.0%(현미 : 국내산), 사과농축액, 잔탄검, 혼합제재(효모추출물,말토덱스트린)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400716/2006044400716-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(50g) / 총2회 제공량(100g) *()안의 수치는 1일 영양성분기준치에 대한 비율임 1회 제공량당 함량 열량 75kcal | 탄수화물 11g(3%), 식이섬유 5g(20%), 당류 3g 단백질 8g(15%) | 지방 1.1g(2%), 포화지방 0g(0%), 트랜스지방 0g | 콜레스테롤 0mg(0%) | 나트륨 150mg(8%) 비타민A 0㎍RE(0%) / 비타민C 0mg(0%) / 칼슘 53mg(8%) / 철 1.1mg(9%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400716/2006044400716-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "나또",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "캐나다산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑초콜라겐소스",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피쉬콜라겐",
+            "origin": "프랑스산",
+            "amount": "12.5%",
+            "sub_ingredients": [
+              {
+                "name": "콜라겐",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "순발효흑초",
+            "origin": "국내산",
+            "amount": "5.0%",
+            "sub_ingredients": [
+              {
+                "name": "현미",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사과농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제재",
+            "sub_ingredients": [
+              {
+                "name": "효모추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:25"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 11.0,
+    "dietary_fiber_g": 5.0,
+    "sugar_g": 3.0,
+    "protein_g": 8.0,
+    "fat_g": 1.1,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 150.0,
+    "calcium_mg": 53.0,
+    "iron_mg": 1.1,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(50g)",
+    "collected_at": "2026-03-04 03:59:25"
+  }
+}

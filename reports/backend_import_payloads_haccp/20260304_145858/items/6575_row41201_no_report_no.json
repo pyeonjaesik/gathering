@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "국산원료100%로 만든 된장",
+    "reportnum": "2013049903612"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013049903612/2013049903612-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013049903612/2013049903612-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013049903612/2013049903612-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국산콩메주49.95%{콩96.7%(국산), 볶음콩가루(국산), 황국균}, 정제수, 천일염(국산), 발효쌀증류주[쌀증류원주(쌀:국산)], 볶음보리분(보리:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013049903612/2013049903612-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 800g 100g 당 140kcal 나트륨 3,550mg 178%, 탄수화물 12g 4%, 당류 1g미만 1%, 지방 4.2g 8%, 트랜스지방 - , 포화지방 0.6g 4%, 콜레스테롤 - 0%, 단백질 13g 24% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013049903612/2013049903612-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "국산콩메주",
+        "origin": "국산",
+        "amount": "49.95%",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "origin": "국산",
+            "amount": "96.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음콩가루",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황국균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효쌀증류주",
+        "sub_ingredients": [
+          {
+            "name": "쌀증류원주",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음보리분",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:10"
+  },
+  "nutrition": {
+    "total_content": "800",
+    "food_weight_g": 800.0,
+    "kcal": 140.0,
+    "sodium_mg": 3550.0,
+    "carbohydrate_g": 12.0,
+    "fat_g": 4.2,
+    "saturated_fat_g": 0.6,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 04:39:10"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "product": {
+    "name_ko": "딸기크림 오레오 초콜릿 샌드위치 쿠키",
+    "reportnum": "19960399065286"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065286/19960399065286-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065286/19960399065286-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065286/19960399065286-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀 : 미국산), 분당(설탕, 옥수수전분), 식물성유지1[{팜스테아린유(말레이시아산), 야자유(인도네시아산, 필리핀산) / 에스테르화유}, 옥배유, 혼합제제(올레오레진로즈메리, 올레오레진세이지)], 식물성유지2[팜유류(말레이시아산), 혼합제제(올레오레진로즈메리, 올레오레진세이지)], 분말·결정포도당, 코코아분말(미국산 70%, 싱가포르산 30%)5.0%, 유당, 물엿, 옥수수전분, 유청분말, 팽창제1, 팽창제2, 정제소금, 딸기과즙농축분말(고형분 67%이상)[딸기과즙농축액(딸기 : 국내산), 덱스트린]0.2%, 레시틴, 구연산, 바닐린, 혼합제제(치자적색소, 글리세린에스테르, 정제수), 합성향료(딸기향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065286/19960399065286-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065286/19960399065286-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분당",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지1",
+        "sub_ingredients": [
+          {
+            "name": "팜스테아린유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "인도네시아산, 필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에스테르화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지2",
+        "sub_ingredients": [
+          {
+            "name": "팜유류",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "미국산, 싱가포르산 30%",
+        "amount": "5.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기과즙농축분말",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "딸기과즙농축액",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "딸기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "치자적색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:08:20"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 490.0,
+    "carbohydrate_g": 70.0,
+    "protein_g": 4.0,
+    "fat_g": 22.0,
+    "sugar_g": 38.0,
+    "sodium_mg": 400.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 13.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-03 21:08:20"
+  }
+}

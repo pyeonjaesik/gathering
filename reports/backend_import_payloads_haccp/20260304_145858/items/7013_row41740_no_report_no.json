@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "양반꿀호박죽",
+    "reportnum": "19880589063117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063117/19880589063117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063117/19880589063117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063117/19880589063117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,호박34%(베트남산),정백당,찹쌀가루(국산),당통팥[팥(중국산),정백당],쌀그릿츠,쌀가루,정제소금,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063117/19880589063117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=285g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063117/19880589063117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박",
+        "origin": "베트남산",
+        "amount": "34%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당통팥",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀그릿츠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:03"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 58.0,
+    "carbohydrate_g": 13.68,
+    "protein_g": 0.7,
+    "fat_g": 0.0,
+    "sugar_g": 11.23,
+    "sodium_mg": 109.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "285g",
+    "collected_at": "2026-03-04 03:26:03"
+  }
+}

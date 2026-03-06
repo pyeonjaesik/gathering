@@ -1,0 +1,235 @@
+{
+  "product": {
+    "name_ko": "쟌슨빌소시지김치필라프",
+    "reportnum": "19930199349797"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349797/19930199349797-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349797/19930199349797-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349797/19930199349797-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀27.04%(국산),김치22.78%[배추(국산),무(국산),고춧가루(중국산),멸치액젓,마늘],폴리시소시지20.28%(미국산:돼지고기,콘시럽,정제소금,포도당,향신료),양파8.45%,전란액,홍피망2.70%,청피망2.70%,채종유,대파1.69%,당근1.69%,할라피뇨 통조림,참기름,쇠고기맛씨즈닝,물엿,정제소금,설탕,김치찌개풍미 분말엔엠0.17%[멸치액젓(멸치:연근해산,천일염:국산),다시마추출액{다시마추출농축액(다시마:연근해산)}],양조간장,버터,고추맛기름,파프리카추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349797/19930199349797-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500g 1개(250g)당 475kcal\n나트륨1,350mg 68%, 탄수화물47g 15%, 당류6g 6%, 지방26g 48%, 트랜스지방1.3g, 포화지방4.3g 29%, 콜레스테롤60mg 20%, 단백질13g 24%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349797/19930199349797-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "27.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김치",
+        "amount": "22.78%",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리시소시지",
+        "origin": "미국산",
+        "amount": "20.28%",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콘시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "amount": "8.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "amount": "2.70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "amount": "2.70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "amount": "1.69%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "amount": "1.69%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "할라피뇨 통조림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김치찌개풍미 분말엔엠",
+        "amount": "0.17%",
+        "sub_ingredients": [
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": [
+              {
+                "name": "멸치",
+                "sub_ingredients": [
+                  {
+                    "name": "연근해산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "천일염",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "다시마추출액",
+            "sub_ingredients": [
+              {
+                "name": "다시마추출농축액",
+                "sub_ingredients": [
+                  {
+                    "name": "다시마",
+                    "sub_ingredients": [
+                      {
+                        "name": "연근해산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:25:33"
+  },
+  "nutrition": {
+    "kcal": 475.0,
+    "sodium_mg": 1350.0,
+    "carbohydrate_g": 47.0,
+    "sugar_g": 6.0,
+    "fat_g": 26.0,
+    "trans_fat_g": 1.3,
+    "saturated_fat_g": 4.3,
+    "cholesterol_mg": 60.0,
+    "protein_g": 13.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1개(250g)당",
+    "collected_at": "2026-03-03 19:25:33"
+  }
+}

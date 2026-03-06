@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "닭고기우엉덮밥세트",
+    "reportnum": "19880442004525"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004525/19880442004525-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004525/19880442004525-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004525/19880442004525-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기우엉덮밥(62.30%)-정제수,닭가슴살13.16%(국산),닭다리살10.53%(국산),5종혼합야채,현미,백미,우엉4.74%(국산) 그릴드베지타이저-브로콜리(국산),단호박(국산),당근(국산),카놀라유 캐비지토마토소테-양배추(국산),양파(국산),당근,토마토스파게티소스,완두콩 마늘쫑건새우볶음-마늘쫑,건새우,저염간장,올리고당,카놀라유,볶음참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004525/19880442004525-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량355kcal, 탄수화물54g(16%), 당류10g, 단백질21g(38%), 지방6g(12%), 포화지방1.4g(9%), 트랜스지방0g, 콜레스테롤50mg(17%), 나트륨420mg(21%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004525/19880442004525-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기우엉덮밥",
+        "amount": "62.30%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭가슴살",
+            "origin": "국산",
+            "amount": "13.16%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭다리살",
+            "origin": "국산",
+            "amount": "10.53%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5종혼합야채",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우엉",
+            "origin": "국산",
+            "amount": "4.74%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그릴드베지타이저",
+        "sub_ingredients": [
+          {
+            "name": "브로콜리",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "단호박",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "캐비지토마토소테",
+        "sub_ingredients": [
+          {
+            "name": "양배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토스파게티소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "완두콩",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘쫑건새우볶음",
+        "sub_ingredients": [
+          {
+            "name": "마늘쫑",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건새우",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저염간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음참깨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:22:48"
+  },
+  "nutrition": {
+    "kcal": 355.0,
+    "carbohydrate_g": 54.0,
+    "sugar_g": 10.0,
+    "protein_g": 21.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 50.0,
+    "sodium_mg": 420.0,
+    "collected_at": "2026-03-04 03:22:48"
+  }
+}

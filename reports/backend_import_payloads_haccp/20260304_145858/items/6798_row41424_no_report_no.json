@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "탱글탱글한 크래미아 샐러드",
+    "reportnum": "201503552222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201503552222/201503552222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201503552222/201503552222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201503552222/201503552222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "바다싱싱꽃맛살[냉동연육:외국산(미국,베트남,인도네시아 등), 소맥전분{밀:외국산(아르헨티나, 이탈리아, 벨기에 등)}, 조미액, 정제소금, 백설탕], 샐러드베이스[대두유{대두:외국산(미국, 아르헨티나, 베트남 등)}, 난황(국내산), 양조식초, 결정과당, 정제소금], 양파(중국산), 정제수, 당근, 스위트콘, 백설탕, 양조식초, 크래미아용시즈닝E, 토마토케첩",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201503552222/201503552222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 200g 405kcal 총 내용량당 1일 영양성분 기준치에 대한 비율 나트륨 970mg 48%, 탄수화물 21g 7%, 당류 7g 7%, 지방 27g 49%, 트랜스지방 0g, 포화지방 4.6g 30%, 콜레스테롤 40mg 13%, 단백질 6g 11% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201503552222/201503552222-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "바다싱싱꽃맛살",
+        "origin": "외국산, 미국산, 베트남산, 인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "냉동연육",
+            "origin": "외국산, 미국산, 베트남산, 인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "origin": "외국산, 아르헨티나산, 이탈리아산, 벨기에산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "외국산, 아르헨티나산, 이탈리아산, 벨기에산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "샐러드베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "외국산, 미국산, 아르헨티나산, 베트남산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 아르헨티나산, 베트남산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크래미아용시즈닝E",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케첩",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:40"
+  },
+  "nutrition": {
+    "kcal": 405.0,
+    "sodium_mg": 970.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 7.0,
+    "fat_g": 27.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.6,
+    "cholesterol_mg": 40.0,
+    "protein_g": 6.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 200g",
+    "collected_at": "2026-03-04 04:44:40"
+  }
+}

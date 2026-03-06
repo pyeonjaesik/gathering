@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "푸르밀 가나 초코우유(Ghana Choco Milk)",
+    "reportnum": "19870157001118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001118/19870157001118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001118/19870157001118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001118/19870157001118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "환원무지방우유50.23%(탈지분유:수입산)(우유),정제수,가공전지분Ⅰ(식물성크림)[유청(우유,수입산),정제가공유지(수입산),레시친(대두)],코코아분말1%(네덜란드산)(폴리페놀123.75mg함유/한병당),가공전지분P(식물성크림),유청분말,합성착향료(초코향),카라기난,정제소금,혼합제제(규소수지,유화제,셀룰로오스검),수크랄로스(합성감미료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001118/19870157001118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(225ml)/총 1회 제공량(225ml) 1회 제공량당 함량 %영양소기준치 열량 135kcal, 탄수화물 22g 7%, 당류 22g, 단백질 4.7g 8%, 지방 3.2g 6%, 포화지방 2.8g 19%, 트랜스지방 0g, 콜레스테롤 5mg 2%, 나트륨 80mg 4% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001118/19870157001118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "환원무지방우유",
+        "origin": "수입산",
+        "amount": "50.23%",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "식물성크림",
+            "sub_ingredients": [
+              {
+                "name": "유청",
+                "origin": "수입산",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "origin": "수입산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제가공유지",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시친",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "폴리페놀",
+            "amount": "123.75mg함유, 한병당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공전지분P",
+        "sub_ingredients": [
+          {
+            "name": "식물성크림",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:28:30"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 22.0,
+    "protein_g": 4.7,
+    "fat_g": 3.2,
+    "saturated_fat_g": 2.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 225.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1개(225ml)",
+    "collected_at": "2026-03-03 16:28:30"
+  }
+}

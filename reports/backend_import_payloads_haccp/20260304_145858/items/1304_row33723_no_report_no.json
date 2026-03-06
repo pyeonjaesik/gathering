@@ -1,0 +1,69 @@
+{
+  "product": {
+    "name_ko": "고급전용분1호",
+    "reportnum": "19830190020305"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830190020305/19830190020305-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830190020305/19830190020305-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830190020305/19830190020305-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀100%/국내가공(호주, 미국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830190020305/19830190020305-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=20000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830190020305/19830190020305-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀",
+        "origin": "미국산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "국내가공",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:58:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 360.0,
+    "carbohydrate_g": 78.0,
+    "protein_g": 9.0,
+    "fat_g": 1.2,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "20000g",
+    "collected_at": "2026-03-03 14:58:09"
+  }
+}

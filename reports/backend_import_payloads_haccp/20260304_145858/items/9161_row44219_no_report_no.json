@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "고구메",
+    "reportnum": "20090199897702"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897702/20090199897702-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897702/20090199897702-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897702/20090199897702-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고구마95.64%(국산),백설탕,팜유(말레이시아),해바라기유(수입산),고구마향시럽",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897702/20090199897702-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=315g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897702/20090199897702-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고구마",
+        "origin": "국산",
+        "amount": "95.64%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마향시럽",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 452.0,
+    "carbohydrate_g": 76.19,
+    "protein_g": 3.17,
+    "fat_g": 14.29,
+    "sugar_g": 12.7,
+    "sodium_mg": 46.0,
+    "cholesterol_mg": 14.29,
+    "saturated_fat_g": 5.08,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "315g",
+    "collected_at": "2026-03-04 04:16:50"
+  }
+}

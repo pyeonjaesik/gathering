@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "일렉트로맨토마토스파게티",
+    "reportnum": "200204610737646"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737646/200204610737646-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737646/200204610737646-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737646/200204610737646-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "동결건조토마토스파게티77.1%[토마토스파게티소스-이77.8%{다이스드토마토20%(미국산/토마토65%,토마토주스34,83%),홀필드토마토20%(이탈리아산/토마토60%,토마토주스40%),토마토페이스트5%(미국산/토마토100%)},까펠리니22.2%(이탈리아산/세몰리나듀럼밀)],토마토스파게티소스분말22.9%[토마토스파게티소스-이100%{다이스드토마토20%(미국산/토마토65%,토마토주스34.83%),홀필드토마토20%(이탈리아산/토마토60%,토마토주스40%),토마토페이스트5%,(미국산/토마토100%)}]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737646/200204610737646-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉지(48g)/총1회제공량(48g), 1회제공량 당 함량 *%영양소기준치, 열량195kcal, 탄수화물36g 11%, 당류11g, 단백질6g 11%, 지방3.2g 6%, 포화지방1g 7%, 트랜스지방0g, 콜레스테롤5mg미만 1%, 나트륨670mg 34%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737646/200204610737646-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "동결건조토마토스파게티",
+        "amount": "77.1%",
+        "sub_ingredients": [
+          {
+            "name": "토마토스파게티소스",
+            "amount": "이77.8%",
+            "sub_ingredients": [
+              {
+                "name": "다이스드토마토",
+                "origin": "미국산",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "미국산",
+                    "amount": "65%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "토마토주스",
+                    "amount": "34.83%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "홀필드토마토",
+                "origin": "이탈리아산",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "이탈리아산",
+                    "amount": "60%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "토마토주스",
+                    "amount": "40%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "토마토페이스트",
+                "origin": "미국산",
+                "amount": "5%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "미국산",
+                    "amount": "100%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "까펠리니",
+            "origin": "이탈리아산",
+            "amount": "22.2%",
+            "sub_ingredients": [
+              {
+                "name": "세몰리나듀럼밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토스파게티소스분말",
+        "amount": "22.9%",
+        "sub_ingredients": [
+          {
+            "name": "토마토스파게티소스",
+            "amount": "이100%",
+            "sub_ingredients": [
+              {
+                "name": "다이스드토마토",
+                "origin": "미국산",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "미국산",
+                    "amount": "65%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "토마토주스",
+                    "amount": "34.83%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "홀필드토마토",
+                "origin": "이탈리아산",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "이탈리아산",
+                    "amount": "60%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "토마토주스",
+                    "amount": "40%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "토마토페이스트",
+                "origin": "미국산",
+                "amount": "5%",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토",
+                    "origin": "미국산",
+                    "amount": "100%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:46"
+  },
+  "nutrition": {
+    "kcal": 195.0,
+    "carbohydrate_g": 36.0,
+    "sugar_g": 11.0,
+    "protein_g": 6.0,
+    "fat_g": 3.2,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 670.0,
+    "basis_amount": 48.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉지(48g)",
+    "collected_at": "2026-03-04 03:41:46"
+  }
+}

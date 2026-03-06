@@ -1,0 +1,197 @@
+{
+  "product": {
+    "name_ko": "다향훈제오리200",
+    "reportnum": "20130502003104"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130502003104/20130502003104-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130502003104/20130502003104-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130502003104/20130502003104-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오리고기(국내산)97.1%,정제수,훈제오리시즈닝-FD[포도당,카제인나트륨(우유),정제소금(국내산),혼합제제(산도조절제),비프분말2호{비프분말2호베이스(쇠고기:호주산,정제소금:국내산)},L-글루타민산나트륨(향미증진제)],혼합제제(젖산나트륨,초산나트륨,이산화규소),정제소금(국내산),백설탕,폴리인산나트륨(산도조절제),비타민C,핫팜믹스,비프후레바(대두),천연색소(락색소),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130502003104/20130502003104-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당/총내용량200g 열량 239kcal 나트륨 15% 291mg 탄수화물 3% 9g 당류 1% 1g 지방 30% 16g 트랜스지방 0g 포화지방 33% 5g 콜레스테롤 33% 100mg 단백질 25% 14g 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130502003104/20130502003104-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리고기",
+        "origin": "국내산",
+        "amount": "97.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "훈제오리시즈닝-FD",
+        "sub_ingredients": [
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프분말2호",
+            "sub_ingredients": [
+              {
+                "name": "비프분말2호베이스",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "쇠고기",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젖산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리인산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫팜믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프후레바",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연색소",
+        "sub_ingredients": [
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:24"
+  },
+  "nutrition": {
+    "kcal": 239.0,
+    "sodium_mg": 291.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 1.0,
+    "fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 100.0,
+    "protein_g": 14.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:39:24"
+  }
+}

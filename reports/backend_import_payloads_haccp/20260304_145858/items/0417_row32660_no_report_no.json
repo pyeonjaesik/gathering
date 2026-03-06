@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "잣아몬드 허니 드레싱",
+    "reportnum": "197202880022885"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022885/197202880022885-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022885/197202880022885-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022885/197202880022885-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,전화당,식물성유지(대두:수입산),아몬드6.5%(미국산),발효식초,잣3%(국산),아카시아꿀3%(국산),볶음참깨,정제소금,난황액(계란),잔탄검,젖산,D도코페롤(혼합형),잣향(합성착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022885/197202880022885-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022885/197202880022885-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전화당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "6.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잣",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아카시아꿀",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D도코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잣향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:38:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 300.0,
+    "carbohydrate_g": 17.0,
+    "protein_g": 2.0,
+    "fat_g": 25.0,
+    "sugar_g": 16.0,
+    "sodium_mg": 320.0,
+    "cholesterol_mg": 3.5,
+    "saturated_fat_g": 3.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "230g",
+    "collected_at": "2026-03-03 13:38:46"
+  }
+}

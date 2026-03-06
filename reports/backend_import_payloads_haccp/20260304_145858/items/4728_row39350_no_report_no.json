@@ -1,0 +1,157 @@
+{
+  "product": {
+    "name_ko": "비비고 사골곰탕",
+    "reportnum": "20020464088201"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088201/20020464088201-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088201/20020464088201-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088201/20020464088201-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 사골농축액23-1.65%[호주산/사골추출물 88%{사골(고형분52%)}, 천일염], 정제소금(국산), 한그릇쇠고기우린액[소고기효소분해농축액(쇠고기:호주산), 말토덱스트린, 대파즙(대파:국산), 이스트엑기스, 무우즙(무우:국산)], 야채우린액[마늘엑기스(마늘:국산), 대파즙(대파:국산), 양파농축액(중국산), 다시마엑기스, 표고농축액, 양배추추출액], 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088201/20020464088201-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 500g 100g당 5 kcal, 100 g 당 1일 영양성분 기준치에 대한 비율 나트륨 210mg 11%, 탄수화물 0g 0%, 당류 0g 0%, 콜레스테롤 0mg 0%, 지방 0.4g 1%, 트랜스지방 0g, 포화지방 0g 0%, 단백질 1g미만 1%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088201/20020464088201-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축액23-",
+        "origin": "호주산",
+        "amount": "1.65%",
+        "sub_ingredients": [
+          {
+            "name": "사골추출물",
+            "origin": "호주산",
+            "amount": "88%",
+            "sub_ingredients": [
+              {
+                "name": "사골",
+                "amount": "고형분52%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한그릇쇠고기우린액",
+        "sub_ingredients": [
+          {
+            "name": "소고기효소분해농축액",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무우즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채우린액",
+        "sub_ingredients": [
+          {
+            "name": "마늘엑기스",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파농축액",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "표고농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추추출액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:21"
+  },
+  "nutrition": {
+    "kcal": 5.0,
+    "sodium_mg": 210.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:42:21"
+  }
+}

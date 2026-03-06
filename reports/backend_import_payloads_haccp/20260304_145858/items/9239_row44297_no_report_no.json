@@ -1,0 +1,101 @@
+{
+  "product": {
+    "name_ko": "케일&키위주스",
+    "reportnum": "2009044204068"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204068/2009044204068-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204068/2009044204068-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204068/2009044204068-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "파인애플(베트남산), 백포도즙(이탈리아산), 그린키위 20%(뉴질랜드산), 사과퓨레(사과:국산), 케일즙8%(케일:국산), 백포도농축과즙",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204068/2009044204068-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204068/2009044204068-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파인애플",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도즙",
+        "origin": "이탈리아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그린키위",
+        "origin": "뉴질랜드산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "케일즙",
+        "origin": "국산",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "케일",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백포도농축과즙",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:43"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 55.0,
+    "carbohydrate_g": 13.68,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 13.68,
+    "sodium_mg": 13.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-04 04:19:43"
+  }
+}

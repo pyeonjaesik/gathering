@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "유부",
+    "reportnum": "1991037209226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209226/1991037209226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209226/1991037209226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209226/1991037209226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두94.80%(수입산),대두유(수입산),응고제(황산칼슘,염화칼슘,염화마그네슘),소포제(글리세린지방산에스테르,탄산칼슘,레시틴)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209226/1991037209226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209226/1991037209226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "수입산",
+        "amount": "94.80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "응고제",
+        "sub_ingredients": [
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소포제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:35:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 363.0,
+    "carbohydrate_g": 1.2,
+    "protein_g": 23.8,
+    "fat_g": 29.2,
+    "sugar_g": 0.6,
+    "sodium_mg": 18.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 10.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "500g",
+    "collected_at": "2026-03-03 18:35:43"
+  }
+}

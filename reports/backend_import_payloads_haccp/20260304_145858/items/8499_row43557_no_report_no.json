@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "포근하고 담백한 동부찰떡",
+    "reportnum": "20020512164271"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164271/20020512164271-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164271/20020512164271-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164271/20020512164271-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "찹쌀(국산),동부양금[동부(미얀마산)98.65%,고운꽃소금],정제수,설탕,천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164271/20020512164271-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164271/20020512164271-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동부양금",
+        "sub_ingredients": [
+          {
+            "name": "동부",
+            "origin": "미얀마산",
+            "amount": "98.65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고운꽃소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:21"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 201.0,
+    "carbohydrate_g": 48.19,
+    "protein_g": 5.21,
+    "fat_g": 0.5,
+    "sugar_g": 2.03,
+    "sodium_mg": 280.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.15,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:43:21"
+  }
+}

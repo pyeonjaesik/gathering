@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "델몬트 오리지널 알로에",
+    "reportnum": "19960571018337"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018337/19960571018337-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018337/19960571018337-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018337/19960571018337-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "알로에베라겔피우다(200:1,50%,덱스트린50%),알로에베라겔,정제수,액상과당,합성착향료(포도향),구연산,젖산칼슘,비타민C,젤란검,구연산삼나트륨,색소혼합제제(치자황색소,홍화황색소,덱스트린)/알로에40%(알로에베라겔피우다32%:미국산,알로에베라겔8%:태국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018337/19960571018337-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018337/19960571018337-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "알로에베라겔피우다",
+        "amount": "200:1, 50%",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알로에베라겔",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "색소혼합제제",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알로에",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "알로에베라겔피우다",
+            "origin": "미국산",
+            "amount": "32%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알로에베라겔",
+            "origin": "태국산",
+            "amount": "8%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:17:21"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 42.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 11.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-03 21:17:21"
+  }
+}

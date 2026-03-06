@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "소화가 잘되는 우유 저지방",
+    "reportnum": "19810262002282"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810262002282/19810262002282-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810262002282/19810262002282-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810262002282/19810262002282-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "저지방우유100%(국산),칼슘혼합제제0.8%(탄산칼슘,아라비아검),락타아제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810262002282/19810262002282-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200ml) 총 약 5회 제공량(930ml) 1회 제공량 함량 *%영양성분 기준치 열량 75kcal, 탄수화물 6.2g 2%, 당류 6.2g, (유당) (0)g, 단백질 6.3g 11%, 지방 3g 6%, 포화지방 2g 13%, 트랜스지방 0g, 콜레스테롤 10mg 3%, 나트륨 75mg 4%, 칼슘 430mg 61% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810262002282/19810262002282-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "저지방우유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제제",
+        "amount": "0.8%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락타아제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:41:37"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 6.2,
+    "sugar_g": 6.2,
+    "protein_g": 6.3,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 75.0,
+    "calcium_mg": 430.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200ml)",
+    "collected_at": "2026-03-03 14:41:37"
+  }
+}

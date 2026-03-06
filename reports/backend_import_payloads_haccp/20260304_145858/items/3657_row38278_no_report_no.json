@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "자가비 에그크랩",
+    "reportnum": "19950383326120"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326120/19950383326120-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326120/19950383326120-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326120/19950383326120-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자(미국산),혼합식용유[고올레산해바라기유{외국산(스페인,아르헨티나,호주등)},팜올레인유(말레이시아산),토코페롤(혼합형)],복합조미식품[에그크랩맛시즈닝{싱가포르산(크랩파우더(크랩필러(일본산),크랩미트(중국산)),에그요크파우더(덴마크산))}],토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326120/19950383326120-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 90g 1봉지(18g)당 115kcal\n<1회(18g)당 1일영양성분 기준치에 대한 비율>\n나트륨55mg 3%, 탄수화물7g 2%, 당류0g 0%, 지방9g 17%, 트랜스지방0g, 포화지방3.7g 25%, 콜레스테롤0mg 0%, 단백질1g 2%\n<90g당 1일영양성분 기준치에 대한 비율>\n나트륨280mg 14%, 탄수화물37g 11%, 당류2g 2%, 지방45g 83%, 트랜스지방0.2g, 포화지방18g 120%, 콜레스테롤5mg미만 1%, 단백질5g 9%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326120/19950383326120-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 스페인산, 아르헨티나산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "에그크랩맛시즈닝",
+            "origin": "싱가포르산",
+            "sub_ingredients": [
+              {
+                "name": "크랩파우더",
+                "sub_ingredients": [
+                  {
+                    "name": "크랩필러",
+                    "origin": "일본산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "크랩미트",
+                    "origin": "중국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "에그요크파우더",
+                "origin": "덴마크산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:31:31"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 55.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 0.0,
+    "fat_g": 9.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 18.0,
+    "basis_unit": "g",
+    "basis_text": "1회(18g)당",
+    "collected_at": "2026-03-03 20:31:31"
+  }
+}

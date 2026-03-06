@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "광천내포올리브김",
+    "reportnum": "2006047304818"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006047304818/2006047304818-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006047304818/2006047304818-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006047304818/2006047304818-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김(국내산)51%,옥배유(수입산)37.5%,올리브유(수입산)3%,참기름3%,들기름3%,정제염2.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006047304818/2006047304818-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2g/Serving Size 2g\n약 12.5회 제공량(25g)/Toal Serving Size 25g Per 12.5\n<1회 제공량 당 함량 %영양소 기준치(Amount per serving %Daily Value*)> \n열량/Calories12.8kcal -, 탄수화물/Carbohydrate0.2g 0.1%, 당류/Sugar0g -, 단백질/Protein0.4g 0.7%, 지방/Fat1.1g 2.3%, 포화지방/Saturated Fat0.4g 2.6%, 트랜스지방/Trans Fat0g -, 콜레스테롤/Cholesterol0mg 0%, 나트륨/Sodium14.3mg 0.7% \n*%영양소기준치:1일 영양소기준치에 대한 비율\nPercent Daily Values are based on a 2,000 calorie diet.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006047304818/2006047304818-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국내산",
+        "amount": "51%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "amount": "37.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리브유",
+        "origin": "수입산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:25"
+  },
+  "nutrition": {
+    "kcal": 12.8,
+    "carbohydrate_g": 0.2,
+    "sugar_g": 0.0,
+    "protein_g": 0.4,
+    "fat_g": 1.1,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 14.3,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2g",
+    "collected_at": "2026-03-04 04:00:25"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "product": {
+    "name_ko": "맛있는 오뚜기 컵밥 사골곰탕국밥",
+    "reportnum": "20010445055436"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055436/20010445055436-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055436/20010445055436-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055436/20010445055436-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*맛있는오뚜기컵밥:쌀(국산),산도조절제, *사골곰탕국밥액상스프:사골엑기스50%(뉴질랜드산:사골농축액,정제소금),정제수,마늘엑기스(중국산),정제소금(국산),변성전분,쇠고기다시,감칠맛베이스,양파맛분말,후추분,백후추분,잔탄검,향미증진제,토코페롤, *사골곰탕국밥건더기스프:동결건조파(파:중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055436/20010445055436-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=175g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055436/20010445055436-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는오뚜기컵밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사골곰탕국밥액상스프",
+        "sub_ingredients": [
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "사골농축액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘엑기스",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기다시",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감칠맛베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파맛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사골곰탕국밥건더기스프",
+        "sub_ingredients": [
+          {
+            "name": "동결건조파",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "파",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 149.0,
+    "carbohydrate_g": 29.71,
+    "protein_g": 4.0,
+    "fat_g": 1.66,
+    "sugar_g": 1.71,
+    "sodium_mg": 451.0,
+    "cholesterol_mg": 2.0,
+    "saturated_fat_g": 0.69,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "175g",
+    "collected_at": "2026-03-04 03:33:04"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "아워홈 손수 부드럽고 연한 닭가슴살",
+    "reportnum": "20090262045123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045123/20090262045123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045123/20090262045123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045123/20090262045123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기(닭가슴살:국내산)89.40%,정제수,재제소금{정제염(국산),천일염(국산)},혼합제제(산도조절제),기타설탕,유산균발효분말S(락토에프파우더:중국산),너트맥그라운드",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045123/20090262045123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=110g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045123/20090262045123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "89.40%",
+        "sub_ingredients": [
+          {
+            "name": "닭가슴살",
+            "origin": "국내산",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균발효분말S",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "락토에프파우더",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "너트맥그라운드",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 123.0,
+    "carbohydrate_g": 0.55,
+    "protein_g": 24.55,
+    "fat_g": 2.46,
+    "sugar_g": 0.0,
+    "sodium_mg": 327.0,
+    "cholesterol_mg": 81.82,
+    "saturated_fat_g": 0.73,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "110g",
+    "collected_at": "2026-03-04 04:17:33"
+  }
+}

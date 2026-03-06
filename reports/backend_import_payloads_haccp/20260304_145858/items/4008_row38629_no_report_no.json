@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "예도가 유자유과",
+    "reportnum": "19970515071322"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071322/19970515071322-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071322/19970515071322-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071322/19970515071322-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기찹쌀(국산)66%, 유기쌀조청(유기쌀(국산)98.5%,엿기름(국산)1.2%,효소0.3%)15%,유기쌀(국산)8%,유기대두유(대두:수입산)4%,유자청(유자(국산)50%,설탕50%)4%,치자분말(국산)2%,생강(국산)1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071322/19970515071322-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(30g) 총 제공횟수 4회(120g)\n분량당함량:열량125kcal, 탄수화물23g (7%), 당류8g, 단백질1g (2%), 지방3.1g(6%), 포화지방0.4g (3%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨8mg(0%) *%영양속기준치:( )안에 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071322/19970515071322-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기찹쌀",
+        "origin": "국산",
+        "amount": "66%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기쌀조청",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "유기쌀",
+            "origin": "국산",
+            "amount": "98.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "amount": "1.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "amount": "0.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기쌀",
+        "origin": "국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기대두유",
+        "origin": "수입산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유자청",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자분말",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:29:48"
+  },
+  "nutrition": {
+    "kcal": 125.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 8.0,
+    "protein_g": 1.0,
+    "fat_g": 3.1,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 8.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)",
+    "collected_at": "2026-03-03 21:29:48"
+  }
+}

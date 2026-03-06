@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "복분자양갱",
+    "reportnum": "19920484128237"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128237/19920484128237-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128237/19920484128237-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128237/19920484128237-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백앙금{백물앙금첨가(리마콩(미얀마산),아황산류),백설탕,폴리글리시톨시럽},폴리글리시톨시럽,백설탕,복분자농축액2%(고형분 50%/국산),한천(국산),합성향료(복분자향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128237/19920484128237-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 45g 140kcal 1개당 1일 영양성분 기준치에 대한 비율 나트륨 0mg 0%, 탄수화물 32g 10%, 당류 9g 9%, 지방 0g 0%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 0mg 0%, 단백질 3g 5% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128237/19920484128237-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백앙금",
+        "sub_ingredients": [
+          {
+            "name": "백물앙금첨가",
+            "sub_ingredients": [
+              {
+                "name": "리마콩",
+                "origin": "미얀마산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아황산류",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복분자농축액",
+        "origin": "국산",
+        "amount": "2%(고형분 50%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한천",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "복분자향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:15:46"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 9.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 3.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 45g",
+    "collected_at": "2026-03-03 19:15:46"
+  }
+}

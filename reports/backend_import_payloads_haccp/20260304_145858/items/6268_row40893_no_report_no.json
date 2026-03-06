@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "에어칩스 어니언",
+    "reportnum": "20100461303201"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303201/20100461303201-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303201/20100461303201-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303201/20100461303201-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마이크로펠렛 포테이토 79.6%[감자그래뉼 50%(감자 99.7%), 감자후레이크 39%(감자 99.4%), 감자전분 10%, 정제소금] / 이탈리아산, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(수입산), d-토코페롤], 포테이토어니언수프맛씨즈닝 4.6%[미립당,가공소금,버터리체다씨즈닝, 조제양파분말 13%(중국산/양파 89.7%), 크림버터혼합분말, 토스티드오니온파우다 4%(미국산), 아스파탐(합성감미료, 페닐알라닌 함유)], 혼합제제(프라이드포테이토향, 카놀라유), 레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303201/20100461303201-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약1/3봉지(30g) 총 약 3회 제공량(95g)\n<1회 제공량당 함량 *%영양성분 기준치>\n열량135kcal, 탄수화물21g 6%, 식이섬유1g 4%, 당류1g, 단백질1.9g 3%, 지방5g 10%, 포화지방1.4g 9%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨130mg 7%\n<총 포장단위당 함량 *%영양성분 기준치>\n열량420kcal, 탄수화물65g 20%, 식이섬유3g 12%, 당류2g, 단백질6g 11%, 지방16g 31%, 포화지방4.3g 29%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨410mg 21%\n*%영양소기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303201/20100461303201-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마이크로펠렛 포테이토",
+        "origin": "이탈리아산",
+        "amount": "79.6%",
+        "sub_ingredients": [
+          {
+            "name": "감자그래뉼",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자후레이크",
+            "amount": "39%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.4%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자전분",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포테이토어니언수프맛씨즈닝",
+        "amount": "4.6%",
+        "sub_ingredients": [
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터리체다씨즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조제양파분말",
+            "origin": "중국산",
+            "amount": "13%",
+            "sub_ingredients": [
+              {
+                "name": "양파",
+                "amount": "89.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "크림버터혼합분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토스티드오니온파우다",
+            "origin": "미국산",
+            "amount": "4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "프라이드포테이토향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:23"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 21.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 1.0,
+    "protein_g": 1.9,
+    "fat_g": 5.0,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 130.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/3봉지(30g)",
+    "collected_at": "2026-03-04 04:26:23"
+  }
+}

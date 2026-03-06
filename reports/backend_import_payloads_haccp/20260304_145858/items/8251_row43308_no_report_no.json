@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "심영순 아이맛있는국물간장소스",
+    "reportnum": "20010306244646"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244646/20010306244646-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244646/20010306244646-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244646/20010306244646-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우리밀진간장43.0%{우리밀(국내산),대두(국내산),맥아조청,식염,주정),정제수,명인쌀조청,멸치액젓(멸치:국내산),양지추출물-1(양지:국내산),마늘,대파,다시마엑기스분말티케이,표고버섯,생강,효모추출물분말,내츄락D",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244646/20010306244646-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=168g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244646/20010306244646-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀진간장",
+        "amount": "43.0%",
+        "sub_ingredients": [
+          {
+            "name": "우리밀",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아조청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명인쌀조청",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치액젓",
+        "sub_ingredients": [
+          {
+            "name": "멸치",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양지추출물-1",
+        "sub_ingredients": [
+          {
+            "name": "양지",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스분말티케이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "내츄락D",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 00:33:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 75.0,
+    "carbohydrate_g": 15.0,
+    "protein_g": 4.0,
+    "fat_g": 0.0,
+    "sugar_g": 8.0,
+    "sodium_mg": 4320.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "168g",
+    "collected_at": "2026-03-04 00:33:46"
+  }
+}

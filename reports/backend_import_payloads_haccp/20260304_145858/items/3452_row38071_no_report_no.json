@@ -1,0 +1,202 @@
+{
+  "product": {
+    "name_ko": "극세 프리츠 매콤새우",
+    "reportnum": "19940449005256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005256/19940449005256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005256/19940449005256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005256/19940449005256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(호주산50%,미국산25%),팜유류{팜분별유(말레이시아산)},백설탕,쇼트닝[식물성유지{팜올레인유(말레이시아산),팜스테아린유(말레이시아산)},올레오레진로즈메리],전분가공품,복합조미식품1[하바네로칠리맛분말{새우분말(국내산)},새우엑기스분말{새우농축분말(새우(캐나다산))},새우(캐나다산),쉬림프후레바파우더{새우엑기스(냉동새우(캐나다산))},새우분말{새우(국내산)},복합조미식품2[새우분말{새우(태국산)}],정제소금,복합조미식품3,복합조미식품4,홍국색소,유화제,산도조절제,효소제,비타민E",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005256/19940449005256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 47g 225kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨620mg 31%, 탄수화물30g 95, 당류4g 4%, 지방9g 17%, 트랜스지방0g 포화지방4g 27%, 콜레스테롤10mg 3%, 단백질6g 11%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005256/19940449005256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산, 호주산 50%, 미국산 25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유류",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜분별유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "올레오레진로즈메리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품1",
+        "sub_ingredients": [
+          {
+            "name": "하바네로칠리맛분말",
+            "sub_ingredients": [
+              {
+                "name": "새우분말",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "새우엑기스분말",
+            "sub_ingredients": [
+              {
+                "name": "새우농축분말",
+                "origin": "캐나다산",
+                "sub_ingredients": [
+                  {
+                    "name": "새우",
+                    "origin": "캐나다산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "새우",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쉬림프후레바파우더",
+            "sub_ingredients": [
+              {
+                "name": "새우엑기스",
+                "sub_ingredients": [
+                  {
+                    "name": "냉동새우",
+                    "origin": "캐나다산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "새우분말",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품2",
+            "sub_ingredients": [
+              {
+                "name": "새우분말",
+                "origin": "태국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품4",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍국색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민E",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:01:50"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "sodium_mg": 620.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 4.0,
+    "fat_g": 9.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.0,
+    "cholesterol_mg": 10.0,
+    "protein_g": 6.0,
+    "basis_amount": 47.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 47g",
+    "collected_at": "2026-03-03 20:01:50"
+  }
+}

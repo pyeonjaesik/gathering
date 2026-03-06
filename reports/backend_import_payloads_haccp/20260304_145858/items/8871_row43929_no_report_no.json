@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "아워홈 인삼닭죽",
+    "reportnum": "20060445219506"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219506/20060445219506-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219506/20060445219506-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219506/20060445219506-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀(국산)6.17%,닭고기(국산)5.25%,찹쌀(국산)2.16%,수삼(국산)1.68%,정제수,치킨엑기스0.93%[닭발추출액(닭발:국산)],양파,당근,변성전분,사골농축엑기스,진간장(대두,밀),참기름,정제염.볶음참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219506/20060445219506-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=270g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219506/20060445219506-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "6.17%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "5.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "2.16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수삼",
+        "origin": "국산",
+        "amount": "1.68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨엑기스",
+        "amount": "0.93%",
+        "sub_ingredients": [
+          {
+            "name": "닭발추출액",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진간장",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:37"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 46.0,
+    "carbohydrate_g": 7.78,
+    "protein_g": 2.22,
+    "fat_g": 0.7,
+    "sugar_g": 0.0,
+    "sodium_mg": 196.0,
+    "cholesterol_mg": 9.26,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "270g",
+    "collected_at": "2026-03-04 03:59:37"
+  }
+}

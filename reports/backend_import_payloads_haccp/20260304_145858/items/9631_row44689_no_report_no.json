@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "YOUUS(유어스) 왕새우칩",
+    "reportnum": "2014038329915"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329915/2014038329915-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329915/2014038329915-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329915/2014038329915-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "새우크래커(인도네시아산/타피오카분말, 새우, 백설탕, 정제소금, 계란), 팜올레인유(말레이시아산), 새우씨즈닝[새우맛프리믹스N(엔){새우엑기스분말W1-1(건새우:국내산)}, 토마토분말(스페인산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329915/2014038329915-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=54g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329915/2014038329915-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "새우크래커",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "타피오카분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "새우맛프리믹스N",
+            "sub_ingredients": [
+              {
+                "name": "새우엑기스분말W1-1",
+                "origin": "국내산",
+                "sub_ingredients": [
+                  {
+                    "name": "건새우",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "토마토분말",
+            "origin": "스페인산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:39"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 502.0,
+    "carbohydrate_g": 66.67,
+    "protein_g": 3.7,
+    "fat_g": 24.07,
+    "sugar_g": 11.11,
+    "sodium_mg": 967.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 14.81,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "54g",
+    "collected_at": "2026-03-04 04:41:39"
+  }
+}

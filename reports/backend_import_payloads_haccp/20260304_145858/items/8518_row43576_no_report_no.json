@@ -1,0 +1,267 @@
+{
+  "product": {
+    "name_ko": "Homeplus 우리집 콩비지찌개",
+    "reportnum": "20020614179844"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179844/20020614179844-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179844/20020614179844-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179844/20020614179844-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "냉동콩국물[대두액{대두고형분 10%, 대두(국산)} 99.97%, 혼합제제(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘)] 39%, 정제수, 포기김치[배추(국산), 무(국산), 김치양념소스, 양파, 대파, 고춧가루(중국산), L-글루탐산나트륨(향미증진제)] 14.2%, 콩비지[대두(국산), 99.97%, 혼합제제(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘)] 11%, 사골육수, 돼지고기(국산) 2.4%, 양파, 대파, 돈골농축액[돈골추출액{돈사골(국산) 38.45%, 돈지방(국산) 3.85%, 가용성고형분 6%} 85.8%, 정제돈지(국산) 3.78%] 0.9%, 고춧가루, 다시마엑기스S, 정제소금, 감칠맛분에스, 마늘, 대두유, 향미증진제, 생강, 지미분(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179844/20020614179844-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=200ml(g) | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179844/20020614179844-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동콩국물",
+        "sub_ingredients": [
+          {
+            "name": "대두액",
+            "sub_ingredients": [
+              {
+                "name": "대두고형분",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포기김치",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김치양념소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩비지",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사골육수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "2.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돈골농축액",
+        "sub_ingredients": [
+          {
+            "name": "돈골추출액",
+            "sub_ingredients": [
+              {
+                "name": "돈사골",
+                "origin": "국산",
+                "amount": "38.45%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "돈지방",
+                "origin": "국산",
+                "amount": "3.85%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가용성고형분",
+                "amount": "6%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제돈지",
+            "origin": "국산",
+            "amount": "3.78%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:36"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 53.0,
+    "carbohydrate_g": 4.67,
+    "protein_g": 4.0,
+    "fat_g": 2.0,
+    "sugar_g": 0.67,
+    "sodium_mg": 330.0,
+    "cholesterol_mg": 3.33,
+    "saturated_fat_g": 0.27,
+    "trans_fat_g": 0.01,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "200ml(g)",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:44:36"
+  }
+}

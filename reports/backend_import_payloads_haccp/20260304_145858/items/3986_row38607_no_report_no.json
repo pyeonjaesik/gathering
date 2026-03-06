@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "우리밀 두부과자",
+    "reportnum": "1997039503243"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503243/1997039503243-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503243/1997039503243-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503243/1997039503243-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루36.3%(밀,국산),현미유26.4%(태국산),두부13.2%(콩:국산/무농약),유기농설탕9.91%,발아통밀가루6.6%(국산),유정란4.95%(국산),검정깨(국산),참깨(국산),천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503243/1997039503243-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(30g) *총 제공량 (100g)\n<1회 제공량당함량>\n열량145kcal, 나트륨110mg 6%, 탄수화물20g 6%, 당류3g, 지방6g 12%, 트랜스지방0.3g, 포화지방2.7g 18%, 콜레스테롤0mg 0%, 단백질3g 5%\n* %영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503243/1997039503243-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "36.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "태국산",
+        "amount": "26.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "국산",
+        "amount": "13.2%",
+        "sub_ingredients": [
+          {
+            "name": "무농약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "9.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아통밀가루",
+        "origin": "국산",
+        "amount": "6.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "4.95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:23:48"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "sodium_mg": 110.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 3.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.3,
+    "saturated_fat_g": 2.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 3.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)",
+    "collected_at": "2026-03-03 21:23:48"
+  }
+}

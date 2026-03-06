@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "달콤한 아몬드 고구마 샐러드",
+    "reportnum": "2015035522216"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015035522216/2015035522216-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015035522216/2015035522216-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015035522216/2015035522216-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고구마(중국산) 71.9%, 샐러드베이스[대두유{대두:외국산(미국,아르헨티나,베트남 등)}, 난황(국내산), 발효식초, 결정과당, 정제소금] , 곡류가공품(태국산), 결정과당, 정제수, 아몬드(미국산)2.1%, 소스, 정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015035522216/2015035522216-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 110g 215kcal 나트륨 140mg 7%, 탄수화물 21g 6%, 당류 10g 10%, 지방 14g 26%, 트랜스지방 -, 포화지방 2.2g 15%, 콜레스테롤 10mg 3%, 단백질 2g 4% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015035522216/2015035522216-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고구마",
+        "origin": "중국산",
+        "amount": "71.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "샐러드베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "외국산, 미국산, 아르헨티나산, 베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "2.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:32"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "sodium_mg": 140.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 10.0,
+    "fat_g": 14.0,
+    "saturated_fat_g": 2.2,
+    "cholesterol_mg": 10.0,
+    "protein_g": 2.0,
+    "basis_amount": 110.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 110g",
+    "collected_at": "2026-03-04 04:44:32"
+  }
+}

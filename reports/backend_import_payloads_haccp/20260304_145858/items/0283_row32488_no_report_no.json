@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "코코팜포도",
+    "reportnum": "19710570001504"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710570001504/19710570001504-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710570001504/19710570001504-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710570001504/19710570001504-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,나타드코코7.5%(나타드코코젤리(베트남산)80%,백설탕,정제수,구연산],백포도농축과즙(백포도과즙으로3%,미국산),합성착향료(포도향),구연산,구연산나트륨,아스코르빈산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710570001504/19710570001504-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(238ml) 총1회 제공량 238ml 1회제공량당 함량 *%영양소 기준치: 열량 116kcal,탄수화물29g 9%,당류27g, 단백질 0g 0%,지방0g 0%, 포화지방0g 0%, 트랜지방 0g, 콜레스테롤0mg 0%, 나트륨 36mg 2%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710570001504/19710570001504-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타드코코",
+        "amount": "7.5%",
+        "sub_ingredients": [
+          {
+            "name": "나타드코코젤리",
+            "origin": "베트남산",
+            "amount": "80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백포도농축과즙",
+        "origin": "미국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아스코르빈산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:26:35"
+  },
+  "nutrition": {
+    "kcal": 116.0,
+    "carbohydrate_g": 29.0,
+    "sugar_g": 27.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 36.0,
+    "basis_amount": 238.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(238ml)",
+    "collected_at": "2026-03-03 13:26:35"
+  }
+}

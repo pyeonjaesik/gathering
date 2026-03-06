@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "햇살비 들깨기피가루",
+    "reportnum": "2006044010531"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010531/2006044010531-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010531/2006044010531-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010531/2006044010531-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "들깨100%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010531/2006044010531-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 분량당 함량 / 1회 분량(100g)\n<100g당 함량 %영양성분 기준치>\n열량663kcal, 탄수화물12g 3.7%, 당류1g미만, 단백질25g, 지방43.1%, 포화지방32.1g 112%, 트랜스지방0g, 콜레스테롤0mg, 나트륨28mg 1.4%\n%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010531/2006044010531-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "들깨",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:00"
+  },
+  "nutrition": {
+    "kcal": 663.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 25.0,
+    "fat_g": 43.1,
+    "saturated_fat_g": 32.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 28.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 분량(100g)",
+    "collected_at": "2026-03-04 03:59:00"
+  }
+}

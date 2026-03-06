@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "요리가 즐거운 스모크햄",
+    "reportnum": "19720125001117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001117/19720125001117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001117/19720125001117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001117/19720125001117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기46.67%(국산),돼지고기33.91%(국산),정제수,옥수수전분,로스팅복합믹스[난백분말(계란),L-글루타민산나트륨(향미증진제)],구운마늘엑기스,양파,대두단백,리갈브라인믹스[질산나트륨 · 아질산나트륨(발색제),산도조절제],구운마늘복합시증닝,콜라겐,비프시즈닝,락색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001117/19720125001117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(50g) 총 3회 제공량(150g) *%영양소 기준치 : 1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 120kcal, 탄수화물 5g 2%, 당류 1g, 단백질 5g 8%, 지방 9g 18%, 포화지방 3.0g 20%, 트랜스지방 0g, 콜레스테롤 15mg 5%, 나트륨 290mg 10%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001117/19720125001117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "46.67%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "33.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로스팅복합믹스",
+        "sub_ingredients": [
+          {
+            "name": "난백분말",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운마늘엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리갈브라인믹스",
+        "sub_ingredients": [
+          {
+            "name": "질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운마늘복합시증닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:16:15"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 1.0,
+    "protein_g": 5.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 290.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(50g)",
+    "collected_at": "2026-03-03 14:16:15"
+  }
+}

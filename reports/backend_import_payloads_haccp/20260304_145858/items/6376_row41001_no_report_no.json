@@ -1,0 +1,92 @@
+{
+  "product": {
+    "name_ko": "세계치킨 닭곰탕",
+    "reportnum": "2011044800517"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044800517/2011044800517-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044800517/2011044800517-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044800517/2011044800517-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(국산무항생제인증)30%,누룽지추출육수(국산무농약인증찹쌀)69.3%,마늘(국산무농약인증)0.%,황토소금(국산,미국유기농협회OTA등록제품)0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044800517/2011044800517-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (100g),총 6회 제공량(600g),100g당 함량,%영양소 기준치,열량/Calories 60 kcal,탄수화물/Carbonhydrate 1g(0%),당류/Sugar 0g,단백질/Protein 7g(13%),지방/Total Fat 4g(8%),포화지방/Saturated Fat 1.1g(7%),트랜스지방/Trans Fat 0g,콜레스테롤/Cholesterol 5mg(2%),나트륨(Sodium) 170mg(9%),*%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044800517/2011044800517-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "누룽지추출육수",
+        "origin": "국산",
+        "amount": "69.3%",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "0.%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황토소금",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "미국유기농협회OTA등록제품",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:13"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 7.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 170.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (100g)",
+    "collected_at": "2026-03-04 04:31:13"
+  }
+}

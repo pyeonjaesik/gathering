@@ -1,0 +1,140 @@
+{
+  "product": {
+    "name_ko": "아빠가 만들어도 맛있는 볶음우동 데리야끼맛",
+    "reportnum": "19880445009841"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009841/19880445009841-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009841/19880445009841-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009841/19880445009841-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀:호주산),변성전분,데리야끼분말스프<데리야끼분말베이스[데리야끼베이스[생장{대두(인도산)}],건파(중국산)>,옥수수유[옥수수:외국산(러시아,헝가리,세르비아)],혼합제제(산도조절제,말티톨시럽,정제수),정제소금,분말유지,밀글루텐,수용성대두다당류,유화유지",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009841/19880445009841-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(193g)/1회(193g) : 열량 340kcal, 탄수화물69g 21%, 식이섬유 2g 8%, 당류 8g, 단백질 7g 13%, 비타민A 20㎍RE 3%, 칼슘 22mg 3%, 지방4.3g 8%, 포화지방 1g 7%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 970mg 49%, 비타민C 0mg 0%, 철 2.1mg 18%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009841/19880445009841-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데리야끼분말스프",
+        "sub_ingredients": [
+          {
+            "name": "데리야끼분말베이스",
+            "sub_ingredients": [
+              {
+                "name": "데리야끼베이스",
+                "sub_ingredients": [
+                  {
+                    "name": "생장",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "origin": "인도산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "건파",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성대두다당류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:31:17"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "carbohydrate_g": 69.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 8.0,
+    "protein_g": 7.0,
+    "calcium_mg": 22.0,
+    "fat_g": 4.3,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 970.0,
+    "iron_mg": 2.1,
+    "basis_amount": 193.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(193g)",
+    "collected_at": "2026-03-03 17:31:17"
+  }
+}

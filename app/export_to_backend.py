@@ -27,6 +27,16 @@ NUTRITION_KEY_MAP_PUBLIC_DB = {
     "철(mg)": "iron_mg",
     "인(mg)": "phosphorus_mg",
     "칼륨(mg)": "potassium_mg",
+    "수분(g)": "water_g",
+    "회분(g)": "ash_g",
+    "비타민A(μg RAE)": "vitamin_a_rae_ug",
+    "레티놀(μg)": "retinol_ug",
+    "베타카로틴(μg)": "beta_carotene_ug",
+    "비타민B1(mg)": "vitamin_b1_mg",
+    "비타민B2(mg)": "vitamin_b2_mg",
+    "나이아신(mg)": "niacin_mg",
+    "비타민C(mg)": "vitamin_c_mg",
+    "비타민D(μg)": "vitamin_d_ug",
 }
 
 
@@ -47,6 +57,17 @@ NUTRITION_NAME_MAP_IMAGE_PASS4 = {
     "인": "phosphorus_mg",
     "칼륨": "potassium_mg",
     "수분": "water_g",
+    "회분": "ash_g",
+    "비타민a": "vitamin_a_rae_ug",
+    "레티놀": "retinol_ug",
+    "베타카로틴": "beta_carotene_ug",
+    "비타민b1": "vitamin_b1_mg",
+    "비타민b2": "vitamin_b2_mg",
+    "나이아신": "niacin_mg",
+    "비타민c": "vitamin_c_mg",
+    "비타민d": "vitamin_d_ug",
+    "포화지방산": "saturated_fat_g",
+    "트랜스지방산": "trans_fat_g",
 }
 
 
@@ -156,17 +177,78 @@ def _parse_ingredients(raw_ingredients_text: str | None) -> list[dict[str, Any]]
 def _parse_nutrition_public_db(parsed_nutrition: dict[str, Any]) -> dict[str, Any]:
     out: dict[str, Any] = {}
     items = parsed_nutrition.get("items")
-    if not isinstance(items, dict):
-        return out
+    if isinstance(items, dict):
+        for source_key, target_key in NUTRITION_KEY_MAP_PUBLIC_DB.items():
+            number = _to_float(items.get(source_key))
+            if number is not None:
+                out[target_key] = number
 
-    for source_key, target_key in NUTRITION_KEY_MAP_PUBLIC_DB.items():
-        number = _to_float(items.get(source_key))
-        if number is not None:
-            out[target_key] = number
+    nutrition_items = parsed_nutrition.get("nutrition_items")
+    if isinstance(nutrition_items, list):
+        for row in nutrition_items:
+            if not isinstance(row, dict):
+                continue
+            name = _normalize_nutrition_name(str(row.get("name") or "")).lower()
+            unit = str(row.get("unit") or "").strip().lower()
+            value_raw = row.get("value")
+            value_num = _to_float(value_raw)
+
+            if name in {"기준량", "영양성분기준량"}:
+                txt = str(value_raw or "").strip()
+                if txt:
+                    out["basis_text"] = txt
+                continue
+            if name.startswith("1회제공량"):
+                txt = str(value_raw or "").strip()
+                if txt:
+                    out["serving_size"] = txt
+                if value_num is not None and unit in {"g", "ml"}:
+                    out["serving_size_value"] = value_num
+                    out["serving_size_unit"] = unit
+                continue
+            if name.startswith("총내용량"):
+                txt = str(value_raw or "").strip()
+                if txt:
+                    out["total_content"] = txt
+                if value_num is not None and unit in {"g", "ml"}:
+                    out["food_weight_g"] = value_num if unit == "g" else None
+                    out["food_weight_ml"] = value_num if unit == "ml" else None
+                continue
+            if ("회제공량" in name) and name.startswith("총"):
+                txt = str(value_raw or "").strip()
+                if txt:
+                    out["servings_per_container"] = txt
+                continue
+
+            if value_num is None:
+                continue
+            for key_prefix, target_key in NUTRITION_NAME_MAP_IMAGE_PASS4.items():
+                if name.startswith(key_prefix):
+                    out[target_key] = value_num
+                    break
 
     source_name = parsed_nutrition.get("source")
     if isinstance(source_name, str) and source_name.strip():
         out["source_name"] = source_name.strip()
+
+    nutrition_basis = parsed_nutrition.get("nutrition_basis")
+    if isinstance(nutrition_basis, dict):
+        per_amount = _to_float(nutrition_basis.get("per_amount"))
+        per_unit = str(nutrition_basis.get("per_unit") or "").strip().lower() or None
+        basis_text = str(nutrition_basis.get("basis_text") or "").strip() or None
+        if per_amount is not None:
+            out["basis_amount"] = per_amount
+        if per_unit:
+            out["basis_unit"] = per_unit
+        if basis_text and (not out.get("basis_text")):
+            out["basis_text"] = basis_text
+
+    serv_size = str(parsed_nutrition.get("serv_size") or "").strip()
+    food_size = str(parsed_nutrition.get("food_size") or "").strip()
+    if serv_size and (not out.get("serving_size")):
+        out["serving_size"] = serv_size
+    if food_size and (not out.get("total_content")):
+        out["total_content"] = food_size
 
     return out
 
@@ -186,7 +268,27 @@ def _parse_nutrition_image_pass4(parsed_nutrition: dict[str, Any]) -> dict[str, 
             continue
         name = _normalize_nutrition_name(str(row.get("name") or ""))
         unit = str(row.get("unit") or "").strip().lower()
-        value = _to_float(row.get("value"))
+        value_raw = row.get("value")
+
+        if name in {"기준량", "영양성분기준량"}:
+            txt = str(value_raw or "").strip()
+            if txt:
+                out["basis_text"] = txt
+            continue
+        if name.startswith("1회제공량"):
+            txt = str(value_raw or "").strip()
+            if txt:
+                out["serving_size"] = txt
+        if name.startswith("총내용량"):
+            txt = str(value_raw or "").strip()
+            if txt:
+                out["total_content"] = txt
+        if ("회제공량" in name) and name.startswith("총"):
+            txt = str(value_raw or "").strip()
+            if txt:
+                out["servings_per_container"] = txt
+
+        value = _to_float(value_raw)
         if value is None:
             continue
 
@@ -199,6 +301,31 @@ def _parse_nutrition_image_pass4(parsed_nutrition: dict[str, Any]) -> dict[str, 
             if name.startswith(key_prefix):
                 out[target_key] = value
                 break
+        if name.startswith("1회제공량") and unit in {"g", "ml"}:
+            out["serving_size_value"] = value
+            out["serving_size_unit"] = unit
+        if name.startswith("총내용량") and unit in {"g", "ml"}:
+            out["food_weight_g"] = value if unit == "g" else out.get("food_weight_g")
+            out["food_weight_ml"] = value if unit == "ml" else out.get("food_weight_ml")
+
+    nutrition_basis = parsed_nutrition.get("nutrition_basis")
+    if isinstance(nutrition_basis, dict):
+        per_amount = _to_float(nutrition_basis.get("per_amount"))
+        per_unit = str(nutrition_basis.get("per_unit") or "").strip().lower() or None
+        basis_text = str(nutrition_basis.get("basis_text") or "").strip() or None
+        if per_amount is not None:
+            out["basis_amount"] = per_amount
+        if per_unit:
+            out["basis_unit"] = per_unit
+        if basis_text and (not out.get("basis_text")):
+            out["basis_text"] = basis_text
+
+    serv_size = str(parsed_nutrition.get("serv_size") or "").strip()
+    food_size = str(parsed_nutrition.get("food_size") or "").strip()
+    if serv_size and (not out.get("serving_size")):
+        out["serving_size"] = serv_size
+    if food_size and (not out.get("total_content")):
+        out["total_content"] = food_size
 
     return out
 
@@ -231,13 +358,40 @@ def transform_food_final_row(row: sqlite3.Row) -> TransformResult:
     if product_name_error is not None:
         return TransformResult(payload=None, error=product_name_error)
 
+    source_url = str(row["source_image_url"] or "").strip() or None
     payload: dict[str, Any] = {
         "product": {
             "name_ko": product_name,
             "reportnum": (str(row["item_mnftr_rpt_no"]).strip() if row["item_mnftr_rpt_no"] else None),
         },
         "source": {
-            "url": str(row["source_image_url"] or "").strip() or None,
+            "url": source_url,
+            "product": {
+                "name": {
+                    "source_type": "image_pass3",
+                    "source_field": "food_final.product_name",
+                    "url": source_url,
+                },
+                "reportnum": {
+                    "source_type": "image_pass3",
+                    "source_field": "food_final.item_mnftr_rpt_no",
+                    "selected_from": (str(row["report_no_selected_from"] or "").strip() or None),
+                    "candidates_json": (str(row["all_report_nos_json"] or "").strip() or None),
+                    "url": source_url,
+                },
+            },
+            "ingredients": {
+                "source_type": "image_pass4_ing",
+                "source_field": "food_final.ingredients_text",
+                "value_format": "ingredients_items_json",
+                "url": source_url,
+            },
+            "nutrition": {
+                "source_type": (str(row["nutrition_source"] or "").strip() or "none"),
+                "source_field": "food_final.nutrition_text",
+                "value_format": "nutrition_json",
+                "url": source_url,
+            },
         },
     }
 
@@ -251,8 +405,19 @@ def transform_food_final_row(row: sqlite3.Row) -> TransformResult:
 
     nutrition = _parse_nutrition(row["nutrition_text"], row["nutrition_source"])
     if nutrition:
+        basis_fallback = str(row["public_basis_text"] or "").strip()
+        serv_fallback = str(row["public_serv_size"] or "").strip()
+        food_fallback = str(row["public_food_size"] or "").strip()
+        if basis_fallback and (not nutrition.get("basis_text")):
+            nutrition["basis_text"] = basis_fallback
+        if serv_fallback and (not nutrition.get("serving_size")):
+            nutrition["serving_size"] = serv_fallback
+        if food_fallback and (not nutrition.get("total_content")):
+            nutrition["total_content"] = food_fallback
         nutrition["collected_at"] = row["created_at"]
         payload["nutrition"] = nutrition
+    else:
+        payload["source"]["nutrition"]["note"] = "nutrition_not_available"
 
     return TransformResult(payload=payload)
 
@@ -263,13 +428,47 @@ def transform_haccp_parsed_row(row: sqlite3.Row) -> TransformResult:
     if product_name_error is not None:
         return TransformResult(payload=None, error=product_name_error)
 
+    source_url = str(row["source_image_url"] or "").strip() or None
+    parser_version = str(row["parser_version"] or "").strip() or None
+    source_nutrient_raw = str(row["source_nutrient"] or "").strip() or None
+    source_rawmtrl_raw = str(row["source_rawmtrl"] or "").strip() or None
+    nutrition_source_type = "haccp_pass4_nut"
+    if source_nutrient_raw and ("processed_food_info" in source_nutrient_raw):
+        nutrition_source_type = "processed_food_db"
+
     payload: dict[str, Any] = {
         "product": {
             "name_ko": product_name,
             "reportnum": (str(row["item_mnftr_rpt_no"]).strip() if row["item_mnftr_rpt_no"] else None),
         },
         "source": {
-            "url": str(row["source_image_url"] or "").strip() or None,
+            "url": source_url,
+            "product": {
+                "name": {
+                    "source_type": "haccp_api",
+                    "source_field": "haccp_product_info.prdlstNm",
+                    "url": source_url,
+                },
+                "reportnum": {
+                    "source_type": "haccp_api",
+                    "source_field": "haccp_product_info.prdlstReportNo",
+                    "url": source_url,
+                },
+            },
+            "ingredients": {
+                "source_type": "haccp_pass4_ing",
+                "source_field": "haccp_parsed_cache.ingredients_items_json",
+                "parser_version": parser_version,
+                "raw_text": source_rawmtrl_raw,
+                "url": source_url,
+            },
+            "nutrition": {
+                "source_type": nutrition_source_type,
+                "source_field": "haccp_parsed_cache.nutrition_items_json",
+                "parser_version": parser_version,
+                "raw_text": source_nutrient_raw,
+                "url": source_url,
+            },
         },
     }
 
@@ -285,6 +484,8 @@ def transform_haccp_parsed_row(row: sqlite3.Row) -> TransformResult:
     if nutrition:
         nutrition["collected_at"] = row["created_at"]
         payload["nutrition"] = nutrition
+    else:
+        payload["source"]["nutrition"]["note"] = "nutrition_not_available"
 
     return TransformResult(payload=payload)
 
@@ -315,17 +516,24 @@ def fetch_food_final_rows(
         where_sql = " AND ".join(where_clauses)
         sql = f"""
             SELECT
-              id,
-              product_name,
-              item_mnftr_rpt_no,
-              ingredients_text,
-              nutrition_text,
-              nutrition_source,
-              source_image_url,
-              created_at
-            FROM food_final
+              ff.id,
+              ff.product_name,
+              ff.item_mnftr_rpt_no,
+              ff.ingredients_text,
+              ff.nutrition_text,
+              ff.nutrition_source,
+              ff.source_image_url,
+              ff.report_no_selected_from,
+              ff.all_report_nos_json,
+              ff.created_at,
+              pf.nutConSrtrQua AS public_basis_text,
+              pf.servSize AS public_serv_size,
+              pf.foodSize AS public_food_size
+            FROM food_final ff
+            LEFT JOIN processed_food_info pf
+              ON COALESCE(TRIM(pf.itemMnftrRptNo), '') = COALESCE(TRIM(ff.item_mnftr_rpt_no), '')
             WHERE {where_sql}
-            ORDER BY id ASC
+            ORDER BY ff.id ASC
         """
         if limit is not None:
             sql += " LIMIT ?"
@@ -374,6 +582,9 @@ def fetch_haccp_parsed_rows(
               p.ingredients_items_json AS ingredients_text,
               p.nutrition_items_json AS nutrition_text,
               'image_pass4' AS nutrition_source,
+              p.parser_version AS parser_version,
+              p.source_rawmtrl AS source_rawmtrl,
+              p.source_nutrient AS source_nutrient,
               COALESCE(NULLIF(TRIM(h.imgurl1), ''), NULLIF(TRIM(h.imgurl2), '')) AS source_image_url,
               p.parsed_at AS created_at
             FROM haccp_parsed_cache p
@@ -425,6 +636,17 @@ def send_batches(
                 f"[batch {index}] ok size={len(batch)} created={created} "
                 f"skipped={skipped} row_errors={len(errors)}"
             )
+            if errors:
+                preview = errors[:5]
+                for err in preview:
+                    product = str(err.get("product") or "-")
+                    reportnum = str(err.get("reportnum") or "-")
+                    message = str(err.get("error") or "unknown_error")
+                    print(
+                        f"  [row_error] product={product} reportnum={reportnum} error={message}"
+                    )
+                if len(errors) > len(preview):
+                    print(f"  ... and {len(errors) - len(preview)} more row_errors")
             sent_count += len(batch)
         except Exception as exc:  # noqa: BLE001
             error_count += len(batch)

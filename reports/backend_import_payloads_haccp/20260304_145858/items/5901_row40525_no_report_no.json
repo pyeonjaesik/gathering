@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "옛날어묵",
+    "reportnum": "2009019989740"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989740/2009019989740-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989740/2009019989740-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989740/2009019989740-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육58.53%(수입산/어육,설탕,D-소르비톨,폴리인산나트륨,피로인산나트륨,제삼인산나트륨),밀가루(밀),양파,감자전분,대파,당근,현미유(미강100%),태움소금,참치엑기스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989740/2009019989740-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 30g / 총 10회 제공량(300g)\n<1일 제공량당 함량> \n열량45Kcal, 탄수화물7g (2%) · 당류0g, 단백질3g (5%), 지방0.7g (1%) · 포화지방0g (0%) · 트랜스지방0g, 콜레스테롤5mg미만 (1%), 나트륨190mg (10%)\n*()안의 수치는 1일 영양성분 기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989740/2009019989740-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "수입산",
+        "amount": "58.53%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": [
+          {
+            "name": "미강",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "태움소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참치엑기스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:50"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 190.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g",
+    "collected_at": "2026-03-04 04:16:50"
+  }
+}

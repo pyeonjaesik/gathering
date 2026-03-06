@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "푸로스트콘",
+    "reportnum": "19830360016124"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016124/19830360016124-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016124/19830360016124-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016124/19830360016124-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수68%(인도산),설탕,맥아엿,정제소금(국내산),혼합제제1[비타민B1염산염,비타민B2,나이아신아미드,비타민B6염산염,비타민E,엽산,산화아연,환원철],혼합제제2[d-토코페롤(혼합형),글리세린,글리세린지방산에스테르]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016124/19830360016124-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1컵(30g)(1컵=200ml기준)  총 50회 제공량 1500g 1회 제공량당 함량  저지방 우유 200ml+30g시리얼 열량(kcal) 116 186,탄수화물(g) 26.7(8%) 35.9(11%),당류(g) 9.5 18.7,단백질 1.5(3%) 7.3(13%),지방(g)0.3(1%) 1.5(3%),포화지방(g) 0(0%) 0.7(5%),트랜스지방(g) 0 0,콜레스테롤(mg) 0(0%) 4(1%),나트륨(mg) 175(9%) 379(19%) <비타민> 비타민B1(mg) 0.30(25%) 0.38(32%),비타민B2(mg) 0.35(25%) 0.47(34%),나이아신(mgNE) 3.75(25%) 5.35(36%),비타민B6(mg) 0.38(25%) 0.46(31%),비타민E(mga-TE) 2.75(25%) 2.75(25%),엽산(㎍) 100.0(25%) 119.4(30%) <무기질>철분(mg) 1.2(10%) 1.2(10%),아연(mg)0.85(10%) 1.7(19%),칼슘(mg) 0(0%) 210(30%) %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016124/19830360016124-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "인도산",
+        "amount": "68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "환원철",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:25:20"
+  },
+  "nutrition": {
+    "kcal": 116.0,
+    "carbohydrate_g": 26.7,
+    "sugar_g": 9.5,
+    "protein_g": 1.5,
+    "fat_g": 0.3,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 175.0,
+    "niacin_mg": 3.75,
+    "iron_mg": 1.2,
+    "calcium_mg": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량1컵(30g)",
+    "collected_at": "2026-03-03 15:25:20"
+  }
+}

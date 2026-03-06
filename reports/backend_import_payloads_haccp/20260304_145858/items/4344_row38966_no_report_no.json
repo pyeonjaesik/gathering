@@ -1,0 +1,57 @@
+{
+  "product": {
+    "name_ko": "명가랑정이담긴 들기름",
+    "reportnum": "200003701283"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701283/200003701283-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701283/200003701283-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701283/200003701283-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "들깨 100%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701283/200003701283-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<1회 분량(100mg)>\n열량896kcal, 탄수화물mg 0.25%, 당류mg, 조단백질mg 99.30%, 조지방mg 99.30%, 포화지방산mg 6.65%, 트랜스지방mg 0%, 콜레스테롤mg\n*%영양소 기준치 : 1일 영양소 기준치에 대한 비율(1g=1.09ml)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701283/200003701283-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "들깨",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:14:09"
+  },
+  "nutrition": {
+    "kcal": 896.0,
+    "carbohydrate_g": 0.25,
+    "saturated_fat_g": 6.65,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "mg",
+    "basis_text": "1회 분량(100mg)",
+    "collected_at": "2026-03-03 22:14:09"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "product": {
+    "name_ko": "범산목장 유기농 소프트 라이트 믹스",
+    "reportnum": "20060379004114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060379004114/20060379004114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060379004114/20060379004114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060379004114/20060379004114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농우유(국내산)63%,유기농탈지농축유(국내산)15.76%,유기농설탕(브라질산)8.2%,유기농유크림(국내산)%,유기농아가베시럽(멕시코산),범산믹스[유기농설탕,유단백농축분말,구연산삼나트륨,카라기난](국내산),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060379004114/20060379004114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=353ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060379004114/20060379004114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농우유",
+        "origin": "국내산",
+        "amount": "63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농탈지농축유",
+        "origin": "국내산",
+        "amount": "15.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "브라질산",
+        "amount": "8.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농유크림",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농아가베시럽",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "범산믹스",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유단백농축분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:20"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 110.0,
+    "carbohydrate_g": 16.43,
+    "protein_g": 3.97,
+    "fat_g": 3.12,
+    "sugar_g": 16.15,
+    "sodium_mg": 68.0,
+    "cholesterol_mg": 9.92,
+    "saturated_fat_g": 1.98,
+    "trans_fat_g": 0.08,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "353ml",
+    "collected_at": "2026-03-04 03:58:20"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "못말리는 신짱",
+    "reportnum": "1987046106882"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987046106882/1987046106882-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987046106882/1987046106882-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987046106882/1987046106882-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),혼합식용유[팜올레인유(말레이시아산)59.98%,해바라기유{외국산(우크라이나•말레이사아•스페인등)}40%,토코페롤(혼합형)],설탕,올리고당,포도당,산도조절제1,정제소금(국내산),벌꿀,검정깨,복합조미식품1,산도조절제2,복합조미식품2,합성향료(허니향,크랙커향,훈연향),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987046106882/1987046106882-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=38g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987046106882/1987046106882-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "우크라이나•말레이사아•스페인등",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "허니향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크랙커향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "훈연향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:42:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 534.0,
+    "carbohydrate_g": 63.16,
+    "protein_g": 5.26,
+    "fat_g": 28.95,
+    "sugar_g": 21.05,
+    "sodium_mg": 289.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 8.95,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "38g",
+    "collected_at": "2026-03-03 16:42:06"
+  }
+}

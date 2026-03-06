@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "참기름",
+    "reportnum": "1997055514980"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514980/1997055514980-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514980/1997055514980-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514980/1997055514980-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "통참깨100%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514980/1997055514980-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g(1g=1.09ml)당 항량 %영양성분기준치\n열량900kcal -, 탄수화물0g 0%, 당류0g 0%, 단백질0g 0%, 지방100g 196%, 포화지방15.68g 104%, 트랜스지방 0g -, 콜레스테롤 0g 0%, 나트륨0g 0%\n* %영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514980/1997055514980-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통참깨",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:30:41"
+  },
+  "nutrition": {
+    "kcal": 900.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "saturated_fat_g": 15.68,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:30:41"
+  }
+}

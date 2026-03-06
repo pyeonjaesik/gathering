@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "포두부 화이트",
+    "reportnum": "2010046607033"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046607033/2010046607033-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046607033/2010046607033-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046607033/2010046607033-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두(수입산)95.58%,조제해수염화마그네슘,환합제제[식물성유지,글리세린지방산에스테르,레시틴,탄산마그네슘]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046607033/2010046607033-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046607033/2010046607033-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "수입산",
+        "amount": "95.58%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조제해수염화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "환합제제",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 195.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 19.5,
+    "fat_g": 11.5,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "200g",
+    "collected_at": "2026-03-04 04:27:09"
+  }
+}

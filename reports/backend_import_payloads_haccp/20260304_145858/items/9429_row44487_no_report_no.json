@@ -1,0 +1,227 @@
+{
+  "product": {
+    "name_ko": "명품 수미궁김치",
+    "reportnum": "201101820238"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101820238/201101820238-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101820238/201101820238-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101820238/201101820238-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "절입배추70%(국내산),무6%(국내산),천일염2%(국내산),양념[고추가루(국내산),액젓(생멸치75%,소금25%),육젓(멸치75%,소금25%),찹쌀풀(찹쌀(국내산),L-글루타민산나트륨(향미증진제),다시다(쇠고기분,진한쇠고기맛양념,양파분,쇠고기농축액,쇠고기5%),양파(국내산),마늘(국내산),생강(국내산),설탕,새우젓(새우80%,식염20%),사카린나트륨(합성감미료0.01%),물엿(국내가공),육수(다시마,멸치밴댕이)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101820238/201101820238-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=40g | foodSize=10000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101820238/201101820238-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절입배추",
+        "origin": "국내산",
+        "amount": "70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국내산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양념",
+        "sub_ingredients": [
+          {
+            "name": "고추가루",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액젓",
+            "sub_ingredients": [
+              {
+                "name": "생멸치",
+                "amount": "75%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소금",
+                "amount": "25%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "육젓",
+            "sub_ingredients": [
+              {
+                "name": "멸치",
+                "amount": "75%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소금",
+                "amount": "25%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "찹쌀풀",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "다시다",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "진한쇠고기맛양념",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇠고기농축액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇠고기",
+                "amount": "5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우젓",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사카린나트륨",
+            "amount": "0.01%",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "국내가공",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "육수",
+            "sub_ingredients": [
+              {
+                "name": "다시마",
+                "sub_ingredients": []
+              },
+              {
+                "name": "멸치밴댕이",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 44.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 520.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "40g",
+    "total_content": "10000g",
+    "collected_at": "2026-03-04 04:29:54"
+  }
+}

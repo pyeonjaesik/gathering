@@ -1,0 +1,223 @@
+{
+  "product": {
+    "name_ko": "천하장사 프리미엄",
+    "reportnum": "1983061400333"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400333/1983061400333-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400333/1983061400333-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400333/1983061400333-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육56.12%(수입산/어육, 솔비톨, 설탕, 인산염), 혼합소맥전분[중국산/소맥전분(밀), 덱스트린, 정제소금], 돼지고기, 하이멜트치즈4.99%, 대두유(대두), 전란(계란), 우유2.49%, 자일리톨0.249%, 대두단백, 정제소금, 설탕, 솔비톨, 가라기난, 나노칼슘0.249%(탄산칼슘, 아라비안검, 덱스트린), 혼합제제(가라기난, 곤약), 합성착향료(치즈향, 치즈오일), 소스류, 복합조미식품(게, 새우), 산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400333/1983061400333-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분표[():1일 영양소 기준치에 대한 비율]\n1회 제공량 1개(28g)당 함량 총 3회 제공량 : 84g\n열량43kcal, 탄수화물4g (1%), 당류1g, 단백질3g (5%), 지방1.7g (3%), 포화지방0g (0%), 트랜스지방0g, 콜레스테롤17mg (6%), 나트륨154mg (8%), 칼슘 17mg (2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400333/1983061400333-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "수입산",
+        "amount": "56.12%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "솔비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인산염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합소맥전분",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "소맥전분",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하이멜트치즈",
+        "amount": "4.99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "amount": "2.49%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "0.249%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나노칼슘",
+        "amount": "0.249%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비안검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "가라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곤약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "치즈향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈오일",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:35:26"
+  },
+  "nutrition": {
+    "kcal": 43.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 1.0,
+    "protein_g": 3.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 17.0,
+    "sodium_mg": 154.0,
+    "calcium_mg": 17.0,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(28g)당 함량",
+    "collected_at": "2026-03-03 15:35:26"
+  }
+}

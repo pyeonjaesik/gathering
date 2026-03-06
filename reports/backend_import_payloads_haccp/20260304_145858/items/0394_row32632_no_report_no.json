@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "아기밀냠냠 구워만든 순곡물바 바나나",
+    "reportnum": "1972027500477"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972027500477/1972027500477-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972027500477/1972027500477-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972027500477/1972027500477-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "무농약5혼합곡물[백미67%,찰보리25%,찹쌀,백태(대두),흑미/국내산]51.90%,식물성유지[팜올레인유(말레이시아산)],바나나분말(바나나100%,에콰도르산)10%,옥수수(국내산),탈지분유(우유),미분당,무수결정포도당,발아퀴노아1.8%,토코페롤(혼합형),탄산칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972027500477/1972027500477-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=40g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972027500477/1972027500477-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약5혼합곡물",
+        "origin": "국내산",
+        "amount": "51.90%",
+        "sub_ingredients": [
+          {
+            "name": "백미",
+            "amount": "67%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰보리",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백태",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "흑미",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "에콰도르산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "바나나",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미분당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아퀴노아",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:37:23"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 52.5,
+    "protein_g": 10.0,
+    "fat_g": 32.5,
+    "sugar_g": 10.0,
+    "sodium_mg": 100.0,
+    "cholesterol_mg": 7.5,
+    "saturated_fat_g": 7.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "40g",
+    "collected_at": "2026-03-03 13:37:23"
+  }
+}

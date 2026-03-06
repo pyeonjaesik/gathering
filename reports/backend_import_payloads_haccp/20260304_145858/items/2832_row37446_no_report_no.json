@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "바른어묵 봉",
+    "reportnum": "19900275002487"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002487/19900275002487-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002487/19900275002487-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002487/19900275002487-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육60.24%(중국산,베트남산/어육,D-소르비톨,정백당,산도조절제),밀가루(밀/미국산,호주산),당근3.77%(국내산),카놀라유,부추1.88%(국내산),양파1.88%(국내산),정제소금,대두단백,L-글루타민산나트륨(향미증진제),정백당,글리신,소르빈산칼륨(합성보존료),양파추출베이스,자일로오스,어묵맛시즈닝,트랜스글루타미나아제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002487/19900275002487-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1개(30g) 1회제공량당 함량 :열량50kcal, 탄수화물7g(2%), 당류1g, 단백질3g(5%), 지방1.3g(3%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤5mg(2%), 나트륨220mg(11%) *()안의 수치는 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002487/19900275002487-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "중국산, 베트남산",
+        "amount": "60.24%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국내산",
+        "amount": "3.77%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국내산",
+        "amount": "1.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "amount": "1.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파추출베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "어묵맛시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트랜스글루타미나아제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:58:22"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "protein_g": 3.0,
+    "fat_g": 1.3,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 220.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1개(30g)",
+    "collected_at": "2026-03-03 17:58:22"
+  }
+}

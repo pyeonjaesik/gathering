@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "미니양파링 탄두리치킨맛",
+    "reportnum": "1991046110199"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110199/1991046110199-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110199/1991046110199-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110199/1991046110199-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀;미국산),옥수수전분{옥수수:외국산(러시아,헝가리,세르비아 등)},미강유(태국산),변성전분,탄두리치킨맛시즈닝(탄두리치킨맛베이스,덱스트린,미립당,건마늘,유청분말),팜유,미니양파링베이스분말(정백당,분말셀룰로오스,정제염,화이버졸,비타민B2),양파농축액,감자분말.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110199/1991046110199-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉지(40g) 총 2회 제공량(80g)\n<1회 제공량당 함량 ※*%영양성분 기준치>\n열량 190kcal, 탄수화물 29g 9%, 식이섬유 3.5g 14%, 당류 3g, 단백질 2g 4%, 지방 8g 16%, 포화지방 2.6g 17%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 320mg 16%\n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110199/1991046110199-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미강유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄두리치킨맛시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "탄두리치킨맛베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미니양파링베이스분말",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이버졸",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:51:13"
+  },
+  "nutrition": {
+    "kcal": 190.0,
+    "carbohydrate_g": 29.0,
+    "dietary_fiber_g": 3.5,
+    "sugar_g": 3.0,
+    "protein_g": 2.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 320.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉지(40g)",
+    "collected_at": "2026-03-03 18:51:13"
+  }
+}

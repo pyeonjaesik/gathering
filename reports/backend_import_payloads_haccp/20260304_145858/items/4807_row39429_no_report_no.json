@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "퓨어플러스 포켓몬 레몬 홍차",
+    "reportnum": "20020623009702"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009702/20020623009702-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009702/20020623009702-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009702/20020623009702-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 레몬과즙(7 Brix기준, 이스라엘산)1.2%, 홍차추출분말(칠레산)0.15%, 구연산, 구연산삼나트륨, 비타민C, 젖산칼슘, 수크랄로스(합성감미료), 홍화황색소, 덱스트린, 합성착향료(허브향, 녹차향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009702/20020623009702-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 340ml(총 약2컵) 1컵(200ml)당 68kcal 1컵당 1일 영양성분 기준치에 대한 비율 나트륨 47mg 2% 탄수화물 17g 5%, 당류 16g 16% 지방 0g 0% 트랜스지방 0g 포화지방 0g 0% 콜레스테롤 0mg 0% 단백질 0g 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009702/20020623009702-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬과즙",
+        "origin": "이스라엘산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍차추출분말",
+        "origin": "칠레산",
+        "amount": "0.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "허브향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:18"
+  },
+  "nutrition": {
+    "kcal": 68.0,
+    "sodium_mg": 47.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 16.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1컵(200ml)당",
+    "collected_at": "2026-03-04 03:45:18"
+  }
+}

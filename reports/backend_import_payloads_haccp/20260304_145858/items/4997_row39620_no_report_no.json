@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "버섯불고기소시지",
+    "reportnum": "200306260029"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200306260029/200306260029-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200306260029/200306260029-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200306260029/200306260029-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산(제주 무항생 흑돼지))83.18%,설탕5.2%,표고버섯(국산(제주))5.12%,한식간장(메주(콩(국산)),천일염(국산))2.9%,마늘(국산(제주))1.22%,정제염0.81%,대파(국산)0.71%,라포스(인산염)0.39%,생강(국산)0.31%,다시마(국산)0.11,후추0.05%,정제수,케이싱(콜라겐)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200306260029/200306260029-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "300g(760kcal,76kcal/1회섭취참고량 30g),1회 제공량 당 함량,%영양소기준치,열량 76kcal,탄수화물 5.13g(1.5%),당류 0.42g,단백질 5.79g(10.15%),지방 3.60g(7.1%),포화지방 1.32g(8.8%),트랜스지방 0.00g,콜레스테롤 0.875mg,나트륨 68.01mg(3.4%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200306260029/200306260029-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "83.18%",
+        "sub_ingredients": [
+          {
+            "name": "제주 무항생 흑돼지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "5.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "origin": "국산",
+        "amount": "5.12%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한식간장",
+        "amount": "2.9%",
+        "sub_ingredients": [
+          {
+            "name": "메주",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "콩",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "1.22%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.81%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "amount": "0.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라포스",
+        "amount": "0.39%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "amount": "0.31%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마",
+        "origin": "국산",
+        "amount": "0.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이싱",
+        "sub_ingredients": [
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:02"
+  },
+  "nutrition": {
+    "kcal": 76.0,
+    "carbohydrate_g": 5.13,
+    "sugar_g": 0.42,
+    "protein_g": 5.79,
+    "fat_g": 3.6,
+    "saturated_fat_g": 1.32,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.875,
+    "sodium_mg": 68.01,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 03:50:02"
+  }
+}

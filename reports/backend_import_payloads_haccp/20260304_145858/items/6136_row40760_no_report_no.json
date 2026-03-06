@@ -1,0 +1,70 @@
+{
+  "product": {
+    "name_ko": "애심목장 숙성치즈",
+    "reportnum": "201002620231"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620231/201002620231-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620231/201002620231-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620231/201002620231-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유98.5%(국산),젖산균,정제염,응유효소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620231/201002620231-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 영양소/함량[열량(kcal/100g)421,탄수화물(g/100g)2.36,조단백질(g/100g)23.45,당류(g/100g)026.97,조지방(g/100g)35.35,포화지방(g/100g)24.49,트렌스지방(g/100g)1.46,콜리스테롤(g/100g)111.2,나트륨(mg/100g)481]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620231/201002620231-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "98.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산균",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "응유효소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:13"
+  },
+  "nutrition": {
+    "kcal": 421.0,
+    "carbohydrate_g": 2.36,
+    "sugar_g": 26.97,
+    "saturated_fat_g": 24.49,
+    "sodium_mg": 481.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:22:13"
+  }
+}

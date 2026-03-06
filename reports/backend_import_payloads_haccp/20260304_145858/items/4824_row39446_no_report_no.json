@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "마늘빵",
+    "reportnum": "20030221351134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351134/20030221351134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351134/20030221351134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351134/20030221351134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(우리밀:국산)55.92%, 자연드림네이터-2[가공유지(팜에스테르화유:말레이시아산,야자에스테르화유:수입산),버터(우유:국산),식물성유지,유크림,옥수수전분]30.42%,유기농설탕7.68%,마늘(국산)3.02%,이스트(국산)2.24%구운소금(국산)0.85%,파슬리(국산)0.17%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351134/20030221351134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 100g 535kcal \n<총 내용량당 1일 영양성분 기준치에 대한비율>\n나트륨490mg 25%, 탄수화물54g 17%, 당류8g 8%, 지방33g 61%, 트랜스지방0.5g미만, 포화지방20 g 133%, 콜레스테롤25mg미만 8%, 단백질6g 11%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351134/20030221351134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "55.92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자연드림네이터-2",
+        "amount": "30.42%",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자에스테르화유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "7.68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "3.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이스트",
+        "origin": "국산",
+        "amount": "2.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "amount": "0.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리",
+        "origin": "국산",
+        "amount": "0.17%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:38"
+  },
+  "nutrition": {
+    "kcal": 535.0,
+    "sodium_mg": 490.0,
+    "carbohydrate_g": 54.0,
+    "sugar_g": 8.0,
+    "fat_g": 33.0,
+    "saturated_fat_g": 20.0,
+    "protein_g": 6.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 100g",
+    "collected_at": "2026-03-04 03:45:38"
+  }
+}

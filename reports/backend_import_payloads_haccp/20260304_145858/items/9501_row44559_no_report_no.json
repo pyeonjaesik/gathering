@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "일레디젤라또 비앙코밀크",
+    "reportnum": "2012040503020"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503020/2012040503020-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503020/2012040503020-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503020/2012040503020-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우유(국산)67.8%,설탕,크림베이스(이탈리아산/덱스트로오스,탈지분유,말토덱스트린,식물성유지,포도당),생크림(국산),탈지분유(국산)5.7%,말토덱스트린,변성전분,바닐라추출물(배합함량100%),구아검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503020/2012040503020-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100ml | foodSize=2000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503020/2012040503020-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "67.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크림베이스",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "덱스트로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생크림",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "amount": "5.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라추출물",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 174.0,
+    "carbohydrate_g": 24.0,
+    "protein_g": 4.0,
+    "fat_g": 6.0,
+    "sugar_g": 22.0,
+    "sodium_mg": 85.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100ml",
+    "total_content": "2000g",
+    "collected_at": "2026-03-04 04:33:50"
+  }
+}

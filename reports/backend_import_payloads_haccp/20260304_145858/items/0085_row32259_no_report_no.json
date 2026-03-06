@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "자연나래 한우육포",
+    "reportnum": "2007047600211"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007047600211/2007047600211-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007047600211/2007047600211-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007047600211/2007047600211-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "한우92%(국내산),홍국쌀가루,유기농설탕,유기농간장,양파가루(국내산),마늘가루(국내산),생강가루(국내산),표고버섯가루(국내산),멸치가루(국내산),다시마가루(국내산),흑후추,천일염,자몽추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007047600211/2007047600211-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=60g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007047600211/2007047600211-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "한우",
+        "origin": "국내산",
+        "amount": "92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍국쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:38"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 307.0,
+    "carbohydrate_g": 18.33,
+    "protein_g": 38.33,
+    "fat_g": 8.33,
+    "sugar_g": 13.33,
+    "sodium_mg": 818.0,
+    "cholesterol_mg": 90.0,
+    "saturated_fat_g": 3.17,
+    "trans_fat_g": 0.17,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "60g",
+    "collected_at": "2026-03-03 13:05:38"
+  }
+}

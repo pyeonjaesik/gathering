@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "델몬트 순수함이 가득한 포도",
+    "reportnum": "20020183282454"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282454/20020183282454-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282454/20020183282454-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282454/20020183282454-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,적포도청징농축액(적포도과즙50%,칠레산),구연산,합성착향료(포도향),구연산삼나트륨,색소혼합체제(홍화황색소,락색소,치자청색소),포도과피추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282454/20020183282454-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1000ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282454/20020183282454-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도청징농축액",
+        "origin": "칠레산",
+        "sub_ingredients": [
+          {
+            "name": "적포도과즙",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "색소혼합체제",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도과피추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:28"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 53.0,
+    "carbohydrate_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 12.5,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1000ml",
+    "collected_at": "2026-03-04 03:36:28"
+  }
+}

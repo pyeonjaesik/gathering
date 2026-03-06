@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "상큼한 감귤푸딩",
+    "reportnum": "20070355264278"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264278/20070355264278-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264278/20070355264278-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264278/20070355264278-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,나타드코코(베트남산/나타드코코,설탕,구연산),결정과당,카라기난검,산도조절제,감귤농축액(감귤:제주산, 59Brix이상)0.2%,합성착향료(감귤향,오렌지향),치자황색소,카로티노칼라",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264278/20070355264278-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264278/20070355264278-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타드코코",
+        "origin": "베트남산",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감귤농축액",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "감귤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "감귤향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카로티노칼라",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 90.0,
+    "carbohydrate_g": 22.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 22.0,
+    "sodium_mg": 75.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 04:02:43"
+  }
+}

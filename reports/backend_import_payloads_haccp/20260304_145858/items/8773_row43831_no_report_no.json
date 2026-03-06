@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "해표 아삭바삭 후라잉오일",
+    "reportnum": "2005061708812"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005061708812/2005061708812-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005061708812/2005061708812-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005061708812/2005061708812-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성유지[대두유(수입산)49.99%,카놀라유(수입산)39.99%,팜올레인유(말레이시아산)19.99],소포제(규소수지,유화제,CMC,차아염소산나트륨),구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005061708812/2005061708812-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=5g(ml) | foodSize=15000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005061708812/2005061708812-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "amount": "49.99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "origin": "수입산",
+            "amount": "39.99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "19.99%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소포제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          },
+          {
+            "name": "차아염소산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:48"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 900.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 19.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "5g(ml)",
+    "total_content": "15000g",
+    "collected_at": "2026-03-04 03:55:48"
+  }
+}

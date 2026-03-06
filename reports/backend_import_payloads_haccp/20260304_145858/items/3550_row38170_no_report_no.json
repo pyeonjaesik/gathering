@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "7호번스",
+    "reportnum": "199503380155161"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155161/199503380155161-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155161/199503380155161-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155161/199503380155161-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),백설탕,쇼트닝/인도네시아산,효모,정제소금,참깨,유화제,기타가공품,기타가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155161/199503380155161-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 183KCAL 탄수화물 35G 11% 당류 5G 단백질 5G 9% 지방 2.7G 5% 포화지방 0G 0% 트랜스지방 0G 콜레스테롤 0MG미만 0% 나트륨 300MG 15%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155161/199503380155161-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:14:03"
+  },
+  "nutrition": {
+    "kcal": 183.0,
+    "carbohydrate_g": 35.0,
+    "sugar_g": 5.0,
+    "protein_g": 5.0,
+    "fat_g": 2.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 300.0,
+    "collected_at": "2026-03-03 20:14:03"
+  }
+}

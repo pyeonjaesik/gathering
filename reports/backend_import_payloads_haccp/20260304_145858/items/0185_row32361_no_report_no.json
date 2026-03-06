@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "깨방정 슈퍼카",
+    "reportnum": "19690086003858"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003858/19690086003858-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003858/19690086003858-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003858/19690086003858-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "화이트초콜릿[혼합분유(외국산;네덜란드,캐나다,미국등)코코아버터(마렐이시아산,네더란드산),백설탕,유탕,가공버터],백설탕,코코아프리퍼레이션(외국산(싱가포르,프랑스,네덜란드);전지분유,코코아매스),코코아매스)코코아버터(말레이시아산,네덜란드산),코코아매스,유당,혼합분유,피막제,레시틴,아라비아검,물엿,천연착향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003858/19690086003858-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(1봉10.5g)/총2회제공량(21g), 열량60kcal, 탄수화물5g(2%), 당류5g, 단백질1g(7%), 지방3.7g(7%), 포화지방2.5g(17%), 트렌스지방0g, 콜레스테롤5mg(1%), 나트륨15mg(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003858/19690086003858-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "화이트초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "혼합분유",
+            "origin": "외국산, 네덜란드산, 캐나다산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "말레이시아산, 네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "origin": "외국산, 싱가포르산, 프랑스산, 네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피막제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:16:57"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 5.0,
+    "protein_g": 1.0,
+    "fat_g": 3.7,
+    "saturated_fat_g": 2.5,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 10.5,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(1봉10.5g)",
+    "collected_at": "2026-03-03 13:16:57"
+  }
+}

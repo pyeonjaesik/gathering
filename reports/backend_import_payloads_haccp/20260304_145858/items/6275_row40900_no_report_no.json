@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "ONLY price 간장치킨맛 팝콘",
+    "reportnum": "20100461303273"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303273/20100461303273-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303273/20100461303273-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303273/20100461303273-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)67.1%, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산 : 아르헨티나, 스페인, 호주 등), d-토코페롤(혼합형)], 소이소스치킨씨즈닝-제이10.3%[중화풍미베이스-제이{엠알씨케이100믹스(탈지대두:외국산)}, 가공소금(미국산), 에프에스피-100%{양조간장76.45%(탈지대두:외국산)}, 설탕, 간장분말8%{대두(인도산)}, 드라이드치킨후레바4%(닭고기69%/미국산), 아스파탐(감미료/페닐알라닌 함유)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303273/20100461303273-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 212g 1,145kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨1,180mg 59%, 탄수화물110g 34%, 식이섬유14g 56%, 당류4g 4%, 지방74g 137%, 트랜스지방0.2g, 포화지방20g 133%, 콜레스테롤0mg 0%, 단백질17g 31%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303273/20100461303273-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "67.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소이소스치킨씨즈닝-제이",
+        "amount": "10.3%",
+        "sub_ingredients": [
+          {
+            "name": "중화풍미베이스-제이",
+            "sub_ingredients": [
+              {
+                "name": "엠알씨케이100믹스",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "외국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "가공소금",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에프에스피-",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "양조간장",
+                "amount": "76.45%",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "외국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "amount": "8%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "드라이드치킨후레바",
+            "amount": "4%",
+            "sub_ingredients": [
+              {
+                "name": "닭고기",
+                "origin": "미국산",
+                "amount": "69%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:48"
+  },
+  "nutrition": {
+    "kcal": 1145.0,
+    "sodium_mg": 1180.0,
+    "carbohydrate_g": 110.0,
+    "dietary_fiber_g": 14.0,
+    "sugar_g": 4.0,
+    "fat_g": 74.0,
+    "trans_fat_g": 0.2,
+    "saturated_fat_g": 20.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 17.0,
+    "basis_amount": 212.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 212g",
+    "collected_at": "2026-03-04 04:26:48"
+  }
+}

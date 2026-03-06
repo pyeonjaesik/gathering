@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "아워홈 콩국가루",
+    "reportnum": "20060445219199"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219199/20060445219199-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219199/20060445219199-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219199/20060445219199-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "분말콩국59%[콩(중국산, 대두)100%], 식물성크림[전분당, 식물성유지(정제가공유지:수입산), 카제인나트륨(우유), 제2인산칼륨, 이산화규소, 식염(국산)], 알파옥분, 유청분말, 유미분, 탈지땅콩분말, 정제염, 잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219199/20060445219199-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1인분(60g)/총 8회 제공량(500g)/열량: 255kcal, 탄수화물 30g(9%), 당류 7g, 단백질 13g(24%), 지방 9g(18%), 포화지방 1g(7%), 트랜스지방 0.5g 미만, 콜레스테롤 5mg 미만(2%), 나트륨 620mg(31%), %영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219199/20060445219199-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "분말콩국",
+        "amount": "59%",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "origin": "중국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "전분당",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "수입산",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "정제가공유지",
+                "amount": "null",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카제인나트륨",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제2인산칼륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "origin": "국산",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알파옥분",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유미분",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지땅콩분말",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:36"
+  },
+  "nutrition": {
+    "kcal": 255.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 7.0,
+    "protein_g": 13.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.5,
+    "sodium_mg": 620.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1인분(60g)",
+    "collected_at": "2026-03-04 03:59:36"
+  }
+}

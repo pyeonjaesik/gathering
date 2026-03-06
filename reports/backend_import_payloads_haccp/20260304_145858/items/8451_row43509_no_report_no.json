@@ -1,0 +1,182 @@
+{
+  "product": {
+    "name_ko": "사과듬뿍비빔장",
+    "reportnum": "20020464088166"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088166/20020464088166-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088166/20020464088166-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088166/20020464088166-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장50%{물엿,소맥분(미국산,호주산),고추양념(중국산),정제소금,밀쌀}, 사과식초 15%{주정,사과농축액 5.6%(사과:국산), 사과향(합성착향료), 발효영양원(독일산)},액상과당,사과퓨레 10.89%{사과 99.95%(국산), 비타민C}, 백설탕, 사과농축액크리어 3%(사과:국산), 고추양념, 양조간장, 정제소금, 참기름, 볶음참깨, 잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088166/20020464088166-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=290g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088166/20020464088166-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "50%",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀쌀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과식초",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축액",
+            "origin": "국산",
+            "amount": "5.6%",
+            "sub_ingredients": [
+              {
+                "name": "사과",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사과향",
+            "sub_ingredients": [
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효영양원",
+            "origin": "독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "amount": "10.89%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "amount": "99.95%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액크리어",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추양념",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 205.0,
+    "carbohydrate_g": 44.0,
+    "protein_g": 3.0,
+    "fat_g": 1.8,
+    "sugar_g": 31.0,
+    "sodium_mg": 1470.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "290g",
+    "collected_at": "2026-03-04 03:42:07"
+  }
+}

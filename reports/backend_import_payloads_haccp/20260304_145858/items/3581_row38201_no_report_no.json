@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "진한느낌치즈베이글",
+    "reportnum": "199503380156664"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156664/199503380156664-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156664/199503380156664-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156664/199503380156664-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루[밀(미국산,캐나다산),밀(미국산,호주산)],크림치즈/미국산[우유,크림,치즈컬쳐,정제소금,로커스트콩검],우유,피자치즈[모짜렐라치즈,골드킹-AS,셀룰로오즈분말],백설탕,기타가공품{그레이티드파마산치즈(파마산치즈):대두},쇼트닝,기타설탕,정제소금,효모,곡류가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156664/199503380156664-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(70g) 1회 제공량 당 함량 *%영양소기준치 열량 215kcal, 탄수화물 28g 8%,당류 7g ,단백질 5g 9%,지방 9g 18%, 포화지방 5g 33%,트랜스지방 0g,콜레스테롤 5mg 2%,나트륨 300mg 15% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156664/199503380156664-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림치즈",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈컬쳐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피자치즈",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "골드킹-AS",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오즈분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "그레이티드파마산치즈",
+            "sub_ingredients": [
+              {
+                "name": "파마산치즈",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:18:15"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 7.0,
+    "protein_g": 5.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 300.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(70g)",
+    "collected_at": "2026-03-03 20:18:15"
+  }
+}

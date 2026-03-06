@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "국산콩순두부",
+    "reportnum": "1992038012859"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012859/1992038012859-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012859/1992038012859-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012859/1992038012859-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두100%(국산),소이미네랄1-5(글루코노델타락톤,황산칼슘,염화마그네슘,정제염,구연산나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012859/1992038012859-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012859/1992038012859-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소이미네랄",
+        "amount": "1-5",
+        "sub_ingredients": [
+          {
+            "name": "글루코노델타락톤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:04:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 50.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 5.0,
+    "fat_g": 3.1,
+    "sugar_g": 0.0,
+    "sodium_mg": 80.0,
+    "dietary_fiber_g": 0.0,
+    "calcium_mg": 31.0,
+    "iron_mg": 0.7,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "350g",
+    "collected_at": "2026-03-03 19:04:45"
+  }
+}

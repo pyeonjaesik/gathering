@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "허니사랑유자사랑",
+    "reportnum": "19780368002480"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002480/19780368002480-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002480/19780368002480-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002480/19780368002480-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유자청징농축액1.1%(유자(국산)50%,백설탕50%),아카시아벌꿀(국산)0.5%,정제수,액상과당,이소말토올리고당,구연산,합성착향료(유자향,벌꿀향),구연산삼나트룸,홍화황색소,효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002480/19780368002480-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(240ml) : 열량 135kcal, 탄수화물 34g (10%), 당류 32g, 단백질0g (0%), 지방0g (0%), 포화지방0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨30mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002480/19780368002480-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유자청징농축액",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아카시아벌꿀",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "유자향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트룸",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:07:45"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 34.0,
+    "sugar_g": 32.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(240ml)",
+    "collected_at": "2026-03-03 14:07:45"
+  }
+}

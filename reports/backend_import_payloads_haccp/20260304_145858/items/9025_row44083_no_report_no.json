@@ -1,0 +1,229 @@
+{
+  "product": {
+    "name_ko": "참치마요샌드위치",
+    "reportnum": "200803382237"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200803382237/200803382237-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200803382237/200803382237-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200803382237/200803382237-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식빵[밀가루(밀/미국산,캐나다산),백설탕,쇼트닝/인도네시아산,정제소금,효모],마요네즈[콩기름(대두/외국산),난황액/국산(계란),2배양조식초,정제소금,백설탕],혼합프레스햄[돼지고기/국산,닭고기/국산,전분,복합단백,스모크햄씨즈닝(우유)],양배추,양상추,다진오이피클[염장오이,액상과당,조미액#SN,소르빈산칼륨(보존료)],참치통조림[다랑어/원양산,콩기름,야채즙],오이피클,스위트콘,당근,액상과당,백설탕,머스타드",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200803382237/200803382237-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=145g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200803382237/200803382237-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식빵",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": [
+          {
+            "name": "콩기름",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "2배양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합프레스햄",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크햄씨즈닝",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양상추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진오이피클",
+        "sub_ingredients": [
+          {
+            "name": "염장오이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": [
+              {
+                "name": "보존료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참치통조림",
+        "sub_ingredients": [
+          {
+            "name": "다랑어",
+            "sub_ingredients": [
+              {
+                "name": "원양산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콩기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오이피클",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "머스타드",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 259.0,
+    "carbohydrate_g": 28.28,
+    "protein_g": 5.52,
+    "fat_g": 13.79,
+    "sugar_g": 6.9,
+    "sodium_mg": 566.0,
+    "cholesterol_mg": 6.9,
+    "saturated_fat_g": 3.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "145g",
+    "collected_at": "2026-03-04 04:08:06"
+  }
+}

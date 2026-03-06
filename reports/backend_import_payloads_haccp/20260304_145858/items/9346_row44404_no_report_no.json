@@ -1,0 +1,177 @@
+{
+  "product": {
+    "name_ko": "달콤한 초콜릿 팝콘",
+    "reportnum": "20100461303185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303185/20100461303185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303185/20100461303185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303185/20100461303185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(미국산)29.6%, 백설탕, 물엿, 가공버터(뉴질랜드산 : 버터유, 유크림, 야자경화유), 초콜릿(벨기에산 : 설탕, 코코아매스, 코코아버터, 레시틴)43%, 코코아매스(네덜란드산)2.8%, 초코디럭스시즈닝2.4%, 덱스트린, 코코아파우더(네덜란드산)0.7%, 정제소금(국내산), 분말결정포도당, 레시틴, 식물성유지(고올레산 해바라기유, 팜올레인유, d-토코페롤), 혼합제제(탄산수소나트륨, 제삼인산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303185/20100461303185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=60g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303185/20100461303185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "29.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "origin": "벨기에산",
+        "amount": "43%",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "origin": "네덜란드산",
+        "amount": "2.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초코디럭스시즈닝",
+        "amount": "2.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "네덜란드산",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "고올레산 해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:08"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 4.67,
+    "fat_g": 11.0,
+    "sugar_g": 40.0,
+    "sodium_mg": 317.0,
+    "cholesterol_mg": 16.67,
+    "saturated_fat_g": 6.67,
+    "trans_fat_g": 1.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "60g",
+    "collected_at": "2026-03-04 04:26:08"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "자연드림산뜻한마요네즈",
+    "reportnum": "200504150202321"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202321/200504150202321-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202321/200504150202321-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202321/200504150202321-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두유73%[콩:외국산(미국,태국,벨기에등)/Non-gmo],유정란(국산)15%,정제수,화이트식초[주정,포도당,엿기름(국산)],유기농설탕1.8%,구운소금(국산),레몬농축액,토코페롤,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202321/200504150202321-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량250g 100g당:650kcal, 나트륨400mg(20%), 탄수화물8g(2%), 당류2g(2%), 지방68g(126%), 트랜스지방0.5g미만, 포화지방12g(80%), 콜레스테롤30mg(10%), 단백질2g(4%) *1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202321/200504150202321-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 태국산, 벨기에산",
+        "amount": "73%",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "origin": "외국산, 미국산, 태국산, 벨기에산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토코페롤",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:22"
+  },
+  "nutrition": {
+    "sodium_mg": 400.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 2.0,
+    "fat_g": 68.0,
+    "saturated_fat_g": 12.0,
+    "cholesterol_mg": 30.0,
+    "protein_g": 2.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:54:22"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "상하치즈 후레쉬모짜렐라",
+    "reportnum": "20090476009255"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009255/20090476009255-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009255/20090476009255-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009255/20090476009255-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유99.68%(국산),식염,응고보조제,산도조절제,효소제제,유산균배양액/보존수(정제수,식염,산도조절제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009255/20090476009255-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009255/20090476009255-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "99.68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "응고보조제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "sub_ingredients": [
+          {
+            "name": "보존수",
+            "sub_ingredients": [
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:55"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 270.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 19.0,
+    "fat_g": 21.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 190.0,
+    "calcium_mg": 650.0,
+    "cholesterol_mg": 40.0,
+    "saturated_fat_g": 12.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:20:55"
+  }
+}

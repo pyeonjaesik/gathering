@@ -1,0 +1,227 @@
+{
+  "product": {
+    "name_ko": "핫꼬부리",
+    "reportnum": "2014043336350"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014043336350/2014043336350-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014043336350/2014043336350-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014043336350/2014043336350-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(미국,호주산),팜올레인유(말레이시아산),복합시즈닝고추장맛씨즈닝-고추장베이스92%[기타설탕{백설탕,전분(밀)},미립당,정제소금(국산)],떡볶이베이스[분말고추장2호[고추장2호{소맥분(호주,미국산),된장2호(대두(외국산),소맥분(호주,미국산)},말토덱스트린,정제염(국내산)],무수포도당,알파덱스트린,말토덱스트린,고화방지분당](쇠고기,우유,닭고기),덱스트린](토마토),덱스트린,에프에스피-1(대두),이산화규소(고결방지제)1%,제3인산칼슘,백설탕,옥수수전분,식염,합성팽창제(이스트)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014043336350/2014043336350-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=75g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014043336350/2014043336350-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합시즈닝고추장맛씨즈닝-고추장베이스",
+        "amount": "92%",
+        "sub_ingredients": [
+          {
+            "name": "기타설탕",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전분",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "떡볶이베이스",
+        "sub_ingredients": [
+          {
+            "name": "분말고추장2호",
+            "sub_ingredients": [
+              {
+                "name": "고추장2호",
+                "sub_ingredients": [
+                  {
+                    "name": "소맥분",
+                    "origin": "호주산, 미국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "된장2호",
+                    "sub_ingredients": [
+                      {
+                        "name": "소맥분",
+                        "origin": "호주산, 미국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "대두",
+                        "origin": "외국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무수포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알파덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고화방지분당",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "닭고기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에프에스피-1",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "이산화규소",
+            "amount": "1%",
+            "sub_ingredients": [
+              {
+                "name": "고결방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제3인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성팽창제",
+            "sub_ingredients": [
+              {
+                "name": "이스트",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:22"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 499.0,
+    "carbohydrate_g": 64.0,
+    "protein_g": 9.33,
+    "fat_g": 22.67,
+    "sugar_g": 6.0,
+    "sodium_mg": 411.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "75g",
+    "collected_at": "2026-03-04 04:42:22"
+  }
+}

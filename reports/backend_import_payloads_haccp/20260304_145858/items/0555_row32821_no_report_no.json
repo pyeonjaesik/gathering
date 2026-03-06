@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "맥심 아라비카100",
+    "reportnum": "19750202004112"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004112/19750202004112-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004112/19750202004112-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004112/19750202004112-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "커피원두 100%(페루산 40%, 브라질산 35%, 콜롬비아산 25%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004112/19750202004112-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(1.6g)당 함량 총 약 169회 제공량(270g) 열량 4kcal 탄수화물 1g(0%) 당류 0g 단백질 0g(0%) 지방 0g(0%) 포화지방 0g(0%) 트랜스지방 0g 콜레스테롤 0mg(0%) 나트륨 0mg(0%) *() 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004112/19750202004112-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "커피원두",
+        "origin": "페루산 40%, 브라질산 35%, 콜롬비아산 25%",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:49:44"
+  },
+  "nutrition": {
+    "kcal": 4.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 1.6,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(1.6g)당 함량",
+    "collected_at": "2026-03-03 13:49:44"
+  }
+}

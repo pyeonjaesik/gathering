@@ -1,0 +1,169 @@
+{
+  "product": {
+    "name_ko": "에어칩스 리치콘소메맛",
+    "reportnum": "20100461303233"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303233/20100461303233-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303233/20100461303233-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303233/20100461303233-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마이크로펠렛포테이토79.5%[감자그래뉼50%(감자99.7%),감자후레이크39%(감자99.4%),감자전분10%,정제소금]/이탈리아산, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산 : 아르헨티나, 스페인, 호주 등), d-토코페롤(혼합형)], 리치콘소메씨즈닝5.7%[미립당,유청분말(외국산 : 라트비아, 체코, 독일 등), 재제소금(아르헨티나산),덱스트린, L-글루탐산나트륨(향미증진제)], 혼합제제(프라이드 포테이토향, 카놀라유), 레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303233/20100461303233-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 280g 1260kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨1,4720mg 71%, 탄수화물205g 63%, 식이섬유3g 12%, 당류8g 8%, 지방43g 80%, 트랜스지방0g, 포화지방11g 73%, 콜레스테롤0mg 0%, 단백질15g 27%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303233/20100461303233-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마이크로펠렛포테이토",
+        "origin": "이탈리아산",
+        "amount": "79.5%",
+        "sub_ingredients": [
+          {
+            "name": "감자그래뉼",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자후레이크",
+            "amount": "39%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.4%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자전분",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "리치콘소메씨즈닝",
+        "amount": "5.7%",
+        "sub_ingredients": [
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "외국산, 라트비아산, 체코산, 독일산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "재제소금",
+            "origin": "아르헨티나산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "프라이드 포테이토향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:28"
+  },
+  "nutrition": {
+    "kcal": 1260.0,
+    "sodium_mg": 14720.0,
+    "carbohydrate_g": 205.0,
+    "dietary_fiber_g": 3.0,
+    "sugar_g": 8.0,
+    "fat_g": 43.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 11.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 15.0,
+    "basis_amount": 280.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 280g",
+    "collected_at": "2026-03-04 04:26:28"
+  }
+}

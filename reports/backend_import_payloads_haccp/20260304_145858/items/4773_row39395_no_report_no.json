@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "아워홈 얼큰하고 시원한 알탕",
+    "reportnum": "20020614179675"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179675/20020614179675-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179675/20020614179675-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179675/20020614179675-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 명태곤이(러시아산) 15%, 명란(미국) 11.2%, 무(국산), 대파(중국산), 팽이버섯, 명태육수베이스, 대구농축액, 고춧가루, 정제소금, 지미분(향미증진제), 바지락엑기스, 홍고추, 마늘, 대두유, 다진마늘, 고춧맛기름, 혼합간장, 조개감칠맛분에스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179675/20020614179675-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉(400g), 총 1회제공량 400g, 1회제공량당함량(%영양소기준치):열량105kcal, 탄수화물5g(2%), 당류 1g, 단백질16g(27%), 지방 2.4g(5%), 포화지방0.8g(5%),트랜스지방0g, 콜레스테롤 690mg(230%), 나트륨1,560mg(78%)/%영양소기준치 : 1일영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179675/20020614179675-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태곤이",
+        "origin": "러시아산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명란",
+        "origin": "미국산",
+        "amount": "11.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태육수베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대구농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바지락엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조개감칠맛분에스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:51"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 1.0,
+    "protein_g": 16.0,
+    "fat_g": 2.4,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 690.0,
+    "sodium_mg": 1560.0,
+    "basis_amount": 400.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉(400g)",
+    "collected_at": "2026-03-04 03:43:51"
+  }
+}

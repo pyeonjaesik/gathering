@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "darda by 커널스 크리미카라멜 팝콘",
+    "reportnum": "201004613034"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004613034/201004613034-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004613034/201004613034-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004613034/201004613034-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(미국산)37.8%,화이트베이스믹스(백설탕,포도당):캐나다산, 브라운카라멜베이스믹스(흑설탕, 바닐라): 캐나다산,가공버터(버터유, 유크림, 야자경화유): 뉴질랜드산, 레시틴, 가공소금, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산: 아르헨티나,스페인,호주 등), d-토코페롤], 혼합제제(탄산수소나트륨, 제삼인산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004613034/201004613034-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=65g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004613034/201004613034-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "37.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트베이스믹스",
+        "origin": "캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브라운카라멜베이스믹스",
+        "origin": "캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 438.0,
+    "carbohydrate_g": 78.46,
+    "protein_g": 4.46,
+    "fat_g": 13.85,
+    "sugar_g": 35.38,
+    "sodium_mg": 277.0,
+    "cholesterol_mg": 29.23,
+    "saturated_fat_g": 9.23,
+    "trans_fat_g": 0.46,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "65g",
+    "collected_at": "2026-03-04 04:27:00"
+  }
+}

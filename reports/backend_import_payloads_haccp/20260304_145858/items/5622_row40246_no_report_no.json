@@ -1,0 +1,87 @@
+{
+  "product": {
+    "name_ko": "인포켓치즈 오리지널",
+    "reportnum": "2007050200261"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200261/2007050200261-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200261/2007050200261-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200261/2007050200261-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유98.623%(국산),유산균배양액,정제염,우유응고효소,비타믹스B,소르빈산칼륨(합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200261/2007050200261-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(20g) 1회제공량당 함량 *%영양성분 기준치 열량 60kcal, 탄수화물 1g미만 0%, 당류 0g, 단백질 5g 9%,지방 4.2g 8%, 포화지방 2.9g 19%,트랜스지방 0g,콜레스테롤 7.6mg 3%,나트륨 75mg 4%,칼슘 136mg 20% *%영양성분기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200261/2007050200261-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "98.623%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유응고효소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타믹스B",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:58"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 4.2,
+    "saturated_fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 7.6,
+    "sodium_mg": 75.0,
+    "calcium_mg": 136.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1개(20g)",
+    "collected_at": "2026-03-04 04:06:58"
+  }
+}

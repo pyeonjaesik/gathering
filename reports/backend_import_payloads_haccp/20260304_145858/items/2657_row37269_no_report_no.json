@@ -1,0 +1,203 @@
+{
+  "product": {
+    "name_ko": "갈릭바질올리오스파게티",
+    "reportnum": "19880445009674"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009674/19880445009674-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009674/19880445009674-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009674/19880445009674-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스파게티(이탈리아산/듀럼세몰리나소맥분100%),이스트오일소스<기꼬망간장(미국산),양념베이스[야채농축액{양조간장(대두:인도산,밀:미국산)}],백설탕,조미액,고과당,양파퓨레,잔탄검,구연산>,갈릭바질페스토소스13.44%[바질페스토(미국산)80%(카놀라오일,바질35%,파마산치즈,마늘2.5%,식초),마늘(중국산)20%],페스토스파게티야채건더기3.23%{건마늘(중국산)33.5%},옥수수유,산미료(산도조절제,말티톨시럽,정제수)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009674/19880445009674-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(186g)/총 2회 제공량(372g) *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 410kcal, 탄수화물 51g 15%, 식이섬유 0g 0%, 당류 12g, 단백질 9g 16%, 지방 19g 37%, 포화지방 2.8g 19%, 트랜스지방 0.5g, 콜레스테롤 0mg 0%, 나트륨 450mg 23% 비타민A 26㎍RE 4%/비타민C 0mg 0%/칼슘 93mg 13%/철 1.2mg 10%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009674/19880445009674-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "듀럼세몰리나소맥분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이스트오일소스",
+        "sub_ingredients": [
+          {
+            "name": "기꼬망간장",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양념베이스",
+            "sub_ingredients": [
+              {
+                "name": "야채농축액",
+                "sub_ingredients": [
+                  {
+                    "name": "양조간장",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "origin": "인도산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "밀",
+                        "origin": "미국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파퓨레",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈릭바질페스토소스",
+        "amount": "13.44%",
+        "sub_ingredients": [
+          {
+            "name": "바질페스토",
+            "origin": "미국산",
+            "amount": "80%",
+            "sub_ingredients": [
+              {
+                "name": "카놀라오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바질",
+                "amount": "35%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파마산치즈",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "amount": "2.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식초",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘",
+            "origin": "중국산",
+            "amount": "20%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "페스토스파게티야채건더기",
+        "amount": "3.23%",
+        "sub_ingredients": [
+          {
+            "name": "건마늘",
+            "origin": "중국산",
+            "amount": "33.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산미료",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:29:00"
+  },
+  "nutrition": {
+    "kcal": 410.0,
+    "carbohydrate_g": 51.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 12.0,
+    "protein_g": 9.0,
+    "fat_g": 19.0,
+    "saturated_fat_g": 2.8,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 450.0,
+    "calcium_mg": 93.0,
+    "iron_mg": 1.2,
+    "basis_amount": 186.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(186g)",
+    "collected_at": "2026-03-03 17:29:00"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "대한초코아몬드쿠키",
+    "reportnum": "20070275117355"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117355/20070275117355-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117355/20070275117355-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117355/20070275117355-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산),정백당,마가린[식물성유지(대두유/수입산,팜올레인유/말레이시아산,팜스테아린유/말레이시아산),가공유지[팜스테아린유/말레이시아산,야자유),정제수,유화제,합성착향료(버터향,밀크향),d-도코페롤(혼합형)],전란액(계란),아몬드슬라이스(미국산)4.38%,코코아파우다,초코칩(말레이시아산)1.82%,베이킹파우다(합성팽창제:탄산수소나트륨,산성피로인산나트륨,전분,제일인산칼슘,젖산칼슘),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117355/20070275117355-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 35g 총 2회 제공량\n<1회 제공량당 함량 *%영양소기준치>\n열량170kcal, 탄수화물24g 7%, 당류10g, 단백질2g 4%, 지방7g 14%, 포화지방3g 20%, 트랜스지방0g, 콜레스테롤6mg 2%, 나트륨110mg 6%\n*%영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117355/20070275117355-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "d-도코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "amount": "4.38%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우다",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초코칩",
+        "origin": "말레이시아산",
+        "amount": "1.82%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우다",
+        "sub_ingredients": [
+          {
+            "name": "합성팽창제",
+            "sub_ingredients": [
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제일인산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:33"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 10.0,
+    "protein_g": 2.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 6.0,
+    "sodium_mg": 110.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 35g",
+    "collected_at": "2026-03-04 04:02:33"
+  }
+}

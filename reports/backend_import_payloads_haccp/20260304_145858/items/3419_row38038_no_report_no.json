@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "우리밀 차례상 약과",
+    "reportnum": "1994036425349"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994036425349/1994036425349-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994036425349/1994036425349-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994036425349/1994036425349-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우리밀37.1%,쌀조청34%(멥쌀:유기,엿기름),땅콩9%,생강즙(생강:무농약),볶음소금[이상 국산],올리고당(프락토올리고당),현미유,소주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994036425349/1994036425349-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*1회 제공량(30g) *총 제공량(350g) *%영양소 기준치:1일 영양소 기준치에 대한 비율\n<1회 제공량당 함량,함량,%영양소 기준치>\n열량135kcal, 나트륨0mg 0%, 탄수화물23g 7%, 당류17g, 지방4.6g 9%, 트랜스지방0g, 포화지방1.7g 1%, 콜레스테롤0mg 0%, 단백질0g 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994036425349/1994036425349-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀",
+        "amount": "37.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "amount": "34%",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "sub_ingredients": [
+              {
+                "name": "유기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "땅콩",
+        "amount": "9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강즙",
+        "sub_ingredients": [
+          {
+            "name": "무농약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": [
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:55:16"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 17.0,
+    "fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)",
+    "collected_at": "2026-03-03 19:55:16"
+  }
+}

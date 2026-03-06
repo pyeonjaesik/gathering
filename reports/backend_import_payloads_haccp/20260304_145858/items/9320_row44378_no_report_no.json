@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "계란과자",
+    "reportnum": "20100372386240"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386240/20100372386240-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386240/20100372386240-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386240/20100372386240-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(미국산),기타설탕(백설탕,전분),전란액(국내산)13%,쇼트닝(팜유:말레이시아산,향신료올레오레진류),옥수수전분,곡류가공품,가공버터,난백액,혼합분유,유화제,정제소금,산도조절제1,산도조절제2,합성향료(바닐린,레몬향),비타민B₂",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386240/20100372386240-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386240/20100372386240-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "amount": "13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료올레오레진류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "amount": "1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B₂",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:59"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 464.0,
+    "carbohydrate_g": 74.0,
+    "protein_g": 6.0,
+    "fat_g": 16.0,
+    "sugar_g": 34.0,
+    "sodium_mg": 186.0,
+    "cholesterol_mg": 84.0,
+    "saturated_fat_g": 3.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "50g",
+    "collected_at": "2026-03-04 04:23:59"
+  }
+}

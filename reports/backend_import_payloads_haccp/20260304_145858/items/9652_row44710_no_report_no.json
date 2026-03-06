@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "스트링 치즈",
+    "reportnum": "201404760013"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404760013/201404760013-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404760013/201404760013-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404760013/201404760013-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유(국내산)99.97,유산균0.005%,렌넷0.015%,식염0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404760013/201404760013-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404760013/201404760013-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국내산",
+        "amount": "99.97",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "0.005%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "렌넷",
+        "amount": "0.015%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:36"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 325.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 25.0,
+    "fat_g": 25.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 575.0,
+    "cholesterol_mg": 75.0,
+    "saturated_fat_g": 19.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:42:36"
+  }
+}

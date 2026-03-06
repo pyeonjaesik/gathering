@@ -1,0 +1,285 @@
+{
+  "product": {
+    "name_ko": "darda by 커널스 슈퍼믹스 팝콘",
+    "reportnum": "20100461303137"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303137/20100461303137-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303137/20100461303137-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303137/20100461303137-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(미국산)39.62%, 백설탕, 물엿, 식물성유지[고올레산해바라기유(수입산), 팜올레인유(말레이시아산), d-토코페롤], 가공버터(버터유, 유크림, 야자경화유 : 뉴질랜드산), 브라운카라멜베이스믹스(흑설탕, 바닐라 : 캐나다산), 가루엿-25, 휘핑크림, 식물성유지, 화이트초콜릿, 덱스트린, 레시틴, 가공소금, 코코아매스, 분말결정포도당, 정제소금, 혼합제제(탄산수소나트륨, 제삼인산칼슘), 딸기시럽[딸기향(합성착향료), 물엿, 락색소(천연색소), 딸기농축액], 초콜릿, 딸기맛시즈닝[백설탕,딸기분말,튜청분말,딸기과즙분말,아스파탐(합성감미료,페닐알라닌함유)], 카로틴, 락색소(락색소,글리세린(산도조절제), 혼합제제(버터향, 천연버터향, 가공유지), 혼합제제(딸기향, 딸기향, 프로필렌글리콜)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303137/20100461303137-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=55g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303137/20100461303137-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "39.62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "고올레산해바라기유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브라운카라멜베이스믹스",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가루엿",
+        "amount": "25",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "휘핑크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트초콜릿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기시럽",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": [
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": [
+              {
+                "name": "천연색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "딸기농축액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기맛시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "튜청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기과즙분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "버터향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연버터향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 473.0,
+    "carbohydrate_g": 72.73,
+    "protein_g": 4.0,
+    "fat_g": 20.0,
+    "sugar_g": 34.55,
+    "sodium_mg": 182.0,
+    "cholesterol_mg": 16.36,
+    "saturated_fat_g": 9.09,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "55g",
+    "collected_at": "2026-03-04 04:26:30"
+  }
+}

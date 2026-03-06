@@ -1,0 +1,80 @@
+{
+  "product": {
+    "name_ko": "청양풍 계육불고기",
+    "reportnum": "2009026204586"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026204586/2009026204586-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026204586/2009026204586-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026204586/2009026204586-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭정육60%(브라질산),청양풍매운맛간장소스,행복한맛남간장불고기양념장,치킨용카레맛시즈닝,스켄겔",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026204586/2009026204586-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=2000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026204586/2009026204586-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭정육",
+        "origin": "브라질산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양풍매운맛간장소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "행복한맛남간장불고기양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨용카레맛시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스켄겔",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:36"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 151.0,
+    "carbohydrate_g": 12.3,
+    "protein_g": 13.65,
+    "fat_g": 5.2,
+    "sugar_g": 6.5,
+    "sodium_mg": 917.0,
+    "cholesterol_mg": 49.25,
+    "saturated_fat_g": 1.25,
+    "trans_fat_g": 0.02,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "2000g",
+    "collected_at": "2026-03-04 04:17:36"
+  }
+}

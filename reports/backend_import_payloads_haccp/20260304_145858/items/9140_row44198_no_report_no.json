@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "청정원 크랩봉",
+    "reportnum": "20080614050247"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614050247/20080614050247-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614050247/20080614050247-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614050247/20080614050247-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육{어육(수입산), D-소르비톨, 설탕, 산도조절제}, 정제수, 대두유(수입산), 옥수수전분, 붉은대게살4.37%(국내산), 게엑기스-DS1 3.12%{꽃게(국내산)}, 냉동난백, 냉동전란, 혼합탈지분유, 물엿, 정제소금, 활성글루텐, 정백당, 조미액-아이, 발효조미분말, 혼합제제(산도조절제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614050247/20080614050247-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614050247/20080614050247-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "붉은대게살",
+        "origin": "국내산",
+        "amount": "4.37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게엑기스-DS1",
+        "amount": "3.12%",
+        "sub_ingredients": [
+          {
+            "name": "꽃게",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "냉동난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동전란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "활성글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액-아이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효조미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:59"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 182.0,
+    "carbohydrate_g": 12.38,
+    "protein_g": 8.9,
+    "fat_g": 11.01,
+    "sugar_g": 4.4,
+    "sodium_mg": 668.0,
+    "cholesterol_mg": 25.02,
+    "saturated_fat_g": 1.61,
+    "trans_fat_g": 0.01,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:15:59"
+  }
+}

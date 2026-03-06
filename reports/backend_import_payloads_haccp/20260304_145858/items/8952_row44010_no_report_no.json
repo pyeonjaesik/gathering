@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "후디스 그릭요거트 무설탕 저지방",
+    "reportnum": "2007037900947"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900947/2007037900947-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900947/2007037900947-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900947/2007037900947-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "1A등급 원유(국산, 세균수 기준)99.9%[2배 농축원유(우유 약 160ml에 해당)],유산균(복합유산균으로 1,500억 이상/80g)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900947/2007037900947-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=액상 150ml, 호상 100ml(g) | foodSize=80g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900947/2007037900947-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급 원유",
+        "origin": "국산",
+        "amount": "99.9%",
+        "sub_ingredients": [
+          {
+            "name": "2배 농축원유",
+            "amount": "160ml에 해당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "80g",
+        "sub_ingredients": [
+          {
+            "name": "복합유산균",
+            "amount": "1, 500억 이상",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 81.0,
+    "carbohydrate_g": 9.5,
+    "protein_g": 6.0,
+    "fat_g": 2.0,
+    "sugar_g": 9.5,
+    "sodium_mg": 110.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 1.25,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "액상 150ml, 호상 100ml(g)",
+    "total_content": "80g",
+    "collected_at": "2026-03-04 04:04:13"
+  }
+}

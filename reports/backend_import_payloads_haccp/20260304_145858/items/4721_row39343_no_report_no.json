@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "리얼키위드레싱",
+    "reportnum": "200204610738276"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610738276/200204610738276-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610738276/200204610738276-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610738276/200204610738276-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 키위23%(뉴질랜드산), 백설탕, 발효식초[주정, 맥아엑기스(미국산), 발효영양원], 화이트와인비네가(이탈리아산), 액상과당, 사과다이스, 채종유, 양식베이스#36, 메로농축액, 변성전분, 사양벌꿀, 압착올리브유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610738276/200204610738276-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 545g 100g당 130kcal 나트륨 60mg 3%, 탄수화물 21g 6%, 당류 18g 18%, 지방 4.8g 9%, 트랜스지방 0g, 포화지방 1.1g 7%, 콜레스테롤 0mg 0%, 단백질 0g 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610738276/200204610738276-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "키위",
+        "origin": "뉴질랜드산",
+        "amount": "23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트와인비네가",
+        "origin": "이탈리아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과다이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양식베이스",
+        "amount": "#36",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메로농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "압착올리브유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:56"
+  },
+  "nutrition": {
+    "total_content": "545",
+    "food_weight_g": 545.0,
+    "kcal": 130.0,
+    "sodium_mg": 60.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 18.0,
+    "fat_g": 4.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:41:56"
+  }
+}

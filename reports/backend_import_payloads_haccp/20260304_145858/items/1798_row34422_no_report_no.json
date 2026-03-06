@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "맛재래김",
+    "reportnum": "198504730031"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504730031/198504730031-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504730031/198504730031-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504730031/198504730031-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김(국산)62%, 옥배유(수입산)30%, 참기름(수입산)7%, 소금(국산)1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504730031/198504730031-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*1회 제공량 2g 총제공량15g\n열량11.2kcal, 탄수화물0.6g (0.2%), 당류0g, 지방0.8g (1.5%), 포화지방0g, 트랜스지방0g, 콜레스테롤0mg, 나트륨21.2mg (1.1%)\n()안에 수치는 1일 영양소기준치에 대한 비율입니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504730031/198504730031-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "수입산",
+        "amount": "7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:58:22"
+  },
+  "nutrition": {
+    "kcal": 11.2,
+    "carbohydrate_g": 0.6,
+    "sugar_g": 0.0,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 21.2,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2g",
+    "collected_at": "2026-03-03 15:58:22"
+  }
+}

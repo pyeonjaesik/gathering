@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "우리동네 용마루 밀떡볶이",
+    "reportnum": "2007035590014"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007035590014/2007035590014-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007035590014/2007035590014-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007035590014/2007035590014-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(호주산, 미국산)97.5%, 정제염(국내산), 주정, 혼합제제(산미료, 프로필렌글리콜), 혼합제제(유화제, 식용유(대두))",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007035590014/2007035590014-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(100g) 총 약 5회 제공량(500g)\n열량239.5kcal, 탄수화물50.3g (15.2%), 당류0g, 단백질6.2g (11.3%), 지방1.5g (2.9%), 포화지방0.4g (2.7%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨290.9mg (14.5%)\n*% 영양소 기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007035590014/2007035590014-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "amount": "97.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:58"
+  },
+  "nutrition": {
+    "kcal": 239.5,
+    "carbohydrate_g": 50.3,
+    "sugar_g": 0.0,
+    "protein_g": 6.2,
+    "fat_g": 1.5,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 290.9,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)",
+    "collected_at": "2026-03-04 04:02:58"
+  }
+}

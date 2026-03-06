@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "베이비스낵분유곡물바(딸기)",
+    "reportnum": "201201883804"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201201883804/201201883804-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201201883804/201201883804-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201201883804/201201883804-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미가루(현미:국산)33.5%,유기농식물성유지(콜롬비아산),유기농쌀가루(쌀:국산)16.3%,유기농혼합탈지분유11.30%(유기농탈지분유,유기농유청분말),유기농설탕(7.55%),딸기분말(딸기:국산)2.0%,바나나분말(바나나:필리핀산),시금치분말(시금치:국산),칼슘분말,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201201883804/201201883804-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(10g)/ 총 3.5회 제공량(35g) 1회 제공량당 함량 *%영양성분기준치 열량 50kcal 탄수화물 4g 1% 식이섬유 1g 4% 당류 2g 단백질 1g미만 1% 지방 3.8g 7% 포화지방 1.8g 12% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 15mg 2% 비타민C 15mg 15%/칼슘 34mg 5% *%영양성분기준치:1일 영양성분 기준치에 대한 비율 *%영양성분기준치:한국인 영양성취기준 중 충분섭취량(1-2)세에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201201883804/201201883804-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미가루",
+        "origin": "국산",
+        "amount": "33.5%",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농식물성유지",
+        "origin": "콜롬비아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농쌀가루",
+        "origin": "국산",
+        "amount": "16.3%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농혼합탈지분유",
+        "amount": "11.30%",
+        "sub_ingredients": [
+          {
+            "name": "유기농탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "7.55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기분말",
+        "origin": "국산",
+        "amount": "2.0%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치분말",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "시금치",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칼슘분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:54"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 4.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 2.0,
+    "fat_g": 3.8,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "calcium_mg": 34.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(10g)",
+    "collected_at": "2026-03-04 04:32:54"
+  }
+}

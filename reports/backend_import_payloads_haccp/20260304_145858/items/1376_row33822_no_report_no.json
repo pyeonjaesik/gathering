@@ -1,0 +1,221 @@
+{
+  "product": {
+    "name_ko": "누드빼빼로",
+    "reportnum": "1983030801093"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983030801093/1983030801093-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983030801093/1983030801093-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983030801093/1983030801093-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "준초콜릿[백설탕,전지분골드Ⅰ(유청분말(프랑스산),유당(미국산),버터유(우유),팜유,유크림),코코아매스(가나산;코코아빈),쇼트닝(부분경화유),혼합식용유(부분경화유),레시틴(대두),합성착향료(바닐라향,바닐린)],밀가루(미국산,캐나다산;밀),옥수수전분,쇼트닝(부분경화유),백설탕,기타가공품,액상과당,식물성유지(부분경화유),맥아엑기스,정제소금,산도조절제,합성착향료(팜브레드향,바닐라향),미강유,복합조미식품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983030801093/1983030801093-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983030801093/1983030801093-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분골드Ⅰ",
+            "sub_ingredients": [
+              {
+                "name": "유청분말",
+                "origin": "프랑스산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유크림",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아매스",
+            "origin": "가나산",
+            "sub_ingredients": [
+              {
+                "name": "코코아빈",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "부분경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "부분경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "맥아엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "팜브레드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미강유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:08:44"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 511.0,
+    "carbohydrate_g": 66.67,
+    "protein_g": 6.67,
+    "fat_g": 24.44,
+    "sugar_g": 33.33,
+    "sodium_mg": 422.0,
+    "cholesterol_mg": 7.78,
+    "saturated_fat_g": 15.56,
+    "trans_fat_g": 0.67,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "50g",
+    "collected_at": "2026-03-03 15:08:44"
+  }
+}

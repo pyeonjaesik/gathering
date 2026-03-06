@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "쿠키미(米)학 초코",
+    "reportnum": "20080435169161"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169161/20080435169161-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169161/20080435169161-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169161/20080435169161-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀가루(국산)30.1%,설탕,코코아칩[코코아분말(스페인산)16%,]13.1%,가공버터(버터오일,유크림,야자경화유),계란(국산)6.56%,쇼트닝[식물성유지(팜유:말레이시아산)],호두분태(미국산),전지분유,찹쌀가루(국내산),혼합제제(히드록시프로필전분,설탕분말,탈지분유),알파미분(백미:국내산)1.53%,혼합제제(히드록시프로필인산이전분,슈가파우더),코코아분말(네덜란드산)1.31%,혼합제제식품첨가물(찹쌀전분,설탕분말),중탄산암모늄,천일염(국산),탄산수소나트륨,잔탄검(호주산),바닐라향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169161/20080435169161-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=105g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169161/20080435169161-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "amount": "30.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아칩",
+        "amount": "13.1%",
+        "sub_ingredients": [
+          {
+            "name": "코코아분말",
+            "origin": "스페인산",
+            "amount": "16%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "버터오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "amount": "6.56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두분태",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "히드록시프로필전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "히드록시프로필인산이전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "슈가파우더",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알파미분",
+        "origin": "국내산",
+        "amount": "1.53%",
+        "sub_ingredients": [
+          {
+            "name": "백미",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "1.31%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제식품첨가물",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "중탄산암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:11:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 550.0,
+    "carbohydrate_g": 70.0,
+    "protein_g": 10.0,
+    "fat_g": 27.0,
+    "sugar_g": 30.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 30.0,
+    "saturated_fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "105g",
+    "collected_at": "2026-03-04 04:11:30"
+  }
+}

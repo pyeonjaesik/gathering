@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "꿩대신 닭 왕교자",
+    "reportnum": "20010493358716"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010493358716/20010493358716-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010493358716/20010493358716-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010493358716/20010493358716-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기20.21%(국산),양파,밀가루,17.62%(미국,호주,캐나다산),돼지고기8.42%(국산)양배추,부추,즉석닭육수5.64%[가용성성분{정제수,닭고기(국내산),양파(국내산),마늘,생강},정제소금,후추,백설탕/추출가공식품],대파,알콘-T(두류가공품),변성전분,마늘,스켄겔(돈피콜라겐),만두시즈닝(복합조미식품),정제소금,양조간장,만두맛베이스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010493358716/20010493358716-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 4개(140g), 총 약5회제공(700g), 열량235kcal, 탄수화물21g 6%, 당류2.5g, 단백질13g 24%, 지방11g 22%, 포화지방산4.4g 29%, 트랜스지방0g, 콜레스테롤30mg 10%, 나트륨460mg 23%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010493358716/20010493358716-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "20.21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산, 캐나다산",
+        "amount": "17.62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "8.42%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "즉석닭육수",
+        "amount": "5.64%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알콘-T",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스켄겔",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "만두시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "만두맛베이스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:40"
+  },
+  "nutrition": {
+    "kcal": 235.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 2.5,
+    "protein_g": 13.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 4.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 460.0,
+    "basis_amount": 140.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 4개(140g)",
+    "collected_at": "2026-03-04 03:33:40"
+  }
+}

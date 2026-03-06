@@ -1,0 +1,181 @@
+{
+  "product": {
+    "name_ko": "치킨커리볶음밥",
+    "reportnum": "19930199349716"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349716/19930199349716-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349716/19930199349716-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349716/19930199349716-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀47.54%(국산),양파(중국산),닭고기8.91%(국산),감자,당근,카레3.57%{카레분10.5%[강황(인도산)]},홍피망,코코넛크림,청피망,채종유,버터(우유),백설탕,레드커리분말,정제소금,치킨부용(밀,대두),L-글루타민산나트륨(향미증진제),마늘,쇠고기맛국물내기와이(소고기),강황가루0.09%(인도산),흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349716/19930199349716-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349716/19930199349716-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "47.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "8.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레",
+        "amount": "3.57%",
+        "sub_ingredients": [
+          {
+            "name": "카레분",
+            "amount": "10.5%",
+            "sub_ingredients": [
+              {
+                "name": "강황",
+                "origin": "인도산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드커리분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨부용",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛국물내기와이",
+        "sub_ingredients": [
+          {
+            "name": "소고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "강황가루",
+        "origin": "인도산",
+        "amount": "0.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:24:39"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 158.0,
+    "carbohydrate_g": 29.0,
+    "protein_g": 3.67,
+    "fat_g": 3.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 363.0,
+    "cholesterol_mg": 6.67,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 19:24:39"
+  }
+}

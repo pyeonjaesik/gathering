@@ -1,0 +1,187 @@
+{
+  "product": {
+    "name_ko": "쿨피스톡 레몬콜라",
+    "reportnum": "19890528010103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890528010103/19890528010103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890528010103/19890528010103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890528010103/19890528010103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 이산화탄소, 유산균시럽(포도당,유산균)0.5%, 콜라베이스{카라멜색소,인산,폴리인산나트륨,카페인(향미증진제)}0.5%, 합성향료(콜라향,레몬향,레몬라임향),레몬착즙액{고형분함량2.6%, 레몬착즙액(레몬:터키산)}0.01%, 비타민C, 복합허브추출액T{감초농축액(감초:우즈베키스탄산),레몬과즙분말(레몬:아르헨티나산),생강농축분말(생강:국산), 글리세린}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890528010103/19890528010103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 350mL/170kcal\n나트륨35mg (2%), 탄수화물41g (12%), 당류41g (41%), 지방0.5g (1%), 트렌스지방0g, 포화지방0g (0%), 콜레스테롤50mg (17%), 단백질0g (0%)\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 역량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890528010103/19890528010103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균시럽",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜라베이스",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카페인",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "콜라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬라임향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬착즙액",
+        "amount": "0.01%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "2.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬착즙액",
+            "origin": "터키산",
+            "sub_ingredients": [
+              {
+                "name": "레몬",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합허브추출액T",
+        "sub_ingredients": [
+          {
+            "name": "감초농축액",
+            "sub_ingredients": [
+              {
+                "name": "감초",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우즈베키스탄산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레몬과즙분말",
+            "origin": "아르헨티나산",
+            "sub_ingredients": [
+              {
+                "name": "레몬",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "생강농축분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:47:40"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "sodium_mg": 35.0,
+    "carbohydrate_g": 41.0,
+    "sugar_g": 41.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 50.0,
+    "protein_g": 0.0,
+    "basis_amount": 350.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 350mL",
+    "collected_at": "2026-03-03 17:47:40"
+  }
+}

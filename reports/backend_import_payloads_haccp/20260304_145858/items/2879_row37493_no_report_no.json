@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "허니버터아몬드초콜릿",
+    "reportnum": "19900490051392"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900490051392/19900490051392-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900490051392/19900490051392-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900490051392/19900490051392-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "허니버터아몬드분태25%[아몬드:미국산,허니버터시즈닝,물엿,정백당,카놀라유], 백설탕, 코코아버터19.8%[싱가포르산], 코코아프리퍼레이션[백설탕, 코코아매스, 전지분유(우유):필란드산], 코코아매스, 코코아분말, 유탕, 레시틴(대두), 바닐린(이탈리아산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900490051392/19900490051392-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 3개(26g) 총 약 6회 제공량(153g)\n<1회 제공량당 함량>\n열량140kcal, 탄수화물12g (4%), 당류8g, 단백질2g(4%), 지방10g (20%), 포화지방5g (33%), 트렌스지방0g, 콜레스테롤0mg (0%), 나트륨10mg (1%)\n()안의 수치는 1일 영양소기준에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900490051392/19900490051392-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "허니버터아몬드분태",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허니버터시즈닝",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아버터",
+        "origin": "싱가포르산",
+        "amount": "19.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "필란드산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유탕",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바닐린",
+        "origin": "이탈리아산",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:27:27"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 8.0,
+    "protein_g": 2.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 26.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 3개(26g)",
+    "collected_at": "2026-03-03 18:27:27"
+  }
+}

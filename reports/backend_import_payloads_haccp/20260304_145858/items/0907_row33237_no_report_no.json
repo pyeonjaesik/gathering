@@ -1,0 +1,234 @@
+{
+  "product": {
+    "name_ko": "몽쉘 카카오케이크",
+    "reportnum": "19780614009420"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009420/19780614009420-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009420/19780614009420-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009420/19780614009420-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "준초콜릿(식물성유지)(싱가포르산),백설탕,코코아프리퍼레이션(우유-수입산),코코아파우더(싱가포르산),유당,코코아매스(가나산),밀가루(밀-미국산),쇼트닝(팜부분경화유(대두)),백설탕,식물성크림(백설탕,식물성유지,전지분골드Ⅰ,유당,혼합식용유),전란액(계란),물엿,D-소르비톨액,혼합분유,가공유,기타코코아가공품(싱가포르산),기타가공품,코코아분말(싱가포르산,브라질산),코코아매스(가나산),주정0.60%,산도조절제,정제소금,일반증류주0.03%혼홥제제(주정0.02%,젖산,유화제,산도조절제),합성착향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009420/19780614009420-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=408g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009420/19780614009420-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "준초콜릿",
+        "origin": "싱가포르산",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "origin": "가나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜부분경화유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분골드Ⅰ",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타코코아가공품",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "싱가포르산, 브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "amount": "0.60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "일반증류주",
+        "amount": "0.03%",
+        "sub_ingredients": [
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "주정",
+                "amount": "0.02%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:18:18"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 509.0,
+    "carbohydrate_g": 49.0,
+    "protein_g": 6.8,
+    "fat_g": 31.7,
+    "sugar_g": 26.5,
+    "sodium_mg": 260.0,
+    "cholesterol_mg": 32.4,
+    "saturated_fat_g": 19.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "408g",
+    "collected_at": "2026-03-03 14:18:18"
+  }
+}

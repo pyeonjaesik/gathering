@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "티젠 강남사우나",
+    "reportnum": "20060347041170"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041170/20060347041170-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041170/20060347041170-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041170/20060347041170-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "레몬그라스(태국산),마테(아르헨티나산),페퍼민트,합성착향료(레몬향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041170/20060347041170-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(1.8g)/총5회제공량(9g) 1serving tea bag(1.8g)/5serving(9g), 1회제공량(1serving)당함량 %영양성분기준치, 열량(Calories)0kcal, 탄수화물(Carbohydrates)0g 0%, 당류(Sugars)0g, 단백질(Protein)0g 0%, 지방(Total Fat)0g 0%, 포화지방(Saturated Fat)0g 0%, 트랜스지방(Trans Fat)0g, 콜레스테롤(cholesterol)0mg 0%, 나트륨(Sodium)0mg 0% *%영양성분기준치:1일영양성분기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041170/20060347041170-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "레몬그라스",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마테",
+        "origin": "아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "페퍼민트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "amount": "레몬향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:22"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 1.8,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(1.8g)",
+    "collected_at": "2026-03-04 03:57:22"
+  }
+}

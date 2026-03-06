@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "도토리 건조묵",
+    "reportnum": "2005047109147"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047109147/2005047109147-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047109147/2005047109147-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047109147/2005047109147-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "도토리99.7%(국산),천일염0.3%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047109147/2005047109147-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<결과 단위 1일 영양소 기준치 영양소 기준치(%)>\n열량 44.8 kcal/100g 0 0, 탄수화물 10.1 g/100g 330g 3.1, 당류 0 g/100g 0 0, 지방 0.4 g/100g 51g 0.8, 트랜스지방 0 g/100g 0 0, 포화지방 0 g/100g 15g 0, 콜레스테롤 0 mg/100g 300mg 0, 단백질 0.2 g/100g 55g 0.4, 나트륨 61.3 Mg/100g 2000mg 3.1",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047109147/2005047109147-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "도토리",
+        "origin": "국산",
+        "amount": "99.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:52"
+  },
+  "nutrition": {
+    "kcal": 44.8,
+    "carbohydrate_g": 10.1,
+    "sugar_g": 0.0,
+    "fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.2,
+    "sodium_mg": 61.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:54:52"
+  }
+}

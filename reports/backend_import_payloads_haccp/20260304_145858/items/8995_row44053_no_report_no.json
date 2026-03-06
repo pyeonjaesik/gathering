@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "맷돌로 갈아만든 국산 무가당 약콩 두유",
+    "reportnum": "20070464034124"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034124/20070464034124-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034124/20070464034124-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034124/20070464034124-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액82%(대두고형분7%이상/국산흑태70%,국산약콩30%),정제수,현미유(태국산),5곡혼합분말[현미,흑미,율무,참깨,검정깨(이상국산)],해조칼슘,천일염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034124/20070464034124-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034124/20070464034124-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "82%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "origin": "국산",
+            "amount": "7%이상",
+            "sub_ingredients": [
+              {
+                "name": "흑태",
+                "origin": "국산",
+                "amount": "70%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "약콩",
+                "origin": "국산",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5곡혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "율무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정깨",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:04"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 36.0,
+    "carbohydrate_g": 2.5,
+    "protein_g": 2.67,
+    "fat_g": 1.72,
+    "sugar_g": 0.22,
+    "sodium_mg": 67.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-04 04:06:04"
+  }
+}

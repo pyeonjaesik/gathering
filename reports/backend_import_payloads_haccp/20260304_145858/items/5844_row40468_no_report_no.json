@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "까까조아 감자",
+    "reportnum": "20080517001219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001219/20080517001219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001219/20080517001219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001219/20080517001219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농백미 95.55%(국내산),감자분말3%(국내산), 탄산칼슘, 비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001219/20080517001219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(10g)/총 1회 제공량 열량 38kcal, 탄수화물 8g(2%), 당류 0g, 단백질 0.7g(1%), 지방 0g(0%), 포화지방 0g, 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 0mg(0%) *()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001219/20080517001219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농백미",
+        "origin": "국내산",
+        "amount": "95.55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자분말",
+        "origin": "국내산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:14"
+  },
+  "nutrition": {
+    "carbohydrate_g": 8.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.7,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(10g)",
+    "collected_at": "2026-03-04 04:15:14"
+  }
+}

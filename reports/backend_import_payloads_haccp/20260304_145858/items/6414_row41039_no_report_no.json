@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "현미를 넣어 더 고소한 콘플레이크",
+    "reportnum": "2011056803849"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011056803849/2011056803849-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011056803849/2011056803849-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011056803849/2011056803849-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "콘플레이크70%(독일산:옥수수, 설탕, 소금, 보리맥아추출물), 현미22.6%(국내산), 천연당, 프락토올리고당, 천일염(국내산), 해바라기유, 비타민C, D토코페롤(혼합형), 올레오레진 로즈마리",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011056803849/2011056803849-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500g 1,945kcal\n<총 내용량당 1일 영영성분 기준치에 대한 비율>\n나트륨2,495mg 125%, 탄수화물451g 139%, 당류110g 110%, 지방3.8g 7%, 트랜스지방0g -, 포화지방1g 7%, 콜레스테롤0mg 0%, 단백질26g 47%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준으므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011056803849/2011056803849-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "콘플레이크",
+        "origin": "독일산",
+        "amount": "70%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보리맥아추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미",
+        "origin": "국내산",
+        "amount": "22.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올레오레진 로즈마리",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:43"
+  },
+  "nutrition": {
+    "kcal": 1945.0,
+    "sodium_mg": 2495.0,
+    "carbohydrate_g": 451.0,
+    "sugar_g": 110.0,
+    "fat_g": 3.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 26.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 500g",
+    "collected_at": "2026-03-04 04:32:43"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "도라에몽청포도",
+    "reportnum": "2016038358010"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016038358010/2016038358010-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016038358010/2016038358010-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016038358010/2016038358010-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,정백당,폴리덱스트로스,포도당,액상과당,청포도농축액[고형분65%이상(아르헨티나산)]1%,비타민C,라임농축액[고형분55%이상(이탈리아산)]0.3%,효소처리스테비아,수수추출물(국내산)0.05%,유화제,CMC,치자청색소,안나토색소,합성착향료(청포도향),정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016038358010/2016038358010-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 80ml / 총 1회 제공량 80ml\n<1회 제공량당 함량 *%영양성분기준치>\n열량90kcal, 탄수화물22g 7%, 당류13g 13%, 단백질0g 0%, 지방0g 0%, 포화지방0.1g 1%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨6mg 0%\n*% 영양성분기준치:1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016038358010/2016038358010-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리덱스트로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청포도농축액",
+        "origin": "아르헨티나산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라임농축액",
+        "origin": "이탈리아산",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "55%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수수추출물",
+        "origin": "국내산",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CMC",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "안나토색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "청포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:30"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 6.0,
+    "basis_amount": 80.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 80ml",
+    "collected_at": "2026-03-04 04:47:30"
+  }
+}

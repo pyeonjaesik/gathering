@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "가야궁 삼계탕",
+    "reportnum": "2012044800328"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012044800328/2012044800328-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012044800328/2012044800328-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012044800328/2012044800328-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭(한국산)51.6%,육수[정제수,닭뼈,맛내기분말,커프림,닭고기향가루,정제염],46.44%,찹쌀(한국산),쌀(한국산),인삼(한국삼),대추,마늘,밤",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012044800328/2012044800328-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분(Nutriton information) 100g당 함량(Serving Size:100g) 열량(Energy)96kcal,지방(Total fat) 5g, 포화지방(Saturated Fat)1.6g, 트랜스지방(Trans Fat) 0g, 콜레스테롤(Cholesterol) 38mg, 나트륨(Sodium) 181mg, 탄수화물(Total Carbohydrate)2g,당(Sugars) 0g, 섬유질(Dietary Fiber) 0.9g, 단백질(Protein)11g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012044800328/2012044800328-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭",
+        "origin": "한국산",
+        "amount": "51.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육수",
+        "amount": "46.44%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭뼈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛내기분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커프림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기향가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "한국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀",
+        "origin": "한국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인삼",
+        "sub_ingredients": [
+          {
+            "name": "한국삼",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:34:28"
+  },
+  "nutrition": {
+    "kcal": 96.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 1.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 38.0,
+    "sodium_mg": 181.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 11.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "Serving Size:100g",
+    "collected_at": "2026-03-04 04:34:28"
+  }
+}

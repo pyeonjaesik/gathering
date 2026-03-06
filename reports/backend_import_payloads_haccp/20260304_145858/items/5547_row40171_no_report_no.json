@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "미트로프 치즈",
+    "reportnum": "20070405014223"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014223/20070405014223-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014223/20070405014223-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014223/20070405014223-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산)74.53%,정제수,고다치즈3.43%[자연치즈(자연치즈100%(독일산)52%,데어리스프레드(미국산)],청피망(중국산),홍피망(중국산),혼합제제변성전분,말토덱스트린,정제소금,크리스피어니언,미트로프시즈닝,복합조미식품,L-글루타민산나트륨(향미증진제),함수결정포도당,백설탕,혼합제제(산도조절제),유산균발효분말,쿡메이트에프레스,향미증진제,복합조미식품,비타민C,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014223/20070405014223-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 200g 100g당 225kcal 100g당 1일 영양성분 기준치에 대한 비율 나트륨 660mg 33%, 탄수화물 6g 2%, 당류 1g미만, 지방 16g 31%, 트렌스지방 0g, 포화지방 6g 40%, 콜레스테롤50mg 17%, 단백질 13g 24%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014223/20070405014223-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "74.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고다치즈",
+        "amount": "3.43%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "자연치즈",
+                "origin": "독일산",
+                "amount": "52%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "데어리스프레드",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청피망",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크리스피어니언",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미트로프시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균발효분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿡메이트에프레스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:45"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "sodium_mg": 660.0,
+    "carbohydrate_g": 6.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 50.0,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:04:45"
+  }
+}

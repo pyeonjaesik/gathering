@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "심쿵 하트콘",
+    "reportnum": "19870461068135"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068135/19870461068135-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068135/19870461068135-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068135/19870461068135-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥분(옥수수:호주산),혼합식용유[팜올레인유(말레이시아산)59.98%, 해바리기유{외국산(우크라이나•말레이시아•스페인)}40%,토코페롤(혼합형)],설탕,딸기혼합분말50[동결건조딸기분말(딸기:국내산)50%,설탕]7%,가공버터,쌀가루,올리고당,가당연유,기타가공품,가공치즈,정제소금,코치닐색소,결정셀룰로오스,유화제,자주색고구마색소,합성향료(딸기향,크랜베리향,생크림향),베이킹파우더(산성피로인산나트륨,탄산수소나트륨,전분,제일인산칼슘,젖산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068135/19870461068135-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 126g 100g 당 474kcal\n<100g 당 1일 영양성분 기준치에 대한 비율>\n나트륨290mg 15%, 탄수화물74g 23%, 당류25g 25%, 콜레스테롤10mg 3%, 지방18g 33%, 트랜스지방0g, 포화지방7g 47%, 단백질4g 7%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068135/19870461068135-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바리기유",
+            "origin": "외국산",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "우크라이나•말레이시아•스페인",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기혼합분말50",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "동결건조딸기분말",
+            "origin": "국내산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자주색고구마색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크랜베리향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": [
+          {
+            "name": "산성피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제일인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:41:53"
+  },
+  "nutrition": {
+    "kcal": 474.0,
+    "sodium_mg": 290.0,
+    "carbohydrate_g": 74.0,
+    "sugar_g": 25.0,
+    "cholesterol_mg": 10.0,
+    "fat_g": 18.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 7.0,
+    "protein_g": 4.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-03 16:41:53"
+  }
+}

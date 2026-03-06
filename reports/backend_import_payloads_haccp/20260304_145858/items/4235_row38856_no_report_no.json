@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "덴마크 메이플 마키아또",
+    "reportnum": "1998047601763"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601763/1998047601763-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601763/1998047601763-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601763/1998047601763-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)55%,정제수,커피농축액(고형분33.8%이상,브라질산)22%,정백당,덱스트린,메이플시럽(캐나다산)0.1%,카라멜시럽,탄산수소나트륨,합성착향료(메이플향,커피향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601763/1998047601763-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200mL) 총약2회 제공량 (310mL), 1회 제공량당 함량 *%영양소 기준치1:열량 135kcal, 탄수화물20g 6%,당류17g, 단백질 4g 7%,지방4.4g 9%, 포화지방3g 20%, 트랜스지방0g, 콜레스테롤 10mg 3%, 나트륨 120mg 6%, *% 영양소 기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601763/1998047601763-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피농축액",
+        "origin": "브라질산",
+        "amount": "22%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "33.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메이플시럽",
+        "origin": "캐나다산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "메이플향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:57:37"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 17.0,
+    "protein_g": 4.0,
+    "fat_g": 4.4,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-03 21:57:37"
+  }
+}

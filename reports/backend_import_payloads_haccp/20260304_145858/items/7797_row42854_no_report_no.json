@@ -1,0 +1,124 @@
+{
+  "product": {
+    "name_ko": "스트로베리",
+    "reportnum": "19960230001403"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001403/19960230001403-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001403/19960230001403-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001403/19960230001403-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유크림(독일산),과·채가공품(딸기(칠레산),백설탕,펙틴),정제수,탈지농축우유(국산),백설탕,난황액,천연착향료(딸기향),혼합제제(비트레드,치자황색소,덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001403/19960230001403-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=474ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001403/19960230001403-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유크림",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과·채가공품",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지농축우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:50:20"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 208.0,
+    "carbohydrate_g": 22.0,
+    "protein_g": 3.0,
+    "fat_g": 12.0,
+    "sugar_g": 22.0,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 65.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.6,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "474ml",
+    "collected_at": "2026-03-03 20:50:20"
+  }
+}

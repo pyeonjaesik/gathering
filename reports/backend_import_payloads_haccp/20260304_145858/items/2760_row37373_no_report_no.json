@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "아침헛개허니꿀물",
+    "reportnum": "19890445014744"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014744/19890445014744-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014744/19890445014744-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014744/19890445014744-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 액상과당, 아카시아벌꿀 1%, 시클로덱스트린시럽, 헛개나무열매추출농축액0.2%, 합성향료(허니배향), 배청징농축액(배과즙1.0%),칡즙농축액,구연산,홍차추출분말,비타민C,규소수지,유화제,셀룰로오스검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014744/19890445014744-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 190ml 105kcal\n나트륨0mg 0%, 탄수화물26g 8%, 당류26g 26%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%,  단백질0g 0%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014744/19890445014744-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아카시아벌꿀",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시클로덱스트린시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "헛개나무열매추출농축액",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "허니배향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "배청징농축액",
+        "amount": "1.0%",
+        "sub_ingredients": [
+          {
+            "name": "배과즙",
+            "amount": "1.0%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칡즙농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍차추출분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "규소수지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:44:22"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 26.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 190ml",
+    "collected_at": "2026-03-03 17:44:22"
+  }
+}

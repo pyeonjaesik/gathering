@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "홍삼담은 아로니아",
+    "reportnum": "20030614307862"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307862/20030614307862-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307862/20030614307862-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307862/20030614307862-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아로니아혼합과즙{아로니아과즙(17 Brix, 폴란드산) 35%, 포도과즙(미국산), 배과즙(국산)} 91.87%, 아가베시럽, 홍삼농축액(6년근, 고형분 60%, 홍삼성분 70mg/g이상, 국산) 1%, 천연라즈베리향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307862/20030614307862-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 : 1포(50mL), 총 1회 제공량(50mL) 1회 제공량 당 함량 : 열량 30kcal, 탄수화물 8g(2%), 당류 6g, 단백질 0g(0%), 지방 0g(0%) 포화지방 0g(0%) 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 0mg(0%) ()안의 수치는 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307862/20030614307862-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아로니아혼합과즙",
+        "amount": "91.87%",
+        "sub_ingredients": [
+          {
+            "name": "아로니아과즙",
+            "origin": "폴란드산",
+            "amount": "35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도과즙",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배과즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아가베시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "6년근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연라즈베리향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:49"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 : 1포(50mL)",
+    "collected_at": "2026-03-04 03:49:49"
+  }
+}

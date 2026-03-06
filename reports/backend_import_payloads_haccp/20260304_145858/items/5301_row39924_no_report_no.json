@@ -1,0 +1,285 @@
+{
+  "product": {
+    "name_ko": "지방이 쉐이크 흑미",
+    "reportnum": "20060372438333"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060372438333/20060372438333-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060372438333/20060372438333-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060372438333/20060372438333-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,식물성크림[물엿,식물성유지(해바라기유:외국산),카제인나트륨,제미인산칼륨,폴리인산칼륨],혼합곡물파우더[(현미,보리,흑미,백태,검정콩,검정깨:국산,볶은검정콩가루(국산)8.5%,통곡물5곡(현미,맵쌀,보리,흑미,현미찹쌀),볶은흑미가루(국산)6%,농축유청단백[유청(우유),레시틴(대두)],알파미,볶은흑임자가루,잔탄검,정제소금,혼합제제[합성착향료(땅콩향),주정,물엿,아라비아검,덱스트린],멀티비타민미네랄믹스N(해조칼슘,비타민C,비타민E혼합제제,니코틴산아미드,비타민A혼합제제,푸마르산제일철,산화아연,엽산,비타민B6염산염,비타민B1염산염,비타민B2),이산화규소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060372438333/20060372438333-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량60g 250kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨220mg 11%, 탄수화물45g 14%, 당류17g 17%, 콜레스테롤5mg 2%, 지방4.6g 8%, 트랜스지방0g -, 포화지방0.7g 5%, 단백질13g 24% \n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060372438333/20060372438333-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "해바라기유",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제미인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합곡물파우더",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보리",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정콩",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정깨",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶은검정콩가루",
+            "origin": "국산",
+            "amount": "8.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "통곡물5곡",
+            "sub_ingredients": [
+              {
+                "name": "현미",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맵쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "보리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "흑미",
+                "sub_ingredients": []
+              },
+              {
+                "name": "현미찹쌀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "볶은흑미가루",
+            "origin": "국산",
+            "amount": "6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축유청단백",
+            "sub_ingredients": [
+              {
+                "name": "유청",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "알파미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶은흑임자가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "합성착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "땅콩향",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "멀티비타민미네랄믹스N",
+        "sub_ingredients": [
+          {
+            "name": "해조칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E혼합제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "니코틴산아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A혼합제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸마르산제일철",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:12"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "sodium_mg": 220.0,
+    "carbohydrate_g": 45.0,
+    "sugar_g": 17.0,
+    "cholesterol_mg": 5.0,
+    "fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.7,
+    "protein_g": 13.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량60g",
+    "collected_at": "2026-03-04 03:58:12"
+  }
+}

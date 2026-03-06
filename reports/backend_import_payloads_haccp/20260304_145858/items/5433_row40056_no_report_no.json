@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "우리아이입안애바나나스낵",
+    "reportnum": "2006051503516"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503516/2006051503516-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503516/2006051503516-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503516/2006051503516-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농쌀(국내산)54.23%,옥수수(국내산)26.21%,유기농찹쌀(국내산)9.04%,유기농설탕(수입산)6.1%,바나나분말(수입산)2.53%,유기농우유(국내산)1.02%,유기쌀조청[유기농쌀조청(국내산)98.5%,엿기름,효소]0.81%,죽염(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503516/2006051503516-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<총 내용량 27g 당105kcal>\n나트륨5mg 0%, 탄수화물24g 7%, 당류1g미만 1%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤-, 단백질2g 4%\n※ 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503516/2006051503516-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국내산",
+        "amount": "54.23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "국내산",
+        "amount": "26.21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농찹쌀",
+        "origin": "국내산",
+        "amount": "9.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "수입산",
+        "amount": "6.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "수입산",
+        "amount": "2.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농우유",
+        "origin": "국내산",
+        "amount": "1.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기쌀조청",
+        "amount": "0.81%",
+        "sub_ingredients": [
+          {
+            "name": "유기농쌀조청",
+            "origin": "국내산",
+            "amount": "98.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "죽염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:34"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "sodium_mg": 5.0,
+    "carbohydrate_g": 24.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 27.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 27g",
+    "collected_at": "2026-03-04 04:00:34"
+  }
+}

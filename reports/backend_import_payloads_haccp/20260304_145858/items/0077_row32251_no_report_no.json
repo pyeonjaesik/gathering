@@ -1,0 +1,215 @@
+{
+  "product": {
+    "name_ko": "냉면용동치미맛육수",
+    "reportnum": "2002024248916"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002024248916/2002024248916-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002024248916/2002024248916-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002024248916/2002024248916-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,양파(국내산),물엿,무우(국내산)오이즙(국내산),쇠고기맛플러스[정제염(국산),L-글루타민산나트륨(항미증진제),옥수수전분(옥수수100%,수입산),정백당,쇠고기맛분말{간장분말-에이치빌(밀,대두),불고기맛엑기스파우더(쇠고기-호주산),양파분말,사골엑기스분말(사골엑기스-뉴질랜드산),마늘분말,스파이스믹스},비프베이스(쇠고기-호주산,사골엑기스-뉴질랜드산),정제우지(호주산),백설탕,재제염(꽃소금),식초(빙초산),고추씨,포도당,수크랄로스(합성감미료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002024248916/2002024248916-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총1회제공량(350g), 열량63kcal, 탄수화물14g (4%), 당류0g, 단백질0g(0%), 콜레스테롤0mg (0%), 지방0% (0%), 포화지방0g (0%),트렌스지방0g, 나트륨2135mg (107%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002024248916/2002024248916-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무우",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오이즙",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛플러스",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "항미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "amount": "옥수수100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기맛분말",
+            "sub_ingredients": [
+              {
+                "name": "간장분말-에이치빌",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "불고기맛엑기스파우더",
+                "sub_ingredients": [
+                  {
+                    "name": "쇠고기",
+                    "origin": "호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "양파분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "사골엑기스분말",
+                "sub_ingredients": [
+                  {
+                    "name": "사골엑기스",
+                    "origin": "뉴질랜드산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "마늘분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스파이스믹스",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프베이스",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제우지",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제염",
+        "sub_ingredients": [
+          {
+            "name": "꽃소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식초",
+        "sub_ingredients": [
+          {
+            "name": "빙초산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:23"
+  },
+  "nutrition": {
+    "kcal": 63.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "sodium_mg": 2135.0,
+    "basis_amount": 350.0,
+    "basis_unit": "g",
+    "basis_text": "총1회제공량(350g)",
+    "collected_at": "2026-03-03 13:05:23"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "이마트프리미엄 안심햄",
+    "reportnum": "19980476001110"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001110/19980476001110-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001110/19980476001110-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001110/19980476001110-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산/안심)95.18%,백설탕,정제소금(국내산),카라기난,산도조절제,비프인핸사[건조효모(멕시코산),정제소금(국내산),L-글루타민산나트륨(향미증진제),페파스파이스로얄,코치닐추출색소,비타민C,아질산나트륨(발색제,보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001110/19980476001110-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 350g 100g당 100kcal, 나트륨 910mg 46%,탄수화물1g미만 0%,당류1g미만 1%, 지방3.3g 6%, 트랜스지방 0g ,포화지방1.4g 9%, 콜레스테롤105mg 35%, 단백질17g 31%, 1일 영양성분 기준치에 대한비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001110/19980476001110-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "95.18%",
+        "sub_ingredients": [
+          {
+            "name": "안심",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프인핸사",
+        "sub_ingredients": [
+          {
+            "name": "건조효모",
+            "origin": "멕시코산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "페파스파이스로얄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "보존료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:53:38"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "sodium_mg": 910.0,
+    "fat_g": 3.3,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.4,
+    "cholesterol_mg": 105.0,
+    "protein_g": 17.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:53:38"
+  }
+}

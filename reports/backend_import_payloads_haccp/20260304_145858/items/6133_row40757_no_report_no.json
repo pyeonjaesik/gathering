@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "팜온더로드 딸기큐브젤리",
+    "reportnum": "2010021109610"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010021109610/2010021109610-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010021109610/2010021109610-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010021109610/2010021109610-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,물엿,냉동딸기퓨레(딸기,백설탕),D-소르비톨액9.16%,젤라틴,산도조절제,합성향료(딸기향,믹스후르츠향),딸기농축과즙0.54%(고형분65%),펙틴,식용유지가공품,유화제,자주색고구마색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010021109610/2010021109610-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 89g 275kcal, 나트륨 25mg 1%, 탄수화물 66g 20%, 당류 47g 47%, 지방 0g 0%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 0mg 0%, 단백질 4g 7%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010021109610/2010021109610-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동딸기퓨레",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "amount": "9.16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "믹스후르츠향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기농축과즙",
+        "amount": "0.54%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유지가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자주색고구마색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:23"
+  },
+  "nutrition": {
+    "kcal": 275.0,
+    "sodium_mg": 25.0,
+    "carbohydrate_g": 66.0,
+    "sugar_g": 47.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 4.0,
+    "basis_amount": 89.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 89g",
+    "collected_at": "2026-03-04 04:22:23"
+  }
+}

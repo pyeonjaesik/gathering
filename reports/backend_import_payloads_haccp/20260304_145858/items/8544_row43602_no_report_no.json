@@ -1,0 +1,535 @@
+{
+  "product": {
+    "name_ko": "얼초 집만들기",
+    "reportnum": "2003036429887"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003036429887/2003036429887-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003036429887/2003036429887-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003036429887/2003036429887-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "에이스/밀가루(미국산), 소트닝[팜유(말레이시아산), 가공유지{에스테르화유:팜올레인유(말레이시아산), 팜유(말레이시아산)}], 혼합식용유[팜올레인유(말레이시아산), 팜유(말레이시아산), 올레오레진로즈메리], 백설탕, 곡류가공품, 분말·결정포도당, 기타가공품, 전지분유, 정제소금, 재제소금, 분말유크림, 팽창제, 합성향료(밀크향), 비타민B1, 염산염, 비타민B2, 혼합제제(효모, 밀가루), 효소제\n쿠키앤크림 화이트 미니/준초콜릿{백설탕, 식물성가공유지(말레이시아산), 혼합분유(탈지분유, 유청분말, 유청농축단백, 네덜란드산), 코코아버터, 유당, 분말유크림1.7%, 유화제, 정제소금, 합성향료(바닐린, 밀크크림향)}, 과자(쿠키)18%{밀가루(미국산, 호주산), 분당, 쇼트닝(말레이시아산), 코코아파우더, 전지분유}\n해태 티피프렌즈 꼬마볼/준초콜릿{백설탕, 가공유지(팜핵경화유;말레이시아산, 인도네시아산), 혼합탈지분유(네덜란드산;탈지분유, 유청분말), 코코아분말, 혼합전지분유(전지분유, 유청분말), 유화제, 바닐린}, 백설탕, 변성전분, 난각분말(일본산), 분말설탕, 혼합제제1(인산이전분, 파우다슈가), 아라비아검, 혼합제제2(홍화황색소, 치자청색소, L-아스코르빈산나트륨, 녹차추출분말, 폴리인산나트륨, D-소비톨액), 젤라틴, 파프리카색소, 혼합제제3(카카오색소, 홍국색소, 홍화황색소, 산도조절제, 덱스트린), 카나우바왁스\n밀크튜브(준초콜릿)/백설탕, 식물성유지1(팜올레인유;말레이시아산), 유청분말(원유;국산), 식물성유지2{말레이시아산;팜핵경화유(팜핵유, 소르비탄지방산에스테르, 레시틴, 구연산)}, 코코아분말, 유당, 유청단백, 유화제, 바닐린\n핑크튜브(기타가공품)/백설탕, 식물성유지1(팜올레인유;말레이시아산), 유청분말(원유;국산), 식물성유지2[말레이시아산;팜핵경화유(팜핵유, 소르비탄지방산에스테르, 레시틴, 구연산)], 유당, 유청단백, 유화제, 비트레드, 합성향료(딸기향, 바닐린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003036429887/2003036429887-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=166g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003036429887/2003036429887-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "에이스/밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "에스테르화유",
+                "sub_ingredients": [
+                  {
+                    "name": "팜올레인유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진로즈메리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염산염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿠키앤크림 화이트 미니",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청농축단백",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말유크림",
+            "sub_ingredients": [
+              {
+                "name": "1.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크크림향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "과자(쿠키)",
+        "amount": "18%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해태 티피프렌즈 꼬마볼",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "origin": "말레이시아산, 인도네시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합전지분유",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난각분말",
+        "origin": "일본산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "인산이전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파우다슈가",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-아스코르빈산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차추출분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "카카오색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍국색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카나우바왁스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀크튜브",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지1",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지2",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "핑크튜브",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지1",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지2",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 542.0,
+    "carbohydrate_g": 58.43,
+    "protein_g": 6.33,
+    "fat_g": 31.33,
+    "sugar_g": 26.51,
+    "sodium_mg": 328.0,
+    "cholesterol_mg": 3.01,
+    "saturated_fat_g": 18.67,
+    "trans_fat_g": 0.6,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "166g",
+    "collected_at": "2026-03-04 03:47:13"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "쌍화차",
+    "reportnum": "19710372001192"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001192/19710372001192-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001192/19710372001192-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001192/19710372001192-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,덱스트린,자일로스설탕(백설탕,자일로스,난소화성말토덱스트린),쌍화농축액분말[쌍화고형분68.3%,/당귀(국산),천궁(국산),계피,감초,백작약,황기,숙지황,덱스트린]4.9%,아몬드(미국산)3%,호두(미국산)2.2%,건조대추,감자전분가공품,분말카라멜,정제염,효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001192/19710372001192-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량260g(13g×20포) 1포(13g)당 53kcal, 나트륨24mg 1%, 탄수화물11g 3%, 당류7g 7%, 지방0.6g 1%, 트랜스지방-g, 포화지방0g 0%, 콜레스테롤-mg -%, 단백질0g 0%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001192/19710372001192-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로스설탕",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자일로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난소화성말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌍화농축액분말",
+        "amount": "4.9%",
+        "sub_ingredients": [
+          {
+            "name": "쌍화고형분",
+            "amount": "68.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천궁",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백작약",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숙지황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "2.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조대추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:23:10"
+  },
+  "nutrition": {
+    "kcal": 53.0,
+    "sodium_mg": 24.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 7.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 13.0,
+    "basis_unit": "g",
+    "basis_text": "1포(13g)당",
+    "collected_at": "2026-03-03 13:23:10"
+  }
+}

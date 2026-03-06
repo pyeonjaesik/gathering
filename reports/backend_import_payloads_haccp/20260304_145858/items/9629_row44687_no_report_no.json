@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "참콘칩 구운옥수수맛",
+    "reportnum": "20140383299122"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299122/20140383299122-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299122/20140383299122-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299122/20140383299122-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "콘칩펠렛1 71.90%[옥수수그릿츠 99.41%(외국산:브라질,호주,러시아등),정제소금(국내산)],팜올레인유(말레이시아산),군옥수수맛씨즈닝엠[콘포타쥬씨즈닝베이스-1[후레버드콘씨즈닝-1[스위트콘혼합물,알파콘옥수수(외국산:러시아,브라질,호주등)]],유청분말[우유(국산)] ※특정성분명 및 함량 :옥수수[외국산(브라질,호주,러시아 등)]71.47%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299122/20140383299122-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299122/20140383299122-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "콘칩펠렛1",
+        "amount": "71.90%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수그릿츠",
+            "origin": "외국산, 브라질산, 호주산, 러시아산",
+            "amount": "99.41%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "군옥수수맛씨즈닝엠",
+        "sub_ingredients": [
+          {
+            "name": "콘포타쥬씨즈닝베이스-1",
+            "sub_ingredients": [
+              {
+                "name": "후레버드콘씨즈닝-1",
+                "sub_ingredients": [
+                  {
+                    "name": "스위트콘혼합물",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "알파콘옥수수",
+                    "origin": "외국산, 러시아산, 브라질산, 호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 538.0,
+    "carbohydrate_g": 61.0,
+    "protein_g": 5.0,
+    "fat_g": 30.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 445.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 13.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 04:41:29"
+  }
+}

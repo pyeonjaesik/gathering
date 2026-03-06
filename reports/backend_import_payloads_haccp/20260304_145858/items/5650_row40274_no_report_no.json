@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "포모나 레몬톡톡베이스",
+    "reportnum": "20080358119242"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119242/20080358119242-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119242/20080358119242-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119242/20080358119242-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "레몬농축액베이스 70.8%[레몬농축액 21.64%(이스라엘산),고과당,백설탕,레몬펄프셀 20.94%(아르헨티나산), 백포도 농축액(칠레산)], 백설탕, 고과당,합성착향료(레몬향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119242/20080358119242-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "40g당/총 내용량 1,200g 열량 99kcal 나트륨 0% 7mg 탄수화물 7% 23g 당류 22g 지방 2% 0.8g 트랜스지방 0g 포화지방 2% 0.4g 콜레스테롤 0% 0mg 단백질 0% 0g 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열랴에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119242/20080358119242-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "레몬농축액베이스",
+        "amount": "70.8%",
+        "sub_ingredients": [
+          {
+            "name": "레몬농축액",
+            "origin": "이스라엘산",
+            "amount": "21.64%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬펄프셀",
+            "origin": "아르헨티나산",
+            "amount": "20.94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백포도 농축액",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:08"
+  },
+  "nutrition": {
+    "kcal": 99.0,
+    "sodium_mg": 7.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 22.0,
+    "fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.4,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "40g당",
+    "collected_at": "2026-03-04 04:08:08"
+  }
+}

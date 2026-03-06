@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "사천중화볶음밥",
+    "reportnum": "19930199349462"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349462/19930199349462-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349462/19930199349462-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349462/19930199349462-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀48.94%(국산),양파(중국산),당근(중국산),오징어,새우,베이컨,고추맛기름,청양고추,청피망,채종유,굴소스,마늘,정제소금,밀분해추출물에이,양조간장,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349462/19930199349462-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349462/19930199349462-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "48.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이컨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "굴소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀분해추출물에이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:23:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 185.0,
+    "carbohydrate_g": 30.67,
+    "protein_g": 3.67,
+    "fat_g": 5.33,
+    "sugar_g": 5.33,
+    "sodium_mg": 400.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 1.07,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 19:23:43"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "조지아 맥스 커피",
+    "reportnum": "19800375002179"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800375002179/19800375002179-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800375002179/19800375002179-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800375002179/19800375002179-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,전지분유(싱가폴산),인스턴트커피(말레이시아산),말토덱스트린,생두의원산지(인도네시아산100%),커피추출고형분(0.96%),유화제,탄산수소나트륨,합성착향료(커피향),프로필렌글라콜,덱스트린,우유함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800375002179/19800375002179-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=240ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800375002179/19800375002179-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": [
+          {
+            "name": "싱가폴산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인스턴트커피",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생두의원산지",
+        "origin": "인도네시아산 100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피추출고형분",
+        "amount": "0.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프로필렌글라콜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:30:46"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.83,
+    "fat_g": 0.79,
+    "sugar_g": 8.33,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 2.92,
+    "saturated_fat_g": 0.54,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "240ml",
+    "collected_at": "2026-03-03 14:30:46"
+  }
+}

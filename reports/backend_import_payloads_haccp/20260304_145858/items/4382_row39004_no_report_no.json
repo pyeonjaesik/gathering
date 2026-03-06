@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "베베쿡 처음먹는 어린이김 당근",
+    "reportnum": "20000473050103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000473050103/20000473050103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000473050103/20000473050103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000473050103/20000473050103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김(국산)82.14%,현미유(국산)7.35%,참기름(국산)6.94%,양파분말(국산)1.89%,발효간장분말(국산)0.84%,해조칼슘(아일랜드산)0.84%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000473050103/20000473050103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량당 열량 총2kcal 1회 제공량 6매(1.5g) 총10회 제공량 15g 1회 제공량당 함량 %영양성분 기준치 : 열량 2kcal,탄수화물1g미만 0%, 당류0g, 단백질 0g 0%(0%), 지방0g 0%, 포화지방0g 0%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 4mg 0% (0%), %영양성분 기준치 : 1일 영양성분 기준치에 대한 비율임 ( )안의 %영양성분 기준치:한국인 유아(1~2세)영양섭취 기준에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000473050103/20000473050103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "82.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "국산",
+        "amount": "7.35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국산",
+        "amount": "6.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분말",
+        "origin": "국산",
+        "amount": "1.89%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효간장분말",
+        "origin": "국산",
+        "amount": "0.84%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "origin": "아일랜드산",
+        "amount": "0.84%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:20:17"
+  },
+  "nutrition": {
+    "kcal": 2.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 4.0,
+    "basis_amount": 1.5,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 6매(1.5g)",
+    "collected_at": "2026-03-03 22:20:17"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "애심목장 구워먹는 치즈",
+    "reportnum": "201002620234"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620234/201002620234-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620234/201002620234-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620234/201002620234-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유99%(국산),정제염,응유효소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620234/201002620234-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 영양소 함량 열량 (kcal/100g) 334, 탄수화물 (g/100g) 1.85, 조단백질(g/100g) 20.99, 당류 (g/100g) 1.48, 조지방 (g/100g) 26.97, 포화지방 (g/100g) 18.3, 트랜스지방 (g/100g) 1.23, 콜레스테롤 (g/100g) 85.19, 나트륨 (mg/100g) 428.5",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620234/201002620234-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "응유효소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:20"
+  },
+  "nutrition": {
+    "kcal": 334.0,
+    "carbohydrate_g": 1.85,
+    "sugar_g": 1.48,
+    "saturated_fat_g": 18.3,
+    "trans_fat_g": 1.23,
+    "cholesterol_mg": 85.19,
+    "sodium_mg": 428.5,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 04:22:20"
+  }
+}

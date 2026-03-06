@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "IFF가슴살",
+    "reportnum": "1998048782574"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998048782574/1998048782574-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998048782574/1998048782574-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998048782574/1998048782574-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기100%(가슴살/국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998048782574/1998048782574-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "칼로리 102.27kcal, 단백질 23.34g, 지방 0.99g, 조회분 1.99g, 수분 79.29%(100g당)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998048782574/1998048782574-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:58:40"
+  },
+  "nutrition": {
+    "kcal": 102.27,
+    "protein_g": 23.34,
+    "fat_g": 0.99,
+    "water_g": 79.29,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:58:40"
+  }
+}

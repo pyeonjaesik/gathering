@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name_ko": "격이다른 한우힘줄수육",
+    "reportnum": "2006044801563"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801563/2006044801563-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801563/2006044801563-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801563/2006044801563-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "한우사골육수60%[한우사골(국산)5.88%),한우모둠뼈(국산)5.88%,정제수](가용성고형분2%),삶은한우우건(국산)40%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801563/2006044801563-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약 1/2봉지(240g),총 약 2회 제공량(500g),240g당 함량,*%영양소기준치,열량 220 kcal,탄수화물 0g,당류 0g,단백질 28g(51%),지방 16g(31%),포화지방 6g(40%),트랜스지방 0.5g미만,콜레스테롤 40mg(13%),나트륨 90mg(5%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801563/2006044801563-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "한우사골육수",
+        "amount": "60%",
+        "sub_ingredients": [
+          {
+            "name": "한우사골",
+            "origin": "국산",
+            "amount": "5.88%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한우모둠뼈",
+            "origin": "국산",
+            "amount": "5.88%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "삶은한우우건",
+        "origin": "국산",
+        "amount": "40%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:01"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 28.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 240.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약 1/2봉지(240g)",
+    "collected_at": "2026-03-04 04:00:01"
+  }
+}

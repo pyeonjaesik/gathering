@@ -1,0 +1,140 @@
+{
+  "product": {
+    "name_ko": "과일촌아침에알로에",
+    "reportnum": "1998044900283"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998044900283/1998044900283-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998044900283/1998044900283-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998044900283/1998044900283-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알로에베라겔파우더[알로에로 환산시22%(알로에베라겔파우더50%(200:1),덱스트린50%)],알로에베라겔8%(알로에절편45%,알로에즙액54.8%,구연산0.2%),정제수,백설탕,구연산,젖산칼슘,구연산나트륨,비타민C,젤란검,합성착향료(청포도향),치자청색소,홍화황색소 .원산지:알로에베라겔파우더/미국산,알로에베라겔/태국산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998044900283/1998044900283-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200mL)/ 총 약 8회 제공량(1500mL) 1회 제공량당 함량 *%영양소기준치 열량88kcal 탄수화물22g 7% 당류22g 단백질0g 0% 지방0g 0% 포화지방0g 0% 트랜스지방0g 콜레스테롤0mg 0% 나트륨24mg 1% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998044900283/1998044900283-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "알로에베라겔파우더",
+        "origin": "미국산",
+        "amount": "22%",
+        "sub_ingredients": [
+          {
+            "name": "알로에베라겔파우더",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알로에베라겔",
+        "origin": "태국산",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "알로에절편",
+            "amount": "45%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알로에즙액",
+            "amount": "54.8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "청포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:53:18"
+  },
+  "nutrition": {
+    "kcal": 88.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 22.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 24.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-03 21:53:18"
+  }
+}

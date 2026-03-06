@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "꽉 치즈(딸기)",
+    "reportnum": "2014047600113"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014047600113/2014047600113-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014047600113/2014047600113-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014047600113/2014047600113-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국내산)83%,유산균(DVS)정량,정백당2%,딸기잼(국내산)15%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014047600113/2014047600113-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량(Kcal/100g) 열량 150kcal, 수분 70.85g, 회분 0.66g, 탄수화물 15.60g, 조단백질 5.68g, 조지방 7.22g, 나트륨 29.99mg, 트랜스지방 0.21g, 당류 9.86g, 포화지방 5.0843g, 콜레스테롤 21.29mg *( )안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014047600113/2014047600113-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국내산",
+        "amount": "83%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "정량",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기잼",
+        "origin": "국내산",
+        "amount": "15%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:44"
+  },
+  "nutrition": {
+    "kcal": 150.0,
+    "water_g": 70.85,
+    "ash_g": 0.66,
+    "carbohydrate_g": 15.6,
+    "sodium_mg": 29.99,
+    "trans_fat_g": 0.21,
+    "sugar_g": 9.86,
+    "saturated_fat_g": 5.0843,
+    "cholesterol_mg": 21.29,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:42:44"
+  }
+}

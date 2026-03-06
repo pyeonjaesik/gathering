@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "맛있게 매콤한 태양초 고추장",
+    "reportnum": "20030493175144"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030493175144/20030493175144-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030493175144/20030493175144-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030493175144/20030493175144-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:외국산/미국, 호주, 캐나다), 물엿, 정제수, 혼합양념(중국산)[고춧가루4.63%, 정제소금, 마늘, 양파, 찹쌀분], 분말혼합양념(중국산)[찐밀쌀가루, 고춧가루1.57%, 정제소금, 포도당, 마늘분], 정제소금, 밀쌀, 주정, 알파탈지대두분, L-글루탐산나트륨(향미증진제), 종국",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030493175144/20030493175144-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030493175144/20030493175144-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "외국산, 미국산, 호주산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "amount": "4.63%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "찐밀쌀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "amount": "1.57%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파탈지대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:24"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 230.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 6.0,
+    "fat_g": 1.0,
+    "sugar_g": 28.0,
+    "sodium_mg": 2580.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-04 03:48:24"
+  }
+}

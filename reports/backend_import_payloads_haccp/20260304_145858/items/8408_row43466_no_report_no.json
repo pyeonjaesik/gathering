@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "140cc_디핀다트 닷몬스터 레인보우",
+    "reportnum": "200203602901"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203602901/200203602901-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203602901/200203602901-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203602901/200203602901-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,물엿,파인애플농축액,혼합제제(셀룰로오스검,구아검,카라기난,산도조절제,포도당),합성향료(오렌지향,레몬향,라임향,딸기향,블루라즈베리향),산도조절제,치자황색소,스피룰리나색소,혼합제제(코치닐추출/적양배추추출색소,프로필렌글리콜,산도조절제,프로필렌글리콜),혼합제제(블랙커런트/엘더베리/홍국적색소,프로필렌글리콜)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203602901/200203602901-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203602901/200203602901-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출/적양배추추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블랙커런트/엘더베리/홍국적색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "라임향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블루라즈베리향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스피룰리나색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:38:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 110.0,
+    "carbohydrate_g": 28.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 20.0,
+    "sodium_mg": 30.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "50g",
+    "collected_at": "2026-03-04 03:38:29"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "가야농장 토마토",
+    "reportnum": "19960458039411"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039411/19960458039411-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039411/19960458039411-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039411/19960458039411-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,토마토페이스트(토마토즙으로50%,칠레산),액상가당,백설탕,구연산,합성착향료(토마토향),락색소,셀룰로오스검,비타민C,젤란검,효소처리스테비아,",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039411/19960458039411-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=340ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039411/19960458039411-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "origin": "칠레산",
+        "sub_ingredients": [
+          {
+            "name": "토마토즙",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상가당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "토마토향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:13:01"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 37.0,
+    "carbohydrate_g": 8.82,
+    "protein_g": 0.29,
+    "fat_g": 0.0,
+    "sugar_g": 7.94,
+    "sodium_mg": 16.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "340ml",
+    "collected_at": "2026-03-03 21:13:01"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "아워홈 황태해장국",
+    "reportnum": "20020614179755"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179755/20020614179755-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179755/20020614179755-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179755/20020614179755-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두부[대두(수입산), 황산칼슘, 혼합제제(글리세린지방산에스테르, 레시틴, 탄산마그네슘, 식물성유지)], 황태채(러시아산)5.0%, 정제수, 무(국산), 들기름, 북어국물맛내기-2(우유, 밀)(향미증진제), 정제염, 청양고추, 홍고추, 마늘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179755/20020614179755-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179755/20020614179755-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "황태채",
+        "origin": "러시아산",
+        "amount": "5.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "북어국물맛내기-2",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 22.0,
+    "carbohydrate_g": 0.81,
+    "protein_g": 2.0,
+    "fat_g": 1.1,
+    "sugar_g": 0.27,
+    "sodium_mg": 270.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 0.12,
+    "trans_fat_g": 0.01,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:44:06"
+  }
+}

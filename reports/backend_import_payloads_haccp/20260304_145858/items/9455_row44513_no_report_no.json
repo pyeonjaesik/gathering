@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "진미 양념이된 초고추장",
+    "reportnum": "2011044405052"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405052/2011044405052-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405052/2011044405052-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405052/2011044405052-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장83.52%[액상과당,혼합양념(중국산){고춧가루6.5%},소맥분(밀:미국산,호주산),밀쌀(미국산),정제소금],발효식초10.8%(정제수,주정,발효영양원),주정,생마늘농축액(마늘:국산),효모추출물,참깨,생강농축액,구연산,탈지대두분(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405052/2011044405052-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=13000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405052/2011044405052-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "83.52%",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합양념",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "고춧가루",
+                "amount": "6.5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀쌀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "amount": "10.8%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생마늘농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두분",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 181.0,
+    "carbohydrate_g": 33.0,
+    "protein_g": 5.0,
+    "fat_g": 3.2,
+    "sugar_g": 31.0,
+    "sodium_mg": 2070.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "13000g",
+    "collected_at": "2026-03-04 04:30:57"
+  }
+}

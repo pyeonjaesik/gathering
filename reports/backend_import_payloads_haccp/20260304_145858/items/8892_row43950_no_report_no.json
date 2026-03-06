@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name_ko": "소프트팝콘",
+    "reportnum": "2006051503568"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503568/2006051503568-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503568/2006051503568-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503568/2006051503568-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수가루(국내산)54.4%,고올레산해바라기유[외국산(스페인,아르헨티나,우크라이나 등)],유기농 설탕11.1%,천일염(국내산),해조칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503568/2006051503568-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=55g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503568/2006051503568-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수가루",
+        "origin": "국내산",
+        "amount": "54.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고올레산해바라기유",
+        "origin": "외국산, 스페인산, 아르헨티나산, 우크라이나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "amount": "11.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 591.0,
+    "carbohydrate_g": 54.55,
+    "protein_g": 3.64,
+    "fat_g": 40.0,
+    "sugar_g": 14.55,
+    "sodium_mg": 382.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 3.45,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "55g",
+    "collected_at": "2026-03-04 04:00:33"
+  }
+}

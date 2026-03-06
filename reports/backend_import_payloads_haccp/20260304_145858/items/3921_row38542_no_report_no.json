@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "홍삼을 뿌리째 갈아넣은 홍삼",
+    "reportnum": "19960571018342"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018342/19960571018342-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018342/19960571018342-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018342/19960571018342-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,홍삼분말(국산,원료삼배합비율:근류100%)1.9646%,백설탕,식물성크림(우유),말토덱스트린,벌꿀(국산)0.2%,대추농축액(국산),유화제,젤란검,혼합제제(규소수지,유화제CMC),카라멜페이스트YQ506(카라멜페이스트,물엿,대두유,카라멜향),합성착향료(홍삼허브향,홍삼향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018342/19960571018342-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(160ml) 1회 제공량당 함량:열량 84kcal, 탄수화물 20g(6%)·당류 12g, 단백질 1g미만(1%), 지방 0g(0%) 포화지방 0g(0%)·트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 17mg(1%) ()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018342/19960571018342-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼분말",
+        "origin": "국산",
+        "amount": "1.9646%",
+        "sub_ingredients": [
+          {
+            "name": "원료삼배합비율",
+            "sub_ingredients": [
+              {
+                "name": "근류",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제CMC",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜페이스트YQ506",
+        "sub_ingredients": [
+          {
+            "name": "카라멜페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "홍삼허브향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:17:33"
+  },
+  "nutrition": {
+    "kcal": 84.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 12.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 17.0,
+    "basis_amount": 160.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(160ml)",
+    "collected_at": "2026-03-03 21:17:33"
+  }
+}

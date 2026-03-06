@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "바바파파 바나나우유",
+    "reportnum": "20080379009266"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009266/20080379009266-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009266/20080379009266-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009266/20080379009266-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,원유(국산,세균수기준1급A)35%,정백당,혼합탈지분유(캐나다산)유크림(외국산:국가명은 홈페이지에 별도 표시),가당연유,타피오카덱스트린,바나나농축과즙(고형분함량70%,이스라엘산)0.3%,글리세린지방산에스테르,수크릴로스(감미료),합성향료(바나나향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009266/20080379009266-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=270ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009266/20080379009266-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "35%",
+        "sub_ingredients": [
+          {
+            "name": "세균수기준1급A",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "국가명은 홈페이지에 별도 표시",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나농축과즙",
+        "origin": "이스라엘산",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "70%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크릴로스",
+        "sub_ingredients": [
+          {
+            "name": "감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바나나향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:30"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 91.0,
+    "carbohydrate_g": 14.07,
+    "protein_g": 2.96,
+    "fat_g": 2.59,
+    "sugar_g": 11.48,
+    "sodium_mg": 43.0,
+    "cholesterol_mg": 5.56,
+    "saturated_fat_g": 1.15,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "270ml",
+    "collected_at": "2026-03-04 04:08:30"
+  }
+}

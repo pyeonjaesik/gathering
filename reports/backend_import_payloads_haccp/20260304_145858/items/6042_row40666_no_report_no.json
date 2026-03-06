@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "바로구워바로먹는 검은깨 꿀호떡",
+    "reportnum": "2009044518950"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044518950/2009044518950-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044518950/2009044518950-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044518950/2009044518950-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 혼합제제15.7%[변성전분(타피오카,태국), 설탕분말, 탈지분유], 슈퍼콘(옥수수/외국산: 호주, 브라질, 우크라이나), 쌀가루(국내산), 밀가루(캐나다, 미국)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044518950/2009044518950-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "탄수화물58.8g, 단백질2.8g, 지방7.1g, 나트륨283.8g, 트랜스지방0, 포화지방2.5g, 콜레스테롤0, 당류19.9g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044518950/2009044518950-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "15.7%",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "origin": "태국산",
+            "sub_ingredients": [
+              {
+                "name": "타피오카",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "슈퍼콘",
+        "origin": "외국산, 호주산, 브라질산, 우크라이나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "캐나다산, 미국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:12"
+  },
+  "nutrition": {
+    "carbohydrate_g": 58.8,
+    "protein_g": 2.8,
+    "fat_g": 7.1,
+    "sodium_mg": 283.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.5,
+    "cholesterol_mg": 0.0,
+    "sugar_g": 19.9,
+    "collected_at": "2026-03-04 04:20:12"
+  }
+}

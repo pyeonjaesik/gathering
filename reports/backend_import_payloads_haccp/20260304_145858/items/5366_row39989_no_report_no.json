@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "행복한콩 천일염국산콩두부 부침용",
+    "reportnum": "2006044309545"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309545/2006044309545-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309545/2006044309545-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309545/2006044309545-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두 99.85%(국산), 두부응고제(조제해수염화마그네슘), 천일염 0.15%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309545/2006044309545-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 300g 100g 당 70kcal 나트륨 50mg 3% 탄수화물 3g 1% 당류 1g미만 지방 3.5g 7% 트랜스지방 0g 포화지방 0g 0% 콜레스테롤 0mg 0% 단백질 8g 15% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309545/2006044309545-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "amount": "99.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부응고제",
+        "sub_ingredients": [
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "0.15%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:08"
+  },
+  "nutrition": {
+    "total_content": "300",
+    "food_weight_g": 300.0,
+    "kcal": 70.0,
+    "sodium_mg": 50.0,
+    "carbohydrate_g": 3.0,
+    "fat_g": 3.5,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 8.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 03:59:08"
+  }
+}

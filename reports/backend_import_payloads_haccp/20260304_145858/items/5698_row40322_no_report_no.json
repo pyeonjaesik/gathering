@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "유기농 참맛나지\r\n육포",
+    "reportnum": "2008040500412"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040500412/2008040500412-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040500412/2008040500412-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040500412/2008040500412-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농 우육(호주산)86.99%,유기농 간장(콩:중국산,밀:캐나다산)6.96%,유기농 설탕2.96%,유기농 마늘1.11%,유기농 양파0.96%,유기농 생강0.63%,후추,식염(총 유기농 함량 99.9%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040500412/2008040500412-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (15g) 1회 제공량당 함량 %영양소기준치: 열량 51kcal,탄수화물3g 1%,당류1.5g,단백질8g 13%,지방0.8g 2%, 포화지방0.3g 2%, 트랜스지방0g 0%, 콜레스테롤 16mg 5%, 나트륨191mg 10%, *%영양소 기준치: 1일 영양소 기준치에 대한 비율 / 총 3회 제공량 (50g) 총 포장단위당 함량 %영양소기준치 열량 171kcal, 탄수화물11g 3%, 당류5g, 단백질 26g 43%, 지방2.5g 5%, 포화지방 1g 7%, 트랜스지방0g 0%, 콜레스테롤 53mg 18%, 나트륨 637mg 32% *%영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040500412/2008040500412-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농 우육",
+        "origin": "호주산",
+        "amount": "86.99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 간장",
+        "origin": "중국산, 캐나다산",
+        "amount": "6.96%",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "amount": "2.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 마늘",
+        "amount": "1.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 양파",
+        "amount": "0.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 생강",
+        "amount": "0.63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:10:03"
+  },
+  "nutrition": {
+    "kcal": 51.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 1.5,
+    "protein_g": 8.0,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 16.0,
+    "sodium_mg": 191.0,
+    "basis_amount": 15.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (15g)",
+    "collected_at": "2026-03-04 04:10:03"
+  }
+}

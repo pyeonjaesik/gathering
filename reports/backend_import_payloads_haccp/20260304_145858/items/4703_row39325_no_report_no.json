@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "버섯크림수프",
+    "reportnum": "200204610737236"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737236/200204610737236-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737236/200204610737236-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737236/200204610737236-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우유(국산), 라쿠치나치킨스톡[닭(국산), 양파(국산), 셀러리, 흑후추], 양송이 16.43%(국산), 생크림 7.39%[생크림 100%(우유:국산)], 버터, 표고버섯 4.11%(국산), 양파, 밀가루, 대파, 정제소금, 흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737236/200204610737236-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(160g) 1회 제공량당 함량 *%영양성분 기준치 : 열량 170kcal, 탄수화물 11g 3%, 당류 0g, 단백질 5g 9%, 지방 12g 24%, 포화지방 7g 47%, 트랜스지방 0g, 콜레스테롤 10mg 3%, 나트륨 200mg 10% *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737236/200204610737236-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라쿠치나치킨스톡",
+        "sub_ingredients": [
+          {
+            "name": "닭",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀러리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑후추",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양송이",
+        "origin": "국산",
+        "amount": "16.43%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "amount": "7.39%",
+        "sub_ingredients": [
+          {
+            "name": "생크림",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "origin": "국산",
+        "amount": "4.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:28"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 160.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(160g)",
+    "collected_at": "2026-03-04 03:41:28"
+  }
+}

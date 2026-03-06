@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name_ko": "오리엔탈드레싱",
+    "reportnum": "199104450771108"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450771108/199104450771108-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450771108/199104450771108-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450771108/199104450771108-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "양조간장[탈지대두(외국산),소맥(미국산),천일염,액상과당,발효주정,효모물], 백설탕, 발효식초[주정,멕아엑기스(겉보리:미국산),발효영양원(독일산)],옥수수유[옥수수배아(외국산),규소수지],미림[백설탕,주정,쌀(외국산),구연산,프로테아제],레드와인,레몬농축액,다진마늘,농가볶은참깨0.41%,참기름,구아검,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450771108/199104450771108-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=240g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450771108/199104450771108-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멕아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "겉보리",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효영양원",
+            "origin": "독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": [
+          {
+            "name": "옥수수배아",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로테아제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레드와인",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농가볶은참깨",
+        "amount": "0.41%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:39:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 235.0,
+    "carbohydrate_g": 28.0,
+    "protein_g": 1.0,
+    "fat_g": 13.0,
+    "sugar_g": 27.0,
+    "sodium_mg": 1610.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "240g",
+    "collected_at": "2026-03-03 18:39:51"
+  }
+}

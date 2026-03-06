@@ -1,0 +1,165 @@
+{
+  "product": {
+    "name_ko": "마일드살사",
+    "reportnum": "200204610736999"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736999/200204610736999-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736999/200204610736999-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736999/200204610736999-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "다이스드토마토(미국산/토마토, 토마토주스, 구연산, 염화칼슘), 홀필드토마토(이탈리아산/토마토, 토마토주스), 할라페뇨페퍼(할라페뇨페퍼, 식염, 식초, 설탕, 오레가노), 양파, 정제수, 크러쉬드토마토, 양식베이스-2, 홍피망, 청피망, 후르츠소스-1, 화이트식초, 발사믹식초, 정제소금, 변성전분, 라임주스, 실란트로",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736999/200204610736999-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 : 열량 45kcal, 탄수화물 10g (3%), 당류 7g, 단백질 1g (2%), 지방 0g (0%), 포화지방 0g (0%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 530mg (27%) *( )안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736999/200204610736999-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "다이스드토마토",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토주스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홀필드토마토",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토주스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "할라페뇨페퍼",
+        "sub_ingredients": [
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오레가노",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크러쉬드토마토",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양식베이스-2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후르츠소스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발사믹식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라임주스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "실란트로",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:35"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 7.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 530.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당 함량",
+    "collected_at": "2026-03-04 03:41:35"
+  }
+}

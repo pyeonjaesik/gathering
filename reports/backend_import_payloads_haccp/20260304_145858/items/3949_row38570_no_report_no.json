@@ -1,0 +1,112 @@
+{
+  "product": {
+    "name_ko": "델몬트 펄프에이드 자몽",
+    "reportnum": "19960571018484"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018484/19960571018484-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018484/19960571018484-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018484/19960571018484-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "레드자몽농축액(자몽과즙15%,이스라엘산),레드자몽펄프셀3%(미국산),정제수,백설탕,구연산,합성착향료(자몽향),비타민C,자주색고구마색소-피,당근추출액(이탈리아산),락색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018484/19960571018484-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1펫(380ml) 열량 165kcal, 탄수화물 41g(12%), 당류 41g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg, 나트륨 5mg(0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018484/19960571018484-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "레드자몽농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": [
+          {
+            "name": "자몽과즙",
+            "amount": "15%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레드자몽펄프셀",
+        "origin": "미국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자주색고구마색소",
+        "amount": "-피",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근추출액",
+        "origin": "이탈리아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:20:03"
+  },
+  "nutrition": {
+    "kcal": 165.0,
+    "carbohydrate_g": 41.0,
+    "sugar_g": 41.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 380.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1펫(380ml)",
+    "collected_at": "2026-03-03 21:20:03"
+  }
+}

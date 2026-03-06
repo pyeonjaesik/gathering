@@ -1,0 +1,96 @@
+{
+  "product": {
+    "name_ko": "유기농딸기잼",
+    "reportnum": "19940474147124"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940474147124/19940474147124-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940474147124/19940474147124-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940474147124/19940474147124-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농가당딸기홀{유기농딸기(국내산)80%, 유기농설탕20%}77.5%, 유기농설탕17.5%, 유기이소말토쌀올리고당{유기농쌀(국내산)99.55%,효소}5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940474147124/19940474147124-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940474147124/19940474147124-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농가당딸기홀",
+        "amount": "77.5%",
+        "sub_ingredients": [
+          {
+            "name": "유기농딸기",
+            "origin": "국내산",
+            "amount": "80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "20%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "17.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기이소말토쌀올리고당",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "유기농쌀",
+            "origin": "국내산",
+            "amount": "99.55%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:03:24"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 310.0,
+    "carbohydrate_g": 76.0,
+    "protein_g": 0.7,
+    "fat_g": 0.0,
+    "sugar_g": 49.0,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "500g",
+    "collected_at": "2026-03-03 20:03:24"
+  }
+}

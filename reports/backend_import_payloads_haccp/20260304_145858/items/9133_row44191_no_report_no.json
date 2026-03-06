@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "뚜또 요구믹스",
+    "reportnum": "200805710628"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710628/200805710628-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710628/200805710628-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710628/200805710628-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "나타데코코8%(태국산),딸기8%(국산),밀감8%(중국산),파인애플8%(태국산),사과농축과즙,식물성유지,유화제,탈지분유(우유),유청분말,정백당,한천,카라기난,로커스트콩검,산탄검,변성전분,산도조절제,폴리덱스트로즈,합성착향료(요구르트향,크림치즈향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710628/200805710628-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710628/200805710628-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "나타데코코",
+        "origin": "태국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기",
+        "origin": "국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀감",
+        "origin": "중국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플",
+        "origin": "태국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한천",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리덱스트로즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림치즈향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:42"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 102.0,
+    "carbohydrate_g": 18.26,
+    "protein_g": 0.33,
+    "fat_g": 3.04,
+    "sugar_g": 14.78,
+    "sodium_mg": 46.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.61,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "230g",
+    "collected_at": "2026-03-04 04:15:42"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "매일두유 초콜릿",
+    "reportnum": "19810227007213"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007213/19810227007213-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007213/19810227007213-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007213/19810227007213-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두액57.14%(대두고형분7%이상,수입산),정제수,정백당,벨기에생초콜릿[코코아매스(벨기에산,싱가폴산),코코아분말(싱가폴산),정백당]2%,코코아분말 0.8%(말레이시아산),식염,유화제,셀룰로오스혼합제제(결정셀룰로오스,CMC,구아검),카라기난 혼합제제(카라기난,포도당),에틸바닐린",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007213/19810227007213-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190mL)/총 12회 제공량(2280mL) 1회 제공량당 함량: 열량135kcal,탄수화물20g(6%)-당류19.5g,단백질4.2g(8%),지방4.3g(8%)-포화지방1.5g(10%),트랜스지방0g,콜레스테롤0mg(0%),나트륨85mg(4%) *영양성분기준치:1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007213/19810227007213-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두액",
+        "origin": "수입산",
+        "amount": "57.14%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벨기에생초콜릿",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "코코아매스",
+            "origin": "벨기에산",
+            "sub_ingredients": [
+              {
+                "name": "싱가폴산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": [
+              {
+                "name": "싱가폴산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "말레이시아산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "결정셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난 혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에틸바닐린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:40:51"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 19.5,
+    "protein_g": 4.2,
+    "fat_g": 4.3,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 85.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190mL)",
+    "collected_at": "2026-03-03 14:40:51"
+  }
+}

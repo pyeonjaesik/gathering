@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "쉐프다이닝 프리미엄게살볶음밥",
+    "reportnum": "19930199349587"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349587/19930199349587-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349587/19930199349587-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349587/19930199349587-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀43.98%(국산),붉은대게살12.37%(게:국산),전란(계란),양파,현미유[미강유,규소수지],홍피망,청피망,대파,당근,게엑기스엔엠2.74%[게추출액(황게30%국산)],피시소스,프리미엄굴소스엔엠(대두,밀,조개류(굴)),치킨부용(소고기,우유,닭고기),백설탕,정제소금,토마토케첩(토마토)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349587/19930199349587-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(250g)/총 1회제공량(250g)\n<1회 제공량당 함량 %영양소기준치>\n열량395kcal, 탄수화물70g 21%, 당류2g, 단백질11g 20%, 지방8g 16%, 포화지방1.5g 10%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨870mg 44%\n*%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349587/19930199349587-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "43.98%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "붉은대게살",
+        "origin": "국산",
+        "amount": "12.37%",
+        "sub_ingredients": [
+          {
+            "name": "게",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": [
+          {
+            "name": "미강유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게엑기스엔엠",
+        "amount": "2.74%",
+        "sub_ingredients": [
+          {
+            "name": "게추출액",
+            "origin": "국산",
+            "amount": "30%",
+            "sub_ingredients": [
+              {
+                "name": "황게",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피시소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프리미엄굴소스엔엠",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치킨부용",
+        "sub_ingredients": [
+          {
+            "name": "소고기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케첩",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:24:33"
+  },
+  "nutrition": {
+    "kcal": 395.0,
+    "carbohydrate_g": 70.0,
+    "sugar_g": 2.0,
+    "protein_g": 11.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 870.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(250g)",
+    "collected_at": "2026-03-03 19:24:33"
+  }
+}

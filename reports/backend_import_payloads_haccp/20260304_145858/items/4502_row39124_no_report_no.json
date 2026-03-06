@@ -1,0 +1,242 @@
+{
+  "product": {
+    "name_ko": "쇠고기야채리조또",
+    "reportnum": "2001044505591"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505591/2001044505591-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505591/2001044505591-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505591/2001044505591-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맛있는 오뚜기밥(즉석조리식품,살균제품,질소충전제품):쌀99.9%(배합수제외,국내산),쌀미강추출물 해물소스(소스류,살균제품,레토르트식품):정제수,토마토케챂[토마토페이스트(토마토:수입산),물엿,백설탕,발효식초(주정,발효영양원),정제소금(국산)],쇠고기10%(뉴질랜드산),당근10%(국산),양파5%(중국산),피망5%(국산),스위트콘(옥수수,백설탕,정제소금),옥수수유,혼합제제(변성전분,백설탕,덱스트린),백설탕,사골엑기스,우스타소스(대두,밀),치킨엑기스에스,정제소금,육수맛분-2,고추분,향신료,파프리카추출색소(천연색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505591/2001044505591-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(300g) : 열량 340kcal,탄수화물68g 21%, 당류10g, 단백질 10g 17%, 지방3g 6%, 포화지방1g 7%, 트랜스지방 0g, 콜레스테롤5mg 2%, 나트륨 1020mg 51%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505591/2001044505591-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는 오뚜기밥",
+        "sub_ingredients": [
+          {
+            "name": "즉석조리식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "살균제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "질소충전제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "국내산",
+            "amount": "99.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀미강추출물 해물소스",
+            "sub_ingredients": [
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토케챂",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토페이스트",
+                    "origin": "수입산",
+                    "sub_ingredients": [
+                      {
+                        "name": "토마토",
+                        "origin": "수입산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "발효식초",
+                    "sub_ingredients": [
+                      {
+                        "name": "주정",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "발효영양원",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "정제소금",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "쇠고기",
+                "origin": "뉴질랜드산",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "origin": "국산",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "origin": "중국산",
+                "amount": "5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피망",
+                "origin": "국산",
+                "amount": "5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스위트콘",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제소금",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "옥수수유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "사골엑기스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우스타소스",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "치킨엑기스에스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "육수맛분-2",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향신료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": [
+                  {
+                    "name": "천연색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:51"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "carbohydrate_g": 68.0,
+    "sugar_g": 10.0,
+    "protein_g": 10.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 1020.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(300g)",
+    "collected_at": "2026-03-04 03:33:51"
+  }
+}

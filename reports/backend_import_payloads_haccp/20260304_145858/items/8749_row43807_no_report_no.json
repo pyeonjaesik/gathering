@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "홈플러스 좋은상품 치자김밥단무지",
+    "reportnum": "20050568034107"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034107/20050568034107-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034107/20050568034107-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034107/20050568034107-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "절임무99.33%[무(국산),천일염(호주산)],빙초산,소르빈산칼륨(합성보존료),삭카린나트륨(합성감미료),치자황색소0.05%,DL-사과산,구연산,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034107/20050568034107-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=25g | foodSize=175g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034107/20050568034107-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절임무",
+        "origin": "국산",
+        "amount": "99.33%",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "빙초산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "삭카린나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:18"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 17.0,
+    "carbohydrate_g": 2.18,
+    "protein_g": 0.37,
+    "fat_g": 0.75,
+    "sugar_g": 0.79,
+    "sodium_mg": 857.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.49,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "25g",
+    "total_content": "175g",
+    "collected_at": "2026-03-04 03:55:18"
+  }
+}

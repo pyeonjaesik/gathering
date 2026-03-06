@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "한살림과일푸딩딸기",
+    "reportnum": "2008032004233"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008032004233/2008032004233-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008032004233/2008032004233-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008032004233/2008032004233-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "딸기퓨레 30%[딸기 86.7%(국산/무농약), 유기농설탕 13.3%], 정제수 57.95%, 유기농설탕, 비타민C, 한천(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008032004233/2008032004233-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=110g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008032004233/2008032004233-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "딸기퓨레",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "amount": "86.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "13.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "57.95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한천",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:40"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 73.0,
+    "carbohydrate_g": 18.18,
+    "protein_g": 0.48,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 8.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "110g",
+    "collected_at": "2026-03-04 04:07:40"
+  }
+}

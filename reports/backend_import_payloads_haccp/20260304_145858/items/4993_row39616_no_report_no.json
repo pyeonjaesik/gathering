@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "초리조 소시지",
+    "reportnum": "2003062600247"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600247/2003062600247-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600247/2003062600247-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600247/2003062600247-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산(제주 무항생 흑돼지))93.516%,청양고추(국산)3.3%,정제염1.134%,설탕0.53%,마늘(국산(제주))0.53%,라포스(인산염)0.3%,다시마(국산)0.05%,비타로트0.03%,클라카우어0.61%(코리안더,넛맥,마늘,생강,케러웨이,칠리),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600247/2003062600247-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "300g(806kcal,80kcal/1회섭취참고량 30g),1회 제공량 당 함량,%영양소기준치,열량 80kcal,탄수화물 1.85g(0.15%),당류 0.30g,단백질 5.27g(9.6%),지방 6.37g(12.5%),포화지방 2.31g(15.4%),트랜스지방 0.04g,콜레스테롤 0.14mg,나트륨 170.89mg(8.5%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600247/2003062600247-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "93.516%",
+        "sub_ingredients": [
+          {
+            "name": "제주 무항생 흑돼지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국산",
+        "amount": "3.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "1.134%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "0.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "0.53%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "라포스",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "인산염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다시마",
+        "origin": "국산",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타로트",
+        "amount": "0.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "클라카우어",
+        "amount": "0.61%",
+        "sub_ingredients": [
+          {
+            "name": "코리안더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "넛맥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "케러웨이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:58"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 1.85,
+    "sugar_g": 0.3,
+    "protein_g": 5.27,
+    "fat_g": 6.37,
+    "saturated_fat_g": 2.31,
+    "trans_fat_g": 0.04,
+    "cholesterol_mg": 0.14,
+    "sodium_mg": 170.89,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회섭취참고량 30g",
+    "collected_at": "2026-03-04 03:49:58"
+  }
+}

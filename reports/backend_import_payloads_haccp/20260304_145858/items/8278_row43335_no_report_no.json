@@ -1,0 +1,378 @@
+{
+  "product": {
+    "name_ko": "좋은상품 더블믹스",
+    "reportnum": "20010415034377"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034377/20010415034377-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034377/20010415034377-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034377/20010415034377-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "키위맛:백설탕,물엿,생크림3%(우유),정제가공유지(경화유),연유,정제소금,유화제(레시틴)(대두),산도조절제,키위농축과실즙0.37%(키위과실즙으로2%)(뉴질랜드산),합성착향료(키위향,밀크향),혼합제제{홍화황색소,치자청색소,프로필렌글리콜)} 블루베리맛:백설탕,물엿,생크림3%(우유),정제가공유지(경화유),연유,정제소금,유화제(레시틴)(대두),산도조절제,블루베리농축과실즙0.31%(블루베리과실즙으로2%)(미국산),합성착향료(블루베리향,밀크향),혼합제제{Shade purple grape color(베리류색소),치자청색소AC5113(치자청색소,산도조절제),프로필렌글리콜} 딸기맛:백설탕,물엿,생크림3%(우유),정제가공유지(경화유),연유,정제소금,유화제(레시틴)(대두),산도조절제,딸기농축과실즙0.22%(딸기과실즙으로2%)(국산),합성착향료(딸기향,밀크향),혼합제제{코치닐추출색소,Shade strawberry red p(적양배추색소,엘더베리색소,설탕,산도조절제),프로필렌글리콜,비타민C}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034377/20010415034377-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=520g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034377/20010415034377-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "키위맛",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림",
+            "amount": "3%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제가공유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "연유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "키위농축과실즙",
+            "origin": "뉴질랜드산",
+            "amount": "0.37%",
+            "sub_ingredients": [
+              {
+                "name": "키위과실즙",
+                "amount": "2%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "키위향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자청색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리맛",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림",
+            "amount": "3%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제가공유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "연유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블루베리농축과실즙",
+            "origin": "미국산",
+            "amount": "0.31%",
+            "sub_ingredients": [
+              {
+                "name": "블루베리과실즙",
+                "amount": "2%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "블루베리향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "Shade purple grape color",
+                "sub_ingredients": [
+                  {
+                    "name": "베리류색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "치자청색소AC5113",
+                "sub_ingredients": [
+                  {
+                    "name": "치자청색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기맛",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림",
+            "amount": "3%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제가공유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "연유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축과실즙",
+            "origin": "국산",
+            "amount": "0.22%",
+            "sub_ingredients": [
+              {
+                "name": "딸기과실즙",
+                "amount": "2%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "코치닐추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "Shade strawberry red p",
+                "sub_ingredients": [
+                  {
+                    "name": "적양배추색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "엘더베리색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민C",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:29:44"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 438.0,
+    "carbohydrate_g": 112.5,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 75.0,
+    "sodium_mg": 63.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "520g",
+    "collected_at": "2026-03-04 03:29:44"
+  }
+}

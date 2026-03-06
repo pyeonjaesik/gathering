@@ -1,0 +1,222 @@
+{
+  "product": {
+    "name_ko": "딸기파이",
+    "reportnum": "2006024237664"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237664/2006024237664-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237664/2006024237664-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237664/2006024237664-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀,미국산),백설탕,물엿,쇼트닝[동물성유지(호주산),야자유(수입산)],가공유지,혼합분유(우유),코코아분말,산도조절제,분말·결정포도당,젤라틴(돼지고기),전란액(계란),정제소금,코코아매스,유당,딸기분말(국산),레시틴(대두),합성착향료(딸기향,럼향,바닐린,크럼밀크향),천연색소(락색소),하이포마,유화제,비타비엔(젖산,자몽종자추출물,화분발효액,유화제,글리세린,영양강화제) ●특정성분:코코아가공품1.8%(코코아분말1.5%,코코아매스0.3%),딸기1%(국산,생물기준)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237664/2006024237664-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237664/2006024237664-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "동물성유지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "럼향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크럼밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연색소",
+        "sub_ingredients": [
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하이포마",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타비엔",
+        "sub_ingredients": [
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화분발효액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 433.0,
+    "carbohydrate_g": 70.0,
+    "protein_g": 3.33,
+    "fat_g": 15.0,
+    "sugar_g": 40.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:56:58"
+  }
+}

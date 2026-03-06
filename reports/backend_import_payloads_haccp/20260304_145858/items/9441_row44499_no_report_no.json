@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "가마솥 찰 연잎밥",
+    "reportnum": "2011035818014"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011035818014/2011035818014-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011035818014/2011035818014-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011035818014/2011035818014-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "찹쌀(국산/무농약)52.14%,연잎(국산/무농약)13.90%,찰현미(국산/무농약)10.43%,서리태(국산),팥(국산),흑미(국산/무농약),땅콩(국산),호두(국산),대추(국산),소금(국산/천일염)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011035818014/2011035818014-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011035818014/2011035818014-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "52.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연잎",
+        "origin": "국산",
+        "amount": "13.90%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찰현미",
+        "origin": "국산",
+        "amount": "10.43%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "서리태",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:23"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 169.0,
+    "carbohydrate_g": 35.65,
+    "protein_g": 4.35,
+    "fat_g": 1.09,
+    "sugar_g": 0.43,
+    "sodium_mg": 104.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "230g",
+    "collected_at": "2026-03-04 04:30:23"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "product": {
+    "name_ko": "초코에몽",
+    "reportnum": "1979053200153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200153/1979053200153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200153/1979053200153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200153/1979053200153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유 또는 환원유[국산,1등급(세균수기준)]68%,정제수,백설탕,액상과당,코코아분말1.7%,덱스트린,탈지분유,오곡분말,칼슘혼합제제0.35(탄산칼슘330mg,대두식이섬유),셀룰로오스혼합제제(결정셀룰로오스,ONC),비타민Premix ND M/03 0.05%(덱스트린,비타민C 4.7mg,비타민E 3.4mg a-TE,비타민A 87㎍RE,비타민D3 1.5㎍,비타민B1 0.11mg,비타민B2 0.12mg,비타민B6 0.16mg,비타민B12 0.37㎍,비오틴 11㎍,판토텐산 1.8mg,나이아신 4.4mgNE,엽산 82㎍),유화제,합성착향료(초코향,바닐라향),정제소금,대두레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200153/1979053200153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200153/1979053200153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유 또는 환원유",
+        "origin": "국산",
+        "amount": "68%",
+        "sub_ingredients": [
+          {
+            "name": "1등급",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "amount": "1.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오곡분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제제",
+        "amount": "0.35",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "amount": "330mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "셀룰로오스혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "결정셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "ONC",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민Premix ND M/03",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "4.7mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "amount": "3.4mg a-TE",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A",
+            "amount": "87㎍RE",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "amount": "1.5㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1",
+            "amount": "0.11mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "amount": "0.12mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6",
+            "amount": "0.16mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B12",
+            "amount": "0.37㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비오틴",
+            "amount": "11㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "판토텐산",
+            "amount": "1.8mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신",
+            "amount": "4.4mgNE",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "amount": "82㎍",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:25:31"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 97.0,
+    "carbohydrate_g": 13.89,
+    "protein_g": 2.78,
+    "fat_g": 3.33,
+    "sugar_g": 11.11,
+    "sodium_mg": 42.0,
+    "calcium_mg": 119.0,
+    "cholesterol_mg": 11.11,
+    "saturated_fat_g": 1.83,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-03 14:25:31"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "블루베리미인",
+    "reportnum": "2009052600715"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009052600715/2009052600715-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009052600715/2009052600715-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009052600715/2009052600715-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "검정쌀45%,검정콩5%,검정보리쌀5%,검정깨(흑임자)3%,블루베리2%,현미(국내산)20%,자이리톨3%,조청5%,탈지분유3%,포도당7%,코코아분말2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009052600715/2009052600715-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=20g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009052600715/2009052600715-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "검정쌀",
+        "amount": "45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정콩",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정보리쌀",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "origin": "국내산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자이리톨",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조청",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "amount": "7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "amount": "2%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 405.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 10.0,
+    "fat_g": 5.5,
+    "sugar_g": 30.0,
+    "sodium_mg": 140.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 3.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "20g",
+    "collected_at": "2026-03-04 04:21:41"
+  }
+}

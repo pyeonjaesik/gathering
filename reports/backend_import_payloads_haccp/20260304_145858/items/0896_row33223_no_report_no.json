@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "빼빼로 더블딥 딸기화이트",
+    "reportnum": "19780614009394"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009394/19780614009394-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009394/19780614009394-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009394/19780614009394-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "준초콜릿[백설탕,혼합분유(수입산;탈지분유,유청분말),식물성유지Ⅰ(싱가포르산),혼합분유(수입산;탈지분유,유청분말),유당,코코아버터,딸기분말(국내산)0.962%(고형분100%,딸기9.62%생물환산기준)],준초콜릿Ⅱ[백설탕,혼합분유(수입산;탈지분유,유청분말),식물성유지Ⅰ(싱가포르산),유당,식물성유지Ⅱ(부분경)],밀가루(밀;미국산,캐나다산),백설탕,식용유지,기타가공품,곡류가공품,가공버터,전지분골드Ⅰ,맥아엑기스,정제소금,액상과당,산도조절제,레시틴,합성착향료(팜브래드향,바닐라향),천연착향료(바닐라향),효소제,효모",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009394/19780614009394-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009394/19780614009394-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지Ⅰ",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기분말",
+            "origin": "국내산",
+            "amount": "0.962%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "준초콜릿Ⅱ",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지Ⅰ",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지Ⅱ",
+            "amount": "부분경",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분골드Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "팜브래드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:17:26"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 540.0,
+    "carbohydrate_g": 64.0,
+    "protein_g": 8.0,
+    "fat_g": 16.4,
+    "sugar_g": 48.0,
+    "sodium_mg": 160.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 16.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "50g",
+    "collected_at": "2026-03-03 14:17:26"
+  }
+}

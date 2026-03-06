@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "부드러운 찌개두부",
+    "reportnum": "20020614263121"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614263121/20020614263121-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614263121/20020614263121-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614263121/20020614263121-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두 100 %(외국산:미국, 호주, 캐나다 등),혼합제제(조제해수염화마그네슘,현미유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614263121/20020614263121-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614263121/20020614263121-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "외국산, 미국산, 호주산, 캐나다산",
+        "amount": "100 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:32"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 85.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 7.0,
+    "fat_g": 6.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:44:32"
+  }
+}

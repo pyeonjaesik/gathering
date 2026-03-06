@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "간짜장소스",
+    "reportnum": "19880445009947"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009947/19880445009947-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009947/19880445009947-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009947/19880445009947-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,양파(국내산),불린목이버섯(건목이버섯:중국산),춘장{소맥분[밀(외국산:호주,미국,캐나다)],카라멜색소,대두(외국산:미국,캐나다,중국),정제염,종국},양배추,돼지고기,감자,옥수수유,죽순,복합감칠맛베이스,대파,정백당,양조간장,짜장베이스GF,마늘,고과당,생강,잔탄검,주정",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009947/19880445009947-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(160g)/1회 1회제공량당 함량 %영양성분 기준치 : 열량 205kcal, 탄수화물19g 6%, 식이섬유 0g 0%, 당류 10g, 단백질 5g 9%, 비타민A 0㎍RE 0%, 칼슘 29mg 4%, 지방12g 24%, 포화지방 3g 20%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 880mg 44%, 비타민C 0mg 0%, 철 0.3mg 3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009947/19880445009947-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불린목이버섯",
+        "origin": "외국산, 중국산",
+        "sub_ingredients": [
+          {
+            "name": "건목이버섯",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "춘장",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "외국산, 호주산, 미국산, 캐나다산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "외국산, 호주산, 미국산, 캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "죽순",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합감칠맛베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "짜장베이스GF",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:35:46"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "carbohydrate_g": 19.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 10.0,
+    "protein_g": 5.0,
+    "calcium_mg": 29.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 880.0,
+    "iron_mg": 0.3,
+    "basis_amount": 160.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(160g)",
+    "collected_at": "2026-03-03 17:35:46"
+  }
+}

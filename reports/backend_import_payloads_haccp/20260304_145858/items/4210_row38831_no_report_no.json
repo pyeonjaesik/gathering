@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "목우촌 흑마늘햄",
+    "reportnum": "19980476001236"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001236/19980476001236-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001236/19980476001236-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001236/19980476001236-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산),정제수,양파양념장{양파(국내산),D-소르비톨액,물엿,저감미당,비프엑기스JW(사골엑기스/호주산)},대두단백(중국산),정제소금,백설탕,함수결정포도당,흑마늘0.71%,산도조절제,카라기난,코치닐추출색소(천연첨가물),비타민C,아질산나트륨(발색제,합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001236/19980476001236-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 30g 총 약 13회 제공량(400g) : 1회제공량 당함량 열량83kcal 탄수화물2g(1%),당류1g미만,단백질3g(5%),지방7g(14%),포화지방3g(20%),트랜스지방0g,콜레스테롤15mg(5%),나트륨230mg(12%) *()안의 수치는 1일영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001236/19980476001236-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파양념장",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프엑기스JW",
+            "origin": "호주산",
+            "amount": "사골엑기스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑마늘",
+        "amount": "0.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": [
+          {
+            "name": "천연첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "amount": "발색제",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:55:07"
+  },
+  "nutrition": {
+    "kcal": 83.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 230.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g",
+    "collected_at": "2026-03-03 21:55:07"
+  }
+}

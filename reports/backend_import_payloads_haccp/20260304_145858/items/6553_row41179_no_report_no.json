@@ -1,0 +1,235 @@
+{
+  "product": {
+    "name_ko": "핫치킨맛초코스틱",
+    "reportnum": "2013044901346"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901346/2013044901346-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901346/2013044901346-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901346/2013044901346-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "과자(밀가루(밀:미국산,호주산),백설탕,식물성유지(팜유:말레이시아산),가공전지분,옥수수전분),볶음땅콩(땅콩(아르헨티나산)100%),준초콜릿20.69%(백설탕,식물성가공유지(팜핵경화유:말레이시아산),유청분말(국산),코코아분말10%(싱가포르산),식물성크림분말),불닭맛씨즈닝에스와이3.10%(치킨맛분말42%(치킨스톡분말23.81%(치킨맛분말베이스40.95%(치킨팻7.13%/인도네시아산)),L-글루타민산나트륨(향미증진제),옥수수전분,스테비텐후레쉬,미분염(국산)치킨향KA-2 0.24%(중국산),마이일반응된닭고기향9%(치킨추출물42%/고형분함량60%)],미분염(국산),미립당,분말간장[간장분말1(아미노산간장(탈지대두/인도산)),덱스트린],올레오레진캡시검],설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901346/2013044901346-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 41.5g(14.5g3봉지)1봉지(14.5g)당 75kcal\n<1봉지당 1일 영양성분 기준치에 대한 비율>\n나트륨58mg 3%, 탄수화물8g 2%, 당류2.9g 3%, 지방4g 7%, 트랜스지방0g, 포화지방1.7g 11%, 콜레스테롤0mg 0%, 단백질1.8g 3%\n<총내용당 1일 영양성분 기준치에 대한 비율>\n나트륨175mg 9%, 탄수화물24g 7%, 당류9g 9%, 지방12g 22%, 트랜스지방0g, 포화지 5g 34%, 콜레스테롤0mg 0%, 단백질5g 10%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901346/2013044901346-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공전지분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음땅콩",
+        "origin": "아르헨티나산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "amount": "20.69%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성크림분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "불닭맛씨즈닝에스와이",
+        "amount": "3.10%",
+        "sub_ingredients": [
+          {
+            "name": "치킨맛분말",
+            "amount": "42%",
+            "sub_ingredients": [
+              {
+                "name": "치킨스톡분말",
+                "amount": "23.81%",
+                "sub_ingredients": [
+                  {
+                    "name": "치킨맛분말베이스",
+                    "amount": "40.95%",
+                    "sub_ingredients": [
+                      {
+                        "name": "치킨팻",
+                        "origin": "인도네시아산",
+                        "amount": "7.13%",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테비텐후레쉬",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미분염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨향KA-2",
+            "origin": "중국산",
+            "amount": "0.24%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마이일반응된닭고기향",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "치킨추출물",
+                "amount": "42%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분함량",
+                    "amount": "60%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말간장",
+            "sub_ingredients": [
+              {
+                "name": "간장분말1",
+                "sub_ingredients": [
+                  {
+                    "name": "아미노산간장",
+                    "origin": "인도산",
+                    "sub_ingredients": [
+                      {
+                        "name": "탈지대두",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "올레오레진캡시검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:49"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "sodium_mg": 58.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 2.9,
+    "fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.8,
+    "basis_amount": 14.5,
+    "basis_unit": "g",
+    "basis_text": "1봉지(14.5g)",
+    "collected_at": "2026-03-04 04:38:49"
+  }
+}

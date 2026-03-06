@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "브런치 베리비엔나",
+    "reportnum": "19940532001163"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001163/19940532001163-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001163/19940532001163-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001163/19940532001163-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기61.86%(국내산),정제수,백설탕,소맥전분(벨기에산),건조 크랜베리 쟈니바이트2.50%(미국산/크랜베리69.00%),농축대두단백,정제소금,볶음양파시즈닝,L-글루타민산나트륨(향미증진제),산도조절제,비타민C,아질산나트륨(발색제),콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001163/19940532001163-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(30g),총 12회 제공량(360g),1회 제공량당 함량,*%영양성분기준치,열량 80 kcal,탄수화물 3g(1%),당류2g,단백질 3g(5%),지방 6g(12%),포화지방 2.0g(13%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 230mg(12%),*%영양성분 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001163/19940532001163-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "61.86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조 크랜베리 쟈니바이트",
+        "origin": "미국산",
+        "amount": "2.50%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "amount": "69.00%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "농축대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음양파시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:05:53"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 230.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)",
+    "collected_at": "2026-03-03 20:05:53"
+  }
+}

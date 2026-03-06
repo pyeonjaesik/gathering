@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "프리마웰빙1/2라이트",
+    "reportnum": "1986058904318"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986058904318/1986058904318-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986058904318/1986058904318-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986058904318/1986058904318-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿, 식물성경화유지[야자유(필리핀산, 인도네시아산), 팜유], 화이버올리고F(폴리덱스트로스, 프락토올리고당), 혼합분유(탈지분유, 농축우유단백분말)(호주산), 백설탕, 제이인산칼륨, 카제인나트륨(우유), 제삼인산칼슘. 유화제, 폴리인산칼륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986058904318/1986058904318-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (4.7g), 총 약 106회 제공량(500g) 1회 제공량당 함량 %영양소기준치 열량 21kcal 탄수화물 3.5g 1% 식이섬유 0.3g 1% 당류 0.5g 단백질 0.2g 0% 지방 0.8g 2% 포화지방 0.8g 5% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 5mg 0% %영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986058904318/1986058904318-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성경화유지",
+        "sub_ingredients": [
+          {
+            "name": "야자유",
+            "origin": "필리핀산, 인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이버올리고F",
+        "sub_ingredients": [
+          {
+            "name": "폴리덱스트로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축우유단백분말",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제삼인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리인산칼륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:27:33"
+  },
+  "nutrition": {
+    "kcal": 21.0,
+    "carbohydrate_g": 3.5,
+    "dietary_fiber_g": 0.3,
+    "sugar_g": 0.5,
+    "protein_g": 0.2,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 4.7,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (4.7g)",
+    "collected_at": "2026-03-03 16:27:33"
+  }
+}

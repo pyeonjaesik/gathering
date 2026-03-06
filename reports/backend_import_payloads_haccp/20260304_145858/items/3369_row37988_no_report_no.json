@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "떡갈비맛소시지",
+    "reportnum": "19930607450271"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450271/19930607450271-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450271/19930607450271-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450271/19930607450271-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기33.15%(국산),닭고기23.40%(국산),정제수,옥수수전분(수입산),대두단백,미트프로엠(우유,밀),난백(계란),백설탕,정제소금,숯불갈비맛엑기스0.98%(밀),양파,복합스파이스-HS,L-글루타민산나트륨(향미증진제),산도조절제,에리쏘르빈산나트륨(산화방지제),락색소(천연색소),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450271/19930607450271-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 50kcal,탄수화물4g (1%),당류0.7g,단백질2.1g (4%),지방4g (7%), 포화지방0.7g (5%), 트랜스지방 0g, 콜레스테롤7mg (2%), 나트륨 260mg (13%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450271/19930607450271-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "33.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "23.40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미트프로엠",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비맛엑기스",
+        "amount": "0.98%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스-HS",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리쏘르빈산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:48:33"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 0.7,
+    "protein_g": 2.1,
+    "fat_g": 4.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 7.0,
+    "sodium_mg": 260.0,
+    "collected_at": "2026-03-03 19:48:33"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "녹차맛 찹쌀호떡믹스",
+    "reportnum": "19960080359222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359222/19960080359222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359222/19960080359222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359222/19960080359222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*프리믹스:밀가루(밀:미국,호주,캐나다산),변성전분,찹쌀가루3.70%(찹쌀:국내산),대두유{대두:외국산(미국,브라질,파라과이등)},팽화미,백설탕,정제소금,혼합분유,혼합버터유,녹차분말0.518%(녹차:국내산),베이킹파우더(산도조절제,전분,유화제),포도당,불활성건조효모, *잼믹스:갈색설탕,볶음땅콩분태(중국산),포도당,밀가루,대두유,계피분말,당밀분말,카라멜색소, *이스트: 인스턴트건조이스트(건조효모,소르비탄지방산에스테르)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359222/19960080359222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총분량 400g 표시기준분량(100g) 100g당 함량 *%영양성분 기준치 : 열량 390kcal,탄수화물81g 25%, 당류25g, 단백질 7g 13%,지방4.2g 8%, 포화지방0.8g 5%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 500mg 25%, *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359222/19960080359222-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "프리믹스",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀가루",
+            "origin": "국내산",
+            "amount": "3.70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산, 미국산, 브라질산, 파라과이산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팽화미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차분말",
+            "origin": "국내산",
+            "amount": "0.518%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베이킹파우더",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "불활성건조효모",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잼믹스",
+        "sub_ingredients": [
+          {
+            "name": "갈색설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음땅콩분태",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당밀분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이스트",
+        "sub_ingredients": [
+          {
+            "name": "인스턴트건조이스트",
+            "sub_ingredients": [
+              {
+                "name": "건조효모",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소르비탄지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:42:32"
+  },
+  "nutrition": {
+    "kcal": 390.0,
+    "carbohydrate_g": 81.0,
+    "sugar_g": 25.0,
+    "protein_g": 7.0,
+    "fat_g": 4.2,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 500.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "표시기준분량(100g)",
+    "collected_at": "2026-03-03 20:42:32"
+  }
+}

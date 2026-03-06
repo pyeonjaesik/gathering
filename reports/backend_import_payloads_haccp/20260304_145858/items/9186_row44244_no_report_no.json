@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "레몬 닭가슴살",
+    "reportnum": "20090262045174"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045174/20090262045174-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045174/20090262045174-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045174/20090262045174-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기(닭가슴살:국내산)85.94%,정제수,레몬당절임3.61%{레몬(미국산)50%},치킨가슴살염지제-NMS{말토덱스트린(중국산),마늘분말(중국산)},레몬레진0.86%{합성착향료(레몬향),레몬쥬스0.1%(미국산)},정제소금,혼합제제(산도조절제),고야레몬주스0.26%(도미니카공화국산)(농축레몬주스21%),유산균발효분말S,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045174/20090262045174-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045174/20090262045174-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "85.94%",
+        "sub_ingredients": [
+          {
+            "name": "닭가슴살",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬당절임",
+        "amount": "3.61%",
+        "sub_ingredients": [
+          {
+            "name": "레몬",
+            "origin": "미국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치킨가슴살염지제-NMS",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬레진",
+        "amount": "0.86%",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "레몬향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레몬쥬스",
+            "origin": "미국산",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고야레몬주스",
+        "origin": "도미니카공화국산",
+        "amount": "0.26%",
+        "sub_ingredients": [
+          {
+            "name": "농축레몬주스",
+            "amount": "21%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균발효분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:44"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 121.0,
+    "carbohydrate_g": 3.57,
+    "protein_g": 23.57,
+    "fat_g": 1.43,
+    "sugar_g": 1.43,
+    "sodium_mg": 257.0,
+    "cholesterol_mg": 21.43,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "140g",
+    "collected_at": "2026-03-04 04:17:44"
+  }
+}

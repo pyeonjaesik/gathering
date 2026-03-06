@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "고구마형과자",
+    "reportnum": "1986033205148"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205148/1986033205148-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205148/1986033205148-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205148/1986033205148-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루[밀:외국산(국가명은 홈페이지에 별도 표시)].팜올레인유[팜올레인유(말레이시아산) 99.95%. 향신료올레오레진류].당류가공품.물엿(옥분.엿기름.효소).우유(국내산).땅콩버터(중국산)[땅콩98.7%.글리세린지방산에스테르].정제소금.코코넛크림.씨엠(과·채가공품류).참깨.산도조절제.코코아분말.감미씨즈닝[아세설팜칼륨 함유(합성감미료)].이스트",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205148/1986033205148-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=125g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205148/1986033205148-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "amount": "99.95%",
+        "sub_ingredients": [
+          {
+            "name": "향신료올레오레진류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩버터",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "98.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "씨엠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이스트",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:16:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 496.0,
+    "carbohydrate_g": 64.0,
+    "protein_g": 9.6,
+    "fat_g": 22.4,
+    "sugar_g": 19.2,
+    "sodium_mg": 360.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 10.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "125g",
+    "collected_at": "2026-03-03 16:16:17"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "스파이시 닭가슴살",
+    "reportnum": "2009047600320"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047600320/2009047600320-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047600320/2009047600320-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047600320/2009047600320-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)96%,핫치킨씨즈닝4%[정백당,정제염(국내산),옥수수전분(외국산),매직바베큐(옥수수전분,정백당,마늘분말,L-글루타민산나트륨,시나몬분말),고춧가루(베트남,중국산),마늘분말,L-글루타민산나트륨(향미증진제),흑후추분말,간장분말{간장(대두),덱스트린,식염},캡시컴올레오레진,스모크파우다,파프리카올레오레진],아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047600320/2009047600320-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 120kcal,나트륨 250mg (13%), 탄수화물 4g (1%),당류 1g (1%),지방 0g (0%),트랜스지방 0g, 포화지방 0g (0%),콜레스테롤 80mg (27%), 단백질 25g (45%) *1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047600320/2009047600320-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫치킨씨즈닝",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매직바베큐",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "시나몬분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고춧가루",
+            "origin": "베트남산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "흑후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "간장",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "캡시컴올레오레진",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카올레오레진",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:54"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "sodium_mg": 250.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 1.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 80.0,
+    "protein_g": 25.0,
+    "collected_at": "2026-03-04 04:20:54"
+  }
+}

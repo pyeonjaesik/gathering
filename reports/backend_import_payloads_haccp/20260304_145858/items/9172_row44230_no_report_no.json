@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "지도표성경녹차조각김",
+    "reportnum": "200902422747"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902422747/200902422747-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902422747/200902422747-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902422747/200902422747-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "김(국산)43.4%, 옥배유(옥수수:수입산), 들기름(들깨:중국산), 천일염, 향미유, 녹차가루(국산)0.1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902422747/200902422747-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902422747/200902422747-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "43.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차가루",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 610.0,
+    "carbohydrate_g": 26.0,
+    "protein_g": 18.0,
+    "fat_g": 48.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 1000.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 6.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "50g",
+    "collected_at": "2026-03-04 04:17:06"
+  }
+}

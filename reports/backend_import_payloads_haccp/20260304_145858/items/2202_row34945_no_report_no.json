@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "크라운 c콘칲",
+    "reportnum": "198704610683"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198704610683/198704610683-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198704610683/198704610683-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198704610683/198704610683-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥분(옥수수:호주산), 혼합식용유[팜올레인유(말레이시아산)59.98%, 해바라기유{외국산(우크라이나•말레이시아•스페인)}40%, 토코페롤(혼합형)], 복합조미식품[군옥수수맛시즈닝{키베이스C(우육:호주산), 볶음천일염(천일염:국내산), 로스트콘파우더(옥수수:외국산), 알파콘C(옥수수분말(프랑스산))}], 천일염(국내산), 기타가공품(해조칼슘), 산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198704610683/198704610683-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198704610683/198704610683-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "우크라이나•말레이시아•스페인",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "군옥수수맛시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "키베이스C",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "우육",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "볶음천일염",
+                "origin": "국내산",
+                "sub_ingredients": [
+                  {
+                    "name": "천일염",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "로스트콘파우더",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "알파콘C",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수분말",
+                    "origin": "프랑스산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "해조칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:41:38"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 63.33,
+    "protein_g": 3.33,
+    "fat_g": 26.67,
+    "sugar_g": 2.5,
+    "sodium_mg": 433.0,
+    "calcium_mg": 105.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 9.33,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-03 16:41:38"
+  }
+}

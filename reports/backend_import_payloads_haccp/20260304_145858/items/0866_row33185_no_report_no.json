@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "레쓰비카페타임아메리카노",
+    "reportnum": "19780614001402"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001402/19780614001402-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001402/19780614001402-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001402/19780614001402-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "커피농축액2%(고형분0.68%),정제수,백설탕,탄산수소나트륨,합성착향료(커피향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001402/19780614001402-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(240ml) 열량 48kcal 탄수화물 12g, 당류 12g, 단백질 0g, 지방 0g, 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0g, 나트륨 24mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001402/19780614001402-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "커피농축액",
+        "amount": "2%(고형분0.68%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:14:38"
+  },
+  "nutrition": {
+    "kcal": 48.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 24.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량(240ml)",
+    "collected_at": "2026-03-03 14:14:38"
+  }
+}

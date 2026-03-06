@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "턴오버",
+    "reportnum": "198504330151124"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151124/198504330151124-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151124/198504330151124-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151124/198504330151124-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산,캐나다산),턴오버내용물[사과파이필링{생사과다이스(국내산),백설탕,변성전분,계피가루(베트남산),합성착향료(사과향)},케익시트],마가린[가공유지{팜스테아린에스테르화유(말레이시아산),대두에스테르화유(외국산),팜올레인에스테르화유,채종경화에스테르화유},대두유(외국산),유크림,정제소금,유화제],버터,탈지분유,정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151124/198504330151124-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1개(75g)당 함량/ 총8회 제공량(600g)  열량 295kcal, 탄수화물 37g 11%,당류 12g, 단백질 3g 5%,지방 15g 29%, 포화지방 8g 53%,트랜스지방 0g,콜레스테롤 15mg 5%,나트륨 250mg 13% *%영양성분 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151124/198504330151124-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "턴오버내용물",
+        "sub_ingredients": [
+          {
+            "name": "사과파이필링",
+            "sub_ingredients": [
+              {
+                "name": "생사과다이스",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "계피가루",
+                "origin": "베트남산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "사과향",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "케익시트",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜스테아린에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두에스테르화유",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인에스테르화유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "채종경화에스테르화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:54:01"
+  },
+  "nutrition": {
+    "kcal": 295.0,
+    "carbohydrate_g": 37.0,
+    "sugar_g": 12.0,
+    "protein_g": 3.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 250.0,
+    "basis_amount": 75.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1개(75g)당 함량",
+    "collected_at": "2026-03-03 15:54:01"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "돌 자몽 젤리",
+    "reportnum": "20060622020144"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020144/20060622020144-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020144/20060622020144-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020144/20060622020144-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "자몽20%(터키산), 정제수, 백설탕, 혼합제제/겔화제 투13 (산탄검, 로커스트빈검, 젤란검 ,젖산칼슘,구연산나트륨,말토덱스트린),구연산,비타민C,사과농축과즙액(사과100%국내산), 자몽농축액(자몽 100% 이스라엘산), 합성착향료(자몽향), 혼합제제/레드칼라 CG1{정제수, 플로필렌글리콜,혼합제제(코치닐추출색소,적양배추색소),치자황색소}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020144/20060622020144-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=250g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020144/20060622020144-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자몽",
+        "origin": "터키산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제/겔화제",
+        "amount": "투13",
+        "sub_ingredients": [
+          {
+            "name": "산탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트빈검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙액",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제/레드칼라",
+        "amount": "CG1",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "플로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "코치닐추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "적양배추색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 84.0,
+    "carbohydrate_g": 20.8,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 14.4,
+    "sodium_mg": 49.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "250g",
+    "collected_at": "2026-03-04 04:01:02"
+  }
+}

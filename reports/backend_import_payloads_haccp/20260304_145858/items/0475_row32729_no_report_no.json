@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "메티에블랙티파우더",
+    "reportnum": "19730190015148"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015148/19730190015148-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015148/19730190015148-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015148/19730190015148-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "말토덱스트린, 기타가공품[홍차추출액 90%, 덱스트린, 합성착향료(홍차향)]7.3%, 혼합제제(덱스트린,아라비아검,블랙티베이스5.5%,녹차베이스,에틸말톨)0.4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015148/19730190015148-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 열량 450kcal, 탄수화물 97g(29%), 당류 83g, 단백질 15g (27%), 지방 0g(0%), 포화지방 0g(0%), 트렌스지방 0g, 콜레스테롤 0mg(0%), 나트륨 15mg(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015148/19730190015148-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "amount": "7.3%",
+        "sub_ingredients": [
+          {
+            "name": "홍차추출액",
+            "amount": "90%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "홍차향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블랙티베이스",
+            "amount": "5.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에틸말톨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:43:00"
+  },
+  "nutrition": {
+    "kcal": 450.0,
+    "carbohydrate_g": 97.0,
+    "sugar_g": 83.0,
+    "protein_g": 15.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:43:00"
+  }
+}

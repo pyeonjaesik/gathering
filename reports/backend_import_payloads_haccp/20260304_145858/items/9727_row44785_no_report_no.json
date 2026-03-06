@@ -1,0 +1,112 @@
+{
+  "product": {
+    "name_ko": "닭가슴살훈제(마늘맛)",
+    "reportnum": "201505020139"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020139/201505020139-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020139/201505020139-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020139/201505020139-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "국내산닭가슴살정육93.56%(국내산),황칠3%(국내산),마늘2.0%(국내산),치킨시즈닝1.44%[정백당10%,포리믹스지에이7%,가릭스파이스20%,어니언스파이스20%,후추스파이스23%,진저스파이스10%]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020139/201505020139-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020139/201505020139-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살정육",
+        "origin": "국내산",
+        "amount": "93.56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황칠",
+        "origin": "국내산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국내산",
+        "amount": "2.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨시즈닝",
+        "amount": "1.44%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포리믹스지에이",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가릭스파이스",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "어니언스파이스",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추스파이스",
+            "amount": "23%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진저스파이스",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 129.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 28.0,
+    "fat_g": 1.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 102.0,
+    "cholesterol_mg": 71.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:46:25"
+  }
+}

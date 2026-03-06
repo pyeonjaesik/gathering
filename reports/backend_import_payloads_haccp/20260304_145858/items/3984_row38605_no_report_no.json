@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "우리밀 발아통밀마늘빵",
+    "reportnum": "1997039503239"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503239/1997039503239-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503239/1997039503239-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503239/1997039503239-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루 45.82%(밀/무농약, 국산), 미강유20.14%(태국산), 발아통밀가루11.45%(밀,국산), 갈색설탕10.22%(유기농설탕), 마늘7.03%(국산),생이스트,양파분말(국산),당근분말(국산),천일염(국산),건조케일(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503239/1997039503239-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 50g 열량 240kcal /나트륨115mg 6%, 탄수화물 32g 10%, 당류8g, 지방 10g 20%, 트랜스지방 0g, 포화지방 2.7g 18%, 콜레스테롤 0mg 0%, 단백질 5g 9% / 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997039503239/1997039503239-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "45.82%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미강유",
+        "origin": "태국산",
+        "amount": "20.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아통밀가루",
+        "origin": "국산",
+        "amount": "11.45%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "amount": "10.22%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "7.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조케일",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:23:48"
+  },
+  "nutrition": {
+    "kcal": 240.0,
+    "sodium_mg": 115.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 8.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 5.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 50g",
+    "collected_at": "2026-03-03 21:23:48"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "product": {
+    "name_ko": "허쉬 초코&초코 바",
+    "reportnum": "19960230001366"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001366/19960230001366-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001366/19960230001366-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001366/19960230001366-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유크림(독일산,뉴질랜드산),설탕,초콜릿[설탕,코코아매스(코코아빈;가나산,에콰도르산),코코아프리퍼레이션(외국산;네덜란드·프랑스·싱가포르),식물성유지Ⅰ,코코아버터],혼합분유(외국산(네덜란드·캐나다·미국);탈지분유,유청),식물성유지Ⅱ,코코아분말Ⅰ(싱가포르산),코코아분말Ⅱ(미국산),코코아분말Ⅲ(싱가포르산),혼합제제(유화제,구아검,카라기난,셀룰로스검,알긴산나트륨,산도조절제,황산칼슘),합성향료(초코향),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001366/19960230001366-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=80ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001366/19960230001366-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "독일산, 뉴질랜드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "origin": "가나산, 에콰도르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아프리퍼레이션",
+            "origin": "외국산, 네덜란드산, 프랑스산, 싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지Ⅰ",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산, 네덜란드산, 캐나다산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지Ⅱ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말Ⅰ",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말Ⅱ",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말Ⅲ",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:50:20"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 288.0,
+    "carbohydrate_g": 28.75,
+    "protein_g": 3.75,
+    "fat_g": 17.5,
+    "sugar_g": 25.0,
+    "sodium_mg": 63.0,
+    "cholesterol_mg": 25.0,
+    "saturated_fat_g": 8.75,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "80ml",
+    "collected_at": "2026-03-03 20:50:20"
+  }
+}

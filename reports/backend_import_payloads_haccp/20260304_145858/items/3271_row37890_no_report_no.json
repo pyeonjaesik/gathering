@@ -1,0 +1,140 @@
+{
+  "product": {
+    "name_ko": "삐약이계란과자",
+    "reportnum": "19930355028128"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355028128/19930355028128-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355028128/19930355028128-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355028128/19930355028128-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:국산) 41.87%, 유기농설탕 20.94%,자연드림네이처-2[가공유지(팜에스테르화유:말레이시아산,야자에스테르화유:수입산),버터(국산,우유)식물성유지,유크림,옥수수전분],유정란(계란:국산) 15.35%,베이킹파우더(혼합제제:L-주석산수소칼륨,옥수수전분,탄산수소나트륨,제일인산칼슘),구운소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355028128/19930355028128-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1/2봉(37.5g) 총 2회 제공량(75g)\n<1회제공량당 함량 %영양소기준치>\n열량185kcal -, 탄수화물24g 7%, 당류12g -, 단백질4g 7%, 지방8g 16%, 포화지방4.9g 33%, 트랜스지방 0g -, 콜레스테롤15mg 5%, 나트륨35mg 2%\n*%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355028128/19930355028128-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "41.87%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "20.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자연드림네이처-2",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자에스테르화유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "15.35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": [
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "L-주석산수소칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제일인산칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:32:27"
+  },
+  "nutrition": {
+    "kcal": 185.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 12.0,
+    "protein_g": 4.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 4.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 35.0,
+    "basis_amount": 37.5,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1/2봉(37.5g)",
+    "collected_at": "2026-03-03 19:32:27"
+  }
+}

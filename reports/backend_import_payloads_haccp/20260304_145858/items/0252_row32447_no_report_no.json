@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "아이스생크림카스테라",
+    "reportnum": "197102750034575"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034575/197102750034575-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034575/197102750034575-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034575/197102750034575-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "전란액/국산, 설탕, 밀가루(밀/미국산), 가공유크림[가공유지{가공유지(팜유/말레이시아산)},유크림/국산,프리페어드에더블팻,우유,탈지분유], 가공유크림[유크림,야자유,가공유크림,우유,가공유지], 난황액, 채종유, 우유, 마가린, 물엿, 혼합제제[유화제,과당,주정], 혼합제제[D-소비톨액,식용유지(콩기름),유화제], 혼합제제[산도조절제,전분], 당류가공품, 글리신, 정제소금, 혼합제제[ε-폴리리신,글리세린,주정], 리큐르, 메틸셀룰로스, 합성향료(우유향), 합성향료(밀크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034575/197102750034575-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 110g 368kcal\n나트륨150mg 8%, 탄수화물41g 13%, 당류26g 26%, 지방20g 37%, 트랜스지방0.6g, 포화지방9g 60%, 콜레스테롤180mg 60%, 단백질6g 11%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034575/197102750034575-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공유크림",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프리페어드에더블팻",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난황액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지",
+            "sub_ingredients": [
+              {
+                "name": "콩기름",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "ε-폴리리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리큐르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메틸셀룰로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "우유향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:21:43"
+  },
+  "nutrition": {
+    "kcal": 368.0,
+    "sodium_mg": 150.0,
+    "carbohydrate_g": 41.0,
+    "sugar_g": 26.0,
+    "fat_g": 20.0,
+    "trans_fat_g": 0.6,
+    "saturated_fat_g": 9.0,
+    "cholesterol_mg": 180.0,
+    "protein_g": 6.0,
+    "basis_amount": 110.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 110g",
+    "collected_at": "2026-03-03 13:21:43"
+  }
+}

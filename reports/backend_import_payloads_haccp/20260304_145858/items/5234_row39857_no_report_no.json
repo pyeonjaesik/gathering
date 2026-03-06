@@ -1,0 +1,71 @@
+{
+  "product": {
+    "name_ko": "궁전방 햇살 떡국",
+    "reportnum": "20060188160167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160167/20060188160167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160167/20060188160167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160167/20060188160167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀99.7%(수입산), 식염(국산), 주정",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160167/20060188160167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<%영양소기준치 : 1일 영양소 기준치에 대한 비율>\n1회 제공량 1/40봉지(100g) / 총 40회 제공량(4kg) 1회 제공량당 함량\n열량235kcal, 탄수화물55g (17%), 당류0g, 단백질4g (7%), 지방0g (0%), 포화지방0g (0%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨75mg (4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160167/20060188160167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "수입산",
+        "amount": "99.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:53"
+  },
+  "nutrition": {
+    "kcal": 235.0,
+    "carbohydrate_g": 55.0,
+    "sugar_g": 0.0,
+    "protein_g": 4.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 75.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/40봉지(100g)",
+    "collected_at": "2026-03-04 03:55:53"
+  }
+}

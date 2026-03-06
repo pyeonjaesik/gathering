@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "초유플러스 파우더",
+    "reportnum": "20080380239121"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080380239121/20080380239121-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080380239121/20080380239121-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080380239121/20080380239121-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "초유농축유청단백(뉴질랜드)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080380239121/20080380239121-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당\n<1회제공량 당 함량>\n열량380kcal, 탄수화물4g 1%, 당류4g, 단백질95g 155%, 지방2.5g 5%, 포화지방1.7g 11%, 트랜스지방0g, 콜레스테롤215mg 72%, 나트륨570mg 29%\n<참고 성분명 및 함량> \nlgG 9,500mg IGF258 ㎍, TGF-β 19㎍, 락토페린9.5mg\n* %영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080380239121/20080380239121-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "초유농축유청단백",
+        "origin": "뉴질랜드산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:37"
+  },
+  "nutrition": {
+    "kcal": 380.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 4.0,
+    "protein_g": 95.0,
+    "fat_g": 2.5,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 215.0,
+    "sodium_mg": 570.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:08:37"
+  }
+}

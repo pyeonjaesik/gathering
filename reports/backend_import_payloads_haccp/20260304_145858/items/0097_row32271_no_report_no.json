@@ -1,0 +1,250 @@
+{
+  "product": {
+    "name_ko": "치킨 봉",
+    "reportnum": "20040262036230"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036230/20040262036230-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036230/20040262036230-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036230/20040262036230-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(날개/국내산)79.31%,정제수,옥수수전분{옥수수(외국산:러시아,헝가리,세르비아 등)},대두유{대두(외국산:미국,브라질,파라과이 등)},구이용데리야끼맛염지제[L-글루타민산나트륨(향미증진제),폴리인산나트륨,숯불구이향분말,올레오레진캡시컴,우마미인핸서유엠비,프로텍스티-43,스모크후레바파우더,합성착향료(양파향),비프후레바,혼합제제{덱스트린,마늘오일,엔-록,혼합제제(마늘올레오레진,마늘에센셜오일,프로필렌글리콜),유화제,이산화규소}],파프리카스파이스로얄(혼합제제식품첨가물/분말결정포도당,덱스트린,옥수수전분,정제소금,올레오레진파프리카,이산화규소),치킨바베큐향(혼합제제식품첨가물/대두유,스모크오일,치킨플레이버,바베큐후레바),정제소금,분말검은후추,올레오레진캡시컴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036230/20040262036230-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 800g,100g당 190kcal,100g당,1일 영양성분 기준치에 대한 비율,나트륨 420mg(21%),탄수화물 8g(2%),당류 1g미만(1%),지방 10g(19%),트랜스지방 0g,포화지방 3.0g(20%),콜레스테롤 60mg(20%),단백질 16g(29%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036230/20040262036230-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "79.31%",
+        "sub_ingredients": [
+          {
+            "name": "날개",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 브라질산, 파라과이산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 브라질산, 파라과이산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구이용데리야끼맛염지제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숯불구이향분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진캡시컴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우마미인핸서유엠비",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로텍스티-43",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크후레바파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "양파향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프후레바",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엔-록",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘올레오레진",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘에센셜오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이산화규소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카스파이스로얄",
+        "sub_ingredients": [
+          {
+            "name": "분말결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진파프리카",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제식품첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치킨바베큐향",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨플레이버",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바베큐후레바",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제식품첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말검은후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올레오레진캡시컴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:06:00"
+  },
+  "nutrition": {
+    "kcal": 190.0,
+    "sodium_mg": 420.0,
+    "carbohydrate_g": 8.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "cholesterol_mg": 60.0,
+    "protein_g": 16.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:06:00"
+  }
+}

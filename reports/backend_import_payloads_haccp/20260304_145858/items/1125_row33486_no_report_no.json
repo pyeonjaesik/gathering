@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "쮸쮸바 칼라만시",
+    "reportnum": "19800493005131"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800493005131/19800493005131-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800493005131/19800493005131-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800493005131/19800493005131-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,기타올리고당(물엿,이소말토올리고당,액상과당),액상과당,칼라만시착즙(베트남산),팜유,구연산,합성향료(칼라만시향),유화제,혼합제제(구아검,카라기난,제2인산암모늄,로커스트콩검,타마린드검),심황색소(심황색소,유화제),수크랄로스(감미료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800493005131/19800493005131-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=130g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800493005131/19800493005131-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타올리고당",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이소말토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼라만시착즙",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "칼라만시향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제2인산암모늄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타마린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "amount": "감미료",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:36:34"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 96.0,
+    "carbohydrate_g": 22.31,
+    "protein_g": 0.0,
+    "fat_g": 0.62,
+    "sugar_g": 12.31,
+    "sodium_mg": 4.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "130g",
+    "collected_at": "2026-03-03 14:36:34"
+  }
+}

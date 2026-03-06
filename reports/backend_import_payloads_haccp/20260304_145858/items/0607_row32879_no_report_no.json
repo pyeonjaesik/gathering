@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "덴마크 초코초코 우유",
+    "reportnum": "19760262001334"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001334/19760262001334-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001334/19760262001334-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001334/19760262001334-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유20%(국산),정제수,정백당,탈지분유5.2%(수입산),유크림5%(국산),액상과당,말토덱스트린,코코아파우더1.7%(싱가포르산),유화제,카라기난,카르복시메틸셀룰로오스나트륨,탄산수소나트륨,정제염,합성착향료(초콜릿향),천연바닐라추출물,비타믹스D",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001334/19760262001334-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200ml)/총 약 2회 제공량(300ml) *( )안의 수치는 1일 영양성분기준치에 대한 비율임 1회 제공량당 함량 : 열량 225kcal, 탄수화물 35g(11)%, 당류 34g, 단백질 6g(11%), 지방 7g(14%), 포화지방 5g(33%), 트랜스지방 0g, 콜레스테롤 20mg(7%), 나트륨 105mg(5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001334/19760262001334-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "수입산",
+        "amount": "5.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "싱가포르산",
+        "amount": "1.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카르복시메틸셀룰로오스나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초콜릿향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연바닐라추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타믹스D",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:52:10"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "carbohydrate_g": 35.0,
+    "sugar_g": 34.0,
+    "protein_g": 6.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 105.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200ml)",
+    "collected_at": "2026-03-03 13:52:10"
+  }
+}

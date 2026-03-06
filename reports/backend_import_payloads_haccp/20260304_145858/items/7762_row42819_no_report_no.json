@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "쌀물만두",
+    "reportnum": "19950492079295"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079295/19950492079295-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079295/19950492079295-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079295/19950492079295-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루29.72%(밀:미국산,캐나다산),돼지고기24.88%(국산),양배추(국산),부추,대파,양파,대두단백,쌀가루2.3%(국산),찹쌀가루1.67%(국산),마늘,절임배추,정제소금,설탕,양조간장,유화유지,쇠고기베이스,맛내기양념,참기름,생강,후춧가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079295/19950492079295-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950492079295/19950492079295-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "amount": "29.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "24.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "amount": "2.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "amount": "1.67%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "절임배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛내기양념",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후춧가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:40:20"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 220.0,
+    "carbohydrate_g": 23.0,
+    "protein_g": 8.0,
+    "fat_g": 11.0,
+    "sugar_g": 4.0,
+    "sodium_mg": 280.0,
+    "dietary_fiber_g": 1.0,
+    "calcium_mg": 20.0,
+    "iron_mg": 0.5,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 4.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-03 20:40:20"
+  }
+}

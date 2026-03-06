@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "도가니탕",
+    "reportnum": "2013018901131"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901131/2013018901131-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901131/2013018901131-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901131/2013018901131-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우건(외국산:미국산,호주산,뉴질랜드산 등)20%,도가니(외국산:미국산,호주산,뉴질랜드산 등)1.6%,사골농축액(사골/뉴질랜드산,정제소금/국내산),유미분,복합조미식품{정제소금,L-글루타민산나트륨,백설탕,옥수수전분(옥수수/외국산),간장분말[아미노산간장3호(대두),말토덱스트린분말,식염]},정제소금,L-글루타민산나트륨(향미증진제),생강,핵산,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901131/2013018901131-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 600g(2인분),300g(1인분)당 115 kcal, 300g(1인분)당 1일 영양성분 기준치에 대한 비율, 나트륨 450mg(40%),탄수화물 1.5g(1%),당류 0g(0%),콜레스테롤 40mg(30%),지방 2.7g(15%),트랜스지방 0g(0%),포화지방 1.4g(9%),단백질 22g(26%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013018901131/2013018901131-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우건",
+        "origin": "외국산, 미국산, 호주산, 뉴질랜드산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "도가니",
+        "origin": "외국산, 미국산, 호주산, 뉴질랜드산",
+        "amount": "1.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축액",
+        "sub_ingredients": [
+          {
+            "name": "사골",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "아미노산간장3호",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "말토덱스트린분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핵산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:03"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 450.0,
+    "carbohydrate_g": 1.5,
+    "sugar_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.4,
+    "protein_g": 22.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "300g(1인분)당",
+    "collected_at": "2026-03-04 04:37:03"
+  }
+}

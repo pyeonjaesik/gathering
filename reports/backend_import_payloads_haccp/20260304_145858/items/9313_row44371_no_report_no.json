@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "베이컨칩",
+    "reportnum": "20100372386106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386106/20100372386106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386106/20100372386106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386106/20100372386106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀,미국산),팜유(말레이시아산),소맥전분,베이컨맛씨즈닝-C{대두,돼지고기,우유},백설탕,베이컨엑기스,비프맛엑기스,베이컨칼라{프로필렌글리콜,곡물발효주정,치자황색소,홍국적색소,카라멜색소,폴리인산나트륨},정제염,포티엄알40(해바라기유,로즈마리추출액) *베이컨(돼지고기:수입산) 0.008%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386106/20100372386106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386106/20100372386106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이컨맛씨즈닝-C",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이컨엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프맛엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이컨칼라",
+        "sub_ingredients": [
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡물발효주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍국적색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포티엄알40",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리추출액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베이컨",
+        "origin": "수입산",
+        "amount": "0.008%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:26"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 490.0,
+    "carbohydrate_g": 67.14,
+    "protein_g": 7.14,
+    "fat_g": 21.43,
+    "sugar_g": 4.29,
+    "sodium_mg": 894.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 5.71,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-04 04:23:26"
+  }
+}

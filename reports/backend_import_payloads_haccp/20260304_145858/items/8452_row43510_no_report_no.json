@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "새콤달콤 초고추장",
+    "reportnum": "2002046408817"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408817/2002046408817-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408817/2002046408817-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408817/2002046408817-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장 83.4%{고과당,소맥분말(밀:미국산,호주산),고추양념(중국산),정제소금,밀쌀},백설탕,양조식초 4.6%{주정,맥아엑기스(겉보리:미국산),발효영양원(독일산)},올리고당,구연산,레몬농축과즙액(레몬농축액:미국산),볶음참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408817/2002046408817-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=1050g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408817/2002046408817-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "83.4%",
+        "sub_ingredients": [
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분말",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀쌀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "amount": "4.6%",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "origin": "독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축과즙액",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "레몬농축액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 220.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 4.0,
+    "fat_g": 1.2,
+    "sugar_g": 39.0,
+    "sodium_mg": 2020.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "1050g",
+    "collected_at": "2026-03-04 03:42:05"
+  }
+}

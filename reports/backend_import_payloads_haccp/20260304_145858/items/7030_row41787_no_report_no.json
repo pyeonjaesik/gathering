@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "양반 콩나물바지락죽",
+    "reportnum": "19880589063225"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063225/19880589063225-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063225/19880589063225-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063225/19880589063225-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "죽-정제수,쌀9.14%(찹쌀80%,맵쌀20%/국산),콩나물7.80%(국산),바지락살5.01%(중국산),양파,해장베이스,새송이버섯,청고추,홍고추,정제소금,마늘,L-글루타민산나트륨(향미증진제),핵산G,헛개열매추출분말,후추,조개류(굴포함)대두,밀,함유 이 제품은 쇠고기,닭고기,돼지고기,토마토,땅콩,우유,새우,게,오징어를 사용한 제품과 같은 제조시설에서 제조하고 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063225/19880589063225-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=285g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063225/19880589063225-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "죽",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "9.14%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "origin": "국산",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맵쌀",
+                "origin": "국산",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콩나물",
+            "origin": "국산",
+            "amount": "7.80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바지락살",
+            "origin": "중국산",
+            "amount": "5.01%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해장베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새송이버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "핵산G",
+            "sub_ingredients": []
+          },
+          {
+            "name": "헛개열매추출분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개류",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:21"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 42.0,
+    "carbohydrate_g": 8.42,
+    "protein_g": 1.4,
+    "fat_g": 0.35,
+    "sugar_g": 0.7,
+    "sodium_mg": 133.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "285g",
+    "collected_at": "2026-03-04 03:26:21"
+  }
+}

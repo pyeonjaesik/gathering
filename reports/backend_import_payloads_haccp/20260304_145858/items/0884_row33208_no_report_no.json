@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "이프로부족할때아쿠아",
+    "reportnum": "19780614001404"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001404/19780614001404-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001404/19780614001404-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001404/19780614001404-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 자몽청징농축액(자몽과즙2%, 이스라엘산), 구연산, 구연산삼나트륨, 천연자몽향, 사과청징농축액(사과과즙0.5%, 칠레산), 정제소금(국산), 채소혼합농충액0.05%[양상추농축액40%, 양배추농축액25%, 쌈야채혼합즙20%(청경채, 비타민, 꽃상추, 뉴그린, 쑥갓, 청겨자, 적근대;국산), 레드비트농축액5%, 칼리플라워농축액5%, 자색고구마농축액5%, 국산], 레몬청징농축액(레몬과즙0.3%, 이스라엘산), 염화칼륨, 합성착향료(시트러스향), 젖산칼슘, L-글루타민산나트륨(향미증진제), 염화마그네슘, 효소츠리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001404/19780614001404-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 240ml\n열량60kcal, 나트륨115mg (6%), 탄수화물15g (5%), 당류15g (15%), 지방0g (0%), 트랜스지방0g (0%), 포화지방0g (0%), 콜레스테롤0mg (0%), 단백질0g (0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001404/19780614001404-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽청징농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": [
+          {
+            "name": "자몽과즙",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연자몽향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과청징농축액",
+        "origin": "칠레산",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채소혼합농축액",
+        "origin": "국산",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "양상추농축액",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추농축액",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌈야채혼합즙",
+            "origin": "국산",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "청경채",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민",
+                "sub_ingredients": []
+              },
+              {
+                "name": "꽃상추",
+                "sub_ingredients": []
+              },
+              {
+                "name": "뉴그린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쑥갓",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청겨자",
+                "sub_ingredients": []
+              },
+              {
+                "name": "적근대",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레드비트농축액",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칼리플라워농축액",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자색고구마농축액",
+            "amount": "5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬청징농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": [
+          {
+            "name": "레몬과즙",
+            "amount": "0.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "염화칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "amount": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소츠리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:15:08"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sodium_mg": 115.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 240ml",
+    "collected_at": "2026-03-03 14:15:08"
+  }
+}

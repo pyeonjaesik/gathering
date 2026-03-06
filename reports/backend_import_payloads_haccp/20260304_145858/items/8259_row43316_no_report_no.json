@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "로즈마리쿠키",
+    "reportnum": "200103200785"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200103200785/200103200785-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200103200785/200103200785-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200103200785/200103200785-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(국산)39.99%, 버터(국산)32.49%, 유기농설탕(수입산)16.24%, 유정란(전란,국산)10.62%, 로즈마리(국산)0.22%, 소금(국산)0.44%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200103200785/200103200785-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/200103200785/200103200785-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "39.99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "amount": "32.49%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "수입산",
+        "amount": "16.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "10.62%",
+        "sub_ingredients": [
+          {
+            "name": "전란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로즈마리",
+        "origin": "국산",
+        "amount": "0.22%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "origin": "국산",
+        "amount": "0.44%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 540.0,
+    "carbohydrate_g": 55.0,
+    "protein_g": 8.0,
+    "fat_g": 31.0,
+    "sugar_g": 19.0,
+    "sodium_mg": 190.0,
+    "cholesterol_mg": 120.0,
+    "saturated_fat_g": 18.0,
+    "trans_fat_g": 0.9,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:28:17"
+  }
+}

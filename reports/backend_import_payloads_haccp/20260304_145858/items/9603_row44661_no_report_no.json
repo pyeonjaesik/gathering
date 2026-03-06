@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "티오 아이스티 블루베리맛",
+    "reportnum": "201402091028"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402091028/201402091028-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402091028/201402091028-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402091028/201402091028-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "홍차추출분말(고형분94%이상, 독일산) 1.5%, 블루베리농축분말[블루베리농축액(고형분 25%)80%, 미국산]0.4%, 자일로스슈거(백설탕, 자일로오스, 난소화성말토덱스트린), 결정과당, 구연산, 자일리톨, 비타민C, 적포도과즙농축분말, 합성착향료(블루베리향), 이산화규소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402091028/201402091028-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=234ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402091028/201402091028-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍차추출분말",
+        "origin": "독일산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리농축분말",
+        "origin": "미국산",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리농축액",
+            "amount": "80%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자일로스슈거",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자일로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난소화성말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도과즙농축분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "블루베리향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:14"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 385.0,
+    "carbohydrate_g": 100.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 92.31,
+    "sodium_mg": 77.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "234ml",
+    "collected_at": "2026-03-04 04:40:14"
+  }
+}

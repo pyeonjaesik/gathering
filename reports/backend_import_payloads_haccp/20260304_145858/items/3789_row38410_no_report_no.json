@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "플레인 포테토 크래커칩",
+    "reportnum": "19960242067285"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067285/19960242067285-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067285/19960242067285-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067285/19960242067285-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "혼합식용유(해바라기유(수입산),팜올레인유(말레이시아산),토코페롤),전분가공품(감자전분Ⅰ(독일산),감자전분Ⅱ(국내산)),서류가공품Ⅰ(감자분말(독일산)),서류가공품Ⅱ(감자분말(독일산)),플레인씨즈닝(가공소금(미국산),효모추출물제품(브라질산),감자맛분말-1),백설탕,기타가공품(밀가루),정제소금,유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067285/19960242067285-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(60g) 총 1회 제공량(60g) 1회 제공량당 함량 *%영양성분 기준치 열량 310kcal, 탄수화물 33g 10%,당류 1g,단백질 2g 4%,지방 19g 36%, 포화지방 6g 42%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 300mg 15% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067285/19960242067285-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": [
+          {
+            "name": "감자전분Ⅰ",
+            "origin": "독일산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분Ⅱ",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "서류가공품Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "감자분말",
+            "origin": "독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "서류가공품Ⅱ",
+        "sub_ingredients": [
+          {
+            "name": "감자분말",
+            "origin": "독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "플레인씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "가공소금",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물제품",
+            "origin": "브라질산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자맛분말-1",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:56:05"
+  },
+  "nutrition": {
+    "kcal": 310.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 1.0,
+    "protein_g": 2.0,
+    "fat_g": 19.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 300.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(60g)",
+    "collected_at": "2026-03-03 20:56:05"
+  }
+}

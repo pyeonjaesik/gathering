@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "무말랭이무침",
+    "reportnum": "19980257052221"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052221/19980257052221-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052221/19980257052221-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052221/19980257052221-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무말랭이60%(국내산),물엿,멸치액젓{멸치(국내산),천일염(중국산)},고춧잎4.5%(국내산),고춧가루(국내산),설탕,다진마늘,정제소금,L-글루타민산나트륨(향미증진제),참깨(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052221/19980257052221-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/18봉(25g) 총 18회 제공량(450g) *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량33kcal 탄수화물7g 2% 당류4g 단백질1g 1% 지방0.2g 0% 포화지방0.2g 0% 트랜스지방0g 콜레스테롤0mg 0% 나트륨410mg 21%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052221/19980257052221-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무말랭이",
+        "origin": "국내산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치액젓",
+        "sub_ingredients": [
+          {
+            "name": "멸치",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧잎",
+        "origin": "국내산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:35:11"
+  },
+  "nutrition": {
+    "kcal": 33.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 4.0,
+    "protein_g": 1.0,
+    "fat_g": 0.2,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/18봉(25g)",
+    "collected_at": "2026-03-03 21:35:11"
+  }
+}

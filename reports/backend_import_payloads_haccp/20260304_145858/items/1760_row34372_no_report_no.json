@@ -1,0 +1,203 @@
+{
+  "product": {
+    "name_ko": "야채타임DIP",
+    "reportnum": "1985036806493"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985036806493/1985036806493-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985036806493/1985036806493-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985036806493/1985036806493-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),혼합식용유[팜올레인유(말레이시아산)59.98%,해바라기유(수입산)40%,d-토코페롤(혼합형)],토마토케첩18.6%[(토마토34.4%상당:토마토페이스트(수입산),액상과당,발효식초,백설탕,정제소금],옥수수전분,싸우전드씨즈닝2(대두,우유),백설탕,건양파분말(0.4%함유,중국산),야채분말(토마토페이스트,감자,시금치,양배추,당근농축액,제삼인산칼슘),정제소금,치자황색소,혼합제제(홍화황색소,치자청색소),제삼인산칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985036806493/1985036806493-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985036806493/1985036806493-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토케첩",
+        "amount": "18.6%",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "amount": "34.4%상당",
+            "sub_ingredients": [
+              {
+                "name": "토마토페이스트",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "싸우전드씨즈닝2",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건양파분말",
+        "origin": "중국산",
+        "amount": "0.4%함유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채분말",
+        "sub_ingredients": [
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시금치",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제삼인산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:53:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 464.0,
+    "carbohydrate_g": 52.86,
+    "protein_g": 4.29,
+    "fat_g": 25.71,
+    "sugar_g": 7.14,
+    "sodium_mg": 500.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-03 15:53:30"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "모짜렐라 피자치즈",
+    "reportnum": "20090476009103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009103/20090476009103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009103/20090476009103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009103/20090476009103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈98.8%(뉴질랜드산/원유,식염,유산균,우유응고효소,산도조절제),분말셀룰로오스혼합제제(분말셀룰로오스,정제포도당,효소제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009103/20090476009103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(20g)/총 25회 제공량(500g) 1회 제공량당 함량 *%영양소기준치 열량 60kcal, 탄수화물 1g미만 0%, 당류 0g, 단백질 5g 8%, 칼슘 110mg 16%, 지방 4.4g 9%, 포화지방 2.8g 19%, 트랜스지방 0.5g미만, 콜레스테롤 10mg 3%, 나트륨 90mg 5% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009103/20090476009103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "origin": "뉴질랜드산",
+        "amount": "98.8%",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유응고효소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말셀룰로오스혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:51"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "calcium_mg": 110.0,
+    "fat_g": 4.4,
+    "saturated_fat_g": 2.8,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1컵(20g)",
+    "collected_at": "2026-03-04 04:20:51"
+  }
+}

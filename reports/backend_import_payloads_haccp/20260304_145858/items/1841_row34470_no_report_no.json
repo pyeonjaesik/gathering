@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "맘마밀 요미요미 초록 야채와 과일",
+    "reportnum": "198506140551588"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140551588/198506140551588-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140551588/198506140551588-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140551588/198506140551588-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "청포도농축과즙(과즙으로33.6%,칠레산),키위퓨레(과즙으로5%,뉴질랜드산),사과농축과즙(과즙으로19.1%,국산),양배추농축액(야채즙으로9%,국산),사과농축과즙(과즙으로10.3%,터키산),레몬농축과즙(과즙으로12%,미국산),파슬리농축액(야채즙으로5%,국산),양상추농축액(야채즙으로5%,국산),청피망농축액(야채즙으로0.5%,국산),시금치농축액(야채즙으로0.5%,국산),정제수,화이버졸-2L(식이섬유),검믹스혼합제제(젤란검,산도조절제,덱스트린,로커스트콩검),구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140551588/198506140551588-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140551588/198506140551588-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "청포도농축과즙",
+        "origin": "칠레산",
+        "amount": "과즙으로33.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "키위퓨레",
+        "origin": "뉴질랜드산",
+        "amount": "과즙으로5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "국산, 터키산",
+        "amount": "과즙으로19.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추농축액",
+        "origin": "국산",
+        "amount": "야채즙으로9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축과즙",
+        "origin": "미국산",
+        "amount": "과즙으로12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리농축액",
+        "origin": "국산",
+        "amount": "야채즙으로5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양상추농축액",
+        "origin": "국산",
+        "amount": "야채즙으로5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망농축액",
+        "origin": "국산",
+        "amount": "야채즙으로0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치농축액",
+        "origin": "국산",
+        "amount": "야채즙으로0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이버졸-2L",
+        "amount": "식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검믹스혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:00:43"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 55.0,
+    "carbohydrate_g": 15.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 50.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-03 16:00:43"
+  }
+}

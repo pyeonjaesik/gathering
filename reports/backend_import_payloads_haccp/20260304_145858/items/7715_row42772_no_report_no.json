@@ -1,0 +1,222 @@
+{
+  "product": {
+    "name_ko": "고소한 땅콩케익",
+    "reportnum": "199503380157122"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157122/199503380157122-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157122/199503380157122-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157122/199503380157122-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀/미국산)전란액/국산(계란),백설탕,땅콩맛크림(마가린(우유)기타설탕,땅콩버터/중국산(땅콩),혼합제제(글리신,산도조절제,시클로덱스트린,유화제(정제소금,소보루(밀가루,백설탕,마가린,땅콩버터/중국산,혼합제제(산조조절제,전분)물엿,D-소르비톨액,혼합제제(유화제,과당,주정),쇼트닝(대두),합성팽창제(산도조절제,밀가루,유채유)정제소금,합성착향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157122/199503380157122-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157122/199503380157122-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩맛크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩버터",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "땅콩",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소보루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩버터",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "전분",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성팽창제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유채유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:23:38"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 322.0,
+    "carbohydrate_g": 45.56,
+    "protein_g": 5.56,
+    "fat_g": 13.33,
+    "sugar_g": 26.67,
+    "sodium_mg": 189.0,
+    "cholesterol_mg": 27.78,
+    "saturated_fat_g": 5.44,
+    "trans_fat_g": 0.56,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 20:23:38"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "치킨스모크",
+    "reportnum": "2009050200314"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200314/2009050200314-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200314/2009050200314-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200314/2009050200314-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기93.85%(국내산),치킨시즈닝CB-1 6.14%[포도당,정제염(국내산),치킨시즈닝믹스,말토덱스트린,백설탕],아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200314/2009050200314-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 550g 100g당 201kcal 100g당  1일영양성분 기준치에 대한비율 열량 201kcal, 탄수화물 6g 2%, 당류 2g, 단백질 15g 27%,지방 13g 25%, 포화지방 4g 27% ,트랜스지방 0g,콜레스테롤 123mg 41%,나트륨 446mg 22% 1일 영양성분 기준치에 대한 비율(%)은 2.000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200314/2009050200314-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "93.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨시즈닝CB-1",
+        "amount": "6.14%",
+        "sub_ingredients": [
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨시즈닝믹스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:38"
+  },
+  "nutrition": {
+    "kcal": 201.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 2.0,
+    "protein_g": 15.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 123.0,
+    "sodium_mg": 446.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:21:38"
+  }
+}

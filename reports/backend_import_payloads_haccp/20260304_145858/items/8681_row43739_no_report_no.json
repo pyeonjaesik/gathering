@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "비비고 직화구이김",
+    "reportnum": "20040358062174"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040358062174/20040358062174-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040358062174/20040358062174-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040358062174/20040358062174-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "김 43.7%(국산),옥수수유(옥수수배아:외국산),들기름(들깨:중국산),참기름,정제소금,허브추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040358062174/20040358062174-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=54g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040358062174/20040358062174-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "43.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수배아",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:52"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 667.0,
+    "carbohydrate_g": 16.67,
+    "protein_g": 16.67,
+    "fat_g": 51.11,
+    "sugar_g": 0.0,
+    "sodium_mg": 1444.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "54g",
+    "collected_at": "2026-03-04 03:50:52"
+  }
+}

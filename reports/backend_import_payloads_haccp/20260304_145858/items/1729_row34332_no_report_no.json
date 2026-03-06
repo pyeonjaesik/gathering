@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "신선하고 깨끗한 참 맛있는 우유",
+    "reportnum": "1985015700264"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985015700264/1985015700264-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985015700264/1985015700264-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985015700264/1985015700264-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1급A원유99.949%(국산)(세균수기준),아마씨유가공품(아마씨:캐나다산)0.051%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985015700264/1985015700264-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200mL) 총 약 4.5회 제공량(930mL) 1회 제공량 당 함량 : 열량 140kcal, 탄수화물 10g(3%) · 당류 10g, 단백질 7g(13%), 지방 8g(16%), 포화지방 4.9g(33%) · 트랜스지방 0.5g 미만, 콜레스테롤 30mg(10%), 나트륨 115mg(6%), 칼슘 218mg(31%) *( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985015700264/1985015700264-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "99.949%",
+        "sub_ingredients": [
+          {
+            "name": "1급A원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아마씨유가공품",
+        "origin": "국산",
+        "amount": "0.051%",
+        "sub_ingredients": [
+          {
+            "name": "아마씨",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:51:34"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 7.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 4.9,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 115.0,
+    "calcium_mg": 218.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-03 15:51:34"
+  }
+}

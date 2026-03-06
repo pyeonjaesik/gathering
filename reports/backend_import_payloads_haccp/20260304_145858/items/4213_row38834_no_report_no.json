@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "주부9단 뚝심",
+    "reportnum": "19980476001240"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001240/19980476001240-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001240/19980476001240-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001240/19980476001240-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)83.74%, 정제수, 정제소금(국내산), 대두단백(중국산), 백설탕, 산도조절제, 카라기난, 카제인나트륨, L-카르니틴0.05%, 비타민C, 비프인핸사, 아질산나트륨(발색제), 그래미육향(건조마늘분말, 건조생강분말, 건조감초분말, 건조산초분말)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001240/19980476001240-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 340g 100g당 266kcal 나트륨 850mg 43%,탄수화물4g 1%,당류1g 1%, 지방22g 43%, 트랜스지방 0g, 포화지방9g 60%, 콜레스테롤35mg 12%, 단백질13g 24%, 1일 영양성분 기준치에 대한비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001240/19980476001240-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "83.74%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-카르니틴",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프인핸사",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그래미육향",
+        "sub_ingredients": [
+          {
+            "name": "건조마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조생강분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조감초분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조산초분말",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:55:15"
+  },
+  "nutrition": {
+    "total_content": "340",
+    "food_weight_g": 340.0,
+    "kcal": 266.0,
+    "sodium_mg": 850.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 1.0,
+    "fat_g": 22.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 9.0,
+    "cholesterol_mg": 35.0,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:55:15"
+  }
+}

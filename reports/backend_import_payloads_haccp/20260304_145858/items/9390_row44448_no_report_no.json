@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "순창궁콩재래된장",
+    "reportnum": "2010049904748"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904748/2010049904748-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904748/2010049904748-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904748/2010049904748-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "된장90.9%[대두(수입산),소맥분(밀:미국,호주산),정제소금,메주가루,종국],한식메주된장6%[대두,정제소금/수입산],주정,알파탈지대두분,L-글루타민산나트륨(향미증진제),소르빈산칼륨(합성보존료),산도조절제(피로인산나트륨,산성피로인산나트륨),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904748/2010049904748-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904748/2010049904748-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "된장",
+        "amount": "90.9%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메주가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한식메주된장",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파탈지대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": [
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산성피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:28:35"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 155.0,
+    "carbohydrate_g": 22.0,
+    "protein_g": 14.0,
+    "fat_g": 1.4,
+    "sugar_g": 14.0,
+    "sodium_mg": 3646.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-04 04:28:35"
+  }
+}

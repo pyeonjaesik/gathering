@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "우리애들 순한국 된장미역국",
+    "reportnum": "19690364004937"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690364004937/19690364004937-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690364004937/19690364004937-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690364004937/19690364004937-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "분말된장60%[된장{대두(외국산),소맥분(밀:미국산,호주산)}],덱스트린,백설탕,정제소금(국내산),건미역2.7%(국내산),건파,다시마엑기스분말,멸치엑기스분말,건양파분말,마늘분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690364004937/19690364004937-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(5g)  *%영양소 기준치: 열량 15kcal,탄수화물3g,당류1g, 단백질 0.7g 4%,지방0g, 포화지방0g, 트랜지방 0g, 콜레스테롤0mg, 나트륨 350mg 50%, *%수치는 한국인 영양섭취기준(2010년도) 1~2세에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690364004937/19690364004937-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "분말된장",
+        "amount": "60%",
+        "sub_ingredients": [
+          {
+            "name": "된장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건미역",
+        "origin": "국내산",
+        "amount": "2.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건양파분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:18:45"
+  },
+  "nutrition": {
+    "kcal": 15.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 1.0,
+    "protein_g": 0.7,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 350.0,
+    "basis_amount": 5.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(5g)",
+    "collected_at": "2026-03-03 13:18:45"
+  }
+}

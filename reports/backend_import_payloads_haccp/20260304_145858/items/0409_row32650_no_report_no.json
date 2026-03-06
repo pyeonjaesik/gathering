@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "스위트앤젤 밀감",
+    "reportnum": "197202880022450"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022450/197202880022450-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022450/197202880022450-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022450/197202880022450-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,밀감9%(중국산:밀감56.6%,백설탕,구연산),오렌지농축과즙0.74%(오렌지과즙으로 4.08%, 11.8Brix이상, 이스라엘산), 혼합제제(함수결정포도당, 산도조절제, 로커스트콩검,젤란검,잔탄검,젖산칼슘), 비타민C, 카로틴, 산도조절제, 합성향료(오렌지향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022450/197202880022450-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022450/197202880022450-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀감",
+        "origin": "중국산",
+        "amount": "9%",
+        "sub_ingredients": [
+          {
+            "name": "밀감",
+            "origin": "중국산",
+            "amount": "56.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지농축과즙",
+        "origin": "이스라엘산",
+        "amount": "0.74%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙",
+            "amount": "4.08%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "11.8Brix이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:38:26"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 78.0,
+    "carbohydrate_g": 18.89,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 18.89,
+    "sodium_mg": 117.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 13:38:26"
+  }
+}

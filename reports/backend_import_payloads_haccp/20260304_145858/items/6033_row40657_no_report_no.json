@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "아임리얼 블루베리영",
+    "reportnum": "2009044204086"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204086/2009044204086-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204086/2009044204086-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204086/2009044204086-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "배퓨레(국산), 포도(칠레산), 코코넛주스(베트남산), 갈은파인애플, 석류주스, 블루베리 10%(미국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204086/2009044204086-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 (190ml),  *()안의 수치는 1일 영양성분기준치에 대한 비율임 1회 제공량당 함량, 열량 100 kcal, 탄수화물 26g(8%), 식이섬유 2g(8%), 당류 24g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 5mg(2%), 나트륨 25mg(1%), 비타민A 0㎍RE(0%)/비타민C 0mg(0%)/칼슘 19mg(3%)/철 0.6mg(5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204086/2009044204086-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "배퓨레",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛주스",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈은파인애플",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "석류주스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리",
+        "origin": "미국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:58"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 26.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 24.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 25.0,
+    "calcium_mg": 19.0,
+    "iron_mg": 0.6,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 (190ml)",
+    "collected_at": "2026-03-04 04:19:58"
+  }
+}

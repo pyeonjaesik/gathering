@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "얼큰한 알탕",
+    "reportnum": "20020614179746"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179746/20020614179746-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179746/20020614179746-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179746/20020614179746-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 명태곤이(러시아산), 명란(미국산) 11.2%, 무(국산), 대파(중국산), 팽이버섯, 명태육수베이스, 대구농축액, 정제소금, 고춧가루, 지미분(향미증진제), 바지락엑기스, 홍고추, 대두유, 마늘, 고추맛기름, 혼합간장, 조개감칠맛분에이스, 파프리카추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179746/20020614179746-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179746/20020614179746-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태곤이",
+        "origin": "러시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명란",
+        "origin": "미국산",
+        "amount": "11.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태육수베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대구농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바지락엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조개감칠맛분에이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:03"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 23.0,
+    "carbohydrate_g": 0.75,
+    "protein_g": 3.5,
+    "fat_g": 0.65,
+    "sugar_g": 0.5,
+    "sodium_mg": 425.0,
+    "cholesterol_mg": 73.75,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 03:44:03"
+  }
+}

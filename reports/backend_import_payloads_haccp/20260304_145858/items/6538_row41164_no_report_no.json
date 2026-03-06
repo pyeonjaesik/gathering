@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "바베큐 로인",
+    "reportnum": "20130405045288"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045288/20130405045288-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045288/20130405045288-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045288/20130405045288-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)93.29 %,정제수,정제소금(국내산),백설탕,콜라겐(브라질산),보로나시즈닝,혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),샐러리분말,블렌디드시즈닝,비타민C,케이싱(돈장)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045288/20130405045288-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 480 g/ 100g당 280 kcal, 나트륨 550mg 28%, 탄수화물 1g 0%, 당류 0.6g 1%, 지방 24g 4%, 트랜스지방 0g, 포화지방 8g 53%, 콜레스테롤 45mg 15%, 단백질 15g 27%,  1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045288/20130405045288-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "93.29 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "origin": "브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보로나시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "샐러리분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블렌디드시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이싱",
+        "sub_ingredients": [
+          {
+            "name": "돈장",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:55"
+  },
+  "nutrition": {
+    "kcal": 280.0,
+    "sodium_mg": 550.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.6,
+    "fat_g": 24.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 8.0,
+    "cholesterol_mg": 45.0,
+    "protein_g": 15.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:37:55"
+  }
+}

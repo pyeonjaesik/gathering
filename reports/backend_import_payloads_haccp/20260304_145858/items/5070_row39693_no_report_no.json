@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "오복",
+    "reportnum": "2004049023126"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004049023126/2004049023126-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004049023126/2004049023126-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004049023126/2004049023126-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[복분자유과] 찹쌀70%, 복분자즙10%,콩,튀밥,이온엿,대두유\n[양파유과] 찹쌀70%,양파10%,튀밥,콩,이온엿,대두유\n[복분자알] 유기농현미70%,복분자즙5%,유기농흑미,이온엿,정백당\n[매작과] 밀가루75%,백년초2%,쑥2%,치자2%,이온엿10%,베킹파우다,정백당,대두유\n[쌀강정] 쌀튀밥80%,이온엿10%,쑥,백년초,정백당",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004049023126/2004049023126-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<※ % 영양소 기준치 : 1일 영양소 기준치에 대한 비율(1회 제공량 당 함량 30g)>\n[복분자유과] 열량130kcal, 탄수화물23g 7%, 당류7g, 단백질1g 2%, 지방3.8g 8%, 포화지방0.8g 5%, 트랜스지방0g, 콜레스테롤0mg, 나트륨0mg\n[양파유과] 열량130kcal, 탄수화물22g 7%, 당류8g, 단백질1g 2%, 지방4.2g 8%, 포화지방0.7g 5%, 트랜스지방0g, 콜레스테롤0mg, 나트륨0mg\n[복분자알] 열량120kcal, 탄수화물26g , 당류6g, 단백질2g 3%, 지방0.9g 2%, 포화지방0g , 트랜스지방0g, 콜레스테롤0mg, 나트륨2.6mg 1%\n[매작과] 열량140kcal, 탄수화물20g 6%, 당류2g, 단백질2g 3%, 지방6g 12%, 포화지방12g 8% , 트랜스지방0.1g, 콜레스테롤0mg, 나트륨60mg 3%\n[쌀강정] 열량115kcal, 탄수화물27g 8%, 당류7g, 단백질1g 2%, 지방0.2g 0%, 포화지방0.1g 0% , 트랜스지방0g, 콜레스테롤0mg, 나트륨40mg 2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004049023126/2004049023126-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "복분자유과",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복분자즙",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "튀밥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파유과",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "튀밥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복분자알",
+        "sub_ingredients": [
+          {
+            "name": "유기농현미",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복분자즙",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매작과",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "amount": "75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백년초",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쑥",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베킹파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀강정",
+        "sub_ingredients": [
+          {
+            "name": "쌀튀밥",
+            "amount": "80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백년초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:13"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 7.0,
+    "protein_g": 1.0,
+    "fat_g": 3.8,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 03:52:13"
+  }
+}

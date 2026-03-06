@@ -1,0 +1,203 @@
+{
+  "product": {
+    "name_ko": "Single`s pride 황태설렁탕",
+    "reportnum": "20020614179855"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179855/20020614179855-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179855/20020614179855-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179855/20020614179855-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 두부[대두(수입산), 황산칼슘, 혼합제제(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘)], 무(국산), 황태채(명태:러시아산) 2.5%, 대파, 행복한맛남 계란지단채, 사골농축엑기스-3[사골추출농축액{우사골(호주산) 28.75%} 76.24%, 정제우지(호주산)] 1.0%, 들기름, 정제소금, 마늘, 다시마엑기스S, 청양고추, 명태엑기스 에이(A)[명태엑기스{명태(러시아산) 54.8%, 명태피(러시아산) 34.8%} 84.48%] 0.2%, L-글루타민산나트륨(향미증진제), 향미증진제, 후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179855/20020614179855-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(300g) 총 1회 제공량(300g) *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 80kcal 탄수화물 5g 2% 당류 0g 단백질 10g 18% 지방 2.1g 4% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 15mg 5% 나트륨 910mg 46%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179855/20020614179855-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태채",
+        "origin": "러시아산",
+        "amount": "2.5%",
+        "sub_ingredients": [
+          {
+            "name": "명태",
+            "origin": "러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "행복한맛남 계란지단채",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축엑기스-3",
+        "amount": "1.0%",
+        "sub_ingredients": [
+          {
+            "name": "사골추출농축액",
+            "sub_ingredients": [
+              {
+                "name": "우사골",
+                "origin": "호주산",
+                "amount": "28.75%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제우지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태엑기스 에이",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "명태엑기스",
+            "sub_ingredients": [
+              {
+                "name": "명태",
+                "origin": "러시아산",
+                "amount": "54.8%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "명태피",
+                "origin": "러시아산",
+                "amount": "34.8%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:41"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 0.0,
+    "protein_g": 10.0,
+    "fat_g": 2.1,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 910.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(300g)",
+    "collected_at": "2026-03-04 03:44:41"
+  }
+}

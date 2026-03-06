@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "오란다(튀긴어묵)",
+    "reportnum": "1982014402652"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982014402652/1982014402652-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982014402652/1982014402652-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982014402652/1982014402652-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "냉동연육78.85%(미국산,베트남산/어육살,설탕,소르비톨,산도조절제),소맥분(밀:호주산),감자전분(독일),정제소금,대두유,L-글루타민산나트륨제제[향미증진제(L-글루타민산나트륨5'-이노신산이나트륨,5'-구아닐산이나트륨)],자일로오스,복합인산염(산도조절제),소르빈산칼륨(합성보존료),글루코노델타락톤,효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982014402652/1982014402652-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(30g) 1회제공량당 함량(%영양소기준치)/열량35.7kcal 탄수화물4.4g(1%), 당류0.8g, 단백질3.6g (6%),지방0.4g (1%), 포화지방 0.1g (1%),트랜스지방 0g,콜레스테롤 4.5mg (2%),나트륨219.1mg (11%) (%영양소기준치:1일 영양소기준치에 대한 비율)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982014402652/1982014402652-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동연육",
+        "origin": "미국산, 베트남산",
+        "amount": "78.85%",
+        "sub_ingredients": [
+          {
+            "name": "어육살",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-이노신산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-구아닐산이나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합인산염",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루코노델타락톤",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:52:14"
+  },
+  "nutrition": {
+    "kcal": 35.7,
+    "carbohydrate_g": 4.4,
+    "sugar_g": 0.8,
+    "protein_g": 3.6,
+    "fat_g": 0.4,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 4.5,
+    "sodium_mg": 219.1,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(30g)",
+    "collected_at": "2026-03-03 14:52:14"
+  }
+}

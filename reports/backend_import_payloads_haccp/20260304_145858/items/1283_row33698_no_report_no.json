@@ -1,0 +1,278 @@
+{
+  "product": {
+    "name_ko": "맘스케어미니초코파이",
+    "reportnum": "19820481021208"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021208/19820481021208-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021208/19820481021208-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021208/19820481021208-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무농약밀가루(밀/국산)25%,준초콜릿[백설탕,가공유지(말레이지아산),혼합분유(벨기에산/전지분유(우유),코코아파우더),유당,코코아분말,코코아매스,유화제(레시틴(대두),글리세린지방산에스테르),정제염,천연착향료(바닐라엑기스)]22%함유,유기농설탕16%,명인유기쌀조청[유기쌀98.5%(국산),엿기름(국산),효소]15%,쇼트닝9%,홀란액[계란(국산),무항생제)8%,젤라틴(돼지고기),프락토올리고당,가공전지분-2(우유),가공버터,발효주정,레시틴(대두),탄산수소나트륨,탄산수소암모늄,구운소금(국산),천연착향료(바닐라향),혼합제제(젖산,자몽종자추출물,파이오렌,글리세린지방산에스테르,글리세린,타우린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021208/19820481021208-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2봉지(39g) 총 약3회 제공량(116g) 1회 제공량 함량 *%영양소 기준치 열량 180kcal, 탄수화물 21g 6%,당류 12g, 단백질 3g 5%,지방 9g 18%, 포화지방 4.4g 29%,트랜스지방 0.5g미만,콜레스테롤 20mg 7%,나트륨 140mg 7% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021208/19820481021208-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약밀가루",
+        "origin": "국산",
+        "amount": "25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "amount": "22%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "말레이지아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합분유",
+            "origin": "벨기에산",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "코코아파우더",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라엑기스",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명인유기쌀조청",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "유기쌀",
+            "origin": "국산",
+            "amount": "98.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "amount": "9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홀란액",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무항생제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분-2",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파이오렌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타우린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:54:59"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 12.0,
+    "protein_g": 3.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 4.4,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 140.0,
+    "basis_amount": 39.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2봉지(39g)",
+    "collected_at": "2026-03-03 14:54:59"
+  }
+}

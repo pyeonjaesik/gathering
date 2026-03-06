@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "마스카포네치즈 파우더",
+    "reportnum": "19730190015209"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015209/19730190015209-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015209/19730190015209-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015209/19730190015209-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,혼합가공치즈(마스카포네치즈92%,백설탕,글리세린지방산에스테라,구연산삼나트륨,정제소금,비타민E)20%, 식물성크림(야자경화유,물엿,카제인나트륨, 이산화규소,레시틴,산도조절제), 경성가공치즈(치즈95.2%,제이인산나트륨)7%, 분말유크림(유크림,유당,전지분유,유청분말,레시틴,산도조절제),혼합제제[옥배유,버터페이스트,합성착향료(밀크향),에틸바닐린],혼합제제(구아검,CMC,포도당),이산화규소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015209/19730190015209-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 열량 595kcal, 탄수화물66g(20%), 당류57g,단백질 6g(11%), 지방 34g(67%), 포화지방 29g(193%), 트렌스지방 0.5g미만, 콜레스테롤 5mg(17%), 나트륨300mg(15%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015209/19730190015209-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합가공치즈",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "마스카포네치즈",
+            "amount": "92%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "치즈",
+            "amount": "95.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에틸바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:44:00"
+  },
+  "nutrition": {
+    "kcal": 595.0,
+    "carbohydrate_g": 66.0,
+    "sugar_g": 57.0,
+    "protein_g": 6.0,
+    "fat_g": 34.0,
+    "saturated_fat_g": 29.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 300.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:44:00"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "통아몬드",
+    "reportnum": "1987041500310"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987041500310/1987041500310-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987041500310/1987041500310-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987041500310/1987041500310-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "백설탕,당코팅아몬드(아몬드,백설탕,물엿,식물성유지,과당),물엿,식물성유지(경화유),유화제(대두),식염,합성착향료(버터향),카라멜색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987041500310/1987041500310-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987041500310/1987041500310-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당코팅아몬드",
+        "sub_ingredients": [
+          {
+            "name": "아몬드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:36:48"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 558.0,
+    "carbohydrate_g": 58.0,
+    "protein_g": 5.0,
+    "fat_g": 34.0,
+    "sugar_g": 47.0,
+    "sodium_mg": 240.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 19.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 16:36:48"
+  }
+}

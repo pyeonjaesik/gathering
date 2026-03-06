@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "베지밀 비 달콤한 고칼슘 두유",
+    "reportnum": "19840415001264"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001264/19840415001264-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001264/19840415001264-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001264/19840415001264-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액90%[대두고형분 7%이상, 대두-외국산(미국, 캐나다, 호주 등)], 정백당, 정제수, 대두유-외국산(미국, 브라질, 파라과이 등), 탄산칼슘혼합제제0.73%(탄산칼슘, 대두다당류), 천일염(국산), 젤란검, 글리세린지방산에스테르, 유산균배양분말(비타민B1, 비타민B2, 비타민B6), 건조효모분말(비타민D3), 합성향료(땅콩향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001264/19840415001264-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001264/19840415001264-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 브라질산, 파라과이산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘혼합제제",
+        "amount": "0.73%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두다당류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양분말",
+        "sub_ingredients": [
+          {
+            "name": "비타민B1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건조효모분말",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "땅콩향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:41:38"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 68.0,
+    "carbohydrate_g": 6.32,
+    "protein_g": 3.16,
+    "fat_g": 3.68,
+    "sugar_g": 5.26,
+    "sodium_mg": 79.0,
+    "calcium_mg": 121.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.79,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-03 15:41:38"
+  }
+}

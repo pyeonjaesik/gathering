@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "치킨패티",
+    "reportnum": "2015040500134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500134/2015040500134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500134/2015040500134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500134/2015040500134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기70.99%(닭다리살/브라질산),통살정육패티용배터[배터베이스믹스-3{밀가루(밀:미국,호주산),에스제이분말,미분},밀가루(밀:미국,호주산),정제소금],중력분(밀:호주산),정제수,대두유,마리네이션EF{L-글루탐산나트륨(향미증진제)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500134/2015040500134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 660g(110gx6개) 1개(110g)당 225kcal 1개당 1일영양성분기준치에대한비율 나트륨 650mg 32% 탄수화물 14g 5%, 당류 0g 0%, 지방 14g 17%,트랜스지방 0g 0%, 포화지방 3g 4%,콜레스테롤 30mg 11%,단백질 9g 16% 1일 영양성분 기준치에 대한 비율(%)은 2.000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500134/2015040500134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "브라질산",
+        "amount": "70.99%",
+        "sub_ingredients": [
+          {
+            "name": "닭다리살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "통살정육패티용배터",
+        "sub_ingredients": [
+          {
+            "name": "배터베이스믹스",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에스제이분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "중력분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마리네이션EF",
+        "sub_ingredients": [
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:55"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "sodium_mg": 650.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 0.0,
+    "fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "cholesterol_mg": 30.0,
+    "protein_g": 9.0,
+    "basis_amount": 110.0,
+    "basis_unit": "g",
+    "basis_text": "1개(110g)당",
+    "collected_at": "2026-03-04 04:44:55"
+  }
+}

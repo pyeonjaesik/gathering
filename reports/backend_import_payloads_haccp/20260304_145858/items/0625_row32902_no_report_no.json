@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "쿨피스 파인애플",
+    "reportnum": "1976026300410"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300410/1976026300410-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300410/1976026300410-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300410/1976026300410-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,혼합분유[외국산(국가명은홈페이지에별도표시)],CMC,파인애플농축액0.38%[배합함량파인애플100%,외국산(국가명은홈페이지에별도표시)],포도당,사과산,비타민C,구연산삼나트륨,심황색소,혼합제제(규소수지,글리세린지방산에스테르,소르비탄지방산에스테르,CMC),합성향료(파인애플향),아스파탐(감미료,페닐알라닌함유),유산균(백만마리이상/mL,미국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300410/1976026300410-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 930ml/1컵(100ml)당 40kcal 1컵당 1일 영양성분 기준치에 대한 비율 :나트륨 40mg 2%, 탄수화물10g 3%,당류9g 9%, 지방0.5g미만 1%, 트랜스지방0g, 포화지방0.5g미만 1%, 콜레스테롤 0mg 0%, 단백질 0.5g미만 0%, 비타민C 21mg 21%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300410/1976026300410-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "국가명은홈페이지에별도표시",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "CMC",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플농축액",
+        "origin": "외국산",
+        "amount": "0.38%",
+        "sub_ingredients": [
+          {
+            "name": "배합함량파인애플",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "국가명은홈페이지에별도표시",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "파인애플향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "origin": "미국산",
+        "amount": "백만마리이상, mL",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:53:22"
+  },
+  "nutrition": {
+    "total_content": "930",
+    "food_weight_g": null,
+    "food_weight_ml": 930.0,
+    "kcal": 40.0,
+    "sodium_mg": 40.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 9.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1컵(100ml)당",
+    "collected_at": "2026-03-03 13:53:22"
+  }
+}

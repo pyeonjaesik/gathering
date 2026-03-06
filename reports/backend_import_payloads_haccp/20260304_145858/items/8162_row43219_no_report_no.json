@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "메로나",
+    "reportnum": "199805750012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750012/199805750012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750012/199805750012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750012/199805750012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,데어리스프레드(외국산:뉴질랜드,독일,호주),프락토올리고당,물엿,혼합탈지분유(외국산:네덜란드,아일랜드,독일),말티톨시럽,메론시럽0.15%[메론(국산)70%,레몬농축과즙(이스라엘산)],정제염,로커스트콩검,셀룰로오스검,혼합제제(구아검,로커스트콩검,카라기난,셀룰로오스검,유화제),치자청색소,심황색소,합성향료(메론향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750012/199805750012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=75ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750012/199805750012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "외국산, 뉴질랜드산, 독일산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메론시럽",
+        "amount": "0.15%",
+        "sub_ingredients": [
+          {
+            "name": "메론",
+            "origin": "국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬농축과즙",
+            "origin": "이스라엘산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "메론향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:59:32"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 160.0,
+    "carbohydrate_g": 24.0,
+    "protein_g": 1.33,
+    "fat_g": 6.67,
+    "sugar_g": 17.33,
+    "sodium_mg": 67.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 4.27,
+    "trans_fat_g": 0.27,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "75ml",
+    "collected_at": "2026-03-03 21:59:32"
+  }
+}

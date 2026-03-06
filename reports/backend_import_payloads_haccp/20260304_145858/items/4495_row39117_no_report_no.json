@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "중화해물밥",
+    "reportnum": "20010445055373"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055373/20010445055373-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055373/20010445055373-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055373/20010445055373-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맛있는 오뚜기밥(즉석조리식품,살균제품,질소충전제품):쌀(국산),산도조절제 -중화해물밥소스(소스류,살균제품,레토르트식품):오징어20%(칠레산),새우15%(베트남산),양파(국산),죽순,정제수,새송이버섯,피망,굴소스(백설탕,굴엑기스,정제소금,변성전분,감칠맛베이스),카놀라유,두반장,혼합제제(변성전분,백설탕,덱스트린),마늘,백설탕,참치간장,청주,해물맛베이스,생강,식물성분해단백,참기름,정제소금,고추분,향미증진제,후추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055373/20010445055373-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1세트(310g) 1회 제공량당 함량 *%영양소 기준치 : 열량 340kcal,탄수화물64g 19%, 당류5g, 단백질 8g 15%, 지방6g 12%, 포화지방0.8g 5%, 트랜스지방 0g, 콜레스테롤75mg 25%, 나트륨 1,060mg 53%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055373/20010445055373-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는 오뚜기밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중화해물밥소스",
+            "sub_ingredients": [
+              {
+                "name": "오징어",
+                "origin": "칠레산",
+                "amount": "20%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "새우",
+                "origin": "베트남산",
+                "amount": "15%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "죽순",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "새송이버섯",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피망",
+                "sub_ingredients": []
+              },
+              {
+                "name": "굴소스",
+                "sub_ingredients": [
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "굴엑기스",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제소금",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "감칠맛베이스",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "카놀라유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "두반장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참치간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청주",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해물맛베이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "생강",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성분해단백",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참기름",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "후추분",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:48"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "carbohydrate_g": 64.0,
+    "sugar_g": 5.0,
+    "protein_g": 8.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 75.0,
+    "sodium_mg": 1060.0,
+    "basis_amount": 310.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량1세트(310g)",
+    "collected_at": "2026-03-04 03:32:48"
+  }
+}

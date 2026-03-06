@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "고추맛기름",
+    "reportnum": "19880555008113"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880555008113/19880555008113-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880555008113/19880555008113-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880555008113/19880555008113-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두유98.7%[외국산(미국, 브라질, 파라과이 등)], 고추씨기름1%(중국산), 파프리카추출색소, 올레오레진캡시컴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880555008113/19880555008113-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=5g(ml) | foodSize=1652g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880555008113/19880555008113-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 브라질산, 파라과이산",
+        "amount": "98.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추씨기름",
+        "origin": "중국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올레오레진캡시컴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:56"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 900.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "5g(ml)",
+    "total_content": "1652g",
+    "collected_at": "2026-03-04 03:25:56"
+  }
+}

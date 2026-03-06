@@ -1,0 +1,385 @@
+{
+  "product": {
+    "name_ko": "딸기&요구르트 팝콘",
+    "reportnum": "20100461303260"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303260/20100461303260-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303260/20100461303260-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303260/20100461303260-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)33.0%,백설탕,물엿,식물성유지[팜올레인유(말레이시아산),고올레산해바라기유(외국산:아르헨티나,스페인,호주등),d-토코페롤(혼합형)],화이트초콜릿(싱가포르산),가공유크림,복합조미식품[요구르트맛시즈닝J{분말결정포도당(함수결정포도당),기타가공품(가공유장분(농축유청액,물엿)),가공소금(미분염1(정제소금,제삼인산칼슘)),혼합제제(요구르트향분말(합성향료)),기타가공품(요거트분말10%(탈지분유,덱스트린,구연산,백설탕,유화제,유산균)),아스파탐(감미료,페닐알라닌함유)}]22%,덱스트린,가공버터,분말결정포도당,기타가공품[딸기시럽{혼합제제(딸기향(합성향료)),물엿,천연첨가물(락색소),과채가공품(딸기농축액(국내산.딸기고형분53%(딸기100%)))}]0.5%,레시틴,혼합제제(탄산수소나트륨,제삼인산칼슘),복합조미식품[딸기맛시즈닝{백설탕,복합조미식품(딸기분말(국내산.딸기고형분52%(딸기100%))),유청분말,과채가공품(딸기과즙분말(국내산.고형분90%(딸기100%)))0.2%,아스파탐(감미료,페닐알라닌함유)}]0.2%,혼합제제[혼합제제(딸기향),혼합제제(딸기향),프로필렌글리콜],천연첨가물[락색소{천연첨가물(락색소),글리세린,산도조절제}]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303260/20100461303260-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 45g 220kcal\n<총 내용량당 1회 영양성분 기준치에 대한 비율>\n나트륨70mg 4%, 탄수화물32g 10%, 식이섬유2g 8%, 당류15g 15%, 콜레스테롤3mg 1%, 지방10g 19%, 트랜스지방0g, 포화지방6g 40%, 단백질1.7g 3%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303260/20100461303260-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "33.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트초콜릿",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "요구르트맛시즈닝J",
+            "sub_ingredients": [
+              {
+                "name": "분말결정포도당",
+                "sub_ingredients": [
+                  {
+                    "name": "함수결정포도당",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "기타가공품",
+                "sub_ingredients": [
+                  {
+                    "name": "가공유장분",
+                    "sub_ingredients": [
+                      {
+                        "name": "농축유청액",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "물엿",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "요거트분말",
+                    "amount": "10%",
+                    "sub_ingredients": [
+                      {
+                        "name": "탈지분유",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "덱스트린",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "구연산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "백설탕",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "유화제",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "유산균",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "가공소금",
+                "sub_ingredients": [
+                  {
+                    "name": "미분염1",
+                    "sub_ingredients": [
+                      {
+                        "name": "정제소금",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "제삼인산칼슘",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "요구르트향분말",
+                    "sub_ingredients": [
+                      {
+                        "name": "합성향료",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "아스파탐",
+                "sub_ingredients": [
+                  {
+                    "name": "감미료",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "페닐알라닌",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "딸기맛시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "복합조미식품",
+                "sub_ingredients": [
+                  {
+                    "name": "딸기분말",
+                    "sub_ingredients": [
+                      {
+                        "name": "국내산.딸기고형분52%(딸기100%)",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "과채가공품",
+                "sub_ingredients": [
+                  {
+                    "name": "딸기과즙분말",
+                    "sub_ingredients": [
+                      {
+                        "name": "국내산.고형분90%(딸기100%)",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "아스파탐",
+                "sub_ingredients": [
+                  {
+                    "name": "감미료",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "페닐알라닌",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "딸기시럽",
+            "sub_ingredients": [
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "딸기향",
+                    "sub_ingredients": [
+                      {
+                        "name": "합성향료",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연첨가물",
+                "sub_ingredients": [
+                  {
+                    "name": "락색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "과채가공품",
+                "sub_ingredients": [
+                  {
+                    "name": "딸기농축액",
+                    "sub_ingredients": [
+                      {
+                        "name": "국내산.딸기고형분53%(딸기100%)",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연첨가물",
+        "sub_ingredients": [
+          {
+            "name": "락색소",
+            "sub_ingredients": [
+              {
+                "name": "천연첨가물",
+                "sub_ingredients": [
+                  {
+                    "name": "락색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "글리세린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:22"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "sodium_mg": 70.0,
+    "carbohydrate_g": 32.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 15.0,
+    "cholesterol_mg": 3.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "protein_g": 1.7,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 45g",
+    "collected_at": "2026-03-04 04:27:22"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "오뚜기 옥수수스프",
+    "reportnum": "20010445055205"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055205/20010445055205-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055205/20010445055205-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055205/20010445055205-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수분24%(수입산),퓨레드스위트콘파우더6%(뉴질랜드산),스위트콘칩3%(옥수수:미국산),밀가루(밀:미국산/호주산),백설탕,혼합식용유(팜올레인유,팜스테아린유),정제염,유크림혼합분(우유),정제포도당,옥수수맛분(대두),식물성크림,가공유크림분,양파분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055205/20010445055205-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1/4봉지(20g),총 약 4회제공량(80g), 열량85kcal, 탄수화물15g 5%, 당류5g, 단백질2g 4%, 지방1.7g 3%, 포화지방0.9g 6%, 트랜스지방 0g, 콜레스테롤0mg, 나트륨500mg 25%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055205/20010445055205-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수분",
+        "origin": "수입산",
+        "amount": "24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "퓨레드스위트콘파우더",
+        "origin": "뉴질랜드산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘칩",
+        "origin": "미국산",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜스테아린유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림혼합분",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수맛분",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유크림분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:30:48"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 5.0,
+    "protein_g": 2.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 500.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1/4봉지(20g)",
+    "collected_at": "2026-03-04 03:30:48"
+  }
+}

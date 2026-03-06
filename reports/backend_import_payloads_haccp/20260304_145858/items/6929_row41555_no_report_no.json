@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "꿀유자차",
+    "reportnum": "201605181093"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605181093/201605181093-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605181093/201605181093-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605181093/201605181093-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "당침유자,백설탕,유자,백설탕,기타과당,정제수,사양벌꿀,구연산,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605181093/201605181093-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분   Nutrition Facts      1ea(30g)/79kcal \r\n     \r\n항 목 (Item)\r\n분석결과\r\n(30g당 함량)\r\n Amount per 30g\r\n1일영양성분 기준치 비율\r\n % Daily Value\r\n나트륨  Sodium\r\n 0mg\r\n0%\r\n탄수화물  Carbohydrate\r\n19g\r\n6%\r\n당류  Sugars\r\n18g\r\n18%\r\n지방  Fat\r\n0g\r\n0%\r\n포화지방  Saturated Fat\r\n0g\r\n0%\r\n트랜스지방  Ttans Fat\r\n0g\r\n0%\r\n콜레스테롤  Cholesterol\r\n0mg\r\n0%\r\n단백질  Protein \r\n0g\r\n0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605181093/201605181093-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "당침유자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:39"
+  },
+  "nutrition": {
+    "kcal": 79.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 18.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1ea(30g)",
+    "collected_at": "2026-03-04 04:47:39"
+  }
+}

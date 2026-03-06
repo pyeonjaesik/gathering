@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "몽고간장 메주",
+    "reportnum": "198705890802"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198705890802/198705890802-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198705890802/198705890802-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198705890802/198705890802-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 탈지대두(외국산:인도산,미국산,중국산 등),천일염(호주산),소맥(밀:미국산),액상과당,주정,감초추출물,젖산,효소처리스테비아,영양강화제,발효식초,이노신산이나트륨,구아닐산나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198705890802/198705890802-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=- | foodSize=900ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/198705890802/198705890802-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "origin": "외국산, 인도산, 미국산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감초추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이노신산이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아닐산나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:42:58"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 79.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 7.0,
+    "fat_g": 0.5,
+    "sugar_g": 12.0,
+    "sodium_mg": 6270.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "total_content": "900ml",
+    "collected_at": "2026-03-03 16:42:58"
+  }
+}

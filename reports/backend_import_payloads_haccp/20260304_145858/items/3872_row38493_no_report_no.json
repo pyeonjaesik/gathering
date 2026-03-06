@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "아이스 웰치 그레이프",
+    "reportnum": "1996038624979"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624979/1996038624979-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624979/1996038624979-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624979/1996038624979-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,고과당,포도농축과즙(포도과즙100%,미국산),액상과당,솔비톨,정제야자유,유청분말(국산),말토덱스트린,구연산,합성착향료(포도향),포도과피색소(포도과피색소,말토덱스트린),혼합제제(구아검,카라기난,제이인산암모늄,로커스트콩검,타마란드검),글리세린지방산에스테르",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624979/1996038624979-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 150ml 152kcal\n나트륨10mg 0%, 탄수화물36g 11%, 당류35g 35%, 지방0.9g 2%, 트랜스지방0g, 포화지방0.8g 5%, 콜레스테롤0mg 0%, 단백질0g 0%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624979/1996038624979-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도농축과즙",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "포도과즙",
+            "sub_ingredients": [
+              {
+                "name": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제야자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도과피색소",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산암모늄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타마란드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:07:33"
+  },
+  "nutrition": {
+    "kcal": 152.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 36.0,
+    "sugar_g": 35.0,
+    "fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 150.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 150ml",
+    "collected_at": "2026-03-03 21:07:33"
+  }
+}

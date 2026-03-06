@@ -1,0 +1,101 @@
+{
+  "product": {
+    "name_ko": "프렌치카페 카페믹스 누보",
+    "reportnum": "2012051204321"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012051204321/2012051204321-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012051204321/2012051204321-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012051204321/2012051204321-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "커피12.8%(수입산),백설탕,무지방우유함유크리머[물엿,식물성경화유지(야자유:수입산),농축우유단백분말(뉴질랜드),무지방농축우유(국산),미네랄혼합물]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012051204321/2012051204321-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(11.7g) 총 100회 제공량(1,170g) 1회 제공량당 함량 *%영양소 기준치: 열량 50kcal, 탄수화물9g 3%, 당류 6g, 단백질 0g 0%, 지방 1.4g 3%, 포화지방 1.4g 9%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 13mg 1%, 인 10mg 0%, 칼슘 30mg 4%, 비타민D 0.5㎍ 10%, *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012051204321/2012051204321-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "커피",
+        "origin": "수입산",
+        "amount": "12.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무지방우유함유크리머",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성경화유지",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "야자유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "농축우유단백분말",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지방농축우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미네랄혼합물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:34:38"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 1.4,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 13.0,
+    "phosphorus_mg": 10.0,
+    "calcium_mg": 30.0,
+    "basis_amount": 11.7,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(11.7g)",
+    "collected_at": "2026-03-04 04:34:38"
+  }
+}

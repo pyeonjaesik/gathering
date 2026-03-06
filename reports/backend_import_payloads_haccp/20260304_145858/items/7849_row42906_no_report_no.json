@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "리츠 크래커",
+    "reportnum": "19960399065303"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065303/19960399065303-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065303/19960399065303-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065303/19960399065303-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),혼합식용유[팜유류59.98%(말레이시아산),야자유40%(인도네시아산,필리핀산),혼합제제(올레오레진로즈메리,올레오레진세이지)],식물성유지[팜유류(말레이시아산),혼합제제(올레오레진로즈메리,올레오레진세이지)],분당(설탕,옥수수전분),당류가공품,곡류가공품,정제소금,재제소금,팽창제,레시틴,합성착향료(버터향),효소제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065303/19960399065303-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=80g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065303/19960399065303-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜유류",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "인도네시아산, 필리핀산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜유류",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분당",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:08:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 550.0,
+    "carbohydrate_g": 67.5,
+    "protein_g": 5.0,
+    "fat_g": 28.75,
+    "sugar_g": 10.0,
+    "sodium_mg": 800.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 16.25,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "80g",
+    "collected_at": "2026-03-03 21:08:49"
+  }
+}

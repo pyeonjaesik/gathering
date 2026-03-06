@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "하루의 열매 베리넛츠 한입",
+    "reportnum": "201603685232"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685232/201603685232-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685232/201603685232-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685232/201603685232-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "구운아몬드25%(아몬드:미국산),건조크랜베리루비25%(미국산/크랜베리62%,설탕,구연산,아로니아주스농축액,해바라기유),호두20%(미국산),볶음해바라기씨15%(해바라기씨:미국산),건포도초코요거볼15%[건포도(미국산)50%,화이트컴파운드,화이트코팅초콜릿,고화방지분당,요거트파우더]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685232/201603685232-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=25g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685232/201603685232-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "구운아몬드",
+        "origin": "미국산",
+        "amount": "25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조크랜베리루비",
+        "origin": "미국산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "amount": "62%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아로니아주스농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음해바라기씨",
+        "origin": "미국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건포도초코요거볼",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "건포도",
+            "origin": "미국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트컴파운드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트코팅초콜릿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고화방지분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요거트파우더",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 560.0,
+    "carbohydrate_g": 36.0,
+    "protein_g": 12.0,
+    "fat_g": 40.0,
+    "sugar_g": 28.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 4.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "25g",
+    "collected_at": "2026-03-04 04:47:12"
+  }
+}

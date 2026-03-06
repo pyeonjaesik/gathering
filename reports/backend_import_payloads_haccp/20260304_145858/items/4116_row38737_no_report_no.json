@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "그릭슈바인",
+    "reportnum": "19980448010244"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010244/19980448010244-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010244/19980448010244-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010244/19980448010244-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기91.64%(국산,외국산:스페인,미국,벨기에등),정제수,정제소금(국산),백설탕,카라기난,혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨,)L-아스코르빈산나트륨,바이오핵산에이지(5'-리보뉴클레오티드이나트륨/향미증진제),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010244/19980448010244-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(50g)/총4회제공량(200g) 1회제공량 당 함량: 열량:140Kcal,탄수화물1g미만(0.3%) 당류1g미만,단백질7g(13%),지방12g(24%),포화지방4g(27%) 트랜스지방0g,콜레스테롤25mg(8%),나트륨460mg(23%) *()안의 수치는 1일영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980448010244/19980448010244-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산, 외국산, 스페인산, 미국산, 벨기에산",
+        "amount": "91.64%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바이오핵산에이지",
+        "sub_ingredients": [
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:42:55"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "protein_g": 7.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 460.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(50g)",
+    "collected_at": "2026-03-03 21:42:55"
+  }
+}

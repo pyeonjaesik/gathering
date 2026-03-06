@@ -1,0 +1,215 @@
+{
+  "product": {
+    "name_ko": "망고바",
+    "reportnum": "19840221008179"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840221008179/19840221008179-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840221008179/19840221008179-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840221008179/19840221008179-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물, 백설탕, 망고다이스시럽[망고(태국산),백설탕,변성전분,아미드펙틴,합성착향료(망고향)],망고엑기스(필리핀),액상과당,야자경화유,혼합분유(우유),가공버터,혼합제제(구아검,카라기난,로거스트콩검,덱스트린,포도당,산도조절제,유화제,알긴산나트륨,카르복시메틸셀룰로오수나트륨),식물성크림(유미전지),구연산(결정),합성감미료(수크랄로수),정제소금,합성착향료(망고향,복숭아향),천연색소(카로틴,치자황색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840221008179/19840221008179-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량63ml  총 1회 제공량(63ml)\n1회제공량당 함량 : 열량70kcal, 탄수화물14g (4%), 당류12g, 단백질0g (0%), 지방1.4g (3%), 포화지방1.4g (3%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨25mg (1%)\n*()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840221008179/19840221008179-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고다이스시럽",
+        "sub_ingredients": [
+          {
+            "name": "망고",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "망고향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "망고엑기스",
+        "origin": "필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로거스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오수나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "유미전지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": [
+          {
+            "name": "결정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "수크랄로수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연색소",
+        "sub_ingredients": [
+          {
+            "name": "카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:37:38"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 1.4,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 25.0,
+    "basis_amount": 63.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량63ml",
+    "collected_at": "2026-03-03 15:37:38"
+  }
+}

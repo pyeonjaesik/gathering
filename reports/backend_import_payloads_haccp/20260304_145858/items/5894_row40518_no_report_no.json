@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "안나마리아",
+    "reportnum": "2009015226948"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009015226948/2009015226948-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009015226948/2009015226948-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009015226948/2009015226948-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "초콜릿{카카오(에콰도르산18%,베네수엘라산9%등),설탕,카카오버터(베네수엘라산),레시틴,천연바닐라빈},버터(유크림:국산),설탕,밀가루(밀:미국산),계란,홍차(아랍에미리트),소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009015226948/2009015226948-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<1개(8g)당/총내용량240g(8gX30개)>\n열량47kcal, 나트륨10mg 1%, 탄수화물5g 2%, 당류3g 3%, 지방3g 6%, 트랜스지방0g, 포화지방1.7g 11%, 콜레스테롤10mg 3%, 단백질0g 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009015226948/2009015226948-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "카카오",
+            "origin": "에콰도르산, 베네수엘라산",
+            "amount": "18%, 9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카카오버터",
+            "origin": "베네수엘라산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연바닐라빈",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍차",
+        "origin": "아랍에미리트산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:48"
+  },
+  "nutrition": {
+    "kcal": 47.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 3.0,
+    "fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 10.0,
+    "protein_g": 0.0,
+    "basis_amount": 8.0,
+    "basis_unit": "g",
+    "basis_text": "1개(8g)당",
+    "collected_at": "2026-03-04 04:16:48"
+  }
+}

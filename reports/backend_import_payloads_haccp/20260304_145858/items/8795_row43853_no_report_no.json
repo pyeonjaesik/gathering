@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "참크래커",
+    "reportnum": "2006024237629"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237629/2006024237629-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237629/2006024237629-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237629/2006024237629-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀,미국산),쇼트닝1[동물성유지(호주산),팜유(말레이시아산),쇼트닝2(대두),혼합식용유,우유,천일염(국산),기타엿,혼합분유,산도조절제,재제소금,곡류가공품,합성착향료(그래함향,크래커향),영양강화제,효소제제,효모",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237629/2006024237629-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=56g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237629/2006024237629-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝1",
+        "sub_ingredients": [
+          {
+            "name": "동물성유지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝2",
+            "amount": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "재제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "그래함향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크래커향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:36"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 71.43,
+    "protein_g": 8.93,
+    "fat_g": 14.29,
+    "sugar_g": 1.79,
+    "sodium_mg": 696.0,
+    "cholesterol_mg": 17.86,
+    "saturated_fat_g": 7.86,
+    "trans_fat_g": 0.54,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "56g",
+    "collected_at": "2026-03-04 03:56:36"
+  }
+}

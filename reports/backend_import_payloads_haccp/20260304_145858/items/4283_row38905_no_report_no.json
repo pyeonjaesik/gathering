@@ -1,0 +1,165 @@
+{
+  "product": {
+    "name_ko": "교동삼각약과",
+    "reportnum": "19990386335263"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335263/19990386335263-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335263/19990386335263-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335263/19990386335263-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국,호주산),물엿(옥분),소주(정제수,주정,결정과당,쌀증류식소주원액(쌀:국산),보리증류식소주원액(보리:국산),효소처리스테비아,에리스리톨(향미증진제),토마틴),찹쌀(국산),대두유,꿀,설탕,생강,계피,재제소금,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335263/19990386335263-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 288g (24g X 12봉지) 1봉지 (24g)당 115kcal\n<1회 제공량당 1일영양성분(기준치에 대한 비율)>\n나트륨30mg (1%), 탄수화물15g (5%), 당류2g (2%), 콜레스테롤0mg (0%), 지방6g (10%), 트랜스지방0g, 포화지방1g (6%), 단백질1g (2%)\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335263/19990386335263-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소주",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀증류식소주원액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "보리증류식소주원액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "보리",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에리스리톨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:05:02"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 30.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 2.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.0,
+    "protein_g": 1.0,
+    "basis_amount": 24.0,
+    "basis_unit": "g",
+    "basis_text": "1봉지 (24g)당",
+    "collected_at": "2026-03-03 22:05:02"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "이레팜 삶아서 깐 메추리알",
+    "reportnum": "201202620459"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620459/201202620459-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620459/201202620459-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620459/201202620459-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "메추리알98%(국산),충진액(정제수,정제염,식초)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620459/201202620459-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 제공량 1,000g(50g*20회 제공량),50g당,1일 영양성분 기준치에 대한 비율,열량 70 kcal, 나트륨 85mg(4%),탄수화물 1g(0%),당류 0g,지방 4.6g(9%),트랜스지방 0g,포화지방 1.8g(12%),콜레스테롤 250mg(11%),단백질 6g(11%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620459/201202620459-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "메추리알",
+        "origin": "국산",
+        "amount": "98%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "충진액",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:13"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "sodium_mg": 85.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.8,
+    "cholesterol_mg": 250.0,
+    "protein_g": 6.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "50g당",
+    "collected_at": "2026-03-04 04:33:13"
+  }
+}

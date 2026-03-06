@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "(해뜨락 부산어묵) 맛자랑",
+    "reportnum": "2000018100418"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000018100418/2000018100418-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000018100418/2000018100418-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000018100418/2000018100418-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육[외국산(베트남,태국,인도등)/어육,산도조절제,설탕,솔비톨]59.02%,소맥분(호주산,미국산)29.51%,당근(국산)4.92%,정제소금(국산)1.72%,파1.47%,대두유1.47%,핵산2.5(향미증진제)0.59%,글루코노델타락톤(산도조절제)0.30%,디-키실로스0.25%,솔빈산칼륨(합성보존료)0.24%,글리신(향미증진제)0.25%,포리인산에이-500(산도조절제)0.25%,삭카린나트륨(합성감미료)0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000018100418/2000018100418-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=800g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000018100418/2000018100418-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "외국산, 베트남산, 태국산, 인도산",
+        "amount": "59.02%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "솔비톨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산, 미국산",
+        "amount": "29.51%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "amount": "4.92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "amount": "1.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "amount": "1.47%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "amount": "1.47%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핵산2.5",
+        "amount": "0.59%",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루코노델타락톤",
+        "amount": "0.30%",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "디-키실로스",
+        "amount": "0.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔빈산칼륨",
+        "amount": "0.24%",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리신",
+        "amount": "0.25%",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포리인산에이-500",
+        "amount": "0.25%",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "삭카린나트륨",
+        "amount": "0.01%",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:09:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 230.0,
+    "carbohydrate_g": 30.0,
+    "protein_g": 12.0,
+    "fat_g": 7.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 830.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "800g",
+    "collected_at": "2026-03-03 22:09:57"
+  }
+}

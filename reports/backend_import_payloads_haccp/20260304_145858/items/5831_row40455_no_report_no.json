@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "맛있는우유 딸기맛",
+    "reportnum": "2008050200271"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200271/2008050200271-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200271/2008050200271-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200271/2008050200271-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)80%,액상과당,백설탕,합성착향료(딸기향),레드칼라(코치닐추출색소,치자황색소),탄산수소나트륨,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200271/2008050200271-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 (100ml당): 열량 80kcal, 지방 3g (5),[포화지방 2g(13),트랜스지방 0g],  콜레스테롤 10mg (3),탄수화물 11g (3),[당류 11g],단백질 3g (5),나트륨 45mg (2) ※( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200271/2008050200271-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레드칼라",
+        "sub_ingredients": [
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:14:56"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 11.0,
+    "protein_g": 3.0,
+    "sodium_mg": 45.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml당",
+    "collected_at": "2026-03-04 04:14:56"
+  }
+}

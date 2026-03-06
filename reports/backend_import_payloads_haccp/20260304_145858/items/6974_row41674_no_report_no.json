@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "미트 스파게티",
+    "reportnum": "19880445009858"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009858/19880445009858-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009858/19880445009858-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009858/19880445009858-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "스파게티(이탈리아산/듀럼세몰리나소맥분100%),미트소스[정제수,돼지고기15%(국산),토마토페이스트(미국산),토마토쿨리(스페인산/토마토,토마토페이스트,양파,해바라기유,설탕,구연산),양파,옥수수유,당근,샐러리],옥수수유,혼합제제(산도조절제,말티톨시럽,정제수),4치즈분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009858/19880445009858-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=588.40g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009858/19880445009858-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "듀럼세몰리나소맥분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미트소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토쿨리",
+            "origin": "스페인산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토페이스트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해바라기유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "4치즈분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:35"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 131.0,
+    "carbohydrate_g": 19.71,
+    "protein_g": 5.1,
+    "fat_g": 3.74,
+    "sugar_g": 4.08,
+    "sodium_mg": 211.0,
+    "dietary_fiber_g": 1.4,
+    "calcium_mg": 22.0,
+    "iron_mg": 0.61,
+    "cholesterol_mg": 1.7,
+    "saturated_fat_g": 0.92,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "588.40g",
+    "collected_at": "2026-03-04 03:25:35"
+  }
+}

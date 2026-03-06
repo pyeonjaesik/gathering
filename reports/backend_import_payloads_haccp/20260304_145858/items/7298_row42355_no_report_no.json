@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "화끈한닭강정",
+    "reportnum": "1992030803852"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992030803852/1992030803852-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992030803852/1992030803852-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992030803852/1992030803852-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "치킨바51.2%[닭고기73%(국산),빵가루(밀:미국산,캐나다산),양파,백설탕,식물성유지,조직대두단백],토마토캐챂[토마토페이스트(수입산),물엿,백설탕,발효식초,정제염(국산)],정제수,백설탕,마늘,청주,두반장,쟈스네,발효식초,혼합제제(변성전분,백설탕,덱스트린),고추분,고추맛기름,타바스코소스,생강분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992030803852/1992030803852-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992030803852/1992030803852-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "치킨바",
+        "amount": "51.2%",
+        "sub_ingredients": [
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "amount": "73%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빵가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조직대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토캐챂",
+        "sub_ingredients": [
+          {
+            "name": "토마토페이스트",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청주",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두반장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쟈스네",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타바스코소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:57:35"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 192.0,
+    "carbohydrate_g": 27.22,
+    "protein_g": 9.44,
+    "fat_g": 5.0,
+    "sugar_g": 3.89,
+    "sodium_mg": 589.0,
+    "cholesterol_mg": 19.44,
+    "saturated_fat_g": 1.39,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 18:57:35"
+  }
+}

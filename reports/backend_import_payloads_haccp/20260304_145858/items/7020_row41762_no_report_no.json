@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "양반쇠고기큰죽",
+    "reportnum": "19880589063173"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063173/19880589063173-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063173/19880589063173-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063173/19880589063173-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "죽-정제수,쌀11.63%(찹쌀80%,멥쌀20%,국산),쇠고기6.08%(호주산),당근(국산),조개야채엑기스,참치뼈엑기스(대두,밀),사골농축액DW,정제소금,표고버섯,L-글루타민산나트륨(향미증진제),죽스프-김50%(국산),참깨50%(수입산),참기름-볶은참깨가루100%(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063173/19880589063173-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=403g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063173/19880589063173-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "죽",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "11.63%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "멥쌀",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "amount": "6.08%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개야채엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치뼈엑기스",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사골농축액DW",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "죽스프",
+            "sub_ingredients": [
+              {
+                "name": "김",
+                "origin": "국산",
+                "amount": "50%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참깨",
+                "origin": "수입산",
+                "amount": "50%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참기름",
+            "origin": "수입산",
+            "amount": "볶은참깨가루100%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 55.0,
+    "carbohydrate_g": 9.68,
+    "protein_g": 1.99,
+    "fat_g": 0.89,
+    "sugar_g": 0.0,
+    "sodium_mg": 199.0,
+    "cholesterol_mg": 3.72,
+    "saturated_fat_g": 0.17,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "403g",
+    "collected_at": "2026-03-04 03:26:13"
+  }
+}

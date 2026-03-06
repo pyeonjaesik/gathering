@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "호두크림치즈",
+    "reportnum": "198504330151148"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151148/198504330151148-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151148/198504330151148-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151148/198504330151148-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산,캐나다산),크림치즈28.47%[미국산/크림,정제소금,스테빌라이저(잔탄검,로커스트콩검,구아검)],정백당,호두5.84%(미국산),가공버터,전란액,냉동효모,정제소금,탈지분유,곡류가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151148/198504330151148-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1/3개(70g)당 함량/ 총15회 제공량(1,050g)  열량 250kcal, 탄수화물 32g 10%,당류 6g, 단백질 6g 11%,지방 11g 22%, 포화지방 4.9g 33%,트랜스지방 0g,콜레스테롤 30mg 10%,나트륨 340mg 17% *%영양성분 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151148/198504330151148-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크림치즈",
+        "origin": "미국산",
+        "amount": "28.47%",
+        "sub_ingredients": [
+          {
+            "name": "크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테빌라이저",
+            "sub_ingredients": [
+              {
+                "name": "잔탄검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "5.84%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:53:59"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 6.0,
+    "protein_g": 6.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 4.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 340.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1/3개(70g)당 함량",
+    "collected_at": "2026-03-03 15:53:59"
+  }
+}

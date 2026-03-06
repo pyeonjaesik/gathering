@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "하늘청유기농바나나식혜",
+    "reportnum": "19970368029320"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970368029320/19970368029320-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970368029320/19970368029320-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970368029320/19970368029320-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유기농엿기름추출액9.88%<유기농엿기름21.05%/유기농겉보리100%/국산/고형분14.6%>,유기농설탕6.76%,유기농쌀(국산)1.04%,유기농바나나농축과즙(페루산)0.5%,천연착향료(천연바나나향),생강농축액(0.007%(생강:국산/고형분60%이상),비타민C)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970368029320/19970368029320-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=125ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970368029320/19970368029320-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농엿기름추출액",
+        "amount": "9.88%",
+        "sub_ingredients": [
+          {
+            "name": "유기농엿기름",
+            "amount": "21.05%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농겉보리",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "14.6%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "6.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국산",
+        "amount": "1.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농바나나농축과즙",
+        "origin": "페루산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "천연바나나향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강농축액",
+        "amount": "0.007%",
+        "sub_ingredients": [
+          {
+            "name": "생강",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:23:24"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 51.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 11.2,
+    "sodium_mg": 8.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "125ml",
+    "collected_at": "2026-03-03 21:23:24"
+  }
+}

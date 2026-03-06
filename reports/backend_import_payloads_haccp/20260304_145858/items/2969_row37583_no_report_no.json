@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "유기농콩으로만든생낫또",
+    "reportnum": "19910449004634"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910449004634/19910449004634-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910449004634/19910449004634-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910449004634/19910449004634-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농낫또90%{유기농대두100%{호주산)},낫또간장소스[유기농양조간장{유기농대두(미국산),유기농소맥(아르헨티나산)},유기농황설탕,유기농사과식초{유기농사과농축액(터키산)},정제소금(국산),다시마엑기스],겨자소스{겨자분(캐나다산),옥수수유(외국산),백설탕}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910449004634/19910449004634-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개 (50g) 총 3회 제공량(150g) \n1회 제공량당 함량:열량100kcal, 탄수화물7g (2%)·당류1g, 단백질8g (15%), 지방4.6g (9%)·포화지방0.8g (5%)·트랜스지방0g (0%), 콜레스테롤없음, 나트륨180mg (9%)\n*()안의 수치는 1일 영양성분기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910449004634/19910449004634-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농낫또",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "유기농대두",
+            "origin": "호주산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "낫또간장소스",
+        "sub_ingredients": [
+          {
+            "name": "유기농양조간장",
+            "sub_ingredients": [
+              {
+                "name": "유기농대두",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유기농소맥",
+                "origin": "아르헨티나산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유기농황설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농사과식초",
+            "sub_ingredients": [
+              {
+                "name": "유기농사과농축액",
+                "origin": "터키산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마엑기스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "겨자소스",
+        "sub_ingredients": [
+          {
+            "name": "겨자분",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:43:32"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "protein_g": 8.0,
+    "fat_g": 4.6,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 180.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개 (50g)",
+    "collected_at": "2026-03-03 18:43:32"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "안심부산어묵 봉",
+    "reportnum": "19870275001475"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870275001475/19870275001475-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870275001475/19870275001475-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870275001475/19870275001475-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육 68.08%(중국산,베트남산/어육,설탕,D-소비톨,산도조절제), 소맥전분(외국산:독일,리투아니아,벨기에 등), 양파(중국산),당근,정제소금,대파,혼합제제[초산나트륨,과실발효액,제일인산나트륨,글리세린지방산에스테르],분리대두단백,L-글루탐산나트륨(향미증진제),쌀눈유,백설탕,소스류,D-자일로오스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870275001475/19870275001475-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=240g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870275001475/19870275001475-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "중국산, 베트남산",
+        "amount": "68.08%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "외국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "초산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과실발효액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제일인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀눈유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-자일로오스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:33:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 170.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 9.0,
+    "fat_g": 6.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 650.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "240g",
+    "collected_at": "2026-03-03 16:33:17"
+  }
+}

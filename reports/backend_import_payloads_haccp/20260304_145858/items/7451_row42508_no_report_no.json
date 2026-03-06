@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "트로피카나스파클링포도",
+    "reportnum": "19930242053226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053226/19930242053226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053226/19930242053226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053226/19930242053226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,포도청징농축액,이산화탄소,구연산,합성착향료(포도향),포도과피추출색소,구연산삼나트륨,색소혼합제제(홍화황색소,락색소,치자청색소),효소처리스테비아,효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053226/19930242053226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1500ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053226/19930242053226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도청징농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도과피추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "색소혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:26:30"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 12.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1500ml",
+    "collected_at": "2026-03-03 19:26:30"
+  }
+}

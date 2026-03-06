@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "벨기에 초콜렛이 든 1등급 우유",
+    "reportnum": "2002044800239"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800239/2002044800239-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800239/2002044800239-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800239/2002044800239-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유(국산)30%(세균수기준),정제수,액상과당,탈지분유(국산),유크림,백설탕,코코아분말(스페인산)0.6%,쥬빌리(벨리지안다크초콜릿)(초콜릿:벨기에산)0.4%,코코아분말(네덜란드산)0.3%,칼리바우트초콜렛(벨기에산)0.12%,덱스트린,카라기난,셀룰로오스혼합제제(결정셀룰로오스,CMC),수크랄로스(합성감미료),정제소금,합성착향료(초콜렛향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800239/2002044800239-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1컵(200ml) 총약2회 제공량(300ml) ( )안의 수치는 1일 영양소 기준치에 대한 비율임 1회 제공량당 함량:열량 120kcal 탄수화물 17g(5%),당류 15g, 단백질 5g (9%),지방 3.6g (7%),포화지방 2.3g (15%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 70mg (4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800239/2002044800239-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "스페인산, 네덜란드산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쥬빌리",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "초콜릿",
+            "origin": "벨기에산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벨리지안다크초콜릿",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칼리바우트초콜렛",
+        "origin": "벨기에산",
+        "amount": "0.12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로오스혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "결정셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초콜렛향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:27"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 15.0,
+    "protein_g": 5.0,
+    "fat_g": 3.6,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 70.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 1컵(200ml)",
+    "collected_at": "2026-03-04 03:39:27"
+  }
+}

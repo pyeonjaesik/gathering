@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "겨울나기",
+    "reportnum": "19960571018509"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018509/19960571018509-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018509/19960571018509-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018509/19960571018509-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,벌꿀1%(국산),배농축과즙(배과즙3%,국산),생강추출액0.33%(고형분65%이상,국산),겨울차혼합추출물0.15%(고형분70%이상),말토덱스트린,구연산,젤란검,효소처리스테비아,카라멜색소,합성착향료(생강향,모과향),겨울차혼합추출액배합비율:모과35,오미자30%,도라지27%,대추8%/국산100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018509/19960571018509-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(180ml)/열량 115kcal, 탄수화물 29g(9%), 당류 28g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 0mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018509/19960571018509-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "배과즙",
+            "origin": "국산",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강추출액",
+        "origin": "국산",
+        "amount": "0.33%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "겨울차혼합추출물",
+        "amount": "0.15%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "70%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "생강향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "모과향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "겨울차혼합추출액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "모과",
+            "amount": "35",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오미자",
+            "amount": "30%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "도라지",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대추",
+            "amount": "8%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:21:02"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 29.0,
+    "sugar_g": 28.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(180ml)",
+    "collected_at": "2026-03-03 21:21:02"
+  }
+}

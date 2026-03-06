@@ -1,0 +1,197 @@
+{
+  "product": {
+    "name_ko": "고칼슘치즈",
+    "reportnum": "2007050200243"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200243/2007050200243-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200243/2007050200243-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200243/2007050200243-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈80%[체다치즈75%(수입산:원유,유산균,식염,우유응고효소),크림치즈25%(호주산:원유,유크림,식염,로커스트콩검,구아검,유산균배양액)],정제수,우유칼슘·IS6.121%[우유칼슘98%(독일산),젖산칼슘2%(벨기에산)],산도조절제,가공버터(수입산),유청분말(우유),혼합제제0.05%(dl-α-토코페릴아세테이트,말토덱스트린,변성전분,이산화규소),구연산철암모늄0.041%,혼합제제0.014%(비타민A팔미테이트식물성유지,dl-α-토코페롤,비타민D3)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200243/2007050200243-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1매(18g),총15회제공량 (270g) 1회제공량당 햠량:  열량 60kcal 탄수화물 0g(0%),당류 0g, 단백질 3g (5%),지방 5g (10%),포화지방 3.1g (21%),트랜스지방 0g,콜레스테롤 12mg(4%),나트륨 190mg (10%),비타민A 63㎍RE(9%),비타민D 0.9㎍(18%),비타민E 0.7mgα-TE(6%),칼슘360mg(51%),철분1.08mg(9%)  *영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200243/2007050200243-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "amount": "80%",
+        "sub_ingredients": [
+          {
+            "name": "체다치즈",
+            "origin": "수입산",
+            "amount": "75%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "크림치즈",
+            "origin": "호주산",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유크림",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유칼슘·IS",
+        "amount": "6.121%",
+        "sub_ingredients": [
+          {
+            "name": "우유칼슘",
+            "origin": "독일산",
+            "amount": "98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "origin": "벨기에산",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "dl-α-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A팔미테이트식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산철암모늄",
+        "amount": "0.041%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:10"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 3.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 12.0,
+    "sodium_mg": 190.0,
+    "calcium_mg": 360.0,
+    "iron_mg": 1.08,
+    "basis_amount": 18.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1매(18g)",
+    "collected_at": "2026-03-04 04:07:10"
+  }
+}

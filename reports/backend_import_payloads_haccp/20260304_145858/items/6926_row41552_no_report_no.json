@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "김도둑녹차광천김",
+    "reportnum": "2016048753632"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016048753632/2016048753632-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016048753632/2016048753632-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016048753632/2016048753632-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김65%(국산),옥배유29.5%(외국산:러시아,미국,브라질),참기름2.5%(참깨/인도산),식염2.4%(천일염/국산),녹차가루0.6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016048753632/2016048753632-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 64g 2g당 13kcal\n<2g당 1일 영양성분 기준치에 대한 비율>\n나트륨21.0mg 1.1%, 탄수화물0.3g 0.1%, 당류0g 0%, 지방1.1g 2.0%, 트랜스지방0g, 포화지방0.1g 0.6%, 콜레스테롤0mg 0%, 단백질0.4g 0.7%\n1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016048753632/2016048753632-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "외국산, 러시아산, 미국산, 브라질산",
+        "amount": "29.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "인도산",
+        "amount": "2.5%",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "origin": "인도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "origin": "국산",
+        "amount": "2.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차가루",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:35"
+  },
+  "nutrition": {
+    "kcal": 13.0,
+    "sodium_mg": 21.0,
+    "carbohydrate_g": 0.3,
+    "sugar_g": 0.0,
+    "fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.4,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "2g당",
+    "collected_at": "2026-03-04 04:47:35"
+  }
+}

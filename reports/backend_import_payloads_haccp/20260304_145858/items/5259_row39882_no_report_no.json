@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "빅파이파인애플",
+    "reportnum": "2006024237683"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237683/2006024237683-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237683/2006024237683-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237683/2006024237683-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀,미국산),파인애플잼[물엿,백설탕,파인애플(태국산),액상과당,레몬농축액(이스라엘산)],백설탕,가공유지,쇼트닝,혼합분유(우유),코코아분말,비비분말,산도조절제,맥아분말,코코아매스,정제소금,유당,물엿,레시틴(대두),유화제,합성착향료(밀크향,바닐라향,크럼밀크향,바닐린),효소제제 ●특정성분:파인애플잼23%[파인애플(태국산)2.7%,파인애플농축액(미국산)0.1%],코코아가공품2.5%(코코아분말,2.1%,코코아매스0.4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237683/2006024237683-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량2봉지(36g) 총3회제공량(6봉지,108g), 1회제공량당함량 ※%영양소기준치, 열량170kcal, 탄수화물23g 7%, 당류13g, 단백질2g 3%, 지방8g 16%, 포화지방5.6g 37%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨90mg 5% ※%영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006024237683/2006024237683-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플잼",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파인애플",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬농축액",
+            "origin": "이스라엘산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비비분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크럼밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:16"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 13.0,
+    "protein_g": 2.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 5.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 36.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량2봉지(36g)",
+    "collected_at": "2026-03-04 03:57:16"
+  }
+}

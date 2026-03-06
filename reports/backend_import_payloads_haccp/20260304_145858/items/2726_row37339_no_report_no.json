@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "영양잡곡죽",
+    "reportnum": "19880589063208"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063208/19880589063208-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063208/19880589063208-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063208/19880589063208-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "죽-정제수,쌀9.14%(찹쌀80%,멥쌀20%,국산),찰보리2.12%(국산),흑미0.65%(국산),찰현미0.49%(국산),수수0.33%(국산),율무0.33%(국산),녹두0.33%(국산),당근(국산),조개야채엑기스,인삼1.24%(국산),참치뼈엑기스(대두,밀),사골농축액DW,대두,표고버섯,정제소금,L-글루타민산나트륨(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063208/19880589063208-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1포장(285g)/총1회 제공량(285g) 1회 제공량당 함량 :열량 150kcal,탄수화물31g (9%), 당류0g, 단백질 5g (9%), 지방0.6g (1%), 포화지방0g (0%), 트랜스지방 0g, 콜레스테롤0mg (0%), 나트륨 360mg (18%), *( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063208/19880589063208-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "죽",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "9.14%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "멥쌀",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "찰보리",
+            "origin": "국산",
+            "amount": "2.12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "amount": "0.65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰현미",
+            "origin": "국산",
+            "amount": "0.49%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "origin": "국산",
+            "amount": "0.33%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "율무",
+            "origin": "국산",
+            "amount": "0.33%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹두",
+            "origin": "국산",
+            "amount": "0.33%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개야채엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인삼",
+            "origin": "국산",
+            "amount": "1.24%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치뼈엑기스",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사골농축액DW",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:40:29"
+  },
+  "nutrition": {
+    "kcal": 150.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 360.0,
+    "basis_amount": 285.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1포장(285g)",
+    "collected_at": "2026-03-03 17:40:29"
+  }
+}

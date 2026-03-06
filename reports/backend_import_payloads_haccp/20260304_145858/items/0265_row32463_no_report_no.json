@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "칵테일모히또",
+    "reportnum": "19710372001204"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001204/19710372001204-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001204/19710372001204-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001204/19710372001204-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,포도당,자일로스설탕(백설탕,자일로오스,난소화성말토덱스트린),애플민트혼합농축분말[추출고형분20%,{페퍼민트(국산)80%,애플민트(국산)20%}]4%,구연산,자일리톨,레몬라임농축분말[레몬농축액(65Brix,이스라엘산)20%,라임농축액(65Brix,이탈리아산)20%]2%,합성착향료(모히또향),구연산삼나트륨,비타민C혼합제제(스피룰리나색소,홍화황색소,구연산삼나트륨,덱스트린),아스파탐(합성감미료,페니알라닌함유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001204/19710372001204-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(14g)/총20회제공량(290g) 열량55kcal, 탄수화물13g(4%), 당류11g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨95mg(5%), 비타민C146mg(146%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001204/19710372001204-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로스설탕",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자일로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난소화성말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "애플민트혼합농축분말",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "추출고형분",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "페퍼민트",
+                "origin": "국산",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "애플민트",
+                "origin": "국산",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬라임농축분말",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "레몬농축액",
+            "origin": "이스라엘산",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "라임농축액",
+            "origin": "이탈리아산",
+            "amount": "20%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "모히또향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "스피룰리나색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페니알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:23:48"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 95.0,
+    "basis_amount": 14.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1포(14g)",
+    "collected_at": "2026-03-03 13:23:48"
+  }
+}

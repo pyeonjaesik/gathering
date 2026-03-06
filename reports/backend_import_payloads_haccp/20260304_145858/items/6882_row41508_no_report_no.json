@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "생생피클",
+    "reportnum": "201603080178"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603080178/201603080178-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603080178/201603080178-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603080178/201603080178-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오이43.75%(국산100%),액상과당,정제수,주정식초[주정(타피오카/수입산),발효영양원],올스파이스,소금,소암모늄명반,신나몬,염화칼슘,폴리소르베이트80,심황색소,삭카린나트륨제제[삭카린나트륨(합성감미료),결정포도당,정제소금]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603080178/201603080178-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 80g / 70kcal 1회섭취참고량 나트륨 4mg(0.2%), 탄수화물17g(5%), 당류15g, 지방0g(0%), 트랜스지방0g, 포화지방0g(0%), 콜레스테롤0mg, 단백질0g(0%) 1일 영양성분 기준치에 대한 비율(%)은 2.000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603080178/201603080178-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오이",
+        "origin": "국산",
+        "amount": "43.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "타피오카",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올스파이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소암모늄명반",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "신나몬",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리소르베이트80",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삭카린나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "삭카린나트륨",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:45"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "sodium_mg": 4.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 15.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 80.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 80g",
+    "collected_at": "2026-03-04 04:46:45"
+  }
+}

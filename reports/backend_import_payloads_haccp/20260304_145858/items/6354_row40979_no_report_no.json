@@ -1,0 +1,101 @@
+{
+  "product": {
+    "name_ko": "우리아이착한감자",
+    "reportnum": "2011022182859"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182859/2011022182859-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182859/2011022182859-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182859/2011022182859-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우리밀(밀:국내산)38.05%,감자(무농약 국내산)21.74%,고구마전분(국내산)21.74%,고올레산해바라기유(스페인산)10.87%,알파미분(쌀:국내산)3.26%,백설탕3.24%,정제소금(국내산)1.1% 합계100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182859/2011022182859-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉지(30g) 총 약 2회 제공량(55g)\n<1회 제공량 당 함량 *%영양소 기준치>\n열량145kcal, 탄수화물22g 7%, 당류2g, 단백질2g 3%, 지방5.6g 11%, 포화지방0.4g 3%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨190mg 10%\n* % 영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182859/2011022182859-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀",
+        "origin": "국내산",
+        "amount": "38.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "amount": "21.74%",
+        "sub_ingredients": [
+          {
+            "name": "무농약 국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고구마전분",
+        "origin": "국내산",
+        "amount": "21.74%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고올레산해바라기유",
+        "origin": "스페인산",
+        "amount": "10.87%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파미분",
+        "origin": "국내산",
+        "amount": "3.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "amount": "3.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "amount": "1.1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:15"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 2.0,
+    "protein_g": 2.0,
+    "fat_g": 5.6,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 190.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉지(30g)",
+    "collected_at": "2026-03-04 04:30:15"
+  }
+}

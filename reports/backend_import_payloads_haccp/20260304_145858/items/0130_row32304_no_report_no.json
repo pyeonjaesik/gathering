@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "매일맛있는찰맛고추장",
+    "reportnum": "1955050900157"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1955/1955050900157/1955050900157-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1955/1955050900157/1955050900157-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1955/1955050900157/1955050900157-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물엿, 소맥분(밀:미국산, 호주산), 혼합양념(중국산)[고춧가루6.2%(고추:중국산), 정제소금, 마늘, 양파], 정제수, 밀쌀, 정제소금, 알파소맥분, L-글루타민산나트륨(향미증진제), 다시마엑기스, 솔빈산칼륨(합성보존료), 종국, 향미증진제, 마늘농축액, 산탄검, 효소처리스테비아, 젖산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1955/1955050900157/1955050900157-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1955/1955050900157/1955050900157-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "amount": "6.2%",
+            "sub_ingredients": [
+              {
+                "name": "고추",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파소맥분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:13:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 100.0,
+    "carbohydrate_g": 20.4,
+    "protein_g": 2.4,
+    "fat_g": 0.8,
+    "sugar_g": 13.6,
+    "sodium_mg": 880.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-03 13:13:00"
+  }
+}

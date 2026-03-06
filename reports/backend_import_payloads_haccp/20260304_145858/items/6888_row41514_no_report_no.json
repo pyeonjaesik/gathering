@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "요거팜 무농약 쌀로 만든 스낵 플레인",
+    "reportnum": "2016036836412"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836412/2016036836412-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836412/2016036836412-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836412/2016036836412-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무농약현미(국내산)56%, 프로엠화이트[유기농설탕, 코코아버터(싱가포르산), 혼합탈지분유(탈지분유, 유청분말/네덜란드산/우유), 유당(미국산/우유), 레시틴(브라질산/대두/유화제)], 요구르트분말(프랑스산/우유)6%, 코코아버터(벨기에산), 비타민C(영국산), 혼합유산균(비피도박테리움 비피덤, 비피도박테리움 브레베, 비피도박테리움 애니멀리스 에스피피, 락토바실러스 에시도필러스, 락토바실러스 플랜타럼)0.02%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836412/2016036836412-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 30g 140kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨15mg 1%, 탄수화물21g 6%, 당류7g 7%, 콜레스테롤0mg 0%, 지방4.9g 10%, 트랜스지방0g, 포화지방2.7g 18%, 단백질2g 4%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836412/2016036836412-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약현미",
+        "origin": "국내산",
+        "amount": "56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로엠화이트",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "origin": "브라질산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요구르트분말",
+        "origin": "프랑스산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아버터",
+        "origin": "벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "origin": "영국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합유산균",
+        "amount": "0.02%",
+        "sub_ingredients": [
+          {
+            "name": "비피도박테리움 비피덤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비피도박테리움 브레베",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비피도박테리움 애니멀리스 에스피피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 에시도필러스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 플랜타럼",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:01"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "sodium_mg": 15.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 7.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 4.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.7,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 30g",
+    "collected_at": "2026-03-04 04:47:01"
+  }
+}

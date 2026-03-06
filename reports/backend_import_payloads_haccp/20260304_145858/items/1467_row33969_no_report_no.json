@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "허니오트밀",
+    "reportnum": "1983036001613"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983036001613/1983036001613-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983036001613/1983036001613-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983036001613/1983036001613-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "혼합귀리분41%(호주산:귀리분80%,설탕,밀브랜(밀),정제소금,중탄산나트륨),설탕,옥수수20%(호주산)벌꿀11%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983036001613/1983036001613-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=380g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983036001613/1983036001613-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "혼합귀리분",
+        "origin": "호주산",
+        "amount": "41%",
+        "sub_ingredients": [
+          {
+            "name": "귀리분",
+            "origin": "호주산",
+            "amount": "80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀브랜",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중탄산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "호주산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국내산",
+        "amount": "11%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:25:15"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 397.0,
+    "carbohydrate_g": 84.0,
+    "protein_g": 6.0,
+    "fat_g": 5.0,
+    "sugar_g": 42.0,
+    "sodium_mg": 580.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "380g",
+    "collected_at": "2026-03-03 15:25:15"
+  }
+}

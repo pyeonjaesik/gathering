@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name_ko": "요플레 플레인 화이트",
+    "reportnum": "19980262029215"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029215/19980262029215-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029215/19980262029215-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029215/19980262029215-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유98.5%(국산),혼합제제(변성전분,덱스트린),유산균주(유산균2500억이상/450g)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029215/19980262029215-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=액상 150ml, 호상 100ml(g) | foodSize=320g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029215/19980262029215-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "98.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균주",
+        "amount": "2500억이상, 450g",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:36:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 68.0,
+    "carbohydrate_g": 6.0,
+    "protein_g": 3.0,
+    "fat_g": 3.5,
+    "sugar_g": 3.25,
+    "sodium_mg": 45.0,
+    "calcium_mg": 100.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "액상 150ml, 호상 100ml(g)",
+    "total_content": "320g",
+    "collected_at": "2026-03-03 21:36:58"
+  }
+}

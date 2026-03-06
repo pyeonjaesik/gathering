@@ -1,0 +1,165 @@
+{
+  "product": {
+    "name_ko": "크루통",
+    "reportnum": "19910227021482"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021482/19910227021482-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021482/19910227021482-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021482/19910227021482-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀/외국산),백설탕,쇼트닝[식물성유지(팜유/말레이시아산,팜올레인유/말레이시아산)],마가린,액상과당,유청분말(우유),효모,정제염,마늘,혼합제제[밀가루,중점제,신탄검],혼합제제[산도조절제,분말포도당,유화제,영양강화제],곡류가공품(대두),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021482/19910227021482-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/40봉(25g) 총 40회 제공량(1000g)\n<1회 제공량당함량 *%영양소기준치>\n열량260kcal, 탄수화물46g 14%, 당류6g -, 단백질6g 10%, 지방5g 10%, 포화지방2.7g 18%, 트랜스지방0g -, 콜레스테롤0mg 0%, 나트륨370mg 19%\n*%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021482/19910227021482-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중점제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "신탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:31:58"
+  },
+  "nutrition": {
+    "kcal": 260.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 6.0,
+    "protein_g": 6.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 370.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/40봉(25g)",
+    "collected_at": "2026-03-03 18:31:58"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "머핀믹스",
+    "reportnum": "1996008035919"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996008035919/1996008035919-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996008035919/1996008035919-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996008035919/1996008035919-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),백설탕,식물성쇼트닝{팜유(말레이시아산),토코페롤(혼합형)},치즈분말,정제소금,유청분말,포도당,변성전분,산도조절제,카르복시메틸셀룰로오스나트륨,곡류가공품,잔탄검,혼합제제(전분,유화제),혼합제제(포도당,바닐라향베이스1/2/3)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996008035919/1996008035919-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996008035919/1996008035919-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카르복시메틸셀룰로오스나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향베이스",
+            "amount": "1, 2, 3",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:42:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 390.0,
+    "carbohydrate_g": 85.0,
+    "protein_g": 4.0,
+    "fat_g": 3.7,
+    "sugar_g": 48.0,
+    "sodium_mg": 560.0,
+    "cholesterol_mg": 1.23,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.02,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "500g",
+    "collected_at": "2026-03-03 20:42:13"
+  }
+}

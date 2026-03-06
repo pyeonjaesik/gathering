@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "소프트 빈 와플",
+    "reportnum": "19910461077226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077226/19910461077226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077226/19910461077226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077226/19910461077226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루 45.84%(미국산),국산버터23.33%,백설탕21.72%,유정란7.24%(국산),당밀시럼1.21%,정제염0.54%,렌틸콩볶음분말0.12% (합계 100%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077226/19910461077226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량400kcal, 탄수화물52g, 당류23g, 단백질6g, 지방19g, 포화지방11g, 트렌스지방0.6g, 콜레스테롤75mg, 나트륨135mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077226/19910461077226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "amount": "45.84%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국산버터",
+        "amount": "23.33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "amount": "21.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "7.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당밀시럼",
+        "amount": "1.21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "렌틸콩볶음분말",
+        "amount": "0.12%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:47:31"
+  },
+  "nutrition": {
+    "kcal": 400.0,
+    "carbohydrate_g": 52.0,
+    "sugar_g": 23.0,
+    "protein_g": 6.0,
+    "fat_g": 19.0,
+    "saturated_fat_g": 11.0,
+    "cholesterol_mg": 75.0,
+    "sodium_mg": 135.0,
+    "collected_at": "2026-03-03 18:47:31"
+  }
+}

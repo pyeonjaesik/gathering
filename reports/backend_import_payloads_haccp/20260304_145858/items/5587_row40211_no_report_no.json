@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "오븐에 구워서 바삭하고 고소한 허니시나몬 호두강정",
+    "reportnum": "2007046401573"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401573/2007046401573-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401573/2007046401573-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401573/2007046401573-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "호두74.18%(미국산),유기농마스코바도설탕23.44%,아카시아꿀1%(국산),버터{유크림(원유:국산)},계피가루0.25%(베트남산),황토알카리소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401573/2007046401573-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 35g 220kcal\n나트륨20mg 1%, 탄수화물10g 3%, 당류5g 5%, 지방18g 33%, 트랜스지방0g, 포화지방1.7g 11%, 콜레스테롤5mg 미만 1%, 단백질5g 9%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401573/2007046401573-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "74.18%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농마스코바도설탕",
+        "amount": "23.44%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아카시아꿀",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계피가루",
+        "origin": "베트남산",
+        "amount": "0.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황토알카리소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:59"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "sodium_mg": 20.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 5.0,
+    "fat_g": 18.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.7,
+    "protein_g": 5.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 35g",
+    "collected_at": "2026-03-04 04:05:59"
+  }
+}

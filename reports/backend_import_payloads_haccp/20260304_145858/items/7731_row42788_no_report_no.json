@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "카스타드데니쉬",
+    "reportnum": "199503380157453"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157453/199503380157453-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157453/199503380157453-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157453/199503380157453-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀(미국산,캐나다산)밀(미국산)슈크림(당류가공품)(물엿,백설탕,쇼트닝(쇠고기)말토올리고당,변성전분)마가린(가공유지(팜스테아린에스테르화유/말레이시아산,대두에스테르화유/외국산,채종경화에스테르화유)대두유/외국산,정제소금,유화제,레시틴)백설탕,마가린/인도네시이산 액상과당,효모,유청분말(우유)난황액(계란)정제소금,기타가공품,곡류가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157453/199503380157453-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157453/199503380157453-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "슈크림",
+            "sub_ingredients": [
+              {
+                "name": "당류가공품",
+                "sub_ingredients": [
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "쇼트닝",
+                    "sub_ingredients": [
+                      {
+                        "name": "쇠고기",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "말토올리고당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "마가린",
+            "origin": "인도네시아산",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜스테아린에스테르화유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "대두에스테르화유",
+                    "origin": "외국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "채종경화에스테르화유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "대두유",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황액",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:29:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 378.0,
+    "carbohydrate_g": 47.78,
+    "protein_g": 4.44,
+    "fat_g": 18.89,
+    "sugar_g": 14.44,
+    "sodium_mg": 267.0,
+    "cholesterol_mg": 11.11,
+    "saturated_fat_g": 8.89,
+    "trans_fat_g": 0.56,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 20:29:30"
+  }
+}

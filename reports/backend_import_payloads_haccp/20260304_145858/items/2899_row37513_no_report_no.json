@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "목캔디허브",
+    "reportnum": "1991020505616"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991020505616/1991020505616-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991020505616/1991020505616-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991020505616/1991020505616-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,물엿,합성착향료(페퍼민트향,허브향,허브캔디향,쿨링향,유칼립투스향),당류가공품,모과추출물,허브추출물,혼합식용유,유화제 .모과추출물0.3%(고형분5.3%),허브추출물0.26%(고형분57.4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991020505616/1991020505616-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2개 (7.6g) 총 약 36회 제공량(274g) 1회 제공량당 함량 %영양성분기준치 열량30kcal 탄수화물7g 2% 당류5g 단백질0g 0% 지방0g 0% 포화지방0g 0% 트랜스지방0g 콜레스테롤0mg 0% 나트륨0mg 0% *%영양성분기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991020505616/1991020505616-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "페퍼민트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허브향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허브캔디향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쿨링향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유칼립투스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "모과추출물",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "5.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "amount": "0.26%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "57.4%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:31:09"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 5.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 7.6,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2개 (7.6g)",
+    "collected_at": "2026-03-03 18:31:09"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "나쁜엄마 쌀과자바나나",
+    "reportnum": "20060378122101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122101/20060378122101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122101/20060378122101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122101/20060378122101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농현미(국산) 66.54%, 리뉴얼화이트[유기농설탕 62.4%, 코코아버터(싱가포르산), 혼합탈지분유(우유:네덜란드산), 레시틴] 19%, 귀리(캐나다산) 5.01%, 바나나분말(필리핀산) 6%, 요구르트분말(우유:프랑스산) 1%, 유기농설탕(브라질산) 2.2%, 단호박분말(국산) 0.2%, 곡류발효효소 유기농 원료함량 : 80.6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122101/20060378122101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=25g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122101/20060378122101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "66.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리뉴얼화이트",
+        "amount": "19%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "amount": "62.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "귀리",
+        "origin": "캐나다산",
+        "amount": "5.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "필리핀산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요구르트분말",
+        "origin": "프랑스산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "브라질산",
+        "amount": "2.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박분말",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류발효효소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 424.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 8.0,
+    "fat_g": 8.0,
+    "sugar_g": 24.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 5.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "25g",
+    "collected_at": "2026-03-04 03:57:49"
+  }
+}

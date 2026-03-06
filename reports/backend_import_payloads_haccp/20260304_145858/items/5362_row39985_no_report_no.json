@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "햇살비 고춧가루",
+    "reportnum": "2006044010534"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010534/2006044010534-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010534/2006044010534-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010534/2006044010534-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "건고추100%(원산지함량전면라벨표기)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010534/2006044010534-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 함량 / 1회 제공량(100g)\n<100g당 함량 %영양성분 기준치 : 1일 영양성분 기준치에 대한 비율>\n열량370kcal, 탄수화물53g 16.2%, 당류18g, 단백질12g 19.6%, 지방12g 24.6%, 포화지방2g 14.7%, 트랜스지방0g, 콜레스테롤3mg 1.0%, 나트륨50mg 2.5%\n※ 위의 영양성분 결과는 1인 제공량을 고려치 않은 시료 100g에 포함된 각 성분의 함량이며 분석결과는 모든제품이 동인한것은 아니며 시료에 따라 차이가 있을 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044010534/2006044010534-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건고추",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:02"
+  },
+  "nutrition": {
+    "kcal": 370.0,
+    "carbohydrate_g": 53.0,
+    "sugar_g": 18.0,
+    "protein_g": 12.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 3.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)",
+    "collected_at": "2026-03-04 03:59:02"
+  }
+}

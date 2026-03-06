@@ -1,0 +1,157 @@
+{
+  "product": {
+    "name_ko": "고소한옥수수모닝롤",
+    "reportnum": "199503380156781"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156781/199503380156781-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156781/199503380156781-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156781/199503380156781-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산)백설탕,쇼트닝/인도네시아산(팜유D-토코페롤(혼합형)유화제)전란액/중국산,알파콘(옥수수/외국산(호주,러시아,브라질등)효모,탈지분유,정제소금,유화제,혼합제제(식물성유지,유화제)아스코르빌파르미테이트(산화방지제)합성향료(옥수수향)곡류가공품,비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156781/199503380156781-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1개당 나트륨85MG 4% 탄수화물 14G 4% 당류 4G 4% 지방 2.4G 4% 트랜스지방 0.1G 포화지방 1.1G 7% 콜레스테롤 5MG 2%단백질 2G 4% 14개당 나트륨 1190MG 60% 탄수화물 196G 60% 당류 56G 56% 지방 34G 63% 트랜스지방 1.4G 포화지방 15G 100% 콜레스테롤 70MG 23%단백질 28G 51%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156781/199503380156781-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파콘",
+        "origin": "외국산, 호주산, 러시아산, 브라질산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스코르빌파르미테이트",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "옥수수향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:19:55"
+  },
+  "nutrition": {
+    "sodium_mg": 85.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 4.0,
+    "fat_g": 2.4,
+    "trans_fat_g": 0.1,
+    "saturated_fat_g": 1.1,
+    "cholesterol_mg": 5.0,
+    "protein_g": 2.0,
+    "basis_amount": 1.0,
+    "basis_unit": "개",
+    "basis_text": "1개당",
+    "collected_at": "2026-03-03 20:19:55"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "쥬시쿨 워터젤리 자두",
+    "reportnum": "198506140552563"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552563/198506140552563-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552563/198506140552563-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552563/198506140552563-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,유산균배양액시럽,자두농축과즙(자두과즙으로10%,미국산),구연산,덱스트리느혼합제제(덱스트린,카라기난,구연산삼나트륨,곤약분말,잔탄검),구연산삼나트륨,합성착향료(자두향),효소처리스테비아,우유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552563/198506140552563-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=130ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552563/198506140552563-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자두농축과즙",
+        "origin": "미국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "자두과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트리느혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곤약분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "자두향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:01:20"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 58.0,
+    "carbohydrate_g": 14.62,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 13.85,
+    "sodium_mg": 96.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "130ml",
+    "collected_at": "2026-03-03 16:01:20"
+  }
+}

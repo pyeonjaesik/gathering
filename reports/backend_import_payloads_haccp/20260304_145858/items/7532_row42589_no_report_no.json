@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "고향만두 宮",
+    "reportnum": "19930555148362"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148362/19930555148362-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148362/19930555148362-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148362/19930555148362-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기21.1%(국산),밀가루20.2%(미국,캐나다산,호주산),두부[대두(수입산),두부응고제],파,당면,양파,부추,양배추,대두단백,양조간장,마늘,난백액,향미유(씨즈닝오일씨),백설탕,정제소금,참기름,분리대두단백,향미증진제,복합조미식품(만두시즈닝분말),생강,후추,혼합제제(알부민,카라기난,구아검),감미유-s",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148362/19930555148362-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148362/19930555148362-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "21.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산, 호주산",
+        "amount": "20.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "두부응고제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유",
+        "sub_ingredients": [
+          {
+            "name": "씨즈닝오일씨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "만두시즈닝분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "알부민",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감미유",
+        "amount": "s",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:44:34"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 223.0,
+    "carbohydrate_g": 20.33,
+    "protein_g": 7.0,
+    "fat_g": 12.67,
+    "sugar_g": 3.0,
+    "sodium_mg": 380.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 4.33,
+    "trans_fat_g": 0.12,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 19:44:34"
+  }
+}

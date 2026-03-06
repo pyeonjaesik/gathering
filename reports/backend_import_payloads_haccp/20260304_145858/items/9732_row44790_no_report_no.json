@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "쿠키 스푼 멀티그레인",
+    "reportnum": "2016036417022"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417022/2016036417022-1.png",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417022/2016036417022-1.png"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417022/2016036417022-1.png"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루,통밀가루,갈색설탕,가공버터,아몬드분말,쇼트닝,옥수수가루,전란액,참깨,땅콩분태,해바라기씨앗,혼합가공전지분유,당류가공품,베이킹파우더,계피가루,식염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417022/2016036417022-1.png"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=240g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417022/2016036417022-1.png"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "통밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩분태",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기씨앗",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합가공전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:40"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 56.0,
+    "protein_g": 10.0,
+    "fat_g": 24.0,
+    "sugar_g": 18.0,
+    "sodium_mg": 160.0,
+    "cholesterol_mg": 30.0,
+    "saturated_fat_g": 9.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "240g",
+    "collected_at": "2026-03-04 04:46:40"
+  }
+}

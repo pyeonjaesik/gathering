@@ -1,0 +1,191 @@
+{
+  "product": {
+    "name_ko": "순수 부드러운 통살돈카스",
+    "reportnum": "2007040501439"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501439/2007040501439-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501439/2007040501439-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501439/2007040501439-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산)46.91%,정제수,빵가루20.99%[곡류가공품(밀:미국산,캐나다산),쇼트닝(식물성유지:말레이시아산),마가린(우유,대두),옥수수전분,재제소금],배터믹스[밀가루,전분,정제소금,백설탕,혼합제제(산도조절제)], 프리더스팅믹스, 두류가공품, 함수결정포도당, 마늘양파풍미분말, 말토덱스트린, 혼합제제(산도조절제), 정제염,카라기난,육풍미시즈닝,에리소르빈산나트륨(산화방지제),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501439/2007040501439-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "40g당 함량(*%영양소기준치)/50kcal,탄수화물6g,당류1g,단백질5g,지방1.2g, 포화지방0.3g,콜레스테롤 15mg,나트륨130mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501439/2007040501439-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "46.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "amount": "20.99%",
+        "sub_ingredients": [
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "미국산, 캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "재제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "배터믹스",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프리더스팅믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘양파풍미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육풍미시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리소르빈산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:49"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 1.0,
+    "protein_g": 5.0,
+    "fat_g": 1.2,
+    "saturated_fat_g": 0.3,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 130.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "40g당 함량",
+    "collected_at": "2026-03-04 04:04:49"
+  }
+}

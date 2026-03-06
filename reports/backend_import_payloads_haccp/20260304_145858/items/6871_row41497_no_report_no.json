@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "닭가슴살스테이크(매콤한맛)",
+    "reportnum": "2015050201338"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015050201338/2015050201338-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015050201338/2015050201338-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015050201338/2015050201338-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국내산닭가슴살70%,간배(국내산)5%,간양파(국내산)4%,고추맛유3%,생강분2%,설탕2%,바베큐시즈닝2%,빵가루2%,대두단백2%당근분2%,갈비맛숯불소스1%,간장1%,백후추1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015050201338/2015050201338-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 162.4kcal, 탄수화물 8.3g, 당류 3.2g, 단백질 18.8g,지방 6.0g,나트륨 328.9mg,포화지방 0.1g,콜레스테롤 54.7mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015050201338/2015050201338-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간배",
+        "origin": "국내산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간양파",
+        "origin": "국내산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛유",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바베큐시즈닝",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근분",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈비맛숯불소스",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백후추",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:29"
+  },
+  "nutrition": {
+    "kcal": 162.4,
+    "carbohydrate_g": 8.3,
+    "sugar_g": 3.2,
+    "protein_g": 18.8,
+    "fat_g": 6.0,
+    "sodium_mg": 328.9,
+    "saturated_fat_g": 0.1,
+    "cholesterol_mg": 54.7,
+    "collected_at": "2026-03-04 04:46:29"
+  }
+}

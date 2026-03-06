@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "매콤야채닭가슴살큐브",
+    "reportnum": "201502621287"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502621287/201502621287-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502621287/201502621287-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502621287/201502621287-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)67.64%, 단호박(중국산)7.27%, 빵가루{밀(외국산), 포도당, 효모, 식염(국내산), 이스트후드}, 전분, 아임닭소스, 에스비시즈닝, 브로콜리(국내산)1.94%, 당근(국내산)1.75%, 양파(국내산)1.45%, 아몬드, 마늘(국내산)0.96%, 청양고추(국내산)0.94%, 풋고추(국내산)0.76%, 생강(국내산)0.24%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502621287/201502621287-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 열량 141kcal, 단백질 16g, 탄수화물 12.3g, 지방 3.1g, 나트륨 283mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502621287/201502621287-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "67.64%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박",
+        "origin": "중국산",
+        "amount": "7.27%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트후드",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아임닭소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스비시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "국내산",
+        "amount": "1.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국내산",
+        "amount": "1.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "amount": "1.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국내산",
+        "amount": "0.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국내산",
+        "amount": "0.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "풋고추",
+        "origin": "국내산",
+        "amount": "0.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국내산",
+        "amount": "0.24%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:22"
+  },
+  "nutrition": {
+    "kcal": 141.0,
+    "protein_g": 16.0,
+    "carbohydrate_g": 12.3,
+    "fat_g": 3.1,
+    "sodium_mg": 283.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 04:44:22"
+  }
+}

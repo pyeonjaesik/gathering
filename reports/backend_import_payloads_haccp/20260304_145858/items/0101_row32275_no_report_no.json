@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "크라운산도딸기",
+    "reportnum": "200602423766"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423766/200602423766-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423766/200602423766-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423766/200602423766-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀,미국산),화이트크림[백설탕,가공유지(말레이시아산),탈지분유(수입산),유청분말,유화제],백설탕,쇼트닝1(식물성부분경화유),분말결정포도당,쇼트닝2,혼합식용유(팜유50%,야자유50%),전란액(계란),덱스트린,가공전지분(우유),물엿,산도조절제,딸기분말(국산),정제소금,유화제(대두),크림치즈분말(덴마크산),혼합제제(효모,소맥분,합성착향료(딸기치즈케익향,밀크향,딸기향,바닐린),효소제 *특정성분:딸기분말0.6%,크림치즈분말0.1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423766/200602423766-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(1봉20g)함량:열량100kcal, 탄수화물14g(4%), 당류6g, 단백질1g(2%), 지방4.6g(9%), 포화지방2.9g(19%), 트랜스지방0mg, 콜레스테롤5mg미만(1%), 나트륨50mg(3%) *(%)영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423766/200602423766-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트크림",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝1",
+        "sub_ingredients": [
+          {
+            "name": "식물성부분경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기분말",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림치즈분말",
+        "origin": "덴마크산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기치즈케익향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:06:06"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 6.0,
+    "protein_g": 1.0,
+    "fat_g": 4.6,
+    "saturated_fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(1봉20g)",
+    "collected_at": "2026-03-03 13:06:06"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "오뚜기뿌셔뿌셔(바베큐맛)",
+    "reportnum": "19860309018141"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018141/19860309018141-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018141/19860309018141-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018141/19860309018141-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면:소맥분(밀:미국산,호주산), 팜유(말레이시아산), 고올레해바라기유(수입산), 알파옥수수분말, 정제소금, 면류첨가알칼리제(산도조절제), 난각분말, 백설탕, 효소처리스테비아, 비타민B2, 녹차풍미유 스프: 바베큐맛양념분말1호, 바베큐맛양념분말2호, 숯불시즈닝분말, 백설탕, 정제소금, 간장분말, 식물성유지, 효소처리스테비아, 혼합제제(영양강화제) [소맥분(밀), 탈지대두(대두), 유당(우유), 난각분말(계란), 돼지고기]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018141/19860309018141-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=120g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018141/19860309018141-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레해바라기유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알파옥수수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난각분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차풍미유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프",
+        "sub_ingredients": [
+          {
+            "name": "바베큐맛양념분말1호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바베큐맛양념분말2호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숯불시즈닝분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "탈지대두",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유당",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "난각분말",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "돼지고기",
+                "sub_ingredients": []
+              },
+              {
+                "name": "영양강화제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:02:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 456.0,
+    "carbohydrate_g": 67.78,
+    "protein_g": 8.89,
+    "fat_g": 16.67,
+    "sugar_g": 4.44,
+    "sodium_mg": 1056.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 6.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "120g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 16:02:45"
+  }
+}

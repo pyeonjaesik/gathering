@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "스위트 커피마카롱",
+    "reportnum": "200404490103199"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103199/200404490103199-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103199/200404490103199-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103199/200404490103199-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "기타설탕(설탕,전분),아몬드(미국),난백액(국산),화이트초콜릿[벨기에/설탕,코코아버터,전지분유,레시틴,천연향료(바닐라향)],유크림,설탕,버터,기타가공품,혼합제제(카라멜색소,프로필렌글리콜,글리세린),난백분,커피(외국산:베트남,페루,브라질 등)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103199/200404490103199-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용당 60g(30g*2개) 1개(30g)당 135kcal\n<1개 당 1일 영양성분 기준치에 대한 비율>\n나트륨21mg 1%, 탄수화물13g 4%, 당류18g 18%, 콜레스테롤13mg 4%, 지방8g 15%, 트랜스지방0g, 포화지방4.3g 29%, 단백질2g 4%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490103199/200404490103199-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트초콜릿",
+        "origin": "벨기에산",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피",
+        "origin": "외국산, 베트남산, 페루산, 브라질산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:38"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "sodium_mg": 21.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 18.0,
+    "cholesterol_mg": 13.0,
+    "fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.3,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1개(30g)당",
+    "collected_at": "2026-03-04 03:51:38"
+  }
+}

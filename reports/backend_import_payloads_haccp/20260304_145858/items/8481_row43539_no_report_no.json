@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "보리건빵",
+    "reportnum": "200204671276"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204671276/200204671276-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204671276/200204671276-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204671276/200204671276-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:미국산, 호주산),백설탕, 대백분(보리가루:국내산 3.20%), 가공분유(우유), 마아가린(대두),옥수수전분,포도당,식염\n탄산암모늄(결정팽창제),탄산나트륨(결정식품제조용제),바니린향(착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204671276/200204671276-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204671276/200204671276-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대백분",
+        "origin": "국내산",
+        "amount": "3.20%",
+        "sub_ingredients": [
+          {
+            "name": "보리가루",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마아가린",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산암모늄",
+        "sub_ingredients": [
+          {
+            "name": "결정팽창제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "결정식품제조용제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바니린향",
+        "sub_ingredients": [
+          {
+            "name": "착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 430.0,
+    "carbohydrate_g": 79.0,
+    "protein_g": 9.0,
+    "fat_g": 8.0,
+    "sugar_g": 17.0,
+    "sodium_mg": 295.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:42:46"
+  }
+}

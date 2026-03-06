@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "앤업카페 300 에스프레소 돌체라떼 텀블러",
+    "reportnum": "2008039512083"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512083/2008039512083-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512083/2008039512083-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512083/2008039512083-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산,세균수기준 1급A)30%,에스프레소 커피추출액DF1[고형분3.6%이상,원두-과테말라산25%,온두라스산25%,에티오피아산(시다모,예가체프25%)20%,콜롬비아산,브라질산]16.8%,정제수,정백당,유크림,가당연유1%,커피파우더(원두-콜롬비아산)0.5%,탈지분유,탄산칼륨,자당지방산에스테르,커피오일(천연착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512083/2008039512083-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(300ml) 총 1회 제공량 1회 제공량당 함량: 열량 200kcal,탄수화물 30g(9%),당류 30g,단백질 3g (5%),지방 8g (16%),포화지방 5.1g(34%),트랜스지방 0g,콜레스테롤 25mg(8%),나트륨 60mg (3%) *( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512083/2008039512083-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스프레소 커피추출액DF1",
+        "amount": "16.8%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "3.6%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원두",
+            "origin": "과테말라산 25%, 온두라스산 25%, 콜롬비아산, 브라질산",
+            "sub_ingredients": [
+              {
+                "name": "에티오피아",
+                "origin": "에티오피아산",
+                "sub_ingredients": [
+                  {
+                    "name": "시다모",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "예가체프",
+                    "amount": "25%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피파우더",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "원두",
+            "origin": "콜롬비아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피오일",
+        "sub_ingredients": [
+          {
+            "name": "천연착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:10:11"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 30.0,
+    "protein_g": 3.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 5.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 60.0,
+    "basis_amount": 300.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(300ml)",
+    "collected_at": "2026-03-04 04:10:11"
+  }
+}

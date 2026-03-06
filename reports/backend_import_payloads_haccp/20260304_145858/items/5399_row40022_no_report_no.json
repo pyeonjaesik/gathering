@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "베비언스 바른입맛 영양쌀죽 완도전복과 표고버섯",
+    "reportnum": "20060445219689"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219689/20060445219689-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219689/20060445219689-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219689/20060445219689-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "육수[고형분0.05%,무(국산)0.75%,대추(국산)0.5%,소고기(국산 한우)0.25%]77%,쌀(이천산)13%,전복(완도산)3%,표고버섯(국산)3%,감자(국산)2%,양파(국산)1%,당근(국산)1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219689/20060445219689-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 당 함량/총 1회 제공량 1팩(110g) *()안의 수치는 한국인 영양섭취기준(2010년, 1-2세)에 대한 비율임 열량 55kcal,탄수화물10g,당류1g미만,단백질1.4g(9%),지방0.8g,포화지방0g,트랜스지방0g,콜레스테롤5mg미만,나트륨20mg(3%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219689/20060445219689-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "육수",
+        "amount": "77%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "amount": "0.75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대추",
+            "origin": "국산",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소고기",
+            "amount": "0.25%",
+            "sub_ingredients": [
+              {
+                "name": "국산 한우",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "이천산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전복",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "완도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:54"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 1.4,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 110.0,
+    "basis_unit": "g",
+    "basis_text": "총 1회 제공량 1팩(110g)",
+    "collected_at": "2026-03-04 03:59:54"
+  }
+}

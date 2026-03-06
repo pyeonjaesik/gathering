@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "오리지널 닭가슴살",
+    "reportnum": "2014040501264"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014040501264/2014040501264-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014040501264/2014040501264-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014040501264/2014040501264-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)92.5%,오리지널염지제HD[덱스트린,KMU-2(타피오카변성전분/태국산),탄산수소나트륨,구연산나트륨(산화방지제),정제염(국내산),L-글루타민산나트륨(향미증진제),백후추분말(말레이시아산),L-아스코르빈산나트륨(산화방지제),비타민(50%)파우다(산화방지제)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014040501264/2014040501264-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 100g / 총 내용량 당 함량 열량 109.76kcal, 탄수화물 4.05g 1%, 당류 0g, 단백질 21g 38%, 지방 1.08g 2%, 트랜스지방 0g, 포화지방 0g 0%, 나트륨 598.78mg 30% ※%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014040501264/2014040501264-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "92.5%",
+        "sub_ingredients": [
+          {
+            "name": "오리지널염지제HD",
+            "sub_ingredients": [
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "KMU-2",
+                "origin": "태국산",
+                "sub_ingredients": [
+                  {
+                    "name": "타피오카변성전분",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "산화방지제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제염",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "백후추분말",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-아스코르빈산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "산화방지제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "비타민(50%)파우다",
+                "sub_ingredients": [
+                  {
+                    "name": "산화방지제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:05"
+  },
+  "nutrition": {
+    "kcal": 109.76,
+    "carbohydrate_g": 4.05,
+    "sugar_g": 0.0,
+    "protein_g": 21.0,
+    "fat_g": 1.08,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "sodium_mg": 598.78,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 100g",
+    "collected_at": "2026-03-04 04:42:05"
+  }
+}

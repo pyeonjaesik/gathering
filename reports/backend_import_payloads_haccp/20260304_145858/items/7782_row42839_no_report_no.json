@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "바삭부침가루",
+    "reportnum": "19960080359625"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359625/19960080359625-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359625/19960080359625-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359625/19960080359625-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:호주,미국산),소맥전분(외국산:독일,리투아니아,벨기에등),알파옥수수가루(옥수수:인도산),복합조미식품,건조감자분말(미국산)1.2%,백설탕,정제소금,베이킹파우더(산도조절제,전분,유화제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359625/19960080359625-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359625/19960080359625-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "외국산, 독일산, 리투아니아산, 벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파옥수수가루",
+        "origin": "인도산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조감자분말",
+        "origin": "미국산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:44:27"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 350.0,
+    "carbohydrate_g": 75.0,
+    "protein_g": 9.0,
+    "fat_g": 1.3,
+    "sugar_g": 4.0,
+    "sodium_mg": 910.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-03 20:44:27"
+  }
+}

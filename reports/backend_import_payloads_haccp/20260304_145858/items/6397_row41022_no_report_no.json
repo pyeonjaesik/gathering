@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "아기랑 소곤소곤 망고스무디",
+    "reportnum": "2011049019526"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049019526/2011049019526-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049019526/2011049019526-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049019526/2011049019526-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "망고퓨레(필리핀산)46%,정제수,4.3배눈이큰현미퓨레[거대배아현미(국산)40%],순우리쌀퓨레[백미(국산)40%],사과농축액(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049019526/2011049019526-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 85g 90kcal : 나트륨 40mg 6%, 탄수화물 20g, 당류 9g, 지방 0g, 트랜스지방 0g, 포화지방 0g, 콜레스테롤 0mg, 단백질 1g 7%, 1일 영양성분 기준치에 대한 비율(%)은 한국인 영양 섭취기준(2010년, 유아 1~2세) 기준에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049019526/2011049019526-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "망고퓨레",
+        "origin": "필리핀산",
+        "amount": "46%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "4.3배눈이큰현미퓨레",
+        "sub_ingredients": [
+          {
+            "name": "거대배아현미",
+            "origin": "국산",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "순우리쌀퓨레",
+        "sub_ingredients": [
+          {
+            "name": "백미",
+            "origin": "국산",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:13"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "sodium_mg": 40.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 9.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 85.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 85g",
+    "collected_at": "2026-03-04 04:32:13"
+  }
+}

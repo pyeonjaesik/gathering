@@ -1,0 +1,262 @@
+{
+  "product": {
+    "name_ko": "스페셜K 고구마 & 바나나",
+    "reportnum": "19830360016132"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016132/19830360016132-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016132/19830360016132-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016132/19830360016132-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "범프드라이스[쌀(수입산),설탕,정제소금(국내산),맥아엿,영양강화제],통밀분(밀,호주산,미국산),설탕,밀단백질,바나나칩[필리핀산,바나나,코코넛오일,설탕,합성착향료(바나나향)],쌀가루,밀가루,고구마혼합분말[고구마분말(고구마국내산)],폴리덱스트로스,옥수수가루,귀리,보리,가공소금,탄산칼슘,제삼인산칼슘,합성착향료(고구마향),혼합제제1[분말비타민A,비타민B1염산염,비타민B2,나이아신아미드,비타민B6염산염,비타민C,L-아스코르빈산나트륨,비타민D3,비타민E,엽산,산화아연,환원철],혼합제제2[d-토코페롤(혼합형,대두),글리세린,글리세린지방산에스테르]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016132/19830360016132-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=40g | foodSize=450g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830360016132/19830360016132-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "범프드라이스",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "통밀분",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀단백질",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나칩",
+        "origin": "필리핀산",
+        "sub_ingredients": [
+          {
+            "name": "바나나",
+            "origin": "필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바나나향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "고구마분말",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리덱스트로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "귀리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제삼인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "고구마향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "분말비타민A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-아스코르빈산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "환원철",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:25:52"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 390.0,
+    "carbohydrate_g": 72.5,
+    "protein_g": 15.0,
+    "fat_g": 6.0,
+    "sugar_g": 24.0,
+    "sodium_mg": 400.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.75,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "40g",
+    "total_content": "450g",
+    "collected_at": "2026-03-03 15:25:52"
+  }
+}

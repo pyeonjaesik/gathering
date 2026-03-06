@@ -1,0 +1,217 @@
+{
+  "product": {
+    "name_ko": "추억의매점 피자빵",
+    "reportnum": "20090501020123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090501020123/20090501020123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090501020123/20090501020123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090501020123/20090501020123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),마요네즈1[식물성유지(외국산/아르헨티나,미국,중국 등),난황액(계란/국산),발효식초,난백액,설탕],프레스햄[닭고기(국산),돼지고기(국산),옥수수전분,대두단백,밀가루],양파,마요네즈2[대두유,난황액,발효식초,설탕,간장베이스액],설탕,마가린,토마토케찹,전란액,효모,정제소금,혼합제제(밀가루,포도당,탄산칼슘,글리세린지방산에스테르,스테아릴젖산나트륨,비타민C,효소제),혼합제제(산도조절제,시클로덱스트린,유화제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090501020123/20090501020123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 400,[영양표시] : 나트륨460mg,탄수화물33g,당류8g,지방27g,트랜스지방0g,포화지방9.2g,콜레스테롤75mg,단백질6g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090501020123/20090501020123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마요네즈1",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "origin": "외국산, 아르헨티나산, 미국산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프레스햄",
+        "sub_ingredients": [
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마요네즈2",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장베이스액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케찹",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테아릴젖산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:58"
+  },
+  "nutrition": {
+    "kcal": 400.0,
+    "sodium_mg": 460.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 8.0,
+    "fat_g": 27.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 9.2,
+    "cholesterol_mg": 75.0,
+    "protein_g": 6.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:21:58"
+  }
+}

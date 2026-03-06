@@ -1,0 +1,71 @@
+{
+  "product": {
+    "name_ko": "순쌀 떡국 떡",
+    "reportnum": "201105180739"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201105180739/201105180739-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201105180739/201105180739-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201105180739/201105180739-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀96.5%(수입산), 주정, 정제염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201105180739/201105180739-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약1/3봉(150g) 총 약3회 제공량(500g)\n<1회 제공량 당 함량 %영양소 기준치>\n열량357kcal, 탄수화물80g 24%, 당류0g -, 식이섬유- -%, 단백질6g 11%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g -, 콜레스테롤0mg 0%, 나트륨596mg 30%\n* %영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201105180739/201105180739-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "수입산",
+        "amount": "96.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:29"
+  },
+  "nutrition": {
+    "kcal": 357.0,
+    "carbohydrate_g": 80.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 596.0,
+    "basis_amount": 150.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/3봉(150g)",
+    "collected_at": "2026-03-04 04:32:29"
+  }
+}

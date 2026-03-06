@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "치즈치킨까스",
+    "reportnum": "20100262092185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092185/20100262092185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092185/20100262092185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092185/20100262092185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(국내산/가슴살)50.03%,모짜렐라치즈25%(독일산/살균우유,배양액,소금,효소,염화칼슘),효동생빵가루[고소한생빵가루{밀가루(밀/외국산:미국,호주,캐나다산)},보드람생빵가루{밀가루(밀/미국산,캐나다산)}],정제수,치킨베타믹스-1(전분믹스3호,밀가루,향신료베이스G,정제소금,분리대두단백),폴리인산나트륨(산도조절제),하이겔믹스,정제소금,마늘분말,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092185/20100262092185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 600g 100g당 187kcal 100g당 1일 영양성분 기준치에 대한비율 나트륨 412mg 21%탄수화물 16g 5%, 당류 2g 2%,지방 6g 11%,트랜스지방 0g,포화지방 3.5g 24%,콜레스테롤 20mg 7%,단백질 17g 31% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092185/20100262092185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "50.03%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "모짜렐라치즈",
+        "origin": "독일산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "살균우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배양액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효동생빵가루",
+        "sub_ingredients": [
+          {
+            "name": "고소한생빵가루",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "외국산",
+                "amount": "미국, 호주, 캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "보드람생빵가루",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨베타믹스-1",
+        "sub_ingredients": [
+          {
+            "name": "전분믹스3호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료베이스G",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분리대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리인산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하이겔믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:04"
+  },
+  "nutrition": {
+    "kcal": 187.0,
+    "sodium_mg": 412.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 2.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.5,
+    "cholesterol_mg": 20.0,
+    "protein_g": 17.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:23:04"
+  }
+}

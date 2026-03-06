@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "연두부",
+    "reportnum": "201004660704"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004660704/201004660704-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004660704/201004660704-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004660704/201004660704-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두100%(수입산),글루코노델타릭톤,혼합제제(식물성유지,글리세린,지방산에스테르,레시틴,탄산마그네슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004660704/201004660704-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=250g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004660704/201004660704-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "수입산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루코노델타릭톤",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 45.0,
+    "carbohydrate_g": 4.0,
+    "protein_g": 5.0,
+    "fat_g": 1.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "250g",
+    "collected_at": "2026-03-04 04:27:07"
+  }
+}

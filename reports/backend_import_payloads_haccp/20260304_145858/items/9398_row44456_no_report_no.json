@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "순창궁 새콤상큼 초고추장",
+    "reportnum": "2010049904797"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904797/2010049904797-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904797/2010049904797-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904797/2010049904797-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장83.6%[고과당,고추양념(중국산/고춧가루6.4%),쌀(국산),호화쌀가루(국산),천일염(국산),메주가루(대두),종국],설탕,양조식초5.0%[정제수,주정,맥아(국산),포도당],정제수,구연산,참깨,마늘유,레몬농축액,청매실농축액,합성착향료(레몬향),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904797/2010049904797-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=320g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904797/2010049904797-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "83.6%",
+        "sub_ingredients": [
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "고춧가루",
+                "amount": "6.4%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호화쌀가루",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메주가루",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "amount": "5.0%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청매실농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:28:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 210.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 4.0,
+    "fat_g": 1.2,
+    "sugar_g": 35.0,
+    "sodium_mg": 1692.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "320g",
+    "collected_at": "2026-03-04 04:28:53"
+  }
+}

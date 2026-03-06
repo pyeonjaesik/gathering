@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "리얼크랩바 매콤고추",
+    "reportnum": "20010467161103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010467161103/20010467161103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010467161103/20010467161103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010467161103/20010467161103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육50.07%(외국산:미국,베트남,인도네시아/어육,D-소비톨,정백당,산도조절제),소맥전분(밀/독일산),돈지방(국내산),양배추,붉은대게살3.34%(국내산),당근,대파,양파,청양고추2.00%(국내산),청양고추추출물분말1.34%(국내산),정제소금,대두유,정백당,L-글루타민산나트륨(향미증진제),자일로오스,소브산칼륨(보존료),혼합제제(폴리인산나트륨,피로인산나트륨,메타인산나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010467161103/20010467161103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010467161103/20010467161103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "외국산, 미국산, 베트남산, 인도네시아산",
+        "amount": "50.07%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돈지방",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "붉은대게살",
+        "origin": "국내산",
+        "amount": "3.34%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국내산",
+        "amount": "2.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추추출물분말",
+        "origin": "국내산",
+        "amount": "1.34%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소브산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 189.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 8.89,
+    "fat_g": 8.22,
+    "sugar_g": 4.44,
+    "sodium_mg": 578.0,
+    "cholesterol_mg": 22.22,
+    "saturated_fat_g": 2.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "90g",
+    "collected_at": "2026-03-04 03:33:25"
+  }
+}

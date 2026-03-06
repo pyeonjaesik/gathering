@@ -1,0 +1,189 @@
+{
+  "product": {
+    "name_ko": "바나나보이 슈팅바",
+    "reportnum": "19980575001188"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980575001188/19980575001188-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980575001188/19980575001188-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980575001188/19980575001188-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,혼합분유[외국산(네덜란드,아일랜드,독일):탈지분유,유청],데어리스프레드[외국산(뉴질랜드,독일,호주)],물엿,설탕,탄산캔디딸기향[탄산캔디(터키산),식물성크림{유당(프랑스산),야자경화유(외국산:필리핀,인도네이사,말레이시아)}],말티톨시럽,바나나시럽0.47%,[바나(코스타리카산)50%],합성향료,혼합제제(유화제,셀룰로스검,로커스트콩검,구아검,카라기난),로커스트콩검,구아검,치자황색소,정제소금,혼합제제(안나토색소,비트레드),카라기난",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980575001188/19980575001188-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 145,[영양표시] : 나트륨70mg,탄수화물21g,당류1.5g,지방6g,트랜스지방0.2g,포화지방4g,콜레스테롤20mg,단백질2g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980575001188/19980575001188-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "외국산, 뉴질랜드산, 독일산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산캔디딸기향",
+        "sub_ingredients": [
+          {
+            "name": "탄산캔디",
+            "origin": "터키산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성크림",
+            "sub_ingredients": [
+              {
+                "name": "유당",
+                "origin": "프랑스산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자경화유",
+                "origin": "외국산, 필리핀산, 말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "인도네이사",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나시럽",
+        "amount": "0.47%",
+        "sub_ingredients": [
+          {
+            "name": "바나",
+            "origin": "코스타리카산",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "안나토색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:59:34"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "sodium_mg": 70.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 1.5,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.2,
+    "saturated_fat_g": 4.0,
+    "cholesterol_mg": 20.0,
+    "protein_g": 2.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-03 21:59:34"
+  }
+}

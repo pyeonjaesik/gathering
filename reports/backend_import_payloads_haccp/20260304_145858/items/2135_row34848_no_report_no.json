@@ -1,0 +1,247 @@
+{
+  "product": {
+    "name_ko": "가쓰오우동",
+    "reportnum": "19870358015286"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870358015286/19870358015286-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870358015286/19870358015286-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870358015286/19870358015286-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "본고장데우찌면(200g) - 밀가루(밀:미국산,캐나다산),변성전분,정제소금(국산),옥배유,혼합제제(산도조절제,정제수) / 가쓰오우동액상스프(36g) - 양조간장,물엿,물,백설탕,가쯔오시즈닝추출물5.8%)(일본산)[건조가다랑어추출물46.8%(고형분4.1%),가다랑어추출물40%(고형분24.1%)],우동소스베이스5.8%(일본산)(혼합가다랑어추출물14.44%(가쓰오부시20.8%,가쓰오부시엑기스18.38%,가다랑어추출물7.13%),가쓰오부시엑기스2.93%(가쓰오부시24%,덱스트린,다시마엑기스,정제소금,정제포도당,주정,아로맥스P,멸치농축액,향미증진제,산도조절제 / 가쓰오건더기스프(5.4g) - 별미튀김,동결건조파,건조맛살어묵,가쓰오부시3.7%(일본산),고추후레이크,김후레이크",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870358015286/19870358015286-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1인분(241.4g)/총 3회 제공량(724.2g) 1회 제공량당 함량 *%영양소기준치 열량 400kcal, 탄수화물 84g 25%, 당류 6g, 단백질 11g 20%, 지방 2.2g 4%, 포화지방 0.8g 5%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 1500mg 75% *%영양소기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870358015286/19870358015286-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "본고장데우찌면",
+        "amount": "200g",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가쓰오우동액상스프",
+        "amount": "36g",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쯔오시즈닝추출물",
+            "origin": "일본산",
+            "amount": "5.8%",
+            "sub_ingredients": [
+              {
+                "name": "건조가다랑어추출물",
+                "amount": "46.8%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분",
+                    "amount": "4.1%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가다랑어추출물",
+                "amount": "40%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분",
+                    "amount": "24.1%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "우동소스베이스",
+            "origin": "일본산",
+            "amount": "5.8%",
+            "sub_ingredients": [
+              {
+                "name": "혼합가다랑어추출물",
+                "amount": "14.44%",
+                "sub_ingredients": [
+                  {
+                    "name": "가쓰오부시",
+                    "amount": "20.8%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "가쓰오부시엑기스",
+                    "amount": "18.38%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "가다랑어추출물",
+                    "amount": "7.13%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가쓰오부시엑기스",
+                "amount": "2.93%",
+                "sub_ingredients": [
+                  {
+                    "name": "가쓰오부시",
+                    "amount": "24%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "다시마엑기스",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제소금",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제포도당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "주정",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "아로맥스P",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "멸치농축액",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가쓰오건더기스프",
+        "amount": "5.4g",
+        "sub_ingredients": [
+          {
+            "name": "별미튀김",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동결건조파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조맛살어묵",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오부시",
+            "origin": "일본산",
+            "amount": "3.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:34:06"
+  },
+  "nutrition": {
+    "kcal": 400.0,
+    "carbohydrate_g": 84.0,
+    "sugar_g": 6.0,
+    "protein_g": 11.0,
+    "fat_g": 2.2,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1500.0,
+    "basis_amount": 241.4,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1인분(241.4g)",
+    "collected_at": "2026-03-03 16:34:06"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "우리쌀 대롱스낵",
+    "reportnum": "19860512022173"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022173/19860512022173-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022173/19860512022173-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022173/19860512022173-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),팜올레인유(말레이시아산),옥수수전분,볶음쌀가루(쌀:국내산),분당(원당,옥수수전분),식물성크림,설탕,물엿,생강,합성팽창제[산성피로인산나트륨,탄산수소나트륨,전분,제일인산칼슘,젖산칼슘],탄산수소암모늄,정제소금,정제포도당,산도조절제,젤라틴,비타스위트-1200[덱스트린,아세설팜칼륨(합성감미료)],특정성분:7.42%함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022173/19860512022173-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022173/19860512022173-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분당",
+        "sub_ingredients": [
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성팽창제",
+        "sub_ingredients": [
+          {
+            "name": "산성피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제일인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타스위트-1200",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "특정성분:",
+        "amount": "7.42%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:23:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 472.0,
+    "carbohydrate_g": 76.0,
+    "protein_g": 6.0,
+    "fat_g": 16.0,
+    "sugar_g": 19.0,
+    "sodium_mg": 196.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "280g",
+    "collected_at": "2026-03-03 16:23:41"
+  }
+}

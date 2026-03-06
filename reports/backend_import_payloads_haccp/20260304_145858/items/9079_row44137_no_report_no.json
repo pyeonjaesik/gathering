@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "CHOICE L 스위트콘 시리얼",
+    "reportnum": "20080435169132"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169132/20080435169132-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169132/20080435169132-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169132/20080435169132-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수 70.4%[외국산/(호주, 프랑스, 러시아 등)], 백설탕, 맥아엿, 프락토올리고당, 천일염(국내산), 혼합제제(분말비타민A, 비타민B₁염산염, 비타민B₂, 비타민B₆염산염, 비타민C, L-아스코르빈산나트륨, 비타민D₃, dl-α-토코페릴아세테이트, 엽산, 나이아신아미드), 혼합제제(산화아연, 환원철), 혼합제제(글리세린, d-토코페롤(혼합형, 대두), 글리세린에스테르)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169132/20080435169132-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080435169132/20080435169132-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "외국산, 호주산, 프랑스산, 러시아산",
+        "amount": "70.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "분말비타민A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B₁염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B₂",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B₆염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-아스코르빈산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D₃",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "환원철",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:11:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 383.0,
+    "carbohydrate_g": 90.0,
+    "protein_g": 4.0,
+    "fat_g": 0.75,
+    "sugar_g": 27.5,
+    "sodium_mg": 483.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 04:11:25"
+  }
+}

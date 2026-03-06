@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "라임 앤 민트향껌",
+    "reportnum": "19930439002425"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002425/19930439002425-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002425/19930439002425-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002425/19930439002425-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자일리톨74%,껌베이스[식물성유지(경화유),레시틴,d-토코페롤(혼합형)],아라비아검,합성향료(라임향,L-멘톨,멘톨향),혼합제제1(피막제,가공유지),감미료(아스파탐-페닐알라닌함유,아세설팜칼륨),라임농축액(고형분함량65%)0.09%,혼합제제2(홍화황색소,프로필렌글리콜,치자청색소),피막제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002425/19930439002425-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 105g 195kcal :나트륨 0mg 0%, 탄수화물80g 25%,당류0g 0%, 당알콜 78g, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤 0mg 0%, 단백질 0g 0%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002425/19930439002425-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "74%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "껌베이스",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "amount": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "라임향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-멘톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멘톨향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "피막제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감미료",
+        "sub_ingredients": [
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "라임농축액",
+        "amount": "0.09%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "65%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피막제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:34:53"
+  },
+  "nutrition": {
+    "kcal": 195.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 80.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 105.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량 105g",
+    "collected_at": "2026-03-03 19:34:53"
+  }
+}

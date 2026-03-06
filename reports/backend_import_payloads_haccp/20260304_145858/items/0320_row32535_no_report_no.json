@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "불고기맛후랑크",
+    "reportnum": "1972012500157"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500157/1972012500157-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500157/1972012500157-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500157/1972012500157-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산),닭고기(계정육40%,기계발골육60%/국산),정제수,옥수수전분[외국산(세르비아,헝가리,러시아등)/옥수수],빵가루,복합스파이스알에스70[L-글루타민산나트륨(향미증진제),에리쏘르빈산나트륨(산화방지제)],양파,대두단백,백설탕,전통불고기양념[대두밀,L-글루타민산나트륨(향미증진제)],리갈브라인믹스[폴리인산나트륨,메타인산나트륨,피로인산나트륨(산도조절제),정제염,말토덱스트린,아질산나트륨(발색제),탄산나트륨],소르빈산칼륨(합성보존료),참기름",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500157/1972012500157-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(70g) / 135kcal 1회 제공량당 함량 *%영양성분 기준치 열량135kcal, 탄수화물 9g 3%, 당류 0g, 단백질 9g 16%, 지방 7g 14%, 포화지방 2g 13%, 콜레스테롤 21mg 7%, 트랜스지방 0g, 나트륨 500mg 25% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500157/1972012500157-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계정육",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기계발골육",
+            "amount": "60%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 세르비아산, 헝가리산, 러시아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스알에스70",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에리쏘르빈산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전통불고기양념",
+        "sub_ingredients": [
+          {
+            "name": "대두밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "리갈브라인믹스",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:29:09"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 0.0,
+    "protein_g": 9.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 2.0,
+    "cholesterol_mg": 21.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 500.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(70g)",
+    "collected_at": "2026-03-03 13:29:09"
+  }
+}

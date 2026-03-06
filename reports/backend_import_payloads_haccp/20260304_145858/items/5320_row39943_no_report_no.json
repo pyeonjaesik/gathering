@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "아기랑 소곤소곤 딸기 쌀과자",
+    "reportnum": "2006037812256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812256/2006037812256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812256/2006037812256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812256/2006037812256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미(국산)76.65%,딸기분말(국산)6%,리뉴얼화이트17%[유기농설탕62.4%,코코아버터(싱가포르산),혼합탈지분유(탈지분유,유청분말:네덜란드산/우유),레시틴(대두:유화제),비피더스균(비피도박테리움비피덤분말)0.3%,혼합곡물발효효소0.05%]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812256/2006037812256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1봉 (25g) 1회 제공량당 함량 영양소 기준치 열량 100kcal 탄수화물 21g 당류 3g 단백질 2g 13% 지방 1g 포화지방 1g 트랜스지방 0g 콜레스테롤 0mg 나트륨 10mg 2% ※ 한국인 영양섭취기준(2010년, 1~2세)기준에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812256/2006037812256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "76.65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기분말",
+        "origin": "국산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리뉴얼화이트",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "amount": "62.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비피더스균",
+            "amount": "0.3%",
+            "sub_ingredients": [
+              {
+                "name": "비피도박테리움비피덤분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합곡물발효효소",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:11"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 3.0,
+    "protein_g": 2.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1봉 (25g)",
+    "collected_at": "2026-03-04 03:58:11"
+  }
+}

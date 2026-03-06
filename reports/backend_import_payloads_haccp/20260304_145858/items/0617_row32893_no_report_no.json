@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "돌 오렌지",
+    "reportnum": "1976026300429"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300429/1976026300429-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300429/1976026300429-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300429/1976026300429-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,오렌지농축과즙12.8%(배합함량오렌지100%,미국산),파인애플농축과즙5.3%(배합함량파인애플100%,필리핀산),비타민C,구연산(산도조절제),천연오렌지향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300429/1976026300429-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=3840ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026300429/1976026300429-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축과즙",
+        "origin": "미국산",
+        "amount": "12.8%",
+        "sub_ingredients": [
+          {
+            "name": "배합함량오렌지",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플농축과즙",
+        "origin": "필리핀산",
+        "amount": "5.3%",
+        "sub_ingredients": [
+          {
+            "name": "배합함량파인애플",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연오렌지향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:53:35"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 38.0,
+    "carbohydrate_g": 9.17,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 8.33,
+    "sodium_mg": 21.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "3840ml",
+    "collected_at": "2026-03-03 13:53:35"
+  }
+}

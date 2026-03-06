@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "앵그리버드 딸기 요거트",
+    "reportnum": "20080379009102"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009102/20080379009102-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009102/20080379009102-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009102/20080379009102-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산,세균수기준 1A 등급),42.5%,정제수,딸기시럽[정백당,딸기(국산)25%,딸기농축과즙(고형분65%,국산),6.15%,변성전분,아미드펙틴]15%,과당,탈지분유(외국산-국가명은 제조원 홈페이지 별도 표기),아미드펙틴,유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009102/20080379009102-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 100g 95kcal, 나트륨 45mg 2%, 탄수화물 12g 4%, 당류 12g 12%, 지방 3.9g 7%, 트랜스지방 0g, 포화지방 2.5g 17%, 콜레스테롤 10mg 3%, 단백질 3g 5% 1일 영양성분 기준에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009102/20080379009102-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "1A 등급",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기시럽",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축과즙",
+            "origin": "국산",
+            "amount": "6.15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:22"
+  },
+  "nutrition": {
+    "total_content": "95",
+    "sodium_mg": 45.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 12.0,
+    "fat_g": 3.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.5,
+    "cholesterol_mg": 10.0,
+    "protein_g": 3.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 100g",
+    "collected_at": "2026-03-04 04:08:22"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "헛개땡큐골드",
+    "reportnum": "20020623009303"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009303/20020623009303-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009303/20020623009303-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009303/20020623009303-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "헛개나무열매농축액(60Brix,국산)1.0%, 오리나무엽농축액, 밀크시슬추출액, 미배아대두발효추출물(GMT-ALC-5L), 글루타치온, 벌꿀, 타우린, 비타민B1, 사과농축과즙(국산), 니코틴산아미드, 비타민C, 비타민B2 등",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009303/20020623009303-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009303/20020623009303-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "헛개나무열매농축액",
+        "origin": "국산",
+        "amount": "1.0%",
+        "sub_ingredients": [
+          {
+            "name": "오리나무엽농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크시슬추출액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미배아대두발효추출물",
+            "amount": "GMT-ALC-5L",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루타치온",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타우린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축과즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "니코틴산아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:43"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 43.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.3,
+    "sugar_g": 9.0,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-04 03:44:43"
+  }
+}

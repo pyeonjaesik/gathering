@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "요리가 즐거운 로스구이맛 소시지",
+    "reportnum": "19720125001118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001118/19720125001118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001118/19720125001118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001118/19720125001118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기30.12%,(닭고기66.67%,기계발골육33.33%/국산),돼지고기28.62%(국산),정제수,옥수수전분(옥수수/외국산:러시아,헝가리,세르비아등),일품전용분1호,대두단백,정제소금,로스트양파버터풍미유[영양강화제,유화제],로스구이맛시즈닝1.00%[L글루타민산나트륨(향미증진제),향미증진제],리갈소세지믹스[덱스트린,정제소금,피로인산나트륨,폴리인산나트륨,산도조절제,에리쏘르빈산나트륨(산화방지제),아질산나트륨(발색제),백설탕,프리겔(카라기난,곤약분,덱스트린),스파이스시즈닝(향미증진제,산도조절제),L-글루타민산나트륨(향미증진제),비타민C,락색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001118/19720125001118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약 1/5개(30g) 총 약 5회 제공량(160g) 1회 제공량당 함량 : 열량 70kcal, 탄수화물 3g(1%) · 당류 1g미만, 단백질 3g(5%), 지방 5g(10%), 포화지방 1.7g(11%) · 트랜스지방 0g, 콜레스테롤 5mg(2%), 나트륨 170mg(9%) ( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/19720125001118/19720125001118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "30.12%",
+        "sub_ingredients": [
+          {
+            "name": "닭고기",
+            "amount": "66.67%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기계발골육",
+            "origin": "국산",
+            "amount": "33.33%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "28.62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "일품전용분1호",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로스트양파버터풍미유",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로스구이맛시즈닝",
+        "amount": "1.00%",
+        "sub_ingredients": [
+          {
+            "name": "L글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "리갈소세지믹스",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에리쏘르빈산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프리겔",
+            "sub_ingredients": [
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "곤약분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "스파이스시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:27:14"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 3.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 170.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약 1/5개(30g)",
+    "collected_at": "2026-03-03 13:27:14"
+  }
+}

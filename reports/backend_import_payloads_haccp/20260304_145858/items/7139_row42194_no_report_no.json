@@ -1,0 +1,248 @@
+{
+  "product": {
+    "name_ko": "햇반컵반 레드 스파이시 커리 덮밥",
+    "reportnum": "19910144038581"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038581/19910144038581-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038581/19910144038581-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038581/19910144038581-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*햇반(150g/즉석조리식품/질소충전제품/살균제품):배합수제외[멥쌀(국산)99.9%,쌀미강추출물]*레드스파이시커리(130g/카레/레토르트식품/멸균제품):정제수,푸르밀유크림(우유:국산),냉동양파(중국산),포모도리필라티(이탈리아산)[토마토,토마토쥬스,구연산],건조네모감자[감자,산성피로인산나트륨],이츠웰양송이슬라이스,레드커리분말2.7%,옥수수유,양파쳐트니,양지국물농축액,소고기베이스,커리분말제이1.1%,혼합제제(변성전분,말토덱스트린),냉동마늘,변성전분,정제소금,백설탕,버터블랜드,L-글루타민산나트륨(향미증진제),청양고추시즈닝분말,구운양파분,고려농산청결고춧가루,가람마실라0.05%,홍고추엑기스,혼합제제(피로인산나트륨,산성피로인산나트륨,메타인산나트륨,폴리인산나트륨),크림혼합분말,밀크인핸서",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038581/19910144038581-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038581/19910144038581-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "햇반",
+        "amount": "150g",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "origin": "국산",
+            "amount": "99.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀미강추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레드스파이시커리",
+        "amount": "130g",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸르밀유크림",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "냉동양파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포모도리필라티",
+            "origin": "이탈리아산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토쥬스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건조네모감자",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "이츠웰양송이슬라이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레드커리분말",
+            "amount": "2.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파쳐트니",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양지국물농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소고기베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커리분말",
+            "amount": "제이1.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "메타인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "냉동마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터블랜드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "청양고추시즈닝분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운양파분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고려농산청결고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가람마실라",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍고추엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림혼합분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크인핸서",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:30:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 157.0,
+    "carbohydrate_g": 22.86,
+    "protein_g": 2.14,
+    "fat_g": 6.43,
+    "sugar_g": 1.07,
+    "sodium_mg": 246.0,
+    "cholesterol_mg": 7.14,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.09,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "280g",
+    "collected_at": "2026-03-03 18:30:31"
+  }
+}

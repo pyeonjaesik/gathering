@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "과일담은현미과자-사과",
+    "reportnum": "2009036006270"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006270/2009036006270-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006270/2009036006270-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006270/2009036006270-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기현미분말(국산)75.81%,사과농축분말(능금청징농축주스[40%(국산)]}3.94%,사탕야자즙액(수액덩어리100%)18.8%,식이섬유,사과후레바",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006270/2009036006270-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<※1회 제공량 10g당 함량임/ ※1일 영양소 기준치에 대한 비율(%)>\n열량40kcal, 나트륨0mg 0%, 탄수화물9g 3%, 당류1g 1%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤 0mg 0%, 단백질1g미만 1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006270/2009036006270-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기현미분말",
+        "origin": "국산",
+        "amount": "75.81%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축분말",
+        "amount": "3.94%",
+        "sub_ingredients": [
+          {
+            "name": "능금청징농축주스",
+            "origin": "국산",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사탕야자즙액",
+        "amount": "18.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과후레바",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:47"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 1.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 10g당 함량임",
+    "collected_at": "2026-03-04 04:18:47"
+  }
+}

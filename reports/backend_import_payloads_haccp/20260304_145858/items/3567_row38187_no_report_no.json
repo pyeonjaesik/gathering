@@ -1,0 +1,196 @@
+{
+  "product": {
+    "name_ko": "소프트애플홀릭",
+    "reportnum": "199503380156099"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156099/199503380156099-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156099/199503380156099-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156099/199503380156099-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산),백설탕,계란/국산,애플다이스크림[마가린(대두,우유),기타설탕,사과다이스잼(사과/국산,사과농축액/국산),포도당,혼합제제(글리신,산도조절제,시클로덱스트린,유화제)],소보루(땅콩),물엿,혼합제제[유화제,과당,주정],합성팽창제[산도조절제,밀가루,유채유],정제소금,합성착향료(사과향),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156099/199503380156099-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(85g) 1회 제공량당 함량 *%영양소기준치 열량 255kcal, 탄수화물 46g 14%, 당류 29g, 단백질 4g 7%, 지방 6g 12%, 포화지방 2.9g 19%, 트랜스지방 0g, 콜레스테롤 20mg 7%, 나트륨 150mg 8% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156099/199503380156099-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "애플다이스크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과다이스잼",
+            "sub_ingredients": [
+              {
+                "name": "사과",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "사과농축액",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "시클로덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소보루",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성팽창제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유채유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:16:23"
+  },
+  "nutrition": {
+    "kcal": 255.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 29.0,
+    "protein_g": 4.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 85.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(85g)",
+    "collected_at": "2026-03-03 20:16:23"
+  }
+}

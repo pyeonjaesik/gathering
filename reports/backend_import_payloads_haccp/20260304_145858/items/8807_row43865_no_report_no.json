@@ -1,0 +1,96 @@
+{
+  "product": {
+    "name_ko": "우리엄마 요리비법 김가루",
+    "reportnum": "2006034513125"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006034513125/2006034513125-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006034513125/2006034513125-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006034513125/2006034513125-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "김55%(국내산),옥배유(옥수수씨눈100%,수입산),들기름,참기름,참깨,정제염,정백당",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006034513125/2006034513125-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=5g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006034513125/2006034513125-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국내산",
+        "amount": "55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수씨눈",
+            "origin": "수입산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:10"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 575.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 10.0,
+    "fat_g": 40.9,
+    "sugar_g": 0.0,
+    "sodium_mg": 139.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 3.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "5g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:57:10"
+  }
+}

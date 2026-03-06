@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "클래식시저드레싱",
+    "reportnum": "200504150201660"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201660/200504150201660-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201660/200504150201660-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201660/200504150201660-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마요네즈[현미유(태국산),난황액(계란:중국산),화이트식초,난백액,백설탕,변성전분,잔탄검,타마린드검],정제수,생크림(유크림100%:국산),그라나파다노그라투자토치즈(이탈리아산),액상과당,백설탕,향신료베이스,양조식초,레몬농축액,정제소금,앤쵸비,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201660/200504150201660-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량2Tsp(28g)/총 약 8회 제공량(220g) *()안의 수치는 1일 영양소 기준치에 대한 비율임 열량 85kcal, 탄수화물 3g(1%), 당류 2g, 단백질 1g미만(1%), 지방 8g(16%), 포화지방2.5g(17%), 트랜스지방 0g, 콜레스테롤 5mg미만(2%), 나트륨 150 mg(8%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201660/200504150201660-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": [
+          {
+            "name": "현미유",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타마린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그라나파다노그라투자토치즈",
+        "origin": "이탈리아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "앤쵸비",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:04"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 2.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량2Tsp(28g)",
+    "collected_at": "2026-03-04 03:54:04"
+  }
+}

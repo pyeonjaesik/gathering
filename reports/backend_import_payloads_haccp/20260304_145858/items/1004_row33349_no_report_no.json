@@ -1,0 +1,296 @@
+{
+  "product": {
+    "name_ko": "청정원카레여왕치킨카레",
+    "reportnum": "19800347002339"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002339/19800347002339-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002339/19800347002339-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002339/19800347002339-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,닭고기11%(국내산),냉동감자10%(감자,산도조절제/미국산),양파9.4%(국내산),볶음양파페이스트8.4%(양파,대두유),볶음야채5%(양파,청피망,샐러리,당근,마늘),비프엑기스에프(대두,밀),굴소스,바나나퓨레,휘핑크림(우유),혼합제제(변성전분,말토덱스트린),토마토페이스트,폰드보(토마토),카레씨즈닝오일,카레분1.1%{강황26.96%(인도산),코리엔더(인도산),쿠민,페누그릭,펜넬},고추씨기름,마늘,백설탕,효모분말,포도농축액,부용베이스,쌀가루(국내산),가람마살라,흑후추분,풋고추풍미분,글리신,미트부스터,무화과농축액,클로렐라추출물,DHA분말,향미증진제,카라멜색소,합성착향료(샬롯향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002339/19800347002339-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=레토르트 200g 기타 25g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002339/19800347002339-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동감자",
+        "origin": "미국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "amount": "9.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음양파페이스트",
+        "amount": "8.4%",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음야채",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청피망",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프엑기스에프",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "굴소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "휘핑크림",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폰드보",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카레씨즈닝오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레분",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "강황",
+            "origin": "인도산",
+            "amount": "26.96%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코리엔더",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쿠민",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페누그릭",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펜넬",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추씨기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부용베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가람마살라",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "풋고추풍미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미트부스터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무화과농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "클로렐라추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DHA분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "샬롯향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:27:21"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 78.0,
+    "carbohydrate_g": 12.5,
+    "protein_g": 2.5,
+    "fat_g": 2.0,
+    "sugar_g": 6.25,
+    "sodium_mg": 619.0,
+    "cholesterol_mg": 9.38,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.31,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "레토르트 200g 기타 25g",
+    "total_content": "160g",
+    "collected_at": "2026-03-03 14:27:21"
+  }
+}

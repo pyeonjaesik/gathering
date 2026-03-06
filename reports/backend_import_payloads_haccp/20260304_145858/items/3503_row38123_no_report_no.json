@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "초코강정",
+    "reportnum": "1994060717511"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717511/1994060717511-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717511/1994060717511-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717511/1994060717511-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스냅초코[백설탕,가공유지(팜액스테아린경화유/말레이지아), 코코아분말(싱가포르,말레이지아), 유청분말{유청분말 95%,유당(우유)}, 유당,레시친(대두), 합성착향료(바닐린)], 인조좁쌀과자[소맥분(밀/미국,호주산), 천열염,탄산수소나트륨,면소다,베이킹파우다],설탕,물엿,마아가린",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717511/1994060717511-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (23g) / 총 1회 제공량(20g)\n<1회 제공량당 함량 *%영양소기준치>\n열량104kcal -, 탄수화물17g 5%, 당류12g, 단백질1g 2%, 지방3.5g 7%, 포화지방3g -, 트랜스지방0g -, 콜레스테롤 불검출 -, 나트륨21mg 0.6%\n%영양소기준치: 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717511/1994060717511-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스냅초코",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜액스테아린경화유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말레이지아",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "sub_ingredients": [
+              {
+                "name": "말레이지아",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": [
+              {
+                "name": "유청분말",
+                "amount": "95%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시친",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인조좁쌀과자",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천열염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면소다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베이킹파우다",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마아가린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:07:41"
+  },
+  "nutrition": {
+    "kcal": 104.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 12.0,
+    "protein_g": 1.0,
+    "fat_g": 3.5,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 21.0,
+    "basis_amount": 23.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (23g)",
+    "collected_at": "2026-03-03 20:07:41"
+  }
+}

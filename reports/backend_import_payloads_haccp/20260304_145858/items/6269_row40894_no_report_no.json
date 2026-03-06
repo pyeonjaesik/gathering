@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "팝핀에어 새우소금구이",
+    "reportnum": "20100461303227"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303227/20100461303227-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303227/20100461303227-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303227/20100461303227-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마이크로펠렛포테이토81.3%[감자그래뉼50%(감자99.7%), 감자후레이크39%(감자99.4), 감자전분10%, 정제소금]/이탈리아산, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산:아르헨티나, 스페인, 호주 등), d-토코페롤(혼합형)], 새우소금구이맛시즈닝3.7%[백설탕,새우엑기스분말20%{건새우(국내산)15.37%}, 호수염(호주산)12%, 유청분말, 쉬림프파우더5%{새우분말(말레이시아산)100%}, 새우풍미유2%{건새우(국내산)5.5%}, 아스파탐(감미료/페닐알라닌 함유)], 혼합제제(프라이드포테이토향, 카놀라유), 레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303227/20100461303227-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 90g 426 kcal, 총 내용량당 1일 영양성분 기준치에 대한 비율, 나트륨 516mg 26%, 탄수화물 55g 17%, 식이섬유 1g 3%, 당류 2g 2%, 지방 13.2g 24%, 트랜스지방 0g, 포화지방 3.5g 23%, 콜레스테롤 0mg 0%, 단백질 4g 7%,  1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303227/20100461303227-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마이크로펠렛포테이토",
+        "origin": "이탈리아산",
+        "amount": "81.3%",
+        "sub_ingredients": [
+          {
+            "name": "감자그래뉼",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자후레이크",
+            "amount": "39%",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "amount": "99.4",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감자전분",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "새우소금구이맛시즈닝",
+        "amount": "3.7%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우엑기스분말",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "건새우",
+                "origin": "국내산",
+                "amount": "15.37%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "호수염",
+            "origin": "호주산",
+            "amount": "12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쉬림프파우더",
+            "amount": "5%",
+            "sub_ingredients": [
+              {
+                "name": "새우분말",
+                "origin": "말레이시아산",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "새우풍미유",
+            "amount": "2%",
+            "sub_ingredients": [
+              {
+                "name": "건새우",
+                "origin": "국내산",
+                "amount": "5.5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "프라이드포테이토향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:31"
+  },
+  "nutrition": {
+    "kcal": 426.0,
+    "sodium_mg": 516.0,
+    "carbohydrate_g": 55.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 2.0,
+    "fat_g": 13.2,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.5,
+    "cholesterol_mg": 0.0,
+    "protein_g": 4.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 90g",
+    "collected_at": "2026-03-04 04:26:31"
+  }
+}

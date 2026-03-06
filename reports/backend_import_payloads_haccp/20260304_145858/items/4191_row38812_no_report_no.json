@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "베비언스 베이비워터",
+    "reportnum": "19980449002580"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002580/19980449002580-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002580/19980449002580-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002580/19980449002580-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,루이보스추출액(남아프리카공화국,고형분1.0%이상)0.2%,젖산칼슘,L-젖산마그네슘,아연혼합제제[덱스트린,산화아연,글리세린지방산에스테르,효소분해레시틴(대두)],L-로이신,L-이소로이신,L-발린,비타민B1질산염,니코틴산아미드,판토텐산칼슘,효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002580/19980449002580-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(1병 240ml 당) 열량0kcal, 탄수화물0g(0%), 당류0g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨0g(0%), 칼슘9mg(1%), 마그네슘2.5mg(1%), 아연0.2(2%) ※%영양성분 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002580/19980449002580-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "루이보스추출액",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "1.0%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "남아프리카공화국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-젖산마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아연혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소분해레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-로이신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-이소로이신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-발린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B1질산염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "니코틴산아미드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "판토텐산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:52:52"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "calcium_mg": 9.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1병 240ml 당",
+    "collected_at": "2026-03-03 21:52:52"
+  }
+}

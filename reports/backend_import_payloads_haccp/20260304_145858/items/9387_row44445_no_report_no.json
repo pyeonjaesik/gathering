@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "순창궁태양초고추장",
+    "reportnum": "2010049904720"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904720/2010049904720-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904720/2010049904720-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904720/2010049904720-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물엿,정제수,소맥분(밀:미국산,호주산),고추앙념(고춧가루5.85%,정제수,정제소금,마늘,양파/중국산),밀쌀(밀:미국산),정제소금,혼합양념분말(고춧가루0.38%/중국산),알파탈지대두분,혼합미분,L-글루타민산나트륨(향미증진제),소르빈산칼륨(합성보존료),종국",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904720/2010049904720-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010049904720/2010049904720-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추앙념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "amount": "5.85%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀쌀",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념분말",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "amount": "0.38%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알파탈지대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:28:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 250.0,
+    "carbohydrate_g": 52.0,
+    "protein_g": 7.0,
+    "fat_g": 1.0,
+    "sugar_g": 35.0,
+    "sodium_mg": 2128.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-04 04:28:30"
+  }
+}

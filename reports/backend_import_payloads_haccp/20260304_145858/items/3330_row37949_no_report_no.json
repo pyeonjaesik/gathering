@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "오뚜기밥친구불고기",
+    "reportnum": "1993044500657"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044500657/1993044500657-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044500657/1993044500657-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044500657/1993044500657-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "※밥친구 불고기 - 참맛불고기과립 50%[참맛불고기분말(쇠구기:뉴질랜드산),백설탕,정제소금(국산),유당,뉴칼], 참맛불고기후레이크 25%[쇠고기칩(쇠고기:뉴질랜드산),불고기양념(양파:중국산)], 참맛검은깨[검은깨(중국산), 정제소금(국산), 백설탕, 뉴칼, 식물성분해단백], 밥친구믹스(양파과립,맛있는과립), 계란후레이크, 구운김후레이크 ※옛날참기름 - 볶음참깨분100%(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044500657/1993044500657-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(12.1g)[밥친구1봉지, 참기름1봉지], 총 3회 제공량(36.3g) 1회제공량당 함량 : 열량 65kcal, 탄수화물4g(1%)·당류3g, 단백질2g(4%), 지방4.6g(9%)·포화지방0.9g(6%)·트랜스지방0g, 콜레스테롤5mg미만(2%), 나트륨150mg(8%), 칼슘147mg(21%) ()안의 수치는 1일 영양성분기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044500657/1993044500657-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밥친구 불고기",
+        "sub_ingredients": [
+          {
+            "name": "참맛불고기과립",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "참맛불고기분말",
+                "sub_ingredients": [
+                  {
+                    "name": "쇠구기",
+                    "origin": "뉴질랜드산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제소금",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "뉴칼",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "참맛불고기후레이크",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기칩",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "불고기양념",
+                "sub_ingredients": [
+                  {
+                    "name": "양파",
+                    "origin": "중국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "참맛검은깨",
+            "sub_ingredients": [
+              {
+                "name": "검은깨",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "뉴칼",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성분해단백",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밥친구믹스",
+            "sub_ingredients": [
+              {
+                "name": "양파과립",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맛있는과립",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운김후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옛날참기름",
+        "sub_ingredients": [
+          {
+            "name": "볶음참깨분",
+            "origin": "수입산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:43:45"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 3.0,
+    "protein_g": 2.0,
+    "fat_g": 4.6,
+    "saturated_fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 150.0,
+    "calcium_mg": 147.0,
+    "basis_amount": 12.1,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(12.1g)",
+    "collected_at": "2026-03-03 19:43:45"
+  }
+}

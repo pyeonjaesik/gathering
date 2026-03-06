@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "키위드레싱",
+    "reportnum": "200504150201988"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201988/200504150201988-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201988/200504150201988-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201988/200504150201988-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,키위퓨레30%(키위100%:뉴질랜드산),함수결정포도당,파인애플농축액(태국산),정백당,양조식초(맥아엑기스,주정,발효영양원),고과당,현미유,샐러드소스베이스K(밀),정제염,레몬농축액,천연키위향0.4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201988/200504150201988-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량2Tsp(28g) 1회제공량당 함량(%영양소 기준치), 총 약 9회 제공량(245g) 열량 30kcal, 탄수화물 6g(2%), 당류 4g, 단백질 0g(0%), 지방 0.5g(1%), 포화지방0g(0%), 트랜스지방 0g, 콜레스테롤 5mg(2%), 나트륨 120 mg(6%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201988/200504150201988-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "키위퓨레",
+        "origin": "뉴질랜드산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "키위",
+            "origin": "뉴질랜드산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플농축액",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": [
+          {
+            "name": "맥아엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "샐러드소스베이스K",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연키위향",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:14"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량2Tsp(28g)",
+    "collected_at": "2026-03-04 03:54:14"
+  }
+}

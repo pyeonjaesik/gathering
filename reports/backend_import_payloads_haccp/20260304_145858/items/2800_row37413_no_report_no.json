@@ -1,0 +1,179 @@
+{
+  "product": {
+    "name_ko": "동원엄선랍스틱",
+    "reportnum": "19900275002334"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002334/19900275002334-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002334/19900275002334-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002334/19900275002334-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "냉동연육81.39%(수입살/어육살,D-소르비톨,정백당,산도조절제),소맥전분(밀/호주산,미국산),포테이토플러스,조미액,정제소금,탄산칼슘,게농축액,글리신,게향(합성착향료),카라기난,갑각류분해추출물(게,새우),정제어유0.06%(DHA12%,EPA18%이상),분말난백(계란),혼합제제(토마토색소,파프리카추출색소,레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002334/19900275002334-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(33g) 열량 30kcal, 탄수화물 4g(1%), 당류 2g, 단백질 3g(5%), 지방 0g, 포화지방 0g, 트랜스지방 0g, 콜레스테롤 5mg미만(2%), 나트륨 200mg(10%) *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002334/19900275002334-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동연육",
+        "amount": "81.39%",
+        "sub_ingredients": [
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수입살",
+            "sub_ingredients": []
+          },
+          {
+            "name": "어육살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포테이토플러스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갑각류분해추출물",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제어유",
+        "amount": "0.06%",
+        "sub_ingredients": [
+          {
+            "name": "DHA",
+            "amount": "12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "EPA",
+            "amount": "18%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "토마토색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:52:02"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 33.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(33g)",
+    "collected_at": "2026-03-03 17:52:02"
+  }
+}

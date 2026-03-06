@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "갈비탕",
+    "reportnum": "201502620835"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502620835/201502620835-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502620835/201502620835-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502620835/201502620835-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소갈비(수입산)26.96%,국간장0.85%,무,양파,마늘,생강,쇠고기추출물,대파,소금,후우,복합조미식품(대두),L-글루타민산나트륨,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502620835/201502620835-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "serving size.300g seving per container/2 1회 제공량(300g)당 함량(Amount Per Serving.300g)  *%영양소 기준치(% dally value) 열량(calories) 228kcal, 탄수화물(carbohydrate) 2.8g 0.8%, 당류(sugars) 0g 0%, 단백질(protein) 33.6g 56%, 지방(Fat) 9g 18%, 포화지방(saturated fat) 0g 0%, 트랜스지방(trans fat) 0g 0%, 콜레스테롤(cholesterol) 27.6mg 9.2%, 나트륨(sodium) 1430mg 70%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201502620835/201502620835-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소갈비",
+        "origin": "수입산",
+        "amount": "26.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국간장",
+        "amount": "0.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후우",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:12"
+  },
+  "nutrition": {
+    "kcal": 228.0,
+    "carbohydrate_g": 2.8,
+    "sugar_g": 0.0,
+    "protein_g": 33.6,
+    "fat_g": 9.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 27.6,
+    "sodium_mg": 1430.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(300g)",
+    "collected_at": "2026-03-04 04:44:12"
+  }
+}

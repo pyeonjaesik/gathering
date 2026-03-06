@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "Woongjin 아침햇살",
+    "reportnum": "19960458039437"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039437/19960458039437-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039437/19960458039437-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039437/19960458039437-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀추출액45%(고형분9%이상,국산),현미추출액33%(고형분0.2%이상:볶은현미(국산)1.4%,볶은발아현미(국산)0.2%),정제수,백설탕,식물성크림-더블유(물엿,식물성경화유지,카제인(우유),제이인산칼륨,유화제),덱스트린,유화제,비타민C,글리신,합성착향료(현미향),바이오더블유제이(자몽종자추출물,글리세린,비타민C,녹차추출물)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039437/19960458039437-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(180ml) 1회 제공량 당 함량 ※%영양소기준치 열량 105kcal, 탄수화물 22g 7%, 당류 13g, 단백질 0g 0%, 지방 1.9g 4%, 포화지방 1.9g 13%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 5mg 0% ※%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960458039437/19960458039437-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀추출액",
+        "origin": "국산",
+        "amount": "45%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "9%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미추출액",
+        "origin": "국산",
+        "amount": "33%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.2%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶은현미",
+            "origin": "국산",
+            "amount": "1.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶은발아현미",
+            "origin": "국산",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림-더블유",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성경화유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제이인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "현미향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바이오더블유제이",
+        "sub_ingredients": [
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차추출물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:14:04"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 1.9,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(180ml)",
+    "collected_at": "2026-03-03 21:14:04"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "product": {
+    "name_ko": "처음먹는 요리가케 오징어와 해초",
+    "reportnum": "20030208630328"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030208630328/20030208630328-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030208630328/20030208630328-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030208630328/20030208630328-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "베베돌김자반[돌김(국산) 43.56%, 옥배유, 유기농설탕, 참깨, 구운소금] 23.92%, 베베참깨[참깨(수입산) 81.35%, 간장, 구운소금, 채종유, 유기농설탕], 베베오징어[오징어(국산) 84.8%, 유기농설탕, 채종유, 간정, 마늘분말] 14.76%, 베베해초[락토원, 함수결정포도당, 구운소금, 톳(국산) 8.34%, 다시마(국산) 6.07%, 볶음콩분말, 김(국산) 3.73%, 함초(국산) 3.57%, 파래(국산) 1.28%] 13.76%, 베베단호박[락토원, 단호박분말(국산), 함수결정포도당, 구운소금, 옥수수분말], 양배추(국산), 베베흑임자[흑임자, 간장, 구운소금(국산), 채종유, 유기농설탕], 베베톳[톳(국산) 69.49%, 간장, 유기농설탕, 채종유, 효모추출물] 3.67%, 당근(국산), 시금치(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030208630328/20030208630328-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1포(4g) / 총 7회 제공량(28g) 1회 제공량당 함량 %영양성분기준치 열량 12kcal 탄수화물 2g 1% 당류 0g 단백질 1g미만 2%(6%) 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 5mg미만 2% 나트륨 65mg 3%(9%) %영양성분기준치 : 1일 영양성분 기준치에 대한 비율 ()안의 %영양성분 기준치 : 한국인 유아(1~2세) 영양섭취 기준에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030208630328/20030208630328-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "베베돌김자반",
+        "origin": "국산",
+        "amount": "23.92%",
+        "sub_ingredients": [
+          {
+            "name": "돌김",
+            "origin": "국산",
+            "amount": "43.56%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베베참깨",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "origin": "수입산",
+            "amount": "81.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베베오징어",
+        "amount": "14.76%",
+        "sub_ingredients": [
+          {
+            "name": "오징어",
+            "origin": "국산",
+            "amount": "84.8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베베해초",
+        "amount": "13.76%",
+        "sub_ingredients": [
+          {
+            "name": "락토원",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "톳",
+            "origin": "국산",
+            "amount": "8.34%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마",
+            "origin": "국산",
+            "amount": "6.07%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음콩분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김",
+            "origin": "국산",
+            "amount": "3.73%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함초",
+            "origin": "국산",
+            "amount": "3.57%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파래",
+            "origin": "국산",
+            "amount": "1.28%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베베단호박",
+        "sub_ingredients": [
+          {
+            "name": "락토원",
+            "sub_ingredients": []
+          },
+          {
+            "name": "단호박분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베베흑임자",
+        "sub_ingredients": [
+          {
+            "name": "흑임자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베베톳",
+        "amount": "3.67%",
+        "sub_ingredients": [
+          {
+            "name": "톳",
+            "origin": "국산",
+            "amount": "69.49%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:56"
+  },
+  "nutrition": {
+    "kcal": 12.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 65.0,
+    "basis_amount": 4.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1포(4g)",
+    "collected_at": "2026-03-04 03:45:56"
+  }
+}

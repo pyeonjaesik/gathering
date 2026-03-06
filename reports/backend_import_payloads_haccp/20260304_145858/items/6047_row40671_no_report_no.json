@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "케피어S",
+    "reportnum": "2009044800817"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044800817/2009044800817-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044800817/2009044800817-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044800817/2009044800817-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)82%,프락토올리고당,천연사과농축과즙(국산)4%,사과농축크라우디(국산)2%,배농축과즙(국산)1.0%,케피어원말0.1%,정제수,유당분해효소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044800817/2009044800817-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(140mL),총 1회 제공량당 함량:열량 114 kcal,탄수화물 13.1g(4%),당류 10.8g,단백질 3.9g(6.5%),지방 5.1g(10.2%),포화지방 3.8g(25.3%),트랜스지방 0g,콜레스테롤 10.8mg(3.6%),나트륨 60.8mg(3%),()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044800817/2009044800817-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "82%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연사과농축과즙",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축크라우디",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "origin": "국산",
+        "amount": "1.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케피어원말",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당분해효소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:15"
+  },
+  "nutrition": {
+    "kcal": 114.0,
+    "carbohydrate_g": 13.1,
+    "sugar_g": 10.8,
+    "protein_g": 3.9,
+    "fat_g": 5.1,
+    "saturated_fat_g": 3.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.8,
+    "sodium_mg": 60.8,
+    "basis_amount": 140.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(140mL)",
+    "collected_at": "2026-03-04 04:20:15"
+  }
+}

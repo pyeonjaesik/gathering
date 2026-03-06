@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "햇님마을 참기름",
+    "reportnum": "2006035820036"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820036/2006035820036-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820036/2006035820036-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820036/2006035820036-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참깨/국내산100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820036/2006035820036-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량\n열량kcal 895, 탄수화물(g) 0g, 당류(g) 0g, 단백질(g) 0g, 지방(g) 99g, 포화지방산(g) 14g, 트랜스지방(g) 0.00, 콜레스테롤(mg) 0g, 나트륨(mg) 0mg\n1회제공량(g) 100mL, 총제공횟수(회) 1회\n※ 영양소 기준치 : ()안의 수치는 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820036/2006035820036-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:31"
+  },
+  "nutrition": {
+    "kcal": 895.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 99.0,
+    "saturated_fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(g) 100mL",
+    "collected_at": "2026-03-04 03:57:31"
+  }
+}

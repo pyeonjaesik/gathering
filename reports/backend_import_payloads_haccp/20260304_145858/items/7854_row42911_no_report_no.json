@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "하루야채 퍼플",
+    "reportnum": "1996044304754"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304754/1996044304754-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304754/1996044304754-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304754/1996044304754-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유기농당근농축액10.0%[(고형분42%,독일산),(당근즙으로28.56%)],유기농토마토페이스트8.1%[(고형분28%,이탈리아산),(토마토즙으로24.68%)],유기농레드비트농축액3.0%[(고형분68%,독일산),(레드비트즙으로13.87%)],유기농보라당근농축액(보라당근즙으로11.05%),유기농돼지감자농축액(돼지감자즙으로7.62%),유기농적포도농축액(적포도과즙으로5.38%),유기농호박농축액(호박즙으로4.19%),유기농콩코드포도농축액(콩코드포도과즙으로3.03%),유기농채소혼합즙[(채소혼합즙으로0.27%(양상추,셀러리,시금치)],유기농레몬농축액(레몬과즙으로1.19%),유기농쌈야채혼합즙[쌈야채혼합즙으로0.16%(청경채,비타민,꽃상추,뉴그린,쑥갓,청겨자,적근대)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304754/1996044304754-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=200ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304754/1996044304754-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농당근농축액",
+        "origin": "독일산",
+        "amount": "10.0%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "42%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근즙",
+            "amount": "28.56%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농토마토페이스트",
+        "origin": "이탈리아산",
+        "amount": "8.1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "28%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토즙",
+            "amount": "24.68%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농레드비트농축액",
+        "origin": "독일산",
+        "amount": "3.0%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레드비트즙",
+            "amount": "13.87%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농보라당근농축액",
+        "sub_ingredients": [
+          {
+            "name": "보라당근즙",
+            "amount": "11.05%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농돼지감자농축액",
+        "sub_ingredients": [
+          {
+            "name": "돼지감자즙",
+            "amount": "7.62%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농적포도농축액",
+        "sub_ingredients": [
+          {
+            "name": "적포도과즙",
+            "amount": "5.38%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농호박농축액",
+        "sub_ingredients": [
+          {
+            "name": "호박즙",
+            "amount": "4.19%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농콩코드포도농축액",
+        "sub_ingredients": [
+          {
+            "name": "콩코드포도과즙",
+            "amount": "3.03%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농채소혼합즙",
+        "sub_ingredients": [
+          {
+            "name": "채소혼합즙",
+            "amount": "0.27%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농레몬농축액",
+        "sub_ingredients": [
+          {
+            "name": "레몬과즙",
+            "amount": "1.19%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농쌈야채혼합즙",
+        "sub_ingredients": [
+          {
+            "name": "쌈야채혼합즙",
+            "amount": "0.16%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:09:38"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 55.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "200ml",
+    "collected_at": "2026-03-03 21:09:38"
+  }
+}

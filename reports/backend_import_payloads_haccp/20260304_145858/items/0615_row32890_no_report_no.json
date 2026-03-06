@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "서울우유요구르트",
+    "reportnum": "1976026200297"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200297/1976026200297-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200297/1976026200297-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200297/1976026200297-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "탈지분유3.668%(국산),정제수,액상과당,백설탕,함수결정포도당,올리고당,유청분말(우유,국산),합성착향료(요구르트향),아스파탐(합성감미료,페닐알라닌 함유),규소수지혼합제제(규소수지,유화제,증점제,자몽종자추출물),유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200297/1976026200297-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=80ml(g) | foodSize=65ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200297/1976026200297-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "amount": "3.668%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "규소수지혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증점제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:53:02"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 69.0,
+    "carbohydrate_g": 15.38,
+    "protein_g": 1.08,
+    "fat_g": 0.0,
+    "sugar_g": 13.85,
+    "sodium_mg": 23.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "80ml(g)",
+    "total_content": "65ml",
+    "collected_at": "2026-03-03 13:53:02"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "빠다코코낫볼",
+    "reportnum": "2006051503584"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503584/2006051503584-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503584/2006051503584-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503584/2006051503584-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(호주산), 백설탕, 식물성유지(말레이시아산), 볶음빵가루[건조브레드칩-J{밀가루(밀;미국산, 캐나다산)}, 건조브레드칩{밀가루(밀;외국산(미국,캐나다,스리랑카))}], 볶음코코넛(건조코코넛;필리핀산), 코코넛분말(필리핀산),가공버터(네덜란듯산), 땅콩버터, 코코넛향씨즈닝, 분말셀룰로오스, 정제소금, 합성향료(코코넛향,버터향,후레쉬밀크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503584/2006051503584-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 400g 100g당 515kcal 나트륨 200mg 10%, 탄수화물 66g 20%, 당류 30g 30%, 지방 25g 46%, 트랜스지방 0g, 포화지방 15g 100%, 콜레스테롤 5mg 2%, 단백질 7g 13% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503584/2006051503584-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음빵가루",
+        "sub_ingredients": [
+          {
+            "name": "건조브레드칩-J",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건조브레드칩",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "외국산, 미국산, 캐나다산, 스리랑카산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음코코넛",
+        "origin": "필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛분말",
+        "origin": "필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "네덜란듯산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "땅콩버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛향씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "코코넛향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후레쉬밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:55"
+  },
+  "nutrition": {
+    "total_content": "400",
+    "food_weight_g": 400.0,
+    "kcal": 515.0,
+    "sodium_mg": 200.0,
+    "carbohydrate_g": 66.0,
+    "sugar_g": 30.0,
+    "fat_g": 25.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 15.0,
+    "cholesterol_mg": 5.0,
+    "protein_g": 7.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:00:55"
+  }
+}

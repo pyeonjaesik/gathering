@@ -1,0 +1,63 @@
+{
+  "product": {
+    "name_ko": "볶은아마씨(ROASTED FLAXSEED)",
+    "reportnum": "20050358194268"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050358194268/20050358194268-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050358194268/20050358194268-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050358194268/20050358194268-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아마씨100%(캐나다산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050358194268/20050358194268-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 제공량(230g) 총 제공량총 당 함량 % 영양성분 기준치 열량(kcal) 1182.9kcal 탄수화물(g) 106.7g 32% 당류(g) 1.2g 단백질(g) 52.9 97% 지방(g) 60.5g 120% 포화지방(g) 5.3g 35% 트랜스지방(g) 0g 콜레스테롤(mg) 0mg 0% 나트륨(mg) 89.9mg 5% 식이섬유(g) 50.4g 202% 오메가3(g) 알파리놀렌산(g) 36.7g 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050358194268/20050358194268-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아마씨",
+        "origin": "캐나다산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:35"
+  },
+  "nutrition": {
+    "kcal": 1182.9,
+    "carbohydrate_g": 106.7,
+    "sugar_g": 1.2,
+    "protein_g": 52.9,
+    "fat_g": 60.5,
+    "saturated_fat_g": 5.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 89.9,
+    "dietary_fiber_g": 50.4,
+    "basis_amount": 230.0,
+    "basis_unit": "g",
+    "basis_text": "총 제공량(230g)",
+    "collected_at": "2026-03-04 03:52:35"
+  }
+}

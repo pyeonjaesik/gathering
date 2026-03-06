@@ -1,0 +1,349 @@
+{
+  "product": {
+    "name_ko": "메밀소바",
+    "reportnum": "20020614179556"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179556/20020614179556-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179556/20020614179556-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179556/20020614179556-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*생메밀면 : 밀가루(밀:호주산, 미국산), 누들프리믹스(메밀가루)(중국산)8.32%(메밀가루89%, 글루텐, 구아검), 글루텐, 주정, 변성전분, 볶음메밀가루(중국산)1.7%,정제염, 트레할로스, 혼합제제(D-소르비톨액, 대두유, 유화제), 혼합제제(젖산, 물, 말타톨시럽,산도조절제), 자몽종자추출물\n*모밀소스 : 정제수, 간장[탈지대두(수입산), 소맥(밀:미국산), 천일염, 액상과당, 효모추출분말], 미림[쌀(수입산), 주정(국내산, 수입산)], 가쓰오야채농축액, 가쓰오조미액(고등어), L-글루타민산나트륨(향미증진제), 정백당, 액상과당, 정제염, 소르비톨액, 다시마추출액, 맛베이스, 카라멜색소, 향미증진제, 효모추출물\n*메밀국수용분말스프 : 무즙분말[무즙88.24%(무:국산), 시클로덱스트린시럽], 포도당, 와사비분[와사비분말75%(와사비100%:중국산), 겨자분(캐나다산), 쌀가루, 치자청색소, 홍화황색소], 건파(중국산), 동결건조파, 김, 겨자분, 코팅스파이스머스타드분말(머스타드오일, 말토덱스트린, 아라비아검, 팜유, 안톡스-1)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179556/20020614179556-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1인분(202.5g) 총 2회 제공량(405g)\n<1회제공량당 함량 *%영양소 기준치>\n열량500kcal, 탄수화물103g 31%, 당류2g, 단백질16g 29%, 지방2.9g 6%, 포화지방0.8g 5%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨1,300mg 65%\n* % 영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179556/20020614179556-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생메밀면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "누들프리믹스",
+            "origin": "중국산",
+            "amount": "8.32%",
+            "sub_ingredients": [
+              {
+                "name": "메밀가루",
+                "amount": "89%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글루텐",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음메밀가루",
+            "origin": "중국산",
+            "amount": "1.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트레할로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "D-소르비톨액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말타톨시럽",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "모밀소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효모추출분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "origin": "국내산, 수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가쓰오야채농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오조미액",
+            "sub_ingredients": [
+              {
+                "name": "고등어",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마추출액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "메밀국수용분말스프",
+        "sub_ingredients": [
+          {
+            "name": "무즙분말",
+            "sub_ingredients": [
+              {
+                "name": "무즙",
+                "origin": "국산",
+                "amount": "88.24%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "시클로덱스트린시럽",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "와사비분",
+            "sub_ingredients": [
+              {
+                "name": "와사비분말",
+                "origin": "중국산",
+                "amount": "75%",
+                "sub_ingredients": [
+                  {
+                    "name": "와사비",
+                    "sub_ingredients": [
+                      {
+                        "name": "100%",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "겨자분",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쌀가루",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자청색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동결건조파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "겨자분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코팅스파이스머스타드분말",
+            "sub_ingredients": [
+              {
+                "name": "머스타드오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "안톡스-1",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:14"
+  },
+  "nutrition": {
+    "kcal": 500.0,
+    "carbohydrate_g": 103.0,
+    "sugar_g": 2.0,
+    "protein_g": 16.0,
+    "fat_g": 2.9,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1300.0,
+    "basis_amount": 202.5,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1인분(202.5g)",
+    "collected_at": "2026-03-04 03:44:14"
+  }
+}

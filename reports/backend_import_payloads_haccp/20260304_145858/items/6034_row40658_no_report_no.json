@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "아임리얼 데일리루트",
+    "reportnum": "2009044204087"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204087/2009044204087-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204087/2009044204087-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204087/2009044204087-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사과즙(국산), 파인애플즙(베트남산), 사과퓨레(국산), 당근즙(국산), 드래곤후르츠, 핑크구아바, 비트즙, 레몬착즙주스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204087/2009044204087-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 (190ml),  *()안의 수치는 1일 영양성분기준치에 대한 비율임 1회 제공량당 함량, 열량 85 kcal, 탄수화물 22g(7%), 식이섬유 2g(8%), 당류 20g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 5mg(2%), 나트륨 70mg(4%), 비타민A 0㎍RE(0%)/비타민C 0mg(0%)/칼슘 25mg(3%)/철 0.8mg(7%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204087/2009044204087-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과즙",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플즙",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근즙",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "드래곤후르츠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핑크구아바",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비트즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬착즙주스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:00"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 22.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 20.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 70.0,
+    "calcium_mg": 25.0,
+    "iron_mg": 0.8,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 (190ml)",
+    "collected_at": "2026-03-04 04:20:00"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "1등이 되고싶은 바나나우유",
+    "reportnum": "20020448004118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020448004118/20020448004118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020448004118/20020448004118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020448004118/20020448004118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유(국산)86%,설탕,정제수,바나나과즙농축액(고형분68%,이스라엘산),카로틴,합성향료(바나나향,바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020448004118/20020448004118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=240ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020448004118/20020448004118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나과즙농축액",
+        "origin": "이스라엘산",
+        "amount": "고형분68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바나나향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:36"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 88.0,
+    "carbohydrate_g": 11.25,
+    "protein_g": 2.92,
+    "fat_g": 3.33,
+    "sugar_g": 11.25,
+    "sodium_mg": 38.0,
+    "cholesterol_mg": 12.5,
+    "saturated_fat_g": 2.08,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "240ml",
+    "collected_at": "2026-03-04 03:39:36"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "한농마을따봉건빵",
+    "reportnum": "2002046712760"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712760/2002046712760-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712760/2002046712760-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712760/2002046712760-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농 밀가루(밀:75.13%, 호주산),유기농 설탕 (파라과이)9.39%, 해바라기유 (외국산),검은콩가루, 죽염, 전분,포도당, 검정깨, 탄산암모늄, 탄산나트륨,스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712760/2002046712760-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712760/2002046712760-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농 밀가루",
+        "origin": "호주산",
+        "amount": "75.13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "origin": "파라과이산",
+        "amount": "9.39%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "외국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "죽염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 433.0,
+    "carbohydrate_g": 82.08,
+    "protein_g": 9.98,
+    "fat_g": 7.23,
+    "sugar_g": 17.53,
+    "sodium_mg": 388.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.52,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:42:45"
+  }
+}

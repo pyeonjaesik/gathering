@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "호두&아몬드 씬피자",
+    "reportnum": "19970311100203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100203/19970311100203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100203/19970311100203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100203/19970311100203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "피자도우[밀가루(밀:미국산,캐나다산),식용유지(수입산),백설탕,생효모,정제소금],연성치즈[모짜렐라치즈(수입산),체다치즈(수입산),분말셀룰로오스],스위트피자소스[흑설탕,액상과당,유청분말(프랑스산),혼합제제(변성전분,말토덱스트린),가공버터(네덜란드산)],정제수,아몬드슬라이스2.6%(미국산),호두분태2.6%(미국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100203/19970311100203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 3/6조각(158g)/ 총 2회 제공량(316g) 1회 제공량당 함량 : 열량 495kcal, 탄수화물 57g 17%,  당류 5g, 단백질 20g 36%, 지방 21g 41%, 포화지방 7g 47%, 트랜스지방 0g 0%, 콜레스테롤 50mg 17%, 나트륨 420mg 21%, *%영양성분기준치 : 1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970311100203/19970311100203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "피자도우",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "연성치즈",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스위트피자소스",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "프랑스산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공버터",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "amount": "2.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두분태",
+        "origin": "미국산",
+        "amount": "2.6%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:22:40"
+  },
+  "nutrition": {
+    "kcal": 495.0,
+    "carbohydrate_g": 57.0,
+    "sugar_g": 5.0,
+    "protein_g": 20.0,
+    "fat_g": 21.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 50.0,
+    "sodium_mg": 420.0,
+    "basis_amount": 158.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 3/6조각(158g)",
+    "collected_at": "2026-03-03 21:22:40"
+  }
+}

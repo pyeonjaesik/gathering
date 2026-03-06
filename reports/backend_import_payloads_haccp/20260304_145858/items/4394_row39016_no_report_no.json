@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "닭가슴살·텐더훈제",
+    "reportnum": "2000047600346"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047600346/2000047600346-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047600346/2000047600346-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047600346/2000047600346-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)48.2%,닭안심(국내산)48.2%,훈제오리시즈닝2.0%(정백당,양파분말(중국산),마늘분말(중국산),생강분말(중국산),흰후추분말(베트남산),너트맥분말(인도네시아산),함초효소액1.2%),염지스모크시즈닝분말0.6%(정백당,정제염,복합인산염,비타민씨,로즈마리분말등),숯불갈지맛엑기스0.5%(소고기분해농축액(소고기:호주산),간장(탈지대두:수입산),사골엑기스),팬더굴소스0.4%(굴추출물,정제수,설탕등),파프리카분말0.1%(수입산)계100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047600346/2000047600346-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 기준 칼로리 135kcal, 탄수화물 2g, 단백질 29~31g, 지방 1.5g, 나트륨 290mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047600346/2000047600346-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "48.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭안심",
+        "origin": "국내산",
+        "amount": "48.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "훈제오리시즈닝",
+        "amount": "2.0%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흰후추분말",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "너트맥분말",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함초효소액",
+            "amount": "1.2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "염지스모크시즈닝분말",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합인산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민씨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숯불갈지맛엑기스",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "소고기분해농축액",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사골엑기스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팬더굴소스",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "굴추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카분말",
+        "origin": "수입산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:21:08"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 2.0,
+    "fat_g": 1.5,
+    "sodium_mg": 290.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 기준",
+    "collected_at": "2026-03-03 22:21:08"
+  }
+}

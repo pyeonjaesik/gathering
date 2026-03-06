@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "복음자리 사과잼",
+    "reportnum": "2006046402123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006046402123/2006046402123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006046402123/2006046402123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006046402123/2006046402123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "사과57%(국산),백설탕,레몬농축과즙액(미국산),펙틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006046402123/2006046402123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=370g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006046402123/2006046402123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과",
+        "origin": "국산",
+        "amount": "57%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축과즙액",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 275.0,
+    "carbohydrate_g": 69.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 65.0,
+    "sodium_mg": 35.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "370g",
+    "collected_at": "2026-03-04 04:00:13"
+  }
+}

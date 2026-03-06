@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "[냉동]오징어볼",
+    "reportnum": "1963014400248"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1963/1963014400248/1963014400248-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1963/1963014400248/1963014400248-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1963/1963014400248/1963014400248-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "냉동연육64%(태국산,베트남산/어육산,설탕,폴리인산나트륨),오징어17%(국내산),소맥분(밀:미국산,호주산),대두유(대두),정제염,파,당근,L-글루타민산나트륨(향미증진제),,복합인산염(피로인산나트륨,제삼인산나트륨),자일로오스,\n소르빈산칼륨(합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1963/1963014400248/1963014400248-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1963/1963014400248/1963014400248-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동연육",
+        "origin": "태국산, 베트남산",
+        "amount": "64%",
+        "sub_ingredients": [
+          {
+            "name": "어육산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오징어",
+        "origin": "국내산",
+        "amount": "17%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합인산염",
+        "sub_ingredients": [
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:13:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 136.0,
+    "carbohydrate_g": 14.44,
+    "protein_g": 14.44,
+    "fat_g": 2.39,
+    "sugar_g": 3.33,
+    "sodium_mg": 522.0,
+    "cholesterol_mg": 94.44,
+    "saturated_fat_g": 1.06,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 13:13:17"
+  }
+}

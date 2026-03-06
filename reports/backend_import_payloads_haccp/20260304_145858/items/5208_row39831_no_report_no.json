@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "청아띠청결고춧가루 골드플러스",
+    "reportnum": "20050563006114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050563006114/20050563006114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050563006114/20050563006114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050563006114/20050563006114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "건고추 100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050563006114/20050563006114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(100g) 열량 367kcal,탄수화물 59g,당류 19g,단백질 13g,지방 9g, 포화지방 2g,트랜스지방 0g,콜레스테롤0mg, 나트륨 11.3mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050563006114/20050563006114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건고추",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:13"
+  },
+  "nutrition": {
+    "kcal": 367.0,
+    "carbohydrate_g": 59.0,
+    "sugar_g": 19.0,
+    "protein_g": 13.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 11.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(100g)",
+    "collected_at": "2026-03-04 03:55:13"
+  }
+}

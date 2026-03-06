@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "7곡 연양갱",
+    "reportnum": "1986037002272"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002272/1986037002272-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002272/1986037002272-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002272/1986037002272-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "팥앙금(팥;중국산),물엿,설탕,칠곡분말2%(국산;현미1%,보리0.5%,흑미0.34%,찹쌀0.04%,기장0.04%,수수0.04%,차조0.04%),한천(인도네시아산),합성향료(혼합곡물향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002272/1986037002272-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=50g | foodSize=55g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002272/1986037002272-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "팥앙금",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칠곡분말",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보리",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "amount": "0.34%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "amount": "0.04%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기장",
+            "amount": "0.04%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "amount": "0.04%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "차조",
+            "amount": "0.04%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한천",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "혼합곡물향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:20:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 273.0,
+    "carbohydrate_g": 69.09,
+    "protein_g": 3.64,
+    "fat_g": 0.0,
+    "sugar_g": 45.45,
+    "sodium_mg": 2.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "50g",
+    "total_content": "55g",
+    "collected_at": "2026-03-03 16:20:30"
+  }
+}

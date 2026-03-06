@@ -1,0 +1,249 @@
+{
+  "product": {
+    "name_ko": "요맘때 플레인콘",
+    "reportnum": "1998057500159"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500159/1998057500159-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500159/1998057500159-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500159/1998057500159-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "농후발효유23%[탈지분유(국산)백설탕,유산균주],슈가콘(밀가루[밀:미국산,호주산)백설탕,야자유(인도네시아산),레시틴(대두),정제염],유크림,원유,물엿,준초콜릿(백설탕,팡올레인유,야자유,식물성유지(경화유),코코아분말[백설탕,샤베트분말(우유),야자유,프락토올리고당,탈지분유,정제염,구아검,산도조절제,혼합제제[유화제,구아검,키라기난],혼합제제2[결정섬유,셀룰로오스검],혼합제제3[구아검,로커스트콩검,카라기난,유화제]합석착향료(요구르트향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500159/1998057500159-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=150ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500159/1998057500159-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "농후발효유",
+        "amount": "23%",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "슈가콘",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팡올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "샤베트분말",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "야자유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프락토올리고당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "구아검",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "키라기난",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "혼합제제2",
+                "sub_ingredients": [
+                  {
+                    "name": "결정섬유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "셀룰로오스검",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "혼합제제3",
+                "sub_ingredients": [
+                  {
+                    "name": "구아검",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "로커스트콩검",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카라기난",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합석착향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:00:15"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 163.0,
+    "carbohydrate_g": 22.67,
+    "protein_g": 2.0,
+    "fat_g": 7.33,
+    "sugar_g": 17.33,
+    "sodium_mg": 53.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 5.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "150ml",
+    "collected_at": "2026-03-03 22:00:15"
+  }
+}

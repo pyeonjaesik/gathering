@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "다크레드미트볼",
+    "reportnum": "20030189006640"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006640/20030189006640-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006640/20030189006640-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006640/20030189006640-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쇠고기29.25%(호주산),돼지고기28.50%(국내산),스윗앤스파이시소스25%[백설탕,토마토페이스트(토마토-미국산),양조식초{맥아엑기스(겉보리-미국산)},당밀,과당55],양파3.75%,정제수,돼지갈비양념2,빵가루1.88%,피텍스,흑설탕,마늘0.75%,젖산나트륨(산도조절제),정제소금,비프분말2호,양파분0.3%,마늘분0.23%,후추분,L-글루탐산나트륨(향미증진제),카카오색소-씨,큐라포스-700(산도조절제),너트맥그라운드,생강분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006640/20030189006640-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 400g 100g당 250kcal 100g당 1일 영양성분 기준치에 대한비율 나트륨 580mg 29%탄수화물 17g 5%, 당류 10g 10%,지방 16g 30%,트랜스지방 0.7g,포화지방 7g 47%,콜레스테롤 25mg 8%,단백질 9g 16% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006640/20030189006640-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "호주산",
+        "amount": "29.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "28.50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스윗앤스파이시소스",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": [
+              {
+                "name": "맥아엑기스",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "겉보리",
+                    "origin": "미국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "당밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "amount": "55",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "amount": "3.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지갈비양념",
+        "amount": "2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "amount": "1.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피텍스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "amount": "0.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프분말",
+        "amount": "2호",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분",
+        "amount": "0.23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카카오색소-씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "큐라포스-700",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "너트맥그라운드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:41"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "sodium_mg": 580.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 10.0,
+    "fat_g": 16.0,
+    "trans_fat_g": 0.7,
+    "saturated_fat_g": 7.0,
+    "cholesterol_mg": 25.0,
+    "protein_g": 9.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:45:41"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "땅콩강정",
+    "reportnum": "19870415003276"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003276/19870415003276-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003276/19870415003276-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003276/19870415003276-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "강정펠렛(이탈리아산/밀가루, 전분, 식염, 포도당, 산도조절제, 백설탕), 물엿, 땅콩(아르헨티나산), 백설탕, 식물성유지(팜올레인유 말레이시아산, 해바라기유 외국산 : 우크라이나산, 말레이시아산, 스페인산), 식염, 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003276/19870415003276-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=147g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003276/19870415003276-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "강정펠렛",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "origin": "아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 우크라이나산, 말레이시아산, 스페인산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:39:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 460.0,
+    "carbohydrate_g": 70.0,
+    "protein_g": 10.0,
+    "fat_g": 15.67,
+    "sugar_g": 26.67,
+    "sodium_mg": 267.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.33,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "147g",
+    "collected_at": "2026-03-03 16:39:04"
+  }
+}

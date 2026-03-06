@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "바삭하고 구수한 볶음자반",
+    "reportnum": "201705290111"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2017/201705290111/201705290111-1.png",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/201705290111/201705290111-1.png"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/201705290111/201705290111-1.png"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김자반,옥수수기름(옥배유),가공소금,참기름,백설탕,들기름,볶은참깨,포도씨앗유,녹차가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/201705290111/201705290111-1.png"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "나트륨2%,탄수화물0%,당류0%,지방4%,트랜스지방0%,포화지방2%,콜레스테롤0%,단백질1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/201705290111/201705290111-1.png"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김자반",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수기름",
+        "sub_ingredients": [
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶은참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도씨앗유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:59"
+  },
+  "nutrition": {
+    "sodium_mg": 2.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "collected_at": "2026-03-04 04:47:59"
+  }
+}

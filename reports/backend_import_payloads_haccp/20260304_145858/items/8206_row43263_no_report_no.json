@@ -1,0 +1,157 @@
+{
+  "product": {
+    "name_ko": "애플망고베이스",
+    "reportnum": "20000441043153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043153/20000441043153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043153/20000441043153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043153/20000441043153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정백당,애플망고퓨레20%(인도산),망고퓨레20%(필리핀산),정제수,구연산,구연산나트륨,아미드펙틴,베타카로틴혼합제제(베타카로틴,변성전분,글리세린,자당지방산에스테르,해바라기유,MCT유,비타민E,초산,비타민C,탄산나트륨),합성착향료(애플망고향,망고향),합성보존료(안식향산나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043153/20000441043153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150ml | foodSize=1200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043153/20000441043153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "애플망고퓨레",
+        "origin": "인도산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고퓨레",
+        "origin": "필리핀산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베타카로틴혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "애플망고향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성보존료",
+        "sub_ingredients": [
+          {
+            "name": "안식향산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:16:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 185.0,
+    "carbohydrate_g": 46.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "sugar_g": 45.0,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150ml",
+    "total_content": "1200g",
+    "collected_at": "2026-03-03 22:16:12"
+  }
+}

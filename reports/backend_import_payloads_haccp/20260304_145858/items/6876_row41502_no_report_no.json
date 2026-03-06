@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "케브도르 샤르네 바게트 갈릭맛",
+    "reportnum": "2015051232512"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015051232512/2015051232512-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015051232512/2015051232512-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015051232512/2015051232512-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산,캐나다산,호주산),마가린[인도네시아산{정제팜유,정제소금,유화제,대두레시틴(대두),합성향료(버터향)}],백설탕,대두유(대두),마늘(국산),효모,정제소금,혼합제제[밀가루,스테아릴젖산나트륨,염화암모늄,비타민C,혼합효소제제,황산칼슘,효소제제],가공소금,건조파슬리",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015051232512/2015051232512-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉(44g), 총 2회 제공량(88g)\n<1회 제공량 당 함량 *%영양성분 기준치>\n열량234kcal, 탄수화물24g 7%, 당류9g, 단백질3g 5%, 지방14.6g 29%, 포화지방6.3g 42%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨218mg 11%\n*%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015051232512/2015051232512-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "정제팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "버터향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테아릴젖산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화암모늄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합효소제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조파슬리",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:43"
+  },
+  "nutrition": {
+    "kcal": 234.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 9.0,
+    "protein_g": 3.0,
+    "fat_g": 14.6,
+    "saturated_fat_g": 6.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 218.0,
+    "basis_amount": 44.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉(44g)",
+    "collected_at": "2026-03-04 04:46:43"
+  }
+}

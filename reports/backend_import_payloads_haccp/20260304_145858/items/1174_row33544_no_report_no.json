@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "튼튼플러스 요거얌얌 딸기맛",
+    "reportnum": "19810227007202"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007202/19810227007202-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007202/19810227007202-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007202/19810227007202-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유산균배양액3%(혼합탈지분유(수입산),정제수,액상과당,딸기농축액(딸기과즙으로 1% 국산),비타민혼합제제 0.05%(나이아신아미드,토코페롤,영양강화제,변성전분,말토덱스트린,아라비아검,설탕,옥수수전분,MCT(유),젖산칼슘 0.38%,펙틴,산도조절제,수크랄로스(합성감미료),합성착향료(딸기향),우유함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007202/19810227007202-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량65kcal, 탄수화물16g,당류14g,단백질1g미만,지방0g,포화지방0g,트랜스지방0g,콜레스테롤0,나트륨30mg,나이아신 2.3mgNE,비타민B6 0.23mg,엽산60㎍,비타민C 15mg,비타민D3 0.75㎍, 비타민E 1.65mgα-TE,칼슘 105mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007202/19810227007202-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유산균배양액",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "혼합탈지분유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축액",
+            "origin": "국산",
+            "amount": "1%",
+            "sub_ingredients": [
+              {
+                "name": "딸기과즙",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민혼합제제",
+            "amount": "0.05%",
+            "sub_ingredients": [
+              {
+                "name": "나이아신아미드",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토코페롤",
+                "sub_ingredients": []
+              },
+              {
+                "name": "영양강화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "MCT",
+                "sub_ingredients": []
+              },
+              {
+                "name": "젖산칼슘",
+                "amount": "0.38%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "펙틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "수크랄로스",
+                "sub_ingredients": [
+                  {
+                    "name": "합성감미료",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "딸기향",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:40:22"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 14.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "niacin_mg": 2.3,
+    "calcium_mg": 105.0,
+    "collected_at": "2026-03-03 14:40:22"
+  }
+}

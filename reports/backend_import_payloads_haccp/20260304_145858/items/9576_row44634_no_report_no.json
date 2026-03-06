@@ -1,0 +1,278 @@
+{
+  "product": {
+    "name_ko": "김치맛 쌀국수",
+    "reportnum": "2013047304228"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304228/2013047304228-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304228/2013047304228-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304228/2013047304228-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면:쌀50%(외국산),소맥분34.4%(밀:호주/미국산),타피오카전분,소맥전분,정제소금(국산)/스프:정제소금(국산),분말김치국물16.9%[김치국물{배추(국산),멸치젓(생멸치:국산,천일염:국산)},멸치액젓(멸치:국산,천일염:국산),아라비아검,정제소금,텍스트린},고추분①,백설탕,간장분말[간장,정제소금,말토덱스트린],L-글루타민산나트륨(향미증진제),쇠고기농축분말(대두,밀),건조김치3.4%(중국산),복합조미식품①,복합조미식품②,마늘분말,양파분말,고추분②,고추입자,건파,건당근,흑후추분말,향식료조제품,산도조절제,향미증진제,파프리카분말(파프리카추출색소,글리세린지반산에스테르,덱스트린),카라멜색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304228/2013047304228-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=92g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304228/2013047304228-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "호주산, 미국산",
+            "amount": "34.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타피오카전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말김치국물",
+            "amount": "16.9%",
+            "sub_ingredients": [
+              {
+                "name": "김치국물",
+                "sub_ingredients": [
+                  {
+                    "name": "배추",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "멸치젓",
+                    "sub_ingredients": [
+                      {
+                        "name": "생멸치",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "천일염",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "멸치액젓",
+                "sub_ingredients": [
+                  {
+                    "name": "멸치",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "천일염",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "텍스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고추분①",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇠고기농축분말",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건조김치",
+            "origin": "중국산",
+            "amount": "3.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품①",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품②",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추분②",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추입자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향식료조제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카분말",
+            "sub_ingredients": [
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지반산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 387.0,
+    "carbohydrate_g": 82.1,
+    "protein_g": 7.8,
+    "fat_g": 3.0,
+    "sugar_g": 4.2,
+    "sodium_mg": 1914.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "92g",
+    "collected_at": "2026-03-04 04:38:45"
+  }
+}

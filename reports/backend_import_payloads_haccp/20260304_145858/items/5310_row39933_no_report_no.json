@@ -1,0 +1,80 @@
+{
+  "product": {
+    "name_ko": "오가닉 라이스퍼프 레인보우 소프트바 바나나",
+    "reportnum": "20060378122149"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122149/20060378122149-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122149/20060378122149-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122149/20060378122149-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농쌀가루(국산)96.2%,바나나분말(필리핀산)2%,단호박분말(국산),해조칼슘(영국산)0.8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122149/20060378122149-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 20g 75kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨 2.8mg 0%, 탄수화물17.2g 5%, 당류0.4g 0%, 지방0.1g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질1.3g 2%, 칼슘60mg 9%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122149/20060378122149-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀가루",
+        "origin": "국산",
+        "amount": "96.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "필리핀산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "origin": "영국산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:57"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "sodium_mg": 2.8,
+    "carbohydrate_g": 17.2,
+    "sugar_g": 0.4,
+    "fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.3,
+    "calcium_mg": 60.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 20g",
+    "collected_at": "2026-03-04 03:57:57"
+  }
+}

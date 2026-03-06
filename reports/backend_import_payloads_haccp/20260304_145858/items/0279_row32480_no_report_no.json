@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "아이스티 레몬맛",
+    "reportnum": "1971037200191"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200191/1971037200191-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200191/1971037200191-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200191/1971037200191-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "레몬농축과즙분말[레몬농축액(고형분43%,아르헨티나산)24.23%덱스트린,합성착향료(레몬향),구연산나트륨,카라멜]5.15%,홍차추출분말0.2%(독일산),백설탕,구연산(무수),분말카라멜,젖산칼슘(칼슘13%)0.82%,비타민C0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200191/1971037200191-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(14g)/총30회제공량(420g), 1회제공량당함량 *%영양소기준치, 열량55kcal, 탄수화물13g 4%, 당류13g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g 0%, 콜레스테롤0mg 0%, 나트륨10mg 1%, 비타민C83mg 83%, 칼슘17mg 2%, *%영양소기준치:1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200191/1971037200191-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "레몬농축과즙분말",
+        "origin": "아르헨티나산",
+        "amount": "5.15%",
+        "sub_ingredients": [
+          {
+            "name": "레몬농축액",
+            "origin": "아르헨티나산",
+            "amount": "24.23%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "43%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "레몬향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍차추출분말",
+        "origin": "독일산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "amount": "무수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "amount": "0.82%",
+        "sub_ingredients": [
+          {
+            "name": "칼슘",
+            "amount": "13%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:24:43"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "calcium_mg": 17.0,
+    "basis_amount": 14.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1포(14g)",
+    "collected_at": "2026-03-03 13:24:43"
+  }
+}

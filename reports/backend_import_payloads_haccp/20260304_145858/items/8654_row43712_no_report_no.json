@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "마음담6호",
+    "reportnum": "20040182486543"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040182486543/20040182486543-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040182486543/20040182486543-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040182486543/20040182486543-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "찹쌀/맵쌀(국산), 팥(중국산), 호박분말(뉴질랜드), 단호박(국산), 고운앙금(팥:중국산, 적강낭콩:수입산) ,대두콩(중국산), 카스테라고물, 땅콩",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040182486543/20040182486543-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040182486543/20040182486543-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맵쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박분말",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고운앙금",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적강낭콩",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두콩",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카스테라고물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 338.0,
+    "carbohydrate_g": 76.09,
+    "protein_g": 6.96,
+    "fat_g": 0.87,
+    "sugar_g": 13.48,
+    "sodium_mg": 326.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "230g",
+    "collected_at": "2026-03-04 03:50:07"
+  }
+}

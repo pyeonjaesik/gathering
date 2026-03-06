@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "진한설렁탕",
+    "reportnum": "20080262106106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106106/20080262106106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106106/20080262106106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106106/20080262106106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,소고기11.9%(호주산),사골농축액6.5%{사골추출물88%[고형분52%,사골(호주산)],천일염12%},쇠고기하이마{정제소금(국내산),L-글루타민산나트륨(향미증진제),옥수수전분(옥수수:수입산),백설탕,정제포도당},천일염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106106/20080262106106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(250g) 총2회 제공량(500g) 1회 제공량당 함량 *%영양성분 기준치 열량 105kcal, 탄수화물 5g 2%,당류 0g, 단백질 17g 31%,지방 2.1g 4%, 포화지방 0.6g 4%,트랜스지방 0.0g,콜레스테롤 15mg 5%,나트륨 530mg 27% *%영양성분 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106106/20080262106106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "11.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축액",
+        "amount": "6.5%",
+        "sub_ingredients": [
+          {
+            "name": "사골추출물",
+            "origin": "호주산",
+            "amount": "88%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "52%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "사골",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천일염",
+            "amount": "12%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇠고기하이마",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:25"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 0.0,
+    "protein_g": 17.0,
+    "fat_g": 2.1,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 530.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(250g)",
+    "collected_at": "2026-03-04 04:07:25"
+  }
+}

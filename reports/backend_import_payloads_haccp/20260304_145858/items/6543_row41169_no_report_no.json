@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "하늘뜰 참기름",
+    "reportnum": "201304150986"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304150986/201304150986-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304150986/201304150986-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304150986/201304150986-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참깨 100%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304150986/201304150986-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량/열량861.27kcal,탄수화물7.19g당류0g 단백질0.52g 지방 92.27g, 포화지방 19.96g, 트랜스지방 0.13g콜레스테롤 0mg 나트륨 0mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304150986/201304150986-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:53"
+  },
+  "nutrition": {
+    "kcal": 861.27,
+    "carbohydrate_g": 7.19,
+    "sugar_g": 0.0,
+    "protein_g": 0.52,
+    "fat_g": 92.27,
+    "saturated_fat_g": 19.96,
+    "trans_fat_g": 0.13,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:37:53"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "몸에좋은헛개진액",
+    "reportnum": "19980449002469"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002469/19980449002469-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002469/19980449002469-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002469/19980449002469-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,헛개나무추출액(고형분9%)13%,백설탕,혼합농책액[지황농축액,벌꿀백봉령농축액,지골피농축액,홍삼분말(홍삼사포닌20mg/g이상),천문동농축액,홍삼농축액(홍삼사포닌70mg/g이상,고형분60%이상),맥문동농축액],벌꿀,영지농축액,홍삼농축액(홍삼사포닌70mg/g이상,고형분60%이상),맥문동농축액],벌꿀,영지추출액,홍삼농축액(홍삼사포닌70mg/g이상,고형분60%이상) .원산지:헛개나무열매(중국산),벌꿀(국산),지황(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002469/19980449002469-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량40kcal, 탄수화물10g(3%), 당류0g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g(0%), 콜레스테롤0mg(0%), 나트륨2mg(0%) ※()1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002469/19980449002469-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "헛개나무추출액",
+        "origin": "중국산",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "9%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합농책액",
+        "sub_ingredients": [
+          {
+            "name": "지황농축액",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀백봉령농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지골피농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼분말",
+            "amount": "20mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천문동농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼농축액",
+            "amount": "70mg, g이상, 고형분60%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥문동농축액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영지농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "amount": "70mg, g이상, 고형분60%이상",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥문동농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영지추출액",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:47:35"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 2.0,
+    "collected_at": "2026-03-03 21:47:35"
+  }
+}

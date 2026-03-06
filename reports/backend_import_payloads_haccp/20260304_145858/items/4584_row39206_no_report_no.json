@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "양파잼",
+    "reportnum": "20020183282611"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282611/20020183282611-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282611/20020183282611-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282611/20020183282611-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "냉동양파볶음40.61%[양파(국내산, 무안)98.5%, 대두유 1.5%], 백설탕, 사과퓨레10.05%[사과(국내산)99.95%,비타민C0.05%], 구연산, 아미드펙틴, 정제수, 로커스트콩검, 혼합제제(규소수지, 글리세린지방산에스테르, 소르비탄지방산에스테르, 카르복시메틸셀룰로오스나트륨, 정제수)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282611/20020183282611-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (20g) 총약14회 제공량(270g) 1회제공량당 함량 : 열량 45kcal, 탄수화물 11g (3%), 당류 11g, 단백질 0g (0%), 지방 0g (0%), 포화지방 0g (0%), 트랜스지방 g, 콜레스테롤 0mg (0%), 나트륨 0mg (0%) *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282611/20020183282611-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동양파볶음",
+        "amount": "40.61%",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "amount": "98.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "amount": "1.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "amount": "10.05%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국내산",
+            "amount": "99.95%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:37:06"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (20g)",
+    "collected_at": "2026-03-04 03:37:06"
+  }
+}

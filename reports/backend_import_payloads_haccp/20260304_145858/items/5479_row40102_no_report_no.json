@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "망고크런치",
+    "reportnum": "20070275117176"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117176/20070275117176-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117176/20070275117176-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117176/20070275117176-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "강력분(밀:미국,캐나다산),정백당,쇼트닝[식물성유지(팜유/말레이시아산),가공유지(에스테르화유-팜스테아린유/말레이시아산,유화제],박력분(밀:미국산),쓰리인원내츄럴믹스망고A1.34%(망고농축액10%:필리핀산),정제소금,바닐라엣센스[혼합제제식품첨가물(주정,정제수,합성착향료,바닐라익스트랙트8.08%,바닐라후레바,스트로베리후레바,천연호프,코쿠토카라멜 후레바)],탄산수소나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117176/20070275117176-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지(30g),총 1회 제공량(30g) \n<1회제공량당 함량>\n열량136kcal, 탄수화물20g 6%, 당류0g, 단백질2g 4%, 지방5g 11%, 포화지방2g 12%, 트랜스지방0g , 콜레스테롤1mg 0%, 나트륨53mg 3%\n ※ ( )안의 수치는 영양소기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070275117176/20070275117176-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "강력분",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜스테아린유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "박력분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쓰리인원내츄럴믹스망고",
+        "amount": "A1.34%",
+        "sub_ingredients": [
+          {
+            "name": "망고농축액",
+            "origin": "필리핀산",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라엣센스",
+        "sub_ingredients": [
+          {
+            "name": "혼합제제식품첨가물",
+            "sub_ingredients": [
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐라익스트랙트",
+                "amount": "8.08%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐라후레바",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스트로베리후레바",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연호프",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코쿠토카라멜 후레바",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:25"
+  },
+  "nutrition": {
+    "kcal": 136.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 1.0,
+    "sodium_mg": 53.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지(30g)",
+    "collected_at": "2026-03-04 04:02:25"
+  }
+}

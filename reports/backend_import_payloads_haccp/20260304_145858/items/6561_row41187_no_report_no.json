@@ -1,0 +1,280 @@
+{
+  "product": {
+    "name_ko": "오징어 김스낵",
+    "reportnum": "2013047312926"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047312926/2013047312926-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047312926/2013047312926-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047312926/2013047312926-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아몬드(미국산)44.35%,김(국산)25.81%,오징어조미액[양조간장{탈지대두(인도산),소맥(밀),천일염,주정},정백당,오징어베이스분말NM15%,{오징어엑기스P(오징어족(국산)),물엿,오징어(국산),말토덱스트린,정제염},정제수,미림(쌀,주정),효모추출물,변성전분,에이치와이비-211,오징어향G1.0%,향미증진제,막사버 키로스트 와이이엑스에이치,스테비올배당체],오징어씨즈닝[오징어베이스분말NM60.0%,{오징어엑기스P(오징어족(국산),밀)},물엿,오징어(국산),말토덱스트린,정제염,]미립당,말토덱스트린,구운양파분말J{양파(중국산)},에이치와이비-211(대두),효모추출물,스모크향분말,향미증진제,오징어향G0.5%,막사버 키오스크 와이이엑스에이치,스테비올배당체]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047312926/2013047312926-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (2g)/ 총 13회 제공량 (25g) *()안의 수치는 1일 영양소 기준치에 대한 비율 열량 10kcal,탄수화물 1g(0%),식이섬유0g (0%), 당류 0g,단백질 1g(2%),지방 0.6g(1%),포화지방 0g(0%),트랜스지방 0g,콜레스테롤 0mg,나트륨15mg(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047312926/2013047312926-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "44.35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "25.81%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어조미액",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어베이스분말",
+            "amount": "NM15%",
+            "sub_ingredients": [
+              {
+                "name": "오징어엑기스P",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "오징어족",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "오징어",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에이치와이비-211",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오징어향",
+            "amount": "G1.0%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "막사버 키로스트 와이이엑스에이치",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테비올배당체",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오징어씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "오징어베이스분말",
+            "amount": "NM60.0%",
+            "sub_ingredients": [
+              {
+                "name": "오징어엑기스P",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "오징어족",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미립당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운양파분말",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에이치와이비-211",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크향분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어향",
+        "amount": "G0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "막사버 키오스크 와이이엑스에이치",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비올배당체",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:00"
+  },
+  "nutrition": {
+    "kcal": 10.0,
+    "carbohydrate_g": 1.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 1.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (2g)",
+    "collected_at": "2026-03-04 04:39:00"
+  }
+}

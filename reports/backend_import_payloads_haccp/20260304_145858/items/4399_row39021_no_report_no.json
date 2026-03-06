@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "대림선 생브로콜리 물만두",
+    "reportnum": "20000498027189"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027189/20000498027189-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027189/20000498027189-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027189/20000498027189-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루27.32%(밀,미국산/캐나다산),돼지고기24.14%(국산),브로콜리10.86%(국산),부추(국산),양배추(국산),대파(국산),대두단백(대두),양파(국산),마늘(국산),정제염,참기름,난백(계란),양조간장,정백당,쇠고기엑기스P,피케이-4,향미증진제,감미유-S,시금치분말,후추분말,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027189/20000498027189-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약12개(100g)당 함량, 열량 180kcal,탄수화물19g (6%), 당류4g, 단백질 8g (14%),지방8g (16%), 포화지방3g (20%), 트랜스지방 0g, 콜레스테롤9.2mg (3%), 나트륨 370mg (18%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027189/20000498027189-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "amount": "27.32%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "24.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "국산",
+        "amount": "10.86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피케이-4",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:22:51"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 4.0,
+    "protein_g": 8.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 9.2,
+    "sodium_mg": 370.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 22:22:51"
+  }
+}

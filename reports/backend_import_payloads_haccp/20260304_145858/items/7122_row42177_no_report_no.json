@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "햇반오곡밥",
+    "reportnum": "19910144038103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038103/19910144038103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038103/19910144038103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038103/19910144038103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "멥쌀64.8%(국산),찹쌀16.9%(국산),흑미5.4%(국산),팥4.9%,기장4.3%,차수수2.2%,정제염,글루코노델타락톤",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038103/19910144038103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=210g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038103/19910144038103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "64.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "16.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "5.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "amount": "4.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기장",
+        "amount": "4.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "차수수",
+        "amount": "2.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루코노델타락톤",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:28:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 150.0,
+    "carbohydrate_g": 32.86,
+    "protein_g": 2.86,
+    "fat_g": 0.71,
+    "sugar_g": 0.0,
+    "sodium_mg": 114.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "210g",
+    "collected_at": "2026-03-03 18:28:07"
+  }
+}

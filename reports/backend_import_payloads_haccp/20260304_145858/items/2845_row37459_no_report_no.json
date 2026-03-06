@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "델몬트포도드링크",
+    "reportnum": "19900360105305"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105305/19900360105305-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105305/19900360105305-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105305/19900360105305-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,적포도청징농축액(포도과즙10%,칠레산),구연산,합성착향료(포도향),효소처리스테비아,구연산삼나트륨,색소혼합제제(홍화황색소,락색소,치자청색소),포도과피추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105305/19900360105305-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml) 1회 제공량 당 함량 *%영양성분 기준치 열량 60kcal, 탄수화물 15g(5%), 당류 15g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 15mg(1%) *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105305/19900360105305-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도청징농축액",
+        "sub_ingredients": [
+          {
+            "name": "포도과즙",
+            "origin": "칠레산",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "색소혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도과피추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:00:11"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 18:00:11"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "오란다",
+    "reportnum": "1986051202213"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986051202213/1986051202213-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986051202213/1986051202213-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986051202213/1986051202213-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산,캐나다산),물엿,설탕,팜올레인유(말레이시아산),정제포도당,정제소금(국내산),생이스트,마가린,참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986051202213/1986051202213-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986051202213/1986051202213-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:23:03"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 455.0,
+    "carbohydrate_g": 71.3,
+    "protein_g": 8.43,
+    "fat_g": 15.1,
+    "sugar_g": 29.1,
+    "sodium_mg": 253.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 6.81,
+    "trans_fat_g": 0.03,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-03 16:23:03"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "크레이지 떡볶이 스낵",
+    "reportnum": "19900355116194"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900355116194/19900355116194-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900355116194/19900355116194-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900355116194/19900355116194-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산,호주산),식물성유지(말레이시아산),백설탕,물엿,쌀가루(국내산),고추장 익스트림핫씨즈닝M,산도조절제,분말결정포도당,떡볶이소스맛분말LT,정제소금,파프리카추출색소,합성착향료(크래커향,스모크향),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900355116194/19900355116194-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉(50G) 총 2회 제공량(100G) \n열량265KCAL, 탄수화물35G (11%), 당류11G, 단백질2G (4%), 지방13G (25%), 포화지방6G (40%), 트랜스지방0G, 콜레스테롤5MG미만 (1%), 나트륨200MG 10%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900355116194/19900355116194-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장 익스트림핫씨즈닝M",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "떡볶이소스맛분말LT",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "크래커향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:59:02"
+  },
+  "nutrition": {
+    "kcal": 265.0,
+    "carbohydrate_g": 35.0,
+    "sugar_g": 11.0,
+    "protein_g": 2.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉(50G)",
+    "collected_at": "2026-03-03 17:59:02"
+  }
+}

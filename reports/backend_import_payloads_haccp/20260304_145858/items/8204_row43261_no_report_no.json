@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "맘마밀 안심이유식 가리비와 두부참치",
+    "reportnum": "20000441043138"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043138/20000441043138-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043138/20000441043138-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043138/20000441043138-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농쌀9%(국산),당근5%(국산),참치4%(원양산),양파(국산),가리비3%(중국산),무(국산),두부(국산)2.7%(국산),브로콜리(국산),정제수,옥수수전분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043138/20000441043138-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000441043138/20000441043138-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국산",
+        "amount": "9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참치",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가리비",
+        "origin": "중국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "국산",
+        "amount": "2.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:15:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 45.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 1.0,
+    "fat_g": 0.5,
+    "sugar_g": 1.0,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "100g",
+    "collected_at": "2026-03-03 22:15:31"
+  }
+}

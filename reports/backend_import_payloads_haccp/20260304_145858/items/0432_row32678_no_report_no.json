@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "후루츠앤젤 망고",
+    "reportnum": "197202880023127"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023127/197202880023127-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023127/197202880023127-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023127/197202880023127-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,망고퓨레 5%(인도산),사과농축액 0.1%(사과:국산),백설탕,산도조절제,혼합제제,결정포도당,산도조절제,로커스트콩검,젤란검,잔탄검,젖산칼슘),젤란검,식이섬유,비타민C,합성착향료(애플망고향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023127/197202880023127-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 기준 1개(90g) 열량 70kcal 탄수화물 18g(5%) 당류 17g 단백질 0g(0%) 지방 0g(0%) 포화지방0g(0%) 트랜스지방 0g 콜레스테롤 0mg(0%) 나트륨 65mg(3%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023127/197202880023127-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고퓨레",
+        "origin": "인도산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "애플망고향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:40:19"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 17.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 65.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 기준 1개(90g)",
+    "collected_at": "2026-03-03 13:40:19"
+  }
+}

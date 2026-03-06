@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "맛있는두유GT담백한맛1/2칼로리",
+    "reportnum": "1989044900277"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900277/1989044900277-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900277/1989044900277-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900277/1989044900277-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두액(대두고형분7%이상)65%(대두:외국산(미국,캐나다,중국 등)),정제수,분리대두단백(미국산),백설탕,글리세린지방에스테르,정제소금(국산),탄산수소나트륨,구연산삼나트륨,믹스검(카라기난,잔탄검,덱스트린),아세설팜칼륨(합성감미료),카라기난,수크랄로스(합성감미료),영양강화제,합성착향료(두유향,씨리얼향,땅콩향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900277/1989044900277-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190mL) 1회 제공량당 함량 ※()안의 수치는 1일 영양성분 기준치에 대한 비율임. 열량 59kcal 탄수화물 3.5g(1%) 당류 2g 단백질 5g(9%) 지방2.8g(5%) 포화지방 0.8g(5%) 트랜스지방 0g 콜레스테롤 0mg(0%) 나트륨 190mg(10%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989044900277/1989044900277-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두액",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "65%(대두고형분7%이상)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "믹스검",
+        "sub_ingredients": [
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아세설팜칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "두유향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "씨리얼향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:46:02"
+  },
+  "nutrition": {
+    "kcal": 59.0,
+    "carbohydrate_g": 3.5,
+    "sugar_g": 2.0,
+    "protein_g": 5.0,
+    "fat_g": 2.8,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 190.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190mL)",
+    "collected_at": "2026-03-03 17:46:02"
+  }
+}

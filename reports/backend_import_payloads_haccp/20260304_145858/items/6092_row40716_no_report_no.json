@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "초이스엘 담백한 화이트체다슬라이스",
+    "reportnum": "20090476009289"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009289/20090476009289-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009289/20090476009289-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009289/20090476009289-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈78%[뉴질랜드산 체다100%(원유,식염,유산균,우유응고효소)],정제수,산도조절제,로마노치즈페이스트(뉴질랜드산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009289/20090476009289-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1매(20g) 총 5회 제공량(100g) 1회 제공량당 함량 *%영양성분 기준치 열량 60kcal, 탄수화물 1g 0%, 당류 0g, 단백질 3g 5%, 칼슘 120mg 17%, 지방 5g 10%, 포화지방 3.3g 22%, 트랜스지방 0.2g, 콜레스테롤 10mg 3%, 나트륨 180mg 9% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009289/20090476009289-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "amount": "78%",
+        "sub_ingredients": [
+          {
+            "name": "체다",
+            "origin": "뉴질랜드산",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로마노치즈페이스트",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:03"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "calcium_mg": 120.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 3.3,
+    "trans_fat_g": 0.2,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 180.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1매(20g)",
+    "collected_at": "2026-03-04 04:21:03"
+  }
+}

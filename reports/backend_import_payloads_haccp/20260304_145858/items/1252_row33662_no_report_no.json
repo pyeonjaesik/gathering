@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "버터링소프트",
+    "reportnum": "19820481021107"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021107/19820481021107-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021107/19820481021107-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021107/19820481021107-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀,미국산),쇼트닝[식물성유지(팜올레인유(말레이시아산),팜스테아린유(말레이시아산),야자경화유(경화유)),우지(호주산)],백설탕,전란액(계란),가공버터(경화유),마가린(우유,경화유,대두),경성가공치즈,기타가공품,유화제,팽창제,정제소금,합성착향료(밀크향,버터향,아몬드향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021107/19820481021107-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=86g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021107/19820481021107-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "우지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아몬드향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:52:32"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 547.0,
+    "carbohydrate_g": 56.98,
+    "protein_g": 6.98,
+    "fat_g": 32.56,
+    "sugar_g": 20.93,
+    "sodium_mg": 244.0,
+    "cholesterol_mg": 34.88,
+    "saturated_fat_g": 16.28,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "86g",
+    "collected_at": "2026-03-03 14:52:32"
+  }
+}

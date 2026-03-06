@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "참조미오징어",
+    "reportnum": "2001038642743"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001038642743/2001038642743-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001038642743/2001038642743-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001038642743/2001038642743-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "오징어귀(페루산)90.04%,D-소르비톨,설탕,고화방지분당{설탕,전분(밀)},정제소금(국산)0.8%,L-글루타민산나트륨(향미증진제),구연산,혼합제제(L-글루타민산나트륨,5'-리보뉴클레오티드이나트륨),효소처리스테비아,호박산이나트륨,메타인산나트륨,소르빈산칼륨(합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001038642743/2001038642743-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001038642743/2001038642743-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오징어귀",
+        "origin": "페루산",
+        "amount": "90.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고화방지분당",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박산이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메타인산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:29:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 318.0,
+    "carbohydrate_g": 35.9,
+    "protein_g": 36.4,
+    "fat_g": 3.2,
+    "sugar_g": 35.9,
+    "sodium_mg": 1091.0,
+    "cholesterol_mg": 534.4,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:29:01"
+  }
+}

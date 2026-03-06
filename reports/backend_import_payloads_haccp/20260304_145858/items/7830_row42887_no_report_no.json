@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "참깨스틱",
+    "reportnum": "19960375066269"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066269/19960375066269-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066269/19960375066269-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066269/19960375066269-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀;미국산,호주산),설탕,식물성유지(팜유;말레이시아산),쇼트닝(팜유:알레이시아산),참깨(중국산)1.49%,산도조절제(탄산수소암모늄,탄산수소나트륨),가공연유,전지분유,함수결정포도당,정제소금,합성향료(참깨향)0.1%,산화방지제(산성이황산나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066269/19960375066269-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=187g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066269/19960375066269-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "중국산",
+        "amount": "1.49%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소암모늄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "참깨향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산화방지제",
+        "sub_ingredients": [
+          {
+            "name": "산성이황산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:06:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 262.0,
+    "carbohydrate_g": 35.3,
+    "protein_g": 4.81,
+    "fat_g": 10.7,
+    "sugar_g": 8.02,
+    "sodium_mg": 203.0,
+    "cholesterol_mg": 0.21,
+    "saturated_fat_g": 4.81,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "187g",
+    "collected_at": "2026-03-03 21:06:12"
+  }
+}

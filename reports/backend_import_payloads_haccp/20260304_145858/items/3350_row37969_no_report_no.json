@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "핫치킨경단",
+    "reportnum": "19930607450136"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450136/19930607450136-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450136/19930607450136-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450136/19930607450136-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기58.96%(기계발골육/국산),돼지고기16.08%(국산),옥수수전분(옥수수:외국산),백설탕,대두단백,숯불치킨맛시즈닝S.W,매운소스H1.79%,핫바매콤베이스H,정제소금,햄맛페이스트2,빵가루,숯불갈비양념,간장,양파,미트프로엠,대두유,산도조절제,캅시쿰분말,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450136/19930607450136-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 140g 100g당 275kcal 나트륨 850mg 43%, 탄수화물 19g 6%, 당류 6g 6%, 지방 16g 30%, 트랜스지방 0g, 포화지방 15g 100%, 콜레스테롤 60mg 20%, 단백질 14g 25% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450136/19930607450136-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "58.96%",
+        "sub_ingredients": [
+          {
+            "name": "기계발골육",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "16.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불치킨맛시즈닝S.W",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운소스",
+        "amount": "1.79%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫바매콤베이스H",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "햄맛페이스트",
+        "amount": "2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비양념",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미트프로엠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "캅시쿰분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:46:32"
+  },
+  "nutrition": {
+    "total_content": "140",
+    "food_weight_g": 140.0,
+    "kcal": 275.0,
+    "sodium_mg": 850.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 6.0,
+    "fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 15.0,
+    "cholesterol_mg": 60.0,
+    "protein_g": 14.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 19:46:32"
+  }
+}

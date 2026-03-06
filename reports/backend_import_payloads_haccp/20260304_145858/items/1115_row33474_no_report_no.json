@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "프레주자몽",
+    "reportnum": "19800415004271"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004271/19800415004271-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004271/19800415004271-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004271/19800415004271-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,자몽농축과즙(자몽과즙으로10%,미국산),백설탕,에리스리톨,합성착향료(자몽향,레몬향),혼합제제(적양배추색소,코치닐추출색소,덱스트린),구연산,구연산삼나트륨,트레할로스,비타민C,수크랄로스(합성착향료),나린진,효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004271/19800415004271-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1Can(240ml)/총 1회 제공량(240ml)/1회 제공량당 함량: 70kcal/탄수화물 18g(5%) 당류 17g/에리스리톨 1g/단백질 0g(0%)/지방 0g(0%) 포화지방 0g(0%) 트랜스지방 -g/콜레스테롤 -mg(0%)/나트륨 35mg(2%)/Vitamin C 30mg(30%) *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004271/19800415004271-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽농축과즙",
+        "origin": "미국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "자몽과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리스리톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "적양배추색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레할로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나린진",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:35:19"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 17.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "sodium_mg": 35.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1Can(240ml)",
+    "collected_at": "2026-03-03 14:35:19"
+  }
+}

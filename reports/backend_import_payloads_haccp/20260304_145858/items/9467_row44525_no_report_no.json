@@ -1,0 +1,348 @@
+{
+  "product": {
+    "name_ko": "주부 초밥왕 새콤달콤 꼬마",
+    "reportnum": "20110449023114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110449023114/20110449023114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110449023114/20110449023114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110449023114/20110449023114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*조미유부피-유부 53%[대두(외국산:중국,미국,캐나다 등 ) 93.5%, 대두유(대두:브라질산,파라과이산,미국산),두부응고제1,두부응고제2,두부응고제3],정제수,백설탕,혼합간장[탈지대두(외국산),액상과당,천일염(호주산),소맥,비타텐A],D-소비톨액,소스류1[정제소금(국산),생강농축액(생강 51%/국산)],소스류2,산도조절제,   *새콤달콤초밥소스-정제수,백설탕,발효식초(주정,발효영양원),액상과당,정제소금(국내산),청주(쌀:국산,주정),2배양조식초[주정,맥아엑기스(겉보리:미국산), 발효영양원], 갈색설탕, DL-사과산, 매실엑스 0.2%[매실추출농축액(매실:국산) 35%,액상과당,백설탕,구연산,흑설탕], 효모추출물, 향미증진제,  *알콩달콩야채볶음-볶음참깨(참깨:외국산/인도,파키스탄,에티오피아 등),계란후레이크-1[전란분:덴마크산), 옥수수전분(옥수수:외국산), 밀가루, 난백분, 글리세린], 볶음흑임자(흑임자:중국산), 건당근후레이크 15%, 건파후레이크 2.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110449023114/20110449023114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=149.20g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110449023114/20110449023114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "조미유부피",
+        "sub_ingredients": [
+          {
+            "name": "유부",
+            "amount": "53%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 중국산, 미국산, 캐나다산",
+                "amount": "93.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "origin": "브라질산, 파라과이산, 미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "두부응고제1",
+                "sub_ingredients": []
+              },
+              {
+                "name": "두부응고제2",
+                "sub_ingredients": []
+              },
+              {
+                "name": "두부응고제3",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타텐A",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "D-소비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스류1",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "생강농축액",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "생강",
+                    "amount": "51%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "소스류2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "새콤달콤초밥소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": [
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효영양원",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청주",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "2배양조식초",
+            "sub_ingredients": [
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맥아엑기스",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "겉보리",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "발효영양원",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "갈색설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "DL-사과산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매실엑스",
+            "amount": "0.2%",
+            "sub_ingredients": [
+              {
+                "name": "매실추출농축액",
+                "origin": "국산",
+                "amount": "35%",
+                "sub_ingredients": [
+                  {
+                    "name": "매실",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "흑설탕",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알콩달콩야채볶음",
+        "sub_ingredients": [
+          {
+            "name": "볶음참깨",
+            "origin": "외국산, 인도산, 파키스탄산, 에티오피아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란후레이크-1",
+            "sub_ingredients": [
+              {
+                "name": "전란분",
+                "origin": "덴마크산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "밀가루",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난백분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "볶음흑임자",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "흑임자",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건당근후레이크",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파후레이크",
+            "amount": "2.5%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:55"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 218.0,
+    "carbohydrate_g": 23.46,
+    "protein_g": 8.71,
+    "fat_g": 10.05,
+    "sugar_g": 18.1,
+    "sodium_mg": 717.0,
+    "cholesterol_mg": 3.35,
+    "saturated_fat_g": 1.68,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "149.20g",
+    "collected_at": "2026-03-04 04:31:55"
+  }
+}

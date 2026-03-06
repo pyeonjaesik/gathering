@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name_ko": "CJ 콤비네이션피자",
+    "reportnum": "20090200096185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090200096185/20090200096185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090200096185/20090200096185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090200096185/20090200096185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국,캐나다산),이츠웰피자치즈[반경성치즈(외국산),분말셀룰로오스],양파(국산),토마토소스-에이(홀토마토,크러쉬드토마토,양파,할라페노페퍼,백설탕),혼합프레스햄1,혼합프레스햄2,이츠웰스위트콘,피자페퍼로니,기타가공품,피망,백설탕,정제소금,효모,혼합제제[소맥분,탄산칼슘,글리세린지방산에스테르,비타민C,α-아밀라아제(비세균성),헤미셀룰라아제,활성밀글루텐,혼합식용유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090200096185/20090200096185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=105g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090200096185/20090200096185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이츠웰피자치즈",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "반경성치즈",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토소스-에이",
+        "sub_ingredients": [
+          {
+            "name": "홀토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크러쉬드토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "할라페노페퍼",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합프레스햄1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합프레스햄2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이츠웰스위트콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피자페퍼로니",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "α-아밀라아제",
+            "sub_ingredients": [
+              {
+                "name": "비세균성",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "헤미셀룰라아제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "활성밀글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 219.0,
+    "carbohydrate_g": 24.76,
+    "protein_g": 11.05,
+    "fat_g": 8.57,
+    "sugar_g": 5.71,
+    "sodium_mg": 343.0,
+    "cholesterol_mg": 19.05,
+    "saturated_fat_g": 4.76,
+    "trans_fat_g": 0.29,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "105g",
+    "collected_at": "2026-03-04 04:17:11"
+  }
+}

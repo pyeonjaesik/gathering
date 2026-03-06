@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "누드 녹차 빼빼로",
+    "reportnum": "19830308010226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010226/19830308010226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010226/19830308010226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010226/19830308010226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "식물성크림[백설탕,식물성유지1(부분경화유;팜핵유,팜스테아린유,말레이시아산),혼합분유(외국산;미국,네덜란드,캐나다등),유당,혼합식용유(부분경화유),고형차(제주첫물가루녹차;제주산)],밀가루(밀;미국산,캐나다산),옥수수전분[옥수수;외국산(러시아,세르비아,헝가리)],식물성유지2(부분경화유),백설탕,기타가공품,액상과당,식물성유지2{부분경화유},맥아엑기스,정제소금,합성착향료(팜브래드향,바닐라향),산도조절제,미강유,복합소미식품 우유 밀 대두 함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010226/19830308010226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1갑(39g) 총 1회 제공량(39g) 1회 제공량당 함량: 열량 205kcal, 탄수화물 24g (7%),당류 14g, 단백질 2g (4%),지방 11g (21%),포화지방 8g (52%),트랜스지방 0g,콜레스테롤 0mg (0%),나트륨 80mg (4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010226/19830308010226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지1",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜핵유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜스테아린유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "혼합분유",
+            "origin": "외국산, 미국산, 네덜란드산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고형차",
+            "sub_ingredients": [
+              {
+                "name": "제주첫물가루녹차",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산, 러시아산, 세르비아산, 헝가리산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지2",
+        "sub_ingredients": [
+          {
+            "name": "부분경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "팜브래드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합소미식품",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:07:40"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 14.0,
+    "protein_g": 2.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 39.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1갑(39g)",
+    "collected_at": "2026-03-03 15:07:40"
+  }
+}

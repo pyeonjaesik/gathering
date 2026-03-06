@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "Premium 비타500",
+    "reportnum": "19960308010222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010222/19960308010222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010222/19960308010222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010222/19960308010222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,종국,사과과즙(당도72Brix이상),비타민C 0.5(500mg),비타민B2 0.0012(1.2mg),비타민E분말 0.005(0.75mg),히알루론산-KD 0.01(히알루론산 1,000㎍,덱스트린),콜라겐펩타이드 0.001,합성착향료(드링크향),구연산,케이디비타2010,구연산삼나트륨,펙틴,타우린,DL-사과산,오렌지추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010222/19960308010222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(100ml) 1회 제공량당 함량: 열량 60kcal, 탄수화물 15g (5%)·당류 14g,단백질 0g (0%),지방 0g (0%), 포화지방 0g (0%)·트랜스지방 0g,콜레스테롤 0mg(0%),나트륨 30mg (2%),비타민C 500mg(500%),비타민B2 1.2mg(100%),비타민E 0.75mga-TE(7.5%) ※( )안의 수치는 1일 영양소기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010222/19960308010222-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과과즙",
+        "amount": "당도72Brix이상",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.5(500mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "amount": "0.0012(1.2mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민E분말",
+        "amount": "0.005(0.75mg)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "히알루론산-KD",
+        "amount": "0.01(히알루론산 1, 000㎍, 덱스트린)",
+        "sub_ingredients": [
+          {
+            "name": "히알루론산",
+            "amount": "1, 000㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜라겐펩타이드",
+        "amount": "0.001",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "amount": "(드링크향)",
+        "sub_ingredients": [
+          {
+            "name": "드링크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이디비타2010",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:02:12"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 14.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(100ml)",
+    "collected_at": "2026-03-03 21:02:12"
+  }
+}

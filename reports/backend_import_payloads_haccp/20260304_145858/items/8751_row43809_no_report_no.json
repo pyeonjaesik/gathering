@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "앙팡 유기농 아기치즈 스텝2 180g",
+    "reportnum": "20050575003125"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050575003125/20050575003125-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050575003125/20050575003125-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050575003125/20050575003125-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농자연치즈81%(뉴질랜드산:유기농우유,식염,유산균주,우유응고효소),정제수,산도조절제,우유칼슘1%(호주산),초유단백분말(우유)0.1%(뉴질랜드산),건조효모(비타민D2함유)0.04%(에스토니아산),아마씨유(오메가3지방산함유)0.04%(아마씨:캐나다산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050575003125/20050575003125-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050575003125/20050575003125-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농자연치즈",
+        "origin": "뉴질랜드산",
+        "amount": "81%",
+        "sub_ingredients": [
+          {
+            "name": "유기농우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유응고효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유칼슘",
+        "origin": "호주산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초유단백분말",
+        "origin": "뉴질랜드산",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건조효모",
+        "origin": "에스토니아산",
+        "amount": "0.04%",
+        "sub_ingredients": [
+          {
+            "name": "비타민D2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아마씨유",
+        "origin": "캐나다산",
+        "amount": "0.04%",
+        "sub_ingredients": [
+          {
+            "name": "오메가3지방산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:26"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 333.0,
+    "carbohydrate_g": 0.1,
+    "protein_g": 19.1,
+    "fat_g": 28.5,
+    "sugar_g": 0.0,
+    "sodium_mg": 252.0,
+    "calcium_mg": 739.0,
+    "cholesterol_mg": 71.0,
+    "saturated_fat_g": 17.0,
+    "trans_fat_g": 1.4,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "180g",
+    "collected_at": "2026-03-04 03:55:26"
+  }
+}

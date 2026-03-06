@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "프로마제 크림치즈 플레인",
+    "reportnum": "2009026200149"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026200149/2009026200149-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026200149/2009026200149-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026200149/2009026200149-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈92%(프랑스산:탈지유,유크림,버터밀크파우더,젖산균,유단백),정제수,농축유청단백(수입산/우유),식염,로커스트콩검(대두),소르빈산칼륨(합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026200149/2009026200149-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량:1회 제공량 1개(28g)/총 6회 제공량 (168g),열량 85kcal,탄수화물 6g(2%),당류 1g미만,단백질 2g(3%),지방 6g(12%),포화지방 4.0g(27%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 50mg(3%),%영양소기준치:1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026200149/2009026200149-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "origin": "프랑스산",
+        "amount": "92%",
+        "sub_ingredients": [
+          {
+            "name": "탈지유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터밀크파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산균",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축유청단백",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:31"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 6.0,
+    "protein_g": 2.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(28g)",
+    "collected_at": "2026-03-04 04:17:31"
+  }
+}

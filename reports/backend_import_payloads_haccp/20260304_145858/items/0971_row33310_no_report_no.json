@@ -1,0 +1,84 @@
+{
+  "product": {
+    "name_ko": "남양 요구르트",
+    "reportnum": "1979053200123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200123/1979053200123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200123/1979053200123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200123/1979053200123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "탈지유(환원탈지유,국산,원유),액상과당,백설탕,포도당,구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200123/1979053200123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 당 열량 45kcal 탄수화물 10g(3%),당류 10g, 단백질 1g (2%),지방 0g (0%),포화지방 0g (0%),트랜스지방 0g,콜레스테롤 0mg(0%),나트륨 10mg (1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/1979053200123/1979053200123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "탈지유",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "환원탈지유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:25:11"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-03 14:25:11"
+  }
+}

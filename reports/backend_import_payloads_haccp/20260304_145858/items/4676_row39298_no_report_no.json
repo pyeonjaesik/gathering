@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "피코크오리엔탈드레싱",
+    "reportnum": "200204610736056"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736056/200204610736056-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736056/200204610736056-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736056/200204610736056-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "현미식초[현미당화농축액(현미:국산),주정,발효영양원],정제수,양조간장(일본산/탈지대두,밀,정제소금,주정,감초추출물),옥수수기름,미림(쌀,주정),양파,발사믹비네가,백설탕,결정포도당,사과퓨레,콩발효맛내기,마늘,볶음참깨,참기름,효모추출물,타마린드검,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736056/200204610736056-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당함량, 열량275kcal, 탄수화물33g(10%), 당류9g, 단백질2g(4%), 지방15g(29%), 포화지방2.3g(15%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨950mg(48%), *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736056/200204610736056-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미식초",
+        "sub_ingredients": [
+          {
+            "name": "현미당화농축액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "현미",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "origin": "일본산",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발사믹비네가",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩발효맛내기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타마린드검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:02"
+  },
+  "nutrition": {
+    "kcal": 275.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 9.0,
+    "protein_g": 2.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 950.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:41:02"
+  }
+}

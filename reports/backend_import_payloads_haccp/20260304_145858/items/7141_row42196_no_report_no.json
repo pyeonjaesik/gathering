@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "햇반컵반 오징어 덮밥",
+    "reportnum": "19910144038594"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038594/19910144038594-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038594/19910144038594-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038594/19910144038594-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*햇반(180g/즉석조리식품/질소충전제품/살균제품):배합수제외[멥쌀(국산)99.9%,쌀미강추출물]*오징어덮밥소스(110g/소스류/살균제품):오징어(국산),정제수,당근(국산),양파(국산),옥배유,맥아물엿,대파,백설탕,마늘,고춧가루,해찬들알찬고추장그린,혼합제제(변성전분,말토덱스트린),양조간장,혼합해물엑기스,쇠고기진한다시,정제소금,짬뽕향미유,파프리카추출색소,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038594/19910144038594-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038594/19910144038594-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "햇반",
+        "amount": "180g",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "origin": "국산",
+            "amount": "99.9",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀미강추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오징어덮밥소스",
+        "amount": "110g",
+        "sub_ingredients": [
+          {
+            "name": "오징어",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해찬들알찬고추장그린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합해물엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기진한다시",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짬뽕향미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑후추분말",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:30:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 146.0,
+    "carbohydrate_g": 27.83,
+    "protein_g": 2.61,
+    "fat_g": 2.61,
+    "sugar_g": 2.17,
+    "sodium_mg": 330.0,
+    "cholesterol_mg": 2.17,
+    "saturated_fat_g": 0.43,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "230g",
+    "collected_at": "2026-03-03 18:30:43"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "자몽농축에이드",
+    "reportnum": "201404960659"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404960659/201404960659-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404960659/201404960659-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404960659/201404960659-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "후르츠믹스농축액[자몽농축액(미국산, 자몽 100%), 오렌지농축액(브라질산, 오렌지100%), 레몬농축액(아르헨티나산, 레몬100%)] 41%, 백설탕, 홍자몽펄프(미국산, 홍자몽100%) 15%, 정제수, 포도당, 과당, 자몽종자추출물, 합성향료(시트러스향, 자몽향, 오렌지향), 안식향산나트륨(보존료), 착색료(식용색소적색제40호, 식용색소청색제1호)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404960659/201404960659-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=150ml | foodSize=1120ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404960659/201404960659-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "후르츠믹스농축액",
+        "amount": "41%",
+        "sub_ingredients": [
+          {
+            "name": "자몽농축액",
+            "origin": "미국산",
+            "amount": "자몽 100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지농축액",
+            "origin": "브라질산",
+            "amount": "오렌지 100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬농축액",
+            "origin": "아르헨티나산",
+            "amount": "레몬 100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍자몽펄프",
+        "origin": "미국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽종자추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "안식향산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "착색료",
+        "sub_ingredients": [
+          {
+            "name": "식용색소적색제40호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용색소청색제1호",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:43:10"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 190.0,
+    "carbohydrate_g": 45.0,
+    "protein_g": 1.0,
+    "fat_g": 0.5,
+    "sugar_g": 24.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "150ml",
+    "total_content": "1120ml",
+    "collected_at": "2026-03-04 04:43:10"
+  }
+}

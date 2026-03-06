@@ -1,0 +1,239 @@
+{
+  "product": {
+    "name_ko": "올바른피자만들기_고르곤졸라",
+    "reportnum": "2012043903747"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012043903747/2012043903747-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012043903747/2012043903747-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012043903747/2012043903747-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "올바른또띠아_우유{밀가루(밀/호주산,미국산),정제수,우유(국산),식물성유지(대두유100%),정제소금,레시틴,백설탕,혼합제제(바닐라추출물,발효주정,정제수),유카추출물,효모(이스트)},모짜렐라치즈{자연치즈99.5%(수입산),분말셀룰로오스},고르곤졸라소스24%<마요네즈,정제수,고르곤졸라치즈7%,덱스트린,유청분말,혼합제제(타피오카변성전분,덱스트린),폴리인산나트륨,잔탄검,젖산),허니소스{액상과당,벌꿀(국산),정제수,변성전분,발효식초,백설탕,정제소금,잔탄검,카라멜당시럽}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012043903747/2012043903747-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 피자1개(125g)/ 총 2회 제공량(250g) *%영양소기준치: 1일 영양소 기준치에 대한 비율 1회 제공량당 함량 *%영양소 기준치 열량 385kcal 탄수화물 36g 11% 식이섬유 1g 4% 당류 8g 단백질 14g 25% 지방 21g 41% 포화지방 9g 60% 트랜스지방 0.6g 콜레스테롤 40mg 13% 나트륨 480mg 24% 비타민A 0㎍RE 0%/비타민C 0mg 0%/칼슘 277mg 40%/철 0.3mg 2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012043903747/2012043903747-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "올바른또띠아",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "바닐라추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유카추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": [
+              {
+                "name": "이스트",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "모짜렐라치즈",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "origin": "수입산",
+            "amount": "99.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고르곤졸라소스",
+        "amount": "24%",
+        "sub_ingredients": [
+          {
+            "name": "마요네즈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고르곤졸라치즈",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "타피오카변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허니소스",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜당시럽",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:34:37"
+  },
+  "nutrition": {
+    "kcal": 385.0,
+    "carbohydrate_g": 36.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 8.0,
+    "protein_g": 14.0,
+    "fat_g": 21.0,
+    "saturated_fat_g": 9.0,
+    "trans_fat_g": 0.6,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 480.0,
+    "calcium_mg": 277.0,
+    "iron_mg": 0.3,
+    "basis_amount": 125.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 피자1개(125g)",
+    "collected_at": "2026-03-04 04:34:37"
+  }
+}

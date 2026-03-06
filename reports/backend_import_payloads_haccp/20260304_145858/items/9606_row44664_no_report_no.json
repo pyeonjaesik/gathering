@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "미니 프레첼 체다치즈맛",
+    "reportnum": "2014033246815"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246815/2014033246815-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246815/2014033246815-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246815/2014033246815-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "사비칩/불가리아산[밀가루, 식물성유지, 물엿, 가공소금, 액상과당], 팜올레인유/말레이시아산, 체다치즈맛씨즈닝S 4.9%[화이트체다씨즈닝28%/미국산(블루치즈5%), 미립당, 체다치즈씨즈닝14%/미국산{체다치즈파우다65%(체다치즈100%)}, 가공소금, 짭짤한맛인핸서, 치즈분말4%{치즈맛베이스15.133%(체다치즈0.997%/미국산)}, 아스파탐(감미료, 페닐알라닌 함유)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246815/2014033246815-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=85g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246815/2014033246815-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사비칩",
+        "origin": "불가리아산",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "체다치즈맛씨즈닝S",
+        "amount": "4.9%",
+        "sub_ingredients": [
+          {
+            "name": "화이트체다씨즈닝",
+            "origin": "미국산",
+            "amount": "28%",
+            "sub_ingredients": [
+              {
+                "name": "블루치즈",
+                "origin": "미국산",
+                "amount": "5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈씨즈닝",
+            "origin": "미국산",
+            "amount": "14%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈파우다",
+                "amount": "65%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짭짤한맛인핸서",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈분말",
+            "amount": "4%",
+            "sub_ingredients": [
+              {
+                "name": "치즈맛베이스",
+                "amount": "15.133%",
+                "sub_ingredients": [
+                  {
+                    "name": "체다치즈",
+                    "origin": "미국산",
+                    "amount": "0.997%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:37"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 459.0,
+    "carbohydrate_g": 68.24,
+    "protein_g": 9.41,
+    "fat_g": 16.47,
+    "sugar_g": 3.53,
+    "sodium_mg": 758.0,
+    "cholesterol_mg": 2.35,
+    "saturated_fat_g": 7.06,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "85g",
+    "collected_at": "2026-03-04 04:40:37"
+  }
+}

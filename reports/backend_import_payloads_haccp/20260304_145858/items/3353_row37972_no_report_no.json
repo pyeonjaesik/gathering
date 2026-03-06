@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "스모크비엔나",
+    "reportnum": "19930607450156"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450156/19930607450156-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450156/19930607450156-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450156/19930607450156-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기58.89%(기계발골육/국산),돼지고기22.25%(국산),옥수수전분(옥수수:외국산),정제수,대두단백,백설탕,윈너시즈닝HS3,정제소금,L-글루탐산나트륨(향미증진제),산도조절제,카라기난,소브산칼륨(합성보존료),에리쏘르빈산나트륨(산화방지제),락색소,아질산나트륨(발색제),콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450156/19930607450156-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 제공량 (1,000g)/1회 제공량(100g)당 함량,열량 250kcal,탄수화물14g(4%),당류1g(1%),단백질13g(34%),지방16g(30%),포화지방14g(95%),트랜스지방0g,콜레스테롤65mg(22%),나트륨680mg(34%),*%영양성분 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450156/19930607450156-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "58.89%",
+        "sub_ingredients": [
+          {
+            "name": "기계발골육",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "22.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "윈너시즈닝HS3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소브산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에리쏘르빈산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:46:54"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 1.0,
+    "protein_g": 13.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 65.0,
+    "sodium_mg": 680.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)당 함량",
+    "collected_at": "2026-03-03 19:46:54"
+  }
+}

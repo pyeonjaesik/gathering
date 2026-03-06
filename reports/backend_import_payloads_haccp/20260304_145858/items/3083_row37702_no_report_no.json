@@ -1,0 +1,169 @@
+{
+  "product": {
+    "name_ko": "매콤까르보나라떡볶이",
+    "reportnum": "19920444004198"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920444004198/19920444004198-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920444004198/19920444004198-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920444004198/19920444004198-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀(수입산),매콤까르보나라떡볶이소스<매운혼합베이스{고추장[쌀(국산),청양고춧가루(국산)],양파(국산),양조간장(대두,밀),토마토케첩},우유(국산),휘핑크림(영국산/유크림,카라기난),루,양파(국산),베이컨(돼지고기),혼합제제(타피오카변성전분,말토덱스트린)>,파슬리&치즈분말,정제염,주정",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920444004198/19920444004198-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 199g/총 2.4회 분량 1회 분량당 함량 %영양소 기준치 열량 435kcal, 탄수화물 80g 24%, 식이섬유 0g 0%, 당류 4g, 단백질 9g 15%, 지방 9g 18%, 포화지방 4.3g 29%, 트랜스지방 0.3g, 콜레스테롤 20mg 7%, 나트륨 930mg 47%, 비타민A 0㎍RE 0%, 비타민C 0mg 0%, 칼슘 75mg 11%, 철 0.4mg 3% %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920444004198/19920444004198-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매콤까르보나라떡볶이소스",
+        "sub_ingredients": [
+          {
+            "name": "매운혼합베이스",
+            "sub_ingredients": [
+              {
+                "name": "고추장",
+                "sub_ingredients": [
+                  {
+                    "name": "쌀",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "청양고춧가루",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양조간장",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "토마토케첩",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "휘핑크림",
+            "origin": "영국산",
+            "sub_ingredients": [
+              {
+                "name": "유크림",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베이컨",
+            "sub_ingredients": [
+              {
+                "name": "돼지고기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "타피오카변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파슬리&치즈분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:06:55"
+  },
+  "nutrition": {
+    "kcal": 435.0,
+    "carbohydrate_g": 80.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 4.0,
+    "protein_g": 9.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 4.3,
+    "trans_fat_g": 0.3,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 930.0,
+    "calcium_mg": 75.0,
+    "iron_mg": 0.4,
+    "basis_amount": 199.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 199g",
+    "collected_at": "2026-03-03 19:06:55"
+  }
+}

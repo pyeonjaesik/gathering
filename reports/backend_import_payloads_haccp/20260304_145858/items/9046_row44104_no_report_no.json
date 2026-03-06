@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "스페셜티 카페라떼 아포가토",
+    "reportnum": "2008039512065"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512065/2008039512065-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512065/2008039512065-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512065/2008039512065-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유(국산) 32%, 커피추출액[고형분 3%이상, 원두:브라질산 60%(산토스), 에티오피아산 40%(시다모, 예가체프코케)]30%, 정제수, 백설탕, 유크림,아포가토 바닐라향 파우더, 탄산수소나트륨,합성착향료(바닐라향), 자당지방산에스테르, 정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512065/2008039512065-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=250ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008039512065/2008039512065-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "32%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피추출액",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "3%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원두",
+            "origin": "브라질산 60%",
+            "sub_ingredients": [
+              {
+                "name": "에티오피아",
+                "origin": "에티오피아산",
+                "amount": "40%",
+                "sub_ingredients": [
+                  {
+                    "name": "시다모",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "예가체프코케",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아포가토 바닐라향 파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:09:54"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 64.0,
+    "carbohydrate_g": 8.8,
+    "protein_g": 1.2,
+    "fat_g": 2.72,
+    "sugar_g": 8.4,
+    "sodium_mg": 54.0,
+    "cholesterol_mg": 8.0,
+    "saturated_fat_g": 1.64,
+    "trans_fat_g": 0.14,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "250ml",
+    "collected_at": "2026-03-04 04:09:54"
+  }
+}

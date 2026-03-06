@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "NH 통감자 고로케맛",
+    "reportnum": "20140383299115"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299115/20140383299115-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299115/20140383299115-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299115/20140383299115-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사각감자튜브62.5%[인도산/감자전분,감자분말30%,감자플레이크22%,변성감자전분,정제소금],팜올레인유(말레이시아산),고로케맛씨즈닝6%[미립당,가공소금(미국산),조제양파분말(중국산),씨즈닝파우다,짭짤한맛인핸서]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299115/20140383299115-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 120g 100g당 562kcal\n<100g당 1일 영양성분 기준치에 대한 비율>\n나트륨693㎎ 35%, 탄수화물55g 17%, 당류1g 1%, 지방37g 69%, 트랜스지방0g, 포화지방17g 113%, 콜레스테롤0㎎ 0%, 단백질2g 4%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299115/20140383299115-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사각감자튜브",
+        "origin": "인도산",
+        "amount": "62.5%",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자분말",
+            "amount": "30%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자플레이크",
+            "amount": "22%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고로케맛씨즈닝",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조제양파분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "씨즈닝파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짭짤한맛인핸서",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:33"
+  },
+  "nutrition": {
+    "kcal": 562.0,
+    "sodium_mg": 693.0,
+    "carbohydrate_g": 55.0,
+    "sugar_g": 1.0,
+    "fat_g": 37.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 17.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:41:33"
+  }
+}

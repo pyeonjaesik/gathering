@@ -1,0 +1,53 @@
+{
+  "product": {
+    "name_ko": "푸르맘참기름",
+    "reportnum": "1997055514933"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514933/1997055514933-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514933/1997055514933-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514933/1997055514933-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참깨 100%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514933/1997055514933-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량:900kcal, 지방:100.0g, 포화지방:15.7g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997055514933/1997055514933-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:30:25"
+  },
+  "nutrition": {
+    "kcal": 900.0,
+    "fat_g": 100.0,
+    "saturated_fat_g": 15.7,
+    "collected_at": "2026-03-03 21:30:25"
+  }
+}

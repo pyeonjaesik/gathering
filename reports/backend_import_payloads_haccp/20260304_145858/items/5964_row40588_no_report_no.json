@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "콩고물 쑥인절미 쌀과자",
+    "reportnum": "20090360062117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090360062117/20090360062117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090360062117/20090360062117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090360062117/20090360062117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀크릿츠(국산)27.3%, 현미분말(국산)27.3%, 대두볶음콩가루18.4%[대두70%(국산), 원당, 정제염], 쑥분말(국산)0.8%, 팜유(말레이시아)24%, 10곡분말(국산)0.2%[녹두,흑미,차조,찰보리,적두,찹쌀,메밀,수수,대두,율무],올리브유,밀식이섬유, 정제염, 청사과색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090360062117/20090360062117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량260kcal, 나트륨60mg 3%, 탄수화물31g 10%, 당류6g 6%, 지방13g 24%, 트랜스지방0g -, 포화지방6g 40%, 콜레스테롤0mg 0%, 단백질4g 7%\n※ 총 내용량50g의 함량으로 3회 정도 나누어 주실것을 권장 드립니다.\n※1일 영양소 기준치에 대한 비율(%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090360062117/20090360062117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀크릿츠",
+        "origin": "국산",
+        "amount": "27.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미분말",
+        "origin": "국산",
+        "amount": "27.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두볶음콩가루",
+        "amount": "18.4%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쑥분말",
+        "origin": "국산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "amount": "24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "10곡분말",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "녹두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "차조",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "율무",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리브유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청사과색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:44"
+  },
+  "nutrition": {
+    "kcal": 260.0,
+    "sodium_mg": 60.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 6.0,
+    "fat_g": 13.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 4.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량50g의 함량으로 3회 정도 나누어 주실것을 권장 드립니다.",
+    "collected_at": "2026-03-04 04:18:44"
+  }
+}

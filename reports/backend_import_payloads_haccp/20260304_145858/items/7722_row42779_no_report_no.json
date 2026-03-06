@@ -1,0 +1,274 @@
+{
+  "product": {
+    "name_ko": "빅듀얼데니쉬",
+    "reportnum": "199503380157244"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157244/199503380157244-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157244/199503380157244-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157244/199503380157244-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산)밀(미국산)딸기잼(딸기/국산,백설탕,팩틴,구연산,제이인산칼슘)우유샌드크림(마가린(식물성유지(팜유/말레이시아산,야자유/인도네시아산)가공유지(에스테르화유(팜올레인유/말레이시아산)팜유/말레이시아산)크림치즈카스타드(크림치즈/미국산,쇼트닝(가공유지(에스테릉화유(팜유/말레이시아산,팜핵유/말레이시아산),야자경화유(야자유/수입산)마가린/태국산,물엿시럽,가당연유,마가린(가공유지,채종경화에스테르화유,대두유(대두),정제소금,유화제,탈지분유),백설탕,전란액)계란 마가린,파네토네종,탈지분유(우유),효모,정제소금,기타가공품,곡류가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157244/199503380157244-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=75g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157244/199503380157244-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기잼",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팩틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유샌드크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자유",
+                    "origin": "인도네시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "에스테르화유",
+                "sub_ingredients": [
+                  {
+                    "name": "팜올레인유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림치즈카스타드",
+        "sub_ingredients": [
+          {
+            "name": "크림치즈",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜핵유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "야자경화유",
+                    "origin": "수입산",
+                    "sub_ingredients": [
+                      {
+                        "name": "야자유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "마가린",
+            "origin": "태국산",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "채종경화에스테르화유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "대두유",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "물엿시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가당연유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파네토네종",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:25:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 379.0,
+    "carbohydrate_g": 42.67,
+    "protein_g": 4.0,
+    "fat_g": 21.33,
+    "sugar_g": 20.0,
+    "sodium_mg": 240.0,
+    "cholesterol_mg": 13.33,
+    "saturated_fat_g": 10.67,
+    "trans_fat_g": 0.53,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "75g",
+    "collected_at": "2026-03-03 20:25:49"
+  }
+}

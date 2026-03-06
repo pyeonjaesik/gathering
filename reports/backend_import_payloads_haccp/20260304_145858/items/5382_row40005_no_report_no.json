@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "Home plus 고소하고 맛있는 부침두부",
+    "reportnum": "2006044521159"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044521159/2006044521159-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044521159/2006044521159-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044521159/2006044521159-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "대두 100%(수입산), 천일염천연응고제1(조제해수염화마그네슘,현미유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044521159/2006044521159-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 50kcal 탄수화물 3g 1% 당류 0g 단백질 5g 9% 지방 2g 4% 포화지방 1g 8% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 1mg 0% 1회 제공량 약 60g당 함량, 총 약 6회 제공량(380g) *%영양성분 기준치 : 1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044521159/2006044521159-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "수입산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염천연응고제1",
+        "sub_ingredients": [
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:20"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 2.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약 60g당 함량",
+    "collected_at": "2026-03-04 03:59:20"
+  }
+}

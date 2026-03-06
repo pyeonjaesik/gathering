@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "정성가득 사골곰탕",
+    "reportnum": "20080614587115"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614587115/20080614587115-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614587115/20080614587115-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614587115/20080614587115-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사골육수[사골(호주산)18.5%, 가용성 고형분3%]99.4%, 정제염(국산), 수삼(국산)0.1%, 향미증진제, 황기(국산)0.01%, 오가피(국산)0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614587115/20080614587115-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(500g)/총 1회 제공량 500g 1회 제공량당 함량 (%영양성분기준치) : 열량 55kcal, 탄수화물0g (0%), 당류0g, 단백질12g (22%), 지방1.0g (2%), 포화지방0.7g (5%), 트랜스지방0g, 콜레스테롤 25mg (8%), 나트륨1,020mg (51%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080614587115/20080614587115-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사골육수",
+        "amount": "99.4%",
+        "sub_ingredients": [
+          {
+            "name": "사골",
+            "origin": "호주산",
+            "amount": "18.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가용성 고형분",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수삼",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황기",
+        "origin": "국산",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오가피",
+        "origin": "국산",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:12"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 12.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 1020.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(500g)/총 1회 제공량 500g",
+    "collected_at": "2026-03-04 04:16:12"
+  }
+}

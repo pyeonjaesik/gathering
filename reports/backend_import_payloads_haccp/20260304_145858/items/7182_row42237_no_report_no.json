@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "후루티복숭아스무디",
+    "reportnum": "199104430101189"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101189/199104430101189-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101189/199104430101189-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101189/199104430101189-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "복숭아42%(중국산),복숭아농축과즙68Bx 6%(국산),백설탕,소르비톨액,구연산,합성착향료(복숭아향),아미드펙틴,카로틴,사과산,정제염,합성보존료(소르빈산칼륨),산탄검,구연산삼나트륨,베리류색소,홍화황색소,제이인산칼슘,혼합제제(규소수지,유화제,증점제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101189/199104430101189-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=1800g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104430101189/199104430101189-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "복숭아",
+        "origin": "중국산",
+        "amount": "42%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축과즙",
+        "origin": "국산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "68Bx",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성보존료",
+        "sub_ingredients": [
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베리류색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증점제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:38:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 229.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 1.43,
+    "fat_g": 0.0,
+    "sugar_g": 57.14,
+    "sodium_mg": 57.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "1800g",
+    "collected_at": "2026-03-03 18:38:01"
+  }
+}

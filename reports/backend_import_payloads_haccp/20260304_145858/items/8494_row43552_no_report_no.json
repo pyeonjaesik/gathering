@@ -1,0 +1,64 @@
+{
+  "product": {
+    "name_ko": "참기름",
+    "reportnum": "2002049331440"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002049331440/2002049331440-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002049331440/2002049331440-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002049331440/2002049331440-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "볶음참깨분말 100%(미얀마산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002049331440/2002049331440-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5g(ml) | foodSize=450ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002049331440/2002049331440-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "볶음참깨분말",
+        "origin": "미얀마산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:13"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 830.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 92.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 18.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5g(ml)",
+    "total_content": "450ml",
+    "collected_at": "2026-03-04 03:43:13"
+  }
+}

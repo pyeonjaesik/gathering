@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "본 계란말이∥",
+    "reportnum": "2004026203248"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203248/2004026203248-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203248/2004026203248-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203248/2004026203248-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "전란액76.97%(계란,국내산),마요네즈7.7%[대두유(미국산),난황액(국내산),발효식초,백설탕,정제염],정제수,우유(국산),분말유지,건당근1.54%(중국산),고추1.54%(국산),소맥전분,대두유,본소,구연산(산도조절제),엠황색-1",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203248/2004026203248-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=50g | foodSize=900g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203248/2004026203248-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "amount": "76.97%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "amount": "7.7%",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "origin": "중국산",
+        "amount": "1.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추",
+        "origin": "국산",
+        "amount": "1.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "본소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "엠황색-1",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:16"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 210.0,
+    "carbohydrate_g": 4.82,
+    "protein_g": 11.42,
+    "fat_g": 16.15,
+    "sugar_g": 2.13,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 429.24,
+    "saturated_fat_g": 5.49,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "50g",
+    "total_content": "900g",
+    "collected_at": "2026-03-04 03:50:16"
+  }
+}

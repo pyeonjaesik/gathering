@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "황다랑어로 만든 고추참치",
+    "reportnum": "1973061900196"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900196/1973061900196-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900196/1973061900196-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900196/1973061900196-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "황다랑어50.3%(원양산:태평양),고추소스16.4%{백설탕,고추분6.3%(중국산),정제소금(국산),마늘,참치간장],정제수,양파(국산),감자,당근,대두유,고추장,홍고추1%(중국산),토마토페이스트,변성전분,후추,파프리카추출색소(천연색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900196/1973061900196-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=150g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900196/1973061900196-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "황다랑어",
+        "amount": "50.3%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "태평양",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추소스",
+        "amount": "16.4%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추분",
+            "origin": "중국산",
+            "amount": "6.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치간장",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "origin": "중국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:49:16"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 100.0,
+    "carbohydrate_g": 8.67,
+    "protein_g": 9.33,
+    "fat_g": 3.07,
+    "sugar_g": 7.33,
+    "sodium_mg": 740.0,
+    "cholesterol_mg": 26.67,
+    "saturated_fat_g": 0.87,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "150g",
+    "collected_at": "2026-03-03 13:49:16"
+  }
+}

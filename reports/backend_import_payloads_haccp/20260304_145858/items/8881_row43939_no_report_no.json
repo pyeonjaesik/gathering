@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "청정원 망고파인애플잼",
+    "reportnum": "20060464021188"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021188/20060464021188-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021188/20060464021188-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021188/20060464021188-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "망고15%(베트남산),망고페이스트7.5%(망고로15%,인도산),오렌지농축액2.08%(오렌지로15%,미국산),파인애플퓨레10%(필리핀산),백설탕,정제수,이소말토올리고당,레몬농축액,아미드펙틴,자몽종자추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021188/20060464021188-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=370g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464021188/20060464021188-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "망고",
+        "origin": "베트남산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고페이스트",
+        "origin": "인도산",
+        "amount": "7.5%",
+        "sub_ingredients": [
+          {
+            "name": "망고",
+            "amount": "15%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "미국산",
+        "amount": "2.08%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지",
+            "amount": "15%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플퓨레",
+        "origin": "필리핀산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽종자추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 285.0,
+    "carbohydrate_g": 71.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 60.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "370g",
+    "collected_at": "2026-03-04 04:00:09"
+  }
+}

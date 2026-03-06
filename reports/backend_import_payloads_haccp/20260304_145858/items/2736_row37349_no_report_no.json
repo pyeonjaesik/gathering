@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "라면에 넣어먹는 동원라면참치 고소한 치즈참치",
+    "reportnum": "19880589063239"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063239/19880589063239-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063239/19880589063239-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063239/19880589063239-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,가다랑어27%(원양산),DW하이체다치즈19%[자연치즈61.5%{체다치즈94.3%(수입산),고다치즈5.7%(네덜란드산)},야자경화유(인도네시아산,필리핀산),변성전분,렌넷카제인,산도조절제],카놀라유(수입산),VB75,치즈분말1.5%{화이트체다씨즈닝5064 40%(미국산),체다치즈파우더23%(호주산)},변성전분,치즈향0.1%,구아검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063239/19880589063239-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 100kcal,탄수화물3g (1%), 당류0g, 단백질 6g (11%),지방7g (14%), 포화지방0.6g (4%), 트랜스지방 0g, 콜레스테롤20mg (7%), 나트륨 220mg (11%), %영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063239/19880589063239-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가다랑어",
+        "amount": "27%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "DW하이체다치즈",
+        "amount": "19%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "61.5%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈",
+                "origin": "수입산",
+                "amount": "94.3%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고다치즈",
+                "origin": "네덜란드산",
+                "amount": "5.7%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "야자경화유",
+            "origin": "인도네시아산, 필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "렌넷카제인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "VB75",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "amount": "1.5%",
+        "sub_ingredients": [
+          {
+            "name": "화이트체다씨즈닝5064",
+            "origin": "미국산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈파우더",
+            "origin": "호주산",
+            "amount": "23%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈향",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:41:27"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 220.0,
+    "collected_at": "2026-03-03 17:41:27"
+  }
+}

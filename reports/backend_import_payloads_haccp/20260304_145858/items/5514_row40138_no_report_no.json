@@ -1,0 +1,277 @@
+{
+  "product": {
+    "name_ko": "돈코츠라멘",
+    "reportnum": "20070358265332"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265332/20070358265332-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265332/20070358265332-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265332/20070358265332-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*탄탄면:밀가루(밀:호주산,미국산),변성전분,전분가공품,식용유지가공품,물엿,전란분(계란),정제염(국내산),글루텐,면류첨가알칼리제(산도조절제),쎄니콜95(발효알콜95%,정제수) *돈코츠소스:돈골육수베이스76%[돈꼬츠라면스프30%(일본산)(밀,대두,돼지고기),돈코츠육수20%{돈골엑기스66.6%(돈사골추출액95%<돈사골100%:국내산>,정제염<국내산>),닭발효소분해물(닭발/국내산)},기꼬만간장,정제염,마늘엑기스],정제수,백설탕,대두유(아르헨티나산),변성전분,백후추분말,진탄검,5'-리보뉴클레오티드이나트륨 *숙주혼합건더기:숙주(녹두:중국산)48.05%,대파(중국산),양파,덱스트린,감자전분,홍고추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265332/20070358265332-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(174g)/총 2회 제공량(348g) 1회 제공량당 함량 *%영양소 기준치 열량 444 kcal 탄수화물 90g 27% 당류 3g 단백질 12g 22% 지방 4.2g 8% 포화지방 1.3 g  9% 트랜스지방 0g 콜레스테롤 13mg 4% 나트륨 2,533mg 127% *%영양소 기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265332/20070358265332-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "탄탄면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란분",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쎄니콜95",
+            "sub_ingredients": [
+              {
+                "name": "발효알콜",
+                "sub_ingredients": [
+                  {
+                    "name": "95%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돈코츠소스",
+        "sub_ingredients": [
+          {
+            "name": "돈골육수베이스",
+            "amount": "76%",
+            "sub_ingredients": [
+              {
+                "name": "돈꼬츠라면스프",
+                "origin": "일본산",
+                "amount": "30%",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "돼지고기",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "돈코츠육수",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "돈골엑기스",
+                    "amount": "66.6%",
+                    "sub_ingredients": [
+                      {
+                        "name": "돈사골추출액",
+                        "origin": "국내산",
+                        "amount": "95%",
+                        "sub_ingredients": [
+                          {
+                            "name": "돈사골",
+                            "origin": "국내산",
+                            "amount": "100%",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "정제염",
+                        "origin": "국내산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "닭발효소분해물",
+                    "origin": "국내산",
+                    "sub_ingredients": [
+                      {
+                        "name": "닭발",
+                        "origin": "국내산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "기꼬만간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "아르헨티나산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숙주혼합건더기",
+        "sub_ingredients": [
+          {
+            "name": "숙주",
+            "origin": "중국산",
+            "amount": "48.05%",
+            "sub_ingredients": [
+              {
+                "name": "녹두",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍고추",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:03:47"
+  },
+  "nutrition": {
+    "kcal": 444.0,
+    "carbohydrate_g": 90.0,
+    "sugar_g": 3.0,
+    "protein_g": 12.0,
+    "fat_g": 4.2,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 2533.0,
+    "basis_amount": 174.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(174g)",
+    "collected_at": "2026-03-04 04:03:47"
+  }
+}

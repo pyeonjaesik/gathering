@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "버터와플",
+    "reportnum": "200602423765"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423765/200602423765-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423765/200602423765-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423765/200602423765-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:미국산),백설탕,가공버터[네덜란드산:유지방,코코넛오일,무지유고형분,정제소금],전란액(국산),혼합분유,유화제,정제소금,생크림레진,산도조절제,생강레진,올레오레진로즈메리,합성착향료(버터향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423765/200602423765-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=135g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200602423765/200602423765-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림레진",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강레진",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올레오레진로즈메리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 481.0,
+    "carbohydrate_g": 74.07,
+    "protein_g": 7.41,
+    "fat_g": 16.3,
+    "sugar_g": 33.33,
+    "sodium_mg": 315.0,
+    "cholesterol_mg": 74.07,
+    "saturated_fat_g": 11.85,
+    "trans_fat_g": 0.37,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "135g",
+    "collected_at": "2026-03-04 03:56:45"
+  }
+}

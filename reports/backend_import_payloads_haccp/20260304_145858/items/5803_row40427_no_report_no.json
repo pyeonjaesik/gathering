@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "남양 맛있는 우유 GT 프리미엄",
+    "reportnum": "2008050200219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200219/2008050200219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200219/2008050200219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200219/2008050200219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급 원유(국산)100%,비타민A분말0.00072%(비타민A아세테이트,디엘알파토코페롤,아라비아검,지당,전분,제삼인산칼슘),비타민D3분말0.00044%(비타민D3디엘알파토코페롤,아라비아검,자당,전분,제삼인산칼슘,식물성오일)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200219/2008050200219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분100ml당 함량: 열량70kcal 탄수화물5g(2%)[당류 5g], 단백질 3g (5%),지방4g (8%)[포화지방 2.4g (16%),트랜스지방 0g],콜레스테롤 15g (5%),나트륨 50mg (3%),비타민A 100㎍RE (14%),비타민B1 0.03mg (3%),비타민B2 0.15mg(13%), 비타민D312㎍ (20%),칼슘 100mg (14%),철분 0.1mg (1%),인 90mg(13%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200219/2008050200219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급 원유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민A분말",
+        "amount": "0.00072%",
+        "sub_ingredients": [
+          {
+            "name": "비타민A아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민D3분말",
+        "amount": "0.00044%",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성오일",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:14:14"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 5.0,
+    "protein_g": 3.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 2.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 50.0,
+    "calcium_mg": 100.0,
+    "iron_mg": 0.1,
+    "phosphorus_mg": 90.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml당 함량",
+    "collected_at": "2026-03-04 04:14:14"
+  }
+}

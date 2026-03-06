@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "타타르소스",
+    "reportnum": "1980034700227"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/1980034700227/1980034700227-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/1980034700227/1980034700227-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/1980034700227/1980034700227-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "마요네즈{대두유(대두:수입산),난황액(계란,정제소금/미국산),양조식초,백설탕,마요골드프리믹스},오이피클{염장오이(인도산),액상과당,식초,브라인믹스,염화칼슘,소르빈산칼륨(합성보존료)},정제수,양조식초,양파분,백설탕,마늘분,정제소금,후추씨즈닝(우유),겨자분,구연산,파분,이.디.티.에이칼슘이나트륨(산화방지제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/1980034700227/1980034700227-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=3200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/1980034700227/1980034700227-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마요골드프리믹스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오이피클",
+        "sub_ingredients": [
+          {
+            "name": "염장오이",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "브라인믹스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "겨자분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이.디.티.에이칼슘이나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:26:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 510.0,
+    "carbohydrate_g": 7.0,
+    "protein_g": 1.0,
+    "fat_g": 53.0,
+    "sugar_g": 7.0,
+    "sodium_mg": 670.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.5,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "3200g",
+    "collected_at": "2026-03-03 14:26:30"
+  }
+}

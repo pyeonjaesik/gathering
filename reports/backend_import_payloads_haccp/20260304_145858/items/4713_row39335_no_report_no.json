@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "홈스타일짜장",
+    "reportnum": "200204610737738"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737738/200204610737738-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737738/200204610737738-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737738/200204610737738-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "짜장농축액분말30%[춘장57.69(밀:미국산,호주산,대두:외국산),저감미당,비프레그본익스트렉트(뉴질랜드산),양파분말,효모추출물],밀가루(밀:미국산,호주산),백설탕,옥수수전분(옥수수:수입산),참맛짜장분9%(춘장3호70.5%,찰옥수수전분,양파,짜장양념액,돼지고기),정제소금,카라멜색소,덱스트린,대두유,5`-리보뉴클레오티드이나트륨,밀분해추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737738/200204610737738-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g함량 *%영양소기준치, 열량350kcal, 탄수화물72g 22%, 당류28g, 단백질8g 15%, 지방3.6g 7%, 포화지방0.9g 6%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨3120mg 156%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737738/200204610737738-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "짜장농축액분말",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "춘장",
+            "origin": "미국산, 호주산",
+            "amount": "57.69",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프레그본익스트렉트",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참맛짜장분",
+        "amount": "9%",
+        "sub_ingredients": [
+          {
+            "name": "춘장3호",
+            "amount": "70.5",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짜장양념액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5`-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀분해추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:50"
+  },
+  "nutrition": {
+    "kcal": 350.0,
+    "carbohydrate_g": 72.0,
+    "sugar_g": 28.0,
+    "protein_g": 8.0,
+    "fat_g": 3.6,
+    "saturated_fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 3120.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g함량",
+    "collected_at": "2026-03-04 03:41:50"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "간이 되어 있는 반숙계란(호유반숙란)",
+    "reportnum": "201202620981"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620981/201202620981-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620981/201202620981-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620981/201202620981-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "계란99%(국산),소금1%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620981/201202620981-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(50g),총 3회 제공량(150g),1회 제공량 당 함량,%영양소 기준치,열량 59.30Kcal,탄수화물 0.78g(0%),당류 0.28g,단백질 6.05g(10%),지방 3.56g(7%),포화지방 1.19g(8%),트랜스지방 0.00g,콜레스테롤 96.68mg(30%),나트륨182.01mg(9%),%영양소 기준치:영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201202620981/201202620981-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "amount": "99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:09"
+  },
+  "nutrition": {
+    "kcal": 59.3,
+    "carbohydrate_g": 0.78,
+    "sugar_g": 0.28,
+    "protein_g": 6.05,
+    "fat_g": 3.56,
+    "saturated_fat_g": 1.19,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 96.68,
+    "sodium_mg": 182.01,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(50g)",
+    "collected_at": "2026-03-04 04:33:09"
+  }
+}

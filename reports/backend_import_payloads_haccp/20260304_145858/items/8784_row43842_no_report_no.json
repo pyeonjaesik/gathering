@@ -1,0 +1,248 @@
+{
+  "product": {
+    "name_ko": "참그레인샌드",
+    "reportnum": "20060242376123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376123/20060242376123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376123/20060242376123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376123/20060242376123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀,미국산),화이트크림후레이크(백설탕,탈지분유1.7%(수입산),식물성유지(말레이시아산),쇼트닝(대두,식물성부분경화유),유청분말1.4%),옥수수전분(수입산),옥배유,쇼트닝(식물성부분경화유),백설탕,분말결정포도당,혼합식용유(팜유50%,야자유50%),전립분(미국산),혼합분유1 1.7%(우유),고운통밀가루(미국산),액상과당,감자분말,현미귀리퀴노아혼합분말[현미(국산)],귀리(스웨덴산),퀴노아(볼리아산)],정제소금,혼합분유2 0.4%,유청분말0.1%,호밀분말(캐나다산),산도조절제,효서제,감칠맛분말,감초추출물,마스카포네치즈분말,밀크칼슘,합성착향료(밀크향,그릭요거트향) -특정성분:마스카포네치즈분말0.01%,밀크칼슘10mg/100g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376123/20060242376123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=64g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376123/20060242376123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트크림후레이크",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "수입산",
+            "amount": "1.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "amount": "1.4%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성부분경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전립분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유1",
+        "amount": "1.7%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고운통밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미귀리퀴노아혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "귀리",
+        "origin": "스웨덴산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "퀴노아",
+        "origin": "볼리비아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유2",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호밀분말",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효서제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감초추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마스카포네치즈분말",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀크칼슘",
+        "amount": "10mg, 100g",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "그릭요거트향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 489.0,
+    "carbohydrate_g": 70.31,
+    "protein_g": 6.25,
+    "fat_g": 20.31,
+    "sugar_g": 34.38,
+    "sodium_mg": 469.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 10.94,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "64g",
+    "collected_at": "2026-03-04 03:56:14"
+  }
+}

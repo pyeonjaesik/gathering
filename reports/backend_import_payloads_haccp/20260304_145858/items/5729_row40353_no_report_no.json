@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "초코링",
+    "reportnum": "2008043516970"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516970/2008043516970-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516970/2008043516970-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516970/2008043516970-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농설탕29.79%,옥수수(국산)27.66%,쌀가루(유기농백미100%,국산)15.56%,통밀가루(밀,국산)13.83%,코코아분말(네덜란드산)6.57%,올리고당,천일염,비타민c",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516970/2008043516970-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 50g\n<50g당 함량>\n열량205kcal, 나트륨90mg 5%, 탄수화물42g 13%, 당류18g 19%, 지방3.1g 6%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질3g 5%\n*1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516970/2008043516970-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "29.79%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "국산",
+        "amount": "27.66%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "amount": "15.56%",
+        "sub_ingredients": [
+          {
+            "name": "유기농백미",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "통밀가루",
+        "origin": "국산",
+        "amount": "13.83%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "6.57%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:11:45"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "sodium_mg": 90.0,
+    "carbohydrate_g": 42.0,
+    "sugar_g": 18.0,
+    "fat_g": 3.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 3.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 50g",
+    "collected_at": "2026-03-04 04:11:45"
+  }
+}

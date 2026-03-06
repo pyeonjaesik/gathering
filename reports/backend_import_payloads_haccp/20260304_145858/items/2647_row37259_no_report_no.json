@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "4가지치즈& 바질미트스파게티",
+    "reportnum": "19880445009587"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009587/19880445009587-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009587/19880445009587-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009587/19880445009587-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스파게티[듀럼세몰리나 소맥분100%(밀,이탈리아산)],생가득미트소스[정제수,다이스드토마토(미국산/토마토,토마토주스,구연산,염화칼슘),토마토페이스트(미국산),돼지고기14%(국산),양파,미강유,혼합제제(변성전분,말토덱스트린),치킨풍미분-4,쇠고기1%(호주산),크림치즈0.4%(미국산),체다치즈0.4%(호주산),홀바질0.15%(네덜란드),에멘탈치즈0.1%(프랑스산),파마산치즈0.1%(미국산)],옥수수유,혼합제제(산도조절제,말티톨시럽,정제수)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009587/19880445009587-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(230g)/총 3회 제공량(690g) *%영양성분기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 335kcal, 탄수화물 55g 17%, 식이섬유 2g 8%, 당류 9g, 단백질 12g 22%, 지방 8g 16%, 포화지방 2.1g 14%, 트랜스지방 0g, 콜레스테롤 5mg미만 2%, 나트륨 590mg 30% 비타민A 25㎍RE 4%/비타민C 0mg 0%/칼슘 70mg 10%/철 1.4mg 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009587/19880445009587-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "듀럼세몰리나 소맥분",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생가득미트소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다이스드토마토",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토주스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "14%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미강유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치킨풍미분",
+            "amount": "4",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림치즈",
+            "origin": "미국산",
+            "amount": "0.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈",
+            "origin": "호주산",
+            "amount": "0.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홀바질",
+            "origin": "네덜란드산",
+            "amount": "0.15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에멘탈치즈",
+            "origin": "프랑스산",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파마산치즈",
+            "origin": "미국산",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:26:21"
+  },
+  "nutrition": {
+    "kcal": 335.0,
+    "carbohydrate_g": 55.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 9.0,
+    "protein_g": 12.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.1,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 590.0,
+    "calcium_mg": 70.0,
+    "iron_mg": 1.4,
+    "basis_amount": 230.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(230g)",
+    "collected_at": "2026-03-03 17:26:21"
+  }
+}

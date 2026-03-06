@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "고칼슘 우유",
+    "reportnum": "1976026200146"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200146/1976026200146-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200146/1976026200146-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200146/1976026200146-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "저지방우유99.3145635%[국산,1등급원유(세균수기준)],탄산칼슘혼합제제0.677%(탄산칼슘,대두식이섬유),구연산철암모늄0.00415%,비타민A혼합제제0.00087%(말토덱스트린,아라비아검,옥수수전분,비타민A아세테이트,dl-α-토코페롤),비타민B2 0.00013%,비타민D3혼합제제0.00056%(아라비아검,자당,옥수수전분,가공유지,이산화규소,비타민D3,dl-α-토코페롤),비타민E혼합제제0.0027%(dl-α-토코페릴아세테이트,변성전분,말토덱스트린,이산화규소),엽산0.0000265%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200146/1976026200146-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200ml) 총 4.5회 제공량(900ml) *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량90kcal, 탄수화물 10g 3%, 당류 10g, 단백질 6g 11%, 비타민A 185㎍RE 26%, 비타민B2 0.35mg 25%, 비타민D3 2㎍ 40%, 비타민E 2maα-TE 18%, 지방 3g 6%, 포화지방 2.1g 14%, 트랜스지방 0g, 콜레스테롤 10mg 3%, 나트륨 85mg 4%, 엽산 36㎍ 9%, 칼슘 400mg 57%, 철분 1.4mg 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200146/1976026200146-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "저지방우유",
+        "origin": "국산",
+        "amount": "99.3145635%",
+        "sub_ingredients": [
+          {
+            "name": "1등급원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼슘혼합제제",
+        "amount": "0.677%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산철암모늄",
+        "amount": "0.00415%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민A혼합제제",
+        "amount": "0.00087%",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "amount": "0.00013%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민D3혼합제제",
+        "amount": "0.00056%",
+        "sub_ingredients": [
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민E혼합제제",
+        "amount": "0.0027%",
+        "sub_ingredients": [
+          {
+            "name": "dl-α-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "엽산",
+        "amount": "0.0000265%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:52:26"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 6.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 85.0,
+    "calcium_mg": 400.0,
+    "iron_mg": 1.4,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200ml)",
+    "collected_at": "2026-03-03 13:52:26"
+  }
+}

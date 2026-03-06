@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "두유",
+    "reportnum": "19980308080245"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080245/19980308080245-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080245/19980308080245-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080245/19980308080245-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두유액99.4199% (대두고형분7%이상, 국산), 천일염(국산), 해조분말(영국산), 볶음현미분말(국산), 약콩분말(국산), 유산균배양분말(EF-2001유산균사균체분말)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080245/19980308080245-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml) 총 16회 제공량(190ml x 16팩) 80kcal\n나트륨160mg (8%), 탄수화물6g (2%), 당류0.6g (1%), 지방3.9g (7%), 트랜스지방0g, 포화지방0.4g (3%), 콜레스테롤0mg (0%), 단백질5g (9%), 칼슘100mg (14%)\n1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080245/19980308080245-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "99.4199%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "origin": "국산",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조분말",
+        "origin": "영국산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음현미분말",
+        "origin": "국산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "약콩분말",
+        "origin": "국산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양분말",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "EF-2001유산균사균체분말",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:42:08"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "sodium_mg": 160.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 0.6,
+    "fat_g": 3.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.4,
+    "cholesterol_mg": 0.0,
+    "protein_g": 5.0,
+    "calcium_mg": 100.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 21:42:08"
+  }
+}

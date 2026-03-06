@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "까페모리 그린티라떼 12P",
+    "reportnum": "20000449035316"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000449035316/20000449035316-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000449035316/20000449035316-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000449035316/20000449035316-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "녹차분말(국산)4.6%,백설탕,우유성분함유크리머[물엿,식물성유지(야자경화유,야자유:수입산),탈지분유(미국산),산도조절제,우유단백분말],카푸치노포머(네덜란드산)[물엿,식물성유지(부분경화유),탈지분유,산도조절제],혼합전지분유,가공소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000449035316/20000449035316-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1포(15g)  총 12회 제공량(180g) 1회 제공량당 함량: 열량 70kcal,탄수화물 11g (3%),당류 9g,단백질 1g미만 (2%),지방 2.4g (5%),포화지방 1.8g(12%),트랜스지방 0g,콜레스테롤 0mg(0%),나트륨 40mg (2%) ( )안의 수치는 1일 영양성분기준치에 대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000449035316/20000449035316-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "녹차분말",
+        "origin": "국산",
+        "amount": "4.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유성분함유크리머",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "야자경화유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈지분유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유단백분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카푸치노포머",
+        "origin": "네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:20:02"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 9.0,
+    "fat_g": 2.4,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 15.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1포(15g)",
+    "collected_at": "2026-03-03 22:20:02"
+  }
+}

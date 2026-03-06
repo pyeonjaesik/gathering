@@ -1,0 +1,213 @@
+{
+  "product": {
+    "name_ko": "클래식 치즈스틱",
+    "reportnum": "20020461222258"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020461222258/20020461222258-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020461222258/20020461222258-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020461222258/20020461222258-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맘즈빌스트링치즈52%[모짜렐라치즈50%(외국산),렌넷카제인,져지팜올레인유(말레이시아산),혼합제제(변성전분,말토덱스트린),정제소금],동화건조빵가루[소맥분(밀:미국산,호주산),쇼트닝{정제팜유(말레이시아산)},포도당,효모,정제소금(국산),대두분],고소한빵가루배합용[밀가루(밀:미국산,호주산),효모,정제소금(국산),혼합제제황산칼슘,정제염,황산암모늄,염화암모늄,비타민C)],제이에이치배터씨에스[박력분,정제소금,무수결정포도당,L-글루타민산나트륨(향미증진제),정백당],난백,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020461222258/20020461222258-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1,000g / 100g 당 319kcal\n나트륨580mg 29%, 탄수화물27g 8%, 당류3g 3%, 지방18g 33%, 트랜스지방0.2g, 포화지방6g 40%, 콜레스테롤13mg 4%, 단백질13g 24%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020461222258/20020461222258-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맘즈빌스트링치즈",
+        "amount": "52%",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "origin": "외국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "렌넷카제인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "져지팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "동화건조빵가루",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": [
+              {
+                "name": "정제팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고소한빵가루배합용",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "황산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "황산암모늄",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화암모늄",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민C",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제이에이치배터씨에스",
+        "sub_ingredients": [
+          {
+            "name": "박력분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:15"
+  },
+  "nutrition": {
+    "kcal": 319.0,
+    "sodium_mg": 580.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 3.0,
+    "fat_g": 18.0,
+    "trans_fat_g": 0.2,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 13.0,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 03:42:15"
+  }
+}

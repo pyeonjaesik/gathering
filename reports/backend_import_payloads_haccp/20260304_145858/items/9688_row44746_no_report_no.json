@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "빅구슬 청포도 엔 감귤",
+    "reportnum": "2015044511144"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015044511144/2015044511144-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015044511144/2015044511144-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015044511144/2015044511144-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물, 설탕, 기타과당, 물엿, 덱스트린, 감귤농축액1.1%(고형분함량60%),백포도농축액1.1%(고형분함량68%),구연산,야자경화유,혼합제제1(셀룰로스검,구아검,카라기난,폴리인산나트륨),천연향료(머스캣향),합성향료(감귤향1,감귤향2),혼합제제2(구아검,글리세린지방산에스테르,카라기난,제이인산암모늄,로커스트콩검,타마린드검),치자황색소,치자청색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015044511144/2015044511144-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=62g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015044511144/2015044511144-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감귤농축액",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "60%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백포도농축액",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "68%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "셀룰로스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연향료",
+        "sub_ingredients": [
+          {
+            "name": "머스캣향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "감귤향1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감귤향2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산암모늄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타마린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 105.0,
+    "carbohydrate_g": 22.58,
+    "protein_g": 0.0,
+    "fat_g": 0.81,
+    "sugar_g": 20.97,
+    "sodium_mg": 48.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.32,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "62g",
+    "collected_at": "2026-03-04 04:45:14"
+  }
+}

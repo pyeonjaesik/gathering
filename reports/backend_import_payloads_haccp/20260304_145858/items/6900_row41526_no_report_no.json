@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "고소한인절미과자",
+    "reportnum": "2016036836444"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836444/2016036836444-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836444/2016036836444-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836444/2016036836444-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀가루(백미/국내산)48.55%, 팜올레인유(말레이지아산), 인절미맛시즈닝JM-0920{백설탕, 볶음대두분말(미국산)38%, 포도당, 유당(우유/미국산), 탈지분유(우유/미국산)}19%, 백태분말(국내산)5.78%, 옥수수가루(콘그리스5호/호주산), 탄산칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836444/2016036836444-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 60g 340kcal\n나트륨65mg 3%, 탄수화물31g 10%, 당류8g 8%, 지방18g 34%, 트랜스지방0g, 포화지방2.8g 19%, 콜레스테롤0mg 0%, 단백질5g 9%\n* 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036836444/2016036836444-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "amount": "48.55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "sub_ingredients": [
+          {
+            "name": "말레이지아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인절미맛시즈닝JM-0920",
+        "amount": "19%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음대두분말",
+            "origin": "미국산",
+            "amount": "38%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백태분말",
+        "origin": "국내산",
+        "amount": "5.78%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:14"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "sodium_mg": 65.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 8.0,
+    "fat_g": 18.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 5.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 60g",
+    "collected_at": "2026-03-04 04:47:14"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "참스토리도가니탕",
+    "reportnum": "2009026212525"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212525/2009026212525-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212525/2009026212525-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212525/2009026212525-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,우건12%(수입산),사골엑기스4%(호주산),도가니엑기스0.6%[도가니추출농축액92%(도가니:호주산),고형분함량30%],마늘분말,양파분말,향미증진제,(5'-리보뉴클레오티드이나트륨),생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212525/2009026212525-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1포장당 제공량 500g,100g당 함량,%영양소 기준치,열량(Calories) 30 kcal,탄수화물(Carbonhydrate) 1g미만(0%),당류(Sugars) 0g,단백질(Protein) 5g(8%),지방(Fat) 0.5g(1%),포화지방(Saturated fat) 0g(0%),트랜스지방(Trans Fat) 0g,콜레스테롤(Cholesterol) 0mg(0%),나트륨(Sodium) 140mg(7%),%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212525/2009026212525-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우건",
+        "origin": "수입산",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스",
+        "origin": "호주산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "도가니엑기스",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "도가니추출농축액",
+            "origin": "호주산",
+            "amount": "92%",
+            "sub_ingredients": [
+              {
+                "name": "고형분함량",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": [
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:50"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 140.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:17:50"
+  }
+}

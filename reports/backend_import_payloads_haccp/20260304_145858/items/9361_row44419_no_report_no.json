@@ -1,0 +1,239 @@
+{
+  "product": {
+    "name_ko": "프레즐 앤 팝콘 카라멜&체다치즈",
+    "reportnum": "20100461303297"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303297/20100461303297-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303297/20100461303297-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303297/20100461303297-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "기타가공품 (설탕, 덱스트린, 포도당), 당류가공품(설탕, 당류가공품, 카라멜색소, 바닐라향), 옥수수 23.16%(미국산), 과자 7.97%(미국산/영양강화밀가루, 정제소금, 식물성유지, 물엿, 맥아추출액), 가공버터(뉴질랜드산/버터유, 유크림, 야자경화유), 식물성유지{팜올레인유, 해바라기유, d-토콮페롤(혼합형)}, 체다치즈맛씨즈닝-제이 3.03%[체다치즈시즈닝 19%{체다치즈파우다 65%(미국산/체다치즈 100%)}, 아스파탐(감미료, 페닐알라닌 함유)], 카라멜당시럽 0.56%(국내산), 재제소금(국내산), 레시틴, 혼합제제(탄산수소나트륨, 제삼인산칼슘), 가공소금(캐나다산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303297/20100461303297-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=65g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303297/20100461303297-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "23.16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과자",
+        "origin": "미국산",
+        "amount": "7.97%",
+        "sub_ingredients": [
+          {
+            "name": "영양강화밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아추출액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "체다치즈맛씨즈닝-제이",
+        "amount": "3.03%",
+        "sub_ingredients": [
+          {
+            "name": "체다치즈시즈닝",
+            "amount": "19%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈파우다",
+                "origin": "미국산",
+                "amount": "65%",
+                "sub_ingredients": [
+                  {
+                    "name": "체다치즈",
+                    "sub_ingredients": [
+                      {
+                        "name": "100%",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜당시럽",
+        "origin": "국내산",
+        "amount": "0.56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공소금",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:55"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 477.0,
+    "carbohydrate_g": 73.85,
+    "protein_g": 4.62,
+    "fat_g": 18.46,
+    "sugar_g": 35.38,
+    "sodium_mg": 662.0,
+    "cholesterol_mg": 15.38,
+    "saturated_fat_g": 9.23,
+    "trans_fat_g": 0.46,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "65g",
+    "collected_at": "2026-03-04 04:26:55"
+  }
+}

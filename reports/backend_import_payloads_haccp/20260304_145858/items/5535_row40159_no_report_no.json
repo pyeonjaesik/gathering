@@ -1,0 +1,63 @@
+{
+  "product": {
+    "name_ko": "후디스 순우유",
+    "reportnum": "2007037900949"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900949/2007037900949-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900949/2007037900949-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900949/2007037900949-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급 원유(국산)100%(세균수기준)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900949/2007037900949-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 200ml/총 약 4회 제공량(750ml) 열량 130kcal, 탄수화물 10g(3%), 당류 10g, 단백질 6g(11%), 지방 7.4g(15%), 포화지방 5g(33%), 트랜스지방 0g, 콜레스테롤 24mg(8%), 나트륨 100mg(5%), 칼슘 200mg(29%) ※( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900949/2007037900949-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급 원유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:18"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 6.0,
+    "fat_g": 7.4,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 24.0,
+    "sodium_mg": 100.0,
+    "calcium_mg": 200.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 200ml",
+    "collected_at": "2026-03-04 04:04:18"
+  }
+}

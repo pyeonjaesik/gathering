@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "덴마크 생크림요구르트 벨루스",
+    "reportnum": "1998047601744"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601744/1998047601744-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601744/1998047601744-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601744/1998047601744-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유크림22%(국산),원유17%(국산),정백당,혼합탈지분유,프락토올리고당,탈지분유,혼합제제(젤라틴,펙틴),합성착향료(크림향,요구르트향),유산균주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601744/1998047601744-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1컵 (100mL)/총1회 제공량 ,1회 제공량당 함량: 열량 145kcal,탄수화물13g (4%),당류12g,단백질3g (5%),지방9g (18%), 포화지방6g (40%), 트랜스지방0g, 콜레스테롤 24mg (8%), 나트륨50mg (3%),  *( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601744/1998047601744-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "amount": "22%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "17%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젤라틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "크림향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:57:20"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 12.0,
+    "protein_g": 3.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 24.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량1컵 (100mL)",
+    "collected_at": "2026-03-03 21:57:20"
+  }
+}

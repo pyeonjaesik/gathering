@@ -1,0 +1,80 @@
+{
+  "product": {
+    "name_ko": "체다슈레드치즈",
+    "reportnum": "2003026205596"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003026205596/2003026205596-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003026205596/2003026205596-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003026205596/2003026205596-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈99%[체다치즈/미국·뉴질랜드산 : 살균우유,정제염,유산균배양액,우유응고효소,수용성안나토],분말셀룰로오스1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003026205596/2003026205596-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003026205596/2003026205596-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "origin": "미국산, 뉴질랜드산",
+        "amount": "99%",
+        "sub_ingredients": [
+          {
+            "name": "체다치즈",
+            "origin": "미국산, 뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "살균우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "수용성안나토",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말셀룰로오스",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:55"
+  }
+}

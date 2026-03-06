@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "쥬시투투 망고",
+    "reportnum": "19970443119291"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119291/19970443119291-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119291/19970443119291-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119291/19970443119291-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "이소말토올리고당,백설탕,말티톨시럽,망고농축과즙(이스라엘산,고형분함량60%),구연산,사과산,합성착향료(망고향),아미드펙틴,치자황색소 .성분명 및 함량:망고과즙(생물환산시)1.92%,이소말토올리고당49.66%,말티톨시럽4.18%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119291/19970443119291-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 3개(12g) /총 약 8회 제공량(96g) 1회 제공량당 함량 *%영양성분 기준치 열량 50kcal 탄수화물12g 4% 당알콜 0g 당류6g 단백질0g 0% 지방0g 0% 포화지방0g 0% 트랜스지방0g 콜레스테롤0mg 0% 나트륨0mg 0% *%영양성분 기준치:1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119291/19970443119291-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "이소말토올리고당",
+        "amount": "49.66%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "4.18%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고농축과즙",
+        "origin": "이스라엘산",
+        "amount": "고형분함량60%",
+        "sub_ingredients": [
+          {
+            "name": "망고과즙",
+            "amount": "1.92%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:27:47"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 12.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 3개(12g)",
+    "collected_at": "2026-03-03 21:27:47"
+  }
+}

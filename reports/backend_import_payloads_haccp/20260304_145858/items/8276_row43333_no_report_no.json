@@ -1,0 +1,751 @@
+{
+  "product": {
+    "name_ko": "멜랜드디저트캔디-종합",
+    "reportnum": "20010415034134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034134/20010415034134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034134/20010415034134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034134/20010415034134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "딸기맛:정백당,물엿,산도조절제,비타민C0.2%,딸기농축과실즙0.11%(딸기과실즞ㅂ으로1%)(국산),합성착향료(딸기향),코치닐추출색소,Shade stawberry red P(적양배추색소,엘더베리색소,설탕,산도조절제),프로필렌글리콜, 체리맛:정백당,물엿,산도조절제,비타민C0.2%,체리농축과실즙0.31%(체리과실즙으로1%)(터키산),합성착향료(체리향),Shade cherry red(블랙커런트색소,당근추출액,설탕,프로핀렌글리콜),매실맛:정백당,물엿,산도조절제,비타민C0.2%,매실농축과실즙0.09%(매실과실즙으로1%)(국산),합성착향료(매실향),홍화황색소,치자청색소,프로필렌글리콜, 자두맛:정백당,물엿,산도조절제,비타민C0.2%,자두농축과실즙0.09%(자두과실즙으로1%)(국산),합성착향료(자두향),Shade purple grape color(베리류색소),치자청색소AC5113(치자청색소,산도조절제),프로필렌글리콜, 오렌지맛:정백당물엿,산도조절제,비타민C0.2%,오렌지농축과실즙0.09%(오렌지과실즙으로1%)(브라질산),합성착향료(오렌지향),홍화황색소, Shade lemon yellow(홍화황색소,산도조절제,레몬쥬스,설탕),락색소,프로필렌글리콜, 포도맛:정백당물엿,산도조절제,비타민C0.2%,포도농축과실즙0.17%(포도과실즙으로1%)(국산),합성착향료(포도향),Shade purple grape color(베리류색소),치자청색소AC5113(치자청색소,산도조절제),프로필렌글리콜, 바나나맛:정백당물엿,산도조절제,비타민C0.02%,바나나농축과실즙0.25%(바나나과실즙으로1%)(필리핀산),합성착향료(바나나향),홍화황색소,치자황색소,DL주석산나트륨, 파인애플맛:정백당물엿,산도조절제,비타민C0.02%,파인애플농축과실즙0.17%(파인애플과실즙으로1%)(국산),합성착향료(파인애플향),홍화황색소,Shae lemon yellow(홍화황색소,설탕,레몬쥬스,산도조절제),프로필렌글리콜, 초코맛:정백당,물엿,무설탕초콜렛(우유),야자경화유,연유(우유),유화제(글리세린지방산에스테르),합성착향료(초코향), 흑사탕:흑설탕,물엿,마가린(대두),정제소금,합성착향료(흑설탕향), 박하향:정백당ㅁ,물엿,합성착향료(박하향), 카푸치노맛:정백당,물엿,커피분말,연유(우유),마가린(대두),정제소금,합성착향료(카푸치노향), 요쿠르트맛:정백당,물엿,산도조절제,요쿠르트분말혼합0.5%(우유),합성착향료(요쿠르트향),홍화황색소,Shade lemon yellow(홍화황색소,산도조절제,레몬쥬수,설탕),락색소,프로필렌글리콜",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034134/20010415034134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034134/20010415034134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "딸기맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축과실즙",
+            "origin": "국산",
+            "amount": "0.11%",
+            "sub_ingredients": [
+              {
+                "name": "딸기과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "딸기향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade stawberry red P",
+            "sub_ingredients": [
+              {
+                "name": "적양배추색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엘더베리색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "체리맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체리농축과실즙",
+            "origin": "터키산",
+            "amount": "0.31%",
+            "sub_ingredients": [
+              {
+                "name": "체리과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "체리향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade cherry red",
+            "sub_ingredients": [
+              {
+                "name": "블랙커런트색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근추출액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매실맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매실농축과실즙",
+            "origin": "국산",
+            "amount": "0.09%",
+            "sub_ingredients": [
+              {
+                "name": "매실과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "매실향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자두맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자두농축과실즙",
+            "origin": "국산",
+            "amount": "0.09%",
+            "sub_ingredients": [
+              {
+                "name": "자두과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "자두향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade purple grape color",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소AC5113",
+            "sub_ingredients": [
+              {
+                "name": "치자청색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지농축과실즙",
+            "origin": "브라질산",
+            "amount": "0.09%",
+            "sub_ingredients": [
+              {
+                "name": "오렌지과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "오렌지향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade lemon yellow",
+            "sub_ingredients": [
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레몬쥬스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도농축과실즙",
+            "origin": "국산",
+            "amount": "0.17%",
+            "sub_ingredients": [
+              {
+                "name": "포도과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "포도향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade purple grape color",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소AC5113",
+            "sub_ingredients": [
+              {
+                "name": "치자청색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.02%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바나나농축과실즙",
+            "origin": "필리핀산",
+            "amount": "0.25%",
+            "sub_ingredients": [
+              {
+                "name": "바나나과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "바나나향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "DL주석산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "amount": "0.02%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파인애플농축과실즙",
+            "origin": "국산",
+            "amount": "0.17%",
+            "sub_ingredients": [
+              {
+                "name": "파인애플과실즙",
+                "amount": "1%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "파인애플향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shae lemon yellow",
+            "sub_ingredients": [
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레몬쥬스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초코맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무설탕초콜렛",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "연유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "amount": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "초코향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑사탕",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "흑설탕향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "박하향",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "박하향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카푸치노맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "연유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "amount": "카푸치노향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요쿠르트맛",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요쿠르트분말혼합",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "amount": "요쿠르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Shade lemon yellow",
+            "sub_ingredients": [
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레몬쥬스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:58:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 400.0,
+    "carbohydrate_g": 98.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 64.0,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 04:58:31"
+  }
+}

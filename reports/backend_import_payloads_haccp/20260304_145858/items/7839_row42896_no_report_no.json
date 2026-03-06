@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "딸기꽁꽁",
+    "reportnum": "1996038624993"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624993/1996038624993-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624993/1996038624993-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624993/1996038624993-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유기농 딸기잼22%[유기농가당딸기홀77.5%{유기농딸기80%(국산),유기농설탕 20%}유기농설탕17.5%,유기이소말토쌀올리고당5%{유기농쌀(국산),효소}],유기농 설탕(외국산;태국산,인도산,브라질산),올리고당,유기농아가베시럽(멕시코산),유청(국산),구연산,구아검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624993/1996038624993-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996038624993/1996038624993-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 딸기잼",
+        "amount": "22%",
+        "sub_ingredients": [
+          {
+            "name": "유기농가당딸기홀",
+            "amount": "77.5%",
+            "sub_ingredients": [
+              {
+                "name": "유기농딸기",
+                "origin": "국산",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유기농설탕",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "17.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기이소말토쌀올리고당",
+            "amount": "5%",
+            "sub_ingredients": [
+              {
+                "name": "유기농쌀",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "origin": "외국산, 태국산, 인도산, 브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농아가베시럽",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:07:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 110.0,
+    "carbohydrate_g": 27.5,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 20.83,
+    "sodium_mg": 17.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "120g",
+    "collected_at": "2026-03-03 21:07:33"
+  }
+}

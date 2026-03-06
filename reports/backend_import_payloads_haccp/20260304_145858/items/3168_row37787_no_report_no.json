@@ -1,0 +1,71 @@
+{
+  "product": {
+    "name_ko": "스와이스 라임",
+    "reportnum": "19920624042638"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920624042638/19920624042638-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920624042638/19920624042638-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920624042638/19920624042638-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,탄산가스,천연라임향,천연오렌지향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920624042638/19920624042638-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200mL) / 총 약3회 제공량(500mL)\n<1회 제공량당 함량 *%영양성분 기준치>\n열량0kcal, 탄수화물0g 0%, 당류0g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트렌스지방0g, 콜레스테롤0mg  0%, 나트륨0mg 0%\n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920624042638/19920624042638-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산가스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연라임향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연오렌지향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:19:50"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-03 19:19:50"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "검은콩 두유",
+    "reportnum": "20010515081222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081222/20010515081222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081222/20010515081222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081222/20010515081222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두유액87.8%(대두고형분7%이상,대두-수입산),검은콩추출액6.5%(고형분7%이상,검은콩-국산),정제수,정백당,액상과당,옥배유,검은깨페이스트,정제염,글리세린지방산에스테르,합성착향료(누룽지향),산탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081222/20010515081222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190mL) 총24회 제공량당(4,560mL) 1회 제공량당 함량 *%영양성분 기준치 : 열량 115kcal, 탄수화물12g 4%, 당류9g, 단백질 6g 11%, 지방 4.5g 9%, 포화지방1g 7%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 140mg 7%, 영양성분 기준치란?4세이상 어린이부터 성인까지 1일 평균 영양성분 섭취 기준량을 정해 놓은것입니다.*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081222/20010515081222-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "origin": "수입산",
+        "amount": "87.8%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검은콩추출액",
+        "origin": "국산",
+        "amount": "6.5%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검은콩",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은깨페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "누룽지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:55"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 9.0,
+    "protein_g": 6.0,
+    "fat_g": 4.5,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 140.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190mL)",
+    "collected_at": "2026-03-04 03:33:55"
+  }
+}

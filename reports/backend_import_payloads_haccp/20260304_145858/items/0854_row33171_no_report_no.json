@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "게토레이오렌지향",
+    "reportnum": "19780614001330"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001330/19780614001330-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001330/19780614001330-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001330/19780614001330-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,함수결정포도당,구연산,혼합제제A(구연산삼나트륨,제일인산칼륨,정제소금),혼합제제B(정제수,프로필렌글리콜,변성전분,합성착향료(오렌지향),자당지방산에스테르,구연산),합성착향료(오렌지향),식용색소황색제4호(합성착색료),식용색소황색제5호(합성착색료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001330/19780614001330-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(240ml) 열량 55kcal, 탄수화물 14g(4%), 당류 14g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 105mg(5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001330/19780614001330-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제A",
+        "sub_ingredients": [
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제일인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제B",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "오렌지향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "자당지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식용색소황색제4호",
+        "sub_ingredients": [
+          {
+            "name": "합성착색료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식용색소황색제5호",
+        "sub_ingredients": [
+          {
+            "name": "합성착색료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:12:43"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 14.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 105.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(240ml)",
+    "collected_at": "2026-03-03 14:12:43"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "product": {
+    "name_ko": "빅 땅콩샌드",
+    "reportnum": "197102750033906"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033906/197102750033906-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033906/197102750033906-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033906/197102750033906-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),땅콩맛크림[마가린(식물성유지(팜유/말레이시아산,야자유/인도네시아산)가공유지(에스테르화유(팜올레인유/말레이시아산,팜유/말레이시아산))],기타설탕,땅콩버터/중국산(땅콩),혼합제제(글리신,산도조절제,시클로덱스트린,유화제Ⅰ,정제소금),백설탕,쇼트닝Ⅰ팜유,d-토코페롤(혼합형),유화제Ⅰ,유청분말(우유),정제소금,효모,혼합제제[밀가루,셀룰로오스검,알긴산에스테르,잔탄검],유화제,기타가공품,곡류가공품(대두),식물성유산균분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033906/197102750033906-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033906/197102750033906-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩맛크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "origin": "말레이시아산, 인도네시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜올레인유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩버터",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제Ⅰ",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "d-토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유산균분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:19:48"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 331.0,
+    "carbohydrate_g": 45.63,
+    "protein_g": 6.25,
+    "fat_g": 13.75,
+    "sugar_g": 12.5,
+    "sodium_mg": 425.0,
+    "cholesterol_mg": 9.38,
+    "saturated_fat_g": 6.25,
+    "trans_fat_g": 0.56,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "160g",
+    "collected_at": "2026-03-03 13:19:48"
+  }
+}

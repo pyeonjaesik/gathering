@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "스윙칩V 폭립바베큐맛",
+    "reportnum": "19870415003432"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003432/19870415003432-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003432/19870415003432-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003432/19870415003432-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "생감자88%(호주산),혼합식용유[팜올레인유 말레이시아산, 해바라기유 외국산(우크라이나산,말레이시아산,스페이산)],폭립소스맛씨즈닝[아스파탐(감미료,페닐알라닌함유)],합성향료",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003432/19870415003432-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=124g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003432/19870415003432-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생감자",
+        "origin": "호주산",
+        "amount": "88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 우크라이나산, 말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "스페이산)",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폭립소스맛씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:40:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 587.0,
+    "carbohydrate_g": 50.0,
+    "protein_g": 6.67,
+    "fat_g": 40.0,
+    "sugar_g": 3.33,
+    "sodium_mg": 567.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 14.33,
+    "trans_fat_g": 0.33,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "124g",
+    "collected_at": "2026-03-03 16:40:30"
+  }
+}

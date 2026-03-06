@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "식물성유산균 위앤마",
+    "reportnum": "201204720085"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201204720085/201204720085-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201204720085/201204720085-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201204720085/201204720085-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 프락토올리고당, 갈아만든순우리마즙 4%(국산, 고형분50%), 대추혼합믹스{대추농축액(국산), 계피혼합믹스[계피추출액(베트남산),흑미추출물(국산), 귀리농축액(캐나다산)]}, 정제포도당, 타피오카전분(태국산), 갈아만든 순우리쌀즙, 사과농축액, 매실농축액, 펙틴, 식물혼합추출물(유자피, 익지인, 사인, 계피, 황기), 효모추출물, L.plantarum PMO08(식물성유산균) 0.012%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201204720085/201204720085-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=130ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201204720085/201204720085-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈아만든순우리마즙",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대추혼합믹스",
+        "sub_ingredients": [
+          {
+            "name": "대추농축액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피혼합믹스",
+            "sub_ingredients": [
+              {
+                "name": "계피추출액",
+                "origin": "베트남산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "흑미추출물",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "귀리농축액",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈아만든 순우리쌀즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매실농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물혼합추출물",
+        "sub_ingredients": [
+          {
+            "name": "유자피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "익지인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L.plantarum PMO08",
+        "amount": "0.012%",
+        "sub_ingredients": [
+          {
+            "name": "식물성유산균",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:34:37"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 62.0,
+    "carbohydrate_g": 13.08,
+    "protein_g": 0.77,
+    "fat_g": 0.77,
+    "sugar_g": 6.92,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.77,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "130ml",
+    "collected_at": "2026-03-04 04:34:37"
+  }
+}

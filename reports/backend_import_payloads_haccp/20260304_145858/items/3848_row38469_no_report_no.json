@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "얼려먹는비타500",
+    "reportnum": "19960308010390"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010390/19960308010390-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010390/19960308010390-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010390/19960308010390-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,말토덱스트린,액상과당,농축사과과즙(당도72Brix이상,뉴질랜드산),비타민C0.5(650mg),비타민B2 0.0012(1.5mg),히알루론산-KD0.005(히알루론산650ug,덱스트린),케이디SW,구연산,케이디비타2700,구연산삼나트륨,젖산,타우린,DL-사과산,오렌지추출물,감초추출물,합성착향료(드링크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010390/19960308010390-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(150ml) 열량 150kcal, 탄수화물 37g (11%),당류 16g,단백질 0g (0%),지방 0g (0%), 포화지방 0g (0%)·트랜스지방 0g,콜레스테롤 0mg(0%),나트륨 45mg (2%),비타민C 750mg(750%),비타민B2 1.8mg(1.29%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960308010390/19960308010390-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축사과과즙",
+        "origin": "뉴질랜드산",
+        "amount": "당도72Brix이상",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C0.5",
+        "amount": "650mg",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "amount": "1.5mg",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "히알루론산-KD0.005",
+        "sub_ingredients": [
+          {
+            "name": "히알루론산",
+            "amount": "650ug",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "케이디SW",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이디비타2700",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감초추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "드링크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:03:12"
+  },
+  "nutrition": {
+    "kcal": 150.0,
+    "carbohydrate_g": 37.0,
+    "sugar_g": 16.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "basis_amount": 150.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(150ml)",
+    "collected_at": "2026-03-03 21:03:12"
+  }
+}

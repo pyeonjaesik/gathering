@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "대정 마농 소시지",
+    "reportnum": "2003062600298"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600298/2003062600298-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600298/2003062600298-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600298/2003062600298-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산(제주 무항생 흑돼지))92.46%,마늘(국산(제주))5.83%,정제염1%,클라카우어(코리안더,넛맥,마늘,생강,케러웨이,칠리)0.33%,라포스(인산염)0.22%,다시마(국산)0.08%,윈너골드0.08%,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600298/2003062600298-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "300g(740kcal,74kcal/1회섭취참고량 30g),1회 제공량 당 함량,%영양소기준치,열량 74kcal,탄수화물 0.00g(0%),당류 0.00g,단백질 5.50g(20%),지방 5.50g(22%),포화지방 2.20g(29%),트랜스지방 0.00g,콜레스테롤 12.00mg(8%),나트륨 159.00mg(16%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600298/2003062600298-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "92.46%",
+        "sub_ingredients": [
+          {
+            "name": "제주 무항생 흑돼지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "5.83%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "클라카우어",
+        "amount": "0.33%",
+        "sub_ingredients": [
+          {
+            "name": "코리안더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "넛맥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "케러웨이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "라포스",
+        "amount": "0.22%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마",
+        "origin": "국산",
+        "amount": "0.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "윈너골드",
+        "amount": "0.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:03"
+  },
+  "nutrition": {
+    "kcal": 74.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.5,
+    "fat_g": 5.5,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 12.0,
+    "sodium_mg": 159.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회섭취참고량 30g",
+    "collected_at": "2026-03-04 03:50:03"
+  }
+}

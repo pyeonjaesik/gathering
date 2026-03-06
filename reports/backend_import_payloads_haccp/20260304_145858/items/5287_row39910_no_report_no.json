@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "카카오블랙티",
+    "reportnum": "20060347041258"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041258/20060347041258-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041258/20060347041258-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041258/20060347041258-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "홍차78.6%(인도산),카카오닙10%(가나산),펄슈가(백설탕,바나나추출물),합성착향료(초코향,카라멜향),마리골드꽃(이집트산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041258/20060347041258-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(1.5g) 총10회제공량(15g), 1회제공량당함량:열량0kcal, 탄수화물0g(0%), 당류0g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨0mg(0%) *()안의수치는1일영양성분기준치에대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060347041258/20060347041258-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍차",
+        "origin": "인도산",
+        "amount": "78.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카카오닙",
+        "origin": "가나산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펄슈가",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바나나추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마리골드꽃",
+        "origin": "이집트산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:31"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 1.5,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(1.5g)",
+    "collected_at": "2026-03-04 03:57:31"
+  }
+}

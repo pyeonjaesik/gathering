@@ -1,0 +1,177 @@
+{
+  "product": {
+    "name_ko": "리얼코코넛 밀크",
+    "reportnum": "20010515081241"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081241/20010515081241-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081241/20010515081241-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081241/20010515081241-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,코코넛밀크[코코넛추출물75%(고형분21%이상,코코넛-태국산),구아검,잔탄검,카라기난]20%,정백당,나타드코코[나타드코코(베트남산),정백당,구연산]6%,탄산칼슘혼합제제(탄산칼슘,대두다당류),자당지방산에스테르,구연산칼륨,정제염(국산),합성착향료(코코넛향),젤란검,드라이비타민D3(비타민D3,디엘알파토코페롤,중쇄중성지방,아카시아검,수크로오스,옥수수전분)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081241/20010515081241-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(235ml) 1회 제공량당 함량 (*)%영양성분 기준치 : 열량 155kcal, 탄수화물18g (5%*), 당류16g, 단백질 0.5g (1%*), 지방 9g (18%*), 포화지방8g (53%*), 트랜스지방 0g, 콜레스테롤0mg (0%*), 나트륨 100mg (5%*),  칼슘 105mg (15%*), 비타민D3 2.4㎍ (48%*)  (*)은 영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081241/20010515081241-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛밀크",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "코코넛추출물",
+            "origin": "태국산",
+            "amount": "75%(고형분21%이상)",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타드코코",
+        "origin": "베트남산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "나타드코코",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼슘혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두다당류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "코코넛향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "드라이비타민D3",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중쇄중성지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아카시아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:34:05"
+  },
+  "nutrition": {
+    "kcal": 155.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 16.0,
+    "protein_g": 0.5,
+    "fat_g": 9.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 100.0,
+    "calcium_mg": 105.0,
+    "basis_amount": 235.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(235ml)",
+    "collected_at": "2026-03-04 03:34:05"
+  }
+}

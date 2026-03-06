@@ -1,0 +1,194 @@
+{
+  "product": {
+    "name_ko": "말랑카우우유콘",
+    "reportnum": "19780575001101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780575001101/19780575001101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780575001101/19780575001101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780575001101/19780575001101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,과자[밀가루(밀:미국산,호주산),설탕,쇼트닝(부분경화유;말레이시아산),레시틴,정제소금],가공버터(독일산,네덜란드산);(유크림,야자유)),설탕,혼합분유(외국산(네덜란드∙캐나다∙미국):탈지분유,유청),우유(국내산),올리고당가공품(물엿,올리고당,기타과당),준초콜릿,식물성유지,혼합제제(유화제,셀룰로스검,구아검,카라기난),합성향료(밀크향,바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780575001101/19780575001101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=165ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780575001101/19780575001101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "독일산, 네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "네덜란드∙캐나다∙미국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당가공품",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:09:03"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 182.0,
+    "carbohydrate_g": 21.82,
+    "protein_g": 3.03,
+    "fat_g": 9.09,
+    "sugar_g": 14.55,
+    "sodium_mg": 42.0,
+    "cholesterol_mg": 21.21,
+    "saturated_fat_g": 6.06,
+    "trans_fat_g": 0.18,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "165ml",
+    "collected_at": "2026-03-03 14:09:03"
+  }
+}

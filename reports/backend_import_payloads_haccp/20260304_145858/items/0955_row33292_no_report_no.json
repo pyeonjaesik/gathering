@@ -1,0 +1,380 @@
+{
+  "product": {
+    "name_ko": "마더스오가닉3",
+    "reportnum": "19790257001134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001134/19790257001134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001134/19790257001134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001134/19790257001134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농유청분말(독일산,우유),유기농혼합식용유[유기농야자유(필리핀산),유기농대두유(미국산,대두),유기농해바라기유,d-토코페롤(혼합형)],유기농원유(국산),유기농혼합탈지분유(유기농탈지분유,유기농유청분말),유기농유청단백분말,유기농덱스트린,유기농유당,유기농말토올리고당,탄산칼슘,NDA-12(DHA함유,계란),초유단백분말,제이인산칼륨,제삼인산칼륨,CPP(유단백가수분해물),갈락토올리고당,염화칼슘,감마리피드,유기농달맞이꽃종자유,비타민PRXMIX NDINF-P/01[영양강화제,비타민B12혼합제제(비타민B12,덱스트린,구연산삼나트륨,구연산),비타민C,덱스트린],레시틴(난황),글리코메크로펩타이드,유청단백가수분해물,제일인산칼륨,비타민C,정제소금,수산화마그네슘,유산균가공품,염화콜린,L-시스틴,인산철,이노시톨,타우린,지피-시(GP-C),유지방분말,비타민PREMIX ND INF-O/01[영양강화제,비타민D3혼합제제(비타민D3,MCT유,비타민E),비타민E,베타카로틴혼합제제(쌀추출물분말(세라마이드함유),산화아연,낫토추출물,황산동,5'-시틸딜산,5'-우리딜산이나트륨,5'-아데닐산,5'-이노신산이나트륨,5'-구아닐산이나트륨,황산망간,요오드칼륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001134/19790257001134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=800g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001134/19790257001134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농유청분말",
+        "origin": "독일산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "유기농야자유",
+            "origin": "필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농대두유",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유기농해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농원유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농혼합탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "유기농탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농유청단백분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "NDA-12",
+        "sub_ingredients": [
+          {
+            "name": "DHA",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초유단백분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제삼인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CPP",
+        "sub_ingredients": [
+          {
+            "name": "유단백가수분해물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감마리피드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농달맞이꽃종자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민PRXMIX NDINF-P/01",
+        "sub_ingredients": [
+          {
+            "name": "비타민B12혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "비타민B12",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산삼나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "난황",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리코메크로펩타이드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청단백가수분해물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제일인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수산화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화콜린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-시스틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인산철",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이노시톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지피-시",
+        "sub_ingredients": [
+          {
+            "name": "GP-C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유지방분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민PREMIX ND INF-O/01",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "비타민D3",
+                "sub_ingredients": []
+              },
+              {
+                "name": "MCT유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민E",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베타카로틴혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "쌀추출물분말",
+                "sub_ingredients": [
+                  {
+                    "name": "세라마이드",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산화아연",
+                "sub_ingredients": []
+              },
+              {
+                "name": "낫토추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "황산동",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-시틸딜산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-우리딜산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-아데닐산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-이노신산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-구아닐산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "황산망간",
+                "sub_ingredients": []
+              },
+              {
+                "name": "요오드칼륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:21:23"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 479.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 15.71,
+    "fat_g": 20.71,
+    "sugar_g": 40.0,
+    "sodium_mg": 171.0,
+    "cholesterol_mg": 57.14,
+    "saturated_fat_g": 9.29,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "800g",
+    "collected_at": "2026-03-03 14:21:23"
+  }
+}

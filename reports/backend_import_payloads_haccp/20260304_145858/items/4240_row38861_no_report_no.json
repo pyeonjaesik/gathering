@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "덴마크드링킹요구르트씨트러스",
+    "reportnum": "1998047601775"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601775/1998047601775-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601775/1998047601775-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601775/1998047601775-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유71%(국산),씨트러스믹스시럽12.5%(씨트러스과즙으로40%),[백설탕,오렌지농축과즙3.7%(브라질산),레몬농축과즙0.389%(이스라엘산),자몽농축과즙1.455%(미국산),뉴트리오스],혼합탈지분유(탈지분유/유청분말),유크림,정제수,유산균,프로바이오틱유산균[1억(1x10^8)마리이상]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601775/1998047601775-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100mL당 함량 *%영양소 기준치:열량 100kcal, 탄수화물14g 4%,당류10g, 단백질 4g 7%,지방 3g 6%,포화지방2g 13%, 트랜스지방0g 0%, 콜레스테롤 10mg 3%, 나트륨 60mg 3%, 칼슘 110mg 16%, *% 영양소 기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601775/1998047601775-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "씨트러스믹스시럽",
+        "amount": "12.5%",
+        "sub_ingredients": [
+          {
+            "name": "씨트러스과즙",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지농축과즙",
+            "origin": "브라질산",
+            "amount": "3.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬농축과즙",
+            "origin": "이스라엘산",
+            "amount": "0.389%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽농축과즙",
+            "origin": "미국산",
+            "amount": "1.455%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "뉴트리오스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로바이오틱유산균",
+        "amount": "1억(1x10^8)마리이상",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:58:14"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 10.0,
+    "protein_g": 4.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 60.0,
+    "calcium_mg": 110.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100mL당 함량",
+    "collected_at": "2026-03-03 21:58:14"
+  }
+}

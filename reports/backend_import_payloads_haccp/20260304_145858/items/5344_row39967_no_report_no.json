@@ -1,0 +1,53 @@
+{
+  "product": {
+    "name_ko": "알등심살(돼지)",
+    "reportnum": "200603941741"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200603941741/200603941741-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200603941741/200603941741-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200603941741/200603941741-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돈육 100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200603941741/200603941741-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "칼로리144수분70.9단백질22.9지질5.13회분1.09",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200603941741/200603941741-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돈육",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:28"
+  },
+  "nutrition": {
+    "kcal": 144.0,
+    "water_g": 70.9,
+    "protein_g": 22.9,
+    "ash_g": 1.09,
+    "collected_at": "2026-03-04 03:58:28"
+  }
+}

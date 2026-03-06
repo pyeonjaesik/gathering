@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "덴마크드링킹요구르트 석류",
+    "reportnum": "1998047601790"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601790/1998047601790-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601790/1998047601790-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601790/1998047601790-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유 또는 환원유71%(국산),정제수,석류시럽12.5%(석류과즙으로12.18%)[정백당,석류농축과즙3%(이란산),합성착향료(석류향),베리류색소,구연산(산도조절제)],탈지분유(수입산),유크림,유산균,프로바이오틱유산균[1억(1x10^8)마리이상]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601790/1998047601790-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1컵 (150mL 기준)/총약2회 제공량(310mL), 150mL당 함량: 열량 130kcal,탄수화물18g (5%),당류18g,단백질5g (8%),지방4.5g (9%), 포화지방3g (20%), 트랜스지방0g, 콜레스테롤 15mg (5%), 나트륨90mg (5%), 칼슘165mg (24%),  *( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601790/1998047601790-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유 또는 환원유",
+        "origin": "국산",
+        "amount": "71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "석류시럽",
+        "amount": "12.5%",
+        "sub_ingredients": [
+          {
+            "name": "석류과즙",
+            "amount": "12.18%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "석류농축과즙",
+            "origin": "이란산",
+            "amount": "3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "석류향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "베리류색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로바이오틱유산균",
+        "amount": "1억(1x10^8)마리이상",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:58:31"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 18.0,
+    "protein_g": 5.0,
+    "fat_g": 4.5,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 90.0,
+    "calcium_mg": 165.0,
+    "basis_amount": 150.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량1컵 (150mL 기준)",
+    "collected_at": "2026-03-03 21:58:31"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "product": {
+    "name_ko": "백세카레 3분 순한맛",
+    "reportnum": "20010445055352"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055352/20010445055352-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055352/20010445055352-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055352/20010445055352-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,쇠고기15%(뉴질랜드산),양파퓨레(중국산:양파,옥수수유),감자(감자,산도조절제),쟈스네-1(사과,백설탕,배,감,밀감),당근,열대과일퓨레,사골엑기스,유크림(우유),해바라기유,혼합제제(변성전분,백설탕,덱스트린),카레분1.25%[강황31.9%(인도산),코리안더(모로코산,캐나다산),로즈마리0.8%,월계수잎0.8%],쌀가루,카레페이스트1%(카레분2.3%),토마토페이스트,정제소금,쇠고기브이용(대두),마늘,우스타소스(밀),백설탕,육수맛혼합분,식물성분해단백-1,3분백세카레믹스-3",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055352/20010445055352-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지(200g)(당사분석치), 1회제공량당 함량 *%영양소기준치, 열량180kcal, 탄수화물23g 7%, 당류5g, 단백질11g 20%, 지방5g 10%, 포화지방1.3g 9g, 트랜스지방0g, 콜레스테롤15mg 5%, 나트륨850mg 43%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055352/20010445055352-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "뉴질랜드산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파퓨레",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쟈스네-1",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀감",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "열대과일퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카레분",
+        "amount": "1.25%",
+        "sub_ingredients": [
+          {
+            "name": "강황",
+            "origin": "인도산",
+            "amount": "31.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코리안더",
+            "origin": "모로코산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리",
+            "amount": "0.8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "월계수잎",
+            "amount": "0.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레페이스트",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "카레분",
+            "amount": "2.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기브이용",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우스타소스",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육수맛혼합분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성분해단백-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "3분백세카레믹스-3",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:45"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 5.0,
+    "protein_g": 11.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 850.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지(200g)(당사분석치)",
+    "collected_at": "2026-03-04 03:32:45"
+  }
+}

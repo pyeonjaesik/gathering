@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "HOT 신당동 떡볶이",
+    "reportnum": "19830415001188"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830415001188/19830415001188-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830415001188/19830415001188-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830415001188/19830415001188-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(미국산,밀),갈색설탕,혼합식용유<팜올레인유(말레이시아산)59.98%,해바라기유(수입산)40%,토코페롤(혼합형)>,물엿,기타가공품[떡볶이맛시즈닝(분말·결정포도당,떡볶이맛베이스,백설탕,떡볶이분말,정제소금)<대두,토마토>],쌀가루,고추장,분말·결정포도당,정제소금,파프리카추출색소,산도조절제,천연향신료(파슬리후레이크),합성착향료(크렉카향,훈연향),향미증진제 ·떡볶이맛시즈닝5%함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830415001188/19830415001188-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/7봉지(30g) 총 7회 제공량(215g) : 열량 160kcal, 탄수화물 19g 6%, 당류 10g, 단백질 1g 2%, 지방 9g 18%, 포화지방 2.9g 19%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 150mg 8% (%)는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830415001188/19830415001188-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "떡볶이맛시즈닝",
+            "amount": "5%",
+            "sub_ingredients": [
+              {
+                "name": "분말·결정포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "떡볶이맛베이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "떡볶이분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향신료",
+        "sub_ingredients": [
+          {
+            "name": "파슬리후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "크렉카향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "훈연향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:31:17"
+  },
+  "nutrition": {
+    "kcal": 160.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 10.0,
+    "protein_g": 1.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/7봉지(30g)",
+    "collected_at": "2026-03-03 15:31:17"
+  }
+}

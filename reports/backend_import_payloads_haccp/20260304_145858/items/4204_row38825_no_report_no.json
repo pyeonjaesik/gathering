@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "알뜨레불고기스모크세절햄",
+    "reportnum": "19980476001215"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001215/19980476001215-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001215/19980476001215-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001215/19980476001215-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)65.94%,정제수,초산전분,대두단백(중국산),백설탕,정제소금(국내산),난백분,산도조절제,불고기맛시즈닝M,L-글루타민산나트륨(향미증진제),코치닐추출색소(천연첨가물),비타민C,아질산나트륨(발색제,합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001215/19980476001215-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 840g 100당 198kcal 나트륨930mg 47%, 탄수화물7g 2%, 당류3g 3%, 지방 14g 26%, 트랜스지방0g, 포화지방5g 33%,콜레스테롤 85mg 28%, 단백질11g 20% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001215/19980476001215-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "65.94%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초산전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기맛시즈닝M",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": [
+          {
+            "name": "천연첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:54:24"
+  },
+  "nutrition": {
+    "kcal": 198.0,
+    "sodium_mg": 930.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 3.0,
+    "fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 85.0,
+    "protein_g": 11.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100당",
+    "collected_at": "2026-03-03 21:54:24"
+  }
+}

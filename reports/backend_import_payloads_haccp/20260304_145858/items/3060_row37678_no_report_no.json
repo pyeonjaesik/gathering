@@ -1,0 +1,219 @@
+{
+  "product": {
+    "name_ko": "얼그레이자몽",
+    "reportnum": "19920372050426"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050426/19920372050426-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050426/19920372050426-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050426/19920372050426-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(미국산),설탕,마가린[팜유(말레이시아산),에스테르화유{팜스테아린유(말레이시아산),야자유(인도네시아산)},팜핵경화유,팜올레인유,에스테르화유],물엿,백앙금{강낭콩:외국산(미얀마,캐나다,미국)},기타과당,전란액,기타엿,식물성크림,레드자몽농축(이스라엘산)0.9%(자몽과즙5.8%),정제소금,산도조절제1,산도조절제2,유화제,침출차(스리랑카산)0.2%(홍차97%,베르가못향3%),아미드펙틴,구연산,사과산,산도조절제3,산도조절제4,합성향료(얼그레이향,자몽향),적양배추색소,나린진",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050426/19920372050426-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 266g 100g당 407kcal\n나트륨144mg 7%, 탄수화물73g 23%, 당류34g 34%, 지방11g 20%, 트랜스지방0g, 포화지방8g 53%, 콜레스테롤11mg 4%, 단백질4g 7%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050426/19920372050426-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에스테르화유",
+            "sub_ingredients": [
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자유",
+                "origin": "인도네시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "팜핵경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백앙금",
+        "origin": "외국산, 미얀마산, 캐나다산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "강낭콩",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드자몽농축",
+        "origin": "이스라엘산",
+        "amount": "0.9%",
+        "sub_ingredients": [
+          {
+            "name": "자몽과즙",
+            "amount": "5.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제4",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "침출차",
+        "origin": "스리랑카산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "홍차",
+            "amount": "97%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베르가못향",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "얼그레이향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "적양배추색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나린진",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:03:55"
+  },
+  "nutrition": {
+    "kcal": 407.0,
+    "sodium_mg": 144.0,
+    "carbohydrate_g": 73.0,
+    "sugar_g": 34.0,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 8.0,
+    "cholesterol_mg": 11.0,
+    "protein_g": 4.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 19:03:55"
+  }
+}

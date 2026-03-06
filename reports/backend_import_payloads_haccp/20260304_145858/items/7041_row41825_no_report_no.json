@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "녹용톤골드",
+    "reportnum": "19890445014732"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014732/19890445014732-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014732/19890445014732-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014732/19890445014732-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "홍삼혼합추출농축액[홍삼(6년근:국산),대추,숙지황,천궁,감초,두릅(독활)추출물(국산)0.6%,당귀,계피,인진쑥,영지버섯,정제수]78.175%,녹용농축액(고형분0.1%이상)8%,액상과당,이소말토올리고당카르복시메탈셀룰로오스나트륨,카라멜색소비에이,구연산,인삼향(합성착향료),안식항산나트륨(합성보존료),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014732/19890445014732-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1800ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890445014732/19890445014732-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍삼혼합추출농축액",
+        "amount": "78.175%",
+        "sub_ingredients": [
+          {
+            "name": "홍삼",
+            "origin": "국산",
+            "amount": "6년근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숙지황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천궁",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "두릅(독활)추출물",
+            "origin": "국산",
+            "amount": "0.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인진쑥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영지버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "녹용농축액",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.1%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당카르복시메탈셀룰로오스나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소비에이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인삼향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "안식항산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:26"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 11.67,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 20.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1800ml",
+    "collected_at": "2026-03-04 03:26:26"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "product": {
+    "name_ko": "이팜들기름,총각네명품들기름,순수지미명품들기름,오복국산들기름,전통압착방식으로짠국산들기름,똑똑이들기름,정성껏 볶아 더 고소한 들기름, 딱 한번만 짜내 진한 국산들기름,샘표일편단심국산들기름",
+    "reportnum": "2001036016063"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036016063/2001036016063-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036016063/2001036016063-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036016063/2001036016063-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "들깨100%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036016063/2001036016063-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5g(ml) | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036016063/2001036016063-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "들깨",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:23"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 840.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 93.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 5.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5g(ml)",
+    "total_content": "180ml",
+    "collected_at": "2026-03-04 03:28:23"
+  }
+}

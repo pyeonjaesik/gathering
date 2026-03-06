@@ -1,0 +1,229 @@
+{
+  "product": {
+    "name_ko": "화이트초코렛타",
+    "reportnum": "1994060717598"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717598/1994060717598-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717598/1994060717598-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717598/1994060717598-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "함침화이트초콜릿[가공유지(팜핵경화유/말레이시아,인도네시아),정백당,전지분골드{물엿,정제팜유(말레이시아)},카카오버터(싱가폴),밀크레진(우유),탈염유청분말(우유/리투아니아),혼합탈지분유(탈지분유,유청분말(우유)/네덜란드),유당(우유),채종유,레시틴(대두/유화제),글리세린지방산에스테르(유화제),치즈레진(우유),생크림레진(우유),합성착향료(치즈향,밀크향,바닐린)],옥수수분말(호주산),빵가루,채종유,탄산칼슘(영양강화제),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717598/1994060717598-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=76g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060717598/1994060717598-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "함침화이트초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산, 인도네시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분골드",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카카오버터",
+            "sub_ingredients": [
+              {
+                "name": "싱가폴",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀크레진",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈염유청분말",
+            "origin": "리투아니아산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말(우유)",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": [
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치즈레진",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "생크림레진",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "치즈향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수분말",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:07:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 559.0,
+    "carbohydrate_g": 59.21,
+    "protein_g": 3.95,
+    "fat_g": 34.21,
+    "sugar_g": 28.95,
+    "sodium_mg": 132.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 30.26,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "76g",
+    "collected_at": "2026-03-03 20:07:46"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "product": {
+    "name_ko": "빅옥수수소프트",
+    "reportnum": "199503380157184"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157184/199503380157184-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157184/199503380157184-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157184/199503380157184-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/캐나다산,미국산),옥수수크림(마가린(식물성유지(팜유/말레이시아산,야자유/인도네시아산)가공유지(에스테르화유(팜올레인유/말레이시아산,팜유/말레이시아산)옥수수필링(옥수수페이스트(스위트콘/태국산,옥수수전분/수입산)정제소금/국산)기타설탕,백설탕,무엿(옥수수페이스트(스위트콘/태국산,백설탕,D-소르비톨액,옥수수전분/수입산,합성착향료(옥수수향),백설탕,전란액(계란)쇼트닝,효모,탈지분유(우유),정제소금,기타가공품,유화제,기타가공품,알긴산프로필렌글리콜,곡류가공품(대두),혼합제제(베라카로틴(합성착색료)유화제,비타민E,구연산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157184/199503380157184-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량330KCAL 탄수화물 44G 13% 당류 17G 단백질 5G 9% 지방 15G 29% 포화지방 8G 53% 트랜스지방 0.5G 콜레스테롤 15MG미만 5% 나트륨 310MG 16%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157184/199503380157184-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "캐나다산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "origin": "말레이시아산, 인도네시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜올레인유",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "옥수수필링",
+            "sub_ingredients": [
+              {
+                "name": "옥수수페이스트",
+                "origin": "태국산",
+                "sub_ingredients": [
+                  {
+                    "name": "스위트콘",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무엿",
+        "sub_ingredients": [
+          {
+            "name": "옥수수페이스트",
+            "origin": "태국산",
+            "sub_ingredients": [
+              {
+                "name": "스위트콘",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "옥수수향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전란액",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알긴산프로필렌글리콜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "베라카로틴",
+            "sub_ingredients": [
+              {
+                "name": "합성착색료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:25:09"
+  },
+  "nutrition": {
+    "kcal": 330.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 17.0,
+    "protein_g": 5.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.5,
+    "sodium_mg": 310.0,
+    "collected_at": "2026-03-03 20:25:09"
+  }
+}

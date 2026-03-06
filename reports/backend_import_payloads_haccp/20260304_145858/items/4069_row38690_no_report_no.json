@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "빙그레 딸기맛 우유",
+    "reportnum": "1998026202937"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998026202937/1998026202937-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998026202937/1998026202937-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998026202937/1998026202937-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산),딸기시럽(딸기,백설탕,합성착향료(딸기향),펙틴,프락토올리고당),백설탕,혼합탈지분유,정제수,유산균배양액,펙틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998026202937/1998026202937-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량당  열량 110kcal, 탄수화물 17g (5%), 당류 15g, 단백질 3g (5%),지방 3g (6%), 포화지방 2g (13%),트랜스지방 0g,콜레스테롤 10mg (3%),나트륨 60mg (3%),칼슘 110mg(16%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998026202937/1998026202937-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기시럽",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:37:23"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 15.0,
+    "protein_g": 3.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 60.0,
+    "calcium_mg": 110.0,
+    "basis_text": "1회제공량당",
+    "collected_at": "2026-03-03 21:37:23"
+  }
+}

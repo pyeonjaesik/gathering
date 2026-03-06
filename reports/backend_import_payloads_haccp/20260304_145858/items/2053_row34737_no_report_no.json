@@ -1,0 +1,225 @@
+{
+  "product": {
+    "name_ko": "후렌치파이 그레이프",
+    "reportnum": "19860560029152"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860560029152/19860560029152-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860560029152/19860560029152-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860560029152/19860560029152-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루1(밀,미국산),마가린[가공유지{팜유류(말레이시아산),야자경화유(인도네시아산)},팜유류(말레이시아산),대두유,가공버터],백설탕,가당사과{사과(국산),백설탕,펙틴,비타민C},밀가루2,물엿,가당적포도농축엑[적포도농축액{미국산(고형분함량60%)}],마가린(경화유),혼합식용유,정제소금,쇼트닝(경화유),펙틴,아미드펙틴,유화제,로커스트콩검,합성향료(포도향),혼합제제(적양배추색소,치자청색소,구연산,산도조절제),구연산,사과산,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860560029152/19860560029152-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=192g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860560029152/19860560029152-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루1",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유류",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자경화유",
+                "origin": "인도네시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "팜유류",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당사과",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당적포도농축엑",
+        "sub_ingredients": [
+          {
+            "name": "적포도농축액",
+            "origin": "미국산",
+            "amount": "고형분함량60%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "적양배추색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:26:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 462.0,
+    "carbohydrate_g": 61.54,
+    "protein_g": 7.69,
+    "fat_g": 23.08,
+    "sugar_g": 30.77,
+    "sodium_mg": 231.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "192g",
+    "collected_at": "2026-03-03 16:26:31"
+  }
+}

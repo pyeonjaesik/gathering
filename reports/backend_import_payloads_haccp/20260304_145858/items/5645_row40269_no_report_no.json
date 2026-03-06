@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "하숙집 샌드위치",
+    "reportnum": "20080338223506"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080338223506/20080338223506-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080338223506/20080338223506-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080338223506/20080338223506-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "식빵[밀가루(밀/미국산,캐나다산),설탕,쇼트닝/인도네시아산,정제소금,효모],원형에그패티[계란/국산,변성전분,전분(옥수수/외국산),혼합분유,설탕],프레스햄[돼지고기/국산,닭고기/국산(기계발골육),전분,복합단백,스모크햄씨즈닝],블루베리잼SF[냉동블루베리,설탕,기타과당,포도당,올리고당],마요네즈,양배추,토마토케첩,당근,어니언크림소스,밀식이섬유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080338223506/20080338223506-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 315,[영양표시] : 나트륨910mg,탄수화물45g,당류11g,지방11g,트랜스지방0g,포화지방2.6g,콜레스테롤90mg,단백질9g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080338223506/20080338223506-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식빵",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "원형에그패티",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프레스햄",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "기계발골육",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크햄씨즈닝",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리잼SF",
+        "sub_ingredients": [
+          {
+            "name": "냉동블루베리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케첩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "어니언크림소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀식이섬유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:02"
+  },
+  "nutrition": {
+    "kcal": 315.0,
+    "sodium_mg": 910.0,
+    "carbohydrate_g": 45.0,
+    "sugar_g": 11.0,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.6,
+    "cholesterol_mg": 90.0,
+    "protein_g": 9.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:08:02"
+  }
+}

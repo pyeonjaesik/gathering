@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "뽕따소다맛",
+    "reportnum": "200203470377"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203470377/200203470377-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203470377/200203470377-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203470377/200203470377-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,기타과당,말티톨시럽,야자유,설탕,유청,구연산,정제소금,유화제,구아검,카라기난,셀룰로스검,치자청색소,스피룰리나색소,합성향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203470377/200203470377-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=130g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200203470377/200203470377-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로스검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스피룰리나색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:38:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 92.0,
+    "carbohydrate_g": 17.69,
+    "protein_g": 0.0,
+    "fat_g": 2.46,
+    "sugar_g": 11.54,
+    "sodium_mg": 27.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.31,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "130g",
+    "collected_at": "2026-03-04 03:38:09"
+  }
+}

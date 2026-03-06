@@ -1,0 +1,221 @@
+{
+  "product": {
+    "name_ko": "더커진 국물떡볶이",
+    "reportnum": "20010538182265"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182265/20010538182265-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182265/20010538182265-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182265/20010538182265-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*떡-쌀(외국산),전분(찰옥수수:미국산),정제소금(국산),주정 *소스-정제수,기타과당,설탕,고춧가루1(중국산),고추장[물엿,소맥분(밀:미국,호주산),혼합양념(중국산),밀쌀,솔빈산칼륨(합성보존료)],L-글루탐산나트륨(향미증진제),혼합간장[대두(인도산),정제소금(국산)],갈은마늘,베지터블씨즈닝,미림,물엿,주정,변성전분,야채조미유,복합조미식품,소스1,춘장,소스2,고춧가루2,향미유,콩기름,향신료조제품,주정,파프리카추출색소,과채가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182265/20010538182265-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 300g 690 kcal\n나트륨1,320mg 66%, 탄수화물154g 48%, 당류27g 27%, 지방3.2g 6%, 트랜스지방0g, 포화지방0.9g 6%, 콜레스테롤3.0mg 1%, 단백질13g 24%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182265/20010538182265-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "떡",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분",
+        "origin": "외국산, 미국산",
+        "amount": "찰옥수수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루1",
+            "origin": "외국산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "외국산, 미국산, 호주산",
+                "amount": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "origin": "외국산, 중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "솔빈산칼륨",
+                "amount": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "갈은마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베지터블씨즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채조미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "춘장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료조제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과채가공품",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:34:35"
+  },
+  "nutrition": {
+    "kcal": 690.0,
+    "sodium_mg": 1320.0,
+    "carbohydrate_g": 154.0,
+    "sugar_g": 27.0,
+    "fat_g": 3.2,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.9,
+    "cholesterol_mg": 3.0,
+    "protein_g": 13.0,
+    "basis_amount": 300.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량 300g",
+    "collected_at": "2026-03-04 03:34:35"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "울금500",
+    "reportnum": "19970464172210"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172210/19970464172210-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172210/19970464172210-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172210/19970464172210-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물혼합추출물[오리나무(국산),헛개나무(국산),감초,마가목,귤피,칡],흑설탕,사과농축액(0Brix,칠레산),헛개열매농축액,복숭아농축액,오미자농축액,울금추출농축액(50Brix,국산)0.5%,수용성커큐민[커큐민(심황색소):인도산12%]0.85%,구연산,구연산삼나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172210/19970464172210-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=200ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172210/19970464172210-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물혼합추출물",
+        "sub_ingredients": [
+          {
+            "name": "오리나무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "헛개나무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가목",
+            "sub_ingredients": []
+          },
+          {
+            "name": "귤피",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "헛개열매농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오미자농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "울금추출농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성커큐민",
+        "origin": "인도산",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "커큐민",
+            "origin": "인도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:29:11"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.9,
+    "sugar_g": 10.0,
+    "sodium_mg": 42.0,
+    "cholesterol_mg": 6.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "200ml",
+    "collected_at": "2026-03-03 21:29:11"
+  }
+}

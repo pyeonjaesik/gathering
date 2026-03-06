@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "씨알야채맛소시지",
+    "reportnum": "2007026205458"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205458/2007026205458-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205458/2007026205458-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205458/2007026205458-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(무항생제/국내산)97.139%,볶은소금(국내산/마하탑)1.127%,유기농설탕,브라트 스파이스,양파,당근,피망,콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205458/2007026205458-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 함량 열량 203kcal, 탄수화물 6g (2%), 당류 1g, 단백질 16g (26%), 지방 13g (26%), 포화지방 5g (33%), 트랜스지방 0g (0%), 콜레스테롤 36mg (12%), 나트륨 488mg (24%) ※( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205458/2007026205458-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "97.139%",
+        "sub_ingredients": [
+          {
+            "name": "무항생제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶은소금",
+        "origin": "국내산",
+        "amount": "1.127%",
+        "sub_ingredients": [
+          {
+            "name": "마하탑",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브라트 스파이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:02"
+  },
+  "nutrition": {
+    "kcal": 203.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 1.0,
+    "protein_g": 16.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 36.0,
+    "sodium_mg": 488.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당",
+    "collected_at": "2026-03-04 04:02:02"
+  }
+}

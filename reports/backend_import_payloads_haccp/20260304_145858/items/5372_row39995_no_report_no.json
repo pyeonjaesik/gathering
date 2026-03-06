@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "살아있는 실의힘 국산 검정약콩 나또",
+    "reportnum": "2006044400721"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400721/2006044400721-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400721/2006044400721-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400721/2006044400721-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "검은콩나또[검은콩100%(국산), 종균],가쓰오간장소스{양조간장[양조간장원액(탈지대두:인도산, 소맥:미국산)], 백설탕, 가쓰오오메부시엑기스-P[가쓰오추출액(가쓰오후레이크:인도네시아산), 양조간장(미국산)], 간장소스베이스, 정제염, 가쓰오농축액}, 겨자소스[겨자분(캐나다산),정제염(국산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400721/2006044400721-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*1회 제공량(49.5g)/총 46회 분량\n<1회 분량당 함량  %영양소 시준치>\n열량65kcal, 트렌스지방0g, 탄수화물9g 3%, 콜레스테롤0mg 0%, 식이섬유5g 20%, 나트륨140mg 7%, 당류1g, 단백질8g 15%, 지방0.7g 1%, 포화지방0g 0%\n* %영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400721/2006044400721-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "검은콩나또",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "검은콩",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가쓰오간장소스",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "양조간장원액",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "인도산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소맥",
+                    "origin": "미국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오오메부시엑기스-P",
+            "sub_ingredients": [
+              {
+                "name": "가쓰오추출액",
+                "origin": "인도네시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "가쓰오후레이크",
+                    "origin": "인도네시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "양조간장",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "간장소스베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오농축액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "겨자소스",
+        "sub_ingredients": [
+          {
+            "name": "겨자분",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:23"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 9.0,
+    "cholesterol_mg": 0.0,
+    "dietary_fiber_g": 5.0,
+    "sodium_mg": 140.0,
+    "sugar_g": 1.0,
+    "protein_g": 8.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 49.5,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(49.5g)",
+    "collected_at": "2026-03-04 03:59:23"
+  }
+}

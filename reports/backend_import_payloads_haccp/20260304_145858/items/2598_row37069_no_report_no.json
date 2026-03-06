@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "두부조림과렌틸콩밥",
+    "reportnum": "19880442004622"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004622/19880442004622-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004622/19880442004622-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004622/19880442004622-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,두부26.19%[대두100%(외국산:미국,캐나다,중국등),천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)],돼지뒷다리살(국산),백미(국산),현미,5종혼합야채,새송이버섯,양파,치킨강정용소스,렌틸콩2.36%(미국산),찹쌀,저염간장,미림,카놀라유,대파,참기름,고춧가루,다진마늘,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004622/19880442004622-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량340kcal, 탄수화물50g(15%), 당류6g, 단백질19g(35%), 지방8g(16%), 포화지방1.9(13%),트랜스지방0g, 콜레스테롤5mg(2%), 나트륨320mg(16%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004622/19880442004622-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "26.19%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염천연응고제",
+            "amount": "100",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "현미유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올리브유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지뒷다리살",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5종혼합야채",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새송이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨강정용소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "렌틸콩",
+        "origin": "미국산",
+        "amount": "2.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저염간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:57"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "carbohydrate_g": 50.0,
+    "sugar_g": 6.0,
+    "protein_g": 19.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 320.0,
+    "collected_at": "2026-03-04 03:24:57"
+  }
+}

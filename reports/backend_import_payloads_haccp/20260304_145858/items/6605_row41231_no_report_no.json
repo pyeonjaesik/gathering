@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "보일스 더치커피 마일드",
+    "reportnum": "201400760316"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201400760316/201400760316-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201400760316/201400760316-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201400760316/201400760316-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "커피원두추출액(국내제조)100%(고형분 함량 1.0%) ※커피원재료 원산지 : 케냐, 브라질, 콜롬비아, 과테말라, 에티오피아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201400760316/201400760316-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (100ml) 1회 제공량 당 함량 *%영양소 기준치 열량 4.7kcal, 탄수화물 0.7g 0.2%, 당류 0g, 단백질 0.3g 0.5%, 지방 0.1g 0.2%, 포화지방 0.1g 0.7%, 트랜스지방 0g, 콜레스테롤 0mg 0.0%, 나트륨 12.4mg 0.6% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율 시험항목 결과 카페인 181,0mg/100ml",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201400760316/201400760316-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "커피원두추출액",
+        "origin": "케냐산, 브라질산, 콜롬비아산, 과테말라산, 에티오피아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "1.0%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:36"
+  },
+  "nutrition": {
+    "kcal": 4.7,
+    "carbohydrate_g": 0.7,
+    "sugar_g": 0.0,
+    "protein_g": 0.3,
+    "fat_g": 0.1,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 12.4,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 (100ml)",
+    "collected_at": "2026-03-04 04:39:36"
+  }
+}

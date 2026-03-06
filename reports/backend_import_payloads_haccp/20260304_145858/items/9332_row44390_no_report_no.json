@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "청정원 들기름 바사삭김 파래김",
+    "reportnum": "2010037518836"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037518836/2010037518836-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037518836/2010037518836-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037518836/2010037518836-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "파래김49.9%{국산(김80%,파래20%)},옥배유{옥수수:외국산(러시아,헝가리,세르비아등)},들기름7.6%(들깨:중국산),맛소금,참기름,허브추출물DS",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037518836/2010037518836-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=4g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037518836/2010037518836-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파래김",
+        "origin": "국산",
+        "amount": "49.9%",
+        "sub_ingredients": [
+          {
+            "name": "김",
+            "origin": "국산",
+            "amount": "80%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파래",
+            "origin": "국산",
+            "amount": "20%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "amount": "7.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브추출물DS",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 625.0,
+    "carbohydrate_g": 25.0,
+    "protein_g": 25.0,
+    "fat_g": 57.5,
+    "sugar_g": 0.0,
+    "sodium_mg": 1375.0,
+    "dietary_fiber_g": 25.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "4g",
+    "collected_at": "2026-03-04 04:24:54"
+  }
+}

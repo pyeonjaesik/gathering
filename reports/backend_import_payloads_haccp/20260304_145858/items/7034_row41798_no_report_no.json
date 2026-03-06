@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "동원참치DHA",
+    "reportnum": "198805890635"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198805890635/198805890635-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198805890635/198805890635-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198805890635/198805890635-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "다랑어79%[원양산(태평양)],카놀라유(수입산),정제수,DHA함유어유0.9%[DHA27%,다랑어[원양산(태평양)],야채즙",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198805890635/198805890635-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198805890635/198805890635-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "다랑어",
+        "amount": "79%",
+        "sub_ingredients": [
+          {
+            "name": "원양산(태평양)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DHA함유어유",
+        "amount": "0.9%",
+        "sub_ingredients": [
+          {
+            "name": "DHA",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다랑어",
+            "sub_ingredients": [
+              {
+                "name": "원양산(태평양)",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "원양산(태평양)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채즙",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 210.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 19.0,
+    "fat_g": 15.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 410.0,
+    "cholesterol_mg": 45.0,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:26:14"
+  }
+}

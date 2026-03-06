@@ -1,0 +1,309 @@
+{
+  "product": {
+    "name_ko": "맛있는 컵밥 진짬뽕밥",
+    "reportnum": "20010445055431"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055431/20010445055431-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055431/20010445055431-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055431/20010445055431-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*맛있는오뚜기컵밥:쌀(국산),산도조절제, *진짬뽕밥액체스프:정제수,짬뽕양념농축액[정제소금(국산),오징어(국산)],사골육수농축액[농축사골엑기스(사골:국산)],복합지미분[아미노베이스(밀:프랑스산),정제소금(국산)],감칠맛베이스,짬뽕소스,볶음짬뽕소스,야채농축액,프락토올리고당,정제우지,덱스트린,백설탕,오징어양념분말,닭육수농축액,정제소금,고춧가루,해물찌개브로스,홍합농축분말,향미증진제,미더덕엑기스,오징어엑기스,마늘,칠리추출물,영양강화제,웍풍미소스, *진짬뽕밥유성스프:짬뽕향미유[향미유베이스(미강유:태국산),짬뽕맛조미유베이스(미강유:태국산)],대두유[외국산(미국,아르헨티나,중국등)],고추맛추출기름[대두유(외국산),고춧가루(중국산,베트남산)],조미채종유, *진짬뽕밥건더기스프:건청경채(중국산),건양배추(중국산),건당근(중국산),오징어조미후레이크,게맛살조미후레이크,건파,건목이버섯,건미역",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055431/20010445055431-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=218g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055431/20010445055431-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는오뚜기컵밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "진짬뽕밥액체스프",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짬뽕양념농축액",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "오징어",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사골육수농축액",
+            "sub_ingredients": [
+              {
+                "name": "농축사골엑기스",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "사골",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "복합지미분",
+            "sub_ingredients": [
+              {
+                "name": "아미노베이스",
+                "origin": "프랑스산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "감칠맛베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짬뽕소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음짬뽕소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제우지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭육수농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해물찌개브로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍합농축분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미더덕엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "웍풍미소스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "진짬뽕밥유성스프",
+        "sub_ingredients": [
+          {
+            "name": "짬뽕향미유",
+            "sub_ingredients": [
+              {
+                "name": "향미유베이스",
+                "origin": "태국산",
+                "sub_ingredients": [
+                  {
+                    "name": "미강유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "짬뽕맛조미유베이스",
+                "origin": "태국산",
+                "sub_ingredients": [
+                  {
+                    "name": "미강유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추맛추출기름",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고춧가루",
+                "origin": "중국산, 베트남산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "조미채종유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "진짬뽕밥건더기스프",
+        "sub_ingredients": [
+          {
+            "name": "건청경채",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양배추",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건당근",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어조미후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "게맛살조미후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건목이버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건미역",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:21"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 170.0,
+    "carbohydrate_g": 32.57,
+    "protein_g": 3.67,
+    "fat_g": 2.75,
+    "sugar_g": 2.75,
+    "sodium_mg": 523.0,
+    "cholesterol_mg": 4.59,
+    "saturated_fat_g": 0.69,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "218g",
+    "collected_at": "2026-03-04 03:33:21"
+  }
+}

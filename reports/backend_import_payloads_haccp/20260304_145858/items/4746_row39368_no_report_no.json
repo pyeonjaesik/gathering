@@ -1,0 +1,94 @@
+{
+  "product": {
+    "name_ko": "미닛메이드 홈스타일 오렌지",
+    "reportnum": "20020492106463"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106463/20020492106463-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106463/20020492106463-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106463/20020492106463-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 오렌지농축과즙 13.9%(브라질산, 오렌지과즙으로 환원기준 : 99%), 오렌지 펄프 3%(미국산), 액상과당, 비타민C, 천연착향료, 프로필렌글리콜",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106463/20020492106463-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 1컵(200mL) 총 6회 제공량(1.2L), 1회 제공량당 함량 *%영양성분 기준치  1회 제공량당 함량  *%영양성분 기준치, 열량 96kcal, 탄수화물 23g 7%, 당류 19g 19%, 단백질 1g 2%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 34mg 2%, *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106463/20020492106463-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축과즙",
+        "origin": "브라질산",
+        "amount": "13.9%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙으로 환원기준",
+            "amount": "99%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지 펄프",
+        "origin": "미국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:08"
+  },
+  "nutrition": {
+    "kcal": 96.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 19.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 34.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-04 03:43:08"
+  }
+}

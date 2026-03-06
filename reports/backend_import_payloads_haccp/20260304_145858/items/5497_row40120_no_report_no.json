@@ -1,0 +1,170 @@
+{
+  "product": {
+    "name_ko": "크래미아샐러드",
+    "reportnum": "20070355264285"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264285/20070355264285-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264285/20070355264285-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264285/20070355264285-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "M맛살{연육(미국산), 소맥전분(밀:미국,호주산), 난백액, 정제염, 백설탕/밀,게,계란}, 샐러드베이스{대두유(대두:수입산), 난황(국내산/계란), 양조식초, 결정과당, 정제염}, 양파, 정제수, 당근, 스위트콘, 백설탕, 양조식초, 크래미아용시즈닝E(우유), 토마토케첩",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264285/20070355264285-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 100g당 함량 *%영양소기준치 열량 170kcal, 탄수화물 13g 4%, 당류 3g, 단백질 4g 7%, 지방 11g 22%, 포화지방 1.9g 13%, 트랜스지방 0g, 콜레스테롤 15mg 15%, 나트륨 400mg 20% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355264285/20070355264285-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "M맛살",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난백액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "샐러드베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크래미아용시즈닝E",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토케첩",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:59"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 400.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:02:59"
+  }
+}

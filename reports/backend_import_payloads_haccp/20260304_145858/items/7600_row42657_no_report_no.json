@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "포키 녹차",
+    "reportnum": "19940449005227"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005227/19940449005227-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005227/19940449005227-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005227/19940449005227-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성크림[식물성유지(말레이시아산),백설탕,유당(프랑스산),전지분유,유화제(대두)],밀가루(밀,호주산50%,미국산25%),백설탕,고형차(녹차,국내산),쇼트닝,식물성유지(경화유),전지분유,기타가공품,전분가공품,경성가공치즈,정제소금,생이스트,버터,합성착향료(말차향,밀크향,바닐라향),산도조절제,효소제,안나토색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005227/19940449005227-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=44g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005227/19940449005227-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "origin": "프랑스산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "호주산 50%, 미국산 25%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고형차",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "녹차",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "말차향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "안나토색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:00:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 70.45,
+    "protein_g": 6.82,
+    "fat_g": 20.45,
+    "sugar_g": 36.36,
+    "sodium_mg": 341.0,
+    "cholesterol_mg": 6.82,
+    "saturated_fat_g": 15.91,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "44g",
+    "collected_at": "2026-03-03 20:00:13"
+  }
+}

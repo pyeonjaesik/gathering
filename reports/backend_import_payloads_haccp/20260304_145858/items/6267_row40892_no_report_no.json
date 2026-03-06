@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "스파이시&바베큐 팝콘",
+    "reportnum": "20100461303189"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303189/20100461303189-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303189/20100461303189-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303189/20100461303189-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)41.13%, 식물성유지{팜올레인유(말레이시아산),고올레산해바라기유(외국산:아르헨티나,스페인,호주 등),d-토코페롤(혼합형)},백설탕,스윗엔피넛맛시즈닝7.68%[바베큐맛부스터, 백설탕, 할라피뇨향분말, 유청분말, 정제소금, 비프씨즈닝파우다NW8%(쇠고기3.56%/호주산), 아스파탐(감미료, 페닐알라닌 함유)], 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303189/20100461303189-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 120g 780 kcal, 총 내용량당 1일 영양성분 기준치에 대한 비율, 나트륨 882mg 44%, 탄수화물 58g 18%, 식이섬유 2g 10%, 당류 23g, 지방 44g 87%, 트랜스지방 0g, 포화지방 11g 72%, 콜레스테롤 0mg 0%, 단백질 5g 9%,  1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303189/20100461303189-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "41.13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스윗엔피넛맛시즈닝",
+        "amount": "7.68%",
+        "sub_ingredients": [
+          {
+            "name": "바베큐맛부스터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "할라피뇨향분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프씨즈닝파우다",
+            "amount": "NW8%",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "호주산",
+                "amount": "3.56%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:17"
+  },
+  "nutrition": {
+    "kcal": 780.0,
+    "sodium_mg": 882.0,
+    "carbohydrate_g": 58.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 23.0,
+    "fat_g": 44.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 11.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 5.0,
+    "basis_amount": 120.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 120g",
+    "collected_at": "2026-03-04 04:26:17"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "홍삼이 들어가 건강한 배도라지",
+    "reportnum": "2010044901638"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901638/2010044901638-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901638/2010044901638-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901638/2010044901638-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "도라지추출액(고형분1.5%이상,정제수,도라지/국산)84.0%,벌꿀(아카시아꿀,국산),홍삼농축액(고형분65%이상,홍삼70mg/g이상,6년근,국산)1%{원료삼배합비율:홍삼근70%,홍미삼30%}배도라지생강차[70Brix이상,배농축액(배/국산)51%,도라지추출농축액(도라지/국산)8%,생강농축액(국산)]1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901638/2010044901638-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량50ml 30kcal, 총내용량당 1일영양성분기준치에대한비율, 나트륨0mg 0%, 탄수화물7g 2%, 당류6g, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질0g 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901638/2010044901638-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "도라지추출액",
+        "origin": "국산",
+        "amount": "84.0%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "1.5%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "도라지",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "아카시아꿀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "6년근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원료삼배합비율",
+            "sub_ingredients": [
+              {
+                "name": "홍삼근",
+                "amount": "70%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍미삼",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "배도라지생강차",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "배농축액",
+            "origin": "국산",
+            "amount": "51%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "도라지추출농축액",
+            "origin": "국산",
+            "amount": "8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강농축액",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:03"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 6.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "총내용량50ml",
+    "collected_at": "2026-03-04 04:26:03"
+  }
+}

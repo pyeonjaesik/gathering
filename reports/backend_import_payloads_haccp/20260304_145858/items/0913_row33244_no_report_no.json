@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "칸쵸 스윗밀크",
+    "reportnum": "19780614009451"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009451/19780614009451-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009451/19780614009451-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009451/19780614009451-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성크림[혼합식용유(가공유지(팜유l;말레이시아산)),설탕,유당(미국산),유청,혼합분유(외국산;네덜란드,미국,캐나다),난각칼슘],밀가루(밀;미국산,캐나다산),설탕,식물성유지(팜유ll;말레이시아산),산도조절제l,덱스트린,전지분골드l,정제소금,산도조절제ll,합성향료(바닐라향,버터향),혼합제제(효모,밀가루),카라멜색소,효소제,프로필렌글리콜",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009451/19780614009451-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=47g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009451/19780614009451-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "origin": "외국산, 네덜란드산, 미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난각칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유ll",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분골드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:19:08"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 489.0,
+    "carbohydrate_g": 68.09,
+    "protein_g": 6.38,
+    "fat_g": 21.28,
+    "sugar_g": 34.04,
+    "sodium_mg": 213.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 12.77,
+    "trans_fat_g": 0.64,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "47g",
+    "collected_at": "2026-03-03 14:19:08"
+  }
+}

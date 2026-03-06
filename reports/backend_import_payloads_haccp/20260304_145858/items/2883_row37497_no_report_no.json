@@ -1,0 +1,60 @@
+{
+  "product": {
+    "name_ko": "아름찬참기름",
+    "reportnum": "199005710464"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/199005710464/199005710464-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/199005710464/199005710464-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/199005710464/199005710464-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참깨 100%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/199005710464/199005710464-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 ※( )안의 %는 1일 영양소 기준치에 대한 비율\n열량855 kcal, 탄수화물0g (0%) · 단백질0g (0%) · 지방95g (190%) 포화지방15g (100%) · 콜레스테롤0mg (0%) · 나트륨0mg (0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/199005710464/199005710464-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:27:58"
+  },
+  "nutrition": {
+    "kcal": 855.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 95.0,
+    "saturated_fat_g": 15.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당 함량",
+    "collected_at": "2026-03-03 18:27:58"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "살코기참치",
+    "reportnum": "1973061900198"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900198/1973061900198-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900198/1973061900198-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900198/1973061900198-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "가다랑어76.67%(원양산:태평양),대두유[외국산(아르헨티나,미국,중국등)],정제수,양파농축액(국산),양배추농축액,표고엑기스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900198/1973061900198-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=150g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973061900198/1973061900198-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가다랑어",
+        "amount": "76.67%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "태평양",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 아르헨티나산, 미국산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고엑기스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:49:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 183.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 15.33,
+    "fat_g": 12.67,
+    "sugar_g": 0.0,
+    "sodium_mg": 320.0,
+    "cholesterol_mg": 46.67,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "150g",
+    "collected_at": "2026-03-03 13:49:07"
+  }
+}

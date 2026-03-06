@@ -1,0 +1,181 @@
+{
+  "product": {
+    "name_ko": "청양고추와 홍고추로 고기맛 살리는 쌈장",
+    "reportnum": "1997044104349"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997044104349/1997044104349-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997044104349/1997044104349-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997044104349/1997044104349-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두재래된장35%(대두{외국산(미국,캐나다,호주 등)},소맥분(밀:미국산,호주산),천일염,밀쌀,종국),된장30%(소맥분(밀:미국산,호주산),밀쌀(미국산),천일염,종국),물엿,정제수,고추양념(중국산),주정,알파밀쌀가루,청양초고춧가루,마늘,콩발효맛내기,홍고춧가루,식이섬유,볶음참깨,홍고추소스,마늘오일,생각조미액100",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997044104349/1997044104349-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997044104349/1997044104349-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두재래된장",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "35%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "된장",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀쌀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추양념",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파밀쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양초고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩발효맛내기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생각조미액",
+        "amount": "100",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:24:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 210.0,
+    "carbohydrate_g": 36.0,
+    "protein_g": 9.0,
+    "fat_g": 3.2,
+    "sugar_g": 25.0,
+    "sodium_mg": 2720.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "500g",
+    "collected_at": "2026-03-03 21:24:49"
+  }
+}

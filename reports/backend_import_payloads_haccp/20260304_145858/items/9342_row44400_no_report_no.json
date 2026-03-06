@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "우리밀 통밀퐁",
+    "reportnum": "201003950936"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003950936/201003950936-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003950936/201003950936-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003950936/201003950936-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "통밀 78%(밀/무농약, 국산), 쌀조청 8.3%{쌀(무농약/국산), 엿기름(국산), 효소}, 기타당류가공품(원당), 버터 5.5%(우유, 국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003950936/201003950936-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003950936/201003950936-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통밀",
+        "origin": "국산",
+        "amount": "78%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "origin": "국산",
+        "amount": "8.3%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타당류가공품",
+        "sub_ingredients": [
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "amount": "5.5%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:25:28"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 429.0,
+    "carbohydrate_g": 82.86,
+    "protein_g": 10.0,
+    "fat_g": 6.14,
+    "sugar_g": 24.29,
+    "sodium_mg": 14.0,
+    "cholesterol_mg": 14.29,
+    "saturated_fat_g": 5.14,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-04 04:25:28"
+  }
+}

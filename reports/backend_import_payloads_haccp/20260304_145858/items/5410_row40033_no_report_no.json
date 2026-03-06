@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "다우리한우사골곰탕",
+    "reportnum": "2006044801538"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801538/2006044801538-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801538/2006044801538-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801538/2006044801538-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "한우사골추출액100%[한우사골(국내산)18.74%,정제수],가용성 고형분(4.0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801538/2006044801538-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100ml당 함량 *%영양소 기준량: 열량 15kcal,탄수화물0g 0%,당류0g,단백질3g 5%,지방0.6g 1%, 포화지방0.2g 1%, 트랜스지방 0g, 콜레스테롤5mg 2%, 나트륨 15mg 1%, *%영양소 기준치:1일 영양소 기준치에대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801538/2006044801538-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "한우사골추출액",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "한우사골",
+            "origin": "국내산",
+            "amount": "18.74%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가용성 고형분",
+        "amount": "4.0%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:01"
+  },
+  "nutrition": {
+    "kcal": 15.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml당 함량",
+    "collected_at": "2026-03-04 04:00:01"
+  }
+}

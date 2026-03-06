@@ -1,0 +1,217 @@
+{
+  "product": {
+    "name_ko": "박찬호 투 머치 핫도그",
+    "reportnum": "2012035821841"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012035821841/2012035821841-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012035821841/2012035821841-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012035821841/2012035821841-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "메이져킹[돼지고기(지방이룹사용,국산),함수결정포도당,정제소금(국산),혼합제제{L-글루탐산나트륨(향미증진제),구아닐산Na},폴리인산나트륨,파프리카로얄Y,{파프리카추출색소}],찹쌀핫믹스2[밀가루(밀:미국,호주산),설탕,혼합제제{변성전분,설탕,탈지분유},찹쌀가루3%(찹쌀:국산),대두유,탄산수소나트륨],식물성유지[대두유{대두:외국산(미국,브라질,파라과이등),d-토코페롤(혼합형)],난백액,찹쌀가루/토마토케챂[토마토페이스트438%(외국산),정제주,물엿,설탕,발효식초,정제소금(국산),잔탄검,케챂향신료]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012035821841/2012035821841-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 405,[영양표시] : 나트륨750mg,탄수화물38g,당류13g,지방23g,트랜스지방0.2g미만,포화지방7g,콜레스테롤20mg,단백질12g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012035821841/2012035821841-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "메이져킹",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "지방이룹사용",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "L-글루탐산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "구아닐산Na",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카로얄Y",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀핫믹스2",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "찹쌀가루",
+            "origin": "국산",
+            "amount": "3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "외국산, 미국산, 브라질산, 파라과이산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케챂",
+        "sub_ingredients": [
+          {
+            "name": "토마토페이스트",
+            "origin": "외국산",
+            "amount": "438%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "케챂향신료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:45"
+  },
+  "nutrition": {
+    "kcal": 405.0,
+    "sodium_mg": 750.0,
+    "carbohydrate_g": 38.0,
+    "sugar_g": 13.0,
+    "fat_g": 23.0,
+    "trans_fat_g": 0.2,
+    "saturated_fat_g": 7.0,
+    "cholesterol_mg": 20.0,
+    "protein_g": 12.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:33:45"
+  }
+}

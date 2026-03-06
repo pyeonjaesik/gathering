@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "광동眞홍삼골드",
+    "reportnum": "1996030801085"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996030801085/1996030801085-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996030801085/1996030801085-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996030801085/1996030801085-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "홍삼농축액(홍삼사포닌70mg/g,고형분 50%,국산)0.2,정제수,액상과당,식물혼합농축액7[숙지황(중국하남성산),대추(중국하북성산),구기자,오미자,당귀,계피,감초],구연산,구연산삼나트륨,글리신,재제소금,니코틴산아미드,합성착향료(허브후레바)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996030801085/1996030801085-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996030801085/1996030801085-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "0.2",
+        "sub_ingredients": [
+          {
+            "name": "홍삼사포닌",
+            "amount": "70mg, g",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물혼합농축액",
+        "amount": "7",
+        "sub_ingredients": [
+          {
+            "name": "숙지황",
+            "sub_ingredients": [
+              {
+                "name": "중국하남성산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대추",
+            "sub_ingredients": [
+              {
+                "name": "중국하북성산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구기자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오미자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "니코틴산아미드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "허브후레바",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:04:31"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 12.0,
+    "sodium_mg": 30.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-03 21:04:31"
+  }
+}

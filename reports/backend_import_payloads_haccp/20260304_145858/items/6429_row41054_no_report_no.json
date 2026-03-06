@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "CHOICE L 믹스너트(1kg)",
+    "reportnum": "2012033210829"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012033210829/2012033210829-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012033210829/2012033210829-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012033210829/2012033210829-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "로스티드(베트남)30%(땅콩50%,밀가루25%,설탕10%,코코넛유5%,코코넛주스5%,바닐라3%,소금2%),커피땅콩(중국)25%(땅콩52%,정백당46.6%,커피1.4%),찹쌀땅콩(중국)25%(땅콩45.17%,밀가루16.48%,찹쌀가루14.47%,설탕,타피오카전분,물엿,정제염,젤라틴(돼지)),콜드피넛츠(중국)10%(땅콩95%,정백당2%,옥배유2%,정제염1%),바나나칩(필리핀)10%(바나나70.4%,설탕19%,코코넛오일10.6%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012033210829/2012033210829-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(30g) 총 3.3회 제공량 100g\n<1회 제공량 당 함량 *%영양소 기준치> \n열량151.18kcal, 탄수화물20.08g 6%, 당류4.24g, 단백질0.56g 1%, 지방7.64g 15%, 포화지방6.98g 47%, 트랜스지방0g 0%, 콜레스테롤0g 0%, 나트륨8.76g 0%\n*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012033210829/2012033210829-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "로스티드",
+        "origin": "베트남산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛유",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛주스",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라",
+            "amount": "3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "커피땅콩",
+        "origin": "중국산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "52%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "amount": "46.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피",
+            "amount": "1.4%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀땅콩",
+        "origin": "중국산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "45.17%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "amount": "16.48%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀가루",
+            "amount": "14.47%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타피오카전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤라틴",
+            "sub_ingredients": [
+              {
+                "name": "돼지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콜드피넛츠",
+        "origin": "중국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "95%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나칩",
+        "origin": "필리핀산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "바나나",
+            "amount": "70.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "19%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛오일",
+            "amount": "10.6%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:33"
+  },
+  "nutrition": {
+    "kcal": 151.18,
+    "carbohydrate_g": 20.08,
+    "sugar_g": 4.24,
+    "protein_g": 0.56,
+    "fat_g": 7.64,
+    "saturated_fat_g": 6.98,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 8.76,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)",
+    "collected_at": "2026-03-04 04:33:33"
+  }
+}

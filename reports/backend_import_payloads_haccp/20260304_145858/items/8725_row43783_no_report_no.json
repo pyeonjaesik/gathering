@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "옥수수샐러드",
+    "reportnum": "200504150202216"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202216/200504150202216-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202216/200504150202216-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202216/200504150202216-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "스위트콘64.40%(태국산/옥수수62.71%,백설탕,정제소금),샐러드소스[마요네즈{현미유(태국산),난황액(계란:중국산)},백설탕,사과식초{농축사과즙(중국산)},정제소금,잔탄검],양파(국산),당근,홍파프리카,옥수수유1%(옥수수배아:외국산/헝가리,세르비아,러시아등)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202216/200504150202216-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202216/200504150202216-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스위트콘",
+        "origin": "태국산",
+        "amount": "64.40%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "태국산",
+            "amount": "62.71%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "샐러드소스",
+        "sub_ingredients": [
+          {
+            "name": "마요네즈",
+            "sub_ingredients": [
+              {
+                "name": "현미유",
+                "origin": "태국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난황액",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과식초",
+            "sub_ingredients": [
+              {
+                "name": "농축사과즙",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍파프리카",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "외국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수배아",
+            "origin": "헝가리산, 세르비아산, 러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 120.0,
+    "carbohydrate_g": 18.0,
+    "protein_g": 2.0,
+    "fat_g": 5.0,
+    "sugar_g": 9.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 4.7,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:54:12"
+  }
+}

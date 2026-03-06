@@ -1,0 +1,90 @@
+{
+  "product": {
+    "name_ko": "해태 자가비 짭짤한 맛",
+    "reportnum": "1995038332678"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995038332678/1995038332678-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995038332678/1995038332678-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995038332678/1995038332678-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자(미국산),팜올레인유(말레이시아산),복합조미식품(짭짤한맛시즈닝B),토코페롤(혼합형),감자(미국산)86%,짭짤한맛시즈닝B0.2%함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995038332678/1995038332678-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2봉지(36g)당 함량 총2.5회 제공량(90g) : 열량 210kcal,탄수화물17g (5%), 당류0g, 단백질 2g (3%),지방15g (30%), 포화지방6g (40%), 트랜스지방 0g, 콜레스테롤0mg (0%), 나트륨 80mg (4%), *(%)는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995038332678/1995038332678-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자",
+        "origin": "미국산",
+        "amount": "86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "짭짤한맛시즈닝B",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "짭짤한맛시즈닝B",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:32:19"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 36.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2봉지(36g)당 함량",
+    "collected_at": "2026-03-03 20:32:19"
+  }
+}

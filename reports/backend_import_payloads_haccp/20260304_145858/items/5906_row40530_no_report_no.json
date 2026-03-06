@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "동그라미 계란과자",
+    "reportnum": "20090199897640"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897640/20090199897640-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897640/20090199897640-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897640/20090199897640-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀,무농약,국산)32.99%,유기농설탕(알헨티나,쿠바)16.82%,버터(우유,국산),계란(유정란,국산)24.58%,태움.용융소금(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897640/20090199897640-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2개(35g)/총2회제공량(70g)\n<1회 제공량당함량 %영양소 기준치>\n열량181kcal, 탄수화물21g 7%, 식이섬유1g 3%, 당류7g, 단백질3g 6%, 지방9g 18%, 포화지방4.5g 30%, 트랜스지방0g, 콜레스테롤50mg 17%, 나트륨51mg 3%\n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897640/20090199897640-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "32.99%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "쿠바산",
+        "amount": "16.82%",
+        "sub_ingredients": [
+          {
+            "name": "알헨티나",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "amount": "24.58%",
+        "sub_ingredients": [
+          {
+            "name": "유정란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "태움.용융소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:57"
+  },
+  "nutrition": {
+    "kcal": 181.0,
+    "carbohydrate_g": 21.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 7.0,
+    "protein_g": 3.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 4.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 50.0,
+    "sodium_mg": 51.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2개(35g)",
+    "collected_at": "2026-03-04 04:16:57"
+  }
+}

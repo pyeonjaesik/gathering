@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "포카리스웨트",
+    "reportnum": "1973028800610"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800610/1973028800610-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800610/1973028800610-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800610/1973028800610-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,액상과당,구연산,그레이프후르츠혼합액(그레이프후르츠과즙-남아공산),합성착향료(그래이프후르츠향),구연산나트륨,정제소금(국산),비타민 C,염화칼륨,젖산칼슘,L-클루타민산나트륨(향미증진제),염화마그네슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800610/1973028800610-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(245ml) / 총 1회 제공량(245ml) 1회 제공량당 함량 : 열량 60kcal, 탄수화물 15g(5%), 당류 15g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 120mg(6%) ()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800610/1973028800610-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그레이프후르츠혼합액",
+        "sub_ingredients": [
+          {
+            "name": "그레이프후르츠과즙",
+            "origin": "남아공산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "그래이프후르츠향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민 C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-클루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "염화마그네슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:44:52"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 245.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(245ml)",
+    "collected_at": "2026-03-03 13:44:52"
+  }
+}

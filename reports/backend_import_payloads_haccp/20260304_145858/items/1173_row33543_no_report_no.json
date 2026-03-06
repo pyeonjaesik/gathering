@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "썬업오렌지 클래식",
+    "reportnum": "19810227007185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007185/19810227007185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007185/19810227007185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007185/19810227007185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "액상과당,감귤농축과즙(감귤과즙으로25%,제주도산),오렌지농축과즙(오렌지과즙으로25%,미국산)구연산,덱스트린,복합비타민(비타민C,dl-a-토코페릴아세테이트dl-a-토코페롤,아라비아검,변성전분,MCT유,자당,전분,덱스트린,영양강화제),비타민C,합서착향료(오렌지향),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007185/19810227007185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190mL) 열량100kcal, 탄수화물25g(8%),당류23g, 단백질1g(1%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨15mg(1%), 비타민B60.03mg(2%),비타민C 10.1mg(10%),비타민D 0.1ug(2%),비타민E 0.18mgα-TE(2%),엽산4.97㎍(2%)나이아신0.22mgNE(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007185/19810227007185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감귤농축과즙",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "감귤과즙",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제주도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지농축과즙",
+        "origin": "미국산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합비타민",
+        "sub_ingredients": [
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-a-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-a-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합서착향료",
+        "sub_ingredients": [
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:39:48"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 23.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "niacin_mg": 0.22,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190mL)",
+    "collected_at": "2026-03-03 14:39:48"
+  }
+}

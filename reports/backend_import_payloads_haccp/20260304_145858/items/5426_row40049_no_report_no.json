@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "치킨무",
+    "reportnum": "200604875961"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604875961/200604875961-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604875961/200604875961-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604875961/200604875961-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "빙초산,포도당,백설탕,아스파탐,정제수,소브산칼륨,무,정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604875961/200604875961-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "나트륨199.9mg,탄수화물2.8g,식이섬유0.7g,당류1.9g,단백질0.5g,비타민c2.9mg,칼슘33.7mg,철0.34mg,열량12kcal",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604875961/200604875961-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "빙초산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소브산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:32"
+  },
+  "nutrition": {
+    "sodium_mg": 199.9,
+    "carbohydrate_g": 2.8,
+    "dietary_fiber_g": 0.7,
+    "sugar_g": 1.9,
+    "protein_g": 0.5,
+    "vitamin_c_mg": 2.9,
+    "calcium_mg": 33.7,
+    "iron_mg": 0.34,
+    "kcal": 12.0,
+    "collected_at": "2026-03-04 04:00:32"
+  }
+}

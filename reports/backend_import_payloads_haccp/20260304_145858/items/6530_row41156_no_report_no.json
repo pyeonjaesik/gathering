@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "들기름깻잎지",
+    "reportnum": "20130347092159"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130347092159/20130347092159-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130347092159/20130347092159-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130347092159/20130347092159-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "절임깻잎36.36%[깻잎(국내산)98%,식염],정제수,물엿,조림간장양념[프리미엄진간장S(탈지대두:수입산,천일염:호주산,소맥:미국산),참기름(참깨:수입산),아미노베이스P],들기름(들깨:수입산)0.2%,청양고추엑기스,비타젠S,효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130347092159/20130347092159-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(40g)/총 약3.5회 제공량(130g) *%영양성분기준치: 1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 45kcal 탄수화물 11g 3% 식이섬유 1g 4% 당류 6g 단백질 1g미만 2% 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 640mg 32% 비타민A 33㎍RE 5%/비타민C 0mg 0%/칼슘 19mg 3%/철 0.4mg 3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130347092159/20130347092159-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절임깻잎",
+        "origin": "국내산",
+        "amount": "36.36%",
+        "sub_ingredients": [
+          {
+            "name": "깻잎",
+            "origin": "국내산",
+            "amount": "98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조림간장양념",
+        "sub_ingredients": [
+          {
+            "name": "프리미엄진간장S",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참기름",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "참깨",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아미노베이스P",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "수입산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타젠S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:31"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 11.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 6.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 640.0,
+    "calcium_mg": 19.0,
+    "iron_mg": 0.4,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(40g)",
+    "collected_at": "2026-03-04 04:37:31"
+  }
+}

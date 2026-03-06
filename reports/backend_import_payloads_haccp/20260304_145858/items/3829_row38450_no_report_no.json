@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "숯불맛미트볼",
+    "reportnum": "19960262002345"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002345/19960262002345-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002345/19960262002345-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002345/19960262002345-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)56.37%,양파(국내산),배합용빵가루[곡류가공품{밀가루)밀:미국산)},소맥분(밀:미국산,호주산),쇼트닝,옥수수전분,재제소금],정제수,바베큐불고기양념장,에스제이시즈닝,티브이피(조직대두단백),요리당,참기름,알콘에스비(대두단백),숯불갈비맛엑기스-SJ,분말셀룰로오스,카라멜,백설탕,그릴씨즈닝분말,그릴후레바오일",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002345/19960262002345-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1,000g 100g당 280Kcal 100g당 1일 영양성분기준치에대한비율 : 나트륨360mg18% 탄수화물13g4% 당류7.5g8% 지방20g37% 트랜스지방0g 포화지방6.3g42% 콜레스테롤35mg12% 단백질13g24% *1일영양성분기준치에대한비율(%)은 2,000Kcal기준이므로 개인의 필요열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002345/19960262002345-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "56.37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배합용빵가루",
+        "sub_ingredients": [
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "재제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바베큐불고기양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스제이시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "티브이피",
+        "sub_ingredients": [
+          {
+            "name": "조직대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알콘에스비",
+        "sub_ingredients": [
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숯불갈비맛엑기스-SJ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그릴씨즈닝분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그릴후레바오일",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:01:02"
+  },
+  "nutrition": {
+    "kcal": 280.0,
+    "sodium_mg": 360.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 7.5,
+    "fat_g": 20.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.3,
+    "cholesterol_mg": 35.0,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:01:02"
+  }
+}

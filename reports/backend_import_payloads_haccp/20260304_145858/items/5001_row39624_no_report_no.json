@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "알뜨란계란말이",
+    "reportnum": "2004026203222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203222/2004026203222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203222/2004026203222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203222/2004026203222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "전란액81.36%(계란,국내산),마요네즈8.14%[대두유(미국산),난황액(국내산),발효식초,백설탕,정제염],정제수,우유(국산),대두유,건당근1.22%(중국산),건파0.98%(중국산),가공소금,소맥전분,엠황색-1",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203222/2004026203222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203222/2004026203222-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "amount": "81.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "amount": "8.14%",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "origin": "중국산",
+        "amount": "1.22%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건파",
+        "origin": "중국산",
+        "amount": "0.98%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엠황색-1",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:10"
+  }
+}

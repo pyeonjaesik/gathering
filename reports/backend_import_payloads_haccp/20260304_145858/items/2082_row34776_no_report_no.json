@@ -1,0 +1,214 @@
+{
+  "product": {
+    "name_ko": "비피더스 드링킹요구르트 블루베리",
+    "reportnum": "19870157001121"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001121/19870157001121-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001121/19870157001121-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001121/19870157001121-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,탈지분유(외국산:국가명은 홈페이지에 별도 표시, www.purmil.co.kr),프락토올리고당 3%, 이소말토올리고당 1.5%,가공전지분Ⅰ(식물성크림)[유청(외국산:국가명은 홈페이지에 별도표시),정제가공유지(외국산:국가명은 홈페이지에 별도표시),유크림(외국산:국가명은 홈페이지에 별도표시),레시친],유청분말(국산50%,외국산50%:국가명은 홈페이지에 별도표시),펙틴,블루베리농츱과즙(블루베리과즙으로1.49%,미국산),합성착향료(블루베리향),구아검,구연산,뉴트리푸드 와일드베리,구연산나트륨,합성감미료(수크랄로스),혼합제제(규소수지,유화제,셀룰로오스검),유산균,비피더스유산균0.0007836%(1천마리이상/mL)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001121/19870157001121-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=80ml(g) | foodSize=300ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870157001121/19870157001121-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "국가명은 홈페이지에 별도 표시",
+            "sub_ingredients": []
+          },
+          {
+            "name": "www.purmil.co.kr",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "식물성크림",
+            "sub_ingredients": [
+              {
+                "name": "유청",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "국가명은 홈페이지에 별도표시",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제가공유지",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "국가명은 홈페이지에 별도표시",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유크림",
+                "origin": "외국산",
+                "sub_ingredients": [
+                  {
+                    "name": "국가명은 홈페이지에 별도표시",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시친",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "origin": "국산 50%, 외국산 50%",
+        "sub_ingredients": [
+          {
+            "name": "국가명은 홈페이지에 별도표시",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리농츱과즙",
+        "origin": "미국산",
+        "amount": "블루베리과즙으로1.49%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "블루베리향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "뉴트리푸드 와일드베리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비피더스유산균",
+        "amount": "0.0007836%(1천마리이상, mL)",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:28:15"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 45.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 1.57,
+    "fat_g": 0.33,
+    "sugar_g": 6.0,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 1.0,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "80ml(g)",
+    "total_content": "300ml",
+    "collected_at": "2026-03-03 16:28:15"
+  }
+}

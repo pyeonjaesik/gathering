@@ -1,0 +1,213 @@
+{
+  "product": {
+    "name_ko": "이롬과채믹스23퍼플",
+    "reportnum": "19980308080202"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080202/19980308080202-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080202/19980308080202-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080202/19980308080202-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 포도농축즙액[포도과즙으로 18.4%(칠레산 15.45%, 국산 2.95%)), 프락토올리고당, 유기농당근농축액(당근과즙으로 5.7%, 터키산), 아로니아쥬스농축액(아로니아과즙 3.5%,폴란드산),블루베리농축액(블루베리과즙으로 0.6%,미국산) 야채혼합농축액 0.5%(당근,돼지감자,토마토,호박,레드비트,흑당근,노랑당근,사탕무,오이,부추,양파,샐러리,양배추,완두,상추,적파프리카,황파프리카,회향,하스닙,마늘/독일산),구연산,비타민C,천연라즈베리향,효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080202/19980308080202-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=140ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080202/19980308080202-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도농축즙액",
+        "sub_ingredients": [
+          {
+            "name": "포도과즙",
+            "origin": "칠레산 15.45%, 국산 2.95%",
+            "amount": "18.4%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농당근농축액",
+        "origin": "터키산",
+        "amount": "5.7%",
+        "sub_ingredients": [
+          {
+            "name": "당근과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아로니아쥬스농축액",
+        "origin": "폴란드산",
+        "amount": "3.5%",
+        "sub_ingredients": [
+          {
+            "name": "아로니아과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리농축액",
+        "origin": "미국산",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채혼합농축액",
+        "origin": "독일산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호박",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레드비트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "노랑당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사탕무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "부추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "완두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "상추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적파프리카",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황파프리카",
+            "sub_ingredients": []
+          },
+          {
+            "name": "회향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하스닙",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연라즈베리향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:40:27"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 46.0,
+    "carbohydrate_g": 12.14,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 9.29,
+    "sodium_mg": 14.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "140ml",
+    "collected_at": "2026-03-03 21:40:27"
+  }
+}

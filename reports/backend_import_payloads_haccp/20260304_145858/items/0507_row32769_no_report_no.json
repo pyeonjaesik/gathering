@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "오라떼 피치",
+    "reportnum": "1973028800630"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800630/1973028800630-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800630/1973028800630-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800630/1973028800630-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,혼합탈지분유0.61%(우유,네덜란드산),복숭아농축과즙(복숭아과즙3%,이스라엘산),젖산칼슘,말토덱스트린,구연산,시클로덱스트린,합성착향료(복숭아향,후르츠향),대두다당류,구연산나트륨,CCP(우유),아와브레이크(유화제,레시틴,인산칼슘,에탄올),합성감미료(아세설팜칼륨,수크랄로스)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800630/1973028800630-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=240ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800630/1973028800630-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "네덜란드산",
+        "amount": "0.61%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복숭아농축과즙",
+        "origin": "이스라엘산",
+        "sub_ingredients": [
+          {
+            "name": "복숭아과즙",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시클로덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후르츠향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두다당류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CCP",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아와브레이크",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에탄올",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:45:09"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 31.0,
+    "carbohydrate_g": 7.5,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 7.08,
+    "sodium_mg": 8.0,
+    "calcium_mg": 54.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "240ml",
+    "collected_at": "2026-03-03 13:45:09"
+  }
+}

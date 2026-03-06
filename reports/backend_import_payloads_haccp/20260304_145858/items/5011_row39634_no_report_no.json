@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "이연복 홍게딤섬",
+    "reportnum": "20040355580162"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040355580162/20040355580162-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040355580162/20040355580162-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040355580162/20040355580162-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "양파(국산),연육(베트남산)(어육,백설탕,폴리인산나트륨),크래미[연육(미국산,인도산,베트남산,태국산),소맥전분(밀:리투아니아산,미국산,캐나다산,호주산),감자전분,백설탕,정제염],밀가루(밀:미국산,캐나다산),양배추(국산),홍게맛살,돼지고기(국산),변성전분,홍게다리살2.64%,대두단백,찹쌀가루,홍게엑기스분말,감칠맛베이스,유화유지,향미증진제,정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040355580162/20040355580162-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량225g 325kcal, 225g당 1일영양성분기준치에대한비율, 나트륨920mg 46%, 탄수화물28g 15%, 당류10g 10%, 지방7g 13%, 트랜스지방0g, 포화지방2.9g 19%, 콜레스테롤25mg 8%, 단백질18g 33%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040355580162/20040355580162-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연육",
+        "origin": "베트남산",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크래미",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "미국산, 인도산, 베트남산, 태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "origin": "리투아니아산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍게맛살",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍게다리살",
+        "amount": "2.64%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍게엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:47"
+  },
+  "nutrition": {
+    "kcal": 325.0,
+    "sodium_mg": 920.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 10.0,
+    "fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.9,
+    "cholesterol_mg": 25.0,
+    "protein_g": 18.0,
+    "basis_amount": 225.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량225g",
+    "collected_at": "2026-03-04 03:50:47"
+  }
+}

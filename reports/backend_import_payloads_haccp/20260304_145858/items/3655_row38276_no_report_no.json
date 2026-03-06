@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "허니버터칩 메이플시럽",
+    "reportnum": "19950383326117"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326117/19950383326117-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326117/19950383326117-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326117/19950383326117-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자(국내산),혼합식용유[팜올레인유(말레이시아산),해바라기유{외국산(우크라이나,스페인,말레이시아등)},토코페롤(혼합형)],복합조미식품[허니버터메이플맛시즈닝{유청분말(유청분말(외국산)),버터혼합분말(가공버터(호주산)),메이플시럽분말(캐나다산),아카시아꿀분말(아카시아꿀(국내산)),고메버터(프랑스산),메이플시럽(캐나다산)}]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326117/19950383326117-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 120g 1회(30g)당 165kcal\n<1회(30g)당 1일영양성분 기준치에 대한 비율>\n나트륨65mg 3%, 탄수화물15g 5%, 당류1g 1%, 지방11g 20%, 트랜스지방0g, 포화지방3.5g 23%, 콜레스테롤0mg 0%, 단백질2g 4%\n<100g당 1일영양성분 기준치에 대한 비율>\n나트륨210mg 11%, 탄수화물52g 16%, 당류4g 4%, 지방37g 69%, 트랜스지방0g, 포화지방12g 80%, 콜레스테롤0mg 0%, 단백질6g 11%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326117/19950383326117-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 우크라이나산, 스페인산, 말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "허니버터메이플맛시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "유청분말",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "버터혼합분말",
+                "sub_ingredients": [
+                  {
+                    "name": "가공버터",
+                    "origin": "호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "메이플시럽분말",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아카시아꿀분말",
+                "origin": "국내산",
+                "sub_ingredients": [
+                  {
+                    "name": "아카시아꿀",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "고메버터",
+                "origin": "프랑스산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "메이플시럽",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:31:25"
+  },
+  "nutrition": {
+    "kcal": 165.0,
+    "sodium_mg": 210.0,
+    "carbohydrate_g": 52.0,
+    "sugar_g": 4.0,
+    "fat_g": 37.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 12.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 6.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회(30g)",
+    "collected_at": "2026-03-03 20:31:25"
+  }
+}

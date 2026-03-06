@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "선혜청",
+    "reportnum": "200404902312"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404902312/200404902312-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404902312/200404902312-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404902312/200404902312-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[쑥,백년초유과] 찹쌀70%(국산),쑥10%(국산),백년초10%(국산),튀밥(국산),콩(국산),이온엿,대두유(수입)\n[양파유과] 찹쌀70%,양파10%(국산),튀밥(국산),콩(국산),이온엿,대두유(수입)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404902312/200404902312-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<※ % 영양소 기준치 : 1일 영양소 기준치에 대한 비율(1회 제공량 당 함량 30g)>\n[쑥,백년초유과] 열량125kcal, 탄수화물24g 7%, 당류5g, 단백질1g 2%, 지방2.5g 5%, 포화지방0.4g 3% , 트랜스지방0g, 콜레스테롤0mg, 나트륨3.2mg 0%\n[양파유과] 열량130kcal, 탄수화물22g 7%, 당류8g, 단백질1g 2%, 지방4.2g 8%, 포화지방0.7g 5%, 트랜스지방0g, 콜레스테롤0mg, 나트륨0mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404902312/200404902312-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쑥,백년초유과",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쑥",
+            "origin": "국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백년초",
+            "origin": "국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "튀밥",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": [
+              {
+                "name": "수입",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파유과",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "튀밥",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이온엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": [
+              {
+                "name": "수입",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:06"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 8.0,
+    "protein_g": 1.0,
+    "fat_g": 4.2,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 03:52:06"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "순수밀크빙",
+    "reportnum": "2003053200235"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200235/2003053200235-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200235/2003053200235-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200235/2003053200235-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,혼합분유[네덜란드/탈지분유(우유)85%,탈염유청퍼미에이트15%],물엿,데어리스프레드[뉴질랜드/유지방63%,크림(우유)37%],가당연유[원유84.84%(국산),설탕,유당],혼합제제1(글리세린지방산에스테르,로커스트콩검,카라기난,메타인산나트륨,알긴산나트륨,구아검,포도당),혼합제제2(로커스트콩검,산탄검,덱스트린),혼합제제3(밀크향),합성착향료(바닐라향),우유16%함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200235/2003053200235-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200235/2003053200235-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "amount": "85%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈염유청퍼미에이트",
+            "amount": "15%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "amount": "63%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림",
+            "amount": "37%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "origin": "국산",
+            "amount": "84.84%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "amount": "16%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:43"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 135.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 2.0,
+    "fat_g": 5.0,
+    "sugar_g": 18.0,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-04 03:48:43"
+  }
+}

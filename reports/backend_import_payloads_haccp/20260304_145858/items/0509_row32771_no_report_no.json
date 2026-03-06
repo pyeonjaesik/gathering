@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "오란씨 파인애플",
+    "reportnum": "1973028800633"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800633/1973028800633-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800633/1973028800633-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800633/1973028800633-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,백설탕,탄산가스,파인애플농축과즙(파인애플과즙1%),비타민C,구연산,메타인산나트륨,난소화성말토덱스트린,홍화황색소,합성착향료(파인애플향,후르츠향,시트러스향),합성감미료(아세설팜칼륨,수크랄로스)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800633/1973028800633-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(250ml)/총1회 제공량(250ml) 1회 제공량당 함량 : 열량 70kcal,탄수화물17g (5%), 당류17g, 단백질 0g (0%),지방0g (0%), 포화지방0g (0%), 트랜지방 0g, 콜레스테롤0mg (0%), 나트륨 20mg (1%), 비타민C 250mg (250%),  *( )안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973028800633/1973028800633-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산가스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플농축과즙",
+        "sub_ingredients": [
+          {
+            "name": "파인애플과즙",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메타인산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난소화성말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "파인애플향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후르츠향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:45:17"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 17.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 250.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(250ml)",
+    "collected_at": "2026-03-03 13:45:17"
+  }
+}

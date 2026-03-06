@@ -1,0 +1,169 @@
+{
+  "product": {
+    "name_ko": "옥수수통단팥빵",
+    "reportnum": "19870364014250"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014250/19870364014250-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014250/19870364014250-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014250/19870364014250-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "통팥앙금41.70%(중국산)(팥,정백당,물엿,정제소금), 밀가루(밀:수입산), 계란,백설탕,마가린(대두,우유), 효모,유청분말,정제소금,글리세린지방산에스테르, 골드콘1.12%(옥수수99.3%:수입산), 혼합제제1(산도조절제,시클로덱스트린,유화제),혼합제제2(치자황색소),덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014250/19870364014250-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량(100g)당 함량, 열량:268kcal, 탄수화물:53g(16%), 당류:27g, 단백질:7g(12%), 지방:3.3g(6%), 포화지방:2.0g(13%), 트랜스지방:0g, 콜레스테롤:15mg(5%), 나트륨:150mg(8%), %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014250/19870364014250-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통팥앙금",
+        "origin": "중국산",
+        "amount": "41.70%",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "골드콘",
+        "origin": "수입산",
+        "amount": "1.12%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "수입산",
+            "amount": "99.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:35:42"
+  },
+  "nutrition": {
+    "kcal": 268.0,
+    "carbohydrate_g": 53.0,
+    "sugar_g": 27.0,
+    "protein_g": 7.0,
+    "fat_g": 3.3,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)당 함량",
+    "collected_at": "2026-03-03 16:35:42"
+  }
+}

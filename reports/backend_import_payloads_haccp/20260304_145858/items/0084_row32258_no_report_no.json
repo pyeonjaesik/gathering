@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "모닝버터 오메가3",
+    "reportnum": "20050448001102"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001102/20050448001102-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001102/20050448001102-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001102/20050448001102-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "가공버터99.51%[뉴질랜드산:버터오일,크림,야자경화유],혼합제제(비타민A,팔미테이트,식물성유지,dl-α-토코페롤,비타민D3),오메가30.05%(노르웨이산),유화제,데히드로초산나트륨(보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001102/20050448001102-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총제공량 450g 100g당 함량: 열량 770kcal 탄수화물 1g(0%),당류 0g, 단백질 0g (0%),지방 85g (167%),포화지방 65g (433%),트랜스지방 3g,콜레스테롤 200mg(67%),나트륨 10mg (1%),오메가3(DHA,EPA)22mg  *( )안의 수치는 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001102/20050448001102-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "amount": "99.51%",
+        "sub_ingredients": [
+          {
+            "name": "버터오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "비타민A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팔미테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오메가3",
+        "origin": "노르웨이산",
+        "amount": "30.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데히드로초산나트륨",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:33"
+  },
+  "nutrition": {
+    "kcal": 770.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 85.0,
+    "saturated_fat_g": 65.0,
+    "trans_fat_g": 3.0,
+    "cholesterol_mg": 200.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당 함량",
+    "collected_at": "2026-03-03 13:05:33"
+  }
+}

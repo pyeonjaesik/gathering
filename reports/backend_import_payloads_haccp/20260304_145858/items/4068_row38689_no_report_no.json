@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "빵또아",
+    "reportnum": "19980262029193"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029193/19980262029193-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029193/19980262029193-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029193/19980262029193-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아이스밀크.쿠키4.5%,카스텔라27.29%,설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029193/19980262029193-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(180ml),총5회제공량 (900ml) 1회제공량당 햠량 *%영양소기준치 열량 200kcal 탄수화물 33g(10%),당류 21g, 단백질 3g (5%),지방 6g (12%),포화지방 5.0g (33%),트랜스지방 0g,콜레스테롤 30mg(10%),나트륨 150mg (8%) *영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029193/19980262029193-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아이스밀크",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿠키",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카스텔라",
+        "amount": "27.29%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:37:01"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 21.0,
+    "protein_g": 3.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1개(180ml)",
+    "collected_at": "2026-03-03 21:37:01"
+  }
+}

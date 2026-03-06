@@ -1,0 +1,371 @@
+{
+  "product": {
+    "name_ko": "뉴트리 디-데이 다이어트 호두아몬드쉐이크",
+    "reportnum": "20070358224474"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358224474/20070358224474-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358224474/20070358224474-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358224474/20070358224474-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "분리대두단백(분리대두단백, 레시틴, 미국산), 결정과당, 폴리덱스트로스, 견과류혼합분말[볶음아몬드(미국산) 70%, 케슈넛트(인도산) 19%, 볶음땅콩 8 %, 호두(미국산) 2%, 마카다미아넛트 1%] 6%, 땅콩분말(아르헨티나산) 5.635 %, 비타민미네랄혼합분말[제이인산칼슘, 비타민C, 푸마르산제일철, 비타민E혼합제제(dl-알파-토코페릴아세테이트, 옥테닐호박산나트륨전분, 말토덱스트린, 이산화규소), 니코틴산아미드, 산화아연, 비타민A혼합제제(말토덱스트린, 옥수전분, 아라비아검, 비타민A아세테이트, 비타민E), 비타민B6염산염, 비타민B1염산염, 비타민B2, 엽산], 호두향분말(합성향료, 프로필렌글리콜, 이산화규소, 덱스트린), 난소화성말토덱스트린, 잔탄검, 아몬드향분말(덱스트린, 포도당, 합성향료, 가공유지, 이산화규소, 효소처리스테비아), 이산화규소, 카복시메틸셀룰로스나트륨, 산화마그네슘, 정제염, 효소처리스테비아, 가르시니아캄보지아추출물, 마테추출분말, 알로에베라겔분말, 닭가슴살분말, 유산균혼합분말, 베리농축액분말, 과일혼합농축액분말, 채소혼합농축액분말, 녹차농축추출물 분말, 히알루론산혼합제제(덱스트린, 히알루론산), 아미노산혼합분말(L-페닐알라닌, L-로이신, L-메티오닌, L-라이신염산염, 팔라티노스, L-이소로이신, L-발린, L-히스티딘, L-트립토판)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358224474/20070358224474-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=40g | foodSize=350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358224474/20070358224474-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "분리대두단백",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리덱스트로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "견과류혼합분말",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "볶음아몬드",
+            "origin": "미국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "케슈넛트",
+            "origin": "인도산",
+            "amount": "19%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음땅콩",
+            "amount": "8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호두",
+            "origin": "미국산",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마카다미아넛트",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "땅콩분말",
+        "origin": "아르헨티나산",
+        "amount": "5.635 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민미네랄혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "제이인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸마르산제일철",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "dl-알파-토코페릴아세테이트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥테닐호박산나트륨전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이산화규소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "니코틴산아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민A아세테이트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민E",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두향분말",
+        "sub_ingredients": [
+          {
+            "name": "합성향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난소화성말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드향분말",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카복시메틸셀룰로스나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가르시니아캄보지아추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마테추출분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알로에베라겔분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭가슴살분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베리농축액분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과일혼합농축액분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채소혼합농축액분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차농축추출물 분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "히알루론산혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "히알루론산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미노산혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "L-페닐알라닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-로이신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-메티오닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-라이신염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팔라티노스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-이소로이신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-발린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-히스티딘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-트립토판",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:03:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 360.0,
+    "carbohydrate_g": 52.0,
+    "protein_g": 32.0,
+    "fat_g": 6.0,
+    "sugar_g": 32.0,
+    "sodium_mg": 360.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "40g",
+    "total_content": "350g",
+    "collected_at": "2026-03-04 04:03:41"
+  }
+}

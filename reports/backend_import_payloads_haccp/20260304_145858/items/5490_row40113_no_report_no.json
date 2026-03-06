@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "우리집 순두부찌개",
+    "reportnum": "20070355030185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030185/20070355030185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030185/20070355030185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030185/20070355030185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "순두부43.8%{대두(수입산),대두분(수입산),응고제,소포제},계란자숙액{전란액(계란/국내산),정제염(국내산)},정제수,전란액,느타리버섯,고추맛기름,마늘,양파,바지락,국간장(밀),대파,찹쌀가루,L-글루타민산나트륨(향미증진제),고추,천일염(국내산)0.54%,고춧가루,바지락엑기스,소고기맛다시다,참기름,다시마엑기스2,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030185/20070355030185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(500g)/총 1회 제공량(500g) 500g당 함량 *%영양소 기준치 열량 270kcal 탄수화물 15g 5% 당류 3g 단백질 19g 35% 지방 15g 29% 포화지방 2.4g 16% 트랜스지방 0g 콜레스테롤 115mg 39% 나트륨 2,190mg 110% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030185/20070355030185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "순두부",
+        "amount": "43.8%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소포제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란자숙액",
+        "sub_ingredients": [
+          {
+            "name": "전란액",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "느타리버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바지락",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국간장",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "amount": "0.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바지락엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기맛다시다",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "amount": "2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:44"
+  },
+  "nutrition": {
+    "kcal": 270.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 3.0,
+    "protein_g": 19.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 2.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 115.0,
+    "sodium_mg": 2190.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(500g)",
+    "collected_at": "2026-03-04 04:02:44"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "올리브유발사믹드레싱",
+    "reportnum": "200504150201527"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201527/200504150201527-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201527/200504150201527-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201527/200504150201527-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,모데나발사믹식초20.6%[이탈리아산/와인식초,포도과즙],액상과당,옥수수유(옥수수배아:외국산/헝가리,세르비아,러시아 등),백설탕,정제소금(국산),압착올리브유2%(스페인산),양파,허브베이스,레몬농축액",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201527/200504150201527-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량2Tsp(29g)/총 약 8회 제공량(235g) *()안의 수치는 1일 영양소 기준치에 대한 비율임 열량 45kcal, 탄수화물 5g(2%), 당류 5g, 단백질 0g(0%), 지방 2.5g(5%), 포화지방0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 240 mg(12%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201527/200504150201527-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "모데나발사믹식초",
+        "origin": "이탈리아산",
+        "amount": "20.6%",
+        "sub_ingredients": [
+          {
+            "name": "와인식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수배아",
+            "origin": "헝가리산, 세르비아산, 러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "압착올리브유",
+        "origin": "스페인산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:00"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 5.0,
+    "protein_g": 0.0,
+    "fat_g": 2.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 240.0,
+    "basis_amount": 29.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량2Tsp(29g)",
+    "collected_at": "2026-03-04 03:54:00"
+  }
+}

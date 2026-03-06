@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "신상하이샤오롱",
+    "reportnum": "19870190051514"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870190051514/19870190051514-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870190051514/19870190051514-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870190051514/19870190051514-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루 28.40%(밀:호주,미국산),돼지고기 24.34%(국산),양파(국산),부추,대파,당면,양배추,마늘,혼합제제(변성전분,밀글루텐,말토덱스트린,밀가루),이츠웰죽순채,백설남해굴소스,표고버섯,곡류가공품,백설탕,복합조미식품,정제소금,참기름,절임류,분리대두단백,콩기름,후춧가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870190051514/19870190051514-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(168g) 1회 제공량 당 함량 *%영양소기준치 열량 350kcal 탄수화물 27g 8% 당류 4g 단백질 9g 16% 지방 23g 45% 포화지방 7g 47% 트렌스지방 0g 콜레스테롤 25mg 8% 나트륨 510mg 26% *%영양성분 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870190051514/19870190051514-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "amount": "28.40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "24.34%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이츠웰죽순채",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설남해굴소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "절임류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후춧가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:29:18"
+  },
+  "nutrition": {
+    "kcal": 350.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 4.0,
+    "protein_g": 9.0,
+    "fat_g": 23.0,
+    "saturated_fat_g": 7.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 510.0,
+    "basis_amount": 168.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(168g)",
+    "collected_at": "2026-03-03 16:29:18"
+  }
+}

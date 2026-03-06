@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "피코크 진한황태설렁탕",
+    "reportnum": "20150445222150"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222150/20150445222150-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222150/20150445222150-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222150/20150445222150-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 두부[대두(수입산),응고제(황산칼슘)],황태해장국베이스2.6%[정제소금(국산),황태채10.75%(러시아산)],황태채2.5(러시아산),대파,계란블럭,사골엑기스1.0%[우사골(호주산)],들기름0.7%[들깨100%(국산)],마늘,복합조미식품,다시마엑기스,무엑기스,천일염,흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222150/20150445222150-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (500g)/ 총 1회 제공량(500g) 1회 제공량당 함량 *%영양소 기준치 : 열량 168kcal, 탄수화물 8g 2%, 당류 0g, 단백질 15g 27%, 지방 9g 18%, 포화지방 1.9g 13%, 트랜스지방 0g, 콜레스테롤 53mg 18%, 나트륨 1,141mg 57% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222150/20150445222150-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": [
+              {
+                "name": "황산칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "황태해장국베이스",
+        "amount": "2.6%",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황태채",
+            "origin": "러시아산",
+            "amount": "10.75%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "황태채",
+        "origin": "러시아산",
+        "amount": "2.5",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란블럭",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스",
+        "origin": "호주산",
+        "amount": "1.0%",
+        "sub_ingredients": [
+          {
+            "name": "우사골",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "국산",
+        "amount": "0.7%",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:25"
+  },
+  "nutrition": {
+    "kcal": 168.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 0.0,
+    "protein_g": 15.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 53.0,
+    "sodium_mg": 1141.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (500g)",
+    "collected_at": "2026-03-04 04:45:25"
+  }
+}

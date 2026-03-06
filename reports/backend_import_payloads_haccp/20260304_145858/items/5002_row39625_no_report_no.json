@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "한살림 스크램블에그",
+    "reportnum": "2004026203252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203252/2004026203252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203252/2004026203252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203252/2004026203252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "전란액97.5%(유정란,국내산),감자전분(국산),천일염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203252/2004026203252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004026203252/2004026203252-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "amount": "97.5%",
+        "sub_ingredients": [
+          {
+            "name": "유정란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:07"
+  }
+}

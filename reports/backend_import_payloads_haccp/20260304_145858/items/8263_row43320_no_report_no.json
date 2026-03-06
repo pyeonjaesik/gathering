@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "한살림 녹차쿠키",
+    "reportnum": "2001032007868"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007868/2001032007868-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007868/2001032007868-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007868/2001032007868-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루38.8%(밀:국산),버터27.8%(우유100%:국산),갈색설탕19.4%,유정란11.0%(국산), 말차2.6%(국산),태움용융소금0.4%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007868/2001032007868-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007868/2001032007868-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "38.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "amount": "27.8%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "amount": "19.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "11.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말차",
+        "origin": "국산",
+        "amount": "2.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "태움용융소금",
+        "origin": "국산",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:18"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 535.0,
+    "carbohydrate_g": 59.0,
+    "protein_g": 8.0,
+    "fat_g": 29.0,
+    "sugar_g": 20.0,
+    "sodium_mg": 180.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 14.0,
+    "trans_fat_g": 0.8,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:28:18"
+  }
+}

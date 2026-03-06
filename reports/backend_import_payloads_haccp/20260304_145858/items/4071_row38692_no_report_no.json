@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "오뗄쿡살라미",
+    "reportnum": "19980262034167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262034167/19980262034167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262034167/19980262034167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262034167/19980262034167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쇠고기(호주산)45.30%,돼지고기(국산)40.03%,정제수,정제염,MSSA시즈닝,두잇복합인산염(혼합제제-폴리인산나트륨,피로인산나트륨,메타인산나트륨),비타민C(영양강화제),조미료2.5[L-글루타민산나트륨(향미증진제),4'-구아닐산이나트륨,5'이노신산이나트륨],마늘,요리당,간장(밀,대두),셀러리솔트,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262034167/19980262034167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량당 함량 *%영양소 기준 열량99.8kcal 탄수화물0.0g(0%),당류0.7g,단백질3.7g(14%),지방6.8g(14%),포화지방3.2g(21%),트랜스지방0g,콜레스테롤17.3mg(6%),나트륨386mg(19%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262034167/19980262034167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "호주산",
+        "amount": "45.30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "40.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "MSSA시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두잇복합인산염",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미료",
+        "amount": "2.5",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "4'-구아닐산이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'이노신산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "셀러리솔트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "amount": "발색제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:38:01"
+  },
+  "nutrition": {
+    "kcal": 99.8,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.7,
+    "protein_g": 3.7,
+    "fat_g": 6.8,
+    "saturated_fat_g": 3.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 17.3,
+    "sodium_mg": 386.0,
+    "basis_text": "1회제공량당 함량",
+    "collected_at": "2026-03-03 21:38:01"
+  }
+}

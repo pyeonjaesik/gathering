@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "자연그대로 Blueberryyoghurt 블루베리요구르트",
+    "reportnum": "200804480101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480101/200804480101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480101/200804480101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480101/200804480101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국산원유89.995%(1A등급)블루베리퓨레6%[블루베리(미국산)50%,올리고당50%]올리고당4%,유산균0.005%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480101/200804480101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(100ml) 총 10회 제공량(1000ml) 1회 제공량당 함량: 열량 90kcal, 탄수화물 14g(4%)[당류6g], 단백질 3g(5%), 지방 2.6g(5%)[포화지방 1.2g(8%),트랜스지방 0g(0%)],콜레스테롤 5mg미만(1%), 나트륨 25mg(1%), 칼슘 70mg(10%) *( )안의 수치는 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480101/200804480101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "89.995%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리퓨레",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리",
+            "origin": "미국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고당",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "0.005%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:15"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 6.0,
+    "protein_g": 3.0,
+    "fat_g": 2.6,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 25.0,
+    "calcium_mg": 70.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(100ml)",
+    "collected_at": "2026-03-04 04:12:15"
+  }
+}

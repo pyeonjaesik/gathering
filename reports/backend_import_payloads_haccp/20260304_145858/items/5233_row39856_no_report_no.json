@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "엄지치즈떡",
+    "reportnum": "20060188160158"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160158/20060188160158-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160158/20060188160158-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160158/20060188160158-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀82.8%(국산), 치즈17%{자연치즈50%[모짜렐라치즈(수입산), DN치즈49.5%(뉴질랜드산), 분말셀룰로오스0.5%]}, 정제염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160158/20060188160158-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 10개(100g) 총 10회 제공량 (1,000g)\n<1회 제공량당 함량 *%영양소 기준치>\n열량225kcal, 탄수화물43g 13%, 탄수화물43g 13%, 당류0g, 단백질6g 11%, 지방3g 6%, 포화지방산1.6g 11%, 트랜스지방0g, 콜레스테롤5mg 2%, 나트륨110mg 6%\n*%영양소기준 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060188160158/20060188160158-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "82.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "모짜렐라치즈",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "DN치즈",
+                "origin": "뉴질랜드산",
+                "amount": "49.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "분말셀룰로오스",
+                "amount": "0.5%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:56"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "carbohydrate_g": 43.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 1.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 110.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 10개(100g)",
+    "collected_at": "2026-03-04 03:55:56"
+  }
+}

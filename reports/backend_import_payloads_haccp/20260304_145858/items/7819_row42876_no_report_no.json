@@ -1,0 +1,230 @@
+{
+  "product": {
+    "name_ko": "뽀로로와 친구들",
+    "reportnum": "19960375066213"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066213/19960375066213-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066213/19960375066213-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066213/19960375066213-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:미국/호주산),백설탕,가공버터[호주산:버터지방,코코넛오일(경화유),무지유고형분],혼합식용유[팜유,고올레산해바라기유,야자유,d-토코페롤(혼합형)],쇼트닝,전지분유(우유),당류가공품,산도조절제,정제염,기타가공품,{식용난각분(계란)},레시틴(대두),초유분말0.1%(뉴질랜드산),혼합제제[비타민프리믹스-와이(비타민C,드라이비타민E50%,Type CWS/S,니코틴산아미드,드라이비타민A아세테이트,Type 325CWS/A,비타민B6염산염,비타민B1염산염,비타민B2,엽산)],효소제제,영양강화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066213/19960375066213-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=65g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960375066213/19960375066213-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "버터지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛오일",
+            "sub_ingredients": [
+              {
+                "name": "경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용난각분",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초유분말",
+        "origin": "뉴질랜드산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "비타민프리믹스-와이",
+            "sub_ingredients": [
+              {
+                "name": "비타민C",
+                "sub_ingredients": []
+              },
+              {
+                "name": "드라이비타민E",
+                "amount": "50%",
+                "sub_ingredients": [
+                  {
+                    "name": "Type CWS",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "니코틴산아미드",
+                "sub_ingredients": []
+              },
+              {
+                "name": "드라이비타민A아세테이트",
+                "sub_ingredients": [
+                  {
+                    "name": "Type 325CWS",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "비타민B6염산염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민B1염산염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민B2",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엽산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:05:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 515.0,
+    "carbohydrate_g": 70.77,
+    "protein_g": 6.15,
+    "fat_g": 23.08,
+    "sugar_g": 15.39,
+    "sodium_mg": 385.0,
+    "cholesterol_mg": 23.08,
+    "saturated_fat_g": 12.31,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "65g",
+    "collected_at": "2026-03-03 21:05:02"
+  }
+}

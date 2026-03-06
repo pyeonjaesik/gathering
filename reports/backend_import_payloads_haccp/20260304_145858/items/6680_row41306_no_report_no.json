@@ -1,0 +1,124 @@
+{
+  "product": {
+    "name_ko": "맛있닭 닭가슴살스테이크 갈릭맛",
+    "reportnum": "2014044803589"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803589/2014044803589-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803589/2014044803589-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803589/2014044803589-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)68.40%,마늘(국내산)5.0%,대두단백(미국산),복합시즈닝KI,전란(국내산),치즈맛인헨서,양파(국내산),맥아물엿,우유(국내산),분리대두단백,대파,옥수수전분,마늘엑기스,흑후추분말,파슬리",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803589/2014044803589-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량100g당 함량 1회제공량당 함량 %영양성분 기준치 열량 140.61kcal, 탄수화물 7.78g 2%, 당류2.25g, 단백질 23.30g 42%, 지방 1.81g 4%, 포화지방 0.68g 5%, 트랜스지방 0g,  콜레스테롤 60.85mg 20%,  나트륨 252.13mg 13%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803589/2014044803589-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "68.40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국내산",
+        "amount": "5.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합시즈닝KI",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈맛인헨서",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:24"
+  },
+  "nutrition": {
+    "kcal": 140.61,
+    "carbohydrate_g": 7.78,
+    "sugar_g": 2.25,
+    "protein_g": 23.3,
+    "fat_g": 1.81,
+    "saturated_fat_g": 0.68,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 60.85,
+    "sodium_mg": 252.13,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량100g당 함량",
+    "collected_at": "2026-03-04 04:42:24"
+  }
+}

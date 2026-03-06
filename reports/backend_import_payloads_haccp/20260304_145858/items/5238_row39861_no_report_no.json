@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "참그레인",
+    "reportnum": "20060242376116"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376116/20060242376116-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376116/20060242376116-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376116/20060242376116-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀:미국산),옥수수전분[옥수수:외국산(러시아,세르비아,헝가리)],옥배유[옥수수:외국산(브라질,러시아,미국)],백설탕,전립분(밀:미국산),고운통밀가루(밀:미국산),액상과당,감자분말,산도조절제,현미귀리퀴노아혼합분말[현미(국산),귀리겨(스웨덴산),퀴노아(볼리비아산)],정제소금,호밀분말(호밀:캐나다산),감칠맛분말,효소제,감초추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376116/20060242376116-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 176g(29gx6봉지) 100g당 443kcal 100g당 1일 영양성분 기준치에 대한 비율 나트륨 530mg 27%탄수화물 76g 23%, 당류 13g 13%, 지방 11g 20%,트랜스지방 0g , 포화지방 1.5g 10%,콜레스테롤 0mg 0%,단백질 10g 18% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060242376116/20060242376116-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 러시아산, 세르비아산, 헝가리산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "외국산, 브라질산, 러시아산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전립분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고운통밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미귀리퀴노아혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "귀리겨",
+            "origin": "스웨덴산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "퀴노아",
+            "origin": "볼리비아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호밀분말",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감초추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:06"
+  },
+  "nutrition": {
+    "kcal": 443.0,
+    "sodium_mg": 530.0,
+    "carbohydrate_g": 76.0,
+    "sugar_g": 13.0,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 0.0,
+    "protein_g": 10.0,
+    "basis_amount": 29.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 176g(29gx6봉지)",
+    "collected_at": "2026-03-04 03:56:06"
+  }
+}

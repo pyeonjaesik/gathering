@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "서산옛날생강한과국",
+    "reportnum": "200304631266"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304631266/200304631266-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304631266/200304631266-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304631266/200304631266-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀60%(국산),멥쌀15%(국산),생강7%(국산),대두(국산),쌀조청,콩기름(대두-외국산),흑미(국산),흑임자(중국산),백년초(국산),치자(국산),쑥(국산),대추(국산),호박씨(중국산),*편강:생강90%(국산),설탕*콩다식:콩가루85%(국산),꿀(국산),*흑임자다식:흑임자85%(중국산),꿀",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304631266/200304631266-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회분량 100g/총 9회제공량900g \n<1회분(100g)당 함량 %영양소 기준치>\n열량470kcal, 탄수화물61g, 당류29g, 단백질7g,지방21g, 포화지방3g, 트랜스지방17g, 콜레스테롤0mg 불검출, 나트륨71mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304631266/200304631266-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "amount": "7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩기름",
+        "sub_ingredients": [
+          {
+            "name": "대두-외국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑임자",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백년초",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쑥",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박씨",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "편강",
+        "sub_ingredients": [
+          {
+            "name": "생강",
+            "origin": "국산",
+            "amount": "90%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩다식",
+        "sub_ingredients": [
+          {
+            "name": "콩가루",
+            "origin": "국산",
+            "amount": "85%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑임자다식",
+        "sub_ingredients": [
+          {
+            "name": "흑임자",
+            "origin": "중국산",
+            "amount": "85%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:09"
+  },
+  "nutrition": {
+    "kcal": 470.0,
+    "carbohydrate_g": 61.0,
+    "sugar_g": 29.0,
+    "protein_g": 7.0,
+    "fat_g": 21.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 17.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 71.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회분량 100g",
+    "collected_at": "2026-03-04 03:48:09"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "우리집애호박돼지찌개",
+    "reportnum": "20150445222141"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222141/20150445222141-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222141/20150445222141-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222141/20150445222141-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,애호박(국내산)15%,돈앞다리(돼지고기/국내산)10%,무,고추장,양파,대파,재래식된장,마늘,진간장,730B1,고춧가루,찹쌀가루,양념혼합분말(향미증진제),볶음양념다대기,정백당,천일염(국내산)0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222141/20150445222141-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(500g)/1회 제공량당 함량 *%영양소 기준치 : 열량 231kcal, 탄수화물 18.7g 6%, 당류 10g, 단백질 22g 41%, 지방 7.5g 15%, 포화지방 2.4g, 16% 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 1,749mg 87% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222141/20150445222141-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "애호박",
+        "origin": "국내산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돈앞다리",
+        "origin": "국내산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재래식된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "730B1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양념혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음양념다대기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:18"
+  },
+  "nutrition": {
+    "kcal": 231.0,
+    "carbohydrate_g": 18.7,
+    "sugar_g": 10.0,
+    "protein_g": 22.0,
+    "fat_g": 7.5,
+    "saturated_fat_g": 2.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1749.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(500g)",
+    "collected_at": "2026-03-04 04:45:18"
+  }
+}

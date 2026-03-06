@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "후루티 피나콜라다스무디",
+    "reportnum": "19910443010417"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910443010417/19910443010417-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910443010417/19910443010417-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910443010417/19910443010417-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사과30%(국산),백설탕,물엿,아미드펙틴,구연산,합성착향료(파인애플향,코코넛향),사과산,로커스트콩검,치자황색소,합성보존료(소르빈산칼륨),제이인산칼슘,혼합제제(규소수지,유화제,증점제),구연산삼나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910443010417/19910443010417-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1잔(70g)/열량 174kcal, 탄수화물44g(13%), 당류42g,단백질0g(1%),지방0g(0%),포화지방0g(0%),트랜스지방,콜레스테롤0mg(0%),나트륨35mg(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910443010417/19910443010417-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "파인애플향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성보존료",
+        "sub_ingredients": [
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제이인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증점제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:39:05"
+  },
+  "nutrition": {
+    "kcal": 174.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 42.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 35.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1잔(70g)",
+    "collected_at": "2026-03-03 18:39:05"
+  }
+}

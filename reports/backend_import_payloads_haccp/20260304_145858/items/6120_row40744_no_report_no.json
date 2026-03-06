@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "치즈떡",
+    "reportnum": "2010014722839"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722839/2010014722839-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722839/2010014722839-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722839/2010014722839-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀77.5%(국산),벨라유임실피자치즈20%{원유99.978%(국산),염화칼슘,응고제,유산균결정}, 타피오카전분, 정제염, 감미유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722839/2010014722839-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 350g / 1회 제공량 100g 당 226.4Kcal\n열량 226.4kcal, 포화지방 1.2g(8%), 탄수화물 40.8g(12%), 트랜스지방 0.0g, 당류 0.7g, 콜레스테롤 7.4mg(2%), 조단백질 6.8(12%), 나트륨 229.2mg(11%), 조지방 4g(8%)\n*1일 영양성분 기준치에 대한 비율(%)은 2000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.\n*1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722839/2010014722839-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "77.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벨라유임실피자치즈",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "origin": "국산",
+            "amount": "99.978%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균결정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:01"
+  },
+  "nutrition": {
+    "kcal": 226.4,
+    "saturated_fat_g": 1.2,
+    "carbohydrate_g": 40.8,
+    "trans_fat_g": 0.0,
+    "sugar_g": 0.7,
+    "cholesterol_mg": 7.4,
+    "sodium_mg": 229.2,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 100g 당",
+    "collected_at": "2026-03-04 04:22:01"
+  }
+}

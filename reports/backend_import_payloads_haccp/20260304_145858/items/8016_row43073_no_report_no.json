@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "미닛메이드 스파클링 청포도",
+    "reportnum": "19970614083139"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970614083139/19970614083139-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970614083139/19970614083139-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970614083139/19970614083139-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,청포도농축과즙1.64%(청포도과즙으로 환원기준:10%),이산화탄소,구연산,합성향료(머스캣향,포도향),아라비아검,비타민C,스테비올배당체,자당지방산에스테르,가공유지,천연향료,d-토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970614083139/19970614083139-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=185ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970614083139/19970614083139-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청포도농축과즙",
+        "amount": "1.64%",
+        "sub_ingredients": [
+          {
+            "name": "청포도과즙으로 환원기준",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "머스캣향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비올배당체",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "d-토코페롤",
+        "amount": "혼합형",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:32:29"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 37.0,
+    "carbohydrate_g": 9.19,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 9.19,
+    "sodium_mg": 3.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "185ml",
+    "collected_at": "2026-03-03 21:32:29"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "온리프라이스 스위트 솔티 팝콘",
+    "reportnum": "20100461303309"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303309/20100461303309-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303309/20100461303309-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303309/20100461303309-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)46.65%, 설탕, 해바라기유(외국산:스페인,아르헨티나,우크라이나 등), 가공소금 0.96%(정제소금99%/캐나다산), 유화제, 혼합제제(아몬드향, 글리세린지방산에스테르, 가공유지)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303309/20100461303309-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 60g 285kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨153mg 8%, 탄수화물44.6g 14%, 당류17g 17%, 콜레스테롤0mg 0%, 지방10g 19%, 트랜스지방0g, 포화지방3.7g 25%, 단백질4g 7%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303309/20100461303309-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "46.65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "외국산, 스페인산, 아르헨티나산, 우크라이나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "origin": "캐나다산",
+        "amount": "0.96%(정제소금99%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "아몬드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:54"
+  },
+  "nutrition": {
+    "kcal": 285.0,
+    "sodium_mg": 153.0,
+    "carbohydrate_g": 44.6,
+    "sugar_g": 17.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.7,
+    "protein_g": 4.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 60g",
+    "collected_at": "2026-03-04 04:26:54"
+  }
+}

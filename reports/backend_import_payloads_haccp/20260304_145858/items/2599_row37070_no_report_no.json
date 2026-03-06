@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "뷰티풀 석류",
+    "reportnum": "19880442004639"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004639/19880442004639-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004639/19880442004639-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004639/19880442004639-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,석류농축과즙(터키산/석류100%)10%,칡착즙액[칡(국산),정제수],아가베시럽,메이플시럽,라즈베리농축액(대만산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004639/19880442004639-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=2400ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004639/19880442004639-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "석류농축과즙",
+        "origin": "터키산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "석류",
+            "sub_ingredients": [
+              {
+                "name": "석류",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칡착즙액",
+        "sub_ingredients": [
+          {
+            "name": "칡",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아가베시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메이플시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "라즈베리농축액",
+        "origin": "대만산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:47"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 56.0,
+    "carbohydrate_g": 13.75,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 13.75,
+    "sodium_mg": 38.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "2400ml",
+    "collected_at": "2026-03-04 03:24:47"
+  }
+}

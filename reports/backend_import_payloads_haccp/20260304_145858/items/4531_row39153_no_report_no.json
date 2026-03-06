@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "화끈 국물떡볶이",
+    "reportnum": "20010538182293"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182293/20010538182293-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182293/20010538182293-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182293/20010538182293-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*떡- 쌀(외국산),정제소금(국산),주정*소스-정제수,기타과당,설탕,물엿[옥수수전분{옥수수:외국산(러시아,헝가리,세르비아 등)}],고춧가루(중국산),고추장[물엿,소맥분(밀:미국산,호주산),혼합양념(중국산),밀쌀,솔빈산칼륨(합성보존료)],조미료2.5(L-글루타민산나트륨/향미증진제),혼합간장(대두),다진마늘,주정,베지터블씨즈닝,미림,고추엑기스,매운맛고춧가루,복합조미식품,치킨엑스,파프리카추출색소,양파농축액.올레오레진캡시컴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182293/20010538182293-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총1회 제공량 310g/1회 제공량당\n열량715kcal, 탄수화물163g (49%), 당류0g, 단백질12g 22%, 지방2.1g (4%), 포화지방0g (0%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨1,990mg (99%)\n%영양성분기준치:1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182293/20010538182293-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "떡",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "솔빈산칼륨",
+                "sub_ingredients": [
+                  {
+                    "name": "합성보존료",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "조미료2.5",
+            "sub_ingredients": [
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "다진마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베지터블씨즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운맛고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨엑스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진캡시컴",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:34:37"
+  },
+  "nutrition": {
+    "kcal": 715.0,
+    "carbohydrate_g": 163.0,
+    "sugar_g": 0.0,
+    "protein_g": 12.0,
+    "fat_g": 2.1,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1990.0,
+    "basis_amount": 310.0,
+    "basis_unit": "g",
+    "basis_text": "총1회 제공량 310g",
+    "collected_at": "2026-03-04 03:34:37"
+  }
+}

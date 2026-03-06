@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "우리아이착한소시지",
+    "reportnum": "2008061405012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061405012/2008061405012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061405012/2008061405012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061405012/2008061405012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육[외국산(미국,인도네시아,베트남 등)/어육,백설탕,D-소르비톨,산도조절제], 돼지고기(국산),고구마전분(국산),새우6.07%(국산),동결난백(계란),양파(국산),전지분유(우유),백설탕,볶음저염도소금(재제염:국내산),조미액-씨(청주,백설탕,물엿,저감미당,간장),새우오일[건새우(갑각류),채종유,폴리페녹스],참기름(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061405012/2008061405012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(38g)당 총 35회 제공량 1,330g ※%영양성분 기준치\n열량(kcal)60kcal -, 탄수화물(g)5g 2%, 당류(g)0g -, 단백질(g)4g 7%, 지방(g)3.0g 6%, 포화지방(g)1.8g 12%, 트랜스지방(g)0g -, 콜레스테롤(g)15mg 5%, 나트륨(mg)140mg 7%\n( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061405012/2008061405012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "외국산, 미국산, 인도네시아산, 베트남산",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마전분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "국산",
+        "amount": "6.07%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음저염도소금",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "재제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미액-씨",
+        "sub_ingredients": [
+          {
+            "name": "청주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "새우오일",
+        "sub_ingredients": [
+          {
+            "name": "건새우",
+            "sub_ingredients": [
+              {
+                "name": "갑각류",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리페녹스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:58"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 0.0,
+    "protein_g": 4.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 140.0,
+    "basis_amount": 38.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(38g)",
+    "collected_at": "2026-03-04 04:15:58"
+  }
+}

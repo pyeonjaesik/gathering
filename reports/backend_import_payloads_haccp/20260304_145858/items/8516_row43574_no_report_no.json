@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "아워홈 소고기미역국",
+    "reportnum": "20020614179754"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179754/20020614179754-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179754/20020614179754-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179754/20020614179754-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 소고기(호주산)2%, 양지육수농축액[양지추출베이스{우정육:양지살(소고기:호주산)26.95%}40.44%, 사골엑기스{사골농축액(사골:뉴질랜드산)}]1.5%, 마늘(중국산), 건미역(국산)0.6%, 혼합간장, 감칠맛분에스, 마늘엑기스, 정제소금, 조미액젓, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179754/20020614179754-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179754/20020614179754-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지육수농축액",
+        "amount": "1.5%",
+        "sub_ingredients": [
+          {
+            "name": "양지추출베이스",
+            "sub_ingredients": [
+              {
+                "name": "우정육",
+                "origin": "호주산",
+                "amount": "26.95%",
+                "sub_ingredients": [
+                  {
+                    "name": "양지살",
+                    "origin": "호주산",
+                    "sub_ingredients": [
+                      {
+                        "name": "소고기",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "사골농축액",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": [
+                  {
+                    "name": "사골",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건미역",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액젓",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 13.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 1.33,
+    "fat_g": 0.43,
+    "sugar_g": 0.0,
+    "sodium_mg": 283.0,
+    "cholesterol_mg": 1.67,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.01,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:44:04"
+  }
+}

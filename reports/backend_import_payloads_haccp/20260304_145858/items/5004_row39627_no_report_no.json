@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "한입 치킨라이스볼",
+    "reportnum": "20040262036140"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036140/20040262036140-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036140/20040262036140-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036140/20040262036140-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기[가슴살/국내산]69.51%,튀김가루P14.38%[밀가루(밀:미국산),전분(밀:미국산,호주산),쌀가루,정제소금,베이킹파우더(산도도절제)],라이스볼5.56%[백미:수입산],대두유[대두],ISP,옥수수전분,동해염지제-K[L-글루타민산나트륨(향미증진제)],MSG[L-글루타민산나트륨(향미증진제)],정제염,인산염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036140/20040262036140-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/27(30g)당 함량,% 영양소 기준치,열량 65kcal,탄수화물 4g(1%),당류 0.8g,단백질 5g(9%),지방 2.8g(6%),포화지방 0.5g(3%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 140mg(7%),%영양소기준치:30g당 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040262036140/20040262036140-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "69.51%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "튀김가루",
+        "amount": "14.38%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베이킹파우더",
+            "sub_ingredients": [
+              {
+                "name": "산도도절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "라이스볼",
+        "origin": "수입산",
+        "amount": "5.56%",
+        "sub_ingredients": [
+          {
+            "name": "백미",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "ISP",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동해염지제-K",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "MSG",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인산염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:26"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 0.8,
+    "protein_g": 5.0,
+    "fat_g": 2.8,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 140.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/27(30g)당 함량",
+    "collected_at": "2026-03-04 03:50:26"
+  }
+}

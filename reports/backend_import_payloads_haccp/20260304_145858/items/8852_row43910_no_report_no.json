@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "목우촌오븐구이떡갈비",
+    "reportnum": "2006040501431"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040501431/2006040501431-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040501431/2006040501431-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040501431/2006040501431-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(국산)57.26%[갈비살22.16%],닭고기(국산)16.62%,정제수,떡갈비맛양념장에스[산분해간장(밀),기타설탕,숯불갈비맛베이스(대두,밀),마늘,백설탕],입자성대두단백(대두),빵가루(밀),양파(국산),대파(국산),떡갈비시즈닝 엠3,썬올리고M-500,마늘(국산),함수결정포도당,갈색설탕,참기름,바베규시즈닝,비타셀WF-200,산도조절제,흑후추분말,정제소금,그릴린휴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040501431/2006040501431-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=340g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040501431/2006040501431-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "57.26%",
+        "sub_ingredients": [
+          {
+            "name": "갈비살",
+            "amount": "22.16%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "16.62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "떡갈비맛양념장에스",
+        "sub_ingredients": [
+          {
+            "name": "산분해간장",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숯불갈비맛베이스",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "입자성대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "떡갈비시즈닝",
+        "amount": "엠3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "썬올리고",
+        "amount": "M-500",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바베규시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타셀WF-200",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그릴린휴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:56"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 241.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 12.0,
+    "fat_g": 17.0,
+    "sugar_g": 5.0,
+    "sodium_mg": 470.0,
+    "cholesterol_mg": 50.0,
+    "saturated_fat_g": 5.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "340g",
+    "collected_at": "2026-03-04 03:58:56"
+  }
+}

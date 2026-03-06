@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "삼채물만두",
+    "reportnum": "20000498027265"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027265/20000498027265-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027265/20000498027265-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027265/20000498027265-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루27.32%(밀,미국산/캐나다산),돼지고기18.3%(국산),부추(국산),양배추(국산),대두단백(대두),대파(국산),당근(국산),양파(국산),새송이버섯(국산),삼채(Allium hookeri)2.03%(국산),난백(계란),팽이버섯(국산),마늘(국산),참기름,정백당,정제염,오이(국산),쇠고기엑기스P,양조간장,피케이-4(새우),향미증진제,감미유-S(대두),시금치분말(국산),삼채분말0.03%(국산),생강",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027265/20000498027265-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "칼로리 245 총지방 8g, 포화지방2g, 다불포화지방 0g, 단가불포화지방 0g, 트랜스지방 0g, 콜레스테롤 0mg, 나트륨 560mg, 칼륨 0mg, 총탄수화물 29g, 식이섬유 0g, 당 4g, 단백질14g, 비티만A 0%, 비타민C 0%, 칼슘 0%, 철분 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027265/20000498027265-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "amount": "27.32%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "18.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새송이버섯",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼채",
+        "origin": "국산",
+        "amount": "2.03%",
+        "sub_ingredients": [
+          {
+            "name": "Allium hookeri",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오이",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피케이-4",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "시금치분말",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼채분말",
+        "origin": "국산",
+        "amount": "0.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 23:39:28"
+  },
+  "nutrition": {
+    "kcal": 245.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 560.0,
+    "potassium_mg": 0.0,
+    "dietary_fiber_g": 0.0,
+    "protein_g": 14.0,
+    "calcium_mg": 0.0,
+    "iron_mg": 0.0,
+    "collected_at": "2026-03-03 23:39:28"
+  }
+}

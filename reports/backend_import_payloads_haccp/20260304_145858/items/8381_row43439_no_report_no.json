@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "동원 포도잼",
+    "reportnum": "20020183282579"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282579/20020183282579-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282579/20020183282579-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282579/20020183282579-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "냉동포도과립14%[포도(국산)92.86%, 비타민C], 포도페이스트9.78%(미국산, 생물기준40%), 포도펄프(국산)5%, 백설탕, 물엿, 정제수, 분말·결정포도당, 이소말토올리고당, 아미드펙틴, 레몬농축액(아르헨티나산), 구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282579/20020183282579-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=680g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282579/20020183282579-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동포도과립",
+        "origin": "국산",
+        "amount": "14%",
+        "sub_ingredients": [
+          {
+            "name": "포도",
+            "origin": "국산",
+            "amount": "92.86%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도페이스트",
+        "origin": "미국산",
+        "amount": "9.78%",
+        "sub_ingredients": [
+          {
+            "name": "생물기준",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도펄프",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "origin": "아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 230.0,
+    "carbohydrate_g": 57.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 50.0,
+    "sodium_mg": 10.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "680g",
+    "collected_at": "2026-03-04 03:36:51"
+  }
+}

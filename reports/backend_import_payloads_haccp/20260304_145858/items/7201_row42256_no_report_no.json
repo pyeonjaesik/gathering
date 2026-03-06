@@ -1,0 +1,203 @@
+{
+  "product": {
+    "name_ko": "이탈리안드레싱",
+    "reportnum": "199104450773661"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450773661/199104450773661-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450773661/199104450773661-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450773661/199104450773661-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,화이트와인식초10.5%[이탈리아산/포도와인,메타중아황산칼륨(산화방지제)],백설카놀라유[카놀라유(캐나다산),규소수지],올리고당,백설탕,다진마늘(마늘:국산),양파다이스(양파:국산),레몬농축액,천일염,압착올리브유(스페인산),홀그레인머스타드(프랑스산),잔탄검,분말검은후추,바실홀0.09%,파슬리후레이크0.09%,레몬그라스페이스트0.07%,다임홀0.06%,혼합제제[글리세린,아미노액시드콤플렉스(폴리리신),주정],로즈마리그라운드0.03%,혼합제제[프로필렌글리콜,차자황색소,치자청색소,비타민C]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450773661/199104450773661-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=235g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450773661/199104450773661-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트와인식초",
+        "origin": "이탈리아산",
+        "amount": "10.5%",
+        "sub_ingredients": [
+          {
+            "name": "포도와인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타중아황산칼륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설카놀라유",
+        "origin": "캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파다이스",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "압착올리브유",
+        "origin": "스페인산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홀그레인머스타드",
+        "origin": "프랑스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말검은후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바실홀",
+        "amount": "0.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리후레이크",
+        "amount": "0.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬그라스페이스트",
+        "amount": "0.07%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다임홀",
+        "amount": "0.06%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미노액시드콤플렉스",
+            "sub_ingredients": [
+              {
+                "name": "폴리리신",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "차자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로즈마리그라운드",
+        "amount": "0.03%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:40:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 155.0,
+    "carbohydrate_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 12.0,
+    "sugar_g": 12.0,
+    "sodium_mg": 790.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "235g",
+    "collected_at": "2026-03-03 18:40:11"
+  }
+}

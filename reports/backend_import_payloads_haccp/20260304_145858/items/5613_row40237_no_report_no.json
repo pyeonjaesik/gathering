@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "썬업 과일？야채샐러드 녹황",
+    "reportnum": "200705000915"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200705000915/200705000915-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200705000915/200705000915-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200705000915/200705000915-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,오렌지농축과즙(오렌지과즙으로32%,스페인산),사과농축과즙(사과과즙으로21%,수입산),바나나퓨레4%(필리핀산),당근농축액(당근즙으로25%,독일산),감귤농축과즙(감귤과즙으로7%,제주도산),파인애플농축과즙(파인애플과즙으로6%,스페인산),야채혼합농축액M1[야채(단호박,샐러리,케일,양배추)혼합즙으로5%,국산],천연오렌지향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200705000915/200705000915-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(*%영양성분기준치:1일 영양소기준치에 대한 비율) 1회 제공량(200ml)당 함량 : 열량 85kcal, 탄수화물 20g(6%)-당류17g, 식이섬유0.2g(1%), 단백질 1g미만(2%), 지방 0g(0%)-포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 45mg(2%), 베타카로틴 1986㎍",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200705000915/200705000915-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축과즙",
+        "origin": "스페인산",
+        "amount": "32%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지과즙",
+            "amount": "32%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "수입산",
+        "amount": "21%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "amount": "21%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나퓨레",
+        "origin": "필리핀산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근농축액",
+        "origin": "독일산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "당근즙",
+            "amount": "25%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감귤농축과즙",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "감귤과즙",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제주도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플농축과즙",
+        "origin": "스페인산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "파인애플과즙",
+            "amount": "6%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채혼합농축액M1",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "야채혼합즙",
+            "amount": "5%",
+            "sub_ingredients": [
+              {
+                "name": "단호박",
+                "sub_ingredients": []
+              },
+              {
+                "name": "샐러리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "케일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양배추",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연오렌지향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:52"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 17.0,
+    "dietary_fiber_g": 0.2,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "beta_carotene_ug": 1986.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(200ml)당 함량",
+    "collected_at": "2026-03-04 04:06:52"
+  }
+}

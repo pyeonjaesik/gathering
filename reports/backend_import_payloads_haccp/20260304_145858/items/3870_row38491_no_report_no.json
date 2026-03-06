@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "초코Bomb",
+    "reportnum": "19960379001288"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001288/19960379001288-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001288/19960379001288-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001288/19960379001288-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "코코아쿠키41.18%[밀가루(미국산,호주산),기타설탕(원당,소맥전분),식물성유지(말레이시아산),코코아분말(인도네이사산),땅콩버터],우유(국산),준초콜릿19.97%[설탕,식물성유지(호주산),식물성유지2(외국산:인도네시아산,필리핀산,말레이시아산),코코아매스(싱가포르산),유청(우유,국산)],유크림(외국산,이탈리아산,호주산,독일산등),설탕,코코아분말,탈지분유(외국산:미국산,벨기에산,네덜란드산등),물엿,혼합제제1(구아검,글리세린지방산에스테르,카라기난,카복시메틸셀룰로스나트륨,알긴산나트륨,메타인산나트륨),천연초콜릿농축향(미국산),혼합제제2(글리세린지방산에스테르,알긴산나트륨,구연산삼나트륨,황산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001288/19960379001288-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 295,[영양표시] : 나트륨86mg,탄수화물38g,당류23g,지방14g,트랜스지방0g,포화지방5g,콜레스테롤11mg,단백질4g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960379001288/19960379001288-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "코코아쿠키",
+        "amount": "41.18%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": [
+              {
+                "name": "원당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩버터",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "amount": "19.97%",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지2",
+            "origin": "외국산, 인도네시아산, 필리핀산, 말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "외국산, 이탈리아산, 호주산, 독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산, 미국산, 벨기에산, 네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카복시메틸셀룰로스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연초콜릿농축향",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:07:10"
+  },
+  "nutrition": {
+    "kcal": 295.0,
+    "sodium_mg": 86.0,
+    "carbohydrate_g": 38.0,
+    "sugar_g": 23.0,
+    "fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 11.0,
+    "protein_g": 4.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-03 21:07:10"
+  }
+}

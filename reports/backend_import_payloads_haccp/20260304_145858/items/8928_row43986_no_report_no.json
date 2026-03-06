@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "랑떡(딸기맛)",
+    "reportnum": "2007033867614"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007033867614/2007033867614-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007033867614/2007033867614-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007033867614/2007033867614-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "찹쌀(국내산)19.6%, 계란(국내산)20.9%, 중력분(미국,호주산)10.5%, 설탕18.1%, 딸기레진0.7%, 딸기과즙농충액5%,정제수,물엿,식용유,맵쌀,정제염,찰전분,트레하,에스피,에스텔",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007033867614/2007033867614-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007033867614/2007033867614-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국내산",
+        "amount": "19.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란",
+        "origin": "국내산",
+        "amount": "20.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "중력분",
+        "origin": "미국산, 호주산",
+        "amount": "10.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "18.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기레진",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기과즙농축액",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맵쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찰전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레하",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스피",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스텔",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 300.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 2.86,
+    "fat_g": 8.57,
+    "sugar_g": 31.43,
+    "sodium_mg": 146.0,
+    "cholesterol_mg": 37.14,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "280g",
+    "collected_at": "2026-03-04 04:02:17"
+  }
+}

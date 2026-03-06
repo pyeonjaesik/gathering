@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "다이제초코",
+    "reportnum": "197604870053"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/197604870053/197604870053-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/197604870053/197604870053-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/197604870053/197604870053-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀 미국산),다이제초코렛(백설탕,식물성유지(말레이시아산),코코아프리퍼레이션(전지분유 프랑스산),코코아매스,초코크럼),쇼트닝(부분경화유/대두),전립분,백설탕,골든시럽,농후발효유(우유),산도조절제,전지분유,식염,L-주석산,전분조제품,합성착향료(밀크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/197604870053/197604870053-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=312g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/197604870053/197604870053-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다이제초코렛",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아프리퍼레이션",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "origin": "프랑스산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초코크럼",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "부분경화유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전립분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "골든시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농후발효유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-주석산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분조제품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:01:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 510.0,
+    "carbohydrate_g": 65.39,
+    "protein_g": 5.77,
+    "fat_g": 25.0,
+    "sugar_g": 26.92,
+    "sodium_mg": 538.0,
+    "cholesterol_mg": 6.73,
+    "saturated_fat_g": 13.46,
+    "trans_fat_g": 0.67,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "312g",
+    "collected_at": "2026-03-03 14:01:58"
+  }
+}

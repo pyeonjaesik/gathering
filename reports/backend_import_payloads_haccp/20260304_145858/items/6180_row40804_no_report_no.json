@@ -1,0 +1,66 @@
+{
+  "product": {
+    "name_ko": "베베푸드코리아 유기농 쌀과자 배 떡뻥",
+    "reportnum": "2010029493340"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010029493340/2010029493340-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010029493340/2010029493340-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010029493340/2010029493340-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농쌀(국산)95%,유기농배즙(국산)5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010029493340/2010029493340-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량20g 80kcal\n<총 내용량당 1인 영양성분기준치에 대한비율>\n나트륨9mg 0%, 탄수화물18g 6%, 당류0g 0%, 지방0g 0%, 트랜스지방-, 포화지방0g 0%, 콜레스테롤- 0%, 단백질1g 3%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010029493340/2010029493340-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국산",
+        "amount": "95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농배즙",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:09"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "sodium_mg": 9.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량20g",
+    "collected_at": "2026-03-04 04:23:09"
+  }
+}

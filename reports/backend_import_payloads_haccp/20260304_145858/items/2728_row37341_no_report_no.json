@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "건강한참치 셀레늄엽산",
+    "reportnum": "19880589063217"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063217/19880589063217-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063217/19880589063217-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063217/19880589063217-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "다랑어79.0%(원양산),현미유(태국산),정제수,엠엔와이0.35%[건조효모100%(셀레늄0.01%함유,엽산0.05%함유)],참치추출물,다시마베이스(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063217/19880589063217-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 : 열량 210kcal, 탄수화물0g, 당류0g, 단백질 19g, 지방15g, 포화지방1.8g, 트랜스지방 0g, 콜레스테롤 45mg, 나트륨 410mg, 셀레늄 35㎍, 엽산 175㎍",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063217/19880589063217-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "다랑어",
+        "amount": "79.0%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엠엔와이",
+        "amount": "0.35%",
+        "sub_ingredients": [
+          {
+            "name": "건조효모",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "셀레늄",
+                "amount": "0.01%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엽산",
+                "amount": "0.05%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참치추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:40:28"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 19.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 45.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당 함량",
+    "collected_at": "2026-03-03 17:40:28"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "스윗&솔트 팝콘",
+    "reportnum": "20100461303114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303114/20100461303114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303114/20100461303114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303114/20100461303114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)43.1%, 백설탕, 식물성유지[팜올레인유(말레이시아산), 고올레산해바라기유(외국산:아르헨티나,스페인, 호주 등), d-토코페롤(혼합형)], 가공소금1.1%(정제소금99%, 제삼인산칼슘)/캐나다산, 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303114/20100461303114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 450g 2370 kcal, 총 내용량당 1일 영양성분 기준치에 대한 비율, 나트륨 1,010mg 51%, 탄수화물 292g 90%, 식이섬유 19g 76%, 당류 101g 101%, 지방 130g 241%, 트랜스지방 0g, 포화지방 32g 213%, 콜레스테롤 0mg 0%, 단백질 18g 33%,  1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303114/20100461303114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "43.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고올레산해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공소금",
+        "origin": "캐나다산",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "amount": "99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:06"
+  },
+  "nutrition": {
+    "kcal": 2370.0,
+    "sodium_mg": 1010.0,
+    "carbohydrate_g": 292.0,
+    "dietary_fiber_g": 19.0,
+    "sugar_g": 101.0,
+    "fat_g": 130.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 32.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 18.0,
+    "basis_amount": 450.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 450g",
+    "collected_at": "2026-03-04 04:26:06"
+  }
+}

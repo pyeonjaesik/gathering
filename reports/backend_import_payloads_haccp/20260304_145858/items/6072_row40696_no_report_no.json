@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "달인 김병만의 파래 광천김",
+    "reportnum": "2009047306744"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047306744/2009047306744-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047306744/2009047306744-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047306744/2009047306744-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "파래김(국내산) 54%, 카놀라유(호주산) 39.6%, 들기름(중국산) 3.92%, 맛소금(정제소금, L-글루타민산나트륨[향미증진제]) 2%, 참기름",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047306744/2009047306744-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Serving Size 0.07oz(2g) \nServing Per Container 10\nAmount Per Serving\nCalories 10 Calories from Fat 10\n% Dally Value\nTotal Fat1g 1%, Saturated Fat0g 0%, Trans Fat0g, Cholesterol0mg 0%, Sldium39mg 2%, Total Carbohydrate less than 1g 0%, Dietary Fiber0g 0%, Sugars0g, Protein0g, VitaminA0%, VitaminC0%, Calcium4%, Iron1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009047306744/2009047306744-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파래김",
+        "origin": "국내산",
+        "amount": "54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "호주산",
+        "amount": "39.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "amount": "3.92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:40"
+  },
+  "nutrition": {
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "Serving Size 0.07oz(2g)",
+    "collected_at": "2026-03-04 04:20:40"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "product": {
+    "name_ko": "백설올리고당",
+    "reportnum": "1973019001541"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001541/1973019001541-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001541/1973019001541-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001541/1973019001541-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원당,프락토올리고당55%이상(수분제외)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001541/1973019001541-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 700g 100g당 240kcal  :나트륨 0mg 0%, 탄수화물78g 24%, 당류33g 33%, 식이섬유 35g 140%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질 0g 0%, 1일 영양성분 기준치에 대한비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001541/1973019001541-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "55%이상",
+        "sub_ingredients": [
+          {
+            "name": "수분",
+            "amount": "제외",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:44:14"
+  },
+  "nutrition": {
+    "total_content": "700",
+    "food_weight_g": 700.0,
+    "kcal": 240.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 78.0,
+    "sugar_g": 33.0,
+    "dietary_fiber_g": 35.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:44:14"
+  }
+}

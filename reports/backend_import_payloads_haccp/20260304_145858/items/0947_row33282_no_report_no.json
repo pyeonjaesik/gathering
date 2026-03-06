@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "모카골드",
+    "reportnum": "19790257001227"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001227/19790257001227-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001227/19790257001227-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001227/19790257001227-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,식물성크림[물엿,식물성경화유지{코코넛오일:외국산(인도네시아,말레이시아,필리핀)},제이인산칼륨,카제인나트륨,제삼인산칼슘],커피12.8%(베트남산57%,우간다산21%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001227/19790257001227-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 2937.5g(11.75g×250스틱) 1스틱(11.75g)당 50kcal 1스틱당 1일 영양성분 기준치에 대한 비율 나트륨 5mg 0%, 탄수화물 9g 3%, 당류 6g 6%, 지방 1.5g 3%, 트랜스지방 0g, 포화지방 1.5g 10%, 콜레스테롤 0mg 0%, 단백질 0g 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1979/19790257001227/19790257001227-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성경화유지",
+            "sub_ingredients": [
+              {
+                "name": "코코넛오일",
+                "origin": "외국산, 인도네시아산, 말레이시아산, 필리핀산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제이인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "커피",
+        "origin": "베트남산 57%, 우간다산 21%",
+        "amount": "12.8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:22:21"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "sodium_mg": 5.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 6.0,
+    "fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 11.75,
+    "basis_unit": "g",
+    "basis_text": "1스틱(11.75g)당",
+    "collected_at": "2026-03-03 14:22:21"
+  }
+}

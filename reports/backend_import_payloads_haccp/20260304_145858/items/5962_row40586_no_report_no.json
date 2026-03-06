@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "연양갱고구마",
+    "reportnum": "200903551106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200903551106/200903551106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200903551106/200903551106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200903551106/200903551106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "말티톨시럽 32%, 백앙금(강낭콩:캐나다산),물엿,백설탕,증숙고구마페이스트(인도네시아산),포도당,한천(국산),합성착향료(고구마향) ·고구마 9%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200903551106/200903551106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1개(50g) 당 함량 총 5회 제공량(250g) 탄수화물 35g 11% 당류 15g 단백질 1g 2% 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 0mg 0% (%)는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200903551106/200903551106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "32%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백앙금",
+        "origin": "캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "강낭콩",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙고구마페이스트",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한천",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "고구마향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고구마",
+        "amount": "9%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:34"
+  },
+  "nutrition": {
+    "carbohydrate_g": 35.0,
+    "sugar_g": 15.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1개(50g) 당 함량",
+    "collected_at": "2026-03-04 04:18:34"
+  }
+}

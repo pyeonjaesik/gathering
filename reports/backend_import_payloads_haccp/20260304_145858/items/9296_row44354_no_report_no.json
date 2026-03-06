@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "굳지않는 치즈떡볶이",
+    "reportnum": "2010014722810"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722810/2010014722810-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722810/2010014722810-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722810/2010014722810-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "맵쌀(국내산)82.36%,피자치즈(수입산)17.55%{모짜렐라치즈50%[우유,소금,배양액,염화칼슘,응유효소(수입산)],KU치즈A49%[식용유지<팜유>(말레이지아산),서프믹스피쓰리(카페인,초산전분,소금,카라기난,유청)<프랑스산>,셀룰로오스분말,유청분말<수입산>,산도조절제]세룰로오스분말},정제염0.03%,소맥분0.06%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722810/2010014722810-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010014722810/2010014722810-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맵쌀",
+        "origin": "국내산",
+        "amount": "82.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피자치즈",
+        "origin": "수입산",
+        "amount": "17.55%",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "응유효소",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "KU치즈A",
+            "amount": "49%",
+            "sub_ingredients": [
+              {
+                "name": "식용유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "말레이지아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "서프믹스피쓰리",
+                "origin": "프랑스산",
+                "sub_ingredients": [
+                  {
+                    "name": "카페인",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "초산전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소금",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카라기난",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유청",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "셀룰로오스분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "amount": "0.06%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 240.0,
+    "carbohydrate_g": 43.0,
+    "protein_g": 7.0,
+    "fat_g": 3.2,
+    "sugar_g": 0.0,
+    "sodium_mg": 162.0,
+    "cholesterol_mg": 2.3,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 04:22:01"
+  }
+}

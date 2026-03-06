@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "건강한 두유 GT 고단백 고칼슘 쑥",
+    "reportnum": "19890449002124"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890449002124/19890449002124-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890449002124/19890449002124-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890449002124/19890449002124-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두유액(대두고형분7%이상)80%[대두:외국산(미국,캐나다,중국 등)],정제수, 백설탕, 분리대두단백(중국산), 미강유(태국산), 쑥분말(쑥100%,국산)0.5%, 탄산칼슘, 유화제, 정제소금, 산도조절제, 아라비아검, 잔탄검, 덱스트린, 영양강화제, 합성착향료(씨리얼향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890449002124/19890449002124-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량140kcal, 나트륨0mg (0%), 당류9g (9%), 트랜스지방0g (0%), 콜레스테롤0mg (0%), 칼슘200mg (29%), 탄수화물11g (3%), 지방6g (12%), 포화지방1.4g (9%), 단백질11g (20%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/19890449002124/19890449002124-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "80%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쑥분말",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "쑥",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "씨리얼향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:44:58"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "sodium_mg": 0.0,
+    "sugar_g": 9.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "calcium_mg": 200.0,
+    "carbohydrate_g": 11.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.4,
+    "protein_g": 11.0,
+    "collected_at": "2026-03-03 17:44:58"
+  }
+}

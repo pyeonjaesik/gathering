@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "크라운츄러스",
+    "reportnum": "19870461068116"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068116/19870461068116-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068116/19870461068116-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068116/19870461068116-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산), 혼합식용유[팜올레인유(말레이시아산)59.98%, 해바라기유{외국산(우크라이나•말레이시아•스페인 등)}40%, 토코페롤(혼합형)], 설탕, 곡류가공품[현미보리(국산), 현미(국산)], 당시럽류, 복합조미식품(계피분말), 산도조절제1, 산도조절제2, 정제소금, 가공소금, 합성향료(메이플향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068116/19870461068116-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=40g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870461068116/19870461068116-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "우크라이나•말레이시아•스페인 등",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "현미보리",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당시럽류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "계피분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "메이플향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:41:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 540.0,
+    "carbohydrate_g": 62.5,
+    "protein_g": 5.0,
+    "fat_g": 30.0,
+    "sugar_g": 25.0,
+    "sodium_mg": 375.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 9.75,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "40g",
+    "collected_at": "2026-03-03 16:41:05"
+  }
+}

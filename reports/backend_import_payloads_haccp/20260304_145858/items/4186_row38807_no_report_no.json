@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "환타 포도향",
+    "reportnum": "19980449002565"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002565/19980449002565-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002565/19980449002565-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002565/19980449002565-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,액상과당,탄산가스,구연산,합성착향료(포도향),메타인산나트륨,식용색소적색제40호/청색제1호(합성착색료),백설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002565/19980449002565-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(355ml), 총 1회 제공량(355ml), 1회 제공량 당 함량:열량192kcal, 탄수화물48g(15%),당류48g,단백질0g(0%),지방0g(0%)[포화지방0g(0%),트랜스지방0g], 콜레스테롤0mg(0%),나트륨23mg(1%) *()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002565/19980449002565-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산가스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료(포도향)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메타인산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용색소적색제40호/청색제1호(합성착색료)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:51:34"
+  },
+  "nutrition": {
+    "kcal": 192.0,
+    "carbohydrate_g": 48.0,
+    "sugar_g": 48.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 23.0,
+    "basis_amount": 355.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(355ml)",
+    "collected_at": "2026-03-03 21:51:34"
+  }
+}

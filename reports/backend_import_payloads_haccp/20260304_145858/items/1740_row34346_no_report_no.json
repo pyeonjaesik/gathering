@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "허쉬초콜릿드링크 오리지널",
+    "reportnum": "19850213001178"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001178/19850213001178-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001178/19850213001178-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001178/19850213001178-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "허쉬초콜릿드링크프리믹스(탈지분유,정백당,코코아분말,정제염,카라기난,바닐린)(미국산)5.3%,정제수,정백당,혼합탈지분유(네덜란드산)3.1%,덱스트린,야자경화유(외국산-말레이시아,인도네시아,필리핀),코코아파우더(스페인산)0.25%,자당지방산에스테르,합성향료(초콜릿향,밀크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001178/19850213001178-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001178/19850213001178-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "허쉬초콜릿드링크프리믹스",
+        "origin": "미국산",
+        "amount": "5.3%",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "네덜란드산",
+        "amount": "3.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "origin": "인도네시아산, 필리핀산",
+        "sub_ingredients": [
+          {
+            "name": "외국산-말레이시아",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "스페인산",
+        "amount": "0.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "초콜릿향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:51:56"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 68.0,
+    "carbohydrate_g": 12.63,
+    "protein_g": 2.11,
+    "fat_g": 1.05,
+    "sugar_g": 11.58,
+    "sodium_mg": 47.0,
+    "calcium_mg": 79.0,
+    "cholesterol_mg": 2.63,
+    "saturated_fat_g": 0.84,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-03 15:51:56"
+  }
+}

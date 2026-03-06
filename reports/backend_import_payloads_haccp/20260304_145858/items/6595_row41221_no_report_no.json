@@ -1,0 +1,381 @@
+{
+  "product": {
+    "name_ko": "블랙푸드곡물한끼",
+    "reportnum": "2013055611750"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013055611750/2013055611750-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013055611750/2013055611750-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013055611750/2013055611750-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "현미33.63%(국산),맵쌀14%(국산),흑미14%(국산),결정과당,보리,검정콩10%(대두,국산),아몬드플레이크1.5%(미국),밀,흑미플레이크1%(국산),검정깨0.5%(국산),세븐베리농축분말[세븐베리농축액(63Brix)40%{블랙베리(칠레)농축액26.51%,블랙커런트(뉴질랜드)농축액22.02%,블루베리(미국)농축액,스트로우베리(미국)농 축액,라즈베리(칠레)농축액,크랜베리(미국)농축액,아사이베리(브라질)농축액},덱스트린],효소처리스테비아,옥수수,현미찹쌀,쌀보리,백태(대두,국산),율무,기장,발아현미,참깨,들깨,프락토올리고당,귀리,호박,브로콜리,블루베리,녹차,호도,땅콩,밤,은행,멀티비타민미네랄믹스[해조칼슘,비타민C,비타민E혼합제제(dl-알파-토코페릴아세테이트,변성전분,말토덱스트린,이산화규소),푸마르산제일철,비타민A혼합제제(비타민A아세테이트,말토덱스트린,옥수수전분,아라비아검,dl-알파-토코페롤),니코틴아미드,산화아연,비타민B6염산염,비타민B2,비타민B1,염산염,엽산],7종알파혼합유산균1.0*10 10cuf/g이상(스트렙토코커스써모필러스,락토바실러스 카제이,락토바실러스 람노수스,락토바실러스 플란타럼,락토바실러스 애시도필러스,락토바실러스 퍼멘텀, 비티도박테리움 롱검,식물성크림분말,말토덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013055611750/2013055611750-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 30g 당:열량 121kcal, 탄수화물 24g(7%), 당류5g, 단백질4g(6%), 지방1.4g(3%),포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%),나트륨20mg(3%)[*(%)영양소기준치]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013055611750/2013055611750-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "amount": "33.63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맵쌀",
+        "origin": "국산",
+        "amount": "14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정콩",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드플레이크",
+        "origin": "미국산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미플레이크",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "세븐베리농축분말",
+        "sub_ingredients": [
+          {
+            "name": "세븐베리농축액",
+            "sub_ingredients": [
+              {
+                "name": "블랙베리",
+                "origin": "칠레산",
+                "amount": "26.51%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "블랙커런트",
+                "origin": "뉴질랜드산",
+                "amount": "22.02%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "블루베리",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스트로우베리",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "라즈베리",
+                "origin": "칠레산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크랜베리",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아사이베리",
+                "origin": "브라질산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백태",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "율무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "귀리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호도",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "은행",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멀티비타민미네랄믹스",
+        "sub_ingredients": [
+          {
+            "name": "해조칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "dl-알파-토코페릴아세테이트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이산화규소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "푸마르산제일철",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "비타민A아세테이트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "dl-알파-토코페롤",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "니코틴아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산화아연",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "7종알파혼합유산균",
+        "amount": "1.0*10 10cuf, g이상",
+        "sub_ingredients": [
+          {
+            "name": "스트렙토코커스써모필러스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 카제이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 람노수스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 플란타럼",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 애시도필러스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락토바실러스 퍼멘텀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비티도박테리움 롱검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:15"
+  },
+  "nutrition": {
+    "kcal": 121.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 5.0,
+    "protein_g": 4.0,
+    "fat_g": 1.4,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g 당",
+    "collected_at": "2026-03-04 04:40:15"
+  }
+}

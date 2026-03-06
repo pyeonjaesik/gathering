@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name_ko": "고소미",
+    "reportnum": "19870415003118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003118/19870415003118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003118/19870415003118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003118/19870415003118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀 미국산),백설탕,식물성유지[해바라기유 외국산(우크라이나,러시아,말레이시아),야자유 외국산(인도네시아,말레이시아,필리핀)],쇼트닝[우지(호주산),팜올레인유(말레이시아산)/부분경화유],가당코코넛분말(코코넛분말,황백당),참깨,유청분말,전지분유,산도조절제,정제가공유지,식염,포도당,곡류가공품,조미염,패각칼슘,합성향료(코코넛향,밀크향),치즈분말,잔탄검,산성아황산나트륨(산화방지제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003118/19870415003118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=216g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003118/19870415003118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "origin": "우크라이나산, 러시아산, 말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "인도네시아산, 말레이시아산, 필리핀산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "우지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가당코코넛분말",
+        "sub_ingredients": [
+          {
+            "name": "코코넛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제가공유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "패각칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "코코넛향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산성아황산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:37:10"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 517.0,
+    "carbohydrate_g": 61.11,
+    "protein_g": 5.56,
+    "fat_g": 27.78,
+    "sugar_g": 27.78,
+    "sodium_mg": 306.0,
+    "cholesterol_mg": 7.78,
+    "saturated_fat_g": 13.89,
+    "trans_fat_g": 0.56,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "216g",
+    "collected_at": "2026-03-03 16:37:10"
+  }
+}

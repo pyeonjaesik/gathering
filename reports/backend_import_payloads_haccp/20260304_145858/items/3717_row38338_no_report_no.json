@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "카스테라믹스",
+    "reportnum": "19960080359352"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359352/19960080359352-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359352/19960080359352-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359352/19960080359352-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "당믹스:백설탕,혼합제제(태국산,변성전분,백설탕),정제소금(국내산) 분믹스:밀가루(밀;미국산),혼합제제(태국산,변성전분,백설탕),혼합제제(바닐린,포도당) 올리고물엿:물엿,프락토올리고당",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359352/19960080359352-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총분량 300g 표시기준분량(100g) 100g당 함량 *%영양소 기준치 열량 380kcal, 탄수화물 91g 28%,당류 60g,단백질 2g 4%,지방 0.8g 2%, 포화지방 0.3g 2%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 120mg 6% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960080359352/19960080359352-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "당믹스",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "origin": "태국산",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분믹스",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "origin": "태국산",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고물엿",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:43:32"
+  },
+  "nutrition": {
+    "kcal": 380.0,
+    "carbohydrate_g": 91.0,
+    "sugar_g": 60.0,
+    "protein_g": 2.0,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 20:43:32"
+  }
+}

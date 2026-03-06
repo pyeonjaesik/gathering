@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "야채스틱",
+    "reportnum": "2002046712755"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712755/2002046712755-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712755/2002046712755-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712755/2002046712755-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "베지포테이토튜브펠렛(이탈리아/감자전분,감자그래놀라,감자후레이크,변성감자전분,식염,시금치분말,토마토분말,베타카로틴),해바라기유(외국산/우크라이나,스페인,말레이시아등) 쉐어크림앤허브씨즈닝(호주/밀크고형분,설탕,말토텍스트린,양파분말,이스트농축액,식염,신맛크림분말,허브분말,치즈파우더,오렌지분말,해바라기오일,콩분말)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712755/2002046712755-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 60g 총 내용량당 290.27kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨406.92mg 20.35% 탄수화물43.29g 13.12%, 당류3.2g 3.2%, 총지방11.75g 23.05%, 트랜스지방0.5g미만 0%, 포화지방0.77g 5.16%, 콜레스테롤0mg 0%, 단백질2.84g 5.16%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요열량에 따랄 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712755/2002046712755-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "베지포테이토튜브펠렛",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자그래놀라",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시금치분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "외국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쉐어크림앤허브씨즈닝",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀크고형분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토텍스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "신맛크림분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허브분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩분말",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:09"
+  },
+  "nutrition": {
+    "kcal": 290.27,
+    "sodium_mg": 406.92,
+    "carbohydrate_g": 43.29,
+    "sugar_g": 3.2,
+    "saturated_fat_g": 0.77,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.84,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 60g",
+    "collected_at": "2026-03-04 03:43:09"
+  }
+}

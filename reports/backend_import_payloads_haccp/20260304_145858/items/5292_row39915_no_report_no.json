@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "햇님마을 들기름",
+    "reportnum": "2006035820037"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820037/2006035820037-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820037/2006035820037-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820037/2006035820037-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "들깨 / 국내산100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820037/2006035820037-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<1회 제공량당 함량>\n열량 899kcal, 탄수화물0g, 당류0g, 단백질0g, 지방99g, 포화지방산25g, 트랜스지방0.00g, 콜레스테롤0g, 나트륨0mg, 1회제공량100mL, 총제공횟수1회\n※ 영양소 기준치 : ()안의 수치는 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006035820037/2006035820037-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "들깨",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:34"
+  },
+  "nutrition": {
+    "kcal": 899.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 99.0,
+    "saturated_fat_g": 25.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량100mL",
+    "collected_at": "2026-03-04 03:57:34"
+  }
+}

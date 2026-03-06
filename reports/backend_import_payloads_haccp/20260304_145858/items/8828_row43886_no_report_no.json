@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "이든맘 바나나 퍼프",
+    "reportnum": "2006037812274"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812274/2006037812274-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812274/2006037812274-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812274/2006037812274-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "무농약현미(국내산)70.8%,리뉴얼화이트[유기농설탕62.4%,코코아버터(싱가포르산),혼합탈지분유(탈지분유,유청분말:네덜란드산/우유),레시틴(대두:유화제)]19%,바나나분말(필리핀산)6%,유기농설탕2.2%,요구르트분말(프랑스산)1%,비타민c0.7%,비피더스균(비피도박테리움비피덤분말)0.3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812274/2006037812274-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=25g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812274/2006037812274-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약현미",
+        "origin": "국내산",
+        "amount": "70.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리뉴얼화이트",
+        "amount": "19%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "amount": "62.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나분말",
+        "origin": "필리핀산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "2.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요구르트분말",
+        "origin": "프랑스산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민c",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비피더스균",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "비피도박테리움비피덤분말",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:15"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 420.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 8.0,
+    "fat_g": 8.4,
+    "sugar_g": 20.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 4.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "25g",
+    "collected_at": "2026-03-04 03:58:15"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "씨알 김밥용 햄",
+    "reportnum": "2007026205462"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205462/2007026205462-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205462/2007026205462-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205462/2007026205462-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국내산 돼지고기(무항생제)82.93%,국내산 한우쇠고기(무한생제)4.82%,정제수8.68%,볶음소금(마하탑),유기농설탕,약드스파이스[백후추분말,코리안더분말,너트맥분말,카라웨이분말,스파이스시즈닝k2(백후추분말,카라웨이분말)],천연섬유소,조미간장,패각추출물 조미간장성분-양조간장10.94%,배(생과)18.17%,양파 18.17%,대파, 생강, 유기농설탕,건표고,울금,다시마,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205462/2007026205462-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(100g,1.6회) 1회 제공량당 함량 열량 224.67kcal, 탄수화물 1.5g, 식이섬유 0g, 당류 0.41g, 단백질 16.98g, 지방 16.75g, 포화지방 6.59g, 트랜스지방 3.1g, 콜레스테롤 55.43mg, 나트륨 495.03mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007026205462/2007026205462-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "국내산 돼지고기",
+        "origin": "국내산",
+        "amount": "82.93%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국내산 한우쇠고기",
+        "origin": "국내산",
+        "amount": "4.82%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "8.68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음소금",
+        "sub_ingredients": [
+          {
+            "name": "마하탑",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "약드스파이스",
+        "sub_ingredients": [
+          {
+            "name": "백후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코리안더분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "너트맥분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라웨이분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스파이스시즈닝k2",
+            "sub_ingredients": [
+              {
+                "name": "백후추분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라웨이분말",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연섬유소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미간장",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "amount": "10.94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배",
+            "amount": "18.17%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "amount": "18.17%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건표고",
+            "sub_ingredients": []
+          },
+          {
+            "name": "울금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:18"
+  },
+  "nutrition": {
+    "kcal": 224.67,
+    "carbohydrate_g": 1.5,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 0.41,
+    "protein_g": 16.98,
+    "fat_g": 16.75,
+    "saturated_fat_g": 6.59,
+    "trans_fat_g": 3.1,
+    "cholesterol_mg": 55.43,
+    "sodium_mg": 495.03,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g,1.6회)",
+    "collected_at": "2026-03-04 04:02:18"
+  }
+}

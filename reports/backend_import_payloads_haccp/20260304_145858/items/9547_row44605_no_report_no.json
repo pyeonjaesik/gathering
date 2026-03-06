@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "본레스햄",
+    "reportnum": "20130405045132"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045132/20130405045132-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045132/20130405045132-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045132/20130405045132-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(국내산)93.71%,정제수,대두단백(미국산),정제염,산도조절제,말토덱스트린,백설탕,난단백,콘시럽솔리드,엘-글루타민산나트륨(향미증진제),비타민-씨,코치닐추출색소,스모크오일,대두유,백후추,아질산나트륨(발색제),질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045132/20130405045132-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=288g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045132/20130405045132-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "93.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콘시럽솔리드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엘-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민-씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:42"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 115.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 19.0,
+    "fat_g": 4.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 740.0,
+    "cholesterol_mg": 50.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "288g",
+    "collected_at": "2026-03-04 04:37:42"
+  }
+}

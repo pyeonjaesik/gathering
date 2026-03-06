@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "고구마 왕",
+    "reportnum": "20100372386312"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386312/20100372386312-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386312/20100372386312-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386312/20100372386312-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(미국산),백설탕,증숙고구마(국산)19%,팜유(말레이시아산),소맥전분,물엿(옥분,엿기름,효조세세),볶음검정깨,천일염,산도조절제,치자황색소,혼합제제{덱스트린,아세설팜칼륨(합성감미료)},합성착향료(고구마향),향신료올레오레진류(해바라기유,로즈마리추출액)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386312/20100372386312-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약1/4봉지(28g) 총 약 4회 제공량(110g)\n<1회 제공량당 함량 *%영양소기준치>\n열량124kcal, 탄수화물23g 7%, 당류6g, 단백질1g 2%, 지방3.1g 6%, 포화지방1.2g 8%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨63mg 3%\n* %영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386312/20100372386312-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙고구마",
+        "origin": "국산",
+        "amount": "19%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효조세세",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음검정깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "고구마향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향신료올레오레진류",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리추출액",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:35"
+  },
+  "nutrition": {
+    "kcal": 124.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 6.0,
+    "protein_g": 1.0,
+    "fat_g": 3.1,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 63.0,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/4봉지(28g)",
+    "collected_at": "2026-03-04 04:24:35"
+  }
+}

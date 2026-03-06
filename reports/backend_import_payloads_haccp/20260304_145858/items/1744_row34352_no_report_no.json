@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "매일우유 무지방&고칼슘 0%",
+    "reportnum": "19850213001168"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001168/19850213001168-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001168/19850213001168-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001168/19850213001168-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무지방우유 98.7533%(국산),칼슘혼합제제 0.815%(탄산칼슘,아라비아검),폴리덱스트로스,비타민A혼합제제(덱스트린,아라비어검,전분,비타민A유,비타민E),비타민D3혼합제제(자당,전분,아라비아검,야자유,제삼인산칼슘,비타민D3,비타민E)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001168/19850213001168-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 함량 *%영양소기준치 열량 60kcal, 탄수화물 10g 3%,식이섬유 0.6g 2%,당류 9g, 단백질 6g 11%,지방 0g 0%, 포화지방 0g 0%,트랜스지방 0g,콜레스테롤 6mg 2%,나트륨 100mg 5%,비타민A 124㎍RE 18%,비타민D 2㎍ 40%,비타민D 440mg 63% *%영양소기준치:1일 영양소기준치에 대한 비율 -1회 제공량 1컵(200ml)기준 -()%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001168/19850213001168-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무지방우유",
+        "origin": "국산",
+        "amount": "98.7533%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제제",
+        "amount": "0.815%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리덱스트로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민A혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민D3혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:52:05"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 10.0,
+    "dietary_fiber_g": 0.6,
+    "sugar_g": 9.0,
+    "protein_g": 6.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 6.0,
+    "sodium_mg": 100.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200ml)",
+    "collected_at": "2026-03-03 15:52:05"
+  }
+}

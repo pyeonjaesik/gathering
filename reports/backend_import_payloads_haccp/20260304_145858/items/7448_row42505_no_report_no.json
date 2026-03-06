@@ -1,0 +1,94 @@
+{
+  "product": {
+    "name_ko": "칸타타스위트아메리카노",
+    "reportnum": "19930242053200"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053200/19930242053200-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053200/19930242053200-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053200/19930242053200-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "칸타타원두커피추출액 30%(에티오피아 50%, 콜롬비아 30%, 브라질 20%), 정제수, 백설탕, 탄산수소나트륨, 합성착향료(커피향), L-아스코르빈산나트륨 커피고형분 0.672%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053200/19930242053200-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=275ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053200/19930242053200-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "칸타타원두커피추출액",
+        "origin": "에티오피아산 50%, 콜롬비아산 30%, 브라질산 20%",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피고형분",
+        "amount": "0.672%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:26:13"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 18.0,
+    "carbohydrate_g": 4.36,
+    "protein_g": 0.25,
+    "fat_g": 0.0,
+    "sugar_g": 3.64,
+    "sodium_mg": 47.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "275ml",
+    "collected_at": "2026-03-03 19:26:13"
+  }
+}

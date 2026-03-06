@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "THE엑설런트 바닐라의 꿈",
+    "reportnum": "19980262029248"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029248/19980262029248-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029248/19980262029248-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029248/19980262029248-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유(국산),데어리스프레드,(외국산:뉴질랜드,독일,호주),백설탕,정제수,혼합탈지분유(외국산(네덜란드,아일랜드,독일:탈지분유,유청분말),가당난황,프락토올리고당,혼합제제(유화제,구아검,카라기난),로커스트콩검,정제염,천연바닐라향0.018%[바닐라추출물(프랑스산:고형분31%)21%],합성착향료(바닐라향),셀룰로오스컴,바닐린혼합제제2카로틴,파프리카추출색소,글리세린,액상과당,유화제,d-토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029248/19980262029248-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=110ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029248/19980262029248-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "외국산, 뉴질랜드산, 독일산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가당난황",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연바닐라향",
+        "amount": "0.018%",
+        "sub_ingredients": [
+          {
+            "name": "바닐라추출물",
+            "origin": "프랑스산",
+            "amount": "고형분31%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "셀룰로오스컴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐린혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "2카로틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "d-토코페롤",
+        "amount": "혼합형",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:37:17"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 155.0,
+    "carbohydrate_g": 13.64,
+    "protein_g": 2.45,
+    "fat_g": 10.0,
+    "sugar_g": 12.73,
+    "sodium_mg": 59.0,
+    "cholesterol_mg": 54.55,
+    "saturated_fat_g": 6.36,
+    "trans_fat_g": 0.45,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "110ml",
+    "collected_at": "2026-03-03 21:37:17"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "product": {
+    "name_ko": "구운미니피자맛바게뜨",
+    "reportnum": "19860512022171"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022171/19860512022171-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022171/19860512022171-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022171/19860512022171-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루[(밀/미국산,호주산),밀(미국산,캐나다산)],마가린,[식물성유지{팜올레인유(말레이시아산),팜스테아린유(말레이시아산)},정제소금(국산),유화제(대두),합성착향료(버터향,밀크향),혼합제제식품첨가물{식물성유지,베타카로틴(합성착색료),토코페롤}],백설탕,양파,기타가공품(우유),생이스트,식물성크림,정제소금,핫시즈닝분말,피자맛씨즈닝0.38%,혼합제제식품첨가물[밀가루,유화제,팽창제,비타민C,혼합효소제제(밀가루,효소제제),황산칼슘,효소제제],혼합제제식품첨가물(무수결정포도당,파프리카추출색소,이산화규소),건조파슬리",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022171/19860512022171-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860512022171/19860512022171-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "버터향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제식품첨가물",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "베타카로틴",
+                "sub_ingredients": [
+                  {
+                    "name": "합성착색료",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "토코페롤",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫시즈닝분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피자맛씨즈닝",
+        "amount": "0.38%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제식품첨가물",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팽창제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합효소제제",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효소제제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건조파슬리",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:23:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 476.0,
+    "carbohydrate_g": 68.33,
+    "protein_g": 10.83,
+    "fat_g": 17.5,
+    "sugar_g": 15.0,
+    "sodium_mg": 486.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 8.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "120g",
+    "collected_at": "2026-03-03 16:23:45"
+  }
+}

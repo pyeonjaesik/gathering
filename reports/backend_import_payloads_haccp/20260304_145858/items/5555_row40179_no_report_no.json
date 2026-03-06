@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "정성가득 갈비탕",
+    "reportnum": "2007040501474"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501474/2007040501474-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501474/2007040501474-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501474/2007040501474-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 소갈비(뉴질랜드산)19%,소양지(호주산)3%,손수우린맛1.7%(대우.우유,밀),인삼(국산)1%,대추(국산)0.6%,황기(국산)0.6%,정제염,후추가루,가용성성분고형분함량2.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501474/2007040501474-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉지(250g)/총 2회 제공량 500g 1회 제공량당 함량 %영양소기준치 열량 75kcal,탄수화물3g 1%,당류1g미만,단백질11g 18%,지방1.8g 4%, 포화지방0.8g 5%, 트랜스지방0g, 콜레스테롤 10mg 3%, 나트륨930mg 47% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501474/2007040501474-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소갈비",
+        "origin": "뉴질랜드산",
+        "amount": "19%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소양지",
+        "origin": "호주산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "손수우린맛",
+        "amount": "1.7%",
+        "sub_ingredients": [
+          {
+            "name": "대우",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인삼",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황기",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가용성성분고형분함량",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:55"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 11.0,
+    "fat_g": 1.8,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 930.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉지(250g)",
+    "collected_at": "2026-03-04 04:04:55"
+  }
+}

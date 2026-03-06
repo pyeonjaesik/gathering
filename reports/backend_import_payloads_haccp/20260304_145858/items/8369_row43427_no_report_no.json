@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "잼있는 쨈마을 짜먹는 딸기잼",
+    "reportnum": "20020183282317"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282317/20020183282317-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282317/20020183282317-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282317/20020183282317-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "가당냉동딸기3(딸기(국산)86.2%,백설탕)58.00%,백설탕,물엿,분말·결정포도당,아미드펙틴,구연산,구연산삼나트륨,로커스트콩검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282317/20020183282317-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=260g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282317/20020183282317-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가당냉동딸기3",
+        "origin": "국산",
+        "amount": "58.00%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "amount": "86.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말·결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:30"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 248.0,
+    "carbohydrate_g": 61.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 51.0,
+    "sodium_mg": 20.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "260g",
+    "collected_at": "2026-03-04 03:36:30"
+  }
+}

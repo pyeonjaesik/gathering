@@ -1,0 +1,449 @@
+{
+  "product": {
+    "name_ko": "제리종합",
+    "reportnum": "201003723861"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003723861/201003723861-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003723861/201003723861-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003723861/201003723861-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "메론제리 : 물엿,백설탕,한천,메론분말,합성착향료(메론향),천연색소{에스와이그린칼라(치자청색소,홍화황색소)},오부라이트분말2 *메론(생물기준)1%함유, 딸기제리 : 물엿,백설탕,한천,딸기분말,합성착향료(딸기향),천연색소{에스와이레드엘-70(락색소)},오부라이트분말2 *딸기(생물기준)1%함유, 오렌지제리 : 물엿,백설탕,한천,오렌지엑기스분말,합성착향료(오렌지향),천연색소{에스와이드레드엘-70(락색소),치자황색소},오부라이트분말2 *오렌지(생물기준)1%함유, 크림제리 : 물엿,백설탕,한천,계란흰자(계란),분말유크림(우유,대두)0.1%,딸기분말,바나나분말,합성착향료(딸기향,바나나향,바닐린),천연색소{에스와이레드엘-70(락색소)},오부라이트분말2, 팥양갱 : 물엿,백설탕,팥앙금25%(팥:중국산),한천(국산),합성착향료(바닐린),오부라이트분말2, 바나나제리 : 물엿,백설탕,한천,바나나분말0.1%,천연색소(홍화황색소),합성착향료(바나나향),오부라이트분말2, 고려홍삼제리Ⅱ : 물엿,백설탕,기타설탕,한천,홍삼농축액(고형분60%,홍삼성분함량70mg/g이상,국산)0.2%,합성착향료(드링크향,허브향),오부라이트분말2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003723861/201003723861-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=450g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201003723861/201003723861-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "메론제리",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메론분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "메론향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "에스와이그린칼라",
+                "sub_ingredients": [
+                  {
+                    "name": "치자청색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "홍화황색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메론",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기제리",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "에스와이레드엘-70",
+                "sub_ingredients": [
+                  {
+                    "name": "락색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지제리",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지엑기스분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "오렌지향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "에스와이드레드엘-70",
+                "sub_ingredients": [
+                  {
+                    "name": "락색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "치자황색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림제리",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란흰자",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말유크림",
+            "amount": "0.1%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "딸기분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바나나분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바나나향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "에스와이레드엘-70",
+                "sub_ingredients": [
+                  {
+                    "name": "락색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팥양갱",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팥앙금",
+            "origin": "중국산",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "한천",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나제리",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바나나분말",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바나나향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고려홍삼제리Ⅱ",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼농축액",
+            "origin": "국산",
+            "amount": "0.2%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "60%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍삼성분함량",
+                "amount": "70mg, g이상",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "드링크향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "허브향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오부라이트분말2",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 351.0,
+    "carbohydrate_g": 87.78,
+    "protein_g": 0.18,
+    "fat_g": 0.0,
+    "sugar_g": 69.56,
+    "sodium_mg": 7.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "450g",
+    "collected_at": "2026-03-04 04:24:17"
+  }
+}

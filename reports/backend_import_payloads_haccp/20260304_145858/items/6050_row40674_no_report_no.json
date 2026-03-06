@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "포도씨유돌자반",
+    "reportnum": "200904591417"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904591417/200904591417-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904591417/200904591417-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904591417/200904591417-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돌자반(국산)50%, 포도씨유(수입산)1%, 참기름(수입산), 들기름(수입산), 식용유, 맛소금[국산, 염화나트륨, L-글루타민산나트륨(향미증진제)],설탕,볶음깨(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904591417/200904591417-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Nutrition Facts, Serv. Size 10g, Servings About 8, Calories 70 Fat Cal. 10, *Percent Daily Values (DV)are based on a 2,000 calories diet. Amount/Serving %DV Amount/Serving %DV*, Total Fat/총지방 3g 5%, Total Carb./총탄수화물 13g 4%, Saturated Fat/포화지방 0g, Fiber/식이섬유소 3g 8%, Trans Fat/전이지방 0g 0%, Sugars/설탕 3g, Cholest./콜레스테롤 0mg 0%, Protein/단백질 2g, Sodium/나트륨 103mg  4%, Vitamin A 0% • Vitamin C 0% • Calcium 25% • Iron 6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904591417/200904591417-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돌자반",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도씨유",
+        "origin": "수입산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "sub_ingredients": [
+          {
+            "name": "염화나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음깨",
+        "origin": "수입산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:24"
+  },
+  "nutrition": {
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "Serv. Size 10g",
+    "collected_at": "2026-03-04 04:20:24"
+  }
+}

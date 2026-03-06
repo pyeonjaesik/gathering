@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "애플시나몬",
+    "reportnum": "1987053200190"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987053200190/1987053200190-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987053200190/1987053200190-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987053200190/1987053200190-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물,사과시럽{가당사과(사과:국산),사과농축액(사과:칠레산),물엿,설탕,아미드팩틴},과자{밀가루(밀:미국산,호주산),기타전분(벨기에산),식물성유지,혼합분유,정제소금},혼합분유{(탈지분유,탈염유청분말농축유청단백),외국산(네덜란드,벨기에,독일)},가공버터,설탕,물엿,야자경화유,혼합제제(글리세린지방산에스테르,덱스트린,카라기난,구아검,로커스트콩검,구연산),카제인나트륨,계피분말(계피:베트남산),감미료(수크릴로스),카카오색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987053200190/1987053200190-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=120ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/1987053200190/1987053200190-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과시럽",
+        "sub_ingredients": [
+          {
+            "name": "가당사과",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축액",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드팩틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타전분",
+            "origin": "벨기에산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈염유청분말농축유청단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피분말",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미료",
+        "sub_ingredients": [
+          {
+            "name": "수크릴로스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카카오색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:42:57"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 125.0,
+    "carbohydrate_g": 20.83,
+    "protein_g": 2.5,
+    "fat_g": 3.58,
+    "sugar_g": 11.67,
+    "sodium_mg": 63.0,
+    "cholesterol_mg": 8.33,
+    "saturated_fat_g": 2.58,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "120ml",
+    "collected_at": "2026-03-03 16:42:57"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "순살 천연돈장후랑크소시지",
+    "reportnum": "200704050149"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704050149/200704050149-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704050149/200704050149-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704050149/200704050149-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무항생제돼지고기(국산)93.05%,정제수,두류가공품(미국산,대두),천연호수소금,정백당,콜라겐파우더,혼합제제(산도조절제),조미흰후추분말,분말양파,분말마늘,파이오렌비(유산균음료),향신식물(너트맥,메이스,머스타드,마조람),천연돈장",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704050149/200704050149-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약1/2개(약38g) / 총 약 8회 제공량(300g) 1회 제공량당 함량 *%영양소기준치 열량 70kcal, 탄수화물 4g 1%, 당류 1g미만, 단백질 7g 12%, 지방3.4g 7%, 포화지방 1.2g 8%, 트랜스지방 0g, 콜레스테롤 5mg미만 1%, 나트륨230mg 12%, 칼슘10.5mg 2%, 철분0.6mg 5%, 비타민B1 0mg 0%, 비타민B2 0.04mg 3%, 비타민C 0.6mg 1%, 비타민A 0㎍RE 0%, 식이섬유 0.95g 4%, *%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704050149/200704050149-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무항생제돼지고기",
+        "origin": "국산",
+        "amount": "93.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연호수소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미흰후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파이오렌비",
+        "sub_ingredients": [
+          {
+            "name": "유산균음료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향신식물",
+        "sub_ingredients": [
+          {
+            "name": "너트맥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "머스타드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마조람",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연돈장",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:04"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 4.0,
+    "protein_g": 7.0,
+    "fat_g": 3.4,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 230.0,
+    "calcium_mg": 10.5,
+    "iron_mg": 0.6,
+    "dietary_fiber_g": 0.95,
+    "basis_amount": 38.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/2개(약38g)",
+    "collected_at": "2026-03-04 04:05:04"
+  }
+}

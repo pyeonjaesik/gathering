@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "조림간장",
+    "reportnum": "1986035805924"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986035805924/1986035805924-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986035805924/1986035805924-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986035805924/1986035805924-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 탈지대두(수입산), 액상과당, 백설탕, 천일염(호주산), 소맥(미국산), 물엿, 발효주정, 국산양파엑기스(국산), 효모추출분말, 효모추출물, 이소말토올리고당, 다시마농축액, 감초추출물, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986035805924/1986035805924-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5ml | foodSize=860ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986035805924/1986035805924-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국산양파엑기스",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감초추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:16:55"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 115.0,
+    "carbohydrate_g": 14.0,
+    "protein_g": 8.0,
+    "fat_g": 0.1,
+    "sugar_g": 6.0,
+    "sodium_mg": 6100.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5ml",
+    "total_content": "860ml",
+    "collected_at": "2026-03-03 16:16:55"
+  }
+}

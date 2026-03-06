@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "파리지앵러스킷",
+    "reportnum": "19930618060776"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060776/19930618060776-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060776/19930618060776-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060776/19930618060776-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "곡류가공품[밀가루(밀:미국,캐나다산),활성글루텐],가공버터[외국산(뉴질랜드,미국,호주산)/버터유,유크림,야자경화유],설탕,기타가공품[기타밀가루(미국산),유산균],정제소금,효모,식품첨가물혼합제제[밀가루,포도당,혼합제제,탄산칼슘,곡류가공품,황산칼슘]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060776/19930618060776-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 열량 880kcal 1회 제공량 15g, 약 16회 제공량 (240g)\n<1회 제공량당 함량> \n열량55kcal, 나트륨74mg (4%), 탄수화물6g (2%), 당류2g (2%), 지방3g (6%), 트랜스지방0g, 포화지방2g (13%), 콜레스테롤8mg (3%), 단백질1g (2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930618060776/19930618060776-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "활성글루텐",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "외국산, 뉴질랜드산, 미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "기타밀가루",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식품첨가물혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:51:53"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "sodium_mg": 74.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 2.0,
+    "fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.0,
+    "cholesterol_mg": 8.0,
+    "protein_g": 1.0,
+    "basis_amount": 15.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 15g",
+    "collected_at": "2026-03-03 19:51:53"
+  }
+}

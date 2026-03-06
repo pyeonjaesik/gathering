@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "코코팜 피치핑크 복숭아",
+    "reportnum": "20020492106389"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106389/20020492106389-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106389/20020492106389-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106389/20020492106389-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 당시럽, 나타드코코 7.5%[나타드코코 젤리(베트남산) 80%, 설탕, 정제수, 구연산], 탈지분유(국산), 복숭아농축과즙 0.36%(스페인산,배합함량 : 복숭아 100%, 복숭아과즙으로 환원기준 3.3%], 구연산, 합성향료(복숭아향), 대두다당류, 프로필렌글리콜, 구연산삼나트륨, 혼합제제(타피오카전분시럽, 유화제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106389/20020492106389-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 1 L, 100 mL당 35 kcal, 100 mL당 1일 영양성분 기준치에 대한 비율, 나트륨 9mg 0%, 탄수화물 13g 4%, 당류 12g 12%, 지방 0g 0%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 0mg 0%, 단백질 0.2g 0%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020492106389/20020492106389-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타드코코",
+        "amount": "7.5%",
+        "sub_ingredients": [
+          {
+            "name": "나타드코코 젤리",
+            "origin": "베트남산",
+            "amount": "80%",
+            "sub_ingredients": [
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축과즙",
+        "origin": "스페인산",
+        "amount": "0.36%",
+        "sub_ingredients": [
+          {
+            "name": "복숭아",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복숭아과즙으로 환원기준",
+            "amount": "3.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두다당류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "타피오카전분시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:05"
+  },
+  "nutrition": {
+    "kcal": 35.0,
+    "sodium_mg": 9.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 12.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.2,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100 mL당",
+    "collected_at": "2026-03-04 03:43:05"
+  }
+}

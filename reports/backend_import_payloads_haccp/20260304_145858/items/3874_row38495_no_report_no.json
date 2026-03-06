@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "100% 유기농 야채농장 유기농 당근",
+    "reportnum": "1996044304748"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304748/1996044304748-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304748/1996044304748-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304748/1996044304748-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,유기농당근농축액(당근즙으로95%,미국산·터키산47.5:47.5),유기농설탕,유기농레몬농축액(터키산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304748/1996044304748-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개190ml 총 1회 제공량 190ml 1회 제공량당 함량 *%영양소기준치 열량 95kcal, 탄수화물 24g 7%, 당류 22g, 식이섬유 2g 8%, 단백질 1g미만 1%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g 0%, 콜레스테롤 0mg 0%, 나트륨 60mg 3% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996044304748/1996044304748-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농당근농축액",
+        "origin": "미국산, 터키산",
+        "amount": "47.5:47.5",
+        "sub_ingredients": [
+          {
+            "name": "당근즙",
+            "amount": "95%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농레몬농축액",
+        "origin": "터키산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:08:55"
+  },
+  "nutrition": {
+    "kcal": 95.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 22.0,
+    "dietary_fiber_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 60.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1개190ml 총 1회 제공량 190ml",
+    "collected_at": "2026-03-03 21:08:55"
+  }
+}

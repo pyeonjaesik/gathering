@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "착한들 한우사골곰탕",
+    "reportnum": "2012026206888"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012026206888/2012026206888-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012026206888/2012026206888-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012026206888/2012026206888-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "한우뼈추출액99.8%{[한우사골(국산)6.04%,한우모듬뼈(국산)5.70%,한우탕갈비(국산)5.03%,정제수],고형분3.0%},천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012026206888/2012026206888-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 250ml,총 2회 제공량 500ml,1회 제공량 당 함량,*%영양성분기준치,열량 40 kcal,탄수화물 0g(0%),당류 0g,단백질 6g(11%),지방 1.7g(3%),포화지방 1.5g(10%),트랜스지방 0g,콜레스테롤 50mg미만(1%),나트륨 210mg(11%),*%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012026206888/2012026206888-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "한우뼈추출액",
+        "amount": "99.8%",
+        "sub_ingredients": [
+          {
+            "name": "한우사골",
+            "origin": "국산",
+            "amount": "6.04%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한우모듬뼈",
+            "origin": "국산",
+            "amount": "5.70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한우탕갈비",
+            "origin": "국산",
+            "amount": "5.03%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "3.0%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:11"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 210.0,
+    "basis_amount": 250.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 250ml",
+    "collected_at": "2026-03-04 04:33:11"
+  }
+}

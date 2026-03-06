@@ -1,0 +1,202 @@
+{
+  "product": {
+    "name_ko": "묵은지김치찌개",
+    "reportnum": "20020614179443"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179443/20020614179443-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179443/20020614179443-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179443/20020614179443-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 찌개용묵은지[절임배추{배추(국산), 천일염}, 무(국산), 양파, 다싯물, 고춧가루(중국산)] 24%, 두부[대두(외국산), 황산칼슘, 혼합제제(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘)], 돼지고기(국산) 7.7%, 양파, 찌개양념용베이스-1[돈골엑기스{피비엑기스(돼지등뼈 <국산> 22.66%, 돈육<돼지고기:국산> 5.66%) 98%} 26.85%, 식용돈지(돼지고기:국산) 15.35%, 향미증진제] 3.91%, 대파, 대두유, 마늘,정제소금, 생강",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179443/20020614179443-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지 (350g)/ 1회 제공량당함량(%영양성분기준치):열량 215kcal, 탄수화물 14g(4%), 당류 7g, 단백질 13g(24%), 지방 12g(24%), 포화지방 0.7g(5%), 트랜스지방 0.5g미만, 콜레스테롤 45mg(15%), 나트륨 2,150mg(108%)/%영양성분기준치 : 1일영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179443/20020614179443-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찌개용묵은지",
+        "amount": "24%",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다싯물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "7.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찌개양념용베이스-1",
+        "amount": "3.91%",
+        "sub_ingredients": [
+          {
+            "name": "돈골엑기스",
+            "sub_ingredients": [
+              {
+                "name": "피비엑기스",
+                "sub_ingredients": [
+                  {
+                    "name": "돼지등뼈",
+                    "origin": "국산",
+                    "amount": "22.66%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "돈육",
+                    "origin": "국산",
+                    "amount": "5.66%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "식용돈지",
+            "origin": "국산",
+            "amount": "15.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:49"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 7.0,
+    "protein_g": 13.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 45.0,
+    "sodium_mg": 2150.0,
+    "basis_amount": 350.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지 (350g)",
+    "collected_at": "2026-03-04 03:43:49"
+  }
+}

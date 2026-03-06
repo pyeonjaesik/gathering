@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "메로나 황도",
+    "reportnum": "19840448002184"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840448002184/19840448002184-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840448002184/19840448002184-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840448002184/19840448002184-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,복숭아퓨레시럽16.5%[복숭아(황도)(중국산)60%,설탕,아미드펙틴,잔탄검,구연산],물엿,설탕,혼합분유[외국산(네덜란드,아일랜드,독일)],야자유(인도네시아산),전분가공품,혼합제제(합성향료,천연향료,젖산),혼합제제(유화제,셀룰로스검,로커스트콩검,구아검,카라기난),구연산,셀룰로스검,로커스트콩검,정제소금,비트레드,심황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840448002184/19840448002184-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100g(ml) | foodSize=75ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840448002184/19840448002184-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아퓨레시럽",
+        "amount": "16.5%",
+        "sub_ingredients": [
+          {
+            "name": "복숭아(황도)",
+            "origin": "중국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산, 네덜란드산, 아일랜드산, 독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "합성향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "셀룰로스검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비트레드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:48:49"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 140.0,
+    "carbohydrate_g": 29.33,
+    "protein_g": 0.93,
+    "fat_g": 2.4,
+    "sugar_g": 22.67,
+    "sodium_mg": 47.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.13,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100g(ml)",
+    "total_content": "75ml",
+    "collected_at": "2026-03-03 15:48:49"
+  }
+}

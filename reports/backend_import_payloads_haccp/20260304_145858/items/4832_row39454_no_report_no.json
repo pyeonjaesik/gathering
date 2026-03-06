@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "씨튼 생과자",
+    "reportnum": "2003022135170"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135170/2003022135170-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135170/2003022135170-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135170/2003022135170-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백옥앙금{흰강낭콩(외국산),산성황산나트륨(아황산류),백설탕,물엿,정제소금(국산)}89.3%,계란(무황생제,국산)7.1%,물엿1.8%,전지분유(국산)1.8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135170/2003022135170-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총중량 180g 기준 \n총열량620kcal, 나트륨150mg 8%, 탄수화물118g 36%, 당류83g 83%, 지방9g 17%, 트랜스지방0g, 포화지방3.9g 26%, 콜레스테롤75mg 25%, 단백질17g 31%\n※ 1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135170/2003022135170-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백옥앙금",
+        "amount": "89.3%",
+        "sub_ingredients": [
+          {
+            "name": "흰강낭콩",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산성황산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "아황산류",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "amount": "7.1%",
+        "sub_ingredients": [
+          {
+            "name": "무황생제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "origin": "국산",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:51"
+  },
+  "nutrition": {
+    "sodium_mg": 150.0,
+    "carbohydrate_g": 118.0,
+    "sugar_g": 83.0,
+    "fat_g": 9.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.9,
+    "cholesterol_mg": 75.0,
+    "protein_g": 17.0,
+    "basis_amount": 180.0,
+    "basis_unit": "g",
+    "basis_text": "총중량 180g 기준",
+    "collected_at": "2026-03-04 03:45:51"
+  }
+}

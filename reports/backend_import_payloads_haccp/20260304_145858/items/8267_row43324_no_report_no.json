@@ -1,0 +1,624 @@
+{
+  "product": {
+    "name_ko": "레인보우",
+    "reportnum": "2001036009348"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036009348/2001036009348-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036009348/2001036009348-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036009348/2001036009348-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "[텐더쵸코]원유(유기농,국산53.6%),유크림(국산),정제수,식이섬유,탈지분유(국산),결정과당,다크쵸코렛0.9%(벨기에산),코코아분말0.75%(싱가포르산),혼합제제(글리세린지방산에스테르,소르비탄지방산에스테르,구아검,카라기난,제이인산나트륨,잔탄검,로커스트콩검,덱스트린,정제포도당),천연바닐라추출물,합성착향료(초콜렛향),당류가공품,한천,변성전분,감미료(수크랄로스),치자황색소,비타민C 우유,대두함유[스윗멜로우]원유(유기농,국산52.5%),유크림(국산),정제수,식이섬유,탈지분유(국산),결정과당,혼합제제(글리세린지방산에스테르,소르비탄지방산에스테르,구아검,카라기난,제이인산나트륨,잔탄검,로커스트콩검,덱스트린,정제포도당),비트레드,스피룰리나색소,한천,변성전분,감미료(수크랄로스),합성착향료(코튼캔디향),비타민C우유함유[바나나스플릿]원유55.5%(유기농,국산),유크림(미국산),물,설탕,탈지분유(국산),물엿,유청분말,나한과농축액(고형분함량65%),딸기농축액(고형분함량65%),바나나퓨레0.1%(코스타리카산,고형분함량65%),코코아분말0.75%(싱가포르산),초코렛0.9%(벨기에산),천연바닐라향,혼합제제(유화제1,유화제2,구아검,카라기난,제이인산나트륨,잔탄검,로커스트콩검,덱스트린,포도당),한천,변성전분,수크랄로스(감미료),합성향료(쵸콜렛향,바나나향,딸기향),치자황색소,홍화황색소,비트레드,구연산 우유,대두 함유[레인보우아이스]정제수,결정과당,고과당,물엿,발효젖산칼슘,변성전분,야자경화유,혼합제제(카르복시메틸셀룰로오스나트륨,구아검,카라기난,폴리인산나트륨),구연산,감미료(수크랄로스),합성향료(오렌지향,파인 애플향,포도향,소다향),포도과피색소,코치닐색소,치자황색소,홍화황색소,스피룰리나색소,한천,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036009348/2001036009348-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=50g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001036009348/2001036009348-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "[텐더쵸코]",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "origin": "국산",
+            "amount": "53.6%",
+            "sub_ingredients": [
+              {
+                "name": "유기농",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식이섬유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다크쵸코렛",
+            "origin": "벨기에산",
+            "amount": "0.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "amount": "0.75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소르비탄지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "잔탄검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제포도당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연바닐라추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "초콜렛향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "당류가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감미료",
+            "sub_ingredients": [
+              {
+                "name": "수크랄로스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "[스윗멜로우]",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "origin": "국산",
+            "amount": "52.5%",
+            "sub_ingredients": [
+              {
+                "name": "유기농",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식이섬유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소르비탄지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "잔탄검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제포도당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스피룰리나색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감미료",
+            "sub_ingredients": [
+              {
+                "name": "수크랄로스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "코튼캔디향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "[바나나스플릿]",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "origin": "국산",
+            "amount": "55.5%",
+            "sub_ingredients": [
+              {
+                "name": "유기농",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유크림",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나한과농축액",
+            "sub_ingredients": [
+              {
+                "name": "고형분함량",
+                "amount": "65%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "딸기농축액",
+            "sub_ingredients": [
+              {
+                "name": "고형분함량",
+                "amount": "65%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바나나퓨레",
+            "origin": "코스타리카산",
+            "amount": "0.1%",
+            "sub_ingredients": [
+              {
+                "name": "고형분함량",
+                "amount": "65%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "amount": "0.75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초코렛",
+            "origin": "벨기에산",
+            "amount": "0.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연바닐라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "유화제1",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제2",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "잔탄검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": [
+              {
+                "name": "감미료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "쵸콜렛향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바나나향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "[레인보우아이스]",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효젖산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "카르복시메틸셀룰로오스나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감미료",
+            "sub_ingredients": [
+              {
+                "name": "수크랄로스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "오렌지향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파인 애플향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소다향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도과피색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스피룰리나색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:29:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 50.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 0.0,
+    "fat_g": 1.0,
+    "sugar_g": 6.0,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "50g",
+    "collected_at": "2026-03-04 03:29:33"
+  }
+}

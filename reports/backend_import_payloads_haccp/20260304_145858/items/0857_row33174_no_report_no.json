@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "꿀홍삼",
+    "reportnum": "19780614001363"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001363/19780614001363-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001363/19780614001363-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001363/19780614001363-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아카시아벌꿀2%국산,홍삼농축액국산(홍삼 사포닌70mg/g이상,고형분60%이상),정제수,액상과당,트레할로스,시클로덱스트린,사과청정 농축액,합성착향료(벌꿀향,인삼향),구연산,효소처리스테비아,카라멜색소,비타민C,혼합제제(규소수지,유화제,증점제),사과과즙1%칠레산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001363/19780614001363-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(175ml) 열량 90kcal, 탄수화물 22g(7%), 당류 22g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 10mg(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614001363/19780614001363-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아카시아벌꿀",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "홍삼 사포닌",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레할로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시클로덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과청정 농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "벌꿀향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인삼향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증점제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과과즙",
+        "origin": "칠레산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:13:15"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 22.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 175.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(175ml)",
+    "collected_at": "2026-03-03 14:13:15"
+  }
+}

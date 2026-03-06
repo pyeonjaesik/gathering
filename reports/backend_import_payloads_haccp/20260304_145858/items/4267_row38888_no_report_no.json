@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "단호박밤생수프",
+    "reportnum": "19990364158586"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158586/19990364158586-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158586/19990364158586-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158586/19990364158586-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,우유(국산),단호박18.00%(국산),생크림,증숙감자,밤다이스4.00%(국산),백설탕,양파,무염버터,화이트루(대두,밀),혼합제제(변성전분,말토덱스트린),치킨스톡P,잔탄검,정제소금,치자황색소,밀분해추출물,아미노베이스P",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158586/19990364158586-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (190g)/ 총 3회 제공량(570g) *%영양성분기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 180kcal, 탄수화물 25g 8%,식이섬유 0g 0%,당류 15g,단백질 4g 7%,지방 7g 14%, 포화지방 4.4g 29%,트랜스지방 0.2g,콜레스테롤 35mg 12%,나트륨 140mg 7%,비타민A 156㎍R.E. 22%/비타민C 0mg 0%/칼슘 61mg 9%/철 0.4mg 3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158586/19990364158586-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박",
+        "origin": "국산",
+        "amount": "18.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤다이스",
+        "origin": "국산",
+        "amount": "4.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무염버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트루",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치킨스톡P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀분해추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미노베이스P",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:01:39"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 25.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 15.0,
+    "protein_g": 4.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 4.4,
+    "trans_fat_g": 0.2,
+    "cholesterol_mg": 35.0,
+    "sodium_mg": 140.0,
+    "calcium_mg": 61.0,
+    "iron_mg": 0.4,
+    "basis_amount": 190.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (190g)",
+    "collected_at": "2026-03-03 22:01:39"
+  }
+}

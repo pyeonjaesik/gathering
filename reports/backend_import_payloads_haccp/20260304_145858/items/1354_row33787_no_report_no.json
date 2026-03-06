@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "도리토스허니칠리맛",
+    "reportnum": "19830308010186"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010186/19830308010186-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010186/19830308010186-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010186/19830308010186-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(호주산),혼합식용유(해바라기유50%(수입산),팜올레인유49.9%(말레이시아산),오르가녹스,올레오레진로즈마리,토코페롤(대두)),허니칠리씨즈닝(싱가포르산;백설탕,정제소금,분말·결정포도당,칠리분말,미트테이스트분말(밀,계란),크림밀크분말(우유),허니분말,합성감미료(수크랄로스)),산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010186/19830308010186-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=84g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010186/19830308010186-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "49.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오르가녹스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진로즈마리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허니칠리씨즈닝",
+        "origin": "싱가포르산",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말·결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미트테이스트분말",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "크림밀크분말",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "허니분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성감미료",
+            "sub_ingredients": [
+              {
+                "name": "수크랄로스",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:05:39"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 517.0,
+    "carbohydrate_g": 63.33,
+    "protein_g": 6.67,
+    "fat_g": 26.67,
+    "sugar_g": 6.67,
+    "sodium_mg": 567.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "84g",
+    "collected_at": "2026-03-03 15:05:39"
+  }
+}

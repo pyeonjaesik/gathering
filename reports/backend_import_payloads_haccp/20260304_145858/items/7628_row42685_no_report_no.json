@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "산약촌쌍화D",
+    "reportnum": "1994054302322"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994054302322/1994054302322-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994054302322/1994054302322-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994054302322/1994054302322-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌍화추출액(고형분5.5%)80%,정제수,액상과당,무수구연산,글리신,정제염,안식향산나트륨(합성보존료),스테비텐마일드(천연감미료),허브향(합성착향료)·쌍화추출액100%중작약(국산)31%, 숙지황(국산)15%, 당귀(국산)12%,천궁(국산)12%,황기(국산)12%, 계피, 감초, 대추, 건강, 산약",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994054302322/1994054302322-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1000ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994054302322/1994054302322-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌍화추출액",
+        "amount": "고형분5.5% 80%",
+        "sub_ingredients": [
+          {
+            "name": "작약",
+            "origin": "국산",
+            "amount": "31%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숙지황",
+            "origin": "국산",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "origin": "국산",
+            "amount": "12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천궁",
+            "origin": "국산",
+            "amount": "12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "origin": "국산",
+            "amount": "12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무수구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "안식향산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스테비텐마일드",
+        "sub_ingredients": [
+          {
+            "name": "천연감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허브향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:07:11"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 40.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 5.0,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1000ml",
+    "collected_at": "2026-03-03 20:07:11"
+  }
+}

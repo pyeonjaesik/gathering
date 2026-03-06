@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "상쾌한아침 청매실",
+    "reportnum": "1995022705077"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995022705077/1995022705077-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995022705077/1995022705077-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995022705077/1995022705077-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,정백당,액상과당,스위티스-디에스500[액상과당,물엿,수크랄로스(합성감미료),스테비올배당체],매실농축액[국산,고형분65%이상(매실과즙으로6%)]0.56%,사과농축액(국산,고형분72%이상)0.56%,덱스트린,구연산,젖산칼슘,구연산삼나트륨,비타민C,카라멜색소,수크랄로스(합성감미료),합성착향료(매실향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995022705077/1995022705077-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=2160ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995022705077/1995022705077-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위티스-디에스500",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "스테비올배당체",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매실농축액",
+        "origin": "국산",
+        "amount": "0.56%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매실과즙",
+            "amount": "6%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "국산",
+        "amount": "0.56%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "72%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "매실향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:11:10"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 36.0,
+    "carbohydrate_g": 8.89,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 8.89,
+    "sodium_mg": 3.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "2160ml",
+    "collected_at": "2026-03-03 20:11:10"
+  }
+}

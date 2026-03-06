@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "왕소라형과자",
+    "reportnum": "20100372386268"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386268/20100372386268-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386268/20100372386268-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386268/20100372386268-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산,호주산),팜유(말레이시아산),백설탕,물엿(옥분,엿기름,효소제제),볶음참깨(중국산),정제염,가공전지분,분말·결정포도당,산도조절제,땅콩버터,천일염,효소제제,향신료올레오레진류(해바라기유,로즈마리추출물)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386268/20100372386268-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386268/20100372386268-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료올레오레진류",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리추출물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 70.0,
+    "protein_g": 7.5,
+    "fat_g": 15.0,
+    "sugar_g": 15.0,
+    "sodium_mg": 425.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:24:07"
+  }
+}

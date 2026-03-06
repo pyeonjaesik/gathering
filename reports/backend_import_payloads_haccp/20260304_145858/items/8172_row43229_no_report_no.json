@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "양송이버섯생수프",
+    "reportnum": "19990364158490"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158490/19990364158490-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158490/19990364158490-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158490/19990364158490-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,멸균우유(국산),양송이버섯(국산,네덜란드산),유크림(이탈리아산),증숙감자,양파,감자,스프베이스,닭추출농축베이스,화이트루,혼합제제(변성전분,말토덱스트린),옥배유,조미분P,데어리스프레드,치킨엑기스,마늘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158490/19990364158490-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150ml(g) | foodSize=570g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158490/19990364158490-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸균우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양송이버섯",
+        "origin": "국산, 네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "이탈리아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스프베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭추출농축베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥배유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미분P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:01:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 89.0,
+    "carbohydrate_g": 5.79,
+    "protein_g": 2.11,
+    "fat_g": 6.32,
+    "sugar_g": 1.58,
+    "sodium_mg": 263.0,
+    "cholesterol_mg": 10.53,
+    "saturated_fat_g": 3.16,
+    "trans_fat_g": 0.16,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150ml(g)",
+    "total_content": "570g",
+    "collected_at": "2026-03-03 22:01:12"
+  }
+}

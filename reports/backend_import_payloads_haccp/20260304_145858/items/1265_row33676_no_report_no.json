@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "우리밀보리건빵",
+    "reportnum": "19820481021190"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021190/19820481021190-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021190/19820481021190-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021190/19820481021190-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀,국산)73.4%,유기농설탕11.7%,자연드림네이처-2[가공유지(팜에스테르화유:말레이시아산,야자에스테르화유:수입산),버터(우유:국산),식물성유지,유크림,옥수수전분],볶음보리분말(보리100%,국산)3.1%,전지분유(국산),구운소금(국산),탄산수소암모늄,탄산수소나트륨,혼합제제(효모추출물,프로테아제,순무씨유,덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021190/19820481021190-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/19820481021190/19820481021190-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "73.4%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "11.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자연드림네이처-2",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자에스테르화유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음보리분말",
+        "origin": "국산",
+        "amount": "3.1%",
+        "sub_ingredients": [
+          {
+            "name": "보리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전지분유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로테아제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "순무씨유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:54:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 436.0,
+    "carbohydrate_g": 79.44,
+    "protein_g": 7.78,
+    "fat_g": 10.0,
+    "sugar_g": 12.78,
+    "sodium_mg": 372.0,
+    "cholesterol_mg": 8.33,
+    "saturated_fat_g": 5.56,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 14:54:31"
+  }
+}

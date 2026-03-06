@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "베지밀 건강맘",
+    "reportnum": "19840415001340"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001340/19840415001340-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001340/19840415001340-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001340/19840415001340-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액 86%[대두고형분 7%이상, 대두-외국산(미국,캐나다,호주 등)], 검은콩추출액 6%(고형분 7%이상, 검은콩-국산),이소말토올리고당, 코코넛밀크[코코넛추출물(코코넛-태국산), 구아검, 잔탄검, 카라기난], 팔라티노스, 탄산칼슘혼합제제(탄산칼슘, 대두다당류), 대두유, 결정과당, 천일염, 글리세린지방산에스테르, 아마씨유, 단호박농축액, 건조효모분말(비타민D3), 영화강화제 ·성분명 및 함량 : 오메가-3지방산 400mg, 라우르산 300mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001340/19840415001340-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=분말 20g, 액상 200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001340/19840415001340-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "86%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검은콩추출액",
+        "origin": "국산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검은콩",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛밀크",
+        "sub_ingredients": [
+          {
+            "name": "코코넛추출물",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팔라티노스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두다당류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아마씨유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조효모분말",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "영화강화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:45:09"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 58.0,
+    "carbohydrate_g": 5.0,
+    "protein_g": 3.16,
+    "fat_g": 2.89,
+    "sugar_g": 2.63,
+    "sodium_mg": 47.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.79,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "분말 20g, 액상 200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-03 15:45:09"
+  }
+}

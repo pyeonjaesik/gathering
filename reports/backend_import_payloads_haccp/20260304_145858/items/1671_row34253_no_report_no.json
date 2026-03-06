@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "하루건강두유 마카다미아",
+    "reportnum": "19840415001358"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001358/19840415001358-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001358/19840415001358-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001358/19840415001358-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두유액91%[대두고형분7%이상,대두-외국산(미국,캐나다,호주 등)],정백당,정제수,대두유(외국산-미국,브라질,파라과이 등),마카다미아페이스트 0.4%(마카다미아100%-호주산),글리세린지방산에스테르,정제염,탄산수소나트륨,카라기난,드라이비타민D3(비타민D3,디엘알파토코페롤,중쇄중성지방,아카시아검,수크로오스,옥수수전분),합성향료(마카다미아향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001358/19840415001358-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 190ml 135kcal\n나트륨160mg 8%, 탄수화물12g 4%, 당류10g 10%, 지방7g 13%, 트랜스지방0g, 포화지방15g 10%, 콜레스테롤0mg 0%, 단백질6g 11%, 비다민D3㎍ 30%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001358/19840415001358-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "91%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "브라질산, 파라과이산",
+        "sub_ingredients": [
+          {
+            "name": "외국산-미국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마카다미아페이스트",
+        "origin": "호주산",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "마카다미아",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "드라이비타민D3",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중쇄중성지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아카시아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "마카다미아향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:45:46"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "sodium_mg": 160.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 10.0,
+    "fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 15.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 6.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "총내용량 190ml",
+    "collected_at": "2026-03-03 15:45:46"
+  }
+}

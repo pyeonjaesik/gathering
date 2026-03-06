@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "르방 통밀발효종빵",
+    "reportnum": "2017008092937"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2017/2017008092937/2017008092937-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/2017008092937/2017008092937-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/2017008092937/2017008092937-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,밀가루,통밀가루,강력쌀가루,건조덩굴월귤,쌀눈유,호두분태,아몬드슬라이스,검은콩|검은깨,정제소금,당류가공품,인스턴트이스트",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/2017008092937/2017008092937-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/2017008092937/2017008092937-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "통밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "강력쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조덩굴월귤",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀눈유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두분태",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩|검은깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인스턴트이스트",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 342.0,
+    "carbohydrate_g": 49.5,
+    "protein_g": 7.4,
+    "fat_g": 12.7,
+    "sugar_g": 7.2,
+    "sodium_mg": 176.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 04:47:50"
+  }
+}

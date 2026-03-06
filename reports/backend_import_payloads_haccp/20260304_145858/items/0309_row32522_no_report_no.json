@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "스모크치킨",
+    "reportnum": "1972012500153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500153/1972012500153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500153/1972012500153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500153/1972012500153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기94.70%(국산),스모크치킨복합믹스[소르빈산칼륨(합성보존료),아질산나트륨(발색제,합성보존료),산도조절제,L-글루타민산나트륨(향미증진제),L-아스코르빈산나트륨],대두단백(미국산),간장(밀),비프시즈닝[L-글루타민산나트륨(향미증진제),영양강화제,유화게,잔탄검,글리세린,합성착향료(볶음그릴향,에틸말톨)],마늘시즈닝오일(잔탄검,유화제,산도조절제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500153/1972012500153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(45g)/총4회 제공량(180g) 1회 제공량당 함량  *%영양소 기준치: 열량 105kcal,탄수화물1g미만 0%,당류1g미만,단백질10g 18%,지방7g 14%, 포화지방2.7g 18%, 트랜스지방 0g, 콜레스테롤15mg 5%, 나트륨 240mg 12%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500153/1972012500153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "94.70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크치킨복합믹스",
+        "sub_ingredients": [
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-아스코르빈산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "볶음그릴향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에틸말톨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘시즈닝오일",
+        "sub_ingredients": [
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:28:53"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "protein_g": 10.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 240.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(45g)",
+    "collected_at": "2026-03-03 13:28:53"
+  }
+}

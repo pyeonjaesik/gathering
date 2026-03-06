@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "정성가득 진간장",
+    "reportnum": "19880449001215"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001215/19880449001215-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001215/19880449001215-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001215/19880449001215-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,탈지대두(인도산),천일염(호주산),기타과당,양조간장[탈지대두(인도산),천일염(호주산),소맥(밀)],L-글루탐산나트륨(향미증진제),파라옥시안식향산에틸(보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001215/19880449001215-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5ml | foodSize=900ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001215/19880449001215-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "origin": "인도산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파라옥시안식향산에틸",
+        "sub_ingredients": [
+          {
+            "name": "보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:50"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 55.0,
+    "carbohydrate_g": 7.0,
+    "protein_g": 6.0,
+    "fat_g": 0.0,
+    "sugar_g": 2.0,
+    "sodium_mg": 6030.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5ml",
+    "total_content": "900ml",
+    "collected_at": "2026-03-04 03:25:50"
+  }
+}

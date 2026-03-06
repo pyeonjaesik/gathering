@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "고시볼-키위",
+    "reportnum": "19990386335162"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335162/19990386335162-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335162/19990386335162-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335162/19990386335162-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀(국산),빠데아글라세이브와{백설탕,식물성유지,탈지분유(우유),레시틴(대두)}, 키위(뉴질랜드산)27%,소맥분(밀:벨기에산),설탕,대두유(외국산:아르헨티나,미국,베트남 등),대두",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335162/19990386335162-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량160kcal, 나트륨10mg (1%), 탄수화물18g (5%), 당류13g (13%), 지방9g (18%), 포화4.4g (29%), 트렌스지방0g, 콜레스지방0g (0%),,단백질1g (2%)\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335162/19990386335162-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빠데아글라세이브와",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "키위",
+        "origin": "뉴질랜드산",
+        "amount": "27%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 아르헨티나산, 미국산, 베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:02:17"
+  },
+  "nutrition": {
+    "kcal": 160.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 13.0,
+    "fat_g": 9.0,
+    "protein_g": 1.0,
+    "collected_at": "2026-03-03 22:02:17"
+  }
+}

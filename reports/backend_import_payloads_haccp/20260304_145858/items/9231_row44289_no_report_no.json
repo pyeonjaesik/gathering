@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "키즈하이 녹즙",
+    "reportnum": "2009044204031"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204031/2009044204031-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204031/2009044204031-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204031/2009044204031-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,유기케일즙 20%(케일:국산),파인애플즙(베트남산),프락토올리고당,배농축과즙(터키산),사과농축과즙,적포도농축과즙,바나나퓨레,그린키위퓨레,해조칼슘,본펩-난황 유래펩타이드 (Bonepep™) [계란함유]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204031/2009044204031-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=130ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204031/2009044204031-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기케일즙",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "케일",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플즙",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "origin": "터키산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그린키위퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "본펩-난황 유래펩타이드",
+        "sub_ingredients": [
+          {
+            "name": "Bonepep™",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:41"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 42.0,
+    "carbohydrate_g": 10.77,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 8.46,
+    "sodium_mg": 73.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "130ml",
+    "collected_at": "2026-03-04 04:19:41"
+  }
+}

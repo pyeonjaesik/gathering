@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "고구마샐러드",
+    "reportnum": "200504150202217"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202217/200504150202217-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202217/200504150202217-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202217/200504150202217-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고구마70.7%(중국산),고구마베이스[시아스샐러드마요{대두유(콩:외국산/브라질,미국,파라과이산),난백액(계란:국산)},백설탕,결정과당,정제소금(국산)하나가쓰오소스],정제수,스위트콘3%(태국산/옥수수62.71%),결정과당,혼합제제(히트록시프로필인산이전분,설탕,말토덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202217/200504150202217-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량145kcal, 단백질1g(2%), 포화지방0.7%(5%), 트랜스지방0g, 지방4.1g(8%), 당류14g, 탄수화물26g(8%), 나트륨200g(10%), 콜레스테롤5mg미만(1%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150202217/200504150202217-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고구마",
+        "origin": "중국산",
+        "amount": "70.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마베이스",
+        "sub_ingredients": [
+          {
+            "name": "시아스샐러드마요",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "origin": "외국산, 브라질산, 미국산, 파라과이산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난백액",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "결정과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하나가쓰오소스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "origin": "태국산",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "amount": "62.71%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "히트록시프로필인산이전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:16"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "protein_g": 1.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "fat_g": 4.1,
+    "sugar_g": 14.0,
+    "carbohydrate_g": 26.0,
+    "sodium_mg": 200.0,
+    "collected_at": "2026-03-04 03:54:16"
+  }
+}

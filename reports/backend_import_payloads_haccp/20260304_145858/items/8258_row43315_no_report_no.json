@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "한살림 단호박쿠키",
+    "reportnum": "2001032007837"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007837/2001032007837-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007837/2001032007837-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007837/2001032007837-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루 38.8%(밀:국산),버터23.3%(우유100%:국산),갈색설탕17.1%,유정란12.8%(국산),단호박분말7.7%(국산),태움용융소금0.3%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007837/2001032007837-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007837/2001032007837-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "38.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "amount": "23.3%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈색설탕",
+        "amount": "17.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "12.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박분말",
+        "origin": "국산",
+        "amount": "7.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "태움용융소금",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 543.0,
+    "carbohydrate_g": 66.67,
+    "protein_g": 10.0,
+    "fat_g": 26.67,
+    "sugar_g": 23.33,
+    "sodium_mg": 163.0,
+    "cholesterol_mg": 96.67,
+    "saturated_fat_g": 13.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:28:11"
+  }
+}

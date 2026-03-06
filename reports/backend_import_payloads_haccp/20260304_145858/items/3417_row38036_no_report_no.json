@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "흑미쌀과자",
+    "reportnum": "19940364253159"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940364253159/19940364253159-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940364253159/19940364253159-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940364253159/19940364253159-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀흑미48%(국산/무농약),백태6.4%(국산/무농약),쌀조청27%(멥쌀:국산/유기,엿기름:국산),옥수수(국산),볶음소금(국산),설탕(유기),버터(유크림100%/우유:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940364253159/19940364253159-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*약 2회 제공량(30g) *55g *%영양소 기준치:1일 영양소 기준치에 대한 비율\n<1회 제공량당 함량,함량,%영양소 기준치>\n열량120kcal, 나트륨30mg 1%, 탄수화물24g 7%, 당류6g, 지방1.6g 3%, 트랜스지방0g, 포화지방0.8g 6%, 콜레스테롤0mg 0%, 단백질2g 4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940364253159/19940364253159-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀흑미",
+        "origin": "국산",
+        "amount": "48%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백태",
+        "origin": "국산",
+        "amount": "6.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "amount": "27%",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "origin": "국산",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": [
+          {
+            "name": "유기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": [
+              {
+                "name": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:55:10"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "sodium_mg": 30.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 6.0,
+    "fat_g": 1.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "약 2회 제공량(30g)",
+    "collected_at": "2026-03-03 19:55:10"
+  }
+}

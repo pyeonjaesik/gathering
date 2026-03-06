@@ -1,0 +1,109 @@
+{
+  "product": {
+    "name_ko": "조선호텔 볶음김치",
+    "reportnum": "20100036571103"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100036571103/20100036571103-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100036571103/20100036571103-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100036571103/20100036571103-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "조선호텔 맛김치[배추79.4%(국산),무4.1%(국산), 고춧가루2%(국산),조선호텔 특제육수, 마늘(국산)]94.6%,콩기름(대두유)[콩기름100%(수입산)]3%,대파(국산),다시다 멸치",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100036571103/20100036571103-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량(100g) *%영양성분기준치 열량 84kcal, 탄수화물 7g(2%), 당류 7g, 단백질 2g(4%), 지방 4g(8%), 포화지방 1g(3%), 트랜스지방 0g, 콜레스테롤 3mg(1%), 나트륨 942mg(43%) *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100036571103/20100036571103-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "조선호텔 맛김치",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "amount": "79.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "amount": "4.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "국산",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조선호텔 특제육수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩기름",
+        "origin": "수입산",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "콩기름",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시다 멸치",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:53"
+  },
+  "nutrition": {
+    "kcal": 84.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 7.0,
+    "protein_g": 2.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 3.0,
+    "sodium_mg": 942.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량당 함량(100g)",
+    "collected_at": "2026-03-04 04:21:53"
+  }
+}

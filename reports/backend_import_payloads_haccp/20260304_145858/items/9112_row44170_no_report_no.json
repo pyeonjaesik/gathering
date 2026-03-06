@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "아침의 선물",
+    "reportnum": "2008050200220"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200220/2008050200220-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200220/2008050200220-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200220/2008050200220-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "1A등급원유(국산,세균수기준,농축우유포함)100%(강화성분제외),칼슘혼합제0.10%[탄산칼슘,대두식이섬유],비타민E혼합제제0.006%(초산비타민E,유당,유화제,글리세린모노스테아레이트,제삼인산칼슘),비타민A혼합제제0.001%(비타민A아세테이트,디엘알파토코페롤,아라비아검,자당,전분,제삼인산칼슘),비타민D,혼합제제0.001%[비타민D3,디엘알파토코페롤,아라비아검,자당,전분,제삼인산칼슘,식물성오일)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200220/2008050200220-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=200ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200220/2008050200220-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "100%(강화성분제외)",
+        "sub_ingredients": [
+          {
+            "name": "농축우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칼슘혼합제",
+        "amount": "0.10%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민E혼합제제",
+        "amount": "0.006%",
+        "sub_ingredients": [
+          {
+            "name": "초산비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린모노스테아레이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민A혼합제제",
+        "amount": "0.001%",
+        "sub_ingredients": [
+          {
+            "name": "비타민A아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민D혼합제제",
+        "amount": "0.001%",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성오일",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:14:13"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 65.0,
+    "carbohydrate_g": 4.75,
+    "protein_g": 3.3,
+    "fat_g": 3.6,
+    "sugar_g": 4.75,
+    "sodium_mg": 50.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 2.5,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "200ml",
+    "collected_at": "2026-03-04 04:14:13"
+  }
+}

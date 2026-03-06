@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "썬키스트모과생강",
+    "reportnum": "19980449002479"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002479/19980449002479-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002479/19980449002479-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002479/19980449002479-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "모과추출농축액(고형분37.5%,국산)0.2%,생강추출농축액(고형분18%,국산)0.05%,정제수,백설탕,배과즙(국산),벌꿀(국산),구연산,구연산나트륨,진피추출농축액,효소처리루틴,수크랄로스(합성감미료),카라멜색소,천연생강향,합성착향료(오렌지향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002479/19980449002479-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=280ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002479/19980449002479-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "모과추출농축액",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "37.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강추출농축액",
+        "origin": "국산",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "18%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배과즙",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진피추출농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "amount": "합성감미료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연생강향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "amount": "오렌지향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:47:52"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 54.0,
+    "carbohydrate_g": 13.57,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 13.21,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "280ml",
+    "collected_at": "2026-03-03 21:47:52"
+  }
+}

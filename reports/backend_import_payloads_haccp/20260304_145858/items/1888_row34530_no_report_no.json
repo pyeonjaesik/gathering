@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "넛츠핫케이크가루",
+    "reportnum": "19860309018476"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018476/19860309018476-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018476/19860309018476-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018476/19860309018476-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(미국산),정백당,땅콩분태9.6%(중국산),포도당,유지혼합분말,탈지땅콩분말3%(중국산),식물성유지분말,아몬드분태2.4%(미국산),프락토올리고당1.1%,정제염,계피분말,전분,구아검,합성착향료(바닐라향),산도조절제.[소맥분(밀),땅콩분태(땅콩),유당(우유),레시틴(대두)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018476/19860309018476-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018476/19860309018476-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩분태",
+        "origin": "중국산",
+        "amount": "9.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유지혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지땅콩분말",
+        "origin": "중국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드분태",
+        "origin": "미국산",
+        "amount": "2.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "1.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:07:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 385.0,
+    "carbohydrate_g": 73.0,
+    "protein_g": 10.0,
+    "fat_g": 7.0,
+    "sugar_g": 19.0,
+    "sodium_mg": 680.0,
+    "dietary_fiber_g": 5.4,
+    "calcium_mg": 43.0,
+    "iron_mg": 0.7,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 3.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "400g",
+    "collected_at": "2026-03-03 16:07:17"
+  }
+}

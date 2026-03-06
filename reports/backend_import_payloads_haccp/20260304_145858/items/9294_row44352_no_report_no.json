@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "묵은지",
+    "reportnum": "2010003657151"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657151/2010003657151-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657151/2010003657151-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657151/2010003657151-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "배추(국산)75.14%,정제수7.6%,무(국산)5.75%,고춧가루(국산)3%,마늘(국산)2.4%,양파(국산)2%,정제염1.5%,찹쌀풀(찹쌀가루15%,정제수85%)1%,멸치액젓(국산)(멸치75%,식염25%)0.6%,설탕0.5%,새우젓(국산)(새우75%,소금25%)0.3%,생강(국산)0.16%,황태포(러시아산)(명태100%)0.05%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657151/2010003657151-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=40g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657151/2010003657151-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "배추",
+        "origin": "국산",
+        "amount": "75.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "7.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "amount": "5.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "2.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀풀",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀가루",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "amount": "85%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "멸치액젓",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "멸치",
+            "amount": "75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "amount": "25%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우젓",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "amount": "75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "amount": "25%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "amount": "0.16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태포",
+        "origin": "러시아산",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "명태",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 45.0,
+    "carbohydrate_g": 7.0,
+    "protein_g": 3.0,
+    "fat_g": 0.9,
+    "sugar_g": 0.0,
+    "sodium_mg": 890.0,
+    "cholesterol_mg": 1.9,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "40g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:21:54"
+  }
+}

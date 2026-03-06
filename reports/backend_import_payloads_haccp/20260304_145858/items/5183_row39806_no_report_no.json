@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "모닝버터 하이올레익해바라기유",
+    "reportnum": "20050448001131"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001131/20050448001131-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001131/20050448001131-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001131/20050448001131-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "가공버터50%[뉴질랜드산:버터오일,크림,야자경화유],하이올레익해바라기유34%[외국산(스페인,아르헨티나,호주등)],정제수,가공유지[말레이시아산/에스테르화유:9팜스테아린유,팜핵경화유)],정제소금,혼합분유,글리세린지방산에스테르,합성향료(버터향),레시틴,혼합제제(비타민A팔미테이트,식물성유지,dl-α-토코페롤,비타민D3),오메가3 0.05%(노르웨이산),데히드로초산나트륨(보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001131/20050448001131-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총제공량 200g 100g당 함량: 열량 750kcal ,탄수화물 2g(1%),당류 1g미만, 단백질 0g (0%),지방 83g (163%),포화지방 36g (240%),트랜스지방 1.7g,콜레스테롤 50mg(17%),나트륨 340mg (17%),오메가3(DHA,EPA)22mg  *( )안의 수치는 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001131/20050448001131-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "amount": "50%",
+        "sub_ingredients": [
+          {
+            "name": "버터오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하이올레익해바라기유",
+        "origin": "외국산, 스페인산, 아르헨티나산, 호주산",
+        "amount": "34%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "에스테르화유",
+            "sub_ingredients": [
+              {
+                "name": "9팜스테아린유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜핵경화유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "비타민A팔미테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-α-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오메가3",
+        "origin": "노르웨이산",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데히드로초산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:40"
+  },
+  "nutrition": {
+    "kcal": 750.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 0.0,
+    "fat_g": 83.0,
+    "saturated_fat_g": 36.0,
+    "trans_fat_g": 1.7,
+    "cholesterol_mg": 50.0,
+    "sodium_mg": 340.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:54:40"
+  }
+}

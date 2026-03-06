@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "백김치",
+    "reportnum": "2010003657115"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657115/2010003657115-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657115/2010003657115-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657115/2010003657115-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "【배추(국산)】34.28%,정제수21.36%,【무(국산)】15%,사과(국산)5%,배(국산)5%,양파(국산)4%,오렌지(미국산)4%,당근(국산)3%,밤(국산)2%,쪽파(국산)1%,미나리(국산)1%,마늘(국산)1%,천일염(국산)0.6%,정제염0.52%,갓(국산)0.5%,홍고추(국산)0.5%,설탕0.5%,생강(국산)0.4%,까나리액젓(국산)(까나리30%,새우(곤쟁이)25%,잡어20%,식염25%)0.34%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657115/2010003657115-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=40g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010003657115/2010003657115-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "배추",
+        "origin": "국산",
+        "amount": "34.28%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "21.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배",
+        "origin": "국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지",
+        "origin": "미국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쪽파",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미나리",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.52%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갓",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "까나리액젓",
+        "origin": "국산",
+        "amount": "0.34%",
+        "sub_ingredients": [
+          {
+            "name": "까나리",
+            "amount": "30%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "곤쟁이",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "잡어",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "amount": "25%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:56"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 20.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 1.0,
+    "fat_g": 0.5,
+    "sugar_g": 1.0,
+    "sodium_mg": 390.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "40g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 04:21:56"
+  }
+}

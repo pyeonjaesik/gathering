@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "자연치즈 소시지",
+    "reportnum": "2003062600297"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600297/2003062600297-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600297/2003062600297-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600297/2003062600297-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산(제주 무항생 흑돼지))85.62%,자연치즈(국산(제주))12%,소금1.14%,설탕0.52%,윈너골드(넛맥,카다몬,생강)0.31%,라포스(인산염)0.31%,다시마(국산)0.08%,비타로트0.02%,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600297/2003062600297-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "300g(755kcal,75.5kcal/1회 제공량 30g),1회 제공량 당 함량,%영양소기준치,열량 75.5kcal,탄수화물 0.50g(0%),당류 0.00g,단백질 5.50g(20%),지방 6.00g(24%),포화지방 2.45g(33%),트랜스지방 0.00g,콜레스테롤 13.00mg(9%),나트륨 210.50mg(21%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003062600297/2003062600297-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "85.62%",
+        "sub_ingredients": [
+          {
+            "name": "제주 무항생 흑돼지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자연치즈",
+        "origin": "국산",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "제주",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소금",
+        "amount": "1.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "0.52%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "윈너골드",
+        "amount": "0.31%",
+        "sub_ingredients": [
+          {
+            "name": "넛맥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카다몬",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "라포스",
+        "amount": "0.31%",
+        "sub_ingredients": [
+          {
+            "name": "인산염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다시마",
+        "origin": "국산",
+        "amount": "0.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타로트",
+        "amount": "0.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:00"
+  },
+  "nutrition": {
+    "kcal": 75.5,
+    "carbohydrate_g": 0.5,
+    "sugar_g": 0.0,
+    "protein_g": 5.5,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.45,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 210.5,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 03:50:00"
+  }
+}

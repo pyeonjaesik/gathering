@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "몽블랑우유",
+    "reportnum": "19850157002168"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002168/19850157002168-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002168/19850157002168-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002168/19850157002168-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,1등급 원유 30%(국산)(세균수기준),정백당,액상과당,탈염유청혼합탈지분유3.8%(네덜란드산),유크림2%(국산),밤페이스트0.5%[밤70%(국산),올리고당,고과당],합성향료(밤향),혼합쵸코색소(카라멜색소,코치닐추출색소,포도과파추출색소,치자청색소),카라기난",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002168/19850157002168-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 300mL 255kcal 총내용량당 1일 영양성분 기준치에 대한 비율 나트륨 80mg 4%, 탄수화물 44g 14%, 당류 36g 36%, 콜레스테롤 20mg 7%, 지방 6g 11%, 트랜스지방0g, 포화지방 4.0g 27%, 단백질 6g 11% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002168/19850157002168-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "1등급 원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈염유청혼합탈지분유",
+        "origin": "네덜란드산",
+        "amount": "3.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤페이스트",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "밤",
+            "origin": "국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "밤향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합쵸코색소",
+        "sub_ingredients": [
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도과파추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:51:38"
+  },
+  "nutrition": {
+    "kcal": 255.0,
+    "sodium_mg": 80.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 36.0,
+    "cholesterol_mg": 20.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.0,
+    "protein_g": 6.0,
+    "basis_amount": 300.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 300mL",
+    "collected_at": "2026-03-03 15:51:38"
+  }
+}

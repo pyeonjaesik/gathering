@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "맛있닭 닭가슴살 스테이크 호박맛",
+    "reportnum": "2014044803556"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803556/2014044803556-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803556/2014044803556-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803556/2014044803556-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)73.0%,대두단백(미국산)6.57%,양파(국내산),호박맛시즈닝KI(국내산/합성착향료 함유),숯불갈비양념장,KI특제시즈닝,호박맛엑기스(국내산/합성착향료 함유)2.0%,옥수수전분,대파,마늘,소고기엑기스C,참기름,소고기육수맛분말,챠그릴후레바오일(향미유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803556/2014044803556-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량100g당 함량 1회제공량당 함량 %영양성분 기준치 열량 144.95kcal, 탄수화물 8.4g 3%, 당류 1.4g, 단백질 21.2g 38%,지방 3.0g 6%, 포화지방 0.8g 6%, 트랜스지방 0g, 콜레스테롤 18.2mg 6%,  나트륨 230.3mg 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044803556/2014044803556-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "73.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "미국산",
+        "amount": "6.57%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박맛시즈닝KI",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숯불갈비양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "KI특제시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박맛엑기스",
+        "origin": "국내산",
+        "amount": "2.0%",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기엑기스C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기육수맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "챠그릴후레바오일",
+        "sub_ingredients": [
+          {
+            "name": "향미유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:24"
+  },
+  "nutrition": {
+    "kcal": 144.95,
+    "carbohydrate_g": 8.4,
+    "sugar_g": 1.4,
+    "protein_g": 21.2,
+    "fat_g": 3.0,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 18.2,
+    "sodium_mg": 230.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량100g당 함량",
+    "collected_at": "2026-03-04 04:42:24"
+  }
+}

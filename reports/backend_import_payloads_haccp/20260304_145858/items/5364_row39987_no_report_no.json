@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "행복한콩 콩국물",
+    "reportnum": "2006044309514"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309514/2006044309514-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309514/2006044309514-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309514/2006044309514-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농두유액 73.2%(대두고형분 7.0%이상, 호주산) 두부 10%[대두(국산, 호주산), 천연응고제(조제해수염화마그네슘)], 두류가공품, 볶은콩 분말 0.35%, 정제수, 정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309514/2006044309514-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100G당 함량 (%영양소 기준치) 열량 40KCAL, 탄수화물 4G(1%), 식이섬유 2.8G)(11%), 당류 1G미만, 단백질 3G(5%), 지방 1.7G(3%), 포화지붕 0G, 트랜스지방 0G, 콜레스테롤 0MG, 나트륨 200MG(10%), 비타민A 0㎍, 비타민C 0MG, 칼슘 16MG(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044309514/2006044309514-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농두유액",
+        "origin": "호주산",
+        "amount": "73.2%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7.0%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "두부",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연응고제",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶은콩 분말",
+        "amount": "0.35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:14"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 4.0,
+    "dietary_fiber_g": 2.8,
+    "sugar_g": 1.0,
+    "protein_g": 3.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 200.0,
+    "calcium_mg": 16.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100G당",
+    "collected_at": "2026-03-04 03:59:14"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "자연드림 초콜릿 아이스크림",
+    "reportnum": "1995012500430"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995012500430/1995012500430-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995012500430/1995012500430-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995012500430/1995012500430-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,생크림(우유/국산)25.1%,탈지분유(우유/국산),우유(국산)10%,유기농설탕10%,다크커버춰[카카오매스(콜롬비아)43%,카카오버터(콜롬비아)15%,설탕,레시틴(대두),천연바닐라향]4%,코코아분말(콜롬비아)3%,난황(계란/국산),로커스트콩검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995012500430/1995012500430-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(130ml)/총 1회 제공량(130 ml),1회 제공량당 함량 200 kcal,탄수화물 20g(6%),당류 18g,단백질 4g(7%),지방 11g(22%),포화지방 7g(47%),트랜스지방 0.5g미만,콜레스테롤 0mg(0%),나트륨 50mg(3%),*영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/1995012500430/1995012500430-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "origin": "국산",
+        "amount": "25.1%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다크커버춰",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "카카오매스",
+            "origin": "콜롬비아산",
+            "amount": "43%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카카오버터",
+            "origin": "콜롬비아산",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "콜롬비아산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:08:56"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 18.0,
+    "protein_g": 4.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 130.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1개(130ml)",
+    "collected_at": "2026-03-03 20:08:56"
+  }
+}

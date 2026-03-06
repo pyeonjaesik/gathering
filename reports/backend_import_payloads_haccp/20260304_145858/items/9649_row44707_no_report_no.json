@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "클래식닭가슴살브로콜리묽은죽",
+    "reportnum": "20140466024458"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024458/20140466024458-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024458/20140466024458-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024458/20140466024458-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "[쌀(친환경무농약쌀, 하이아미쌀20.37%, 닭가슴살 8.12%, 브로콜리 12.91%] 친환경무농약쌀(국내산), 하이아미쌀(국내산), 닭가슴살(국내산), 두부(대두, 국내산), 브로콜리(국내산), 찹쌀(국내산), 쌀눈가루(국내산), 정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024458/20140466024458-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140466024458/20140466024458-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국내산",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "친환경무농약쌀",
+            "origin": "국내산",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하이아미쌀",
+            "origin": "국내산",
+            "amount": "20.37%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "8.12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "국내산",
+        "amount": "12.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "국내산",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국내산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀눈가루",
+        "origin": "국내산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:20"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 44.0,
+    "carbohydrate_g": 8.13,
+    "protein_g": 3.13,
+    "fat_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 3.0,
+    "cholesterol_mg": 6.25,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:42:20"
+  }
+}

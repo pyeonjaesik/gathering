@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "닭갈비볶음세트",
+    "reportnum": "19880442004669"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004669/19880442004669-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004669/19880442004669-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004669/19880442004669-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "율무흑미밥-정제수,현미(국산),백미(국산),찹쌀,찰흑미,율무쌀, 닭갈비볶음(26.32%)-닭고기(국산)76.92%,닭갈비용양념매운맛23.08%[맛내기양념혼합장{고추장(소맥분-미국산,호주산),대두(인도산)},혼합간장,액상과당,양파,마늘],정제수,맥아물엿,마늘(중국산),배퓨레[배(국산),비타민C),양파],양배추(국산),양파,대파,당근, 채소스틱샐러드-양배추(국산),적상추(국산),오이(국산),당근(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004669/19880442004669-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량488kcal, 탄수화물72g(22%),  당류14g, 단백질21g(38%), 지방12.9g(25%), 포화지방2.7g(18%), 트랜스지방0g, 콜레스테롤20mg(7%), 나트륨780mg(39%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004669/19880442004669-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "율무흑미밥",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "율무쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭갈비볶음",
+            "amount": "26.32%",
+            "sub_ingredients": [
+              {
+                "name": "닭고기",
+                "origin": "국산",
+                "amount": "76.92%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "닭갈비용양념매운맛",
+                "amount": "23.08%",
+                "sub_ingredients": [
+                  {
+                    "name": "맛내기양념혼합장",
+                    "sub_ingredients": [
+                      {
+                        "name": "고추장",
+                        "origin": "미국산, 호주산",
+                        "sub_ingredients": [
+                          {
+                            "name": "소맥분",
+                            "origin": "미국산, 호주산",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "대두",
+                        "origin": "인도산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "혼합간장",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "액상과당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "양파",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "마늘",
+                    "origin": "중국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "맥아물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배퓨레",
+            "sub_ingredients": [
+              {
+                "name": "배",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민C",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "채소스틱샐러드",
+        "sub_ingredients": [
+          {
+            "name": "양배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적상추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오이",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:20:32"
+  },
+  "nutrition": {
+    "kcal": 488.0,
+    "carbohydrate_g": 72.0,
+    "sugar_g": 14.0,
+    "protein_g": 21.0,
+    "fat_g": 12.9,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 780.0,
+    "collected_at": "2026-03-03 17:20:32"
+  }
+}

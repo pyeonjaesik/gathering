@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "델라페 망고에이드",
+    "reportnum": "20000614238294"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000614238294/20000614238294-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000614238294/20000614238294-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000614238294/20000614238294-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "망고퓨레5.5%(망고100%, 필리핀산), 정제수, 정백당, 액상과당, 함수구연산, 비타민C, 구연산삼나트륨, 잔탄검, 스테비안45S(스테비올배당체,덱스트린),합성착향료(망고향),합성착색료(식용색소황색제4호,식용색소황색제5호)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000614238294/20000614238294-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1개(190ml) 총1회 제공량(190ml)\n<1회 제공량당 함량>\n열량105kcal, 탄수화물25g (8%), 당류23g, 단백질0g (0%), 지방0.4g (1%), 포화지방0.2g (1%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨0mg (0%) \n( ) 안의 수치는 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000614238294/20000614238294-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "망고퓨레",
+        "origin": "필리핀산",
+        "amount": "5.5%",
+        "sub_ingredients": [
+          {
+            "name": "망고",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비안45S",
+        "sub_ingredients": [
+          {
+            "name": "스테비올배당체",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착색료",
+        "sub_ingredients": [
+          {
+            "name": "식용색소황색제4호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용색소황색제5호",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 00:33:36"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 23.0,
+    "protein_g": 0.0,
+    "fat_g": 0.4,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량1개(190ml)",
+    "collected_at": "2026-03-04 00:33:36"
+  }
+}

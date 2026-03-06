@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "나쵸칩 비프화이타맛",
+    "reportnum": "2014038329994"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329994/2014038329994-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329994/2014038329994-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329994/2014038329994-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "프리커트 언프라이드[중국산/옥수수(유전자 재조합옥수수 포함 가능성 있음), 카르복실메틸셀룰로오스나트륨, 프로피온산칼슘(합성보존료),구연산,치자황색소],혼합식용유[팜올레인유(말레이시아산)59.98%,해바라기유(수입산)40%,D-토코페롤혼합제제],비프화이타맛씨즈닝3.8%[비프파우더6%{비프분해액27.07%(우정육53.48(국산))},합성감미료(아스파탐:페닐알라닌함유)]특정성분및함량 : 비프0.03%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329994/2014038329994-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014038329994/2014038329994-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "프리커트 언프라이드",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "중국산",
+            "amount": "유전자 재조합옥수수 포함 가능성 있음",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복실메틸셀룰로오스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로피온산칼슘",
+            "amount": "합성보존료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-토코페롤혼합제제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프화이타맛씨즈닝",
+        "amount": "3.8%",
+        "sub_ingredients": [
+          {
+            "name": "비프파우더",
+            "amount": "6%",
+            "sub_ingredients": [
+              {
+                "name": "비프분해액",
+                "amount": "27.07%",
+                "sub_ingredients": [
+                  {
+                    "name": "우정육",
+                    "origin": "국산",
+                    "amount": "53.48%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "합성감미료",
+            "amount": "아스파탐:페닐알라닌함유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:59"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 533.0,
+    "carbohydrate_g": 61.0,
+    "protein_g": 7.0,
+    "fat_g": 29.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 370.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:41:59"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "product": {
+    "name_ko": "소프트초코러브",
+    "reportnum": "197102750034325"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034325/197102750034325-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034325/197102750034325-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034325/197102750034325-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산)백설탕,전란액/국산(계란),초코칩초코크림(마가린(식물성유지(팜유/말레이시아산,야자유/인도네시아산),가공유지(에스테르화유(팜올레인유/말레이시아산,팜유/말레이시아산)기타설탕,초코시럽(코코아매스/벨기에산,쇼트닝(가공유지(에스테르화유(팜유/말레이시아산,팜핵유/말레이시아산)야자경화유(야자유/수입산)다크초콜릿칩/말레이시아산,물엿시럽(우유)액상과당,소보루(땅콩)콩기름(대두)코코아분말,코코아분말,혼합제제(유화제)과당,주정,산도조절제,정제소금,합성착향료(초콜렛향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034325/197102750034325-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량305KCAL 탄수화물42G 13% 당류25G 단백질5G 9% 지방13G 25% 포화지방6G 40% 트랜스지방0.5G 콜레스테롤95MG 32% 나트륨200MG 10%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034325/197102750034325-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초코칩초코크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자유",
+                    "origin": "인도네시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜올레인유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초코시럽",
+            "sub_ingredients": [
+              {
+                "name": "코코아매스",
+                "origin": "벨기에산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼트닝",
+                "sub_ingredients": [
+                  {
+                    "name": "가공유지",
+                    "sub_ingredients": [
+                      {
+                        "name": "에스테르화유",
+                        "sub_ingredients": [
+                          {
+                            "name": "팜유",
+                            "origin": "말레이시아산",
+                            "sub_ingredients": []
+                          },
+                          {
+                            "name": "팜핵유",
+                            "origin": "말레이시아산",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "다크초콜릿칩",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿시럽",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소보루",
+            "sub_ingredients": [
+              {
+                "name": "땅콩",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콩기름",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "초콜렛향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:21:35"
+  },
+  "nutrition": {
+    "kcal": 305.0,
+    "carbohydrate_g": 42.0,
+    "sugar_g": 25.0,
+    "protein_g": 5.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 95.0,
+    "sodium_mg": 200.0,
+    "collected_at": "2026-03-03 13:21:35"
+  }
+}

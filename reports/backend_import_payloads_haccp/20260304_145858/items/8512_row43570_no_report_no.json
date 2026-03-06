@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "아워홈 백합조개순두부찌개",
+    "reportnum": "20020614179699"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179699/20020614179699-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179699/20020614179699-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179699/20020614179699-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "순두부[대두(외국산), 글루코노델타락톤, 혼합제제(식물성유지,글리세린지방산에스테르,레시틴,탄산마그네슘)] 42.8%, 정제수, 백합조개(베트남산) 7.4%, 행복한맛남 육수베이스[무(국산),대파(중국산),새우,양파,마늘], 대파, 바지락엑기스, 행복한맛남 쇠고기맛국물내기, 구춧가루, 대파엑기스, 이스톡, 향미증진제, 후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179699/20020614179699-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=200ml(g) | foodSize=350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179699/20020614179699-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "순두부",
+        "origin": "외국산",
+        "amount": "42.8%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루코노델타락톤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백합조개",
+        "origin": "베트남산",
+        "amount": "7.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "행복한맛남 육수베이스",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바지락엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "행복한맛남 쇠고기맛국물내기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이스톡",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 34.0,
+    "carbohydrate_g": 3.43,
+    "protein_g": 2.57,
+    "fat_g": 1.2,
+    "sugar_g": 0.0,
+    "sodium_mg": 337.0,
+    "cholesterol_mg": 0.86,
+    "saturated_fat_g": 0.26,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "200ml(g)",
+    "total_content": "350g",
+    "collected_at": "2026-03-04 03:44:00"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "닭가슴살 부드러운 훈제",
+    "reportnum": "20050262003127"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003127/20050262003127-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003127/20050262003127-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003127/20050262003127-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)97.391%,치킨시즈닝-LS{분리대두단백(중국산),정제염(국산)},함수결정포도당,함초(국산),글리신,타우린,비타민B6염산염,화이바솔-2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003127/20050262003127-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(100g당) 열량 118kcal 단백질 27.3g 탄수화물 0.7g 지방 0.7g 나트륨 98mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003127/20050262003127-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "97.391%",
+        "sub_ingredients": [
+          {
+            "name": "치킨시즈닝-LS",
+            "sub_ingredients": [
+              {
+                "name": "분리대두단백",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함초",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타우린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이바솔-2",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:28"
+  },
+  "nutrition": {
+    "kcal": 118.0,
+    "protein_g": 27.3,
+    "carbohydrate_g": 0.7,
+    "fat_g": 0.7,
+    "sodium_mg": 98.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:52:28"
+  }
+}

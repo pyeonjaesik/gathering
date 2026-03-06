@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "무농약콩으로 만든 연한두부",
+    "reportnum": "2008054327462"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008054327462/2008054327462-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008054327462/2008054327462-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008054327462/2008054327462-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두(국내산,무농약)99.7%,두부응고제(글루코노델타락톤,염화마그네슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008054327462/2008054327462-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008054327462/2008054327462-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국내산",
+        "amount": "99.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부응고제",
+        "sub_ingredients": [
+          {
+            "name": "글루코노델타락톤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 50.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 2.4,
+    "sugar_g": 1.0,
+    "sodium_mg": 5.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 04:15:19"
+  }
+}

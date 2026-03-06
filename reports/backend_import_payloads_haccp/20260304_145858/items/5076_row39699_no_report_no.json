@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "자연의감칠맛해물분말",
+    "reportnum": "2004060452361"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004060452361/2004060452361-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004060452361/2004060452361-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004060452361/2004060452361-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멸치 71%(국산),홍새우 14%(국산),다시마 10%(국산),표고버섯(국산),대파(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004060452361/2004060452361-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1 포장량(8g) *%영양소기준치: 1일 영양소 기준치에 대한 비율 1포장량당 함량 *%영양소 기준치 열량 25kcal, 탄수화물 1g미만 0%, 식이섬유 0g 0% 당류 0g, 단백질 5g(9%), 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 35mg 11%, 나트륨 160 mg(8%),비타민A0㎍ 0%/비타민C0mg(0%)/칼슘277mg 40%/철0.5g 4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004060452361/2004060452361-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멸치",
+        "origin": "국산",
+        "amount": "71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍새우",
+        "origin": "국산",
+        "amount": "14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:14"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 35.0,
+    "sodium_mg": 160.0,
+    "calcium_mg": 277.0,
+    "iron_mg": 0.5,
+    "basis_amount": 8.0,
+    "basis_unit": "g",
+    "basis_text": "1 포장량(8g)",
+    "collected_at": "2026-03-04 03:52:14"
+  }
+}

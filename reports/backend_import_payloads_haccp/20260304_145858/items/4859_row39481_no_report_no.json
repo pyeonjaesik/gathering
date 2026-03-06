@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "생강맛전병",
+    "reportnum": "20030372137257"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137257/20030372137257-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137257/20030372137257-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137257/20030372137257-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀:미국,호주)47%, 정백당, 계란, 생강(중국)1%, 마아가린(대두), 포도당, 중탄산암모늄(팽창제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137257/20030372137257-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 1/10통 (22g) 총 약 10회 제공량 (220g), 1회 제공량 당 함량 *%영양소 기준치, 열량 85 kcal, 탄수화물 20g 6%, 당류 10g, 단백질 2g 3%, 지방 0.1g 0%, 포화지방 0.1g 1%, 트랜스지방 0g, 콜레스테롤 1mg 0%, 나트륨 5mg 0%, * %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137257/20030372137257-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "amount": "47%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "중국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마아가린",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "중탄산암모늄",
+        "sub_ingredients": [
+          {
+            "name": "팽창제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:38"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 10.0,
+    "protein_g": 2.0,
+    "fat_g": 0.1,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 1.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 22.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/10통 (22g)",
+    "collected_at": "2026-03-04 03:46:38"
+  }
+}

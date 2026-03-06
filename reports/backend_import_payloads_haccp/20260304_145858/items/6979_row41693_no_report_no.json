@@ -1,0 +1,246 @@
+{
+  "product": {
+    "name_ko": "볶음우동 갈릭데리야끼",
+    "reportnum": "19880445009929"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009929/19880445009929-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009929/19880445009929-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009929/19880445009929-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:호주산),갈릭데리야끼소스14.83%[백설탕,양조간장원액(탈지대두:인도산,소맥:미국산),물엿,보일드치킨P{저감미당,청탕스톡(닭:국산,돈족:국산),정제소금:국산},굴농축액,마늘(국산)5%,야채풍미유4%{마늘(국산)5%},마늘분말1%(마늘:중국산),마늘혼합양념0.6%{마늘농축액(프랑스산)20%}],변성전분,옥수수유(옥수수:수입산),갈릭풍미유2.25%{마늘(국산)20.1%,향신료올레오레진류},3가지야채건더기2.02%[진공마늘튀김77.78%{마늘(중국산)90%}],정제소금,분말유지,혼합제제(산도조절제,말티톨시럽,정제수),글루텐,수용성대두다당류,유화유지",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009929/19880445009929-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=890g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009929/19880445009929-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈릭데리야끼소스",
+        "amount": "14.83%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장원액",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보일드치킨P",
+            "sub_ingredients": [
+              {
+                "name": "저감미당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청탕스톡",
+                "sub_ingredients": [
+                  {
+                    "name": "닭",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "돈족",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "굴농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "국산",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채풍미유",
+            "amount": "4%",
+            "sub_ingredients": [
+              {
+                "name": "마늘",
+                "origin": "국산",
+                "amount": "5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘분말",
+            "origin": "중국산",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘혼합양념",
+            "amount": "0.6%",
+            "sub_ingredients": [
+              {
+                "name": "마늘농축액",
+                "origin": "프랑스산",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈릭풍미유",
+        "amount": "2.25%",
+        "sub_ingredients": [
+          {
+            "name": "마늘",
+            "origin": "국산",
+            "amount": "20.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료올레오레진류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "3가지야채건더기",
+        "amount": "2.02%",
+        "sub_ingredients": [
+          {
+            "name": "진공마늘튀김",
+            "amount": "77.78%",
+            "sub_ingredients": [
+              {
+                "name": "마늘",
+                "origin": "중국산",
+                "amount": "90%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성대두다당류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 196.0,
+    "carbohydrate_g": 35.14,
+    "protein_g": 3.6,
+    "fat_g": 4.95,
+    "sugar_g": 5.41,
+    "sodium_mg": 401.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.72,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "890g",
+    "collected_at": "2026-03-04 03:25:50"
+  }
+}

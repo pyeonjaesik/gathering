@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "무농약 고구마로 만든 고구마스틱",
+    "reportnum": "20090199897517"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897517/20090199897517-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897517/20090199897517-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897517/20090199897517-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고구마94.97%(무농약,국산),유기농설탕(아르헨티나,쿠바)2.85%,팜유(말레이시아),해바라기유(스페인,우크라이나)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897517/20090199897517-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/3봉지(33.3g) 총 약3회 제공량(100g)\n<1회 제공량당 함량 *%영양소기준치>\n열량156kcal, 탄수화물25g 8%, 당류5g, 단백질1g 1%, 지방6g 11%, 포화지방1.8g 12%, 트랜스지방0g, 콜레스테롤-mg, 나트륨17mg 1%\n<총 포장단위당함량 *%영양소기준치>\n열량468kcal, 탄수화물76g 23%, 당류15g, 단백질3g 4%, 지방17g 34%, 포화지방5g 36%, 트랜스지방0, 콜레스테롤-mg -%, 나트륨51mg 3%\n*%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090199897517/20090199897517-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고구마",
+        "origin": "국산",
+        "amount": "94.97%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "아르헨티나산, 쿠바산",
+        "amount": "2.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "스페인산, 우크라이나산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:49"
+  },
+  "nutrition": {
+    "kcal": 156.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 5.0,
+    "protein_g": 1.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 17.0,
+    "basis_amount": 33.3,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/3봉지(33.3g)",
+    "collected_at": "2026-03-04 04:16:49"
+  }
+}

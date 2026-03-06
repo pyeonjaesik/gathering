@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "샌드위치햄",
+    "reportnum": "2008040501545"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501545/2008040501545-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501545/2008040501545-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501545/2008040501545-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기80.0%(국산),정제수,백설탕,분말·결정포도당,정제소금(국산),난백분말(벨기에산),카라기난,분리대두단백,아로맥스-M,혼합제제(폴리인산나트륨,피로인산나트륨,메타인산나트륨),혼합제제(피로인산나트륨,폴리인산나트륨,폴리인산칼륨),페퍼로얄-1,마늘씨즈닝,양파씨즈닝,L-글루타민산나트륨제제[L-글루타민산나트륨(향미증진제),5'-이노신산이나트륨,5'-구아닐산이나트륨],참기름,5'-리보뉴클레오티드이나트륨,락색소(천연색소),L-아스코르빈산나트륨,혼합제제[카라멜색소,덱스트린,혼합제제(황산알루미늄칼륨,구연산삼나트륨,탄산나트륨,메타인산나트륨,피로인산나트륨,락색소)],아질산나트륨(발색제,합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501545/2008040501545-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501545/2008040501545-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "80.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분말",
+        "origin": "벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아로맥스-M",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산알루미늄칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "페퍼로얄-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-이노신산이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-구아닐산이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:10:56"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 183.0,
+    "carbohydrate_g": 3.33,
+    "protein_g": 16.67,
+    "fat_g": 13.33,
+    "sugar_g": 3.33,
+    "sodium_mg": 567.0,
+    "cholesterol_mg": 33.33,
+    "saturated_fat_g": 3.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:10:56"
+  }
+}

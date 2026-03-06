@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name_ko": "두마리목장 고소한치즈(산양유 첨가)",
+    "reportnum": "201104760041"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104760041/201104760041-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104760041/201104760041-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104760041/201104760041-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)88.9%,산양유(국산)10%,구연산,식염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104760041/201104760041-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 20g당 총 5회 제공량(100g) 열량66kcal,탄수화물0.4g(0.2%),당류0.4g,단백질4.4g(7.4%),지방5.2g(10.4%),포화지방2.8g(18.6%),트랜스지방0.24g,콜레스테롤14.8mg(5%),나트륨111.4mg(5.6%),칼슘111.4mg(16%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104760041/201104760041-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "88.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산양유",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:35"
+  },
+  "nutrition": {
+    "kcal": 66.0,
+    "carbohydrate_g": 0.4,
+    "sugar_g": 0.4,
+    "protein_g": 4.4,
+    "fat_g": 5.2,
+    "saturated_fat_g": 2.8,
+    "trans_fat_g": 0.24,
+    "cholesterol_mg": 14.8,
+    "sodium_mg": 111.4,
+    "calcium_mg": 111.4,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량당 20g당 총 5회 제공량(100g)",
+    "collected_at": "2026-03-04 04:31:35"
+  }
+}

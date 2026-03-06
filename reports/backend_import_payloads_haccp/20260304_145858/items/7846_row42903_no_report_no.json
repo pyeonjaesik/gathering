@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "오레오 씬즈 티라미수",
+    "reportnum": "19960399065295"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065295/19960399065295-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065295/19960399065295-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065295/19960399065295-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:미국산),분당(설탕,옥수수전분),식물성유지1[{팜스테아린유(말레이시아산),야자유(인도네시아산,필리핀산)/에스테르화유},옥배유,혼합제제(올레오레진로즈메리,올레오레진세이지)],유당(독일산),식물성유지2[팜유류,혼합제제(올레오레진로즈메리,올레오레진세이지)],코코아분말(미국산61%,싱가포르산26%)6%,물엿,유청분말,옥수수전분,혼합분유(탈지분유,유청분말),경성가공치즈0.26%(덴마크산),커피0.1%(커피원두/외국산:베트남,페루,브라질등),정제소금,팽창제,레시틴,바닐린,합성향료(티라미수향1,티라미수향2)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065295/19960399065295-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=840g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960399065295/19960399065295-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분당",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지1",
+        "sub_ingredients": [
+          {
+            "name": "팜스테아린유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "인도네시아산, 필리핀산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에스테르화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유당",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지2",
+        "sub_ingredients": [
+          {
+            "name": "팜유류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "올레오레진로즈메리",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진세이지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "미국산 61%, 싱가포르산 26%",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "origin": "덴마크산",
+        "amount": "0.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피",
+        "origin": "외국산, 베트남산, 페루산, 브라질산",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "커피원두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "티라미수향1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "티라미수향2",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:08:38"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 488.0,
+    "carbohydrate_g": 69.05,
+    "protein_g": 4.76,
+    "fat_g": 21.43,
+    "sugar_g": 35.71,
+    "sodium_mg": 333.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 11.9,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "840g",
+    "collected_at": "2026-03-03 21:08:38"
+  }
+}

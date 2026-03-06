@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "커피스미스 아메리카노",
+    "reportnum": "19960571018457"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018457/19960571018457-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018457/19960571018457-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018457/19960571018457-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,아라비카100에스프레소커피추출액(브라질산),합성착향료(커피향),탄산칼륨,비타민C,유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018457/19960571018457-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(240ml)/총 1회 제공량(240ml) 1회 제공량당 함량:열량 55kcal, 탄수화물 12g(4%)·당류 10g, 단백질 1g미만(1%), 지방 0.4g(1%) 포화지방 0.3g(2%)·트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 5mg(0%) ()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018457/19960571018457-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비카100에스프레소커피추출액",
+        "origin": "브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:18:59"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 10.0,
+    "fat_g": 0.4,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1캔(240ml)",
+    "collected_at": "2026-03-03 21:18:59"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "슈퍼아로니아",
+    "reportnum": "19880442004323"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004323/19880442004323-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004323/19880442004323-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004323/19880442004323-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,아로니아농축과즙(과즙으로58%,아로니아100%,폴란드산)18.5%,야생블루베리농축과즙(과즙으로37%,야생블루베리100%,오스트리아산)8%,아사이주스(아사이베리100%)5%,아가베시럽,식물성유산균배양액",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004323/19880442004323-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(80ml) 총10회제공량(800ml), 1회제공량당함량 *%영양소기준치, 열량70kcal, 탄수화물17g 5%, 당류11g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨20mg 1%, *%영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004323/19880442004323-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아로니아농축과즙",
+        "origin": "폴란드산",
+        "amount": "18.5%",
+        "sub_ingredients": [
+          {
+            "name": "과즙",
+            "amount": "58%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아로니아",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야생블루베리농축과즙",
+        "origin": "오스트리아산",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "과즙",
+            "amount": "37%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야생블루베리",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아사이주스",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "아사이베리",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아가베시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유산균배양액",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:21:33"
+  },
+  "nutrition": {
+    "kcal": 70.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 80.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1포(80ml)",
+    "collected_at": "2026-03-04 03:21:33"
+  }
+}

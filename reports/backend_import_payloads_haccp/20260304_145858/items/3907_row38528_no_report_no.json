@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "홍삼보옥고",
+    "reportnum": "19960470037351"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960470037351/19960470037351-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960470037351/19960470037351-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960470037351/19960470037351-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "말토덱스트린,식품혼합농축액{대추(국산),숙지황(국산),복령,구기자,당귀,천궁},홍삼농축액(6년근,고형분64%,홍삼성분70mg/g이상, 국산)5.7%,헛개나무열매농축액(국산),천연허브향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960470037351/19960470037351-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1스푼(10g) 총20회 제공량(200g)\n<1회 제공량당 함량 *%영양성분 기준치>\n열량30kcal, 탄수화물7g 2%, 당류1g, 단백질0g 0 %, 지방0g 0%, 포화지방0g 0%, 트렌스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0%, \n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960470037351/19960470037351-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식품혼합농축액",
+        "sub_ingredients": [
+          {
+            "name": "대추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숙지황",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복령",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구기자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천궁",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "5.7%",
+        "sub_ingredients": [
+          {
+            "name": "6년근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "64%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "헛개나무열매농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연허브향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:15:38"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1스푼(10g)",
+    "collected_at": "2026-03-03 21:15:38"
+  }
+}

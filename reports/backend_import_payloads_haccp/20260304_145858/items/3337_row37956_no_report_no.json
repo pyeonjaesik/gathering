@@ -1,0 +1,257 @@
+{
+  "product": {
+    "name_ko": "콘치즈톡톡",
+    "reportnum": "19930555148688"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148688/19930555148688-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148688/19930555148688-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148688/19930555148688-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스위트콘(태국산)32.5%[옥수수(태국산),정제수,설탕,정제소금],밀가루23.5%(미국,호주산),치즈믹스16.2%[모짜렐라치즈50%{외국산(미국,오스트리아,리투아니아등),원유,정제소금,우유응고효소,유산균배양액,염화칼슘},레이49.3%{렌넷카제인,팜유(팜/말레이지아산),밀가루(미국산),산도조절제,정제소금(국산)},분말셀룰로우스],양파(국산),화이트소스,찹쌀가루(국산),당근(국산),전지분유,곡류가공품,설탕,서류가공품,향미유(씨즈닝오일씨),고과당,빵가루,정제소금,오곡분말,버터맛분말,감미유-s,치즈베이스분말,난황파우더,감자식이섬유,효모추출물제품,시금치,벌꿀,후추,강황분(인도산)0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148688/19930555148688-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 5개(100g) 총4회 제공량(400g) 1회 제공량당 함량 *%영양성분 기준치 : 열량 210kcal,탄수화물33g 10%, 당류7g, 단백질 9g 16%,지방5g 10%, 포화지방2.1g 14%, 트랜지방 0g, 콜레스테롤3.9mg 1%, 나트륨 390mg 19%, *%영양성분 기준치:1일 영양성분 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148688/19930555148688-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스위트콘",
+        "origin": "태국산",
+        "amount": "32.5%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "amount": "23.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈믹스",
+        "amount": "16.2%",
+        "sub_ingredients": [
+          {
+            "name": "모짜렐라치즈",
+            "origin": "외국산, 미국산, 오스트리아산, 리투아니아산",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레이",
+            "amount": "49.3%",
+            "sub_ingredients": [
+              {
+                "name": "렌넷카제인",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "sub_ingredients": [
+                  {
+                    "name": "말레이지아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "밀가루",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말셀룰로우스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "서류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유",
+        "sub_ingredients": [
+          {
+            "name": "씨즈닝오일씨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오곡분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-s",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈베이스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물제품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "강황분",
+        "origin": "인도산",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:45:01"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "carbohydrate_g": 33.0,
+    "sugar_g": 7.0,
+    "protein_g": 9.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 2.1,
+    "cholesterol_mg": 3.9,
+    "sodium_mg": 390.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 5개(100g)",
+    "collected_at": "2026-03-03 19:45:01"
+  }
+}

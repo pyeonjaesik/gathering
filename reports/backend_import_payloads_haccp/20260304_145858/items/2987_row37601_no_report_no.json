@@ -1,0 +1,96 @@
+{
+  "product": {
+    "name_ko": "포테토칩 참치마요맛",
+    "reportnum": "19910461101104"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461101104/19910461101104-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461101104/19910461101104-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461101104/19910461101104-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "생감자88%(미국산),미강유(태국산),팜유(말레이시아산),참치마요맛시즈닝{다랑어(원양산),블루오션수참치(베트남산),훈연다랑어(필리핀산)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461101104/19910461101104-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 125g 30g당 170kcal\n<30g당 1일 영양성분 기준치에 대한 비율>\n나트륨140mg 7%, 탄수화물17g 5%, 당류0.9g 1%, 지방11g 20%, 트랜스지방0g, 포화지방3.6g 24%, 콜레스테롤0mg 0%, 단백질1g 2%\n<100g당 1일 영양성분 기준치에 대한 비율>\n나트륨470mg 24%, 탄수화물55g 17%, 당류3g 3%, 지방37g 69%, 트랜스지방0.5미만, 포화지방12g 80%, 콜레스테롤0mg 0%, 단백질5g 9%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461101104/19910461101104-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생감자",
+        "origin": "미국산",
+        "amount": "88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참치마요맛시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "다랑어",
+            "sub_ingredients": [
+              {
+                "name": "원양산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "블루오션수참치",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "훈연다랑어",
+            "origin": "필리핀산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:49:35"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "sodium_mg": 140.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 0.9,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.6,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "30g당",
+    "collected_at": "2026-03-03 18:49:35"
+  }
+}

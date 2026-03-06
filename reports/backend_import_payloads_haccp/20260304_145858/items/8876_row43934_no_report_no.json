@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "세븐키즈 후룻 사과",
+    "reportnum": "20060464002208"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464002208/20060464002208-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464002208/20060464002208-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464002208/20060464002208-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,유기농사과쥬스농축액(사과과즙으로20%)(고형분70%,터키산)2.87%,젖산칼슘,무수구연산,백포도농축액(포도과즙으로0.62%)(고형분68%,이탈리아산)0.1%,합성착향료(사과향),비타민C,유산균[요구르트스타트컬쳐(BLAC-2)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464002208/20060464002208-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060464002208/20060464002208-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농사과쥬스농축액",
+        "origin": "터키산",
+        "amount": "2.87%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "70%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무수구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도농축액",
+        "origin": "이탈리아산",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "포도과즙",
+            "amount": "0.62%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "68%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": [
+          {
+            "name": "요구르트스타트컬쳐",
+            "sub_ingredients": [
+              {
+                "name": "BLAC-2",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:09"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 50.0,
+    "carbohydrate_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 3.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-04 04:00:09"
+  }
+}

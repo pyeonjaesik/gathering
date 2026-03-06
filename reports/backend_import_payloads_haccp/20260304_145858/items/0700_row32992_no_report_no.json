@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "눈을감자 오지치즈후라이맛",
+    "reportnum": "19760487005210"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005210/19760487005210-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005210/19760487005210-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005210/19760487005210-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "냉동감자칩(벨기에산/감자,식물성유지,변성전분1,미분,변성전분2),혼합식용유(팜올레인유말레이시아산,해바라기유외국산:우크라이나산,말레이시아산,스페인산),오지치즈후라이맛씨즈닝[풍미인핸서믹스-오(짭짤한맛인핸서중국산),체다치즈씨즈닝미국산,감미료아스파탐(페닐알라닌함유)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005210/19760487005210-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=56g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005210/19760487005210-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동감자칩",
+        "origin": "벨기에산",
+        "sub_ingredients": [
+          {
+            "name": "감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "우크라이나산, 말레이시아산, 스페인산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오지치즈후라이맛씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "풍미인핸서믹스-오",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈씨즈닝",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감미료아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:01:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 490.0,
+    "carbohydrate_g": 63.33,
+    "protein_g": 6.67,
+    "fat_g": 23.33,
+    "sugar_g": 2.33,
+    "sodium_mg": 900.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 8.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "56g",
+    "collected_at": "2026-03-03 14:01:25"
+  }
+}

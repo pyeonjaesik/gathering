@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "아워홈 단호박죽",
+    "reportnum": "20060445219246"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219246/20060445219246-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219246/20060445219246-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219246/20060445219246-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "단호박47.9%[단호박(중국산)100%],정제수,찹쌀분말(중국산),정백당,단호박페이스트2%,[단호박퓨레38%(단호박100%,중국산)],요리당,팥,말토덱스트린,변성전분,흑설탕,정제염,산탄검,향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219246/20060445219246-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=270g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219246/20060445219246-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "단호박",
+        "origin": "중국산",
+        "amount": "47.9%",
+        "sub_ingredients": [
+          {
+            "name": "단호박",
+            "origin": "중국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀분말",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박페이스트",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "단호박퓨레",
+            "origin": "중국산",
+            "amount": "38%",
+            "sub_ingredients": [
+              {
+                "name": "단호박",
+                "origin": "중국산",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 78.0,
+    "carbohydrate_g": 12.22,
+    "protein_g": 1.11,
+    "fat_g": 2.59,
+    "sugar_g": 4.44,
+    "sodium_mg": 111.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.26,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "270g",
+    "collected_at": "2026-03-04 03:59:31"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "파스퇴르 건강한 발효버터",
+    "reportnum": "20050448001125"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001125/20050448001125-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001125/20050448001125-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001125/20050448001125-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "버터(국산),가공버터[(유지방,야자경화유),(네덜란드산)],원유,정제소금0.7%,레시틴(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001125/20050448001125-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 제공량 200g/100g당 함량  열량 751kcal 탄수화물 2g(1%),당류 0g, 단백질 1g (1%),지방 82g (164%),포화지방 55g (365%),트랜스지방 4g,콜레스테롤 205mg(69%),나트륨 270mg (13%) %영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050448001125/20050448001125-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "원유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:29"
+  },
+  "nutrition": {
+    "kcal": 751.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "protein_g": 1.0,
+    "fat_g": 82.0,
+    "saturated_fat_g": 55.0,
+    "trans_fat_g": 4.0,
+    "cholesterol_mg": 205.0,
+    "sodium_mg": 270.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:54:29"
+  }
+}

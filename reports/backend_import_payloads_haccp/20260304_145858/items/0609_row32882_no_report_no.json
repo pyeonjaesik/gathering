@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "서울우유 딸기",
+    "reportnum": "1976026200289"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200289/1976026200289-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200289/1976026200289-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200289/1976026200289-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "환원유(국산)75.7%,정제수,기타과당,설탕,포도당,딸기농축과즙(고형분함량65%이상,딸기과즙으로1%,국산)0.1078%,합성향료(딸기향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200289/1976026200289-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=200ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/1976026200289/1976026200289-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "환원유",
+        "origin": "국산",
+        "amount": "75.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기농축과즙",
+        "origin": "국산",
+        "amount": "0.1078%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기과즙",
+            "origin": "국산",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:52:54"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 68.0,
+    "carbohydrate_g": 11.0,
+    "protein_g": 2.5,
+    "fat_g": 1.5,
+    "sugar_g": 10.0,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "200ml",
+    "collected_at": "2026-03-03 13:52:54"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "product": {
+    "name_ko": "찰떡쿠키 밤",
+    "reportnum": "19920372050376"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050376/19920372050376-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050376/19920372050376-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050376/19920372050376-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산),물엿,백설탕,전분(옥수수:수입산),과당,마가린[가공유지(야자경화유:인도네시아산,팜올레인부분경화유),식물성유지(팜유:말레이시아산),유화제(대두),합성착향료(버터향),베타카로틴],가공버터[버터지방,정제수,카놀라유,무지유고형분(우유)],D-소르비톨액,전란액(계란),밤분말(국산)2.2%,찹쌀(국산)1.4%,트레할로스,유유락,정제염,산도조절제,하이큐푸드에스피(SP){정제수,과당,유화제,프로필렌글리콜,주정,폴리소르베이트60},CW엔자임,합성착향료(밤향),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050376/19920372050376-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(20g) 총 14회 제공량(280g) 1회제공량당 함량 *%영양소기준치/총포장단위당함량 *%영양소기준치 열량 75kcal/1085kcal, 탄수화물 14g 4%/202g 62%, 당류 8g/105g, 단백질 1g미만 1%/9g 15%, 지방 1.9g 4%/27g 54%,  포화지방 1.0g 7%/13g 87%, 트랜스지방 0g/0.5g, 콜레스테롤 5mg 2%/70mg 23%, 나트륨 45mg 2%/640g 32% *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920372050376/19920372050376-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "야자경화유",
+                "origin": "인도네시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "버터향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "버터지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밤분말",
+        "origin": "국산",
+        "amount": "2.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레할로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유유락",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하이큐푸드에스피",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리소르베이트60",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "CW엔자임",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밤향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:02:49"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 8.0,
+    "fat_g": 1.9,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 45.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(20g)",
+    "collected_at": "2026-03-03 19:02:49"
+  }
+}

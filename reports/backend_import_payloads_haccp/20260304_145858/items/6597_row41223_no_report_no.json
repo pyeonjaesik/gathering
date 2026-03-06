@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "제주황칠닭곰탕",
+    "reportnum": "2013062600610"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013062600610/2013062600610-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013062600610/2013062600610-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013062600610/2013062600610-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭육수[정제수,닭발(국산)10.19%,양파,마늘,생강/고형분함량1.00%],닭살(국산)7.00%,무(국산)7.00%,대파,황칠나무추출물(국산/고형분함량2.00%)2.68%,천일염,조미흰후추,소고기다시다(밀,대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013062600610/2013062600610-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1봉(500g),총 1회 제공량(500g),1회 제공량당 함량,*%영양소기준치,열량 171.5 kcal,탄수화물 10.0g(3.0%),당류 10.0g,단백질 23.0g(41.8%),지방 4.5g(8.8%),포화지방 3.0g(20.0%),트랜스지방 0.0g,콜레스테롤 13.0mg(4.3%),나트륨 804.0mg(40.2%),%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013062600610/2013062600610-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭육수",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭발",
+            "origin": "국산",
+            "amount": "10.19%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분함량",
+            "amount": "1.00%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭살",
+        "origin": "국산",
+        "amount": "7.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "amount": "7.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황칠나무추출물",
+        "origin": "국산",
+        "amount": "2.68%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "2.00%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미흰후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기다시다",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:38"
+  },
+  "nutrition": {
+    "kcal": 171.5,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 23.0,
+    "fat_g": 4.5,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 804.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1봉(500g)",
+    "collected_at": "2026-03-04 04:39:38"
+  }
+}

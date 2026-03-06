@@ -1,0 +1,76 @@
+{
+  "product": {
+    "name_ko": "하네뜨 플레인 요구르트",
+    "reportnum": "200902621275"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902621275/200902621275-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902621275/200902621275-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902621275/200902621275-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유95.5%(국내산),비정제당4%(유기농 수입산),유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902621275/200902621275-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 분량 100ml기준/열량(100ml/75kcal),탄수화물 (8.5g/4%),단백질(3g/7%),지방 (3g/10%),포화지방 (1.8g/20%),트랜스지방 (0g/0%),콜레스테롤 (6.5mg/5%),당류(8.4g),나트륨 (54mg/3%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200902621275/200902621275-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국내산",
+        "amount": "95.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비정제당",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "유기농 수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:05"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 8.5,
+    "protein_g": 3.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 6.5,
+    "sugar_g": 8.4,
+    "sodium_mg": 54.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 분량 100ml기준",
+    "collected_at": "2026-03-04 04:18:05"
+  }
+}

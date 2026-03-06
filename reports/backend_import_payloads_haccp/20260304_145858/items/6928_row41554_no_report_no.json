@@ -1,0 +1,71 @@
+{
+  "product": {
+    "name_ko": "아로니아정 플레쉬",
+    "reportnum": "2016051810912"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016051810912/2016051810912-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016051810912/2016051810912-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016051810912/2016051810912-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "아로니아열매,사양벌꿀,구아검,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016051810912/2016051810912-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분   Nutrition Facts            20g/1ea  \r\n     \r\n\r\n항 목 (Item)\r\n분석결과\r\n(100g당 함량)\r\n Amount per 100g\r\n1일영양성분 기준치 비율\r\n %Daily Value\r\n열량  Caloris\r\n144kcal\r\n-\r\n나트륨  Sodium\r\n10mg\r\n1%\r\n탄수화물  Carbohydrate\r\n35g\r\n11%\r\n당류  Sugars\r\n25g\r\n25%\r\n지방  Fat\r\n0g\r\n0%\r\n포화지방  Saturated Fat\r\n0g\r\n0%\r\n트랜스지방 Ttans Fat\r\n0g\r\n0%\r\n콜레스테롤  Cholesterol\r\n0mg\r\n-\r\n단백질  Protein \r\n1g미만\r\n1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016051810912/2016051810912-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아로니아열매",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:36"
+  },
+  "nutrition": {
+    "kcal": 144.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 35.0,
+    "sugar_g": 25.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "20g/1ea",
+    "collected_at": "2026-03-04 04:47:36"
+  }
+}

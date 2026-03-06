@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "기름제로 현미칩",
+    "reportnum": "2005035536170"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005035536170/2005035536170-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005035536170/2005035536170-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005035536170/2005035536170-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "현미100%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005035536170/2005035536170-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 60g 1회 제공량 60g 당 230.2kcal\n<60g 당 1일 영양성분 기준치에 대한 비율>\n나트륨120.2mg 6.0%, 탄수화물51.7g 26.6%, 당류0.4g 0.4%, 지방0.7g 1.3%, 트랜스지방0.0g 0.0%, 포화지방0.1g 0.8%, 단백질4.3g 7.7%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005035536170/2005035536170-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:32"
+  },
+  "nutrition": {
+    "kcal": 230.2,
+    "sodium_mg": 120.2,
+    "carbohydrate_g": 51.7,
+    "sugar_g": 0.4,
+    "fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.1,
+    "protein_g": 4.3,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 60g",
+    "collected_at": "2026-03-04 03:52:32"
+  }
+}

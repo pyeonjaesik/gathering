@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "앞선아이 우유",
+    "reportnum": "2002044800240"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800240/2002044800240-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800240/2002044800240-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800240/2002044800240-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유(국산)99.78689%(세균수기준),칼슘혼합제0.1%(탄산칼슘,대두식이섬유),비타민프리믹스ND M/03 0.05%[덱스트린,비타민C-Na 0.011241%,영양강화제),도코사헥사엔산-12(DNA)0.025%,FE-MATE0.02%(영양강화제,알긴산프로필렌글리콜),클로렐라추출물(고형분0.1%이상)0.01%,효모추출물(뉴클레오타이드0.00195%)0.003%,우유세라마이드(우유,포스파티딜세린0.0000591%,포스파티딜콜린0.0001576%),지피시(GP-C),산화이연0.00017%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800240/2002044800240-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[1회제공량 180ml 총1회 제공량(180ml)] 1회 제공량당 함량 :열량 120kcal 탄수화물 9g(3%)·당류 9g, 단백질 5.4g (22%*),지방 7.2g (14%)·포화지방 4.9g (33%)·트랜스지방 0.5g미만,콜레스테롤 25mg(8%),나트륨 90mg (8%**) 성분명및함량 (180ml당):칼슘216mg (31%**),철분1.1mg(14%**),아연0.7mg(14%**),비타민A 60㎍RE(15%**),비타민B1 0.1㎍(14%**),비타민B2 0.11㎍(12%**),비타민B6 0.14㎍(16%**),비타민B12 0.18㎍(14%**),비타민D3 1.35㎍(27%***),비타민E 2.7mg α-TE(34%***),나이아신 3.6mg NE(40%**), 엽산 68㎍(31%**), 비오틴 8㎍(53%***), 판토텐산 1.35mg(45%***), DHA 5mg *%영양성분 기준치:1일 영양성분기준치에 대한 비율(**)와(***)는 1일6~8세 남자 어린이의 권장 섭취량과 충분섭취량 기준에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002044800240/2002044800240-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "99.78689%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민프리믹스ND M/03",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C-Na",
+            "amount": "0.011241%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "도코사헥사엔산-12(DNA)",
+        "amount": "0.025%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "FE-MATE",
+        "amount": "0.02%",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "클로렐라추출물",
+        "amount": "0.01%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.1%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "amount": "0.003%",
+        "sub_ingredients": [
+          {
+            "name": "뉴클레오타이드",
+            "amount": "0.00195%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유세라마이드",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포스파티딜세린",
+            "amount": "0.0000591%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포스파티딜콜린",
+            "amount": "0.0001576%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "지피시",
+        "sub_ingredients": [
+          {
+            "name": "GP-C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산화이연",
+        "amount": "0.00017%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:56"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 9.0,
+    "protein_g": 5.4,
+    "fat_g": 7.2,
+    "saturated_fat_g": 4.9,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 90.0,
+    "calcium_mg": 216.0,
+    "iron_mg": 1.1,
+    "niacin_mg": 3.6,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 180ml 총1회 제공량(180ml)",
+    "collected_at": "2026-03-04 03:39:56"
+  }
+}

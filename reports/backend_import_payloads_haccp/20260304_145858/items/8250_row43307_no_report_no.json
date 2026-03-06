@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "심영순 아이맛있는비빔간장소스",
+    "reportnum": "20010306244645"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244645/20010306244645-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244645/20010306244645-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244645/20010306244645-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우리밀진간장[우리밀(밀:국내산),정제염(국내산),대두,맥아조청,주정,정제수]45%,명인쌀조청(쌀,엿기름,효소),양지추출물-1[양지(국내산),정제수],소스베이스(배농축과즙액,사과농축과즙액,유자농축과즙액),정제수,양파,마늘,생강,깻잎",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244645/20010306244645-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=185g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244645/20010306244645-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀진간장",
+        "amount": "45%",
+        "sub_ingredients": [
+          {
+            "name": "우리밀",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아조청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "명인쌀조청",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양지추출물-1",
+        "sub_ingredients": [
+          {
+            "name": "양지",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스베이스",
+        "sub_ingredients": [
+          {
+            "name": "배농축과즙액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축과즙액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유자농축과즙액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "깻잎",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 00:33:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 140.0,
+    "carbohydrate_g": 31.0,
+    "protein_g": 4.0,
+    "fat_g": 0.0,
+    "sugar_g": 17.0,
+    "sodium_mg": 2470.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "185g",
+    "collected_at": "2026-03-04 00:33:41"
+  }
+}

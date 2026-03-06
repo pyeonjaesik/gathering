@@ -1,0 +1,221 @@
+{
+  "product": {
+    "name_ko": "매콤달콤 쫄볶이",
+    "reportnum": "20010538182268"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182268/20010538182268-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182268/20010538182268-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182268/20010538182268-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*밀떡볶이(250g×1봉)-밀가루99.0%(밀:호주산,미국산),정제소금,주정,*쫄면사리(100g×1봉)-쌀가루(쌀:수입산),밀가루(밀:미국,호주산),감자전분,옥수수전분,정제소금,면류첨가알칼리제(탄산칼륨,탄산나트륨,제이인산나트륨),구아검,주정,*쫄볶이용소스(120g×1봉)-정제수,백설탕,액상과당,고춧가루(중국산),칠리맛소스(미국산/토마토),알찬고추장그린(대두),토마토케찹,갈은마늘,다진양파,주정,정제소금,발효식초,대두유,향미증진제,혼합간장,절단청양고추,올레오레진파프리카추출색소,자몽종자추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182268/20010538182268-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=470g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010538182268/20010538182268-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀떡볶이",
+        "amount": "250g×1봉",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "amount": "99.0%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쫄면사리",
+        "amount": "100g×1봉",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쫄볶이용소스",
+        "amount": "120g×1봉",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리맛소스",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "알찬고추장그린",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토케찹",
+            "sub_ingredients": []
+          },
+          {
+            "name": "갈은마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다진양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "절단청양고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:34:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 220.0,
+    "carbohydrate_g": 47.45,
+    "protein_g": 4.68,
+    "fat_g": 1.28,
+    "sugar_g": 9.15,
+    "sodium_mg": 500.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.32,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "470g",
+    "collected_at": "2026-03-04 03:34:29"
+  }
+}

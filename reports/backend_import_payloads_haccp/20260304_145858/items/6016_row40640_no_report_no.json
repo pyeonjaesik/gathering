@@ -1,0 +1,120 @@
+{
+  "product": {
+    "name_ko": "하우촌육개장",
+    "reportnum": "2009040500219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009040500219/2009040500219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009040500219/2009040500219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009040500219/2009040500219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,대파(국내산),소정육(국내산)8.77%,무(국내산),토란대(미얀마산),혼합양념2,복합조미식품,육개장베이스{5'-리보뉴클레오티드이나트륨(향미증진제)},다진마늘,다진생강,고춧가루(중국산),후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009040500219/2009040500219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분표/ 100g당 함량 : 열량25kcal 나트륨380mg19% 탄수화물2g1% 당류0g0% 단백질2g 4%, 지방1g 2%, 포화지방0g 0%, 트랜스지방0g 콜레스테롤5mg 2%, 나트륨380mg 19%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009040500219/2009040500219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소정육",
+        "origin": "국내산",
+        "amount": "8.77%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란대",
+        "origin": "미얀마산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육개장베이스",
+        "sub_ingredients": [
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:23"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "sodium_mg": 380.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:19:23"
+  }
+}

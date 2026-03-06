@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "비타요구",
+    "reportnum": "1993018802519"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993018802519/1993018802519-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993018802519/1993018802519-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993018802519/1993018802519-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,탈지분유(외국산:국가명은 홈페이지에 별도 표기)1.088%,구연산,포도당,합성향료(요구르트향),비타민C 0.02%,아스파탐(감미료,페닐알라닌함유),파프리카추출색소,구연산나트륨,혼합제제(규소수지,유화제,셀룰로오스검),유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993018802519/1993018802519-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=325ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993018802519/1993018802519-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산",
+        "amount": "1.088%",
+        "sub_ingredients": [
+          {
+            "name": "국가명은 홈페이지에 별도 표기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:21:25"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 23.0,
+    "carbohydrate_g": 5.38,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 4.62,
+    "sodium_mg": 15.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "325ml",
+    "collected_at": "2026-03-03 19:21:25"
+  }
+}

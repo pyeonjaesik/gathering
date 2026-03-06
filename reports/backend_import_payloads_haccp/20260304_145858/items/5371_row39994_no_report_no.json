@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "살아있는 실의힘 렌틸콩 생나또",
+    "reportnum": "2006044400720"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400720/2006044400720-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400720/2006044400720-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400720/2006044400720-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "렌틸콩생나또[검은콩60%(국산),렌틸콩40%(캐나다산),종균],데리야끼소스{양조간장[탈지대두(외국산:인도,미국,중국 등),소맥(미국산)],정백당,과당,정제염(국산),미림,다시마엑기스,효모추출물,5'-리뉴클레오티드이나트륨,잔탄검}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400720/2006044400720-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 100g(50gx2팩) 1팩(50g)당 75kcal\n나트륨130mg 7%, 탄수화물10g 3%, 식이섬유5g 20%, 당류1g 1%, 지방1.9g 4%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질7g 13%, 비타민A0µgRE 0%, 비타민C0mg 0%, 칼슘29mg 4%, 철1.5mg 13% \n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044400720/2006044400720-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "렌틸콩생나또",
+        "sub_ingredients": [
+          {
+            "name": "검은콩",
+            "origin": "국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "렌틸콩",
+            "origin": "캐나다산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "데리야끼소스",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "외국산, 인도산, 미국산, 중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:23"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "sodium_mg": 130.0,
+    "carbohydrate_g": 10.0,
+    "dietary_fiber_g": 5.0,
+    "sugar_g": 1.0,
+    "fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 7.0,
+    "calcium_mg": 29.0,
+    "iron_mg": 1.5,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1팩(50g)당",
+    "collected_at": "2026-03-04 03:59:23"
+  }
+}

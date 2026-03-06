@@ -1,0 +1,76 @@
+{
+  "product": {
+    "name_ko": "콩기름(대두유)",
+    "reportnum": "200506170881"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200506170881/200506170881-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200506170881/200506170881-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200506170881/200506170881-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두유99.999%(수입산),규소수지,유화제,CMC",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200506170881/200506170881-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=5g(ml) | foodSize=16500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200506170881/200506170881-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "amount": "99.999%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "규소수지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CMC",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:44"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 900.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "5g(ml)",
+    "total_content": "16500g",
+    "collected_at": "2026-03-04 03:55:44"
+  }
+}

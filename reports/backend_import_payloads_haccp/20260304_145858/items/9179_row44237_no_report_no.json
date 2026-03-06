@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "로즈마리 닭가슴살",
+    "reportnum": "20090262045112"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045112/20090262045112-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045112/20090262045112-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045112/20090262045112-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭가슴살(국내산)89.09%,정제수,정제염(국산),기타설탕,혼합제제(산도조절제),로즈마리0.22%,파이오렌비(유산균음료),천연향신료",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045112/20090262045112-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262045112/20090262045112-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "89.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로즈마리",
+        "amount": "0.22%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파이오렌비",
+        "sub_ingredients": [
+          {
+            "name": "유산균음료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연향신료",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 111.0,
+    "carbohydrate_g": 1.43,
+    "protein_g": 24.29,
+    "fat_g": 0.79,
+    "sugar_g": 0.5,
+    "sodium_mg": 271.0,
+    "cholesterol_mg": 25.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "140g",
+    "collected_at": "2026-03-04 04:17:31"
+  }
+}

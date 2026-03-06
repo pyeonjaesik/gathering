@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "베비언스 바른입맛 아기쌀과자 백미",
+    "reportnum": "20080517001237"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001237/20080517001237-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001237/20080517001237-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001237/20080517001237-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백미(국내산)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001237/20080517001237-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량/ 총1회 제공량 1봉(20g) 1회 제공량당 함량 : 열량 74kcal, 탄수화물 17g(19%), 당류 0g, 단백질 1g(7%), 지방 0g(0%), 포화지방 0g(0%*), 트랜스지방 0g, 콜레스테롤 0mg(0%*), 나트륨 0mg(0%) *()안의 수치는 한국인 영아(7~11개월) 영양섭취기준에 대한 비율임(단, *은 1일 영양성분 기준치에 대한 비율임)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001237/20080517001237-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백미",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:14"
+  },
+  "nutrition": {
+    "kcal": 74.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 0.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "총1회 제공량 1봉(20g)",
+    "collected_at": "2026-03-04 04:15:14"
+  }
+}

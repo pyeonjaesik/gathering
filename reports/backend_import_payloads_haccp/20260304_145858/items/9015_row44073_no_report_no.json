@@ -1,0 +1,285 @@
+{
+  "product": {
+    "name_ko": "마롱케익",
+    "reportnum": "2008024225012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008024225012/2008024225012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008024225012/2008024225012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008024225012/2008024225012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "오예스초코[백설탕,가공유지(말레이시아산),혼합분유((전지분유,코코아분말),수입산),코코아분말1,코코아분말2],밤크림[가공유지(에스테르화유(팜올레인유(말레이시아산),팜스테아린유(말레이시아산),야자유(수입산))),백설탕,D-소르비톨액,분말·결정포도당,대두유,밤분말(국산)],밀가루(미국산),전란액,백설탕,물엿,쇼트닝1,준초콜릿,분말·결정포도당,쇼트닝2(경화유),마가린,D-소르비톨액,혼합식용유,곡류가공품,혼합제제1(산도조절제,빙초산,프로필렌글리콜,합성착향료(레몬향))),혼합제제2(유화제,프로필렌글리콜,글리세린),소맥전분,정제소금,구아검,기타주류(0.39%),베이킹파우더(산도조절제,글루코노-δ-락톤,전분), 밤0.9%(생물함량기준),코코아원료2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008024225012/2008024225012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=336g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008024225012/2008024225012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오예스초코",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아분말1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밤크림",
+        "sub_ingredients": [
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "에스테르화유",
+                "sub_ingredients": [
+                  {
+                    "name": "팜올레인유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜스테아린유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자유",
+                    "origin": "수입산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말·결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밤분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝2",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빙초산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "레몬향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타주류",
+        "amount": "0.39%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루코노-δ-락톤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밤",
+        "amount": "0.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아원료2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:26"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 464.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 3.57,
+    "fat_g": 25.0,
+    "sugar_g": 35.71,
+    "sodium_mg": 286.0,
+    "cholesterol_mg": 17.86,
+    "saturated_fat_g": 12.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "336g",
+    "collected_at": "2026-03-04 04:07:26"
+  }
+}

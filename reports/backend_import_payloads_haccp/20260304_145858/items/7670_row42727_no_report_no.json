@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "컨츄리소시지",
+    "reportnum": "19950262006256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950262006256/19950262006256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950262006256/19950262006256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950262006256/19950262006256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(국내산),정제수,정제염(국내산),백설탕,콜라겐,보로나씨즈닝,혼합제제(산도조절제),블렌디드시즈닝,혼합제제(알긴산나트륨,산도조절제,포도당시럽),비타민-씨,이질산나트륨(발색제),케이싱(된장)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950262006256/19950262006256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950262006256/19950262006256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보로나씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당시럽",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블렌디드시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민-씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "케이싱",
+        "sub_ingredients": [
+          {
+            "name": "된장",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:11:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 264.0,
+    "carbohydrate_g": 2.86,
+    "protein_g": 15.71,
+    "fat_g": 21.43,
+    "sugar_g": 2.86,
+    "sodium_mg": 671.0,
+    "cholesterol_mg": 21.43,
+    "saturated_fat_g": 11.43,
+    "trans_fat_g": 0.43,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "350g",
+    "collected_at": "2026-03-03 20:11:50"
+  }
+}

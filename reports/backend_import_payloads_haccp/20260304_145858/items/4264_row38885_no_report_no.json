@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "찬마루초고추장",
+    "reportnum": "19990364158404"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158404/19990364158404-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158404/19990364158404-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158404/19990364158404-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고추장57%[물엿,소맥분(밀:미국산,호주산),고추양념(중국산),고추양념분말,정제소금종국],정백당,발효식초11%[맥아엑기스(미국산),주정,발효영양원],고과당,물엿,정제수,마늘(국산),조미베이스Ⅰ,사과농축액,매실농축액(고형분함량52.3%)1%(매실:국산),참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158404/19990364158404-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 함량 1회 제공량 (20g)/ 총 16회 제공량(320g) *( )안의 수치는 1일 영양성분기준치에 대한 비율임 열량 40kcal, 탄수화물 10g (3%),식이섬유 1g미만 (4%),당류 8g,단백질 1g미만 (2%),지방 0g (0%), 포화지방 0g (0%),트랜스지방 0g,콜레스테롤 0mg (0%),나트륨 280mg (14%),비타민A 15㎍R.E. (2%)/비타민C 0mg (0%)/칼슘 0mg (0%)/철 0mg (0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158404/19990364158404-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "57%",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "amount": "11%",
+        "sub_ingredients": [
+          {
+            "name": "맥아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미베이스Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매실농축액",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "52.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:01:23"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 8.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 280.0,
+    "calcium_mg": 0.0,
+    "iron_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (20g)",
+    "collected_at": "2026-03-03 22:01:23"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "메이플 푸딩",
+    "reportnum": "1994044307689"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994044307689/1994044307689-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994044307689/1994044307689-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994044307689/1994044307689-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,우유(국산),난황(국산),백설탕,메이플시럽6%[단풍당시럽85%(캐나다산), 이소말토올리고당],유크림,식물성유지(야자경화유),전지분유,향미증진제,가당연유,액상과당,혼합제제(아미드펙틴,한천,로커스트콩검,잔탄검,젤란검),합성향료(메이플향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994044307689/1994044307689-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994044307689/1994044307689-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메이플시럽",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "단풍당시럽",
+            "origin": "캐나다산",
+            "amount": "85%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이소말토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "메이플향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:58:16"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 144.0,
+    "carbohydrate_g": 15.0,
+    "protein_g": 6.11,
+    "fat_g": 6.67,
+    "sugar_g": 13.33,
+    "sodium_mg": 61.0,
+    "cholesterol_mg": 105.56,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 19:58:16"
+  }
+}

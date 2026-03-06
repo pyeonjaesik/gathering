@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "면사랑 집밥식 비빔냉면",
+    "reportnum": "199304430281219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199304430281219/199304430281219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199304430281219/199304430281219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199304430281219/199304430281219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀-호주산,미국산),비빔장25%[정제수,고추장{물엿,밀가루(밀-호주산,미국산),주정,종국,혼합양념(중국산)},정백당,물엿,양파(국산),화이트식초,고춧가루(중국산),마늘,참기름,비빔장베이스(향미증진제),전제소금,참깨,대두유,배농축액,쇠고기엑기스,파프리카올레오레진,녹차엑기스],감자전분조제(감자전분-수입산,변성타피오카전분-태국산),혼합고구마전분,메밀가루프리믹스,메밀가루,주정,정제소금,흑미가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199304430281219/199304430281219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량:1인분(200g) 총2회 제공량(400g)  1회 제공량당 함량 *%영양성분 기준치 : 열량480kcal,탄수화물99g 30%, 식이섬유 3g 12%, 당류19g, 단백질 12g 22%,지방4.8g 9%, 포화지방1.8g 12%, 트랜스지방 0.6g, 콜레스테롤0mg 0%, 나트륨 870mg 44%,  *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199304430281219/199304430281219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비빔장",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀가루",
+                "origin": "호주산, 미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "종국",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비빔장베이스",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카올레오레진",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차엑기스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분조제",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성타피오카전분",
+            "origin": "태국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합고구마전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메밀가루프리믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:35:58"
+  },
+  "nutrition": {
+    "kcal": 480.0,
+    "carbohydrate_g": 99.0,
+    "dietary_fiber_g": 3.0,
+    "sugar_g": 19.0,
+    "protein_g": 12.0,
+    "fat_g": 4.8,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.6,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 870.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:1인분(200g)",
+    "collected_at": "2026-03-03 19:35:58"
+  }
+}

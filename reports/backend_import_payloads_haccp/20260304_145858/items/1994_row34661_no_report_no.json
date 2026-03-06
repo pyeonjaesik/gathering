@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "천지인홍삼양갱",
+    "reportnum": "1986037002241"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002241/1986037002241-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002241/1986037002241-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002241/1986037002241-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "팥앙금(팥/중국산), 설탕, 올리고당, 포도당, 물엿, 홍삼농축액(고형분 60%,홍삼성분 70mg/g이상,홍삼/국산)1%, 분말한천(한천/인도네시아산), 합성향료(홍삼향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002241/1986037002241-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=50g | foodSize=660g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986037002241/1986037002241-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "팥앙금",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말한천",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "한천",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "홍삼향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:20:18"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 300.0,
+    "carbohydrate_g": 70.91,
+    "protein_g": 3.64,
+    "fat_g": 0.18,
+    "sugar_g": 43.64,
+    "sodium_mg": 9.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "50g",
+    "total_content": "660g",
+    "collected_at": "2026-03-03 16:20:18"
+  }
+}

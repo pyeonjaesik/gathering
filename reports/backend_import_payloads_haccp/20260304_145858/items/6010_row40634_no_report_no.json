@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "오랜 시간과 정성의 진국 갈비탕",
+    "reportnum": "20090405002101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002101/20090405002101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002101/20090405002101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002101/20090405002101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,갈비13%(국내산),양지추출액{우양지(호주산),우정육(호주산)/고형분10%},소고기2%(국내산),혼합비프엑기스,사골추출농축액,대파,정제염,야채혼합농축액,개량한식간장,5'-리보뉴클레오티드이나트륨,무추출물분말,백설탕,고소한맛 시즈닝",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002101/20090405002101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(250g)/총 2회 제공량(500g),*%영양성분기준치:1일 영양성분 기준치에 대한 비율,1회 제공량당 함량,*%영양성분 기준치,열량 110 kcal,탄수화물 1g미만(0%),식이섬유 0g(0%),당류 1g미만,단백질 15g(27%),지방 5g(10%),포화지방 2.3g(15%),트랜스지방 0g,콜레스테롤 15mg(5%),나트륨 570mg(28%),비타민A 0㎍RE (0%), 비타민C 0mg(0%),칼슘 23mg(3%),철 0.8mg(6%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002101/20090405002101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈비",
+        "origin": "국내산",
+        "amount": "13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지추출액",
+        "sub_ingredients": [
+          {
+            "name": "우양지",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우정육",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "국내산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합비프엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골추출농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채혼합농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "개량한식간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무추출물분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고소한맛 시즈닝",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:27"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "dietary_fiber_g": 0.0,
+    "protein_g": 15.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 570.0,
+    "calcium_mg": 23.0,
+    "iron_mg": 0.8,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(250g)",
+    "collected_at": "2026-03-04 04:19:27"
+  }
+}

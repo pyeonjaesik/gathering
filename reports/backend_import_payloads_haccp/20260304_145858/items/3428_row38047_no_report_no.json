@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "화이트파이",
+    "reportnum": "1994037708455"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994037708455/1994037708455-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994037708455/1994037708455-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994037708455/1994037708455-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "올리고당, 단팥앙금[증숙팥(팥:중국산),기타설탕,폴리글리시톨시럽 18.2%, 식물성유지(말레이시아산), 백설탕1, 백설탕, 말티톨시럽10.4%, 전분(미국산), 덱스트린, 화이트코팅베이스[백설탕, 식물성유지, 레시틴(대두)], 찹쌀(국산), 글리세린, 밀가루(밀), 정제소금, 주정, 혼합제제(글리세린, 유화제), 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994037708455/1994037708455-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉지(35g) 총10회제공량(350g) 열량120kcal 탄수화물24g 당류10g 단백질0.5g 지방2.4g 포화지방1.6g 트랜스지방0g 콜레스테롤0mg 나트륨80mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994037708455/1994037708455-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단팥앙금",
+        "sub_ingredients": [
+          {
+            "name": "증숙팥",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "amount": "18.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "amount": "1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "amount": "10.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트코팅베이스",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리세린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:56:44"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 10.0,
+    "protein_g": 0.5,
+    "fat_g": 2.4,
+    "saturated_fat_g": 1.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉지(35g)",
+    "collected_at": "2026-03-03 19:56:44"
+  }
+}

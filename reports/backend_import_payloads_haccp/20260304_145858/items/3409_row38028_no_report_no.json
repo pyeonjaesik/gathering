@@ -1,0 +1,112 @@
+{
+  "product": {
+    "name_ko": "콩고물인절미스낵",
+    "reportnum": "19940144026189"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940144026189/19940144026189-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940144026189/19940144026189-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940144026189/19940144026189-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀가루[백미(맵쌀)가루/국내산],식물성유지(말레이시아산),인절미맛씨즈닝[백설탕,볶음대두분말(미국산,중국산),포도당,유당(미국산),탈지분유(미국산)],옥수수가루(외국산:호주산,미국산,세르비아산,러시아산,브라질산),옥수수기름,탄산칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940144026189/19940144026189-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 125g 30g당 175kcal\n<30g당 1일 영양성분 기준치에 대한 비율>\n나트륨67mg 3%, 탄수화물15g 5%, 당류5g 5%, 지방12g 22%, 트랜스지방0g, 포화지방5.3g 35%, 콜레스테롤0.69mg 0%, 단백질2g 4%\n<총내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨279mg 14%, 탄수화물62.5g 19%, 당류21g 21%, 지방50g 93%, 트랜스지방 0g, 포화지방22.1g 147%, 콜레스테롤2.88mg 1%, 단백질8.3g 15%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940144026189/19940144026189-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "백미(맵쌀)가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인절미맛씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음대두분말",
+            "origin": "미국산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "origin": "외국산, 호주산, 미국산, 세르비아산, 러시아산, 브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:53:43"
+  },
+  "nutrition": {
+    "kcal": 175.0,
+    "sodium_mg": 67.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 5.0,
+    "fat_g": 12.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.3,
+    "cholesterol_mg": 0.69,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "30g당",
+    "collected_at": "2026-03-03 19:53:43"
+  }
+}

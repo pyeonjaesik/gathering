@@ -1,0 +1,240 @@
+{
+  "product": {
+    "name_ko": "후루룩칼국수",
+    "reportnum": "2007014900241"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900241/2007014900241-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900241/2007014900241-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900241/2007014900241-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면/소맥분(호주산),감자전분(독일산),쌀가루,변성전분,미강풍미액,난각칼슘,정제염,야채조미추출물,면류첨가알카리제(산도조절제),혼합제제(산도조절제),복합액상토코페롤{글리세린,d-토코페롤(혼합형),유화제},글루텐펩타이드,올리고녹차풍미액, 스프류/치킨양파분말(치킨본육추출물,백간장,물엿,마늘쥬스농축액,양파쥬스농축액),닭백숙분말,육수맛조미베이스,정제염,물엿분말,마늘베이스,포도당,정백당,5'-리보뉴클레오티드이나트륨,조미청고추분말,구운마늘분말,후추가루,후추추출물분말,볶음맛분말,동결건조애호박,건조채심,육고명,조미건조홍고추링.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900241/2007014900241-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=388g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007014900241/2007014900241-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강풍미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난각칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채조미추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면류첨가알카리제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합액상토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루텐펩타이드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고녹차풍미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스프류",
+        "sub_ingredients": [
+          {
+            "name": "치킨양파분말",
+            "sub_ingredients": [
+              {
+                "name": "치킨본육추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘쥬스농축액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파쥬스농축액",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭백숙분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육수맛조미베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미청고추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운마늘분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추추출물분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결건조애호박",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조채심",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육고명",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미건조홍고추링",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 345.0,
+    "carbohydrate_g": 76.29,
+    "protein_g": 9.28,
+    "fat_g": 0.52,
+    "sugar_g": 4.12,
+    "sodium_mg": 1588.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "388g",
+    "collected_at": "2026-03-03 13:05:57"
+  }
+}

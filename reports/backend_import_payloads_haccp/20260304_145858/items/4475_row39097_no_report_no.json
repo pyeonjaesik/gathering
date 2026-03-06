@@ -1,0 +1,232 @@
+{
+  "product": {
+    "name_ko": "스파이시치킨카레밥",
+    "reportnum": "20010445055287"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055287/20010445055287-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055287/20010445055287-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055287/20010445055287-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맛있는 오뚜기밥(즉석조리식품,살균제품,질소충전제품):쌀(국산),산도조절제 -스파이시치킨카레(카레,살균제품,레토르트식품):정제수,양파(국산),닭고기7%(국산),양송이(중국산:양송이,정제염,구연산),카놀라유,당근,감자,마늘,혼합과일소스,카레루2%(카레분12.5%),조직대두단백,카레분1.35%,토마토페이스트,치킨엑기스에스,사골엑기스,우스타소스(밀),대파,혼합제제(변성전분,백설탕,덱스트린),카레페이스트0.7%(카레분2.3%),정제소금,백설탕,식물성분해단백,복합양념,생강,고추분,향미증진제,강황추출액,향신료",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055287/20010445055287-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1세트(340g) 1회 제공량당 함량 *%영양소 기준치 : 열량 420kcal,탄수화물74g 22%, 당류6g, 단백질 13g 24%, 지방8g 16%, 포화지방2g 13%, 트랜스지방 0g, 콜레스테롤10mg 3%, 나트륨 810mg 41%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055287/20010445055287-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는 오뚜기밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스파이시치킨카레",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카놀라유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합과일소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카레루",
+            "amount": "2%",
+            "sub_ingredients": [
+              {
+                "name": "카레분",
+                "amount": "12.5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "조직대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카레분",
+            "amount": "1.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨엑기스에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사골엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우스타소스",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카레페이스트",
+            "amount": "0.7%",
+            "sub_ingredients": [
+              {
+                "name": "카레분",
+                "amount": "2.3%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성분해단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합양념",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "강황추출액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:31:39"
+  },
+  "nutrition": {
+    "kcal": 420.0,
+    "carbohydrate_g": 74.0,
+    "sugar_g": 6.0,
+    "protein_g": 13.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 810.0,
+    "basis_amount": 340.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1세트(340g)",
+    "collected_at": "2026-03-04 03:31:39"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "농로 발효보리건빵",
+    "reportnum": "20100372386385"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386385/20100372386385-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386385/20100372386385-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386385/20100372386385-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(미국산,캐나다산56%,미국산44%),설탕,쇼트닝(팜유:말레이시아산,향신료올레오레진류),유청[외국산(미국,프랑스,체코 등)80%,국산20%],맥아분말1.5%,대두분,볶음검정깨,정제소금,볶음참깨,산도조절제1,효모,산도조절제2,제일인산칼슘,효소제,산도조절제3",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386385/20100372386385-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=320g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386385/20100372386385-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "amount": "56%, 44%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "향신료올레오레진류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청",
+        "origin": "외국산, 미국산, 프랑스산, 국산 20%, 체코산 80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아분말",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음검정깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "amount": "1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제일인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:52"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 425.0,
+    "carbohydrate_g": 77.0,
+    "protein_g": 8.0,
+    "fat_g": 9.0,
+    "sugar_g": 17.0,
+    "sodium_mg": 495.0,
+    "cholesterol_mg": 3.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "320g",
+    "collected_at": "2026-03-04 04:24:52"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "구운찹쌀산자",
+    "reportnum": "20030372137238"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137238/20030372137238-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137238/20030372137238-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137238/20030372137238-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀(국산)65%,쌀튀밥(쌀100%:국산),쌀조청{쌀(수입산)94%, 엿질금(보리:국산)효소},물엿(옥수수전분),정백당",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137238/20030372137238-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 (1회 제공량:1/2개(30g) 총 6회 제공량(180g), 열량(kcal) 105, 탄수화물(g) 26(8%), 당류(g) 9, 단백질(g) 4(7%), 지방(g) 0.2(0%), 포화지방(g) 0.1(1%), 트랜스지방(g) 0, 콜레스테롤(mg) 0(0%), 나트륨(mg) 15(1%), ※ 1회 제공당 함량(%영양소기준치:1일 영양소기준치에 대한 비율)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137238/20030372137238-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀튀밥",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "수입산",
+            "amount": "94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿질금",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:20"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 9.0,
+    "protein_g": 4.0,
+    "fat_g": 0.2,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:1/2개(30g)",
+    "collected_at": "2026-03-04 03:46:20"
+  }
+}

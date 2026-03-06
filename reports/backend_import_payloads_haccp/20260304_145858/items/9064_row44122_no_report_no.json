@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "The더건강한햄",
+    "reportnum": "2008040501547"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501547/2008040501547-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501547/2008040501547-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501547/2008040501547-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기85.0%(외국산:미국,스페인,캐나다 등),정제수, 백설탕,비프소스[양지분해농축액(쇠고기:호주산),정제소금(국산)],오천년의신비명품천일염0.86 %(국산),유청분말,분리대두단백,복합스파이스AF7,겨자분말601,젖산칼륨,젖산나트륨,밀분해추출물,카라기난,티알이-씨(보조단백질),혼합제제(폴리인산나트륨,피로인산나트륨,메타인산나트륨),베지스테이블502,콜라겐,코치닐추출색소,비타민C,분말 · 결정포도당,난백분말,야채발효균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501547/2008040501547-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501547/2008040501547-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "외국산, 미국산, 스페인산, 캐나다산",
+        "amount": "85.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프소스",
+        "sub_ingredients": [
+          {
+            "name": "양지분해농축액",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오천년의신비명품천일염",
+        "origin": "국산",
+        "amount": "0.86 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스AF7",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자분말601",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀분해추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "티알이-씨",
+        "sub_ingredients": [
+          {
+            "name": "보조단백질",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베지스테이블502",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말 · 결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채발효균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:10:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 285.0,
+    "carbohydrate_g": 4.0,
+    "protein_g": 15.0,
+    "fat_g": 23.0,
+    "sugar_g": 2.0,
+    "sodium_mg": 710.0,
+    "cholesterol_mg": 50.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:10:50"
+  }
+}

@@ -1,0 +1,712 @@
+{
+  "product": {
+    "name_ko": "고시볼 잎새달",
+    "reportnum": "19990386335212"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335212/19990386335212-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335212/19990386335212-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335212/19990386335212-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고시볼-콩:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),콩(대두:국산)20.3%,쌀(국산),소맥분(밀:미국,호주산),설탕,대두유,태움,용융소금/고시볼-흑미:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),흑미(국산)27%,소맥분(밀:미국,호주산),설탕,대두유(대두:외국산),콩(대두)/고시볼-딸기:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),딸기(국산)27%,소맥분(밀:미국,호주산),설탕,대두유(대두:외국산),콩(대두)/고시볼-금귤:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),금귤(국산)27%,소맥분(밀:미국,호주산),설탕,대두유(대두:외국산),콩(대두)/고시볼-흑깨:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),흑깨(국산)27%,소맥분(밀:미국,호주산),설탕,대두유(대두:외국산),태움·용융소금,콩(대두)/고시볼-키위:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),키위(뉴질랜드산)27%,소맥분(밀:미국,호주산),설탕,대두유(대두:외국산),콩(대두)/고시볼-메밀:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),메밀가루(메밀:국산)27%,소맥전분(밀:미국,호주산),설탕,대두유(대두:외국산),콩(대두)/고시볼-녹차:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),쌀튀밥(쌀:국산),녹차분(국산)8%,소맥분(밀:미국,호주산),설탕,대두유,콩(대두)/고시볼-백련초:찹쌀(국산),빠데아글라세이브와(백설탕,식물성유지,탈지분유(우유),레시틴(대두)),쌀튀밥(쌀:국산),백련초분(국산)8%소맥분(밀:미국,호주산),설탕,대두유,콩(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335212/19990386335212-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990386335212/19990386335212-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고시볼-콩",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "콩",
+            "origin": "국산",
+            "amount": "20.3%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "태움",
+            "sub_ingredients": []
+          },
+          {
+            "name": "용융소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-흑미",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-딸기",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-금귤",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "금귤",
+            "origin": "국산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-흑깨",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "흑깨",
+            "origin": "국산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "태움",
+            "sub_ingredients": []
+          },
+          {
+            "name": "용융소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-키위",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "키위",
+            "origin": "뉴질랜드산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-메밀",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "메밀가루",
+            "origin": "국산",
+            "amount": "27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-녹차",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "쌀튀밥",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차분",
+            "origin": "국산",
+            "amount": "8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고시볼-백련초",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "빠데아글라세이브와",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지분유",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "쌀튀밥",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백련초분",
+            "origin": "국산",
+            "amount": "8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:03:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 550.0,
+    "carbohydrate_g": 58.4,
+    "protein_g": 4.5,
+    "fat_g": 33.1,
+    "sugar_g": 34.3,
+    "sodium_mg": 63.0,
+    "cholesterol_mg": 3.0,
+    "saturated_fat_g": 15.3,
+    "trans_fat_g": 0.1,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-03 22:03:47"
+  }
+}

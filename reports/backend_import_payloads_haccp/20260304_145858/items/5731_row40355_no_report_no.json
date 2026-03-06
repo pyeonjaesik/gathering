@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "미미담",
+    "reportnum": "2008043516974"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516974/2008043516974-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516974/2008043516974-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516974/2008043516974-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "씨알로우리쌀프레이트[쌀74.44%(국산),백설탕,흑설탕,천일염(국산),벌꿀]54.31% 머쉬멜로우[콘시럽,설탕,포도당,변성전분,정제수,젤라틴(돼지)], 아몬드슬라이스(미국) 건조크랜베리(미국),버터,볶음캐슈넛(인도), 호박씨,볶음아몬드분태, 혼합제제[클리세린 d-토크페롤(혼합형, 대두), 글리세린지방산에스테르]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516974/2008043516974-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개/20g 1회 제공량당 함량 열량(kcal) 85 탄수화물(g) 15g(5%) 당류(g) 6g 단백질(g) 1.7g(3%) 지방(g) 2.0g(4%) 포화지방(g) 0.6g(4g) 트렌스지방(g) 0g 콜레스테롤(mg) 0mg(0%) 나트륨(mg) 54mg(3%) (%) 영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008043516974/2008043516974-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "씨알로우리쌀프레이트",
+        "origin": "국산",
+        "amount": "54.31%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "74.44%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "머쉬멜로우",
+        "sub_ingredients": [
+          {
+            "name": "콘시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤라틴",
+            "sub_ingredients": [
+              {
+                "name": "돼지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조크랜베리",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음캐슈넛",
+        "origin": "인도산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음아몬드분태",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "클리세린 d-토크페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:11:53"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 6.0,
+    "protein_g": 1.7,
+    "fat_g": 2.0,
+    "saturated_fat_g": 0.6,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 54.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개/20g",
+    "collected_at": "2026-03-04 04:11:53"
+  }
+}

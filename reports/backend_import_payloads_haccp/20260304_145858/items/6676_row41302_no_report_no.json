@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "순살치킨가라아게",
+    "reportnum": "2014044800849"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044800849/2014044800849-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044800849/2014044800849-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044800849/2014044800849-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(브라질산54.7%,국내산45.3%)70%,장스브레더GB001[소맥분(밀:미국,호주산),옥수수전분(옥수수:수입산),타피오카전분,콘그릿스5호,고소미#M31210],식물성유지(식물성유지,d-토코페롤,엘에스-300,구연산),정제수,장스마일드씨즈닝,장스염지제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044800849/2014044800849-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2개(50g) 총 약10회 제공량(500g)/1회 제공량당 함량 %영양소 기준치 : 열량 100kcal,탄수화물6g (2%),당류0g,단백질6g (11%),지방6.0g (12%), 포화지방1.8g (12%), 트랜스지방0.0g, 콜레스테롤 25mg (8%), 나트륨210mg (11%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014044800849/2014044800849-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "브라질산, 국내산",
+        "amount": "70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "장스브레더GB001",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타피오카전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콘그릿스5호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고소미#M31210",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엘에스-300",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "장스마일드씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "장스염지제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:19"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 0.0,
+    "protein_g": 6.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 25.0,
+    "sodium_mg": 210.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2개(50g)",
+    "collected_at": "2026-03-04 04:42:19"
+  }
+}

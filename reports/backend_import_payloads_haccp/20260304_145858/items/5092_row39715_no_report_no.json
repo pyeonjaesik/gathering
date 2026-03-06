@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "닭가슴살 갈릭 스파이시",
+    "reportnum": "20050262003129"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003129/20050262003129-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003129/20050262003129-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003129/20050262003129-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)96.135%,마늘분말(중국산)0.174%,함초시즈닝[분리대두단백(중국산),함초분말(국산)],핫시즈닝RM2[정제소금(국내산),옥수수알파전분{옥수수전분(옥수수:외국산)}],함수결정포도당,글리신,타우린,비타민B6염산염,화이바솔-2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003129/20050262003129-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(100g당) 열량 119kcal 단백질 27g 탄수화물 0.9g 지방 0.8g 나트륨 115mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050262003129/20050262003129-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "96.135%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분말",
+        "origin": "중국산",
+        "amount": "0.174%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함초시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "분리대두단백",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함초분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "핫시즈닝RM2",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수알파전분",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B6염산염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이바솔-2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:32"
+  },
+  "nutrition": {
+    "kcal": 119.0,
+    "protein_g": 27.0,
+    "carbohydrate_g": 0.9,
+    "fat_g": 0.8,
+    "sodium_mg": 115.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:52:32"
+  }
+}

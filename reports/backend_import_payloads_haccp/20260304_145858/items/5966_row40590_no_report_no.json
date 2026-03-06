@@ -1,0 +1,84 @@
+{
+  "product": {
+    "name_ko": "옛날뻥튀기, 왕찰옥강냉이,찰옥수수강냉이",
+    "reportnum": "2009036006261"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006261/2009036006261-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006261/2009036006261-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006261/2009036006261-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)97.4%,정백당,산도조절제(탄산수소나트륨),합성감미료(삭카린나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006261/2009036006261-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(총 열량:1,402kcal) 1회 제공량 약1/11.4봉(30g) 총 약11.4회 제공량1봉(342g) 1회 제공량당 함량 *%영양성분 기준치 열량 123kcal, 탄수화물 26g 8% ,당류 3.7g,단백질 2g 4%,지방 0.9g 2%, 포화지방 0.2g 1%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 29mg 1%  *영양성분 기준치:1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006261/2009036006261-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "97.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "삭카린나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:40"
+  },
+  "nutrition": {
+    "kcal": 123.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 3.7,
+    "protein_g": 2.0,
+    "fat_g": 0.9,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 29.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/11.4봉(30g)",
+    "collected_at": "2026-03-04 04:18:40"
+  }
+}

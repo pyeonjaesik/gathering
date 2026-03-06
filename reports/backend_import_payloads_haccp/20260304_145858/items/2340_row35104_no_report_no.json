@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "해바라기 초코볼",
+    "reportnum": "198803110012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803110012/198803110012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803110012/198803110012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803110012/198803110012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "볶음해바라기씨(미국산;해바라기씨,백설탕,물엿,아라비아검),둥근초콜릿후레이크[백설탕,코코아프리퍼레이션(수입산;전지분유,코코아매스),식물성유지(싱가포르산),유당(우유),코코아파우더,레시틴(대두)],둥근초콜릿스위트[백설탕,식물성유지(싱가포르산),코코아프리퍼레이션(수입산;전지분유,코코아매스),유당,코코아파우더,레시틴,합성착향료(초콜릿향,바닐라향)],백설탕,식물성유지,카카오색소,아라비아검,젤라틴(돼지),피막제,비타민E",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803110012/198803110012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=30g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803110012/198803110012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "볶음해바라기씨",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "해바라기씨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "둥근초콜릿후레이크",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아프리퍼레이션",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아매스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성유지",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "둥근초콜릿스위트",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아프리퍼레이션",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아매스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "초콜릿향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카카오색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": [
+          {
+            "name": "돼지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피막제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민E",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:46:38"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 517.0,
+    "carbohydrate_g": 53.33,
+    "protein_g": 10.0,
+    "fat_g": 30.0,
+    "sugar_g": 43.33,
+    "sodium_mg": 67.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 11.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "30g",
+    "collected_at": "2026-03-03 16:46:38"
+  }
+}

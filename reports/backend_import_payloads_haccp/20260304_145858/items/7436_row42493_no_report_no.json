@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "참치김치볶음밥",
+    "reportnum": "19930199349469"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349469/19930199349469-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349469/19930199349469-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349469/19930199349469-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀50.15%(국산),김치18.81%[배추(국산),무(국산),고추분(중국산),멸치액젓,마늘]참치통조림9.4%[다랑어74.5%(원양산),대두유(외국산:아르헨티나,미국,일본산)야채즙],양파,채종유,청피망,당근,대파,물엿,김치찌개풍미분말엔엠0.24%[멸치액젓(멸치:연근해산,천일염:국산),다시마추출액{다시마추출농축액(다시마:연근해산)}]고춧가루,설탕,정제소금,고추맛기름,참기름,쇠고기맛씨즈닝,파프리카추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349469/19930199349469-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349469/19930199349469-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "50.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김치",
+        "amount": "18.81%",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추분",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참치통조림",
+        "amount": "9.4%",
+        "sub_ingredients": [
+          {
+            "name": "다랑어",
+            "amount": "74.5%",
+            "sub_ingredients": [
+              {
+                "name": "원양산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산, 아르헨티나산, 미국산, 일본산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김치찌개풍미분말엔엠",
+        "amount": "0.24%",
+        "sub_ingredients": [
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": [
+              {
+                "name": "멸치",
+                "sub_ingredients": []
+              },
+              {
+                "name": "연근해산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마추출액",
+            "sub_ingredients": [
+              {
+                "name": "다시마추출농축액",
+                "sub_ingredients": [
+                  {
+                    "name": "다시마",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "연근해산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:24:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 173.0,
+    "carbohydrate_g": 29.0,
+    "protein_g": 4.0,
+    "fat_g": 4.67,
+    "sugar_g": 6.0,
+    "sodium_mg": 353.0,
+    "cholesterol_mg": 6.67,
+    "saturated_fat_g": 0.73,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 19:24:05"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "product": {
+    "name_ko": "조청에빠진 찰옥수수 강냉이",
+    "reportnum": "2009036006236"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006236/2009036006236-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006236/2009036006236-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006236/2009036006236-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찰옥수수(국내산)85%, 유기농설탕(수입산) ,쌀조청(쌀:국내산)6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006236/2009036006236-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 (30g) 총 4회 제공량(120g)\n<1회 제공량당 함량 %영양소기준치>\n열량121kcal, 탄수화물25g 8%, 당류2g, 단백질3g 5%, 지방0.8g 2%, 포화지방0.2g 1%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0%\n*%영양소기준치 :1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006236/2009036006236-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찰옥수수",
+        "origin": "국내산",
+        "amount": "85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀조청",
+        "origin": "국내산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:34"
+  },
+  "nutrition": {
+    "kcal": 121.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 (30g)",
+    "collected_at": "2026-03-04 04:18:34"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "허니머스타드드레싱",
+    "reportnum": "200504150201657"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201657/200504150201657-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201657/200504150201657-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201657/200504150201657-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마요네즈[현미유(태국산),난황액(냉동가염난황:중국산),화이트식초,난백액,백설탕,혼합제제(타피오카변성전분,정백당,말토덱스트린),잔탄검,타미린드검],정제수,조제겨자12%[미국산/식초,겨자씨14.5%,정제소금,심황,천연향신료],사양벌꿀10%(국내산),백설탕,사과식초(주정,농축사과즙,포도당),홀그레인머스타드4.5%(프랑스산/겨자씨36%),파인애플퓨레,양파,정제소금,겨자분말0.28%(미국산/겨자씨100%),조미분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201657/200504150201657-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량230g/100g당 305kcal 나트륨 580mg(29%),탄수화물 20g(6%), 당류 18g(18%), 지방 24g(44%), 트랜스지방 0.5g미만, 포화지방6g(40%),콜레스테롤 10mg(3%), 단백질2g(4%) 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201657/200504150201657-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": [
+          {
+            "name": "현미유",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "중국산",
+            "amount": "냉동가염난황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "타피오카변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타미린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조제겨자",
+        "origin": "미국산",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "겨자씨",
+            "amount": "14.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "심황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연향신료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "origin": "국내산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축사과즙",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홀그레인머스타드",
+        "origin": "프랑스산",
+        "amount": "4.5%",
+        "sub_ingredients": [
+          {
+            "name": "겨자씨",
+            "amount": "36%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파인애플퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자분말",
+        "origin": "미국산",
+        "amount": "0.28%",
+        "sub_ingredients": [
+          {
+            "name": "겨자씨",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:54:11"
+  },
+  "nutrition": {
+    "total_content": "230",
+    "food_weight_g": 230.0,
+    "kcal": 305.0,
+    "sodium_mg": 580.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 18.0,
+    "fat_g": 24.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 10.0,
+    "protein_g": 2.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:54:11"
+  }
+}

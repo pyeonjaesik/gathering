@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "숯불갈비맛후랑크",
+    "reportnum": "2003053200940"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200940/2003053200940-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200940/2003053200940-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200940/2003053200940-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(국산)54.12%,계육(국산)11.50%,정제수,전분,빵가루,대두단백,백설탕,불고기양념장,복합스파이스엔-7,숯불갈비맛엑기스,정제소금,L-글루타민산나트륨,숯불갈비맛시즈닝,혼합제제,엑티브파우더-5,소르빈산칼륨,L-아스코르빈산나트륨,아질산나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200940/2003053200940-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003053200940/2003053200940-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "54.12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계육",
+        "origin": "국산",
+        "amount": "11.50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스엔-7",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비맛엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비맛시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엑티브파우더-5",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 250.0,
+    "carbohydrate_g": 14.29,
+    "protein_g": 12.86,
+    "fat_g": 15.71,
+    "sugar_g": 5.71,
+    "sodium_mg": 600.0,
+    "cholesterol_mg": 64.29,
+    "saturated_fat_g": 5.71,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-04 03:49:05"
+  }
+}

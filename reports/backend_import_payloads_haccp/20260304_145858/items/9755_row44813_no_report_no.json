@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "우리밀로 만든 두부스낵",
+    "reportnum": "201603951165"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603951165/201603951165-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603951165/201603951165-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603951165/201603951165-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우리밀 밀가루(밀:국내산)36.3%,현미유(태국산),두부13.2%[대두(국내산,무농약),응고제(조제해수염화마그네슘)],유기농설탕9.91%,발아통밀가루(국내산)6.6%,유정란(국내산,무항생제),검정깨(국내산)0.99%,참깨(국내산),천일염(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603951165/201603951165-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603951165/201603951165-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀 밀가루",
+        "origin": "국내산",
+        "amount": "36.3%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "태국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "amount": "13.2%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "9.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아통밀가루",
+        "origin": "국내산",
+        "amount": "6.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "무항생제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검정깨",
+        "origin": "국내산",
+        "amount": "0.99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 575.0,
+    "carbohydrate_g": 54.0,
+    "protein_g": 8.0,
+    "fat_g": 36.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 240.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 04:47:31"
+  }
+}

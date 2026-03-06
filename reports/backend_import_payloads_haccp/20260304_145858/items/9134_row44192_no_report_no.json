@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "뚜또 후르츠믹스",
+    "reportnum": "200805710629"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710629/200805710629-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710629/200805710629-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710629/200805710629-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "복숭아20%(백도10%,황도10%)(중국산),밀감10%(중국산),파인애플8%(태국산),정백당,복숭아농축과즙,카라기난,로커스트콩검,젤란검,덱스트린,산도조절제,합성착향료(복숭아향,자몽향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710629/200805710629-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=230g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805710629/200805710629-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "복숭아",
+        "origin": "중국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "백도",
+            "origin": "중국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황도",
+            "origin": "중국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀감",
+        "origin": "중국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플",
+        "origin": "태국산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 70.0,
+    "carbohydrate_g": 16.09,
+    "protein_g": 0.33,
+    "fat_g": 0.39,
+    "sugar_g": 13.48,
+    "sodium_mg": 57.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "230g",
+    "collected_at": "2026-03-04 04:15:47"
+  }
+}

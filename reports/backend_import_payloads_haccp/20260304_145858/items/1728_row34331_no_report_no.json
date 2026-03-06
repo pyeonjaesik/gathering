@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "푸딩우유",
+    "reportnum": "19850157002167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002167/19850157002167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002167/19850157002167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002167/19850157002167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,1등급 원유30%(국산)(세균수기준),정백당,유크림3.3%(국산),탈염유청혼합탈지분유2.5%(네덜란드산),합성향료(푸딩향),난황파우더0.13%(국산),카라기난,치자황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002167/19850157002167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 300mL 270kcal 총 내용량당 1일 영양성분 기준치에 대한 비율 나트륨 65mg 3%, 탄수화물 43g 13%, 당류 38g 38%, 콜레스테롤 35mg 12%, 지방 8g 15%, 트랜스지방 0g, 포화지방 5g 33%, 단백질 6g 11% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002167/19850157002167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "1등급 원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "amount": "3.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈염유청혼합탈지분유",
+        "origin": "네덜란드산",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "푸딩향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난황파우더",
+        "origin": "국산",
+        "amount": "0.13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:51:29"
+  },
+  "nutrition": {
+    "kcal": 270.0,
+    "sodium_mg": 65.0,
+    "carbohydrate_g": 43.0,
+    "sugar_g": 38.0,
+    "cholesterol_mg": 35.0,
+    "fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.0,
+    "protein_g": 6.0,
+    "basis_amount": 300.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 300mL",
+    "collected_at": "2026-03-03 15:51:29"
+  }
+}

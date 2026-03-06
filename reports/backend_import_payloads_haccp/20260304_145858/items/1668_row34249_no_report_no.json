@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "베지밀 검은콩과 검은참깨 두유 팩",
+    "reportnum": "1984041500155"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984041500155/1984041500155-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984041500155/1984041500155-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984041500155/1984041500155-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액89%[대두고형분7%이상, 대두-외국산(미국,캐나다,호주 등)],정백당,검은콩추출액3.4%(고형분7%이상, 검은콩-국산),검은참깨페이스트1.25%(검은깨 100%, 미얀마산), 말토올리고당,옥배유,탄산칼슘혼합제제(탄산칼슘,대두다당류),정제염,글리세린지방산에스테르,잔탄검,드라이비타민D3(비타민D3,디엘알파토코페롤,중쇄중성지방,아카시아검,수크로오스,옥수수전분)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984041500155/1984041500155-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984041500155/1984041500155-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "89%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 캐나다산, 호주산",
+                "amount": "null",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩추출액",
+        "amount": "3.4%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검은콩",
+            "origin": "국산",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검은참깨페이스트",
+        "amount": "1.25%",
+        "sub_ingredients": [
+          {
+            "name": "검은깨",
+            "origin": "미얀마산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말토올리고당",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘혼합제제",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두다당류",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "드라이비타민D3",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중쇄중성지방",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아카시아검",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크로오스",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:46:22"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 66.0,
+    "carbohydrate_g": 6.32,
+    "protein_g": 3.16,
+    "fat_g": 3.16,
+    "sugar_g": 5.26,
+    "sodium_mg": 84.0,
+    "calcium_mg": 63.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.53,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-03 15:46:22"
+  }
+}

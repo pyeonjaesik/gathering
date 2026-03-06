@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "피코크 갈치조림양념",
+    "reportnum": "200004430422215"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200004430422215/200004430422215-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200004430422215/200004430422215-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200004430422215/200004430422215-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "아미노산간장[산분해간장원액{탈지대두(인도산)},주정,혼합제제(규소수지,유화제,카르복시메틸셀룰로오스나트륨)],액상과당,정제수,마늘[중국산],고춧가루,다시마엑기스(다시마농축액,덱스트린,정제소금,향미증진제,잔탄검),D-소르비톨액,조미씨즈닝#Q-15,홍고추,백설탕,조미양념분5호,청주,곤포미(밀),변성전분,쇠고기풍미분말,흑후추분말,바이코543플레이버인핸서파우더,파프리카추출색소,올레오레진캪시컴,천일염,영양강화제,로즈마리분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200004430422215/200004430422215-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200004430422215/200004430422215-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아미노산간장",
+        "sub_ingredients": [
+          {
+            "name": "산분해간장원액",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카르복시메틸셀룰로오스나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": [
+          {
+            "name": "다시마농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미씨즈닝#Q-15",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미양념분5호",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청주",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곤포미",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기풍미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바이코543플레이버인핸서파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올레오레진캪시컴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로즈마리분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:18:43"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 178.0,
+    "carbohydrate_g": 34.0,
+    "protein_g": 5.0,
+    "fat_g": 2.5,
+    "sugar_g": 13.0,
+    "sodium_mg": 2012.0,
+    "cholesterol_mg": 2.0,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "140g",
+    "collected_at": "2026-03-03 22:18:43"
+  }
+}

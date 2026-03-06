@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "물만두",
+    "reportnum": "2004035558091"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004035558091/2004035558091-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004035558091/2004035558091-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004035558091/2004035558091-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기28.7%(국산),밀가루(밀:미국산,캐나다산),절임배추[배추(국산),정제소금],부추(국산),양배추(국산),대파(국산),대두단백,두부,마늘(국산),참기름,백설탕,양조간장,변성전분,정제소금,효소분해간장,복합엑기스D,유화유지,감칠맛분말,향미증진제,대두분,후추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004035558091/2004035558091-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004035558091/2004035558091-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "28.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "절임배추",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소분해간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합엑기스D",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 183.0,
+    "carbohydrate_g": 21.0,
+    "protein_g": 10.0,
+    "fat_g": 6.67,
+    "sugar_g": 2.33,
+    "sodium_mg": 300.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 2.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:50:53"
+  }
+}

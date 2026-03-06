@@ -1,0 +1,84 @@
+{
+  "product": {
+    "name_ko": "베이비오 유기농쌀과자현미시금치",
+    "reportnum": "2006037812281"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812281/2006037812281-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812281/2006037812281-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812281/2006037812281-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농 원료 총 함량 99.95%,유기농현미(국내산)98.35%,유기농시금치분말(국내산)1.6%,혼합곡물발효효소(국내산/대두)0.05%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812281/2006037812281-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량2봉지(25g) 1회 제공량당 함량 %영양소기준치 열량 95kcal 탄수화물 20g 6% 당류 0g 단백질 2g 4% 지방 0.8g 2% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 - - 나트륨 0mg 0% %영양소기준치: 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812281/2006037812281-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농 원료",
+        "amount": "99.95%",
+        "sub_ingredients": [
+          {
+            "name": "유기농현미",
+            "origin": "국내산",
+            "amount": "98.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농시금치분말",
+            "origin": "국내산",
+            "amount": "1.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합곡물발효효소",
+            "origin": "국내산",
+            "amount": "0.05%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:21"
+  },
+  "nutrition": {
+    "kcal": 95.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량2봉지(25g)",
+    "collected_at": "2026-03-04 03:58:21"
+  }
+}

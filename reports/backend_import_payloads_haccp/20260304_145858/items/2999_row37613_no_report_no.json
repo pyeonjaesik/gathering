@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "양파링 HOT&SPICY",
+    "reportnum": "1991046110191"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110191/1991046110191-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110191/1991046110191-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110191/1991046110191-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀;미국산), 소맥전분(미국산, 호주산), 미강유, 변성전분, 매콤한양파맛베이스분말(정백당, 분말셀룰로오스, 칠리맛풍미분, 정제염, 화이버졸), 팜유, 매운맛양념분말, 양파쥬스농축액, 감자분말, 탈지대두(대두), 전지분유(우유), 돈육(돼지고기), 토마토분말(토마토) · 특정성분함량 및 원산지 : 양파쥬스농축액 4.1%(생양파착즙액기준24g/봉, 중국산), 식이섬유 6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110191/1991046110191-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(60g) 총 1회 제공량(60g) 1회 제공량당 함량 *%영양소 기준치 열량 290kcal, 탄수화물 42g 13%, 식이섬유 3.6g 14%, 당류 7g, 단백질 3g 5%, 지방 13g 25%, 포화지방 3.8g 25%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 420mg 21% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991046110191/1991046110191-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매콤한양파맛베이스분말",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리맛풍미분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이버졸",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛양념분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파쥬스농축액",
+        "origin": "중국산",
+        "amount": "4.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돈육",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토분말",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:50:58"
+  },
+  "nutrition": {
+    "kcal": 290.0,
+    "carbohydrate_g": 42.0,
+    "dietary_fiber_g": 3.6,
+    "sugar_g": 7.0,
+    "protein_g": 3.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 3.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 420.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(60g)",
+    "collected_at": "2026-03-03 18:50:58"
+  }
+}

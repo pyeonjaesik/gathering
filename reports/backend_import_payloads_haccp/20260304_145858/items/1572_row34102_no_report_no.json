@@ -1,0 +1,200 @@
+{
+  "product": {
+    "name_ko": "콘치즈천하장사",
+    "reportnum": "1983061400386"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400386/1983061400386-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400386/1983061400386-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400386/1983061400386-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육54.62%(수입산/어육, 솔비톨, 설탕, 인산염), 소맥전분(밀:수입산), 고다크림치즈10.92%[고다치즈(수입산), 자연치즈(수입산), 치즈향, 산도조절제, 유크림], 스위트콘8.5%(태국산/옥수수, 정제수, 설탕, 소금), 전란, 대두유, 설탕, 솔비톨, 정제소금, 대두단백, 혼합제제(가라기난, 곤약, 유화제, 후말산), 소스류, 복합조미식품, 산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400386/1983061400386-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=23g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983061400386/1983061400386-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "수입산",
+        "amount": "54.62%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "솔비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인산염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고다크림치즈",
+        "amount": "10.92%",
+        "sub_ingredients": [
+          {
+            "name": "고다치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자연치즈",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "origin": "태국산",
+        "amount": "8.5%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "가라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곤약",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후말산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:35:22"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 130.0,
+    "carbohydrate_g": 17.39,
+    "protein_g": 8.7,
+    "fat_g": 2.61,
+    "sugar_g": 3.26,
+    "sodium_mg": 652.0,
+    "cholesterol_mg": 43.48,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "23g",
+    "collected_at": "2026-03-03 15:35:22"
+  }
+}

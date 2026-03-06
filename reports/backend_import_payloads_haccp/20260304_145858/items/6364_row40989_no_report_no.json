@@ -1,0 +1,89 @@
+{
+  "product": {
+    "name_ko": "밀떡볶이",
+    "reportnum": "201103600056"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201103600056/201103600056-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201103600056/201103600056-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201103600056/201103600056-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:호주/미국산)99.5%, 정제소금, 혼합제제(글리세린에스테르, 폴리소르베이트80, 콩기름)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201103600056/201103600056-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "표시기준함량(100g당) 총분량 1.0kg\n<1회제공량당 함량 *%영양성분기준치>\n열량194.3kcal, 탄수화물42.8g 13%, 당류0.0g, 단백질5.6g 10%, 지방0.1g 0%, 포화지방0.0g 0%, 트랜스지방0.0g, 콜레스테롤0.0mg 0%, 나트륨362.0mg 18%\n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201103600056/201103600056-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "amount": "99.5%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리소르베이트80",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩기름",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:30"
+  },
+  "nutrition": {
+    "kcal": 194.3,
+    "carbohydrate_g": 42.8,
+    "sugar_g": 0.0,
+    "protein_g": 5.6,
+    "fat_g": 0.1,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 362.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:30:30"
+  }
+}

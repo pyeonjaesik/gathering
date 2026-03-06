@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "미니딸기웨하스",
+    "reportnum": "19910461077101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077101/19910461077101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077101/19910461077101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077101/19910461077101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀:국내산)34.59%,유기팜유(팜유:콜롬비아산,유기농)26.98%,포도당,유기농설탕8.99%,우리밀발아통밀가루(밀:국내산)4.11%,전란애(국내산),탈지분유,진공동결건조딸기분말(딸기:국내산)1.2%,탄산수소나트륨,정제소금,탄산수소암모늄,당류가공품,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077101/19910461077101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=80g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077101/19910461077101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국내산",
+        "amount": "34.59%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기팜유",
+        "origin": "콜롬비아산",
+        "amount": "26.98%",
+        "sub_ingredients": [
+          {
+            "name": "유기농",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "8.99%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우리밀발아통밀가루",
+        "origin": "국내산",
+        "amount": "4.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란애",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진공동결건조딸기분말",
+        "origin": "국내산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:44:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 550.0,
+    "carbohydrate_g": 57.5,
+    "protein_g": 6.25,
+    "fat_g": 32.5,
+    "sugar_g": 30.0,
+    "sodium_mg": 150.0,
+    "cholesterol_mg": 3.75,
+    "saturated_fat_g": 15.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "80g",
+    "collected_at": "2026-03-03 18:44:54"
+  }
+}

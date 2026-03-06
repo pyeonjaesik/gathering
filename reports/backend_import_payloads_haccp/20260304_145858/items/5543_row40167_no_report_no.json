@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "순수 황토마늘 고기완자",
+    "reportnum": "20070405014166"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014166/20070405014166-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014166/20070405014166-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014166/20070405014166-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)78.01%,정제수,숯불갈비맛베이스[쇠고기(호주산),비프향씨,향료에스,진간장(대두:수입산,밀:미국산),물엿],흑설탕,두류가공품,양파,마늘2.05%[국산(무안산)],케이에스피(우유),떡갈비양념장,건빵가루,대파,진간장,참기름,토마토케찹,볶음마늘분말0.53%(중국산),생강,정제염,효모추출물,후추가루,비타민C,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014166/20070405014166-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 32g (2개)/총 10회 제공량 (320g) 1회 제공량당 함량 *%영양소기준치 열량 95kcal, 탄수화물4g 1%, 당류1g미만, 단백질4g 7%, 지방7g 14%, 포화지방2.2g 15%, 트랜스지방0g, 콜레스테롤 10mg 3%, 나트륨130mg 7% *%영양소 기준치: 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070405014166/20070405014166-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "78.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비맛베이스",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프향씨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향료에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "2.05%",
+        "sub_ingredients": [
+          {
+            "name": "무안산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "케이에스피",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "떡갈비양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토케찹",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음마늘분말",
+        "origin": "중국산",
+        "amount": "0.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:42"
+  },
+  "nutrition": {
+    "kcal": 95.0,
+    "carbohydrate_g": 4.0,
+    "protein_g": 4.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 130.0,
+    "basis_amount": 32.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 32g (2개)",
+    "collected_at": "2026-03-04 04:04:42"
+  }
+}

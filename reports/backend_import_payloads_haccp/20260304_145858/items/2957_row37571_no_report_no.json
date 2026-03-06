@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "홈플러스샐몬타르타르드레싱",
+    "reportnum": "199104450775550"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775550/199104450775550-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775550/199104450775550-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775550/199104450775550-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마요네즈[식물성유지(대두:수입산), 난황액{난황(계란 : 국산), 정제소금(국산)}, 발효식초, 백설탕, 정제소금], 정제수, 저당, 알래스카훈제연어[연어(미국산)98.5%, 천일염(국산)]8.35%, 백설탕, 홀그레인머스타드, DB메이트액50(레몬농축액52.38%)4.2%, 켄쿠킹크리미, 복합조미식품, 마늘, 반경성가공치즈, DB메이트액49, 발효주정",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775550/199104450775550-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 25g 기준, 총 약9회 제공량(225g) 1회 제공량당 함량 : 열량 80kcal, 탄수화물 6g (2%), 당류 2g, 단백질 1g미만 (1%), 지방 6g (12%), 포화지방 1.5g(10%), 트랜스지방 0g, 콜레스테롤 5mg미만 (1%), 나트륨 240mg (12%) *()안의 수치는 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775550/199104450775550-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마요네즈",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황액",
+            "sub_ingredients": [
+              {
+                "name": "난황",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알래스카훈제연어",
+        "amount": "8.35%",
+        "sub_ingredients": [
+          {
+            "name": "연어",
+            "origin": "미국산",
+            "amount": "98.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홀그레인머스타드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DB메이트액50",
+        "amount": "4.2%",
+        "sub_ingredients": [
+          {
+            "name": "레몬농축액",
+            "amount": "52.38%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "켄쿠킹크리미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "반경성가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DB메이트액49",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효주정",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:42:24"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 2.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 240.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 25g 기준",
+    "collected_at": "2026-03-03 18:42:24"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "product": {
+    "name_ko": "완전균형영양식 뉴케어 커피맛",
+    "reportnum": "19950449002220"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950449002220/19950449002220-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950449002220/19950449002220-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950449002220/19950449002220-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,덱스트린,저감미당,정백당,농축유단백(우유:캐나다산),옥수수유{옥수수씨눈(외국산:헝가리,세르비아,러시아등)},분리대두단백(대두:미국산),채종유,프락토올리고당(1%),혼합제제0.74%{말토덱스트린,제삼인산칼슘26.63%],제이인산칼륨,염화마그네슘,산화마그네슘,영양강화제,산도조절제,혼합제제0.17%[영양강화제,타우린27.7%,말토덱스트린,혼합제제(dl-a-토코페릴아세테이트,말토덱스트린,변성전분,이산화규소),혼합제제(말토덱스트린,아카시아검,전분,비타민A,아세테이트,비타민E),말토덱스트린,산도조절제,비타민B2),판토텐산칼슘(5.88%),혼합제제0.54%,{자당,아카시아검,전분,글리세린지방산에스테르,비타민D3(0.0025%),비타민E),혼합제제(아카시아검,자당,비타민K1)],에소프레소추출액0.15%(커피(수입산),ebrix기준,대두레시틴,혼합제제(결정셀룰로오스,카르복시메틸셀룰로오스NA),합성착향료0.2%(커피향),혼합제제(젤란검,덱스트린,산도조절제,비타민B12)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950449002220/19950449002220-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=- | foodSize=200ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950449002220/19950449002220-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저감미당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축유단백",
+        "origin": "캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수씨눈",
+            "origin": "헝가리산, 세르비아산, 러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "0.74%",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "amount": "26.63%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타우린",
+            "amount": "27.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-a-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아카시아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "amount": "0.0025%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민K1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B12",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제이인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "판토텐산칼슘",
+        "amount": "5.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에소프레소추출액",
+        "amount": "0.15%",
+        "sub_ingredients": [
+          {
+            "name": "커피",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "결정셀룰로오스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카르복시메틸셀룰로오스NA",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:35:30"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 100.0,
+    "carbohydrate_g": 15.0,
+    "protein_g": 3.5,
+    "fat_g": 3.0,
+    "sugar_g": 4.5,
+    "sodium_mg": 65.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "total_content": "200ml",
+    "collected_at": "2026-03-03 20:35:30"
+  }
+}

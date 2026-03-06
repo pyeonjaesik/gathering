@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "키커바시리얼현미미니",
+    "reportnum": "19970443119269"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119269/19970443119269-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119269/19970443119269-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119269/19970443119269-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀크초콜릿[싱가포르산,백설탕,코코아매스,코코아버터,식물성유지,탈지분유(우유),레시틴(대두),합성착향료(바닐린)],미니초콜릿C,[백설탕,식물성유지말레이시아산),밀크초코크럼(핀란드산),혼합탈지분유,유당,땅콩페이스트(땅콩)],시리얼[소맥분(밀),옥수수전분,백설탕,산도조절제,정제염],시리얼현미[찹쌀현미,백설탕,팜올레인유,기타설탕,현미],유화제/특정성분:현미0.2%(국내산),찹쌀현미2%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119269/19970443119269-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=391g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119269/19970443119269-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀크초콜릿",
+        "origin": "싱가포르산",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미니초콜릿C",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀크초코크럼",
+        "origin": "핀란드산",
+        "sub_ingredients": [
+          {
+            "name": "혼합탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩페이스트",
+            "sub_ingredients": [
+              {
+                "name": "땅콩",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "시리얼",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "시리얼현미",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제/특정성분",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국내산",
+            "amount": "0.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀현미",
+            "origin": "국내산",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:27:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 537.0,
+    "carbohydrate_g": 62.0,
+    "protein_g": 7.0,
+    "fat_g": 29.0,
+    "sugar_g": 45.0,
+    "sodium_mg": 130.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 20.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "391g",
+    "collected_at": "2026-03-03 21:27:13"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "프랑크푸르터FZ",
+    "reportnum": "19930607450320"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450320/19930607450320-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450320/19930607450320-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450320/19930607450320-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기91.82%(국산),정제수,설탕,정제소금(국산),대두단백(중국산),L-글루탐산나트륨(향미증진제),화이트페퍼믹스,산도조절제,생강분말,락색소,메이스클래식,코리안더클래식,비타민C,아질산나트륨(발색제),천연양장케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450320/19930607450320-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 160g 100g당 325kcal 나트륨 820mg 41%,탄수화물 12g 4%, 당류 2g 2%, 지방 25g 46%,트랜스지방 0g, 포화지방 19g 127%,콜레스테롤 195mg 65%,단백질 13g 24% 1일 영양성분 기준치에 대한 비율(%)은 2.000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450320/19930607450320-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "91.82%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트페퍼믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메이스클래식",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코리안더클래식",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연양장케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:49:31"
+  },
+  "nutrition": {
+    "total_content": "160",
+    "food_weight_g": 160.0,
+    "kcal": 325.0,
+    "sodium_mg": 820.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 2.0,
+    "fat_g": 25.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 19.0,
+    "cholesterol_mg": 195.0,
+    "protein_g": 13.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 19:49:31"
+  }
+}

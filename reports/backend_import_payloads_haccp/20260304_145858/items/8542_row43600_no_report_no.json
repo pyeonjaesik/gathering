@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "해와달과별",
+    "reportnum": "2003022135199"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135199/2003022135199-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135199/2003022135199-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135199/2003022135199-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농현미(국산)43%, 유기농설탕37%, 유기농찹쌀현미(국산)4%, 유기농코코아(네덜란드산)4%, 유기농찰보리쌀(국산)3%, 전지분유(우유,국산)2%, 자색고구마분말(국산)1.25%, 단호박분말(국산)1.25%, 유기농백태(대두,국산)1%, 유기농녹토미(국산)1%, 유기농쥐눈이콩(대두,국산)1%, 유기농흑미(국산)1%, 구운소금(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135199/2003022135199-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=240g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135199/2003022135199-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "43%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농찹쌀현미",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농코코아",
+        "origin": "네덜란드산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농찰보리쌀",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자색고구마분말",
+        "origin": "국산",
+        "amount": "1.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단호박분말",
+        "origin": "국산",
+        "amount": "1.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농백태",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농녹토미",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농쥐눈이콩",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농흑미",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 409.0,
+    "carbohydrate_g": 84.0,
+    "protein_g": 7.0,
+    "fat_g": 5.0,
+    "sugar_g": 34.0,
+    "sodium_mg": 150.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "240g",
+    "collected_at": "2026-03-04 03:45:53"
+  }
+}

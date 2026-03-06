@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "프라페체리블라썸",
+    "reportnum": "19710372001208"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001208/19710372001208-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001208/19710372001208-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001208/19710372001208-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,유당분말[유당(국산),저당],혼합과일농축분말[열대혼합과일농축액(고형분65%,이스라엘산),덱스트린],변성전분,체리농축액분발[체리농축액(고형분65%,미국산)40%,덱스트린]6%,혼압제제(쉐이드체리레드,무수구연산,덱스트린),비타민C,구연산삼나트륨,합성착향료(체리블로섬향),정제염)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001208/19710372001208-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량16g(총약20회제공량), 열량65kcal, 탄수화물15g(5%), 당류11g,단백질0g, 지방0.5g(1%), 포화지방0g, 트랜스지방0g, 콜레스테롤0mg, 나트륨60mg(3%), 비타민C127mg(127%), *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001208/19710372001208-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당분말",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "유당",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합과일농축분말",
+        "origin": "이스라엘산",
+        "sub_ingredients": [
+          {
+            "name": "열대혼합과일농축액",
+            "origin": "이스라엘산",
+            "amount": "고형분65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "체리농축액분말",
+        "origin": "미국산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "체리농축액",
+            "origin": "미국산",
+            "amount": "고형분65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼압제제",
+        "sub_ingredients": [
+          {
+            "name": "쉐이드체리레드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무수구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "체리블로섬향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:23:56"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 60.0,
+    "basis_amount": 16.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량16g(총약20회제공량)",
+    "collected_at": "2026-03-03 13:23:56"
+  }
+}

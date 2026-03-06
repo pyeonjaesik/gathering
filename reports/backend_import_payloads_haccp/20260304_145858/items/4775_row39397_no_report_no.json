@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "아워홈 미트소스쌀파스타",
+    "reportnum": "20020614179689"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179689/20020614179689-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179689/20020614179689-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179689/20020614179689-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*<글루텐프리면>:쌀가루82.3%(쌀:국산),옥수수전분(옥수수:수입산),트레할로스,주정,잔탄검,구아검,정제염\n*<글루텐프리미트소스>:정제수,토마토페이스트(미국산:토마토100%),토마토통조림(이탈리아)[토마토,토마토주스,구연산],양파,돼지고기10%(국산),치킨육수[계육스프베이스],소고기5%(호주산),폴리글리시톨시럽,올리브오일,테이스트인핸서(우유),당근,양송이버섯,마늘,정백당,피망,정제염,효모추출물제품,복합스파이스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179689/20020614179689-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1인분(340g) 총 2회 제공량(680g)\n<1회제공량당 함량 *%영양소 기준치>\n열량560kcal, 탄수화물98g 30%, 당류17g, 단백질17g 31%, 지방11g 22%, 포화지방1.5g 10%, 트랜스지방0g, 콜레스테롤40mg 13%, 나트륨1,190mg 60%\n* % 영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179689/20020614179689-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "글루텐프리면",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "국산",
+            "amount": "82.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트레할로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루텐프리미트소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토통조림",
+            "origin": "이탈리아산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토주스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨육수",
+            "sub_ingredients": [
+              {
+                "name": "계육스프베이스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소고기",
+            "origin": "호주산",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리브오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "테이스트인핸서",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피망",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합스파이스",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:04"
+  },
+  "nutrition": {
+    "kcal": 560.0,
+    "carbohydrate_g": 98.0,
+    "sugar_g": 17.0,
+    "protein_g": 17.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 1190.0,
+    "basis_amount": 340.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1인분(340g)",
+    "collected_at": "2026-03-04 03:44:04"
+  }
+}

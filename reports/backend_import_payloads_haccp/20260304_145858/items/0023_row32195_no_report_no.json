@@ -1,0 +1,185 @@
+{
+  "product": {
+    "name_ko": "칠갑쫄면",
+    "reportnum": "1989035501279"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989035501279/1989035501279-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989035501279/1989035501279-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989035501279/1989035501279-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면:쌀가루60%(국산),밀가루34%(밀:호주산,미국산),정제염,멜로소이(대두)-쫄면비빔장:고과당,혼합양념{고춧가루(중국산),마늘,생강,정제염},물엿,양파(국산),맛소금,하얀설탕,엘-글루타민산나트륨(향미증진제),마늘(국산),양조식초,참기름,간장(대두,밀),대두유(대두),참깨(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989035501279/1989035501279-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1989/1989035501279/1989035501279-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "amount": "34%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멜로소이",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쫄면비빔장",
+        "sub_ingredients": [
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합양념",
+            "sub_ingredients": [
+              {
+                "name": "고춧가루",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "생강",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하얀설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엘-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참깨",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:42:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 246.0,
+    "carbohydrate_g": 51.5,
+    "protein_g": 6.5,
+    "fat_g": 1.4,
+    "sugar_g": 0.0,
+    "sodium_mg": 310.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.25,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "1000g",
+    "collected_at": "2026-03-03 17:42:49"
+  }
+}

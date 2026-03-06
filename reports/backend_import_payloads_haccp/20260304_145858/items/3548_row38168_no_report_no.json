@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "우리쌀백설기",
+    "reportnum": "199503380154604"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154604/199503380154604-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154604/199503380154604-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154604/199503380154604-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,호주산),기타설탕(원당,옥수수전분/수입산),난백/국산(계란),쌀가루(쌀/국산)건포도,혼합제제(유화제,과당,주정),기타전분,포도당,혼합제제(산도조절제,밀가루),주정,L-주석산수소칼륨,혼합제제(글리신,폴리리신50P(§-폴리리신,덱스트린)정제소금,합성착향료(오곡향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154604/199503380154604-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 250KCAL 탄수화물 54G 16% 당류 30G 단백질 5G 9% 지방 1.6G 3% 포화지방 1.1G 7% 트랜스지방 0G 콜레스테롤 0MG 0% 나트륨 230MG 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154604/199503380154604-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건포도",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리리신50P",
+            "sub_ingredients": [
+              {
+                "name": "§-폴리리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-주석산수소칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "오곡향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:13:43"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "carbohydrate_g": 54.0,
+    "sugar_g": 30.0,
+    "protein_g": 5.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 230.0,
+    "collected_at": "2026-03-03 20:13:43"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "product": {
+    "name_ko": "키스틱 포켓몬",
+    "reportnum": "19810415001107"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415001107/19810415001107-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415001107/19810415001107-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415001107/19810415001107-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육56.32%(수입산/어육살,설탕,D-소르비톨,산도조절제),키스틱쇼트닝[팜유(말레이시아산),대두유(수입산),토코페롤(혼합형),혼합제제{옥수수유,β-카로틴(합성착색료),토코페롤}],소맥전분,체다치즈5.12%(우유,정제소금,스타터컬쳐,효소제제),난백액,농축대두단백,백설탕,KST시즈닝{L-글루타민산나트륨(향미증진제)},정제소금,치즈시즈닝분말{L-글루타민산나트륨(향미증진제)},파프리카추출색소-엘,산도조절제,치즈후레바(합성착향료),혼합제제(치자황색소,덱스트린,홍국적색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415001107/19810415001107-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(25g) 총 20회 제공량(500g)\n<1회 제공량당 함량 *%영양성분기준치>\n열량50kcal, 탄수화물3g 1%, 당류2g, 단백질3g 5%, 지방3.4g 7%, 포화지방1.8g 12%, 트랜스지방0g, 콜레스테롤5mg미만 2%, 나트륨200mg 10%\n※영양성분기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415001107/19810415001107-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "수입산",
+        "amount": "56.32%",
+        "sub_ingredients": [
+          {
+            "name": "어육살",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "키스틱쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "옥수수유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "β-카로틴",
+                "sub_ingredients": [
+                  {
+                    "name": "합성착색료",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "토코페롤",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "체다치즈",
+        "amount": "5.12%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스타터컬쳐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "농축대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "KST시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈시즈닝분말",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카추출색소-엘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈후레바",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍국적색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:50:15"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 3.4,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(25g)",
+    "collected_at": "2026-03-03 14:50:15"
+  }
+}

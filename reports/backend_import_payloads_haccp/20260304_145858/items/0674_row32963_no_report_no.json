@@ -1,0 +1,137 @@
+{
+  "product": {
+    "name_ko": "리얼치즈칩",
+    "reportnum": "19760487005114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005114/19760487005114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005114/19760487005114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005114/19760487005114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "감자분말(벨기에산),찰옥수수전분(미국산),해바라기유(아르헨티나산),백설탕,체다치즈분말(덴마크산/체다치즈,제이인산나트륨),까망베르치즈분말(덴마크산),타피오카전분,식물성유지,소백전분,체다치즈분말(미국산),식염,레시틴,혼합제제(젖산분말,젖산칼륨,이산화규소),효소제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005114/19760487005114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=62g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005114/19760487005114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자분말",
+        "origin": "벨기에산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찰옥수수전분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "체다치즈분말",
+        "origin": "덴마크산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "체다치즈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "까망베르치즈분말",
+        "origin": "덴마크산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소백전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젖산분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:59:28"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 494.0,
+    "carbohydrate_g": 64.52,
+    "protein_g": 8.06,
+    "fat_g": 22.58,
+    "sugar_g": 9.68,
+    "sodium_mg": 726.0,
+    "cholesterol_mg": 17.74,
+    "saturated_fat_g": 5.48,
+    "trans_fat_g": 0.48,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "62g",
+    "collected_at": "2026-03-03 13:59:28"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "봄빛녹차호떡",
+    "reportnum": "2008044520891"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520891/2008044520891-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520891/2008044520891-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520891/2008044520891-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),정제수,찹쌀가루(찹쌀/국산),흑설탕,전란액(계란/국산),혼합제제1(히드록시프로필전분,설탕분말,탈지분유),땅콩분태,알파콘,백설탕,대두유,혼합분유(우유),가루녹차0.91%(국산),합성팽창제(팽창제,탄산수소나트륨,소맥분),정제소금,무수결정포도당,혼합제제2(효모,소르비탄,지방산에스테르,비타민C)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520891/2008044520891-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(80g) / 총 20회 제공량(1,600g)\n1회 제공량당 함량:열량249kcal, 탄수화물42g (13%), 당류10g, 단백질6g (11%), 지방6g (12%), 포화지방1.5g (10%), 트렌스지방0g, 콜레스테롤18mg (6%), 나트륨311mg (16%)\n( )안의 수치는 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520891/2008044520891-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "히드록시프로필전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "땅콩분태",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가루녹차",
+        "origin": "국산",
+        "amount": "0.91%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성팽창제",
+        "sub_ingredients": [
+          {
+            "name": "팽창제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:15"
+  },
+  "nutrition": {
+    "kcal": 249.0,
+    "carbohydrate_g": 42.0,
+    "sugar_g": 10.0,
+    "protein_g": 6.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 18.0,
+    "sodium_mg": 311.0,
+    "basis_amount": 80.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(80g)",
+    "collected_at": "2026-03-04 04:12:15"
+  }
+}

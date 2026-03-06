@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "큼직한 새알동지팥죽",
+    "reportnum": "200304432172506"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172506/200304432172506-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172506/200304432172506-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172506/200304432172506-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 팥 13.33%(국산), 백설탕, 새알쌀떡볶이5%[쌀가루 99%(외국산/중국산, 태국산, 미구산), 정제염(국산), 주정, 산도조절제], 찹쌀(국산), 사양벌꿀(국산), 쌀, 혼합제제(변성전분, 말토덱스트린), 정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172506/200304432172506-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172506/200304432172506-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "origin": "국산",
+        "amount": "13.33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새알쌀떡볶이",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "외국산, 중국산, 태국산",
+            "amount": "99%",
+            "sub_ingredients": [
+              {
+                "name": "미구산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:10"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 82.0,
+    "carbohydrate_g": 18.4,
+    "protein_g": 3.6,
+    "fat_g": 0.2,
+    "sugar_g": 5.6,
+    "sodium_mg": 164.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:47:10"
+  }
+}

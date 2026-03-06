@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "명가 찰떡파이",
+    "reportnum": "199403770844"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199403770844/199403770844-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199403770844/199403770844-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199403770844/199403770844-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "초콜릿-S[백설탕,식물성유지(말레이시아산),혼합분유(네덜란드산),코코아분말(싱가포르산),유당],준초콜릿[백설탕,코코아프리퍼레이션(네덜란드산),가공유지(말레이시아산),코코아매스(싱가포르산),유당],백설탕,말티톱시럽10.6%,전분(미국산),덱스트린,찹쌀(국내산),글리세린,밀가루,정제소금,주정0.28%,혼합제제(글리세린,유화제),유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199403770844/199403770844-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=375g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199403770844/199403770844-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아프리퍼레이션",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톱시럽",
+        "amount": "10.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "amount": "0.28%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:56:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 409.0,
+    "carbohydrate_g": 68.8,
+    "protein_g": 1.74,
+    "fat_g": 9.9,
+    "sugar_g": 30.97,
+    "sodium_mg": 298.0,
+    "cholesterol_mg": 4.8,
+    "saturated_fat_g": 7.1,
+    "trans_fat_g": 0.64,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "375g",
+    "collected_at": "2026-03-03 19:56:04"
+  }
+}

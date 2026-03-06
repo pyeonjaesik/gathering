@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "생생 황기 닭백숙",
+    "reportnum": "200604050145"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604050145/200604050145-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604050145/200604050145-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604050145/200604050145-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기(국산)40.00%,육수52.30%{닭고기(국산),양파(국산),마늘(국산),황기(국산),정제수],찹쌀(국산),정제수,황기(국산)0.80%,대추(국산),대추(국산),마늘(국산),정제소금,조미후추분(밀)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604050145/200604050145-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/200604050145/200604050145-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "40.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육수",
+        "amount": "52.30%",
+        "sub_ingredients": [
+          {
+            "name": "닭고기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황기",
+        "origin": "국산",
+        "amount": "0.80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미후추분",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:52"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 97.0,
+    "carbohydrate_g": 5.5,
+    "protein_g": 9.1,
+    "fat_g": 4.3,
+    "sugar_g": 0.2,
+    "sodium_mg": 172.0,
+    "cholesterol_mg": 49.0,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 03:58:52"
+  }
+}

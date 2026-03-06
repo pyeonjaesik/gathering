@@ -1,0 +1,140 @@
+{
+  "product": {
+    "name_ko": "켄터키후랑크",
+    "reportnum": "1972012500182"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500182/1972012500182-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500182/1972012500182-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500182/1972012500182-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기59.45%(국산),돼지고기21.14%(국산,미국산),정제수,옥수수전분,복합스파이스케이에프[소르빈산칼륨(합성보존료),에리쏘르빈산나트륨(산화방지제),아질산나트륨(발색제,산도조절제),L-글루타민산나트륨(향미증진제),대두단백,프리겔,비프시즈닝,바이오파우다,락색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500182/1972012500182-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(50g)/총20회 제공량(1,000g) 1회 제공량당 함량  *%영양소 기준치: 열량 100kcal,탄수화물7g 2%,당류1g미만,단백질5g 8%,지방6g 12%, 포화지방3.7g 25%, 트랜스지방 0g, 콜레스테롤5mg 2%, 나트륨 160mg 8%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/1972012500182/1972012500182-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "59.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산, 미국산",
+        "amount": "21.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스케이에프",
+        "sub_ingredients": [
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에리쏘르빈산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프리겔",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비프시즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바이오파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:29:43"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 7.0,
+    "protein_g": 5.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 3.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 160.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(50g)",
+    "collected_at": "2026-03-03 13:29:43"
+  }
+}

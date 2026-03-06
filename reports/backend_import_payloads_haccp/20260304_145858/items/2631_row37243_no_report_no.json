@@ -1,0 +1,367 @@
+{
+  "product": {
+    "name_ko": "두부판자넬라샐러드",
+    "reportnum": "19880442004701"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004701/19880442004701-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004701/19880442004701-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004701/19880442004701-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두부판자넬라샐러드믹스(150g)-단호박샐러드[단호박(중국산),플레인소스{현미유(태국산),난황액(국산)},당근,홍피망,결정과당],두부17.22%[유기농대두100%(캐나다산),천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)},그린치커리(국산),양상추,로메인,애호박,가지,당근,캐놀라유 오리엔탈드리싱(30g)-정제수,양조간장[탈지대두(인도산),소맥(미국산),천일염,발효주정],양념베이스[야채농축액{양조간장(대두:인도산)},양조간장(대두:인도산),액상과당,에이취브이피비,조미양조간장분말],백설탕,발효식초,무수결정포도당,옥수수기름,액상과당,조미액,갈색설탕,참기름,마늘,볶음참깨,정제소금,잔탄검 크루통(15g)-소맥분(밀/미국,캐나다산),가공버터{호주산/버터지방(우유),수분,코코넛유,무지유고형분(우유)},정백당,대두유(대두),생이스트(중국산),정제소금(국산),낙우밀(우유,대두),마늘분말(중국산),파슬리(독일산),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004701/19880442004701-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 221kcal,탄수화물28g (8%), 당류14g, 단백질 6g (11%),지방9.4g (18%), 포화지방2.0g (13%), 트랜스지방 0g, 콜레스테롤0mg (0%), 나트륨 580mg (29%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004701/19880442004701-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두부판자넬라샐러드믹스",
+        "amount": "150g",
+        "sub_ingredients": [
+          {
+            "name": "단호박샐러드",
+            "sub_ingredients": [
+              {
+                "name": "단호박",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "플레인소스",
+                "sub_ingredients": [
+                  {
+                    "name": "현미유",
+                    "origin": "태국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "난황액",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍피망",
+                "sub_ingredients": []
+              },
+              {
+                "name": "결정과당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "두부",
+            "amount": "17.22%",
+            "sub_ingredients": [
+              {
+                "name": "유기농대두",
+                "origin": "캐나다산",
+                "amount": "100%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염천연응고제",
+                "amount": "100",
+                "sub_ingredients": [
+                  {
+                    "name": "조제해수염화마그네슘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "현미유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "올리브유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "그린치커리",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양상추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로메인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "애호박",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "캐놀라유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오리엔탈드리싱",
+        "amount": "30g",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양념베이스",
+            "sub_ingredients": [
+              {
+                "name": "야채농축액",
+                "sub_ingredients": [
+                  {
+                    "name": "양조간장",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "origin": "인도산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "양조간장",
+                "origin": "인도산",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에이취브이피비",
+                "sub_ingredients": []
+              },
+              {
+                "name": "조미양조간장분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "갈색설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크루통",
+        "amount": "15g",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공버터",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "수분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코넛유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "무지유고형분",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "생이스트",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "낙우밀",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파슬리",
+            "origin": "독일산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:23:05"
+  },
+  "nutrition": {
+    "kcal": 221.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 14.0,
+    "protein_g": 6.0,
+    "fat_g": 9.4,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 580.0,
+    "collected_at": "2026-03-03 17:23:05"
+  }
+}

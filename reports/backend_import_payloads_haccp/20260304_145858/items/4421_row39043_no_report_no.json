@@ -1,0 +1,72 @@
+{
+  "product": {
+    "name_ko": "마늘기름",
+    "reportnum": "20010306244965"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244965/20010306244965-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244965/20010306244965-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244965/20010306244965-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "채종유79.77%,(호주산),마늘(국내산)20%,마늘에센셜오일(멕시코산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244965/20010306244965-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량250ml, 100g당 함량890kcal, 나트륨0mg 0%, 탄수화물0g 0%, 당류0g, 지방99g 183%, 트랜스지방0g, 포화지방8g 53%, 콜레스테롤5mg미만 1.7%, 단백질0g 0%, 1g=1.1ml, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010306244965/20010306244965-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "채종유",
+        "origin": "호주산",
+        "amount": "79.77%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국내산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘에센셜오일",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:03"
+  },
+  "nutrition": {
+    "kcal": 890.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "fat_g": 99.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 8.0,
+    "protein_g": 0.0,
+    "basis_amount": 250.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량250ml",
+    "collected_at": "2026-03-04 03:28:03"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "부드럽고 쫄깃한 호박인절미",
+    "reportnum": "20020512164238"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164238/20020512164238-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164238/20020512164238-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164238/20020512164238-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "호박시트[찹쌀가루{찹쌀(국산)65%, 정제수, 설탕, 천일염(국산)}63.56%, 찹쌀가루(호박인절미){찹쌀(국산)63.3%, 정제수, 마른호박(베트남산)4.8%, 천일염(국산)}31.72%, 설탕}80%, 카스테라가루{계란42.0%, 정백당27.0%, 밀가루(미국산,캐나다산)27%, 웰가에스피2.5%, 베이킹파우더1.5%]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164238/20020512164238-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020512164238/20020512164238-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "호박시트",
+        "sub_ingredients": [
+          {
+            "name": "찹쌀가루",
+            "amount": "63.56%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "origin": "국산",
+                "amount": "65%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "찹쌀가루(호박인절미)",
+            "amount": "31.72%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "origin": "국산",
+                "amount": "63.3%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마른호박",
+                "origin": "베트남산",
+                "amount": "4.8%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카스테라가루",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "amount": "42.0%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "amount": "27.0%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀가루",
+                "origin": "미국산, 캐나다산",
+                "amount": "27%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "웰가에스피",
+                "amount": "2.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "베이킹파우더",
+                "amount": "1.5%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 261.0,
+    "carbohydrate_g": 55.0,
+    "protein_g": 6.0,
+    "fat_g": 2.0,
+    "sugar_g": 6.0,
+    "sodium_mg": 242.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:43:29"
+  }
+}

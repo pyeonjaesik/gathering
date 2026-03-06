@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "바리스타룰스 블랙 만델링",
+    "reportnum": "19810227007177"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007177/19810227007177-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007177/19810227007177-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007177/19810227007177-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "만델링G1에스프레소커피추출액35.71%(고형분함량2.4%이상,원두:인도네시아산만델링100%),정제수,탄산수소나트륨,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007177/19810227007177-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(100mL)기준 총 10회 제공량(1,000mL) 열량0kcal 탄수화물1g미만 0% 당류0g 단백질0g 0% 지방0g 0% 포화지방0g 0% 트랜스지방0g 콜레스테롤0mg 나트륨20mg 1% *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007177/19810227007177-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "만델링G1에스프레소커피추출액",
+        "origin": "인도네시아산",
+        "amount": "35.71%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "2.4%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원두",
+            "origin": "인도네시아산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:39:01"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(100mL)기준",
+    "collected_at": "2026-03-03 14:39:01"
+  }
+}

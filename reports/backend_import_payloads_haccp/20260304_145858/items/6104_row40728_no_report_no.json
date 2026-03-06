@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "전통삼계탕",
+    "reportnum": "2009050200318"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200318/2009050200318-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200318/2009050200318-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200318/2009050200318-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(국내산)49.0%,찹쌀(국내산)4.3%,수삼(국내산)0.6%,밤(국내산)1.1%,대추(국내산)0.5%,삼계탕용육수∥[정제수,닭발(국내산)9.97%,생양파(국내산),정제염,생마늘(국내산),생생강(국내산),황기(국내산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200318/2009050200318-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1회(800g) 100g당 함량기준 *%영양소기준치 열량 98kcal, 탄수화물 4g 1.2%, 당류 0g, 단백질 11g 18.3%,지방 4.6g 7.5%, 포화지방 0.48g ,트랜스지방 0g,콜레스테롤 35mg 11.7%,나트륨 210mg 10.5% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009050200318/2009050200318-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "49.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국내산",
+        "amount": "4.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수삼",
+        "origin": "국내산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤",
+        "origin": "국내산",
+        "amount": "1.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국내산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼계탕용육수",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭발",
+            "origin": "국내산",
+            "amount": "9.97%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생마늘",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생생강",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:21:47"
+  },
+  "nutrition": {
+    "kcal": 98.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 0.0,
+    "protein_g": 11.0,
+    "fat_g": 4.6,
+    "saturated_fat_g": 0.48,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 35.0,
+    "sodium_mg": 210.0,
+    "basis_amount": 800.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1회(800g)",
+    "collected_at": "2026-03-04 04:21:47"
+  }
+}

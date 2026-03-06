@@ -1,0 +1,247 @@
+{
+  "product": {
+    "name_ko": "정통크림빵",
+    "reportnum": "199503380154995"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154995/199503380154995-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154995/199503380154995-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154995/199503380154995-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),그리운크림[마가린{식물성유지(팜유/인도네시아산,야자유/인도네시아산),가공유지(에스테르화유(팜올레인유/말레이시아산,팜유/말레이시아산))},백설탕,함수결정포도당,옥수수전분(옥수수/외국산),혼합제제(글리신,산도조절제,시클로덱스트린,유화제)],백설탕,쇼트닝/인도네시아산,콩기름,물엿,효모,탈지분유(우유),정제소금,기타가공품,혼합제제[식물성유지,유화제,아스코르빌파르미테이트(산화방지제)],곡류가공품,혼합제제[밀가루,유화제,비타민C,효소제],유화제,알긴산프로필렌글리콜,곡류가공품(대두),혼합제제[바닐린,변성전분,함수결정포도당,에틸바닐린,에틸말톨]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154995/199503380154995-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=75g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380154995/199503380154995-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그리운크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "origin": "인도네시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "팜유",
+                    "origin": "인도네시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜올레인유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "글리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "시클로덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스코르빌파르미테이트",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에틸바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에틸말톨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알긴산프로필렌글리콜",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:13:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 383.0,
+    "carbohydrate_g": 54.67,
+    "protein_g": 8.0,
+    "fat_g": 14.67,
+    "sugar_g": 20.0,
+    "sodium_mg": 373.0,
+    "cholesterol_mg": 13.33,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "75g",
+    "collected_at": "2026-03-03 20:13:50"
+  }
+}

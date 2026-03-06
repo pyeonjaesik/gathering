@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "페파로니",
+    "reportnum": "198302620018"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198302620018/198302620018-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198302620018/198302620018-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198302620018/198302620018-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기[외국산{스페인,독일,프랑스 등}85%,국산15%],정제수,페파로니복합씨즈닝4.42%[정제소금(국산),페파로니씨즈닝-케이[옥수수분말(옥수수:호주산)],호스이엔알(산도조절제),아질산나트륨(발색제),L-글루타민산나트륨(향미증진제),에리쏘르빈산나트륨(산화방지제),전분[옥수수{외국산(헝가리,러시아,세르비아 등)}],농축대두단백,파프리카추출색소,에스비피",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198302620018/198302620018-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/198302620018/198302620018-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "독일산, 프랑스산, 국산",
+        "amount": "85%",
+        "sub_ingredients": [
+          {
+            "name": "외국산{스페인",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "페파로니복합씨즈닝",
+        "amount": "4.42%",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페파로니씨즈닝-케이",
+            "sub_ingredients": [
+              {
+                "name": "옥수수분말",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "호스이엔알",
+                "sub_ingredients": [
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "에리쏘르빈산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "산화방지제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "전분",
+                "origin": "러시아산, 세르비아산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수{외국산",
+                    "origin": "헝가리산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "농축대두단백",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에스비피",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:03:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 260.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 13.0,
+    "fat_g": 20.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 810.0,
+    "cholesterol_mg": 35.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-03 15:03:50"
+  }
+}

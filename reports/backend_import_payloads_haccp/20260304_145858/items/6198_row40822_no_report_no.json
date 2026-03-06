@@ -1,0 +1,260 @@
+{
+  "product": {
+    "name_ko": "왕캔디",
+    "reportnum": "20100372386178"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386178/20100372386178-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386178/20100372386178-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386178/20100372386178-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,물엿,쌍백당,구연산,혼합제제{오렌지향-대두유(대두)천연착향료(오렌지오일),합성착향료},혼합제제(포도향-프로필렌글리콜,합성착향료(산도조절제),혼합제제(사과향-프로필렌글리콜,합성착향료,트리아세틴),혼합제제{레몬향-대두유,합성착향료,천연착향료(레몬오일,라임오일,페티트그레인,비가레이드오일)},혼합제제(딸기향-프로필렌글리콜,합성착향료,정제수),레몬과즙농축액,딸기과즙농축액,포도과즙농축액,오렌지농축액,사과과즙농축액,홍화황색소,엘더베리색소,치자청색소,치자황색소,혼합제제(그린색소-프로필렌글리콜,주정,홍화황색소,치자청색소,말토덱스트린),젤라틴(돼지고기)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386178/20100372386178-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 NUTRITION FACTS 1회 제공량 1개(7 g) / 총 71회 제공량 (500 g), 1회 제공량 당 함량 % 영양소 기준치 / 총 포장단위 당 함량 *%영양소기준치, 열량 30 kcal / 1,985 kcal, 탄수화물 7g 2% / 495g 150%, 당류 6g  - / 400g -, 단백질 0g 0% / 0g 0%, 지방 0g 0% / 0.5g 1%, 포화지방 0g 0% / 0g 0%, 트랜스지방 0g  - / 0g -, 콜레스테롤 0mg 0% / 0mg 0%, 나트륨 0mg 0% / 65mg 3%, * %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386178/20100372386178-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌍백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "오렌지향",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "천연착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "오렌지오일",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도향",
+            "sub_ingredients": [
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사과향",
+            "sub_ingredients": [
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "트리아세틴",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레몬향",
+            "sub_ingredients": [
+              {
+                "name": "대두유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "레몬오일",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "라임오일",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "페티트그레인",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "비가레이드오일",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": [
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "그린색소",
+            "sub_ingredients": [
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자청색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬과즙농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기과즙농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도과즙농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과과즙농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엘더베리색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:06"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 7.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(7 g)",
+    "collected_at": "2026-03-04 04:24:06"
+  }
+}

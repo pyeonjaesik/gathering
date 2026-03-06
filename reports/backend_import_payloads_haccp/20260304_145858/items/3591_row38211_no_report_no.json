@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "치즈&애플빵",
+    "reportnum": "199503380156765"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156765/199503380156765-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156765/199503380156765-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156765/199503380156765-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),애플필링[가당사과다이스(사과/국산),백설탕,변성전분,펙틴,합성착향료(사과향),정제소금/국산],크림치즈카스타드[크림치즈/미국산,쇼트닝{가공유지(에스테르화유(팜유/말레이시아산,팜핵유/말레이시아산,팜스테아린유/말레이시아산)),야자경화유(야자유/수입산)},락토밀(기타가공품){유당(우유/미국산)},백설탕,물엿],백설탕,가공버터,계란,효모,혼합분유,정제소금,곡류가공품,유화제,곡류가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156765/199503380156765-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(70g) 1회 제공량 당 함량 *%영양소기준치 열량 195kcal, 탄수화물 32g 10%,당류 14g ,단백질 3g 5%,지방 6g 12%, 포화지방 3.4g 23%,트랜스지방 0g,콜레스테롤 10mg 3%,나트륨 170mg 9% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156765/199503380156765-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "애플필링",
+        "sub_ingredients": [
+          {
+            "name": "가당사과다이스",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "사과",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "사과향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림치즈카스타드",
+        "sub_ingredients": [
+          {
+            "name": "크림치즈",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": [
+              {
+                "name": "가공유지",
+                "sub_ingredients": [
+                  {
+                    "name": "에스테르화유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜유",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜핵유",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜스테아린유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "야자경화유",
+                "origin": "수입산",
+                "sub_ingredients": [
+                  {
+                    "name": "야자유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "락토밀",
+            "sub_ingredients": [
+              {
+                "name": "유당",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:19:55"
+  },
+  "nutrition": {
+    "kcal": 195.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 14.0,
+    "protein_g": 3.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 3.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 170.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(70g)",
+    "collected_at": "2026-03-03 20:19:55"
+  }
+}

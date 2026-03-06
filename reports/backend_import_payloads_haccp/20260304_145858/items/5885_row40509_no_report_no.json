@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "오리지널맛 김부각",
+    "reportnum": "20080624108118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080624108118/20080624108118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080624108118/20080624108118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080624108118/20080624108118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김 50%(국산), 찹쌀 20%(국산),옥배유 7%[옥수수배아 99.99%(외국산),규소수지],전분,소맥분, 타피오카전분,올리고당,설탕,새우,천일염,양파",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080624108118/20080624108118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Serving Size 30g(1.05 oz) 총 내용량 30g 1회 섭취 참고량 *%영양성분 기준치 나트륨/Sodium 130.0 mg 7% 탄수화물 / Total Carboydrate 17.4g 5% 당류 /Sugars 1.1g 지방/Total fat 8.8g 16% 포화지방/Saturated Fat 1.5g 10% 트랜스지방 /Trans fat 0.0g 콜레스테롤 /Cholesterol 0.0mg 0% 단백질/ Protein 2.7g 5% 열량/ Calories 160.0kcal 지방 열량 / Calories from fat 79.2 kcal *% 영양성분 기준치 : 1일 영양성분 기준치에 대한 비율 Percent Dail Values are based on nutrition standards.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080624108118/20080624108118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "외국산",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수배아",
+            "origin": "외국산",
+            "amount": "99.99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:38"
+  },
+  "nutrition": {
+    "sodium_mg": 130.0,
+    "carbohydrate_g": 17.4,
+    "sugar_g": 1.1,
+    "fat_g": 79.2,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.7,
+    "kcal": 160.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "Serving Size 30g(1.05 oz) 총 내용량 30g 1회 섭취",
+    "collected_at": "2026-03-04 04:16:38"
+  }
+}

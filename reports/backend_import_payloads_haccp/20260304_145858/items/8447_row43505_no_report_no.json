@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "다담정통된장찌개전용",
+    "reportnum": "20020464088136"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088136/20020464088136-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088136/20020464088136-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088136/20020464088136-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "된장 46.1%[대두(외국산:미국, 캐나다, 호주 등), 된장{대두(외국산:미국, 캐나다, 호주 등), 정제소금(국산)}, 소맥분, 정제소금, 대두분], 정제수, 다진마늘(마늘:국산), 주정, 다진양파(양파:국산), 다시마멸치엑기스, 조개밑국물, 혼합해물엑기스, 고춧가루, 멸치분말, 사골농축액, 정제소금, 백설탕, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088136/20020464088136-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020464088136/20020464088136-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "된장",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "46.1%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "된장",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 캐나다산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마멸치엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조개밑국물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합해물엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 100.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 7.0,
+    "fat_g": 3.8,
+    "sugar_g": 4.0,
+    "sodium_mg": 2370.0,
+    "cholesterol_mg": 3.5,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "140g",
+    "collected_at": "2026-03-04 03:42:02"
+  }
+}

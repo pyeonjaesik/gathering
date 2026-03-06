@@ -1,0 +1,283 @@
+{
+  "product": {
+    "name_ko": "스위트 꽈배기도넛",
+    "reportnum": "19910227021434"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021434/19910227021434-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021434/19910227021434-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021434/19910227021434-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "도넛믹스[밀가루(밀/미국산,캐나다산),백설탕,쇼트닝{식물성유지(팜유/말레이시아산,팜올레인유/말레이시아산,야자경화유)},대두유(대두유/수입산),혼합분유,난황분(계란)],도넛슈가{함수결정포도당,옥수수전분(옥수수/수입산),쇼트닝(정제팜유/말레이시아산),유크림혼합분(대두,우유),유화제,아스파탐(합성,페닐알라닌함유)},쇼트닝{식물성유지(팜올레인유/말레이시아산,팜유/말레이시아산,대두경화유,유화제,d-토코페롤(혼합형)},백성탕,효모,혼합제제(변성전분,설탕분말,탈지분유),계란,혼합제제(유화제,전분,타라검,효소제,젤탄검,비타민C,산도조절제),혼합제제(변성전분,파우더슈가,탈지분유),정제소금,합성착향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021434/19910227021434-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910227021434/19910227021434-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "도넛믹스",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼트닝",
+                "sub_ingredients": [
+                  {
+                    "name": "식물성유지",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": [
+                      {
+                        "name": "팜유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "팜올레인유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "야자경화유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "대두유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난황분",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "도넛슈가",
+        "sub_ingredients": [
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "쇼트닝",
+                "origin": "말레이시아산",
+                "sub_ingredients": [
+                  {
+                    "name": "정제팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "유크림혼합분",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "합성",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두경화유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "d-토코페롤",
+                "sub_ingredients": [
+                  {
+                    "name": "혼합형",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백성탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타라검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파우더슈가",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:32:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 402.0,
+    "carbohydrate_g": 50.0,
+    "protein_g": 5.56,
+    "fat_g": 20.0,
+    "sugar_g": 18.89,
+    "sodium_mg": 411.0,
+    "cholesterol_mg": 16.67,
+    "saturated_fat_g": 8.89,
+    "trans_fat_g": 0.67,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 18:32:02"
+  }
+}

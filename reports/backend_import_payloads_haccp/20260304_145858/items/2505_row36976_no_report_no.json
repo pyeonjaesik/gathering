@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "두부돈저냐세트",
+    "reportnum": "19880442004526"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004526/19880442004526-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004526/19880442004526-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004526/19880442004526-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밤흑미밥-정제수,현미(국산),백미(국산),밤,찹쌀,찰흑미 두부돈저냐&모듬가니쉬(28.57%)-두부담은돈저냐45.5%[돼지고기(국산),두부{대두(외국산:미국,캐나다,중국등)}],방울토마토(국산),아스파라거스,미니새송이버섯,카놀라유 숙주베지타이저-숙주나물(국산),애호박(국산),양파,당근 메추리알곤약조림-메추리알,곤약,올리고당,저염간장,다진마늘,정제수 블루베리무피클-무,정제수,정백당,발효식초,고",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004526/19880442004526-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량331kcal, 탄수화물54g(16%), 당류12g, 단백질16g(29%), 지방5.7g(11%), 포화지방1.5g(10%), 트랜스지방0g, 콜레스테롤85mg(28%), 나트륨800mg(40%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004526/19880442004526-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밤흑미밥",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "두부돈저냐&모듬가니쉬",
+            "amount": "28.57%",
+            "sub_ingredients": [
+              {
+                "name": "두부담은돈저냐",
+                "amount": "45.5%",
+                "sub_ingredients": [
+                  {
+                    "name": "돼지고기",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "두부",
+                    "origin": "외국산",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "origin": "외국산, 미국산, 캐나다산, 중국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "방울토마토",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아스파라거스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미니새송이버섯",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카놀라유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숙주베지타이저",
+        "sub_ingredients": [
+          {
+            "name": "숙주나물",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "애호박",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "메추리알곤약조림",
+        "sub_ingredients": [
+          {
+            "name": "메추리알",
+            "sub_ingredients": []
+          },
+          {
+            "name": "곤약",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저염간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다진마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리무피클",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:22:49"
+  },
+  "nutrition": {
+    "kcal": 331.0,
+    "carbohydrate_g": 54.0,
+    "sugar_g": 12.0,
+    "protein_g": 16.0,
+    "fat_g": 5.7,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 85.0,
+    "sodium_mg": 800.0,
+    "collected_at": "2026-03-04 03:22:49"
+  }
+}

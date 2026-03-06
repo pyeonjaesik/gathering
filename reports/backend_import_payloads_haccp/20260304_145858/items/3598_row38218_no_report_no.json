@@ -1,0 +1,299 @@
+{
+  "product": {
+    "name_ko": "딸기요거트팡",
+    "reportnum": "199503380156945"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156945/199503380156945-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156945/199503380156945-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156945/199503380156945-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),밀(미국산),딸기필링(가담냉동딸기액(딸기/국산),백설탕,물엿,변성전분,기타전분(옥수수/수입산),요거트카스타드(백설탕,우유(원유/국산)포도당,쇼트닝(가공유지(에스테르화유(팜유/말레이시아산),야자경화유(야자유/수입산)크리밀(기타가공품)혼합분유/네달란드산,유크림/호주산),요거트소프트믹스(마가린(식물성유지,대두),제제소금 유화제(합성착향료(우유향)비타민E,백설탕,계란,액상과당,효모,난화으,유청분말(정제소금 혼합제제(식물성유지)유화제(대두)아스코르빌파르미테이(산화방지제)혼합제제(옥수수전분유화제,산도조절제,팽창제,비타민C,효소제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156945/199503380156945-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량295KCAL 탄수화물 46G 14% 당류 20G 단백질 5G 9% 지방 10G 20% 포화지방 4.4G 29% 트랜스지방 0G 콜레스테롤 10MG 3% 나트륨 230MG 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380156945/199503380156945-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기필링",
+        "sub_ingredients": [
+          {
+            "name": "가담냉동딸기액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "딸기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타전분",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "요거트카스타드",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "origin": "국산",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼트닝",
+                "sub_ingredients": [
+                  {
+                    "name": "가공유지",
+                    "sub_ingredients": [
+                      {
+                        "name": "에스테르화유",
+                        "origin": "말레이시아산",
+                        "sub_ingredients": [
+                          {
+                            "name": "팜유",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "야자경화유",
+                        "origin": "수입산",
+                        "sub_ingredients": [
+                          {
+                            "name": "야자유",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "크리밀",
+                    "sub_ingredients": [
+                      {
+                        "name": "혼합분유",
+                        "origin": "네덜란드산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "유크림",
+                        "origin": "호주산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "기타가공품",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "요거트소프트믹스",
+            "sub_ingredients": [
+              {
+                "name": "마가린",
+                "sub_ingredients": [
+                  {
+                    "name": "식물성유지",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "제제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": [
+                  {
+                    "name": "합성착향료",
+                    "sub_ingredients": [
+                      {
+                        "name": "우유향",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "비타민E",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효모",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난화으",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": [
+                  {
+                    "name": "정제소금",
+                    "sub_ingredients": [
+                      {
+                        "name": "혼합제제",
+                        "sub_ingredients": [
+                          {
+                            "name": "유화제",
+                            "sub_ingredients": [
+                              {
+                                "name": "대두",
+                                "sub_ingredients": []
+                              }
+                            ]
+                          },
+                          {
+                            "name": "식물성유지",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "아스코르빌파르미테이",
+                "sub_ingredients": [
+                  {
+                    "name": "산화방지제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팽창제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "비타민C",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "효소제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:21:04"
+  },
+  "nutrition": {
+    "kcal": 295.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 20.0,
+    "protein_g": 5.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 4.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 230.0,
+    "collected_at": "2026-03-03 20:21:04"
+  }
+}

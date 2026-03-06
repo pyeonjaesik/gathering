@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "피코크유자소스",
+    "reportnum": "200204610736445"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736445/200204610736445-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736445/200204610736445-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736445/200204610736445-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 유자믹스15%[유자50%(국산), 백설탕], 사과식초[사과과즙(사과:국산)], 화이트식초, 채종유, 액상과당, 화이트와인비네가, 오렌지펠, 유자착즙액2%(유자100%:국산), 오렌지농축액, 변성전분, 정제소금, 타마린느검, 잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736445/200204610736445-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 열량 180kcal, 탄수화물 36g (11%), 당류 15g, 단백질 0g (0%), 지방 3.7g (7%), 포화지방 0g (0%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 50mg (3%) *%영양소 기준치 : 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610736445/200204610736445-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유자믹스",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과식초",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트와인비네가",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지펠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유자착즙액",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타마린느검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:15"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 36.0,
+    "sugar_g": 15.0,
+    "protein_g": 0.0,
+    "fat_g": 3.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:41:15"
+  }
+}

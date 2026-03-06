@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "유자꿀물",
+    "reportnum": "19800415004220"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004220/19800415004220-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004220/19800415004220-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004220/19800415004220-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,유자농축과즙액(유자과즙으로0.5%,국산),사양벌꿀0.1%(국산),구연산,비타민C,합성착향료(유자향),천연향료(레몬향),홍화황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004220/19800415004220-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 1회 제공량(170ml),1회 제공량당 함량: 열량85kcal,탄수화물21g(6%)[당류21g],단백질0g(0%),지방0g(0%)[포화지방0g(0%),트랜스지방 0g,콜레스테롤0mg(0%)],나트륨0mg(0%),비타민C 64mg(64%) *()안의수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004220/19800415004220-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유자농축과즙액",
+        "origin": "국산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "유자과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "유자향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연향료",
+        "sub_ingredients": [
+          {
+            "name": "레몬향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:34:30"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 21.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 170.0,
+    "basis_unit": "ml",
+    "basis_text": "총 1회 제공량(170ml)",
+    "collected_at": "2026-03-03 14:34:30"
+  }
+}

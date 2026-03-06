@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "잼이 된 통베리",
+    "reportnum": "20020183282555"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282555/20020183282555-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282555/20020183282555-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282555/20020183282555-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "블루베리 20%(미국산), 블랙커런트 10%(뉴질랜드산), 블루베리농축액 1.54%(미국산, 생물기준 10%), 백설탕, 정제수, 물엿, 분말 • 결정포도당, 펙틴, 아미드펙틴, 구연산, 구연산삼나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282555/20020183282555-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=370g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282555/20020183282555-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "블루베리",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블랙커런트",
+        "origin": "뉴질랜드산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리농축액",
+        "origin": "미국산",
+        "amount": "1.54%",
+        "sub_ingredients": [
+          {
+            "name": "생물기준",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말 • 결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:40"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 200.0,
+    "carbohydrate_g": 53.33,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 53.33,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "370g",
+    "collected_at": "2026-03-04 03:36:40"
+  }
+}

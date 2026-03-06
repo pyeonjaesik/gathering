@@ -1,0 +1,199 @@
+{
+  "product": {
+    "name_ko": "맥심카페카푸치노바닐라향",
+    "reportnum": "19750202004185"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004185/19750202004185-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004185/19750202004185-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004185/19750202004185-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성크림[물엿, 식물성 경화유지{코코넛오일(인도네시아산, 필리핀산)}, 천연카제인, 제이인산칼륨, 제삼인산칼슘], 백설탕, 커피(커피원두 : 수입산) 9.6%, 유원료함유크리머[물엿, 식물성경화유지{코코넛오일(인도네시아산, 필리핀산)}, 탈지분유(미국산), 제이인산칼륨, 농축우유단백분말], 포밍크리머[물엿, 식물성경화유지, 탈지분유, 농축우유단백분말, 제이인산칼륨], 혼합제제(말토덱스트린, 변성전분, 이산화규소), 합성향료(바닐라향1, 바닐라향2), 제삼인산칼슘, 효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004185/19750202004185-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=130g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1975/19750202004185/19750202004185-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성 경화유지",
+            "sub_ingredients": [
+              {
+                "name": "코코넛오일",
+                "origin": "인도네시아산, 필리핀산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연카제인",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피",
+        "origin": "수입산",
+        "amount": "9.6%",
+        "sub_ingredients": [
+          {
+            "name": "커피원두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유원료함유크리머",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성경화유지",
+            "sub_ingredients": [
+              {
+                "name": "코코넛오일",
+                "origin": "인도네시아산, 필리핀산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "탈지분유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축우유단백분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포밍크리머",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성경화유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축우유단백분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "제삼인산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:50:34"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 462.0,
+    "carbohydrate_g": 76.92,
+    "protein_g": 0.0,
+    "fat_g": 15.38,
+    "sugar_g": 42.31,
+    "sodium_mg": 77.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 15.38,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "130g",
+    "collected_at": "2026-03-03 13:50:34"
+  }
+}

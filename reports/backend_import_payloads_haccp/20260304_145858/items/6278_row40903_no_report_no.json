@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "darda by커널스 바닐라아이스크림맛 팝콘",
+    "reportnum": "20100461303301"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303301/20100461303301-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303301/20100461303301-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303301/20100461303301-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(미국산)38.13%, 식물성유지[팜올레인유(말레이시아산),해바라기유(외국산:아르헨티나,스페인,우크라이나 등),d-토코페롤(혼합형)], 설탕, 바닐라아이스크림맛시즈닝9.21%[설탕,크림버터혼합분말(유당/미국산), 식물성크림(유청/외국산:칠레,핀란드,미국) 고화방지분당, 유청, 아스파탐감미료, 페닐알라닌 함유, 바닐라슈가0.5%(바닐라추출물6%/프랑스산)], 유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303301/20100461303301-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 40g 215kcal\n나트륨70mg 4%, 탄수화물24g 7%, 당류13g 13%, 식이섬유3g 12%, 지방13g 24%, 트랜스지방0g, 포화지방3.7g 25%, 콜레스테롤0mg 0%, 단백질14g 3%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303301/20100461303301-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "38.13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 아르헨티나산, 스페인산, 우크라이나산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라아이스크림맛시즈닝",
+        "amount": "9.21%",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림버터혼합분말",
+            "origin": "미국산",
+            "amount": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성크림",
+            "origin": "외국산, 칠레산, 핀란드산, 미국산",
+            "amount": "유청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고화방지분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라슈가",
+            "origin": "프랑스산",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "바닐라추출물",
+                "amount": "6%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:53"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "sodium_mg": 70.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 13.0,
+    "dietary_fiber_g": 3.0,
+    "fat_g": 13.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 14.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 40g",
+    "collected_at": "2026-03-04 04:26:53"
+  }
+}

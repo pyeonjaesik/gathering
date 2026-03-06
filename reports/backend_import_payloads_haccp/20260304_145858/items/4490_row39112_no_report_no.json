@@ -1,0 +1,196 @@
+{
+  "product": {
+    "name_ko": "파스타스프 양송이크림",
+    "reportnum": "20010445055349"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055349/20010445055349-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055349/20010445055349-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055349/20010445055349-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "파스타40%(프랑스산,밀),분말유크림12%[유크림(우유:국산),유당(미국산),전지분유,유청분말,유화제],양송이분1.7%(중국산),양송이칩1.2%(국산),전분가공품(덴마크산:감자전분,덱스트린),덱스트린,유장밀,정제소금,건조감자분말,백설탕,표고버섯엑기스분말(대두),해바라기유,치킨스톡분말,효모추출물,양파분,마늘분,향미증진제,파슬리칩,합성착향료(버섯향),향신료",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055349/20010445055349-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(30g) : 열량 120kcal,탄수화물24g 7%, 당류3g, 단백질 2g 4%, 지방1.6g 3%, 포화지방0.7g 5%, 트랜스지방 0g, 콜레스테롤5mg미만 1%, 나트륨 480mg 24%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055349/20010445055349-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파스타",
+        "origin": "프랑스산",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양송이분",
+        "origin": "중국산",
+        "amount": "1.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양송이칩",
+        "origin": "국산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "origin": "덴마크산",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유장밀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조감자분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯엑기스분말",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨스톡분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리칩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버섯향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향신료",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:34"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 3.0,
+    "protein_g": 2.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 480.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1컵(30g)",
+    "collected_at": "2026-03-04 03:32:34"
+  }
+}

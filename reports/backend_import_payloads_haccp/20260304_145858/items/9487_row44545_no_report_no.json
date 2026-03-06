@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "도라에몽 츄러스",
+    "reportnum": "2012018838044"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012018838044/2012018838044-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012018838044/2012018838044-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012018838044/2012018838044-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "팜유(식물성유지/말레이시아산),쌀가루(국내산),팜올레인유(말레이시아산),옥수수가루(외국산/러시아,미국,브라질 등),설탕,밀가루,버터혼합분말,가공전지분,말토덱스트린,함수결정포도당,유청분말(국내산/유청100%),허니버터씨즈닝,계피분말(베트남/계피100%)1.1%,결정셀룰로오스,탄산칼슘,옥수수전분,정제염,코코아분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012018838044/2012018838044-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=480g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012018838044/2012018838044-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "origin": "외국산, 러시아산, 미국산, 브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "유청",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허니버터씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피분말",
+        "origin": "베트남산",
+        "amount": "1.1%",
+        "sub_ingredients": [
+          {
+            "name": "계피",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 550.0,
+    "carbohydrate_g": 60.0,
+    "protein_g": 5.0,
+    "fat_g": 35.0,
+    "sugar_g": 15.0,
+    "sodium_mg": 150.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 15.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "480g",
+    "collected_at": "2026-03-04 04:32:49"
+  }
+}

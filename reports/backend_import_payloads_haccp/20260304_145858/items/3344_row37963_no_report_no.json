@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "두부봉치즈",
+    "reportnum": "19930606076237"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930606076237/19930606076237-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930606076237/19930606076237-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930606076237/19930606076237-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "두부52.54%{대두[외국산(미국, 캐나다, 중국 등)], 조제해수염화마그네슘, 현미유, 올리브유}, 연육21.02%(베트남산/어육, 정백당, D-소비톨, 산도조절제), 양파(국내산), 돼지고기, 혼합제제(산화전분, 말토덱스트린), 코다노하이멜트치즈3.42%[자연치즈75.04%(미국산)], 소맥전분, 정백당, 난백액, 정제염, 타이미, 유산균배양액혼합분말, 백후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930606076237/19930606076237-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량180g / 270kcal\n<%영양성분기준치>\n나트륨890mg 45%, 탄수화물20g 6%, 식이섬유2g 8%, 당류7g 7%, 지방15g 28%, 트랜스지방0.5g미만, 포화지방4.7g 31%, 콜레스테롤15mg 5%, 단백질15g 27%, 비타민A 0㎍RE 0%, 비타민C 0mg 0%, 칼슘87mg 12%, 철0.4mg 3%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930606076237/19930606076237-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두부",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "52.54%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리브유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "연육",
+        "origin": "베트남산",
+        "amount": "21.02%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산화전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코다노하이멜트치즈",
+        "amount": "3.42%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "origin": "미국산",
+            "amount": "75.04%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타이미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:45:29"
+  },
+  "nutrition": {
+    "kcal": 270.0,
+    "sodium_mg": 890.0,
+    "carbohydrate_g": 20.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 7.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 4.7,
+    "cholesterol_mg": 15.0,
+    "protein_g": 15.0,
+    "calcium_mg": 87.0,
+    "iron_mg": 0.4,
+    "basis_amount": 180.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량180g",
+    "collected_at": "2026-03-03 19:45:29"
+  }
+}

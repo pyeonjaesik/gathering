@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "치즈네",
+    "reportnum": "19760487005152"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005152/19760487005152-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005152/19760487005152-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005152/19760487005152-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자분말 폴란드산,감자분말 미국산(감자,유화제,구연산),찰옥수수전분(미국산),식물성유지,변성전분,백설탕,치즈시즈닝[수크랄로오스(합성감미료)],치즈분말,전분,식염,유단백혼합분말,전지분유,효소제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005152/19760487005152-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지(45g) 1회 제공량당 함량 *%영양소 기준치: 열량 217kcal,탄수화물32g 10%,당류5g, 단백질 2g 4%,지방9g 18%, 포화지방4.6g 31%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 270mg 14%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760487005152/19760487005152-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자분말",
+        "origin": "폴란드산, 미국산",
+        "sub_ingredients": [
+          {
+            "name": "감자",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찰옥수수전분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "수크랄로오스",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유단백혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:00:54"
+  },
+  "nutrition": {
+    "kcal": 217.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 5.0,
+    "protein_g": 2.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 270.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지(45g)",
+    "collected_at": "2026-03-03 14:00:54"
+  }
+}

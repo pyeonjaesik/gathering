@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "대림선 왕군만두",
+    "reportnum": "20000498027331"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027331/20000498027331-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027331/20000498027331-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027331/20000498027331-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루25.92%(밀/호주산,미국산),돼지고기20.88%(국산),부추12.29%(국산),당면,두부,대파,대두단백,양배추,양파,부침믹스,당근,간장,밑트시즈닝MS,정백당,마늘,옥수수전분,정제염,L-글루타민산나트륨(향미증진제),찹쌀가루0.41%(국산),조미베이스분말01.참기름,감미유-S,후추분말,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027331/20000498027331-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2개(140g)/ 총 3회 제공량(420g) 1회 제공량당 함량 *%영양성분 기준치 : 열량 250kcal, 탄수화물 33g 10%, 당류 1g미만, 단백질 9g 16%, 지방 10g 20%, 포화지방 3.3g 22%, 트랜스지방 0g, 콜레스테롤 10mg 3%, 나트륨 510mg 26% *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027331/20000498027331-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "amount": "25.92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "20.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국산",
+        "amount": "12.29%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부침믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밑트시즈닝MS",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "amount": "0.41%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미베이스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 23:56:39"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "carbohydrate_g": 33.0,
+    "protein_g": 9.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 3.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 510.0,
+    "basis_amount": 140.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2개(140g)",
+    "collected_at": "2026-03-03 23:56:39"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "product": {
+    "name_ko": "허니머스타드소스",
+    "reportnum": "19800347002376"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002376/19800347002376-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002376/19800347002376-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002376/19800347002376-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두유(대두:수입산),과당,겨자페이스트16.5%{식초,겨자씨(미국산,캐나다산),정제소금(미국산),심황,향신료},정제수,저감미당,발효식초,백설탕,에이치엠프리믹스,잡화꿀1.5%(국산),난황액E(계란:국산),잔탄검,양파페이스트,구연산,정제소금,겨자오일,혼합제제(대두유,파프리카추출색소,유화제),혼합제제(옥수수오일,베타카로틴,디엘알파토코페롤),이.디.티.에이칼슘이나트륨(산화방지제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002376/19800347002376-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=320g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002376/19800347002376-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자페이스트",
+        "amount": "16.5%",
+        "sub_ingredients": [
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "겨자씨",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "심황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저감미당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에이치엠프리믹스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잡화꿀",
+        "origin": "국산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액E",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이.디.티.에이칼슘이나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:27:48"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 385.0,
+    "carbohydrate_g": 26.0,
+    "protein_g": 1.0,
+    "fat_g": 31.0,
+    "sugar_g": 22.0,
+    "sodium_mg": 700.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 4.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "320g",
+    "collected_at": "2026-03-03 14:27:48"
+  }
+}

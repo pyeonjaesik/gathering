@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "제주감귤 크런치 초코",
+    "reportnum": "201306311906"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311906/201306311906-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311906/201306311906-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311906/201306311906-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감귤초코크림-에버73% : 정백당,가공유지(말레이시아산),전지분골드(우유),코코아버터(수입산)1%,감귤분말(제주산)1%,레시틴(대두/유화제),구연산,파프리카추출색소,합성착신료(감귤향)\n퍼핑볼 27%-: 소백분(밀/미국, 호주산), 전분(수입산),식용소다(탄산수소나트륨, 옥수수전분), 정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311906/201306311906-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 5개(30g) 총 약 3.5회 제공량(108g)\n<1회분량당 함량 *%영양성분기준치>\n열량145kcal, 탄수화물23g 7%, 당류11g,  단백질1g 1%, 지방6g 12%, 포화지방6g 38%, 트랜스지방0.0g, 콜레스테롤0.0mg 0.0%, 나트륨20mg 1%, \n*%영양성분기준치:1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311906/201306311906-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감귤초코크림-에버",
+        "amount": "73%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분골드",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아버터",
+            "origin": "수입산",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감귤분말",
+            "amount": "1%",
+            "sub_ingredients": [
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "amount": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착신료",
+            "sub_ingredients": [
+              {
+                "name": "감귤향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "퍼핑볼 27%-",
+        "sub_ingredients": [
+          {
+            "name": "소백분",
+            "amount": "미국, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용소다",
+            "sub_ingredients": [
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:45"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 11.0,
+    "protein_g": 1.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 5개(30g)",
+    "collected_at": "2026-03-04 04:39:45"
+  }
+}

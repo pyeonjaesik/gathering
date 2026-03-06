@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "계란말이 대파·맛살",
+    "reportnum": "20060405004109"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060405004109/20060405004109-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060405004109/20060405004109-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060405004109/20060405004109-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "계란86%(국산),토핑맛살4%[냉동연육{외국산(미국산,베트남산,인도네시아산등)/어육,백설탕,소르비톨,피로인산나트륨,폴리인산나트륨]72.06%,소맥전분{밀/외국산(프랑스산,이탈리아산,아르헨티나산등)},조미액[LM-베이스{약주(쌀/국내산)},정제소금(국내산),청주(쌀/국내산)],정제소금,백설탕,소맥전분(밀:벨기에산),대파2%(중국산),식물성유지,정제소금,간장,변성전분,산도조절제A,글리신,전지분유,백설탕,산도조절제B,쇠고기브이용분말,쇠고기다시,혼합제제[변성전분,말토덱스트린),산도조절제C,카로틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060405004109/20060405004109-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=50g | foodSize=900g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060405004109/20060405004109-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "amount": "86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토핑맛살",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "냉동연육",
+            "origin": "외국산, 미국산, 베트남산, 인도네시아산",
+            "amount": "72.06%",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥전분",
+            "origin": "외국산, 프랑스산, 이탈리아산, 아르헨티나산, 벨기에산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": [
+              {
+                "name": "LM-베이스",
+                "sub_ingredients": [
+                  {
+                    "name": "약주",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청주",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "origin": "중국산",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제B",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기브이용분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기다시",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카로틴",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 112.0,
+    "carbohydrate_g": 4.67,
+    "protein_g": 10.67,
+    "fat_g": 5.67,
+    "sugar_g": 0.33,
+    "sodium_mg": 603.0,
+    "cholesterol_mg": 193.33,
+    "saturated_fat_g": 1.43,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "50g",
+    "total_content": "900g",
+    "collected_at": "2026-03-04 03:59:09"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "줄줄이쌀떡볶이",
+    "reportnum": "20050154164167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050154164167/20050154164167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050154164167/20050154164167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050154164167/20050154164167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀96%(수입산),전분(밀:수입산),정제염,대두유(콩)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050154164167/20050154164167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 당 함량\n<100g 당 함량 *%영양소기준치>\n열량210kcal, 탄수화물46g 14%, 당류0g, 단백질3g 5%, 지방0.4g 0.8%, 포화지방0g 0%, 트렌스지방0g, 콜레스테롤0mg  0%, 나트륨360mg 16%, \n*%영양소 기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050154164167/20050154164167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "수입산",
+        "amount": "96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:24"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.4,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 360.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 당 함량",
+    "collected_at": "2026-03-04 03:52:24"
+  }
+}

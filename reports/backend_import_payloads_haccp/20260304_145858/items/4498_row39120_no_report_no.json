@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "8년숙성흑초",
+    "reportnum": "20010445055408"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055408/20010445055408-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055408/20010445055408-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055408/20010445055408-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "흑초100%[현미당화농축액(현미:국산),주정,맥아엑기스(미국산),발효영양원]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055408/20010445055408-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100ml당 영양성분 함량(단위:mg) 칼슘(Ca) 8년숙성흑초 7(1%), 현미식초 1.5 칼륨(K) 8년숙성흑초 35(1%), 현미식초 5 마그네슘(Mg) 8년 숙성흑초 4(1%), 현미식초 0.5 아미노산 8년숙성흑초 500 현미식초 8 (당사 8년 숙성 흑초와 현미식초의 자사 분석치) *( )안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055408/20010445055408-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "흑초",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "현미당화농축액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "현미",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엑기스",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:40"
+  },
+  "nutrition": {
+    "calcium_mg": 7.0,
+    "potassium_mg": 35.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml당",
+    "collected_at": "2026-03-04 03:32:40"
+  }
+}

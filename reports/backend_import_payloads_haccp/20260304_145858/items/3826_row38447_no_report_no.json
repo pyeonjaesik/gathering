@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "햄버거패티",
+    "reportnum": "19960262002335"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002335/19960262002335-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002335/19960262002335-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002335/19960262002335-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)59%,양파(국내산),정제수,배합용빵가루[곡류가공품{밀가루(밀:미국산)},소맥분(밀:미국산,호주산),쇼트닝,옥수수전분,재제소금],대파,에스제이시즈닝,떡갈비양념장,티브이피(조직대두단백),마늘,요리당,참기름,알콘에스비(대두단백),가쓰오엑기스,카라멜,분말셀룰로오스,그릴후레바오일",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002335/19960262002335-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1,000g(50g×10개) 50g당 130Kcal 80g당 1일 영양성분기준치에대한비율 : 나트륨240mg12% 탄수화물7g2% 당류2.7g3% 지방8g15% 트랜스지방0g 포화지방2.8g19% 콜레스테롤15mg5% 단백질6g11%  *1일영양성분기준치에대한비율(%)은 2,000Kcal기준이므로 개인의 필요열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002335/19960262002335-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "59%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배합용빵가루",
+        "sub_ingredients": [
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "재제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스제이시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "떡갈비양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "티브이피",
+        "sub_ingredients": [
+          {
+            "name": "조직대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알콘에스비",
+        "sub_ingredients": [
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가쓰오엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그릴후레바오일",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:00:41"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "sodium_mg": 240.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 2.7,
+    "fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.8,
+    "cholesterol_mg": 15.0,
+    "protein_g": 6.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "50g당",
+    "collected_at": "2026-03-03 21:00:41"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "범산목장 유기농 아이스크림 블루베리",
+    "reportnum": "2006037900440"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900440/2006037900440-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900440/2006037900440-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900440/2006037900440-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농원유40.03%(국내산),유기농탈지농축유22.95%(국내산),유기농유크림20.52%(국내산),유기농설탕8.001%(브라질산),유기농블루베리퓨레4.0%(유기농블루베리:국내산,유기농설탕:브라질산),유기농아카베시럽2.12%(멕시코산),구아검,로커스트콩검,유기농블루베리천연농축향0.7%(미국산),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900440/2006037900440-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=474ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900440/2006037900440-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농원유",
+        "origin": "국내산",
+        "amount": "40.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농탈지농축유",
+        "origin": "국내산",
+        "amount": "22.95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농유크림",
+        "origin": "국내산",
+        "amount": "20.52%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "브라질산",
+        "amount": "8.001%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농블루베리퓨레",
+        "amount": "4.0%",
+        "sub_ingredients": [
+          {
+            "name": "유기농블루베리",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "origin": "브라질산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농아카베시럽",
+        "origin": "멕시코산",
+        "amount": "2.12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농블루베리천연농축향",
+        "origin": "미국산",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:29"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 159.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 3.0,
+    "fat_g": 7.0,
+    "sugar_g": 15.0,
+    "sodium_mg": 42.0,
+    "cholesterol_mg": 20.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "474ml",
+    "collected_at": "2026-03-04 03:58:29"
+  }
+}

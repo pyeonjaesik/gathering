@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "동원연어훈제슬라이스",
+    "reportnum": "19990128291106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990128291106/19990128291106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990128291106/19990128291106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990128291106/19990128291106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연어98.5%(노르웨이산),식염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990128291106/19990128291106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=700g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990128291106/19990128291106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연어",
+        "origin": "노르웨이산",
+        "amount": "98.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:00:34"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 220.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 20.0,
+    "fat_g": 16.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 340.0,
+    "cholesterol_mg": 140.0,
+    "saturated_fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "700g",
+    "collected_at": "2026-03-03 22:00:34"
+  }
+}

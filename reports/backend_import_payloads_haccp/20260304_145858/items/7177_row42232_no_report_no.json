@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "황태미역국",
+    "reportnum": "19910386025450"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910386025450/19910386025450-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910386025450/19910386025450-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910386025450/19910386025450-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "건미역(미역:국산)14.19%,한식간장원액{대두[외국산(미국,캐나다,호주등)],천일염(호주산),주정],마늘(중국산),덱스트린,쇠고기분말-2(말토덱스트린,소정육17.3%,아미노산간장,정제염,지미맥스브랜드)9.47%,건북어8.03%,황태엑기스-P7.10%[황태76.4%(러시아산),말토덱스트린,정제소금,5'-리보뉴클레오티드이나트륨,잔탄검)],참기름,감자전분,정제염,쌀가루,감칠맛발란스,5'-리보뉴클레오티드이나트륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910386025450/19910386025450-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=8g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910386025450/19910386025450-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건미역",
+        "origin": "국산",
+        "amount": "14.19%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한식간장원액",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기분말-2",
+            "amount": "9.47%",
+            "sub_ingredients": [
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소정육",
+                "amount": "17.3%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아미노산간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "지미맥스브랜드",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건북어",
+        "amount": "8.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태엑기스-P",
+        "amount": "7.10%",
+        "sub_ingredients": [
+          {
+            "name": "황태",
+            "origin": "러시아산",
+            "amount": "76.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛발란스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:37:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 372.0,
+    "carbohydrate_g": 53.4,
+    "protein_g": 18.8,
+    "fat_g": 9.2,
+    "sugar_g": 4.2,
+    "sodium_mg": 4178.0,
+    "cholesterol_mg": 51.6,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.1,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "8g",
+    "collected_at": "2026-03-03 18:37:33"
+  }
+}

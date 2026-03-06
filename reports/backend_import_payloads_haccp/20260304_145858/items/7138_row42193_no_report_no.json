@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "햇반컵반 직화볶음짜장 덮밥",
+    "reportnum": "19910144038580"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038580/19910144038580-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038580/19910144038580-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038580/19910144038580-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*햇반(150g/즉석조리식품/질소충전제품/살균제품):배합수제외[멥쌀(국산)99.9%,쌀미강추출물]*볶음짜장(130g/소스류/레트로트식품/멸균제품):양파(중국산),정제수,양배추(국산),건조네모감자(미국산)[감자,산성프로인산나트륨],중찬명가춘장[소맥분,카라멜색소,대두,정제염,종국],돼지고기,백설탕,양파풍미유,옥수수유,다시다요리수치킨스톡,돈지쇼트닝프리,볶음양파페이스트,혼합제제(변성전분,L-글루타민산나트륨(향미증진제),볶음춘장분말,면류첨가알칼리제(탄산칼륨,탄산나트륨,피로인산나트륨),향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038580/19910144038580-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=280g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038580/19910144038580-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "햇반",
+        "amount": "150g",
+        "sub_ingredients": [
+          {
+            "name": "멥쌀",
+            "origin": "국산",
+            "amount": "99.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀미강추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음짜장",
+        "amount": "130g",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조네모감자",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "감자",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성프로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "중찬명가춘장",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라멜색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "종국",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파풍미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시다요리수치킨스톡",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈지쇼트닝프리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양파페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "볶음춘장분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "면류첨가알칼리제",
+                "sub_ingredients": [
+                  {
+                    "name": "탄산칼륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "탄산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "피로인산나트륨",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:30:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 139.0,
+    "carbohydrate_g": 25.36,
+    "protein_g": 2.86,
+    "fat_g": 2.86,
+    "sugar_g": 3.57,
+    "sodium_mg": 289.0,
+    "cholesterol_mg": 1.07,
+    "saturated_fat_g": 0.68,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "280g",
+    "collected_at": "2026-03-03 18:30:14"
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "product": {
+    "name_ko": "부산식유부주머니전골",
+    "reportnum": "2011044902380"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044902380/2011044902380-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044902380/2011044902380-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044902380/2011044902380-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[유부주머니]\n50.8%-당면 62.76%(고구마전분100%/중국산),유부17.58%[대두93%(외국산:미국,호주,캐나다 등),대두유 대두:외국산(브라질,파라과이, 미국 등),황산칼슘,염화칼슘,혼합제제(식물성유지,탄산칼슘,레시틴)],당근(중국산)7.91%,부추7.91%,미나리,혼합간장(대두,밀),카라멜색소,정제소금,후추\n[전골용 어묵]\n27.1%-연육65.1%(외국산/베트남,미국,중국),백설탕,D-소비톨,산도조절제)],소맥분16.48%(밀/미국산,호주산),어육살(국산)8.24%,당근,타피오카전분,정제소금,두류가공품,소스류,다시마추출액,대두유(대두),파,소스류(대두),대두단백(대두),백설탕,D-자일로오스,양파분말,글리신,폴리인산나트륨,효소처리스테비아,5'-리보뉴클레오티드이나트륨\n[유부주머니 전골소스] \n13.6%-우동베이스(일본산/혼합건조가다랑어추출물,주정,다시마추출물,정제소금,참나무스모크향),양조간장(탈지대두(인도산),소맥(밀,미국산),정제수,천일염,액상과당,발효주정),백설탕,물엿(전분100%:옥수수),정제수,소스류(대두),L-글루탐산나트륨(향미증진제),정제염5'-리보뉴클레오티드이나트륨(향미증진제).\n*대파8.5%-대파(중국산)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044902380/2011044902380-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 590g 985kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨2,300mg 115%, 탄수화물142g 43%, 당류1g 미만 1%, 지방24g 47%, 트랜스지방0g, 포화지방4.1g 27%, 콜레스테롤0mg 0%, 단백질 50g 91%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044902380/2011044902380-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유부주머니",
+        "sub_ingredients": [
+          {
+            "name": "당면",
+            "origin": "중국산",
+            "amount": "62.76%",
+            "sub_ingredients": [
+              {
+                "name": "고구마전분",
+                "origin": "중국산",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유부",
+            "origin": "외국산",
+            "amount": "17.58%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 호주산, 캐나다산",
+                "amount": "93%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "origin": "외국산, 브라질산, 파라과이산, 미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "황산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "식물성유지",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "탄산칼슘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "레시틴",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "당근",
+            "origin": "중국산",
+            "amount": "7.91%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "부추",
+            "amount": "7.91%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미나리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전골용 어묵",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "외국산",
+            "amount": "65.1%",
+            "sub_ingredients": [
+              {
+                "name": "연육",
+                "origin": "베트남산, 미국산, 중국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "amount": "16.48%",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "어육살",
+            "origin": "국산",
+            "amount": "8.24%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타피오카전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "두류가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스류",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "다시마추출액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두단백",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "D-자일로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유부주머니 전골소스",
+        "sub_ingredients": [
+          {
+            "name": "우동베이스",
+            "origin": "일본산",
+            "sub_ingredients": [
+              {
+                "name": "혼합건조가다랑어추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다시마추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참나무스모크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "amount": "전분100%:옥수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스류",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "amount": "8.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:21"
+  },
+  "nutrition": {
+    "kcal": 985.0,
+    "sodium_mg": 2300.0,
+    "carbohydrate_g": 142.0,
+    "fat_g": 24.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 50.0,
+    "basis_amount": 590.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 590g",
+    "collected_at": "2026-03-04 04:32:21"
+  }
+}

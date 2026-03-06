@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "피코크정갈한북어해장국",
+    "reportnum": "20150445222138"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222138/20150445222138-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222138/20150445222138-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222138/20150445222138-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "콩나물(대두:수입산),북어채(러시아산)3.6%,무,황태해장국베이스[정제소금(국산),황태채(러시아산)]2.98%,대파,간마늘,다시마엑기스,천일염(국내산)0.2%,사골육수,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222138/20150445222138-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(500g)/1회 제공량당 함량 *%영양소 기준치 : 열량 57kcal, 탄수화물 11g 3%, 당류 1g, 단백질 2g 4%, 지방 0.4g 0.8%, 포화지방0g, 트랜스지방 0g, 콜레스테롤 20mg 7%, 나트륨 624mg 31% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222138/20150445222138-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "콩나물",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "북어채",
+        "origin": "러시아산",
+        "amount": "3.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태해장국베이스",
+        "amount": "2.98%",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황태채",
+            "origin": "러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골육수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:16"
+  },
+  "nutrition": {
+    "kcal": 57.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 1.0,
+    "protein_g": 2.0,
+    "fat_g": 0.4,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 624.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(500g)",
+    "collected_at": "2026-03-04 04:45:16"
+  }
+}

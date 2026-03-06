@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "짜장분말",
+    "reportnum": "200204610733495"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610733495/200204610733495-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610733495/200204610733495-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610733495/200204610733495-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참짜장분46%,[짜장시즈닝베이스-엔{미강유(태국산),돼지고기,대두},자장농축액분말{소맥분(밀:미국산,호주산),우유},참맛짜장분],소맥분(밀:미국산,호주산),백설탕,전분가공품(감자전분,말토덱스트린),정제소금,카라멜색소분말2호(덱스트린,카라멜색소),말토덱스트린,팜유,짜장양념베이스-1,야채분말(무우즙분말,양파분말,양배추분말,당근분말,시금치분말,토마토파우다,호박분말,대파분말,파슬리,샐러리),아쿠아칼(칼슘0.32%함유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610733495/200204610733495-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g/총내용량(1kg), 100g당함량 *%영양소기준치, 열랑370kcal, 탄수화물67g 20%, 당류45g, 단백질8g 15%, 지방8g 16%, 포화지방2.3g 15%, 트랜스지방0g, 콜레스테롤5mg미만 2%, 나트륨4,960mg 248%, 칼슘300mg 43%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610733495/200204610733495-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참짜장분",
+        "amount": "46%",
+        "sub_ingredients": [
+          {
+            "name": "짜장시즈닝베이스-엔",
+            "sub_ingredients": [
+              {
+                "name": "미강유",
+                "origin": "태국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "돼지고기",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "자장농축액분말",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참맛짜장분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소분말2호",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "짜장양념베이스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채분말",
+        "sub_ingredients": [
+          {
+            "name": "무우즙분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시금치분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토파우다",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호박분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파슬리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아쿠아칼",
+        "sub_ingredients": [
+          {
+            "name": "칼슘",
+            "amount": "0.32% 함유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:40:25"
+  },
+  "nutrition": {
+    "kcal": 370.0,
+    "carbohydrate_g": 67.0,
+    "sugar_g": 45.0,
+    "protein_g": 8.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 4960.0,
+    "calcium_mg": 300.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:40:25"
+  }
+}

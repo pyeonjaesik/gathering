@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "통큰포기김치",
+    "reportnum": "19950364034287"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950364034287/19950364034287-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950364034287/19950364034287-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950364034287/19950364034287-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "절임배추70%[배추98%(국산),천일염(국산)또는정제염(국산)2%],무(국산),쌀풀(국산),고춧가루(국산),파(국산),마늘(국산),부추[(국산)또는갓(국산)],생강(국산),멸치액젓(국산),새우젓(새우,국산),재제염(국산),설탕,다시마엑기스[건다시마(국산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950364034287/19950364034287-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개 (100g/mL) 총 35회 제공량 (3500g/mL) \n<1회 제공량당 함량 %영양소기준치>\n열량41.70kcal, 탄수화물7.22g 2%, 당류3.7g, 단백질2.08g 3%, 지방0.5g 1%, 포화지방0.01g 0%, 트랜스지방0g, 콜레스테롤1.94mg 1%, 나트륨576.88mg 29%,etcmg %,etcmg %\n%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950364034287/19950364034287-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절임배추",
+        "amount": "70%",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "amount": "98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀풀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": [
+          {
+            "name": "부추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "갓",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치액젓",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우젓",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "재제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": [
+          {
+            "name": "건다시마",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:30:25"
+  },
+  "nutrition": {
+    "kcal": 41.7,
+    "carbohydrate_g": 7.22,
+    "sugar_g": 3.7,
+    "protein_g": 2.08,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.01,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 1.94,
+    "sodium_mg": 576.88,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개 (100g/mL)",
+    "collected_at": "2026-03-03 20:30:25"
+  }
+}

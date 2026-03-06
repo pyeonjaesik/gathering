@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "별에서 온 초코",
+    "reportnum": "20100372386278"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386278/20100372386278-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386278/20100372386278-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386278/20100372386278-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "초콜릿-CWS{백설탕,가공유지(말레이시아산),코코아분말(싱가포르산),코코아조제품(벨기에산,우유),코코아매스(스페인산),유화제(대두)},옥수수(수입산),코코아분말(싱가포르산),산도조절제,면실유,결정셀룰로오스,정제염,혼합제제{덱스트린,아세설팜칼륨(합성감미료)} * 코코아원료 8% 함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386278/20100372386278-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 1/4봉지 (35 g) 총 4회 제공량(140g), 1회 제공량당 함량 *%영양소기준치, 열량 173 kcal, 탄수화물 20g 6%, 당류 8g, 단백질 3g 5%, 지방 9g 18%, 포화지방 6g 40%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 31mg 2%, *%영양소기준치 : 1일 영양소기준치에 대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386278/20100372386278-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "초콜릿-CWS",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아조제품",
+            "origin": "벨기에산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아매스",
+            "origin": "스페인산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "싱가포르산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면실유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "*코코아원료",
+        "amount": "8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:22"
+  },
+  "nutrition": {
+    "kcal": 173.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 8.0,
+    "protein_g": 3.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 31.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/4봉지 (35 g)",
+    "collected_at": "2026-03-04 04:24:22"
+  }
+}

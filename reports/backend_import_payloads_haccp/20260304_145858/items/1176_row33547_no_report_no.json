@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "카페라떼 카라멜 마끼아또",
+    "reportnum": "19810227007219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007219/19810227007219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007219/19810227007219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007219/19810227007219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유55%(국산,우유),에스프레소커피추출액25%(고형분2.4%이상,커피원두:브라질 등 수입산),정제수,정백당,콜롬비아커피추출액0.42%(고형분함량 40%),생카라멜시럽0.2%,합성착향료(캐러멜향),탄산수소나트륨,유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007219/19810227007219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량:125kcal,탄수화물:18g,단백질:3g,콜레스테롤:17mg,지방:4.6g,트랜스지방:0g,나트륨:110mg,포화지방:3g,당류:18g,칼슘:110mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007219/19810227007219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "55%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스프레소커피추출액",
+        "origin": "수입산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "2.4%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피원두",
+            "origin": "브라질산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜롬비아커피추출액",
+        "amount": "0.42%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생카라멜시럽",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "캐러멜향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:40:50"
+  },
+  "nutrition": {
+    "kcal": 125.0,
+    "carbohydrate_g": 18.0,
+    "protein_g": 3.0,
+    "cholesterol_mg": 17.0,
+    "fat_g": 4.6,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 110.0,
+    "saturated_fat_g": 3.0,
+    "sugar_g": 18.0,
+    "calcium_mg": 110.0,
+    "collected_at": "2026-03-03 14:40:50"
+  }
+}

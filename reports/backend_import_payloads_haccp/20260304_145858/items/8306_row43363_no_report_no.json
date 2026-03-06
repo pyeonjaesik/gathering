@@ -1,0 +1,187 @@
+{
+  "product": {
+    "name_ko": "3분낙지덮밥소스",
+    "reportnum": "20010445055300"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055300/20010445055300-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055300/20010445055300-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055300/20010445055300-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,낙지27%(베트남산),양파(중국산),양배추(국산),파,카놀라유,마늘,혼합제제(변성전분,백설탕,덱스트린),고추분,백설탕,고추장(밀),고추,정제소금,오뚜기참치간장분말,해물맛베이스(새우,우유),식물성분해단백,아미노베이스,생강,콩발효맛내기(대두),후추분,향미증진제,파프리카추출색소(천연색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055300/20010445055300-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=150g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055300/20010445055300-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "낙지",
+        "origin": "베트남산",
+        "amount": "27%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오뚜기참치간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해물맛베이스",
+        "sub_ingredients": [
+          {
+            "name": "새우",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성분해단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미노베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩발효맛내기",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "후추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:31:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 83.0,
+    "carbohydrate_g": 9.33,
+    "protein_g": 2.67,
+    "fat_g": 4.0,
+    "sugar_g": 4.67,
+    "sodium_mg": 553.0,
+    "cholesterol_mg": 23.34,
+    "saturated_fat_g": 0.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "150g",
+    "collected_at": "2026-03-04 03:31:49"
+  }
+}

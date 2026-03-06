@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "시원한 대구탕",
+    "reportnum": "20020614179747"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179747/20020614179747-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179747/20020614179747-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179747/20020614179747-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 대구(미국산)22.5%, 동태육수(동태:러시아산), 무, 명태곤이, 대파, 감칠맛국물베이스-2[대구농축액{대구(러시아) 50%}, 파프리카색소], 팽이버섯, 마늘, 간장(대두, 밀), 고춧가루, 고추맛기름, 홍고추, 정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179747/20020614179747-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179747/20020614179747-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대구",
+        "origin": "미국산",
+        "amount": "22.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동태육수",
+        "origin": "러시아산",
+        "sub_ingredients": [
+          {
+            "name": "동태",
+            "origin": "러시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명태곤이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛국물베이스-2",
+        "sub_ingredients": [
+          {
+            "name": "대구농축액",
+            "sub_ingredients": [
+              {
+                "name": "대구",
+                "origin": "러시아산",
+                "amount": "50%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파프리카색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 31.0,
+    "carbohydrate_g": 1.87,
+    "protein_g": 4.5,
+    "fat_g": 0.6,
+    "sugar_g": 0.0,
+    "sodium_mg": 510.0,
+    "cholesterol_mg": 26.25,
+    "saturated_fat_g": 0.08,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 03:44:04"
+  }
+}

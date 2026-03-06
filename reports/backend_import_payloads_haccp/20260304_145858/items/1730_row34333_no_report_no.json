@@ -1,0 +1,90 @@
+{
+  "product": {
+    "name_ko": "상하목장 유기농 바나나우유",
+    "reportnum": "19850213001115"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001115/19850213001115-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001115/19850213001115-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001115/19850213001115-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기원유90%(국산),유기바나나농축과즙(유기 바나나 과즙으로 2% 필리핀산),유기정백당,천연바나나향,천연바닐라향,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001115/19850213001115-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량당 함량 *%영양소기준치 열량 110kcal, 탄수화물 13.5g 4%, 당류 13.5g, 단백질 3.5g 6%,지방 4.5g 9%, 포화지방 3g 20%,트랜스지방 0g,콜레스테롤 18mg 6%,나트륨 60mg 3%,칼슘 115mg 16% -1회 제공량1컵(125ml)기준 -()%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850213001115/19850213001115-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기원유",
+        "origin": "국산",
+        "amount": "90%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기바나나농축과즙",
+        "origin": "필리핀산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "유기 바나나 과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연바나나향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연바닐라향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:51:36"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "carbohydrate_g": 13.5,
+    "sugar_g": 13.5,
+    "protein_g": 3.5,
+    "fat_g": 4.5,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 18.0,
+    "sodium_mg": 60.0,
+    "calcium_mg": 115.0,
+    "basis_amount": 125.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(125ml) 기준",
+    "collected_at": "2026-03-03 15:51:36"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "product": {
+    "name_ko": "아워홈토마토소스쌀파스타",
+    "reportnum": "20020614179691"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179691/20020614179691-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179691/20020614179691-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179691/20020614179691-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*<아워홈 글루텐프리면>:쌀가루[쌀(미국산70%, 태국산30%)100%]63.39%, 옥수수전분[옥수수:외국산(러시아,헝가리,세르비아 등)], 트레할로스, 혼합제제(D-소르비톨액, 대두유, 유화제), 주정, 잔탄검, 구아검, 에그알부민파우더하이겔(프랑스산), 정제소금(국산)*<글루텐프리 토마토소스>:홀토마토(이탈리아산)[토마토60%, 토마토주스39.6%, 구연산]25%, 정제수, 양파(국산), 토마토페이스트(미국산)[토마토 100%] 10%, 닭육수[닭발(국산), 스프베이스(중국산),닭뼈], 폴리글리시톨시럽, 올리브포머스오일[포머스올리브오일, 엑스트라버진올리브오일], 가공버터, 양송이버섯, 당근, 피망, 마늘, 백설탕, 정제소금, 토마토분말(스페인산)[토마토페이스트 99%] 0.5%, 야채치킨육수분말200, 샐러리, 효모추출물제품, 바실홀, 오레가노 그라운드, 후추가루, 파프리카추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179691/20020614179691-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=640g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179691/20020614179691-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "아워홈 글루텐프리면",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "미국산, 태국산",
+            "amount": "63.39%",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "미국산, 태국산",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "origin": "러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "트레할로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "D-소르비톨액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "에그알부민파우더하이겔",
+            "origin": "프랑스산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루텐프리 토마토소스",
+        "sub_ingredients": [
+          {
+            "name": "홀토마토",
+            "origin": "이탈리아산",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "amount": "60%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토주스",
+                "amount": "39.6%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "amount": "10%",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "닭육수",
+            "sub_ingredients": [
+              {
+                "name": "닭발",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스프베이스",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "닭뼈",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "폴리글리시톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리브포머스오일",
+            "sub_ingredients": [
+              {
+                "name": "포머스올리브오일",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엑스트라버진올리브오일",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피망",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토분말",
+            "origin": "스페인산",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "토마토페이스트",
+                "amount": "99%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "야채치킨육수분말",
+            "amount": "200",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바실홀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오레가노 그라운드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:10"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 158.0,
+    "carbohydrate_g": 31.88,
+    "protein_g": 2.5,
+    "fat_g": 2.19,
+    "sugar_g": 2.5,
+    "sodium_mg": 353.0,
+    "cholesterol_mg": 0.94,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "640g",
+    "collected_at": "2026-03-04 03:44:10"
+  }
+}

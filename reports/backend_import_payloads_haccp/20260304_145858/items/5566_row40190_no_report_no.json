@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "쟈뎅 까페리얼 복숭아 아이스티",
+    "reportnum": "20070443110123"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110123/20070443110123-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110123/20070443110123-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110123/20070443110123-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 복숭아 농축액(과즙으로 3.8%, 이스라엘산), 홍차분말(고형분 95% 이상, 케냐산), 0.1%, 구연산, 합성향료(복숭아향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110123/20070443110123-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1,500ml 100ml 당 60kcal 나트륨 0mg 0%, 탄수화물 15g 5%, 당류 15g 15%, 지방 0g 0%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 0mg 0%, 단백질 0g 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110123/20070443110123-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아 농축액",
+        "origin": "이스라엘산",
+        "amount": "3.8%",
+        "sub_ingredients": [
+          {
+            "name": "과즙",
+            "amount": "3.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍차분말",
+        "origin": "케냐산",
+        "amount": "고형분 95% 이상",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:08"
+  },
+  "nutrition": {
+    "total_content": "1500",
+    "food_weight_g": null,
+    "food_weight_ml": 1500.0,
+    "kcal": 60.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml 당",
+    "collected_at": "2026-03-04 04:05:08"
+  }
+}

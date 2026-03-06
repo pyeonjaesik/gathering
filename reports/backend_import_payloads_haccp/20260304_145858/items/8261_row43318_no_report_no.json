@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "유자쿠키",
+    "reportnum": "2001032007853"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007853/2001032007853-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007853/2001032007853-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007853/2001032007853-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(국산)40.01%,버터(국산)29.71%,유기농설탕(수입산)15.16%,유정란(전란,국산)10%,유자청(국산)4.85%,소금(국산)0.27%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007853/2001032007853-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001032007853/2001032007853-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "40.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "amount": "29.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "origin": "수입산",
+        "amount": "15.16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "전란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유자청",
+        "origin": "국산",
+        "amount": "4.85%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "origin": "국산",
+        "amount": "0.27%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:15"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 525.0,
+    "carbohydrate_g": 58.0,
+    "protein_g": 7.0,
+    "fat_g": 29.0,
+    "sugar_g": 21.0,
+    "sodium_mg": 150.0,
+    "cholesterol_mg": 120.0,
+    "saturated_fat_g": 15.0,
+    "trans_fat_g": 0.7,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:28:15"
+  }
+}

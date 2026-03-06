@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name_ko": "그라시아 쿠앤크 클래식",
+    "reportnum": "19980262029216"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029216/19980262029216-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029216/19980262029216-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029216/19980262029216-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,분쇄쿠키13%[밀가루(미국산,호주산),분당,백설탕,식물성유지1(팜유:말레이시아산),식물성유지2]원유(국산),데어리스프레드(외국산:뉴질랜드,독일,호주),백설탕,혼합탈지분유(탈지분유,유청분말),프락토올리고당,물엿,야자유,인스턴트커피,정제염,구아검,혼합제제(로커스트콩검,구아검,카라기난,셀룰로오스검,유화제),혼합제제(안나토색소,비트레드),합성향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029216/19980262029216-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=750ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262029216/19980262029216-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분쇄쿠키",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "amount": "1",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "외국산, 뉴질랜드산, 독일산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인스턴트커피",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "안나토색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비트레드",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:37:12"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 150.0,
+    "carbohydrate_g": 16.0,
+    "protein_g": 2.0,
+    "fat_g": 9.0,
+    "sugar_g": 13.0,
+    "sodium_mg": 80.0,
+    "cholesterol_mg": 12.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "750ml",
+    "collected_at": "2026-03-03 21:37:12"
+  }
+}

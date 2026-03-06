@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "본젤라또 치즈베리",
+    "reportnum": "19960230001230"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001230/19960230001230-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001230/19960230001230-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001230/19960230001230-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,유크림(독일산,뉴질랜드산),설탕,딸기블루베리시럽[가당딸기(딸기:국내산),설탕,정제수,블루베리농축액3%(칠레산;고형분함량65%),아미드펙틴,변성전분],올리고당가공품(물엿,올리고당,기타과당),치즈케익(미국산;크림치즈,설탕,전란분,밀가루,버터),혼합분유(탈지분유,유청),크림치즈파우더(덴마크산)전분가공품,혼합제제(구아검,카라기난,산도조절제,로커스트콩검,타마린드검),유화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001230/19960230001230-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 474 ml,100 ml당 203 kcal,나트륨 80mg(4%),탄수화물 24g(7%),당류 17g(17%),지방 11g(20%),트랜스지방 0g,포화지방 6g(40%),콜레스테롤 30mg(10%),단백질 2g(4%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960230001230/19960230001230-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "독일산, 뉴질랜드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기블루베리시럽",
+        "sub_ingredients": [
+          {
+            "name": "가당딸기",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블루베리농축액",
+            "origin": "칠레산",
+            "amount": "3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고당가공품",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치즈케익",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "크림치즈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크림치즈파우더",
+        "origin": "덴마크산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타마린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:49:48"
+  },
+  "nutrition": {
+    "kcal": 203.0,
+    "sodium_mg": 80.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 17.0,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 30.0,
+    "protein_g": 2.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100 ml당",
+    "collected_at": "2026-03-03 20:49:48"
+  }
+}

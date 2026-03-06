@@ -1,0 +1,177 @@
+{
+  "product": {
+    "name_ko": "시원한소고기해장국",
+    "reportnum": "20150445222397"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222397/20150445222397-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222397/20150445222397-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222397/20150445222397-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,무(국내산),콩나물[대두:외국산(중국·미국·캐나다등)],소고기(호주산),마늘,복합조미식품[쇠고기프리믹스2(호주산),쇠고기맛혼합양념(쇠고기:호주산),사골엑기스(뉴질랜드산),쇠고기풍미유{우지쇼트닝(정제우지:호주산),쇠고기(호주산)}],대파,양지육수페이스트[양지분해액{우육(양지:호주산)}],홍고추,개량한식간장,고춧가루,정제소금,흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222397/20150445222397-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=480g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222397/20150445222397-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩나물",
+        "origin": "외국산, 중국산, 미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 중국산, 미국산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기프리믹스2",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기맛혼합양념",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기풍미유",
+            "sub_ingredients": [
+              {
+                "name": "우지쇼트닝",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "정제우지",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "쇠고기",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지육수페이스트",
+        "sub_ingredients": [
+          {
+            "name": "양지분해액",
+            "sub_ingredients": [
+              {
+                "name": "우육",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "양지",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "개량한식간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 31.0,
+    "carbohydrate_g": 0.83,
+    "protein_g": 1.46,
+    "fat_g": 2.5,
+    "sugar_g": 0.83,
+    "sodium_mg": 323.0,
+    "cholesterol_mg": 11.46,
+    "saturated_fat_g": 0.67,
+    "trans_fat_g": 0.06,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "480g",
+    "collected_at": "2026-03-04 04:45:57"
+  }
+}

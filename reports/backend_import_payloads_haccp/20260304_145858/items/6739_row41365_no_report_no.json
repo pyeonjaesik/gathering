@@ -1,0 +1,225 @@
+{
+  "product": {
+    "name_ko": "알래스칸특급 바질체다치즈롤",
+    "reportnum": "2014061602225"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602225/2014061602225-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602225/2014061602225-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602225/2014061602225-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육 61.7%(미국산/어육, 소르비톨, 설탕, 산도조절제), 화이트치즈9.41%[화이트체다치즈 73.75%(미국산), 정제수, 치즈파우더카망베르타입(덴마크산), 산도조절제, 정제소금, 잔탄검, 연성가공치즈], 소맥전분(리투아니아산), 대두유, 바질풍미유 5.10%(채종유, 바질(스페인산), 마늘, d-토코페롤(혼합형), 타피오카전분, 난백액, 유산균배양액혼합분말, 정제소금, 함수결정포도당, D-자일로오스, 효모추출물혼합분말, 혼합제제(말토덱스트린, 트랜스글루타미나아제), 바질분말 0.20%(바질:이집트산), 바질홀 0.05%(이집트산), 혼합제제(덱스트린, 치자황색소, 치자홀황색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602225/2014061602225-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (34g) / 총 약 3.5회 분량 1회 분량당 함량 %영양소기준치 열량 55kcal, 트랜스지방 0g, 탄수화물 6g 2%, 콜레스테롤 5mg미만 2%, 식이섬유 0g 0%, 나트륨 250mg 13%, 당류 2g, 비타민A 0㎍RE 0%, 단백질 4g 7%, 비타민C 0mg 0%, 지방 1.7% 3%, 칼슘 24mg 3%, 포화지방 0g 0%, 철 0mg 0% %영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602225/2014061602225-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "미국산",
+        "amount": "61.7%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트치즈",
+        "amount": "9.41%",
+        "sub_ingredients": [
+          {
+            "name": "화이트체다치즈",
+            "origin": "미국산",
+            "amount": "73.75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈파우더카망베르타입",
+            "origin": "덴마크산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "연성가공치즈",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "리투아니아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바질풍미유",
+        "amount": "5.10%",
+        "sub_ingredients": [
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바질",
+            "origin": "스페인산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "타피오카전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균배양액혼합분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-자일로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물혼합분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "트랜스글루타미나아제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자홀황색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바질분말",
+            "amount": "0.20%",
+            "sub_ingredients": [
+              {
+                "name": "바질",
+                "origin": "이집트산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바질홀",
+            "origin": "이집트산",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:02"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "trans_fat_g": 0.0,
+    "carbohydrate_g": 6.0,
+    "dietary_fiber_g": 0.0,
+    "sodium_mg": 250.0,
+    "sugar_g": 2.0,
+    "protein_g": 4.0,
+    "fat_g": 1.7,
+    "calcium_mg": 24.0,
+    "saturated_fat_g": 0.0,
+    "iron_mg": 0.0,
+    "basis_amount": 34.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (34g)",
+    "collected_at": "2026-03-04 04:44:02"
+  }
+}

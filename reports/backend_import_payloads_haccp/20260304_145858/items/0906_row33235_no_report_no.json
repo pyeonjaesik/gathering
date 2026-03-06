@@ -1,0 +1,69 @@
+{
+  "product": {
+    "name_ko": "제주우유",
+    "reportnum": "1978062600125"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978062600125/1978062600125-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978062600125/1978062600125-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978062600125/1978062600125-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "국산원유100%(제주특별자치도산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978062600125/1978062600125-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=900ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/1978062600125/1978062600125-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "국산원유",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "제주특별자치도산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:19:41"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 65.0,
+    "carbohydrate_g": 4.5,
+    "protein_g": 3.0,
+    "fat_g": 4.0,
+    "sugar_g": 4.5,
+    "sodium_mg": 50.0,
+    "calcium_mg": 105.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "900ml",
+    "collected_at": "2026-03-03 14:19:41"
+  }
+}

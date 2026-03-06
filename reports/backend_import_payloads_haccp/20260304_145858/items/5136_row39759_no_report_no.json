@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "순닭가슴살 오리지널",
+    "reportnum": "2005040500386"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500386/2005040500386-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500386/2005040500386-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500386/2005040500386-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(가슴살/수입산,국산)80.06%,정제수,조개야채엑기스[조개엑기스(홍합살/국산),야채즙(생강/국산)],조개관자엑기스(대두,밀),혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),정제소금,비타민C,잔탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500386/2005040500386-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1/3캔(45g) 총3회 제공량(135g) 1회 제공량 당 함량 %영양소기준치: 열량 30kcal,탄수화물0g 0%,당류0g,단백질8g 15%,지방0g 0%,포화지방0g 0%,트랜스지방0g, 콜레스테롤15mg 5%,나트륨105mg 5% *%영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005040500386/2005040500386-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "수입산, 국산",
+        "amount": "80.06%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조개야채엑기스",
+        "sub_ingredients": [
+          {
+            "name": "조개엑기스",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "홍합살",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "야채즙",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "생강",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조개관자엑기스",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:53:36"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 8.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 105.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1/3캔(45g)",
+    "collected_at": "2026-03-04 03:53:36"
+  }
+}

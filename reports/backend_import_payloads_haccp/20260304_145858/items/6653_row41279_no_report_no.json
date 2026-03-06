@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "또띠아칩 오리지널",
+    "reportnum": "20140383299134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299134/20140383299134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299134/20140383299134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299134/20140383299134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "프리컷옐로우콘또띠아81.8%(미국산/옥수수가루, 셀룰로오스검), 팜올레인유(말레이시아산), 씨솔트맛씨즈닝3.3%[덱스트린, 정제소금(국산), 제삼인산칼슘, 현미유(태국산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299134/20140383299134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 열량 350kcal, 1회 제공량 70g\n열량350kcal, 탄수화물48g (15%), 당류1g미만 (1%), 단백질4g (7%), 지방16g (30%), 포화지방6g (40%), 트랜스지방0g (0%), 콜레스테롤0mg (0%), 나트륨160mg (8%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140383299134/20140383299134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "프리컷옐로우콘또띠아",
+        "origin": "미국산",
+        "amount": "81.8%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "씨솔트맛씨즈닝",
+        "amount": "3.3%",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "origin": "태국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:37"
+  },
+  "nutrition": {
+    "kcal": 350.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 4.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 160.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 70g",
+    "collected_at": "2026-03-04 04:41:37"
+  }
+}

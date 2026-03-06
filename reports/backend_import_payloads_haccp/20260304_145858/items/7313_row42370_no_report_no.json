@@ -1,0 +1,179 @@
+{
+  "product": {
+    "name_ko": "간편형스마트미숫가루",
+    "reportnum": "19920355108358"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108358/19920355108358-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108358/19920355108358-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108358/19920355108358-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "보리14.2%(국산),현미14.1%(국산),식물성크림{물엿,팜유(말레이시아),유청분말(우유,미국),유당,카제인나트륨},분말·결정포도당,정백당,말토덱스트린,멥쌀,백태(대두),검정콩(대두),옥수수,찹쌀,보리,흑미,밀쌀,땅콩,해바라기씨,아몬드,참깨,검정깨,알파미분,발아현미",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108358/19920355108358-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=1200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108358/19920355108358-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "보리",
+        "origin": "국산",
+        "amount": "14.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "amount": "14.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백태",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검정콩",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아현미",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:59:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 483.0,
+    "carbohydrate_g": 66.67,
+    "protein_g": 4.17,
+    "fat_g": 8.75,
+    "sugar_g": 33.33,
+    "sodium_mg": 113.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.92,
+    "trans_fat_g": 0.42,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "1200g",
+    "collected_at": "2026-03-03 18:59:00"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "건강담은 헛개 진한 꿀물",
+    "reportnum": "19840415001203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001203/19840415001203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001203/19840415001203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001203/19840415001203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "헛개나무추출액40%[고형분0.1%이상,헛개나무(국산)],벌꿀3%(국산),정제수,액상과당,구연산,구연산나트륨,합성착향료(벌꿀향),효소처리스테비아(천연),L-아스파라긴,타우린,카라멜색소(천연)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001203/19840415001203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001203/19840415001203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "헛개나무추출액",
+        "origin": "국산",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.1%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "헛개나무",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "벌꿀향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": [
+          {
+            "name": "천연",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스파라긴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": [
+          {
+            "name": "천연",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:40:16"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 67.0,
+    "carbohydrate_g": 15.56,
+    "protein_g": 0.0,
+    "fat_g": 0.28,
+    "sugar_g": 15.56,
+    "sodium_mg": 6.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-03 15:40:16"
+  }
+}

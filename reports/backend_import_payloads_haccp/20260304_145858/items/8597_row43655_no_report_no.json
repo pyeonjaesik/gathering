@@ -1,0 +1,70 @@
+{
+  "product": {
+    "name_ko": "조은아이 유기농쌀과자 파래",
+    "reportnum": "2003049702076"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702076/2003049702076-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702076/2003049702076-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702076/2003049702076-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "파래(국산)1%,유기농현미(국산)99%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702076/2003049702076-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=30g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702076/2003049702076-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파래",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "99%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 397.0,
+    "carbohydrate_g": 86.67,
+    "protein_g": 8.0,
+    "fat_g": 2.67,
+    "sugar_g": 0.67,
+    "sodium_mg": 5.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "30g",
+    "collected_at": "2026-03-04 03:48:19"
+  }
+}

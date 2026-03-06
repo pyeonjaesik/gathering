@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "큼직한 김치낙지죽",
+    "reportnum": "200304432172509"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172509/200304432172509-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172509/200304432172509-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172509/200304432172509-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 일품맛김치 15%[절임배추(배추:국산),고춧가루(국산), 대파,마늘,멸치액젓], 쌀(국산), 낙지(베트남산) 6%, 양파, 대파, 찹쌀, 당근, 국산채소밑국물, 조미맛분, 혼합제제(변성전분, 말토덱스트린), 찰현미, 녹두, 참기름, 고춧가루, 마늘, 대구뼈엑기스, 정제염, 아미노베이스PS",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172509/200304432172509-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172509/200304432172509-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "일품맛김치",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고춧가루",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "낙지",
+        "origin": "베트남산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국산채소밑국물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미맛분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찰현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹두",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대구뼈엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미노베이스PS",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:17"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 42.0,
+    "carbohydrate_g": 8.8,
+    "protein_g": 1.2,
+    "fat_g": 0.52,
+    "sugar_g": 0.8,
+    "sodium_mg": 216.0,
+    "cholesterol_mg": 1.88,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:47:17"
+  }
+}

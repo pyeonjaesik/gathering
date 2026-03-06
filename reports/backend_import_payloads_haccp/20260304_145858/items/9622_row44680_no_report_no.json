@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "워낭고추맛소시지",
+    "reportnum": "201403790183"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403790183/201403790183-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403790183/201403790183-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403790183/201403790183-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(국내산)48.79%,소고기(국내산:횡성축협한우)31.77%,청양고추(국내산)4.54%,수제후랑크시즈닝(대두,계란,L-글루타민산나트륨(향미증진제)),생양파,감자전분,케이싱(콜라겐),소시지용염지제-B(아질산나트륨(발색제),산도조절제),식염(정제염),정백당,핫시즈닝 RM-2, 햄그린-GG,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403790183/201403790183-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=350g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201403790183/201403790183-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "48.79%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "국내산",
+        "amount": "31.77%",
+        "sub_ingredients": [
+          {
+            "name": "횡성축협한우",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국내산",
+        "amount": "4.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수제후랑크시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이싱",
+        "sub_ingredients": [
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소시지용염지제-B",
+        "sub_ingredients": [
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "RM-2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "햄그린",
+        "sub_ingredients": [
+          {
+            "name": "GG",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 210.0,
+    "carbohydrate_g": 5.43,
+    "protein_g": 15.93,
+    "fat_g": 13.83,
+    "sugar_g": 1.62,
+    "sodium_mg": 779.0,
+    "cholesterol_mg": 46.63,
+    "saturated_fat_g": 4.91,
+    "trans_fat_g": 0.1,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "350g",
+    "collected_at": "2026-03-04 04:41:19"
+  }
+}

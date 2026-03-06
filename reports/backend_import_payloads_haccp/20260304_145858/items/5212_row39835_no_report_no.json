@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "홈플러스 좋은상품 치자단무지",
+    "reportnum": "20050568034108"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034108/20050568034108-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034108/20050568034108-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034108/20050568034108-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "절임무99.33%[무(국산),천일염(호주산)],빙초산,소르빈산칼륨(합성보존료),삭카린나트륨(합성감미료),치자황색소0.05%(천연첨가물),DL-사과산,구연산,비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034108/20050568034108-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1/16봉(25g) 총16회제공량400g *%영양소기준치:1일영양소기준치에대한비율, 1회제공량당함량 *%영양소기준치, 열량3kcal, 탄수화물0g 0%, 당류0g, 단백질0g 1%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨150mg 8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050568034108/20050568034108-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절임무",
+        "origin": "국산",
+        "amount": "99.33%",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "빙초산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "삭카린나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "천연첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:21"
+  },
+  "nutrition": {
+    "kcal": 3.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1/16봉(25g)",
+    "collected_at": "2026-03-04 03:55:21"
+  }
+}

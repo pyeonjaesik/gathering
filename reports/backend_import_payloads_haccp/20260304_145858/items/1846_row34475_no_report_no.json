@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "나쁜엄마 유기농주스 과일.야채 100",
+    "reportnum": "198506140552168"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552168/198506140552168-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552168/198506140552168-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552168/198506140552168-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농함량 100% 정제수, 유기농적포도농축액 6.148%(과즙으로 38%,미국산), 유기농배농축액 5.715%(과즙으로 50%,터키산),유기농배퓨레 2%(유기농배 100%,터키산), 유기농당근농축액 1.17%(기준당도 7.2 Brix 이상, 야채즙으로 6.5%, 터키산) 유기농토마토페이스트 0.536%(기준당도 5 Brix 이상, 야채즙으로 3%, 이탈리아산) 유기농브로콜리즙 0.44%(기준당도 5.2 brix 이상, 야채즙으로 0.5%, 국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552168/198506140552168-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=100ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198506140552168/198506140552168-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농함량 100% 정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농적포도농축액",
+        "origin": "미국산",
+        "amount": "6.148%(과즙으로 38%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농배농축액",
+        "origin": "터키산",
+        "amount": "5.715%(과즙으로 50%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농배퓨레",
+        "origin": "터키산",
+        "amount": "2%(유기농배 100%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농당근농축액",
+        "origin": "터키산",
+        "amount": "1.17%(기준당도 7.2 Brix 이상, 야채즙으로 6.5%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농토마토페이스트",
+        "origin": "이탈리아산",
+        "amount": "0.536%(기준당도 5 Brix 이상, 야채즙으로 3%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농브로콜리즙",
+        "origin": "국산",
+        "amount": "0.44%(기준당도 5.2 brix 이상, 야채즙으로 0.5%)",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:01:05"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 36.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 9.0,
+    "sodium_mg": 19.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "100ml",
+    "collected_at": "2026-03-03 16:01:05"
+  }
+}

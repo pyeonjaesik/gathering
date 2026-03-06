@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "언양식불고기",
+    "reportnum": "20030189006498"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006498/20030189006498-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006498/20030189006498-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006498/20030189006498-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쇠고기(목심-호주산)71.97%,언양식불고기소스13.13%{물엿,배퓨레(배-국산),양파(국내산),설탕,간장(대두,밀),다진마늘,L-글루탐산나트륨(향미증진제)},물엿,쿡메이트-에프씨15[우지풍미유{우지방(국내산)},진간장{탈지대두(외국산)}(쇠고기,대두,밀)],다진마늘,설탕,참기름,L-글루탐산나트륨(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006498/20030189006498-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 300g 100g당 195kcal 100g당 1일 영양성분 기준치에 대한비율 나트륨 260mg 13%탄수화물 9g 3%, 당류 7g 7%,지방 12g 22%,트랜스지방 0g,포화지방 6g 40%,콜레스테롤 55mg 18%,단백질 11g 20% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030189006498/20030189006498-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "호주산",
+        "amount": "71.97%",
+        "sub_ingredients": [
+          {
+            "name": "목심",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "언양식불고기소스",
+        "amount": "13.13%",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배퓨레",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "다진마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿡메이트-에프씨15",
+        "sub_ingredients": [
+          {
+            "name": "우지풍미유",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "우지방",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "진간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:24"
+  },
+  "nutrition": {
+    "kcal": 195.0,
+    "sodium_mg": 260.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 7.0,
+    "fat_g": 12.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 55.0,
+    "protein_g": 11.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:45:24"
+  }
+}

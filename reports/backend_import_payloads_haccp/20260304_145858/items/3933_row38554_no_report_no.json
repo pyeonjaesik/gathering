@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "남양 티오레",
+    "reportnum": "19960571018436"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018436/19960571018436-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018436/19960571018436-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018436/19960571018436-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우유(국산)25%,다즐링홍차추출액[(고형분0.7%이상,홍차엽:인도산)다즐링],정제수,백설탕,탄산수소나트륨,비타민C,유화제,구연산삼나트륨,정제소금,합성착향료(홍차향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018436/19960571018436-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(240ml) 총 1회 제공량(240ml) *()안의 수치는 1일 영양기준치에 대한 비율임 열량 105kcal, 탄수화물 18g(5%), 당류 17g, 단백질 2g(4%), 지방 2.6g(5%), 포화지방 1.8g(12%), 트랜스지방 0g, 콜레스테롤 5mg(2%), 나트륨 110mg(6%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960571018436/19960571018436-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다즐링홍차추출액",
+        "origin": "인도산",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍차엽",
+            "origin": "인도산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "홍차향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:18:29"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 17.0,
+    "protein_g": 2.0,
+    "fat_g": 2.6,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 110.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1개(240ml)",
+    "collected_at": "2026-03-03 21:18:29"
+  }
+}

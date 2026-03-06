@@ -1,0 +1,109 @@
+{
+  "product": {
+    "name_ko": "패밀리 요구르트",
+    "reportnum": "20080379009203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009203/20080379009203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009203/20080379009203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009203/20080379009203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,탈지분유3.4%(외국산:국가명은 홈페이지 별도 표시),액상과당,정백당,함수결정포도당,치커리 추추물(네덜란드산),이소말토올리고당,아카시아꿀0.1%(국산),합성착향료(요거트향),유산균(천만이상/mL)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009203/20080379009203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=80ml(g) | foodSize=750ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080379009203/20080379009203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "외국산",
+        "amount": "3.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치커리 추출물",
+        "origin": "네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아카시아꿀",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요거트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "천만이상, mL",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:16"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 75.0,
+    "carbohydrate_g": 17.5,
+    "protein_g": 1.25,
+    "fat_g": 0.0,
+    "sugar_g": 15.0,
+    "sodium_mg": 25.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "80ml(g)",
+    "total_content": "750ml",
+    "collected_at": "2026-03-04 04:08:16"
+  }
+}

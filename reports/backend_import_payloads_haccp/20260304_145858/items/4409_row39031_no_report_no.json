@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "안심찬 브로콜리 포자찐만두",
+    "reportnum": "20000498027290"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027290/20000498027290-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027290/20000498027290-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027290/20000498027290-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기28.93%(국산),밀가루22.66%(밀,수입산),브로콜리13.02%(중국산),두부(대두),부추,대파,양배추,양파,당면,대두단백(대두),난백(계란),양조간장,혼합제제(변성전분,말토덱스트린),마늘,정백당,정제염,참기름,향미증진제,만두시즈닝분말P(우유),감미유-S,생강분말,후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027290/20000498027290-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 6개(180g) 1회 제공량당 함량 *%영양소 기준치: 열량 415kcal,탄수화물31g 9%, 당류5g, 단백질 21g 38%, 지방23g 45%, 포화지방8g 53%, 트랜스지방 0.5g미만, 콜레스테롤0mg 0%, 나트륨 500mg 25%,  *영양소 기준치(%) : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027290/20000498027290-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "28.93%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "amount": "22.66%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "중국산",
+        "amount": "13.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "만두시즈닝분말P",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:02"
+  },
+  "nutrition": {
+    "kcal": 415.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 5.0,
+    "protein_g": 21.0,
+    "fat_g": 23.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 500.0,
+    "basis_amount": 180.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 6개(180g)",
+    "collected_at": "2026-03-04 03:28:02"
+  }
+}

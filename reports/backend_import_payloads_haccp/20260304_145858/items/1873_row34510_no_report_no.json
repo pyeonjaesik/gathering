@@ -1,0 +1,251 @@
+{
+  "product": {
+    "name_ko": "열라면Cup",
+    "reportnum": "19860309018368"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018368/19860309018368-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018368/19860309018368-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018368/19860309018368-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(미국산,호주산),변성전분,팜유(말레이시아산),고올레산해바라기유(수입산),정제소금,식용유지가공품,글루텐,마늘시즈닝,유화유지,난각분말,면류첨가알칼리제(산도조절제),비타민B2,녹차풍미유 *스프류:참맛고추양념분말,정제소금,조미육수분말,진한감칠맛분,포도당,간장베이스,버섯야채조미분말,전분,백설탕,식용유지가공품,유지혼합분말,고춧가루,간장분말,향미증진제,참맛해물육수분말,절임고추볶음분말,칠리맛분말,볶음마늘분,후추분말,칠리추출물,고추농축소스,청양고추추출물분말,건파,건표고버섯,건고추입자.[소맥분(밀),탈지대두(대두),우유단백질(우유),난각분말(계란)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018368/19860309018368-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=62g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018368/19860309018368-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고올레산해바라기유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유지가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난각분말",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "면류첨가알칼리제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차풍미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스프류",
+        "sub_ingredients": [
+          {
+            "name": "참맛고추양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미육수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진한감칠맛분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버섯야채조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유지혼합분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참맛해물육수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "절임고추볶음분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리맛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음마늘분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칠리추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추농축소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청양고추추출물분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건고추입자",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유단백질",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:05:28"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 439.0,
+    "carbohydrate_g": 70.97,
+    "protein_g": 9.68,
+    "fat_g": 12.9,
+    "sugar_g": 4.84,
+    "sodium_mg": 1935.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 5.65,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "62g",
+    "collected_at": "2026-03-03 16:05:28"
+  }
+}

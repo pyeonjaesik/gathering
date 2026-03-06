@@ -1,0 +1,237 @@
+{
+  "product": {
+    "name_ko": "두부담은 돈저냐",
+    "reportnum": "20010435046130"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010435046130/20010435046130-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010435046130/20010435046130-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010435046130/20010435046130-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기48.37%(국내산), 두부30.10%[대두100%(수입산),천일염응고제100(조제해수염화마그네슘, 식물성유지, 올리브유)], 양파, 깻잎불고기맛베이스(대두,밀, 계란),당근,말토덱스트린,대파,혼합제제(변성전분,말토덱스트린),백설탕,마늘,부추, 대두단백(대두),산도조절제,비프맛분말(대두,토마토),이스트엑기스, 참기름, 정제소금, 참살이 요리용 국물쇠고기맛(밀,대두,우유), 그린핫스파이스, 깻잎, 카라멜색소, 아미노베이스(밀),생강, 후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010435046130/20010435046130-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010435046130/20010435046130-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "48.37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "수입산",
+        "amount": "30.10%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염응고제",
+            "amount": "100",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올리브유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "깻잎불고기맛베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프맛분말",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이스트엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참살이 요리용 국물쇠고기맛",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그린핫스파이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "깻잎",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미노베이스",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:30:08"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 180.0,
+    "carbohydrate_g": 7.0,
+    "protein_g": 15.0,
+    "fat_g": 10.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 450.0,
+    "cholesterol_mg": 25.0,
+    "saturated_fat_g": 3.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 03:30:08"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "맛있는 육포야 한돈",
+    "reportnum": "200704760026"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760026/200704760026-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760026/200704760026-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760026/200704760026-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기87.7%(국내산),솔비톨,백설탕,비프시즈닝,저키시즈닝,후추,아질산나트륨(발색제),에르소르빈산,나트륨(산화방지제),고추씨기름,마늘가루,생강가루,양파가루,간장,소금,고춧가루(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760026/200704760026-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "10g당함량%영양소 기준치 열량 32kacl,탄수화물 1.6g 0.5%,당류 0.3g,단밸질 4.6g 7.7%,지방 0.8g 1.6%,포화지방 0.28g 1.9%,트랜스지방 0g,콜레스테롤 2.2mg 0.7%,나트륨 148mg 7.4%,칼슘 2.2mg 0.7%, 철 0.1mg 0.7%, *%영양소기준치 : 1일섭취 권장량에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760026/200704760026-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "87.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솔비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저키시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에르소르빈산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추씨기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:47"
+  },
+  "nutrition": {
+    "kcal": 32.0,
+    "carbohydrate_g": 1.6,
+    "sugar_g": 0.3,
+    "protein_g": 4.6,
+    "fat_g": 0.8,
+    "saturated_fat_g": 0.28,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 2.2,
+    "sodium_mg": 148.0,
+    "calcium_mg": 2.2,
+    "iron_mg": 0.1,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "10g당",
+    "collected_at": "2026-03-04 04:06:47"
+  }
+}

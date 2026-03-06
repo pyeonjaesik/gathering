@@ -1,0 +1,301 @@
+{
+  "product": {
+    "name_ko": "일렉트로맨 매쉬드포테이토",
+    "reportnum": "19940512092358"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940512092358/19940512092358-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940512092358/19940512092358-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940512092358/19940512092358-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "매쉬드포테이토분말54%[감자그래뉼(미국)77.7%{건조감자99.5%,글리세린지방산에스테르,산성피로인산나트륨},덱스트린(수입산),유청분말(수입산),감자전분(수입산),백설탕(수입산),농축버터버드(미국),정제염],감자후레이크30%{건조감자(미국)99.4%,글리세린지방산에스테르,산성피로인산트르륨,구연산},허브스파이스시즈닝[덱스트린,치즈분말화이트{저당-70,반경성치즈(우유:미국산),식물성유지(경화유:수입산),유청분말,정제염,정백당,제3인산칼슘,제2인산칼륨,폴리인산나트륨,제3인산나트륨,글리세린지방산에스테르,자당지방산에스테르},프리마{물엿,식물성경화유지((야자유:인도네시아산,필리핀산),팜유),천연카제인,제이인산칼륨,유화제,제삼인산칼슘,폴리인산칼륨,천연안나토색소,천연심황색소},이스트엑기스분말5004-3,파슬리분말,정제염,오토이스트분말,양파분말80,5'-리보뉴클레오티드이나트륨,크림농축분말,로즈마리분말,밀크향M-113B,오레가노분말],정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940512092358/19940512092358-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1포(50g) 1회제공량당 함량 *%영양소기준치 : 열량 185kcal,탄수화물39g 12%, 당류3g, 단백질 4g 7%,지방1.4g 3%, 포화지방1.0g 7%, 트랜스지방 0g, 콜레스테롤1mg 0%, 나트륨 355mg 18%, *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940512092358/19940512092358-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "매쉬드포테이토분말",
+        "amount": "54%",
+        "sub_ingredients": [
+          {
+            "name": "감자그래뉼",
+            "origin": "미국산",
+            "amount": "77.7%",
+            "sub_ingredients": [
+              {
+                "name": "건조감자",
+                "amount": "99.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산성피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축버터버드",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자후레이크",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "건조감자",
+            "origin": "미국산",
+            "amount": "99.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산성피로인산트르륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허브스파이스시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈분말화이트",
+            "sub_ingredients": [
+              {
+                "name": "저당",
+                "amount": "70",
+                "sub_ingredients": []
+              },
+              {
+                "name": "반경성치즈",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "식물성유지",
+                    "origin": "수입산",
+                    "amount": "경화유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제3인산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제2인산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제3인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "자당지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프리마",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성경화유지",
+                "sub_ingredients": [
+                  {
+                    "name": "야자유",
+                    "origin": "인도네시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜유",
+                    "origin": "필리핀산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "천연카제인",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제이인산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제삼인산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "폴리인산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연안나토색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연심황색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "이스트엑기스분말",
+            "amount": "5004-3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파슬리분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오토이스트분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "amount": "80",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림농축분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "amount": "M-113B",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오레가노분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:05:15"
+  },
+  "nutrition": {
+    "kcal": 185.0,
+    "carbohydrate_g": 39.0,
+    "sugar_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 1.4,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 1.0,
+    "sodium_mg": 355.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1포(50g)",
+    "collected_at": "2026-03-03 20:05:15"
+  }
+}

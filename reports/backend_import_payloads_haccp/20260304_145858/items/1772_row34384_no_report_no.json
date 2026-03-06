@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "미니딸기잼파이",
+    "reportnum": "198504330151120"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151120/198504330151120-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151120/198504330151120-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151120/198504330151120-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:미국산,캐나다산),딸기잼27.02%[딸기35%(국내산),설탕,물엿,아세틸아디핀산전분,펙틴],마가린[식물성유지{팜스테아린에스테르화유(말레이시아산),대두에스테르화유(외국산),팜올레인에스테르화유(말레이시아산),채종경화에스테르화유},대두유(외국산),유화제,정제소금,레시틴],정백당,전란액,가공버터,유청분말,정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151120/198504330151120-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 2개(46g)당 함량/ 총20회 제공량(920g)  열량 200kcal, 탄수화물 24g 8%,당류 3g, 단백질 4g 7%,지방 10g 20%, 포화지방 2g 13%,트랜스지방 0g,콜레스테롤 3mg 1%,나트륨 410mg 21% *%영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/198504330151120/198504330151120-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기잼",
+        "amount": "27.02%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국내산",
+            "amount": "35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세틸아디핀산전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜스테아린에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두에스테르화유",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜올레인에스테르화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "채종경화에스테르화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:54:11"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 3.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 46.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 2개(46g)당 함량",
+    "collected_at": "2026-03-03 15:54:11"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "남양 맛있는우유 쵸코",
+    "reportnum": "200204480025"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480025/200204480025-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480025/200204480025-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480025/200204480025-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)40%,정제수,액상과당,혼합탈지분유(네덜란드산),정백당,코코아분말(네덜란드산)1.2%,코코아조제분말(네덜란드산)0.5%,덱스트린,유크림,정제소금,카라기난,수크랄로스(합성감미료),합성착향료(초코향,밀크바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480025/200204480025-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(180ml) 총 1회 제공량(180ml) 1회 제공량 당 함량 *%영양성분 기준치 열량 120kcal, 탄수화물 17g 5%, 당류 15g,단백질 4.8g 9%,지방 3.8g 7%, 포화지방 2.3g 15%,트랜스지방 0g,콜레스테롤 15mg 5%,나트륨 90mg 5% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480025/200204480025-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아조제분말",
+        "origin": "네덜란드산",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:39"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 15.0,
+    "protein_g": 4.8,
+    "fat_g": 3.8,
+    "saturated_fat_g": 2.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1개(180ml)",
+    "collected_at": "2026-03-04 03:39:39"
+  }
+}

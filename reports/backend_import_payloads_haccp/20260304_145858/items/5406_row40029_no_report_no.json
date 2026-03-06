@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "매일 탈지분유",
+    "reportnum": "2006044800215"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044800215/2006044800215-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044800215/2006044800215-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044800215/2006044800215-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "탈지유100%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044800215/2006044800215-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 기준,%영양소 기준치,열량 355Kcal,탄수화물52g (16%),당류 52g,단백질 35g(58%),지방 1g (2%),포화지방 0.7g,트랜스지방 0g,콜레스테롤 5mg미만 ,나트륨 530mg(27%),%영양소기준치 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044800215/2006044800215-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "탈지유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:53"
+  },
+  "nutrition": {
+    "kcal": 355.0,
+    "carbohydrate_g": 52.0,
+    "sugar_g": 52.0,
+    "protein_g": 35.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 530.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g 기준",
+    "collected_at": "2026-03-04 03:59:53"
+  }
+}

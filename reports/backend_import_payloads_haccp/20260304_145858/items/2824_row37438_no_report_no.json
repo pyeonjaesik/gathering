@@ -1,0 +1,438 @@
+{
+  "product": {
+    "name_ko": "동원 리얼치즈봉",
+    "reportnum": "19900275002465"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002465/19900275002465-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002465/19900275002465-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002465/19900275002465-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "명태연육53.87%(미국산/명태어육91.0%이상,D-소르비톨,정백당,산도조절제),덴마크하이체다치즈11.15%[자연치즈61.5%{체다치즈94.3%(수입산:원유,유산균,식염,우유응고효소),고다치즈5.7%(네덜란드산:원유,식염,유산균배양액,우유응고효소)},야자경화유5.5%(인도네시아산,필리핀산),썬텐더(아세틸아디핀산전분),렌넷카제인,산도조절제],소맥전분(미국산,호주산),크림치즈7.44%(호주산:원유,유크림,정제염,로커스트콩염,구아검,유산균배양액),대두유,유크림,동결난백,정백당,덴마크모짜렐라치즈1.49%[자연치즈99%(덴마크산:원유,유산균배양액,식염,효소제제),분말셀룰로오스],레시틴,정제염,조미액,허브믹스,카라기난,혼합제제(피로인산나트륨,폴리인산나트륨,메타인산나트륨),치즈분말0.74%{화이트체다씨즈닝5064(미국산,블루치즈5%),40%,체자치즈파우더(호주산,체다치즈78%)23%},유청분말,요거트분말,밀크향(합성착향료),체다치즈향(합성착향료),대두단백,L-글루타민산나트륨제제{L-글루타민산나트륨(향미증진제),이노신산이나트륨,구아닐산이나트륨},혼합제제{제삼인산나트륨,분리대두단백,콜라겐,말토덱스트맅린,트랜스글루타미나아제(효소제)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002465/19900275002465-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1개 (30g)/총 18회 제공량(540g) 1회제공량당 함량: 열량45kcal, 탄수화물5g(2%), 당류2g, 단백질3g(5%), 지방1.3g(3%), 포화지방0.5g(3%), 트랜스지방0g, 콜레스테롤5mg(2%), 나트륨210mg(11%) *()안의 수치는 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002465/19900275002465-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "명태연육",
+        "origin": "미국산",
+        "amount": "53.87%",
+        "sub_ingredients": [
+          {
+            "name": "명태어육",
+            "amount": "91.0%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "덴마크하이체다치즈",
+        "amount": "11.15%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "61.5%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈",
+                "origin": "수입산",
+                "amount": "94.3%",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유산균",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "식염",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "우유응고효소",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "고다치즈",
+                "origin": "네덜란드산",
+                "amount": "5.7%",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "식염",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유산균배양액",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "우유응고효소",
+                    "amount": "null",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "야자경화유",
+            "origin": "인도네시아산, 필리핀산",
+            "amount": "5.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "썬텐더",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "렌넷카제인",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "미국산, 호주산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크림치즈",
+        "origin": "호주산",
+        "amount": "7.44%",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩염",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균배양액",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결난백",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덴마크모짜렐라치즈",
+        "origin": "덴마크산",
+        "amount": "1.49%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "99%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효소제제",
+                "amount": "null",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말셀룰로오스",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브믹스",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "피로인산나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분리대두단백",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콜라겐",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트랜스글루타미나아제",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "효소제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "amount": "0.74%",
+        "sub_ingredients": [
+          {
+            "name": "화이트체다씨즈닝",
+            "origin": "미국산",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "블루치즈",
+                "amount": "5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "체다치즈파우더",
+            "origin": "호주산",
+            "amount": "23%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈",
+                "amount": "78%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요거트분말",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀크향",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "체다치즈향",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두단백",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨제제",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "L-글루타민산나트륨",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "이노신산이나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아닐산이나트륨",
+            "amount": "null",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:57:38"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 1.3,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 210.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1개 (30g)",
+    "collected_at": "2026-03-03 17:57:38"
+  }
+}

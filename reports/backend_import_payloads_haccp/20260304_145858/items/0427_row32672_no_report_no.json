@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "콘크림스프",
+    "reportnum": "197202880023000"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023000/197202880023000-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023000/197202880023000-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023000/197202880023000-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,우유(국산),스위트콘12%(태국산:옥수수59.67%,정제염),하프크림5%(프랑스산:하프유크림,변성전분,펙틴,카라기난),퓨레드스위트콘파우더4%(뉴질랜드산),양파,버터루(대두,밀),백설탕,아카시아꿀,옥수수유,혼합제제(변성전분,말토덱스트린),치킨파우더,정제소금,혼합제제(ε-폴리리신,덱스트린,글리신),강황분,향미증진제,합성착향료(스위트콘향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023000/197202880023000-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(200g) 총3회 제공량(600g) 1회 제공량당 함량 *%영양성분 기준치 : 열량 170kcal,탄수화물24g 7%, 당류11g, 단백질 5g 9%,지방6g 12%, 포화지방2.7g 18%, 트랜지방 0g, 콜레스테롤15mg 5%, 나트륨 410mg 21%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023000/197202880023000-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘",
+        "origin": "태국산",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "amount": "59.67%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하프크림",
+        "origin": "프랑스산",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "하프유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "퓨레드스위트콘파우더",
+        "origin": "뉴질랜드산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터루",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아카시아꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "ε-폴리리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치킨파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "강황분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "스위트콘향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:39:36"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 11.0,
+    "protein_g": 5.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.7,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(200g)",
+    "collected_at": "2026-03-03 13:39:36"
+  }
+}

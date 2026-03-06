@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "우리밀 아몬드쿠키",
+    "reportnum": "2002034432624"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002034432624/2002034432624-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002034432624/2002034432624-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002034432624/2002034432624-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(국내산)37%, 가공버터(유지방(우유),정제수,야자유,무지유고형분(우유)/호주산)22%,아몬드슬라이스(미국산)20%, 유기원당(수입산)15%,계란(국내산 무항생제 유정란)3%, 코코아분말2%, 베이킹파우더(산도조절제,전분)0.7%, 정제염0.3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002034432624/2002034432624-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=150g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002034432624/2002034432624-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국내산",
+        "amount": "37%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "호주산",
+        "amount": "22%",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기원당",
+        "origin": "수입산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계란",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "국내산 무항생제 유정란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우더",
+        "amount": "0.7%",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:38:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 523.0,
+    "carbohydrate_g": 63.33,
+    "protein_g": 3.33,
+    "fat_g": 30.0,
+    "sugar_g": 13.33,
+    "sodium_mg": 133.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "150g",
+    "collected_at": "2026-03-04 03:38:02"
+  }
+}

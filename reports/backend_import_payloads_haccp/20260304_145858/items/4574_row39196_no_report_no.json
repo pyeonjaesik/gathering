@@ -1,0 +1,157 @@
+{
+  "product": {
+    "name_ko": "볶음김치",
+    "reportnum": "2001062408763"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001062408763/2001062408763-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001062408763/2001062408763-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001062408763/2001062408763-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "묵은지(국산)93.34%[절임배추(국산)78.6%,고춧가루(국산)2.75%,양파(국산)2.6%,무,멸치액젓,새우젓,마늘,생강,천일염,멸치육젓,찹쌀,쪽파,다시마,대파,사과,배],대두유,마늘,설탕,들기름,5`-이노신산이나트륨(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001062408763/2001062408763-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "NET WT 120g (5.29 oz)\n<100g당함량 %영양소 기준치\ncontents per 100g %Dally Value>\n열량/Calories92.4Kcal, 탄수화물/Carbohydrate12.5g 3.80%, 당류/Sugar2.9g, 단백질/Protein2.3g 3.80%, 지방/Fat3.7g 7.40%, 포화지방산/Saturated fatty acid0.35g 2.30%, 트랜스지방/Trans fat0.01g, 콜레스테롤/Cholesterol0.84mg 0.30%, 나트륨/Sodium548mg 27.40%, 칼슘/Calcium25mg 3.6%, 철/Iron0.9mg 6%, 식이섬유/Fiber5.1g 20.40%\n영양소 기준치 : 1일 영양소 기준치에 대한 비율\npercent Dally Value are based on a 2,000calorie diet",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001062408763/2001062408763-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "묵은지",
+        "origin": "국산",
+        "amount": "93.34%",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "origin": "국산",
+            "amount": "78.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "국산",
+            "amount": "2.75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "amount": "2.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치육젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쪽파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5`-이노신산이나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:26"
+  },
+  "nutrition": {
+    "kcal": 92.4,
+    "carbohydrate_g": 12.5,
+    "sugar_g": 2.9,
+    "protein_g": 2.3,
+    "fat_g": 3.7,
+    "saturated_fat_g": 0.35,
+    "trans_fat_g": 0.01,
+    "cholesterol_mg": 0.84,
+    "sodium_mg": 548.0,
+    "calcium_mg": 25.0,
+    "iron_mg": 0.9,
+    "dietary_fiber_g": 5.1,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:36:26"
+  }
+}

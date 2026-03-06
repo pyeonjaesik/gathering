@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "드림카카오 56% 초코",
+    "reportnum": "19780614009268"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009268/19780614009268-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009268/19780614009268-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009268/19780614009268-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "코코아매스(수입산),백설탕,코코아버터(말레이시아산),코코아프리퍼레이션(전지분유(우유),코코아매스),식물성유지,기타코코아가공품류,피막제,아라비아검,물엿,유화제(대두),합성착향료(매스킹향),천연착향료(바닐라향) 첨가제:피막제,아라비아검,물엿,유화제,합성착향료,천연착향료",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009268/19780614009268-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 분량 총 100g/총 1회 분량 1회 분량당 함량 %영양소 기준치 열량 170kcal, 탄수화물 19g 6%, 식이섬유 , 지방 9g 18%, 포화지방 6g 40%, 콜레스테롤 0mg 0%, 트랜스지방 0g, 단백질, 나트륨, 기타 폴리페놀 400mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009268/19780614009268-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "코코아매스",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아버터",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "sub_ingredients": [
+          {
+            "name": "전지분유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타코코아가공품류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피막제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아라비아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "매스킹향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:15:29"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 19.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 분량 총 100g",
+    "collected_at": "2026-03-03 14:15:29"
+  }
+}

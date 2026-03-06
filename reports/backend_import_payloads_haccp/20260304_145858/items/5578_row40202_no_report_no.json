@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "빠다커피",
+    "reportnum": "20070443110371"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110371/20070443110371-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110371/20070443110371-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110371/20070443110371-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,NP버터혼합액16%[정제수,무가염버터37.5%(뉴질랜드산/유크림),MCT오일9.4%(인도네시아산/가공유지),유화제],에스프레소커피추출액3.0%(고형분함량34%,원두:브라질산100%),에티오피아예가체프G2커피추출액0.6%(고형분함량8.3%,원두:에티오피아산(100%),액상알룰로스,카제인나트륨,탄산칼륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110371/20070443110371-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 170,[영양표시] : 나트륨15mg,탄수화물4g,당류0g,지방16g,트랜스지방0.6g,포화지방12g,콜레스테롤31mg,단백질2g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110371/20070443110371-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "NP버터혼합액",
+        "amount": "16%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무가염버터",
+            "origin": "뉴질랜드산",
+            "amount": "37.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT오일",
+            "origin": "인도네시아산",
+            "amount": "9.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에스프레소커피추출액",
+        "amount": "3.0%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "34%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원두",
+            "origin": "브라질산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에티오피아예가체프G2커피추출액",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "8.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원두",
+            "origin": "에티오피아산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상알룰로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:48"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "sodium_mg": 15.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 0.0,
+    "fat_g": 16.0,
+    "trans_fat_g": 0.6,
+    "saturated_fat_g": 12.0,
+    "cholesterol_mg": 31.0,
+    "protein_g": 2.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:05:48"
+  }
+}

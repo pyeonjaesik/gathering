@@ -1,0 +1,81 @@
+{
+  "product": {
+    "name_ko": "유기농현미보리차",
+    "reportnum": "20020623009646"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009646/20020623009646-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009646/20020623009646-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009646/20020623009646-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농보리현미추출액 28%[(보리82.35%, 현미(17.65%), 고형분 0.2% 이상], 정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009646/20020623009646-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 NUTRITION FACTS 1회 제공량 1컵 (120 ml) 총 2회 제공량(240 ml), 1회 제공량당 함량 : 열량 0kcal, 탄수화물 0g (0%), 당류 0g, 단백질 0g(0%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 5mg(0%), *()안의 수치는 1일 영양성분기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020623009646/20020623009646-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농보리현미추출액",
+        "amount": "28%",
+        "sub_ingredients": [
+          {
+            "name": "보리",
+            "amount": "82.35%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "amount": "17.65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "0.2% 이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:57"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 120.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵 (120 ml)",
+    "collected_at": "2026-03-04 03:44:57"
+  }
+}

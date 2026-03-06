@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name_ko": "화이트 알바코참치",
+    "reportnum": "199306190658"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199306190658/199306190658-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199306190658/199306190658-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199306190658/199306190658-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "날개다랑어(알바코)75%(원양산:태평양),해바라기유(수입산),정제수,야채액,정제어유0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199306190658/199306190658-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 180kcal(100g당), 탄수화물 1%, 단백질 35%, 지방 20%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199306190658/199306190658-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "날개다랑어(알바코)",
+        "amount": "75%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "태평양",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제어유",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:52:39"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 35.0,
+    "fat_g": 20.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 19:52:39"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "3초만 참으셔",
+    "reportnum": "19970443119201"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119201/19970443119201-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119201/19970443119201-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119201/19970443119201-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿,백설탕,말티톨시럽(13.4%),자일리톨(5%),산도조절제,주석산,합성착향료(포도향),분말결정포포당,엘더버리색소,젤라틴(돼지고기)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119201/19970443119201-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 2개(9g) 1회 제공량 당 함량 : 열량35kcal, 탄수화물9g(3%), 당류5g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g미만, 콜레스테롤0mg(0%), 나트륨30mg(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970443119201/19970443119201-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "13.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주석산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말결정포포당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엘더버리색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:26:00"
+  },
+  "nutrition": {
+    "kcal": 35.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 5.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 9.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 2개(9g)",
+    "collected_at": "2026-03-03 21:26:00"
+  }
+}

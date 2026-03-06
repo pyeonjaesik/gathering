@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "전복죽",
+    "reportnum": "197202880023249"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023249/197202880023249-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023249/197202880023249-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023249/197202880023249-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "*죽-정제수,멥쌀8.5%(국산),전복4.0%(필리핀산),양파(국산),찹쌀2.5%(국산),표고버섯,새송이버섯,전복엑기스0.3%,꽃소금,양파맛분말,멸치엑기스에이,다시마엑기스,옥수수유,돈골농축액,참기름,백설탕,복합조미식품,마늘,건미역,D-토코페롤(혼합형) *고소한참기름-참깨100%(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023249/197202880023249-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=285g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023249/197202880023249-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "죽",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멥쌀",
+            "origin": "국산",
+            "amount": "8.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전복",
+            "origin": "필리핀산",
+            "amount": "4.0%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "origin": "국산",
+            "amount": "2.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새송이버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전복엑기스",
+            "amount": "0.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꽃소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파맛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치엑기스에이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈골농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건미역",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고소한참기름",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:40:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 54.0,
+    "carbohydrate_g": 9.12,
+    "protein_g": 1.4,
+    "fat_g": 1.4,
+    "sugar_g": 0.7,
+    "sodium_mg": 189.0,
+    "cholesterol_mg": 3.51,
+    "saturated_fat_g": 0.35,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "285g",
+    "collected_at": "2026-03-03 13:40:49"
+  }
+}

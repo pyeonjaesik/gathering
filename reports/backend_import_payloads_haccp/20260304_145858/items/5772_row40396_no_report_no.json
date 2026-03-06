@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "언양식 한우 바싹 불고기",
+    "reportnum": "200804760119"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804760119/200804760119-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804760119/200804760119-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804760119/200804760119-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쇠고기(한우정육)60%(국산),양파(국산),물엿(옥수수전분100%),마늘,간장(밀,대두,우유),미향,정백당,참기름,참깨,대파,쇠고기다시다,식염,고추씨기름,흑후추,L-글루타민산나트륨(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804760119/200804760119-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 100g당 함량기준 ★%영양소기준치 열량 201kcal, 탄수화물 12g 4%, 당류 7g, 단백질 12g 20%,지방 12g 24%, 포화지방 3.9g 26%,트랜스지방 0.2g,콜레스테롤 24mg 8%,나트륨 506mg 25% ★%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804760119/200804760119-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쇠고기(한우정육)",
+        "origin": "국산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "amount": "옥수수전분100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기다시다",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추씨기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "amount": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:51"
+  },
+  "nutrition": {
+    "kcal": 201.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 7.0,
+    "protein_g": 12.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 3.9,
+    "trans_fat_g": 0.2,
+    "cholesterol_mg": 24.0,
+    "sodium_mg": 506.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:12:51"
+  }
+}

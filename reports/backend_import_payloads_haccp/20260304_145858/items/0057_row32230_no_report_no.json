@@ -1,0 +1,99 @@
+{
+  "product": {
+    "name_ko": "새우표 완도김가루",
+    "reportnum": "1996051205536"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996051205536/1996051205536-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996051205536/1996051205536-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996051205536/1996051205536-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김(국산)56%,옥배유(수입산)32%,들기름(들깨:중국산)8%,참기름(참깨:중국산)2%,L-글루타민산나트륨(향미증진제)2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996051205536/1996051205536-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Per 1 shts(5g) Serving Size\nAmount Per Serving\n총칼로리6Kcal,지방칼로리0\n% Daily Value\n총지방0.0g 0%, 포화지방0.0g 0%, 트랜스지방Fat0.0g, 콜레스테롤0.0mg 0%, 나트륨14mg 1%, 총탄수화물1.0g 2%, 식이섬유1.0g 2%, 당류0.0g, 단백질1.0g 1%, 비타민A 0%, 칼슘 0%, 비타민B 0%, 철 1%, 비타민C 9%, 칼륨 0%, 비타민D 0%, 엽산 0%\n*Based on a regular 2000 calorie diet\nNutritional details are an estimate and should only be used as a guide for approximation.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/1996051205536/1996051205536-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "amount": "32%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "중국산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:16:32"
+  },
+  "nutrition": {
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 14.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 5.0,
+    "basis_unit": "g",
+    "basis_text": "Per 1 shts(5g) Serving Size",
+    "collected_at": "2026-03-03 21:16:32"
+  }
+}

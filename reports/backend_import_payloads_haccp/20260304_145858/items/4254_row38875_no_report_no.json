@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "요플레 오리지널 복숭아",
+    "reportnum": "1998057500152"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500152/1998057500152-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500152/1998057500152-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500152/1998057500152-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유71.6124%(국산),복숭아시럽17%[복숭아50%(중국산),백설탕,합성착향료(복숭아향),아미드펙틴,프락토올리고당],백설탕,혼합탈지분유,정제수,혼합제제(변성전분,아미드펙틴,포도당,해바라기유),유산균주(유산균100억마리이상/컵당)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500152/1998057500152-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량:1개(90g)/총 8회제공량(720g) *영양소 기준치:1일 영양소 기준치에 대한 비율 1회제공량당 함량 *%영양소 기준치 열량 100kcal 탄수화물 16g(5%),당류 13g, 단백질 2.7g (5%),지방 2.7g (5%),포화지방 1.8g (12%),트랜스지방 0g,콜레스테롤 10mg(3%),나트륨 55mg (3%),칼슘105mg (15%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998057500152/1998057500152-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "71.6124%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아시럽",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "복숭아",
+            "origin": "중국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "복숭아향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균주",
+        "amount": "100억마리이상, 컵당",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:59:59"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 13.0,
+    "protein_g": 2.7,
+    "fat_g": 2.7,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 55.0,
+    "calcium_mg": 105.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량:1개(90g)",
+    "collected_at": "2026-03-03 21:59:59"
+  }
+}

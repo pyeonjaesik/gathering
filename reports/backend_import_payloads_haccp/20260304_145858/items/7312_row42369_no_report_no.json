@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "퀴노아18곡미숫가루",
+    "reportnum": "19920355108357"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108357/19920355108357-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108357/19920355108357-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108357/19920355108357-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "현미(국산)45%,멥쌀(국산)17%,보리,백태(대두),밀쌀,퀴노아(볼리비아산)1.5%,현미찹쌀,찹쌀,쌀보리,조,검정콩(대두),수수,흑미,율무,기장,땅콩,참깨,검정깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108357/19920355108357-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=700g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920355108357/19920355108357-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "amount": "45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "17%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백태",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "퀴노아",
+        "origin": "볼리비아산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정콩",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "율무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:58:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 407.0,
+    "carbohydrate_g": 83.33,
+    "protein_g": 11.33,
+    "fat_g": 3.33,
+    "sugar_g": 0.0,
+    "sodium_mg": 113.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.67,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "700g",
+    "collected_at": "2026-03-03 18:58:51"
+  }
+}

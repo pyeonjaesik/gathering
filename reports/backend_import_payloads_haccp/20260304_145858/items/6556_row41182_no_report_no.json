@@ -1,0 +1,251 @@
+{
+  "product": {
+    "name_ko": "코바웰빙 즉석쌀떡국",
+    "reportnum": "2013047304265"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304265/2013047304265-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304265/2013047304265-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304265/2013047304265-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<떡> \n쌀99.5%,정제소금(국산),주정\n<분말스프>\n우골엑기스분말[사골엑기스분말75%(농축사골액:뉴질랜드산),정제소금(국산),고지방분말(우유),5'-구아닐산이나트륨,5'-이노신산이나트륨,복합조미식품[정제소금(국산),L-글루타민산나트륨,간장분말에이치,(밀:수입산,정제소금:국산),소고기베이스분,백설탕],포도당,식물성크림①(물엿,야자경화유,카제인산나트륨,제이인산칼륨,구연산삼나트륨),정제소금(국산),L-글루타민산나트륨(향미증진제),식물성크림②[식물성유지,전분당,카제인나트륨,제이인산칼륨,레시틴(대두)],양파분말,마늘분말,건파,지단후레이크(계란,김,흑후추분말,향미증진제,동결건조당근)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304265/2013047304265-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 1회 제공량 92g /1회 제공량92g/ ()안의 수치는 1일 영양소 기준치에 대한 비율임\n열량 326Kcal, 탄수화물72g (22%), 당류2g, 단백질6g (12%), 지방1.5g (3%), 포화지방0.4g (2%), 트랜스지방0g, 콜레스테롤5mg (2%), 나트륨1,380mg (69%)\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304265/2013047304265-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "떡",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "amount": "99.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말스프",
+        "sub_ingredients": [
+          {
+            "name": "우골엑기스분말",
+            "sub_ingredients": [
+              {
+                "name": "사골엑기스분말",
+                "origin": "뉴질랜드산",
+                "amount": "75%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고지방분말",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "5'-구아닐산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-이노신산이나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "복합조미식품",
+                "sub_ingredients": [
+                  {
+                    "name": "정제소금",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "L-글루타민산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "간장분말에이치",
+                    "sub_ingredients": [
+                      {
+                        "name": "밀",
+                        "origin": "수입산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "정제소금",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "소고기베이스분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성크림①",
+                "sub_ingredients": [
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "야자경화유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카제인산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "제이인산칼륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "구연산삼나트륨",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "식물성크림②",
+                "sub_ingredients": [
+                  {
+                    "name": "식물성유지",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "전분당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카제인나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "제이인산칼륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "레시틴",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "양파분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "건파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "지단후레이크",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "흑후추분말",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "동결건조당근",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:55"
+  },
+  "nutrition": {
+    "kcal": 326.0,
+    "carbohydrate_g": 72.0,
+    "sugar_g": 2.0,
+    "protein_g": 6.0,
+    "fat_g": 1.5,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 1380.0,
+    "basis_amount": 92.0,
+    "basis_unit": "g",
+    "basis_text": "총 1회 제공량 92g",
+    "collected_at": "2026-03-04 04:38:55"
+  }
+}

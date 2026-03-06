@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "구워먹는 치즈",
+    "reportnum": "20090262001105"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001105/20090262001105-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001105/20090262001105-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001105/20090262001105-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유99.29%(덴마크),식염,유산균배양액,우유응고효소,염화칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001105/20090262001105-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 20g,68 kcal/총 23회 제공량 460g,1564kcal,*영양소기준치:1일 영양소 기준에 대한 비율,1회 제공량당 함량:열량 68 kcal,탄수화물 0g(0%),당류 0g,단백질 5.1g(9%),지방 5.2g(10%),포화지방 3.3g(22%),트랜스지방 0.2g,콜레스테롤 17.1mg(6%),나트륨 48mg(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090262001105/20090262001105-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "덴마크산",
+        "amount": "99.29%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유응고효소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "염화칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:15"
+  },
+  "nutrition": {
+    "kcal": 68.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.1,
+    "fat_g": 5.2,
+    "saturated_fat_g": 3.3,
+    "trans_fat_g": 0.2,
+    "cholesterol_mg": 17.1,
+    "sodium_mg": 48.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 20g",
+    "collected_at": "2026-03-04 04:17:15"
+  }
+}

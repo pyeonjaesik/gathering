@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "전통돼지갈비찜",
+    "reportnum": "2009026212543"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212543/2009026212543-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212543/2009026212543-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212543/2009026212543-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지갈비(외국산:독일,미국,스페인),감자(국산),갈비찜소스[{진간장(탈지대두:수입산),소맥(밀:미국산},백설탕,고과당,저감미당,사과농축과즙F(사과:국산),L-글루타민산나트륨,당근,정제수,양파,간장소스에스[저감미당,{진간장(탈지대두),소맥},백설탕,L-글루타민산나트륨,다림쇠고기육수],청양고추,다진마늘,홍고추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212543/2009026212543-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 열량 440Kcal,탄수화물 56g,단백질29g,지방 11g등",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212543/2009026212543-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지갈비",
+        "origin": "외국산, 독일산, 미국산, 스페인산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈비찜소스",
+        "sub_ingredients": [
+          {
+            "name": "진간장",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축과즙F",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "사과",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장소스에스",
+            "sub_ingredients": [
+              {
+                "name": "저감미당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "진간장",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "소맥",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다림쇠고기육수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "청양고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다진마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍고추",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:00"
+  },
+  "nutrition": {
+    "kcal": 440.0,
+    "carbohydrate_g": 56.0,
+    "protein_g": 29.0,
+    "fat_g": 11.0,
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 04:18:00"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "터키브레스트햄",
+    "reportnum": "20130405045134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045134/20130405045134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045134/20130405045134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045134/20130405045134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "칠면조육(가슴살,수입산)78.76%,정제수,물엿,정제염(국내산),백설탕,비앙드50에스,대두단백,혼합제제(산도조절제),산도조절제,혼합제제(산도조절제,이산화규소),복합스파이스에스-1,향신료,비타민-씨,혼합제제(스모크오일,대두유),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045134/20130405045134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045134/20130405045134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "칠면조육",
+        "origin": "수입산",
+        "amount": "78.76%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비앙드50에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스에스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민-씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "amount": "발색제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 105.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 21.0,
+    "fat_g": 2.0,
+    "sugar_g": 2.0,
+    "sodium_mg": 645.0,
+    "cholesterol_mg": 50.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 04:37:47"
+  }
+}

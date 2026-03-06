@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "케이준후렌치치킨",
+    "reportnum": "1997018900194"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997018900194/1997018900194-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997018900194/1997018900194-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997018900194/1997018900194-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "계육(닭고기안심:국내산)72%,중력분(밀:미국산,호주산)8%,다목적배터믹스(밀,계란)7%,{(소맥분(미국,호주산)75%,배터프리믹스#01 25%(밀가루,식염,옥수수전분,포도당,전란분등)},대두유(대두)4%,ISP(대두)3%,마리네이션-5(향미증진제)3%,피클솔루션2%,케이준위너1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997018900194/1997018900194-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(100g)/총 회 제공량(g) 1회 제공량 당 함량 *%영양소 기준치 열량 300kcal, 탄수화물 23g 7%, 당류 0g, 단백질 16g 29%, 지방 16g 31%, 포화지방 3.4g 23%, 트랜스지방 0g, 콜레스테롤 30mg 10%, 나트륨 470mg 24% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997018900194/1997018900194-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "계육",
+        "origin": "국내산",
+        "amount": "72%",
+        "sub_ingredients": [
+          {
+            "name": "닭고기안심",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "중력분",
+        "origin": "미국산, 호주산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다목적배터믹스",
+        "amount": "7%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "amount": "75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배터프리믹스#01",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "ISP",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마리네이션-5",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피클솔루션",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "케이준위너",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:22:20"
+  },
+  "nutrition": {
+    "kcal": 300.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 0.0,
+    "protein_g": 16.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 3.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 470.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)",
+    "collected_at": "2026-03-03 21:22:20"
+  }
+}

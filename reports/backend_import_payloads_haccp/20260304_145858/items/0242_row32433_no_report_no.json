@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "고소한 맛이 살아있는 율무차",
+    "reportnum": "19710372001129"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001129/19710372001129-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001129/19710372001129-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001129/19710372001129-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "율무분(중국산)2%,백설탕,백미분말(수입산),크리마-에스[덱스트린,물엿,유청분말(수입산),식물성유지(말레이시아산),유청단백분말,레시친],식물성크림분[덱스트린,전분당,식물성유지,유청분말,유청단백분말,레시친],현미분(국산),대두분말,알파콘,정제염,이산화규소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001129/19710372001129-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1000ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/19710372001129/19710372001129-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "율무분",
+        "origin": "중국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백미분말",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크리마-에스",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시친",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림분",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시친",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "현미분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파콘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화규소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:22:19"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 405.0,
+    "carbohydrate_g": 85.0,
+    "protein_g": 5.0,
+    "fat_g": 4.6,
+    "sugar_g": 46.0,
+    "sodium_mg": 386.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1000ml",
+    "collected_at": "2026-03-03 13:22:19"
+  }
+}

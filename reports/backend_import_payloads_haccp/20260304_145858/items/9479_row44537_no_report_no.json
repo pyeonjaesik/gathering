@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "조지아 아이스 아메리카노",
+    "reportnum": "2011049003425"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049003425/2011049003425-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049003425/2011049003425-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049003425/2011049003425-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 설탕, 커피추출농축액 2%(고형분 함량 : 47.8%, 말레이시아산, 생두의원산지 : 인도네시아산100%), 탄산수소나트륨, 비타민C, 합성향료(커피향), 헤미셀룰라아제, 프로필렌글리콜, 우유(헤미셀룰라아제)함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049003425/2011049003425-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=220ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049003425/2011049003425-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피추출농축액",
+        "origin": "말레이시아산",
+        "amount": "고형분 함량 : 47.8%",
+        "sub_ingredients": [
+          {
+            "name": "생두의원산지",
+            "origin": "인도네시아산 100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "헤미셀룰라아제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "amount": "헤미셀룰라아제함유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:56"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 27.0,
+    "carbohydrate_g": 6.82,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 6.36,
+    "sodium_mg": 31.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "220ml",
+    "collected_at": "2026-03-04 04:31:56"
+  }
+}

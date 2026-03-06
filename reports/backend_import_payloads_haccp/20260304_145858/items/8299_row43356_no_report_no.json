@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "후레시마요네스",
+    "reportnum": "2001044505525"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505525/2001044505525-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505525/2001044505525-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505525/2001044505525-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성유지[외국산(아르헨티나,미국,중국등)],정제수,냉동난황(미국산:난황액,정제소금),발효식초,난백액(미국산),난황액오티,정제소금,난황액에스,백설탕,정제포도당,향미유식물성분해단백,잔탄검,감칠맛베이스,효소제제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505525/2001044505525-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505525/2001044505525-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산, 아르헨티나산, 미국산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "냉동난황",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "난황액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액오티",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유식물성분해단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:30:45"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 730.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 1.0,
+    "fat_g": 80.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 510.0,
+    "cholesterol_mg": 55.0,
+    "saturated_fat_g": 14.0,
+    "trans_fat_g": 0.35,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:30:45"
+  }
+}

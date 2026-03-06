@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "자연은 잘 자란 유기농 오렌지",
+    "reportnum": "20030445042439"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042439/20030445042439-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042439/20030445042439-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042439/20030445042439-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 유기농 오렌지농축액(고형분 64% 이상,오렌지과즙으로 62%,터키산) 8.585%, 유기농 배농축액(고형분 70% 이상,배과즙으로 32%, 터키산), 5.029%, 유기농 토마토페이스트(고형분 28% 이상,토마토즙으로 3%, 이탈리아산), 0.373, 유기농 사과농축액(고형분 70% 이상,사과과즙으로 2%) 0.286%, 유기농 당근농축액(고형분 39% 이상,당근즙으로 1%) 0.175%, *유기농 함량(정제수 제외) : 100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042439/20030445042439-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분:1회 제공량 1포(100mL) / 총 10회 제공량 (1,000mL), 1회 제공량 당 함량 : 열량 40 kcal, 탄수화물 9g(3%) · 당류 8%, 단백질 0g(0%), 지방 0g(0%) · 포화지방 0g(0%) 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 15mg(1%), ()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042439/20030445042439-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 오렌지농축액",
+        "origin": "터키산",
+        "amount": "8.585%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "64% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지과즙",
+            "amount": "62%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 배농축액",
+        "origin": "터키산",
+        "amount": "5.029%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "70% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배과즙",
+            "amount": "32%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 토마토페이스트",
+        "origin": "이탈리아산",
+        "amount": "0.373",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "28% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토즙",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 사과농축액",
+        "amount": "0.286%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "70% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과과즙",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농 당근농축액",
+        "amount": "0.175%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "39% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근즙",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:32"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1포(100mL)",
+    "collected_at": "2026-03-04 03:47:32"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "product": {
+    "name_ko": "소시지말이",
+    "reportnum": "19960144406192"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406192/19960144406192-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406192/19960144406192-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406192/19960144406192-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육(미국산/어육,설탕,D-소비톨,산도조절제),소시지21.82%[돼지고기(외국산/미국,스페인,네덜란드)50.7%,국내산49.3%,정제수,정제염(국산),블렌디드시즈닝-에스,콜라겐,보로나시즈닝],양파(국산),당근,가공치즈,난백액,설탕,전분가공품,대파,대두유,식품첨가물혼합제제(초산전분,말토덱스트린),정제소금,소스류,L-글루탐산나트륨(향미증진제),D-자일로오스,식품첨가물혼합제제[제삼인산Na,분리대두단백,농축대두단백,트랜스글루타미나아제(효소제제),말토덱스트린]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406192/19960144406192-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406192/19960144406192-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소시지",
+        "origin": "국내산 49.3%",
+        "amount": "21.82%",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "외국산, 미국산, 스페인산, 네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블렌디드시즈닝-에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보로나시즈닝",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식품첨가물혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "초산전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산Na",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분리대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트랜스글루타미나아제",
+            "sub_ingredients": [
+              {
+                "name": "효소제제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-자일로오스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:47:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 157.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 10.0,
+    "fat_g": 8.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 687.0,
+    "cholesterol_mg": 19.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "180g",
+    "collected_at": "2026-03-03 20:47:13"
+  }
+}

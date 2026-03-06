@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "맛있는 콩비지찌개",
+    "reportnum": "197202880023083"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023083/197202880023083-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023083/197202880023083-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023083/197202880023083-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 콩비지 36%[대두:외국산(미국,캐나다,중국 등)], 김치[절임배추(배추:국산),무채(국산),멸치액젓,마늘], 돼지고기(국산), 마늘, 고추분, 정제소금, 카놀라유, 참기름, 식물성분해단백, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023083/197202880023083-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 250g 135kcal 나트륨 780mg 39% 탄수화물 9g 3% 당류 1g 1% 지방 6g 11% 트랜스지방 0g 포화지방 1g 7% 콜레스테롤 5mg 2% 단백질 11g 20% 1일영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023083/197202880023083-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩비지",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "36%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "김치",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무채",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성분해단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:40:00"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "sodium_mg": 780.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 1.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.0,
+    "cholesterol_mg": 5.0,
+    "protein_g": 11.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 250g",
+    "collected_at": "2026-03-03 13:40:00"
+  }
+}

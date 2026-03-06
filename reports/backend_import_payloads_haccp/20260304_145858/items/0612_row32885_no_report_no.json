@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "비피더스 명장사과",
+    "reportnum": "19760262001255"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001255/19760262001255-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001255/19760262001255-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001255/19760262001255-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,탈지분유5%(수입산),스위티스DS-500,프락토올리고당,CMC-Na,사과농축과즙(사과과즙으로3%,수입산),펙틴,젖산칼슘,합성향료(사과향,밀크향),구연산,수크랄로스(감미료),혼합제제(규소수지,글리세린지방산에스테르,소르비탄지방산에스테르,CMC-Na),유산균(프랑스산),비피도박테륨유산균1천마리이상/mL(0.00015%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001255/19760262001255-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=80ml(g) | foodSize=1680ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1976/19760262001255/19760262001255-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "수입산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위티스DS-500",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CMC-Na",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "수입산",
+        "amount": "3%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "amount": "감미료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC-Na",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "origin": "프랑스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비피도박테륨유산균",
+        "amount": "1천마리이상, mL(0.00015%)",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:51:52"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 39.0,
+    "carbohydrate_g": 8.57,
+    "protein_g": 1.43,
+    "fat_g": 0.0,
+    "sugar_g": 8.57,
+    "sodium_mg": 75.0,
+    "cholesterol_mg": 3.57,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "80ml(g)",
+    "total_content": "1680ml",
+    "collected_at": "2026-03-03 13:51:52"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "나쁜엄마 쌀과자치즈",
+    "reportnum": "20060378122100"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122100/20060378122100-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122100/20060378122100-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122100/20060378122100-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미(국산) 72.19%, 리뉴얼화이트[유기농설탕 62.4%, 코코아버터(싱가포르산), 혼합탈지분유(우유:네덜란드산), 레시틴] 20%, 귀리(캐나다산) 3.76%, 치즈분말(덴마크산) 4%, 곡류발효효소 유기농 원료함량 : 84.67%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122100/20060378122100-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1봉지(25g) 1회 제공량 당 함량 %영양성분기준치 열량 106Kcal 탄수화물 19g 6% 당류 4g 단백질 1.8g 3%(12%) 지방 2.5g 5% 포화지방 1.5g 10% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 35mg 2%(5%) % 영양성분 기준치:1일 영양성분 기준치에 대한 비율 ()안의 %영양성분 기준치:한국인 유아(1~2세) 영양섭취 기준에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122100/20060378122100-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "72.19%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리뉴얼화이트",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "amount": "62.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "귀리",
+        "origin": "캐나다산",
+        "amount": "3.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈분말",
+        "origin": "덴마크산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류발효효소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:28"
+  },
+  "nutrition": {
+    "kcal": 106.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 4.0,
+    "protein_g": 1.8,
+    "fat_g": 2.5,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 35.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1봉지(25g)",
+    "collected_at": "2026-03-03 13:05:28"
+  }
+}

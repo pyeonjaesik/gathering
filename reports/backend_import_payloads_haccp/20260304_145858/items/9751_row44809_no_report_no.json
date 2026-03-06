@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "하루의 열매 베리플러스 한입",
+    "reportnum": "201603685235"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685235/201603685235-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685235/201603685235-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685235/201603685235-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "건조크랜베리루비40%(미국산/크랜베리62%,설탕,구연산,아로니아주스농축액,해바라기씨유),구운아몬드24%(아몬드:미국산),호두16%(미국산),구운헤이즐넛12%(헤이즐넛:터키산),건조블루베리8%(미국산/블루베리69%,설탕,해바라기씨유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685235/201603685235-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=25g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685235/201603685235-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건조크랜베리루비",
+        "origin": "미국산",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "origin": "미국산",
+            "amount": "62%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아로니아주스농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기씨유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운아몬드",
+        "origin": "미국산",
+        "amount": "24%",
+        "sub_ingredients": [
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운헤이즐넛",
+        "origin": "터키산",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "헤이즐넛",
+            "origin": "터키산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건조블루베리",
+        "origin": "미국산",
+        "amount": "8%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리",
+            "origin": "미국산",
+            "amount": "69%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기씨유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 500.0,
+    "carbohydrate_g": 52.0,
+    "protein_g": 8.0,
+    "fat_g": 28.0,
+    "sugar_g": 44.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 13.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "25g",
+    "collected_at": "2026-03-04 04:47:14"
+  }
+}

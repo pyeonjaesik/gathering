@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "프리미엄해물장",
+    "reportnum": "20030443217288"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030443217288/20030443217288-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030443217288/20030443217288-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030443217288/20030443217288-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "해물혼합추출액26%{오징어족5.2%(국산),정제소금(국산),무,굴3.9%(국산),가쓰오부시2.1%(가다랑어100% 인도네시아산),바지락살1.6%(국산),굴지숙농축액1.6%[굴농축액65%(굴98%:국산)],건다시마1.2%(국산)},정제수, 본양조간장-N(양조간장)HO(탈지대두:인도산,밀:미국산),고과당,정제소금(국산),백설탕,주정,고과당,정제소금,저감미당,고꾸미베이스(우유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030443217288/20030443217288-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=450g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030443217288/20030443217288-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "해물혼합추출액",
+        "amount": "26%",
+        "sub_ingredients": [
+          {
+            "name": "오징어족",
+            "origin": "국산",
+            "amount": "5.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "굴",
+            "origin": "국산",
+            "amount": "3.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오부시",
+            "origin": "인도네시아산",
+            "amount": "2.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바지락살",
+            "origin": "국산",
+            "amount": "1.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "굴지숙농축액",
+            "amount": "1.6%",
+            "sub_ingredients": [
+              {
+                "name": "굴농축액",
+                "origin": "국산",
+                "amount": "65%",
+                "sub_ingredients": [
+                  {
+                    "name": "굴",
+                    "origin": "국산",
+                    "amount": "98%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "건다시마",
+            "origin": "국산",
+            "amount": "1.2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "본양조간장-N",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저감미당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고꾸미베이스",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 60.0,
+    "carbohydrate_g": 13.0,
+    "protein_g": 2.0,
+    "fat_g": 0.2,
+    "sugar_g": 6.0,
+    "sodium_mg": 5610.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "450g",
+    "collected_at": "2026-03-04 03:47:29"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "99라이트바",
+    "reportnum": "19870415003234"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003234/19870415003234-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003234/19870415003234-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003234/19870415003234-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "알수없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003234/19870415003234-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=286g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003234/19870415003234-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "알수없음",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:37:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 417.0,
+    "carbohydrate_g": 83.33,
+    "protein_g": 5.0,
+    "fat_g": 11.67,
+    "sugar_g": 33.33,
+    "sodium_mg": 333.0,
+    "cholesterol_mg": 2.5,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 1.67,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "286g",
+    "collected_at": "2026-03-03 16:37:11"
+  }
+}

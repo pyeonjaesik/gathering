@@ -1,0 +1,224 @@
+{
+  "product": {
+    "name_ko": "이프로부족할때아쿠아",
+    "reportnum": "20000360372230"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000360372230/20000360372230-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000360372230/20000360372230-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000360372230/20000360372230-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 자몽청징농축액0.28%[고형분64%(과즙으로2%), 이스라엘산], 구연산, 구연산삼나트륨, 천연향료(자몽향), 사과청징농축액0.07%[고형분70%(과즙으로0.5%), 칠레산], 정제소금(국산), 채소혼합농축액0.05%[양상추농축액40%, 양배추25%, 쌈야채혼합즙20%(청경채, 비타민, 꽃상추, 뉴그린, 쑥갓, 청경자, 적근대:국산), 레드비트5%, 콜리플라워5%, 자색고구마5%:국산], 레몬청징농축액0.04%[고형분43%(과즙으로0.3%), 이스라엘산], 염화칼륨, 합성착향료(시트러스향), 젖산칼슘, L-글루타민산나트륨(향미증진제), 염화마그네슘, 효소처리루틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000360372230/20000360372230-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(1500ml) 100ml당 25kcal\n열량375kcal, 나트륨50mg (3%), 탄수화물6g (2%), 당류6g (6%), 지방0g (0%), 포화지방0g (0%), 트랜스지방0g, 콜레스테롤0mg (0%), 단백질0g (0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000360372230/20000360372230-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽청징농축액",
+        "origin": "이스라엘산",
+        "amount": "0.28%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "64%(과즙으로2%)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향료",
+        "sub_ingredients": [
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과청징농축액",
+        "origin": "칠레산",
+        "amount": "0.07%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "70%(과즙으로0.5%)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채소혼합농축액",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "양상추농축액",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌈야채혼합즙",
+            "origin": "국산",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "청경채",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민",
+                "sub_ingredients": []
+              },
+              {
+                "name": "꽃상추",
+                "sub_ingredients": []
+              },
+              {
+                "name": "뉴그린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쑥갓",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청경자",
+                "sub_ingredients": []
+              },
+              {
+                "name": "적근대",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레드비트",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콜리플라워",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자색고구마",
+            "origin": "국산",
+            "amount": "5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬청징농축액",
+        "origin": "이스라엘산",
+        "amount": "0.04%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "43%(과즙으로0.3%)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "염화칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "염화마그네슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리루틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:12:49"
+  },
+  "nutrition": {
+    "kcal": 375.0,
+    "sodium_mg": 50.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 6.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 1500.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(1500ml)",
+    "collected_at": "2026-03-03 22:12:49"
+  }
+}

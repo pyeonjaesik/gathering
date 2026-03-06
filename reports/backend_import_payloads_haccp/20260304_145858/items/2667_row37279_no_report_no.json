@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "청양초된장찌개전용",
+    "reportnum": "19880445009824"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009824/19880445009824-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009824/19880445009824-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009824/19880445009824-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,된장25%{대두(외국산:미국,캐나다,호주등),천일염(호주산),소맥분,종국},개량메주발효물17%{대두(외국산:미국,캐나다,호주등),천일염(호주산),종국},육수베이스[소고기육수베이스{소고기효소분해농축액(소고기:호주산)},소고기추출분말(정제염:국산)],해물베이스,야채베이스,고추장,새우젓분말,매운맛분말,마늘,청양고추엑기스10%(고형분32%{청양고추추출물65%(고형분25%)(청양고추95%:국내산,정제염:국내산),청양고추키베이스25%(고형분20%)(청양고추(국내산)80%)],청양고춧가루1.0%(국내산),국산채소밑국물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009824/19880445009824-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "130g *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 130g당 함량 *%영양성분기준치 열량 135kcal, 탄수화물 21g 6%, 식이섬유 0g 0%, 당류 16g, 단백질 11g 20%, 지방 0.5g 1%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 3450mg 173% 비타민A 27㎍RE 4%/비타민C 0mg 0%/칼슘 80mg 11%/철 0.3mg 3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009824/19880445009824-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "개량메주발효물",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "육수베이스",
+        "sub_ingredients": [
+          {
+            "name": "소고기육수베이스",
+            "sub_ingredients": [
+              {
+                "name": "소고기효소분해농축액",
+                "origin": "호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "소고기",
+                    "origin": "호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "소고기추출분말",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "정제염",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해물베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우젓분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추엑기스",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "32%",
+            "sub_ingredients": [
+              {
+                "name": "청양고추추출물",
+                "amount": "65%",
+                "sub_ingredients": [
+                  {
+                    "name": "청양고추",
+                    "origin": "국내산",
+                    "amount": "95%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제염",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "청양고추키베이스",
+                "amount": "25%",
+                "sub_ingredients": [
+                  {
+                    "name": "청양고추",
+                    "origin": "국내산",
+                    "amount": "80%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고춧가루",
+        "origin": "국내산",
+        "amount": "1.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국산채소밑국물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:30:47"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 21.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 16.0,
+    "protein_g": 11.0,
+    "fat_g": 0.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 3450.0,
+    "calcium_mg": 80.0,
+    "iron_mg": 0.3,
+    "basis_amount": 130.0,
+    "basis_unit": "g",
+    "basis_text": "130g",
+    "collected_at": "2026-03-03 17:30:47"
+  }
+}

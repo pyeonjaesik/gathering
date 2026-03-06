@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "베지밀 애플망고 두유 아이스",
+    "reportnum": "19840415001333"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001333/19840415001333-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001333/19840415001333-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001333/19840415001333-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 두유액 20%(대두 고형분 7%이상, 대두-수입산), 애플망고퓨레(애플망고과즙으로 13.5%, 인도산), 정백당, 펙틴, 구연산, 정제염(국산), 비타민C, 글리세린 지방산에스테르, 합성착향료(망고향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001333/19840415001333-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml)\n<1회 제공량당 함량 (*)%영양성분 기준치>\n열량110kcal, 탄수화물24g (7%*), 당류23g, 단백질1g (2%*), 지방1g (2%*), 포화지방0.2g (1%*), 트랜스지방0g, 콜레스테롤0mg (0%*), 나트륨45mg (2%*)\n(*)은 영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/19840415001333/19840415001333-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두유액",
+        "origin": "수입산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "대두 고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "애플망고퓨레",
+        "origin": "인도산",
+        "amount": "13.5%",
+        "sub_ingredients": [
+          {
+            "name": "애플망고과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린 지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:44:33"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 23.0,
+    "protein_g": 1.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 15:44:33"
+  }
+}

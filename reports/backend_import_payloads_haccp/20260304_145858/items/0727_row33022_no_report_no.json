@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name_ko": "델몬트매실",
+    "reportnum": "19780368002190"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002190/19780368002190-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002190/19780368002190-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002190/19780368002190-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,액상과당,사과청징농축액(사과과즙4.5%,칠레산),매실청징농축액(매실과즙5.5%,국산),말토덱스트린,구연산,합성착향료(매실향),구연산삼나트륨,비타민C,색소혼합제제(홍화황색소,락색소,치자청색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002190/19780368002190-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=600ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780368002190/19780368002190-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과청징농축액",
+        "origin": "칠레산",
+        "amount": "4.5%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "amount": "4.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매실청징농축액",
+        "origin": "국산",
+        "amount": "5.5%",
+        "sub_ingredients": [
+          {
+            "name": "매실과즙",
+            "amount": "5.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "매실향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "색소혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:03:33"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 55.0,
+    "carbohydrate_g": 14.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 14.0,
+    "sodium_mg": 13.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "600ml",
+    "collected_at": "2026-03-03 14:03:33"
+  }
+}

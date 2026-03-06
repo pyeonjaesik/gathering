@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "유기농 조미김(올리브유)",
+    "reportnum": "2011052107946"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011052107946/2011052107946-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011052107946/2011052107946-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011052107946/2011052107946-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "김(국산/장흥)63%,올리브유(수입산)32%,참기름(국산)2%,천일염(국산)3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011052107946/2011052107946-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=28g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011052107946/2011052107946-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국산",
+        "amount": "63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리브유",
+        "origin": "수입산",
+        "amount": "32%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 514.0,
+    "carbohydrate_g": 42.86,
+    "protein_g": 14.29,
+    "fat_g": 35.71,
+    "sugar_g": 0.0,
+    "sodium_mg": 125.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.86,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "28g",
+    "collected_at": "2026-03-04 04:32:19"
+  }
+}

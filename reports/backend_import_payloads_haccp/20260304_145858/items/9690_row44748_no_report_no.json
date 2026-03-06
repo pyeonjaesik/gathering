@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "피코크 우리집오징어무국",
+    "reportnum": "20150445222149"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222149/20150445222149-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222149/20150445222149-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222149/20150445222149-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,오징어(국내산)12.4%,무(국내산)12%,멸치장국육수,대파,홍고추,복합조미식품,오징어엑기스0.7%[오징어족(국내산),정제염(국내산)],고춧가루,L-글루타민산나트륨(향미증진제),청양고추(국내산)0.3%,천일염,수용성파프리카",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222149/20150445222149-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222149/20150445222149-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어",
+        "origin": "국산",
+        "amount": "12.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치장국육수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어엑기스",
+        "amount": "0.7%",
+        "sub_ingredients": [
+          {
+            "name": "오징어족",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청양고추",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성파프리카",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:16"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 93.0,
+    "carbohydrate_g": 6.0,
+    "protein_g": 9.0,
+    "fat_g": 3.7,
+    "sugar_g": 5.0,
+    "sodium_mg": 1576.0,
+    "cholesterol_mg": 328.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 04:45:16"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "궁중떡갈비",
+    "reportnum": "20100262092183"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092183/20100262092183-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092183/20100262092183-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092183/20100262092183-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산/갈비살)28.67%,돼지고기(국내산/정육)28.02%,쇠고기(국내산)13.31%,흑설탕,정제수,불고기양념장G,양파,대두단백,우리밀진간장,옥수수전분,참빵가루,떡갈비용믹스-1,대파,마늘,벌꿀,쇠고기엑기스G0.75%,비타셀WF200,양배추,참기름,천일염,폴리인산나트륨(산도조절제),착콜그릴시즈닝",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092183/20100262092183-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 640g 100g당 243kcal 100g당 1일 영양성분 기준치에 대한비율 나트륨 532mg 27%탄수화물 12g 4%, 당류 9g 9%,지방 16g 30%,트랜스지방 0g,포화지방 6g 40%,콜레스테롤 32mg 11%,단백질 14g 25% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100262092183/20100262092183-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "28.67%",
+        "sub_ingredients": [
+          {
+            "name": "갈비살",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정육",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "국내산",
+        "amount": "13.31%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념장G",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우리밀진간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "떡갈비용믹스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스G",
+        "amount": "0.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타셀WF200",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리인산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "착콜그릴시즈닝",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:01"
+  },
+  "nutrition": {
+    "kcal": 243.0,
+    "sodium_mg": 532.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 9.0,
+    "fat_g": 16.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 32.0,
+    "protein_g": 14.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:23:01"
+  }
+}

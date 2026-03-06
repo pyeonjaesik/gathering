@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "우유2U 뼈건강 오메가3",
+    "reportnum": "19850157002152"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002152/19850157002152-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002152/19850157002152-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002152/19850157002152-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "1A급원유 99.3195%(국산)(세균수기준),칼슘혼합제제(탄산칼슘,아라비아검)0.6%,탄산칼슘0.04%,아마씨유-더블유에스0.03%,(아마씨:캐나다산,미국산),오씨티11및40혼합물0.01%,비타민D3혼합제제(비타민D3,아라비아검,자당,옥수수전분,MCT유,디엘알파토코페롤,이산화규소)0.0005%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002152/19850157002152-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=450ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850157002152/19850157002152-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A급원유",
+        "origin": "국산",
+        "amount": "99.3195%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제제",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "amount": "0.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아마씨유-더블유에스",
+        "origin": "캐나다산, 미국산",
+        "amount": "0.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오씨티11및40혼합물",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민D3혼합제제",
+        "amount": "0.0005%",
+        "sub_ingredients": [
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:50:40"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 63.0,
+    "carbohydrate_g": 4.5,
+    "protein_g": 3.0,
+    "fat_g": 3.5,
+    "sugar_g": 4.0,
+    "sodium_mg": 50.0,
+    "cholesterol_mg": 12.5,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "450ml",
+    "collected_at": "2026-03-03 15:50:40"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "아침의 선물 고칼슘 & 글루코사민 우유",
+    "reportnum": "2008050200241"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200241/2008050200241-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200241/2008050200241-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200241/2008050200241-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "1A등급원유(국산,세균수기준)98.98972%,칼슘혼합제0.99%(탄산칼슘,대두식이섬유),N-아세틸글루코사민분말(게)0.011%[글루코사민(NAG),N-아세틸글루코사민95%],가시오가피숙지황복합추출물0.005%[고형분95%이상],피지에이(PGA)0.002%,비타민D3,혼합제제0.002%(아카시아검,자당,옥수수전분,MCT유,이산화규소,비타민D3,디엘알파토콜페롤],낫토추출물0.00028%[고형분0.15%이상,대두,비타민K2 0.00000042%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200241/2008050200241-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=185ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200241/2008050200241-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "98.98972%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제",
+        "amount": "0.99%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "N-아세틸글루코사민분말",
+        "amount": "0.011%",
+        "sub_ingredients": [
+          {
+            "name": "글루코사민",
+            "amount": "NAG",
+            "sub_ingredients": []
+          },
+          {
+            "name": "N-아세틸글루코사민",
+            "amount": "95%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가시오가피숙지황복합추출물",
+        "amount": "0.005%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "95%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피지에이",
+        "amount": "0.002%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민D3,혼합제제",
+        "amount": "0.002%",
+        "sub_ingredients": [
+          {
+            "name": "아카시아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "디엘알파토콜페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "낫토추출물",
+        "amount": "0.00028%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.15%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민K2",
+            "amount": "0.00000042%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:14:56"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 68.0,
+    "carbohydrate_g": 4.87,
+    "protein_g": 2.97,
+    "fat_g": 4.0,
+    "sugar_g": 4.87,
+    "sodium_mg": 49.0,
+    "calcium_mg": 254.0,
+    "cholesterol_mg": 14.59,
+    "saturated_fat_g": 2.92,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "185ml",
+    "collected_at": "2026-03-04 04:14:56"
+  }
+}

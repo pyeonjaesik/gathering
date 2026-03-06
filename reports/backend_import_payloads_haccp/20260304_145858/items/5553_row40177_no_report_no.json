@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "숯불수라산적",
+    "reportnum": "2007040501465"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501465/2007040501465-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501465/2007040501465-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501465/2007040501465-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기[외국산(미국산,스페인산,덴마크산)]50%,우지방(국산)20%,백설탕,포고버섯(중국산),불고기양념장,양파,대파,마늘,베퓨레,두류가공품,양조간장,소고기엑기스,곡류가공품,참기름,쿡메이트비에프,쿡메이트에프씨,정제소금,혼합제제(산도조절제),L-글루타민산나트륨(향미증진제),카라멜색소,향미증진제,생강분말,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501465/2007040501465-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 100kcal,탄수화물3g (1%),당류 1g,단백질5g (9%),지방8g (16%),포화지방2.6% (17%), 트랜스지방 0g, 콜레스테롤 15mg (5%), 나트륨 210mg (11%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501465/2007040501465-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "외국산, 미국산, 스페인산, 덴마크산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우지방",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포고버섯",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿡메이트비에프",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿡메이트에프씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:53"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 3.0,
+    "sugar_g": 1.0,
+    "protein_g": 5.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 2.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 210.0,
+    "collected_at": "2026-03-04 04:04:53"
+  }
+}

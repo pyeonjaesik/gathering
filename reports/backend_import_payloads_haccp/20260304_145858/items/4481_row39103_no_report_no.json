@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "홀그레인머스타드",
+    "reportnum": "20010445055313"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055313/20010445055313-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055313/20010445055313-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055313/20010445055313-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "조제겨자36.4%(미국산:식초,머스타드,소금,터메릭,파프리카),액상과당,홀그레인머스타드9.75%(미국산:식초,머스타드,정제소금,향신료),양파,정제수,백설탕,연겨자3.6%(겨자분:캐나다산),발효식초,옐로우겨자씨2.5%(캐나다산),변성전분,피쉬콜라겐",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055313/20010445055313-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g(당사분석치) 100g당 함량 : 열량 130kcal, 탄수화물30g (9%), 당류 19g, 단백질 3g (5%), 지방 0g (0%), 포화지방 0g (0%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 580mg (29%), *( )안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055313/20010445055313-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "조제겨자",
+        "origin": "미국산",
+        "amount": "36.4%",
+        "sub_ingredients": [
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "머스타드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "터메릭",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홀그레인머스타드",
+        "origin": "미국산",
+        "amount": "9.75%",
+        "sub_ingredients": [
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "머스타드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연겨자",
+        "origin": "캐나다산",
+        "amount": "3.6%",
+        "sub_ingredients": [
+          {
+            "name": "겨자분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옐로우겨자씨",
+        "origin": "캐나다산",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피쉬콜라겐",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:05"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 19.0,
+    "protein_g": 3.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 580.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:32:05"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "요플레 오리지널",
+    "reportnum": "1985026200456"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985026200456/1985026200456-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985026200456/1985026200456-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985026200456/1985026200456-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유71.6124%(국산),딸기시럽17%[딸기53%(국산),백설탕,변성전분,합성착향료(딸기향),프락토올리고당],백설탕,혼합탈지분유,정제수,혼합제제(변성전분,아미드페틴,포도당,해바라기유),유사균주(유산균100억마리이상/컵당)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985026200456/1985026200456-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=액상 150ml, 호상 100ml(g) | foodSize=85g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985026200456/1985026200456-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "71.6124%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기시럽",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "amount": "53%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드페틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유사균주",
+        "amount": "100억마리이상, 컵당",
+        "sub_ingredients": [
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:52:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 88.0,
+    "carbohydrate_g": 11.06,
+    "protein_g": 0.0,
+    "fat_g": 3.29,
+    "sugar_g": 6.94,
+    "sodium_mg": 71.0,
+    "calcium_mg": 118.0,
+    "cholesterol_mg": 17.65,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "액상 150ml, 호상 100ml(g)",
+    "total_content": "85g",
+    "collected_at": "2026-03-03 15:52:47"
+  }
+}

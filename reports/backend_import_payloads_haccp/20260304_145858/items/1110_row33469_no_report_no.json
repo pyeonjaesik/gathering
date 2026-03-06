@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "쿨피스톡 레드자몽맛",
+    "reportnum": "19800415004266"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004266/19800415004266-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004266/19800415004266-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004266/19800415004266-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,레드자몽농축액(배합함량레드자몽100%,이스라엘산)0.71%,이산화탄소,유산균시럽[혼합탈지분유(네덜란드산)]0.5%,구연산,합성향료(자몽향,시트러스향),구연산삼나트륨,나린진,수크랄로스(감미료),코치닐추출색소,자주색고구마색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004266/19800415004266-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 350mL 180kcal 총 내용량당 1일 영양성분 기준치에 대한 비율 나트륨 30mg 2% 탄수화물 44g 14% 당류 44g 44% 콜레스테롤 0mg 0% 지방 0.6g 1% 트랜스지방 0g 포화지방 0g 0% 단백질 0g 0% *1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004266/19800415004266-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드자몽농축액",
+        "origin": "이스라엘산",
+        "amount": "0.71%",
+        "sub_ingredients": [
+          {
+            "name": "레드자몽",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균시럽",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "자몽향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나린진",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자주색고구마색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:35:07"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "sodium_mg": 30.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 44.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 350.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 350mL",
+    "collected_at": "2026-03-03 14:35:07"
+  }
+}

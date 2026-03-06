@@ -1,0 +1,204 @@
+{
+  "product": {
+    "name_ko": "소프트제리롤",
+    "reportnum": "20040449010620"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040449010620/20040449010620-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040449010620/20040449010620-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040449010620/20040449010620-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "계란(국산),백설탕,소맥분(미국/밀),딸기잼[딸기(국산),백설탕,물엿,함수결정포도당,구연산],쇼트닝(대두),우유,D-소르비톨액,콩기름(대두),혼합제제1[액상과당,유화제,주정,합성향료(바닐라향)],팽창제(탄산수소나트륨,산성피로인산나트륨,전분,제일인산칼륨,젖산칼슘),카라멜색소,혼합제제2[주정,합성향료,바닐라익스트랙트,천연향료,프로필렌글리콜]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040449010620/20040449010620-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=520g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040449010620/20040449010620-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "계란",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기잼",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩기름",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산성피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제일인산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라익스트랙트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 330.0,
+    "carbohydrate_g": 50.0,
+    "protein_g": 6.0,
+    "fat_g": 12.0,
+    "sugar_g": 40.0,
+    "sodium_mg": 135.0,
+    "cholesterol_mg": 125.0,
+    "saturated_fat_g": 3.4,
+    "trans_fat_g": 0.2,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "520g",
+    "collected_at": "2026-03-04 03:51:47"
+  }
+}

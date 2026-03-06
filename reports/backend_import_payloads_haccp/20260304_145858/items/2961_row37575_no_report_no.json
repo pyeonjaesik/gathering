@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "들깨시래기국밥",
+    "reportnum": "199104450776199"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450776199/199104450776199-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450776199/199104450776199-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450776199/199104450776199-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "들깨시래기국(즉석조리식품)-들깨시래기국베이스89%[된장{된장(대두(외국산),소맥분(밀:미국,호주산)},기피가루4%(중국산/들깨100%),마늘,다시마추출농축액,볶음땅콩분태],시래기10%(국내산100%),청양고추(국내산),햇반(즉석조리식품/살균제품/질소충전제품)-멥쌀99.9%{배합수제외,(국산)},쌀미강추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450776199/199104450776199-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 430g 180kcal \n나트륨2140mg 107%, 탄수화물26g 8%, 당류3.3g 3%, 지방3.5g 6%, 트랜스지방0.4g, 포화지방1.7g 11%, 콜레스테롤15mg 5%, 단백질12g 22%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450776199/199104450776199-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "들깨시래기국",
+        "sub_ingredients": [
+          {
+            "name": "들깨시래기국베이스",
+            "amount": "89%",
+            "sub_ingredients": [
+              {
+                "name": "된장",
+                "sub_ingredients": [
+                  {
+                    "name": "된장",
+                    "origin": "외국산",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "origin": "외국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "소맥분",
+                        "origin": "미국산, 호주산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "기피가루",
+                    "origin": "중국산",
+                    "amount": "4%",
+                    "sub_ingredients": [
+                      {
+                        "name": "들깨",
+                        "origin": "국산",
+                        "amount": "100%",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "마늘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "다시마추출농축액",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "볶음땅콩분태",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "시래기",
+                "origin": "국내산",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청양고추",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "햇반",
+            "sub_ingredients": [
+              {
+                "name": "멥쌀",
+                "origin": "국산",
+                "amount": "99.9%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쌀미강추출물",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:42:45"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "sodium_mg": 2140.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 3.3,
+    "fat_g": 3.5,
+    "trans_fat_g": 0.4,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 15.0,
+    "protein_g": 12.0,
+    "basis_amount": 430.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 430g",
+    "collected_at": "2026-03-03 18:42:45"
+  }
+}

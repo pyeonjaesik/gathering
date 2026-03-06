@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "순쌀떡볶이",
+    "reportnum": "1992044400484"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044400484/1992044400484-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044400484/1992044400484-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044400484/1992044400484-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "한입떡볶이떡-쌀(외국산)99%,정제소금,주정/바로조리순쌀떡볶이소스-고추장[물엿,소맥분(밀:미국산,호주산),고추양념(중국산),고추양념분말,정제소금,종국],정제수,정백당,고과당,저감미당,양파(국내산),옥배유(옥수수:외국산/러시아,헝가리,세르비아등),소고기엑기스페이스트P,양념소스,마늘,양조간장,정제소금,사과농축과즙액,파인애플농축액,볶음참깨/야채고명-건조대파34%(중국산),건양파26%(중국산),건양배추20%(중국산),건당근20%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044400484/1992044400484-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=480g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044400484/1992044400484-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "한입떡볶이떡",
+        "origin": "외국산",
+        "amount": "99%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바로조리순쌀떡볶이소스",
+        "sub_ingredients": [
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추양념",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추양념분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "종국",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소고기엑기스페이스트P",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양념소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축과즙액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파인애플농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음참깨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채고명",
+        "sub_ingredients": [
+          {
+            "name": "건조대파",
+            "origin": "중국산",
+            "amount": "34%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양파",
+            "origin": "중국산",
+            "amount": "26%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양배추",
+            "origin": "중국산",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건당근",
+            "origin": "중국산",
+            "amount": "20%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:08:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 215.0,
+    "carbohydrate_g": 46.67,
+    "protein_g": 4.17,
+    "fat_g": 1.46,
+    "sugar_g": 7.71,
+    "sodium_mg": 608.0,
+    "dietary_fiber_g": 0.8,
+    "calcium_mg": 18.0,
+    "iron_mg": 0.21,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "480g",
+    "collected_at": "2026-03-03 19:08:06"
+  }
+}

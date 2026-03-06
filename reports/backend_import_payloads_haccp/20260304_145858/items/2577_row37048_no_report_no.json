@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "완료기_낮_닭가슴살양파진밥",
+    "reportnum": "19880442004599"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004599/19880442004599-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004599/19880442004599-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004599/19880442004599-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "채소상탕[정제수,무(국산),양파(국산),당근(국산),대파,양배추,쌈배추,다시마,청경채],정제수,유기쌀(국산)16%,닭가슴살(국산),무,당근퓨레,유기찹쌀가루3.5%,양파퓨레(양파:국산),당근,포도씨유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004599/19880442004599-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량135kcal, 탄수화물26g, 당류2g, 단백질5g, 지방1g, 포화지방0g, 트랜스지방0g, 콜레스테롤10mg, 나트륨30mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004599/19880442004599-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "채소상탕",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌈배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청경채",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기쌀",
+        "origin": "국산",
+        "amount": "16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기찹쌀가루",
+        "amount": "3.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파퓨레",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도씨유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:18"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 26.0,
+    "sugar_g": 2.0,
+    "protein_g": 5.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 30.0,
+    "collected_at": "2026-03-04 03:24:18"
+  }
+}

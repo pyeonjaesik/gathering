@@ -1,0 +1,113 @@
+{
+  "product": {
+    "name_ko": "꿀모과차",
+    "reportnum": "1983046403331"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983046403331/1983046403331-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983046403331/1983046403331-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983046403331/1983046403331-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "모과절임30%[모과50%(국산),백설탕],벌꿀2%(국산),백설탕,정제수,이소말토올리고당5%,비타민C,카르복시메틸셀룰로오스나트륨,카라기난,정제소금,구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983046403331/1983046403331-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1000ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/1983046403331/1983046403331-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "모과절임",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "모과",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카르복시메틸셀룰로오스나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:32:04"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 250.0,
+    "carbohydrate_g": 60.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 60.0,
+    "sodium_mg": 125.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1000ml",
+    "collected_at": "2026-03-03 15:32:04"
+  }
+}

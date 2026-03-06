@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "해의자태",
+    "reportnum": "2002047129415"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002047129415/2002047129415-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002047129415/2002047129415-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002047129415/2002047129415-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김90%(국산,김100%), 포도씨유(스페인산), 올리브유(스페인산), 참기름(국산), 함초소금(국내산), 아쿠아칼1%[식용해초100%(칼슘32%)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002047129415/2002047129415-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 3g 1봉(3g)당 15kcal\n총 내용량당 1일 영양성분 기준치에 대한 비율\n나트륨20mg 3%, 탄수화물1g 0%, 당류0g, 지방0.5g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질0.8g 5%, 칼슘9.6mg 2%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002047129415/2002047129415-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "김",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도씨유",
+        "origin": "스페인산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리브유",
+        "origin": "스페인산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함초소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아쿠아칼",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "식용해초",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "칼슘",
+                "amount": "32%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:53"
+  },
+  "nutrition": {
+    "kcal": 15.0,
+    "sodium_mg": 20.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.8,
+    "calcium_mg": 9.6,
+    "basis_amount": 3.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 3g 1봉(3g)당 15kcal",
+    "collected_at": "2026-03-04 03:42:53"
+  }
+}

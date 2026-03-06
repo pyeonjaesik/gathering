@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "범산목장 유기농 아이스크림 녹차",
+    "reportnum": "2006037900424"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900424/2006037900424-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900424/2006037900424-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900424/2006037900424-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농원유38.6%(국내산),유기농탈지농축유22.13%(국내산),유기농유크림19.79%(국내산),유기농 설탕7.72%(브라질산),유기농아가베시럽2.04%(멕시코산),구아검,로커스트콩검,유기농녹차시럽8.1%(유기농녹차분말:국내산,유기농아가베시럽(멕시코산),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900424/2006037900424-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=474ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037900424/2006037900424-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농원유",
+        "origin": "국내산",
+        "amount": "38.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농탈지농축유",
+        "origin": "국내산",
+        "amount": "22.13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농유크림",
+        "origin": "국내산",
+        "amount": "19.79%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "origin": "브라질산",
+        "amount": "7.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농아가베시럽",
+        "origin": "멕시코산",
+        "amount": "2.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농녹차시럽",
+        "amount": "8.1%",
+        "sub_ingredients": [
+          {
+            "name": "유기농녹차분말",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농아가베시럽",
+            "origin": "멕시코산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:26"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 160.0,
+    "carbohydrate_g": 25.0,
+    "protein_g": 2.0,
+    "fat_g": 6.0,
+    "sugar_g": 13.0,
+    "sodium_mg": 44.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "474ml",
+    "collected_at": "2026-03-04 03:58:26"
+  }
+}

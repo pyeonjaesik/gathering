@@ -1,0 +1,143 @@
+{
+  "product": {
+    "name_ko": "썬업사과 클래식",
+    "reportnum": "19810227007184"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007184/19810227007184-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007184/19810227007184-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007184/19810227007184-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사과농축과즙(사과과즙으로50%,뉴질랜드산),액상과당,구연산,비타민c,덱스트린,복합비타민(비타민C,dl-a-토코페릴아세트테이트dl-a-토코페롤,아라비아검,변성전분,MCT유,자당,전분,덱스트린,영양강화제),합성착향료(사과향),정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007184/19810227007184-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml) 열량95kcal, 탄수화물24g(7%),당류22g,단백질0g(0%),지방0g(0%),포화지방0g(0%),트랜스지방0g,콜레스테롤0mg(0%),나트륨20mg(1%),비타민B60.03mg(2%),비타민C 10.1mg(10%),비타민D 0.1ug(2%),비타민E 0.18mgα-TE(2%),엽산4.97㎍(2%),나이아신0.22mgNE(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810227007184/19810227007184-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "뉴질랜드산",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민c",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합비타민",
+        "sub_ingredients": [
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-a-토코페릴아세트테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "dl-a-토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "MCT유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:39:39"
+  },
+  "nutrition": {
+    "kcal": 95.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 22.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "niacin_mg": 0.22,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 14:39:39"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "product": {
+    "name_ko": "플랑 오렌지",
+    "reportnum": "20100372386298"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386298/20100372386298-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386298/20100372386298-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386298/20100372386298-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(미국산),기타설탕(원당,전분),백설탕,물엿,쇼트닝{(인도네시아산),팜유,토코페롤,레시틴,구연산},전란액(국산),오렌지농충액(미국산)2%,곡류가공품,마가린,가당연유(우유),오렌지펄프(미국산)1%,복합조미식품,액상과당,덱스트린,천일염,산도조절제1,유화제,아미드펙틴,산도조절제2,산도조절제3,합성향료(바닐린,오렌지향),치자황색소,혼합제제1(코치닐추출색소,락색소,구연산나트륨,황산알루미늄칼륨,탄산나트륨,프로필렌글리콜,정제수),혼합제제2(규소수지,소르비탄지방산에스테르,정제수,카르복시메틸셀룰로오스나트륨,글리세린지방산에스테르),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386298/20100372386298-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386298/20100372386298-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": [
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "미국산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지펄프",
+        "origin": "미국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "amount": "1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아미드펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "amount": "1",
+        "sub_ingredients": [
+          {
+            "name": "코치닐추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산알루미늄칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:39"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 415.0,
+    "carbohydrate_g": 71.0,
+    "protein_g": 4.0,
+    "fat_g": 13.0,
+    "sugar_g": 32.0,
+    "sodium_mg": 174.0,
+    "cholesterol_mg": 14.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:24:39"
+  }
+}

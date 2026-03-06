@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "또또맘마현미랑김이랑",
+    "reportnum": "2006037812264"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812264/2006037812264-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812264/2006037812264-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812264/2006037812264-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무농약현미(국내산)63%,흑미(국내산)6.77%,죽염(국내산),김(국내산)3%,유기농설탕2%,혼합곡물발효소0.05%,리뉴얼화이트[유기농설탕62.4%,코코아버터(싱가포르산),혼합탈지분유(탈지분야,유청부말:네덜란드산/우유),레시틴(대두:유화제)]25%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812264/2006037812264-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지 30g\n<%영양소기준치 : 1일 영양소기준치에 대한 비율>\n열량125kcal,탄수화물24g 7%,당류5g 5%,단백질2g 4%,지방2.9g 5.7%,포화지방1.7g 11%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨20mg 1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812264/2006037812264-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약현미",
+        "origin": "국내산",
+        "amount": "63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국내산",
+        "amount": "6.77%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "죽염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김",
+        "origin": "국내산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합곡물발효소",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리뉴얼화이트",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "유기농설탕",
+            "amount": "62.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청부말",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:11"
+  },
+  "nutrition": {
+    "kcal": 125.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 5.0,
+    "protein_g": 2.0,
+    "fat_g": 2.9,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지 30g",
+    "collected_at": "2026-03-04 03:58:11"
+  }
+}

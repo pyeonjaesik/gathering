@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "밀키스 무스카토",
+    "reportnum": "19900360105441"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105441/19900360105441-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105441/19900360105441-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105441/19900360105441-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,락토바실러스 유산균발효액1%(유청분말3%(국산),유산균0.1%(국산),유산균0.02%(덴마크산)),혼합분유(탈지분유,유청분말;네덜란드산),무스카토백포도청징농충액(칠레산),구연산,사과산,합성착향료(머스캣향),대두다당류,합성착향료(포도향),구연산삼나트륨,수크랄로스(합성감미료),홍화황색소,아세설팜칼륨(합성감미료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105441/19900360105441-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=500ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360105441/19900360105441-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락토바실러스 유산균발효액",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "유청분말",
+            "origin": "국산",
+            "amount": "3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "origin": "국산, 덴마크산",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "네덜란드산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무스카토백포도청징농충액",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "머스캣향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두다당류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아세설팜칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:23:34"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 25.0,
+    "carbohydrate_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 6.0,
+    "sodium_mg": 12.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "500ml",
+    "collected_at": "2026-03-03 18:23:34"
+  }
+}

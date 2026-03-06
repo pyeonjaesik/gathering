@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "엄선된 원료로 정성들여 만든 찐만두",
+    "reportnum": "2010046711769"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046711769/2010046711769-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046711769/2010046711769-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046711769/2010046711769-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기25.26%(국산),밀가루22.61%(수입산),부추,두부(대두,황산칼슘,정제염,,규소수지,유화재),양배추,대파,양파,대두단백,당면,혼합제제(변성전분,말토덱스트린),양조간장,불고기양념,난백,마늘,정제염,정백당,참기름,만두시즈닝분말P,효모풍미증진제,후추분말,감미유-S,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046711769/2010046711769-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량5개(150g) 총9회제공량(1,400g), 영양성분기준치:1일영양성분기준치에대한비율, 열량(kcal)325, 탄수화물(g)34 10%, 당류(g)3, 단백질(g)11 20%, 지방(g)16 31%, 포화지방(g)6 40%, 콜레스테롤(mg)5미만 1%, 나트륨(mg)660 33% 1,400g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010046711769/2010046711769-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "25.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "amount": "22.61%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화재",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "만두시즈닝분말P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모풍미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:54"
+  },
+  "nutrition": {
+    "kcal": 325.0,
+    "carbohydrate_g": 34.0,
+    "sugar_g": 3.0,
+    "protein_g": 11.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 6.0,
+    "sodium_mg": 660.0,
+    "basis_amount": 150.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량5개(150g)",
+    "collected_at": "2026-03-04 04:27:54"
+  }
+}

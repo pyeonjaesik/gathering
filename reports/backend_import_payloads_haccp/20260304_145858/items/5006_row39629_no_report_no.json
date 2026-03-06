@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "설탕을 쏙뺀 부드러운 애플 캔디",
+    "reportnum": "2004027504754"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004027504754/2004027504754-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004027504754/2004027504754-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004027504754/2004027504754-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "환원맥아당(말티톨시럽)95.97%, 식물성유지(대두/외국산), 비타민C, 자당지방산에스테르, 사과농축과즙액 0.2%(사과과즙 100%, 국산), 구연산, 사과산, 합성향료(요구르트향, 사과향, 밀크향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004027504754/2004027504754-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 40g 100kcal, 총 내용량당 1일 영양성분 기준치에 대한 비율, 나트륨 0mg 0%, 탄수화물 40g 12%, 당류 -g -%, 당알콜류 40g, 지방 0g 0%, 트랜스지방 -g, 포화지방 0g 0%, 콜레스테롤 -mg -%, 단백질 0g 0%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004027504754/2004027504754-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "환원맥아당(말티톨시럽)",
+        "amount": "95.97%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙액",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:29"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 40.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 40g",
+    "collected_at": "2026-03-04 03:50:29"
+  }
+}

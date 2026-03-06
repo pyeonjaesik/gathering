@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "우리밀약과",
+    "reportnum": "1999049309348"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999049309348/1999049309348-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999049309348/1999049309348-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999049309348/1999049309348-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우리밀(국산)47.5%, 식용유(옥배유/외국산:브라질,미국,러시아 등), 물엿, 설탕, 재제소금(국내산), 탄산수소나트륨(팽창제), 계피가루, 바닐라향분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999049309348/1999049309348-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회제공량(25g)당 함량/ 총 10회 제공량 (250g) / (%)는 1일 영양소기준치에 대한 비율임.\n열량105kcal, 탄수화물19g 6%, 당류6g, 단백질1g 2%, 지방3g 6%, 포화지방0.5g 3%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨48mg 2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999049309348/1999049309348-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀",
+        "origin": "국산",
+        "amount": "47.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유",
+        "origin": "외국산, 브라질산, 미국산, 러시아산",
+        "sub_ingredients": [
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "amount": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라향분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:09:31"
+  },
+  "nutrition": {
+    "kcal": 105.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 6.0,
+    "protein_g": 1.0,
+    "fat_g": 3.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 48.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(25g)",
+    "collected_at": "2026-03-03 22:09:31"
+  }
+}

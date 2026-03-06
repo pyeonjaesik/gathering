@@ -1,0 +1,69 @@
+{
+  "product": {
+    "name_ko": "에코팜 스트링 치즈",
+    "reportnum": "200704760056"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760056/200704760056-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760056/200704760056-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760056/200704760056-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국내산 원유(98.981%),렌넷,스타터",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760056/200704760056-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*1회 제공량(20g) 1회 제공량당 함량 *%영양소 기준치 열량 51.5kcal, 탄수화물 3.7g 1%, 당류 -, 단백질 3.9g 7%, 지방 2.3g 5%, 포화지방 1.6g 11%, 트랜스지방 -, 콜레스테롤 5.5mg 2%, 나트륨 48.9mg 2%, 칼슘 84.15mg 12% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704760056/200704760056-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국내산",
+        "amount": "98.981%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "렌넷",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스타터",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:47"
+  },
+  "nutrition": {
+    "kcal": 51.5,
+    "carbohydrate_g": 3.7,
+    "protein_g": 3.9,
+    "fat_g": 2.3,
+    "saturated_fat_g": 1.6,
+    "cholesterol_mg": 5.5,
+    "sodium_mg": 48.9,
+    "calcium_mg": 84.15,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(20g)",
+    "collected_at": "2026-03-04 04:06:47"
+  }
+}

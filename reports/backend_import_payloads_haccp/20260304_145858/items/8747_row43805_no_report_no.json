@@ -1,0 +1,222 @@
+{
+  "product": {
+    "name_ko": "백제 신라 고구마",
+    "reportnum": "2005047600273"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600273/2005047600273-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600273/2005047600273-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600273/2005047600273-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,고구마시럽25%[백설탕,증숙고구마페이스트(국산),강낭콩앙금(강낭콩:수입산),정제소금,합성착향료(고구마향)],과자[소맥분(미국산,호주산),타피오카전분(태국산),찰옥수수전분,백설탕,정제팜유],백설탕,혼합분유(탈지분유,유청분말),가공버터(유크림,버터,버터오일,야자유),기타올리고당(물엿,이소말토올리고당,액상과당),혼합제제(유화제,CMC,구아검,카라기난),합성착향료(고구마향),안나토색소(유화제,안나토색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600273/2005047600273-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=140ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600273/2005047600273-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마시럽",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "증숙고구마페이스트",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "강낭콩앙금",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "강낭콩",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "고구마향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "타피오카전분",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타올리고당",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이소말토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "고구마향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "안나토색소",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:21"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 150.0,
+    "carbohydrate_g": 26.43,
+    "protein_g": 2.14,
+    "fat_g": 4.29,
+    "sugar_g": 20.0,
+    "sodium_mg": 32.0,
+    "cholesterol_mg": 10.71,
+    "saturated_fat_g": 2.64,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "140ml",
+    "collected_at": "2026-03-04 03:55:21"
+  }
+}

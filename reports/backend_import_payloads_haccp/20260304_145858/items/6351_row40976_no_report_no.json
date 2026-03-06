@@ -1,0 +1,109 @@
+{
+  "product": {
+    "name_ko": "우리아이착한자색고구마",
+    "reportnum": "2011022182823"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182823/2011022182823-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182823/2011022182823-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182823/2011022182823-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우리밀가루(무농약밀:국산)28.41%, 고구마전분(국산)25.36%, 증숙자색고구마페이스트(자색고구마100%:국산)17.25%, 고올레산해바라기유(스페인산)16.59%, 유기농설탕 6.45%, 알파미분(국산)5.07%, 천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182823/2011022182823-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 분량 2/5(30g) 총 3회 분량(75g)\n<1회 분량당 함량 *%영양소 기준치>\n열량145kcal, 탄수화물22g 7%, 당류4g, 단백질2g 3%, 지방6g 12%, 포화지방0.4g 3%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨170mg 9%\n*%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182823/2011022182823-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀가루",
+        "origin": "국산",
+        "amount": "28.41%",
+        "sub_ingredients": [
+          {
+            "name": "무농약밀",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고구마전분",
+        "origin": "국산",
+        "amount": "25.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙자색고구마페이스트",
+        "origin": "국산",
+        "amount": "17.25%",
+        "sub_ingredients": [
+          {
+            "name": "자색고구마",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고올레산해바라기유",
+        "origin": "스페인산",
+        "amount": "16.59%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "6.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파미분",
+        "origin": "국산",
+        "amount": "5.07%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:12"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 4.0,
+    "protein_g": 2.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 170.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 분량 2/5(30g)",
+    "collected_at": "2026-03-04 04:30:12"
+  }
+}

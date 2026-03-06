@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "선데이치즈볼 오리지널 슬림",
+    "reportnum": "2014035587977"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587977/2014035587977-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587977/2014035587977-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587977/2014035587977-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "콘그릿츠4호[옥수수100%/외국산(호주,브라질,러시아등)],팜유-DTL[팜유(말레이시아산),d-토코페롤(혼합형)],더블치즈맛씨즈닝12.59%[분말유크림{유크림(이탈리아산)},설탕,정제소금(국내산),미립당,가공유청분말-제이,치즈혼합분말3%(치즈분말33.8%/덴마크산),버터리치즈파우다2%(버터리치즈파우다90%/미국산),카망베르치즈파우더2%(덴마크산),향미증진제,혼합제제1{합성향료(치즈향)}],곡류가공품,밀가루,탄산칼슘,설탕,정제조금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587977/2014035587977-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 210,[영양표시] : 나트륨285mg,탄수화물18g,당류2g,지방14g,트랜스지방0g,포화지방6g,콜레스테롤0mg,단백질2g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587977/2014035587977-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "콘그릿츠4호",
+        "origin": "외국산, 호주산, 브라질산, 러시아산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유-DTL",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "더블치즈맛씨즈닝",
+        "amount": "12.59%",
+        "sub_ingredients": [
+          {
+            "name": "분말유크림",
+            "origin": "이탈리아산",
+            "sub_ingredients": [
+              {
+                "name": "유크림",
+                "origin": "이탈리아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유청분말-제이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치즈혼합분말",
+            "origin": "덴마크산",
+            "amount": "3%",
+            "sub_ingredients": [
+              {
+                "name": "치즈분말",
+                "origin": "덴마크산",
+                "amount": "33.8%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터리치즈파우다",
+            "origin": "미국산",
+            "amount": "2%",
+            "sub_ingredients": [
+              {
+                "name": "버터리치즈파우다",
+                "amount": "90%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카망베르치즈파우더",
+            "origin": "덴마크산",
+            "amount": "2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제1",
+            "sub_ingredients": [
+              {
+                "name": "합성향료",
+                "sub_ingredients": [
+                  {
+                    "name": "치즈향",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제조금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:10"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "sodium_mg": 285.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 2.0,
+    "fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:41:10"
+  }
+}

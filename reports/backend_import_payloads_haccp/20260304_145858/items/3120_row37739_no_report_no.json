@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "쎈쿡 취나물 찰밥",
+    "reportnum": "19920461131196"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131196/19920461131196-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131196/19920461131196-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131196/19920461131196-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀51.3%(국산),멥쌀30.1%(국산),쎈쿡한그릇밥용소스14.8%{참기름[볶음참깨분:수입산],양조간장[탈지대두(인도산),소맥(밀:미국산)],백설탕,D-소르비톨액,정제소금},데침취나물1.9%(국산),건당근(당근,포도당),건표고갓후레이크",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131196/19920461131196-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1개(190g)/총 2회제공량(380g) 1회 제공량당 함량:열량 380kcal, 탄수화물 82g (25%),당류 1g, 단백질 7g (13%), 지방 2.8g (5%), 포화지방 0g (0%),트랜스지방 0g,콜레스테롤 0mg (0%),나트륨 550mg (28%) *( )안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131196/19920461131196-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "51.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "30.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쎈쿡한그릇밥용소스",
+        "amount": "14.8%",
+        "sub_ingredients": [
+          {
+            "name": "참기름",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "볶음참깨분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "데침취나물",
+        "origin": "국산",
+        "amount": "1.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "sub_ingredients": [
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건표고갓후레이크",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:13:07"
+  },
+  "nutrition": {
+    "kcal": 380.0,
+    "carbohydrate_g": 82.0,
+    "sugar_g": 1.0,
+    "protein_g": 7.0,
+    "fat_g": 2.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 550.0,
+    "basis_amount": 190.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1개(190g)",
+    "collected_at": "2026-03-03 19:13:07"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "product": {
+    "name_ko": "제주백년초 크런치 초코",
+    "reportnum": "201306311907"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311907/201306311907-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311907/201306311907-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311907/201306311907-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백년초초코크림-에버73%:정백당,가공유지(말레이시아산),전지분골드(우유),코코아버터(수입산)1%,백년초분말(제주산)0.5%,레시틴(대두/유화제),합성착신료(백년초향),코치닐색소,사과산,글리세린지방산에스테르,치자청색소,합성착신료(바닐린),퍼핑볼27%:소백분(밀/미국,호주산),전분(수입산),식용소다(탄산수소나트륨,옥수수전분),정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311907/201306311907-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 66g\n<총 내용량당 1일 영양성분 기춘치에 대한비율>\n열량328kcal, 나트륨69.6mg 3.5%, 탄수화물48.5g 12.6%, 당류24.7g, 지방13.7g 26.8%, 트랜스지방0g, 포화지방13.7g 91%, 콜레스테롤0.9mg 0.3%, 단백질1.8g 3.3%\n1일 영양성분기준치에 대한 비율(%)은 2000kcal 기준 이므로 개인의 필요 열량에 따라 다른 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306311907/201306311907-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백년초초코크림-에버",
+        "amount": "73%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분골드",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아버터",
+            "origin": "수입산",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백년초분말",
+            "amount": "0.5%",
+            "sub_ingredients": [
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성착신료",
+            "sub_ingredients": [
+              {
+                "name": "백년초향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코치닐색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "퍼핑볼",
+        "amount": "27%",
+        "sub_ingredients": [
+          {
+            "name": "소백분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용소다",
+            "sub_ingredients": [
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:44"
+  },
+  "nutrition": {
+    "kcal": 328.0,
+    "sodium_mg": 69.6,
+    "carbohydrate_g": 48.5,
+    "sugar_g": 24.7,
+    "fat_g": 13.7,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 13.7,
+    "cholesterol_mg": 0.9,
+    "protein_g": 1.8,
+    "basis_amount": 66.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 66g",
+    "collected_at": "2026-03-04 04:39:44"
+  }
+}

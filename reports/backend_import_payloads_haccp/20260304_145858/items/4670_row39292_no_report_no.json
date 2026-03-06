@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "뽀모도로 스파게티 양송이소스",
+    "reportnum": "200204610734668"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734668/200204610734668-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734668/200204610734668-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734668/200204610734668-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,다이스드토마토28%(미국산,토마토65%,토마토주스34.83%,구연산,염화칼슘),토마토페이스트15%(토마토100%,중국산)양송이3.5%(중국산),대두유,백설탕,조미복합분말#104(우유,밀),발효식초,변성전분,정제소금,건조양파,마늘,레드와인,혼합제제(유화제,파프리카추출색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734668/200204610734668-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "460g, 100당함량 *%영양소기준치, 열량65kcal, 탄수화물11g 3%, 당류5g, 단백질2g 4%, 지방1.5g 3%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨780mg 39%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734668/200204610734668-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다이스드토마토",
+        "origin": "미국산",
+        "amount": "28%",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "amount": "65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토주스",
+            "amount": "34.83%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "토마토페이스트",
+        "origin": "중국산",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양송이",
+        "origin": "중국산",
+        "amount": "3.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미복합분말#104",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드와인",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:40:34"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 5.0,
+    "protein_g": 2.0,
+    "fat_g": 1.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 780.0,
+    "basis_amount": 460.0,
+    "basis_unit": "g",
+    "basis_text": "460g",
+    "collected_at": "2026-03-04 03:40:34"
+  }
+}

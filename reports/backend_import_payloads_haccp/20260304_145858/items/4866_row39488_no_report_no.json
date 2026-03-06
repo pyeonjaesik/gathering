@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "밀미강정",
+    "reportnum": "20030372137271"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137271/20030372137271-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137271/20030372137271-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137271/20030372137271-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀백소맥뻥[소맥분(중력분:밀:미국,호주)90%,옥수수전분(수입산),식염]34.4%,물엿(옥수수전분:수입산),설탕,검정깨(중국)6.9%,채종유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137271/20030372137271-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 1/3통(45g) 총 3회 제공량(135g), 1회 제공량 당 함량 *%영양소 기준치, 열량 190 kcal, 탄수화물 37g 11%, 당류 21g, 단백질 2g 3%, 지방 3.9g 8%, 포화지방 0.7g 5%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 40mg 2%, * %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137271/20030372137271-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀백소맥뻥",
+        "amount": "34.4%",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "amount": "90%",
+            "sub_ingredients": [
+              {
+                "name": "중력분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정깨",
+        "origin": "중국산",
+        "amount": "6.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:40"
+  },
+  "nutrition": {
+    "kcal": 190.0,
+    "carbohydrate_g": 37.0,
+    "sugar_g": 21.0,
+    "protein_g": 2.0,
+    "fat_g": 3.9,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/3통(45g)",
+    "collected_at": "2026-03-04 03:46:40"
+  }
+}

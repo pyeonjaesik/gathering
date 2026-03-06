@@ -1,0 +1,87 @@
+{
+  "product": {
+    "name_ko": "고르곤졸라치즈소프트콘",
+    "reportnum": "2006051503571"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503571/2006051503571-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503571/2006051503571-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503571/2006051503571-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(호주산)48.11%,식물성유지(말레이시아산),분당,락토산고르곤졸라피디오치즈분말(덴마크)1.5%,정제염,탄산칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503571/2006051503571-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=145g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503571/2006051503571-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "호주산",
+        "amount": "48.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락토산고르곤졸라피디오치즈분말",
+        "origin": "덴마크산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 690.0,
+    "carbohydrate_g": 37.0,
+    "protein_g": 3.0,
+    "fat_g": 59.0,
+    "sugar_g": 5.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 3.0,
+    "saturated_fat_g": 25.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "145g",
+    "collected_at": "2026-03-04 04:00:33"
+  }
+}

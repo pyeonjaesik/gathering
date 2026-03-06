@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "우리밀아몬드튀일",
+    "reportnum": "2003022135125"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135125/2003022135125-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135125/2003022135125-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135125/2003022135125-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(국산)14.29%, 유정란(국산)24.76%,유기농설탕(수입)20.95%,아몬드슬라이스(수입)28.57%,올리브유(수입)11.43%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135125/2003022135125-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003022135125/2003022135125-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "14.29%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "24.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "20.95%",
+        "sub_ingredients": [
+          {
+            "name": "수입",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "amount": "28.57%",
+        "sub_ingredients": [
+          {
+            "name": "수입",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리브유",
+        "amount": "11.43%",
+        "sub_ingredients": [
+          {
+            "name": "수입",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:40"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 555.0,
+    "carbohydrate_g": 49.0,
+    "protein_g": 15.0,
+    "fat_g": 33.0,
+    "sugar_g": 19.0,
+    "sodium_mg": 50.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 2.4,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:45:40"
+  }
+}

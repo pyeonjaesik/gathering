@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "인절미통통",
+    "reportnum": "2005047600242"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600242/2005047600242-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600242/2005047600242-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600242/2005047600242-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물,찰떡시럽[백설탕,찹쌀가루(국산),물엿,찰옥수수전분(수입산),정제염],볶은콩초코코팅[야자유(수입산),백설탕,대두콩(중국산),해바라기유,혼합탈지분유,레시틴(대두),백설탕,물엿,커피크리마,혼합분유(우유),덱스트린,혼합제제(구아검,카라기난,로커스트콩검,덱스트린,포도당,산도조절제(유화제,알긴산나트륨,카르복시메틸셀룰로오스나트륨),합성착향료 바닐라향,밀크향),천연색소(카로틴,치자황색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600242/2005047600242-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100g(ml) | foodSize=63ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600242/2005047600242-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찰떡시럽",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀가루",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰옥수수전분",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶은콩초코코팅",
+        "sub_ingredients": [
+          {
+            "name": "야자유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두콩",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피크리마",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로커스트콩검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": [
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "알긴산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카르복시메틸셀룰로오스나트륨",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연색소",
+            "sub_ingredients": [
+              {
+                "name": "카로틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자황색소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:11"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 206.0,
+    "carbohydrate_g": 28.57,
+    "protein_g": 1.59,
+    "fat_g": 9.52,
+    "sugar_g": 23.81,
+    "sodium_mg": 48.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 6.19,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100g(ml)",
+    "total_content": "63ml",
+    "collected_at": "2026-03-04 03:55:11"
+  }
+}

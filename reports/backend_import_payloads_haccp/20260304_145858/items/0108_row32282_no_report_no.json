@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "클렌즈미 오렌지드림",
+    "reportnum": "20110445292246"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110445292246/20110445292246-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110445292246/20110445292246-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110445292246/20110445292246-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "사과착즙액[사과(국산) 99.7%, 비타민C], 오렌지착즙액(미국산) 15%, 파인애플착즙액(베트남산), 당근즙(국산), 레몬착즙액(미국산), 비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110445292246/20110445292246-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=435ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110445292246/20110445292246-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사과착즙액",
+        "origin": "국산",
+        "amount": "99.7%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국산",
+            "amount": "99.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지착즙액",
+        "origin": "미국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플착즙액",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근즙",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬착즙액",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:06:10"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 46.0,
+    "carbohydrate_g": 11.0,
+    "protein_g": 0.4,
+    "fat_g": 0.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 20.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "435ml",
+    "collected_at": "2026-03-03 13:06:10"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "베베푸드 아빠가 만든 김2",
+    "reportnum": "20090473067141"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090473067141/20090473067141-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090473067141/20090473067141-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090473067141/20090473067141-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김 72.25%(국산), 현미유 21%(국산), 참기름 5.25%(국산),천일염 1.5%(국산),",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090473067141/20090473067141-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(4g) / 총1회 분량(4g) 열량 25kcal 지방 1.7g (3%) 탄수화물 1g미만 (0%) 포화지방 0g (2%) 당류 0g 트랜스지방 0g 콜레스테롤 0mg (0%) 단백질 1g미만 (2%) 나트륨 30mg (2%) ※ %영양소기준치 : 1일 영양소 기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090473067141/20090473067141-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "72.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "origin": "국산",
+        "amount": "21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국산",
+        "amount": "5.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:22"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 0.0,
+    "sugar_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 4.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(4g)",
+    "collected_at": "2026-03-04 04:20:22"
+  }
+}

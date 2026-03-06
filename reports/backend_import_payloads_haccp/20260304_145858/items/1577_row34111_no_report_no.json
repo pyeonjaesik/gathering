@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "해태자두캔디",
+    "reportnum": "1984022100815"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984022100815/1984022100815-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984022100815/1984022100815-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984022100815/1984022100815-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "이소말토올리고당,백설탕,말티톨시럽23%,자두농축과즙(자두과즙1%)0.1%,녹차추출물(고형분함량50%),구연산,합성착향료(자두향),자주색옥수수색소,혼합제제(DL-알파토코페롤 아세테이트,말토덱스트린,변성전분,이산화규소) ·자두농축과즙(자두과즙1%)0.1%,녹차추출물(고형분함량50%)0.03%,비타민E0.01%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984022100815/1984022100815-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=90g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1984/1984022100815/1984022100815-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자두농축과즙",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "자두과즙",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "녹차추출물",
+        "amount": "고형분함량50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "자두향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자주색옥수수색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "DL-알파토코페롤 아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민E",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:35:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 400.0,
+    "carbohydrate_g": 100.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 60.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "90g",
+    "collected_at": "2026-03-03 15:35:50"
+  }
+}

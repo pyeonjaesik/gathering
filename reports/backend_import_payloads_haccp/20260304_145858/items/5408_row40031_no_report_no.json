@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "횡성축협한우곰탕",
+    "reportnum": "2006044801512"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801512/2006044801512-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801512/2006044801512-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801512/2006044801512-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고기곰탕용육수93.33%[정제수,한우사골(국산)11.05%,한우모둠뼈(국산)11.05%,천일염]/(가용성고형분4%),삶은한우사태(국산)6.67%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801512/2006044801512-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약 1/2봉지(240g),총 약 2회 제공량(600g),240g당 함량,*%영양소기준치,열량 65 kcal,탄수화물 0g,당류 0g,단백질 12g(22%),지방 1.8g(4%),포화지방 0.7g(5%),트랜스지방 0g,콜레스테롤 20mg(7%),나트륨 450mg(23%),*%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006044801512/2006044801512-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고기곰탕용육수",
+        "amount": "93.33%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한우사골",
+            "origin": "국산",
+            "amount": "11.05%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한우모둠뼈",
+            "origin": "국산",
+            "amount": "11.05%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가용성고형분",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삶은한우사태",
+        "origin": "국산",
+        "amount": "6.67%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:00"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 12.0,
+    "fat_g": 1.8,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 450.0,
+    "basis_amount": 240.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약 1/2봉지(240g)",
+    "collected_at": "2026-03-04 04:00:00"
+  }
+}

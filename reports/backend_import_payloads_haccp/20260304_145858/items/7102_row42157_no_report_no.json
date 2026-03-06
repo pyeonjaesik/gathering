@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "일렉트로맨 카레밥",
+    "reportnum": "19900360106296"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106296/19900360106296-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106296/19900360106296-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106296/19900360106296-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "건조미75.95%(국산),이마트카레용분말11.39%[[백세카레(밀:미국산/호주산),덱스트린,카레분12%{강황(인도산),코리안더(모로코산/캐나다산)},혼합식용유,정제소금],카레분TC(카레분,강황분),L-글루타민산나트륨(향미증진제),치킨스톡P(치킨농축분말,정제소금,백설탕,옥수수전분),함수결정포도당,버터혼합분말],건당근(중국산),조미비프맛후레이크[밀단백후레이크(밀,대두,땅콩),양념간장액(계육액기스),비프엑기스,정제염],건청경채(중국산),건조양파",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106296/19900360106296-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=79g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106296/19900360106296-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건조미",
+        "origin": "국산",
+        "amount": "75.95%",
+        "sub_ingredients": [
+          {
+            "name": "이마트카레용분말",
+            "amount": "11.39%",
+            "sub_ingredients": [
+              {
+                "name": "백세카레",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "origin": "미국산, 호주산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "카레분",
+                    "amount": "12%",
+                    "sub_ingredients": [
+                      {
+                        "name": "강황",
+                        "origin": "인도산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "코리안더",
+                        "origin": "모로코산, 캐나다산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "혼합식용유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카레분TC",
+            "sub_ingredients": [
+              {
+                "name": "카레분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "강황분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨스톡P",
+            "sub_ingredients": [
+              {
+                "name": "치킨농축분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터혼합분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건당근",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미비프맛후레이크",
+        "sub_ingredients": [
+          {
+            "name": "밀단백후레이크",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "땅콩",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양념간장액",
+            "sub_ingredients": [
+              {
+                "name": "계육액기스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건청경채",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조양파",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:23:55"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 376.0,
+    "carbohydrate_g": 82.28,
+    "protein_g": 7.59,
+    "fat_g": 1.27,
+    "sugar_g": 7.59,
+    "sodium_mg": 605.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.63,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "79g",
+    "collected_at": "2026-03-03 18:23:55"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "product": {
+    "name_ko": "올곧게만든 위드맘3",
+    "reportnum": "1986039501378"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986039501378/1986039501378-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986039501378/1986039501378-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986039501378/1986039501378-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유당(수입산, 우유), 1급A원유(국산,세균수 기준) 16.25%, 덱스트린, 혼합식용유[(대두유(수입산), 코코넛유(수입산), 가공유지(INFAT), 고올레산해바라기유, 해바라기유, 달맞이꽃종자유, 아스코르빌팔미테이트), d-토코페롤(혼합형)(대두)], 농축유청단백질, 탈지분유, 갈락토올리고당, 버터유분말, 카제인가수분해단백질, 영양강화제, 제이인산칼륨, 가공유크림, 대두레시틴, 미량미네랄혼합제제3(영양강화제, 덱스트린), 알파락트알부민, 기타식용유지(DHA, 아라키돈산함유), 프락토올리고당, 농축유청단백질(오스테오폰틴), 수용성비타민혼합제제(영양강화제, 덱스트린), 난황 lgY분말(계란), 지용성비타민혼합제제(영양강화제, 베타카로틴, 대두유), 뉴클레오타이드 혼합제제(영양강화제), 락토페린농축물, 복합유산균 0.60% (B.lactis, L reuteri, Lrhamnosus, L fermentum)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986039501378/1986039501378-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=750g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986039501378/1986039501378-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유당",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "1급A원유",
+        "origin": "국산",
+        "amount": "16.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "INFAT",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고올레산해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "달맞이꽃종자유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스코르빌팔미테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "amount": "대두",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "농축유청단백질",
+        "amount": "오스테오폰틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터유분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인가수분해단백질",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미량미네랄혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알파락트알부민",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타식용유지",
+        "sub_ingredients": [
+          {
+            "name": "DHA",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라키돈산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성비타민혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난황 lgY분말",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "지용성비타민혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "뉴클레오타이드 혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락토페린농축물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합유산균",
+        "amount": "0.60%",
+        "sub_ingredients": [
+          {
+            "name": "B.lactis",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L reuteri",
+            "sub_ingredients": []
+          },
+          {
+            "name": "Lrhamnosus",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L fermentum",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:21:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 486.0,
+    "carbohydrate_g": 54.29,
+    "protein_g": 17.86,
+    "fat_g": 22.14,
+    "sugar_g": 35.0,
+    "sodium_mg": 200.0,
+    "cholesterol_mg": 71.43,
+    "saturated_fat_g": 10.71,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "750g",
+    "collected_at": "2026-03-03 16:21:25"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "product": {
+    "name_ko": "참나무로 훈연한 그릴프랑크",
+    "reportnum": "19900262001383"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900262001383/19900262001383-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900262001383/19900262001383-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900262001383/19900262001383-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기(수입산80%,국산20%)75.92%,정제수,대두단백(중국산),백설탕,정제소금(국산),전분,감자식이섬유,L-글루타민산나트륨,숯불바베큐맛분말,그릴시즈닝-2,혼합제제(산도조절제),락색소(천연첨가물),웰믹스DS,혼합제제(초산나트륨,푸마르산,덱스트린,메타인산나트륨,글리세린지방산에스텔),혼합제제(카라기난,염화칼륨),스모크향분말-디,비타민C,조미흰후추분말,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900262001383/19900262001383-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900262001383/19900262001383-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "수입산, 국산",
+        "amount": "75.92%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불바베큐맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그릴시즈닝-2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸마르산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스텔",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "천연첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "웰믹스DS",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크향분말-디",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미흰후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:27:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 224.0,
+    "carbohydrate_g": 2.63,
+    "protein_g": 13.16,
+    "fat_g": 18.42,
+    "sugar_g": 0.0,
+    "sodium_mg": 711.0,
+    "cholesterol_mg": 52.63,
+    "saturated_fat_g": 7.11,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:27:13"
+  }
+}

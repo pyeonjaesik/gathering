@@ -1,0 +1,96 @@
+{
+  "product": {
+    "name_ko": "닭가슴살훈제(무염)",
+    "reportnum": "201505020132"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020132/201505020132-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020132/201505020132-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020132/201505020132-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국내산닭가슴살정육96.56%,치킨시즈닝3.44%(정백당10%,포리믹스지에이7%,가릭스파이스20%,어니언스파이스20%,후추스아이스23%,진저스파이스10%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020132/201505020132-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(100g) /총 1회 제공량(100g) 1회제공량당 함량 *%영양소기준치 열량 119kcal, 수분69.90g, 회분 1.75g, 탄수화물 0.30g 0.09%, 당류- -, 단백질 26.97g 45%,지방 1.08g 2.2%, 포화지방- -,트랜스지방- -,콜레스테롤- -,나트륨 50mg 2.5% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201505020132/201505020132-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살정육",
+        "origin": "국내산",
+        "amount": "96.56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨시즈닝",
+        "amount": "3.44%",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포리믹스지에이",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가릭스파이스",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "어니언스파이스",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추스아이스",
+            "amount": "23%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진저스파이스",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:29"
+  },
+  "nutrition": {
+    "kcal": 119.0,
+    "water_g": 69.9,
+    "ash_g": 1.75,
+    "carbohydrate_g": 0.3,
+    "protein_g": 26.97,
+    "fat_g": 1.08,
+    "sodium_mg": 50.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(100g)",
+    "collected_at": "2026-03-04 04:46:29"
+  }
+}

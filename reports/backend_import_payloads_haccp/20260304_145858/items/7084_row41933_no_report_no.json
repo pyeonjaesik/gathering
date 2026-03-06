@@ -1,0 +1,188 @@
+{
+  "product": {
+    "name_ko": "추억의 부산어묵 봉각",
+    "reportnum": "19900275002454"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002454/19900275002454-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002454/19900275002454-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002454/19900275002454-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(미국산,호주산)(밀),냉동연육(수입산/어육,D-소르비톨,정백당,산도조절제),대두유,대두단백,정제소금,L-글루타민산나트륨(향미증진제),건당근,자일로오스,두류가공품,소르빈산칼륨(합성보존료),레시틴(대두),어묵맛시즈닝(밀,대두),정백당,혼합제제{제삼인산나트륨,분리대두단백,콜라겐,말토덱스트린,트렌스글루타미나아제(효소제)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002454/19900275002454-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002454/19900275002454-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "냉동연육",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "어묵맛시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "제삼인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분리대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트렌스글루타미나아제",
+            "sub_ingredients": [
+              {
+                "name": "효소제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:27:21"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 205.0,
+    "carbohydrate_g": 33.0,
+    "protein_g": 8.0,
+    "fat_g": 4.7,
+    "sugar_g": 4.0,
+    "sodium_mg": 700.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 03:27:21"
+  }
+}

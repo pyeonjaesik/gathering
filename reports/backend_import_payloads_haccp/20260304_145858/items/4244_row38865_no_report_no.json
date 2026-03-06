@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "덴마크드링킹요구르트 알로에베라",
+    "reportnum": "1998047601792"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601792/1998047601792-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601792/1998047601792-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601792/1998047601792-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유71%(국산),알로에베라시럽12.5%(알로에베라8%)[정백당,합성착향료(알로에향),콜라겐,알로에베라겔파우더0.08%(미국산),구연산],탈지분유,전지분유,정제수,유산균,프로바이오틱유산균1억(1x10^8)마리이상",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601792/1998047601792-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량1병 (180mL 기준)/총1회 제공량(180mL), 1회제공량당 함량: 열량 165kcal,탄수화물24g (7%),당류24g,단백질6g (9%),지방5g (10%), 포화지방4g (24%), 트랜스지방0g, 콜레스테롤 15mg (5%), 나트륨95mg (5%), 칼슘195mg (28%),  *%영양소 기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/1998047601792/1998047601792-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알로에베라시럽",
+        "amount": "12.5%",
+        "sub_ingredients": [
+          {
+            "name": "알로에베라",
+            "amount": "8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "알로에향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알로에베라겔파우더",
+            "origin": "미국산",
+            "amount": "0.08%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로바이오틱유산균",
+        "amount": "1억(1x10^8)마리이상",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:58:38"
+  },
+  "nutrition": {
+    "kcal": 165.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 24.0,
+    "protein_g": 6.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 95.0,
+    "calcium_mg": 195.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량1병 (180mL 기준)",
+    "collected_at": "2026-03-03 21:58:38"
+  }
+}

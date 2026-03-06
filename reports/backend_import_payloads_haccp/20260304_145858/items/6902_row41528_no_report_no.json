@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "하루의 열매 믹스플러스 한입",
+    "reportnum": "201603685236"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685236/201603685236-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685236/201603685236-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685236/201603685236-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "건조크랜베리루비28%(미국산/크랜베리62%,설탕,구연산,아로니아주스농축액,해바라기씨유),구운아몬드20%(아몬드:미국산),볶음캐슈넛20%[캐슈넛:외국산(인도·미얀마·베트남 등)],호두16%(미국산),딸기초코요거볼16%(딸기컴파운드,화이트컴파운드,화이트코팅초콜릿,분당,요거트분말,구연산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685236/201603685236-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 25g/130kcal 1회제공량 함량 %영양소기준치 열량 130kcal, 탄수화물 12g 4%, 당류 8g 8%, 단백질 3g 5%, 지방 8g 15%, 포화지방 4.8g 32%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 0mg 0% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603685236/201603685236-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건조크랜베리루비",
+        "origin": "미국산",
+        "amount": "28%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "origin": "미국산",
+            "amount": "62%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아로니아주스농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기씨유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운아몬드",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음캐슈넛",
+        "origin": "외국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "캐슈넛",
+            "origin": "외국산, 인도산, 미얀마산, 베트남산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기초코요거볼",
+        "amount": "16%",
+        "sub_ingredients": [
+          {
+            "name": "딸기컴파운드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트컴파운드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트코팅초콜릿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요거트분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:21"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 8.0,
+    "protein_g": 3.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 4.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 25g",
+    "collected_at": "2026-03-04 04:47:21"
+  }
+}

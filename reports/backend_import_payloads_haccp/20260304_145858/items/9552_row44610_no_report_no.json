@@ -1,0 +1,194 @@
+{
+  "product": {
+    "name_ko": "바베큐치킨",
+    "reportnum": "20130405045143"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045143/20130405045143-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045143/20130405045143-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045143/20130405045143-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기(수입산70%,국내산30%)76.26%,에쓰에프바베큐소스[토마토케찹{토마토(태국산),발효식초(현미:수입산)},사과식초{농축사과즙(사과:중국산),주정(주정(현미:수입산)},덱스트린,삼온당,스모크오일]19.06%,백설탕,정제염,대두단백,불고기양념-3,글리신,복합스파이스에스-1,L-글루타민산나트륨(향미증진제),혼합제제(산도조절제),백후추분말,비타민-C,혼합제제(스모크오일,대두유),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045143/20130405045143-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/20130405045143/20130405045143-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "수입산 70%, 국내산 30%",
+        "amount": "76.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에쓰에프바베큐소스",
+        "amount": "19.06%",
+        "sub_ingredients": [
+          {
+            "name": "토마토케찹",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "origin": "태국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효식초",
+                "origin": "수입산",
+                "sub_ingredients": [
+                  {
+                    "name": "현미",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사과식초",
+            "sub_ingredients": [
+              {
+                "name": "농축사과즙",
+                "origin": "중국산",
+                "sub_ingredients": [
+                  {
+                    "name": "사과",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "주정",
+                "origin": "수입산",
+                "sub_ingredients": [
+                  {
+                    "name": "주정(현미",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "삼온당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크오일",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념-3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스에스-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민-C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:50"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 180.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 17.0,
+    "fat_g": 9.0,
+    "sugar_g": 6.0,
+    "sodium_mg": 400.0,
+    "cholesterol_mg": 125.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 04:37:50"
+  }
+}

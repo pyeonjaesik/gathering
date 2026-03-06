@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "스윙칩 볶음고추장맛",
+    "reportnum": "19870415003244"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003244/19870415003244-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003244/19870415003244-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003244/19870415003244-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "생감자90%(미국산),혼합식용유(해바라기유(수입산)50%,팜올레인유(말레이시아산)50%),볶음고추장맛씨즈닝(고추 국산,중국산/우유,대두,밀)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003244/19870415003244-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=60g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003244/19870415003244-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생감자",
+        "origin": "미국산",
+        "amount": "90%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음고추장맛씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "고추",
+            "origin": "국산, 중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:37:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 587.0,
+    "carbohydrate_g": 50.0,
+    "protein_g": 6.67,
+    "fat_g": 40.0,
+    "sugar_g": 3.33,
+    "sodium_mg": 467.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 14.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "60g",
+    "collected_at": "2026-03-03 16:37:31"
+  }
+}

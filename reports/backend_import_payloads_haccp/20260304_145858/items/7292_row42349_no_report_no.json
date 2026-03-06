@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "사과식초",
+    "reportnum": "199202550369"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/199202550369/199202550369-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/199202550369/199202550369-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/199202550369/199202550369-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "농축사과과즙5.03%(중국산,사과100%,72brix기준),정제수,주정,발효영양원,사과에센스(합성착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/199202550369/199202550369-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=5ml | foodSize=500ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/199202550369/199202550369-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "농축사과과즙",
+        "origin": "중국산",
+        "amount": "5.03%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효영양원",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과에센스",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:56:46"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 12.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 0.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "5ml",
+    "total_content": "500ml",
+    "collected_at": "2026-03-03 18:56:46"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "product": {
+    "name_ko": "산타페오리지날",
+    "reportnum": "1992044300311"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300311/1992044300311-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300311/1992044300311-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300311/1992044300311-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,커피파우더(고형분95%이상/커피:베트남100%)0.81%,백설탕,탈지분유(우유,국산),식물성크림,탄산수소나트륨,유화제,합성착향료(커피향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300311/1992044300311-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(150ml) 총 1회 제공량(150ml) 1회 제공량 당 함량:열량 60kcal, 탄수화물 12g(4%), 당류 9g, 단백질 1g(2%), 지방 0g(0%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 40mg(2%) *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300311/1992044300311-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피파우더",
+        "origin": "베트남산",
+        "amount": "0.81%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "95%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:05:39"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 9.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 150.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1개(150ml)",
+    "collected_at": "2026-03-03 19:05:39"
+  }
+}

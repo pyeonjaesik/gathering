@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "리얼너트 & 블루베리",
+    "reportnum": "2010036007364"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010036007364/2010036007364-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010036007364/2010036007364-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010036007364/2010036007364-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "구운아몬드 30%[아몬드(미국)100%], 호두 20%[호두(미국산)100%], 구운캐슈너트 20%[캐슈너트(인도산)100%], 건크랜베리 20%[크랜베리(미국산)54%,설탕,해바라기유], 건블루베리 10%[블루베리(미국산)70%,설탕,구연산,천연블루베리향,해바라기유,소르빈산칼륨(합성보존료)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010036007364/2010036007364-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 NUTRITION FACTS 1회 제공량 10g 총 2.5회 제공량 25g(130 kcal), 1회 제공량당 함량 : 열량 50 kcal, 탄수화물 4g(1%), 당류 2g, 단백질 1g(2%), 지방 4g(8%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 0mg(0%) *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010036007364/2010036007364-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "구운아몬드",
+        "origin": "미국산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "호두",
+            "origin": "미국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운캐슈너트",
+        "origin": "인도산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "캐슈너트",
+            "origin": "인도산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건크랜베리",
+        "origin": "미국산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "origin": "미국산",
+            "amount": "54%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건블루베리",
+        "origin": "미국산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리",
+            "origin": "미국산",
+            "amount": "70%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연블루베리향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르빈산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:24"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 2.0,
+    "protein_g": 1.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 10g",
+    "collected_at": "2026-03-04 04:23:24"
+  }
+}

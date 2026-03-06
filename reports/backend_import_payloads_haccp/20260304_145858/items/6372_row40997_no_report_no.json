@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "명품골드 우리통쌀 고추장",
+    "reportnum": "2011044405021"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405021/2011044405021-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405021/2011044405021-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405021/2011044405021-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿,혼합양념(중국산)[태양초고춧가루9.8%,정제소금,마늘,양파],쌀21.2%(국산),천일염(국산),백설탕,주정,분말혼합양념(중국산)[태양초고춧가루0.3%],고춧가루0.9%,알파미분,효모추출물,종국",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405021/2011044405021-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "14kg\n<100g당 함량 %영양성분 기준치>\n열량207kcal, 탄수화물44g 13%, 당류27g, 단백질4g 7%, 지방1.7g 3%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨2200mg 110%\n%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011044405021/2011044405021-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "태양초고춧가루",
+            "amount": "9.8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "21.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "태양초고춧가루",
+            "amount": "0.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "amount": "0.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:59"
+  },
+  "nutrition": {
+    "kcal": 207.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 27.0,
+    "protein_g": 4.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 2200.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:30:59"
+  }
+}

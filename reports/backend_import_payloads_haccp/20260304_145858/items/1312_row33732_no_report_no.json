@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "사루비아",
+    "reportnum": "1982048102165"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982048102165/1982048102165-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982048102165/1982048102165-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982048102165/1982048102165-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루1(밀 미국산),백설탕,밀가루2(미국산,캐나다산),혼합식용유,우리밀통밀가루(국산),볶음참깨,당류가공품(우유,대두),쇼트닝,오곡분말(보리,현미,찹쌀,백태,참깨),팽창제,볶음검은참깨,정제소금,경성가공치즈,합성착향료(밀크향),효소제1,효소제2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982048102165/1982048102165-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(30g)당 함량 총6회 제공량(180g) 열량 135kcal, 탄수화물 22g 7%,당류 6g, 단백질 2.5g 4%,지방 4.3g 9%, 포화지방 1.9g 13%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 110mg 6% (%)는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1982/1982048102165/1982048102165-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루1",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루2",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우리밀통밀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오곡분말",
+        "sub_ingredients": [
+          {
+            "name": "보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팽창제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음검은참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:57:44"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 6.0,
+    "protein_g": 2.5,
+    "fat_g": 4.3,
+    "saturated_fat_g": 1.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 110.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(30g)당 함량",
+    "collected_at": "2026-03-03 14:57:44"
+  }
+}

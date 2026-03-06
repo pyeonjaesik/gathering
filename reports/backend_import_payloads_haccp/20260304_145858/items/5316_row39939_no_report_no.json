@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "유기농현미가빠띠쉐를만나면베리삼총사",
+    "reportnum": "2006037812226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812226/2006037812226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812226/2006037812226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812226/2006037812226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농원료 총 함량 : 97% 유기농현미(국내산)97%, 딸기농축액(국내산,고형분 56%)1.5%, 블루베리농축액(미국산,고형분 55%)1%, 오디(국내산)0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812226/2006037812226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 30g 115kcal 총 내용량 당 1일 영양성분 기준치에 대한 비율 나트륨 0mg 0%(0%) 탄수화물 23g 7%(26%) 당류 0g 0% 지방 1.1g 2%(4%) 트랜스지방 0g 포화지방 0g 0% 콜레스테롤 - 0% 단백질 3g 5%(20%) 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다. *()안의 영양성분 기준치 : 2015년 한국인 영양소 섭취기준 (6~11 개월)에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037812226/2006037812226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농원료",
+        "amount": "97%",
+        "sub_ingredients": [
+          {
+            "name": "유기농현미",
+            "origin": "국내산",
+            "amount": "97%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기농축액",
+            "origin": "국내산",
+            "amount": "1.5%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "56%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "블루베리농축액",
+            "origin": "미국산",
+            "amount": "1%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "55%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오디",
+            "origin": "국내산",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:06"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 0.0,
+    "fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 3.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 30g",
+    "collected_at": "2026-03-04 03:58:06"
+  }
+}

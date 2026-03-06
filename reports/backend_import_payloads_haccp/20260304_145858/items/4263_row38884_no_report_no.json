@@ -1,0 +1,53 @@
+{
+  "product": {
+    "name_ko": "맛있는 깐 메추리알",
+    "reportnum": "1999026202028"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999026202028/1999026202028-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999026202028/1999026202028-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999026202028/1999026202028-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "메추리알99.80%(국산),식초0.20%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999026202028/1999026202028-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/1999026202028/1999026202028-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "메추리알",
+        "origin": "국산",
+        "amount": "99.80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식초",
+        "amount": "0.20%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:00:56"
+  }
+}

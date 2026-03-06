@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "국산콩 두부 부침용",
+    "reportnum": "1981037214037"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981037214037/1981037214037-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981037214037/1981037214037-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981037214037/1981037214037-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두100%(국산),천일염천연응고제100[조제해수염화마그네슘,현미유,올리브유]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981037214037/1981037214037-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/1981037214037/1981037214037-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염천연응고제",
+        "amount": "100",
+        "sub_ingredients": [
+          {
+            "name": "조제해수염화마그네슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리브유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:49:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 95.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 8.0,
+    "fat_g": 7.0,
+    "sugar_g": 0.75,
+    "sodium_mg": 10.0,
+    "dietary_fiber_g": 0.8,
+    "calcium_mg": 31.0,
+    "iron_mg": 1.3,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 14:49:00"
+  }
+}

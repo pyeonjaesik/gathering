@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "닭가슴살 슬라이스햄",
+    "reportnum": "19940532001167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001167/19940532001167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001167/19940532001167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001167/19940532001167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(국내산)85.02%[닭가슴살(국내산)60.01%],정제수,정제소금(국내산),채종유(호주산),백설탕,카라기난,비어부르스트,혼합제제(폴리인산나트륨,피로인산나트륨)L-글루탐산나트륨(향미증진제),바베큐시즈닝,아로비타[L-글루탐산나트륨(향미증진제)],L-아스코브산나트륨,혼합제제(스모크오일,대두유],아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001167/19940532001167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 150g /220kcal 나트륨 1,020mg 51%, 탄수화물 4g 1%, 당류 4g 4%, 지방 11g 20%, 트랜스지방 0.5g미만, 포화지방 3.3g 22%, 콜레스테롤 100mg 33%, 단백질 28g 51% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940532001167/19940532001167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "85.02%",
+        "sub_ingredients": [
+          {
+            "name": "닭가슴살",
+            "origin": "국내산",
+            "amount": "60.01%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비어부르스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바베큐시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아로비타",
+        "sub_ingredients": [
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-아스코브산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:06:04"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "sodium_mg": 1020.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 4.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 3.3,
+    "cholesterol_mg": 100.0,
+    "protein_g": 28.0,
+    "basis_amount": 150.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 150g",
+    "collected_at": "2026-03-03 20:06:04"
+  }
+}

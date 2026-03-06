@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "정기품 북촌옥 참기름",
+    "reportnum": "2002035548167"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002035548167/2002035548167-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002035548167/2002035548167-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002035548167/2002035548167-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "국산 참깨 100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002035548167/2002035548167-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100ml \n<100ml당 함량>\n열량827kcal, 탄수화물0g (0%), 단백질0g (0%), 지방91.6g (184%), 포화지방11.7g (78%), 트랜스지방0g, 콜레스테롤0mg (0%), 나트륨0mg (0%)\n()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002035548167/2002035548167-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:38:09"
+  },
+  "nutrition": {
+    "kcal": 827.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 91.6,
+    "saturated_fat_g": 11.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml",
+    "collected_at": "2026-03-04 03:38:09"
+  }
+}

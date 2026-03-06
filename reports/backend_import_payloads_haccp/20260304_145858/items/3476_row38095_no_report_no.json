@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "사조재래김",
+    "reportnum": "1994048712618"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048712618/1994048712618-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048712618/1994048712618-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048712618/1994048712618-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김(국산)45.2%,카놀라유(수입산),들기름(들깨:중국산)9.9%,맛소금[정제소금(국산),L-글루타민산나트륨(향미증진제),향미증진제],참기름,허브추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048712618/1994048712618-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Nutrition Facts / 영양성분, Serving Size 1/2 (2.2g) / 1회 제공량 1/2장 (2.2g), Serving Per Container About 18/총 약 18회 제공량 (40g), Amount Per Serving 1회 제공량당 함량 %Daily Value %영양소 기준치, Calories / 열량 13 kcal, Total Carbohydrate / 탄수화물 0.5g 0%, Sugars / 당류 0g, Protein / 단백질 0.5g 1%, Total Fat / 지방 1.1g 2%, Saturated Fat / 포화지방 0.1g 1%, Trans Fat / 트랜스지방 0g, Cholesterol / 콜레스테롤 0mg 0%, Sodium / 나트륨 35mg 2%, * %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048712618/1994048712618-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "45.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "amount": "9.9%",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "맛소금",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:04:34"
+  },
+  "nutrition": {
+    "kcal": 13.0,
+    "carbohydrate_g": 0.5,
+    "sugar_g": 0.0,
+    "protein_g": 0.5,
+    "fat_g": 1.1,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 35.0,
+    "basis_amount": 2.2,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2장 (2.2g)",
+    "collected_at": "2026-03-03 20:04:34"
+  }
+}

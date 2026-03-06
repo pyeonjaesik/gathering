@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "돌 망고 젤리",
+    "reportnum": "20060622020143"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020143/20060622020143-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020143/20060622020143-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020143/20060622020143-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,망고20%(베트남산),백설탕,망고농축퓨레(망고100%,이스라엘산),사과농축과즙액(사과100%,국내산),혼합제제(잔탄검,로커스트빈검,젤란검,젖산칼슘,구연산삼나트륨,말토덱스트린),산도조절제,합성착향료(망고향),비타민C,치자황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020143/20060622020143-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020143/20060622020143-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고",
+        "origin": "베트남산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고농축퓨레",
+        "origin": "이스라엘산",
+        "amount": "망고100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙액",
+        "origin": "국내산",
+        "amount": "사과100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트빈검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 98.0,
+    "carbohydrate_g": 19.0,
+    "protein_g": 0.0,
+    "fat_g": 2.3,
+    "sugar_g": 14.0,
+    "sodium_mg": 25.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "200g",
+    "collected_at": "2026-03-04 04:00:58"
+  }
+}

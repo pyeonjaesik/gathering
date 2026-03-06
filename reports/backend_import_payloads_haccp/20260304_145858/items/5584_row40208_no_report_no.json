@@ -1,0 +1,73 @@
+{
+  "product": {
+    "name_ko": "유기현미스넥",
+    "reportnum": "200704640153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704640153/200704640153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704640153/200704640153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704640153/200704640153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기현미(국산)99.6%,황토알카리소금,스테비아잎분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704640153/200704640153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1/2봉지(35g) 총 2회 제공량(70g)\n<1회 제공량 당 함량 *%영양소기준치>\n열량120kcal ,탄수화물29g 9%, 식이섬유2g 8%, 당류0g, 단백질2g 3%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨100mg 5%, 비타민A0μgRE 0%, 비타민C0mg 0%, 칼슘0mg 0%, 철0.7mg 5%\n*%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/200704640153/200704640153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기현미",
+        "origin": "국산",
+        "amount": "99.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황토알카리소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비아잎분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:55"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 29.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 100.0,
+    "calcium_mg": 0.0,
+    "iron_mg": 0.7,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1/2봉지(35g)",
+    "collected_at": "2026-03-04 04:05:55"
+  }
+}

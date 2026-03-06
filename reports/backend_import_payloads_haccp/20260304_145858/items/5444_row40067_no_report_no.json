@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "쥬시톡패션후르츠",
+    "reportnum": "20060622020122"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020122/20060622020122-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020122/20060622020122-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020122/20060622020122-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쥬시톡패션후르츠20%,나타데코코10%,복숭아농축액1%,정제수57.18%,백설탕10.6%,카라기난검0.86%,구연산0.23%, 복숭아향0.08%,자몽향0.05%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020122/20060622020122-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분(90g%영양소기준치):열량89kcal, 탄수화물22g (7%), 당류2g, 단백질0g (0%), 지방0g (0%), 포화지방0g (0%), 트렌스지방0g, 콜레스테롤0mg, 나트륨30mg (2%) %영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020122/20060622020122-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쥬시톡패션후르츠",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타데코코",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축액",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "57.18%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "amount": "10.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난검",
+        "amount": "0.86%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "amount": "0.23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아향",
+        "amount": "0.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽향",
+        "amount": "0.05%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:56"
+  },
+  "nutrition": {
+    "kcal": 89.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 2.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "90g",
+    "collected_at": "2026-03-04 04:00:56"
+  }
+}

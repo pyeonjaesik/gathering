@@ -1,0 +1,263 @@
+{
+  "product": {
+    "name_ko": "파르페망고",
+    "reportnum": "2005047600283"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600283/2005047600283-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600283/2005047600283-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600283/2005047600283-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,기타올리고당(물엿,이소말토올리고당,과당),혼합탈지분유[탈지분유(미국산/우유),유청분말(수입산)],가공버터(뉴질랜드산)[유지방,유크림,식물성유지,버터향,구연산,카로틴,d-토코페롤(혼합형)(대두)],망고퓨레(인도산)2.3%,야자경화유,망고농축퓨레1.24%[망고농축액(이스라엘산)50%,아셉틱망고퓨레(필리핀산)30%,백설탕,패션프루트퓨레(베트남산)],유크림,액상과당,가공전지분,혼합제제(구아검,카라기난,글리세린지방산에스테르,알긴산나트륨,카르복시메탈셀룰로오스나트륨,메타인산나트륨,로커스트콩검,덱스트린,정제포도당),합성착향료(망고향),합성착향료(바닐라향),안나토색소,구연산,로커스트콩검,구아검,카로틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600283/2005047600283-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(305ml)/총1회 제공량(305ml) 1회 제공량당 함량  *%영양소 기준치: 열량 282kcal,탄수화물46g 14%,당류36g,단백질2g 4%,지방10g 20%, 포화지방7g 47%, 트랜스지방0g, 콜레스테롤 15mg 5%, 나트륨62mg 3%,   *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600283/2005047600283-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타올리고당",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이소말토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "유지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카로틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형(대두)",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "망고퓨레",
+        "origin": "인도산",
+        "amount": "2.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고농축퓨레",
+        "amount": "1.24%",
+        "sub_ingredients": [
+          {
+            "name": "망고농축액",
+            "origin": "이스라엘산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아셉틱망고퓨레",
+            "origin": "필리핀산",
+            "amount": "30%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "패션프루트퓨레",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공전지분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알긴산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메탈셀룰로오스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "안나토색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로커스트콩검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카로틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:28"
+  },
+  "nutrition": {
+    "kcal": 282.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 36.0,
+    "protein_g": 2.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 62.0,
+    "basis_amount": 305.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량(305ml)",
+    "collected_at": "2026-03-04 03:55:28"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "정성가득 고추장",
+    "reportnum": "19880449001211"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001211/19880449001211-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001211/19880449001211-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001211/19880449001211-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물엿,소맥분(밀:미국산,호주산),정제수,고추양념(고춧가루5.3%,정제소금,마늘,양파/중국산),고추양념분말(고춧가루0.8%/중국산),정제소금,곡류가공품,주정,장류베이스,종국",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001211/19880449001211-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880449001211/19880449001211-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "amount": "5.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추양념분말",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "amount": "0.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "장류베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 230.0,
+    "carbohydrate_g": 47.0,
+    "protein_g": 6.0,
+    "fat_g": 2.0,
+    "sugar_g": 31.0,
+    "sodium_mg": 2220.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 03:25:49"
+  }
+}

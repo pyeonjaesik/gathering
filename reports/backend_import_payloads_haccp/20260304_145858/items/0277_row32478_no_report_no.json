@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "아이스티 복숭아맛",
+    "reportnum": "1971037200192"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200192/1971037200192-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200192/1971037200192-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200192/1971037200192-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "복숭아농축과즙분말[복숭아농축액(고형분68%,미국산)4.8%,덱스트린,합성착향료(복숭아향),구연산나트륨,카라멜]5%,홍차추출분말0.2%(독일산),백설탕,구연산(무수),분말카라멜,젖산칼슘(칼슘13%)0.82%,비타민C0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200192/1971037200192-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(14g)/총100회제공량(1,400g), 1회제공량당함량 *%영양소기준치, 열량55kcal, 탄수화물14g 4%, 당류13g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g 0%, 콜레스테롤0mg 0%, 나트륨5mg 0%, 비타민C77mg 77%, 칼슘18mg 3%, *%영양소기준치:1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/1971037200192/1971037200192-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "복숭아농축과즙분말",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "복숭아농축액",
+            "origin": "미국산",
+            "amount": "4.8%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "68%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "복숭아향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍차추출분말",
+        "origin": "독일산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": [
+          {
+            "name": "무수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "amount": "0.82%",
+        "sub_ingredients": [
+          {
+            "name": "칼슘",
+            "amount": "13%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:24:50"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 13.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "calcium_mg": 18.0,
+    "basis_amount": 14.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1포(14g)",
+    "collected_at": "2026-03-03 13:24:50"
+  }
+}

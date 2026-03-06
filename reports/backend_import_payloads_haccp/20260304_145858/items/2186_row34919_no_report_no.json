@@ -1,0 +1,101 @@
+{
+  "product": {
+    "name_ko": "포카칩 체다&사워크림",
+    "reportnum": "19870415003286"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003286/19870415003286-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003286/19870415003286-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003286/19870415003286-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "생감자 90%(미국산), 혼합식용유[팜올레인유 말레이시아산, 해바라기유 외국산(우크라이나산, 말레이시아산, 스페인산)], 체다&사워크림씨즈닝[크리미풍미베이스(짭짤한맛인핸서(가공소금 미국산)), 버터리치즈파우더(미국산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003286/19870415003286-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 66 g 30 g당 167 kcal, 30 g당 1일 영양성분 기준치에 대한 비율 / 총 내용량당, 나트륨 110mg 6% / 240mg 12%, 탄수화물 15g 5% / 33g 10%, 당류 0.4g 0.4% / 1미만 1%, 지방 11g 20% / 25g 46%, 트랜스지방 0.1g / 0.5g미만, 포화지방 4.1g 27% / 9g 60%, 콜레스테롤 0mg 0% / 0mg 0%, 단백질 2g 4% / 4g 7%,  1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003286/19870415003286-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생감자",
+        "origin": "미국산",
+        "amount": "90%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 우크라이나산, 말레이시아산, 스페인산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "체다&사워크림씨즈닝",
+        "sub_ingredients": [
+          {
+            "name": "크리미풍미베이스",
+            "sub_ingredients": [
+              {
+                "name": "짭짤한맛인핸서",
+                "sub_ingredients": [
+                  {
+                    "name": "가공소금 미국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "버터리치즈파우더",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:39:36"
+  },
+  "nutrition": {
+    "kcal": 167.0,
+    "sodium_mg": 110.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 0.4,
+    "fat_g": 11.0,
+    "trans_fat_g": 0.1,
+    "saturated_fat_g": 4.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "30 g당",
+    "collected_at": "2026-03-03 16:39:36"
+  }
+}

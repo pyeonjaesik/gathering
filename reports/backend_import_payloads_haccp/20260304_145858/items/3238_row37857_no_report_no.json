@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "칠성스트롱사이다",
+    "reportnum": "19930242053355"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053355/19930242053355-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053355/19930242053355-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053355/19930242053355-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 액상과당, 백설탕, 이산화탄소, 구연산, 레몬라임향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053355/19930242053355-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 400ml당\n열량175kcal, 나트륨1% 10mg, 탄수화물14% 44g, 당류43% 43g\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930242053355/19930242053355-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬라임향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:28:29"
+  },
+  "nutrition": {
+    "kcal": 175.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 43.0,
+    "basis_amount": 400.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 400ml당",
+    "collected_at": "2026-03-03 19:28:29"
+  }
+}

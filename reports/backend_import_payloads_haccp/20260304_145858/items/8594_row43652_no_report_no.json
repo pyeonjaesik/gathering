@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "오쉐프 초고추장",
+    "reportnum": "2003049317582"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049317582/2003049317582-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049317582/2003049317582-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049317582/2003049317582-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장55%[밀가루(밀:외국산),물엿,혼합양념(중국산)(고춧가루6.5%),액상과당,정제소금],백설탕,정제수,발효식초9%,[맥아엑기스(겉보리:미국산),주정,발효영양원],물엿,혼합양념(중국산),액상과당,정제소금(중국산),구연산(산도조절제),L-글루탐산나트륨(향미증진제),마늘농축액,생강농축액,잔탄검,볶음참깨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049317582/2003049317582-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049317582/2003049317582-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "55%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합양념",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "고춧가루",
+                "amount": "6.5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "amount": "9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엑기스",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "겉보리",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효영양원",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합양념",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:27"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 220.0,
+    "carbohydrate_g": 47.0,
+    "protein_g": 5.0,
+    "fat_g": 1.1,
+    "sugar_g": 32.0,
+    "sodium_mg": 1760.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-04 03:48:27"
+  }
+}

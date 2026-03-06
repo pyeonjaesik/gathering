@@ -1,0 +1,133 @@
+{
+  "product": {
+    "name_ko": "당근사과듬뿍",
+    "reportnum": "20060622020132"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020132/20060622020132-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020132/20060622020132-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020132/20060622020132-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "당근사과즙(국산)60%,정제수,유기농설탕9.2%,프락토올리고당,비타민C,구연산삼나트륨,엠에스씨산탄검(혼합제제/산탄검,덱스트린),엠에스씨젤란검(혼합제제/젤란검,덱스트린),엠에스씨엘비쥐(혼합제제/로커스트콩검,덱스트린),수용성유청칼슘분말(우유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020132/20060622020132-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=75g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060622020132/20060622020132-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "당근사과즙",
+        "origin": "국산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "9.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "엠에스씨산탄검",
+        "sub_ingredients": [
+          {
+            "name": "산탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "엠에스씨젤란검",
+        "sub_ingredients": [
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "엠에스씨엘비쥐",
+        "sub_ingredients": [
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수용성유청칼슘분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 87.0,
+    "carbohydrate_g": 18.67,
+    "protein_g": 0.0,
+    "fat_g": 1.33,
+    "sugar_g": 10.67,
+    "sodium_mg": 33.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "75g",
+    "collected_at": "2026-03-04 04:01:05"
+  }
+}

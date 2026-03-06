@@ -1,0 +1,165 @@
+{
+  "product": {
+    "name_ko": "소들녘 참육개장",
+    "reportnum": "2015026208369"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208369/2015026208369-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208369/2015026208369-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208369/2015026208369-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,토란줄기(미얀마산)6.43%,쇠고기(호주산)4.82%,숙주(녹두:중국산),무,대파,고춧가루,고사리,간마늘,육개장다데기,진사골엑기스-SW(사골:호주산),복합조미식품,국간장(대두,밀),비프엑기스-S(쇠고기:호주산),후추,정제소금,핵산(향미증진제),L-글루타민산나트륨(향미증진제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208369/2015026208369-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양1회제공량(500g) 총 500g/100g당 14kcal 1일영양성분기준치에 대한 비율 나트륨 288mg 14%, 탄수화물 1g 0%, 당류0g 0%, 지방 1.1g 2%, 트랜스지방 0g, 포화지방 0.4g 3%, 콜레스테롤 2mg 1%,단백질 1g 2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208369/2015026208369-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란줄기",
+        "origin": "미얀마산",
+        "amount": "6.43%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기",
+        "origin": "호주산",
+        "amount": "4.82%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숙주",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고사리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육개장다데기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "진사골엑기스-SW",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "사골",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국간장",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프엑기스-S",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핵산",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:16"
+  },
+  "nutrition": {
+    "sodium_mg": 288.0,
+    "carbohydrate_g": 1.0,
+    "sugar_g": 0.0,
+    "fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.4,
+    "cholesterol_mg": 2.0,
+    "protein_g": 1.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(500g)",
+    "collected_at": "2026-03-04 04:44:16"
+  }
+}

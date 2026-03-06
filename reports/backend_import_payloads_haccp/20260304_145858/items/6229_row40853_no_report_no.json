@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "우리밀로 만든 베이비볼",
+    "reportnum": "2010037238637"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238637/2010037238637-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238637/2010037238637-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238637/2010037238637-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(우리밀100%,밀,국산),감자전분U(감자전분,분말 • 결정포도당),유기설탕,식물성유지(팜유류,포티엄알40),전란액(계란),산도조절제,유당(우유),유청분말,정제염,해조칼슘,초유분말,영양강화제,합성착향료(밀크향,바닐린),효소제제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238637/2010037238637-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(50g) 총 2회 제공량 (100g)\n<1회제공량당 함량 *%영양소기준치>\n열량215kcal, 탄수화물39g 12%, 당류8g, 단백질4g 7%, 지방5g 10%, 포화지방3.6g 24%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨210mg 11%, 비타민B₁0.5mg 50%, 비타민B₂0.9mg 75%, 철분5.5mg 37%, 칼슘104mg 15%\n*%영양소기준치:1일영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238637/2010037238637-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "우리밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분U",
+        "sub_ingredients": [
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말 • 결정포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜유류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포티엄알40",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초유분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:52"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "carbohydrate_g": 39.0,
+    "sugar_g": 8.0,
+    "protein_g": 4.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 3.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 210.0,
+    "iron_mg": 5.5,
+    "calcium_mg": 104.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(50g)",
+    "collected_at": "2026-03-04 04:24:52"
+  }
+}

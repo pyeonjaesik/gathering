@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "천지인홍천톤골드",
+    "reportnum": "2010044901612"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901612/2010044901612-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901612/2010044901612-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901612/2010044901612-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "홍삼농축액(홍삼성분70mg/g이상,고형분60%,국산)0.4%[※원료삼배합비율:홍삼근70%,홍미삼30%],정제수,액상과당,액상프락토올리고당,슈가시럽,황정농축액(국산),대추농축액(국산),계피농축액,구기자농축액(국산),구연산,구연산나륨,타우린,합성착향료(홍삼향,쌍화향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901612/2010044901612-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포(50ml) 총10회제공량(500mL), 1회제공량당함량 *%영양성분기준치, 열량35kcal, 탄수화물9g 3%, 당류4g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0%, *%영양소분기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901612/2010044901612-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "0.4%",
+        "sub_ingredients": [
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원료삼배합비율",
+            "sub_ingredients": [
+              {
+                "name": "홍삼근",
+                "amount": "70%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "홍미삼",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "슈가시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황정농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "계피농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구기자농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "홍삼향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌍화향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:25:50"
+  },
+  "nutrition": {
+    "kcal": 35.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1포(50ml)",
+    "collected_at": "2026-03-04 04:25:50"
+  }
+}

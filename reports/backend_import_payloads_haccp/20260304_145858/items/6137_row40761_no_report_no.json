@@ -1,0 +1,69 @@
+{
+  "product": {
+    "name_ko": "애심목장 플레인요구르트",
+    "reportnum": "201002620233"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620233/201002620233-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620233/201002620233-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620233/201002620233-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유95%(국산),유기농설탕 4%,유산균",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620233/201002620233-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 영양소/함량[열량(kcal/100g)84,탄수화물(g/100g)8,단백질(g/100g)7,당류(g/100g)3,지방(g/100g)4,포화지방(g/100g)2,트렌스지방(g/100g)0,콜리스테롤(g/100g)10,나트륨(mg/100g)62]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201002620233/201002620233-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:20"
+  },
+  "nutrition": {
+    "kcal": 84.0,
+    "carbohydrate_g": 8.0,
+    "protein_g": 7.0,
+    "sugar_g": 3.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 2.0,
+    "sodium_mg": 62.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:22:20"
+  }
+}

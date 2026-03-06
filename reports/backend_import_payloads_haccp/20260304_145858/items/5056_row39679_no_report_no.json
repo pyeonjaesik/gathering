@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "무농약무로 만든 백색김밥단무지",
+    "reportnum": "20040472026218"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040472026218/20040472026218-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040472026218/20040472026218-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040472026218/20040472026218-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "절임무50%[무98%(국산/무농약재배이상),식염],정제수,고과당,발효식초,단무지조미액베이스2,효소처리스테비아,패각발효칼슘(조개류:국산),식염(국산),사과산,젖산,비타민C,과일야채발효당,구연산,Lac.plantarumPMO08(식물성유산균)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040472026218/20040472026218-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(49g)/총약6회제공량(310g) *()안의수치는1일영양성분기준치에대한비율임 1회제공량당함량, 열량5kcal, 탄수화물2g(1%), 식이섬유1g미만(3%), 당류2g, 단백질0g(0%), 지방0g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨320mg(16%), 비타민A0㎍RE(0%)/비타민C0mg(0%)/칼슘21mg(3%)/철0mg(0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/20040472026218/20040472026218-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "절임무",
+        "amount": "50%",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "origin": "국산",
+            "amount": "98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단무지조미액베이스2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "패각발효칼슘",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "조개류",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식염",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과일야채발효당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "Lac.plantarumPMO08",
+        "sub_ingredients": [
+          {
+            "name": "식물성유산균",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:51"
+  },
+  "nutrition": {
+    "kcal": 5.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 2.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 320.0,
+    "calcium_mg": 21.0,
+    "iron_mg": 0.0,
+    "basis_amount": 49.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(49g)",
+    "collected_at": "2026-03-04 03:51:51"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "신송참맛고추장",
+    "reportnum": "1988044900179"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/1988044900179/1988044900179-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/1988044900179/1988044900179-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/1988044900179/1988044900179-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물엿,소맥분(밀:미국산,호주산),정제수,고추양념(고춧가루5.3%,정제소금,마늘,양파/중국산),고추양념분말(찐밀쌀분,고춧가루1.5%,정제소금,포도당,마늘가루/중국산),정제소금,곡류가공품,주정,L-글루타민산나트륨(향미증진제),종국",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/1988044900179/1988044900179-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=14000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/1988044900179/1988044900179-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추양념",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "고춧가루",
+            "amount": "5.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고추양념분말",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "찐밀쌀분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "amount": "1.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "종국",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:05"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 240.0,
+    "carbohydrate_g": 50.0,
+    "protein_g": 6.0,
+    "fat_g": 1.7,
+    "sugar_g": 25.0,
+    "sodium_mg": 2110.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "14000g",
+    "collected_at": "2026-03-04 03:26:05"
+  }
+}

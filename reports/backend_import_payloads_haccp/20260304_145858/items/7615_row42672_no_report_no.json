@@ -1,0 +1,165 @@
+{
+  "product": {
+    "name_ko": "서주 버터와플",
+    "reportnum": "1994048423999"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048423999/1994048423999-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048423999/1994048423999-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048423999/1994048423999-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(밀;미국산),설탕,가공버터(외국산;호주산,네덜란드산;버터유,코코넛유,무지방고형분),전란액(국내산),쇼트닝(팜유(말레이시아산),팜올레인유(말레이시아산)),전지분골드1(유청(외국산;프랑스,캐나다,미국),유당(미국산),버터유,팜유,유크림),정제소금,산도조절제,레시틴,합성향료(버터향),당류가공품,복합조미식품,바닐린",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048423999/1994048423999-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=146g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994048423999/1994048423999-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지방고형분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전지분골드1",
+        "sub_ingredients": [
+          {
+            "name": "유청",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유당",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:04:23"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 483.0,
+    "carbohydrate_g": 71.92,
+    "protein_g": 6.16,
+    "fat_g": 19.18,
+    "sugar_g": 33.56,
+    "sodium_mg": 219.0,
+    "cholesterol_mg": 41.1,
+    "saturated_fat_g": 10.96,
+    "trans_fat_g": 0.21,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "146g",
+    "collected_at": "2026-03-03 20:04:23"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "메밀생면",
+    "reportnum": "19880445009444"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009444/19880445009444-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009444/19880445009444-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009444/19880445009444-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "혼합메밀가루39.6%[중국산/메밀가루89%,글루텐(밀),구아검],소맥분(밀,호주산),글루텐,혼합제제(초산전분,덱스트린),변성전분,주정,정제염,도토리가루,증점제PU[유청단백분말(우유),산탄검,카라기난,옥수수전분],유화유지(물엿,대두유,유화제,주정),산미료(산도조절제,정제수,말티톨시럽),흑미가루,코코아분말,유카추출분말(유카추출물,말토덱스트린)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009444/19880445009444-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=600g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009444/19880445009444-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "혼합메밀가루",
+        "origin": "중국산",
+        "amount": "39.6%",
+        "sub_ingredients": [
+          {
+            "name": "메밀가루",
+            "amount": "89%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루텐",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "초산전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "도토리가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증점제PU",
+        "sub_ingredients": [
+          {
+            "name": "유청단백분말",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화유지",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산미료",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑미가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유카추출분말",
+        "sub_ingredients": [
+          {
+            "name": "유카추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:32"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 278.0,
+    "carbohydrate_g": 52.83,
+    "protein_g": 12.5,
+    "fat_g": 2.33,
+    "sugar_g": 2.33,
+    "sodium_mg": 288.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "600g",
+    "collected_at": "2026-03-04 03:25:32"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "product": {
+    "name_ko": "초코칩쿠키",
+    "reportnum": "2008035583660"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583660/2008035583660-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583660/2008035583660-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583660/2008035583660-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "초코칩[싱가포르산/백설탕,코코아매스,코코아버터,레시틴(대두)25%,우리밀(밀:국내산)21%,가공버터[뉴질랜드산/버터오일(우유)67.9%,크림,야자경화유]17%,전란액(계란:유정란,국내산)6.3%,쌀조청[쌀(국내산92%,엿기름(국내산)8%]6.3%,꿀(국내산)6.3%,아몬드분말(미국산)5.3%,코코넛분말(필리핀산)5.3%,유기농설탕(브라질산)5%,베이킹파우더(합성팽창제:탄산수소나트륨,산성피로인산나트륨,전분,제일인산칼슘,젖산칼슘),천연착향료(바닐라향),산도조절제(탄산수소나트륨),정제소금(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583660/2008035583660-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=40g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583660/2008035583660-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "초코칩",
+        "origin": "싱가포르산",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "amount": "25%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "우리밀",
+            "origin": "국내산",
+            "amount": "21%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공버터",
+            "origin": "뉴질랜드산",
+            "amount": "17%",
+            "sub_ingredients": [
+              {
+                "name": "버터오일",
+                "amount": "67.9%",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "크림",
+                "sub_ingredients": []
+              },
+              {
+                "name": "야자경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "전란액",
+            "origin": "국내산",
+            "amount": "6.3%",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유정란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쌀조청",
+            "amount": "6.3%",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "국내산",
+                "amount": "92%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "엿기름",
+                "origin": "국내산",
+                "amount": "8%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "꿀",
+            "origin": "국내산",
+            "amount": "6.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아몬드분말",
+            "origin": "미국산",
+            "amount": "5.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛분말",
+            "origin": "필리핀산",
+            "amount": "5.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "origin": "브라질산",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베이킹파우더",
+            "sub_ingredients": [
+              {
+                "name": "합성팽창제",
+                "sub_ingredients": [
+                  {
+                    "name": "탄산수소나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "산성피로인산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "제일인산칼슘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "젖산칼슘",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "천연착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": [
+              {
+                "name": "탄산수소나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 475.0,
+    "carbohydrate_g": 55.0,
+    "protein_g": 5.0,
+    "fat_g": 25.0,
+    "sugar_g": 30.0,
+    "sodium_mg": 250.0,
+    "cholesterol_mg": 87.5,
+    "saturated_fat_g": 22.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "40g",
+    "collected_at": "2026-03-04 04:08:12"
+  }
+}

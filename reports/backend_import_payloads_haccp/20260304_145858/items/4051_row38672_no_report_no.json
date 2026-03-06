@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "멸치조림",
+    "reportnum": "19980257052241"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052241/19980257052241-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052241/19980257052241-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052241/19980257052241-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멸치35%(국내산),아몬드15%(미국산),설탕,옥수수기름{옥수수(외국산:러시아,헝가리,세르비아등)},양조간장11.17%{천일염(호주산,국내산),탈지대두(인도산),소맥(밀:미국산),과당,주정},물엿,정제수,참기름,참깨(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052241/19980257052241-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 100g당 함량 *%영양성분 기준치 열량373kcal 탄수화물24g 7% 당류21g 단백질34g 62% 지방16g 31% 포화지방6g 40% 트랜스지방0g 콜레스테롤105mg 35% 나트륨2,170mg 109%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980257052241/19980257052241-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멸치",
+        "origin": "국내산",
+        "amount": "35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수기름",
+        "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "amount": "11.17%",
+        "sub_ingredients": [
+          {
+            "name": "천일염",
+            "origin": "호주산, 국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:35:16"
+  },
+  "nutrition": {
+    "kcal": 373.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 21.0,
+    "protein_g": 34.0,
+    "fat_g": 16.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 105.0,
+    "sodium_mg": 2170.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g",
+    "collected_at": "2026-03-03 21:35:16"
+  }
+}

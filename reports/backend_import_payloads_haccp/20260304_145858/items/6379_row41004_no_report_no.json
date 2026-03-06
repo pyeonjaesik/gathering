@@ -1,0 +1,90 @@
+{
+  "product": {
+    "name_ko": "샛노랑 오리 바베큐 슬라이스",
+    "reportnum": "201104480142"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104480142/201104480142-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104480142/201104480142-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104480142/201104480142-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오리고기(국내산)96.88%,스모크시즈닝-1{복합스파이스AS-1[분리대두단백(대두/중국산),정제소금(국내산)],아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104480142/201104480142-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500g 100g당 344kcal, 100g당 1일 영양성분 기준치에 대한 비율, 나트륨 418mg 21%, 탄수화물 11g 3%, 당류 1g 1%, 지방 26g 48%, 트렌스지방 0g, 포화지방 8g 55%, 콜레스테롤 91mg 30%, 단백질 17g 30%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201104480142/201104480142-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리고기",
+        "origin": "국내산",
+        "amount": "96.88%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "복합스파이스",
+            "sub_ingredients": [
+              {
+                "name": "분리대두단백",
+                "origin": "중국산",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:31:21"
+  },
+  "nutrition": {
+    "kcal": 344.0,
+    "sodium_mg": 418.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 1.0,
+    "fat_g": 26.0,
+    "saturated_fat_g": 8.0,
+    "cholesterol_mg": 91.0,
+    "protein_g": 17.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:31:21"
+  }
+}

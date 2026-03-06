@@ -1,0 +1,395 @@
+{
+  "product": {
+    "name_ko": "피코크메밀소바",
+    "reportnum": "20070358265302"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265302/20070358265302-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265302/20070358265302-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265302/20070358265302-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*생메밀면:밀가루(밀:호주산,미국산,캐나다산),메밀가루-S[메밀가루40%(국산),소맥분60%(미국산,호주산)]19.58%,혼합제제(변성전분,말토덱스트린),변성전분,정제염(국산),흑미쌀가루,쎄니콜95(발효알콜95%,정제수),후레쉬-B1(산도조절제,글리신,정제염,정제수) *메밀장:정제수,진간장{정제수,산분해간장[소맥글루텐(밀:수입산)],정제소금9국산),양조간장[탈지대두(수입산),소맥(미국산),정제소금,종국],액상과당,주정},미향{정제수,액상과당,액상포도당,레몬식초[레몬농축과즙(레몬:이스라엘산),주정(국내산)],정제염,올리고당},고과당(옥수수전분),백설탕,가쓰오엑기스[말토덱스트린,정제염,훈연참치,미림,양조간장(대두,밀)},L-글루타민산나트륨(향미증진제),정제염,혼다시,다시마엑기스S,멸치추출 농축액(대두),5'-리보뉴클레오티드이나트륨,호박산소다,글리신,스테비오사이드 *와사비장:정제수,와사비분,액상과당,식초,무추출액,백설창,소르비톨액,고꾸미풍미액A-85 *동결건조파:파97%, 포도당, *구운김",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265302/20070358265302-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(210.7g)/ 총 2회 제공량(421.4g) 1회 제공량당 함량 *%영양소 기준치 영양소 기준치 열량 465 kcal - 탄수화물 98g 30% 328g 당류 6g - 단백질 14g 23% 60g 지방 2.1g 4% 50g 포화지방 0.2g 1% 15g 트랜스지방 0g - 콜레스테롤 0.6mg 0.2% 300mg 나트륨 2,810 mg 141% 2,000 mg 영양소기준치란? 4세이상 어린이부터 성인까지 1일 평균영양소 섭취 기준량을식약청 기준치에 의해 정해 놓은 것입니다. *%영양소 기준치 :1일영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265302/20070358265302-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "생메밀면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메밀가루-S",
+            "amount": "19.58%",
+            "sub_ingredients": [
+              {
+                "name": "메밀가루",
+                "origin": "국산",
+                "amount": "40%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "amount": "60%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미쌀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쎄니콜95",
+            "sub_ingredients": [
+              {
+                "name": "발효알콜",
+                "amount": "95%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "후레쉬-B1",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "메밀장",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진간장",
+            "sub_ingredients": [
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산분해간장",
+                "sub_ingredients": [
+                  {
+                    "name": "소맥글루텐",
+                    "origin": "수입산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "amount": "9",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양조간장",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "수입산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소맥",
+                    "origin": "미국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제소금",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "종국",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미향",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레몬식초",
+            "sub_ingredients": [
+              {
+                "name": "레몬농축과즙",
+                "origin": "이스라엘산",
+                "sub_ingredients": [
+                  {
+                    "name": "레몬",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "주정",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고과당",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가쓰오엑기스",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "훈연참치",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "amount": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼다시",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치추출 농축액",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박산소다",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비오사이드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "와사비장",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "와사비분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무추출액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설창",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비톨액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고꾸미풍미액A-85",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "동결건조파",
+        "amount": "97%",
+        "sub_ingredients": [
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운김",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:03:58"
+  },
+  "nutrition": {
+    "kcal": 465.0,
+    "carbohydrate_g": 98.0,
+    "sugar_g": 6.0,
+    "protein_g": 14.0,
+    "fat_g": 2.1,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.6,
+    "sodium_mg": 2810.0,
+    "basis_amount": 210.7,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(210.7g)",
+    "collected_at": "2026-03-04 04:03:58"
+  }
+}

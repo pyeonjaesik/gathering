@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name_ko": "충남대학교 산양유요구르트",
+    "reportnum": "200804480106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480106/200804480106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480106/200804480106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480106/200804480106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "산양유(국산)93%함량,프락토올리고당6.3%,유산균배양액0.1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480106/200804480106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 160kcal, 탄수화물 15g(4%), 당류 15g, 단백질 8g(13%), 지방 8g(15%), 포화지방 5g(32%), 트렌스지방 0g, 콜레스테롤 22mg(7%), 나트륨 80mg(4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200804480106/200804480106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "산양유",
+        "origin": "국산",
+        "amount": "93%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "amount": "6.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:15"
+  },
+  "nutrition": {
+    "kcal": 160.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "protein_g": 8.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 5.0,
+    "cholesterol_mg": 22.0,
+    "sodium_mg": 80.0,
+    "collected_at": "2026-03-04 04:12:15"
+  }
+}

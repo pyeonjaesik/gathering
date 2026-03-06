@@ -1,0 +1,487 @@
+{
+  "product": {
+    "name_ko": "종합코코넛약과",
+    "reportnum": "20030372137320"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137320/20030372137320-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137320/20030372137320-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137320/20030372137320-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[코코넛약과] \n밀가루(중력분:미국,호주)68%,코코넛[코코넛분말(베트남)66%,황백당]9%,물엿(옥수수전분:수입산),채종유(카놀라유99.999%,규소수지)],계란,소주,설탕,꿀,생강,소금\n[초코코코넛약과] \n밀가루(중력분:미국,호주)68%,초코코코넛[코코넛분말(베트남)69%,분당,포도당,코코아분말(말레이지아)4%]9%,물엿(옥수수전분:수입산),채종유(카놀라유99.999%,규소수지),계란,소주,설탕,꿀,생강,소금\n[딸기향코코넛약과(합성딸기향첨가)]\n밀가루(중력분:미국,호주)68%,딸기향코코넛[코코넛분말(베트남)69%,분당,딸기향,정제수,천연색소레드칼라(코치닐추출색소,황산알류미늄,칼륨,구연산삼나트륨,덱스트린)]9%,물엿(옥수수전분:수입산),채종유(카놀라유99.999%,규소수지),계란,소주,설탕,꿀,생강,소금\n[블루베리향코코넛약과(합성블루베리향첨가)]\n밀가루(중력분:미국,호주)68%,블루베리향코코넛[코코넛분말(베트남)68.24%,분당,천연블루베리칼라,블루베리향,사과산,정제수]9%,물엿(옥수수전분:수입산),채종유(카놀라유99.999%,규소수지),계란,소주,설탕,꿀,생강,소금\n[커피코코넛약과]\n밀가루(중력분:미국,호주)68%,커피코코넛[코코넛분말(베트남)68.78%,분당,커피분말2.3%,코코아분말1.2%,커피향,헤이즐넛향]9%,물엿(옥수수전분:수입산),채종유(카놀라유99.999%,규소수지),계란,소주,설탕,꿀,생강,소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137320/20030372137320-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1개(20g) 총 12회 제공량(240g)\n<1회 제공량 당 함량 *%영양소 기준치>\n열량85kcal, 탄수화물14g 4%, 당류4g, 단백질1g 2%, 지방2.5g 5%, 포화지방1.6g 11%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0%\n ※1회 제공량당 함량(%영양소기준치:1일 영양소 기준치에 대한 비율)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137320/20030372137320-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "코코넛약과",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛분말",
+                "origin": "베트남산",
+                "amount": "66%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "황백당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "amount": "99.999%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초코코코넛약과",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초코코코넛",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛분말",
+                "origin": "베트남산",
+                "amount": "69%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "분당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아분말",
+                "amount": "4%",
+                "sub_ingredients": [
+                  {
+                    "name": "말레이지아",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "amount": "99.999%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기향코코넛약과(합성딸기향첨가)",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향코코넛",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛분말",
+                "origin": "베트남산",
+                "amount": "69%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "분당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "딸기향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연색소레드칼라",
+                "sub_ingredients": [
+                  {
+                    "name": "코치닐추출색소",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "황산알류미늄",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "칼륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "구연산삼나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "amount": "99.999%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리향코코넛약과(합성블루베리향첨가)",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블루베리향코코넛",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛분말",
+                "origin": "베트남산",
+                "amount": "68.24%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "분당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연블루베리칼라",
+                "sub_ingredients": []
+              },
+              {
+                "name": "블루베리향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "사과산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "amount": "99.999%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "커피코코넛약과",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피코코넛",
+            "amount": "9%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛분말",
+                "origin": "베트남산",
+                "amount": "68.78%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "분당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "커피분말",
+                "amount": "2.3%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "코코아분말",
+                "amount": "1.2%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "커피향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "헤이즐넛향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "amount": "99.999%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:41"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 14.0,
+    "sugar_g": 4.0,
+    "protein_g": 1.0,
+    "fat_g": 2.5,
+    "saturated_fat_g": 1.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1개(20g)",
+    "collected_at": "2026-03-04 03:47:41"
+  }
+}

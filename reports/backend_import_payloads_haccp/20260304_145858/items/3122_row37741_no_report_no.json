@@ -1,0 +1,196 @@
+{
+  "product": {
+    "name_ko": "쎈쿡 너비아니덮밥",
+    "reportnum": "19920461131203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131203/19920461131203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131203/19920461131203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131203/19920461131203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀56%(국산),제주돼지갈릭구이33.5%{돼지고기65.4%(제주산),백설탕,양파(국산),옥수수전분(외국산),분말난백,L-글루탐산나트륨(향미증진제),혼합제제(폴리인산나트륨,피로인산나트륨),고량색소,그릴향(합성착향료)},쎈쿡한그릇밥용소스9.3%[참기름(볶은참깨분:외국산)],양조간장[탈지대두(인도산),소맥(밀:미국산)],백설탕,D-소비톨액,정제소금},건당근(당근,포도당),건표고갓후레이크",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131203/19920461131203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 400g(200gx2개) 1개당(200g) 355kcal 1개당 1일 영양성분 기준치에 대한 비율 총내용량당 함량 나트륨 840mg 42%(1,680mg 84%)탄수화물 67g 21%(134g 41%),당류 3g 3%(6g 6%),지방 5.0g 9%(10g 19%),트랜스지방 0g(0g),포화지방 1.7g 11%(3g 23%),콜레스테롤 35mg 12%(70mg 23%),단백질 10g 18%(20g 36%) 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131203/19920461131203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "56%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제주돼지갈릭구이",
+        "amount": "33.5%",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "amount": "65.4%",
+            "sub_ingredients": [
+              {
+                "name": "제주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말난백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고량색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "그릴향",
+            "sub_ingredients": [
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쎈쿡한그릇밥용소스",
+        "amount": "9.3%",
+        "sub_ingredients": [
+          {
+            "name": "참기름",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "볶은참깨분",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "sub_ingredients": [
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건표고갓후레이크",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:13:34"
+  },
+  "nutrition": {
+    "kcal": 355.0,
+    "sodium_mg": 840.0,
+    "carbohydrate_g": 67.0,
+    "sugar_g": 3.0,
+    "fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 35.0,
+    "protein_g": 10.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1개당(200g)",
+    "collected_at": "2026-03-03 19:13:34"
+  }
+}

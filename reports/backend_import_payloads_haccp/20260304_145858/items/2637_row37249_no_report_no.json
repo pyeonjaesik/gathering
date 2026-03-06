@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "칠리토마토스파게티",
+    "reportnum": "19880445009196"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009196/19880445009196-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009196/19880445009196-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009196/19880445009196-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스파게티[듀럼세몰리나소맥분100%(밀,이탈리아산)],칠리토마토소스48.28%[정제수,토마토페이스트19.03%(미국산),양파(국산),양송이,향신지미베이스,순베이컨,홍고추페이스트1.97%(중국산),고추가루0.12%(중국산)],옥수수유,혼합제제(산도조절제,말티톨시럽,정제수)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009196/19880445009196-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(290g)/총 2회 제공량(580g) *%영양성분기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 %영양성분 기준치 : 열량 365kcal,탄수화물64g 19%, 식이섬유 6g 24%, 당류 12g, 단백질 12g 22%, 지방8g 16%, 포화지방 3.5g 23%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 840mg 42%, 비타민A 66㎍RE 9%, 비타민C 0mg 0%, 칼슘 72mg 10%, 철 2mg 17%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009196/19880445009196-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "듀럼세몰리나소맥분",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칠리토마토소스",
+        "amount": "48.28%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "amount": "19.03%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신지미베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "순베이컨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍고추페이스트",
+            "origin": "중국산",
+            "amount": "1.97%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추가루",
+            "origin": "중국산",
+            "amount": "0.12%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:24:17"
+  },
+  "nutrition": {
+    "kcal": 365.0,
+    "carbohydrate_g": 64.0,
+    "dietary_fiber_g": 6.0,
+    "sugar_g": 12.0,
+    "protein_g": 12.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 3.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 840.0,
+    "calcium_mg": 72.0,
+    "iron_mg": 2.0,
+    "basis_amount": 290.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(290g)",
+    "collected_at": "2026-03-03 17:24:17"
+  }
+}

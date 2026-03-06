@@ -1,0 +1,166 @@
+{
+  "product": {
+    "name_ko": "초코스프레드",
+    "reportnum": "20060445219610"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219610/20060445219610-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219610/20060445219610-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219610/20060445219610-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정백당, 정제수, 쇼트닝[팜올레인유(말레이시아산), 팜스테아린유(말레이시아산)], 초콜릿 7.5%(싱가포르산)[코코아매스44.3%, 설탕, 코코아버터 11.2%, 레시틴, 천연바닐라향], 코코아파우더(네덜란드산)6%, 변성전분, 유지크림분, 유청분말, 코코아매스(네덜란드산)1%, 유화제, 혼합제제[프로필렌글리콜, 헤이즐넛향, 토피향], 자몽종자추출물, D-토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219610/20060445219610-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 100g / 총 10회 제공량(1,000g) 1회 제공량당 함량 : 열량 380kcal, 탄수화물 45g (14%), 당류 35g, 단백질 2.5g (5%), 지방 21g (41%), 포화지방 4.8g (32%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 25mg (1%) *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219610/20060445219610-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜스테아린유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "origin": "싱가포르산",
+        "amount": "7.5%",
+        "sub_ingredients": [
+          {
+            "name": "코코아매스",
+            "amount": "44.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "amount": "11.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "네덜란드산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유지크림분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "origin": "네덜란드산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "헤이즐넛향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자몽종자추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:05:42"
+  },
+  "nutrition": {
+    "kcal": 380.0,
+    "carbohydrate_g": 45.0,
+    "sugar_g": 35.0,
+    "protein_g": 2.5,
+    "fat_g": 21.0,
+    "saturated_fat_g": 4.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 25.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 100g",
+    "collected_at": "2026-03-03 13:05:42"
+  }
+}

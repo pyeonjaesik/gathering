@@ -1,0 +1,383 @@
+{
+  "product": {
+    "name_ko": "종합강정",
+    "reportnum": "20030372137301"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137301/20030372137301-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137301/20030372137301-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137301/20030372137301-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[현미아몬드강정]\n현미(국산)29.1%,물엿(옥수수전분),설탕,아몬드(미국)14.6%,땅콩(중국),채종유(캐나다),분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시아,헝가리,세르비아 등),대두인지질(대두)]\n[검정깨강정]\n검정깨(중국)68%,설탕,물엿(옥수수전분),분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시아,헝가리,세르비아 등),대두인지질(대두)]\n[참깨강정] \n참깨(중국)74.7%,설탕,물엿(옥수수전분),분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시아,헝가리,세르비아 등),대두인지질(대두)]\n[들깨강정] \n들깨(중국)74.7%,설탕,물엿(옥수수전분),분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시어,헝가리,세르비아 등)대두인지질(대두)]\n[땅콩강정] \n땅콩(중국)77.5%,설탕,물엿(옥수수전분)분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시어,헝가리,세르비아 등)대두인지질(대두)]\n[흑미아몬드강정] \n흑미(국산)29.1%, 물엿(옥수수전분),설탕,아몬드(미국),14.6%,땅콩(중국),채종유(캐나다),분말오부라이트[감자전분(네덜란드)90%,옥수수전분(옥수수:외국산:러시어,헝가리,세르비아 등)대두인지질(대두)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137301/20030372137301-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[현미아몬드강정] \n<총 내용량 16g 당> \n열량69kcal, 나트륨20mg 1%, 탄수화물11g 3%, 당류5g 5%, 지방1.8g 3%, 트랜스지방0g, 포화지방1g 7%, 콜레스테롤0mg 0%, 단백질2g 4%\n[검정깨강정] \n<총 내용량 24g 당> \n열량109kcal, 나트륨1mg 0%, 탄수화물15g 5%, 당류5g 5%, 지방3.7g 7%, 트랜스지방0g, 포화지방0.5g 3%, 콜레스테롤0mg 0%, 단백질4g 7%\n[참깨강정] \n<총 내용량 24g 당> \n열량117kcal, 나트륨6mg 0%, 탄수화물14g 4%, 당류1g 1%, 지방5g 9%, 트랜스지방0g, 포화지방1.8g 5%, 콜레스테롤0mg 0%, 단백질4g 7%\n[들깨강정] \n<총 내용량 24g 당>\n열량121kcal, 나트륨26mg 1%, 탄수화물12g 4%, 당류3g 3%, 지방6g 11%, 트랜스지방0.7g, 포화지방1.9g 13%, 콜레스테롤2mg 1%, 단백질4g 7%\n[땅콩강정] \n<총 내용량 24g 당> \n열량107kcal, 나트륨1mg 0%, 탄수화물16g 5%, 당류7g 7%, 지방3.2g 6%, 트랜스지방0g, 포화지방0.6g 4%, 콜레스테롤0mg 0%, 단백질4g 7%\n[흑미아몬드강정]\n<총 내용량 16g 당>  \n열량69kcal, 나트륨18mg 1%, 탄수화물11g 3%, 당류4g 4%, 지방2g 4%, 트랜스지방0g, 포화지방0.2g 1%, 콜레스테롤0mg 0%, 단백질2g 4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137301/20030372137301-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미아몬드강정",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "origin": "국산",
+            "amount": "29.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "amount": "14.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "검정깨강정",
+        "sub_ingredients": [
+          {
+            "name": "검정깨",
+            "origin": "중국산",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참깨강정",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "origin": "중국산",
+            "amount": "74.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "들깨강정",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "origin": "중국산",
+            "amount": "74.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "땅콩강정",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "origin": "중국산",
+            "amount": "77.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑미아몬드강정",
+        "sub_ingredients": [
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "amount": "29.1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아몬드",
+            "origin": "미국산",
+            "amount": "14.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말오부라이트",
+            "sub_ingredients": [
+              {
+                "name": "감자전분",
+                "origin": "네덜란드산",
+                "amount": "90%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두인지질",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:21"
+  },
+  "nutrition": {
+    "kcal": 69.0,
+    "sodium_mg": 20.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 5.0,
+    "fat_g": 1.8,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 16.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 16g 당",
+    "collected_at": "2026-03-04 03:47:21"
+  }
+}

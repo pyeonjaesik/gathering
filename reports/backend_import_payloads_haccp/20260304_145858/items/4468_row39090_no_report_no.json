@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "레드와인발사믹드레싱",
+    "reportnum": "20010445055264"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055264/20010445055264-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055264/20010445055264-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055264/20010445055264-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 발사믹식초18%(이탈리아산:와인식초, 포도농축액), 액상과당, 식물성유지[외국산(아르헨티나, 미국, 중국 등)], 정제소금(국산), 까베르네쇼비뇽레드와인1.5%(칠레산), 압착올리브유, 발효식초, 백포도농축액, 카라멜색소, 잔탄검, 후추, 바실, 천연향신료, 양파분, 옛날마늘, 대두레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055264/20010445055264-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용량 210g 100g당 150kcal, 나트륨 880mg 44%, 탄수화물 15g 5%, 당류 15g 15%, 지방 10g 19%, 트랜스지방 0g, 포화지방 2g 13%, 콜레스테롤 0mg 0%, 단백질 0g 0%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055264/20010445055264-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발사믹식초",
+        "origin": "이탈리아산",
+        "amount": "18%",
+        "sub_ingredients": [
+          {
+            "name": "와인식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도농축액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산, 아르헨티나산, 미국산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "까베르네쇼비뇽레드와인",
+        "origin": "칠레산",
+        "amount": "1.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "압착올리브유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바실",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향신료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옛날마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:31:10"
+  },
+  "nutrition": {
+    "kcal": 150.0,
+    "sodium_mg": 880.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:31:10"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "product": {
+    "name_ko": "리얼 부산 전골용어묵",
+    "reportnum": "19960144406231"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406231/19960144406231-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406231/19960144406231-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406231/19960144406231-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*완두어묵A-연육(수입산/어육,설탕,D-소르비톨,산도조절제),완두콩(캐나다산)12.97%,전분가공품(폴란드산),밀가루,D-소르비톨액 *매콤문어어묵A-연육(수입산/어육,설탕,D-소르비톨,산도조절제),문어(중국산)12.76%,고추(국산)8.93%,오징어,전분가공품 *파프리카어묵A-연육(수입산/어육,설탕,D-소르비톨,산도조절제),파프리카(국산)15.71%,밀가루(미국,호주산),전분가공품,정제소금 *부추어묵A-연육(수입산/어육,설탕,D-소르비톨,산도조절제),부추(중국산)15.71%,전분가공품(폴란드산),밀가루,D-소르비톨액 *매콤잡채어묵A-연육(수입산/어육,설탕,D-소르비톨,산도조절제),고추(국산)9.94%,당면(중국산)8.52%,전분가공품,밀가루 *어묵면1-연육(수입산/어육,설탕,D-소르비톨,산도조절제),혼합제제(독일산/초산전분,말토덱스트린),정제소금(국산),글리신,L-글루타민산나트륨(향미증진제) *어묵탕용액상소스3-정제수,백설탕,양조간장[탈지대두(인도산),소맥(밀:미국산),천일염,액상과당,주정],정제소금(국산),농축스프베이스,가쓰오부시엑기스NO-70(고등어,대두),소스류,가수분해동물성단백질,향미증진제,카라멜색소,자몽종자추출물 *어묵탕용건더기스프-동결건조대파88.2%[대파97%(국산),포도당],건미역(국산),건홍고추링",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406231/19960144406231-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(50g) 총약5회 제공량(237g) 1회 제공량당 함량 *%영양성분기준치 : 열량 65kcal,탄수화물10g 3%, 당류1g, 단백질 6g 9%,지방0.7g 1%, 포화지방0.4g 3%, 트랜스지방 0g, 콜레스테롤5mg 1%, 나트륨 410mg 21%, *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960144406231/19960144406231-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "완두어묵A",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "완두콩",
+            "origin": "캐나다산",
+            "amount": "12.97%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "origin": "폴란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매콤문어어묵A",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "문어",
+            "origin": "중국산",
+            "amount": "12.76%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추",
+            "origin": "국산",
+            "amount": "8.93%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "파프리카어묵A",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파프리카",
+            "origin": "국산",
+            "amount": "15.71%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부추어묵A",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "부추",
+            "origin": "중국산",
+            "amount": "15.71%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "origin": "폴란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매콤잡채어묵A",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고추",
+            "origin": "국산",
+            "amount": "9.94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당면",
+            "origin": "중국산",
+            "amount": "8.52%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "어묵면1",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "연육",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "어육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "origin": "독일산",
+            "sub_ingredients": [
+              {
+                "name": "초산전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "어묵탕용액상소스3",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축스프베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오부시엑기스NO-70",
+            "sub_ingredients": [
+              {
+                "name": "고등어",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소스류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가수분해동물성단백질",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자몽종자추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "어묵탕용건더기스프",
+        "sub_ingredients": [
+          {
+            "name": "동결건조대파",
+            "amount": "88.2%",
+            "sub_ingredients": [
+              {
+                "name": "대파",
+                "origin": "국산",
+                "amount": "97%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건미역",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건홍고추링",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:48:10"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 1.0,
+    "protein_g": 6.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(50g)",
+    "collected_at": "2026-03-03 20:48:10"
+  }
+}

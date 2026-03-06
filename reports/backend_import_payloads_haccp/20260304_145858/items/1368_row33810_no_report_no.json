@@ -1,0 +1,228 @@
+{
+  "product": {
+    "name_ko": "블루베리요거트빼빼로",
+    "reportnum": "19830308010198"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010198/19830308010198-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010198/19830308010198-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010198/19830308010198-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "준초콜릿[백설탕,실물성유지1(부분경화유,팜핵유(말레이시아산),팜스테아린유(말레이시아산)),혼합분유(수입산;탈지분유,유청분말),유당,혼합식용유(부분경화유),코코아버터,블루베리농축분말{블루베리농축액0.55%(미국산(고형분65%)),덱스트린},당류가공품(백설탕,요구르트분말(탈지분유(국내산),덱스트린,유산균(이탈리아산))],밀가루(밀;미국산,캐나다산),옥수수전분(옥수수;수입산),식물성유지2(부분경화유),백설탕,기타가공품,액상과당,식물성유지3(부분경화유),맥아엑기스,정제소금,산도조절제,합성착향료(팜브래드향,바닐라향),미강유,복합조미품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010198/19830308010198-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1갑(43g) 총 1회 제공량(43g) 1회 제공량당 함량: 열량 230kcal, 탄수화물 27g (8%),당류 16g, 단백질 3g (5%),지방 12g (24%),포화지방 8g (53%),트랜스지방 0g,콜레스테롤 0mg (0%),나트륨 90mg (5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830308010198/19830308010198-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "실물성유지1",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜핵유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜스테아린유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합분유",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "탈지분유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유청분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": [
+              {
+                "name": "부분경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "블루베리농축분말",
+            "sub_ingredients": [
+              {
+                "name": "블루베리농축액",
+                "origin": "미국산",
+                "amount": "0.55%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "당류가공품",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "요구르트분말",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지분유",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유산균",
+                    "origin": "이탈리아산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지2",
+        "amount": "부분경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지3",
+        "amount": "부분경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "팜브래드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미강유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:06:31"
+  },
+  "nutrition": {
+    "kcal": 230.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 16.0,
+    "protein_g": 3.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 43.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1갑(43g)",
+    "collected_at": "2026-03-03 15:06:31"
+  }
+}

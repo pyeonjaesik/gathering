@@ -1,0 +1,320 @@
+{
+  "product": {
+    "name_ko": "미니캔디",
+    "reportnum": "20100372386177"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386177/20100372386177-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386177/20100372386177-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386177/20100372386177-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오렌지캔디-백설탕,물엿,구연산,오렌지엑기스분말,합성착향료(오렌지향),치자황색소*오렌지(생물기준)1%함유, 딸기캔디-백설탕,물엿,구연산,딸기분말,혼합제제(딸기오일-합성착향료,프로필렌글리콜,프로피온산),적양배추색소,혼합제제(산레드 ELF-엘더베리색소,프로필렌글리콜,주정,구연산)*딸기(생물기준)1%함유, 메론캔디-백설탕,물엿,구연산,메론과즙분말,혼합제제{메론향-프로필렌글리콜,정제수,주정,합성착향료,트리아세틴,천연착향료(오렌지오일)},혼합제제(에스와이그린칼라-치자청색소,홍화황색소,프로필렌글리콜,주정)*메론(생물기준)1%함유, 포도캔디-백설탕,물엿,구연산,포도과즙분말,혼합제제(포도향-프로필렌글리콜,합성착향료),혼합제제(에스와이그레이프칼라-포도과피추출색소,프로필렌글리콜,정수),혼합제제(에스와이블루칼라-치자청색소추출물,에칠알콜,정제수)*포도(생물기준)1%함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386177/20100372386177-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 NUTRITION FACTS 1회 제공량 4개(10 g) / 총 80회 제공량 (800 g), 1회 제공량 당 함량 % 영양소 기준치 / 총 포장단위 당 함량 *%영양소기준치, 열량 40 kcal / 3,165 kcal, 탄수화물 10g 3% / 785g 238%, 당류 8g  - / 630g -, 단백질 0g 0% / 3g 5%, 지방 0g 0% / 1.6g 3%, 포화지방 0g 0% / 0.8g 5%, 트랜스지방 0g  - / 0g -, 콜레스테롤 0mg 0% / 0mg 0%, 나트륨 0mg 0% / 15mg 1%, * %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386177/20100372386177-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오렌지캔디",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지엑기스분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "오렌지향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치자황색소",
+            "amount": "오렌지(생물기준)1%함유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "딸기캔디",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "딸기오일",
+                "sub_ingredients": [
+                  {
+                    "name": "합성착향료",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로피온산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산레드 ELF",
+                "sub_ingredients": [
+                  {
+                    "name": "엘더베리색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "적양배추색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기",
+            "amount": "1%함유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "메론캔디",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메론과즙분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "메론향",
+                "sub_ingredients": [
+                  {
+                    "name": "프로필렌글리콜",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "트리아세틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천연착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "오렌지오일",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "에스와이그린칼라",
+                "sub_ingredients": [
+                  {
+                    "name": "치자청색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "홍화황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "메론",
+            "amount": "1%함유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도캔디",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도과즙분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "포도향",
+                "sub_ingredients": [
+                  {
+                    "name": "프로필렌글리콜",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "합성착향료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에스와이그레이프칼라",
+                "sub_ingredients": [
+                  {
+                    "name": "포도과피추출색소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "프로필렌글리콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "에스와이블루칼라",
+                "sub_ingredients": [
+                  {
+                    "name": "치자청색소추출물",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "에칠알콜",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도",
+            "amount": "1%함유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:24:07"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 8.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 10.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 4개(10 g)",
+    "collected_at": "2026-03-04 04:24:07"
+  }
+}

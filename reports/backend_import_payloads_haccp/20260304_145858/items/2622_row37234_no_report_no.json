@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "마파가지두부덮밥",
+    "reportnum": "19880442004689"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004689/19880442004689-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004689/19880442004689-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004689/19880442004689-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,닭가슴살(국산),가지9.57%(국산),백미(국산),현미,리얼탱탱두부5.03%[대두100%(국산),천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)],양파,애호박,찹쌀,대파,바다향굴소스,저염간장,카놀라유,솜씨좋은태양초고추장,고추맛기름,혼합제제(말토덱스트린,변성전분),부추,미림,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004689/19880442004689-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량340kcal, 탄수화물46g(14%), 당류2g, 단백질15g(21%), 지방10.7g(21%), 포화지방1.3(9%),트랜스지방0g, 콜레스테롤15mg(5%), 나트륨410mg(21%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004689/19880442004689-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가지",
+        "origin": "국산",
+        "amount": "9.57%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "리얼탱탱두부",
+        "amount": "5.03%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염천연응고제",
+            "amount": "100",
+            "sub_ingredients": [
+              {
+                "name": "조제해수염화마그네슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "현미유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올리브유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "애호박",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바다향굴소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저염간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "솜씨좋은태양초고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:21:07"
+  },
+  "nutrition": {
+    "kcal": 340.0,
+    "carbohydrate_g": 46.0,
+    "sugar_g": 2.0,
+    "protein_g": 15.0,
+    "fat_g": 10.7,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 410.0,
+    "collected_at": "2026-03-03 17:21:07"
+  }
+}

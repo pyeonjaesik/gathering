@@ -1,0 +1,191 @@
+{
+  "product": {
+    "name_ko": "하루영양바(엿강정)",
+    "reportnum": "19970515071371"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071371/19970515071371-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071371/19970515071371-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071371/19970515071371-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "통아몬드(통아몬드/미국산)16.3%,호두(미국산)15.6%,아몬드슬라이스(아몬드/미국산)14.2%,크린베리[크린베리(미국산)54%,설탕45.5%,해바라기유0.5%]7.8%,건파인[파인애플코어(태국산)50.797%,설탕48%,구연산1.2%,메타중아황산나트륨(산화방지제)0.003%]7.8%,해바라기씨(수입산)7.1%,호박씨(수입산)7.1%,참깨(중국산)1.4%,검은깨(중국산)1.4%,소스[조청[맥아(옥수수연(옥수수전분(수입산)96%,엿기름(국산)4.%)}57%,설탕25%,포도당10%,꿀8%]21.3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071371/19970515071371-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(25g)/ 총 4회 제공량(100g) 1회 제공량당 함량 : 열량 135kcal, 탄수화물 11g 3%, 당류 5g, 단백질 4g 6%, 지방 8.9g 17%, 포화지방 0.8g 5%,트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 0mg 0%, *()안의 수치는 1일 영양소 기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071371/19970515071371-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통아몬드",
+        "origin": "미국산",
+        "amount": "16.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "15.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "amount": "14.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크린베리",
+        "origin": "미국산",
+        "amount": "7.8%",
+        "sub_ingredients": [
+          {
+            "name": "크린베리",
+            "origin": "미국산",
+            "amount": "54%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "45.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건파인",
+        "amount": "7.8%",
+        "sub_ingredients": [
+          {
+            "name": "파인애플코어",
+            "origin": "태국산",
+            "amount": "50.797%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "48%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "amount": "1.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타중아황산나트륨",
+            "amount": "0.003%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기씨",
+        "origin": "수입산",
+        "amount": "7.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박씨",
+        "origin": "수입산",
+        "amount": "7.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "origin": "중국산",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은깨",
+        "origin": "중국산",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스",
+        "amount": "21.3%",
+        "sub_ingredients": [
+          {
+            "name": "조청",
+            "sub_ingredients": [
+              {
+                "name": "맥아",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수연",
+                    "origin": "수입산",
+                    "amount": "96%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "엿기름",
+                    "origin": "국산",
+                    "amount": "4.%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "설탕",
+                "amount": "25%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "꿀",
+                "amount": "8%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:30:16"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 5.0,
+    "protein_g": 4.0,
+    "fat_g": 8.9,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(25g)",
+    "collected_at": "2026-03-03 21:30:16"
+  }
+}

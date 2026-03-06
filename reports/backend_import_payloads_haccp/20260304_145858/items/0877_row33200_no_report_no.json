@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "빈츠",
+    "reportnum": "19780614009153"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009153/19780614009153-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009153/19780614009153-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009153/19780614009153-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:수입산),백설탕,코코아프리퍼레이션(수입산:전지분유(우유),코코아매스),코코아매스,유당,식물성유지,쇼트닝(부분경화유),코코아버터,전지분골드Ⅰ,당류가공품,아몬드분말,산도조절제,버터,레시틴(대두),정제소금,유청단백분말,효모,합성착향료(바닐라향,밀크향,바닐린),효소제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009153/19780614009153-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 4개(34g) 총 6회 제공량(204g) 1회 제공량당 함량 *%영양소기준치 열량 180kcal, 탄수화물 24g 7%, 당류 13g, 단백질 3g 5%, 지방 8g 16%, 포화지방 6g 40%, 트랜스지방 0g, 콜레스테롤 5mg미만 1%, 나트륨 50mg 3% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1978/19780614009153/19780614009153-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아프리퍼레이션",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "전지분유",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "amount": "부분경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분골드Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청단백분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:15:07"
+  },
+  "nutrition": {
+    "kcal": 180.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 13.0,
+    "protein_g": 3.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 50.0,
+    "basis_amount": 34.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 4개(34g)",
+    "collected_at": "2026-03-03 14:15:07"
+  }
+}

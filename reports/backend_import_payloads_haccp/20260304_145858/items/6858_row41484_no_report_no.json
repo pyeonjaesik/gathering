@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "콩나물묵은지김칫국",
+    "reportnum": "20150445222332"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222332/20150445222332-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222332/20150445222332-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222332/20150445222332-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,묵은지14%[절임배추77.8%{배추98%(국산)},찹쌀풀{찹쌀(국산)},고춧가루(국내산),무,새우젓],콩나물10%(대두:수입산),대파(국산),황태해장국베이스,양파,다진마늘,복합조미식품1,고춧가루,어육엑기스,다시마엑기스,백설탕,건북어머리,무,건다시마,복합조미식품2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222332/20150445222332-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(250g)/ 총2회 제공량(500g) 1회 제공량당 함량 *%영양성분 기준치 : 열량 48kcal, 탄수화물 7.1g 2%, 당류 3.5g, 단백질 3.5g 6%, 지방 0.7g 1%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 1,189mg 59% *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222332/20150445222332-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "묵은지",
+        "amount": "14%",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "amount": "77.8%",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국산",
+                "amount": "98%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "찹쌀풀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고춧가루",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우젓",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩나물",
+        "origin": "수입산",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태해장국베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "어육엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건북어머리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건다시마",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:53"
+  },
+  "nutrition": {
+    "kcal": 48.0,
+    "carbohydrate_g": 7.1,
+    "sugar_g": 3.5,
+    "protein_g": 3.5,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1189.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(250g)",
+    "collected_at": "2026-03-04 04:45:53"
+  }
+}

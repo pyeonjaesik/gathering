@@ -1,0 +1,218 @@
+{
+  "product": {
+    "name_ko": "엄지치킨카레볶음밥",
+    "reportnum": "201504932087"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504932087/201504932087-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504932087/201504932087-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504932087/201504932087-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀42.48%(국산), 커리소스13.70%[양파(국산), 사과쨈{사과(국산)}, 유자즙(국산), 혼합카레분7%, 생크림, 쇠고기엑기스P, 토마토페이스트], 닭고기12.33%[닭가슴살100%(국산)], 양파, 당근, 양배추, 파프리카, 그리빈스, 옥수수유, 마아가린, 트레할로스(당류가공품), 대파, 치킨스톡P(복합조미식품), 강황분말, 카레분말0.12%[전문점용카레(카레분:일본산), 카레분말(강황:인도산), 양파분말, 인핸서HS, 카레추출오일], 백설탕, 정제소금, 마늘엑기스분말, 후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504932087/201504932087-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504932087/201504932087-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "42.48%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커리소스",
+        "amount": "13.70%",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과쨈",
+            "sub_ingredients": [
+              {
+                "name": "사과",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유자즙",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합카레분",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기엑기스P",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭고기",
+        "amount": "12.33%",
+        "sub_ingredients": [
+          {
+            "name": "닭가슴살",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그리빈스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마아가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레할로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨스톡P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "강황분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레분말",
+        "amount": "0.12%",
+        "sub_ingredients": [
+          {
+            "name": "전문점용카레",
+            "origin": "일본산",
+            "sub_ingredients": [
+              {
+                "name": "카레분",
+                "amount": "일본산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카레분말",
+            "origin": "인도산",
+            "sub_ingredients": [
+              {
+                "name": "강황",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인핸서HS",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카레추출오일",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:27"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 173.0,
+    "carbohydrate_g": 29.33,
+    "protein_g": 3.0,
+    "fat_g": 5.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 383.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.33,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 04:46:27"
+  }
+}

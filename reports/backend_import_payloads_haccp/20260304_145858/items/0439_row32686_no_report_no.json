@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "통단팥죽",
+    "reportnum": "197202880023252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023252/197202880023252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023252/197202880023252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023252/197202880023252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,가당팥앙금17%[팥앙금(팥:중국산),백설탕,물엿,D-소르비톨액,변성전분],팥10%(중국산),새알심3.6%[쌀가루(국산),가공소금(정제소금:국산)],백설탕,(변성전분,백설탕,덱스트린),찹쌀가루,쌀가루,정제소금,코코아파우더",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023252/197202880023252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=285g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880023252/197202880023252-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당팥앙금",
+        "amount": "17%",
+        "sub_ingredients": [
+          {
+            "name": "팥앙금",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팥",
+        "origin": "중국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새알심",
+        "amount": "3.6%",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:40:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 107.0,
+    "carbohydrate_g": 22.46,
+    "protein_g": 3.16,
+    "fat_g": 0.53,
+    "sugar_g": 9.12,
+    "sodium_mg": 165.0,
+    "cholesterol_mg": 1.23,
+    "saturated_fat_g": 0.21,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "285g",
+    "collected_at": "2026-03-03 13:40:54"
+  }
+}

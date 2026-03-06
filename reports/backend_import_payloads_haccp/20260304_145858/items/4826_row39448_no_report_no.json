@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "유기농 검정깨스낵",
+    "reportnum": "20030221351136"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351136/20030221351136-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351136/20030221351136-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351136/20030221351136-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미(국산)61.5%, 유기농원당(수입)20%, 유기농쌀조형(국산)10%, 유기농검정깨(국산)4%, 전지분유(국산),코코넛분말(수입),구운소금(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351136/20030221351136-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량20g 총 약5회 제공량 100g\n<1회 제공량당함량 영양소 기준치>\n열량126kcal, 탄수화물24g 7%, 당류7g, 단백질2g 4%, 지방2.6g 5%, 포화지방산0.4g 3%, 트랜스지방0g, 콜레스테롤1mg 0%, 나트륨69mg 3%\n%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030221351136/20030221351136-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "61.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농원당",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "수입",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농쌀조형",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농검정깨",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛분말",
+        "sub_ingredients": [
+          {
+            "name": "수입",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:36"
+  },
+  "nutrition": {
+    "kcal": 126.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 7.0,
+    "protein_g": 2.0,
+    "fat_g": 2.6,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 1.0,
+    "sodium_mg": 69.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량20g",
+    "collected_at": "2026-03-04 03:45:36"
+  }
+}

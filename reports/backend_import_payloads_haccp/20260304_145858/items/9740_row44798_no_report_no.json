@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "프리미어",
+    "reportnum": "2016036417063"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417063/2016036417063-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417063/2016036417063-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417063/2016036417063-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "과자,과자,과자,과자,과자,과자,과자,과자",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417063/2016036417063-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=415g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/2016036417063/2016036417063-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 440.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 7.0,
+    "fat_g": 26.0,
+    "sugar_g": 21.0,
+    "sodium_mg": 115.0,
+    "cholesterol_mg": 30.0,
+    "saturated_fat_g": 15.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "415g",
+    "collected_at": "2026-03-04 04:46:49"
+  }
+}

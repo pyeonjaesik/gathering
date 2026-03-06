@@ -1,0 +1,179 @@
+{
+  "product": {
+    "name_ko": "후디스 비타민마을 물고기친구들",
+    "reportnum": "20100372386209"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386209/20100372386209-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386209/20100372386209-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386209/20100372386209-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루(100%우리밀, 밀, 국산)69.2%, 설탕, 식물성유지[팜올레인유(말레이시아산),팜스테아린유(말레이시아산),포티엄알40(로즈마리추출물,해바라기유)],전란액(계란),유청분말(우유),탄산수소암모늄,정제소금,분말유크림(대두),탄산수소나트륨,해조칼슘,레시틴,합성착향료(밀크향,바닐린),효소제,비타민B₁염산염0.002%,비타민B₂0.002%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386209/20100372386209-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=60g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386209/20100372386209-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "69.2%",
+        "sub_ingredients": [
+          {
+            "name": "우리밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜스테아린유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포티엄알40",
+            "sub_ingredients": [
+              {
+                "name": "로즈마리추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해바라기유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소암모늄",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B₁염산염",
+        "amount": "0.002%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B₂",
+        "amount": "0.002%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 10.0,
+    "fat_g": 10.0,
+    "sugar_g": 20.0,
+    "sodium_mg": 333.0,
+    "cholesterol_mg": 8.0,
+    "saturated_fat_g": 2.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "60g",
+    "collected_at": "2026-03-04 04:23:49"
+  }
+}

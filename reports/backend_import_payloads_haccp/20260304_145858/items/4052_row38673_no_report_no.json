@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "불고기맛햄",
+    "reportnum": "19980262020170"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262020170/19980262020170-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262020170/19980262020170-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262020170/19980262020170-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)84.83%, 포도당, 옥수수전분2.54%(옥수수:외국산/헝가리,브라질,러시아), 불갈비맛엑기스-T 1.7%[쇠고기조림액[쇠고기(호주산),효모추출물(독일산)], 분리대두단백(대두:중국산), 백설탕, 햄스파이스디비-1, 정제소금, 유청분말, 혼합제제(폴리인산나트륨, 피로인산나트륨), 아로맥스-L, 간장분말, 난백분말, 백후추, 프라규파우더(정제소금,아질산나트륨:발색제,탄산나트륨), 아스코르빈산나트륨(산화방지제), 스모크후레바, 코치닐추출색소2.0",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262020170/19980262020170-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 300g,100g당 272Kcal,나트륨 529mg (26%),탄수화물 8.1g (3%),당류 1.7g (2%),지방 19.3g (36%),트랜스지방 0g,포화지방 0g (0%),콜레스테롤 53mg (18%),단백질 16.4g (30%),1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980262020170/19980262020170-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "84.83%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 헝가리산, 브라질산, 러시아산",
+        "amount": "2.54%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불갈비맛엑기스-T",
+        "amount": "1.7%",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기조림액",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효모추출물",
+                "origin": "독일산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "분리대두단백",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "햄스파이스디비-1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아로맥스-L",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백후추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프라규파우더",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "탄산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아스코르빈산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "산화방지제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "스모크후레바",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코치닐추출색소",
+            "amount": "2.0",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:35:30"
+  },
+  "nutrition": {
+    "kcal": 272.0,
+    "sodium_mg": 529.0,
+    "carbohydrate_g": 8.1,
+    "sugar_g": 1.7,
+    "fat_g": 19.3,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 53.0,
+    "protein_g": 16.4,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 21:35:30"
+  }
+}

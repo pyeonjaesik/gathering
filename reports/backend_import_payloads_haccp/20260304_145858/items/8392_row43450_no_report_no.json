@@ -1,0 +1,124 @@
+{
+  "product": {
+    "name_ko": "따옴 과일야채 레드믹스",
+    "reportnum": "20020183282693"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282693/20020183282693-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282693/20020183282693-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282693/20020183282693-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,사과농축과즙(사과과즙으로40%,국산),배농축과즙(배과즙으로32%,이스라엘산),당근농축액(당근즙으로13%,국산),오렌지과육,레드비트농축액(레드비트즙으로13%,터키산),레몬농축과즙(레몬과즙으로2%),천연사과향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282693/20020183282693-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=220ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282693/20020183282693-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "국산",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "사과과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "origin": "이스라엘산",
+        "amount": "32%",
+        "sub_ingredients": [
+          {
+            "name": "배과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근농축액",
+        "origin": "국산",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "당근즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오렌지과육",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드비트농축액",
+        "origin": "터키산",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "레드비트즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레몬농축과즙",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "레몬과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연사과향",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:37:17"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 41.0,
+    "carbohydrate_g": 9.55,
+    "protein_g": 0.45,
+    "fat_g": 0.0,
+    "sugar_g": 8.18,
+    "sodium_mg": 45.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "220ml",
+    "collected_at": "2026-03-04 03:37:17"
+  }
+}

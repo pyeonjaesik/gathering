@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "오뚜기녹차핫케이크믹스",
+    "reportnum": "19860309018562"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018562/19860309018562-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018562/19860309018562-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018562/19860309018562-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(미국산),정백당,포도당,유지혼합분말{팜유(말레이시아산),정제염(국산)},식물성유지분말,녹차분말1.8%(국산),베이킹파우다(산도조절제,전분,식물성유지,정제염,클로렐라원말0.3%(국산),천연착향료(녹차향),[소맥분(밀),유당(우유),레시틴(대두)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018562/19860309018562-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 열량 375kcal 탄수화물 83g 25% 당류 17g 단백질 6g 10% 지방 2.1g 4% 포화지방 2g 13% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 460mg 23% *%영양소기준치: 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018562/19860309018562-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유지혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차분말",
+        "origin": "국산",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "베이킹파우다",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "클로렐라원말",
+            "origin": "국산",
+            "amount": "0.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연착향료",
+            "sub_ingredients": [
+              {
+                "name": "녹차향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유당",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:10:01"
+  },
+  "nutrition": {
+    "kcal": 375.0,
+    "carbohydrate_g": 83.0,
+    "sugar_g": 17.0,
+    "protein_g": 6.0,
+    "fat_g": 2.1,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 460.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 16:10:01"
+  }
+}

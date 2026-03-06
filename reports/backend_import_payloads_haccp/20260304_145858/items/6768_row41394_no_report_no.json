@@ -1,0 +1,72 @@
+{
+  "product": {
+    "name_ko": "우건탕",
+    "reportnum": "2015026208310"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208310/2015026208310-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208310/2015026208310-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208310/2015026208310-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "우건 45%(호주산),정제염0.5%,정제수54.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208310/2015026208310-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[100g당 함량 <1회 제공량당 함량>] 열량 160Kcal[100g] 단백질 18g[29%] 탄수화물 0g[0%] 당류 0g[0%] 나트륨 65mg[2%] 포화지방 4.6g[31%] 지방 10g[20%] 트랜스지방 0g[0%] 콜레스테롤 10mg[3%]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208310/2015026208310-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우건",
+        "origin": "호주산",
+        "amount": "45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "54.5%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:43:59"
+  },
+  "nutrition": {
+    "kcal": 160.0,
+    "protein_g": 18.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 65.0,
+    "saturated_fat_g": 4.6,
+    "fat_g": 10.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:43:59"
+  }
+}

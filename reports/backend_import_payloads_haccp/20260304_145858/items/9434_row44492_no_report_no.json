@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "하늘땅감자",
+    "reportnum": "2011022182821"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182821/2011022182821-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182821/2011022182821-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182821/2011022182821-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀가루38.05%(밀/국산), 감자21.74%(무농약/국산), 감자전분(국산), 현미유(미강유), 알파미분(쌀100%/국산), 백설탕, 정제소금(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182821/2011022182821-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=55g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011022182821/2011022182821-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "38.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "origin": "국산",
+        "amount": "21.74%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": [
+          {
+            "name": "미강유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "알파미분",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 491.0,
+    "carbohydrate_g": 67.27,
+    "protein_g": 7.27,
+    "fat_g": 21.82,
+    "sugar_g": 3.64,
+    "sodium_mg": 327.0,
+    "cholesterol_mg": 5.45,
+    "saturated_fat_g": 4.36,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "55g",
+    "collected_at": "2026-03-04 04:29:51"
+  }
+}

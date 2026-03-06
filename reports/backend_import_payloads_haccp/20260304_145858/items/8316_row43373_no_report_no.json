@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "맛있는 컵밥 김치참치덮밥",
+    "reportnum": "20010445055416"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055416/20010445055416-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055416/20010445055416-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055416/20010445055416-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "맛있는오뚜기컵밥:쌀(국산),산도조절제, 맛있는김치참치덮밥소스:김치40%[배추(국산),무(국산),고춧가루(국산),파,마늘],황다랑어20%(원양산:태평양),정제수,카놀라유(캐나다산),혼합제제(폴리글리시톨시럽,이소말토올리고당),야채풍미유,마늘,백설탕,쇠고기다시,가쓰오부시추출물,건조김치분말,고추분,혼합제제(변성전분,백설탕,덱스트린),발효식초,양파맛분말,아미노베이스,파프리카추출색소,향미증진제,후추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055416/20010445055416-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=310g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055416/20010445055416-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는오뚜기컵밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛있는김치참치덮밥소스",
+            "sub_ingredients": [
+              {
+                "name": "김치",
+                "amount": "40%",
+                "sub_ingredients": [
+                  {
+                    "name": "배추",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "무",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "고춧가루",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "파",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "마늘",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "황다랑어",
+                "amount": "20%",
+                "sub_ingredients": [
+                  {
+                    "name": "원양산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "태평양",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카놀라유",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "폴리글리시톨시럽",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "이소말토올리고당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "야채풍미유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇠고기다시",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가쓰오부시추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "건조김치분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "발효식초",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파맛분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아미노베이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "후추분",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 137.0,
+    "carbohydrate_g": 22.26,
+    "protein_g": 4.19,
+    "fat_g": 3.55,
+    "sugar_g": 2.58,
+    "sodium_mg": 277.0,
+    "cholesterol_mg": 8.06,
+    "saturated_fat_g": 0.81,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "310g",
+    "collected_at": "2026-03-04 03:32:53"
+  }
+}

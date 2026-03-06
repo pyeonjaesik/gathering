@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "대림선 불고기만두",
+    "reportnum": "20000498027284"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027284/20000498027284-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027284/20000498027284-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027284/20000498027284-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기33.47%(국산),투명만두믹스[변성전분(태국산),소맥전분(밀,미국산/호주산/캐나다산)],대파,양배추,양파,부추,절임배추,대두단백(대두),찰스타치,새송이버섯,팽이버섯,간장,참기름,마늘,정제염,불고기양념장H0.63%,숯불갈비맛엑기스,정백당,청양고추,덱스트린,5'-리보뉴클레오티드이나트륨,후추분말,생강분말,감미유-S,매실농축액",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027284/20000498027284-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 5개(150g) 총약3회 제공량(450g) 1회 제공량당 함량 *%영양소 기준치: 열량 320kcal,탄수화물30g 9%, 당류1g, 단백질 12g 22%, 지방17g 33%, 포화지방6g 40%, 트랜스지방 0g, 콜레스테롤5mg 2%, 나트륨 650mg 32%,  *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/20000498027284/20000498027284-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "33.47%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "투명만두믹스",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "origin": "미국산, 호주산, 캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "절임배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찰스타치",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새송이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팽이버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기양념장",
+        "amount": "H0.63%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숯불갈비맛엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유-S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매실농축액",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:28:02"
+  },
+  "nutrition": {
+    "kcal": 320.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 1.0,
+    "protein_g": 12.0,
+    "fat_g": 17.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 650.0,
+    "basis_amount": 150.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 5개(150g)",
+    "collected_at": "2026-03-04 03:28:02"
+  }
+}

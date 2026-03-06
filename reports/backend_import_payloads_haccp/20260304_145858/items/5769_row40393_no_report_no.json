@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "프랑크 닭가슴살 소시지 리얼단호박",
+    "reportnum": "2008047600896"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008047600896/2008047600896-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008047600896/2008047600896-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008047600896/2008047600896-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국내산)85.28%,허닭시즈닝[옥수수전분{옥수수(외국산:러시아,헝가리,세르비아등)},마늘분말80(건마늘:중국산)]3.58%,단호박(외국산:뉴질랜드,퉁가,중국산등)3.34%,미향,설탕,비프시즈닝-3(사골엑기스G:국내산),분리대두단백(중국산),천일염(국내산),콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008047600896/2008047600896-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "120g당: 열량 174kcal,단백질 22.4g,지방 6.769g,나트륨 200.76mg,탄수화물 6.04g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008047600896/2008047600896-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "85.28%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허닭시즈닝",
+        "amount": "3.58%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "origin": "외국산, 러시아산, 헝가리산, 세르비아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말80",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "단호박",
+        "origin": "외국산, 뉴질랜드산, 중국산",
+        "amount": "3.34%",
+        "sub_ingredients": [
+          {
+            "name": "퉁가",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프시즈닝-3",
+        "sub_ingredients": [
+          {
+            "name": "사골엑기스G",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:43"
+  },
+  "nutrition": {
+    "kcal": 174.0,
+    "protein_g": 22.4,
+    "fat_g": 6.769,
+    "sodium_mg": 200.76,
+    "carbohydrate_g": 6.04,
+    "basis_amount": 120.0,
+    "basis_unit": "g",
+    "basis_text": "120g당",
+    "collected_at": "2026-03-04 04:12:43"
+  }
+}

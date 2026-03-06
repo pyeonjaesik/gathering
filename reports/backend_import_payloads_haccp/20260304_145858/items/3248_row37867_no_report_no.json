@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "무항생제인증받은돼지고기의 통안심을그대로썰어만든안심돈까스",
+    "reportnum": "19930262005187"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930262005187/19930262005187-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930262005187/19930262005187-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930262005187/19930262005187-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무항생제돼지고기(안심/국산)61.1%,우리밀빵가루{밀(국산),정백당,버터[유크림(우유,국산)100%],생이스트,정제소금}18.8%,유정란(계란,국산)6.7%,우리밀 밀가루,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930262005187/19930262005187-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 90g(3개) 총 3회 제공량 (270g) 1회 제공량당 함량 *%영양소기준치 열량 135kcal,탄수화물17g 5%, 당류2g, 단백질13g 22%, 지방1.9g 4%, 포화지방1.5g 10%, 트랜스지방0g, 콜레스테롤 5mg 2%, 나트륨80mg 4% *%영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930262005187/19930262005187-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무항생제돼지고기",
+        "origin": "국산",
+        "amount": "61.1%",
+        "sub_ingredients": [
+          {
+            "name": "안심",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우리밀빵가루",
+        "amount": "18.8%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터",
+            "sub_ingredients": [
+              {
+                "name": "유크림",
+                "origin": "국산",
+                "amount": "100%",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "생이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유정란",
+        "origin": "국산",
+        "amount": "6.7%",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우리밀 밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:29:30"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 2.0,
+    "protein_g": 13.0,
+    "fat_g": 1.9,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 90g(3개)",
+    "collected_at": "2026-03-03 19:29:30"
+  }
+}

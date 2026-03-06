@@ -1,0 +1,187 @@
+{
+  "product": {
+    "name_ko": "요맘때딸기",
+    "reportnum": "199805750013"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750013/199805750013-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750013/199805750013-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750013/199805750013-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,백설탕,물엿,딸기시럽8.9%[딸기(중국산)50%,백설탕,프락토올리고당,변성전분,카라기난],혼합탈지분유(수입산),야자유,데어리스프레드(우유),액상과당,탈지분유,샤베트분말(우유),혼합제제(유화제,구아검,카라기난,셀룰로오스검,로커스트콩검),구아검,정제염,합성착향료(요구르트향,딸기향),구연산 유산균주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750013/199805750013-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100g(ml) | foodSize=70ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199805750013/199805750013-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기시럽",
+        "amount": "8.9%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "중국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "샤베트분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:59:47"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 143.0,
+    "carbohydrate_g": 25.72,
+    "protein_g": 1.43,
+    "fat_g": 3.86,
+    "sugar_g": 22.86,
+    "sodium_mg": 86.0,
+    "cholesterol_mg": 7.14,
+    "saturated_fat_g": 2.86,
+    "trans_fat_g": 0.29,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100g(ml)",
+    "total_content": "70ml",
+    "collected_at": "2026-03-03 21:59:47"
+  }
+}

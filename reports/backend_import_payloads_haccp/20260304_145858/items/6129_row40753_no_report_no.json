@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "닭가슴살바질맛",
+    "reportnum": "2010018901773"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010018901773/2010018901773-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010018901773/2010018901773-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010018901773/2010018901773-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살92.97%(국내산),정제수,수비드세상복합시즈닝{정제염(국산),바질1%,대두},분말검은후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010018901773/2010018901773-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당영양성분 열량 122.2kcal,단백질 26.7g,당류 0.4g ,탄수화물 1.7g,지방0.9g,나트륨218mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010018901773/2010018901773-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국내산",
+        "amount": "92.97%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수비드세상복합시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바질",
+            "amount": "1%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말검은후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:22:10"
+  },
+  "nutrition": {
+    "kcal": 122.2,
+    "protein_g": 26.7,
+    "sugar_g": 0.4,
+    "carbohydrate_g": 1.7,
+    "fat_g": 0.9,
+    "sodium_mg": 218.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:22:10"
+  }
+}

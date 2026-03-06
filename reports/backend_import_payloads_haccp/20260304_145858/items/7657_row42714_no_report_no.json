@@ -1,0 +1,210 @@
+{
+  "product": {
+    "name_ko": "쿨피스 복숭아맛",
+    "reportnum": "19950227050146"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950227050146/19950227050146-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950227050146/19950227050146-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950227050146/19950227050146-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,복숭아농축액0.22%(고형분68%,이스라엘산),유산균배양액{혼합탈지분유(네덜란드산),포도당,유산균,혼합제제(규소수지,유화제,CMC-Na),정제수}5.56%,액상과당,정백당,수크랄로스(합성감미료),아스파탐(합성감미료,페닐알라닌함유),CMC-Na,젤란검,비타민C,DL-사과산,정제소금,합성착향료(복숭아향,시트러스향,요구르트향),비타믹스D,홍화황색소,락색소,혼합제제(규소수지,유화제,CMC-Na)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950227050146/19950227050146-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=350ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950227050146/19950227050146-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아농축액",
+        "origin": "이스라엘산",
+        "amount": "0.22%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "68%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균배양액",
+        "amount": "5.56%",
+        "sub_ingredients": [
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "CMC-Na",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "CMC-Na",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤란검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "DL-사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타믹스D",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍화황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC-Na",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:10:36"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 36.0,
+    "carbohydrate_g": 8.57,
+    "protein_g": 0.0,
+    "fat_g": 0.14,
+    "sugar_g": 8.57,
+    "sodium_mg": 40.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.11,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "350ml",
+    "collected_at": "2026-03-03 20:10:36"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "설락원 닭가슴살 소시지(저염)",
+    "reportnum": "2008012500244"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008012500244/2008012500244-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008012500244/2008012500244-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008012500244/2008012500244-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭가슴살(국산)83.75%,양파5%,빵가루,당근,마늘,청양고추,치킨비엔나시즈닝,소금,CB시즈닝,KB-1,후추,(대두),콜라겐케이싱",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008012500244/2008012500244-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회분량(100g) 100g당 함량 %영양소 기준치 열량 111.8kcal, 탄수화물 2.7g 1%, 당류 1.3g, 단백질 23.0g 42%, 지방 1.0g 2%, 포화지방 0.5g 3%, 트랜스지방 0.0g, 콜레스테롤 60.8mg 20%, 나트륨 285.6mg 14% %영양소 기준치 1일영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008012500244/2008012500244-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국산",
+        "amount": "83.75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨비엔나시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CB시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "KB-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "(대두)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐케이싱",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:03"
+  },
+  "nutrition": {
+    "kcal": 111.8,
+    "carbohydrate_g": 2.7,
+    "sugar_g": 1.3,
+    "protein_g": 23.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 60.8,
+    "sodium_mg": 285.6,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회분량(100g)",
+    "collected_at": "2026-03-04 04:07:03"
+  }
+}

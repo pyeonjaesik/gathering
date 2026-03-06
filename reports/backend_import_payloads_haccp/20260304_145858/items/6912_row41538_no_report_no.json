@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "생생칩 오리지널",
+    "reportnum": "201603834289"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603834289/201603834289-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603834289/201603834289-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603834289/201603834289-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자(호주산),혼합식용유[팜올레인유(말레이시아산),해바라기유{외국산(우크라이나,스페인,말레이시아등)},토코페롤(혼합형)],복합조미식품[짭짤한맛시즈닝{히말라야핑크솔트(파키스탄산),다시마엑기스분말(다시마추출농축액(건다시마(다시마(국내산))))}]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603834289/201603834289-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 4,[1회제공량 칼로리(Kcal)] : 170,[영양표시] : 나트륨150mg,탄수화물15g,당류0.5미만g,지방12g,트랜스지방0.2미만g,포화지방3.9g,콜레스테롤0mg,단백질1g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603834289/201603834289-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "외국산, 우크라이나산, 스페인산, 말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "짭짤한맛시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "히말라야핑크솔트",
+                "origin": "파키스탄산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다시마엑기스분말",
+                "sub_ingredients": [
+                  {
+                    "name": "다시마추출농축액",
+                    "sub_ingredients": [
+                      {
+                        "name": "건다시마",
+                        "origin": "국내산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:25"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "sodium_mg": 150.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 0.5,
+    "fat_g": 12.0,
+    "trans_fat_g": 0.2,
+    "saturated_fat_g": 3.9,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 1.0,
+    "basis_unit": "회",
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:47:25"
+  }
+}

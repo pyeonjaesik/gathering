@@ -1,0 +1,148 @@
+{
+  "product": {
+    "name_ko": "위하여PLUS",
+    "reportnum": "19970464172256"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172256/19970464172256-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172256/19970464172256-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172256/19970464172256-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 액상과당, 제이비비20플러스(귤피추출분말(국산),제이비비20추출분말(고형차)(메밀(국산),콩나물(대두:중국산),쑥(국산),칡,미나리),과일추출혼합분말(기타가공품),바이오뉴트리젠믹스(혼합제제),사과농축액(72brix,국산),구연산,구연산삼나트륨,멘톨향(합성착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172256/19970464172256-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량:100ml/100ml당54.66kcal/나트륨13.61 1%, 탄수화물 13.33g 4%, 당류 10.76g, 지방 0.02g 0%, 트랜스지방 0g, 포화지방 0g, 콜레스테롤 0mg  0%, 단백질 0.29mg 0% *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970464172256/19970464172256-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이비비20플러스",
+        "sub_ingredients": [
+          {
+            "name": "귤피추출분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이비비20추출분말",
+            "sub_ingredients": [
+              {
+                "name": "고형차",
+                "sub_ingredients": [
+                  {
+                    "name": "메밀",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "콩나물",
+                    "origin": "중국산",
+                    "sub_ingredients": [
+                      {
+                        "name": "대두",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "쑥",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "미나리",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "과일추출혼합분말",
+            "sub_ingredients": [
+              {
+                "name": "기타가공품",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "바이오뉴트리젠믹스",
+            "sub_ingredients": [
+              {
+                "name": "혼합제제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멘톨향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:29:31"
+  },
+  "nutrition": {
+    "kcal": 54.66,
+    "sodium_mg": 13.61,
+    "carbohydrate_g": 13.33,
+    "sugar_g": 10.76,
+    "fat_g": 0.02,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.29,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "총내용량:100ml",
+    "collected_at": "2026-03-03 21:29:31"
+  }
+}

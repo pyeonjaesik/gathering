@@ -1,0 +1,74 @@
+{
+  "product": {
+    "name_ko": "조미김",
+    "reportnum": "199405210427"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199405210427/199405210427-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199405210427/199405210427-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199405210427/199405210427-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김75%(국내산),옥배유13%,맛소금10%,참기름2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199405210427/199405210427-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<4g당>\n열량28kcal, 지방0g (0%), 콜레스테롤0mg (0%), 나트륨57mg (3%), 탄수화물2.3g (1%), 단백질2.3g (4%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/199405210427/199405210427-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국내산",
+        "amount": "75%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "amount": "13%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맛소금",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "amount": "2%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:04:45"
+  },
+  "nutrition": {
+    "kcal": 28.0,
+    "fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 57.0,
+    "carbohydrate_g": 2.3,
+    "protein_g": 2.3,
+    "basis_amount": 4.0,
+    "basis_unit": "g",
+    "basis_text": "<4g당>",
+    "collected_at": "2026-03-03 20:04:45"
+  }
+}

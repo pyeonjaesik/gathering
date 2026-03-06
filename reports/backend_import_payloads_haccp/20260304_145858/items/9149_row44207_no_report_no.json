@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "손수고려 삼계탕",
+    "reportnum": "2008061458741"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458741/2008061458741-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458741/2008061458741-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458741/2008061458741-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,닭(국산)40.0%,찹쌀(국산),마늘(중국산),수삼(국산)0.3%,정제소금,삼계탕베이스분말-엔[치킨브로스NM{치킨엑기스NM(계육<국내산>25%)98%}50%]0.07%,향미증진제,백설탕,지미분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458741/2008061458741-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=800g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458741/2008061458741-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭",
+        "origin": "국산",
+        "amount": "40.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수삼",
+        "origin": "국산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼계탕베이스분말-엔",
+        "sub_ingredients": [
+          {
+            "name": "치킨브로스NM",
+            "sub_ingredients": [
+              {
+                "name": "치킨엑기스NM",
+                "amount": "25%",
+                "sub_ingredients": [
+                  {
+                    "name": "계육",
+                    "origin": "국내산",
+                    "amount": "98%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 91.0,
+    "carbohydrate_g": 1.25,
+    "protein_g": 9.5,
+    "fat_g": 5.3,
+    "sugar_g": 0.29,
+    "sodium_mg": 161.0,
+    "cholesterol_mg": 55.28,
+    "saturated_fat_g": 1.41,
+    "trans_fat_g": 0.07,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "800g",
+    "collected_at": "2026-03-04 04:16:19"
+  }
+}

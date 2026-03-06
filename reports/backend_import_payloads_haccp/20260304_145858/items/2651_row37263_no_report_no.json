@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "생가득미트소스스파게티",
+    "reportnum": "19880445009628"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009628/19880445009628-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009628/19880445009628-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009628/19880445009628-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스파게티(이탈리아산/듀럼세몰리나소맥분100%),미트소스[정제수,돼지고기15%(국산),토마토페이스트(미국산),토마토쿨리(스페인산/토마토,토마토페이스트,양파,해바라기유,설탕,구연산),양파,옥수수유,당근,샐러리],옥수수유,혼합제제(산도조절제,말티톨시럽,정제수),4치즈분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009628/19880445009628-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(294.2g)/총 2회 제공량(588.4g)  *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 : 열량 410kcal, 탄수화물63g 19%, 식이섬유 0g 0%, 당류 14g, 단백질 15g 27%, 지방11g 22%, 포화지방 2.5g 17%, 트랜스지방 0g, 콜레스테롤 5mg 2%, 나트륨 760mg 38%, 비타민A 99㎍RE 14%, 비타민C 0mg 0%, 칼슘 59mg 8%, 철 1.4mg 12%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009628/19880445009628-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "듀럼세몰리나소맥분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미트소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "15%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토쿨리",
+            "origin": "스페인산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토페이스트",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해바라기유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "샐러리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "4치즈분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:27:32"
+  },
+  "nutrition": {
+    "kcal": 410.0,
+    "carbohydrate_g": 63.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 14.0,
+    "protein_g": 15.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 760.0,
+    "calcium_mg": 59.0,
+    "iron_mg": 1.4,
+    "basis_amount": 294.2,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(294.2g)",
+    "collected_at": "2026-03-03 17:27:32"
+  }
+}

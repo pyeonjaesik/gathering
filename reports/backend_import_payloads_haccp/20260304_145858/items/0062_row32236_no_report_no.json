@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "덴마크 무지방우유",
+    "reportnum": "199804760175"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199804760175/199804760175-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199804760175/199804760175-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199804760175/199804760175-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유100%(국산,세균수기준,강화성분제외) 강화성분 및 함량(100mL당) : 탄산칼슘혼합제제 0.215%(영양강화제,아라비아검), 비타민A혼합제제 0.00088%(비타민A아세테이트,피넛오일(땅콩),젤라틴,dl-a-토코페롤,옥수수전분,자당), 비타민B1염산염 0.00024%, 비타민D3혼합제제 0.000575%, (비타민D3. dl-a-토코페롤, 아카시아검, 자당,옥수수전분,글리세린지방산에스테르)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199804760175/199804760175-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(200mL) 총4.5회 제공량 (930mL), 1회 제공량당 함량 *%영양소 기준치1:열량 65kcal, 탄수화물10g 3%,당류10g, 단백질 6g 10%,칼슘 260mg 37%, 비타민A 125㎍RE 18%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤 5mg미만 2%, 나트륨 100mg 5%, 비타민B1 0.28mg 28%, 비타민D3 2㎍ 40%, *% 영양소 기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/199804760175/199804760175-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "강화성분",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼슘혼합제제",
+                "amount": "0.215%",
+                "sub_ingredients": [
+                  {
+                    "name": "아라비아검",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "영양강화제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "비타민A혼합제제",
+                "amount": "0.00088%",
+                "sub_ingredients": [
+                  {
+                    "name": "비타민A아세테이트",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "피넛오일",
+                    "sub_ingredients": [
+                      {
+                        "name": "땅콩",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "젤라틴",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "dl-a-토코페롤",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "옥수수전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "자당",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "비타민B1염산염",
+                "amount": "0.00024%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민D3혼합제제",
+                "amount": "0.000575%",
+                "sub_ingredients": [
+                  {
+                    "name": "비타민D3",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "dl-a-토코페롤",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "아카시아검",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "자당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "옥수수전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "글리세린지방산에스테르",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:57:36"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 10.0,
+    "protein_g": 6.0,
+    "calcium_mg": 260.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 100.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1컵(200mL)",
+    "collected_at": "2026-03-03 21:57:36"
+  }
+}

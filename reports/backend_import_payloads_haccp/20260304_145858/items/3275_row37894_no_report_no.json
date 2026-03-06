@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "얀스맘쿠키 모카",
+    "reportnum": "19930355035562"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355035562/19930355035562-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355035562/19930355035562-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355035562/19930355035562-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "모카:박력분(미국산),마아가린{식물성유지(말레이시아산),가공유지(말레이시아산)},커피분말(외국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355035562/19930355035562-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 약1/2봉지(32g) :141kcal/총 약6회 제공량(3봉지) 195g 당류21g, 단백질 2g, 포화지방 3g, 나트륨 109mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930355035562/19930355035562-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "모카",
+        "sub_ingredients": [
+          {
+            "name": "박력분",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마아가린",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가공유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "커피분말",
+            "origin": "외국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:32:39"
+  },
+  "nutrition": {
+    "kcal": 141.0,
+    "sugar_g": 21.0,
+    "protein_g": 2.0,
+    "saturated_fat_g": 3.0,
+    "sodium_mg": 109.0,
+    "basis_amount": 32.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/2봉지(32g)",
+    "collected_at": "2026-03-03 19:32:39"
+  }
+}

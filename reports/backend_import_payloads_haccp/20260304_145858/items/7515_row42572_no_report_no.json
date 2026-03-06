@@ -1,0 +1,205 @@
+{
+  "product": {
+    "name_ko": "그래놀라 블루베리",
+    "reportnum": "1993044304673"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044304673/1993044304673-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044304673/1993044304673-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044304673/1993044304673-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수(브라질산),그래놀라30%[압착통귀리55.4%,백설탕,식물성유지,밀가루,멀티그레인볼,콘후레이크,벌꿀](벨기에산),백설탕,블루베리다이스5%(블루베리68%,백설탕,쌀가루)(미국산),식물성경화유지,정제소금,맥아엿,혼합제제[글리세린,d-토코페롤(혼합형),글리세린에스테르],혼합제제(비타민C,DL-alpha-토코페릴아세테이트,나이아신아미드,분말비타민A,비타민B6염산염,비타민D3,비타민B1염산염,비타민B2,엽산,말토덱스트린),피로인산제이철,산화아연",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044304673/1993044304673-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=310g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/1993044304673/1993044304673-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "브라질산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "그래놀라",
+        "origin": "벨기에산",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "압착통귀리",
+            "amount": "55.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멀티그레인볼",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콘후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "벌꿀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리다이스",
+        "origin": "미국산",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "블루베리",
+            "amount": "68%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성경화유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "DL-alpha-토코페릴아세테이트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말비타민A",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피로인산제이철",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산화아연",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:41:35"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 417.0,
+    "carbohydrate_g": 80.0,
+    "protein_g": 6.67,
+    "fat_g": 7.67,
+    "sugar_g": 20.0,
+    "sodium_mg": 433.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 3.33,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "310g",
+    "collected_at": "2026-03-03 19:41:35"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "product": {
+    "name_ko": "아이스가이피치",
+    "reportnum": "19930555148538"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148538/19930555148538-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148538/19930555148538-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148538/19930555148538-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물, 복숭아농축액, 액상과당, 비타민C, 구연산(결정), 정제소금, 합성감미료(수크랄로스, 아세셀팜칼륨), L-시스틴, L-프롤린, 합성착향료(복숭아향,망고향), 천연색소(치자황색소, 적양배추색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148538/19930555148538-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930555148538/19930555148538-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "복숭아농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "amount": "결정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아세셀팜칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-시스틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-프롤린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "망고향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천연색소",
+        "sub_ingredients": [
+          {
+            "name": "치자황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적양배추색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:44:27"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 5.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 0.0,
+    "fat_g": 0.1,
+    "sugar_g": 1.0,
+    "sodium_mg": 13.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.05,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "200g",
+    "collected_at": "2026-03-03 19:44:27"
+  }
+}

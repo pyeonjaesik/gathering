@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "베이비오 덴티맘 포도",
+    "reportnum": "19930439002477"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002477/19930439002477-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002477/19930439002477-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002477/19930439002477-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "이소말트 40%, D-말티톨 39.15%, 자일리톨 10%, 결정셀룰로오스, 스테아린산칼슘, 합성착향료(포도향), 가당난황분말[난황액(lgY 함유, 계란), 이소말토올리고당] 0.6%, 포도엑기스분말[포도엑기스(BRIX:30%)(국산), 덱스트린] 0.05%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002477/19930439002477-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 12개(10.2g) 총 5회 제공량(51g) 1회 제공량당 함량 %영양소 기준치 열량 25kcal 탄수화물 10g 3% 당류 - 단백질 0g 0% 지방 0g 0% 포화지방 0g 0% 트랜스지방 - 콜레스테롤 0mg 0% 나트륨 0mg 0% %영양소 기준치 : 1일 영양소 기준치에 대한 비율.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930439002477/19930439002477-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "이소말트",
+        "amount": "40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-말티톨",
+        "amount": "39.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "결정셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테아린산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가당난황분말",
+        "amount": "0.6%",
+        "sub_ingredients": [
+          {
+            "name": "난황액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이소말토올리고당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도엑기스분말",
+        "amount": "0.05%",
+        "sub_ingredients": [
+          {
+            "name": "포도엑기스",
+            "origin": "국산",
+            "amount": "BRIX:30%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:35:03"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 10.2,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 12개(10.2g)",
+    "collected_at": "2026-03-03 19:35:03"
+  }
+}

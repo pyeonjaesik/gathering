@@ -1,0 +1,275 @@
+{
+  "product": {
+    "name_ko": "나가사끼홍짬뽕",
+    "reportnum": "198803831271169"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271169/198803831271169-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271169/198803831271169-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271169/198803831271169-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면-소맥분(미국산,호주산),전분(태국산),팜유,정제염,미감에스유,면류첨가알칼리제(산도조절제),양파엑기스,구아검,비타민B2,구연산,녹차풍미유/스프-정제염,정백당,육수맛분말,간장조미분말,해물볶음베이스분말,맛베이스에스,볶음양념분말,오징어조미분말,매운고추베이스분말,가루엿,새우엑기스분말,홍합조미분말,돈골농축액분말-1,감자전분,돈육풍미분말,볶음양파분말,지미맛분말,채소풍미유분말,매운탕분말,조미맛분,다대기양념분말,짬뽕향미유,청양고추시즈닝분말,청양고추조미분말,향미증진제,미더덕조미분말,하바네로맛시즈닝,후추분,매운조미고추맛분,올레오레진캡시컴,파프리카추출색소,건양배추,동결건조오징어,실당근,건파,청경채,조미건조홍고추,짬뽕조미유,고추씨기름. {소맥분(밀),탈지대두(대두),돼지고기,난황,난백(계란),유청분말(우유),새우,토마토}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271169/198803831271169-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=115g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271169/198803831271169-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "origin": "태국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미감에스유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차풍미유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "육수맛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해물볶음베이스분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛베이스에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운고추베이스분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가루엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우엑기스분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍합조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈골농축액분말-1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈육풍미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지미맛분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채소풍미유분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운탕분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미맛분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다대기양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짬뽕향미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청양고추시즈닝분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청양고추조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미더덕조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하바네로맛시즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운조미고추맛분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진캡시컴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동결건조오징어",
+            "sub_ingredients": []
+          },
+          {
+            "name": "실당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청경채",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미건조홍고추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짬뽕조미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추씨기름",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:55:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 501.0,
+    "carbohydrate_g": 82.44,
+    "protein_g": 9.36,
+    "fat_g": 14.64,
+    "sugar_g": 5.81,
+    "sodium_mg": 1847.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 7.32,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "115g",
+    "collected_at": "2026-03-03 16:55:12"
+  }
+}

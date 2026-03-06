@@ -1,0 +1,100 @@
+{
+  "product": {
+    "name_ko": "코코몽 젤리킹 망고",
+    "reportnum": "20020183282659"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282659/20020183282659-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282659/20020183282659-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282659/20020183282659-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 백설탕, 프락토올리고당, 망고농축퓨레(망고과즙으로6%, 콜롬비아산), 오렌지농축액(오렌지과즙으로4%, 미국산), 비타민C, 혼합제제, 합성착향료, 합성감미료, 젖산칼슘등",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282659/20020183282659-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(1회 제공량 1포 130ml) 열량 65kcal, 탄수화물 16g, 당류 15g, 단백질 0g, 칼슘 71mg, 비타민D 5㎍, 포화지방 0g, 트랜스지방 0g, 콜레스테롤 0mg, 나트륨 30mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020183282659/20020183282659-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고농축퓨레",
+        "origin": "콜롬비아산",
+        "amount": "망고과즙으로6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "미국산",
+        "amount": "오렌지과즙으로4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:37:04"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 15.0,
+    "protein_g": 0.0,
+    "calcium_mg": 71.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 130.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1포 130ml",
+    "collected_at": "2026-03-04 03:37:04"
+  }
+}

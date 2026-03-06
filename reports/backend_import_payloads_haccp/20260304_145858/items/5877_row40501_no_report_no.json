@@ -1,0 +1,178 @@
+{
+  "product": {
+    "name_ko": "아워홈 푹고은 육개장",
+    "reportnum": "2008061458779"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458779/2008061458779-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458779/2008061458779-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458779/2008061458779-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,대파(중국산),소고기(호주산)6.2%,숙주(녹두:중국산),불린토란줄기(토란줄기,탄산수소나트륨),행복한맛남쇠고기맛국물내기,비프엑기스[소고기분해액{소고기(호주산)31.18%,고형분5.44%}52.19%]0.9%,마늘,고춧가루,고추맛기름,사골농축엑기스[사골추출농축액{사골(호주산)33%,고형분43%}71.4%]0.2%,된장,양조간장,정제소금,지미분,향미증진제,후추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458779/2008061458779-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(400g) 총1회 제공량 (400g) *%영양성분 기준치:1일 영양성분 기준치에 대한 비율 1회제공량당 함량 *%영양성분기준치 열량 110kcal 탄수화물 10g 3% 당류 2g 단백질 11g 20% 지방 2.8g 5% 포화지방 0.6g 4% 트랜스지방 0g 콜레스테롤 20mg 7% 나트륨 1,660mg 83%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008061458779/2008061458779-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "6.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숙주",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "녹두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "불린토란줄기",
+        "sub_ingredients": [
+          {
+            "name": "토란줄기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "행복한맛남쇠고기맛국물내기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프엑기스",
+        "amount": "0.9%",
+        "sub_ingredients": [
+          {
+            "name": "소고기분해액",
+            "sub_ingredients": [
+              {
+                "name": "소고기",
+                "origin": "호주산",
+                "amount": "31.18%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고형분",
+                "amount": "5.44%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추맛기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축엑기스",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "사골추출농축액",
+            "sub_ingredients": [
+              {
+                "name": "사골",
+                "origin": "호주산",
+                "amount": "33%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고형분",
+                "amount": "43%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:16:37"
+  },
+  "nutrition": {
+    "kcal": 110.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 2.0,
+    "protein_g": 11.0,
+    "fat_g": 2.8,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 1660.0,
+    "basis_amount": 400.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(400g)",
+    "collected_at": "2026-03-04 04:16:37"
+  }
+}

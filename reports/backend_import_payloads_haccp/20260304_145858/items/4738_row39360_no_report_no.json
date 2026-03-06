@@ -1,0 +1,63 @@
+{
+  "product": {
+    "name_ko": "신선애생닭가슴살(냉동)",
+    "reportnum": "2002048782435"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002048782435/2002048782435-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002048782435/2002048782435-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002048782435/2002048782435-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(가슴살/국내산)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002048782435/2002048782435-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/10봉지(100g)/총10회 제공량(1kg) 1회 제공량당 함량  *%영양소 기준치: 열량 109kcal,탄수화물0g 0%,당류0g,단백질23.10g 42%,지방1.6g 3%,  *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002048782435/2002048782435-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:48"
+  },
+  "nutrition": {
+    "kcal": 109.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 23.1,
+    "fat_g": 1.6,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/10봉지(100g)",
+    "collected_at": "2026-03-04 03:42:48"
+  }
+}

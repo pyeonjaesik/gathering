@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "조지아 카페 스위트 블랙",
+    "reportnum": "20100543066410"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100543066410/20100543066410-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100543066410/20100543066410-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100543066410/20100543066410-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,커피추출농축액(말레이시아산,생두의원산지:인도네시아산100%,커피추출고형분1%),탄산수소나트륨,비타민C,합성착향료(커피향),효소제,프로필렌글리콜",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100543066410/20100543066410-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1캔(175ml)/총1회제공량(175ml), 1회제공량당함량 *%영양성분기준치, 열량44kcal, 탄수화물11g 3%, 당류10g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨54mg 3% *%영양성분기준치:1일영양성분기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100543066410/20100543066410-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피추출농축액",
+        "origin": "말레이시아산",
+        "sub_ingredients": [
+          {
+            "name": "생두의원산지",
+            "origin": "인도네시아산 100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피추출고형분",
+            "amount": "1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:21"
+  },
+  "nutrition": {
+    "kcal": 44.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 10.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 54.0,
+    "basis_amount": 175.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1캔(175ml)",
+    "collected_at": "2026-03-04 04:29:21"
+  }
+}

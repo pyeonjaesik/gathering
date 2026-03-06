@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "구수한인절미",
+    "reportnum": "2006051503587"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503587/2006051503587-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503587/2006051503587-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503587/2006051503587-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기미분(유기농쌀,국내산)38.37%,정제고올레산해바라기유(외국산(아르헨티나산,스페인산,우크라이산 등))32.83%, 옥수수가루(국내산)12.25%,유기농설탕9.71%,볶음콩가루(콩,국내산)5.06%,천일염,귀리식이섬유,해조칼슘(식용해주10%/기타가공품)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503587/2006051503587-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량의 영양성분 구성비\n<1일 영양소 기준치에 대한 비율%>\n열량 360kcal, 탄수화물39g 12%, 당류7g, 단백질4g 7%, 지방21g 29%, 포화지방1.5g 10%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨220mg 11%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006051503587/2006051503587-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기미분",
+        "origin": "국내산",
+        "amount": "38.37%",
+        "sub_ingredients": [
+          {
+            "name": "유기농쌀",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제고올레산해바라기유",
+        "origin": "외국산, 아르헨티나산, 스페인산",
+        "amount": "32.83%",
+        "sub_ingredients": [
+          {
+            "name": "우크라이산 등)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "옥수수가루",
+        "origin": "국내산",
+        "amount": "12.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "9.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음콩가루",
+        "origin": "국내산",
+        "amount": "5.06%",
+        "sub_ingredients": [
+          {
+            "name": "콩",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "귀리식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": [
+          {
+            "name": "식용해주",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타가공품",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:48"
+  },
+  "nutrition": {
+    "kcal": 360.0,
+    "carbohydrate_g": 39.0,
+    "sugar_g": 7.0,
+    "protein_g": 4.0,
+    "fat_g": 21.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 220.0,
+    "basis_text": "1회 제공량의 영양성분 구성비",
+    "collected_at": "2026-03-04 04:00:48"
+  }
+}

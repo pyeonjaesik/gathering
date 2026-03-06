@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "바베큐사태햄",
+    "reportnum": "19980476001225"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001225/19980476001225-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001225/19980476001225-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001225/19980476001225-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산/사태)94.34%,정제소금(국내산),함수결정포도당,대두단백(중국산),백설탕,카라기난,산도조절제,L-글루타민산나트륨(향미증진제),비프향미료,복합스파이스E,비타민C,코치닐추출색소(천연첨가물),아질산나트륨(발색제,합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001225/19980476001225-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 30g 총 약 12회 제공량(360g) : 1회제공량 당함량 열량 35kcal 탄수화물1g미만(0%),당류0g,단백질5g(9%),지방1.6g(3%),포화지방0.6g(4%),트랜스지방0g,콜레스테롤40mg(13%),나트륨200mg(10%) *()안의 수치는 1일영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980476001225/19980476001225-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "94.34%",
+        "sub_ingredients": [
+          {
+            "name": "사태",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비프향미료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스E",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코치닐추출색소",
+        "sub_ingredients": [
+          {
+            "name": "천연첨가물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:54:46"
+  },
+  "nutrition": {
+    "kcal": 35.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g",
+    "collected_at": "2026-03-03 21:54:46"
+  }
+}

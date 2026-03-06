@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "한끼초밥불초밥",
+    "reportnum": "20170275045106"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2017/20170275045106/20170275045106-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/20170275045106/20170275045106-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2017/20170275045106/20170275045106-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "그릴스시[돼지고기80.55%(지방일부사용/국산),배퓨레3.36%(국산),설탕,간장{양조간장원액(탈지대두:인도산),대파,숯불갈비맛엑기스],쌀,스시초[설탕,양조식초,정제소금],L-글루탐산나트륨(향미증진제),숯불바베큐소스{불맛소스},초생강,간장,생와사비,소스,혼합식용유,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/20170275045106/20170275045106-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 460,[영양표시] : 나트륨1,318mg,탄수화물69g,당류10g,지방12g,트랜스지방0g,포화지방29g,콜레스테롤44mg,단백질19g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2017/20170275045106/20170275045106-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "그릴스시",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산",
+            "amount": "80.55%",
+            "sub_ingredients": [
+              {
+                "name": "지방일부사용",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "배퓨레",
+            "origin": "국산",
+            "amount": "3.36%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": [
+              {
+                "name": "양조간장원액",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "인도산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "대파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "숯불갈비맛엑기스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스시초",
+            "sub_ingredients": [
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양조식초",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "숯불바베큐소스",
+            "sub_ingredients": [
+              {
+                "name": "불맛소스",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "초생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생와사비",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합식용유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:48:08"
+  },
+  "nutrition": {
+    "kcal": 460.0,
+    "sodium_mg": 1318.0,
+    "carbohydrate_g": 69.0,
+    "sugar_g": 10.0,
+    "fat_g": 12.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 29.0,
+    "cholesterol_mg": 44.0,
+    "protein_g": 19.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-04 04:48:08"
+  }
+}

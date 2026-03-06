@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "백년초유과",
+    "reportnum": "1997051507134"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997051507134/1997051507134-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997051507134/1997051507134-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997051507134/1997051507134-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀(국산), 맥아엿(옥수수전분,엿기름),백년초유과옷2{쌀(국산)86.2%,백년초분말(국산)13.8%}10%, 대두유{대두/외국산(아르헨티나,태국,미국 등)}, 생강",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997051507134/1997051507134-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 70g 280kcal\n나르튬20mg 1%, 탄수화물52g 16%, 당류21g 21%, 지방6.9g 13%, 트랜스지방 g, 포화지방1.1g 7%, 콜레스테롤0mg 0%, 단백질2g 4%\n1일 영양성분 기준치에 대한 비율(%)은2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/1997051507134/1997051507134-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엿",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백년초유과옷",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "86.2%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백년초분말",
+            "origin": "국산",
+            "amount": "13.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "아르헨티나산, 태국산, 미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:29:54"
+  },
+  "nutrition": {
+    "kcal": 280.0,
+    "carbohydrate_g": 52.0,
+    "sugar_g": 21.0,
+    "fat_g": 6.9,
+    "saturated_fat_g": 1.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 70.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 70g",
+    "collected_at": "2026-03-03 21:29:54"
+  }
+}

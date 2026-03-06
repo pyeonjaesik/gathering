@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "통살 카라아게",
+    "reportnum": "19960262001495"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262001495/19960262001495-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262001495/19960262001495-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262001495/19960262001495-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기(다리살/국내산)68.69%,정제수,가라아게배터-2[베이스믹스-3{프리믹스분말5호<소맥전분(밀:미국산,호주산)>},옥수수전분(옥수수:외국산),L-글루탐산나트륨(향미증진제),정제소금],프리더BJ{박력분(밀:미국산),옥수수전분(외국산),라포스SW,조미후추분,비타셀},전분,식물성오일-HS,분리대두단백,백설탕,활성밀글루텐,L-글루탐산나트륨제제{L-글루탐산나트륨(향미증진제),향미증진제},간장분말,정제소금,CP마리네이드,혼합제제(폴리인산나트륨,피로인산나트륨),양파즙분말100,생강분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262001495/19960262001495-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262001495/19960262001495-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "68.69%",
+        "sub_ingredients": [
+          {
+            "name": "다리살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가라아게배터-2",
+        "sub_ingredients": [
+          {
+            "name": "베이스믹스-3",
+            "sub_ingredients": [
+              {
+                "name": "프리믹스분말5호",
+                "sub_ingredients": [
+                  {
+                    "name": "소맥전분",
+                    "origin": "미국산, 호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루탐산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프리더BJ",
+            "sub_ingredients": [
+              {
+                "name": "박력분",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "라포스SW",
+                "sub_ingredients": []
+              },
+              {
+                "name": "조미후추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타셀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성오일-HS",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "활성밀글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "CP마리네이드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파즙분말100",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:58:58"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "목우촌 오리훈제 슬라이스",
+    "reportnum": "2006040504640"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504640/2006040504640-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504640/2006040504640-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504640/2006040504640-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "오리고기(정육/국내산)96.86%,오리스모크시즈닝M[정제소금(국산),생강분말(중국산),산도조절제,아질산나트륨(발색제),L-글루타민산나트륨(향미증진제)],농축대두단백(미국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504640/2006040504640-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504640/2006040504640-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리고기",
+        "origin": "국내산",
+        "amount": "96.86%",
+        "sub_ingredients": [
+          {
+            "name": "정육",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오리스모크시즈닝M",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강분말",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "발색제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "농축대두단백",
+        "origin": "미국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:58:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 400.0,
+    "carbohydrate_g": 5.0,
+    "protein_g": 14.0,
+    "fat_g": 36.0,
+    "sugar_g": 1.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 90.0,
+    "saturated_fat_g": 10.0,
+    "trans_fat_g": 0.3,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "200g",
+    "collected_at": "2026-03-04 03:58:57"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "product": {
+    "name_ko": "햇반검정콩밥",
+    "reportnum": "19910144038357"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038357/19910144038357-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038357/19910144038357-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038357/19910144038357-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀87.3%(국산),검정콩8.3%(국산),흑미4.4%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038357/19910144038357-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 210G(302 KCAL) |탄수화물 64G(19%)/당류 0G/단백질 7G(13%)/지방 2G(4%)/포화지방 0.5G(3%),트랜스지방 0G/콜레스테롤 0MG(0%)/나트륨 30MG(2%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910144038357/19910144038357-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "87.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정콩",
+        "origin": "국산",
+        "amount": "8.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "4.4%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:28:16"
+  },
+  "nutrition": {
+    "kcal": 302.0,
+    "carbohydrate_g": 64.0,
+    "sugar_g": 0.0,
+    "protein_g": 7.0,
+    "fat_g": 2.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 30.0,
+    "basis_amount": 210.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 210G",
+    "collected_at": "2026-03-03 18:28:16"
+  }
+}

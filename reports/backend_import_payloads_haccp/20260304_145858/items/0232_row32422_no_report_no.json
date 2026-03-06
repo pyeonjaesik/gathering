@@ -1,0 +1,164 @@
+{
+  "product": {
+    "name_ko": "우유꿀호떡",
+    "reportnum": "197102750034170"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034170/197102750034170-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034170/197102750034170-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034170/197102750034170-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),꿀호떡크림[기타설탕,백설탕,변성전분,사양벌꿀/국산,옥수수전분(옥수수/외국산)],백설탕,쇼트닝/인도네시아산[팜유,d-토코페롤(혼합형),유화제],전란액(계란),우유(원유/국산),효모,정제소금,유화제,기타가공품,곡류가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034170/197102750034170-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량115g 375kcal, 총내용량당 1일영양성분기준치에 대한 비율, 나트륨290mg 15%, 탄수화물60g 19%, 당류28g, 지방13g 24%, 트랜스지방0.6g, 포화지방6g 40%, 콜레스테롤35mg 12%, 단백질5g 9%, 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750034170/197102750034170-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "꿀호떡크림",
+        "sub_ingredients": [
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사양벌꿀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:20:46"
+  },
+  "nutrition": {
+    "kcal": 375.0,
+    "sodium_mg": 290.0,
+    "carbohydrate_g": 60.0,
+    "sugar_g": 28.0,
+    "fat_g": 13.0,
+    "trans_fat_g": 0.6,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 35.0,
+    "protein_g": 5.0,
+    "basis_amount": 115.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량115g",
+    "collected_at": "2026-03-03 13:20:46"
+  }
+}

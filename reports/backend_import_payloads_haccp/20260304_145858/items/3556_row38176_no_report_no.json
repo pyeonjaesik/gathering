@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "부드럽고촉촉한샌드위치식빵",
+    "reportnum": "199503380155632"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155632/199503380155632-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155632/199503380155632-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155632/199503380155632-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),백설탕,쇼트닝/인도네시아산,혼합분유{혼합탈지분유/수입산,유청단백(우유/수입산)},효모,정제소금,기타가공품,유화제,기타가공품,혼합제제[합성착향료,발효주정,프로필렌글리콜,넛맥엑기스]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155632/199503380155632-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2쪽(63g) 총약12회 제공량(750g) 1회 제공량당 함량 *%영양성분기준치 : 열량 166kcal,탄수화물32g 10%, 당류2g, 단백질 6g 11%,지방1.6g 3%, 포화지방0.7g 5%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 280mg 14%, *%영양소 기준치:1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155632/199503380155632-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": [
+          {
+            "name": "혼합탈지분유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청단백",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "넛맥엑기스",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:14:45"
+  },
+  "nutrition": {
+    "kcal": 166.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 2.0,
+    "protein_g": 6.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 280.0,
+    "basis_amount": 63.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2쪽(63g)",
+    "collected_at": "2026-03-03 20:14:45"
+  }
+}

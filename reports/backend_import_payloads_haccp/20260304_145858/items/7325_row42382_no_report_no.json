@@ -1,0 +1,75 @@
+{
+  "product": {
+    "name_ko": "국산콩 연두부",
+    "reportnum": "1992038012865"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012865/1992038012865-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012865/1992038012865-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012865/1992038012865-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두100%(국산), 두부응고제, 정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012865/1992038012865-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=250g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012865/1992038012865-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부응고제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:04:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 45.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 4.0,
+    "fat_g": 2.3,
+    "sugar_g": 0.75,
+    "sodium_mg": 55.0,
+    "dietary_fiber_g": 0.0,
+    "calcium_mg": 25.0,
+    "iron_mg": 0.5,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "250g",
+    "collected_at": "2026-03-03 19:04:47"
+  }
+}

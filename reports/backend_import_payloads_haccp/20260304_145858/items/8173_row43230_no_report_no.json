@@ -1,0 +1,111 @@
+{
+  "product": {
+    "name_ko": "브로컬리치즈생수프",
+    "reportnum": "19990364158491"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158491/19990364158491-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158491/19990364158491-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158491/19990364158491-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,우유(국산),브로컬리12.0%(중국산),생크림,증숙감자,조미분Ⅰ,양파,고다치즈2.0%(수입산),화이트루,옥배유,무염버터,바질홀",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158491/19990364158491-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150ml(g) | foodSize=570g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1999/19990364158491/19990364158491-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로컬리",
+        "origin": "중국산",
+        "amount": "12.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "증숙감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미분Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고다치즈",
+        "origin": "수입산",
+        "amount": "2.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무염버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바질홀",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:01:10"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 103.0,
+    "carbohydrate_g": 7.89,
+    "protein_g": 1.58,
+    "fat_g": 7.37,
+    "sugar_g": 3.68,
+    "sodium_mg": 168.0,
+    "cholesterol_mg": 15.79,
+    "saturated_fat_g": 4.21,
+    "trans_fat_g": 0.16,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150ml(g)",
+    "total_content": "570g",
+    "collected_at": "2026-03-03 22:01:10"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "아워홈 통단팥죽",
+    "reportnum": "20060445219239"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219239/20060445219239-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219239/20060445219239-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219239/20060445219239-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 으깬팥36.31%(중국산)(팥99%, 산도조절제),통팥9.26%(중국산), 찹쌀분말(중국산), 정백당, 흑설탕, 액상과당, 요리당, 변성전분, 이소말토올리고당, 정제염, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219239/20060445219239-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=270g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060445219239/20060445219239-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "으깬팥",
+        "origin": "중국산",
+        "amount": "36.31%",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "amount": "99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "통팥",
+        "origin": "중국산",
+        "amount": "9.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀분말",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:29"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 93.0,
+    "carbohydrate_g": 19.26,
+    "protein_g": 2.96,
+    "fat_g": 0.41,
+    "sugar_g": 5.93,
+    "sodium_mg": 174.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "270g",
+    "collected_at": "2026-03-04 03:59:29"
+  }
+}

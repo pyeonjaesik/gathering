@@ -1,0 +1,208 @@
+{
+  "product": {
+    "name_ko": "확깨면(쌀라면)",
+    "reportnum": "19960494020485"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960494020485/19960494020485-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960494020485/19960494020485-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960494020485/19960494020485-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀가루30%(국산),변성전분,팜유(말레이시아산),글루텐(프랑스산),감자전분(국산),식용유지가공품,태움용융소금,산도조절제,구아검,면류첨가알칼리제(탄산칼륨,탄산나트륨,피로인산나트륨),비타민B2,확깨면분말스프[얼큰라면스프(정제염,백설탕,육맛조미분H,덱스트린,간장베이스디-200),HC-혼합활성분말{띠뿌리(국산),팥(국산),녹두,오이,갈근}],건표고버섯(국산),건파(국산),건당근{당근(국산),포도당},건미역(미역:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960494020485/19960494020485-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "[총제공량/1회제공량] : 1,[1회제공량 칼로리(Kcal)] : 331,[영양표시] : 나트륨1,532mg,탄수화ㅏ물42g,당류3g,지방14g,트랜스지방0g,포화지방6g,콜레스테롤0mg,단백질8g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960494020485/19960494020485-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "amount": "30%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루텐",
+        "origin": "프랑스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유지가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "태움용융소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면류첨가알칼리제",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "확깨면분말스프",
+        "sub_ingredients": [
+          {
+            "name": "얼큰라면스프",
+            "sub_ingredients": [
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "육맛조미분H",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "간장베이스디-200",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "HC-혼합활성분말",
+            "sub_ingredients": [
+              {
+                "name": "띠뿌리",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팥",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "녹두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "오이",
+                "sub_ingredients": []
+              },
+              {
+                "name": "갈근",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건표고버섯",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건당근",
+        "sub_ingredients": [
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건미역",
+        "sub_ingredients": [
+          {
+            "name": "미역",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:15:53"
+  },
+  "nutrition": {
+    "kcal": 331.0,
+    "sodium_mg": 1532.0,
+    "carbohydrate_g": 42.0,
+    "sugar_g": 3.0,
+    "fat_g": 14.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 6.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 8.0,
+    "basis_amount": 1.0,
+    "basis_text": "1회제공량",
+    "collected_at": "2026-03-03 21:15:53"
+  }
+}

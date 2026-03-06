@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "홈플러스유자오렌지드레싱",
+    "reportnum": "199104450775545"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775545/199104450775545-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775545/199104450775545-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775545/199104450775545-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 대두유[콩기름(수입산),규소수지], 유자당절임[유자(국산)50%, 백설탕, 구연산, 비타민C]11%, 발효식초[주정,맥아엑기스,발효영양원], 저당, 백설탕, 액상과당, 세미캔디드오렌지필[중국산/오렌지필60%, 고과당시럽, 산도조절제(구연산, 구연산삼나트륨)]5%, 복합조미식품, 오렌지농축액(브라질산/고형분50%이상)2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775545/199104450775545-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 25g 기준, 총 약9회 제공량(230g) 1회 제공량당 함량 : 열량 80kcal, 탄수화물 9g (3%), 당류 5g, 단백질 0g (0%), 지방 5g (10%), 포화지방 0.9g (6%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 160mg (8%) *()안의 수치는 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/199104450775545/199104450775545-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "콩기름",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유자당절임",
+        "amount": "11%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "저당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "세미캔디드오렌지필",
+        "origin": "중국산",
+        "amount": "5%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지필",
+            "origin": "중국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": [
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산삼나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "브라질산",
+        "amount": "2%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:41:36"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 5.0,
+    "protein_g": 0.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 160.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 25g 기준",
+    "collected_at": "2026-03-03 18:41:36"
+  }
+}

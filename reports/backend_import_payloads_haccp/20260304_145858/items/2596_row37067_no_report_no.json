@@ -1,0 +1,200 @@
+{
+  "product": {
+    "name_ko": "미나리낙지볶음세트",
+    "reportnum": "19880442004616"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004616/19880442004616-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004616/19880442004616-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004616/19880442004616-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "팥수수밥-정제수,현미(국산),백미(국산),찹쌀,팥,수수 미나리낙지볶음(26.15%)-낙지42%(베트남산),돌미나리10%(국산),양배추,양파,낙지볶음양념장,당근 채소스틱-양배추(국산),방울토마토(국산),다다기오이,당근 꼬마새송이야채절임-꼬마새송이버섯,정제수,무,양파,양조간장,화이트식초 가지미소사브지-가지,양파,파프리카(빨강),파프리카(노랑),청피망",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004616/19880442004616-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량295kcal, 탄수화물52g(16%), 당류12g, 단백질13g(24%), 지방3.2g(6%), 포화지방0.6g(4%), 트랜스지방0g, 콜레스테롤40mg(13%), 나트륨510mg(26%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004616/19880442004616-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "팥수수밥",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팥",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미나리낙지볶음",
+            "amount": "26.15%",
+            "sub_ingredients": [
+              {
+                "name": "낙지",
+                "origin": "베트남산",
+                "amount": "42%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "돌미나리",
+                "origin": "국산",
+                "amount": "10%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양배추",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "낙지볶음양념장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "채소스틱",
+            "sub_ingredients": [
+              {
+                "name": "양배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "방울토마토",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다다기오이",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "꼬마새송이야채절임",
+            "sub_ingredients": [
+              {
+                "name": "꼬마새송이버섯",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "무",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양조간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "화이트식초",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가지미소사브지",
+            "sub_ingredients": [
+              {
+                "name": "가지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카",
+                "sub_ingredients": [
+                  {
+                    "name": "빨강",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "노랑",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "청피망",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:46"
+  },
+  "nutrition": {
+    "kcal": 295.0,
+    "carbohydrate_g": 52.0,
+    "sugar_g": 12.0,
+    "protein_g": 13.0,
+    "fat_g": 3.2,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 510.0,
+    "collected_at": "2026-03-04 03:24:46"
+  }
+}

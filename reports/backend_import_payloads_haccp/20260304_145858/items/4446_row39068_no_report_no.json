@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "좋은상품 자일리톨페퍼민트",
+    "reportnum": "20010415034519"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034519/20010415034519-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034519/20010415034519-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034519/20010415034519-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "말티톨시럽,자일리톨23%,D-소르비톨1%,식물성유지(야자경화유),허브추출물0.1%,페퍼민트추출물0.1%,유화제,합성착향료(L-멘톨,민트향),혼합제제(치자청색소,프로필렌글리콜,산도조절제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034519/20010415034519-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 2개(9.2g) 총약20회 제공량(185g) 1회 제공량당 함량 *%영양소 기준치 : 열량 25kcal,탄수화물9g 3%, 당류0g, 단백질 0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 0mg 0%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034519/20010415034519-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "말티톨시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "23%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "페퍼민트추출물",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "L-멘톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "민트향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:29:31"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 9.2,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2개(9.2g)",
+    "collected_at": "2026-03-04 03:29:31"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "모아네내장탕",
+    "reportnum": "2012023000920"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012023000920/2012023000920-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012023000920/2012023000920-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012023000920/2012023000920-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소내장12.9%[곱창8.3%(뉴질랜드산),깐양4.6%(호주산)],우거지(국내산),토란대(미얀마산),정제수,파,고춧가루,정제염,들깨가루,된장,고추장,사골,무,고구마순,마늘,복합조미식품(대두,밀),L-글루타민산나트륨(향미증진제),우지,생강,후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012023000920/2012023000920-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=600g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012023000920/2012023000920-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소내장",
+        "amount": "12.9%",
+        "sub_ingredients": [
+          {
+            "name": "곱창",
+            "origin": "뉴질랜드산",
+            "amount": "8.3%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "깐양",
+            "origin": "호주산",
+            "amount": "4.6%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우거지",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란대",
+        "origin": "미얀마산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들깨가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고추장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고구마순",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:33:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 60.0,
+    "carbohydrate_g": 2.67,
+    "protein_g": 2.5,
+    "fat_g": 4.5,
+    "sugar_g": 0.5,
+    "sodium_mg": 527.0,
+    "cholesterol_mg": 26.67,
+    "saturated_fat_g": 2.83,
+    "trans_fat_g": 0.28,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "600g",
+    "collected_at": "2026-03-04 04:33:11"
+  }
+}

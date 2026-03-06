@@ -1,0 +1,193 @@
+{
+  "product": {
+    "name_ko": "김치제육덮밥소스",
+    "reportnum": "20030614307245"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307245/20030614307245-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307245/20030614307245-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307245/20030614307245-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맛김치31.85%[절임배추(국산),무(국산),멸치조미액젓,대파,고춧가루],돼지고기25.71%(국산),정제수,마늘,올리고당,돈지쇼트닝,혼합고추조미분,쇠고기다시다(밀,대두,우유),정백당,프리퍼레이션피에이원(변성전분,말토덱스트린),고춧가루,야채조미오일씨,로스트포크맛엑기스,글루코노델타락톤,정제염,씨엠에이이온화칼슘(영화강화제,산도조절제,덱스트린),인산염명신(산도조절제),흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307245/20030614307245-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1포장(135g) 총1회제공량(135g), 1회제공량당함량 *%영양소기준치, 열량140kcal, 탄수화물17g 5%, 당류5g, 단백질9g 15%, 지방4.0g 8%, 포화지방1.5g 10%, 트랜스지방0.5g미만, 콜레스테롤10mg 3%, 나트륨770mg 39% *%영양소기준치:1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307245/20030614307245-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛김치",
+        "amount": "31.85%",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치조미액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "25.71%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돈지쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합고추조미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기다시다",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프리퍼레이션피에이원",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채조미오일씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로스트포크맛엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루코노델타락톤",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "씨엠에이이온화칼슘",
+        "sub_ingredients": [
+          {
+            "name": "영화강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인산염명신",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:40"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 5.0,
+    "protein_g": 9.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 770.0,
+    "basis_amount": 135.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1포장(135g)",
+    "collected_at": "2026-03-04 03:49:40"
+  }
+}

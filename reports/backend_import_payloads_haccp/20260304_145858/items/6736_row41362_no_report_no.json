@@ -1,0 +1,136 @@
+{
+  "product": {
+    "name_ko": "알래스칸 특급 양파어묵",
+    "reportnum": "2014061602217"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602217/2014061602217-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602217/2014061602217-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602217/2014061602217-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "양파49.05%(국산), 연육32.70%(미국산/어육, 소르비톨, 설탕, 산도조절제), 소맥전분, 타피오카전분, 난백액, 유산균배양혼합분말, 효모추출물혼합분말, 타이미, 정제소금, 대두유, 대두단백, 혼합제제(말토덱스트린, 트랜스글루타미나아제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602217/2014061602217-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (45g) / 총 약 4회 (180g) 분량 1회 분량당 함량 %영양소기준치 열량 40kcal, 트랜스지방 0g, 탄수화물 7g 2%, 콜레스테롤 5mg미만 2%, 식이섬유 0g 0%, 나트륨 330mg 17%, 당류 2g, 비타민A 0㎍RE 0%, 단백질 3g 5%, 비타민C 0mg 0%, 지방 0% 0%, 칼슘 0mg 0%, 포화지방 0g 0%, 철 0mg 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014061602217/2014061602217-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "49.05%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연육",
+        "origin": "미국산",
+        "amount": "32.70%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균배양혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물혼합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타이미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트랜스글루타미나아제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:43:34"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "trans_fat_g": 0.0,
+    "carbohydrate_g": 7.0,
+    "dietary_fiber_g": 0.0,
+    "sodium_mg": 330.0,
+    "sugar_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 0.0,
+    "calcium_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "iron_mg": 0.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 (45g)",
+    "collected_at": "2026-03-04 04:43:34"
+  }
+}

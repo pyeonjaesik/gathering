@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "애니타임",
+    "reportnum": "19690086003833"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003833/19690086003833-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003833/19690086003833-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003833/19690086003833-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "말티톨시럽77.3%,자일리톨20.7%,D-소르비톨1%,합성착향료(밀크향,페퍼민트향,허브향,쿨링향),야자경화유,유화제(대두),허브추출물,주정,합성감미료(아세설팜칼륨,수크랄로스)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003833/19690086003833-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=92g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1969/19690086003833/19690086003833-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "77.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "amount": "20.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페퍼민트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "허브향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쿨링향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성감미료",
+        "sub_ingredients": [
+          {
+            "name": "아세설팜칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:16:40"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 239.0,
+    "carbohydrate_g": 97.83,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 5.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "92g",
+    "collected_at": "2026-03-03 13:16:40"
+  }
+}

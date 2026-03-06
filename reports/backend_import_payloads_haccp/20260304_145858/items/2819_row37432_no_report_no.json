@@ -1,0 +1,323 @@
+{
+  "product": {
+    "name_ko": "리얼요리어묵 치즈",
+    "reportnum": "19900275002447"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002447/19900275002447-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002447/19900275002447-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002447/19900275002447-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "연육60.59%(수입산/어육,D-소르비톨,정백당,산도조절제),하이체다치즈(우유)6.06%{자연치즈61.50%[체다치즈94.30%(수입산:원유,유산균,식염,우유응고효소),고다치즈5.70%(네덜란드산:원유,식염,유산균배양액,우유응고효소)],야자경화유5.50%(인도네시아산,필리핀산),쎈텐더(아세틸아디핀산이전분),렌넷카제인(우유),산도조절제},찹쌀가루4.04%(국내산),옥수수전분,당근4.04%(국내산),부추4.04%(국내산),양파4.04%(국내산),양배추4.04%(국내산),대두유,대두단백,L-글루타민산나트륨(향미증진제),글리신,소르빈산칼륨(합성보존료),포도당,자일로오스,혼합제제(피로인산나트륨,폴리인산나트륨,메타인산나트륨),정백당,까망베르치즈분말(우유),정제소금,어묵맛시즈닝(대두),체다치즈향(합성착향료),혼합제제(제삼인산나트륨,분리대두단백(대두),콜라겐,말토덱스트린,트랜스글루타미나아제(효소제)}",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002447/19900275002447-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(45g)/ 총4회제공량(180g) 1회제공량당 함량:열량60kcal, 탄수화물6g(2%), 당류0g, 단백질5g(9%), 지방1.6g(3%), 포화지방0.8g(5%), 트랜스지방0g, 콜레스테롤5mg(2%), 나트륨300mg(15%) *()%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002447/19900275002447-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "수입산",
+        "amount": "60.59%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하이체다치즈",
+        "amount": "6.06%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "amount": "61.50%",
+            "sub_ingredients": [
+              {
+                "name": "체다치즈",
+                "origin": "수입산",
+                "amount": "94.30%",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유산균",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "식염",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "우유응고효소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "고다치즈",
+                "origin": "네덜란드산",
+                "amount": "5.70%",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "식염",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유산균배양액",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "우유응고효소",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "야자경화유",
+            "origin": "인도네시아산, 필리핀산",
+            "amount": "5.50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쎈텐더",
+            "sub_ingredients": [
+              {
+                "name": "아세틸아디핀산이전분",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "렌넷카제인",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국내산",
+        "amount": "4.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국내산",
+        "amount": "4.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국내산",
+        "amount": "4.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "amount": "4.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양배추",
+        "origin": "국내산",
+        "amount": "4.04%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분리대두단백",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콜라겐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "트랜스글루타미나아제",
+            "sub_ingredients": [
+              {
+                "name": "효소제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "까망베르치즈분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "어묵맛시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "체다치즈향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:55:23"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 300.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(45g)",
+    "collected_at": "2026-03-03 17:55:23"
+  }
+}

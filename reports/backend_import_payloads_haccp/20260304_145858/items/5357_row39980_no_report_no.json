@@ -1,0 +1,95 @@
+{
+  "product": {
+    "name_ko": "훈제오리슬라이스",
+    "reportnum": "2006040504638"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504638/2006040504638-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504638/2006040504638-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504638/2006040504638-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "오리고기(정육/국내산)96.86%,오리스모크시즈닝M[정제소금(국산),말토덱스트린(중국산),아질산나트륨(발색제),L-글루타민산나트륨(향미증진제),농축대두단백",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504638/2006040504638-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/7팩(30g) 약 7회 제공량(200g) 1회 제공량당 함량 *%영양성분 기준치 열량 79kcal, 탄수화물 1g미만 0%, 당류 0g, 단백질 5g 9%, 지방 6g 13%, 포화지방 2g 13%, 트랜스지방 0g, 콜레스테롤 35mg 12%, 나트륨 120mg 6% ※%영양성분기준치 :  1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504638/2006040504638-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리고기",
+        "origin": "국내산",
+        "amount": "96.86%",
+        "sub_ingredients": [
+          {
+            "name": "정육",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오리스모크시즈닝M",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아질산나트륨",
+            "amount": "발색제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축대두단백",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:01"
+  },
+  "nutrition": {
+    "kcal": 79.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 35.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/7팩(30g)",
+    "collected_at": "2026-03-04 03:59:01"
+  }
+}

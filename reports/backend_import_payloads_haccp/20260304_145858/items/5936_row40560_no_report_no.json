@@ -1,0 +1,161 @@
+{
+  "product": {
+    "name_ko": "통돼지고기묵은지김치찜",
+    "reportnum": "2009026212541"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212541/2009026212541-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212541/2009026212541-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212541/2009026212541-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김치[절임배추(배추:국산), 무우(국산), 고춧가루, 새우젓, 멸치액젓, L-글루타민산나트륨, 돼지고기(외국산:스페인,벨기에,미국 등), 정제수, 볶음소스매운맛[찰고추장(밀:미국산,호주산), 고과당, 혼합양념(중국산), 고춧가루(중국산), 정백당], 볶음소스에스[저감미당, 진간장, 찰고추장, 정백당, L-글루타민산나트륨, 찌개양념장, 고추가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212541/2009026212541-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 열량 305Kcal,탄수화물 23g,단백질24g,지방 13g등",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009026212541/2009026212541-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김치",
+        "sub_ingredients": [
+          {
+            "name": "절임배추",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "배추",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무우",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돼지고기",
+            "origin": "외국산, 스페인산, 벨기에산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음소스매운맛",
+            "sub_ingredients": [
+              {
+                "name": "찰고추장",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "고과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고춧가루",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "볶음소스에스",
+            "sub_ingredients": [
+              {
+                "name": "저감미당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "진간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "찰고추장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "찌개양념장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추가루",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:03"
+  },
+  "nutrition": {
+    "kcal": 305.0,
+    "carbohydrate_g": 23.0,
+    "protein_g": 24.0,
+    "fat_g": 13.0,
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-04 04:18:03"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "product": {
+    "name_ko": "카스타드모닝밀",
+    "reportnum": "19960242067151"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067151/19960242067151-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067151/19960242067151-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067151/19960242067151-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "전란액(국내산),백설탕,밀가루(밀:미국산),D-소르비톨액,쇼트닝Ⅰ(부분경화유:정제가공유지(말레이시아산),정제팜올레인유(말레이시아산)),쇼트닝Ⅱ,곡류가공품(현미,곡류가공품,통밀(미국산),검정콩,흑미,수수,보리),미강유,기타가공품Ⅰ,기타가공품Ⅱ,식물성유지,가당연유,기타가공품Ⅲ,우유(1급A원유100%(국산)(세균수기준)),기타엿,주정,정제수,당류가공품,코코아분말,가공유,글리세린,복합조미식품(합성착색료(β-카로틴)),정제소금,혼합제제(에틸알콜,정제수,젖산,유화제,산도조절제),기타코코아가공품,키토산,합성착향료(팜브레드향,초코향,누룽지향,바닐라향),레시틴,일반증류주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067151/19960242067151-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=210g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960242067151/19960242067151-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝Ⅰ",
+        "sub_ingredients": [
+          {
+            "name": "부분경화유",
+            "sub_ingredients": [
+              {
+                "name": "정제가공유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제팜올레인유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝Ⅱ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "통밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "보리",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미강유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품Ⅰ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품Ⅱ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품Ⅲ",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "1급A원유100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "합성착색료",
+            "sub_ingredients": [
+              {
+                "name": "β-카로틴",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "에틸알콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타코코아가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "키토산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "팜브레드향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초코향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "누룽지향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "일반증류주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:51:04"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 476.0,
+    "carbohydrate_g": 52.38,
+    "protein_g": 4.76,
+    "fat_g": 23.81,
+    "sugar_g": 33.33,
+    "sodium_mg": 214.0,
+    "cholesterol_mg": 142.86,
+    "saturated_fat_g": 12.86,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "210g",
+    "collected_at": "2026-03-03 20:51:04"
+  }
+}

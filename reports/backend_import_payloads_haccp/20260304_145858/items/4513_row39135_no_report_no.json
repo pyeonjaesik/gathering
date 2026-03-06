@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "이츠웰식혜",
+    "reportnum": "20010515081203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081203/20010515081203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081203/20010515081203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081203/20010515081203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,보리엿기름추출액(엿기름:국산,고형분6.5%이상)24%,자일로스설탕(설탕,자일로스,난소화성말토덱스트린)5.26%,설탕,쌀페이스트(쌀:국산,고형분30%이상)2%,생강농축액(생강:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081203/20010515081203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량(120ml)당 60kal\n나트륨10mg (1%), 탄수화물15g (5%), 당류11g (11%) ,지방0g (0%), 트렌스지방0g, 포화지방0g (0%), 콜레스테롤0mg (0%), 단백질0g (0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010515081203/20010515081203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "보리엿기름추출액",
+        "origin": "국산",
+        "amount": "24%",
+        "sub_ingredients": [
+          {
+            "name": "엿기름",
+            "origin": "국산",
+            "amount": "고형분6.5%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "자일로스설탕",
+        "amount": "5.26%",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자일로스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난소화성말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀페이스트",
+        "origin": "국산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "고형분30%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생강농축액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "생강",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:41"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 11.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 120.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량(120ml)당",
+    "collected_at": "2026-03-04 03:33:41"
+  }
+}

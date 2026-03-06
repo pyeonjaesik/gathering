@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "아임리얼 베리베리",
+    "reportnum": "200904420408"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904420408/200904420408-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904420408/200904420408-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904420408/200904420408-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "포도(칠레산), 블루베리23.7%(미국산), 파인애플(베트남산), 코코넛쥬스, 골드키위, 아사이베리과즙0.3%(브라질산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904420408/200904420408-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/200904420408/200904420408-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "포도",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "블루베리",
+        "origin": "미국산",
+        "amount": "23.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛쥬스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "골드키위",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아사이베리과즙",
+        "origin": "브라질산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:44"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 55.0,
+    "carbohydrate_g": 13.68,
+    "protein_g": 0.37,
+    "fat_g": 0.0,
+    "sugar_g": 12.63,
+    "sodium_mg": 5.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-04 04:19:44"
+  }
+}

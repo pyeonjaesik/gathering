@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "Home plus 콘칩",
+    "reportnum": "1986033205139"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205139/1986033205139-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205139/1986033205139-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205139/1986033205139-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥분[외국산(국가명은 홈페이지에 별도표시)]74.31%,팜올레인유[팜올레인유(말레이지아산)99.95%,향신료올레오레진류]16.53%,군옥수수맛씨즈닝C[콘포타쥬씨즈닝베이스-1(국내산),정백당,무수결정포도당,유청분말(국내산),백후추분,아스파탐(합성감미료)페닐알리닌 함유],쌀그릿츠,혼합제제[비타아미노(글리신,L-라이신염산염,비타민B1염산염,DL-알라닌)],정제소금,식물성셀룰로오즈",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205139/1986033205139-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=110g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/1986033205139/1986033205139-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥분",
+        "origin": "외국산",
+        "amount": "74.31%",
+        "sub_ingredients": [
+          {
+            "name": "국가명은 홈페이지에 별도표시",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜올레인유",
+        "amount": "99.95%",
+        "sub_ingredients": [
+          {
+            "name": "말레이지아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향신료올레오레진류",
+        "amount": "16.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "군옥수수맛씨즈닝C",
+        "sub_ingredients": [
+          {
+            "name": "콘포타쥬씨즈닝베이스-1",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀그릿츠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "비타아미노",
+            "sub_ingredients": [
+              {
+                "name": "글리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-라이신염산염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민B1염산염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "DL-알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성셀룰로오즈",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:16:13"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 545.0,
+    "carbohydrate_g": 60.0,
+    "protein_g": 6.36,
+    "fat_g": 30.91,
+    "sugar_g": 3.64,
+    "sodium_mg": 364.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.64,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "110g",
+    "collected_at": "2026-03-03 16:16:13"
+  }
+}

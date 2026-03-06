@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "콘샌드식빵",
+    "reportnum": "19870364014191"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014191/19870364014191-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014191/19870364014191-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014191/19870364014191-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루[밀:외국산(미국,캐나다,스리랑카산)],백설탕,마가린[식물성유지(팜유:말레이시아산),가공유지(팜경화유:말레이시아산)],골드콘3.12%[옥수수99.3%:외국산(호주,미국,브라질산)],효모,정제소금,액상과당,활성글루텐,혼합제제(산도조절제,시클로덱스트린,유화제),기타가공품,합성착향료(군옥수수향),비타민B2",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014191/19870364014191-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량 2쪽(60 g) 총 약 12회 제공량(750g), 1회 제공량당 함량 *% 영양성분 기준치, 열량 143kcal, 탄수화물 28g 8%, 당류 3g, 단백질 4g 7%, 지방 1.7g 3%, 포화지방 1.2g 8%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 250mg 13%, *%영양성분기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870364014191/19870364014191-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "외국산, 미국산, 캐나다산, 스리랑카산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "골드콘",
+        "origin": "외국산, 호주산, 미국산, 브라질산",
+        "amount": "3.12%",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "origin": "외국산, 호주산, 미국산, 브라질산",
+            "amount": "99.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "활성글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "군옥수수향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:34:50"
+  },
+  "nutrition": {
+    "kcal": 143.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 1.7,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 250.0,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 2쪽(60 g)",
+    "collected_at": "2026-03-03 16:34:50"
+  }
+}

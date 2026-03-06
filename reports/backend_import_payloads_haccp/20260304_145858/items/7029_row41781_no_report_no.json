@@ -1,0 +1,182 @@
+{
+  "product": {
+    "name_ko": "쇠고기잡곡죽",
+    "reportnum": "19880589063210"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063210/19880589063210-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063210/19880589063210-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063210/19880589063210-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "죽-정제수,쌀9.14%(찹쌀80%,맵쌀20%,국산),쇠고기6.27%(호주산),찰보리2.12%(국산),당근(국산),조개야채엑기스,흑미0.65%(국산),찰현미04.49%(국산),참치뼈엑기스,사골농축액DM,정제소금,표고버섯,L-글루타민산나트륨(향미증진제),죽스프-김50%(국산),참깨50%(수입산),참기름-볶은참깨가루100%(수입산),쇠고기,조개류(홍합포함),대두,밀함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063210/19880589063210-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=288g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063210/19880589063210-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "죽",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "9.14%",
+            "sub_ingredients": [
+              {
+                "name": "찹쌀",
+                "amount": "80%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맵쌀",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇠고기",
+            "origin": "호주산",
+            "amount": "6.27%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰보리",
+            "origin": "국산",
+            "amount": "2.12%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개야채엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "origin": "국산",
+            "amount": "0.65%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰현미",
+            "origin": "국산",
+            "amount": "04.49%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치뼈엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사골농축액DM",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "죽스프",
+            "sub_ingredients": [
+              {
+                "name": "김",
+                "origin": "국산",
+                "amount": "50%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참깨",
+                "origin": "수입산",
+                "amount": "50%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참기름",
+            "origin": "수입산",
+            "amount": "볶은참깨가루100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조개류",
+            "sub_ingredients": [
+              {
+                "name": "홍합",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:20"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 56.0,
+    "carbohydrate_g": 9.72,
+    "protein_g": 2.08,
+    "fat_g": 0.87,
+    "sugar_g": 0.0,
+    "sodium_mg": 167.0,
+    "cholesterol_mg": 3.47,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "288g",
+    "collected_at": "2026-03-04 03:26:20"
+  }
+}

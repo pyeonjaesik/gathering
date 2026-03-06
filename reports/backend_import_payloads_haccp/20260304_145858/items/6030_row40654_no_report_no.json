@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "코코넛밀크&진저",
+    "reportnum": "2009044204079"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204079/2009044204079-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204079/2009044204079-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204079/2009044204079-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "파인애플퓨레(베트남산), 배퓨레(배:국산), 코코넛워터, 코코넛밀크 10%(베트남산), 무퓨레, 백포도농축과즙, 열대과일농축과즙, 정제수, 생강농축액 0.2%[고형분 60%(생강:국산)], 마카분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204079/2009044204079-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "구분 함량 영양소 기준치 열량 140kcal - 탄수화물 20g 6% 식이섬유 2g 8% 당류 18g - 단백질 2g 4% 지방 6g 12% 포화지방 5g 33% 트랜스지방 0g - 콜레스테롤 0mg 0% 나트륨 65mg 3% 비타민A 0㎍RE 0% 비타민C 0mg 0% 칼슘 20mg 3% 철 0.4mg 3% * % 영양소기준치 : 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204079/2009044204079-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파인애플퓨레",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배퓨레",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛워터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛밀크",
+        "origin": "베트남산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "열대과일농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강농축액",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마카분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:54"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 20.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 18.0,
+    "protein_g": 2.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 65.0,
+    "calcium_mg": 20.0,
+    "iron_mg": 0.4,
+    "collected_at": "2026-03-04 04:19:54"
+  }
+}

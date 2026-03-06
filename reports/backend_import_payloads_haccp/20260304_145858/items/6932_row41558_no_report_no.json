@@ -1,0 +1,76 @@
+{
+  "product": {
+    "name_ko": "알나라 깐 메추리알",
+    "reportnum": "201605750012"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605750012/201605750012-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605750012/201605750012-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605750012/201605750012-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "메추리알99.5%(국산),충전수(정제염,식초)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605750012/201605750012-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(50g),총 10회 제공량(500g),1회 제공량 당 함량,%영양소 기준치,열량 65 kcal,탄수화물 2g(1%),당류 0g,식이섬유 0g,단백질 5g(9%),지방 4g(8%),포화지방 2g(13%),트랜스지방 0.00g,콜레스테롤 183mg(61%),나트륨 57mg(3%),*%영양성분기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201605750012/201605750012-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "메추리알",
+        "origin": "국산",
+        "amount": "99.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "충전수",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:42"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "dietary_fiber_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 183.0,
+    "sodium_mg": 57.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(50g)",
+    "collected_at": "2026-03-04 04:47:42"
+  }
+}

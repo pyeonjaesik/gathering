@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "프레시안영양쏙쏙김밥햄",
+    "reportnum": "2008040501562"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501562/2008040501562-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501562/2008040501562-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501562/2008040501562-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산),정제수,백설탕,정제소금(국산),분리대두단백,유청분말(우유),햄스파이스디비(밀),해조칼슘0.59%,참기름,혼합제제(산도조절제),티알이-씨(보조단백질),카라기난,혼합제제[L-글루타민산나트륨(향미증진제)향미증진제],페퍼로얄-1,혼합제제(글리세린,고량색소,탄산나트륨,안나토색소,홍국적색소),L-아스코르빈산나트륨,락색소(천연색소),젖산철0.01%,아질산나트륨(발색제,합성보존료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501562/2008040501562-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 30g/총 약9회제공량(260g) ()안의수치는 1일영양소기준치에대한 비율임 열량65kcal 탄수화물2g(1%), 당류 1g미만, 단백질 5g (9%),지방4g (8%), 포화지방 1.4g (9%), 트랜스지방 0g, 콜레스테롤 10mg (3%), 나트륨 220mg (10%), 칼슘55mg(8%),철1mg(8%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008040501562/2008040501562-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "햄스파이스디비",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "amount": "0.59%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "amount": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고량색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "안나토색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍국적색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "티알이-씨",
+        "amount": "보조단백질",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "페퍼로얄-1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-아스코르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "젖산철",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "amount": "발색제, 합성보존료",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:11:08"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 2.0,
+    "protein_g": 5.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 220.0,
+    "calcium_mg": 55.0,
+    "iron_mg": 1.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 30g",
+    "collected_at": "2026-03-04 04:11:08"
+  }
+}

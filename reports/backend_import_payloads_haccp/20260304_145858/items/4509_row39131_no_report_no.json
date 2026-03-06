@@ -1,0 +1,236 @@
+{
+  "product": {
+    "name_ko": "백설김치손만두",
+    "reportnum": "2001049335879"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001049335879/2001049335879-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001049335879/2001049335879-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001049335879/2001049335879-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루25.97%(밀:호주,미국산),김치16,84%[배추(국산),고춧가루(중국산),마늘,멸치액젓,대파],돼지고기(국산),두부[대두,응고제,혼합제제(유화제,산도조절제,식물성유지)],양배추,대파,부추,콩단백,혼합제제1(타피오카변성전분,밀글루텐,말토덱스트린,밀가루),양파,당면,복합조미식품1,마늘,백설탕,고춧가루,복합조미식푸2,정제소금,복합조미식품3,대두유,L-글루타민산나트륨(향미증진제),글류텐,후춧가루,혼합제제2(폴리인산나트륨,피로인산나트륨,메타인산나트륨)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001049335879/2001049335879-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 약1/6포장량당(150g), 총 약6회제공량(840g), 1회제공량당 함량 *%영양소기준치, 열량295kcal, 탄수화물34g 10%, 당류2.0g, 단백질10g 18%, 지방13g 25%, 포화지방4.2g 28%, 트랜스지방0g, 콜레스테롤8mg 3%, 나트륨530mg 27%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001049335879/2001049335879-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산, 미국산",
+        "amount": "25.97%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김치",
+        "amount": "16.84%",
+        "sub_ingredients": [
+          {
+            "name": "배추",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치액젓",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양배추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "타피오카변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당면",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글류텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:58"
+  },
+  "nutrition": {
+    "kcal": 295.0,
+    "carbohydrate_g": 34.0,
+    "sugar_g": 2.0,
+    "protein_g": 10.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 4.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 8.0,
+    "sodium_mg": 530.0,
+    "basis_amount": 150.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 약1/6포장량당(150g)",
+    "collected_at": "2026-03-04 03:33:58"
+  }
+}

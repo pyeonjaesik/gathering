@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "폴짝폴짝콩콩콩 복숭아",
+    "reportnum": "19980449002354"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002354/19980449002354-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002354/19980449002354-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002354/19980449002354-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,당시럽,요구르트베이스[탈지분유(국산,우유),백설탕,구연산,유산균],백설탕,복숭아과즙농축액(복숭아과즙으로2%,이스라엘산),구연산,합성착향료(복숭아향,시트러스향),펙틴,자일리톨,구연산나트륨,자당지방산에스테르,아세설팜칼륨(합성감미료),수크랄로스(합성감미료),비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002354/19980449002354-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=210ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980449002354/19980449002354-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요구르트베이스",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아과즙농축액",
+        "origin": "이스라엘산",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "복숭아과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일리톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아세설팜칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:44:50"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 29.0,
+    "carbohydrate_g": 7.14,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 6.67,
+    "sodium_mg": 6.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "210ml",
+    "collected_at": "2026-03-03 21:44:50"
+  }
+}

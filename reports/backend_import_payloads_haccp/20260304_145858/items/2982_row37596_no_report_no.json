@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "바나나에 반한 웨하스",
+    "reportnum": "19910461077282"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077282/19910461077282-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077282/19910461077282-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077282/19910461077282-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀크혼합분말{백설탕,야자유(말레이시아산),탈지분유(국내산),함수결정포도당,덱스트린,전지분유(국내산)},밀가루(밀:미국산),야자유(외국산/말레이시아,필리핀,인도네시아),바나나농축분말[바나나농축액(이스라엘산,60Brix 60%이상) 50% 덱스트린]2.98%,감자전분,유화제,레몬과즙분말,산도조절제,천연향료(바나나향),정제소금,해바라기유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077282/19910461077282-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량250kcal, 탄수화물30g (9%), 당류15g (15%), 단백질3g (5%), 지방13g (24%), 포화지방11g (73%), 트렌스지방0g, 콜레스테롤0mg (0%), 나트륨65mg (3%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910461077282/19910461077282-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀크혼합분말",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "함수결정포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자유",
+        "origin": "외국산, 말레이시아산, 필리핀산, 인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바나나농축분말",
+        "sub_ingredients": [
+          {
+            "name": "바나나농축액",
+            "origin": "이스라엘산",
+            "amount": "60Brix 60%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬과즙분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연향료",
+        "sub_ingredients": [
+          {
+            "name": "바나나향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:48:54"
+  },
+  "nutrition": {
+    "kcal": 250.0,
+    "carbohydrate_g": 30.0,
+    "sugar_g": 15.0,
+    "protein_g": 3.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 11.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 65.0,
+    "collected_at": "2026-03-03 18:48:54"
+  }
+}

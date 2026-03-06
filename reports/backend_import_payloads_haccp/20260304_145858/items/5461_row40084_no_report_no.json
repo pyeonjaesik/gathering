@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "우유식빵",
+    "reportnum": "20070156181451"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181451/20070156181451-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181451/20070156181451-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181451/20070156181451-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀:수입산),마가린(대두)[식물성유지(팜유:말레이시아산),가공유지(팜경화유:말레이시아산),정제염,유화제,레시틴],우유7.14%(원유:국산),계란,백설탕,혼합탈지분유,효모,정제소금,프락토올리고당,합성착향료(밀크향),혼합제제(산도조절제,시클로덱스트린,유화제)일반가공식품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181451/20070156181451-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량3쪽(140g) 총3회제공량(420g) 1회 제공량당 함량 *%영양소기준치 열량 355kcal 탄수화물 61g 19% 당류 6g 단백질 11g 20% 지방 7.2g 14% 포화지방 4.7g 31% 트랜스지방 0g 콜레스테롤 22mg 7% 나트륨 560mg 28% *%영양소기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181451/20070156181451-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "amount": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공유지",
+            "amount": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "7.14%",
+        "sub_ingredients": [
+          {
+            "name": "원유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "계란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:44"
+  },
+  "nutrition": {
+    "kcal": 355.0,
+    "carbohydrate_g": 61.0,
+    "sugar_g": 6.0,
+    "protein_g": 11.0,
+    "fat_g": 7.2,
+    "saturated_fat_g": 4.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 22.0,
+    "sodium_mg": 560.0,
+    "basis_amount": 140.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량3쪽(140g)",
+    "collected_at": "2026-03-04 04:01:44"
+  }
+}

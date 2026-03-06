@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "마켓오 리얼 초콜릿 밀크",
+    "reportnum": "19830487051149"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830487051149/19830487051149-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830487051149/19830487051149-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830487051149/19830487051149-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "백설탕,전지분유(프랑스산),코코아버터(인도네시아산),코코아메스1(네덜란드산),코코아메스2,레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830487051149/19830487051149-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=15g | foodSize=36g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1983/19830487051149/19830487051149-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전지분유",
+        "origin": "프랑스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아버터",
+        "origin": "인도네시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아메스1",
+        "origin": "네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아메스2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:34:09"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 556.0,
+    "carbohydrate_g": 55.56,
+    "protein_g": 8.33,
+    "fat_g": 33.33,
+    "sugar_g": 52.78,
+    "sodium_mg": 69.0,
+    "cholesterol_mg": 22.22,
+    "saturated_fat_g": 22.22,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "15g",
+    "total_content": "36g",
+    "collected_at": "2026-03-03 15:34:09"
+  }
+}

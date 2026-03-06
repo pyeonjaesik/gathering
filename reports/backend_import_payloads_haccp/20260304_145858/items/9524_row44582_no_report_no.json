@@ -1,0 +1,284 @@
+{
+  "product": {
+    "name_ko": "동원 참치라면",
+    "reportnum": "20120512055160"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/20120512055160/20120512055160-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/20120512055160/20120512055160-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/20120512055160/20120512055160-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면/소맥분(미국산,호주산),팜유(말레이시아산),감자전분,변성전분,감미유S,정제염,면류첨가알칼리제(탄산칼륨,탄산나트륨,제이인산나트륨),씨즈닝엑기스,구아검,산도조절제,녹차풍미액,비타민B2 스프/라면에 넣어먹는 동원참치[가다랑어40%(원양산),정제수,채종유(호주산),완두콩,당근,백설탕,야채추출물,혼합제제(변성전분,덱스트린),타마린드검],정제염,L-글루타민산나트륨(향미증진제),조미간장양념분,양념간장액분말,설탕,간장분말,쇠고기조미분말,볶음고추분말,우골설렁탕분말,쇠고기장국분말,사골엑기스분말,혼합간장분말,조미분에이,양파간장복합분말,고춧가루,조미마늘분,육수풍미분말,매운맛시즈닝분말,흑후추분말,향미증진제,생강풍미분말,산도조절제,비프시즈닝오일,파프리카추출색소,후추시즈닝분말,조미맛분 .참치함량:참치소스 중 가다랑어40%(원양산)함유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/20120512055160/20120512055160-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/20120512055160/20120512055160-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면/소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감미유S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면류첨가알칼리제",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제이인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "씨즈닝엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차풍미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스프/라면에 넣어먹는 동원참치",
+        "sub_ingredients": [
+          {
+            "name": "가다랑어",
+            "amount": "40%",
+            "sub_ingredients": [
+              {
+                "name": "원양산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "완두콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "타마린드검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미간장양념분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양념간장액분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기조미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음고추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우골설렁탕분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기장국분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미분에이",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파간장복합분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미마늘분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "육수풍미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛시즈닝분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강풍미분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프시즈닝오일",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추시즈닝분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미맛분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가다랑어(원양산",
+        "amount": "40%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:12"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 334.0,
+    "carbohydrate_g": 40.63,
+    "protein_g": 9.38,
+    "fat_g": 15.0,
+    "sugar_g": 1.25,
+    "sodium_mg": 1038.0,
+    "cholesterol_mg": 9.38,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:36:12"
+  }
+}

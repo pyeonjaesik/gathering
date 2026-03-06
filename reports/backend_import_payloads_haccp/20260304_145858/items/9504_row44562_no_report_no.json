@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "일레디젤라또 아체르보요거트",
+    "reportnum": "2012040503026"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503026/2012040503026-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503026/2012040503026-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503026/2012040503026-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우유(국산),정제수,설탕,세타프루믹스[이탈리아산/설탕,포도당,말토덱스트린,카르복시메틸셀룰로오스나트륨,글리세린지방산에스테르,대두분말],요거트파우더[이탈리아산/요거트분말29.5%,포도당,탈지분유,구연산,젖산,합성향료(요거트향,크림밀크향)]5.4%,포도당,구아검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503026/2012040503026-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=2000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012040503026/2012040503026-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "세타프루믹스",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요거트파우더",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "요거트분말",
+            "amount": "29.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젖산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "요거트향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크림밀크향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:34:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 142.0,
+    "carbohydrate_g": 29.0,
+    "protein_g": 2.0,
+    "fat_g": 2.0,
+    "sugar_g": 28.0,
+    "sodium_mg": 35.0,
+    "cholesterol_mg": 1.2,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "2000g",
+    "collected_at": "2026-03-04 04:34:06"
+  }
+}

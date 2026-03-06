@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "딸기&바나나",
+    "reportnum": "2009044204084"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204084/2009044204084-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204084/2009044204084-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204084/2009044204084-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 딸기퓨레 28%(딸기:국산), 바나나퓨레 18.2%(필리핀산), 당근즙(베트남산), 배농축과즙, 채소발효즙, 홍삼농축액 0.15%(홍삼성분 70mg/g이상, 고형분 60% 이상, 인삼:국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204084/2009044204084-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 130ml/1회, 구분 1회제공량당함량 영양소기준치, 열량 55kcal, 탄수화물 13g 4%, 식이섬유 0g 0%, 당류 13g 13%, 단백질 1g미만 2%, 비타민A 111㎍RE 16%, 칼슘 25mg 4%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 70mg 4%, 비타민C 10mg 10%, 철 0.8mg 7%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009044204084/2009044204084-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기퓨레",
+        "origin": "국산",
+        "amount": "28%",
+        "sub_ingredients": [
+          {
+            "name": "딸기",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바나나퓨레",
+        "origin": "필리핀산",
+        "amount": "18.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근즙",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배농축과즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채소발효즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "0.15%",
+        "sub_ingredients": [
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60% 이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "인삼",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:00"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 13.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 13.0,
+    "calcium_mg": 25.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 70.0,
+    "iron_mg": 0.8,
+    "basis_amount": 130.0,
+    "basis_unit": "ml",
+    "basis_text": "130ml/1회",
+    "collected_at": "2026-03-04 04:20:00"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "product": {
+    "name_ko": "진짜치즈스낵체다",
+    "reportnum": "2003033247090"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003033247090/2003033247090-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003033247090/2003033247090-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003033247090/2003033247090-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈68.3%[카글리아타치즈70%(독일산-살균우유,정제염,유산균배양액,우유응고효소,염화칼슘),칼라체다치즈30%(뉴질랜드산-살균우유,유산균배양액,정제염,우유응고효소,안나토색소)],유크림(국산),가공버터[(호주산),버터유,정제수,코코넛유,무지유고형분],렌넷카제인,혼합제제(구연산나트륨,폴리인산나트륨,폴리인산칼륨),스트롱체다치즈파우더,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003033247090/2003033247090-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 총 내용량 23 g, 23 g 당 함량 : 열량 148kcal 탄수화물 2g (1%) 당류 0.7g 단백질 8g(15%) 지방 12g(24%) 포화지방 6g(40%) 트랜스지방 0.2g 콜레스테롤 6mg(2%) 나트륨 330mg(17%) *()안의 수치는 1일 영양성분 기준치에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003033247090/2003033247090-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "amount": "68.3%",
+        "sub_ingredients": [
+          {
+            "name": "카글리아타치즈",
+            "origin": "독일산",
+            "amount": "70%",
+            "sub_ingredients": [
+              {
+                "name": "살균우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "칼라체다치즈",
+            "origin": "뉴질랜드산",
+            "amount": "30%",
+            "sub_ingredients": [
+              {
+                "name": "살균우유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "안나토색소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "origin": "호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "렌넷카제인",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "구연산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스트롱체다치즈파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:13"
+  },
+  "nutrition": {
+    "kcal": 148.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.7,
+    "protein_g": 8.0,
+    "fat_g": 12.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.2,
+    "cholesterol_mg": 6.0,
+    "sodium_mg": 330.0,
+    "basis_amount": 23.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 23 g",
+    "collected_at": "2026-03-04 03:46:13"
+  }
+}

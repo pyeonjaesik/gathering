@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "유기백미식혜",
+    "reportnum": "2007046401510"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401510/2007046401510-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401510/2007046401510-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401510/2007046401510-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "유기농백미(국산) 6.5%, 정제수, 유기농 설탕 8.6%, 유기농엿기름(유기농보리100%,국산) 5.7%, 유기사과 농축액(고형분 66.8%,터키산) 0.5%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401510/2007046401510-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=1500ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401510/2007046401510-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농백미",
+        "origin": "국산",
+        "amount": "6.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농 설탕",
+        "amount": "8.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농엿기름",
+        "origin": "국산",
+        "amount": "5.7%",
+        "sub_ingredients": [
+          {
+            "name": "유기농보리",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기사과 농축액",
+        "origin": "터키산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "66.8%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:37"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 51.0,
+    "carbohydrate_g": 12.53,
+    "protein_g": 0.27,
+    "fat_g": 0.0,
+    "sugar_g": 9.87,
+    "sodium_mg": 1.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "1500ml",
+    "collected_at": "2026-03-04 04:05:37"
+  }
+}

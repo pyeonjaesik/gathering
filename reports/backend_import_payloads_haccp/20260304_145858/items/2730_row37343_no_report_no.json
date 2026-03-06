@@ -1,0 +1,106 @@
+{
+  "product": {
+    "name_ko": "건강한참치오메가369",
+    "reportnum": "19880589063219"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063219/19880589063219-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063219/19880589063219-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063219/19880589063219-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "다랑어79.0%(원양산),카놀라유(수입산)12.0%,정제수,해바라기유(수입산)1.8%,생압착들깨유(식물성오메가357.0%,국산)1.2%,야채추출물,다시마베이스(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063219/19880589063219-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 : 열량 210kcal, 탄수화물0g, 단백질 19g, 지방15g, 포화지방2g, 트랜스지방 0g, 콜레스테롤 45mg, 나트륨 410mg, 오메가3 1,135mg, 오메가9 6,110mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063219/19880589063219-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "다랑어",
+        "amount": "79.0%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "수입산",
+        "amount": "12.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "수입산",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생압착들깨유",
+        "origin": "국산",
+        "amount": "1.2%",
+        "sub_ingredients": [
+          {
+            "name": "식물성오메가3",
+            "amount": "7.0%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마베이스",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:40:28"
+  },
+  "nutrition": {
+    "kcal": 210.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 19.0,
+    "fat_g": 15.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 45.0,
+    "sodium_mg": 410.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 17:40:28"
+  }
+}

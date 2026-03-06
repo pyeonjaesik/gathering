@@ -1,0 +1,344 @@
+{
+  "product": {
+    "name_ko": "즉각취식형불닭비빔밥",
+    "reportnum": "19900360106252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106252/19900360106252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106252/19900360106252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106252/19900360106252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "건조미69.17%(국산)·불닭소스-씨:[소스류(살균제품),중량25g],정제수,백설탕,양조간장{천일염(호주산,국산),탈지대두(인도산),소맥(밀:미국산),과당,주정},고추맛기름7.0%[고추추출오일{대두유(수입산),고춧가루(국산)},고추씨기름(중국산),파프리카추출색소,올레오레진캪시컴],오징어엑기스6.9%{오징어분해액(오징어:연근해산),정제소금(국산),덱스트린,향미증진제},하바네로맛시즈닝,치킬추출농축액4.0%(치킨고형분함량4.9%),하늘초분말3.0%,정제소금,마늘,양파,혼합제제(변성전분,말토덱스트린),숯불갈비시즈닝분말,치킨향분말(치킨고형분함량2.7%),L-글루타민산나트륨(향미증진제),유용성파프리카색소,아미노베이스-P,흑후추분말,치킨시즈닝분말0.2%(치킨고형분함량5.32%),올레오레진캪시컴 ·야채후레이크-C{건당근(중국산),건조양파(중국산),참깨,지단후레이크(계란,밀),구운세절김} ·치킨맛후레이크{닭가슴살(국내산),난백분(계란:수입산),치킨엑기스4S분말,소맥전분(밀),치킨보일드플레이버} ·참기름(수입산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106252/19900360106252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900360106252/19900360106252-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건조미",
+        "origin": "국산",
+        "amount": "69.17%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불닭소스-씨",
+        "sub_ingredients": [
+          {
+            "name": "소스류",
+            "amount": "25g",
+            "sub_ingredients": [
+              {
+                "name": "살균제품",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "천일염",
+                "origin": "호주산, 국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고추맛기름",
+            "amount": "7.0%",
+            "sub_ingredients": [
+              {
+                "name": "고추추출오일",
+                "sub_ingredients": [
+                  {
+                    "name": "대두유",
+                    "origin": "수입산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "고춧가루",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "고추씨기름",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "올레오레진캪시컴",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "오징어엑기스",
+            "amount": "6.9%",
+            "sub_ingredients": [
+              {
+                "name": "오징어분해액",
+                "sub_ingredients": [
+                  {
+                    "name": "오징어",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "연근해산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "하바네로맛시즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킬추출농축액",
+            "amount": "4.0%",
+            "sub_ingredients": [
+              {
+                "name": "치킨고형분함량",
+                "amount": "4.9%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "하늘초분말",
+            "amount": "3.0%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "숯불갈비시즈닝분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨향분말",
+            "amount": "치킨고형분함량 2.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유용성파프리카색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미노베이스-P",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨시즈닝분말",
+            "amount": "0.2%",
+            "sub_ingredients": [
+              {
+                "name": "치킨고형분함량",
+                "amount": "5.32%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "올레오레진캪시컴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채후레이크-C",
+            "sub_ingredients": [
+              {
+                "name": "건당근",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "건조양파",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참깨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "지단후레이크",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "구운세절김",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "치킨맛후레이크",
+            "sub_ingredients": [
+              {
+                "name": "닭가슴살",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난백분",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치킨엑기스4S분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥전분",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "치킨보일드플레이버",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "참기름",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:24:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 354.0,
+    "carbohydrate_g": 74.17,
+    "protein_g": 7.5,
+    "fat_g": 3.33,
+    "sugar_g": 2.5,
+    "sodium_mg": 660.0,
+    "cholesterol_mg": 28.33,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "120g",
+    "collected_at": "2026-03-03 18:24:02"
+  }
+}

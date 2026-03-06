@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "점보닭다리바베큐",
+    "reportnum": "2006040504749"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504749/2006040504749-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504749/2006040504749-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504749/2006040504749-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭다리(미국산)94.07%,치킨맛시즈닝분말[정제염(국내산),간장분말{조미아미노산간장(대두:인도산)],핫스파이스시즈닝분말,소르빈산칼륨(합성보존료),피클솔루션씨즈닝,에리소르빈산나트륨(산화방지제),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504749/2006040504749-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 2,500g 1회 섭취참고량(100g)당 215kcal 1회 섭취참고량당 1일 영양성분 기준치에 대한 비율 나트륨 462mg 23%, 탄수화물 20g 6%, 당류 3g 3%, 지방 7.6g 14%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 26mg 9%, 단백질 17g 31% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040504749/2006040504749-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭다리",
+        "origin": "미국산",
+        "amount": "94.07%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치킨맛시즈닝분말",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "조미아미노산간장",
+                "origin": "인도산",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "핫스파이스시즈닝분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "피클솔루션씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리소르빈산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:03"
+  },
+  "nutrition": {
+    "kcal": 215.0,
+    "sodium_mg": 462.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 3.0,
+    "fat_g": 7.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 26.0,
+    "protein_g": 17.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 섭취참고량(100g)",
+    "collected_at": "2026-03-04 03:59:03"
+  }
+}

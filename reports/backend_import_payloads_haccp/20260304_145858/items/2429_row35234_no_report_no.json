@@ -1,0 +1,215 @@
+{
+  "product": {
+    "name_ko": "손칼국수",
+    "reportnum": "198803831271379"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271379/198803831271379-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271379/198803831271379-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271379/198803831271379-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면-소맥분(미국산,호주산),변성전분,정제염(국내산),미감에스유,면류첨가알칼리제(산도조절제)/스프-닭고기베이스{치킨엑기스(닭:국내산),정제염(국내산)},정백당,지미강화육수분말,칼국수베이스,맛베이스에스,정제염,쌀가루,아미노산혼합제제(영양강화제,향미증진제),혼합양념분말,치킨향분말,마늘분말,양념간장분말,향미증진제,후추분,양파분,팜유,마늘맛오일,매운조미고추맛분,투메릭분말,파프리카추출물,계란지단,실당근,건파,청경채,조미건조홍고추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271379/198803831271379-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271379/198803831271379-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "미감에스유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프",
+        "sub_ingredients": [
+          {
+            "name": "닭고기베이스",
+            "sub_ingredients": [
+              {
+                "name": "치킨엑기스",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지미강화육수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "칼국수베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛베이스에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미노산혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "영양강화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합양념분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치킨향분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양념간장분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘맛오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운조미고추맛분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "투메릭분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란지단",
+            "sub_ingredients": []
+          },
+          {
+            "name": "실당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청경채",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미건조홍고추",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:59:00"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 355.0,
+    "carbohydrate_g": 76.0,
+    "protein_g": 11.0,
+    "fat_g": 1.0,
+    "sugar_g": 4.0,
+    "sodium_mg": 1500.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "100g",
+    "collected_at": "2026-03-03 16:59:00"
+  }
+}

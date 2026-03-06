@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "자연은맛있다 가쓰오메밀냉소바",
+    "reportnum": "19880445009844"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009844/19880445009844-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009844/19880445009844-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009844/19880445009844-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "소맥분(밀:호주산/미국산),자맛메밀냉소바액상스프(대두,밀),<메밀냉소바베이스(탈지대두:인도산,소맥:미국산),백설탕,양조간장(탈지대두:인도산,소맥:미국산),미림,소바쯔유>,변성전분,볶음메밀분(중국산),알파메밀분(중국산),글루텐,현미혼합유,자맛메밀냉소바건더기,정제소금,표고버섯베이스,허브추출물 *특정성분함량 및 원산지:면중메밀(건물기준):10%(중국산),스프중가쓰오부시(고형분함량):1.94%(인도네시아산:98.5%,중국산1.5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009844/19880445009844-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=464g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009844/19880445009844-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자맛메밀냉소바액상스프",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "메밀냉소바베이스",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": [
+          {
+            "name": "탈지대두",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소바쯔유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음메밀분",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "알파메밀분",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미혼합유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자맛메밀냉소바건더기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 315.0,
+    "carbohydrate_g": 68.1,
+    "protein_g": 7.76,
+    "fat_g": 1.21,
+    "sugar_g": 8.62,
+    "sodium_mg": 1500.0,
+    "dietary_fiber_g": 0.4,
+    "calcium_mg": 28.0,
+    "iron_mg": 1.03,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "464g",
+    "collected_at": "2026-03-04 03:25:31"
+  }
+}

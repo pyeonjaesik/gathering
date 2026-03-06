@@ -1,0 +1,109 @@
+{
+  "product": {
+    "name_ko": "쎈쿡 영양찰밥",
+    "reportnum": "19920461131159"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131159/19920461131159-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131159/19920461131159-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131159/19920461131159-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "찹쌀60.9%(국산),멥쌀19.3%(국산),현미4.5%(국산),차수수4.1%(국산),율무3.5%(국산),흑미3.5%(국산),서리태(국산),청태(국산),팥(국산),천일염(뉴질랜드산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131159/19920461131159-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 330kcal, 탄수화물 71g, 당류 0g, 단백질 8g, 지방 1.3g, 포화지방 0g, 트랜스지방 0g, 콜레스테롤 0g, 나트륨 130mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131159/19920461131159-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "60.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "19.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "차수수",
+        "origin": "국산",
+        "amount": "4.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "율무",
+        "origin": "국산",
+        "amount": "3.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "3.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "서리태",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청태",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팥",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:10:53"
+  },
+  "nutrition": {
+    "kcal": 330.0,
+    "carbohydrate_g": 71.0,
+    "sugar_g": 0.0,
+    "protein_g": 8.0,
+    "fat_g": 1.3,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 130.0,
+    "collected_at": "2026-03-03 19:10:53"
+  }
+}

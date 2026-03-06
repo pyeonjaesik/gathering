@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "오랜 시간과 정성의 진국 사골우거지국",
+    "reportnum": "20090405002104"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002104/20090405002104-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002104/20090405002104-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002104/20090405002104-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,배추우거지8%(국내산),사골추출농축액7.8%[사골(호주산)/고형분43%],소고기4%(국내산),양지추출액2%(고형분10%),대파,쇠고기육수베이스1.0%,된장0.7%,야채혼합농축액,정제염,무추출물분말,5'-리보뉴클레오티드이나트륨,고소한맛시즈닝3,우마미복합베이스1,흑후추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002104/20090405002104-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(250g)/총 2회 제공량(500g) *%영양성분기준치:1일 영양성분 기준치에 대한 비율 1회 제공량당 함량 *%영양성분 기준치 열량 85kcal, 탄수화물 9g 3%, 식이섬유 0g 0%, 당류 9g, 단백질 8g 15%, 지방 1.8g 4%, 포화지방 0.5g 3%, 트랜스지방 0g, 콜레스테롤 5mg 2%, 나트륨 680mg 34% 비타민A 77㎍RE 11%/비타민C 0mg 0%/칼슘 53mg 8%/철 0.8mg 6%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090405002104/20090405002104-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "배추우거지",
+        "origin": "국내산",
+        "amount": "8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골추출농축액",
+        "origin": "호주산",
+        "amount": "7.8%",
+        "sub_ingredients": [
+          {
+            "name": "사골",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "국내산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양지추출액",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "10%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기육수베이스",
+        "amount": "1.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야채혼합농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무추출물분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고소한맛시즈닝",
+        "amount": "3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우마미복합베이스",
+        "amount": "1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:19:27"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 9.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 9.0,
+    "protein_g": 8.0,
+    "fat_g": 1.8,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 680.0,
+    "calcium_mg": 53.0,
+    "iron_mg": 0.8,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(250g)",
+    "collected_at": "2026-03-04 04:19:27"
+  }
+}

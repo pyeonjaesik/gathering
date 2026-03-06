@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "동원비벼먹는비빔참치 불갈비맛",
+    "reportnum": "200204610734260"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734260/200204610734260-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734260/200204610734260-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734260/200204610734260-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "불갈비맛소스43.4%[양조간장{탈지대두(인도산), 소맥(밀:미국산)}, 물엿, 백설탕, 배퓨레(배:국산), 고꾸미풍미액에이-74,불갈비양념], 가다랑어21%(원양산), 양파10.9%(국산), 카놀라유, 당근9.9%, 감자4.8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734260/200204610734260-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=80g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610734260/200204610734260-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "불갈비맛소스",
+        "amount": "43.4%",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "배퓨레",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고꾸미풍미액에이-74",
+            "sub_ingredients": []
+          },
+          {
+            "name": "불갈비양념",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가다랑어",
+        "amount": "21%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "10.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "amount": "9.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "amount": "4.8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:40:15"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 185.0,
+    "carbohydrate_g": 17.0,
+    "protein_g": 7.0,
+    "fat_g": 10.0,
+    "sugar_g": 14.0,
+    "sodium_mg": 580.0,
+    "cholesterol_mg": 15.0,
+    "saturated_fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "80g",
+    "collected_at": "2026-03-04 03:40:15"
+  }
+}

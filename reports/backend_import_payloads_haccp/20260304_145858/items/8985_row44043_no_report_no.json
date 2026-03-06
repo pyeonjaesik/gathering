@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "아카페라 카페라떼",
+    "reportnum": "2007044311033"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007044311033/2007044311033-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007044311033/2007044311033-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007044311033/2007044311033-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,우유40%(국산),백설탕,콜드브루커피추출액2%(고형분3%이상/커피원두:에티오피아40%,콜롬비아30%,브라질30%),에스프레소커피추출액1.48%(고형분34%이상/브라질산),탄산수소나트륨,혼합제제(유화제,카라기난,구아검),합성착향료(커피향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007044311033/2007044311033-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=240ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007044311033/2007044311033-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "40%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜드브루커피추출액",
+        "amount": "2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "3%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피원두",
+            "origin": "에티오피아산 40%, 콜롬비아산 30%, 브라질산 30%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에스프레소커피추출액",
+        "origin": "브라질산",
+        "amount": "1.48%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "34%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:40"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 56.0,
+    "carbohydrate_g": 8.75,
+    "protein_g": 1.58,
+    "fat_g": 1.67,
+    "sugar_g": 7.92,
+    "sodium_mg": 46.0,
+    "cholesterol_mg": 6.25,
+    "saturated_fat_g": 1.25,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "240ml",
+    "collected_at": "2026-03-04 04:05:40"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "진한 우보탕",
+    "reportnum": "20080262106122"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106122/20080262106122-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106122/20080262106122-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106122/20080262106122-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,소고기(호주산)14.00%,토란대(미얀마산)6.476%,양파(국내산)3.326%,파2.801%,된장1.908%,탈피들깨가루,깻잎1.4%,마늘1.348%,쇠고기하이미,복합양념中,들깨가루,쇠고기엑기스,생강,고춧가루,재제소금,L-글루탐산나트륨(향미증진제),후추가루,향미증진제,매운맛(베트남초),산초가루",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106122/20080262106122-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500g 220kcal 총 내용량당 1일 영양성분 기준치에 대한비율 나트륨 1,880mg 94%탄수화물 13g 4%, 당류 5g 5%,지방 9g 17%,트랜스지방 0.5g미만,포화지방 4g 27%,콜레스테롤 25mg 8%,단백질 22g 40% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080262106122/20080262106122-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "14.00%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란대",
+        "origin": "미얀마산",
+        "amount": "6.476%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "amount": "3.326%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "amount": "2.801%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장",
+        "amount": "1.908%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈피들깨가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "깻잎",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "amount": "1.348%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기하이미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합양념",
+        "amount": "中",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들깨가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "재제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛",
+        "sub_ingredients": [
+          {
+            "name": "베트남초",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산초가루",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:35"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "sodium_mg": 1880.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 5.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 4.0,
+    "cholesterol_mg": 25.0,
+    "protein_g": 22.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 500g",
+    "collected_at": "2026-03-04 04:07:35"
+  }
+}

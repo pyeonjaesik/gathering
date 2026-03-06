@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "베오베 다크초코",
+    "reportnum": "2012060783651"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012060783651/2012060783651-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012060783651/2012060783651-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012060783651/2012060783651-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕, 정제수, 액상과당, 물엿, 코코아분말 11 %(싱가포르산 100 %), 초코후레이크 2 %(캐나다산), 코코아매스 0.5 %, 카제인나트륨(우유), 레시틴(대두), 초콜릿향(합성착향료), 바닐라향(합성착향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012060783651/2012060783651-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1회 [30.0 g] 총 63회 분량 [1890.0 g]\n<1회 제공량당 함량 % 영양소 기준치>\n열량87Kcal, 탄수화물19g 6%, 당류11g, 단백질0.0g 0%, 지방1.0g 2%, 포화지방산0.5g 3%, 트랜스지방산0.0g, 콜레스테롤0.0mg 0%, 나트륨12mg 1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012060783651/2012060783651-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말 11 %",
+        "origin": "싱가포르산 100%",
+        "amount": "11 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초코후레이크 2 %",
+        "origin": "캐나다산",
+        "amount": "2 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "amount": "0.5 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바닐라향",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:45"
+  },
+  "nutrition": {
+    "kcal": 87.0,
+    "carbohydrate_g": 19.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 1.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 12.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1회 [30.0 g]",
+    "collected_at": "2026-03-04 04:36:45"
+  }
+}

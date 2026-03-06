@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "Homeplus 꿀모과차",
+    "reportnum": "2006037243873"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037243873/2006037243873-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037243873/2006037243873-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037243873/2006037243873-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "당침모과[모과 50%(국산), 정백당 50%]45%, 액상과당, 정제수, 정백당, 벌꿀4%(국산), 구연산, 구연산삼나트륨, 카라기난검(카라기난, 구연산삼나트륨, 로커스트콩검, 염화칼륨), 정제염, 비타민C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037243873/2006037243873-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 50kcal 탄수화물 13g(4%) 당류 12g 단백질 0g 0% 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 25mg 1% 1회 제공량 1잔(20g)당 함량 / 총 50회 제공량 *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006037243873/2006037243873-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "당침모과",
+        "origin": "국산",
+        "amount": "45%",
+        "sub_ingredients": [
+          {
+            "name": "모과",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "amount": "50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라기난검",
+        "sub_ingredients": [
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산삼나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "염화칼륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:57"
+  },
+  "nutrition": {
+    "kcal": 50.0,
+    "carbohydrate_g": 13.0,
+    "sugar_g": 12.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 25.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1잔(20g)당 함량",
+    "collected_at": "2026-03-04 03:57:57"
+  }
+}

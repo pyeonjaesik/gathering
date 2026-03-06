@@ -1,0 +1,236 @@
+{
+  "product": {
+    "name_ko": "메밀소바",
+    "reportnum": "2001054954194"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001054954194/2001054954194-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001054954194/2001054954194-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001054954194/2001054954194-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "면/소맥분(미국산, 호주산), 감자전분(독일산), 메밀가루(면 중 5%;중국산), 식물성풍미유, 정제염, 면류첨가알칼리제(산도조절제), 혼합제제(산도조절제), 복합액상토코페롤{글리세린, d-토코페롤(혼합형), 유화제}, 올리고녹차풍미액. 스프류/미림{정백당, 주정, 쌀(외국산), 구연산, 프로테아제}, 정백당, 진간장, 정제수, 양조간장, 하나가쓰오추출물, 멸치추출물, 정제염, 물엿분말, 무농축액, 감자전분, 생강추출물, 호박산이나트륨, 육수맛조미베이스, 5`-리보뉴클레오티드이나트륨, 감초추출물분말, 와사비맛페이스트, 무, 쪽파, 김후레이크.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001054954194/2001054954194-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(127g) 총1회 제공량(127g) 1회 제공량당 함량 ※%영양성분 기준치 열량 400kcal, 탄수화물 85g (26%), 당류 10g, 단백질 13g (24%), 지방 0.7g (1%), 포화지방 0g (0%), 트랜스지방 0g, 콜레스테롤 0mg (0%), 나트륨 1,610mg (81%) ※%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001054954194/2001054954194-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "origin": "독일산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메밀가루",
+            "origin": "중국산",
+            "amount": "5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성풍미유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "복합액상토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "글리세린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "d-토코페롤",
+                "sub_ingredients": [
+                  {
+                    "name": "혼합형",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "올리고녹차풍미액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프류",
+        "sub_ingredients": [
+          {
+            "name": "미림",
+            "sub_ingredients": [
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쌀",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구연산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "프로테아제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하나가쓰오추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "호박산이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "육수맛조미베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5`-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초추출물분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "와사비맛페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쪽파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:36:39"
+  },
+  "nutrition": {
+    "kcal": 400.0,
+    "carbohydrate_g": 85.0,
+    "sugar_g": 10.0,
+    "protein_g": 13.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1610.0,
+    "basis_amount": 127.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(127g)",
+    "collected_at": "2026-03-04 03:36:39"
+  }
+}

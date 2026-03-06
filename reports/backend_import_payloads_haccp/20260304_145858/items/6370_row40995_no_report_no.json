@@ -1,0 +1,198 @@
+{
+  "product": {
+    "name_ko": "에브리원 쉐프 두부 닭가슴살 스테이크",
+    "reportnum": "2011040502156"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502156/2011040502156-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502156/2011040502156-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502156/2011040502156-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기59.20%{가슴살100%(국산)},두부(30%탈수)12.31%[두부143%{대두100%(외국산:미국,캐나다,중국),천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)}],양파(중국산),단무지(절임무60%,정제수,고과당,발효식초,단무지조미액베이스2,효소처리스테비아),대파,고소한 빵가루,불고기맛베이스,백설탕,조직대두단백,소맥전분,마늘,아몬드슬라이스,비프엠알파우더,정제소금(국산),생강,카라멜,흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502156/2011040502156-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 100g,122 kcal,1개당(100g),1일 영양성분 기준치에 대한 비율,탄수화물 7g(2%),당류 1g(0%),단백질 18g(30%),지방 2g(4%),포화지방 0.5g(3%),트랜스지방 0.0g(0%),콜레스테롤 37mg(12%),나트륨 292mg(15%),1일 영양성분기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011040502156/2011040502156-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "59.20%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "두부",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "amount": "12.31%",
+        "sub_ingredients": [
+          {
+            "name": "두부",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "amount": "143%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 캐나다산, 중국산",
+                "amount": "100%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "amount": "100",
+                "sub_ingredients": [
+                  {
+                    "name": "조제해수염화마그네슘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "현미유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "올리브유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단무지",
+        "sub_ingredients": [
+          {
+            "name": "절임무",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "단무지조미액베이스",
+            "amount": "2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소처리스테비아",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고소한 빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "불고기맛베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조직대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프엠알파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:57"
+  },
+  "nutrition": {
+    "total_content": "100",
+    "food_weight_g": 100.0,
+    "kcal": 122.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "protein_g": 18.0,
+    "fat_g": 2.0,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 37.0,
+    "sodium_mg": 292.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1개당(100g)",
+    "collected_at": "2026-03-04 04:30:57"
+  }
+}

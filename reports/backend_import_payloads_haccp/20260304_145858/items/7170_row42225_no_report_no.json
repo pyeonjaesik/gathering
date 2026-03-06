@@ -1,0 +1,214 @@
+{
+  "product": {
+    "name_ko": "새콤달콤 유부초밥",
+    "reportnum": "1991037209218"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209218/1991037209218-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209218/1991037209218-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209218/1991037209218-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "대두(외국산:미국,캐나다,중국 등),정제수,벌꿀과 사과과즙이 함유된 초밥소스{정백당,사과식초(농축사과즙:중국산),정제소금(국산),사양벌꿀,사과농축과즙액,산도조절제,과일야채발효당,효모추출물},정백당,유부조미액베이스1[혼합간장{탈지대두(외국산:인도,미국,중국)},가쓰오부시엑기스{가쓰오추출액(가쓰오후레이크:인도네시아산)}],소스류,혼합간장,고소한 참깨야채볶음(볶음참깨,건당근,청경채분태,계란후레이크-1,계란난황립,검정깨,구이김),D-소르비톨액,대두유,대두응고제,혼합제제(식물성유지,레시틴,탄산칼슘)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209218/1991037209218-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=80g | foodSize=330g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991037209218/1991037209218-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "대두",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀과 사과과즙이 함유된 초밥소스",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과식초",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "농축사과즙",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사양벌꿀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축과즙액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "과일야채발효당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유부조미액베이스1",
+        "sub_ingredients": [
+          {
+            "name": "혼합간장",
+            "origin": "인도산, 미국산, 중국산",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가쓰오부시엑기스",
+            "origin": "인도네시아산",
+            "sub_ingredients": [
+              {
+                "name": "가쓰오추출액(가쓰오후레이크",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고소한 참깨야채볶음",
+        "sub_ingredients": [
+          {
+            "name": "볶음참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청경채분태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란후레이크-1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란난황립",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구이김",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두응고제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:35:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 205.0,
+    "carbohydrate_g": 21.0,
+    "protein_g": 8.0,
+    "fat_g": 10.0,
+    "sugar_g": 16.0,
+    "sodium_mg": 1090.0,
+    "dietary_fiber_g": 1.0,
+    "calcium_mg": 123.0,
+    "iron_mg": 1.4,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "80g",
+    "total_content": "330g",
+    "collected_at": "2026-03-03 18:35:51"
+  }
+}

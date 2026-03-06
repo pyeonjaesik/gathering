@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "밤단팥묵양갱",
+    "reportnum": "19920484128249"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128249/19920484128249-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128249/19920484128249-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128249/19920484128249-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "칠복팥앙금52.4%{팥47.5%(국산),유기농설탕27.6%,구수한쌀조청24.9%,[쌀97.4%(국산),맥아(국산),효소]},밤다이스13.3{밤60%(국산),설탕},유기농,설탕,구수한쌀조청19.5%[쌀97.4%(국산),맥아(국산),효소],한천",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128249/19920484128249-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(40g), 총 10회 제공량(400g) 1회 제공량당 함량 %영양소기준치/총포장단위당함량 %영양소기준치 열량 112kcal/1120kcal, 탄수화물 27g 8%/266g 81%, 당류 10g/98g, 단백질 1g 2%/15g 25%, 포화지방 0g 0%/0g 0%, 트랜스지방 0g/0g, 콜레스테롤 0mg 0%/0mg 0%, 나트륨 5mg 0%/60mg 3% ※%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920484128249/19920484128249-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "칠복팥앙금",
+        "amount": "52.4%",
+        "sub_ingredients": [
+          {
+            "name": "팥",
+            "origin": "국산",
+            "amount": "47.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "27.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구수한쌀조청",
+            "amount": "24.9%",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "국산",
+                "amount": "97.4%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맥아",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밤다이스",
+        "amount": "13.3%",
+        "sub_ingredients": [
+          {
+            "name": "밤",
+            "origin": "국산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구수한쌀조청",
+        "amount": "19.5%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "97.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한천",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:15:50"
+  },
+  "nutrition": {
+    "kcal": 112.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 10.0,
+    "protein_g": 1.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(40g)",
+    "collected_at": "2026-03-03 19:15:50"
+  }
+}

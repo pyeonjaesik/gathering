@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "오양맛살E",
+    "reportnum": "201004671174"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004671174/201004671174-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004671174/201004671174-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004671174/201004671174-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육62.04%[외국산(미국, 인도네시아, 베트남 등)/어육, 백설탕, D-소르비톨, 산도조절제], 소맥전분[밀(외국산/독일, 벨기에, 호주 등)], 정제소금(국산), 대두유, 대두단백, 조미액-DR(향미증진제), 게엑기스-J1.15%(게/국산), 탄산칼슘, 글리신,게향0.71%(합성착향료), L-글루타민산나트륨(향미증진제), 난백분, 혼합제제(코치닐색소, 파프리카색소, 락색소, 유화제), 혼합제제(폴리인산나트륨, 피로인산나트륨), 홍국적색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004671174/201004671174-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=270g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/201004671174/201004671174-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "외국산, 미국산, 인도네시아산, 베트남산",
+        "amount": "62.04%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소르비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "외국산, 독일산, 벨기에산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미액-DR",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "게엑기스-J",
+        "origin": "국산",
+        "amount": "1.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게향",
+        "amount": "0.71%",
+        "sub_ingredients": [
+          {
+            "name": "합성착향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "코치닐색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "락색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍국적색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:27:35"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 130.0,
+    "carbohydrate_g": 16.0,
+    "protein_g": 6.0,
+    "fat_g": 1.2,
+    "sugar_g": 3.0,
+    "sodium_mg": 850.0,
+    "cholesterol_mg": 5.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "270g",
+    "collected_at": "2026-03-04 04:27:35"
+  }
+}

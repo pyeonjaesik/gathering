@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "정성가득 황태해장국",
+    "reportnum": "20020614179626"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179626/20020614179626-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179626/20020614179626-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179626/20020614179626-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 황태채(러시아산) 7.3%, 두부[대두(수입산), 황산칼슘, 혼합제제(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘)], 콩나물(대두:중국산), 무, 북어머리(러시아산), 들기름, 대파, 정제소금, 다시마엑기스S, 청양고추, 홍고추, 사골농축엑기스, 마늘, 감칠맛분에스, 헛개나무열매추출농축액[헛개나무열매(국산) 100%] 0.04%, 명태엑기스(A)[명태엑기스{명태(러시아산)54.8%, 명태피(러시아산)34.8%}84.48%], 지미분, 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179626/20020614179626-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(500g)/총 1회 제공량 500g 1회 제공량당 함량(%영양성분기준치) : 열량 65kcal, 탄수화물 0g(0%), 당류 0g, 단백질 11g(20%), 지방 2.5g(5%), 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 20mg(7%), 나트륨 1,410mg(71%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179626/20020614179626-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황태채",
+        "origin": "러시아산",
+        "amount": "7.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "식물성유지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산마그네슘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콩나물",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "북어머리",
+        "origin": "러시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감칠맛분에스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "헛개나무열매추출농축액",
+        "origin": "국산",
+        "amount": "0.04%",
+        "sub_ingredients": [
+          {
+            "name": "헛개나무열매",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "명태엑기스",
+        "amount": "A",
+        "sub_ingredients": [
+          {
+            "name": "명태",
+            "origin": "러시아산",
+            "amount": "54.8%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "명태피",
+            "origin": "러시아산",
+            "amount": "34.8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "지미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:56"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 11.0,
+    "fat_g": 2.5,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 1410.0,
+    "basis_amount": 500.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(500g)",
+    "collected_at": "2026-03-04 03:43:56"
+  }
+}

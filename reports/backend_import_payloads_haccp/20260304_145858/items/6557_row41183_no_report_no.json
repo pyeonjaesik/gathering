@@ -1,0 +1,230 @@
+{
+  "product": {
+    "name_ko": "신나게 맛있는 불꽃 떡볶이",
+    "reportnum": "2013047304291"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304291/2013047304291-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304291/2013047304291-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304291/2013047304291-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "떡:쌀99.5%(외국산),정제소금(국산),주정,산도조절제,기타가공품,혼합제제(덱스트린,글리세린지방산에스테르,변성전분),혼합제제(혼합제제(주정,글리세린지방산에스테르,글리세린),변성전분,덱스티린)\n소스:정제수,백설탕,고추장[물엿,소맥분(밀:외국산(미국,호주,캐나다)),혼합양념,밀쌀,정제소금],고춧가루,무,혼합분말에스,맛조미분말,매콤달콤소스,산분해간장양파,멸치엑기스에이,야채혼합농축액,변경전분,마늘,L-글루탐산나트륨(향미증진제),파라옥시안식향산에틸(합성보존료)\n야채건더기:건양파,건양배추,건당근,건대파",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304291/2013047304291-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량710KCAL, 탄수화물137G, 당류12G, 단백질13G, 지방13G, 포화지방4.4G, 트랜스지방0G, 콜레스테롤0MG, 나트륨1210MG",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013047304291/2013047304291-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "떡",
+        "origin": "외국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "외국산",
+            "amount": "99.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기타가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "덱스티린",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "외국산",
+                "amount": "밀:외국산(미국, 호주, 캐나다)",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분말에스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매콤달콤소스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산분해간장양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치엑기스에이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채혼합농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변경전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파라옥시안식향산에틸",
+            "sub_ingredients": [
+              {
+                "name": "합성보존료",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야채건더기",
+        "sub_ingredients": [
+          {
+            "name": "건양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건당근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건대파",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:55"
+  },
+  "nutrition": {
+    "kcal": 710.0,
+    "carbohydrate_g": 137.0,
+    "sugar_g": 12.0,
+    "protein_g": 13.0,
+    "fat_g": 13.0,
+    "saturated_fat_g": 4.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1210.0,
+    "collected_at": "2026-03-04 04:38:55"
+  }
+}

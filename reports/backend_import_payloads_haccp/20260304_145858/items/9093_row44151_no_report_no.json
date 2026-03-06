@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "고기완자",
+    "reportnum": "2008044520812"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520812/2008044520812-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520812/2008044520812-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520812/2008044520812-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기38.95%(국산),두부[대두(외국산:미국,캐나다,호주산),대두분(인도산),응고제(황산칼슘,염화칼슘),소포제(유화,중점제,규소수지)],양파(국산),돈지방6.52%(국산),당근,파,부추,간마늘,분리대두단백,혼합간장,쇠고기엑기스,백설탕,흑후추,생강페이스트,L-글루탐산나트륨(향미증진제),복합조미식품,정제소금,전란액,산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520812/2008044520812-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520812/2008044520812-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "38.95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두부",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두분",
+            "origin": "인도산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "응고제",
+            "sub_ingredients": [
+              {
+                "name": "황산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "염화칼슘",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소포제",
+            "sub_ingredients": [
+              {
+                "name": "유화",
+                "sub_ingredients": []
+              },
+              {
+                "name": "중점제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돈지방",
+        "origin": "국산",
+        "amount": "6.52%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 140.0,
+    "carbohydrate_g": 10.0,
+    "protein_g": 10.0,
+    "fat_g": 7.0,
+    "sugar_g": 2.0,
+    "sodium_mg": 420.0,
+    "cholesterol_mg": 16.0,
+    "saturated_fat_g": 4.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 04:12:01"
+  }
+}

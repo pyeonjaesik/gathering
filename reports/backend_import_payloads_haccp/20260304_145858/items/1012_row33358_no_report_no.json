@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "오렌지망고 무지방샐러드소스",
+    "reportnum": "19800347002434"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002434/19800347002434-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002434/19800347002434-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002434/19800347002434-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,망고농축액7.5%(망고:이스라엘산),아이스당,오렌지농축액6.5%(오렌지:미국산),백설탕,만다린오렌지쌕3.5%{만다린쌕70%(중국산)},발효식초,과당,깔라만시농축액,정제소금,변성전분,사과산,잔탄검,함수구연산,자몽추출물,페퍼민트",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002434/19800347002434-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 50g 총 약 7회 분량(325g) ()안의 수치는 1일 영양소기준치에 대한 비율임 1회 제공량 당 함량:열량 40kcal, 탄수화물 10g(3%)·당류 8g, 단백질 0g(0%), 지방 0g(0%) 포화지방 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 250mg(13%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800347002434/19800347002434-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "망고농축액",
+        "origin": "이스라엘산",
+        "amount": "7.5%",
+        "sub_ingredients": [
+          {
+            "name": "망고",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아이스당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지농축액",
+        "origin": "미국산",
+        "amount": "6.5%",
+        "sub_ingredients": [
+          {
+            "name": "오렌지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "만다린오렌지쌕",
+        "origin": "중국산",
+        "amount": "3.5%",
+        "sub_ingredients": [
+          {
+            "name": "만다린쌕",
+            "amount": "70%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "깔라만시농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "페퍼민트",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:28:50"
+  },
+  "nutrition": {
+    "kcal": 40.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 8.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 250.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 50g",
+    "collected_at": "2026-03-03 14:28:50"
+  }
+}

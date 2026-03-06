@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "우유 또띠아",
+    "reportnum": "201504390322"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504390322/201504390322-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504390322/201504390322-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504390322/201504390322-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "또띠아전용분-피[밀가루(밀:미국산,호주산),백설탕,콩분말(백태:국내산),정제소금(국내산),산도조절제],정제수,우유11.8%(국산),식물성유지6.5%(외국산:아르헨티나산,미국산,브라질산),효모,유카추출물,레시틴",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504390322/201504390322-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=70g | foodSize=225g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/201504390322/201504390322-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "또띠아전용분-피",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "콩분말",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "백태",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "amount": "11.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산, 아르헨티나산, 미국산, 브라질산",
+        "amount": "6.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유카추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:57"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 311.0,
+    "carbohydrate_g": 55.56,
+    "protein_g": 6.67,
+    "fat_g": 7.78,
+    "sugar_g": 2.22,
+    "sodium_mg": 333.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.56,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "70g",
+    "total_content": "225g",
+    "collected_at": "2026-03-04 04:44:57"
+  }
+}

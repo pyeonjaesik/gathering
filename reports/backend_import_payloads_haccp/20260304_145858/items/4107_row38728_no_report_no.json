@@ -1,0 +1,116 @@
+{
+  "product": {
+    "name_ko": "유기농콩을 통째로 갈아만든 전두유 검은참깨",
+    "reportnum": "19980308080239"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080239/19980308080239-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080239/19980308080239-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080239/19980308080239-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(유기농함량99.25%)유기농전두유90%(대두고형분6%이상,유기농대두-호주산),정제수,유기농아가베시럽(멕시코산),검은참깨페이스트0.35%(수입산)유기농대두유(호주산),탄산칼슘,대두레시틴(대두),카라기난,정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080239/19980308080239-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1팩(190ml) \n<1회 제공량당 함량>\n열량75kcal, 탄수화물6.0g (2%), 당류4.0g, 단백질5g (9%), 지방3.9g (8%) * 포화지방0.6g (4%) * 트랜스지방0g (0%), 콜레스테롤0mg (0%), 나트륨155mg (8%), 칼슘170mg (24%), 식이섬유2.0g (8%)\n()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1998/19980308080239/19980308080239-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농전두유",
+        "origin": "호주산",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "6%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농대두",
+            "origin": "호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농아가베시럽",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은참깨페이스트",
+        "origin": "수입산",
+        "amount": "0.35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농대두유",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두레시틴",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:41:52"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 4.0,
+    "protein_g": 5.0,
+    "fat_g": 3.9,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 155.0,
+    "calcium_mg": 170.0,
+    "dietary_fiber_g": 2.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1팩(190ml)",
+    "collected_at": "2026-03-03 21:41:52"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "product": {
+    "name_ko": "생생칩 콘포타쥬",
+    "reportnum": "19950383326101"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326101/19950383326101-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326101/19950383326101-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326101/19950383326101-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "감자(호주산),혼합식용유[팜올레인유(말레이시아산)59.98%,해바라기유(수입산)40%,토코페롤(혼합형)],복합조미식품[콘포타쥬맛시즈닝M(무수포도당,고화방지분당,스위트콘파우더프리퍼레이션(뉴질랜드산),치킨엑기스분말엔,크림버터혼합분말)] ·감자(호주산)85%,콘포타쥬맛시즈닝M7%(스위트콘파우더0.5%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326101/19950383326101-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/4봉지(30g) 총 4회 제공량(120g) 1회 제공량 당 함량 %영양성분 열량 170kcal, 탄수화물 16g 5%,당류 1g,단백질 2g 4%,지방 11g 22%, 포화지방 3.2g 21%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 130mg 7% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950383326101/19950383326101-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "감자",
+        "origin": "호주산",
+        "amount": "null",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "59.98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "40%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "amount": "null",
+        "sub_ingredients": [
+          {
+            "name": "콘포타쥬맛시즈닝M",
+            "amount": "null",
+            "sub_ingredients": [
+              {
+                "name": "무수포도당",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고화방지분당",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스위트콘파우더프리퍼레이션",
+                "origin": "뉴질랜드산",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치킨엑기스분말",
+                "amount": "null",
+                "sub_ingredients": []
+              },
+              {
+                "name": "크림버터혼합분말",
+                "amount": "null",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:30:23"
+  },
+  "nutrition": {
+    "kcal": 170.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 1.0,
+    "protein_g": 2.0,
+    "fat_g": 11.0,
+    "saturated_fat_g": 3.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 130.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/4봉지(30g)",
+    "collected_at": "2026-03-03 20:30:23"
+  }
+}

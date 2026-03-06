@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "견과와 흑미조청강정",
+    "reportnum": "2007046401579"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401579/2007046401579-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401579/2007046401579-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401579/2007046401579-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농흑미볶음(국산)18.7%,유기쌀조청16.6%(쌀,엿기름,α-아밀라아제),올리고당,유기농백미(국산),15.1%,아몬드(미국산)10.4%,해바라기씨(미국산)7.6%,구운캐슈넛(인도산)6.9%,유기농아가베시럽5.5%,유기농설탕1.3%,해바라기유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401579/2007046401579-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량130g 565kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨10mg 1%, 탄수화물96g 30%, 당류29g 29%, 지방15g 28%, 트랜스지방0g, 포화지방3.1g 21%, 콜레스테롤0mg 0%, 단백질11g 20%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401579/2007046401579-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농흑미볶음",
+        "origin": "국산",
+        "amount": "18.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기쌀조청",
+        "amount": "16.6%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "α-아밀라아제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농백미",
+        "origin": "국산",
+        "amount": "15.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "amount": "10.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기씨",
+        "origin": "미국산",
+        "amount": "7.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운캐슈넛",
+        "origin": "인도산",
+        "amount": "6.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농아가베시럽",
+        "amount": "5.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "1.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:03"
+  },
+  "nutrition": {
+    "kcal": 565.0,
+    "sodium_mg": 10.0,
+    "carbohydrate_g": 96.0,
+    "sugar_g": 29.0,
+    "fat_g": 15.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.1,
+    "cholesterol_mg": 0.0,
+    "protein_g": 11.0,
+    "basis_amount": 130.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량130g",
+    "collected_at": "2026-03-04 04:06:03"
+  }
+}

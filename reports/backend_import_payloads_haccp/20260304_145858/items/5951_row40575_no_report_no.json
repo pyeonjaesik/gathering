@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "HONEST PROJECT 곡물 베이글칩",
+    "reportnum": "20090275055218"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090275055218/20090275055218-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090275055218/20090275055218-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090275055218/20090275055218-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "곡물베이글100%[밀가루75.4%(밀:캐나다산,미국산),크리프트골드{혼합잡곡48.8%{호밀31.2%(캐나다산),겉보리19.1%(중국산),밀16.7%(미국산),콩(대두)13.6%(중국산),쌀보리12.7%(국내산)},밀가루37.49%(밀:캐나다산,미국산),아마인(캐나다산),해바라기씨,정제소금},아카시아식이섬유4.4%{아카시아검 100%(프랑스산)},설탕,제재소금(호주산,국내산),생맥분(국내산),효모(팽창제)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090275055218/20090275055218-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 50g (195kcal)\n<총 내용량당 1일 영양성분기준치에 대한 비율>\n나트륨350mg 18%, 탄수화물39g 12%, 당류3g 3%, 콜레스테롤0mg 0%, 지방1.3g 2%, 트랜스지방0g, 포화지방3g 2%, 단백질8g 15%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090275055218/20090275055218-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "곡물베이글",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "캐나다산, 미국산",
+            "amount": "75.4%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크리프트골드",
+            "sub_ingredients": [
+              {
+                "name": "혼합잡곡",
+                "amount": "48.8%",
+                "sub_ingredients": [
+                  {
+                    "name": "호밀",
+                    "origin": "캐나다산",
+                    "amount": "31.2%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "겉보리",
+                    "origin": "중국산",
+                    "amount": "19.1%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "밀",
+                    "origin": "미국산",
+                    "amount": "16.7%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "콩(대두)",
+                    "origin": "중국산",
+                    "amount": "13.6%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "쌀보리",
+                    "origin": "국내산",
+                    "amount": "12.7%",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "밀가루",
+                "origin": "캐나다산, 미국산",
+                "amount": "37.49%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아마인",
+                "origin": "캐나다산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해바라기씨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아카시아식이섬유",
+            "amount": "4.4%",
+            "sub_ingredients": [
+              {
+                "name": "아카시아검",
+                "origin": "프랑스산",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제재소금",
+            "origin": "호주산, 국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생맥분",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:14"
+  },
+  "nutrition": {
+    "kcal": 195.0,
+    "sodium_mg": 350.0,
+    "carbohydrate_g": 39.0,
+    "sugar_g": 3.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "protein_g": 8.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 50g",
+    "collected_at": "2026-03-04 04:18:14"
+  }
+}

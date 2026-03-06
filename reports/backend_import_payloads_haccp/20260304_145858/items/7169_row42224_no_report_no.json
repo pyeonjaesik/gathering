@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "심쿵 청포도",
+    "reportnum": "19910358064136"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910358064136/19910358064136-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910358064136/19910358064136-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910358064136/19910358064136-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,말티톨시럽12.9%,액상과당,백설탕,나타드코코젤리시럽,식물성유지,혼합분유,구연산,혼합제제(유화제,카라기난,구아검,로커스트콩검,산도조절제),합성향료(포도향,청포도향),청포도농축액0.08%(고형분함량68%),심황색소,치자청색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910358064136/19910358064136-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g(ml) | foodSize=130g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/19910358064136/19910358064136-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말티톨시럽",
+        "amount": "12.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "나타드코코젤리시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청포도농축액",
+        "amount": "0.08%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "심황색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:35:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 104.0,
+    "carbohydrate_g": 23.08,
+    "protein_g": 0.0,
+    "fat_g": 1.23,
+    "sugar_g": 12.31,
+    "sodium_mg": 3.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.54,
+    "trans_fat_g": 0.15,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g(ml)",
+    "total_content": "130g",
+    "collected_at": "2026-03-03 18:35:33"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "알찬모듬어묵",
+    "reportnum": "20110144370182"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110144370182/20110144370182-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110144370182/20110144370182-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110144370182/20110144370182-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "<입력 제외>",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110144370182/20110144370182-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=2356g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/20110144370182/20110144370182-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원재료명 A",
+        "amount": "N종",
+        "sub_ingredients": [
+          {
+            "name": "하위 원재료 A1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하위 원재료 A2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "원재료명 B",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "하위 원재료 B1",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "원재료명 C",
+        "origin": "외국산, 미국산, 인도산",
+        "sub_ingredients": [
+          {
+            "name": "하위 원재료 C1",
+            "amount": "5g",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하위 원재료 C2(합성보존료)",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:29:31"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 135.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 10.0,
+    "fat_g": 1.7,
+    "sugar_g": 4.0,
+    "sodium_mg": 712.0,
+    "cholesterol_mg": 18.0,
+    "saturated_fat_g": 0.3,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "2356g",
+    "collected_at": "2026-03-04 04:29:31"
+  }
+}

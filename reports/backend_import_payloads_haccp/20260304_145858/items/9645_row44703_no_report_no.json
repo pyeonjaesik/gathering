@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name_ko": "새알심",
+    "reportnum": "201404640472"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404640472/201404640472-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404640472/201404640472-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404640472/201404640472-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "찹쌀(국산), 멥쌀(국산), 감자전분(외국산:독일,덴마크,폴란드), 혼합전분, 정제소금(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404640472/201404640472-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=1500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201404640472/201404640472-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "외국산, 독일산, 덴마크산, 폴란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:42:11"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 238.0,
+    "carbohydrate_g": 54.0,
+    "protein_g": 4.0,
+    "fat_g": 0.7,
+    "sugar_g": 0.0,
+    "sodium_mg": 213.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "1500g",
+    "collected_at": "2026-03-04 04:42:11"
+  }
+}

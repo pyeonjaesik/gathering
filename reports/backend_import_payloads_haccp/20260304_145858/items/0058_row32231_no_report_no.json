@@ -1,0 +1,61 @@
+{
+  "product": {
+    "name_ko": "명가랑정이담긴 볶은참깨",
+    "reportnum": "200003701286"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701286/200003701286-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701286/200003701286-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701286/200003701286-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "참깨 100%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701286/200003701286-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 586 kcal, 1회분량 (100g)\n나트륨3.37g/0.16%, 탄수화물28.8g/8.88%, 당류0.78g/불검출, 지방41.6g/81.5%, 트랜스지방0g/불검출, 포화지방5.80g/38.5g, 콜레스톨0g/불검출, 단백질24.2g/44.0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003701286/200003701286-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참깨",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:14:15"
+  },
+  "nutrition": {
+    "kcal": 586.0,
+    "sodium_mg": 3.37,
+    "carbohydrate_g": 28.8,
+    "sugar_g": 0.78,
+    "fat_g": 41.6,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 5.8,
+    "protein_g": 24.2,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회분량 (100g)",
+    "collected_at": "2026-03-03 22:14:15"
+  }
+}

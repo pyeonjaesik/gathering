@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "동원마요참치",
+    "reportnum": "19880589063192"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063192/19880589063192-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063192/19880589063192-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063192/19880589063192-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "황다랑어36.2%(원양산),마요네즈-케이28.78%[대두유69%(수입산),정제수,식초,난황액(계란,국내산),백설탕,정제소금],정제수,당근,단무지[무93.6%(국산),조미액],양파,워터체스트너트,양파엑기스,VB75(대두),백설탕,감자,정제소금,L-글루타민산나트륨(향미증진제),산탄검",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063192/19880589063192-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=100g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880589063192/19880589063192-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "황다랑어",
+        "amount": "36.2%",
+        "sub_ingredients": [
+          {
+            "name": "원양산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마요네즈-케이",
+        "amount": "28.78%",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "amount": "69%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난황액",
+            "origin": "국내산",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "단무지",
+        "sub_ingredients": [
+          {
+            "name": "무",
+            "origin": "국산",
+            "amount": "93.6%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "워터체스트너트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "VB75",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:26:18"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 250.0,
+    "carbohydrate_g": 5.0,
+    "protein_g": 10.0,
+    "fat_g": 21.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 470.0,
+    "cholesterol_mg": 35.0,
+    "saturated_fat_g": 2.4,
+    "trans_fat_g": 0.35,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "100g",
+    "collected_at": "2026-03-04 03:26:18"
+  }
+}

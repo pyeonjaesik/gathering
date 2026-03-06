@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "짜지않은 치즈",
+    "reportnum": "2007050200292"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200292/2007050200292-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200292/2007050200292-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200292/2007050200292-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "자연치즈83.5%[체다치즈78%{외국산(뉴질랜드산,호주산,미국산등):원유,정제소금,유산균배양액,우유응고효소},모짜렐라5.5%(국산:원유,유산균배양액,정제소금,우유응고효소)],정제수,산도조절제,치즈파우더(덴마크산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200292/2007050200292-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 252g(18gx14개)/1개(18g)당 60kcal 1매당 1일 영양성분 기준치에 대한 비율 100g당 나트륨 100mg 5%(570mg 29%)탄수화물 0.5g미만 0%(1g 0%), 당류 0.5g미만 0%(0.5g미만 0%),지방 5g 9%(28g 52%),트랜스지방 0.2g미만 (1g), 포화지방 3.6g 24%(20g 133%),콜레스테롤 15mg 5%(85mg 28%),단백질 3g 5%(19g 35%),칼슘 100mg 14%(555mg 79%) *1일 영양성분 기준치에 대한 비율(%)은 2.000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007050200292/2007050200292-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "amount": "83.5%",
+        "sub_ingredients": [
+          {
+            "name": "체다치즈",
+            "origin": "외국산, 뉴질랜드산, 호주산, 미국산",
+            "amount": "78%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "모짜렐라",
+            "origin": "국산",
+            "amount": "5.5%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균배양액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치즈파우더",
+        "origin": "덴마크산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:03"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sodium_mg": 100.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 3.6,
+    "cholesterol_mg": 15.0,
+    "protein_g": 3.0,
+    "calcium_mg": 100.0,
+    "basis_amount": 18.0,
+    "basis_unit": "g",
+    "basis_text": "1개(18g)당",
+    "collected_at": "2026-03-04 04:07:03"
+  }
+}

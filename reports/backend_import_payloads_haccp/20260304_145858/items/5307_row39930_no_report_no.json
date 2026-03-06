@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "나쁜엄마 쌀과자녹황",
+    "reportnum": "20060378122102"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122102/20060378122102-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122102/20060378122102-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122102/20060378122102-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미(국산) 93.45%, 귀리(캐나다산) 5%, 동결건조 유기농시금치분말(국산) 0.8%, 동결건조 유기농당근분말(국산) 0.6%, 동결건조 유기농케일분말 (국산) 0.1%, 곡류발효효소 유기농 원료함량 : 94.95%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122102/20060378122102-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 : 1봉지 (25g) 1회 제공량 당 함량 %영양성분기준치 열량 94Kcal 탄수화물 21g 6% 당류 0g 단백질 2g 4%(13%) 지방 0.2g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 9mg 0%(1%) %영양성분 기준치:1일 영양성분 기준치에 대한 비율 ()안의 %영양성분 기준치 : 한국인 유아(1~2세) 영양섭취 기준에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060378122102/20060378122102-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "93.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "귀리",
+        "origin": "캐나다산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결건조 유기농시금치분말",
+        "origin": "국산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결건조 유기농당근분말",
+        "origin": "국산",
+        "amount": "0.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동결건조 유기농케일분말",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류발효효소",
+        "amount": "null",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:57:52"
+  },
+  "nutrition": {
+    "kcal": 94.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 0.2,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 9.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 : 1봉지 (25g)",
+    "collected_at": "2026-03-04 03:57:52"
+  }
+}

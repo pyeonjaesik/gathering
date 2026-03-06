@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "3분 렌틸콩짜장",
+    "reportnum": "20010445055344"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055344/20010445055344-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055344/20010445055344-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055344/20010445055344-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,양파(중국산),춘장[밀가루(밀:미국산,호주산),대두(수입산),정제소금,카라멜색소(천연색소),주정],렌틸콩7%(호주산),감자(감자,산도조절제),카놀라유,혼합제제(변성전분,백설탕,덱스트린),백설탕,포크맛조미유(돼지고기),마늘,오뚜기굴소스,구운양파조각,사골엑기스,식물성분해단백,복합양념,참맛짜장양념분(우유),볶음양파양념분,난각분말(계란),오뚜기참치간장분말,향미증진제,카라멜색소(천연색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055344/20010445055344-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지(200g), 열량205kcal, 탄수화물24g 7%, 당류8g, 단백질9g 16%, 지방8g 16%, 포화지방1.5g 10%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨1,020mg 51%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055344/20010445055344-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "춘장",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두",
+            "origin": "수입산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": [
+              {
+                "name": "천연색소",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "렌틸콩",
+        "origin": "호주산",
+        "amount": "7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포크맛조미유",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오뚜기굴소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운양파조각",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식물성분해단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합양념",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참맛짜장양념분",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음양파양념분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난각분말",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "오뚜기참치간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:30"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "carbohydrate_g": 24.0,
+    "sugar_g": 8.0,
+    "protein_g": 9.0,
+    "fat_g": 8.0,
+    "saturated_fat_g": 1.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1020.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지(200g)",
+    "collected_at": "2026-03-04 03:32:30"
+  }
+}

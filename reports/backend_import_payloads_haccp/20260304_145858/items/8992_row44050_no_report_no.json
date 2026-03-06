@@ -1,0 +1,170 @@
+{
+  "product": {
+    "name_ko": "맷돌로갈아만든국산검은콩15곡두유",
+    "reportnum": "20070464034105"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034105/20070464034105-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034105/20070464034105-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034105/20070464034105-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액80%[대두고형분7%이상,국산검은콩(대두)],정제수,정백당,프락토올리고당,현미유,현미시럽,15곡혼합분말[보리,현미,현미찹쌀,멥쌀,율미,흑미,쌀보리,수수,조,옥수수,현미쌀눈,찹쌀,기장,참깨,검정깨(이상국산)]0.3%,밀시럽,정제염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034105/20070464034105-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=180ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070464034105/20070464034105-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "amount": "80%",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "국산검은콩",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "15곡혼합분말",
+        "amount": "0.3%",
+        "sub_ingredients": [
+          {
+            "name": "보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멥쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "율미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "흑미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미쌀눈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찹쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검정깨",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:06:08"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 47.0,
+    "carbohydrate_g": 8.33,
+    "protein_g": 2.22,
+    "fat_g": 0.28,
+    "sugar_g": 3.89,
+    "sodium_mg": 58.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "180ml",
+    "collected_at": "2026-03-04 04:06:08"
+  }
+}

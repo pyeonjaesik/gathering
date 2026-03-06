@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "해피매실",
+    "reportnum": "19800415004118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004118/19800415004118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004118/19800415004118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004118/19800415004118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "매실농축과즙(매실과즙으로1%,국산),정제수,백설탕,말토덱스트린,구연산,합성착향료(매실향),비타민C,당시럽",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004118/19800415004118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1Can(175ml)/총 1회 제공량(175ml)/1회 제공량당 함량:열량 90kcal/탄수화물 23g(7%) 당류 23g/단백질 0g(0%)/지방 0g(0%) 포화지방 0g(0%) 트랜스지방 -g/콜레스테롤 -mg(0%)/나트륨 5mg(0%) *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1980/19800415004118/19800415004118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "매실농축과즙",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "매실과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "매실향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당시럽",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:33:32"
+  },
+  "nutrition": {
+    "kcal": 90.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 23.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 175.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1Can(175ml)",
+    "collected_at": "2026-03-03 14:33:32"
+  }
+}

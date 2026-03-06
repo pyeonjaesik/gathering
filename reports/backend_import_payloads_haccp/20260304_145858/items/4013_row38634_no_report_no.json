@@ -1,0 +1,130 @@
+{
+  "product": {
+    "name_ko": "아루화하루영양바",
+    "reportnum": "19970515071412"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071412/19970515071412-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071412/19970515071412-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071412/19970515071412-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "통아몬드(미국산)16.3%, 호두(미국산)15.6%, 아몬드슬라이스(미국산)14.2%, 크린베리7.8%, 파인애플7.8%, 해바라기씨7.1%, 호박씨7.1%, 참깨1.4%, 검은깨1.4%, 소스[초정57%, 설탕25%, 포도당10%, 꿀8%]21.3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071412/19970515071412-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "<1회 제공량 25g, 1회 제공량당 함량>\n열량135kcal, 탄수화물11g, 당류5g, 단백질4g, 지방8.9g, 포화지방0.8g, 트랜스지방0g, 콜레스테롤0mg, 나트륨0mg\n<1회 제공량 18g, 1회 제공량담 함량>\n열량100kcal, 탄수화물8g, 당류4g, 단백질3g, 지방6.4g, 포화지방0.6g, 트랜스지방0g, 콜레스테롤0mg, 나트륨0mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970515071412/19970515071412-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통아몬드",
+        "origin": "미국산",
+        "amount": "16.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "origin": "미국산",
+        "amount": "15.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드슬라이스",
+        "origin": "미국산",
+        "amount": "14.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "크린베리",
+        "amount": "7.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플",
+        "amount": "7.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기씨",
+        "amount": "7.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호박씨",
+        "amount": "7.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은깨",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소스",
+        "amount": "21.3%",
+        "sub_ingredients": [
+          {
+            "name": "초정",
+            "amount": "57%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "amount": "25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "꿀",
+            "amount": "8%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:30:19"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 11.0,
+    "sugar_g": 5.0,
+    "protein_g": 4.0,
+    "fat_g": 8.9,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 25g",
+    "collected_at": "2026-03-03 21:30:19"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "한살림유자주스",
+    "reportnum": "201205561528"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201205561528/201205561528-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201205561528/201205561528-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201205561528/201205561528-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유자슬라이스32.6%[유자50%(국산/무농약),정백당50%],유자즙4.7%[유자100%(국산/무농약)],정제수62.7%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201205561528/201205561528-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*1회 제공량 100ml*총분량1,000ml *%영양소 기준치:1일 영양소 기준치에 대한 비율\n<1회 제공량당 함량 함량 %영양소기준치>\n열량60kcal, 나트륨17.7mg 0.69%, 탄수화물15g 4.5%, 당류15g, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질0g 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/201205561528/201205561528-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유자슬라이스",
+        "origin": "국산",
+        "amount": "32.6%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "50%",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "amount": "50%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무농약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유자즙",
+        "origin": "국산",
+        "amount": "4.7%",
+        "sub_ingredients": [
+          {
+            "name": "유자",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "무농약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "amount": "62.7%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:34"
+  },
+  "nutrition": {
+    "kcal": 60.0,
+    "sodium_mg": 17.7,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 15.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 100ml",
+    "collected_at": "2026-03-04 04:36:34"
+  }
+}

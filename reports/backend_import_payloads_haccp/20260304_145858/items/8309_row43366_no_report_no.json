@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "야채스프레드&딥소스",
+    "reportnum": "2001044505532"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505532/2001044505532-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505532/2001044505532-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505532/2001044505532-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성유지[외국산(미국,중국,아르헨티나 등)], 정제수, 스위트렐리시13%[미국산:피클,설탕,액상과당,식초,물엿), 발효식초(주정,발효영양원), 백설탕, 난황액(국산), 홍피망3%, 스위트콘칩, 양파찹1.4%, 정제소금, 당근칩0.8%, 오렌지식이섬유, 마늘분0.3%, 영양강화제, 정제포도당, 잔탄검, 향미유, 효소제제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505532/2001044505532-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=245g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505532/2001044505532-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산, 미국산, 중국산, 아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트렐리시",
+        "origin": "미국산",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "피클",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스위트콘칩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파찹",
+        "amount": "1.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근칩",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:31:58"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 435.0,
+    "carbohydrate_g": 13.0,
+    "protein_g": 1.0,
+    "fat_g": 42.0,
+    "sugar_g": 10.0,
+    "sodium_mg": 690.0,
+    "cholesterol_mg": 30.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "245g",
+    "collected_at": "2026-03-04 03:31:58"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "product": {
+    "name_ko": "애플샌드",
+    "reportnum": "2008035583638"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583638/2008035583638-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583638/2008035583638-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583638/2008035583638-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "우리밀밀가루(국내산)38.946%, 가공버터[뉴질랜드산/버터오일(우유)67.9%,크림,야자경화유], 유기농설탕17.525%, 사과잼[사과(국내산)45%,쌀조청22%,유기농설탕20%,프락토올리고당,한천]8.945%, 전란액(계란:국내산,무항생제)7.8%, 쌀엿[쌀(국내산)92%,엿기름(국내산)8%], 사양벌꿀(국내산), 산도조절제, 바닐라향, 정제소금(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583638/2008035583638-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=160g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008035583638/2008035583638-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "우리밀밀가루",
+        "origin": "국내산",
+        "amount": "38.946%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "버터오일",
+            "amount": "67.9%",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "17.525%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과잼",
+        "amount": "8.945%",
+        "sub_ingredients": [
+          {
+            "name": "사과",
+            "origin": "국내산",
+            "amount": "45%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀조청",
+            "amount": "22%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농설탕",
+            "amount": "20%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프락토올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국내산",
+        "amount": "7.8%",
+        "sub_ingredients": [
+          {
+            "name": "무항생제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀엿",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국내산",
+            "amount": "92%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿기름",
+            "origin": "국내산",
+            "amount": "8%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사양벌꿀",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바닐라향",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:07:56"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 450.0,
+    "carbohydrate_g": 62.5,
+    "protein_g": 7.5,
+    "fat_g": 20.0,
+    "sugar_g": 30.0,
+    "sodium_mg": 350.0,
+    "cholesterol_mg": 37.5,
+    "saturated_fat_g": 12.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "160g",
+    "collected_at": "2026-03-04 04:07:56"
+  }
+}

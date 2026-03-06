@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "활면 감자수제비",
+    "reportnum": "19860347002362"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860347002362/19860347002362-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860347002362/19860347002362-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860347002362/19860347002362-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀 : 호주산,미국산), 감자전분(폴란드산)3 %, 정제염(국내산), 주정, 면류첨가알카리제(혼합제제 : 탄산칼륨, 탄산나트륨), 치자황색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860347002362/19860347002362-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회제공량(200 g)당 함량 / 총 2회 제공량(400 g) / (%)는 1일 영양성분 기준치에 대한 비율임, 열량 507 kcal, 탄수화물 114g 35%, 당류 1.2g, 단백질 13g 24%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 625mg 31%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860347002362/19860347002362-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "호주산, 미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "폴란드산",
+        "amount": "3 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면류첨가알카리제",
+        "sub_ingredients": [
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자황색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:16:25"
+  },
+  "nutrition": {
+    "kcal": 507.0,
+    "carbohydrate_g": 114.0,
+    "sugar_g": 1.2,
+    "protein_g": 13.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 625.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(200 g)",
+    "collected_at": "2026-03-03 16:16:25"
+  }
+}

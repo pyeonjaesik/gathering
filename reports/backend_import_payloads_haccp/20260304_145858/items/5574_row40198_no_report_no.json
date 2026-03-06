@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "정식품 리얼코코넛밀크",
+    "reportnum": "20070443110222"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110222/20070443110222-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110222/20070443110222-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110222/20070443110222-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "코코넛밀크액 90%[정제수,코코넛밀크 22.22%{코코넛추출물 75%(고형분 21%이상, 코코넛-태국산), 구아검, 잔탄검,카라기난},정백당,자당지방산에스테르,정제염(국산),탄산칼슘혼합제제(탄산칼슘,아라비아검,글리세린지방산에스테르),제이인산나트륨,젤란검],정제수 합성착향료(코코넛향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110222/20070443110222-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1병(240ml) 1회 제공량당 함량: 열량 155kcal, 탄수화물 18g(5%) 당류 16g, 단백질 0.5g(1%), 지방 9g(18%) 포화지방 8g(53%) ·트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 160mg(8%) ()안의 수치는 1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070443110222/20070443110222-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "코코넛밀크액",
+        "amount": "90%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코넛밀크",
+            "amount": "22.22%",
+            "sub_ingredients": [
+              {
+                "name": "코코넛추출물",
+                "origin": "태국산",
+                "amount": "75%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분",
+                    "amount": "21%이상",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "잔탄검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "자당지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산칼슘혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼슘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아라비아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리세린지방산에스테르",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "제이인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "젤란검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "코코넛향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:42"
+  },
+  "nutrition": {
+    "kcal": 155.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 16.0,
+    "protein_g": 0.5,
+    "fat_g": 9.0,
+    "saturated_fat_g": 8.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 160.0,
+    "basis_amount": 240.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1병(240ml)",
+    "collected_at": "2026-03-04 04:05:42"
+  }
+}

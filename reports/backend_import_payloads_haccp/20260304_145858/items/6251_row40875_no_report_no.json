@@ -1,0 +1,146 @@
+{
+  "product": {
+    "name_ko": "홍삼이 들어가 건강한 아사이베리",
+    "reportnum": "2010044901620"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901620/2010044901620-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901620/2010044901620-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901620/2010044901620-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,아사이베리혼합농축액[12Brix이상,아사이주스(고형분1%이상,브라질)73.41%,아로니아농축액(폴란드)16.59%,크랜베리농축액(미국)]10%,액상과당,아로니아농축액(65Brix,아로니아100%,폴란드)6%,블루베리농축액(미국),적포도농축액,이소말토올리고당,홍삼농축액(6년근,고형분65%이상,홍삼성분70mg/g이상,국산)0.2%,구연산,비타민C,천연블루베리향(천연향료)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901620/2010044901620-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1일섭취량1포(50ml)함량 %영양소기준치, 열량45kcal, 탄수화물10g 3%, 당류9g, 단백질0g 0%, 지방0.6g 1%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤0mg 0%, 나트륨0mg 0%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901620/2010044901620-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아사이베리혼합농축액",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "아사이주스",
+            "origin": "브라질산",
+            "amount": "73.41%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아로니아농축액",
+            "origin": "폴란드산",
+            "amount": "16.59%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크랜베리농축액",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아로니아농축액",
+        "origin": "폴란드산",
+        "amount": "6%",
+        "sub_ingredients": [
+          {
+            "name": "아로니아",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블루베리농축액",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "적포도농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천연블루베리향",
+        "sub_ingredients": [
+          {
+            "name": "천연향료",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:25:54"
+  },
+  "nutrition": {
+    "kcal": 45.0,
+    "carbohydrate_g": 10.0,
+    "sugar_g": 9.0,
+    "protein_g": 0.0,
+    "fat_g": 0.6,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1일섭취량1포(50ml)함량",
+    "collected_at": "2026-03-04 04:25:54"
+  }
+}

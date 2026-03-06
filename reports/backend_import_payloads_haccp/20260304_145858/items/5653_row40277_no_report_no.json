@@ -1,0 +1,155 @@
+{
+  "product": {
+    "name_ko": "포모나 청포도톡톡베이스",
+    "reportnum": "20080358119259"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119259/20080358119259-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119259/20080358119259-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119259/20080358119259-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,청포도퓨레 38%(청포도 100%,칠레산),저감미당,백포도농축액 4%(칠레산),합성착향료(청포도향,시트러스향),산도조절제,비타민C,산탄검,구아검,합성보존료(안식향산나트륨),합성착색료(식용색소 황색 제4호,식용색소 청색 제1호, 식용색소 적색 제40호),혼합제제(규소수지,유화제,CMC)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119259/20080358119259-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "40g당/총 내용량 1,200g 열량 202kcal 나트륨 0% 6mg 탄수화물 15% 48g 당류 46g 지방 2% 1g 트랜스지방 0g 포화지방 1% 0g 콜레스테롤 0% 0mg 단백질 1% 1g 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080358119259/20080358119259-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청포도퓨레",
+        "origin": "칠레산",
+        "amount": "38%",
+        "sub_ingredients": [
+          {
+            "name": "청포도",
+            "origin": "칠레산",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "저감미당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도농축액",
+        "origin": "칠레산",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "청포도향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구아검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성보존료",
+        "sub_ingredients": [
+          {
+            "name": "안식향산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착색료",
+        "sub_ingredients": [
+          {
+            "name": "식용색소 황색 제4호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용색소 청색 제1호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용색소 적색 제40호",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:19"
+  },
+  "nutrition": {
+    "kcal": 202.0,
+    "sodium_mg": 6.0,
+    "carbohydrate_g": 48.0,
+    "sugar_g": 46.0,
+    "fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.0,
+    "basis_amount": 40.0,
+    "basis_unit": "g",
+    "basis_text": "40g당",
+    "collected_at": "2026-03-04 04:08:19"
+  }
+}

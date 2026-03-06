@@ -1,0 +1,85 @@
+{
+  "product": {
+    "name_ko": "맘스케어 무농약 쌀로 만든 까까(곡물과자)",
+    "reportnum": "201603683642"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603683642/201603683642-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603683642/201603683642-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603683642/201603683642-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "무농약현미(국내산)80%, 무농약백미(국내산)16%, 유기농찹쌀(국내산)2%, 유기농보리쌀(국내산)1%, 유기농수수(국내산)1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603683642/201603683642-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 30g 120kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨0mg 0%, 탄수화물8g 2%, 당류0g 0%, 콜레스테롤0mg 0%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 단백질1g미만 1%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201603683642/201603683642-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약현미",
+        "origin": "국내산",
+        "amount": "80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무농약백미",
+        "origin": "국내산",
+        "amount": "16%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농찹쌀",
+        "origin": "국내산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농보리쌀",
+        "origin": "국내산",
+        "amount": "1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농수수",
+        "origin": "국내산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:57"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "sodium_mg": 0.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 30g",
+    "collected_at": "2026-03-04 04:46:57"
+  }
+}

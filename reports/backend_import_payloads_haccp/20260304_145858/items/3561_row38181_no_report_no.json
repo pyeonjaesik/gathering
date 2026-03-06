@@ -1,0 +1,422 @@
+{
+  "product": {
+    "name_ko": "좋은상품 해물맛우동",
+    "reportnum": "199503380155897"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155897/199503380155897-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155897/199503380155897-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155897/199503380155897-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "●면-밀가루(밀/호주산),변성전분,정제소금(국산),채종유,소스류(대두),증점다당류k(알긴산에스테르,산탄검,카르복시메틸셀룰로오스나트륨,밀가루),혼합제제(알긴산나트륨,덱스트린),산도조절제 ●분말스프-정제소금(국산),맛베이스/중국산[말토덱스트린,정백당,향미증진제,이스트엑기스분말,호박산이나트륨],포도당,가쓰오부시분말8.06%,간장분말[아미노산간장3호(대두),정제소금,말토덱스트린],백설탕,오징어엑기스분말3.67%,마늘분말,고춧가루,양파분말,혼합제제(탄산칼륨,탄산나트륨,제2인산나트륨,피로인산나트륨),향미증진제,새우분말1.1%(새우),칠리맛풍미분TK,멸치분말0.46%,DL-알라닌,카라멜색소분말1호,향신료조제품,쇠고기농축분말(우유),이산화규소 ●건더기-건파(중국산),별미튀김[밀가루(밀:미국산,호주산),팜유(말레이시아산),전분,양파,건새우분말(새우),난백파우더(계란),락토원(우유)],지단후레이크[전란분(계란),소맥분,D-소르비톨액,소금,5'-이노신산나트륨],건조맛살어묵(냉동연육,감자전분,옥수수전분,소맥전분,솔비톨),건미역,고추후레이크,동결건조오징어6.05%(오징어99.25%,정제염)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155897/199503380155897-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(225g) 총 1회 제공량(225g) *%영양소기준치:1일 영양소 기준치에 대한 비율 1회 제공량 당 함량 *%영양소기준치 열량 364kcal, 탄수화물 79g 24%, 당류 2g, 단백질 9g 15%, 지방 1.6g 3%, 포화지방 0.4g 3%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 1550mg 78%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380155897/199503380155897-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "채종유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소스류",
+                "sub_ingredients": [
+                  {
+                    "name": "증점다당류k",
+                    "sub_ingredients": [
+                      {
+                        "name": "알긴산에스테르",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "산탄검",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "카르복시메틸셀룰로오스나트륨",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "밀가루",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "알긴산나트륨",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "분말스프",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛베이스",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정백당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이스트엑기스분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "호박산이나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가쓰오부시분말",
+            "amount": "8.06%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장분말",
+            "sub_ingredients": [
+              {
+                "name": "아미노산간장3호",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오징어엑기스분말",
+            "amount": "3.67%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "탄산칼륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "탄산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "제2인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "새우분말",
+            "amount": "1.1%",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "칠리맛풍미분TK",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치분말",
+            "amount": "0.46%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "DL-알라닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소분말1호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향신료조제품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기농축분말",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건더기",
+        "sub_ingredients": [
+          {
+            "name": "건파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "별미튀김",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "건새우분말",
+                "sub_ingredients": [
+                  {
+                    "name": "새우",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "난백파우더",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "락토원",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "지단후레이크",
+            "sub_ingredients": [
+              {
+                "name": "전란분",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "소맥분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "D-소르비톨액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "5'-이노신산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건조맛살어묵",
+            "sub_ingredients": [
+              {
+                "name": "냉동연육",
+                "sub_ingredients": []
+              },
+              {
+                "name": "감자전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "솔비톨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "건미역",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추후레이크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동결건조오징어",
+            "amount": "6.05%",
+            "sub_ingredients": [
+              {
+                "name": "오징어",
+                "amount": "99.25%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:15:43"
+  },
+  "nutrition": {
+    "kcal": 364.0,
+    "carbohydrate_g": 79.0,
+    "sugar_g": 2.0,
+    "protein_g": 9.0,
+    "fat_g": 1.6,
+    "saturated_fat_g": 0.4,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1550.0,
+    "basis_amount": 225.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(225g)",
+    "collected_at": "2026-03-03 20:15:43"
+  }
+}

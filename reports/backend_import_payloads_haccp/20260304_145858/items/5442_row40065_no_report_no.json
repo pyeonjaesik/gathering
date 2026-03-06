@@ -1,0 +1,168 @@
+{
+  "product": {
+    "name_ko": "사브작 큐브 김스낵 크랜베리&허니",
+    "reportnum": "2006052203076"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006052203076/2006052203076-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006052203076/2006052203076-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006052203076/2006052203076-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀20.6%(국산),올리고당,돌김12.0%(국산),김스낵용소스{정백당,저감미당,양조간장(탈지대두:인도산),미림(쌀:수입산),김스낵용페이스트,변성전분,효모추출물},크랜베리클래식10.1%(크랜베리64%,설탕,해바라기씨유/미국산),카놀라유,벌꿀4.1%(국산),아몬드,저감미당,호두,참기름",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006052203076/2006052203076-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉(30g) 1회 제공량당 함량:열량 135kcal,탄수화물21g(6%),당류6g,식이섬유2g(8%),단백질3g(5%),지방5g(10%),포화지방0g(0%),트랜스지방0g,콜레스테롤0mg(0%),나트륨45mg(2%),칼슘15mg(2%),철0.5g(4%),비타민A25㎍(4%),비타민C11mg(11%) *()안의 수치는 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006052203076/2006052203076-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "20.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돌김",
+        "origin": "국산",
+        "amount": "12.0%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "김스낵용소스",
+        "sub_ingredients": [
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "저감미당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "origin": "인도산",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "미림",
+            "origin": "수입산",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "수입산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "김스낵용페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "크랜베리클래식",
+        "amount": "10.1%",
+        "sub_ingredients": [
+          {
+            "name": "크랜베리",
+            "amount": "64%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기씨유",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "4.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아몬드",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저감미당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "호두",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:59"
+  },
+  "nutrition": {
+    "kcal": 135.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 6.0,
+    "dietary_fiber_g": 2.0,
+    "protein_g": 3.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "calcium_mg": 15.0,
+    "iron_mg": 0.5,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉(30g)",
+    "collected_at": "2026-03-04 04:00:59"
+  }
+}

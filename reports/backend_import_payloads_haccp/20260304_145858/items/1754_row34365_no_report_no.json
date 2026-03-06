@@ -1,0 +1,184 @@
+{
+  "product": {
+    "name_ko": "요플레 키즈 포도",
+    "reportnum": "19850262004114"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850262004114/19850262004114-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850262004114/19850262004114-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850262004114/19850262004114-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유79.2%(국산),포도시럽12%(백설탕,덱스트린,포도농축액(고형분68%)8.09%(미국산),변성전분,밀크칼슘0.851%(호주산),합성착향료(포도향),초유분말0.25%(미국산),비타민D3혼합제제0.012%(자당,아라비아검,옥수수전분,글리세린지방산에스테르,비타민D3,비타민E)),결정과당,우유단백농축물,혼합제제(변성전분,아미드펙틴,포도당,해바라기유),프락토올리고당,젤라틴,캐모마일추출액,유산균주",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850262004114/19850262004114-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=액상 150ml, 호상 100ml(g) | foodSize=40g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850262004114/19850262004114-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "79.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도시럽",
+        "amount": "12%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도농축액",
+            "origin": "미국산",
+            "amount": "8.09% (고형분68%)",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "변성전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀크칼슘",
+        "origin": "호주산",
+        "amount": "0.851%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "포도향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초유분말",
+        "origin": "미국산",
+        "amount": "0.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민D3혼합제제",
+        "amount": "0.012%",
+        "sub_ingredients": [
+          {
+            "name": "자당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아라비아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "결정과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유단백농축물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미드펙틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젤라틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "캐모마일추출액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균주",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:52:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 113.0,
+    "carbohydrate_g": 15.0,
+    "protein_g": 4.5,
+    "fat_g": 3.5,
+    "sugar_g": 12.0,
+    "sodium_mg": 50.0,
+    "cholesterol_mg": 7.5,
+    "saturated_fat_g": 1.75,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "액상 150ml, 호상 100ml(g)",
+    "total_content": "40g",
+    "collected_at": "2026-03-03 15:52:33"
+  }
+}

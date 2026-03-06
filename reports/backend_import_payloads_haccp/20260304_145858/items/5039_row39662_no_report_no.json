@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "쵸코마카롱(2입)",
+    "reportnum": "200404490102316"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490102316/200404490102316-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490102316/200404490102316-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490102316/200404490102316-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "기타설탕[설탕,전분(밀)], 아몬드(미국), 난백액(국산/계란), 설탕, 유크림(국산,우유), 초콜릿10.53% [코코아매스, 설탕, 코코아버터, 레시틴(대두), 천연향료(바닐라향)], 가공버터(무수유지방, 크림(우유), 팜유], 코코아분말1.15%, 우유, 난백분, 홍국색소(주정, 홍국색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490102316/200404490102316-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양정보 총 내용당 60 g(30 g × 2개) 1개(30 g)당 130 kcal, 1개당 1일영양성분 기준치에 대한 비율, 나트륨 15mg 1%, 탄수화물 15g 5%, 당류 18g 18% , 콜레스테롤 6mg 2%, 지방 6g 11%, 트랜스지방 0.1g, 포화지방 2.2g 15%, 단백질 2g 4%, 1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/200404490102316/200404490102316-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "amount": "10.53%",
+        "sub_ingredients": [
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "천연향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "무수유지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크림",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "amount": "1.15%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍국색소",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:25"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "sodium_mg": 15.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 18.0,
+    "cholesterol_mg": 6.0,
+    "fat_g": 6.0,
+    "trans_fat_g": 0.1,
+    "saturated_fat_g": 2.2,
+    "protein_g": 2.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1개(30 g)당",
+    "collected_at": "2026-03-04 03:51:25"
+  }
+}

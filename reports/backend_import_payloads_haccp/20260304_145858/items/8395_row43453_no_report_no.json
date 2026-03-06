@@ -1,0 +1,144 @@
+{
+  "product": {
+    "name_ko": "의성마늘프랑크김밥",
+    "reportnum": "200202215921528"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200202215921528/200202215921528-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200202215921528/200202215921528-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200202215921528/200202215921528-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀,롯데의성마늘프랑크[돼지고기,돈지방,소맥전분,마늘햄씨즈닝,마늘햄염지제(산도조절제),의성마늘],매운마요네즈,치자단무지,당근,우엉채,대두유,설탕,정제소금,김,참깨,혼합간장,화이트식초,참기름,쇠고기맛나",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200202215921528/200202215921528-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=240g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200202215921528/200202215921528-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "롯데의성마늘프랑크",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "돈지방",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘햄씨즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘햄염지제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "의성마늘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매운마요네즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자단무지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우엉채",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛나",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:37:24"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 221.0,
+    "carbohydrate_g": 21.67,
+    "protein_g": 5.42,
+    "fat_g": 12.5,
+    "sugar_g": 4.17,
+    "sodium_mg": 458.0,
+    "cholesterol_mg": 20.84,
+    "saturated_fat_g": 4.17,
+    "trans_fat_g": 0.15,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "240g",
+    "collected_at": "2026-03-04 03:37:24"
+  }
+}

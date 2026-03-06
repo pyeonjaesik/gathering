@@ -1,0 +1,225 @@
+{
+  "product": {
+    "name_ko": "후레쉬베리 복숭아",
+    "reportnum": "19870415003307"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003307/19870415003307-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003307/19870415003307-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003307/19870415003307-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "백설탕, 밀가루(밀 미국산), 전란액(달걀 국산), 복숭아젬[백설탕, 복숭아(중국산), 올리고당, 복숭아농축과즈(이스라엘산), 라즈베리퓨레(라즈베리 프랑스산)], 식물성유지1(경화유), 식물성유지2, 맥아엿, D-솔비톨, 물엿, 혼합제제(글리세린지방산에스테르, 프로필렌글리콜, 글리세롤, 소르비탄지방산에스테르), 주정, 유청분말, 요거트분말, 유화제4종, 식물성유지3, 혼합제제(중탄산나트륨, 산성피로인산나트륨, 쌀가루, 푸마르산), 조제크림분말, 구연산, 식염, 북상아농축액(이스라엘산), 홍국색소, 합성향료4종, 잔탄검, 곡류가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003307/19870415003307-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=336g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1987/19870415003307/19870415003307-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복숭아젬",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복숭아",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복숭아농축과즙",
+            "origin": "이스라엘산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "라즈베리퓨레",
+            "origin": "프랑스산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지1",
+        "sub_ingredients": [
+          {
+            "name": "경화유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지2",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥아엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-솔비톨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "중탄산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산성피로인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸마르산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "요거트분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": [
+          {
+            "name": "유화제4종",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지3",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조제크림분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "북상아농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍국색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "합성향료4종",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:40:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 436.0,
+    "carbohydrate_g": 57.14,
+    "protein_g": 3.57,
+    "fat_g": 21.43,
+    "sugar_g": 35.71,
+    "sodium_mg": 179.0,
+    "cholesterol_mg": 67.86,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "336g",
+    "collected_at": "2026-03-03 16:40:41"
+  }
+}

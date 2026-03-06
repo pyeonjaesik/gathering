@@ -1,0 +1,248 @@
+{
+  "product": {
+    "name_ko": "허니버터맛초코스틱",
+    "reportnum": "2013044901347"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901347/2013044901347-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901347/2013044901347-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901347/2013044901347-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "과자[밀가루(밀:미국산,호주산),백설탕,식물성유지(팜유:말레이시아산),가공전지분,옥수수전분],볶음땅콩(땅콩(아르헨티나산)100%),준초콜릿20.69%[백설탕,식물성가공유지(팜핵경화유:말레이시아산),유청분말(국산),코코아분말10%(싱가포르산),식물성크림분말],허니버터맛시즈닝에스와이3.10%[감칠맛시즈닝{알파콘씨(옥수수:프랑스산),프로텍스500(인도산),이스트플러스,미립당,스테비텐후레쉬},가공소금[정제소금(미국산)],버터혼합분말65 19.62%{가공버터(호주산)65%,유담(미국산),카제인나트륨,유화제,정제소금(국산)},미립당,탈지분유,버터후레바분말엔(버터후레바파우다,미립당),허니바우더-4 4.37%{아카시아꿀25%(국내산)}],설탕,벌꿀0.11%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901347/2013044901347-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 43.5g (14.5g*3봉지) 1봉지(14.5g)당 74kal\n<1 봉지당 1일 영양성분 기준치에 대한 비율>\n나트륨57mg 3%, 탄수화물8g 3%, 당류2.7g 3%, 지방3.8g 7%, 트렌스지방0g, 포화지방1.7g 12%, 콜레스테롤0mg 0%, 단백질1.8g 3%\n<총내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨171mg 9%, 탄수화물25g 8%, 당류8g 8%, 지방3.8g 7%, 트렌스지방0g, 포화지방5g 35%, 콜레스테롤0mg 0%, 단백질5g 10%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/2013044901347/2013044901347-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "과자",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공전지분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "볶음땅콩",
+        "origin": "아르헨티나산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "amount": "20.69%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성가공유지",
+            "origin": "말레이시아산",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유청분말",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "싱가포르산",
+            "amount": "10%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성크림분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "허니버터맛시즈닝에스와이",
+        "amount": "3.10%",
+        "sub_ingredients": [
+          {
+            "name": "감칠맛시즈닝",
+            "sub_ingredients": [
+              {
+                "name": "알파콘씨",
+                "origin": "프랑스산",
+                "sub_ingredients": [
+                  {
+                    "name": "옥수수",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "프로텍스500",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "이스트플러스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미립당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "스테비텐후레쉬",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "가공소금",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터혼합분말",
+            "amount": "19.62%",
+            "sub_ingredients": [
+              {
+                "name": "가공버터",
+                "origin": "호주산",
+                "amount": "65%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유담",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카제인나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "미립당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터후레바분말엔",
+            "sub_ingredients": [
+              {
+                "name": "버터후레바파우다",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미립당",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "허니바우더-4",
+            "amount": "4.37%",
+            "sub_ingredients": [
+              {
+                "name": "아카시아꿀",
+                "origin": "국내산",
+                "amount": "25%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "0.11%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:50"
+  },
+  "nutrition": {
+    "sodium_mg": 57.0,
+    "carbohydrate_g": 8.0,
+    "sugar_g": 2.7,
+    "fat_g": 3.8,
+    "saturated_fat_g": 1.7,
+    "cholesterol_mg": 0.0,
+    "protein_g": 1.8,
+    "basis_amount": 14.5,
+    "basis_unit": "g",
+    "basis_text": "1봉지(14.5g)당",
+    "collected_at": "2026-03-04 04:38:50"
+  }
+}

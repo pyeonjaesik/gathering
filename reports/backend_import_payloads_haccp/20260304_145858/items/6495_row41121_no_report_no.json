@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "달담 군밤",
+    "reportnum": "2012052204420"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012052204420/2012052204420-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012052204420/2012052204420-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012052204420/2012052204420-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밤100%(중국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012052204420/2012052204420-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500g (100gX5봉) 1봉(100g)당 열량199kcal\n<내용량100g당 1일 영양성분 기준치에 대한 비율> \n나트륨Natrium1mg 0%, 탄수화물Carbohydrate43g 13%, 당류Saccharide9g 9%, 지방Lipid1g 2%, 트랜스지방Trans Fat0g, 포화지방Saturated Fat0g 0%, 콜레스테롤Cholesterol0mg 0%, 단백질Protein4g 6%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012052204420/2012052204420-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밤",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:18"
+  },
+  "nutrition": {
+    "kcal": 199.0,
+    "sodium_mg": 1.0,
+    "carbohydrate_g": 43.0,
+    "sugar_g": 9.0,
+    "fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 4.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1봉(100g)당",
+    "collected_at": "2026-03-04 04:36:18"
+  }
+}

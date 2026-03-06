@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "한턱쏘시지",
+    "reportnum": "20140262016104"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140262016104/20140262016104-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140262016104/20140262016104-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140262016104/20140262016104-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기95.47%[82.74%(미국산),12.73%(국내산)],정백당,향신믹스[셀러리분말{샐러리(샐러리분말(베트남산)),정제염(국산)}],비엔나델리에스(스위스산),천일염,복합허브추출물 SL, 혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),바베큐시즈닝,프리글루시즈닝,비타민C,자몽종자추출물,콜라겐",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140262016104/20140262016104-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 30g (30g) 총 30회 제공량(900g) 1회 제공량당 함량 *%영양성분 기준치 열량 82kcal,탄수화물3g 1%,당류1g미만,단백질4g 7%,지방6g 12%, 포화지방2g 14%, 트랜스지방0g, 콜레스테롤 10mg 3%, 나트륨120mg 6% *% 영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/20140262016104/20140262016104-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "미국산, 국내산, 미국산 82.74%, 국내산 12.73%",
+        "amount": "95.47%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신믹스",
+        "sub_ingredients": [
+          {
+            "name": "셀러리분말",
+            "sub_ingredients": [
+              {
+                "name": "샐러리",
+                "origin": "베트남산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제염",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비엔나델리에스",
+        "origin": "스위스산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합허브추출물 SL",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바베큐시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프리글루시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자몽종자추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:24"
+  },
+  "nutrition": {
+    "kcal": 82.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 4.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 120.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g",
+    "collected_at": "2026-03-04 04:40:24"
+  }
+}

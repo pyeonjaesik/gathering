@@ -1,0 +1,216 @@
+{
+  "product": {
+    "name_ko": "그릭슈바인 햄에그 필라프",
+    "reportnum": "20150493208100"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150493208100/20150493208100-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150493208100/20150493208100-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150493208100/20150493208100-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀44.31%(국산),햄14.77%[돼지고기91.64%(국산,외국산:스페인,미국,벨기에등),정제소금,백설탕,카라기난,혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨)],당근7.39%(중국산),양파7.09%(국산),스크램블드에그S5.91%[계란90%(국산),변성전분,정제염,정백당,혼합제제(폴리인산나트륨,메타인산칼륨)],대파5.76%(중국산),필라프용베이스JW[정제소금,혼합간장,백설탕,그릴드치킨농축액,L-글루타민산나트륨(향미증진제)],그린빈스4.72%(중국산),카놀라유,마가린,참기름,웍플레이버(향미유)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150493208100/20150493208100-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량220g 385kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨640mg 32%, 탄수화물58g 18%, 당류1g 1%, 지방12g 22%, 트랜스지방0g, 포화지방2.5g 17%, 콜레스테롤35mg 12%, 단백질11g 20%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150493208100/20150493208100-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "44.31%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "햄",
+        "origin": "국산, 외국산, 스페인산, 미국산, 벨기에산",
+        "amount": "14.77%",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "origin": "국산, 외국산, 스페인산, 미국산, 벨기에산",
+            "amount": "91.64%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "메타인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "피로인산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "중국산",
+        "amount": "7.39%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "7.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스크램블드에그",
+        "amount": "5.91%",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "amount": "90%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "폴리인산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "메타인산칼륨",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "amount": "5.76%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "필라프용베이스",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "그릴드치킨농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "그린빈스",
+        "origin": "중국산",
+        "amount": "4.72%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "웍플레이버",
+        "sub_ingredients": [
+          {
+            "name": "향미유",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:46:32"
+  },
+  "nutrition": {
+    "kcal": 385.0,
+    "sodium_mg": 640.0,
+    "carbohydrate_g": 58.0,
+    "sugar_g": 1.0,
+    "fat_g": 12.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 2.5,
+    "cholesterol_mg": 35.0,
+    "protein_g": 11.0,
+    "basis_amount": 220.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량220g",
+    "collected_at": "2026-03-04 04:46:32"
+  }
+}

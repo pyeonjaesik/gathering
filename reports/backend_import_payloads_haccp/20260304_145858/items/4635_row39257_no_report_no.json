@@ -1,0 +1,272 @@
+{
+  "product": {
+    "name_ko": "닭가슴살WPH(쵸코)",
+    "reportnum": "20020445161129"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020445161129/20020445161129-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020445161129/20020445161129-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020445161129/20020445161129-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "가수분해유청단백WPH[미국산,가수분해유청단백99%,대두레시틴]41.3%,닭가슴살분말[국내산,닭가슴살,덱스트린,토코페롤]25%,농축유청단백WPC(미국산,농축유청단백,대두레시틴),코코아분말(네덜란드산)6%,분리유청단백WPI(미국산),난백분말,혼합탈지유,분말·결정포도당,합성착향료(쵸코향분말1,쵸코향분말2),아스파탐(합성감미료,페닐알라닌함유),유청칼슘,스포츠비타믹스S(비타민C,팔라티노스,비타민E분말,니코틴산아미드,비타민A분말,판토텐산칼슘,비타민B6염산염,비타민B1염산염,비타민B2,엽산,비타민D3분말,비오틴,비타민B12분말),아미노믹스(L-페닐알라닌,L-로이신,L-메티오닌,L-라이신염산염,팔라티노스,L-이소로이신,L-발린,L-히스티딘,L-트리오닌,L-트립토판),타우린,L-글루타민,젖산철,산화아연.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020445161129/20020445161129-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량220kcal/탄수화물18g (5%)/당류2g/단백질35g (64%)/지방0g (0%)/포화지방0g (0%)/트랜스지방없음/콜레스테롤40mg (13%)/나트륨140mg (7%)/( ) 안의 수치는 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020445161129/20020445161129-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가수분해유청단백WPH",
+        "origin": "미국산",
+        "amount": "41.3%",
+        "sub_ingredients": [
+          {
+            "name": "가수분해유청단백",
+            "amount": "99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭가슴살분말",
+        "origin": "국내산",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "닭가슴살",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "농축유청단백WPC",
+        "origin": "미국산",
+        "sub_ingredients": [
+          {
+            "name": "농축유청단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두레시틴",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리유청단백WPI",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말·결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "쵸코향분말1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쵸코향분말2",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아스파탐",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          },
+          {
+            "name": "페닐알라닌",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스포츠비타믹스S",
+        "sub_ingredients": [
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팔라티노스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민E분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "니코틴산아미드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "판토텐산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B6염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엽산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비오틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B12분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아미노믹스",
+        "sub_ingredients": [
+          {
+            "name": "L-페닐알라닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-로이신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-메티오닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-라이신염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팔라티노스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-이소로이신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-발린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-히스티딘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-트리오닌",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-트립토판",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "타우린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "젖산철",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산화아연",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:17"
+  },
+  "nutrition": {
+    "kcal": 220.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 2.0,
+    "protein_g": 35.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 40.0,
+    "sodium_mg": 140.0,
+    "collected_at": "2026-03-04 03:39:17"
+  }
+}

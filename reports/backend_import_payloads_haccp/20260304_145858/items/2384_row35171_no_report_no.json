@@ -1,0 +1,199 @@
+{
+  "product": {
+    "name_ko": "크라비",
+    "reportnum": "19880311002418"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880311002418/19880311002418-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880311002418/19880311002418-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880311002418/19880311002418-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "명태연육79.89%(미국산/어육,백설탕,D-소비톨,산도조절제),감자전분(독일산),소맥전분{밀:외국산(미국,호주,독일 등)},게엑기스-P2.15%{게(국내산)},DHA칼슘분말0.11%,정제소금,백설탕,글리신,L-글루탐산나트륨제제{L-글루탐산나트륨(향미증진제),5'-리보뉴클레오디트이나트륨},혼합제제(글리신,산도조절제,푸마르산일나트륨,영양강화제,유화제,덱스트린),조미액-DR,게향0.63%(합성향료),대두유,토마토색소·엠,수용성파프리카색소5만,산도조절제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880311002418/19880311002418-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 150g/100g당 95kcal 나트륨 650mg 33%, 탄수화물 12g 4%, 당류 3g 3%, 지방 1.1g 2%, 트랜스지방 0g, 포화지방 0g 0%, 콜레스테롤 0mg 0%, 단백질 10g 18%, DHA 16mg, 칼슘 270mg 39% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880311002418/19880311002418-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "명태연육",
+        "origin": "미국산",
+        "amount": "79.89%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "외국산, 미국산, 호주산, 독일산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게엑기스-P",
+        "origin": "국내산",
+        "amount": "2.15%",
+        "sub_ingredients": [
+          {
+            "name": "게",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "DHA칼슘분말",
+        "amount": "0.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "5'-리보뉴클레오디트이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "푸마르산일나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조미액-DR",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "게향",
+        "amount": "0.63%",
+        "sub_ingredients": [
+          {
+            "name": "합성향료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토색소·엠",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성파프리카색소",
+        "amount": "5만",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:52:20"
+  },
+  "nutrition": {
+    "total_content": "150",
+    "food_weight_g": 150.0,
+    "kcal": 95.0,
+    "sodium_mg": 650.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 3.0,
+    "fat_g": 1.1,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 10.0,
+    "calcium_mg": 270.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 16:52:20"
+  }
+}

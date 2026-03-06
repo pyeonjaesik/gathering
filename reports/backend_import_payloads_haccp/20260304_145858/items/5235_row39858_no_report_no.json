@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "씨앗담은스테이크",
+    "reportnum": "20060189018203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060189018203/20060189018203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060189018203/20060189018203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060189018203/20060189018203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "귀리양배추잡곡밥56.00%:귀리(호주산34.26%,일반미(국내산)25.69%,찰보리(국내산)17.13%,양배추(국내산)13.00%,기장8.56%,옥수수,천일염,검은깨,참깨,씨앗담은스테이크20.00%:돼지고기(국내산)55.81%,소고기(호주산)11.63%,해바라기씨앗(미국산)4.19%,갈색설탕,빵가루,간장,물엿,불고기양념-비에스,양파,조직화대두단백,마늘,야채카레분말,분리대두단백,옥수수알파전분,검은깨,비프시즈닝분말NM,카라멜색소,숯불갈비맛엑기스,청양고추,청주,직화불맛에이드,생강,정제소금,숯불향미유,차덱스H[말토덱스트린80%,숯불후레바20%],고구마(인도네시아)12.00%,냉동혼합야채(중국산)8.00%[옥수수,당근,완두콩,청피망],아마씨(캐나다산)2.00%,스테이크용소스-1",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060189018203/20060189018203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량397kcal, 단백질17g,탄수화물60g,지방9g,나트륨186mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/20060189018203/20060189018203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "귀리양배추잡곡밥",
+        "amount": "56.00%",
+        "sub_ingredients": [
+          {
+            "name": "귀리",
+            "origin": "호주산",
+            "amount": "34.26%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "일반미",
+            "origin": "국내산",
+            "amount": "25.69%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "찰보리",
+            "origin": "국내산",
+            "amount": "17.13%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "origin": "국내산",
+            "amount": "13.00%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "기장",
+            "amount": "8.56%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "검은깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고구마",
+            "origin": "인도네시아산",
+            "amount": "12.00%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "냉동혼합야채",
+            "origin": "중국산",
+            "amount": "8.00%",
+            "sub_ingredients": [
+              {
+                "name": "옥수수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              },
+              {
+                "name": "완두콩",
+                "sub_ingredients": []
+              },
+              {
+                "name": "청피망",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아마씨",
+            "origin": "캐나다산",
+            "amount": "2.00%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스테이크용소스-1",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:56:11"
+  },
+  "nutrition": {
+    "kcal": 397.0,
+    "protein_g": 17.0,
+    "carbohydrate_g": 60.0,
+    "fat_g": 9.0,
+    "sodium_mg": 186.0,
+    "collected_at": "2026-03-04 03:56:11"
+  }
+}

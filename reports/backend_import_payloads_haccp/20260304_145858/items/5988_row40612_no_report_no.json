@@ -1,0 +1,67 @@
+{
+  "product": {
+    "name_ko": "몬스터씨리얼",
+    "reportnum": "20090368564278"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090368564278/20090368564278-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090368564278/20090368564278-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090368564278/20090368564278-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백미100%(유기농,국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090368564278/20090368564278-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 30g(1봉 150g, 총 5회 제공량)\n<성분 30g당(%)>\n열량(kcal)117, 탄수화물(g)27 (7.5), 당류(g)0, 단백질(g)3 (0.06), 지방(g)0 (0), 포화지방(g)0 (0), 트랜스지방(g)0, 콜레스테롤(mg)0 (0), 나트륨(mg)0 (0)\n*()는 2010년 한국인 영양섭취기준에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090368564278/20090368564278-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백미",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "유기농",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:55"
+  },
+  "nutrition": {
+    "kcal": 117.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 30g",
+    "collected_at": "2026-03-04 04:18:55"
+  }
+}

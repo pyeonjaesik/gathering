@@ -1,0 +1,117 @@
+{
+  "product": {
+    "name_ko": "애플향시럽",
+    "reportnum": "19730190015138"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015138/19730190015138-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015138/19730190015138-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015138/19730190015138-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "백설탕,정제수,액상과당,사과농축액2.36%(70brix,칠레산),구연산,혼합제제1[프로필렌글리콜,합성착향료(사과향),초산],혼합제제2[플로필렌글리콜,치자청색소,홍화황색소]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015138/19730190015138-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 함량 열량 268kcal,탄수화물67g(20%),당류62g,단백질0g(0%),지방0g(0%),포화지방0g(0%),트랜스지방0g,콜레스테롤0mg(0%),나트륨0mg(0%) *()안의 수치는 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/19730190015138/19730190015138-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "칠레산",
+        "amount": "2.36%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "사과향",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "초산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "플로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "치자청색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍화황색소",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:42:43"
+  },
+  "nutrition": {
+    "kcal": 268.0,
+    "carbohydrate_g": 67.0,
+    "sugar_g": 62.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:42:43"
+  }
+}

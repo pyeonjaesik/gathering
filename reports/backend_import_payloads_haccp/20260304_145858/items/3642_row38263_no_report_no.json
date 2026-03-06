@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "누네띠네 딸기",
+    "reportnum": "199503380157750"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157750/199503380157750-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157750/199503380157750-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157750/199503380157750-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산),마가린/인도네시아산[알비디팜유,알비디팜스테아린유,경화팜유,정제소금,유화제],기타설탕[원당,전분],살구피링[살구농축액{살구추출액(살구/국산)}],당류가공품{딸기농축액(딸기/국산)},유청,난백분,정제소금,전분,탈지분유,합성향료,L-주석산수소칼륨",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157750/199503380157750-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 400g 100g당 530kcal\n<100g 1일 영양성분 기준치에 대한 비율>\n나트륨220mg 11%, 탄수화물60g 19%, 당류26g 26%, 지방30g 56%, 트랜스지방0.7g, 포화지방14g 93%, 콜레스테롤15mg 5%,단백질5g 9%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157750/199503380157750-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "알비디팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "알비디팜스테아린유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "경화팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": [
+          {
+            "name": "원당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "살구피링",
+        "sub_ingredients": [
+          {
+            "name": "살구농축액",
+            "sub_ingredients": [
+              {
+                "name": "살구추출액",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": [
+          {
+            "name": "딸기농축액",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-주석산수소칼륨",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:29:55"
+  },
+  "nutrition": {
+    "kcal": 530.0,
+    "sodium_mg": 220.0,
+    "carbohydrate_g": 60.0,
+    "sugar_g": 26.0,
+    "fat_g": 30.0,
+    "trans_fat_g": 0.7,
+    "saturated_fat_g": 14.0,
+    "cholesterol_mg": 15.0,
+    "protein_g": 5.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 20:29:55"
+  }
+}

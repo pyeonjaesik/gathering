@@ -1,0 +1,174 @@
+{
+  "product": {
+    "name_ko": "후디스 케어3 골든애플",
+    "reportnum": "2007037900910"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900910/2007037900910-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900910/2007037900910-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900910/2007037900910-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "원유80%(국산),액상과당,정제수,골든애플농축과즙(터키),혼합탈지분유,이소말토올리고당,프락토올리고당,폴리덱스트로즈0.5%,치커리화이버0.5%,펙틴,lgY 난황액(계란)0.2%,합성착향료(사과향),비타민C, 초유농축유청단백(IGF강화 시너콜)0.03%,유산균0.02%,유당분해효소,효소처리탱자추추물0.01%,프로펙틴초유0.005%,L.rhamnosus IDCC 3201 0.002%, L.johnsonii IDCC 9203 0.002%,꽃송이버섯추출물0.01%,산화아연",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900910/2007037900910-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=액상 150ml, 호상 100ml(g) | foodSize=135ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007037900910/2007037900910-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "골든애플농축과즙",
+        "origin": "터키산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이소말토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리덱스트로즈",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치커리화이버",
+        "amount": "0.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "펙틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "lgY 난황액",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "사과향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초유농축유청단백",
+        "amount": "0.03%",
+        "sub_ingredients": [
+          {
+            "name": "IGF강화 시너콜",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유산균",
+        "amount": "0.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유당분해효소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리탱자추추물",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로펙틴초유",
+        "amount": "0.005%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L.rhamnosus IDCC 3201",
+        "amount": "0.002%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L.johnsonii IDCC 9203",
+        "amount": "0.002%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "꽃송이버섯추출물",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산화아연",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:10"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 85.0,
+    "carbohydrate_g": 12.59,
+    "protein_g": 2.96,
+    "fat_g": 2.96,
+    "sugar_g": 10.37,
+    "sodium_mg": 59.0,
+    "cholesterol_mg": 11.11,
+    "saturated_fat_g": 1.93,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "액상 150ml, 호상 100ml(g)",
+    "total_content": "135ml",
+    "collected_at": "2026-03-04 04:04:10"
+  }
+}

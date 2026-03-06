@@ -1,0 +1,88 @@
+{
+  "product": {
+    "name_ko": "라발란스고단백스낵(파인애플)",
+    "reportnum": "20080473043155"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080473043155/20080473043155-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080473043155/20080473043155-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080473043155/20080473043155-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "발아현미,분리대두단백,검정콩,렌틸콩,미강,정제소금,스테비아,파인애플과즙분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080473043155/20080473043155-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개 35g\n열량123ckal, 나트륨230mg 12%, 탄수화물17g 5%, 당류1g 1%, 콜레스테롤0mg 0%, 지방0.9g 2%, 트랜스지방0mg 0%, 포화지방0.4g 3%, 단백질10g 18%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080473043155/20080473043155-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "발아현미",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분리대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검정콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "렌틸콩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미강",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파인애플과즙분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:29"
+  },
+  "nutrition": {
+    "kcal": 123.0,
+    "sodium_mg": 230.0,
+    "carbohydrate_g": 17.0,
+    "sugar_g": 1.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 0.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.4,
+    "protein_g": 10.0,
+    "basis_amount": 35.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개 35g",
+    "collected_at": "2026-03-04 04:12:29"
+  }
+}

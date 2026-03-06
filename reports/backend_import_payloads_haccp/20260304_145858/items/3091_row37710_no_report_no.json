@@ -1,0 +1,86 @@
+{
+  "product": {
+    "name_ko": "센쿡건강한혼합곡밥",
+    "reportnum": "19920461131112"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131112/19920461131112-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131112/19920461131112-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131112/19920461131112-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멥쌀70%(국산),발아현미20%(국산),흑미4.5%(국산),차수수4.5%(국산),검은콩1%(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131112/19920461131112-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1캔(210g) 1회 제공량당 함량 *영양소기준치 열량 310kcal, 탄수화물 72g미만 22%, 당류 0g 단백질 5g 8%, 지방 0g 0%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 9%, 나트륨 10mg 1% %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920461131112/19920461131112-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멥쌀",
+        "origin": "국산",
+        "amount": "70%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아현미",
+        "origin": "국산",
+        "amount": "20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미",
+        "origin": "국산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "차수수",
+        "origin": "국산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:08:19"
+  },
+  "nutrition": {
+    "kcal": 310.0,
+    "carbohydrate_g": 72.0,
+    "sugar_g": 0.0,
+    "protein_g": 5.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "basis_amount": 210.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1캔(210g)",
+    "collected_at": "2026-03-03 19:08:19"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "product": {
+    "name_ko": "아이리스 파르페(쿠키&크림)",
+    "reportnum": "19950125004128"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950125004128/19950125004128-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950125004128/19950125004128-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950125004128/19950125004128-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "물,백설탕,가공버터[(버터,야자경화유,무지유고형분),외국산(네덜란드,호주,독일)],물엿,혼합분유[(탈지분유,탈염유청분말,농축유청단백),외국산(네덜란드,벨기에,독일)],쿠키분태{밀가루(미국산),쇼토닝(말레이시아산)},초코시럽,기타가공품,코코아분말,가당연유,준초콜릿,야자경화유,혼합제제(유화제,덱스트린,카라기난,구아검,로커스트콩검,구연산),커피시럽,덱스트린,합성향료(바닐라향1,바닐라향2,다크초코렛향),락색소,치자청색소,카카오색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950125004128/19950125004128-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=100ml | foodSize=305ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/19950125004128/19950125004128-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "외국산, 네덜란드산, 호주산, 독일산",
+        "sub_ingredients": [
+          {
+            "name": "버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자경화유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무지유고형분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "외국산, 네덜란드산, 벨기에산, 독일산",
+        "sub_ingredients": [
+          {
+            "name": "탈지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탈염유청분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축유청단백",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쿠키분태",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼토닝",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초코시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가당연유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "준초콜릿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로커스트콩검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "커피시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "바닐라향1",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐라향2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다크초코렛향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "치자청색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카카오색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:08:09"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 95.0,
+    "carbohydrate_g": 14.0,
+    "protein_g": 1.5,
+    "fat_g": 3.6,
+    "sugar_g": 12.0,
+    "sodium_mg": 30.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 2.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "100ml",
+    "total_content": "305ml",
+    "collected_at": "2026-03-03 20:08:09"
+  }
+}

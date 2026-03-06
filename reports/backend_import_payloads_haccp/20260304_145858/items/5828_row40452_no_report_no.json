@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "모카치노 커피가 든 1등급 우유",
+    "reportnum": "200805020024"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805020024/200805020024-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805020024/200805020024-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805020024/200805020024-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유(국산)50%(세균수기준),정제수,액상과당,슈프레모블렌드커피추출액(고형분3.0%이상,커피원두:콜롬비아25%,브라질25%,온두라스등50%)1%,커피추출액(고형분33%이상,브라질)1%,커피추출액(고형분38%이상,콜롬비아)0.6%,탈지분유,백설탕,유크림),코코아분말(스페인산)0.2%,커피분말(수입산)0.01%,덱스트린,수크랄로스(합성감미료),탄산수소나트륨,정제소금,합성착향료(커피향,초콜렛향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805020024/200805020024-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1컵(200ml) 총 2회 제공량(300ml) 1회 제공량당 함량: 열량120kcal 탄수화물16g(5%),당류 15g, 단백질 4g (7%),지방4.3g (8%),포화지방 2.7g (18%),트랜스지방 0g,콜레스테롤 13mg (4%),나트륨 85mg (4%) *( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/200805020024/200805020024-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "슈프레모블렌드커피추출액",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "3.0%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "커피원두",
+            "origin": "콜롬비아산 25%, 브라질산 25%, 온두라스산 50%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "커피추출액",
+        "origin": "브라질산, 콜롬비아산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "33%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "스페인산",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "커피분말",
+        "origin": "수입산",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초콜렛향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:00"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 16.0,
+    "sugar_g": 15.0,
+    "protein_g": 4.0,
+    "fat_g": 4.3,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 85.0,
+    "basis_amount": 200.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 1컵(200ml)",
+    "collected_at": "2026-03-04 04:15:00"
+  }
+}

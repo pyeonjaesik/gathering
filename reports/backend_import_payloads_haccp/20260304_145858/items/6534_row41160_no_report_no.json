@@ -1,0 +1,141 @@
+{
+  "product": {
+    "name_ko": "정통 함박 스테이크",
+    "reportnum": "201303722753"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201303722753/201303722753-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201303722753/201303722753-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201303722753/201303722753-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국내산)26.5%,소고기(호주산)21.5%,스테이크용소스-3F{3F소스베이스,토마토케찹,사과퓨레,요리당,고과당,말토덱스트린}25%,양파(국내산),우지방,정제수,건식빵가루,탈지대두,대두단백,마늘,전란,흑설탕,정제염,비프엑기스,카레분말,폴리인산나트륨,흑후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201303722753/201303722753-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "알 수 없음",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201303722753/201303722753-1.jpg",
+      "note": "nutrition_not_available"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국내산",
+        "amount": "26.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산",
+        "amount": "21.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스테이크용소스",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "소스베이스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토케찹",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과퓨레",
+            "sub_ingredients": []
+          },
+          {
+            "name": "요리당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우지방",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건식빵가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "폴리인산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:37:30"
+  }
+}

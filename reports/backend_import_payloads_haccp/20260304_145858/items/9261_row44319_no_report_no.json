@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "상하치즈 체다슬라이스",
+    "reportnum": "20090476009221"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009221/20090476009221-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009221/20090476009221-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009221/20090476009221-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "자연치즈75%[호주산,뉴질랜드산 체다 93.33%,영국산PDO 숙성체다 6.67%(원유,식염,유산균,우유응고효소)],정제수,우유(국산),데어리스프레드(뉴질랜드산),산도조절제,식염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009221/20090476009221-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=180g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/20090476009221/20090476009221-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "자연치즈",
+        "origin": "호주산",
+        "amount": "75%",
+        "sub_ingredients": [
+          {
+            "name": "뉴질랜드산 체다",
+            "amount": "93.33%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영국산PDO 숙성체다",
+            "amount": "6.67%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유응고효소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우유",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데어리스프레드",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:20:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 333.0,
+    "carbohydrate_g": 1.11,
+    "protein_g": 16.67,
+    "fat_g": 27.78,
+    "sugar_g": 0.56,
+    "sodium_mg": 833.0,
+    "calcium_mg": 444.0,
+    "cholesterol_mg": 83.33,
+    "saturated_fat_g": 16.67,
+    "trans_fat_g": 1.11,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "180g",
+    "collected_at": "2026-03-04 04:20:53"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "product": {
+    "name_ko": "토마토새우볶음밥",
+    "reportnum": "19930199349851"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349851/19930199349851-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349851/19930199349851-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349851/19930199349851-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀42.28%(국산),새우13.21%(베트남산),양파(국산),홍피망,홍국쌀,토마토4.20%(국산),고올레산해바라기유,새우추출분말엔엠3.60%{새우추출물 26%[새우추출액70%(새우 20% : 캐나다산)],새우농축액 10%[새우33% : 캐나다산]}, 대파, 마늘, 레드퀴노아, 미림, 정제소금, 콩발효맛내기",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349851/19930199349851-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(210g) 총 2회 제공량(420g)\n<1회 제공량당 함량 %영양성분기준치>\n열량380kcal, 탄수화물77g 23%, 당류1g, 단백질7g 13%, 지방4.8g 9%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤15mg 5%, 나트륨740mg 37%\n%영양성분기준치 : 1일 영양성분기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349851/19930199349851-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "42.28%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "베트남산",
+        "amount": "13.21%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍국쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토마토",
+        "origin": "국산",
+        "amount": "4.20%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고올레산해바라기유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우추출분말",
+        "amount": "3.60%",
+        "sub_ingredients": [
+          {
+            "name": "새우추출물",
+            "amount": "26%",
+            "sub_ingredients": [
+              {
+                "name": "새우추출액",
+                "amount": "70%",
+                "sub_ingredients": [
+                  {
+                    "name": "새우",
+                    "origin": "캐나다산",
+                    "amount": "20%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "새우농축액",
+            "amount": "10%",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "origin": "캐나다산",
+                "amount": "33%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레드퀴노아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩발효맛내기",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:25:38"
+  },
+  "nutrition": {
+    "kcal": 380.0,
+    "carbohydrate_g": 77.0,
+    "sugar_g": 1.0,
+    "protein_g": 7.0,
+    "fat_g": 4.8,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 740.0,
+    "basis_amount": 210.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(210g)",
+    "collected_at": "2026-03-03 19:25:38"
+  }
+}

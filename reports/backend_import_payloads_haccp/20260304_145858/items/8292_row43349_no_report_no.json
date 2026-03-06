@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "옛날쇠고기죽",
+    "reportnum": "20010445055194"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055194/20010445055194-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055194/20010445055194-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055194/20010445055194-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀(국산),쌀가루(국산),쇠고기칩3.8%[쇠고기(뉴질랜드산),정육기준15.2%],정제소금,혼합식용유,백설탕,참깨,쇠고기엑기스분말,오뚜기비프시즈닝,참기름,효모추출물,효모조미분,시금치후레이크,표고버섯칩,마늘분,조미양념분,향미증진제,콩발효맛내기분말,양조간장분말,후추분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055194/20010445055194-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=85g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055194/20010445055194-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기칩",
+        "amount": "3.8%",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오뚜기비프시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모조미분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시금치후레이크",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯칩",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조미양념분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콩발효맛내기분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추분",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:30:25"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 371.0,
+    "carbohydrate_g": 76.47,
+    "protein_g": 9.41,
+    "fat_g": 3.29,
+    "sugar_g": 2.35,
+    "sodium_mg": 1424.0,
+    "cholesterol_mg": 5.88,
+    "saturated_fat_g": 1.29,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "85g",
+    "collected_at": "2026-03-04 03:30:25"
+  }
+}

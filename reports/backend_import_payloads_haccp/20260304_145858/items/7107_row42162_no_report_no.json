@@ -1,0 +1,84 @@
+{
+  "product": {
+    "name_ko": "양반돌김",
+    "reportnum": "1990041501332"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/1990041501332/1990041501332-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/1990041501332/1990041501332-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/1990041501332/1990041501332-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돌김(국산)48.5%,카놀라유(수입산),참기름(참깨:수입산),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/1990041501332/1990041501332-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=4g | foodSize=20g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/1990041501332/1990041501332-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돌김",
+        "origin": "국산",
+        "amount": "48.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:25:27"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 625.0,
+    "carbohydrate_g": 20.0,
+    "protein_g": 15.0,
+    "fat_g": 55.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 1450.0,
+    "cholesterol_mg": 17.5,
+    "saturated_fat_g": 4.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "4g",
+    "total_content": "20g",
+    "collected_at": "2026-03-03 18:25:27"
+  }
+}

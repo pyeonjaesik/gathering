@@ -1,0 +1,294 @@
+{
+  "product": {
+    "name_ko": "피코크 징가마살라",
+    "reportnum": "20150445222235"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222235/20150445222235-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222235/20150445222235-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222235/20150445222235-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,새우(중국산)18%,마살라그래이비{양파꿀리[양파(국산,마늘(국산)],토마토퓨레[토마토(토마토:미국산)],토마토페이스트,양파,옥배유}16%,코코넛밀크(코코넛밀크,글리세린지방산에스테르,폴리소르베이트60,구아검,카르복시메틸셀룰로오스나트륨),화이트그래이비[정제수,캐쉬넛,양파,무염버터,간마늘,정제염],밀락골드[버터밀크,식물성유지(경화대두유),크림식물성유지(팜유),버터밀크분말],코코넛파우더,마늘,마크니소스,버터,터메릭,구운소금,트레할로스,혼합제제(옥테닐호박산나트륨전분,덱스트린),고춧가루,핫비프후레바스프,삼바마살라(인도산)0.4%,카레분1카레분-66%(인도산/강황,고수),카레분2-15%(인도산/강황,고수)0.31%,요리당,매운맛분말,겨자씨,가람마살라(벨기에산)0.06%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222235/20150445222235-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=190g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/20150445222235/20150445222235-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "중국산",
+        "amount": "18%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마살라그래이비",
+        "amount": "16%",
+        "sub_ingredients": [
+          {
+            "name": "양파꿀리",
+            "sub_ingredients": [
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토퓨레",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "토마토페이스트",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥배유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코넛밀크",
+        "sub_ingredients": [
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리소르베이트60",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "화이트그래이비",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "캐쉬넛",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무염버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀락골드",
+        "sub_ingredients": [
+          {
+            "name": "버터밀크",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "경화대두유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "크림식물성유지",
+            "sub_ingredients": [
+              {
+                "name": "팜유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "버터밀크분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "코코넛파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마크니소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "터메릭",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구운소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트레할로스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "옥테닐호박산나트륨전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫비프후레바스프",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼바마살라",
+        "origin": "인도산",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카레분1",
+        "origin": "인도산",
+        "amount": "1",
+        "sub_ingredients": [
+          {
+            "name": "강황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카레분2",
+        "origin": "인도산",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "강황",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "요리당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가람마살라",
+        "origin": "벨기에산",
+        "amount": "0.06%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:53"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 118.0,
+    "carbohydrate_g": 6.84,
+    "protein_g": 3.68,
+    "fat_g": 8.42,
+    "sugar_g": 4.21,
+    "sodium_mg": 522.0,
+    "cholesterol_mg": 7.37,
+    "saturated_fat_g": 4.74,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "190g",
+    "collected_at": "2026-03-04 04:45:53"
+  }
+}

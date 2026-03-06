@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "진한 육개장",
+    "reportnum": "2015040502765"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040502765/2015040502765-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040502765/2015040502765-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040502765/2015040502765-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,사골모둠뼈육수20[우사골(호주산)14.7%,우모둠뼈(호주산)14.7%],우사태(호주산)10%,숙주나물:외국산(중국·미얀마·호주 등),고사리,무,볶음양념다대기,대파,느타리버섯,730-B1,사골엑기스SH0.8%(사골33%),쇠고기분말NM,사골농축엑기스,다시마엑기스S,간장분말-에이취비,무우엑기스,아지파루스비에프,흑후추,천일염0.01%,향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040502765/2015040502765-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040502765/2015040502765-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골모둠뼈육수20",
+        "sub_ingredients": [
+          {
+            "name": "우사골",
+            "origin": "호주산",
+            "amount": "14.7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우모둠뼈",
+            "origin": "호주산",
+            "amount": "14.7%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우사태",
+        "origin": "호주산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "숙주나물",
+        "origin": "외국산, 중국산, 미얀마산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고사리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음양념다대기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "느타리버섯",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "730-B1",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골엑기스",
+        "amount": "SH0.8%(사골33%)",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기분말",
+        "amount": "NM",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사골농축엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스",
+        "amount": "S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장분말",
+        "sub_ingredients": [
+          {
+            "name": "에이취비",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "무우엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아지파루스비에프",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "amount": "0.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:45:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 47.0,
+    "carbohydrate_g": 1.8,
+    "protein_g": 4.0,
+    "fat_g": 2.6,
+    "sugar_g": 0.8,
+    "sodium_mg": 553.0,
+    "cholesterol_mg": 8.4,
+    "saturated_fat_g": 0.88,
+    "trans_fat_g": 0.1,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 04:45:01"
+  }
+}

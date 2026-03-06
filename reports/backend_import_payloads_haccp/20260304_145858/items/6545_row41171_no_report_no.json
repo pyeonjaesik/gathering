@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "해의김자반 멸치",
+    "reportnum": "201304432053"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304432053/201304432053-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304432053/201304432053-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304432053/201304432053-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "김44.14%(국내산),포도씨유(스페인산),유기황설탕16.06%,멸치조미분말8.03%[건멸치32%(국내산),정제소금(국내산),말토덱스트린,백설탕,포도당,아미노산액],지리멸치6.02%,참기름(참깨100%,국내산),감자후레이크,당근후레이크,정제소금,허브추출물,퀴노아분말0.09%,아쿠아칼0.11%[식용해조100%(칼슘32%)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304432053/201304432053-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/10봉(3g) 총 10회 제공량(30g) 1회 제공량 함량 %영양소 기준치 열량 15kcal 탄수화물 2g -당류 0g 단백질 0.72g 4.8% 지방 0g -포화지방 0g -트랜스지방 0g 콜레스테롤0mg 나트륨 45mg 6% 칼슘 5.72mg 1.1% %영양성분 기준치:한국인 유아(1~2세)영양섭취기준에 대한 비율임.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201304432053/201304432053-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "김",
+        "origin": "국내산",
+        "amount": "44.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도씨유",
+        "origin": "스페인산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기황설탕",
+        "amount": "16.06%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치조미분말",
+        "amount": "8.03%",
+        "sub_ingredients": [
+          {
+            "name": "건멸치",
+            "origin": "국내산",
+            "amount": "32%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아미노산액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "지리멸치",
+        "amount": "6.02%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "origin": "국내산",
+        "sub_ingredients": [
+          {
+            "name": "참깨",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자후레이크",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근후레이크",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "허브추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "퀴노아분말",
+        "amount": "0.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아쿠아칼",
+        "amount": "0.11%",
+        "sub_ingredients": [
+          {
+            "name": "식용해조",
+            "amount": "100%",
+            "sub_ingredients": [
+              {
+                "name": "칼슘",
+                "amount": "32%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:38:15"
+  },
+  "nutrition": {
+    "kcal": 15.0,
+    "carbohydrate_g": 2.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.72,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 45.0,
+    "calcium_mg": 5.72,
+    "basis_amount": 3.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/10봉(3g)",
+    "collected_at": "2026-03-04 04:38:15"
+  }
+}

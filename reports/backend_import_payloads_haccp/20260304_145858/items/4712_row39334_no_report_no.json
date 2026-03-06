@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "일렉트로맨베이컨크림스파게티",
+    "reportnum": "200204610737673"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737673/200204610737673-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737673/200204610737673-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737673/200204610737673-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "크림스파게티분말52.7%[가공유크림20%{가공버터(호주산),유크림15%(국산)},에이에이치-5(엠)(일본산),식물성크림,체다치즈시즈닝,화이트체다시즈닝],동결건조스파게티면44%[까펠리니(이탈리아산/세몰리나듀럼밀)],베이컨칩3.3%[베이컨80%(돼지고기:수입산),간장분(중국산)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737673/200204610737673-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1봉지(45.5g)/총1회제공량(45.5g), 1회제공량 당 함량 *%영양소기준치, 열량205kcal, 탄수화물31g 9%, 당류5g, 단백질5g 9%, 지방7g 14%, 포화지방3g 20%, 트랜스지방0.5g미만, 콜레스테롤5mg 2%, 나트륨470mg 24%, *%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204610737673/200204610737673-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "크림스파게티분말",
+        "amount": "52.7%",
+        "sub_ingredients": [
+          {
+            "name": "가공유크림",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "가공버터",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유크림",
+                "origin": "국산",
+                "amount": "15%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에이에이치-5(엠)",
+            "origin": "일본산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "체다치즈시즈닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트체다시즈닝",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "동결건조스파게티면",
+        "amount": "44%",
+        "sub_ingredients": [
+          {
+            "name": "까펠리니",
+            "origin": "이탈리아산",
+            "sub_ingredients": [
+              {
+                "name": "세몰리나듀럼밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베이컨칩",
+        "amount": "3.3%",
+        "sub_ingredients": [
+          {
+            "name": "베이컨",
+            "origin": "수입산",
+            "amount": "80%",
+            "sub_ingredients": [
+              {
+                "name": "돼지고기",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "간장분",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:41:48"
+  },
+  "nutrition": {
+    "kcal": 205.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 5.0,
+    "protein_g": 5.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 3.0,
+    "trans_fat_g": 0.5,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 470.0,
+    "basis_amount": 45.5,
+    "basis_unit": "g",
+    "basis_text": "1회제공량1봉지(45.5g)",
+    "collected_at": "2026-03-04 03:41:48"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "product": {
+    "name_ko": "이나니와우동",
+    "reportnum": "20070358265296"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265296/20070358265296-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265296/20070358265296-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265296/20070358265296-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*이나니와생우동면-밀가루(호주산,미국산),혼합제제(변성전분,말토덱스트린),변성전분,정제말토스,천일염(국산),식용유지가공품,쎄니콜95(발효알콜95%,정제수),후레쉬-B1(산도조절제,글리신,정제염,정제수)/*이나니와우동츠유 - 우동베이스SF(일본산)[가쓰오부시추출물,주정,정제수,다시마추출물,정제염],양조간장[탈지대두(인도산),소맥(밀:미국산),정제수,천일염,액상과당,주정],물엿, 정제수, 정제염,정백당, L-글루타민산나트륨(향미증진제),핵산,스모크향/*혼합건더기스프:별미튀김(밀,새우,계란,우유), 동결건조파,김후레이크",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265296/20070358265296-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(183g)/총 2회 제공량(366g) 1회 제공량당 함량 *%영양소 기준치 열량 433 kcal 탄수화물 96g 29% 당류 5g 단백질 9g 16% 지방 1.4g 3% 포화지방 0.6g 4% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 3,686 mg 184% *%영양소 기준치: 1일 영양소 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070358265296/20070358265296-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "이나니와생우동면",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "말토덱스트린",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제말토스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지가공품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쎄니콜95",
+            "sub_ingredients": [
+              {
+                "name": "발효알콜",
+                "amount": "95%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "후레쉬-B1",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "글리신",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "이나니와우동츠유",
+        "sub_ingredients": [
+          {
+            "name": "우동베이스SF",
+            "origin": "일본산",
+            "sub_ingredients": [
+              {
+                "name": "가쓰오부시추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다시마추출물",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "탈지대두",
+                "origin": "인도산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "액상과당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "핵산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스모크향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합건더기스프",
+        "sub_ingredients": [
+          {
+            "name": "별미튀김",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "새우",
+                "sub_ingredients": []
+              },
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "동결건조파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김후레이크",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:03:32"
+  },
+  "nutrition": {
+    "kcal": 433.0,
+    "carbohydrate_g": 96.0,
+    "sugar_g": 5.0,
+    "protein_g": 9.0,
+    "fat_g": 1.4,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 3686.0,
+    "basis_amount": 183.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(183g)",
+    "collected_at": "2026-03-04 04:03:32"
+  }
+}

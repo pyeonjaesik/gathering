@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name_ko": "키즈망고",
+    "reportnum": "20030445042258"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042258/20030445042258-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042258/20030445042258-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042258/20030445042258-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "망고 25%(베트남산 12.5%, 태국산 12.5%), 백포도 농축과즙(고형분 65%, 아르헨티나산), 사과농축과즙(고형분 62%, 터키산), 정제수, 열대과일믹스농축과즙(고형분 50%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042258/20030445042258-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1포(100ml)  총 5회 제공량 (500mL) 1회 제공량 당 함량 *%영양성분기준치 열량 100 kcal, 탄수화물 25g 8% 당류 22g 단백질 0g 0% 지방 0g 0% 포화지방 0g 0% 트랜스지방 0g 콜레스테롤 0mg 0% 나트륨 11g 1% *%영양성분기준치 : 1일 영양성분기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030445042258/20030445042258-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "망고",
+        "origin": "베트남산, 태국산, 베트남산 12.5%, 태국산 12.5%",
+        "amount": "25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백포도 농축과즙",
+        "origin": "아르헨티나산",
+        "amount": "고형분 65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축과즙",
+        "origin": "터키산",
+        "amount": "고형분 62%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "열대과일믹스농축과즙",
+        "amount": "고형분 50%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:25"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 22.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 11.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 1포(100ml)",
+    "collected_at": "2026-03-04 03:47:25"
+  }
+}

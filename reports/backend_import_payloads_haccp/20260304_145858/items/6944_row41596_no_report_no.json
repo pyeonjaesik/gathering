@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "발효숙성울금150",
+    "reportnum": "19880442004705"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004705/19880442004705-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004705/19880442004705-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004705/19880442004705-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "발효숙성울금추출물87%[(고형분1.2%이상),정제수,발효숙성울금2.5%(울금:인도산),오가피줄기,오가피뿌리(이상국산),감초,당귀],프락토올리고당,열대과일혼합농축액(이스라엘산),사과농축액(칠레산),맥문동허브농축액,수용성커큐민0.3%(울금:인도산),아스파라거스혼합발효즙,바이오페린",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004705/19880442004705-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=3000ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004705/19880442004705-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "발효숙성울금추출물",
+        "amount": "87%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "1.2%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효숙성울금",
+            "origin": "인도산",
+            "amount": "2.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오가피줄기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오가피뿌리",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당귀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "열대과일혼합농축액",
+        "origin": "이스라엘산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "맥문동허브농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수용성커큐민",
+        "origin": "인도산",
+        "amount": "0.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아스파라거스혼합발효즙",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바이오페린",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:54"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 45.0,
+    "carbohydrate_g": 9.0,
+    "protein_g": 0.75,
+    "fat_g": 0.0,
+    "sugar_g": 8.0,
+    "sodium_mg": 20.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "3000ml",
+    "collected_at": "2026-03-04 03:24:54"
+  }
+}

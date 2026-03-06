@@ -1,0 +1,93 @@
+{
+  "product": {
+    "name_ko": "마카로니스낵",
+    "reportnum": "2009036006266"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006266/2009036006266-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006266/2009036006266-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006266/2009036006266-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(호주산)89.9%,혼합식용유(수입산:팜유,채종유),산도조절제(탄산수소나트륨),정제염,효소처리스테비아",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006266/2009036006266-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(총 열량:1,305kcal) 1회 제공량 약1/9봉(30g) 총 약9회 제공량1봉(270g) 1회 제공량당 함량 *%영양성분 기준치 열량 145kcal, 탄수화물 21g 6% ,당류 0g,단백질 3g 5%,지방 5.7g 11%, 포화지방 0.5g 3%,트랜스지방 0g,콜레스테롤 0mg 0%,나트륨 133mg 7%  *영양성분 기준치:1일 영양성분 기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006266/2009036006266-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "호주산",
+        "amount": "89.9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "채종유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:43"
+  },
+  "nutrition": {
+    "kcal": 145.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 5.7,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 133.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 약1/9봉(30g)",
+    "collected_at": "2026-03-04 04:18:43"
+  }
+}

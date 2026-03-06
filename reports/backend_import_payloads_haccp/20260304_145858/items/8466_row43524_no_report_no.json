@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "다담 냉이된장 찌개양념",
+    "reportnum": "2002046408858"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408858/2002046408858-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408858/2002046408858-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408858/2002046408858-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 된장1 25.5%{대두(외국산:미국,캐나다,호주 등), 정제소금(국산), 소맥분, 된장, 주정}, 새우밑국물[새우추출농축액{새우(국산)},홍합추출농축액{홍합(중국산)}],갈은마늘(마늘:중국산),된장2 3.5%{대두(외국산:미국,캐나다,호주 등), 정제소금(국산)}, 조개밑국물,주정,멸치밑국물,다진양파,국산쌀가루, 쇠고기분말, 건조냉이 1.26%(냉이 94%:국산), 사골농축액, 고춧가루, 표고버섯엑기스분말, 정제소금, 향미증진제, 정제우지, 매운맛분말(올레오레진캪시컴)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408858/2002046408858-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=드레싱 15g, 덮밥소스 165g | foodSize=140g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046408858/2002046408858-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장1",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "25.5%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "된장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "새우밑국물",
+        "sub_ingredients": [
+          {
+            "name": "새우추출농축액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "홍합추출농축액",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "홍합",
+                "origin": "중국산",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "갈은마늘",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "된장2",
+        "origin": "외국산, 미국산, 캐나다산, 호주산",
+        "amount": "3.5%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조개밑국물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치밑국물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "국산쌀가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조냉이",
+        "origin": "국산",
+        "amount": "1.26%",
+        "sub_ingredients": [
+          {
+            "name": "냉이",
+            "origin": "국산",
+            "amount": "94%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "사골농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯엑기스분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제우지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매운맛분말",
+        "sub_ingredients": [
+          {
+            "name": "올레오레진캪시컴",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:42:33"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 90.0,
+    "carbohydrate_g": 11.0,
+    "protein_g": 6.0,
+    "fat_g": 2.4,
+    "sugar_g": 3.0,
+    "sodium_mg": 2180.0,
+    "cholesterol_mg": 3.5,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "드레싱 15g, 덮밥소스 165g",
+    "total_content": "140g",
+    "collected_at": "2026-03-04 03:42:33"
+  }
+}

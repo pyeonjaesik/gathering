@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "허니로얄밀크티",
+    "reportnum": "20030614307768"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307768/20030614307768-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307768/20030614307768-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307768/20030614307768-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,덱스트린,탈지분유3.6%(우유,미국산),홍차분말0.24%(칠레산),벌꿀0.1%(국산),당류가공품,정제소금,탄산수소나트륨,혼합제제(정제수,규소수지,소르비탄지방산에스테르,글리세린지방산에스테르,카르복시메틸셀룰로오스나트륨(합성착향료(홍차향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307768/20030614307768-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(190mL) 총1회제공량(190mL), 1회제공량당함량 %영양소기준치, 열량140kcal, 탄수화물31g(9%), 당류23g, 단백질3g(5%), 지방0.7g(1%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg(0%), 나트륨80mg(4%) *()안의수치는1일영양소기준치에대한비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307768/20030614307768-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "미국산",
+        "amount": "3.6%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "홍차분말",
+        "origin": "칠레산",
+        "amount": "0.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "벌꿀",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스나트륨",
+            "sub_ingredients": [
+              {
+                "name": "합성착향료",
+                "sub_ingredients": [
+                  {
+                    "name": "홍차향",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:48"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 23.0,
+    "protein_g": 3.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 80.0,
+    "basis_amount": 190.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1개(190mL)",
+    "collected_at": "2026-03-04 03:49:48"
+  }
+}

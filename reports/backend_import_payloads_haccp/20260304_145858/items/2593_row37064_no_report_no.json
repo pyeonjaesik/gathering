@@ -1,0 +1,171 @@
+{
+  "product": {
+    "name_ko": "중화채소덮밥세트",
+    "reportnum": "19880442004615"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004615/19880442004615-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004615/19880442004615-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004615/19880442004615-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "중화채소덮밥(62.69%)-저어제수,두부[대두100%(외국산:미국,캐나다,중국등),천일염천연응고제100(조제해수염화마그네슘,현미유,올리브유)],현미(국산),백미,죽순5.71%(중국산),당근3.43%(국산),파프리카(빨강)3.43%(국산),파프리카(노랑)3.43%(국산),생표고버섯,그린빈스,연근2.86%(국산). 아몬드컵샐러드&치킨-치킨브레스트Ⅰ닭고기95.41%(닭가슴살:국산),분리대두단백(중국산),정제소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004615/19880442004615-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량403kcal, 탄수화물56g(17%), 당류8g, 단백질22g(40%), 지방10.1g(20%), 포화지방1.7g(11%), 트랜스지방0g, 콜레스테롤80mg(27%), 나트륨520mg(26%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004615/19880442004615-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "중화채소덮밥",
+        "amount": "62.69%",
+        "sub_ingredients": [
+          {
+            "name": "저어제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "두부",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 캐나다산, 중국산",
+                "amount": "100%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "천일염천연응고제",
+                "amount": "100",
+                "sub_ingredients": [
+                  {
+                    "name": "조제해수염화마그네슘",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "현미유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "올리브유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "현미",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "죽순",
+            "origin": "중국산",
+            "amount": "5.71%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "amount": "3.43%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카(빨강)",
+            "origin": "국산",
+            "amount": "3.43%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카(노랑)",
+            "origin": "국산",
+            "amount": "3.43%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생표고버섯",
+            "sub_ingredients": []
+          },
+          {
+            "name": "그린빈스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "연근",
+            "origin": "국산",
+            "amount": "2.86%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아몬드컵샐러드&치킨",
+        "sub_ingredients": [
+          {
+            "name": "치킨브레스트Ⅰ",
+            "sub_ingredients": [
+              {
+                "name": "닭고기",
+                "origin": "국산",
+                "amount": "95.41%",
+                "sub_ingredients": [
+                  {
+                    "name": "닭가슴살",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "분리대두단백",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:24:39"
+  },
+  "nutrition": {
+    "kcal": 403.0,
+    "carbohydrate_g": 56.0,
+    "sugar_g": 8.0,
+    "protein_g": 22.0,
+    "fat_g": 10.1,
+    "saturated_fat_g": 1.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 80.0,
+    "sodium_mg": 520.0,
+    "collected_at": "2026-03-04 03:24:39"
+  }
+}

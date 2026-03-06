@@ -1,0 +1,152 @@
+{
+  "product": {
+    "name_ko": "노블치즈돈까스",
+    "reportnum": "19960262002195"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002195/19960262002195-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002195/19960262002195-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002195/19960262002195-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(등심,국산)50%,하이-로젠스트링[자연치즈85%(원유:수입산),렌넷카제인,변성전분,식물성유지(말레이시아산),빵가루]15%,독일화인빵가루(화인빵용가루2,화인빵용가루1,마가린,쇼트닝,옥수수전분),정제수,순살프리믹스(변성전분,옥수수전분,옥수수가루,백설탕,스파이스믹스-2)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002195/19960262002195-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "표시기준분량(100g) 100g당함량 *%영양소기준치 열량 230kcal, 탄수화물 35g 10%, 식이섬유 0g 0%, 당류 0g, 단백질 14g 23%, 칼슘 285mg 40%, 지방 3.8g 8%, 포화지방 2.2g 15%, 트랜스지방 0g, 콜레스테롤 3.6mg 1%, 나트륨 325mg 16%, 철 0.7mg 5%  *%영양소기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1996/19960262002195/19960262002195-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하이-로젠스트링",
+        "amount": "15%",
+        "sub_ingredients": [
+          {
+            "name": "자연치즈",
+            "origin": "수입산",
+            "amount": "85%",
+            "sub_ingredients": [
+              {
+                "name": "원유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "렌넷카제인",
+                "sub_ingredients": []
+              },
+              {
+                "name": "변성전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성유지",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "빵가루",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "독일화인빵가루",
+        "sub_ingredients": [
+          {
+            "name": "화인빵용가루",
+            "amount": "2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "순살프리믹스",
+        "sub_ingredients": [
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스파이스믹스",
+            "amount": "2",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:59:30"
+  },
+  "nutrition": {
+    "kcal": 230.0,
+    "carbohydrate_g": 35.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 14.0,
+    "calcium_mg": 285.0,
+    "fat_g": 3.8,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 3.6,
+    "sodium_mg": 325.0,
+    "iron_mg": 0.7,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "표시기준분량(100g)",
+    "collected_at": "2026-03-03 20:59:30"
+  }
+}

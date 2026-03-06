@@ -1,0 +1,123 @@
+{
+  "product": {
+    "name_ko": "진선미 묵은지",
+    "reportnum": "1994060734078"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060734078/1994060734078-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060734078/1994060734078-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060734078/1994060734078-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "배추80%(국산),멸치액젓(국산),고춧가루(국산),다시육수[건조멸치(국산),건조다시마(국산)],전분풀[찰옥수수전분(국산)],마늘(국산),양파(국산),새우젓(국산),생강(국산),흑마늘진액(국산),정제소금(국산),천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060734078/1994060734078-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "Per 100g\nEnergy 37kcal, Protein 2.0g, Total Fat 0g, -Saturated Fat 0g, -Trans Fat 0g, Carbohydrates 7g, -Sugars 0g, Sodium 572mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/1994060734078/1994060734078-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "배추",
+        "origin": "국산",
+        "amount": "80%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "멸치액젓",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시육수",
+        "sub_ingredients": [
+          {
+            "name": "건조멸치",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건조다시마",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분풀",
+        "sub_ingredients": [
+          {
+            "name": "찰옥수수전분",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우젓",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생강",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑마늘진액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:07:49"
+  },
+  "nutrition": {
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "Per 100g",
+    "collected_at": "2026-03-03 20:07:49"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "product": {
+    "name_ko": "롯데 가나초코호빵",
+    "reportnum": "20070156181790"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181790/20070156181790-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181790/20070156181790-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181790/20070156181790-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "가나쵸코카스타드크림43.32%[백설탕, 우유(국산), 변성전분, 코코아분말 4.5%(인도네시아산), 크리밀S, 가나마일드 0.3%{코코아프리퍼레이션:전지분유, 코코아매스(외국산(네덜란드, 프랑스, 싱가포르산), 코코아매스(코코아빈 : 가나, 에콰도르)}], 밀가루[밀:외국산(미국, 호주, 캐나다산)], 백설탕, 쌀가루 2.06%(쌀100%:국내산), 쇼트닝, 효모, 탁주, 코코아분말(네덜란드산), 정제소금, 혼합제제1(산도조절제, 글리세린에스테르, 전분), 혼합제제2(락톤류, 방향족알데히드류, 비타민B1염산염, 비타민B2리보플라빈, 케톤류, 지방산류, 발효주정, 포도당), 혼합제제3(산도조절제, 시클로덱스트린, 유화제), 기타가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181790/20070156181790-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(90g) 총 6회 제공량(540g) 1회 제공량당 함량 *%영양성분 기준치 열량 285kcal, 탄수화물 51g 15%, 당류 17g, 단백질 5g 9%, 지방 7g 14%, 포화지방 3.7g 25%, 트랜스지방 0.5g미만, 콜레스테롤 0mg 0%, 나트륨 150mg 8% *%영양성분기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070156181790/20070156181790-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "가나쵸코카스타드크림",
+        "amount": "43.32%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "인도네시아산",
+            "amount": "4.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "크리밀S",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가나마일드",
+            "amount": "0.3%",
+            "sub_ingredients": [
+              {
+                "name": "코코아프리퍼레이션",
+                "sub_ingredients": [
+                  {
+                    "name": "전지분유",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "코코아매스",
+                    "origin": "외국산, 네덜란드산, 프랑스산, 싱가포르산",
+                    "sub_ingredients": [
+                      {
+                        "name": "코코아빈",
+                        "origin": "가나산, 에콰도르산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "외국산, 미국산, 호주산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀가루",
+        "origin": "국내산",
+        "amount": "2.06%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탁주",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제1",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제2",
+        "sub_ingredients": [
+          {
+            "name": "락톤류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "방향족알데히드류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1염산염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2리보플라빈",
+            "sub_ingredients": []
+          },
+          {
+            "name": "케톤류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "지방산류",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제3",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시클로덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:13"
+  },
+  "nutrition": {
+    "kcal": 285.0,
+    "carbohydrate_g": 51.0,
+    "sugar_g": 17.0,
+    "protein_g": 5.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 3.7,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 150.0,
+    "basis_amount": 90.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(90g)",
+    "collected_at": "2026-03-04 04:02:13"
+  }
+}

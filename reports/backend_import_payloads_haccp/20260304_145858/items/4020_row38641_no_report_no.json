@@ -1,0 +1,104 @@
+{
+  "product": {
+    "name_ko": "백년동안 흑초 산머루·복분자",
+    "reportnum": "19970570162270"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970570162270/19970570162270-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970570162270/19970570162270-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970570162270/19970570162270-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "흑초산머루복분자42.3%[포도농축액(칠레산),현미8.94%(외국산),사과농축액(칠레산),산머루농축액2.43%(40Brix, 국내산),복분자농축액 0.90%(50Brix, 국내산)], 정제수, 프락토올리고당, 사과농축액(사과농축액:칠레산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970570162270/19970570162270-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 25ml 기준(4배 희석시 100ml)/총 60회 제공량(1500ml) 1회 제공량당 함량 *%영양성분기준치 : 열량 25kcal, 탄수화물 6g 2%, 당류 6g, 단백질 0g 0%, 지방 0g 0%, 포화지방 0g 0%,트랜스지방 0g 0%, 콜레스테롤 0mg 0%, 나트륨 0mg 0%, 마그네슘 3mg 1%, 칼륨 13mg 0%, L-로이신 3mg, L-발린 2mg, L-티로신 2mg *%영양성분기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1997/19970570162270/19970570162270-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "흑초산머루복분자",
+        "amount": "42.3%",
+        "sub_ingredients": [
+          {
+            "name": "포도농축액",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "현미",
+            "origin": "외국산",
+            "amount": "8.94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과농축액",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산머루농축액",
+            "origin": "국내산",
+            "amount": "2.43%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복분자농축액",
+            "origin": "국내산",
+            "amount": "0.90%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과농축액",
+        "origin": "칠레산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 21:31:00"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 6.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "potassium_mg": 13.0,
+    "basis_amount": 25.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 25ml 기준(4배 희석시 100ml)",
+    "collected_at": "2026-03-03 21:31:00"
+  }
+}

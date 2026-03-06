@@ -1,0 +1,70 @@
+{
+  "product": {
+    "name_ko": "백설자일로스설탕",
+    "reportnum": "1973019001554"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001554/1973019001554-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001554/1973019001554-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001554/1973019001554-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "하얀설탕90.3%,D-자일로오스9.5%,난소화성말토덱스트린0.2%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001554/1973019001554-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총분량 1kg 100g당 함량 *%영양성분 기준치 : 열량 400kcal,탄수화물100g 30%, 당류88g, 단백질 0g 0%,지방0g 0%, 포화지방0g 0%, 트랜지방 0g, 콜레스테롤0mg 0%, 나트륨 0mg 0%, *%영양소 기준치:1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1973/1973019001554/1973019001554-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "하얀설탕",
+        "amount": "90.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-자일로오스",
+        "amount": "9.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난소화성말토덱스트린",
+        "amount": "0.2%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:44:26"
+  },
+  "nutrition": {
+    "kcal": 400.0,
+    "carbohydrate_g": 100.0,
+    "sugar_g": 88.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-03 13:44:26"
+  }
+}

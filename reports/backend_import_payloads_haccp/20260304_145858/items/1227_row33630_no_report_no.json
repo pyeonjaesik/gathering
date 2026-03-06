@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "네스티아이스티복숭아맛",
+    "reportnum": "19810415002224"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415002224/19810415002224-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415002224/19810415002224-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415002224/19810415002224-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "홍차추출분말(고형분95%이상,미국산)1.7%,복숭아과즙분말(고형분40%,프랑스산)0.02%,백설탕,과당,구연산,합성착향료(복숭아향 0.35%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415002224/19810415002224-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1컵(20g) 총 40회 제공량 (800g) /1회 제공량당 함량열량 80kcal, 탄수화물20g(6%), 당류20g,단백질0g(0%),지방0g(0%),포화지방0g(0%),트랜스지방0g,콜레스테롤0mg(0%),나트륨0mg(0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1981/19810415002224/19810415002224-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "홍차추출분말",
+        "origin": "미국산",
+        "amount": "1.7%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "95%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복숭아과즙분말",
+        "origin": "프랑스산",
+        "amount": "0.02%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "복숭아향",
+            "amount": "0.35%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 14:50:34"
+  },
+  "nutrition": {
+    "kcal": 80.0,
+    "carbohydrate_g": 20.0,
+    "sugar_g": 20.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1컵(20g)",
+    "collected_at": "2026-03-03 14:50:34"
+  }
+}

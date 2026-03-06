@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "베이컨까르보나라파스타",
+    "reportnum": "20070355030280"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030280/20070355030280-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030280/20070355030280-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030280/20070355030280-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "베이컨까르보나라용소스[샐러드베이스{대두:외국산(미국,아르헨티나,베트남등), 난황:국내산}, 유크림(유크림:호주산, 유당:미국산), 대두유, 정제소금, 글리신], 스파게티(이탈리아산)19.27%, 정제수, 양송이(양송이, 정제소금, 구연산/중국산), 베이컨스타일탑핑3.83%[삼겹살48.3%{외국산(네덜란드, 독일, 미국)}], 양파, 대두유, 후추, 파슬리, 바질, 오레가노",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030280/20070355030280-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 330g 645kcal 총 내용량당 1일 영양성분 기준치에 대한 비율 나트륨 1,180mg 59%, 탄수화물 62g 19%, 당류 6g 6%, 콜레스테롤 80mg 27%, 지방 37g 68%, 트랜스지방 0.5g미만, 트랜스지방 0.5gm미만, 포화지방 11g, 72%, 단백질 16g 28% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355030280/20070355030280-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "베이컨까르보나라용소스",
+        "sub_ingredients": [
+          {
+            "name": "샐러드베이스",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "origin": "외국산, 미국산, 아르헨티나산, 베트남산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "난황",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": [
+              {
+                "name": "유크림",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리신",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스파게티",
+        "origin": "이탈리아산",
+        "amount": "19.27%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양송이",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "베이컨스타일탑핑",
+        "amount": "3.83%",
+        "sub_ingredients": [
+          {
+            "name": "삼겹살",
+            "origin": "외국산, 네덜란드산, 독일산, 미국산",
+            "amount": "48.3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바질",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오레가노",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:02:48"
+  },
+  "nutrition": {
+    "kcal": 645.0,
+    "sodium_mg": 1180.0,
+    "carbohydrate_g": 62.0,
+    "sugar_g": 6.0,
+    "cholesterol_mg": 80.0,
+    "fat_g": 37.0,
+    "trans_fat_g": 0.5,
+    "saturated_fat_g": 11.0,
+    "protein_g": 16.0,
+    "basis_amount": 330.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 330g",
+    "collected_at": "2026-03-04 04:02:48"
+  }
+}

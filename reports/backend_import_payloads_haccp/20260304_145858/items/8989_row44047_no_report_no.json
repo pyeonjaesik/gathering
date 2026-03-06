@@ -1,0 +1,78 @@
+{
+  "product": {
+    "name_ko": "무농약인증 옥수수를 구워 만든 오리지널 콘팝칩(Corn Pop Chip(Original))",
+    "reportnum": "2007046401542"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401542/2007046401542-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401542/2007046401542-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401542/2007046401542-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "무농약 옥수수(국산)88.41%,해바라기유(수입산),황토알카리소금,유기 현미분말0.88%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401542/2007046401542-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=35g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007046401542/2007046401542-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "무농약 옥수수",
+        "origin": "국산",
+        "amount": "88.41%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "수입산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황토알카리소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기 현미분말",
+        "amount": "0.88%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:05:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 429.0,
+    "carbohydrate_g": 82.86,
+    "protein_g": 5.71,
+    "fat_g": 8.29,
+    "sugar_g": 0.0,
+    "sodium_mg": 157.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 1.14,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "35g",
+    "collected_at": "2026-03-04 04:05:47"
+  }
+}

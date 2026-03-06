@@ -1,0 +1,282 @@
+{
+  "product": {
+    "name_ko": "김치말이 비빔국수",
+    "reportnum": "20020614179875"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179875/20020614179875-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179875/20020614179875-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179875/20020614179875-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*부드럽고 쫄깃한 국수사리:쌀가루[쌀(미국산75%, 태국산25%)100%]56.24%, 밀가루(밀:호주산, 미국산), 혼합타피오카전분[생타피오카전분(태국산), 감자전분(외국산:폴란드, 덴마크, 스웨덴 등)], 주정, 정제소금\n*김치말이 비빔소스:정제수, 김치추출액15%[액상김치(배추:국산)99.85%, 효소제], 백설탕, 물엿, 고추장[물엿, 소맥분(밀:미국산, 호주산), 혼합양념(중국산), 밀쌀, 정제소금, L-글루탐산나트륨(향미증진제)], 사과농축액(칠레산), 발효식초, 변성전분, 정제소금, 고추엑기스, 액상과당, 복합조미식품, 고춧가루, 매실농축액, 양파농축액, 파프리카추출색소, 효모추출물, 마늘농축액, 진탄검\n*아워홈 조미유:참기름[볶음참깨분100%(외국산:미얀마, 베트남, 중국 등)], 대두유[콩기름(외국산:미국, 브라질, 파라과이 등), 규소수지]\n*김과 깨고명:볶음참깨(외국산:인도, 파키스탄, 나이지리아), 김후레이크(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179875/20020614179875-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1인분(242g), 총 2회 제공량(484g), 485kcal\n나트륨1,410g (71%), 탄수화물107g (33%), 당류22g (22%), 콜레스테롤0mg (0%), 지방2.9g (5%), 트랜스지방0g, 포화지방0g (0%), 단백질8g (15%)\n* 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179875/20020614179875-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "부드럽고 쫄깃한 국수사리",
+        "sub_ingredients": [
+          {
+            "name": "쌀가루",
+            "amount": "56.24%",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "미국산 75%, 태국산 25%",
+                "amount": "100%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀가루",
+            "origin": "호주산, 미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합타피오카전분",
+            "sub_ingredients": [
+              {
+                "name": "생타피오카전분",
+                "origin": "태국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "감자전분",
+                "origin": "외국산, 폴란드산, 덴마크산, 스웨덴산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "김치말이 비빔소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김치추출액",
+            "amount": "15%",
+            "sub_ingredients": [
+              {
+                "name": "액상김치",
+                "origin": "국산",
+                "amount": "99.85%",
+                "sub_ingredients": [
+                  {
+                    "name": "배추",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "효소제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합양념",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루탐산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사과농축액",
+            "origin": "칠레산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고춧가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매실농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효모추출물",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "진탄검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아워홈 조미유",
+        "sub_ingredients": [
+          {
+            "name": "참기름",
+            "origin": "외국산, 미얀마산, 베트남산, 중국산",
+            "sub_ingredients": [
+              {
+                "name": "볶음참깨분",
+                "sub_ingredients": [
+                  {
+                    "name": "100%",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "origin": "외국산, 미국산, 브라질산, 파라과이산",
+            "sub_ingredients": [
+              {
+                "name": "콩기름",
+                "sub_ingredients": []
+              },
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "김과 깨고명",
+        "sub_ingredients": [
+          {
+            "name": "볶음참깨",
+            "origin": "외국산, 인도산, 파키스탄산, 나이지리아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "김후레이크",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:45:03"
+  },
+  "nutrition": {
+    "kcal": 485.0,
+    "sodium_mg": 1410.0,
+    "carbohydrate_g": 107.0,
+    "sugar_g": 22.0,
+    "cholesterol_mg": 0.0,
+    "fat_g": 2.9,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "protein_g": 8.0,
+    "basis_amount": 242.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1인분(242g)",
+    "collected_at": "2026-03-04 03:45:03"
+  }
+}

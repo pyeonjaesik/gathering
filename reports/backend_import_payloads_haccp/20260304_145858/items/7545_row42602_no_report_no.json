@@ -1,0 +1,201 @@
+{
+  "product": {
+    "name_ko": "맵사이新(신)화끈구이",
+    "reportnum": "19930607450252"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450252/19930607450252-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450252/19930607450252-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450252/19930607450252-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기59.26%(수입산,국산),닭고기18.96%(국산),소맥전분(미국산,호주산/밀),백설탕,대두단백,핫바매콤베이스(우유),매운소스H,함수결정포도당,빵가루(밀),정제소금,핫바용스파이스(우유),브라운칼라(고량색소,안나토색소),참기름,L-글루타민산나트륨(향미증진제),산도조절제,소르빈산칼륨(합성보존료),스모크향미유,캅시쿰분말,에리쏘르빈산나트륨(산화방지제),락색소(천연색소),아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450252/19930607450252-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=70g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930607450252/19930607450252-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "수입산, 국산",
+        "amount": "59.26%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "18.96%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소맥전분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫바매콤베이스",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "매운소스H",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "핫바용스파이스",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브라운칼라",
+        "sub_ingredients": [
+          {
+            "name": "고량색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "안나토색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소르빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스모크향미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "캅시쿰분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에리쏘르빈산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산화방지제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": [
+          {
+            "name": "천연색소",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:48:14"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 286.0,
+    "carbohydrate_g": 11.43,
+    "protein_g": 14.29,
+    "fat_g": 20.0,
+    "sugar_g": 2.86,
+    "sodium_mg": 529.0,
+    "cholesterol_mg": 57.14,
+    "saturated_fat_g": 17.14,
+    "trans_fat_g": 0.29,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "70g",
+    "collected_at": "2026-03-03 19:48:14"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "아보세트R 푸어 앤 휩R 퍼포먼스 플러스",
+    "reportnum": "201101883615"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101883615/201101883615-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101883615/201101883615-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101883615/201101883615-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,팜핵부분경화유(인도네시아,레시틴(대두),글리세린지방산에스테르),액상과당,물엿,카제인나트륨(우유),스테아릴젖산나트륨,메틸셀룰로오스,백설탕,제이인산칼륨,정제소금(미국),합성착향료(우유향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101883615/201101883615-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(100G) 총 9회 제공 \n<%영양소 기준>\n열량310kcal, 탄수화물21.61g 7%, 식이섬유0g, 당류18.30g, 단백질0.54g 1%, 지방24.84g 50%, 포화지방24.03g 160%, 트랜스지방0.75g, 콜레스테롤0.44mg 0%, 나트륨66.96mg 3%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/201101883615/201101883615-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "팜핵부분경화유",
+        "origin": "인도네시아산",
+        "sub_ingredients": [
+          {
+            "name": "레시틴",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카제인나트륨",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스테아릴젖산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "메틸셀룰로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제이인산칼륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "우유향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:30:01"
+  },
+  "nutrition": {
+    "kcal": 310.0,
+    "carbohydrate_g": 21.61,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 18.3,
+    "protein_g": 0.54,
+    "fat_g": 24.84,
+    "saturated_fat_g": 24.03,
+    "trans_fat_g": 0.75,
+    "cholesterol_mg": 0.44,
+    "sodium_mg": 66.96,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100G)",
+    "collected_at": "2026-03-04 04:30:01"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "다져만든 숯불 함박스테이크",
+    "reportnum": "2007040501438"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501438/2007040501438-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501438/2007040501438-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501438/2007040501438-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "돼지고기(국산)46.50%,양파(중국산),빵가루[곡류가공품(밀가루(밀:미국산,캐나다산),쇼트닝(식물성유지:말레이시아산),마가린,옥수수전분,재제염],우지방,마늘,정백당,두류가공품,전란액,쿡메이트에프씨,정제소금,콜라겐파우더,스모크후레바,카라멜색소,L-글루타민산나트륨(향미증진제),후추가루,향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501438/2007040501438-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/3개(45g), 총 12회 제공량(520g) 열량 95kcal,탄수화물7g (2%),당류1g, 단백질6g (11%), 지방5g (10%), 포화지방1g (7%), 트랜스지방0g, 콜레스테롤 20mg (7%), 나트륨200mg (10%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501438/2007040501438-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "국산",
+        "amount": "46.50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "곡류가공품",
+            "sub_ingredients": [
+              {
+                "name": "밀가루",
+                "origin": "미국산, 캐나다산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇼트닝",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마가린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "옥수수전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "재제염",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우지방",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쿡메이트에프씨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "스모크후레바",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카라멜색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:38"
+  },
+  "nutrition": {
+    "kcal": 95.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "protein_g": 6.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 20.0,
+    "sodium_mg": 200.0,
+    "basis_amount": 45.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/3개(45g)",
+    "collected_at": "2026-03-04 04:04:38"
+  }
+}

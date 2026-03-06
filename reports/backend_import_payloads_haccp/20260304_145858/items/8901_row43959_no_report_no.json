@@ -1,0 +1,147 @@
+{
+  "product": {
+    "name_ko": "돈육훈제바베큐",
+    "reportnum": "2006058801735"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006058801735/2006058801735-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006058801735/2006058801735-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006058801735/2006058801735-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돈정육(국내산)96.3%,삼겹살시즈닝[백설탕,유청분말(우유-수입95%/국산5%),리갈브라인믹스{아질산나트륨(발색제)},L-글루타민산나트륨(향미증진제),우정육(국산),말토덱스트린,후추분말,마늘분말,비타민C]3.3%,솔빈산칼륨(보존제),복합조미식품(SNMIX-A)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006058801735/2006058801735-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=400g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006058801735/2006058801735-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돈정육",
+        "origin": "국내산",
+        "amount": "96.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "삼겹살시즈닝",
+        "amount": "3.3%",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유청분말",
+            "origin": "국산 5%",
+            "sub_ingredients": [
+              {
+                "name": "우유-수입",
+                "amount": "95%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "리갈브라인믹스",
+            "sub_ingredients": [
+              {
+                "name": "아질산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "발색제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "우정육",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "솔빈산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "보존제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "SNMIX-A",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:00:51"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 384.0,
+    "carbohydrate_g": 1.0,
+    "protein_g": 38.0,
+    "fat_g": 26.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 425.0,
+    "cholesterol_mg": 26.0,
+    "saturated_fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "400g",
+    "collected_at": "2026-03-04 04:00:51"
+  }
+}

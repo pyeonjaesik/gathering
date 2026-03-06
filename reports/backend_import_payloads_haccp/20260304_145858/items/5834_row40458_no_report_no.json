@@ -1,0 +1,103 @@
+{
+  "product": {
+    "name_ko": "맘마밀요미요미유기농쌀과자초록12개월부터",
+    "reportnum": "20080517001118"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001118/20080517001118-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001118/20080517001118-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001118/20080517001118-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농쌀(국산) 78.012%, 유기농백포도농축과즙(65brix, 터키산) 20%, 브로콜리분말(국산) 0.8%, 화이버솔-2(식이섬유),클로렐라원말 0.32%, 푸마르산제일철, 비타민B1염산염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001118/20080517001118-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(25g) 1회 제공량당 함량 *% 영양소기준치 열량 100kcal 탄수화물 23g 당류 5g 식이섬유 1g 10% 단백질 1g 7% 지방 0g 포화지방 0g 트랜스지방 0g 콜레스테롤 0mg 나트륨 10mg 1% 철분 4.5mg 75% 비타민B1 0.15mg 30% *한국인영양섭취기준(2010년, 1~2세 기준)에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080517001118/20080517001118-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농쌀",
+        "origin": "국산",
+        "amount": "78.012%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농백포도농축과즙",
+        "origin": "터키산",
+        "amount": "20%",
+        "sub_ingredients": [
+          {
+            "name": "65brix",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "브로콜리분말",
+        "origin": "국산",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이버솔-2",
+        "sub_ingredients": [
+          {
+            "name": "식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "클로렐라원말",
+        "amount": "0.32%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "푸마르산제일철",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민B1염산염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:15:05"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 5.0,
+    "dietary_fiber_g": 1.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 10.0,
+    "iron_mg": 4.5,
+    "basis_amount": 25.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(25g)",
+    "collected_at": "2026-03-04 04:15:05"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "깐쇼새우",
+    "reportnum": "201604432953"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201604432953/201604432953-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201604432953/201604432953-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201604432953/201604432953-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "냉동새우(베트남산)59%,밀가루(밀:미국산,호주산),정제팜유(팜유:말레이시아산),타피오카전분(카사바파우더:베트남산),빵가루[밀가루(밀:미국산,호주산,캐나다산),정제팜유,정제소금,분말결정포도당],시즈닝분말,L-글루타민산나트륨(향미증진제),폴리인산나트륨(산도조절제),정제소금,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201604432953/201604432953-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(100g) 총 10회 제공량(1000g) 1회 제공량당 함량: 열량 265kcal, 탄수화물 40g (12.2%), 당류 0g, 단백질 38g (63.3%),지방 4g (8%),포화지방 0.2g (1.3%), 트랜스지방 0g (0%),  콜레스테롤 0mg (0%),  나트륨 280mg (14%) ( )안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2016/201604432953/201604432953-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "냉동새우",
+        "origin": "베트남산",
+        "amount": "59%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제팜유",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "타피오카전분",
+        "origin": "베트남산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "빵가루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산, 캐나다산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분말결정포도당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "시즈닝분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리인산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:47:36"
+  },
+  "nutrition": {
+    "kcal": 265.0,
+    "carbohydrate_g": 40.0,
+    "sugar_g": 0.0,
+    "protein_g": 38.0,
+    "fat_g": 4.0,
+    "saturated_fat_g": 0.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 280.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)",
+    "collected_at": "2026-03-04 04:47:36"
+  }
+}

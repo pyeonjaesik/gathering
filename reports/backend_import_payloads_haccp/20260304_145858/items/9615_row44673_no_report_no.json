@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_ko": "스피키초코피넛스낵",
+    "reportnum": "2014035587968"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587968/2014035587968-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587968/2014035587968-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587968/2014035587968-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "피넛버터초콜릿-DTL[설탕,가공유지1{정제경화팜핵스테아린(말레이시아산)},피넛분말(땅콩/아르헨티나산),코코아분말(말레이시아산),스키피땅콩버터-크리미(미국산/땅콩),합성향료(피넛향)],콘그릿츠4호[옥수수/외국산(호주,브라질,러시아등)],밀가루(미국산),건식쌀가루(수),탄산칼슘,설탕,혼합제제(카라멜색소,프로필렌글리콜,정제수),정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587968/2014035587968-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=51g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014035587968/2014035587968-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "피넛버터초콜릿",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지1",
+            "sub_ingredients": [
+              {
+                "name": "정제경화팜핵스테아린",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "피넛분말",
+            "origin": "아르헨티나산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "스키피땅콩버터-크리미",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "땅콩",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "합성향료",
+            "sub_ingredients": [
+              {
+                "name": "피넛향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "콘그릿츠4호",
+        "origin": "외국산, 호주산, 브라질산, 러시아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건식쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "프로필렌글리콜",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:41:01"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 529.0,
+    "carbohydrate_g": 56.86,
+    "protein_g": 7.84,
+    "fat_g": 29.41,
+    "sugar_g": 27.45,
+    "sodium_mg": 69.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 21.57,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "51g",
+    "collected_at": "2026-03-04 04:41:01"
+  }
+}

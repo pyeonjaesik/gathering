@@ -1,0 +1,159 @@
+{
+  "product": {
+    "name_ko": "부산어묵 진미종합",
+    "reportnum": "19900275002276"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002276/19900275002276-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002276/19900275002276-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002276/19900275002276-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "연육 54.62%(중국산/어육, D-소비톨, 정백당, 산도조절제), 밀가루(밀/미국산,호주산), 카놀라유(캐나다산), 당근1.95%(국내산), 부추0.78%(국내산), 정제소금, 포도당, 대두단백, L-글루탐산나트륨(향미증진제), 정백당, 두류가공품, 소브산칼륨(보존료), 양파추출베이스, 자일로오스, 트랜스글루타미나아제\n바다살어묵스프 : 정제수, 정제소금(국산), 설탕, 혼합간장1[탈지대두(외국산),천일염(호주산),소맥(밀,미국산), 액상과당, 효모추출분말 주정], 혼합간장2[탈지대두(외국산), 액상과당, 천일염(호주산), 소맥주정, 효모추출분말], L-글루탐산나트륨(향미증진제), 혼다시, 향미증진제, 멸치엑기스분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002276/19900275002276-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=560g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1990/19900275002276/19900275002276-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "연육",
+        "origin": "중국산",
+        "amount": "54.62%",
+        "sub_ingredients": [
+          {
+            "name": "어육",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-소비톨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "origin": "국내산",
+        "amount": "1.95%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "부추",
+        "origin": "국내산",
+        "amount": "0.78%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "두류가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소브산칼륨",
+        "sub_ingredients": [
+          {
+            "name": "보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파추출베이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "트랜스글루타미나아제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:27:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 215.0,
+    "carbohydrate_g": 32.0,
+    "protein_g": 8.0,
+    "fat_g": 6.0,
+    "sugar_g": 3.0,
+    "sodium_mg": 940.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "560g",
+    "collected_at": "2026-03-04 03:27:19"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "product": {
+    "name_ko": "짜장볶이",
+    "reportnum": "19860309018385"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018385/19860309018385-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018385/19860309018385-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018385/19860309018385-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면:소맥분(밀:미국산,호주산),팜유(말레이시아산),변성전분,감자전분,육수추출농축액,글루텐,식용유지분말,난각분말,면류첨가알칼리제(산도조절제),유화유지,비타민B2,녹차풍미유 스프류:짜장조미분말,참맛간짜장분말,백설탕,짜장시즈닝분말,로스팅양파분말,정제소금,전분,포도당,볶음양파분,참맛효모조미분말,카라멜색소,향미증진제,건양배추,대두단백,건양파[소맥분(밀),탈지대두(대두),돈골(돼지고기),난각분말(계란),우유단백질(우유)]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018385/19860309018385-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=130g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018385/19860309018385-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "육수추출농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글루텐",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식용유지분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난각분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "면류첨가알칼리제",
+            "sub_ingredients": [
+              {
+                "name": "산도조절제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "유화유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B2",
+            "sub_ingredients": []
+          },
+          {
+            "name": "녹차풍미유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "스프류",
+        "sub_ingredients": [
+          {
+            "name": "짜장조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참맛간짜장분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "짜장시즈닝분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로스팅양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양파분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참맛효모조미분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라멜색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건양파",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "sub_ingredients": [
+                  {
+                    "name": "밀",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "탈지대두",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "돈골",
+                "sub_ingredients": [
+                  {
+                    "name": "돼지고기",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "난각분말",
+                "sub_ingredients": [
+                  {
+                    "name": "계란",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "우유단백질",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:06:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 462.0,
+    "carbohydrate_g": 63.85,
+    "protein_g": 8.46,
+    "fat_g": 19.23,
+    "sugar_g": 5.38,
+    "sodium_mg": 715.0,
+    "calcium_mg": 148.0,
+    "cholesterol_mg": 3.08,
+    "saturated_fat_g": 7.69,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "130g",
+    "collected_at": "2026-03-03 16:06:19"
+  }
+}

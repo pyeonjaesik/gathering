@@ -1,0 +1,90 @@
+{
+  "product": {
+    "name_ko": "우리찹쌀 왕만두피",
+    "reportnum": "2003039415975"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003039415975/2003039415975-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003039415975/2003039415975-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003039415975/2003039415975-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루 87.8%(밀/미국산,호주산), 옥수수전분(외국산/러시아, 미국, 헝가리), 찹쌀가루 2.5%(국산), 활성글루텐, 정제소금, 프로필렌글리콜[밀 함유]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003039415975/2003039415975-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 제공량(360g)/1회 제공량(100g)당 함량\n열량265kcal, 탄수화물56g (17%), 당류3g, 지방1.2g (2%), 단백질7g (12%), 트랜스지방0g, 포화지방0.3g (2%), 콜레스테롤0mg (0%), 나트륨 320mg (16%)\n*%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003039415975/2003039415975-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "amount": "87.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥수수전분",
+        "origin": "외국산, 러시아산, 미국산, 헝가리산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "origin": "국산",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "활성글루텐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프로필렌글리콜",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:59"
+  },
+  "nutrition": {
+    "kcal": 265.0,
+    "carbohydrate_g": 56.0,
+    "sugar_g": 3.0,
+    "fat_g": 1.2,
+    "protein_g": 7.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.3,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 320.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(100g)당 함량",
+    "collected_at": "2026-03-04 03:46:59"
+  }
+}

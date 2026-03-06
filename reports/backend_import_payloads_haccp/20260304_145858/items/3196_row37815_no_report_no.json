@@ -1,0 +1,167 @@
+{
+  "product": {
+    "name_ko": "한아름땅콩소보루",
+    "reportnum": "199301880911918"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199301880911918/199301880911918-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199301880911918/199301880911918-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199301880911918/199301880911918-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(밀/미국산,캐나다산),땅콩소보루(밀가루(밀/미국산).백설탕,마가린/인도네시아산,땅콩/중국산,계란,땅콩버터/중국산],백설탕,쇼트닝[팜유,D-A토코페롤,유화제),효모,액상과당,유청분말(우유),정제소금,곡류가공품,혼합제제(밀가루,유화제,비타민C,효소제)유화제,곡류가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199301880911918/199301880911918-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량 279KCAL 탄수화물 47G 14% 당류 12G 단백질 7G 13% 지방 7G 14% 포화지방 2.6G 17% 트랜스지방 0G 콜레스테롤 10MG 3% 나트륨 280MG 14%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199301880911918/199301880911918-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩소보루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마가린",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          },
+          {
+            "name": "땅콩버터",
+            "origin": "중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "D-A토코페롤",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "곡류가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:23:33"
+  },
+  "nutrition": {
+    "kcal": 279.0,
+    "carbohydrate_g": 47.0,
+    "sugar_g": 12.0,
+    "protein_g": 7.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 2.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 280.0,
+    "collected_at": "2026-03-03 19:23:33"
+  }
+}

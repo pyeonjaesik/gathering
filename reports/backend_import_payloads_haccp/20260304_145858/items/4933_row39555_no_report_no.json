@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "조은아이 유기농쌀과자 순수현미",
+    "reportnum": "2003049702071"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702071/2003049702071-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702071/2003049702071-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702071/2003049702071-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "유기농현미(국산)100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702071/2003049702071-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 30g 117kcal\n나트륨1.5mg 0.1%, 탄수화물25g 7.4%, 당류0.1g, 지방1g 2%, 트랜스지방0g, 포화지방0.3g 1.8%, 콜레스테롤0mg 0%, 단백질2.5g 4.5%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/2003049702071/2003049702071-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "유기농현미",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:24"
+  },
+  "nutrition": {
+    "kcal": 117.0,
+    "sodium_mg": 1.5,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 0.1,
+    "fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.3,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.5,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 30g",
+    "collected_at": "2026-03-04 03:48:24"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "product": {
+    "name_ko": "고기전용쌈장",
+    "reportnum": "1991045804731"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991045804731/1991045804731-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991045804731/1991045804731-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991045804731/1991045804731-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장 38%[발효곡물{소맥분(밀:미국산,호주산),정제소금(국산),밀쌀,종국},고추양념(중국산/고춧가루,정제소금,양파,참깨,마늘)],된장 30%{대두(외국산:미국,캐나다,호주 등),소맥분(밀:미국산,호주산),정제소금,밀쌀,종국},물엿,생마늘 3%(마늘:국산),양파페이스트,하얀설탕,주정,탈지대두분,정제수,볶음참깨,마늘농축액,참기름,정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991045804731/1991045804731-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=900g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1991/1991045804731/1991045804731-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "38%",
+        "sub_ingredients": [
+          {
+            "name": "발효곡물",
+            "sub_ingredients": [
+              {
+                "name": "소맥분",
+                "origin": "미국산, 호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀쌀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "종국",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": [
+              {
+                "name": "고춧가루",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참깨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "된장",
+        "amount": "30%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "종국",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "생마늘",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파페이스트",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하얀설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지대두분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 18:43:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 195.0,
+    "carbohydrate_g": 35.0,
+    "protein_g": 7.0,
+    "fat_g": 3.1,
+    "sugar_g": 19.0,
+    "sodium_mg": 2310.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "900g",
+    "collected_at": "2026-03-03 18:43:54"
+  }
+}

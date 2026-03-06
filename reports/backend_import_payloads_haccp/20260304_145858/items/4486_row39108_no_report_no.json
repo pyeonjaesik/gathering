@@ -1,0 +1,211 @@
+{
+  "product": {
+    "name_ko": "육개장밥",
+    "reportnum": "20010445055339"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055339/20010445055339-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055339/20010445055339-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055339/20010445055339-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "맛있는 오뚜기밥(즉석조리식품,살균제품,질소충전제품):쌀99.9%(배합수제외,국내산),쌀미강추출물 -육개장(즉석조리식품,살균제품,레토르트식품):정제수,파(중국산),쇠고기7%(뉴질랜드산),사골엑기스(사골:뉴질랜드산),비프엑기스(쇠고기:뉴질랜드산),구운쇠고기분말(쇠고기:뉴질랜드산),숙주,고구마순,마늘,양파퓨레,고추분,옥수수유,정제소금,장국맛분-1(대두,밀),식물성분해단백,해물맛베이스(새우,우유),콩발효맛내기,참치간장,조미분엔에프,향미증진제,후추분,파프리카추출색소(천연색소)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055339/20010445055339-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1개(360g) : 열량 275kcal,탄수화물53g 16%, 당류2g, 단백질 11g 20%, 지방2.3g 5%, 포화지방0.6g 4%, 트랜스지방 0g, 콜레스테롤10mg 3%, 나트륨 1,070mg 54%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055339/20010445055339-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는 오뚜기밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국내산",
+            "amount": "99.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀미강추출물",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "육개장",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쇠고기",
+            "origin": "뉴질랜드산",
+            "amount": "7%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사골엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "사골",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비프엑기스",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "구운쇠고기분말",
+            "origin": "뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "숙주",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고구마순",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파퓨레",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "장국맛분-1",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "식물성분해단백",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해물맛베이스",
+            "sub_ingredients": [
+              {
+                "name": "새우",
+                "sub_ingredients": []
+              },
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "콩발효맛내기",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미분엔에프",
+            "sub_ingredients": []
+          },
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": [
+              {
+                "name": "천연색소",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:31"
+  },
+  "nutrition": {
+    "kcal": 275.0,
+    "carbohydrate_g": 53.0,
+    "sugar_g": 2.0,
+    "protein_g": 11.0,
+    "fat_g": 2.3,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 1070.0,
+    "basis_amount": 360.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(360g)",
+    "collected_at": "2026-03-04 03:32:31"
+  }
+}

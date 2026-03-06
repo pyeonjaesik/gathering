@@ -1,0 +1,122 @@
+{
+  "product": {
+    "name_ko": "콘칩",
+    "reportnum": "20100372386129"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386129/20100372386129-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386129/20100372386129-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386129/20100372386129-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "옥수수(수입산)68%,혼합식용유[팜올레인유60%(말레이시아산),해바라기유40%(수입산)],로스트콘시즈닝(대두,우유),해조칼슘,정제염,백설탕,면실유,포티엄알40(해바라기유,로즈마리추출액)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386129/20100372386129-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉지(38g) 총 2회 제공량(75g)\n열량200kcal, 탄수화물28g 8%, 당류0g, 단백질2g 4%, 지방10g 20%, 포화지방4.5g 30%, 트랜스지방0g, 콜레스테롤0mg 0%, 칼슘40mg 6%, 나트륨60mg 3%\n* %영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100372386129/20100372386129-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "수입산",
+        "amount": "68%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합식용유",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "origin": "말레이시아산",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "origin": "수입산",
+            "amount": "40%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "로스트콘시즈닝",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "면실유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포티엄알40",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리추출액",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:28"
+  },
+  "nutrition": {
+    "kcal": 200.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 0.0,
+    "protein_g": 2.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 4.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "calcium_mg": 40.0,
+    "sodium_mg": 60.0,
+    "basis_amount": 38.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉지(38g)",
+    "collected_at": "2026-03-04 04:23:28"
+  }
+}

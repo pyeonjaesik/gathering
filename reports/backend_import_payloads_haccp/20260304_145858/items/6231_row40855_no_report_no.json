@@ -1,0 +1,160 @@
+{
+  "product": {
+    "name_ko": "우리밀로 만든 알파벳비스켓",
+    "reportnum": "2010037238638"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238638/2010037238638-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238638/2010037238638-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238638/2010037238638-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루(우리밀100%, 국산)50%, 감자전분(국산), 유기농설탕12%, 쇼트닝{팜유(말레이시아산), 포티엄알40}, 팜유, 산도조절제, 전란액, 유청분말, 정제염, 해조칼슘, 분말유크림, 초유분말, 영양강화제, 합성착향료(밀크향,바닐린), 효소제제, 향신료올레오레진류(해바라기유, 로즈마리추출물)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238638/2010037238638-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 1봉지(50g) 총 2회 제공량(100g) 1회 제공량당 함량 *%영양성분 기준치 열량 245kcal, 탄수화물 35g 11%, 당류 8g, 단백질 4g 7%, 지방 10g 20%, 포화지방 5g 33%, 트랜스지방 0g, 콜레스테롤 5mg미만 1%, 나트륨 210mg 11%, 비타민B1 0.8mg 67%, 비타민B2 0.8mg 57%, 철분 2.2mg 18%, 칼슘 88mg 13% *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037238638/2010037238638-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": [
+          {
+            "name": "우리밀",
+            "amount": "100%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "감자전분",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": [
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포티엄알",
+            "amount": "40",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "산도조절제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전란액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유청분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "해조칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초유분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "밀크향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료올레오레진류",
+        "sub_ingredients": [
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로즈마리추출물",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:25:02"
+  },
+  "nutrition": {
+    "kcal": 245.0,
+    "carbohydrate_g": 35.0,
+    "sugar_g": 8.0,
+    "protein_g": 4.0,
+    "fat_g": 10.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 210.0,
+    "iron_mg": 2.2,
+    "calcium_mg": 88.0,
+    "basis_amount": 50.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 1봉지(50g)",
+    "collected_at": "2026-03-04 04:25:02"
+  }
+}

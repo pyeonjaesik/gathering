@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "허니머스타드",
+    "reportnum": "2001044505534"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505534/2001044505534-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505534/2001044505534-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505534/2001044505534-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "식물성유지[외국산(아르헨티나, 미국, 중국 등)], 조제겨자13%(미국산:식초, 머스타드, 소금, 터메릭, 파프리카), 액상과당, 백설탕, 발효식초(주정, 발효영양원), 아카시아꿀6%(국산), 머스타드페이스트2.5%(미국산), 연겨자1.29%(겨자분:캐나다산), 정제소금, 난황액, 오렌지식이섬유, 잔탄검, 겨자분0.4%(캐나다산), 향미유, 건조당밀, 효소제제, 향신료, 영양강화제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505534/2001044505534-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 535g 100g당 285kcal 나트륨 650mg 33% 탄수화물 27g 8% 당류 22g 22% 지방 19g 35% 트랜스지방 0g 포화지방 4.6g 31% 콜레스테롤 10mg 3% 단백질 1g 2% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001044505534/2001044505534-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "외국산, 아르헨티나산, 미국산, 중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "조제겨자",
+        "origin": "미국산",
+        "amount": "13%",
+        "sub_ingredients": [
+          {
+            "name": "식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "머스타드",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "터메릭",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "sub_ingredients": [
+          {
+            "name": "주정",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효영양원",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아카시아꿀",
+        "origin": "국산",
+        "amount": "6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "머스타드페이스트",
+        "origin": "미국산",
+        "amount": "2.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "연겨자",
+        "origin": "캐나다산",
+        "amount": "1.29%",
+        "sub_ingredients": [
+          {
+            "name": "겨자분",
+            "origin": "캐나다산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난황액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오렌지식이섬유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자분",
+        "origin": "캐나다산",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "건조당밀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향신료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "영양강화제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:32:23"
+  },
+  "nutrition": {
+    "kcal": 285.0,
+    "sodium_mg": 650.0,
+    "carbohydrate_g": 27.0,
+    "sugar_g": 22.0,
+    "fat_g": 19.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.6,
+    "cholesterol_mg": 10.0,
+    "protein_g": 1.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:32:23"
+  }
+}

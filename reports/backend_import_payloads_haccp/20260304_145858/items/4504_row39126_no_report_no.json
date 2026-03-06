@@ -1,0 +1,91 @@
+{
+  "product": {
+    "name_ko": "소문난 서천김",
+    "reportnum": "2001047106837"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001047106837/2001047106837-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001047106837/2001047106837-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001047106837/2001047106837-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "재래김65%(국산),옥배유29%(수입산),참기름,들기름,식염(정제소금,천일염,구운소금)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001047106837/2001047106837-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총열량30kcal, 지방3g (3%), 포화지방2g (3%), 트랜스지방- -, 콜레스테롤- -, 나트륨75mg (3%), 탄수화물1g (3%), 식이섬유소0g (0%), 단백질1g (1%), 당류1g \n2g당 함량(약 1인분,%는 1일 영양소 기준치에 대한 비율)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/2001047106837/2001047106837-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "재래김",
+        "origin": "국산",
+        "amount": "65%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "옥배유",
+        "origin": "수입산",
+        "amount": "29%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식염",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구운소금",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:23"
+  },
+  "nutrition": {
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "sodium_mg": 75.0,
+    "carbohydrate_g": 1.0,
+    "dietary_fiber_g": 0.0,
+    "protein_g": 1.0,
+    "sugar_g": 1.0,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "2g당",
+    "collected_at": "2026-03-04 03:33:23"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "product": {
+    "name_ko": "제주황칠삼계탕",
+    "reportnum": "201306260067"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306260067/201306260067-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306260067/201306260067-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306260067/201306260067-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭육수[정제수,닭발(국산)12.44%,생양파(국산),생마늘(국산),황기(국산),생강(국산),말티톨시럽,조미흰후추,정제염/가용성성분 고형분함량1.00%]45.32%,닭고기(국산)44.45%,찹쌀(국산)6.11%,황칠나무추출물(가용성성분 고형분함량 2.00%)2.68%,수삼(국산)0.87%,밤(국산)0.33%,대추(국산)0.24%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306260067/201306260067-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량:1/2봉(450g) 총 2회 제공량(900g) 1회제공량당 함량 *%영양소기준치 열량 452kcal - 탄수화물 23g 7% 당류 5g - 단백질 52g 95% 지방 17g 34% 포화지방 12.2g 81% 트랜스지방 0.0g - 콜레스테롤 221mg 74% 나트륨 407mg 20% %영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201306260067/201306260067-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭육수",
+        "amount": "45.32%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "닭발",
+            "origin": "국산",
+            "amount": "12.44%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생마늘",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황기",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말티톨시럽",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미흰후추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가용성성분 고형분함량",
+            "amount": "1.00%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "44.45%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "6.11%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황칠나무추출물",
+        "amount": "2.68%",
+        "sub_ingredients": [
+          {
+            "name": "가용성성분 고형분함량",
+            "amount": "2.00%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "수삼",
+        "origin": "국산",
+        "amount": "0.87%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밤",
+        "origin": "국산",
+        "amount": "0.33%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대추",
+        "origin": "국산",
+        "amount": "0.24%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:39:38"
+  },
+  "nutrition": {
+    "kcal": 452.0,
+    "carbohydrate_g": 23.0,
+    "sugar_g": 5.0,
+    "protein_g": 52.0,
+    "fat_g": 17.0,
+    "saturated_fat_g": 12.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 221.0,
+    "sodium_mg": 407.0,
+    "basis_amount": 450.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:1/2봉(450g)",
+    "collected_at": "2026-03-04 04:39:38"
+  }
+}

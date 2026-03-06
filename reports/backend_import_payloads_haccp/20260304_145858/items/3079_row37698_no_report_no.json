@@ -1,0 +1,135 @@
+{
+  "product": {
+    "name_ko": "뽀롱뽀롱 초코롱",
+    "reportnum": "1992044300370"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300370/1992044300370-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300370/1992044300370-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300370/1992044300370-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,백설탕,탈지분유3%(국산),코코아분말1.2%(네덜란드산),기당연유1.7%(국산),혼합제제(결정셀룰로오스,카라기난,셀룰로오스검),잔탄검,탄산수소나트륨,정제소금,효소처리스테비아,지당지방산에스테르,합성차향료(초콜릿향,바닐랑향),",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300370/1992044300370-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 175ml 80kcal 나트륨 70mg 4%, 지방 0.6g 1%, 탄수화물 17g 5%, 트랜스지방 0g, 당류 15g, 포화지방 0.4g 3%, 콜레스테롤 0mg 0%, 단백질 2g 4%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992044300370/1992044300370-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지분유",
+        "origin": "국산",
+        "amount": "3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아분말",
+        "origin": "네덜란드산",
+        "amount": "1.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기당연유",
+        "origin": "국산",
+        "amount": "1.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "결정셀룰로오스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          },
+          {
+            "name": "셀룰로오스검",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "잔탄검",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효소처리스테비아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "지당지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성차향료",
+        "sub_ingredients": [
+          {
+            "name": "초콜릿향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐랑향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:06:22"
+  },
+  "nutrition": {
+    "total_content": "175",
+    "food_weight_g": null,
+    "food_weight_ml": 175.0,
+    "kcal": 80.0,
+    "sodium_mg": 70.0,
+    "fat_g": 0.6,
+    "carbohydrate_g": 17.0,
+    "trans_fat_g": 0.0,
+    "sugar_g": 15.0,
+    "saturated_fat_g": 0.4,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "basis_amount": 175.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 175ml",
+    "collected_at": "2026-03-03 19:06:22"
+  }
+}

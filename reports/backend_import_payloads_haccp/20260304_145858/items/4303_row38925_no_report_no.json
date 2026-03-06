@@ -1,0 +1,291 @@
+{
+  "product": {
+    "name_ko": "참치마요네즈＋숯불갈비맛",
+    "reportnum": "200003470521880"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003470521880/200003470521880-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003470521880/200003470521880-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003470521880/200003470521880-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "·참치마요네즈삼각김밥:쌀85.25%(국산),참치6.39%[다랑어(원양산:태평양),카놀라유(수입산),VB75,구아검],마요네즈3.48%(대두,계란,밀)[대두유(수입산),전란액(국산)],소금,조미김1.20%(김:국산),대두유,참기름,화이트식초,참깨,간장,복합조미식품,후추 ·숯불갈비맛삼각김밥:쌀85.25%(국산),소고기5.90%(호주산),소금,조미김1.20%(김:국산),대두유,불고기양념장,숯불갈비양념0.73%(밀,토마토)[숯불갈비맛엑기스{산분해간장(밀:수입산)}],양파,참기름,화이트식초,대파,마늘,설탕,참깨,숯불갈비맛엑기스,생강,후추,복합조미식품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003470521880/200003470521880-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 200g 1회 제공량당 함량:열량 345kcal, 단백질 18g (33%),지방 9g (18%),포화지방 1.3g (9%),트랜스지방 0g,콜레스테롤 5mg미만 (1%),탄수화물 49g (15%),당류 1g미만, 나트륨 380mg (19%) ( )안의 수치는 1일 영양소기준치에 대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/200003470521880/200003470521880-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "참치마요네즈삼각김밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "85.25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참치",
+            "amount": "6.39%",
+            "sub_ingredients": [
+              {
+                "name": "다랑어",
+                "sub_ingredients": [
+                  {
+                    "name": "원양산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "태평양",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "카놀라유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "VB75",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "원양산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "태평양",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마요네즈",
+            "amount": "3.48%",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              },
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두유",
+                "origin": "수입산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "전란액",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미김",
+            "origin": "국산",
+            "amount": "1.20%",
+            "sub_ingredients": [
+              {
+                "name": "김",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "간장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "숯불갈비맛삼각김밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "85.25%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소고기",
+            "origin": "호주산",
+            "amount": "5.90%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미김",
+            "origin": "국산",
+            "amount": "1.20%",
+            "sub_ingredients": [
+              {
+                "name": "김",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "불고기양념장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숯불갈비양념",
+            "amount": "0.73%",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "토마토",
+                "sub_ingredients": []
+              },
+              {
+                "name": "숯불갈비맛엑기스",
+                "sub_ingredients": [
+                  {
+                    "name": "산분해간장",
+                    "origin": "수입산",
+                    "sub_ingredients": [
+                      {
+                        "name": "밀",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참기름",
+            "sub_ingredients": []
+          },
+          {
+            "name": "화이트식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "참깨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "숯불갈비맛엑기스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "생강",
+            "sub_ingredients": []
+          },
+          {
+            "name": "후추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:10:43"
+  },
+  "nutrition": {
+    "kcal": 345.0,
+    "protein_g": 18.0,
+    "fat_g": 9.0,
+    "saturated_fat_g": 1.3,
+    "trans_fat_g": 0.0,
+    "carbohydrate_g": 49.0,
+    "sodium_mg": 380.0,
+    "basis_amount": 200.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 200g",
+    "collected_at": "2026-03-03 22:10:43"
+  }
+}

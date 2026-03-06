@@ -1,0 +1,110 @@
+{
+  "product": {
+    "name_ko": "데코펜핑크",
+    "reportnum": "20070355307600"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355307600/20070355307600-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355307600/20070355307600-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355307600/20070355307600-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "식물성크림[백설탕,가공유지{팜핵경화유(말레이시아산),팜경화유(말레이시아산)},레시틴,합성착향료(바닐린,바닐라향,초코향)],정제야자유(외국산:인도네시아,말레이시아,필리핀)비트레드",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355307600/20070355307600-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(20g)/1회 제공량 당 함량: 열량 115kcal, 탄수화물 12g(4%), 당류11g, 단백질 0g(0%), 지방7g(14%),포화지방 6g(40%),트랜스지방0.7g,콜레스테롤0mg(0%),나트륨0mg(0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/20070355307600/20070355307600-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성크림",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": [
+              {
+                "name": "팜핵경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "팜경화유",
+                "origin": "말레이시아산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "합성착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐린",
+                "sub_ingredients": []
+              },
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "초코향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제야자유",
+        "origin": "외국산, 인도네시아산, 말레이시아산, 필리핀산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비트레드",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:03:00"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 11.0,
+    "protein_g": 0.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 6.0,
+    "trans_fat_g": 0.7,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(20g)",
+    "collected_at": "2026-03-04 04:03:00"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "product": {
+    "name_ko": "목우촌 생생소고기미역국",
+    "reportnum": "2015026208379"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208379/2015026208379-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208379/2015026208379-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208379/2015026208379-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,소고기7.14%(국산),미역1.8%(국산),마늘0.7%(국산),미림,다림쇠고기육수,정제소금,쇠고기진국다시,간장",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208379/2015026208379-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 480g 77kcal 총 내용량당 1일 영양성분 기준치에 대한 비율 나트륨 1.620mg 81%, 탄수화물 7g 2%, 당류 1g 1%, 콜레스테롤 35mg 12%, 지방 1g 2%, 트랜스지방 0g, 포화지방 0.2g 1%, 단백질 10g 18% 1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015026208379/2015026208379-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "국산",
+        "amount": "7.14%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미역",
+        "origin": "국산",
+        "amount": "1.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "amount": "0.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다림쇠고기육수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기진국다시",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:07"
+  },
+  "nutrition": {
+    "kcal": 77.0,
+    "sodium_mg": 1620.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 1.0,
+    "cholesterol_mg": 35.0,
+    "fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.2,
+    "protein_g": 10.0,
+    "basis_amount": 480.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 480g",
+    "collected_at": "2026-03-04 04:44:07"
+  }
+}

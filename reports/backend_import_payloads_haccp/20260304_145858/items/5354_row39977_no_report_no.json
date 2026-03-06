@@ -1,0 +1,134 @@
+{
+  "product": {
+    "name_ko": "청솔머슬업",
+    "reportnum": "2006040502260"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040502260/2006040502260-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040502260/2006040502260-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040502260/2006040502260-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기80.26%(가슴살/국내산),유청단백분말4.01%(우유/미국산),증숙고구마,양파4.01%,당근2.41%,비타셀(밀),찹쌀가루,함초추출물0.8%,청양고추0.8%,난백액(계란)0.8%,함초분0.4%,백후추분말",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040502260/2006040502260-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 100g 열량 205.5kcal, 탄수화물 4.22g, 당류 1.25g, 단백질 38.82g, 지방 3.72g, 포화지방 0.80g, 트랜스지방 0g, 콜레스테롤 99.65mg, 나트륨 99.83mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006040502260/2006040502260-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "80.26%",
+        "sub_ingredients": [
+          {
+            "name": "가슴살",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유청단백분말",
+        "origin": "미국산",
+        "amount": "4.01%",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "증숙고구마",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "amount": "4.01%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "amount": "2.41%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타셀",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함초추출물",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "amount": "0.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백액",
+        "amount": "0.8%",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "함초분",
+        "amount": "0.4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백후추분말",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:59:02"
+  },
+  "nutrition": {
+    "kcal": 205.5,
+    "carbohydrate_g": 4.22,
+    "sugar_g": 1.25,
+    "protein_g": 38.82,
+    "fat_g": 3.72,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 99.65,
+    "sodium_mg": 99.83,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 100g",
+    "collected_at": "2026-03-04 03:59:02"
+  }
+}

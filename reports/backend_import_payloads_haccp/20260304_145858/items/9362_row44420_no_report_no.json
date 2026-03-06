@@ -1,0 +1,206 @@
+{
+  "product": {
+    "name_ko": "프레즐 앤 팝콘 초콜릿&솔트",
+    "reportnum": "20100461303298"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303298/20100461303298-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303298/20100461303298-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303298/20100461303298-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "옥수수 25.67%(미국산), 설탕, 물엿, 과자 12.57%(미국산/영양강화밀가루, 정제소금, 식물성유지, 물엿, 맥아추출액), 가공버터(뉴질랜드산/버터유, 유크림, 야자유), 식물성유지{팜올레인유, 해바라기유, d-토코페롤(혼합형)}, 초콜릿 3.46%(싱가포르산), 코코아매스, 초코디럭스시즈닝, 덱스트린, 코코아파우더, 정제소금 0.53%(국내산), 포도당, 레시틴, 가공소금 0.25%(캐나다산), 혼합제제(탄산수소나트륨, 제삼인산칼슘), 혼합제제(버터향, 천연버터향, 가공유지)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303298/20100461303298-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=20g | foodSize=65g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/20100461303298/20100461303298-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "옥수수",
+        "origin": "미국산",
+        "amount": "25.67%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "과자",
+        "origin": "미국산",
+        "amount": "12.57%",
+        "sub_ingredients": [
+          {
+            "name": "영양강화밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맥아추출액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "origin": "뉴질랜드산",
+        "sub_ingredients": [
+          {
+            "name": "버터유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야자유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜올레인유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "초콜릿",
+        "origin": "싱가포르산",
+        "amount": "3.46%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아매스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초코디럭스시즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "amount": "0.53%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가공소금",
+        "origin": "캐나다산",
+        "amount": "0.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "탄산수소나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "제삼인산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연버터향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공유지",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:54"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 477.0,
+    "carbohydrate_g": 73.85,
+    "protein_g": 4.62,
+    "fat_g": 18.46,
+    "sugar_g": 35.38,
+    "sodium_mg": 662.0,
+    "cholesterol_mg": 15.38,
+    "saturated_fat_g": 9.23,
+    "trans_fat_g": 0.46,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "20g",
+    "total_content": "65g",
+    "collected_at": "2026-03-04 04:26:54"
+  }
+}

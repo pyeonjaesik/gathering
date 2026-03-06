@@ -1,0 +1,149 @@
+{
+  "product": {
+    "name_ko": "우리밀 생강전병",
+    "reportnum": "2015033291322"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015033291322/2015033291322-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015033291322/2015033291322-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015033291322/2015033291322-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루34.588%(밀/무농약,국산),설탕25.94%(유기농),전란액(계란,국산),버터(우유,국산),물엿(쌀엿,국산),건생강분말0.994%(국산),혼합제제{효모(사카로마이세스세레비제),소르비탄지방산에스테르,아스코르빈산},천일염(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015033291322/2015033291322-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 189g(27g x 7개입), 1개입(27g)당 115kcal\n나트륨37mg (2%), 탄수화물21g (6%), 당류11g (11%), 지방2.4g (4%), 트랜스지방0g, 포화지방1.4g (9%), 콜레스테롤20mg (7%), 단백질2g (4%) \n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015033291322/2015033291322-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "국산",
+        "amount": "34.588%",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "amount": "25.94%",
+        "sub_ingredients": [
+          {
+            "name": "유기농",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "버터",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "물엿",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "쌀엿",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건생강분말",
+        "origin": "국산",
+        "amount": "0.994%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "효모",
+            "sub_ingredients": [
+              {
+                "name": "사카로마이세스세레비제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "소르비탄지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스코르빈산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "천일염",
+        "origin": "국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:27"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "sodium_mg": 37.0,
+    "carbohydrate_g": 21.0,
+    "sugar_g": 11.0,
+    "fat_g": 2.4,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.4,
+    "cholesterol_mg": 20.0,
+    "protein_g": 2.0,
+    "basis_amount": 27.0,
+    "basis_unit": "g",
+    "basis_text": "1개입(27g)당",
+    "collected_at": "2026-03-04 04:44:27"
+  }
+}

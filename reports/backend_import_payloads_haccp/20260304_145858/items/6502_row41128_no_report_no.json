@@ -1,0 +1,70 @@
+{
+  "product": {
+    "name_ko": "강황이 날 강화",
+    "reportnum": "2012057308042"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012057308042/2012057308042-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012057308042/2012057308042-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012057308042/2012057308042-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 황산칼슘, 강화액(인도산)0.1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012057308042/2012057308042-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 500ml 0kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨14mg 1%, 탄수화물0mg 0%, 당류0mg 0%, 지방0mg 0%, 트랜스지방0mg 0%, 포화지방0mg 0%, 콜레스테롤0mg 0%, 단백질0mg 0%\n1일 영양성분 기준치에 대한 비율(%) 2,000kcal기준이므로 개인의 필요열량에 따라 다를 수 있습니다.\n주요 미네랄 함량 : 칼슘(Ca) : 16-24, 마그네슘(Ag) : 48-72, 칼륨(K) : 13.6-20.4",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2012/2012057308042/2012057308042-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "황산칼슘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "강화액",
+        "origin": "인도산",
+        "amount": "0.1%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:29"
+  },
+  "nutrition": {
+    "kcal": 0.0,
+    "sodium_mg": 14.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 500.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 500ml",
+    "collected_at": "2026-03-04 04:36:29"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "product": {
+    "name_ko": "큰컵짜짜로니",
+    "reportnum": "198803831271203"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271203/198803831271203-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271203/198803831271203-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271203/198803831271203-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "면-소맥분(미국산,호주산)/전분(태국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271203/198803831271203-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80 | foodSize=115g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/198803831271203/198803831271203-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전분",
+        "origin": "태국산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:55:32"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 480.0,
+    "carbohydrate_g": 69.72,
+    "protein_g": 11.4,
+    "fat_g": 17.16,
+    "sugar_g": 6.0,
+    "sodium_mg": 926.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 9.12,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "생·숙면 200g, 건면 100g, 당면 30g, 유탕면(봉지)120g, 유탕면(용기)80",
+    "total_content": "115g",
+    "collected_at": "2026-03-03 16:55:32"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "홍삼담은 산수유",
+    "reportnum": "20030614307864"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307864/20030614307864-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307864/20030614307864-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307864/20030614307864-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "산수유추출액(고형분4.5%,국산)70%,배과즙(국산),아가베시럽,홍삼농축액(6년근,고형분60%,홍삼성분70mg/g이상,국산)1%,글리신,글루콘산아연",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307864/20030614307864-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "회제공량1포(50mL) 총1회제공량(50mL), 1회제공량당함량:열량25kcal, 탄수화물6g(2%) ·당류4g, 단백질0g(0%), 포화지방0g(0%), ·트랜스지방0g, 콜레스테롤0mg(0%), 나트륨5mg(0%), ()안의수치는1일영양성분기준치에대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307864/20030614307864-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "산수유추출액",
+        "origin": "국산",
+        "amount": "70%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "4.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "배과즙",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아가베시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "6년근",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고형분",
+            "amount": "60%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "글리신",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글루콘산아연",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:49:48"
+  },
+  "nutrition": {
+    "kcal": 25.0,
+    "carbohydrate_g": 6.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량(50mL)",
+    "collected_at": "2026-03-04 03:49:48"
+  }
+}

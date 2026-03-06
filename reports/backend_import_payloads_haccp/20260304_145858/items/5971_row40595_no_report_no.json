@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "인절미스낵",
+    "reportnum": "2009036006267"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006267/2009036006267-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006267/2009036006267-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006267/2009036006267-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "쌀그릿츠60%(국내산),덱스트린,올리브유,정제염,인절미맛시즈닝18%[대두(미국산),정백당,정제염],팜유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006267/2009036006267-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량 약 1/5.3(30g) 총 약5.3회 제공량(160g)\n1회 제공량 당 함량 : 열량142kcal/ 탄수화물22g (7%)/ 당류3.9g/ 단백질2g (3%)/ 지방5.4g (11%)/ 포화지방2.7g (18%)/ 트랜스지방0g/ 콜레스테롤0mg (0%)/ 나트륨32mg (2%)\n()안의 수치는 1일 영양소기준치에 대한 비율(%)임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009036006267/2009036006267-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀그릿츠",
+        "origin": "국내산",
+        "amount": "60%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "올리브유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "인절미맛시즈닝",
+        "amount": "18%",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "팜유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:18:48"
+  },
+  "nutrition": {
+    "kcal": 142.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 3.9,
+    "protein_g": 2.0,
+    "fat_g": 5.4,
+    "saturated_fat_g": 2.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 32.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량 약 1/5.3(30g)",
+    "collected_at": "2026-03-04 04:18:48"
+  }
+}

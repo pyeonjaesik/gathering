@@ -1,0 +1,156 @@
+{
+  "product": {
+    "name_ko": "딸기코코넛밀크",
+    "reportnum": "20080395120126"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080395120126/20080395120126-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080395120126/20080395120126-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080395120126/20080395120126-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,원유35%(국산),코코넛밀크6.8%[코코넛추출물75%(태국산),정제수,구아검,잔탄검,카라기난],액상과당,백설탕,혼합분유(캐나다산),덱스트린,딸기농축과즙0.5%(고형분함량65%,국내산),혼합제제정제수,글리세린지방산에스테르,주정,패션후르츠퓨레,글리세린지방산에스테르,탄산수소나트륨,합성착향료(딸기향),치자적색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080395120126/20080395120126-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 270mL 235kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨110mg 6%, 탄수화물42g 13%, 당류32g 32%, 지방5g 9%, 트랜스지방0g, 포화지방4.3g 29%, 콜레스테롤15mg 5%, 단백질5g 9%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/20080395120126/20080395120126-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "35%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코넛밀크",
+        "amount": "6.8%",
+        "sub_ingredients": [
+          {
+            "name": "코코넛추출물",
+            "origin": "태국산",
+            "amount": "75%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구아검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "잔탄검",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카라기난",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "origin": "캐나다산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기농축과즙",
+        "origin": "국내산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "고형분함량",
+            "amount": "65%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "패션후르츠퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "치자적색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:09:46"
+  },
+  "nutrition": {
+    "kcal": 235.0,
+    "sodium_mg": 110.0,
+    "carbohydrate_g": 42.0,
+    "sugar_g": 32.0,
+    "fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 4.3,
+    "cholesterol_mg": 15.0,
+    "protein_g": 5.0,
+    "basis_amount": 270.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 270mL",
+    "collected_at": "2026-03-04 04:09:46"
+  }
+}

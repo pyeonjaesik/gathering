@@ -1,0 +1,62 @@
+{
+  "product": {
+    "name_ko": "미소愛애 군고구마 말랭이",
+    "reportnum": "2006062300388"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006062300388/2006062300388-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006062300388/2006062300388-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006062300388/2006062300388-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "호박고구마100%(국내산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006062300388/2006062300388-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 100g 1회 제공량당 함량g %영양소 기준치 열량 313kcal 탄수화물67g 20% 당류28g 단백질5g 9% 지방2.8g 5% 포화지방0.7g 5% 트랜스지방0g 콜레스테롤0mg 0% 나트륨90mg(5%) %영양소기준치: 1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2006/2006062300388/2006062300388-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "호박고구마",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:01:06"
+  },
+  "nutrition": {
+    "kcal": 313.0,
+    "carbohydrate_g": 67.0,
+    "sugar_g": 28.0,
+    "protein_g": 5.0,
+    "fat_g": 2.8,
+    "saturated_fat_g": 0.7,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 90.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 100g",
+    "collected_at": "2026-03-04 04:01:06"
+  }
+}

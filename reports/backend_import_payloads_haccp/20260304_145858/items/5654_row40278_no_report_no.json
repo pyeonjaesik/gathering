@@ -1,0 +1,225 @@
+{
+  "product": {
+    "name_ko": "아이배냇 베베순보들면 쇠고기비빔",
+    "reportnum": "2008037506990"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008037506990/2008037506990-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008037506990/2008037506990-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008037506990/2008037506990-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "*면(25g)-쌀99.5%(국산),정제염 0.5% *쇠고기블록(3g)-쇠고기진육 40.77%[다시마추출액(국산),쇠고기(국산)20%],난황(계란,국산)14.11%,덱스트린,당근(국산)9.08%,애호박(국산)9.08%,시금치,감자전분,양파,건미역,DHA분말(정제어유 다랑어, 젤라틴(어류), L-아스코르빈산나트륨,카놀라유,로즈마리추출물]*소스(2g)-양조간장47.3%[우리밀(국산),대두(국산),맥아조청,식염,주정],정제수,올리고당,유기농사탕수수설탕,사과청징농축액(국산),대파농축액",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008037506990/2008037506990-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(28)/총1회제공량(28g)/1회제공량당 함량 열량 99.1kcal 탄수화물 21.96g(7%) 당류 0.64g - 단백질 2.19g(4%) 지방 0.28g(1%) 포화지방 0.14g(1%) 트랜스지방 0g 0% 콜레스테롤 2.30mg(1%) 나트륨 131.6mg (7%) DHA 10mg (-)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008037506990/2008037506990-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "면",
+        "origin": "국산",
+        "amount": "25g",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "99.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제염",
+            "amount": "0.5%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇠고기블록",
+        "amount": "3g",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기진육",
+            "amount": "40.77%",
+            "sub_ingredients": [
+              {
+                "name": "다시마추출액",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "쇠고기",
+                "origin": "국산",
+                "amount": "20%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "난황",
+            "origin": "국산",
+            "amount": "14.11%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "amount": "9.08%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "애호박",
+            "origin": "국산",
+            "amount": "9.08%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시금치",
+            "sub_ingredients": []
+          },
+          {
+            "name": "감자전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "건미역",
+            "sub_ingredients": []
+          },
+          {
+            "name": "DHA분말",
+            "sub_ingredients": [
+              {
+                "name": "정제어유",
+                "sub_ingredients": [
+                  {
+                    "name": "다랑어",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "젤라틴",
+                "sub_ingredients": [
+                  {
+                    "name": "어류",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "L-아스코르빈산나트륨",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카놀라유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "로즈마리추출물",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "소스",
+        "amount": "2g",
+        "sub_ingredients": [
+          {
+            "name": "양조간장",
+            "amount": "47.3%",
+            "sub_ingredients": [
+              {
+                "name": "우리밀",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "맥아조청",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올리고당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유기농사탕수수설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "사과청징농축액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파농축액",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:08:33"
+  },
+  "nutrition": {
+    "kcal": 99.1,
+    "carbohydrate_g": 21.96,
+    "sugar_g": 0.64,
+    "protein_g": 2.19,
+    "fat_g": 0.28,
+    "saturated_fat_g": 0.14,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 2.3,
+    "sodium_mg": 131.6,
+    "basis_amount": 28.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(28g)",
+    "collected_at": "2026-03-04 04:08:33"
+  }
+}

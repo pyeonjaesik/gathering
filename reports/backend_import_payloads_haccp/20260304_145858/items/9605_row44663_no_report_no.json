@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "미니 프레첼 볶음양념맛",
+    "reportnum": "2014033246814"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246814/2014033246814-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246814/2014033246814-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246814/2014033246814-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "사비칩/불가리아산[밀가루, 식물성유지, 물엿, 가공소금, 액상과당],식물성유지/말레이시아산,볶음양념맛씨즈닝4.9%[볶음양념맛베이스(백설탕,비프양념분말,새우엑기스분말,유당,오징어조미분말,양파분말),백설탕,정제소금,복합조미식품,아스파탐(합성감미료,페닐알라닌),파슬리분말]",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246814/2014033246814-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=85g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/2014033246814/2014033246814-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사비칩",
+        "origin": "불가리아산",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가공소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "액상과당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "말레이시아산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음양념맛씨즈닝",
+        "amount": "4.9%",
+        "sub_ingredients": [
+          {
+            "name": "볶음양념맛베이스",
+            "sub_ingredients": [
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비프양념분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "새우엑기스분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "오징어조미분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파분말",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "복합조미식품",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아스파탐",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              },
+              {
+                "name": "페닐알라닌",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "파슬리분말",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:39"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 458.0,
+    "carbohydrate_g": 70.59,
+    "protein_g": 9.41,
+    "fat_g": 15.29,
+    "sugar_g": 3.53,
+    "sodium_mg": 784.0,
+    "cholesterol_mg": 4.12,
+    "saturated_fat_g": 7.06,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "85g",
+    "collected_at": "2026-03-04 04:40:39"
+  }
+}

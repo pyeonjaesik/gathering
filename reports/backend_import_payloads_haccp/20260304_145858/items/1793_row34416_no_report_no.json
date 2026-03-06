@@ -1,0 +1,254 @@
+{
+  "product": {
+    "name_ko": "삼육두유 발아현미 19곡",
+    "reportnum": "1985044900156"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985044900156/1985044900156-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985044900156/1985044900156-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985044900156/1985044900156-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "두유액 80 %(대두고형분 7.0 % 이상, 대두-외국산(국가명은 홈페이지에별도표시)), 정제수, 백설탕, 갈아만든순우리쌀즙 2%(국내산, 고형분40%이상), 발아현미분말 1.4%(국내산), 발아19곡분말 0.5%(국내산-발아현미, 발아쌀보리, 발아겉보리, 발아찰현미, 발아검정찰현미, 발아검정현미, 발아기장, 발아수수, 발아차조, 발아귀리, 발아서리태, 발아약콩, 발아적두, 발아백태, 발아흑태, 발아강낭콩, 발아적미, 발아통밀, 발아옥수수), 쌀추출액(국내산), 현미시럽, 검은콩추출액, 유기농검정깨페이스트 0.3%(미국산, 유기농검정깨100%), 폴리덱스트로스P, 정제소금, 글리세린지방산에스테르, 티제이-2000(식물성유지, 글리세린지방산에스테르, 레시틴, 탄산마그네슘), 카라기난, 합성착향료(로스티드빈향, 로스티드라이스향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985044900156/1985044900156-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=200ml | foodSize=190ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/1985044900156/1985044900156-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "두유액",
+        "origin": "외국산",
+        "amount": "80 %",
+        "sub_ingredients": [
+          {
+            "name": "대두고형분",
+            "amount": "7.0 % 이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "갈아만든순우리쌀즙",
+        "origin": "국내산",
+        "amount": "2 %",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "40 % 이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "발아현미분말",
+        "origin": "국내산",
+        "amount": "1.4 %",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발아19곡분말",
+        "origin": "국내산",
+        "amount": "0.5 %",
+        "sub_ingredients": [
+          {
+            "name": "발아현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아쌀보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아겉보리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아찰현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아검정찰현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아검정현미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아기장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아수수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아차조",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아귀리",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아서리태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아약콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아적두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아백태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아흑태",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아강낭콩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아적미",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아통밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발아옥수수",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀추출액",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미시럽",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "검은콩추출액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기농검정깨페이스트",
+        "origin": "미국산",
+        "amount": "0.3 %",
+        "sub_ingredients": [
+          {
+            "name": "유기농검정깨",
+            "amount": "100 %",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "폴리덱스트로스P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "티제이-2000",
+        "sub_ingredients": [
+          {
+            "name": "식물성유지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "글리세린지방산에스테르",
+            "sub_ingredients": []
+          },
+          {
+            "name": "레시틴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "탄산마그네슘",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "카라기난",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "로스티드빈향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "로스티드라이스향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:57:12"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 63.0,
+    "carbohydrate_g": 8.95,
+    "protein_g": 0.0,
+    "fat_g": 2.11,
+    "sugar_g": 5.26,
+    "sodium_mg": 84.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "200ml",
+    "total_content": "190ml",
+    "collected_at": "2026-03-03 15:57:12"
+  }
+}

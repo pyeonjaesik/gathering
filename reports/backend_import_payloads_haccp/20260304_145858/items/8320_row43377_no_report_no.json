@@ -1,0 +1,220 @@
+{
+  "product": {
+    "name_ko": "맛있는 컵밥 오삼불고기덮밥",
+    "reportnum": "20010445055420"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055420/20010445055420-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055420/20010445055420-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055420/20010445055420-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "맛있는 오뚜기컵밥(즉석조리식품,살균제품,질소충전제품):쌀(국산),산도조절제-맛있는오삼불고기덮밥소스(소스류,살균제품,레토르트식품):삼겹살28%(미국산),양파(국산),오징어15%(칠레산),양파퓨레,고추장(물엿,혼합양념,소맥분,밀쌀,주정),당근,카놀라유,대파,고추분,마늘,혼합제제(폴리글리시톨시럽,이소말토올리고당),오징어농축액,참치간장,백설탕,생강,미향,혼합제제(변성전분,백설탕,덱스트린),해물맛베이스,정제수,정제소금,아미노베이스,식물성분해단백,파프리카추출색소,후추분,구운오징어향",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055420/20010445055420-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=210g | foodSize=310g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010445055420/20010445055420-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "맛있는 오뚜기컵밥",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "맛있는오삼불고기덮밥소스",
+            "sub_ingredients": [
+              {
+                "name": "삼겹살",
+                "origin": "미국산",
+                "amount": "28%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "오징어",
+                "origin": "칠레산",
+                "amount": "15%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파퓨레",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추장",
+                "sub_ingredients": [
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "혼합양념",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소맥분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "밀쌀",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "주정",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "당근",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카놀라유",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "폴리글리시톨시럽",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "이소말토올리고당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "변성전분",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "오징어농축액",
+                "sub_ingredients": []
+              },
+              {
+                "name": "참치간장",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "생강",
+                "sub_ingredients": []
+              },
+              {
+                "name": "미향",
+                "sub_ingredients": []
+              },
+              {
+                "name": "해물맛베이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              },
+              {
+                "name": "아미노베이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "식물성분해단백",
+                "sub_ingredients": []
+              },
+              {
+                "name": "파프리카추출색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "후추분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구운오징어향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:33:06"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 158.0,
+    "carbohydrate_g": 23.23,
+    "protein_g": 4.52,
+    "fat_g": 5.16,
+    "sugar_g": 2.9,
+    "sodium_mg": 258.0,
+    "cholesterol_mg": 19.35,
+    "saturated_fat_g": 1.94,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "210g",
+    "total_content": "310g",
+    "collected_at": "2026-03-04 03:33:06"
+  }
+}

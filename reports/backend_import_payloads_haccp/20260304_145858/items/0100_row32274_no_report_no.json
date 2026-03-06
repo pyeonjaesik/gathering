@@ -1,0 +1,170 @@
+{
+  "product": {
+    "name_ko": "아르味해물파전",
+    "reportnum": "2008044520862"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520862/2008044520862-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520862/2008044520862-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520862/2008044520862-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,파(국산),오징어14.24%(외국산:중국,칠레,페루),밀가루(밀:미국,호주산),부침가루{밀가루[밀:미국,호주산],프리믹스씨즈닝2호[정제소금(국산)],정제소금,설탕,팽창제},대두유[대두유,d-토코페롤(혼합형),규소수지],양파,당근,청고추,새우2.03%(중국산),홍고추,새우엑기스,복합조미식품,정제소금",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520862/2008044520862-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 1.3kg 1833kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율> \n나트륨4083mg 204%, 탄수화물331g 102%, 당류26g 26%, 지방83g 154%, 트랜스지방0.0g, 포화지방15g 100%, 콜레스테롤444mg 148%, 단백질88g 160%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044520862/2008044520862-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어",
+        "origin": "외국산, 중국산, 칠레산, 페루산",
+        "amount": "14.24%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "부침가루",
+        "sub_ingredients": [
+          {
+            "name": "밀가루",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "프리믹스씨즈닝2호",
+            "sub_ingredients": [
+              {
+                "name": "정제소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팽창제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": [
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당근",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우",
+        "origin": "중국산",
+        "amount": "2.03%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "새우엑기스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:06:05"
+  },
+  "nutrition": {
+    "kcal": 1833.0,
+    "sodium_mg": 4083.0,
+    "carbohydrate_g": 331.0,
+    "sugar_g": 26.0,
+    "fat_g": 83.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 15.0,
+    "cholesterol_mg": 444.0,
+    "protein_g": 88.0,
+    "basis_amount": 1300.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 1.3kg",
+    "collected_at": "2026-03-03 13:06:05"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "product": {
+    "name_ko": "라베스트 초코 마카롱 아이스크림",
+    "reportnum": "2005047600275"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600275/2005047600275-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600275/2005047600275-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600275/2005047600275-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "마카롱초코[백설탕,분당,난백액(국산),아몬드분말(미국산),밀가루(밀:미국산),정제수,유크림(국산),백설탕,우유(국산),혼합분유,코코아분말,혼합제제(유화제,CMC,구아검,카라기난),정제소금,천연착향료(바닐라향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600275/2005047600275-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 (130ml기준)/총1회 제공량: 열량 185kcal,탄수화물31g (9%),당류25g,단백질3g (5%),지방6g (12%), 포화지방3.2g (21%), 트랜스지방0g, 콜레스테롤 10mg (3%), 나트륨40mg (2%),  1일 영양소 기준치에대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005047600275/2005047600275-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "마카롱초코",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "분당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "난백액",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "아몬드분말",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유크림",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "CMC",
+                "sub_ingredients": []
+              },
+              {
+                "name": "구아검",
+                "sub_ingredients": []
+              },
+              {
+                "name": "카라기난",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천연착향료",
+            "sub_ingredients": [
+              {
+                "name": "바닐라향",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:55:10"
+  },
+  "nutrition": {
+    "kcal": 185.0,
+    "carbohydrate_g": 31.0,
+    "sugar_g": 25.0,
+    "protein_g": 3.0,
+    "fat_g": 6.0,
+    "saturated_fat_g": 3.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 10.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 130.0,
+    "basis_unit": "ml",
+    "basis_text": "1회 제공량 (130ml기준)",
+    "collected_at": "2026-03-04 03:55:10"
+  }
+}

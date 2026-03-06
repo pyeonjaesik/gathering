@@ -1,0 +1,97 @@
+{
+  "product": {
+    "name_ko": "갈비탕",
+    "reportnum": "201402620782"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620782/201402620782-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620782/201402620782-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620782/201402620782-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소갈비(호주,뉴질랜드,미국)12%,소고기(호주,뉴질랜드,미국)12%,간장,후추가루,정제소금,L-글루타민산나트륨(향미증진제),나트륨,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620782/201402620782-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "제품 100g기준 열량:34.30kcal/탄수화물: 1.09g (당류 0.0g)/ 단백질: 1.95g/지방: 2.46g [포화지방 1.98g,트랜스지방 0.08g]콜레스테롤: 16.84mg/나트륨:273.12mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620782/201402620782-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소갈비",
+        "origin": "호주산, 뉴질랜드산, 미국산",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소고기",
+        "origin": "호주산, 뉴질랜드산, 미국산",
+        "amount": "12%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:31"
+  },
+  "nutrition": {
+    "kcal": 34.3,
+    "carbohydrate_g": 1.09,
+    "sugar_g": 0.0,
+    "protein_g": 1.95,
+    "fat_g": 2.46,
+    "saturated_fat_g": 1.98,
+    "trans_fat_g": 0.08,
+    "cholesterol_mg": 16.84,
+    "sodium_mg": 273.12,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "제품 100g기준",
+    "collected_at": "2026-03-04 04:40:31"
+  }
+}

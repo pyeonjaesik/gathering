@@ -1,0 +1,153 @@
+{
+  "product": {
+    "name_ko": "홍삼이 들어가 건강한 석류",
+    "reportnum": "2010044901633"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901633/2010044901633-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901633/2010044901633-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901633/2010044901633-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,석류농축액(고형분60%이상,미국산)18%,아가베시럽(멕시코산),프락토올리고장,홍삼농축액(6년근,고형분65%이상,홍삼성분70mg/g이상,국산1.2%,아사이베리혼합농축액,액상과당,구연산삼나트륨,사이클로-P,구연산,합성착형료(석류향,동백꽃향),비타민C,히알루론산혼합제제,대보식물혼합농축액,로즈힙분말,양파껍질추출물",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901633/2010044901633-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1일섭취량1포(50ml) 함량 %영양소기준치, 열량30kcal, 탄수화물7g 2%, 당류4g, 단백질0g 0%, 지방0g 0%, 포화지방0g 0%, 트랜스지방g, 콜레스테롤0mg 0%, 나트륨20mg 1%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010044901633/2010044901633-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "석류농축액",
+        "origin": "미국산",
+        "amount": "18%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "60%이상",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아가베시럽",
+        "origin": "멕시코산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "프락토올리고장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍삼농축액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "65%이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홍삼성분",
+            "amount": "70mg, g이상",
+            "sub_ingredients": []
+          },
+          {
+            "name": "6년근",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "아사이베리혼합농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사이클로-P",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착형료",
+        "sub_ingredients": [
+          {
+            "name": "석류향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동백꽃향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "히알루론산혼합제제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대보식물혼합농축액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "로즈힙분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파껍질추출물",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:26:00"
+  },
+  "nutrition": {
+    "kcal": 30.0,
+    "carbohydrate_g": 7.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 50.0,
+    "basis_unit": "ml",
+    "basis_text": "1일섭취량1포(50ml)",
+    "collected_at": "2026-03-04 04:26:00"
+  }
+}

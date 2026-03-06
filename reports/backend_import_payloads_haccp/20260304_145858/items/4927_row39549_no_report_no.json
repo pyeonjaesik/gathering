@@ -1,0 +1,220 @@
+{
+  "product": {
+    "name_ko": "쿨피스톡 요구르트 맛",
+    "reportnum": "20030473071171"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030473071171/20030473071171-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030473071171/20030473071171-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030473071171/20030473071171-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 유산균시럽10%[정제수, 유산균배양액 7.5%{혼합탈지분유(네덜란드산), 포도당, 유산균, 혼합제제(규소수지, 유화제, CMC-Na), 정제수}, 정백당, 혼합탈지분유(네덜란드산), 산도조절제, 대두다당류(대두), CMC-Na, 수크랄로스(합성감미료), 비타민C, 혼합제제(규소수지, 유화제, CMC-Na)], 액상과당, 구연산, 수크랄로스(합성감미료), 합성착향료(요구르트향, 시트러스향, 밀크테이스트분말향), 혼합제제(규소수지, 유화제, CMC-Na), 탄산가스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030473071171/20030473071171-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "(1회제공량 170ml당 함량) 열량65kcal, 탄수화물16g, 단백질0g, 지방0g, 포화지방0g, 트랜스지방0g, 콜레스테롤0mg, 나트륨20mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030473071171/20030473071171-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유산균시럽",
+        "amount": "10%",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유산균배양액",
+            "amount": "7.5%",
+            "sub_ingredients": [
+              {
+                "name": "혼합탈지분유",
+                "origin": "네덜란드산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "포도당",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유산균",
+                "sub_ingredients": []
+              },
+              {
+                "name": "혼합제제",
+                "sub_ingredients": [
+                  {
+                    "name": "규소수지",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "CMC-Na",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합탈지분유",
+            "origin": "네덜란드산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "산도조절제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두다당류",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "CMC-Na",
+            "sub_ingredients": []
+          },
+          {
+            "name": "수크랄로스",
+            "sub_ingredients": [
+              {
+                "name": "합성감미료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "비타민C",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합제제",
+            "sub_ingredients": [
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              },
+              {
+                "name": "유화제",
+                "sub_ingredients": []
+              },
+              {
+                "name": "CMC-Na",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "sub_ingredients": [
+          {
+            "name": "합성감미료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "요구르트향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "시트러스향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀크테이스트분말향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "CMC-Na",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "탄산가스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:48:16"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 16.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 20.0,
+    "basis_amount": 170.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량 170ml당 함량",
+    "collected_at": "2026-03-04 03:48:16"
+  }
+}

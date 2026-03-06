@@ -1,0 +1,132 @@
+{
+  "product": {
+    "name_ko": "Single`s pride 오징어무국",
+    "reportnum": "20020614179852"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179852/20020614179852-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179852/20020614179852-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179852/20020614179852-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수, 오징어(국산) 13.7%, 무(국산) 13.2%, 대파(중국산), 오징어추출물[오징어족(국내산) 30%] 0.8%, 고춧가루, 홍고추, 정제소금, 다시마엑기스S, 청양고추, 행복한맛남 멸치맛국물내기, L-글루타민산나트륨(향미증진제), 향미증진제, 파프리카추출색소",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179852/20020614179852-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=250ml(g) | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/20020614179852/20020614179852-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어",
+        "origin": "국산",
+        "amount": "13.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "무",
+        "origin": "국산",
+        "amount": "13.2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오징어추출물",
+        "amount": "0.8%",
+        "sub_ingredients": [
+          {
+            "name": "오징어족",
+            "origin": "국내산",
+            "amount": "30%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스S",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청양고추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "행복한맛남 멸치맛국물내기",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카추출색소",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:44:19"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 18.0,
+    "carbohydrate_g": 1.33,
+    "protein_g": 2.0,
+    "fat_g": 0.47,
+    "sugar_g": 0.33,
+    "sodium_mg": 303.0,
+    "cholesterol_mg": 63.33,
+    "saturated_fat_g": 0.05,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "250ml(g)",
+    "total_content": "300g",
+    "collected_at": "2026-03-04 03:44:19"
+  }
+}

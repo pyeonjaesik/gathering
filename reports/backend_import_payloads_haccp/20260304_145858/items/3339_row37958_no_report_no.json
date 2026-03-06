@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name_ko": "농협청결고춧가루",
+    "reportnum": "199305650053"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199305650053/199305650053-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199305650053/199305650053-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199305650053/199305650053-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "건고추100%(국내산/경북영양)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199305650053/199305650053-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g기준 : 열량219kcal, 지방8.9g, 포화지방1.9g, 단백질13.1g, 탄수화물56.5g, 식이섬유34.9g, 당류[과당10.7g, 포도당5.9g, 자당0.6g, 엿당0.4g],콜레스테롤0.0mg,Na96.4mg,Ca64.3mg,Fe5.9mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/199305650053/199305650053-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "건고추",
+        "origin": "국내산",
+        "amount": "100%",
+        "sub_ingredients": [
+          {
+            "name": "경북영양",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:44:44"
+  },
+  "nutrition": {
+    "kcal": 219.0,
+    "fat_g": 8.9,
+    "saturated_fat_g": 1.9,
+    "protein_g": 13.1,
+    "carbohydrate_g": 56.5,
+    "dietary_fiber_g": 34.9,
+    "cholesterol_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g기준",
+    "collected_at": "2026-03-03 19:44:44"
+  }
+}

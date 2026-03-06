@@ -1,0 +1,177 @@
+{
+  "product": {
+    "name_ko": "매생이 전복 리조또",
+    "reportnum": "200304432172599"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172599/200304432172599-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172599/200304432172599-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172599/200304432172599-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 쌀 10.8%(국산), 표고버섯 5.6%(표고버섯, 정제염, 구연산/중국산), 전복 4.5%(필리핀산), 전복엑기스 1%[전복효소분해액 70.59%(냉동전복 82.1%/필리핀산)], 대두유, 다시마엑기스-1 0.2%{고형분 56%, 다시마베이스 35%(다시마 31.5%/중국산), 다시마추출물 5%(고형분 23%, 다시마30%/국내산)}, 참기름, 정제소금, 혼합간장, 매생이건더기블럭 0.1%(생물환산기준 2.0%/국산), 향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172599/200304432172599-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(250g) 총 2회 제공량(500g) 1회 제공량당 함량 *%영양성분 기준치 열량 140 kcal 탄수화물 28g 8% 당류 0g 단백질 4g 7% 지방 1.2g 2% 포화지방 0.5g 3% 트랜스지방 0g 콜레스테롤 15mg 5% 나트륨 350mg 18% *%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/200304432172599/200304432172599-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "10.8%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "표고버섯",
+        "origin": "중국산",
+        "amount": "5.6%",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "구연산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전복",
+        "origin": "필리핀산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전복엑기스",
+        "amount": "1%",
+        "sub_ingredients": [
+          {
+            "name": "전복효소분해액",
+            "amount": "70.59%",
+            "sub_ingredients": [
+              {
+                "name": "냉동전복",
+                "origin": "필리핀산",
+                "amount": "82.1%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다시마엑기스-1",
+        "amount": "0.2%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "56%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마베이스",
+            "amount": "35%",
+            "sub_ingredients": [
+              {
+                "name": "다시마",
+                "origin": "중국산",
+                "amount": "31.5%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "다시마추출물",
+            "amount": "5%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "23%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "다시마",
+                "origin": "국내산",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매생이건더기블럭",
+        "origin": "국산",
+        "amount": "0.1%",
+        "sub_ingredients": [
+          {
+            "name": "생물환산기준",
+            "amount": "2.0%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:47:25"
+  },
+  "nutrition": {
+    "kcal": 140.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 0.0,
+    "protein_g": 4.0,
+    "fat_g": 1.2,
+    "saturated_fat_g": 0.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 350.0,
+    "basis_amount": 250.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(250g)",
+    "collected_at": "2026-03-04 03:47:25"
+  }
+}

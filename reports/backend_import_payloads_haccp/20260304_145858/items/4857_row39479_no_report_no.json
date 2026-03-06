@@ -1,0 +1,115 @@
+{
+  "product": {
+    "name_ko": "호박찹쌀약과",
+    "reportnum": "20030372137246"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137246/20030372137246-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137246/20030372137246-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137246/20030372137246-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀:미국,호주)48%,물엿(옥수수전분),찹쌀(국산)10%,식용유[대두유99.99%,소포제(규소수지)],호박가루(중국)5%, 정백당,중탄산나트륨(합성팽창제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137246/20030372137246-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량:1개(55g) 총 9회 제공량(495g), 열량(kcal) 225, 탄수화물(g) 43(13%), 당류(g) 5, 단백질(g) 3(5%), 지방(g) 4.7(9%), 포화지방(g) 0.8(5%), 트랜스지방(g) 0, 콜레스테롤(mg) 0(0%), 나트륨(mg) 25(1%), ※ 1회 제공당 함량(%영양소기준치:1일 영양소기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030372137246/20030372137246-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "amount": "48%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "origin": "국산",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "식용유",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "amount": "99.99%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소포제",
+            "sub_ingredients": [
+              {
+                "name": "규소수지",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "호박가루",
+        "origin": "중국산",
+        "amount": "5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "중탄산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성팽창제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:46:31"
+  },
+  "nutrition": {
+    "kcal": 225.0,
+    "carbohydrate_g": 43.0,
+    "sugar_g": 5.0,
+    "protein_g": 3.0,
+    "fat_g": 4.7,
+    "saturated_fat_g": 0.8,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 25.0,
+    "basis_amount": 55.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:1개(55g)",
+    "collected_at": "2026-03-04 03:46:31"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "product": {
+    "name_ko": "금빛 고춧가루",
+    "reportnum": "2005033226913"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005033226913/2005033226913-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005033226913/2005033226913-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005033226913/2005033226913-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "고추(중국산) 100%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005033226913/2005033226913-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g당 영양소\n열량364.7cal/100g, 탄수화물58.33g/100g, 당류13.53mg/100g, 지방8.18g/100g, 포화지방1.45g/100g, 트랜스지방0g/100g, 콜레스트롤0mg/100g, 나트륨66.59mg/100g\n위의 결과는 1인 분량을 고려하지 않은 시료 100g에 포함된 성분함량입니다.(분석된 결과는 모든 제품이 동일한 것은 아니며 시료에 따라 다소 차이가 있습니다.)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/2005033226913/2005033226913-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추",
+        "origin": "중국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:52:29"
+  },
+  "nutrition": {
+    "kcal": 364.7,
+    "carbohydrate_g": 58.33,
+    "sugar_g": 13.53,
+    "fat_g": 8.18,
+    "saturated_fat_g": 1.45,
+    "trans_fat_g": 0.0,
+    "sodium_mg": 66.59,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:52:29"
+  }
+}

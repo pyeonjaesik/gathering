@@ -1,0 +1,138 @@
+{
+  "product": {
+    "name_ko": "매실숙성 토종닭 순살 닭갈비",
+    "reportnum": "2004047600362"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047600362/2004047600362-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047600362/2004047600362-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047600362/2004047600362-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "닭고기[토종닭/국내산]70.6%,하림주물럭소스{정제수,고과당,물엿,양파(국내산),고추장(물엿,밀쌀(국산),고춧가루(국내산),정제염,주정],진간장-N(대두),밀,우유},하림매실액[매실과즙농축액(66brix이상,국내산)9.52%)0.05%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047600362/2004047600362-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100g 100g당 함량 %영양소 기준치 열량 100kcal, 탄수화물 4g 1%, 당류 3g, 단백질 18g 33%,지방 5g 10%, 포화지방 2g 13%,트랜스지방 0g,콜레스테롤 55mg 18%,나트륨 420mg 21% *%영양소 기준치:1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2004/2004047600362/2004047600362-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국내산",
+        "amount": "70.6%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하림주물럭소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": [
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고춧가루",
+                "origin": "국내산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              },
+              {
+                "name": "주정",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "진간장-N",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "하림매실액",
+        "sub_ingredients": [
+          {
+            "name": "매실과즙농축액",
+            "origin": "국내산",
+            "amount": "9.52%",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:51:53"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 4.0,
+    "sugar_g": 3.0,
+    "protein_g": 18.0,
+    "fat_g": 5.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 55.0,
+    "sodium_mg": 420.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 03:51:53"
+  }
+}

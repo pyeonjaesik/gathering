@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "파운드마아가린",
+    "reportnum": "19860309018226"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018226/19860309018226-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018226/19860309018226-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018226/19860309018226-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "식물성유지[팜스테아린유(말레이시아산),팜유(말레이시아산)],정제수,정제소금(국산),레시틴,글리세린지방산에스테르,데히드로초산나트륨(합성보존료), 합성향료(크림향), d-토코페롤(혼합형), 혼합제제(옥수수유,베타카로틴(착색료),DL-α-토코페롤)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018226/19860309018226-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=5g(ml) | foodSize=450g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1986/19860309018226/19860309018226-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "sub_ingredients": [
+          {
+            "name": "팜스테아린유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "팜유",
+            "origin": "말레이시아산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레시틴",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "글리세린지방산에스테르",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데히드로초산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "합성보존료",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "크림향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "d-토코페롤",
+        "sub_ingredients": [
+          {
+            "name": "혼합형",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "옥수수유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "베타카로틴",
+            "sub_ingredients": [
+              {
+                "name": "착색료",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "DL-α-토코페롤",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 16:03:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 730.0,
+    "carbohydrate_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 81.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 700.0,
+    "cholesterol_mg": 3.0,
+    "saturated_fat_g": 49.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "5g(ml)",
+    "total_content": "450g",
+    "collected_at": "2026-03-03 16:03:47"
+  }
+}

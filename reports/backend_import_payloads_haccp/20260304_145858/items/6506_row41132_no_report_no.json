@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "아우노 그라노 카카오",
+    "reportnum": "201301744516"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201301744516/201301744516-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201301744516/201301744516-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201301744516/201301744516-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "현미(국내산), 아우노슈가(사탕수수100%), 코코아파우더(인도네시아산)4.7%, 초콜릿청크[코코아매스(스페인산), 코코아버터(싱가포르산)], 건조코코넛슬라이스, 경성가공치즈, 퀴노아, 압착귀리, 바질, 비타민C, 천일염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201301744516/201301744516-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 30g 120kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨100mg 5%, 탄수화물25g 8%, 당류8g 8%, 지방1.4g 3%, 트랜스지방0g, 포화지방0.8g 5%, 콜레스테롤0mg, 단백질2g 3%, 칼슘20mg 3%, 칼륨125mg 4%, 마그네슘34mg 11%, 인71mg 10%, 철07mg 6%, 아연0.5mg 6%, 망간0.5mg 18%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2013/201301744516/201301744516-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "현미",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아우노슈가",
+        "amount": "사탕수수100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아파우더",
+        "origin": "인도네시아산",
+        "amount": "4.7%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "초콜릿청크",
+        "sub_ingredients": [
+          {
+            "name": "코코아매스",
+            "origin": "스페인산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "origin": "싱가포르산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "건조코코넛슬라이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "경성가공치즈",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "퀴노아",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "압착귀리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바질",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "천일염",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:36:50"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "sodium_mg": 100.0,
+    "carbohydrate_g": 25.0,
+    "sugar_g": 8.0,
+    "fat_g": 1.4,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 2.0,
+    "calcium_mg": 20.0,
+    "potassium_mg": 125.0,
+    "phosphorus_mg": 71.0,
+    "iron_mg": 0.7,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 30g",
+    "collected_at": "2026-03-04 04:36:50"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "조청산자",
+    "reportnum": "2010037227295"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227295/2010037227295-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227295/2010037227295-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227295/2010037227295-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "인조미(영양쌀)40%[소맥분(밀):미국산,호주산],조청25%[쌀(국산)94%,엿질금5.9%,효소0.1%],쌀튀밥(맵쌀:중국산),설탕",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227295/2010037227295-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분 1회 제공량:30g 총7회분량, 열량 100kcal, 탄수화물 22g(7%), 당류 9g, 단백질 2g(4%), 지방 0g(0%), 포화지방산 0g(0%), 트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 1mg(0%), ※%영양소기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010037227295/2010037227295-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "인조미(영양쌀)",
+        "amount": "40%",
+        "sub_ingredients": [
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": [
+              {
+                "name": "밀",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "조청",
+        "amount": "25%",
+        "sub_ingredients": [
+          {
+            "name": "쌀",
+            "origin": "국산",
+            "amount": "94%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "엿질금",
+            "amount": "5.9%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "효소",
+            "amount": "0.1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쌀튀밥",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "맵쌀",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:23:25"
+  },
+  "nutrition": {
+    "kcal": 100.0,
+    "carbohydrate_g": 22.0,
+    "sugar_g": 9.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량:30g",
+    "collected_at": "2026-03-04 04:23:25"
+  }
+}

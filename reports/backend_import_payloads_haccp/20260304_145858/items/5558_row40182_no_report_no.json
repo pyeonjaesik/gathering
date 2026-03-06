@@ -1,0 +1,114 @@
+{
+  "product": {
+    "name_ko": "아워홈 푹고은 도가니탕",
+    "reportnum": "2007040501488"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501488/2007040501488-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501488/2007040501488-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501488/2007040501488-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "사골육수[사골(호주산)18.5%,가용성 고형분3%],도가니육수[도가니엑기스{도가니뼈(호주산)40%,고형분함량30%}10%]11%,우건10%,정제수,정제염,향미증진제",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501488/2007040501488-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1봉지(400g) 총 1회 제공량 (400g) *%영양소 기준치 : 1일 영양소 기준치에 대한 비율 1회 제공량 당 함량 *%영양소기준치 열량 75kcal,탄수화물0g 0%,당류0g,단백질14g 25%,지방2.0g 4%, 포화지방0g 0%, 트랜스지방0g, 콜레스테롤 15mg 5%, 나트륨960mg 48%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2007/2007040501488/2007040501488-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "사골육수",
+        "origin": "호주산",
+        "amount": "18.5%",
+        "sub_ingredients": [
+          {
+            "name": "사골",
+            "origin": "호주산",
+            "amount": "18.5%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "가용성 고형분",
+            "amount": "3%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "도가니육수",
+        "amount": "11%",
+        "sub_ingredients": [
+          {
+            "name": "도가니엑기스",
+            "amount": "10%",
+            "sub_ingredients": [
+              {
+                "name": "도가니뼈",
+                "origin": "호주산",
+                "amount": "40%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고형분함량",
+                "amount": "30%",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우건",
+        "amount": "10%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제염",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "향미증진제",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:04:57"
+  },
+  "nutrition": {
+    "kcal": 75.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 14.0,
+    "fat_g": 2.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 960.0,
+    "basis_amount": 400.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1봉지(400g)",
+    "collected_at": "2026-03-04 04:04:57"
+  }
+}

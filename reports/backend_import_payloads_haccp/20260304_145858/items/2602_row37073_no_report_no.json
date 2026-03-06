@@ -1,0 +1,175 @@
+{
+  "product": {
+    "name_ko": "오색채소필라프",
+    "reportnum": "19880442004637"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004637/19880442004637-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004637/19880442004637-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004637/19880442004637-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수,칠리토마토스파게티소스[정제수,토마토페이스트(토마토:미국산),양파(국산),양송이,백설탕,옥수수기름],백미(국산),현미(국산),소앞다리살,돼지뒷다리살,가지5.25%(국산),쥬키니호박5.255(국산),파프리카(빨강)4.73%(국산),파프리카(노랑)4.73%(국산),양파4.07%(국산),찰보리,찹쌀,다진마늘,저염간장,미림,후추,카놀라유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004637/19880442004637-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량280kcal, 탄수화물40g(12%), 당류6g, 단백질16g(29%), 지방7g(14%),포화지방2.2g(15%), 트랜스지방0g, 콜레스테롤5mg(0%), 나트륨340mg(17%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004637/19880442004637-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칠리토마토스파게티소스",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토페이스트",
+            "origin": "미국산",
+            "sub_ingredients": [
+              {
+                "name": "토마토",
+                "origin": "미국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양송이",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수기름",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "현미",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소앞다리살",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "돼지뒷다리살",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가지",
+        "origin": "국산",
+        "amount": "5.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쥬키니호박",
+        "origin": "국산",
+        "amount": "5.255%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파프리카",
+        "origin": "국산",
+        "amount": "4.73%",
+        "sub_ingredients": [
+          {
+            "name": "빨강",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "노랑",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "국산",
+        "amount": "4.07%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찰보리",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "찹쌀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "다진마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "저염간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "미림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:25:02"
+  },
+  "nutrition": {
+    "kcal": 280.0,
+    "carbohydrate_g": 40.0,
+    "sugar_g": 6.0,
+    "protein_g": 16.0,
+    "fat_g": 7.0,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 5.0,
+    "sodium_mg": 340.0,
+    "collected_at": "2026-03-04 03:25:02"
+  }
+}

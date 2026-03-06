@@ -1,0 +1,185 @@
+{
+  "product": {
+    "name_ko": "동원 오븐&통그릴 델리햄",
+    "reportnum": "20050405003179"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050405003179/20050405003179-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050405003179/20050405003179-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050405003179/20050405003179-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "돼지고기80.09%(외국산),정제수,백설탕,가루엿,복합스파이스DWP[알파미분{쌀(외국산)},에이취브이피와이큐(미국산)],정제소금(국내산),시트러스화이버,콜라겐,혼합제제(젖산나트륨,초산나트륨,이산화규소),블랜드믹스-D,대두단백,혼합제제(폴리인산나트륨,메타인산나트륨,피로인산나트륨),자일로오스,L-글루탐산나트륨제제[L-글루탐산나트륨(향미증진제),5'-리보뉴클레오티드이나트륨],직화구이맛인헨서-디,락색소,아질산나트륨(발색제)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050405003179/20050405003179-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=500g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/20050405003179/20050405003179-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "돼지고기",
+        "origin": "외국산",
+        "amount": "80.09%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가루엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합스파이스DWP",
+        "sub_ingredients": [
+          {
+            "name": "알파미분",
+            "sub_ingredients": [
+              {
+                "name": "쌀",
+                "origin": "외국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "에이취브이피와이큐",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "origin": "국내산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "시트러스화이버",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "콜라겐",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "젖산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "초산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이산화규소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "폴리인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "메타인산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "피로인산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "블랜드믹스-D",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두단백",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "자일로오스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루탐산나트륨제제",
+        "sub_ingredients": [
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "5'-리보뉴클레오티드이나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "직화구이맛인헨서-디",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "발색제",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:53:02"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 317.0,
+    "carbohydrate_g": 6.67,
+    "protein_g": 13.33,
+    "fat_g": 26.67,
+    "sugar_g": 4.33,
+    "sodium_mg": 800.0,
+    "cholesterol_mg": 66.67,
+    "saturated_fat_g": 9.33,
+    "trans_fat_g": 0.33,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "500g",
+    "collected_at": "2026-03-04 03:53:02"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "product": {
+    "name_ko": "불갈비향닭가슴살소시지",
+    "reportnum": "2008044800890"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044800890/2008044800890-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044800890/2008044800890-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044800890/2008044800890-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭가슴살(국산)82.6%,숯불갈비맛소스{혼합간장[탈지대두18.5%(수입산),정제수,천일염(호주산),물엿,소맥(밀,미국산),액상과당],물엿,케찹{토마토페이스트24%(토마토,수입산),액상과장,물엿,발효식초[주청(국내산51%,수입산49%},발효영양원],정제염(국산)},다시다[정제염,쇠고기양념분말23.3%[중국산:전분(밀),정제염,양파분,마늘분,사골엑기스분(사골:호주산)]},L-글루타민산나트륨(향미증진제)7.86%,정제수2.55%,설탕,대두단백(대두),불갈비씨즈닝,콩단백(대두),소금(국산),인산염(산도조절제,백후추분말,어니언스파이스,가릭스파이스,L-글루타민산나트륨(향미증진제),진서스파이스,비타민-C",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044800890/2008044800890-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=120g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008044800890/2008044800890-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭가슴살",
+        "origin": "국산",
+        "amount": "82.6%",
+        "sub_ingredients": [
+          {
+            "name": "숯불갈비맛소스",
+            "sub_ingredients": [
+              {
+                "name": "혼합간장",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "수입산",
+                    "amount": "18.5%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "정제수",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "천일염",
+                    "origin": "호주산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소맥",
+                    "origin": "미국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "액상과당",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "케찹",
+                "sub_ingredients": [
+                  {
+                    "name": "토마토페이스트",
+                    "origin": "수입산",
+                    "amount": "24%",
+                    "sub_ingredients": [
+                      {
+                        "name": "토마토",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "액상과당",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "물엿",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "발효식초",
+                    "sub_ingredients": [
+                      {
+                        "name": "주청",
+                        "origin": "국내산 51%, 수입산 49%",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "발효영양원",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "정제염",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "다시다",
+                "sub_ingredients": [
+                  {
+                    "name": "정제염",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "쇠고기양념분말",
+                    "origin": "중국산",
+                    "amount": "23.3%",
+                    "sub_ingredients": [
+                      {
+                        "name": "전분",
+                        "sub_ingredients": [
+                          {
+                            "name": "밀",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "정제염",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "양파분",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "마늘분",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "사골엑기스분",
+                        "origin": "호주산",
+                        "sub_ingredients": [
+                          {
+                            "name": "사골",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "L-글루타민산나트륨",
+                "amount": "7.86%",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제수",
+                "amount": "2.55%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대두단백",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "불갈비씨즈닝",
+                "sub_ingredients": []
+              },
+              {
+                "name": "콩단백",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "인산염",
+                "sub_ingredients": [
+                  {
+                    "name": "산도조절제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "백후추분말",
+                "sub_ingredients": []
+              },
+              {
+                "name": "어니언스파이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "가릭스파이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "진서스파이스",
+                "sub_ingredients": []
+              },
+              {
+                "name": "비타민-C",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:12:41"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 145.0,
+    "carbohydrate_g": 6.0,
+    "protein_g": 20.0,
+    "fat_g": 5.0,
+    "sugar_g": 4.0,
+    "sodium_mg": 429.0,
+    "cholesterol_mg": 68.0,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "120g",
+    "collected_at": "2026-03-04 04:12:41"
+  }
+}

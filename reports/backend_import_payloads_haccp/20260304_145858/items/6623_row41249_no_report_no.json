@@ -1,0 +1,162 @@
+{
+  "product": {
+    "name_ko": "양평해장국",
+    "reportnum": "201402620787"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620787/201402620787-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620787/201402620787-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620787/201402620787-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소고기(외국산:호주,뉴질랜드,미국)9%,소깐양(외국산:호주,뉴질랜드,미국)4.5%,소홍창(외국산:호주,뉴질랜드,미국)4.5%,우거지,토란,L-글루타민산나트륨(향미증진제),정제소금,후추,복합조미식품[쇠고기하이미(신우FM:영업신고번호-김포제472호)],된장,간장,고춧가루,마늘,비프엑기스(신우FM:영업신고번호-김포제 472호),식용우지,5'-리보뉴클레오티드이나트륨,까나리액젓,정제수",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620787/201402620787-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량 600g 100g당 53.64kcal 100g당 나트륨 233.81mg,탄수화물 0.80g,당류0.00g,콜레스테롤 21.23mg지방 3.36g,트랜스지방 0.12g,포화지방 1.85g,단백질 5.05g",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2014/201402620787/201402620787-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소고기",
+        "origin": "외국산, 호주산, 뉴질랜드산, 미국산",
+        "amount": "9%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소깐양",
+        "origin": "외국산, 호주산, 뉴질랜드산, 미국산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "소홍창",
+        "origin": "외국산, 호주산, 뉴질랜드산, 미국산",
+        "amount": "4.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우거지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "토란",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "L-글루타민산나트륨",
+        "sub_ingredients": [
+          {
+            "name": "향미증진제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "후추",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "복합조미식품",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기하이미",
+            "sub_ingredients": [
+              {
+                "name": "신우FM",
+                "sub_ingredients": []
+              },
+              {
+                "name": "영업신고번호-김포제472호",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "된장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고춧가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프엑기스",
+        "sub_ingredients": [
+          {
+            "name": "신우FM",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영업신고번호-김포제 472호",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "식용우지",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "5'-리보뉴클레오티드이나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "까나리액젓",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:40:47"
+  },
+  "nutrition": {
+    "kcal": 53.64,
+    "sodium_mg": 233.81,
+    "carbohydrate_g": 0.8,
+    "sugar_g": 0.0,
+    "cholesterol_mg": 21.23,
+    "fat_g": 3.36,
+    "trans_fat_g": 0.12,
+    "saturated_fat_g": 1.85,
+    "protein_g": 5.05,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "100g당",
+    "collected_at": "2026-03-04 04:40:47"
+  }
+}

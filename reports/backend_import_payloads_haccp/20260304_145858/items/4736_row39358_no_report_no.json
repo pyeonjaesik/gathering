@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name_ko": "오곡칩",
+    "reportnum": "2002046712757"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712757/2002046712757-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712757/2002046712757-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712757/2002046712757-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "멀티그에인웨이브펠렛(이탈리아/옥수수마사분말,통밀분말,쌀분말,옥수수분말,오트분말,설탕,통보리분말), 해바라기유(외국산/우크라이나.스페인,말레이시아등),BBQ RIP 씨즈닝(호주/설탕,포도당,식염,농축옥수수단백질,이스트농축,야채분말:마늘,양파,코코아파우더,해바라기오일,오렌지분말,매운맛:파프리카,후추)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712757/2002046712757-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 60g 총 내용량당 279.63kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨430.51mg 21.53% 탄수화물42.51g 12.88%, 당류5.69g 5.69%, 총지방10.33g 20.25%, 트랜스지방0.53g 0%,포화지방0.80g 5.32%, 콜레스테롤0mg 0%, 단백질4.15g 7.55%\n1일 영양성분기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요열량에 따랄 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/2002046712757/2002046712757-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "멀티그에인웨이브펠렛",
+        "origin": "이탈리아산",
+        "sub_ingredients": [
+          {
+            "name": "옥수수마사분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "통밀분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "옥수수분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오트분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "통보리분말",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "해바라기유",
+        "origin": "외국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "BBQ RIP 씨즈닝",
+        "origin": "호주산",
+        "sub_ingredients": [
+          {
+            "name": "설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포도당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "식염",
+            "sub_ingredients": []
+          },
+          {
+            "name": "농축옥수수단백질",
+            "sub_ingredients": []
+          },
+          {
+            "name": "이스트농축",
+            "sub_ingredients": []
+          },
+          {
+            "name": "야채분말",
+            "sub_ingredients": [
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코코아파우더",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기오일",
+            "sub_ingredients": []
+          },
+          {
+            "name": "오렌지분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "매운맛",
+            "sub_ingredients": [
+              {
+                "name": "파프리카",
+                "sub_ingredients": []
+              },
+              {
+                "name": "후추",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:43:12"
+  },
+  "nutrition": {
+    "kcal": 279.63,
+    "sodium_mg": 430.51,
+    "carbohydrate_g": 42.51,
+    "sugar_g": 5.69,
+    "trans_fat_g": 0.53,
+    "saturated_fat_g": 0.8,
+    "cholesterol_mg": 0.0,
+    "protein_g": 4.15,
+    "basis_amount": 60.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 60g",
+    "collected_at": "2026-03-04 03:43:12"
+  }
+}

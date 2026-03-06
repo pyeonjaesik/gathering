@@ -1,0 +1,105 @@
+{
+  "product": {
+    "name_ko": "남양 맛있는 우유 딸기",
+    "reportnum": "200204480024"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480024/200204480024-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480024/200204480024-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480024/200204480024-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "원유(국산)38%,탈지유(국산)38%,정제수,액상과당,정백당,함수결정포도당,딸기농축과즙(고형분65%,이스라엘산)0.12%[딸기과즙으로1.1%],합성착향료(딸기향)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480024/200204480024-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량1개(180ml) 총 1회 제공량(180ml) 1회 제공량 당 함량 *%영양성분 기준치 열량 115kcal, 탄수화물 18g 5%, 당류 18g,단백질 4.5g 8%,지방 3g 6%, 포화지방 2g 13%,트랜스지방 0g,콜레스테롤 15mg 5%,나트륨 75mg 4% *%영양성분 기준치:1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2002/200204480024/200204480024-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "원유",
+        "origin": "국산",
+        "amount": "38%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탈지유",
+        "origin": "국산",
+        "amount": "38%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정백당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "함수결정포도당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "딸기농축과즙",
+        "origin": "이스라엘산",
+        "amount": "0.12%",
+        "sub_ingredients": [
+          {
+            "name": "딸기과즙",
+            "amount": "1.1%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "딸기향",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:39:25"
+  },
+  "nutrition": {
+    "kcal": 115.0,
+    "carbohydrate_g": 18.0,
+    "sugar_g": 18.0,
+    "protein_g": 4.5,
+    "fat_g": 3.0,
+    "saturated_fat_g": 2.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 75.0,
+    "basis_amount": 180.0,
+    "basis_unit": "ml",
+    "basis_text": "1회제공량1개(180ml)",
+    "collected_at": "2026-03-04 03:39:25"
+  }
+}

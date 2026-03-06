@@ -1,0 +1,119 @@
+{
+  "product": {
+    "name_ko": "시그니처 순살치킨",
+    "reportnum": "2015040500139"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500139/2015040500139-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500139/2015040500139-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500139/2015040500139-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "닭고기70.25%(브라질산),가라아게배터(3M)[가라아게베이스A{옥수수전분(옥수수:외국산),L-글루탐산나트륨(향미증진제)},옥수수전분(옥수수:외국산),밀가루,정제소금],정제수,대두유(대두/외국산:미국,중국,아르헨티나 등),가라아게염지제(KJ)옥수수전분",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500139/2015040500139-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=100g | foodSize=1000g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2015/2015040500139/2015040500139-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "닭고기",
+        "origin": "브라질산",
+        "amount": "70.25%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가라아게배터(3M)",
+        "sub_ingredients": [
+          {
+            "name": "가라아게베이스A",
+            "sub_ingredients": [
+              {
+                "name": "옥수수전분",
+                "origin": "외국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "L-글루탐산나트륨",
+                "sub_ingredients": [
+                  {
+                    "name": "향미증진제",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "옥수수전분",
+            "origin": "외국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "밀가루",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "origin": "외국산, 미국산, 중국산, 아르헨티나산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "가라아게염지제(KJ)",
+        "sub_ingredients": [
+          {
+            "name": "옥수수전분",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:44:47"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 198.0,
+    "carbohydrate_g": 17.0,
+    "protein_g": 10.0,
+    "fat_g": 10.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 420.0,
+    "cholesterol_mg": 70.0,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "100g",
+    "total_content": "1000g",
+    "collected_at": "2026-03-04 04:44:47"
+  }
+}

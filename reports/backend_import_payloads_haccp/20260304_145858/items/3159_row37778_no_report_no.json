@@ -1,0 +1,142 @@
+{
+  "product": {
+    "name_ko": "오월의 장미 레몬에이드",
+    "reportnum": "19920562023386"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920562023386/19920562023386-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920562023386/19920562023386-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920562023386/19920562023386-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "정제수, 액상과당, 백설탕, 말토덱스트린, 장미꽃추출액0.5%(중국산, 고형분0.05%), 구연산, 이산화탄소, 합성향료(로즈향, 라임향), 구연산삼나트륨, 수크랄로스(감미료), 레몬농축액(이스라엘산, 레몬과즙으로0.18%), 합성착색료(식용색소, 적새4호, 황색4호)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920562023386/19920562023386-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 345mL 130kcal\n<총 내용량당 1일 영양성분 기준치에 대한 비율>\n나트륨25mg 1%, 탄수화물32g 10%, 당류31g 31%, 지방0g 0%, 트랜스지방0g, 포화지방0g 0%, 콜레스테롤0mg 0%, 단백질0g 0%\n1일 영양성분 기준치에 대한 비율(%)은 2,000kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/19920562023386/19920562023386-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "말토덱스트린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "장미꽃추출액",
+        "origin": "중국산",
+        "amount": "0.5%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "0.05%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "이산화탄소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성향료",
+        "sub_ingredients": [
+          {
+            "name": "로즈향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "라임향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산삼나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "수크랄로스",
+        "amount": "감미료",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "레몬농축액",
+        "origin": "이스라엘산",
+        "amount": "0.18%",
+        "sub_ingredients": [
+          {
+            "name": "레몬과즙",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "합성착색료",
+        "sub_ingredients": [
+          {
+            "name": "식용색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "적새4호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "황색4호",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:18:54"
+  },
+  "nutrition": {
+    "kcal": 130.0,
+    "sodium_mg": 25.0,
+    "carbohydrate_g": 32.0,
+    "sugar_g": 31.0,
+    "fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 0.0,
+    "basis_amount": 345.0,
+    "basis_unit": "ml",
+    "basis_text": "총 내용량 345mL",
+    "collected_at": "2026-03-03 19:18:54"
+  }
+}

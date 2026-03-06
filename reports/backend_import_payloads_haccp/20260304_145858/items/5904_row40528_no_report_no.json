@@ -1,0 +1,180 @@
+{
+  "product": {
+    "name_ko": "자연주의 무농약옥수수로 만든 스위트콘",
+    "reportnum": "2009019989760"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989760/2009019989760-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989760/2009019989760-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989760/2009019989760-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "스위트콘기지{찐쌀(유기농,국산),옥수수(무농약,국산)30%},코팅액5[쌀엿조청{쌀(국산),맥아,효소},유기농설탕(수입산)19.5%,기타설탕,연유{원유(우유,국산),백설탕,유당(우유),말토덱스트린},버터(우유,뉴질랜드산),레시틴(대두,유화제),태움.용융소금(국산)],검정깨(국산)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989760/2009019989760-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 1/2봉지 30g 총 2회 제공량60g\n<1회 제공량당 함량 * %영양소 기준치>\n열량 121kcal, 탄수화물26g 8%, 식이섬유 1g 5%, 당류4g, 단백질0.3g 0.5%, 지방1.8g 4%, 포화지방0.7g 5%, 트랜스지방-g, 콜레스테롤0.4mg 0.1%, 나트륨9mg 0.4%\n<총 포장단위당함량 * %영양소 기준치>\n열량 241kcal, 탄수화물53g 16%, 식이섬유 2g 10%, 당류8g, 단백질0.5g 1%, 지방3.6g 7%, 포화지방1.4g 10%, 트랜스지방-g, 콜레스테롤0.8mg 0.3%,나트륨17mg 1%\n<1회 제공량당 함량 영양소기준치>\n열량-, 탄수화물328g, 식이섬유25g, 당류-, 단백질60g, 지방50g, 포화지방15g, 트렌스지방-, 콜레스테롤300mg, 나트륨2,000mg  기준치란? 4세 이상 어린이부터 성인까지 1일 평균 영양소 섭취 기준량을 식약청 기준치에 의해 정해 놀은 것입니다.\n* %영양소 기준치: 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2009/2009019989760/2009019989760-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "스위트콘기지",
+        "sub_ingredients": [
+          {
+            "name": "찐쌀",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "유기농",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "옥수수",
+            "origin": "국산",
+            "amount": "30%",
+            "sub_ingredients": [
+              {
+                "name": "무농약",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "코팅액5",
+            "sub_ingredients": [
+              {
+                "name": "쌀엿조청",
+                "sub_ingredients": [
+                  {
+                    "name": "쌀",
+                    "origin": "국산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "맥아",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "효소",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "유기농설탕",
+                "origin": "수입산",
+                "amount": "19.5%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "기타설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "연유",
+                "sub_ingredients": [
+                  {
+                    "name": "원유",
+                    "origin": "국산",
+                    "sub_ingredients": [
+                      {
+                        "name": "우유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "백설탕",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유당",
+                    "sub_ingredients": [
+                      {
+                        "name": "우유",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "말토덱스트린",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "버터",
+                "origin": "뉴질랜드산",
+                "sub_ingredients": [
+                  {
+                    "name": "우유",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "레시틴",
+                "sub_ingredients": [
+                  {
+                    "name": "대두",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "유화제",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "태움.용융소금",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "검정깨",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:17:03"
+  },
+  "nutrition": {
+    "kcal": 121.0,
+    "carbohydrate_g": 26.0,
+    "dietary_fiber_g": 1.0,
+    "sugar_g": 4.0,
+    "protein_g": 0.3,
+    "fat_g": 1.8,
+    "saturated_fat_g": 0.7,
+    "cholesterol_mg": 0.4,
+    "sodium_mg": 9.0,
+    "basis_amount": 30.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1/2봉지 30g",
+    "collected_at": "2026-03-04 04:17:03"
+  }
+}

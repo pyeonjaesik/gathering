@@ -1,0 +1,181 @@
+{
+  "product": {
+    "name_ko": "자유시간 더 소프트",
+    "reportnum": "19940449005229"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005229/19940449005229-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005229/19940449005229-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005229/19940449005229-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿,백설탕,밀크초콜릿(싱가포르산,백설탕,코코아버터,전지분유,코코아매스,유화제),유당(미국산),밀키페이스트{환원유(전지분유,네덜란드산,뉴질랜드산),백설탕,원유(국산)},야자경화유,분말유크림,당시럽류,액상과당,혼합분유,난백분,전분가공품,정제소금,기타설탕,유화제,합성착향료(연유향,버터향),구연산 •코코아원료 8%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005229/19940449005229-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "영양성분  1회 제공량 1개(20 g) 총 2회 제공량(40 g), 1회 제공량당 함량 : 열량 85 kcal, 탄수화물 15g(5%) •당류 14g, 단백질 1g(2%), 지방 2.5g(5%) •포화지방 1.2g(8%) •트랜스지방 0g, 콜레스테롤 0mg(0%), 나트륨 40mg(2%), *()안의 수치는 1일 영양성분 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1994/19940449005229/19940449005229-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀크초콜릿",
+        "origin": "싱가포르산",
+        "sub_ingredients": [
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아버터",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전지분유",
+            "sub_ingredients": []
+          },
+          {
+            "name": "코코아매스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유당",
+        "origin": "미국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "밀키페이스트",
+        "sub_ingredients": [
+          {
+            "name": "환원유",
+            "origin": "네덜란드산, 뉴질랜드산",
+            "sub_ingredients": [
+              {
+                "name": "전지분유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "원유",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "야자경화유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "분말유크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당시럽류",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "액상과당",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합분유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "난백분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "전분가공품",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "연유향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "코코아원료",
+        "amount": "8%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:00:37"
+  },
+  "nutrition": {
+    "kcal": 85.0,
+    "carbohydrate_g": 15.0,
+    "sugar_g": 14.0,
+    "protein_g": 1.0,
+    "fat_g": 2.5,
+    "saturated_fat_g": 1.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 20.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 1개(20 g)",
+    "collected_at": "2026-03-03 20:00:37"
+  }
+}

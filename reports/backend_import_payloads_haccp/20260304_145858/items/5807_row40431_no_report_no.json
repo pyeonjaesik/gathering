@@ -1,0 +1,127 @@
+{
+  "product": {
+    "name_ko": "아인슈타인 베이비",
+    "reportnum": "2008050200223"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200223/2008050200223-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200223/2008050200223-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200223/2008050200223-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1A등급원유(국산)100%(세균수기준,강화성분제외),칼슘혼합제0.11%(탄산칼슘,대두식이섬유),구연산철암모늄0.003%,비타민프리믹스ND M/03(덱스트린,비타민A 60㎍RE,비타민B1 0.06mg,비타민B12 0.2㎍,비타민D3 1㎍,나이아신 2mgNE,영양강화제),산화아연0.00017% .성분명 및 함량(100mL당):DHA 2.3mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200223/2008050200223-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "100ml당 함량:열량 65kcal, 탄수화물 5g(2%)·당류 5g, 단백질 3g(5%), 지방 3.5g(7%) 포화지방 2.2g(15%)·트랜스지방 0g, 콜레스테롤 15mg(5%), 나트륨 50mg(3%), 비타민A 60㎍RE(9%), 비타민B1 0.06mg(6%), 비타민D3 1㎍(20%), 나이아신 2mgNE(15%), 칼슘 120mg(17%), 철분 0.6mg(4%), 아연 0.4mg(3%), DHA 2.3mg *()안의 수치는 1일 영양소기준치에 대한 비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2008/2008050200223/2008050200223-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "1A등급원유",
+        "origin": "국산",
+        "amount": "100%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "칼슘혼합제",
+        "amount": "0.11%",
+        "sub_ingredients": [
+          {
+            "name": "탄산칼슘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대두식이섬유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구연산철암모늄",
+        "amount": "0.003%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비타민프리믹스ND M/03",
+        "sub_ingredients": [
+          {
+            "name": "덱스트린",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민A",
+            "amount": "60㎍RE",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B1",
+            "amount": "0.06mg",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민B12",
+            "amount": "0.2㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "비타민D3",
+            "amount": "1㎍",
+            "sub_ingredients": []
+          },
+          {
+            "name": "나이아신",
+            "amount": "2mgNE",
+            "sub_ingredients": []
+          },
+          {
+            "name": "영양강화제",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "산화아연",
+        "amount": "0.00017%",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:14:22"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 5.0,
+    "sugar_g": 5.0,
+    "protein_g": 3.0,
+    "fat_g": 3.5,
+    "saturated_fat_g": 2.2,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 15.0,
+    "sodium_mg": 50.0,
+    "niacin_mg": 2.0,
+    "calcium_mg": 120.0,
+    "iron_mg": 0.6,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "basis_text": "100ml당 함량",
+    "collected_at": "2026-03-04 04:14:22"
+  }
+}

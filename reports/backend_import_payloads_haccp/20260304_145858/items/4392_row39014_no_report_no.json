@@ -1,0 +1,108 @@
+{
+  "product": {
+    "name_ko": "생채움 파래김",
+    "reportnum": "2000047305097"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047305097/2000047305097-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047305097/2000047305097-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047305097/2000047305097-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "파래김50%(국산),카놀라유(호주산),들기름(들깨:중국산),맛소금[정제소금(국산),L-글루탐산나트륨(향미증진제),5'-이노신산나트륨,5'-구아닐산나트륨],참기름",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047305097/2000047305097-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량당 함량 영양소 기준치 : 열량 10kcal,탄수화물0.7g 0%, 당류0g, 단백질 0.2g 0%, 지방0.9g 2%, 포화지방0.1g 1%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 40mg 2%, %영양소 기준치 : 1일 영양소 기준치에 대한 비율 1회 제공량 :2g/유통기한 6개월",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2000/2000047305097/2000047305097-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "파래김",
+        "origin": "국산",
+        "amount": "50%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "카놀라유",
+        "origin": "호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "들기름",
+        "origin": "중국산",
+        "sub_ingredients": [
+          {
+            "name": "들깨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "맛소금",
+        "sub_ingredients": [
+          {
+            "name": "정제소금",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루탐산나트륨",
+            "sub_ingredients": [
+              {
+                "name": "향미증진제",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "5'-이노신산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "5'-구아닐산나트륨",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 22:20:58"
+  },
+  "nutrition": {
+    "kcal": 10.0,
+    "carbohydrate_g": 0.7,
+    "sugar_g": 0.0,
+    "protein_g": 0.2,
+    "fat_g": 0.9,
+    "saturated_fat_g": 0.1,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 2.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-03 22:20:58"
+  }
+}

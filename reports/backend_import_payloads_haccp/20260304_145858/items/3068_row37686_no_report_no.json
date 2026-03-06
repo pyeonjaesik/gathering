@@ -1,0 +1,324 @@
+{
+  "product": {
+    "name_ko": "양지육수가 들어있는 정통순두부찌개",
+    "reportnum": "1992038012862"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012862/1992038012862-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012862/1992038012862-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012862/1992038012862-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "순두부-대두[외국산(미국,캐나다,중국 등)],두부응고제/양지육수-정제수,양지밑국물 2%(고형분55%)[프로베이스포크스톡(스웨덴산),무즙농축액{무우즙농축액(무/국내산)},양지엑기스-OT 5%,(고형분55%,쇠고기/호주산)],포크엑기스P{피비엑기스(돼지등뼈/국내산),돈골추출물(돈골엑기스/스웨덴산)},사골엑기스12-16{우사골(호주산),정제소금(국내산)},정제소금(국내산)/순두부찌개양념장-정제수,볶음양념분{현미유(태국산,방글라데시산),고추가루(중국산),마늘,소맥전분,정제소금},양파(국내산),바지락조미엑기스4.5%(고형분30%){바지락분해 농축액90%(고형분21%:바지락/국내산),정제소금(국내산)},마늘,멸치추출농축액,다시마엑기스1호,조미베이스p,바지락밑국물p 2%(고형분54%),고추장,포크엑기스p,정제소금,발효농축액,정백당/칠리오일-채종유(카놀라유/호주산),양파(국내산),마늘(국내산),볶음양념분,파프리카추출색소,올레오레진캪시컴,d-토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012862/1992038012862-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총 내용량 602g 285kcal\n나트륨1580mg 79%, 탄수화물14g 4%, 식이섬유2g 8%, 당류5g 5%, 지방17g 31%, 트랜스지방0g, 포화지방3g 20%, 콜레스테롤0mg 0%, 단백질20g 36%, 비타민A 129㎍RE 18%, 비타민C 0mg 0%, 칼슘99mg 14%, 철1.8mg 15%\n1일 영양성분 기준치에 대한 비율(%)은 2,000 kcal 기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1992/1992038012862/1992038012862-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "순두부",
+        "origin": "외국산, 미국산, 캐나다산, 중국산",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "origin": "외국산, 미국산, 캐나다산, 중국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "두부응고제/양지육수",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양지밑국물",
+            "amount": "2%",
+            "sub_ingredients": [
+              {
+                "name": "프로베이스포크스톡",
+                "origin": "스웨덴산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "무즙농축액",
+                "sub_ingredients": [
+                  {
+                    "name": "무우즙농축액",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "양지엑기스-OT",
+                "amount": "5%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분",
+                    "amount": "55%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "쇠고기",
+                    "origin": "호주산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "포크엑기스P",
+            "sub_ingredients": [
+              {
+                "name": "피비엑기스",
+                "origin": "국내산",
+                "sub_ingredients": [
+                  {
+                    "name": "돼지등뼈",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "돈골추출물",
+                "origin": "스웨덴산",
+                "sub_ingredients": [
+                  {
+                    "name": "돈골엑기스",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "사골엑기스12-16",
+            "sub_ingredients": [
+              {
+                "name": "우사골",
+                "origin": "호주산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "정제소금",
+            "origin": "국내산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "순두부찌개양념장",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양념분",
+            "sub_ingredients": [
+              {
+                "name": "현미유",
+                "origin": "태국산, 방글라데시산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "고추가루",
+                "origin": "중국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "sub_ingredients": []
+              },
+              {
+                "name": "소맥전분",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제소금",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바지락조미엑기스",
+            "amount": "4.5%",
+            "sub_ingredients": [
+              {
+                "name": "바지락분해 농축액",
+                "amount": "90%",
+                "sub_ingredients": [
+                  {
+                    "name": "고형분",
+                    "amount": "21%",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "바지락",
+                    "origin": "국내산",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "정제소금",
+                "origin": "국내산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "마늘",
+            "sub_ingredients": []
+          },
+          {
+            "name": "멸치추출농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마엑기스1호",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미베이스p",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바지락밑국물p",
+            "amount": "2%",
+            "sub_ingredients": [
+              {
+                "name": "고형분",
+                "amount": "54%",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "고추장",
+            "sub_ingredients": []
+          },
+          {
+            "name": "포크엑기스p",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제소금",
+            "sub_ingredients": []
+          },
+          {
+            "name": "발효농축액",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "칠리오일",
+        "sub_ingredients": [
+          {
+            "name": "채종유",
+            "origin": "호주산",
+            "sub_ingredients": [
+              {
+                "name": "카놀라유",
+                "origin": "호주산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "양파",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "마늘",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "볶음양념분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "파프리카추출색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "올레오레진캪시컴",
+            "sub_ingredients": []
+          },
+          {
+            "name": "d-토코페롤",
+            "sub_ingredients": [
+              {
+                "name": "혼합형",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:05:31"
+  },
+  "nutrition": {
+    "kcal": 285.0,
+    "sodium_mg": 1580.0,
+    "carbohydrate_g": 14.0,
+    "dietary_fiber_g": 2.0,
+    "sugar_g": 5.0,
+    "fat_g": 17.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 3.0,
+    "cholesterol_mg": 0.0,
+    "protein_g": 20.0,
+    "calcium_mg": 99.0,
+    "iron_mg": 1.8,
+    "basis_amount": 602.0,
+    "basis_unit": "g",
+    "basis_text": "총 내용량 602g",
+    "collected_at": "2026-03-03 19:05:31"
+  }
+}

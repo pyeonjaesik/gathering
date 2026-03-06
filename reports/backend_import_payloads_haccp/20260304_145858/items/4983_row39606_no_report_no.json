@@ -1,0 +1,209 @@
+{
+  "product": {
+    "name_ko": "팥푸딩",
+    "reportnum": "20030614307821"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307821/20030614307821-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307821/20030614307821-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307821/20030614307821-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "통팥-정제수,팥앙금29%{팥24.7%(중국산),백설탕,물엿,정제염},통팥앙금20%{팥54%(중국산),설탕,물엿(옥수수:수입산),정제염},한천,천일염 밤-정제수,팥앙금29%{팥24.7%(중국산),백설탕,물엿,정제염},통팥앙금15%{팥54%(중국산),설탕,물엿(옥수수:수입산),정제염},밤다이스{밤(중국산)56.25%,설탕,정제수,치자황색소,차아황산나트륨},한천,천일염",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307821/20030614307821-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "팥푸딩(콩팥)영양성분1회제공량(75g) 총3회제공량(225g), 1회제공량당함량:열량120kcal, 탄수화물28g(8%), 당류16g, 단백질2g(4%), 지방0,g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg, 나트륨40mg(2%) *()안의수치는1일영양소기준치에대한비율임 팥푸딩(밤)영양성분1회제공량(75g) 총3회제공량(225g), 1회제공량당함량:열량125kcal, 탄수화물29g(9%), 당류17g, 단백질2g(4%), 지방0,g(0%), 포화지방0g(0%), 트랜스지방0g, 콜레스테롤0mg, 나트륨40mg(2%) *()안의수치는1일영양소기준치에대한비율임",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2003/20030614307821/20030614307821-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "통팥-정제수",
+        "sub_ingredients": [
+          {
+            "name": "팥앙금",
+            "amount": "29%",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "origin": "중국산",
+                "amount": "24.7%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "통팥앙금",
+            "amount": "20%",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "origin": "중국산",
+                "amount": "54%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "origin": "수입산",
+                "amount": "옥수수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "밤-정제수",
+        "sub_ingredients": [
+          {
+            "name": "팥앙금",
+            "amount": "29%",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "origin": "중국산",
+                "amount": "24.7%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "통팥앙금",
+            "amount": "15%",
+            "sub_ingredients": [
+              {
+                "name": "팥",
+                "origin": "중국산",
+                "amount": "54%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "물엿",
+                "origin": "수입산",
+                "amount": "옥수수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제염",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "밤다이스",
+            "sub_ingredients": [
+              {
+                "name": "밤",
+                "origin": "중국산",
+                "amount": "56.25%",
+                "sub_ingredients": []
+              },
+              {
+                "name": "설탕",
+                "sub_ingredients": []
+              },
+              {
+                "name": "정제수",
+                "sub_ingredients": []
+              },
+              {
+                "name": "치자황색소",
+                "sub_ingredients": []
+              },
+              {
+                "name": "차아황산나트륨",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "한천",
+            "sub_ingredients": []
+          },
+          {
+            "name": "천일염",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:50:04"
+  },
+  "nutrition": {
+    "kcal": 120.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 16.0,
+    "protein_g": 2.0,
+    "fat_g": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 40.0,
+    "basis_amount": 75.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(75g)",
+    "collected_at": "2026-03-04 03:50:04"
+  }
+}

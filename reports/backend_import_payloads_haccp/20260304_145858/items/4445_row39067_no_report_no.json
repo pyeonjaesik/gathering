@@ -1,0 +1,139 @@
+{
+  "product": {
+    "name_ko": "좋은상품 땅콩카라멜",
+    "reportnum": "20010415034508"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034508/20010415034508-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034508/20010415034508-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034508/20010415034508-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "물엿,땅콩버터(땅콩98%,유화제2%,중국산)15.86%,흑설탕,마가린(대두),가공버터(우유),생크림,D-소르비톨액,유화제,합성착향료(땅콩향,누룽지향,바닐린),한천,제재소금,당류가공품",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034508/20010415034508-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량 3개(12g) 총약33회 제공량(400g) 1회 제공량당 함량 *%영양소 기준치 : 열량 55kcal,탄수화물9g 3%, 당류6g, 단백질 1g미만 1%, 지방1.8g 4%, 포화지방1g 7%, 트랜스지방 0g, 콜레스테롤0mg 0%, 나트륨 15mg 1%, *%영양소 기준치 : 1일 영양소 기준치에 대한 비율",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2001/20010415034508/20010415034508-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "땅콩버터",
+        "origin": "중국산",
+        "amount": "15.86%",
+        "sub_ingredients": [
+          {
+            "name": "땅콩",
+            "amount": "98%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "amount": "2%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "가공버터",
+        "sub_ingredients": [
+          {
+            "name": "우유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "생크림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "D-소르비톨액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "땅콩향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "누룽지향",
+            "sub_ingredients": []
+          },
+          {
+            "name": "바닐린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "한천",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "제재소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "당류가공품",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:29:30"
+  },
+  "nutrition": {
+    "kcal": 55.0,
+    "carbohydrate_g": 9.0,
+    "sugar_g": 6.0,
+    "fat_g": 1.8,
+    "saturated_fat_g": 1.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 15.0,
+    "basis_amount": 12.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량 3개(12g)",
+    "collected_at": "2026-03-04 03:29:30"
+  }
+}

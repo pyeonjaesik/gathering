@@ -1,0 +1,183 @@
+{
+  "product": {
+    "name_ko": "치킨데리야끼볶음밥∥",
+    "reportnum": "19930199349348"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349348/19930199349348-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349348/19930199349348-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349348/19930199349348-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "쌀51.90%(국산),양파(중국산),데리야끼소스A8.49%[흑설탕,물엿,양조간장(양조간장원액((탈지대두:인도산),소맥(밀:미국산))),미향(레몬식초(레몬농축과즙:이스라엘산)),D-소비톨액],닭고기8.42%(국산),양송이버섯통조림,할라피뇨통조림,채종유,청피망,홍피망,대두유,마늘,정제소금,버터,백설탕,양조간장,쇠고기맛씨즈닝,참기름,흑후추",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349348/19930199349348-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=- | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1993/19930199349348/19930199349348-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "쌀",
+        "origin": "국산",
+        "amount": "51.90%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "origin": "중국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "데리야끼소스",
+        "amount": "8.49%",
+        "sub_ingredients": [
+          {
+            "name": "흑설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조간장",
+            "sub_ingredients": [
+              {
+                "name": "양조간장원액",
+                "sub_ingredients": [
+                  {
+                    "name": "탈지대두",
+                    "origin": "인도산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "소맥",
+                    "origin": "미국산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "미향",
+            "sub_ingredients": [
+              {
+                "name": "레몬식초",
+                "sub_ingredients": [
+                  {
+                    "name": "레몬농축과즙",
+                    "origin": "이스라엘산",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "D-소비톨액",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "닭고기",
+        "origin": "국산",
+        "amount": "8.42%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양송이버섯통조림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "할라피뇨통조림",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "채종유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "대두유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "버터",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양조간장",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇠고기맛씨즈닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "참기름",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 19:23:49"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 182.0,
+    "carbohydrate_g": 33.0,
+    "protein_g": 5.0,
+    "fat_g": 3.33,
+    "sugar_g": 3.33,
+    "sodium_mg": 390.0,
+    "cholesterol_mg": 10.0,
+    "saturated_fat_g": 0.6,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 19:23:49"
+  }
+}

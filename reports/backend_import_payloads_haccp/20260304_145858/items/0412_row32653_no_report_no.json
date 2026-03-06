@@ -1,0 +1,102 @@
+{
+  "product": {
+    "name_ko": "꾸플버터향 시즌드오일",
+    "reportnum": "197202880022545"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022545/197202880022545-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022545/197202880022545-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022545/197202880022545-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "식물성유지(대두유:수입산),유화제,합성착향료9버터향),안나토심황색소(안나토색소,심황색소,해바라기유),d-토코페롤(혼합형)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022545/197202880022545-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회제공량(100g)/열량 900kcal/탄수화물0g(0%)/당류 0g/단백질 0g(0%) 지방100g(200%)/포화지방 17g(113%)/트랜스지방 0g/콜레스테롤 0mg(0%)/나트륨0mg(0%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1972/197202880022545/197202880022545-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "식물성유지",
+        "origin": "수입산",
+        "sub_ingredients": [
+          {
+            "name": "대두유",
+            "origin": "수입산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "버터향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "안나토심황색소",
+        "sub_ingredients": [
+          {
+            "name": "안나토색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "심황색소",
+            "sub_ingredients": []
+          },
+          {
+            "name": "해바라기유",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "d-토코페롤",
+        "amount": "혼합형",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:38:37"
+  },
+  "nutrition": {
+    "kcal": 900.0,
+    "carbohydrate_g": 0.0,
+    "sugar_g": 0.0,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "saturated_fat_g": 17.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "basis_text": "1회제공량(100g)",
+    "collected_at": "2026-03-03 13:38:37"
+  }
+}

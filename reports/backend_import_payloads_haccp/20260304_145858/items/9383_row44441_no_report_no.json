@@ -1,0 +1,129 @@
+{
+  "product": {
+    "name_ko": "훈제순살슬라이스",
+    "reportnum": "2010047602324"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602324/2010047602324-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602324/2010047602324-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602324/2010047602324-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "오리육95.402%(국내산),훈제오리시즈닝-FD4%[정제염(국내산),어니언스파이스(양파분말-중국산),L-글루타민산나트륨(향미증진제),혼합유장분(우유),카제인나트륨(우유)],에리소르빈산나트륨(산화방지제),아질산나트륨(발색제),명신레드색소-아이케이(락색소),비프후레바(대두),핫팜믹스",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602324/2010047602324-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=30g | foodSize=200g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2010/2010047602324/2010047602324-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "오리육",
+        "origin": "국내산",
+        "amount": "95.402%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "훈제오리시즈닝",
+        "amount": "4%",
+        "sub_ingredients": [
+          {
+            "name": "정제염",
+            "origin": "국내산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "어니언스파이스",
+            "origin": "중국산",
+            "amount": "양파분말",
+            "sub_ingredients": []
+          },
+          {
+            "name": "L-글루타민산나트륨",
+            "sub_ingredients": []
+          },
+          {
+            "name": "혼합유장분",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "카제인나트륨",
+            "sub_ingredients": [
+              {
+                "name": "우유",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "에리소르빈산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "아질산나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "명신레드색소-아이케이",
+        "amount": "락색소",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "비프후레바",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "핫팜믹스",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:28:07"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 244.0,
+    "carbohydrate_g": 3.0,
+    "protein_g": 18.0,
+    "fat_g": 18.0,
+    "sugar_g": 0.7,
+    "sodium_mg": 348.0,
+    "cholesterol_mg": 33.0,
+    "saturated_fat_g": 5.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "30g",
+    "total_content": "200g",
+    "collected_at": "2026-03-04 04:28:07"
+  }
+}

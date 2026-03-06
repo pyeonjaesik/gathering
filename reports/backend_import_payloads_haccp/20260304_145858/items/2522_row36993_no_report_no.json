@@ -1,0 +1,125 @@
+{
+  "product": {
+    "name_ko": "중기_밸런스_한우브로콜리죽",
+    "reportnum": "19880442004544"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004544/19880442004544-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004544/19880442004544-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004544/19880442004544-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "채소상탕[정제수,무(국산),양파(국산),당근(국산),대파,양배추,쌈배추,다시마,청경채],정제수,유기쌀(국산)9.5%,한우(국산),양파퓨레,브로콜리(국산),포도씨유",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004544/19880442004544-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "열량65kcal, 탄수화물12g, 당류0g, 단백질3g, 지방0.7g, 포화지방0g, 트랜스지방0g, 콜레스테롤0mg, 나트륨5mg",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880442004544/19880442004544-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "채소상탕",
+        "sub_ingredients": [
+          {
+            "name": "정제수",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당근",
+            "origin": "국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "대파",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌈배추",
+            "sub_ingredients": []
+          },
+          {
+            "name": "다시마",
+            "sub_ingredients": []
+          },
+          {
+            "name": "청경채",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유기쌀",
+        "origin": "국산",
+        "amount": "9.5%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "한우",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "브로콜리",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "포도씨유",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:23:02"
+  },
+  "nutrition": {
+    "kcal": 65.0,
+    "carbohydrate_g": 12.0,
+    "sugar_g": 0.0,
+    "protein_g": 3.0,
+    "fat_g": 0.7,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 5.0,
+    "collected_at": "2026-03-04 03:23:02"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "product": {
+    "name_ko": "시원한 평양물냉면",
+    "reportnum": "19880445009838"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009838/19880445009838-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009838/19880445009838-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009838/19880445009838-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "소맥분(밀,미국산/호주산),동치미물냉면육수{야채추출베이스[고형분0.05%,무(국산),양파(국산),마늘(국산),대파(국산)],냉면육수베이스<<냉면베이스(육수엑기스[정제소금(국산),비프엑기스(우유/호주산)],치킨엑기스(치킨농축액:닭/국산,정제소금/국산)>,냉면스탁<육수엑기스[정제소금(국산),비프엑기스F(대두:인도산,정제소금:국산)],치킨엑기스(치킨농축액:닭/국산,정제소금/국산),토마토분말>,냉면육수엑기스(돼지고기)>>,정백당,양조식초,동치미농축액-P},혼합타피오카전분,겨자소스,혼합고구마전분,혼합메밀가루,주정,정제소금,흑미가루,도토리가루,고활성칼슘",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009838/19880445009838-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량(425g)/총6회 제공량(2550g) *%영양소 기준치:1일 영양소 기준치에 대한 비율 1회 제공량당 함량 *%영양소 기준치 : 열량 430kcal, 탄수화물93g 28%, 식이섬유 0g 0%, 당류 11g, 단백질 12g 22%, 지방 0.9g 2%, 포화지방 0g 0%, 트랜스지방 0g, 콜레스테롤 0mg 0%, 나트륨 1710mg 86%, 비타민A 0㎍RE 0%, 비타민C 0mg 0%, 칼슘 53mg 8%, 철 1.1mg 9%",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1988/19880445009838/19880445009838-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "소맥분",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "동치미물냉면육수",
+        "sub_ingredients": [
+          {
+            "name": "야채추출베이스",
+            "amount": "고형분0.05%",
+            "sub_ingredients": [
+              {
+                "name": "무",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "양파",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "마늘",
+                "origin": "국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "대파",
+                "origin": "국산",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "냉면육수베이스",
+            "sub_ingredients": [
+              {
+                "name": "냉면베이스",
+                "sub_ingredients": [
+                  {
+                    "name": "육수엑기스",
+                    "sub_ingredients": [
+                      {
+                        "name": "정제소금",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "비프엑기스",
+                        "origin": "호주산",
+                        "sub_ingredients": [
+                          {
+                            "name": "우유",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "치킨엑기스",
+                    "sub_ingredients": [
+                      {
+                        "name": "치킨농축액",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "정제소금",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "냉면스탁",
+                "sub_ingredients": [
+                  {
+                    "name": "육수엑기스",
+                    "sub_ingredients": [
+                      {
+                        "name": "정제소금",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "비프엑기스F",
+                        "origin": "인도산",
+                        "sub_ingredients": [
+                          {
+                            "name": "정제소금",
+                            "origin": "국산",
+                            "sub_ingredients": []
+                          },
+                          {
+                            "name": "대두",
+                            "sub_ingredients": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "치킨엑기스",
+                    "sub_ingredients": [
+                      {
+                        "name": "치킨농축액",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      },
+                      {
+                        "name": "정제소금",
+                        "origin": "국산",
+                        "sub_ingredients": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "토마토분말",
+                    "sub_ingredients": []
+                  }
+                ]
+              },
+              {
+                "name": "냉면육수엑기스",
+                "sub_ingredients": [
+                  {
+                    "name": "돼지고기",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "정백당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "양조식초",
+            "sub_ingredients": []
+          },
+          {
+            "name": "동치미농축액-P",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합타피오카전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "겨자소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합고구마전분",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합메밀가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "주정",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑미가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "도토리가루",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "고활성칼슘",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 17:31:31"
+  },
+  "nutrition": {
+    "kcal": 430.0,
+    "carbohydrate_g": 93.0,
+    "dietary_fiber_g": 0.0,
+    "sugar_g": 11.0,
+    "protein_g": 12.0,
+    "fat_g": 0.9,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "sodium_mg": 1710.0,
+    "calcium_mg": 53.0,
+    "iron_mg": 1.1,
+    "basis_amount": 425.0,
+    "basis_unit": "g",
+    "basis_text": "1회 제공량(425g)",
+    "collected_at": "2026-03-03 17:31:31"
+  }
+}

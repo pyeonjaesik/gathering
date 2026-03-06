@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name_ko": "맥널티아메리카노블랙",
+    "reportnum": "2011049307237"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049307237/2011049307237-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049307237/2011049307237-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049307237/2011049307237-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "정제수,에스프레소커피추출액16%(브라질산100%/고형분34.6%이상),인스턴트커피2%(브라질산100%),탄산수소나트륨,합성착향료(커피향),비타민C,녹차추출풍미액,혼합제제(규소수지,유화제,카르복시메틸셀룰로오스Na)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049307237/2011049307237-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100ml | servSize=240ml | foodSize=144ml | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2011/2011049307237/2011049307237-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "에스프레소커피추출액",
+        "origin": "브라질산",
+        "amount": "16%",
+        "sub_ingredients": [
+          {
+            "name": "고형분",
+            "amount": "34.6%",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "인스턴트커피",
+        "origin": "브라질산",
+        "amount": "2%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "탄산수소나트륨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "합성착향료",
+        "sub_ingredients": [
+          {
+            "name": "커피향",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "비타민C",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "녹차추출풍미액",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "규소수지",
+            "sub_ingredients": []
+          },
+          {
+            "name": "유화제",
+            "sub_ingredients": []
+          },
+          {
+            "name": "카르복시메틸셀룰로오스Na",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 04:32:11"
+  },
+  "nutrition": {
+    "basis_text": "100ml",
+    "kcal": 28.0,
+    "carbohydrate_g": 5.56,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "sugar_g": 0.0,
+    "sodium_mg": 217.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "ml",
+    "serving_size": "240ml",
+    "total_content": "144ml",
+    "collected_at": "2026-03-04 04:32:11"
+  }
+}

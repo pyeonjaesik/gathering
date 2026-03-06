@@ -1,0 +1,163 @@
+{
+  "product": {
+    "name_ko": "상큼한스파게티소스",
+    "reportnum": "200504150201001"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201001/200504150201001-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201001/200504150201001-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201001/200504150201001-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "토마토농축퓨레45%[토마토100%(국산/무농약)],정제수,양파퓨레(양파:국산),유기농설탕4%,마늘(국산),피망퓨레(피망:국산),혼합제제(타피오카변성전분,말토덱스트린),압착올리브유(팔레스타인산),구운소금,효모추출물,화이트식초,파슬리후레이크,오레가노홀,흑후추분말,너트맥분말,바질",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201001/200504150201001-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "총내용량(400g)당 열량270kcal, 나트륨2,410mg(121%), 탄수화물44g(14%), 당류39g(39%), 지방7g(13%), 트랜스지방0g, 포화지방1.5g(10%), 콜레스테롤0mg(0%), 단백질8g(15%) *1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/2005/200504150201001/200504150201001-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "토마토농축퓨레",
+        "origin": "국산",
+        "amount": "45%",
+        "sub_ingredients": [
+          {
+            "name": "토마토",
+            "origin": "국산",
+            "amount": "100%",
+            "sub_ingredients": []
+          },
+          {
+            "name": "무농약",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "정제수",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파퓨레",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "양파",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "유기농설탕",
+        "amount": "4%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피망퓨레",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "피망",
+            "origin": "국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "혼합제제",
+        "sub_ingredients": [
+          {
+            "name": "타피오카변성전분",
+            "sub_ingredients": []
+          },
+          {
+            "name": "말토덱스트린",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "압착올리브유",
+        "sub_ingredients": [
+          {
+            "name": "팔레스타인산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "구운소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모추출물",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "화이트식초",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "파슬리후레이크",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "오레가노홀",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "흑후추분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "너트맥분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "바질",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-04 03:53:53"
+  },
+  "nutrition": {
+    "kcal": 270.0,
+    "sodium_mg": 2410.0,
+    "carbohydrate_g": 44.0,
+    "sugar_g": 39.0,
+    "fat_g": 7.0,
+    "trans_fat_g": 0.0,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 0.0,
+    "protein_g": 8.0,
+    "basis_amount": 400.0,
+    "basis_unit": "g",
+    "basis_text": "총내용량(400g)당",
+    "collected_at": "2026-03-04 03:53:53"
+  }
+}

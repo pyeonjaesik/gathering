@@ -1,0 +1,121 @@
+{
+  "product": {
+    "name_ko": "청정원순창초고추장",
+    "reportnum": "19850499011208"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850499011208/19850499011208-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850499011208/19850499011208-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850499011208/19850499011208-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "고추장85.6%{물엿, 고과당, 소맥분(밀:미국, 호주산), 고추양념(중국산), 쌀, 고추장용콩메주(대두)}, 설탕, 발효식초4.3%, 매실농축액(매실:국산), 볶음참깨, 마늘, 구연산",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850499011208/19850499011208-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=10g | foodSize=300g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1985/19850499011208/19850499011208-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "고추장",
+        "amount": "85.6%",
+        "sub_ingredients": [
+          {
+            "name": "물엿",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고과당",
+            "sub_ingredients": []
+          },
+          {
+            "name": "소맥분",
+            "origin": "미국산, 호주산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추양념",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "쌀",
+            "sub_ingredients": []
+          },
+          {
+            "name": "고추장용콩메주",
+            "sub_ingredients": [
+              {
+                "name": "대두",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "발효식초",
+        "amount": "4.3%",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "매실농축액",
+        "origin": "국산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "볶음참깨",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마늘",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "구연산",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 15:59:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 215.0,
+    "carbohydrate_g": 48.0,
+    "protein_g": 3.0,
+    "fat_g": 1.4,
+    "sugar_g": 39.0,
+    "sodium_mg": 1690.0,
+    "cholesterol_mg": 0.0,
+    "saturated_fat_g": 0.0,
+    "trans_fat_g": 0.0,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "10g",
+    "total_content": "300g",
+    "collected_at": "2026-03-03 15:59:46"
+  }
+}

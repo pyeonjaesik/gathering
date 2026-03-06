@@ -1,0 +1,225 @@
+{
+  "product": {
+    "name_ko": "자이언트피자 불고기",
+    "reportnum": "197102750033790"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033790/197102750033790-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033790/197102750033790-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033790/197102750033790-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "밀(미국산,호주산),밀(미국산,캐나다산),하모니541(반경성가공치즈)[모짜렐라치즈/미국산,골드킹-AS,(랜넷카제인/뉴질랜드산,팜유/말레이시아산),셀룰로오즈분말],바베큐소스[토마토케첩,토마토],흑설탕,물엿,사과퓨레,우스터소스]양파,피자소스[토마토페이스트(중국산),홀토마토(이탈리아산),토마토,토마토쥬스,조미씨즈닝#H-36,대두,우유(양파,백설탕),포크불고기분쇄(돼지고기),바베큐불고기토핑(쇠고기),청피망,홍피망,양송이슬라이스,정제소금,백설탕,쇼트닝,효모",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033790/197102750033790-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "processed_food_db",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_processed_nut",
+      "raw_text": "basis=100g | servSize=150g | foodSize=210g | processed_food_info",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1971/197102750033790/197102750033790-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀",
+        "origin": "미국산, 호주산",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "하모니541",
+        "sub_ingredients": [
+          {
+            "name": "반경성가공치즈",
+            "sub_ingredients": [
+              {
+                "name": "모짜렐라치즈",
+                "origin": "미국산",
+                "sub_ingredients": []
+              },
+              {
+                "name": "골드킹-AS",
+                "sub_ingredients": [
+                  {
+                    "name": "랜넷카제인",
+                    "origin": "뉴질랜드산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "팜유",
+                    "origin": "말레이시아산",
+                    "sub_ingredients": []
+                  },
+                  {
+                    "name": "셀룰로오즈분말",
+                    "sub_ingredients": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바베큐소스",
+        "sub_ingredients": [
+          {
+            "name": "토마토케첩",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "흑설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "물엿",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "사과퓨레",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "우스터소스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양파",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "피자소스",
+        "sub_ingredients": [
+          {
+            "name": "토마토페이스트",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "홀토마토",
+            "origin": "이탈리아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토",
+            "sub_ingredients": []
+          },
+          {
+            "name": "토마토쥬스",
+            "sub_ingredients": []
+          },
+          {
+            "name": "조미씨즈닝",
+            "sub_ingredients": [
+              {
+                "name": "#H-36",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          },
+          {
+            "name": "우유",
+            "sub_ingredients": [
+              {
+                "name": "양파",
+                "sub_ingredients": []
+              },
+              {
+                "name": "백설탕",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "포크불고기분쇄",
+        "sub_ingredients": [
+          {
+            "name": "돼지고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "바베큐불고기토핑",
+        "sub_ingredients": [
+          {
+            "name": "쇠고기",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "청피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "홍피망",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "양송이슬라이스",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": []
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 13:19:46"
+  },
+  "nutrition": {
+    "basis_text": "100g",
+    "kcal": 233.0,
+    "carbohydrate_g": 27.14,
+    "protein_g": 13.81,
+    "fat_g": 7.62,
+    "sugar_g": 3.81,
+    "sodium_mg": 357.0,
+    "cholesterol_mg": 11.9,
+    "saturated_fat_g": 4.29,
+    "trans_fat_g": 0.14,
+    "basis_amount": 100.0,
+    "basis_unit": "g",
+    "serving_size": "150g",
+    "total_content": "210g",
+    "collected_at": "2026-03-03 13:19:46"
+  }
+}

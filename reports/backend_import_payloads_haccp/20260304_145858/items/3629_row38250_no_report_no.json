@@ -1,0 +1,195 @@
+{
+  "product": {
+    "name_ko": "소프트 빅 애플 시나몬",
+    "reportnum": "199503380157351"
+  },
+  "source": {
+    "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157351/199503380157351-1.jpg",
+    "product": {
+      "name": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstNm",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157351/199503380157351-1.jpg"
+      },
+      "reportnum": {
+        "source_type": "haccp_api",
+        "source_field": "haccp_product_info.prdlstReportNo",
+        "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157351/199503380157351-1.jpg"
+      }
+    },
+    "ingredients": {
+      "source_type": "haccp_pass4_ing",
+      "source_field": "haccp_parsed_cache.ingredients_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "밀가루[밀(미국산,캐나다산),밀(미국산)],시나몬크림[마가린/인도네시아산,백설탕,전란액/국산,아몬드분말(아몬드/미국산),당적사과다이스(사과다이스/중국산),계피가루(계피/베트남산)],전란액/국산(계란),백설탕,혼당(당류가공품)[기타설탕,백설탕,하이겔-500(기타가공품),쇼트닝,정제우지경화유(쇠고기)],쇼트닝,마가린,효모(천연효모SPC-SNU),우유,유천분말,정제소금,유화제,기타가공품,기타가공품(대두)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157351/199503380157351-1.jpg"
+    },
+    "nutrition": {
+      "source_type": "haccp_pass4_nut",
+      "source_field": "haccp_parsed_cache.nutrition_items_json",
+      "parser_version": "pass4_policy_v3_haccp_nut",
+      "raw_text": "1회 제공량당 열량 217kcal, 탄수화물 28g (8%),당류 11g, 단백질 3.7g (7%),지방 10g (20%),포화지방 4.5g (30%)·트랜스지방 0g,콜레스테롤 30mg (10%),나트륨 180mg (9%)",
+      "url": "http://www.haccp.or.kr/fresh/prdimg/1995/199503380157351/199503380157351-1.jpg"
+    }
+  },
+  "ingredients": {
+    "ingredients_items": [
+      {
+        "ingredient_name": "밀가루",
+        "origin": "미국산, 캐나다산",
+        "sub_ingredients": [
+          {
+            "name": "밀",
+            "origin": "미국산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "시나몬크림",
+        "sub_ingredients": [
+          {
+            "name": "마가린",
+            "origin": "인도네시아산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "전란액",
+            "origin": "국산",
+            "sub_ingredients": [
+              {
+                "name": "계란",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "아몬드분말",
+            "origin": "미국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "당적사과다이스",
+            "origin": "중국산",
+            "sub_ingredients": []
+          },
+          {
+            "name": "계피가루",
+            "origin": "베트남산",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "전란액",
+        "origin": "국산",
+        "sub_ingredients": [
+          {
+            "name": "계란",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "백설탕",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "혼당",
+        "sub_ingredients": [
+          {
+            "name": "기타설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "백설탕",
+            "sub_ingredients": []
+          },
+          {
+            "name": "하이겔-500",
+            "sub_ingredients": [
+              {
+                "name": "기타가공품",
+                "sub_ingredients": []
+              }
+            ]
+          },
+          {
+            "name": "쇼트닝",
+            "sub_ingredients": []
+          },
+          {
+            "name": "정제우지경화유",
+            "sub_ingredients": [
+              {
+                "name": "쇠고기",
+                "sub_ingredients": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ingredient_name": "쇼트닝",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "마가린",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "효모",
+        "sub_ingredients": [
+          {
+            "name": "천연효모SPC-SNU",
+            "sub_ingredients": []
+          }
+        ]
+      },
+      {
+        "ingredient_name": "우유",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유천분말",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "정제소금",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "유화제",
+        "sub_ingredients": []
+      },
+      {
+        "ingredient_name": "기타가공품",
+        "sub_ingredients": [
+          {
+            "name": "대두",
+            "sub_ingredients": []
+          }
+        ]
+      }
+    ],
+    "allergens": [],
+    "collected_at": "2026-03-03 20:26:56"
+  },
+  "nutrition": {
+    "kcal": 217.0,
+    "carbohydrate_g": 28.0,
+    "sugar_g": 11.0,
+    "protein_g": 3.7,
+    "fat_g": 10.0,
+    "saturated_fat_g": 4.5,
+    "trans_fat_g": 0.0,
+    "cholesterol_mg": 30.0,
+    "sodium_mg": 180.0,
+    "basis_text": "1회 제공량",
+    "collected_at": "2026-03-03 20:26:56"
+  }
+}
